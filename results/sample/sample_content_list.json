@@ -201,7 +201,7 @@
     },
     {
         "type": "text",
-        "text": "The adversarial modeling framework is most straightforward to apply when the models are both multilayer perceptrons. To learn the generator’s distribution \\( p_g \\) over data \\( x \\), we define a prior on input noise variables \\( p_z(z) \\), then represent a mapping to data space as \\( G(z; \\theta_g) \\), where \\( G \\) is a differentiable function represented by a multilayer perceptron with parameters \\( \\theta_g \\). We also define a second multilayer perceptron \\( D(x; \\theta_d) \\) that outputs a single scalar. \\( D(x) \\) represents the probability that \\( x \\) came from the data rather than \\( p_g \\). We train \\( D \\) to maximize the probability of assigning the correct label to both training examples and samples from \\( G \\). We simultaneously train \\( G \\) to minimize \\( \\log(1 - D(G(z))) \\): ",
+        "text": "The adversarial modeling framework is most straightforward to apply when the models are both multilayer perceptrons. To learn the generator's distribution \\( p_g \\) over data \\( x \\), we define a prior on input noise variables \\( p_z(z) \\), then represent a mapping to data space as \\( G(z; \\theta_g) \\), where \\( G \\) is a differentiable function represented by a multilayer perceptron with parameters \\( \\theta_g \\). We also define a second multilayer perceptron \\( D(x; \\theta_d) \\) that outputs a single scalar. \\( D(x) \\) represents the probability that \\( x \\) came from the data rather than \\( p_g \\). We train \\( D \\) to maximize the probability of assigning the correct label to both training examples and samples from \\( G \\). We simultaneously train \\( G \\) to minimize \\( \\log(1 - D(G(z))) \\): ",
         "page_idx": 1
     },
     {
@@ -298,7 +298,7 @@
     },
     {
         "type": "text",
-        "text": "In practice, equation 1 may not provide sufficient gradient for G to learn well. Early in learning, when G is poor, D can reject samples with high confidence because they are clearly different from the training data. In this case, log(1 – D(G(z))) saturates. Rather than training G to minimize log(1 – D(G(z))), we can train G to maximize log D(G(z)). This objective function results in the same fixed point of the dynamics of G and D but provides much stronger gradients early in learning. ",
+        "text": "In practice, equation 1 may not provide sufficient gradient for G to learn well. Early in learning, when G is poor, D can reject samples with high confidence because they are clearly different from the training data. In this case, log(1 − D(G(z))) saturates. Rather than training G to minimize log(1 − D(G(z))), we can train G to maximize log D(G(z)). This objective function results in the same fixed point of the dynamics of G and D but provides much stronger gradients early in learning. ",
         "page_idx": 2
     },
     {
@@ -318,7 +318,7 @@
     },
     {
         "type": "text",
-        "text": "The text content from the image is \"4 Theoretical Results\". ",
+        "text": "The image contains the following text:\n\n4 Theoretical Results ",
         "page_idx": 2
     },
     {
@@ -328,7 +328,7 @@
     },
     {
         "type": "text",
-        "text": "In other words, D and G play the following two-player minimax game with value function V(G, D): ",
+        "text": "In other words, \\( D \\) and \\( G \\) play the following two-player minimax game with value function \\( V(G, D) \\): ",
         "page_idx": 2
     },
     {
@@ -338,13 +338,13 @@
     },
     {
         "type": "equation",
-        "text": "$$\n{ \\mathrm { n m a x } } _ { D } V ( D , G ) = \\mathbb { E } _ { \\boldsymbol { x } \\sim p _ { \\mathrm { d a t a } } ( \\boldsymbol { x } ) } [ \\log D ( \\boldsymbol { x } ) ] + \\mathbb { E } _ { \\boldsymbol { z } \\sim p _ { z } ( \\boldsymbol { z } ) } [ \\log ( 1 - D ( G ( \\boldsymbol { z } ) ) ) ] .\n$$",
+        "text": "$$\nThe formula in the image is:\n\n\\[\n\\max_D V(D, G) = \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}(\\boldsymbol{x})}[\\log D(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{z} \\sim p_{\\boldsymbol{z}}(\\boldsymbol{z})}[\\log(1 - D(G(\\boldsymbol{z})))].\n\\]\n$$",
         "text_format": "latex",
         "page_idx": 2
     },
     {
         "type": "equation",
-        "text": "$$\n```latex\n\\min_{G} \\max_{D} V(D, G) = \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}(\\boldsymbol{x})}[\\log D(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{z} \\sim p_{z}(\\boldsymbol{z})}[\\log(1 - D(G(\\boldsymbol{z})))].\n```\n$$",
+        "text": "$$\n```latex\n\\min_G \\max_D V(D, G) = \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}(\\boldsymbol{x})}[\\log D(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{z} \\sim p_z(\\boldsymbol{z})}[\\log(1 - D(G(\\boldsymbol{z})))].\n```\n$$",
         "text_format": "latex",
         "page_idx": 2
     },
@@ -540,7 +540,7 @@
     },
     {
         "type": "equation",
-        "text": "$$\n\\nabla _ { \\theta _ { d } } \\frac { 1 } { m } \\sum _ { i = 1 } ^ { m } \\left[ \\log D \\left( x ^ { ( i ) } \\right) + \\log \\left( 1 - D \\left( G \\left( z ^ { ( i ) } \\right) \\right) \\right) \\right] .\n$$",
+        "text": "$$\n```latex\n\\nabla_{\\theta_d} \\frac{1}{m} \\sum_{i=1}^{m} \\left[ \\log D \\left( \\boldsymbol{x}^{(i)} \\right) + \\log \\left( 1 - D \\left( G \\left( \\boldsymbol{z}^{(i)} \\right) \\right) \\right) \\right].\n```\n$$",
         "text_format": "latex",
         "page_idx": 3
     },
@@ -764,7 +764,7 @@
     },
     {
         "type": "text",
-        "text": "Since the Jensen–Shannon divergence between two distributions is always non-negative and zero only when they are equal, we have shown that \\( C^\\* = -\\log(4) \\) is the global minimum of \\( C(G) \\) and that the only solution is \\( p_g = p_{\\text{data}} \\), i.e., the generative model perfectly replicating the data generating process. ",
+        "text": "The text content from the image is as follows:\n\n\"Since the Jensen-Shannon divergence between two distributions is always non-negative and zero only when they are equal, we have shown that \\( C^\\* = -\\log(4) \\) is the global minimum of \\( C(G) \\) and that the only solution is \\( p_g = p_{\\text{data}} \\), i.e., the generative model perfectly replicating the data generating process.\" ",
         "page_idx": 4
     },
     {
@@ -784,7 +784,7 @@
     },
     {
         "type": "text",
-        "text": "The text content from the image is:\n\n\"where KL is the Kullback-Leibler divergence. We recognize in the previous expression the Jensen-Shannon divergence between the model's distribution and the data generating process:\" ",
+        "text": "The text in the image reads: \"where KL is the Kullback-Leibler divergence. We recognize in the previous expression the Jensen-Shannon divergence between the model’s distribution and the data generating process:\" ",
         "page_idx": 4
     },
     {
@@ -794,7 +794,7 @@
     },
     {
         "type": "equation",
-        "text": "$$\n```latex\nC(G) = -\\log(4) + 2 \\cdot JSD(p_{data} \\| p_g)\n```\n$$",
+        "text": "$$\nC ( G ) = - \\log ( 4 ) + 2 \\cdot J S D \\left( p _ { \\mathrm { d a t a } } \\| p _ { g } \\right)\n$$",
         "text_format": "latex",
         "page_idx": 4
     },
@@ -806,7 +806,7 @@
     },
     {
         "type": "equation",
-        "text": "$$\nThe formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{E}_{\\boldsymbol{x} \\sim p_{data}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} [\\log(1 - D_G^*(\\boldsymbol{x}))]\n```\n\nThis will render the equation as shown in the image.\n$$",
+        "text": "$$\nThe expression in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{E}_{\\boldsymbol{x} \\sim p_{data}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} [\\log(1 - D_G^*(\\boldsymbol{x}))]\n```\n\nThis will render the formula as shown in the image.\n$$",
         "text_format": "latex",
         "page_idx": 4
     },
@@ -833,7 +833,7 @@
     },
     {
         "type": "text",
-        "text": "then \\( p_g \\) converges to \\( p_{data} \\)",
+        "text": "then \\( p_{g} \\) converges to \\( p_{data} \\)",
         "page_idx": 4
     },
     {
@@ -908,7 +908,7 @@
     },
     {
         "type": "text",
-        "text": "The text content from the image is as follows:\n\n\"In Figures 2 and 3 we show samples drawn from the generator net after training. While we make no claim that these samples are better than samples generated by existing methods, we believe that these samples are at least competitive with the better generative models in the literature and highlight the potential of the adversarial framework.\" ",
+        "text": "In Figures 2 and 3 we show samples drawn from the generator net after training. While we make no claim that these samples are better than samples generated by existing methods, we believe that these samples are at least competitive with the better generative models in the literature and highlight the potential of the adversarial framework. ",
         "page_idx": 5
     },
     {
@@ -1030,7 +1030,7 @@
     },
     {
         "type": "text",
-        "text": "This new framework comes with advantages and disadvantages relative to previous modeling frameworks. The disadvantages are primarily that there is no explicit representation of \\( p_g(\\boldsymbol{x}) \\), and that \\( D \\) must be synchronized well with \\( G \\) during training (in particular, \\( G \\) must not be trained too much without updating \\( D \\), in order to avoid \"the Helvetica scenario\" in which \\( G \\) collapses too many values of \\( \\mathbf{z} \\) to the same value of \\( \\boldsymbol{x} \\) to have enough diversity to model \\( p_{\\text{data}} \\)), much as the negative chains of a Boltzmann machine must be kept up to date between learning steps. The advantages are that Markov chains are never needed, only backprop is used to obtain gradients, no inference is needed during learning, and a wide variety of functions can be incorporated into the model. Table 2 summarizes the comparison of generative adversarial nets with other generative modeling approaches. ",
+        "text": "This new framework comes with advantages and disadvantages relative to previous modeling frameworks. The disadvantages are primarily that there is no explicit representation of \\( p_g(\\boldsymbol{x}) \\), and that \\( D \\) must be synchronized well with \\( G \\) during training (in particular, \\( G \\) must not be trained too much without updating \\( D \\), in order to avoid “the Helvetica scenario” in which \\( G \\) collapses too many values of \\( \\mathbf{z} \\) to the same value of \\( \\boldsymbol{x} \\) to have enough diversity to model \\( p_{\\text{data}} \\)), much as the negative chains of a Boltzmann machine must be kept up to date between learning steps. The advantages are that Markov chains are never needed, only backprop is used to obtain gradients, no inference is needed during learning, and a wide variety of functions can be incorporated into the model. Table 2 summarizes the comparison of generative adversarial nets with other generative modeling approaches. ",
         "page_idx": 6
     },
     {
@@ -1075,17 +1075,17 @@
     },
     {
         "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
         "text": "Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model. ",
         "page_idx": 6
     },
     {
         "type": "text",
-        "text": "The text content from the image is as follows:\n\n\"Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.\" ",
-        "page_idx": 6
-    },
-    {
-        "type": "text",
-        "text": "The text content from the image is as follows:\n\n\"Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.\" ",
+        "text": "Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model. ",
         "page_idx": 6
     },
     {
@@ -1237,7 +1237,7 @@
     },
     {
         "type": "text",
-        "text": "Here is the text content from the image:\n\n[1] Bastien, F., Lamblin, P., Pascanu, R., Bergstra, J., Goodfellow, I. J., Bergeron, A., Bouchard, N., and Bengio, Y. (2012). Theano: new features and speed improvements. Deep Learning and Unsupervised Feature Learning NIPS 2012 Workshop.\n\n[2] Bengio, Y. (2009). Learning deep architectures for AI. Now Publishers.\n\n[3] Bengio, Y., Mesnil, G., Dauphin, Y., and Rifai, S. (2013a). Better mixing via deep representations. In ICML'13.\n\n[4] Bengio, Y., Yao, L., Alain, G., and Vincent, P. (2013b). Generalized denoising auto-encoders as generative models. In NIPS26. Nips Foundation.\n\n[5] Bengio, Y., Thibodeau-Laufer, E., and Yoshinski, J. (2014a). Deep generative stochastic networks trainable by backprop. In ICML'14.\n\n[6] Bengio, Y., Thibodeau-Laufer, E., Alain, G., and Yoshinski, J. (2014b). Deep generative stochastic networks trainable by backprop. In Proceedings of the 30th International Conference on Machine Learning (ICML'14).\n\n[7] Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins, G., Turian, J., Warde-Farley, D., and Bengio, Y. (2010). Theano: a CPU and GPU math expression compiler. In Proceedings of the Python for Scientific Computing Conference (SciPy). Oral Presentation.\n\n[8] Breuleux, O., Bengio, Y., and Vincent, P. (2011). Quickly generating representative samples from an RBM-derived process. Neural Computation, 23(8), 2053–2073.\n\n[9] Glorot, X., Bordes, A., and Bengio, Y. (2011). Deep sparse rectifier neural networks. In AISTATS'2011.\n\n[10] Goodfellow, I. J., Warde-Farley, D., Mirza, M., Courville, A., and Bengio, Y. (2013a). Maxout networks. In ICML'2013.\n\n[11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS'2013.\n\n[12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). Pylearn2: a machine learning research library. arXiv preprint arXiv:1308.4214.\n\n[13] Gutmann, M. and Hyvarinen, A. (2010). Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In AISTATS'2010.\n\n[14] Hinton, G., Deng, L., Dahl, G. E., Mohamed, A., Jaitly, N., Senior, A., Vanhoucke, V., Nguyen, P., Sainath, T., and Kingsbury, B. (2012a). Deep neural networks for acoustic modeling in speech recognition. IEEE Signal Processing Magazine, 29(6), 82–97.\n\n[15] Hinton, G. E., Dayan, P., Frey, B. J., and Neal, R. M. (1995). The wake-sleep algorithm for unsupervised neural networks. Science, 268, 1558–1161. ",
+        "text": "Here is the text content from the image:\n\n[1] Bastien, F., Lamblin, P., Pascanu, R., Bergstra, J., Goodfellow, I. J., Bergeron, A., Bouchard, N., and Bengio, Y. (2012). Theano: new features and speed improvements. Deep Learning and Unsupervised Feature Learning NIPS 2012 Workshop.\n\n[2] Bengio, Y. (2009). Learning deep architectures for AI. Now Publishers.\n\n[3] Bengio, Y., Mesnil, G., Dauphin, Y., and Rifai, S. (2013a). Better mixing via deep representations. In ICML'13.\n\n[4] Bengio, Y., Yao, L., Alain, G., and Vincent, P. (2013b). Generalized denoising auto-encoders as generative models. In NIPS26. Nips Foundation.\n\n[5] Bengio, Y., Thibodeau-Laufer, E., and Yoshinski, J. (2014a). Deep generative stochastic networks trainable by backprop. In ICML'14.\n\n[6] Bengio, Y., Thibodeau-Laufer, E., Alain, G., and Yoshinski, J. (2014b). Deep generative stochastic networks trainable by backprop. In Proceedings of the 30th International Conference on Machine Learning (ICML'14).\n\n[7] Bergstra, J., Breuleux, O., Bastien, F., Lamblin, P., Pascanu, R., Desjardins, G., Turian, J., Warde-Farley, D., and Bengio, Y. (2010). Theano: a CPU and GPU math expression compiler. In Proceedings of the Python for Scientific Computing Conference (SciPy). Oral Presentation.\n\n[8] Breuleux, O., Bengio, Y., and Vincent, P. (2011). Quickly generating representative samples from an RBM-derived process. Neural Computation, 23(8), 2053–2073.\n\n[9] Glorot, X., Bordes, A., and Bengio, Y. (2011). Deep sparse rectifier neural networks. In AISTATS’2011.\n\n[10] Goodfellow, I. J., Warde-Farley, D., Mirza, M., Courville, A., and Bengio, Y. (2013a). Maxout networks. In ICML’2013.\n\n[11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS’2013.\n\n[12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). Pylearn2: a machine learning research library. arXiv preprint arXiv:1308.4214.\n\n[13] Gutmann, M. and Hyvarinen, A. (2010). Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In AISTATS’2010.\n\n[14] Hinton, G., Deng, L., Dahl, G. E., Mohamed, A., Jaitly, N., Senior, A., Vanhoucke, V., Nguyen, P., Sainath, T., and Kingsbury, B. (2012a). Deep neural networks for acoustic modeling in speech recognition. IEEE Signal Processing Magazine, 29(6), 82–97.\n\n[15] Hinton, G. E., Dayan, P., Frey, B. J., and Neal, R. M. (1995). The wake-sleep algorithm for unsupervised neural networks. Science, 268, 1558–1161. ",
         "page_idx": 7
     },
     {
@@ -1292,7 +1292,7 @@
     },
     {
         "type": "text",
-        "text": "The text content from the image is as follows:\n\n[4] Bengio, Y., Yao, L., Alain, G., and Vincent, P. (2013b). Generalized denoising auto-encoders as generative models. In NIPS26. Nips Foundation. ",
+        "text": "The text content from the image is:\n\n[4] Bengio, Y., Yao, L., Alain, G., and Vincent, P. (2013b). Generalized denoising auto-encoders as generative models. In NIPS26. Nips Foundation. ",
         "page_idx": 7
     },
     {
@@ -1307,7 +1307,7 @@
     },
     {
         "type": "text",
-        "text": "The text content from the image is as follows:\n\n[12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). PyLearn2: a machine learning research library. arXiv preprint arXiv:1308.4214. ",
+        "text": "The text content from the image is as follows:\n\n[12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). Pylearn2: a machine learning research library. arXiv preprint arXiv:1308.4214. ",
         "page_idx": 7
     },
     {
@@ -1327,7 +1327,7 @@
     },
     {
         "type": "text",
-        "text": "The text content from the image is:\n\n[3] Bengio, Y., Mesnil, G., Dauphin, Y., and Rifai, S. (2013a). Better mixing via deep representations. In ICML'13. ",
+        "text": "The text content from the image is as follows:\n\n[3] Bengio, Y., Mesnil, G., Dauphin, Y., and Rifai, S. (2013a). Better mixing via deep representations. In ICML'13. ",
         "page_idx": 7
     },
     {
@@ -1437,7 +1437,7 @@
     },
     {
         "type": "text",
-        "text": "[16] Hinton, G. E., Osindero, S., and Teh, Y. (2006). A fast learning algorithm for deep belief nets. Neural Computation, 18, 1527–1554.\n\n[17] Hinton, G. E., Srivastava, N., Krizhevsky, A., Sutskever, I., and Salakhutdinov, R. (2012b). Improving neural networks by preventing co-adaptation of feature detectors. Technical report, arXiv:1207.0580.\n\n[18] Hyvärinen, A. (2005). Estimation of non-normalized statistical models using score matching. J. Machine Learning Res., 6.\n\n[19] Jarrett, K., Kavukcuoglu, K., Ranzato, M., and LeCun, Y. (2009). What is the best multi-stage architecture for object recognition? In Proc. International Conference on Computer Vision (ICCV’09), pages 2146–2153. IEEE.\n\n[20] Kingma, D. P. and Welling, M. (2014). Auto-encoding variational bayes. In Proceedings of the International Conference on Learning Representations (ICLR).\n\n[21] Krizhevsky, A. and Hinton, G. (2009). Learning multiple layers of features from tiny images. Technical report, University of Toronto.\n\n[22] Krizhevsky, A., Sutskever, I., and Hinton, G. (2012). ImageNet classification with deep convolutional neural networks. In NIPS’2012.\n\n[23] LeCun, Y., Bottou, L., Bengio, Y., and Haffner, P. (1998). Gradient-based learning applied to document recognition. Proceedings of the IEEE, 86(11), 2278–2324.\n\n[24] Rezende, D. J., Mohamed, S., and Wierstra, D. (2014). Stochastic backpropagation and approximate inference in deep generative models. Technical report, arXiv:1401.4082.\n\n[25] Rifai, S., Bengio, Y., Dauphin, Y., and Vincent, P. (2012). A generative process for sampling contractive auto-encoders. In ICML’12.\n\n[26] Salakhutdinov, R. and Hinton, G. E. (2009). Deep Boltzmann machines. In AISTATS’2009, pages 448–455.\n\n[27] Smolensky, P. (1986). Information processing in dynamical systems: Foundations of harmony theory. In D. E. Rumelhart and J. L. McClelland, editors, Parallel Distributed Processing, volume 1, chapter 6, pages 194–281. MIT Press, Cambridge.\n\n[28] Susskind, J., Anderson, A., and Hinton, G. E. (2010). The Toronto face dataset. Technical Report UTML TR 2010-001, U. Toronto.\n\n[29] Tieleman, T. (2008). Training restricted Boltzmann machines using approximations to the likelihood gradient. In W. W. Cohen, A. McCallum, and S. T. Roweis, editors, ICML 2008, pages 1064–1071. ACM.\n\n[30] Vincent, P., Larochelle, H., Bengio, Y., and Manzagol, P.-A. (2008). Extracting and composing robust features with denoising autoencoders. In ICML 2008.\n\n[31] Younes, L. (1999). On the convergence of Markovian stochastic algorithms with rapidly decreasing ergodicity rates. Stochastics and Stochastic Reports, 65(3), 177–228. ",
+        "text": "[16] Hinton, G. E., Osindero, S., and Teh, Y. (2006). A fast learning algorithm for deep belief nets. Neural Computation, 18, 1527–1554.\n\n[17] Hinton, G. E., Srivastava, N., Krizhevsky, A., Sutskever, I., and Salakhutdinov, R. (2012b). Improving neural networks by preventing co-adaptation of feature detectors. Technical report, arXiv:1207.0580.\n\n[18] Hyvärinen, A. (2005). Estimation of non-normalized statistical models using score matching. J. Machine Learning Res., 6.\n\n[19] Jarrett, K., Kavukcuoglu, K., Ranzato, M., and LeCun, Y. (2009). What is the best multi-stage architecture for object recognition? In Proc. International Conference on Computer Vision (ICCV'09), pages 2146–2153. IEEE.\n\n[20] Kingma, D. P. and Welling, M. (2014). Auto-encoding variational bayes. In Proceedings of the International Conference on Learning Representations (ICLR).\n\n[21] Krizhevsky, A. and Hinton, G. (2009). Learning multiple layers of features from tiny images. Technical report, University of Toronto.\n\n[22] Krizhevsky, A., Sutskever, I., and Hinton, G. (2012). ImageNet classification with deep convolutional neural networks. In NIPS’2012.\n\n[23] LeCun, Y., Bottou, L., Bengio, Y., and Haffner, P. (1998). Gradient-based learning applied to document recognition. Proceedings of the IEEE, 86(11), 2278–2324.\n\n[24] Rezende, D. J., Mohamed, S., and Wierstra, D. (2014). Stochastic backpropagation and approximate inference in deep generative models. Technical report, arXiv:1401.4082.\n\n[25] Rifai, S., Bengio, Y., Dauphin, Y., and Vincent, P. (2012). A generative process for sampling contractive auto-encoders. In ICML’12.\n\n[26] Salakhutdinov, R. and Hinton, G. E. (2009). Deep Boltzmann machines. In AISTATS’2009, pages 448–455.\n\n[27] Smolensky, P. (1986). Information processing in dynamical systems: Foundations of harmony theory. In D. E. Rumelhart and J. L. McClelland, editors, Parallel Distributed Processing, volume 1, chapter 6, pages 194–281. MIT Press, Cambridge.\n\n[28] Susskind, J., Anderson, A., and Hinton, G. E. (2010). The Toronto face dataset. Technical Report UTML TR 2010-001, U. Toronto.\n\n[29] Tieleman, T. (2008). Training restricted Boltzmann machines using approximations to the likelihood gradient. In W. W. Cohen, A. McCallum, and S. T. Roweis, editors, ICML 2008, pages 1064–1071. ACM.\n\n[30] Vincent, P., Larochelle, H., Bengio, Y., and Manzagol, P.-A. (2008). Extracting and composing robust features with denoising autoencoders. In ICML 2008.\n\n[31] Younes, L. (1999). On the convergence of Markovian stochastic algorithms with rapidly decreasing ergodicity rates. Stochastics and Stochastic Reports, 65(3), 177–228. ",
         "page_idx": 8
     },
     {
@@ -1517,7 +1517,7 @@
     },
     {
         "type": "text",
-        "text": "The text content from the image is:\n\n[18] Hyvärinen, A. (2005). Estimation of non-normalized statistical models using score matching. J. Machine Learning Res., 6. ",
+        "text": "The text content from the image is as follows:\n\n[18] Hyvärinen, A. (2005). Estimation of non-normalized statistical models using score matching. J. Machine Learning Res., 6. ",
         "page_idx": 8
     },
     {

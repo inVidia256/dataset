@@ -42,7 +42,7 @@ Alternative criteria that do not approximate or bound the log-likelihood have al
 
 This framework can yield specific training algorithms for many kinds of model and optimization algorithm. In this article, we explore the special case when the generative model generates samples by passing random noise through a multilayer perceptron, and the discriminative model is also a multilayer perceptron. We refer to this special case as adversarial nets. In this case, we can train both models using only the highly successful backpropagation and dropout algorithms [17] and sample from the generative model using only forward propagation. No approximate inference or Markov chains are necessary.  
 
-The adversarial modeling framework is most straightforward to apply when the models are both multilayer perceptrons. To learn the generator’s distribution \( p_g \) over data \( x \), we define a prior on input noise variables \( p_z(z) \), then represent a mapping to data space as \( G(z; \theta_g) \), where \( G \) is a differentiable function represented by a multilayer perceptron with parameters \( \theta_g \). We also define a second multilayer perceptron \( D(x; \theta_d) \) that outputs a single scalar. \( D(x) \) represents the probability that \( x \) came from the data rather than \( p_g \). We train \( D \) to maximize the probability of assigning the correct label to both training examples and samples from \( G \). We simultaneously train \( G \) to minimize \( \log(1 - D(G(z))) \):  
+The adversarial modeling framework is most straightforward to apply when the models are both multilayer perceptrons. To learn the generator's distribution \( p_g \) over data \( x \), we define a prior on input noise variables \( p_z(z) \), then represent a mapping to data space as \( G(z; \theta_g) \), where \( G \) is a differentiable function represented by a multilayer perceptron with parameters \( \theta_g \). We also define a second multilayer perceptron \( D(x; \theta_d) \) that outputs a single scalar. \( D(x) \) represents the probability that \( x \) came from the data rather than \( p_g \). We train \( D \) to maximize the probability of assigning the correct label to both training examples and samples from \( G \). We simultaneously train \( G \) to minimize \( \log(1 - D(G(z))) \):  
 
 Deep belief networks (DBNs) [16] are hybrid models containing a single undirected layer and several directed layers. While a fast approximate layer-wise training criterion exists, DBNs incur the computational difficulties associated with both undirected and directed models.  
 
@@ -60,7 +60,7 @@ $$
 
 $$  
 
-In practice, equation 1 may not provide sufficient gradient for G to learn well. Early in learning, when G is poor, D can reject samples with high confidence because they are clearly different from the training data. In this case, log(1 – D(G(z))) saturates. Rather than training G to minimize log(1 – D(G(z))), we can train G to maximize log D(G(z)). This objective function results in the same fixed point of the dynamics of G and D but provides much stronger gradients early in learning.  
+In practice, equation 1 may not provide sufficient gradient for G to learn well. Early in learning, when G is poor, D can reject samples with high confidence because they are clearly different from the training data. In this case, log(1 − D(G(z))) saturates. Rather than training G to minimize log(1 − D(G(z))), we can train G to maximize log D(G(z)). This objective function results in the same fixed point of the dynamics of G and D but provides much stronger gradients early in learning.  
 
 The generator G implicitly defines a probability distribution \( p_g \) as the distribution of the samples \( G(z) \) obtained when \( z \sim p_z \). Therefore, we would like Algorithm 1 to converge to a good estimator of \( p_{data} \), if given enough capacity and training time. The results of this section are done in a non-parametric setting, e.g., we represent a model with infinite capacity by studying convergence in the space of probability density functions.  
 
@@ -68,7 +68,9 @@ In the next section, we present a theoretical analysis of adversarial nets, esse
 
 We will show in section 4.1 that this minimax game has a global optimum for \( p_g = p_{\text{data}} \). We will then show in section 4.2 that Algorithm 1 optimizes Eq 1, thus obtaining the desired result.  
 
-The text content from the image is "4 Theoretical Results".  
+The image contains the following text:
+
+4 Theoretical Results  
 
 The text content from the image is as follows:
 
@@ -86,15 +88,19 @@ The text content from the image is as follows:
 
 ---  
 
-In other words, D and G play the following two-player minimax game with value function V(G, D):  
+In other words, \( D \) and \( G \) play the following two-player minimax game with value function \( V(G, D) \):  
 
 $$
-{ \mathrm { n m a x } } _ { D } V ( D , G ) = \mathbb { E } _ { \boldsymbol { x } \sim p _ { \mathrm { d a t a } } ( \boldsymbol { x } ) } [ \log D ( \boldsymbol { x } ) ] + \mathbb { E } _ { \boldsymbol { z } \sim p _ { z } ( \boldsymbol { z } ) } [ \log ( 1 - D ( G ( \boldsymbol { z } ) ) ) ] .
+The formula in the image is:
+
+\[
+\max_D V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
+\]
 $$  
 
 $$
 ```latex
-\min_{G} \max_{D} V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_{z}(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
+\min_G \max_D V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_z(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
 ```
 $$  
 
@@ -155,7 +161,9 @@ $$
 $$  
 
 $$
-\nabla _ { \theta _ { d } } \frac { 1 } { m } \sum _ { i = 1 } ^ { m } \left[ \log D \left( x ^ { ( i ) } \right) + \log \left( 1 - D \left( G \left( z ^ { ( i ) } \right) \right) \right) \right] .
+```latex
+\nabla_{\theta_d} \frac{1}{m} \sum_{i=1}^{m} \left[ \log D \left( \boldsymbol{x}^{(i)} \right) + \log \left( 1 - D \left( G \left( \boldsymbol{z}^{(i)} \right) \right) \right) \right].
+```
 $$  
 
 Algorithm 1 Minibatch stochastic gradient descent training of generative adversarial nets. The number of steps to apply to the discriminator, \( k \), is a hyperparameter. We used \( k = 1 \), the least expensive option, in our experiments.  
@@ -251,7 +259,9 @@ We trained adversarial nets on a range of datasets including MNIST [23], the Tor
 
 In practice, adversarial nets represent a limited family of \( p_g \) distributions via the function \( G(z; \theta_g) \), and we optimize \( \theta_g \) rather than \( p_g \) itself. Using a multilayer perceptron to define \( G \) introduces multiple critical points in parameter space. However, the excellent performance of multilayer perceptrons in practice suggests that they are a reasonable model to use despite their lack of theoretical guarantees.  
 
-Since the Jensen–Shannon divergence between two distributions is always non-negative and zero only when they are equal, we have shown that \( C^* = -\log(4) \) is the global minimum of \( C(G) \) and that the only solution is \( p_g = p_{\text{data}} \), i.e., the generative model perfectly replicating the data generating process.  
+The text content from the image is as follows:
+
+"Since the Jensen-Shannon divergence between two distributions is always non-negative and zero only when they are equal, we have shown that \( C^* = -\log(4) \) is the global minimum of \( C(G) \) and that the only solution is \( p_g = p_{\text{data}} \), i.e., the generative model perfectly replicating the data generating process."  
 
 The text content from the image is as follows:
 
@@ -263,16 +273,12 @@ The text content from the image is:
 
 We estimate probability of the test set data under \( p_g \) by fitting a Gaussian Parzen window to the samples generated with \( G \) and reporting the log-likelihood under this distribution. The \( \sigma \) parameter  
 
-The text content from the image is:
-
-"where KL is the Kullback-Leibler divergence. We recognize in the previous expression the Jensen-Shannon divergence between the model's distribution and the data generating process:"  
+The text in the image reads: "where KL is the Kullback-Leibler divergence. We recognize in the previous expression the Jensen-Shannon divergence between the model’s distribution and the data generating process:"  
 
 The global minimum of the virtual training criterion \( C(G) \) is achieved if and only if \( p_g = p_{data} \). At that point, \( C(G) \) achieves the value \(-\log 4\).  
 
 $$
-```latex
-C(G) = -\log(4) + 2 \cdot JSD(p_{data} \| p_g)
-```
+C ( G ) = - \log ( 4 ) + 2 \cdot J S D \left( p _ { \mathrm { d a t a } } \| p _ { g } \right)
 $$  
 
 $$
@@ -286,13 +292,13 @@ This will render the equation as shown in the image.
 $$  
 
 $$
-The formula in the image can be written in LaTeX as follows:
+The expression in the image can be written in LaTeX as follows:
 
 ```latex
 \mathbb{E}_{\boldsymbol{x} \sim p_{data}} [\log D_G^*(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{x} \sim p_g} [\log(1 - D_G^*(\boldsymbol{x}))]
 ```
 
-This will render the equation as shown in the image.
+This will render the formula as shown in the image.
 $$  
 
 The text in the image reads:
@@ -309,15 +315,13 @@ C(G) = -\log(4) + KL \left( p_{\text{data}} \parallel \frac{p_{\text{data}} + p_
 ```
 $$  
 
-then \( p_g \) converges to \( p_{data} \)  
+then \( p_{g} \) converges to \( p_{data} \)  
 
 The text content from the image is as follows:
 
 "of the Gaussians was obtained by cross validation on the validation set. This procedure was introduced in Breuleux et al. [8] and used for various generative models for which the exact likelihood is not tractable [25, 3, 5]. Results are reported in Table 1. This method of estimating the likelihood has somewhat high variance and does not perform well in high dimensional spaces but it is the best method available to our knowledge. Advances in generative models that can sample but not estimate likelihood directly motivate further research into how to evaluate such models."  
 
-The text content from the image is as follows:
-
-"In Figures 2 and 3 we show samples drawn from the generator net after training. While we make no claim that these samples are better than samples generated by existing methods, we believe that these samples are at least competitive with the better generative models in the literature and highlight the potential of the adversarial framework."  
+In Figures 2 and 3 we show samples drawn from the generator net after training. While we make no claim that these samples are better than samples generated by existing methods, we believe that these samples are at least competitive with the better generative models in the literature and highlight the potential of the adversarial framework.  
 
 Figure 2: Visualization of samples from the model. Rightmost column shows the nearest training example of the neighboring sample, in order to demonstrate that the model has not memorized the training set. Samples are fair random draws, not cherry-picked. Unlike most other visualizations of deep generative models, these images show actual samples from the model distributions, not conditional means given samples of hidden units. Moreover, these samples are uncorrelated because the sampling process does not depend on Markov chain mixing. a) MNIST b) TFD c) CIFAR-10 (fully connected model) d) CIFAR-10 (convolutional discriminator and “deconvolutional” generator)  
 
@@ -333,7 +337,7 @@ Figure 2: Visualization of samples from the model. Rightmost column shows the ne
 
 #  
 
-This new framework comes with advantages and disadvantages relative to previous modeling frameworks. The disadvantages are primarily that there is no explicit representation of \( p_g(\boldsymbol{x}) \), and that \( D \) must be synchronized well with \( G \) during training (in particular, \( G \) must not be trained too much without updating \( D \), in order to avoid "the Helvetica scenario" in which \( G \) collapses too many values of \( \mathbf{z} \) to the same value of \( \boldsymbol{x} \) to have enough diversity to model \( p_{\text{data}} \)), much as the negative chains of a Boltzmann machine must be kept up to date between learning steps. The advantages are that Markov chains are never needed, only backprop is used to obtain gradients, no inference is needed during learning, and a wide variety of functions can be incorporated into the model. Table 2 summarizes the comparison of generative adversarial nets with other generative modeling approaches.  
+This new framework comes with advantages and disadvantages relative to previous modeling frameworks. The disadvantages are primarily that there is no explicit representation of \( p_g(\boldsymbol{x}) \), and that \( D \) must be synchronized well with \( G \) during training (in particular, \( G \) must not be trained too much without updating \( D \), in order to avoid “the Helvetica scenario” in which \( G \) collapses too many values of \( \mathbf{z} \) to the same value of \( \boldsymbol{x} \) to have enough diversity to model \( p_{\text{data}} \)), much as the negative chains of a Boltzmann machine must be kept up to date between learning steps. The advantages are that Markov chains are never needed, only backprop is used to obtain gradients, no inference is needed during learning, and a wide variety of functions can be incorporated into the model. Table 2 summarizes the comparison of generative adversarial nets with other generative modeling approaches.  
 
 The aforementioned advantages are primarily computational. Adversarial models may also gain some statistical advantage from the generator network not being updated directly with data examples, but only with gradients flowing through the discriminator. This means that components of the input are not copied directly into the generator’s parameters. Another advantage of adversarial networks is that they can represent very sharp, even degenerate distributions, while methods based on Markov chains require that the distribution be somewhat blurry in order for the chains to be able to mix between modes.  
 
@@ -352,15 +356,13 @@ This framework admits many straightforward extensions:
 
 \`s obtained by linearly interpolating between coordinates in z space of the full model\`  
 
+The text content from the image is as follows:
+
+"Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model."  
+
 Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.  
 
-The text content from the image is as follows:
-
-"Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model."  
-
-The text content from the image is as follows:
-
-"Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model."  
+Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.  
 
 #  
 
@@ -390,15 +392,15 @@ Here is the text content from the image:
 
 [8] Breuleux, O., Bengio, Y., and Vincent, P. (2011). Quickly generating representative samples from an RBM-derived process. Neural Computation, 23(8), 2053–2073.
 
-[9] Glorot, X., Bordes, A., and Bengio, Y. (2011). Deep sparse rectifier neural networks. In AISTATS'2011.
+[9] Glorot, X., Bordes, A., and Bengio, Y. (2011). Deep sparse rectifier neural networks. In AISTATS’2011.
 
-[10] Goodfellow, I. J., Warde-Farley, D., Mirza, M., Courville, A., and Bengio, Y. (2013a). Maxout networks. In ICML'2013.
+[10] Goodfellow, I. J., Warde-Farley, D., Mirza, M., Courville, A., and Bengio, Y. (2013a). Maxout networks. In ICML’2013.
 
-[11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS'2013.
+[11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS’2013.
 
 [12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). Pylearn2: a machine learning research library. arXiv preprint arXiv:1308.4214.
 
-[13] Gutmann, M. and Hyvarinen, A. (2010). Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In AISTATS'2010.
+[13] Gutmann, M. and Hyvarinen, A. (2010). Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In AISTATS’2010.
 
 [14] Hinton, G., Deng, L., Dahl, G. E., Mohamed, A., Jaitly, N., Senior, A., Vanhoucke, V., Nguyen, P., Sainath, T., and Kingsbury, B. (2012a). Deep neural networks for acoustic modeling in speech recognition. IEEE Signal Processing Magazine, 29(6), 82–97.
 
@@ -438,7 +440,7 @@ The text content from the image is as follows:
 
 [6] Bengio, Y., Thibodeau-Laufer, E., Alain, G., and Yosinski, J. (2014b). Deep generative stochastic networks trainable by backprop. In Proceedings of the 30th International Conference on Machine Learning (ICML'14).  
 
-The text content from the image is as follows:
+The text content from the image is:
 
 [4] Bengio, Y., Yao, L., Alain, G., and Vincent, P. (2013b). Generalized denoising auto-encoders as generative models. In NIPS26. Nips Foundation.  
 
@@ -452,7 +454,7 @@ The text content from the image is:
 
 The text content from the image is as follows:
 
-[12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). PyLearn2: a machine learning research library. arXiv preprint arXiv:1308.4214.  
+[12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). Pylearn2: a machine learning research library. arXiv preprint arXiv:1308.4214.  
 
 The text content from the image is as follows:
 
@@ -464,7 +466,7 @@ The text content from the image is:
 
 [11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS'2013.  
 
-The text content from the image is:
+The text content from the image is as follows:
 
 [3] Bengio, Y., Mesnil, G., Dauphin, Y., and Rifai, S. (2013a). Better mixing via deep representations. In ICML'13.  
 
@@ -484,7 +486,7 @@ The text content from the image is:
 
 [18] Hyvärinen, A. (2005). Estimation of non-normalized statistical models using score matching. J. Machine Learning Res., 6.
 
-[19] Jarrett, K., Kavukcuoglu, K., Ranzato, M., and LeCun, Y. (2009). What is the best multi-stage architecture for object recognition? In Proc. International Conference on Computer Vision (ICCV’09), pages 2146–2153. IEEE.
+[19] Jarrett, K., Kavukcuoglu, K., Ranzato, M., and LeCun, Y. (2009). What is the best multi-stage architecture for object recognition? In Proc. International Conference on Computer Vision (ICCV'09), pages 2146–2153. IEEE.
 
 [20] Kingma, D. P. and Welling, M. (2014). Auto-encoding variational bayes. In Proceedings of the International Conference on Learning Representations (ICLR).
 
@@ -566,7 +568,7 @@ The text content from the image is as follows:
 
 [17] Hinton, G. E., Srivastava, N., Krizhevsky, A., Sutskever, I., and Salakhutdinov, R. (2012b). Improving neural networks by preventing co-adaptation of feature detectors. Technical report, arXiv:1207.0580.  
 
-The text content from the image is:
+The text content from the image is as follows:
 
 [18] Hyvärinen, A. (2005). Estimation of non-normalized statistical models using score matching. J. Machine Learning Res., 6.  
 
