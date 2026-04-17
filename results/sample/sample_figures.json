@@ -1,0 +1,111 @@
+{
+    "total_count": 7,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                314,
+                950,
+                1394,
+                1287
+            ],
+            "caption": "",
+            "footnote": "",
+            "image_path": "",
+            "cropped_image": ""
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                295,
+                1311,
+                1405,
+                1662
+            ],
+            "caption": "",
+            "footnote": "",
+            "image_path": "",
+            "cropped_image": ""
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                314,
+                990,
+                1390,
+                1771
+            ],
+            "caption": "",
+            "footnote": "",
+            "image_path": "",
+            "cropped_image": ""
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                297,
+                1800,
+                1405,
+                1997
+            ],
+            "caption": "",
+            "footnote": "",
+            "image_path": "",
+            "cropped_image": ""
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                296,
+                407,
+                1405,
+                548
+            ],
+            "caption": "",
+            "footnote": "",
+            "image_path": "figures/figure_005_page006.png",
+            "cropped_image": "figures/figure_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                371,
+                226,
+                1329,
+                282
+            ],
+            "caption": "",
+            "footnote": "",
+            "image_path": "figures/figure_006_page007.png",
+            "cropped_image": "figures/figure_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                296,
+                1020,
+                1404,
+                1078
+            ],
+            "caption": "",
+            "footnote": "",
+            "image_path": "",
+            "cropped_image": ""
+        }
+    ]
+}
