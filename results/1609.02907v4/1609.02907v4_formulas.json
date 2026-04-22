@@ -1,0 +1,186 @@
+{
+    "total_count": 15,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                141,
+                461,
+                468,
+                488
+            ],
+            "content": "{ \\mathcal { L } } = { \\mathcal { L } } _ { 0 } + \\lambda { \\mathcal { L } } _ { \\mathrm { r e g } } \\ , \\quad { \\mathrm { w i t h ~ } } \\quad { \\mathcal { L } } _ { \\mathrm { r e g } } = \\sum _ { i , j } A _ { i j } \\| f ( X _ { i } ) - f ( X _ { j } ) \\| ^ { 2 } = f ( X ) ^ { \\top } \\Delta f ( X ) \\, .",
+            "latex": "{ \\mathcal { L } } = { \\mathcal { L } } _ { 0 } + \\lambda { \\mathcal { L } } _ { \\mathrm { r e g } } \\ , \\quad { \\mathrm { w i t h ~ } } \\quad { \\mathcal { L } } _ { \\mathrm { r e g } } = \\sum _ { i , j } A _ { i j } \\| f ( X _ { i } ) - f ( X _ { j } ) \\| ^ { 2 } = f ( X ) ^ { \\top } \\Delta f ( X ) \\, ."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                257,
+                418,
+                354,
+                450
+            ],
+            "content": "g _ { \\theta ^ { \\prime } } ( \\Lambda ) \\approx \\sum _ { k = 0 } ^ { K } \\theta _ { k } ^ { \\prime } T _ { k } ( \\tilde { \\Lambda } ) \\, ,",
+            "latex": "g _ { \\theta ^ { \\prime } } ( \\Lambda ) \\approx \\sum _ { k = 0 } ^ { K } \\theta _ { k } ^ { \\prime } T _ { k } ( \\tilde { \\Lambda } ) \\, ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                253,
+                525,
+                357,
+                558
+            ],
+            "content": "g _ { \\theta ^ { \\prime } } \\star x \\approx \\sum _ { k = 0 } ^ { K } \\theta _ { k } ^ { \\prime } T _ { k } ( \\tilde { L } ) x \\ ,",
+            "latex": "g _ { \\theta ^ { \\prime } } \\star x \\approx \\sum _ { k = 0 } ^ { K } \\theta _ { k } ^ { \\prime } T _ { k } ( \\tilde { L } ) x \\ ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                227,
+                145,
+                383,
+                166
+            ],
+            "content": "H ^ { ( l + 1 ) } = \\sigma \\Biggl ( \\tilde { D } ^ { - \\frac { 1 } { 2 } } \\tilde { A } \\tilde { D } ^ { - \\frac { 1 } { 2 } } H ^ { ( l ) } W ^ { ( l ) } \\Biggr ) ~ .",
+            "latex": "H ^ { ( l + 1 ) } = \\sigma \\Biggl ( \\tilde { D } ^ { - \\frac { 1 } { 2 } } \\tilde { A } \\tilde { D } ^ { - \\frac { 1 } { 2 } } H ^ { ( l ) } W ^ { ( l ) } \\Biggr ) ~ ."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                264,
+                312,
+                346,
+                326
+            ],
+            "content": "g _ { \\theta } \\star x = U g _ { \\theta } U ^ { \\top } x \\, ,",
+            "latex": "g _ { \\theta } \\star x = U g _ { \\theta } U ^ { \\top } x \\, ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                233,
+                331,
+                378,
+                352
+            ],
+            "content": "g _ { \\theta } \\star x \\approx \\theta \\left( I _ { N } + D ^ { - \\frac { 1 } { 2 } } A D ^ { - \\frac { 1 } { 2 } } \\right) x \\, ,",
+            "latex": "g _ { \\theta } \\star x \\approx \\theta \\left( I _ { N } + D ^ { - \\frac { 1 } { 2 } } A D ^ { - \\frac { 1 } { 2 } } \\right) x \\, ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                190,
+                714,
+                421,
+                736
+            ],
+            "content": "Z = f ( X , A ) = \\mathrm { s o f t m a x } \\Biggl ( \\hat { A } \\ \\mathrm { R e L U } \\Biggl ( \\hat { A } X W ^ { ( 0 ) } \\Biggr ) W ^ { ( 1 ) } \\Biggr ) \\ .",
+            "latex": "Z = f ( X , A ) = \\mathrm { s o f t m a x } \\Biggl ( \\hat { A } \\ \\mathrm { R e L U } \\Biggl ( \\hat { A } X W ^ { ( 0 ) } \\Biggr ) W ^ { ( 1 ) } \\Biggr ) \\ ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                187,
+                216,
+                424,
+                231
+            ],
+            "content": "g _ { \\theta ^ { \\prime } } \\star x \\approx \\theta _ { 0 } ^ { \\prime } x + \\theta _ { 1 } ^ { \\prime } \\left( L - I _ { N } \\right) x = \\theta _ { 0 } ^ { \\prime } x - \\theta _ { 1 } ^ { \\prime } D ^ { - \\frac { 1 } { 2 } } A D ^ { - \\frac { 1 } { 2 } } x \\, ,",
+            "latex": "g _ { \\theta ^ { \\prime } } \\star x \\approx \\theta _ { 0 } ^ { \\prime } x + \\theta _ { 1 } ^ { \\prime } \\left( L - I _ { N } \\right) x = \\theta _ { 0 } ^ { \\prime } x - \\theta _ { 1 } ^ { \\prime } D ^ { - \\frac { 1 } { 2 } } A D ^ { - \\frac { 1 } { 2 } } x \\, ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                259,
+                454,
+                352,
+                469
+            ],
+            "content": "Z = \\tilde { D } ^ { - \\frac { 1 } { 2 } } \\tilde { A } \\tilde { D } ^ { - \\frac { 1 } { 2 } } X \\Theta ,",
+            "latex": "Z = \\tilde { D } ^ { - \\frac { 1 } { 2 } } \\tilde { A } \\tilde { D } ^ { - \\frac { 1 } { 2 } } X \\Theta ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                249,
+                362,
+                361,
+                396
+            ],
+            "content": "{ \\mathcal { L } } = - \\sum _ { l \\in { \\mathcal { Y } } _ { L } } \\sum _ { f = 1 } ^ { F } Y _ { l f } \\ln Z _ { l f } \\ ,",
+            "latex": "{ \\mathcal { L } } = - \\sum _ { l \\in { \\mathcal { Y } } _ { L } } \\sum _ { f = 1 } ^ { F } Y _ { l f } \\ln Z _ { l f } \\ ,"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                273,
+                700,
+                337,
+                714
+            ],
+            "content": "\\tilde { A } = A + \\lambda I _ { N } \\, .",
+            "latex": "\\tilde { A } = A + \\lambda I _ { N } \\, ."
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                235,
+                386,
+                376,
+                425
+            ],
+            "content": "h _ { i } ^ { ( l + 1 ) } = \\sigma \\left( \\sum _ { j \\in \\mathcal { N } _ { i } } \\frac { 1 } { c _ { i j } } h _ { j } ^ { ( l ) } W ^ { ( l ) } \\right) ,",
+            "latex": "h _ { i } ^ { ( l + 1 ) } = \\sigma \\left( \\sum _ { j \\in \\mathcal { N } _ { i } } \\frac { 1 } { c _ { i j } } h _ { j } ^ { ( l ) } W ^ { ( l ) } \\right) ,"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                191,
+                601,
+                421,
+                622
+            ],
+            "content": "Z = \\operatorname { t a n h } \\Big ( \\hat { A } \\operatorname { t a n h } \\Big ( \\hat { A } \\operatorname { t a n h } \\Big ( \\hat { A } X W ^ { ( 0 ) } \\Big ) W ^ { ( 1 ) } \\Big ) W ^ { ( 2 ) } \\Big ) ~ ,",
+            "latex": "Z = \\operatorname { t a n h } \\Big ( \\hat { A } \\operatorname { t a n h } \\Big ( \\hat { A } \\operatorname { t a n h } \\Big ( \\hat { A } X W ^ { ( 0 ) } \\Big ) W ^ { ( 1 ) } \\Big ) W ^ { ( 2 ) } \\Big ) ~ ,"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                118,
+                237,
+                263,
+                280
+            ],
+            "content": "```latex\n\\begin{algorithmic}\n\\FOR {$v_i \\in \\mathcal{V}$}\n    \\STATE $h_i^{(t+1)} \\leftarrow \\text{hash}\\left(\\sum_{j \\in \\mathcal{N}_i} h_j^{(t)}\\right)$;\n    \\STATE $t \\leftarrow t + 1$;\n\\ENDFOR\n\\end{algorithmic}\n```",
+            "latex": "```latex\n\\begin{algorithmic}\n\\FOR {$v_i \\in \\mathcal{V}$}\n    \\STATE $h_i^{(t+1)} \\leftarrow \\text{hash}\\left(\\sum_{j \\in \\mathcal{N}_i} h_j^{(t)}\\right)$;\n    \\STATE $t \\leftarrow t + 1$;\n\\ENDFOR\n\\end{algorithmic}\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                213,
+                178,
+                397,
+                199
+            ],
+            "content": "```latex\nH^{(l+1)} = \\sigma\\left(\\tilde{D}^{-\\frac{1}{2}}\\tilde{A}\\tilde{D}^{-\\frac{1}{2}}H^{(l)}W^{(l)}\\right) + H^{(l)}.\n```",
+            "latex": "```latex\nH^{(l+1)} = \\sigma\\left(\\tilde{D}^{-\\frac{1}{2}}\\tilde{A}\\tilde{D}^{-\\frac{1}{2}}H^{(l)}W^{(l)}\\right) + H^{(l)}.\n```"
+        }
+    ]
+}

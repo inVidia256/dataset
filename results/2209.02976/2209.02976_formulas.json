@@ -1,0 +1,42 @@
+{
+    "total_count": 3,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                80,
+                214,
+                256,
+                230
+            ],
+            "content": "L _ { K D } = K L ( p _ { t } ^ { c l s } \\| p _ { s } ^ { c l s } ) + K L ( p _ { t } ^ { r e g } \\| p _ { s } ^ { r e g } ) ,",
+            "latex": "L _ { K D } = K L ( p _ { t } ^ { c l s } \\| p _ { s } ^ { c l s } ) + K L ( p _ { t } ^ { r e g } \\| p _ { s } ^ { r e g } ) ,"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                118,
+                299,
+                218,
+                313
+            ],
+            "content": "L _ { t o t a l } = L _ { d e t } + \\alpha L _ { K D } ,",
+            "latex": "L _ { t o t a l } = L _ { d e t } + \\alpha L _ { K D } ,"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                363,
+                669,
+                490,
+                683
+            ],
+            "content": "L _ { d e t } = L _ { c l s } + \\lambda L _ { r e g } + \\mu L _ { o b j } ,",
+            "latex": "L _ { d e t } = L _ { c l s } + \\lambda L _ { r e g } + \\mu L _ { o b j } ,"
+        }
+    ]
+}

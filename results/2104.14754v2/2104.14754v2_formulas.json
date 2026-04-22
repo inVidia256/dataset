@@ -1,0 +1,42 @@
+{
+    "total_count": 3,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                364,
+                573,
+                489,
+                600
+            ],
+            "content": "h _ { i + 1 } = \\left( \\gamma _ { i } \\otimes \\frac { h _ { i } - \\mu _ { i } } { \\sigma _ { i } } \\right) \\oplus \\beta _ { i }",
+            "latex": "h _ { i + 1 } = \\left( \\gamma _ { i } \\otimes \\frac { h _ { i } - \\mu _ { i } } { \\sigma _ { i } } \\right) \\oplus \\beta _ { i }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                366,
+                421,
+                487,
+                435
+            ],
+            "content": "{ \\ddot { \\mathbf { w } } } = \\mathbf { m } \\otimes { \\widetilde { \\mathbf { w } } } \\oplus ( 1 - \\mathbf { m } ) \\otimes \\mathbf { w }",
+            "latex": "{ \\ddot { \\mathbf { w } } } = \\mathbf { m } \\otimes { \\widetilde { \\mathbf { w } } } \\oplus ( 1 - \\mathbf { m } ) \\otimes \\mathbf { w }"
+        },
+        {
+            "page": 10,
+            "type": "formula",
+            "bbox": [
+                92,
+                538,
+                242,
+                553
+            ],
+            "content": "```latex\n\\tilde{\\mathbf{w}}_{i}^{+} = \\mathbf{m}_{i} \\otimes \\widetilde{\\mathbf{w}}_{i}^{+} \\oplus (1 - \\mathbf{m}_{i}) \\otimes \\mathbf{w}_{i}^{+}\n```",
+            "latex": "```latex\n\\tilde{\\mathbf{w}}_{i}^{+} = \\mathbf{m}_{i} \\otimes \\widetilde{\\mathbf{w}}_{i}^{+} \\oplus (1 - \\mathbf{m}_{i}) \\otimes \\mathbf{w}_{i}^{+}\n```"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                126,
+                660,
+                485,
+                723
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Dataset statistics, as reported in Yang et al. (2016).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Type</td>\n    <td>Nodes</td>\n    <td>Edges</td>\n    <td>Classes</td>\n    <td>Features</td>\n    <td>Label rate</td>\n  </tr>\n  <tr>\n    <td>Cite seer</td>\n    <td>Citation network</td>\n    <td>3，327</td>\n    <td>4，732</td>\n    <td>6</td>\n    <td>3，703</td>\n    <td>0.036</td>\n  </tr>\n  <tr>\n    <td>Cora</td>\n    <td>Citation network</td>\n    <td>2，708</td>\n    <td>5，429</td>\n    <td>7</td>\n    <td>1，433</td>\n    <td>0.052</td>\n  </tr>\n  <tr>\n    <td>Pubmed</td>\n    <td>Citation network</td>\n    <td>19，717</td>\n    <td>44，338</td>\n    <td>3</td>\n    <td>500</td>\n    <td>0.003</td>\n  </tr>\n  <tr>\n    <td>NELL</td>\n    <td>Knowledge graph</td>\n    <td>65，755</td>\n    <td>266，144</td>\n    <td>210</td>\n    <td>5，414</td>\n    <td>0.001</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                151,
+                199,
+                460,
+                310
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Summary of results in terms of classification accuracy (in percent).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Cite seer</td>\n    <td>Cora</td>\n    <td>Pubmed</td>\n    <td>NELL</td>\n  </tr>\n  <tr>\n    <td>Mani Reg[3]</td>\n    <td>60.1</td>\n    <td>59.5</td>\n    <td>70.7</td>\n    <td>21.8</td>\n  </tr>\n  <tr>\n    <td>Semi Emb[28]</td>\n    <td>59.6</td>\n    <td>59.0</td>\n    <td>71.1</td>\n    <td>26.7</td>\n  </tr>\n  <tr>\n    <td>LP[32]</td>\n    <td>45.3</td>\n    <td>68.0</td>\n    <td>63.0</td>\n    <td>26.5</td>\n  </tr>\n  <tr>\n    <td>Deep Walk[22]</td>\n    <td>43.2</td>\n    <td>67.2</td>\n    <td>65.3</td>\n    <td>58.1</td>\n  </tr>\n  <tr>\n    <td>ICA[18]</td>\n    <td>69.1</td>\n    <td>75.1</td>\n    <td>73.9</td>\n    <td>23.1</td>\n  </tr>\n  <tr>\n    <td>Planet oid*[29]</td>\n    <td>64.7(26s)</td>\n    <td>75.7(13s)</td>\n    <td>77.2(25s)</td>\n    <td>61.9(185s)</td>\n  </tr>\n  <tr>\n    <td>GCN(this paper)</td>\n    <td>70.3(7s)</td>\n    <td>81.5(4s)</td>\n    <td>79.0(38s)</td>\n    <td>66.0(48s)</td>\n  </tr>\n  <tr>\n    <td>GCN(rand.splits)</td>\n    <td>67.9±0.5</td>\n    <td>80.1±0.5</td>\n    <td>78.9±0.7</td>\n    <td>58.4±1.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                108,
+                588,
+                502,
+                703
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Comparison of propagation models.\" Table 3: Comparison of propagation models.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Description</td>\n    <td>Propagation model</td>\n    <td>Cite seer</td>\n    <td>Cora</td>\n    <td>Pubmed</td>\n  </tr>\n  <tr>\n    <td>Chebyshev filter(Eq.5)K=3K=2</td>\n    <td>TK(0X0</td>\n    <td>69.8</td>\n    <td>79.5</td>\n    <td>74.4</td>\n  </tr>\n  <tr>\n    <td>1st-order model(Eq.6)</td>\n    <td>X0+DADX0</td>\n    <td>68.3</td>\n    <td>80.0</td>\n    <td>77.5</td>\n  </tr>\n  <tr>\n    <td>Single parameter(Eq.7)</td>\n    <td>(IN + DADX0</td>\n    <td>69.3</td>\n    <td>79.2</td>\n    <td>77.4</td>\n  </tr>\n  <tr>\n    <td>Renormalization trick(Eq.8)</td>\n    <td>DADXD</td>\n    <td>70.3</td>\n    <td>81.5</td>\n    <td>79.0</td>\n  </tr>\n  <tr>\n    <td>1st-order term only</td>\n    <td>DADX0</td>\n    <td>68.7</td>\n    <td>80.5</td>\n    <td>77.8</td>\n  </tr>\n  <tr>\n    <td>Multi-layer perceptron</td>\n    <td>X0</td>\n    <td>46.5</td>\n    <td>55.1</td>\n    <td>71.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        }
+    ]
+}

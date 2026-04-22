@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                307,
+                222,
+                546,
+                302
+            ],
+            "caption": "Figure 1. Training error (left) and test error (right) on CIFAR-10 with 20-layer and 56-layer “plain” networks. The deeper network has higher training error, and thus test error. Similar phenomena on ImageNet is presented in Fig. 4.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                96,
+                78,
+                233,
+                154
+            ],
+            "caption": "Figure 2. Residual learning: a building block.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                86,
+                251,
+                512,
+                389
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1. Architectures for ImageNet. Building blocks are shown in brackets (see also Fig. 5), with the numbers of blocks stacked. Downsampling is performed by conv3_1, conv4_1, and conv5_1 with a stride of 2.\" The text in the image reads:\n\n\"Table 1. Architectures for ImageNet. Building blocks are shown in brackets (see also Fig. 5), with the numbers of blocks stacked. Downsampling is performed by conv3_1, conv4_1, and conv5_1 with a stride of 2.\" The text content from the image is as follows:\n\n\"Table 1. Architectures for ImageNet. Building blocks are shown in brackets (see also Fig. 5), with the numbers of blocks stacked. Downsampling is performed by conv3_1, conv4_1, and conv5_1 with a stride of 2.\" Figure 4. Training on ImageNet. Thin curves denote training error, and bold curves denote validation error of the center crops. Left: plain networks of 18 and 34 layers. Right: ResNets of 18 and 34 layers. In this plot, the residual networks have no extra parameter compared to their plain counterparts.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                332,
+                69,
+                536,
+                143
+            ],
+            "caption": "Figure 5. A deeper residual function F for ImageNet. Left: a building block (on 56×56 feature maps) as in Fig. 3 for ResNet-34. Right: a “bottleneck” building block for ResNet-50/101/152.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                97,
+                70,
+                496,
+                171
+            ],
+            "caption": "Figure 6. Training on CIFAR-10. Dashed lines denote training error, and bold lines denote testing error. Left: plain networks. The error of plain-110 is higher than 60% and not displayed. Middle: ResNets. Right: ResNets with 110 and 1202 layers.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                60,
+                210,
+                275,
+                326
+            ],
+            "caption": "Figure 7. Standard deviations (std) of layer responses on CIFAR-10. The responses are the outputs of each 3×3 layer, after BN and before nonlinearity. Top: the layers are shown in their original order. Bottom: the responses are ranked in descending order.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        }
+    ]
+}

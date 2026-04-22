@@ -1,0 +1,198 @@
+{
+    "total_count": 12,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                324,
+                70,
+                528,
+                155
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Category</td>\n    <td>SENN A</td>\n    <td>DBpedia</td>\n  </tr>\n  <tr>\n    <td>Location</td>\n    <td>36，697</td>\n    <td>709，772</td>\n  </tr>\n  <tr>\n    <td>Miscellaneous</td>\n    <td>4，722</td>\n    <td>328，575</td>\n  </tr>\n  <tr>\n    <td>Organization</td>\n    <td>6，440</td>\n    <td>231，868</td>\n  </tr>\n  <tr>\n    <td>Person</td>\n    <td>123，283</td>\n    <td>1，074，363</td>\n  </tr>\n  <tr>\n    <td>Total</td>\n    <td>171，142</td>\n    <td>2，344，578</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                317,
+                203,
+                535,
+                266
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: Number of entries for each category in the SENNA lexicon and our DBpedia lexicon.\" The text content from the image is:\n\n\"Table 2: Dataset sizes in number of tokens (entities)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Train</td>\n    <td>Dev</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>CoNLL-2003</td>\n    <td>204，567(23，499)</td>\n    <td>51，578(5，942)</td>\n    <td>46，666(5，648)</td>\n  </tr>\n  <tr>\n    <td>OntoNotes 5.0/CoNLL-2012</td>\n    <td>1，088，503(81，828)</td>\n    <td>147，724(11，066)</td>\n    <td>152，728(11，257)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                99,
+                69,
+                511,
+                133
+            ],
+            "caption": "Figure 4: Example of how lexicon features are applied. The B, I, E, markings indicate that the token matches the Begin, Inside, and End token of an entry in the lexicon. S indicates that the token matches a single-token entry. Figure 4: Example of how lexicon features are applied. The B, I, E, markings indicate that the token matches the Begin, Inside, and End token of an entry in the lexicon. S indicates that the token matches a single-token entry. Figure 4: Example of how lexicon features are applied. The B, I, E, markings indicate that the token matches the Begin, Inside, and End token of an entry in the lexicon. S indicates that the token matches a single-token entry.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Text</td>\n    <td>Hayao</td>\n    <td>Tada</td>\n    <td></td>\n    <td>commander</td>\n    <td>of</td>\n    <td>the</td>\n    <td>Japanese</td>\n    <td>North</td>\n    <td>China</td>\n    <td>Area</td>\n    <td>Army</td>\n  </tr>\n  <tr>\n    <td>LOC</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>B</td>\n    <td>I</td>\n    <td>-</td>\n    <td>S</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>MISC</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>S</td>\n    <td>B</td>\n    <td>B</td>\n    <td>I</td>\n    <td>S</td>\n    <td>S</td>\n    <td>S</td>\n    <td>S</td>\n  </tr>\n  <tr>\n    <td>ORG</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>B</td>\n    <td>I</td>\n    <td>B</td>\n    <td>I</td>\n    <td>I</td>\n    <td>E</td>\n  </tr>\n  <tr>\n    <td>PERS</td>\n    <td>B</td>\n    <td>E</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>S</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                145,
+                70,
+                465,
+                194
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Hyper-parameter</td>\n    <td>CoNLL-2003(Round 2)</td>\n    <td>Onto Notes 5.0(Round 1)</td>\n  </tr>\n  <tr>\n    <td>Final</td>\n    <td>Range</td>\n    <td>Final</td>\n    <td>Range</td>\n  </tr>\n  <tr>\n    <td>Convolution width</td>\n    <td>3</td>\n    <td>[3，7]</td>\n    <td>3</td>\n    <td>[3，9]</td>\n  </tr>\n  <tr>\n    <td>CNN output size</td>\n    <td>53</td>\n    <td>[15，84]</td>\n    <td>20</td>\n    <td>[15，100]</td>\n  </tr>\n  <tr>\n    <td>LSTM state size</td>\n    <td>275</td>\n    <td>[100，500]</td>\n    <td>200</td>\n    <td>[100，400]'</td>\n  </tr>\n  <tr>\n    <td>LSTM layers</td>\n    <td>1</td>\n    <td>[1，4]</td>\n    <td>2</td>\n    <td>[2，4]</td>\n  </tr>\n  <tr>\n    <td>Learning rate</td>\n    <td>0.0105</td>\n    <td>[10-3，10-1.8]</td>\n    <td>0.008</td>\n    <td>[10-3.5，10-1.5]</td>\n  </tr>\n  <tr>\n    <td>Epochs11</td>\n    <td>80</td>\n    <td>-</td>\n    <td>18</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Dropout12</td>\n    <td>0.68</td>\n    <td>[0.25，0.75]</td>\n    <td>0.63</td>\n    <td>[0，1]</td>\n  </tr>\n  <tr>\n    <td>Mini-batch size</td>\n    <td>9</td>\n    <td></td>\n    <td>9</td>\n    <td>[5，14]</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                91,
+                236,
+                278,
+                275
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Hyper-parameter search space and final values used for all experiments\" The text content from the image is:\n\n\"Table 3: Hyper-parameter search space and final values used for all experiments\" The text content from the image is as follows:\n\n\"Table 4: Development set F1 score performance of the best hyper-parameter settings in each optimization round.\" The text content from the image is:\n\n\"Table 4: Development set F1 score performance of the best hyper-parameter settings in each optimization round.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Round</td>\n    <td>CoNLL-2003</td>\n    <td>OntoNotes 5.0</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>93.82(±0.15)</td>\n    <td>84.57(±0.27)</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>94.03(±0.23)</td>\n    <td>84.47(±0.29)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page005.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                87,
+                70,
+                524,
+                278
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>CoNLL-2003</td>\n    <td>Onto Notes 5.0</td>\n  </tr>\n  <tr>\n    <td>FF NN+emb+caps+lex</td>\n    <td>89.54</td>\n    <td>89.80</td>\n    <td>89.67(±0.24)</td>\n    <td>74.28</td>\n    <td>73.61</td>\n    <td>73.94(±0.43)</td>\n  </tr>\n  <tr>\n    <td>BLSTM</td>\n    <td>80.14</td>\n    <td>72.81</td>\n    <td>76.29(±0.29)</td>\n    <td>79.68</td>\n    <td>75.97</td>\n    <td>77.77(±0.37)</td>\n  </tr>\n  <tr>\n    <td>BLSTM-CNN</td>\n    <td>83.48</td>\n    <td>83.28</td>\n    <td>83.38(±0.20)</td>\n    <td>82.58</td>\n    <td>82.49</td>\n    <td>82.53(±0.40)</td>\n  </tr>\n  <tr>\n    <td>BLSTM-CNN+emb</td>\n    <td>90.75</td>\n    <td>91.08</td>\n    <td>90.91(±0.20)</td>\n    <td>85.99</td>\n    <td>86.36</td>\n    <td>86.17(±0.22)</td>\n  </tr>\n  <tr>\n    <td>BLSTM-CNN+emb+lex</td>\n    <td>91.39</td>\n    <td>91.85</td>\n    <td>91.62(±0.33)</td>\n    <td>86.04</td>\n    <td>86.53</td>\n    <td>86.28(±0.26)</td>\n  </tr>\n  <tr>\n    <td>Collobert etal.(2011b)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>88.67</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Collobert etal.(2011b)+lexicon</td>\n    <td>-</td>\n    <td>-</td>\n    <td>89.59</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Huang etal.(2015)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>90.10</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Ratinov and Roth(2009)18</td>\n    <td>91.20</td>\n    <td>90.50</td>\n    <td>90.80</td>\n    <td>82.00</td>\n    <td>84.95</td>\n    <td>83.45</td>\n  </tr>\n  <tr>\n    <td>Lin and Wu(2009)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>90.90</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Finkel and Manning(2009)19</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>84.04</td>\n    <td>80.86</td>\n    <td>82.42</td>\n  </tr>\n  <tr>\n    <td>Suzuki etal.(2011)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>91.02</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Passos etal.(2014)20</td>\n    <td>-</td>\n    <td>-</td>\n    <td>90.90</td>\n    <td>-</td>\n    <td>-</td>\n    <td>82.24</td>\n  </tr>\n  <tr>\n    <td>Durrett and Klein(2014)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>85.22</td>\n    <td>82.89</td>\n    <td>84.04</td>\n  </tr>\n  <tr>\n    <td>Luo etal.(2015)21</td>\n    <td>91.50</td>\n    <td>91.40</td>\n    <td>91.20</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                70,
+                71,
+                561,
+                163
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Features</td>\n    <td>BLSTM</td>\n    <td>BLSTM-CNN</td>\n    <td>BLSTM-CNN+lex</td>\n  </tr>\n  <tr>\n    <td>CoNLL</td>\n    <td>Onto Notes</td>\n    <td>CoNLL</td>\n    <td>Onto Notes</td>\n    <td>CoNLL</td>\n    <td>Onto Notes</td>\n  </tr>\n  <tr>\n    <td>none</td>\n    <td>76.29(±0.29)</td>\n    <td>77.77(±0.37)</td>\n    <td>83.38(±0.20)</td>\n    <td>82.53(±0.40)</td>\n    <td>87.77(±0.29)</td>\n    <td>83.82(±0.19)</td>\n  </tr>\n  <tr>\n    <td>emb</td>\n    <td>88.23(±0.23)</td>\n    <td>82.72(±0.23)</td>\n    <td>90.91(±0.20)</td>\n    <td>86.17(±0.22)</td>\n    <td>91.62(±0.33)</td>\n    <td>86.28(±0.26)</td>\n  </tr>\n  <tr>\n    <td>emb+caps</td>\n    <td>90.67(±0.16)</td>\n    <td>86.19(±0.25)</td>\n    <td>90.98(±0.18)</td>\n    <td>86.35(±0.28)</td>\n    <td>91.55(±0.19)*</td>\n    <td>86.28(±0.32)*</td>\n  </tr>\n  <tr>\n    <td>emb+caps+lex</td>\n    <td>91.43(±0.17)</td>\n    <td>86.21(±0.16)</td>\n    <td>91.55(±0.19)*</td>\n    <td>86.28(±0.32)*</td>\n    <td>91.55(±0.19)*</td>\n    <td>86.28(±0.32)*</td>\n  </tr>\n  <tr>\n    <td>emb+char</td>\n    <td>-</td>\n    <td>-</td>\n    <td>90.88(±0.48)</td>\n    <td>86.08(±0.40)</td>\n    <td>91.44(±0.23)</td>\n    <td>86.34(±0.18)</td>\n  </tr>\n  <tr>\n    <td>emb+char+caps</td>\n    <td>-</td>\n    <td>-</td>\n    <td>90.88(±0.31)</td>\n    <td>86.41(±0.22)</td>\n    <td>91.48(±0.23)</td>\n    <td>86.33(±0.26)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                70,
+                71,
+                306,
+                182
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Word Embeddings</td>\n    <td>CoNLL-2003</td>\n    <td>OntoNotes</td>\n  </tr>\n  <tr>\n    <td>Random 50d</td>\n    <td>87.77(±0.29)</td>\n    <td>83.82(±0.19)</td>\n  </tr>\n  <tr>\n    <td>Random 300d</td>\n    <td>87.84(±0.23)</td>\n    <td>83.76(±0.37)</td>\n  </tr>\n  <tr>\n    <td>GloVe 6B 50d</td>\n    <td>91.09(±0.15)</td>\n    <td>86.25(±0.24)</td>\n  </tr>\n  <tr>\n    <td>GloVe 6B 300d</td>\n    <td>90.71(±0.21)</td>\n    <td>86.26(±0.30)</td>\n  </tr>\n  <tr>\n    <td>Google 100B 300d</td>\n    <td>90.60(±0.23)</td>\n    <td>85.34(±0.25)</td>\n  </tr>\n  <tr>\n    <td>Collobert 50d</td>\n    <td>91.62(±0.33)</td>\n    <td>86.28(±0.26)</td>\n  </tr>\n  <tr>\n    <td>Our GloVe 50d</td>\n    <td>91.41(±0.21)</td>\n    <td>86.24(±0.35)</td>\n  </tr>\n  <tr>\n    <td>Our Skip-gram 50d</td>\n    <td>90.76(±0.23)</td>\n    <td>85.70(±0.29)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                138,
+                70,
+                472,
+                194
+            ],
+            "caption": "",
+            "footnote": "Table 8: F1 score results with various dropout values. Models were trained using only the training set for each dataset. All other experiments use dropout = 0.68 for CoNLL-2003 and dropout = 0.63 for OntoNotes 5.0. Table 8: F1 score results with various dropout values. Models were trained using only the training set for each dataset. All other experiments use dropout = 0.68 for CoNLL-2003 and dropout = 0.63 for OntoNotes 5.0. Table 8: F1 score results with various dropout values. Models were trained using only the training set for each dataset. All other experiments use dropout = 0.68 for CoNLL-2003 and dropout = 0.63 for OntoNotes 5.0.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dropout</td>\n    <td>CoNLL-2003</td>\n    <td></td>\n    <td>Onto Notes 5.0</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Dev</td>\n    <td>Test</td>\n    <td>Dev</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>-</td>\n    <td>93.72(±0.10)</td>\n    <td>90.76(±0.22)</td>\n    <td>82.02(±0.49)</td>\n    <td>84.06(±0.50)</td>\n  </tr>\n  <tr>\n    <td>0.10</td>\n    <td>93.85(±0.18)</td>\n    <td>90.87(±0.31)</td>\n    <td>83.01(±0.39)</td>\n    <td>84.94(±0.25)</td>\n  </tr>\n  <tr>\n    <td>0.30</td>\n    <td>94.08(±0.17)</td>\n    <td>91.09(±0.18)</td>\n    <td>83.61(±0.32)</td>\n    <td>85.44(±0.33)</td>\n  </tr>\n  <tr>\n    <td>0.50</td>\n    <td>94.19(±0.18)</td>\n    <td>91.14(±0.35)</td>\n    <td>84.35(±0.23)</td>\n    <td>86.36(±0.28)</td>\n  </tr>\n  <tr>\n    <td>0.63</td>\n    <td>-</td>\n    <td>-</td>\n    <td>84.47(±0.23)</td>\n    <td>86.29(±0.25)</td>\n  </tr>\n  <tr>\n    <td>0.68</td>\n    <td>94.31(±0.15)</td>\n    <td>91.23(±0.16)</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>0.70</td>\n    <td>94.31(±0.24)</td>\n    <td>91.17(±0.37)</td>\n    <td>84.56(±0.40)</td>\n    <td>86.17(±0.25)</td>\n  </tr>\n  <tr>\n    <td>0.90</td>\n    <td>94.17(±0.17)</td>\n    <td>90.67(±0.17)</td>\n    <td>81.38(±0.19)</td>\n    <td>82.16(±0.18)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page009.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                126,
+                70,
+                486,
+                197
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html>\n<table>\n  <tr>\n    <td></td>\n    <td>CoNLL</td>\n    <td></td>\n    <td>OntoNotes</td>\n  </tr>\n  <tr>\n    <td>Entity Tag</td>\n    <td>LOC</td>\n    <td>MISC</td>\n    <td>ORG</td>\n    <td>PER</td>\n    <td>Not NE</td>\n    <td>CARDINAL</td>\n    <td>DATE</td>\n    <td>MONEY</td>\n    <td>ORDINAL</td>\n    <td>PERCENT</td>\n    <td>QUALITY</td>\n    <td>TIME</td>\n    <td>LOC</td>\n    <td>FAC</td>\n    <td>GPE</td>\n    <td>NORP</td>\n    <td>ORG</td>\n    <td>PERSON</td>\n    <td>EVENT</td>\n    <td>LANG</td>\n    <td>LAW</td>\n    <td>PRODUCT</td>\n    <td>WORK</td>\n    <td>Non-NE</td>\n  </tr>\n  <tr>\n    <td>LexiconMatch</td>\n    <td>LOC</td>\n    <td>MISC</td>\n    <td>ORG</td>\n    <td>PER</td>\n    <td>Not NE</td>\n    <td>CARDINAL</td>\n    <td>DATE</td>\n    <td>MONEY</td>\n    <td>ORDINAL</td>\n    <td>PERCENT</td>\n    <td>QUALITY</td>\n    <td>TIME</td>\n    <td>LOC</td>\n    <td>FAC</td>\n    <td>GPE</td>\n    <td>NORP</td>\n    <td>ORG</td>\n    <td>PERSON</td>\n    <td>EVENT</td>\n    <td>LANG</td>\n    <td>LAW</td>\n    <td>PRODUCT</td>\n    <td>WORK</td>\n    <td>Non-NE</td>\n  </tr>\n  <tr>\n    <td>LOC</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></\n</html>",
+            "cropped_image": "tables/table_010_page010.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                153,
+                70,
+                457,
+                194
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Lexicon</td>\n    <td>Matching</td>\n    <td>Encoding</td>\n    <td>CoNLL-2003</td>\n    <td>OntoNotes</td>\n  </tr>\n  <tr>\n    <td>No lexicon</td>\n    <td>-</td>\n    <td>-</td>\n    <td>83.38(±0.20)</td>\n    <td>82.53(±0.40)</td>\n  </tr>\n  <tr>\n    <td>S ENNA</td>\n    <td>Exact</td>\n    <td>YN</td>\n    <td>86.21(±0.39)</td>\n    <td>83.24(±0.33)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Exact</td>\n    <td>BIOES</td>\n    <td>86.14(±0.48)</td>\n    <td>83.01(±0.52)</td>\n  </tr>\n  <tr>\n    <td>DBpedia</td>\n    <td>Exact</td>\n    <td>YN</td>\n    <td>84.93(±0.30)</td>\n    <td>83.15(±0.26)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Exact</td>\n    <td>BIOES</td>\n    <td>85.02(±0.23)</td>\n    <td>83.39(±0.39)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Partial</td>\n    <td>YN</td>\n    <td>85.72(±0.45)</td>\n    <td>83.25(±0.33)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Partial</td>\n    <td>BIOES</td>\n    <td>86.18(±0.56)</td>\n    <td>83.97(±0.38)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Collobert's method</td>\n    <td>85.01(±0.31)</td>\n    <td>83.24(±0.26)</td>\n  </tr>\n  <tr>\n    <td>Both</td>\n    <td>Best combination</td>\n    <td>87.77(±0.29)</td>\n    <td>83.82(±0.19)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page011.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                125,
+                70,
+                486,
+                170
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 10: Per genre F1 scores on OntoNotes. BC = broadcast conversation, BN = broadcast news, MZ = magazine, NW = newswire, TC = telephone conversation, WB = blogs and newsgroups\" The text content from the image is as follows:\n\n\"Table 10: Per genre F1 scores on OntoNotes. BC = broadcast conversation, BN = broadcast news, MZ = magazine, NW = newswire, TC = telephone conversation, WB = blogs and newsgroups\" The text content from the image is as follows:\n\n\"Table 10: Per genre F1 scores on OntoNotes. BC = broadcast conversation, BN = broadcast news, MZ = magazine, NW = newswire, TC = telephone conversation, WB = blogs and newsgroups\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>BC</td>\n    <td>BN</td>\n    <td>MZ</td>\n    <td>NW</td>\n    <td>TC</td>\n    <td>WB</td>\n  </tr>\n  <tr>\n    <td>Test set size(# tokens)</td>\n    <td>32，576</td>\n    <td>23，557</td>\n    <td>18，260</td>\n    <td>51，667</td>\n    <td>11，015</td>\n    <td>19，348</td>\n  </tr>\n  <tr>\n    <td>Test set size(# entities)</td>\n    <td>1，697</td>\n    <td>2，184</td>\n    <td>1，163</td>\n    <td>4，696</td>\n    <td>380</td>\n    <td>1，137</td>\n  </tr>\n  <tr>\n    <td>Finkel and Manning(2009)</td>\n    <td>78.66</td>\n    <td>87.29</td>\n    <td>82.45</td>\n    <td>85.50</td>\n    <td>67.27</td>\n    <td>72.56</td>\n  </tr>\n  <tr>\n    <td>Durrett and Klein(2014)38</td>\n    <td>78.88</td>\n    <td>87.39</td>\n    <td>82.46</td>\n    <td>87.60</td>\n    <td>72.68</td>\n    <td>76.17</td>\n  </tr>\n  <tr>\n    <td>BLSTM-CNN</td>\n    <td>81.26</td>\n    <td>86.87</td>\n    <td>79.94</td>\n    <td>85.27</td>\n    <td>67.82</td>\n    <td>72.11</td>\n  </tr>\n  <tr>\n    <td>BLSTM-CNN+emb</td>\n    <td>85.05</td>\n    <td>89.93</td>\n    <td>84.31</td>\n    <td>88.35</td>\n    <td>72.44</td>\n    <td>77.90</td>\n  </tr>\n  <tr>\n    <td>BLSTM-CNN+emb+lex</td>\n    <td>85.23</td>\n    <td>89.93</td>\n    <td>84.45</td>\n    <td>88.39</td>\n    <td>72.39</td>\n    <td>78.38</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page012.png"
+        }
+    ]
+}

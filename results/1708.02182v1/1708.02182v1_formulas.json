@@ -1,0 +1,78 @@
+{
+    "total_count": 6,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                114,
+                474,
+                230,
+                566
+            ],
+            "content": "```latex\n\\begin{align*}\ni_t &= \\sigma(W^ix_t + U^ih_{t-1}) \\\\\nf_t &= \\sigma(W^fx_t + U^fh_{t-1}) \\\\\no_t &= \\sigma(W^ox_t + U^oh_{t-1}) \\\\\n\\tilde{c}_t &= \\tanh(W^cx_t + U^ch_{t-1}) \\\\\nc_t &= i_t \\odot \\tilde{c}_t + f_t \\odot + \\tilde{c}_{t-1} \\\\\nh_t &= o_t \\odot \\tanh(c_t)\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\ni_t &= \\sigma(W^ix_t + U^ih_{t-1}) \\\\\nf_t &= \\sigma(W^fx_t + U^fh_{t-1}) \\\\\no_t &= \\sigma(W^ox_t + U^oh_{t-1}) \\\\\n\\tilde{c}_t &= \\tanh(W^cx_t + U^ch_{t-1}) \\\\\nc_t &= i_t \\odot \\tilde{c}_t + f_t \\odot + \\tilde{c}_{t-1} \\\\\nh_t &= o_t \\odot \\tanh(c_t)\n\\end{align*}\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                381,
+                525,
+                467,
+                557
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_w \\quad \\frac{1}{N} \\sum_{i=1}^{N} f_i(w),\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_w \\quad \\frac{1}{N} \\sum_{i=1}^{N} f_i(w),\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                369,
+                622,
+                479,
+                637
+            ],
+            "content": "w _ { k + 1 } = w _ { k } - \\gamma _ { k } \\hat { \\nabla } f ( w _ { k } ) ,",
+            "latex": "w _ { k + 1 } = w _ { k } - \\gamma _ { k } \\hat { \\nabla } f ( w _ { k } ) ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                369,
+                622,
+                479,
+                638
+            ],
+            "content": "w _ { k + 1 } = w _ { k } - \\gamma _ { k } \\hat { \\nabla } f ( w _ { k } ) ,",
+            "latex": "w _ { k + 1 } = w _ { k } - \\gamma _ { k } \\hat { \\nabla } f ( w _ { k } ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                394,
+                616,
+                453,
+                629
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n```latex\n\\alpha L_2(m \\odot h_t)\n```",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n```latex\n\\alpha L_2(m \\odot h_t)\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                137,
+                89,
+                207,
+                103
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\beta \\ L_2(h_t - h_{t+1})\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\beta \\ L_2(h_t - h_{t+1})\n```"
+        }
+    ]
+}

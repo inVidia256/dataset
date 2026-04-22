@@ -1,0 +1,42 @@
+{
+    "total_count": 3,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                190,
+                611,
+                422,
+                632
+            ],
+            "content": "```latex\n\\text{Quantize}(E(\\mathbf{x})) = \\mathbf{e}_k \\quad \\text{where} \\quad k = \\arg\\min_{j} ||E(\\mathbf{x}) - \\mathbf{e}_j||\n```",
+            "latex": "```latex\n\\text{Quantize}(E(\\mathbf{x})) = \\mathbf{e}_k \\quad \\text{where} \\quad k = \\arg\\min_{j} ||E(\\mathbf{x}) - \\mathbf{e}_j||\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                113,
+                198,
+                499,
+                235
+            ],
+            "content": "```latex\nN_i^{(t)} := N_i^{(t-1)} * \\gamma + n_i^{(t)} (1 - \\gamma), \\quad m_i^{(t)} := m_i^{(t-1)} * \\gamma + \\sum_{j}^{n_i^{(t)}} E(x)_{i,j}^{(t)} (1 - \\gamma), \\quad e_i^{(t)} := \\frac{m_i^{(t)}}{N_i^{(t)}}\n```",
+            "latex": "```latex\nN_i^{(t)} := N_i^{(t-1)} * \\gamma + n_i^{(t)} (1 - \\gamma), \\quad m_i^{(t)} := m_i^{(t-1)} * \\gamma + \\sum_{j}^{n_i^{(t)}} E(x)_{i,j}^{(t)} (1 - \\gamma), \\quad e_i^{(t)} := \\frac{m_i^{(t)}}{N_i^{(t)}}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                161,
+                148,
+                449,
+                162
+            ],
+            "content": "{ \\mathcal { L } } ( \\mathbf { x } , D ( \\mathbf { e } ) ) = \\| \\mathbf { x } - D ( \\mathbf { e } ) \\| _ { 2 } ^ { 2 } + \\| s g [ E ( \\mathbf { x } ) ] - \\mathbf { e } \\| _ { 2 } ^ { 2 } + \\beta \\| s g [ \\mathbf { e } ] - E ( \\mathbf { x } ) \\| _ { 2 } ^ { 2 }",
+            "latex": "{ \\mathcal { L } } ( \\mathbf { x } , D ( \\mathbf { e } ) ) = \\| \\mathbf { x } - D ( \\mathbf { e } ) \\| _ { 2 } ^ { 2 } + \\| s g [ E ( \\mathbf { x } ) ] - \\mathbf { e } \\| _ { 2 } ^ { 2 } + \\beta \\| s g [ \\mathbf { e } ] - E ( \\mathbf { x } ) \\| _ { 2 } ^ { 2 }"
+        }
+    ]
+}

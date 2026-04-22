@@ -1,0 +1,22 @@
+{
+    "total_count": 1,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                110,
+                101,
+                485,
+                443
+            ],
+            "caption": "Table 1. Performance on the Kodak dataset measured as area under the curve (AUC) for the specified metric, up to 2 bits per pixel. All models are trained up for approximately 1,000,000 training steps. No entropy coding was used. After entropy coding, the AUC will be higher for the network-based approaches.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Trained on the 32×32 dataset.</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>Rank</td>\n    <td>MS-SSIM AUC</td>\n    <td>Rank</td>\n    <td>PSNR-HVS AUC</td>\n  </tr>\n  <tr>\n    <td>GRU(One Shot)</td>\n    <td>1</td>\n    <td>1.8098</td>\n    <td>1</td>\n    <td>53.15</td>\n  </tr>\n  <tr>\n    <td>LSTM(Residual Scaling)</td>\n    <td>2</td>\n    <td>1.8091</td>\n    <td>4</td>\n    <td>52.36</td>\n  </tr>\n  <tr>\n    <td>LSTM(One Shot)</td>\n    <td>3</td>\n    <td>1.8062</td>\n    <td>3</td>\n    <td>52.57</td>\n  </tr>\n  <tr>\n    <td>LSTM(Additive Reconstruction)</td>\n    <td>4</td>\n    <td>1.8041</td>\n    <td>6</td>\n    <td>52.22</td>\n  </tr>\n  <tr>\n    <td>Residual GRU(One Shot)</td>\n    <td>5</td>\n    <td>1.8030</td>\n    <td>2</td>\n    <td>52.73</td>\n  </tr>\n  <tr>\n    <td>Residual GRU(Residual Scaling)</td>\n    <td>6</td>\n    <td>1.7983</td>\n    <td>8</td>\n    <td>51.25</td>\n  </tr>\n  <tr>\n    <td>Associative LSTM(One Shot)</td>\n    <td>7</td>\n    <td>1.7980</td>\n    <td>5</td>\n    <td>52.33</td>\n  </tr>\n  <tr>\n    <td>GRU(Residual Scaling)</td>\n    <td>8</td>\n    <td>1.7948</td>\n    <td>7</td>\n    <td>51.37</td>\n  </tr>\n  <tr>\n    <td>Baseline[17]</td>\n    <td>1.7225</td>\n    <td>48.36</td>\n  </tr>\n  <tr>\n    <td>Trained on the High Entropy dataset.</td>\n  </tr>\n  <tr>\n    <td>LSTM(One Shot)</td>\n    <td>1</td>\n    <td>1.8166</td>\n    <td>8</td>\n    <td>48.86</td>\n  </tr>\n  <tr>\n    <td>GRU(One Shot)</td>\n    <td>2</td>\n    <td>1.8139</td>\n    <td>2</td>\n    <td>53.07</td>\n  </tr>\n  <tr>\n    <td>Residual GRU(One Shot)</td>\n    <td>3</td>\n    <td>1.8119</td>\n    <td>1</td>\n    <td>53.19</td>\n  </tr>\n  <tr>\n    <td>Residual GRU(Residual Scaling)</td>\n    <td>4</td>\n    <td>1.8076</td>\n    <td>7</td>\n    <td>49.61</td>\n  </tr>\n  <tr>\n    <td>LSTM(Residual Scaling)</td>\n    <td>5</td>\n    <td>1.8000</td>\n    <td>4</td>\n    <td>51.25</td>\n  </tr>\n  <tr>\n    <td>LSTM(Additive)</td>\n    <td>6</td>\n    <td>1.7953</td>\n    <td>5</td>\n    <td>50.67</td>\n  </tr>\n  <tr>\n    <td>Associative LSTM(One Shot)</td>\n    <td>7</td>\n    <td>1.7912</td>\n    <td>3</td>\n    <td>52.09</td>\n  </tr>\n  <tr>\n    <td>GRU(Residual Scaling)</td>\n    <td>8</td>\n    <td>1.8065</td>\n    <td>6</td>\n    <td>49.97</td>\n  </tr>\n  <tr>\n    <td>Baseline LSTM[17]</td>\n    <td>1.7408</td>\n    <td>48.88</td>\n  </tr>\n  <tr>\n    <td>JPEG</td>\n  </tr>\n  <tr>\n    <td>YCbCr 4：4：4</td>\n    <td>1.7748</td>\n    <td>51.28</td>\n  </tr>\n  <tr>\n    <td>YCbCr 4：2：0</td>\n    <td>1.7998</td>\n    <td>52.61</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        }
+    ]
+}

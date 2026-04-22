@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                310,
+                164,
+                543,
+                683
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 1: YOLO9000. YOLO9000 can detect a wide variety of object classes in real-time.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                48,
+                69,
+                286,
+                190
+            ],
+            "caption": "Figure 2: Clustering box dimensions on VOC and COCO. We run k-means clustering on the dimensions of bounding boxes to get good priors for our model. The left image shows the average IOU we get with various choices for k. We find that k = 5 gives a good tradeoff for recall vs. complexity of the model. The right image shows the relative centroids for VOC and COCO. Both sets of priors favor thinner, taller boxes while COCO has greater variation in size than VOC. The text content from the image is as follows:\n\n\"Table 1: Average IOU of boxes to closest priors on VOC 2007.\nThe average IOU of objects on VOC 2007 to their closest, unmodified prior using different generation methods. Clustering gives much better results than using hand-picked priors.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                311,
+                75,
+                541,
+                238
+            ],
+            "caption": "Figure 4: Accuracy and speed on VOC 2007. Figure 4: Accuracy and speed on VOC 2007. Table 3: Detection frameworks on PASCAL VOC 2007. YOLOv2 is faster and more accurate than prior detection methods. It can also run at different resolutions for an easy tradeoff between speed and accuracy. Each YOLOv2 entry is actually the same trained model with the same weights, just evaluated at a different size. All timing information is on a GeForce GTX Titan X (original, not Pascal model). Table 3: Detection frameworks on PASCAL VOC 2007. YOLOv2 is faster and more accurate than prior detection methods. It can also run at different resolutions for an easy tradeoff between speed and accuracy. Each YOLOv2 entry is actually the same trained model with the same weights, just evaluated at a different size. All timing information is on a GeForce GTX Titan X (original, not Pascal model).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                310,
+                74,
+                543,
+                272
+            ],
+            "caption": "Figure 5: Prediction on ImageNet vs WordTree. Most ImageNet models use one large softmax to predict a probability distribution. Using WordTree we perform multiple softmax operations over co-hyponyms.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                48,
+                72,
+                286,
+                327
+            ],
+            "caption": "Figure 6: Combining datasets using WordTree hierarchy. Using the WordNet concept graph we build a hierarchical tree of visual concepts. Then we can merge datasets together by mapping the classes in the dataset to synsets in the tree. This is a simplified view of WordTree for illustration purposes.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        }
+    ]
+}

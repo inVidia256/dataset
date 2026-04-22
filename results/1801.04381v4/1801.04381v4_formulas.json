@@ -1,0 +1,102 @@
+{
+    "total_count": 8,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                140,
+                657,
+                225,
+                671
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nh_i \\cdot w_i \\cdot d_i (k^2 + d_j)\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nh_i \\cdot w_i \\cdot d_i (k^2 + d_j)\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                321,
+                530,
+                534,
+                571
+            ],
+            "content": "```latex\nM(G) = \\min_{\\pi \\in \\Sigma(G)} \\max_{i \\in 1..n} \\left[ \\sum_{A \\in R(i, \\pi, G)} |A| \\right] + \\text{size}(\\pi_i).\n```",
+            "latex": "```latex\nM(G) = \\min_{\\pi \\in \\Sigma(G)} \\max_{i \\in 1..n} \\left[ \\sum_{A \\in R(i, \\pi, G)} |A| \\right] + \\text{size}(\\pi_i).\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                122,
+                466,
+                244,
+                497
+            ],
+            "content": "{ \\mathcal { F } } ( x ) = \\sum _ { i = 1 } ^ { t } ( A _ { i } \\circ N \\circ B _ { i } ) ( x )",
+            "latex": "{ \\mathcal { F } } ( x ) = \\sum _ { i = 1 } ^ { t } ( A _ { i } \\circ N \\circ B _ { i } ) ( x )"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                81,
+                92,
+                284,
+                132
+            ],
+            "content": "```latex\nM(G) = \\max_{op \\in G} \\left[ \\sum_{A \\in op_{inp}} |A| + \\sum_{B \\in op_{out}} |B| + |op| \\right]\n```",
+            "latex": "```latex\nM(G) = \\max_{op \\in G} \\left[ \\sum_{A \\in op_{inp}} |A| + \\sum_{B \\in op_{out}} |B| + |op| \\right]\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                386,
+                371,
+                469,
+                403
+            ],
+            "content": "N _ { m , n } \\equiv \\sum _ { k = 0 } ^ { m - n } { \\binom { m } { k } } .",
+            "latex": "N _ { m , n } \\equiv \\sum _ { k = 0 } ^ { m - n } { \\binom { m } { k } } ."
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                392,
+                533,
+                466,
+                560
+            ],
+            "content": "\\sum _ { \\sigma \\in \\Sigma _ { n } } \\mathbb { E } _ { B } [ V _ { \\sigma } ( B ) ] ,",
+            "latex": "\\sum _ { \\sigma \\in \\Sigma _ { n } } \\mathbb { E } _ { B } [ V _ { \\sigma } ( B ) ] ,"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                398,
+                319,
+                457,
+                343
+            ],
+            "content": "V - { \\frac { N _ { m , n } V } { 2 ^ { m } } } ,",
+            "latex": "V - { \\frac { N _ { m , n } V } { 2 ^ { m } } } ,"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                71,
+                348,
+                295,
+                373
+            ],
+            "content": "```latex\n\\frac{N_{m,n}}{2^m} \\geq 1 - \\frac{m^{n+1}}{2^m n!} \\geq 1 - 2^{(n+1)\\log m - m} \\geq 1 - 2^{-m/2}\n```",
+            "latex": "```latex\n\\frac{N_{m,n}}{2^m} \\geq 1 - \\frac{m^{n+1}}{2^m n!} \\geq 1 - 2^{(n+1)\\log m - m} \\geq 1 - 2^{-m/2}\n```"
+        }
+    ]
+}

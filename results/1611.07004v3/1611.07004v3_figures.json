@@ -1,0 +1,300 @@
+{
+    "total_count": 21,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                49,
+                189,
+                546,
+                375
+            ],
+            "caption": "Figure 1: Many problems in image processing, graphics, and vision involve translating an input image into a corresponding output image. These problems are often treated with application-specific algorithms, even though the setting is always the same: map pixels to pixels. Conditional adversarial nets are a general-purpose solution that appears to work well on a wide variety of these problems. Here we show results of the method on several. In each case we use the same architecture and objective, and simply train on different data.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                308,
+                70,
+                545,
+                145
+            ],
+            "caption": "Figure 2: Training a conditional GAN to map edges→photo. The discriminator, D, learns to classify between fake (synthesized by the generator) and real {edge, photo} tuples. The generator, G, learns to fool the discriminator. Unlike an unconditional GAN, both the generator and discriminator observe the input edge map.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                307,
+                70,
+                546,
+                147
+            ],
+            "caption": "Figure 3: Two choices for the architecture of the generator. The \"U-Net\" [50] is an encoder-decoder with skip connections between mirrored layers in the encoder and decoder stacks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                48,
+                66,
+                547,
+                381
+            ],
+            "caption": "Figure 4: Different losses induce different quality of results. Each column shows results trained under a different loss. Please see https://phillipi.github.io/pix2pix/ for additional examples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                48,
+                70,
+                286,
+                195
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                49,
+                69,
+                547,
+                130
+            ],
+            "caption": "Figure 6: Patch size variations. Uncertainty in the output manifests itself differently for different loss functions. Uncertain regions become blurry and desaturated under L1. The 1x1 PixelGAN encourages greater color diversity but has no effect on spatial statistics. The 16x16 PatchGAN creates locally sharp results, but also leads to tiling artifacts beyond the scale it can observe. The 70×70 PatchGAN forces outputs that are sharp, even if incorrect, in both the spatial and spectral (colorfulness) dimensions. The full 286×286 ImageGAN produces results that are visually similar to the 70×70 PatchGAN, but somewhat lower quality according to our FCN-score metric (Table 3). Please see https://phillipi.github.io/pix2pix/ for additional examples. Figure 6: Patch size variations. Uncertainty in the output manifests itself differently for different loss functions. Uncertain regions become blurry and desaturated under L1. The 1x1 PixelGAN encourages greater color diversity but has no effect on spatial statistics. The 16x16 PatchGAN creates locally sharp results, but also leads to tiling artifacts beyond the scale it can observe. The 70×70 PatchGAN forces outputs that are sharp, even if incorrect, in both the spatial and spectral (colorfulness) dimensions. The full 286×286 ImageGAN produces results that are visually similar to the 70×70 PatchGAN, but somewhat lower quality according to our FCN-score metric (Table 3). Please see https://phillipi.github.io/pix2pix/ for additional examples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                65,
+                216,
+                526,
+                309
+            ],
+            "caption": "Figure 7: Color distribution matching property of the cGAN, tested on Cityscapes. (c.f. Figure 1 of the original GAN paper [24]). Note that the histogram intersection scores are dominated by differences in the high probability region, which are imperceptible in the plots, which show log probability and therefore emphasize differences in the low probability regions.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                49,
+                80,
+                545,
+                340
+            ],
+            "caption": "Figure 8: Example results on Google Maps at 512x512 resolution (model was trained on images at 256 × 256 resolution, and run convolutionally on the larger images at test time). Contrast adjusted for clarity.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                49,
+                374,
+                288,
+                571
+            ],
+            "caption": "Figure 9: Colorization results of conditional GANs versus the L2 regression from [62] and the full method (classification with rebalancing) from [64]. The cGANs can produce compelling colorizations (first two rows), but have a common failure mode of producing a grayscale or desaturated result (last row).",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page008.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                308,
+                373,
+                546,
+                504
+            ],
+            "caption": "Figure 10: Applying a conditional GAN to semantic segmentation. The cGAN produces sharp images that look at glance like the ground truth, but in fact include many small, hallucinated objects.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page008.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                49,
+                71,
+                546,
+                183
+            ],
+            "caption": "Figure 11: Example applications developed by online community based on our pix2pix codebase: #edges2cats [3] by Christopher Hesse, Background removal [6] by Kaihu Chen, Palette generation [5] by Jack Qiao, Sketch → Portrait [7] by Mario Klingemann, Sketch→Pokemon [1] by Bertrand Gondouin, “Do As I Do” pose transfer [2] by Brannon Dorsey, and #fotogenerator by Bosman et al. [4].",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page009.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                323,
+                223,
+                527,
+                325
+            ],
+            "caption": "Background removal Figure 12: Learning to see: Gloomy Sunday: An interactive artistic demo developed by Memo Akten [8] based on our pix2pix codebase. Please click the image to play the video in a browser.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page009.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                48,
+                80,
+                551,
+                262
+            ],
+            "caption": "Figure 13: Example results of our method on Cityscapes labels→photo, compared to ground truth.",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page010.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                50,
+                318,
+                551,
+                669
+            ],
+            "caption": "The text content from the image is:\n\n\"Example results of our method on facades labels→photo, compared to ground truth\" The text content from the image is:\n\n\"Example results of our method on facades labels→photo, compared to ground truth\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page010.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                48,
+                80,
+                551,
+                345
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 15: Example results of our method on day→night, compared to ground truth.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page011.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                47,
+                401,
+                548,
+                668
+            ],
+            "caption": "The text content from the image is:\n\n\"our method on automatically detected edges→handbags, compared to ground truth\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page011.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                54,
+                78,
+                552,
+                262
+            ],
+            "caption": "Figure 17: Example results of our method on automatically detected edges→shoes, compared to ground truth.",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page012.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                49,
+                309,
+                555,
+                662
+            ],
+            "caption": "Figure 18: Additional results of the edges→photo models applied to human-drawn sketches from [19]. Note that the models were trained on automatically detected edges, but generalize to human drawings",
+            "footnote": "",
+            "cropped_image": "figures/figure_018_page012.png"
+        },
+        {
+            "serial_number": 19,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                51,
+                75,
+                541,
+                271
+            ],
+            "caption": "Figure 19: Example results on photo inpainting, compared to [43], on the Paris StreetView dataset [14]. This experiment demonstrates that the U-net architecture can be effective even when the predicted pixels are not geometrically aligned with the information in the input – the information used to fill in the central hole has to be found in the periphery of these photos.",
+            "footnote": "",
+            "cropped_image": "figures/figure_019_page013.png"
+        },
+        {
+            "serial_number": 20,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                48,
+                331,
+                550,
+                462
+            ],
+            "caption": "Figure 20: Example results on translating thermal images to RGB photos, on the dataset from [27].",
+            "footnote": "",
+            "cropped_image": "figures/figure_020_page013.png"
+        },
+        {
+            "serial_number": 21,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                49,
+                511,
+                545,
+                663
+            ],
+            "caption": "Figure 21: Example failure cases. Each pair of images shows input on the left and output on the right. These examples are selected as some of the worst results on our tasks. Common failures include artifacts in regions where the input image is sparse, and difficulty in handling unusual inputs. Please see https://phillipi.github.io/pix2pix/ for more comprehensive results.",
+            "footnote": "",
+            "cropped_image": "figures/figure_021_page013.png"
+        }
+    ]
+}

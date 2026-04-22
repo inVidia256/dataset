@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                126,
+                138,
+                482,
+                221
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: Comparison of ConvLSTM networks with FC-LSTM network on the Moving-MNIST dataset. ‘-5x5’ and ‘-1x1’ represent the corresponding state-to-state kernel size, which is either 5×5 or 1×1. ‘256’, ‘128’, and ‘64’ refer to the number of hidden states in the ConvLSTM layers. ‘(5x5)’ and ‘(9x9)’ represent the input-to-state kernel size.\" The text content from the image is as follows:\n\n\"Table 1: Comparison of ConvLSTM networks with FC-LSTM network on the Moving-MNIST dataset. ‘-5x5’ and ‘-1x1’ represent the corresponding state-to-state kernel size, which is either 5×5 or 1×1. ‘256’, ‘128’, and ‘64’ refer to the number of hidden states in the ConvLSTM layers. ‘(5x5)’ and ‘(9x9)’ represent the input-to-state kernel size.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Number of parameters</td>\n    <td>Cross entropy</td>\n  </tr>\n  <tr>\n    <td>FC-LSTM-2048-2048</td>\n    <td>142，667，776</td>\n    <td>4832.49</td>\n  </tr>\n  <tr>\n    <td>ConvLSTM(5x5)-5x5-256</td>\n    <td>13，524，496</td>\n    <td>3887.94</td>\n  </tr>\n  <tr>\n    <td>ConvLSTM(5x5)-5x5-128-5x5-128</td>\n    <td>10，042，896</td>\n    <td>3733.56</td>\n  </tr>\n  <tr>\n    <td>ConvLSTM(5x5)-5x5-128-5x5-64-5x5-64</td>\n    <td>7，585，296</td>\n    <td>3670.85</td>\n  </tr>\n  <tr>\n    <td>ConvLSTM(9x9)-1x1-128-1x1-128</td>\n    <td>11，550，224</td>\n    <td>4782.84</td>\n  </tr>\n  <tr>\n    <td>ConvLSTM(9x9)-1x1-128-1x1-64-1x1-64</td>\n    <td>8，830，480</td>\n    <td>4231.50</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                116,
+                100,
+                493,
+                171
+            ],
+            "caption": "Comparison of the average scores of different models over 15 prediction steps.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Rainfall-MSE</td>\n    <td>CSI</td>\n    <td>FAR</td>\n    <td>POD</td>\n    <td>Correlation</td>\n  </tr>\n  <tr>\n    <td>ConvLSTM(3x3)-3x3-64-3x3-64</td>\n    <td>1.420</td>\n    <td>0.577</td>\n    <td>0.195</td>\n    <td>0.660</td>\n    <td>0.908</td>\n  </tr>\n  <tr>\n    <td>Rover 1</td>\n    <td>1.712</td>\n    <td>0.516</td>\n    <td>0.308</td>\n    <td>0.636</td>\n    <td>0.843</td>\n  </tr>\n  <tr>\n    <td>Rover 2</td>\n    <td>1.684</td>\n    <td>0.522</td>\n    <td>0.301</td>\n    <td>0.642</td>\n    <td>0.850</td>\n  </tr>\n  <tr>\n    <td>Rover 3</td>\n    <td>1.685</td>\n    <td>0.522</td>\n    <td>0.301</td>\n    <td>0.642</td>\n    <td>0.849</td>\n  </tr>\n  <tr>\n    <td>FC-LSTM-2000-2000</td>\n    <td>1.865</td>\n    <td>0.286</td>\n    <td>0.335</td>\n    <td>0.351</td>\n    <td>0.774</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                127,
+                126,
+                484,
+                219
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Best parameters for the optical flow estimator in ROVER.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Parameter</td>\n    <td>Meaning</td>\n    <td>Value</td>\n  </tr>\n  <tr>\n    <td>Lmax</td>\n    <td>Coarsest spatial scale level</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>Lstart</td>\n    <td>Finest spatial scale level</td>\n    <td>0</td>\n  </tr>\n  <tr>\n    <td>npre</td>\n    <td>Number of pre-smoothing steps</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>npost</td>\n    <td>Number of post-smoothing steps</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>p</td>\n    <td>Gaussian convolution parameter for local vector field smoothing</td>\n    <td>1.5</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Regularization parameter in the energy function</td>\n    <td>2000</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Gaussian convolution parameter for image smoothing</td>\n    <td>4.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page010.png"
+        }
+    ]
+}

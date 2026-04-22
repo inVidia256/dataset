@@ -1,0 +1,118 @@
+{
+    "total_count": 7,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                127,
+                190,
+                468,
+                264
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: The discriminator and generator CNNs used for MNIST dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>discriminator D/recognition network Q</td>\n    <td>generator G</td>\n  </tr>\n  <tr>\n    <td>Input 28x28 Gray image</td>\n    <td>Input ER74</td>\n  </tr>\n  <tr>\n    <td>4x4 conv.64IRELU.stride 2</td>\n    <td>FC.1024RELU.batch norm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.128IRELU.stride 2.batchnorm</td>\n    <td>FC.7x7x128RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>FC.1024IRELU.batchnorm</td>\n    <td>4x4upconv.64RELU.stride 2.batchnorm</td>\n  </tr>\n  <tr>\n    <td>FC.output layer for D，</td>\n    <td>4x4upconv.1 channel</td>\n  </tr>\n  <tr>\n    <td>FC.128-batchnorm-IREL UF.output for Q</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page012.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                126,
+                372,
+                469,
+                456
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: The discriminator and generator CNNs used for SVHN dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>discriminator D/recognition network Q</td>\n    <td>generator G</td>\n  </tr>\n  <tr>\n    <td>Input 32x32 Color image</td>\n    <td>Input ER168</td>\n  </tr>\n  <tr>\n    <td>4x4conv.64IRELU.stride 2</td>\n    <td>FC.2x2x448RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.128IRELU.stride 2.batchnorm</td>\n    <td>4x4upconv.256RELU.stride 2.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.256IRELU.stride 2.batchnorm</td>\n    <td>4x4upconv.128RELU.stride 2.</td>\n  </tr>\n  <tr>\n    <td>FC.output layer for D，</td>\n    <td>4x4upconv.64RELU.stride 2.</td>\n  </tr>\n  <tr>\n    <td>FC.128-batchnorm-IRELU-FC.output for Q</td>\n    <td>4x4upconv.3Tanh.stride 2.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page012.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                126,
+                563,
+                470,
+                647
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: The discriminator and generator CNNs used for SVHN dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>discriminator D/recognition network Q</td>\n    <td>generator G</td>\n  </tr>\n  <tr>\n    <td>Input 32x32 Color image</td>\n    <td>Input ER228</td>\n  </tr>\n  <tr>\n    <td>4x4conv.64IRELU.stride 2</td>\n    <td>FC.2x2x448RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.128IRELU.stride 2.batchnorm</td>\n    <td>4x4upconv.256RELU.stride 2.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.256IRELU.stride 2.batchnorm</td>\n    <td>4x4upconv.128RELU.stride 2.</td>\n  </tr>\n  <tr>\n    <td>FC.output layer for D，</td>\n    <td>4x4upconv.64RELU.stride 2.</td>\n  </tr>\n  <tr>\n    <td>FC.128-batchnorm-IRELU-FC.output for Q</td>\n    <td>4x4upconv.3Tanh.stride 2.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page012.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                127,
+                126,
+                468,
+                190
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: The discriminator and generator CNNs used for Faces dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>discriminatorD/recognition network Q</td>\n    <td>generator G</td>\n  </tr>\n  <tr>\n    <td>Input 32x32 Gray image</td>\n    <td>Input ER133</td>\n  </tr>\n  <tr>\n    <td>4x4conv.64IRELU.stride 2</td>\n    <td>FC.1024RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.128IRELU.stride 2.batchnorm</td>\n    <td>FC.8×8×128RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>FC.1024IRELU.batchnorm</td>\n    <td>4x4upconv.64RELU.stride 2.batchnorm</td>\n  </tr>\n  <tr>\n    <td>FC.output layer</td>\n    <td>4x4upconv.1sigmoid.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page013.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                161,
+                227,
+                435,
+                278
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5: The hyperparameters for Faces dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Learning rate for D/Q</td>\n    <td>Learning rate for G</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Azimuth(pose)</td>\n    <td>2e-4</td>\n    <td>5e-4</td>\n    <td>0.2</td>\n  </tr>\n  <tr>\n    <td>Elevation</td>\n    <td>4e-4</td>\n    <td>3e-4</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>Lighting</td>\n    <td>8e-4</td>\n    <td>3e-4</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>Wide or Narrow</td>\n    <td>learned using the same network as the lighting variation</td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page013.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                126,
+                398,
+                470,
+                492
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 6: The discriminator and generator CNNs used for Chairs dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>discriminator D/recognition network Q</td>\n    <td>generator G</td>\n  </tr>\n  <tr>\n    <td>Input 64×64 Gray image</td>\n    <td>Input∈R189</td>\n  </tr>\n  <tr>\n    <td>4x4conv.64IRELU.stride2</td>\n    <td>FC.1024RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.128IRELU.stride2.batchnorm</td>\n    <td>FC.8×8×256RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.256IRELU.stride2.batchnorm</td>\n    <td>4x4upconv.256RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.256IRELU.batchnorm</td>\n    <td>4x4upconv.256RELU.batchnorm</td>\n  </tr>\n  <tr>\n    <td>4x4conv.256IRELU.batchnorm</td>\n    <td>4x4upconv.128RELU.stride2.batchnorm</td>\n  </tr>\n  <tr>\n    <td>FC.1024IRELU.batchnorm</td>\n    <td>4x4upconv.64RELU.stride2.batchnorm</td>\n  </tr>\n  <tr>\n    <td>FC.output layer</td>\n    <td>4x4upconv.1sigmoid.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page013.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                159,
+                413,
+                436,
+                445
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 7: The hyperparameters for Chairs dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Learning rate for D/Q</td>\n    <td>Learning rate for G</td>\n    <td>λcont</td>\n    <td>λdisc</td>\n  </tr>\n  <tr>\n    <td>Rotation</td>\n    <td>2e-4</td>\n    <td>1e-3</td>\n    <td>10.0</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>Width</td>\n    <td>2e-4</td>\n    <td>1e-3</td>\n    <td>0.05</td>\n    <td>2.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page014.png"
+        }
+    ]
+}

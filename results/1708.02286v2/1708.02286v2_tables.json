@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                309,
+                316,
+                544,
+                399
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1. layer parameter of the CNN network\"",
+            "footnote": "The text content from the image is:\n\nc: Convolutional layer; t: Tanh layer; p: Pooling layer",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Layer</td>\n    <td>Type</td>\n    <td>Conv(size，channel，pad，stride)</td>\n    <td>Max Pooling</td>\n  </tr>\n  <tr>\n    <td>Conv_1</td>\n    <td>c+t+p</td>\n    <td>5x5，16，4，1</td>\n    <td>2x2</td>\n  </tr>\n  <tr>\n    <td>Conv_2</td>\n    <td>c+t+p</td>\n    <td>5x5，32，4，1</td>\n    <td>2x2</td>\n  </tr>\n  <tr>\n    <td>Conv_3</td>\n    <td>c+t</td>\n    <td>5x5，32，4，1</td>\n    <td>N/A</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                307,
+                91,
+                546,
+                212
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2. Comparison of our model with other state-of-the-art methods on iLIDS-VID and PRID-2011 according to CMC curves (%).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>iLIDS-VID</td>\n    <td></td>\n    <td>PRID-2011</td>\n  </tr>\n  <tr>\n    <td>CMC Rank</td>\n    <td>1</td>\n    <td>5</td>\n    <td>10</td>\n    <td>20</td>\n    <td>1</td>\n    <td>5</td>\n    <td>10</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>A STPN</td>\n    <td>62</td>\n    <td>86</td>\n    <td>94</td>\n    <td>98</td>\n    <td>77</td>\n    <td>95</td>\n    <td>99</td>\n    <td>99</td>\n  </tr>\n  <tr>\n    <td>RNN-CNN[20]</td>\n    <td>58</td>\n    <td>84</td>\n    <td>91</td>\n    <td>96</td>\n    <td>70</td>\n    <td>90</td>\n    <td>95</td>\n    <td>97</td>\n  </tr>\n  <tr>\n    <td>RFA[32]</td>\n    <td>49</td>\n    <td>77</td>\n    <td>85</td>\n    <td>92</td>\n    <td>64</td>\n    <td>86</td>\n    <td>93</td>\n    <td>98</td>\n  </tr>\n  <tr>\n    <td>STA[17]</td>\n    <td>44</td>\n    <td>72</td>\n    <td>84</td>\n    <td>92</td>\n    <td>64</td>\n    <td>87</td>\n    <td>90</td>\n    <td>92</td>\n  </tr>\n  <tr>\n    <td>VR[27]</td>\n    <td>35</td>\n    <td>57</td>\n    <td>68</td>\n    <td>78</td>\n    <td>42</td>\n    <td>65</td>\n    <td>78</td>\n    <td>89</td>\n  </tr>\n  <tr>\n    <td>AFDA[12]</td>\n    <td>38</td>\n    <td>63</td>\n    <td>73</td>\n    <td>82</td>\n    <td>43</td>\n    <td>73</td>\n    <td>85</td>\n    <td>92</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                328,
+                102,
+                525,
+                179
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 4. Cross-dataset testing matching rate on PRID-2011 (%). * indicates that both probe set and gallery set are composed of single image during test.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Trained on</td>\n    <td>1</td>\n    <td>5</td>\n    <td>10</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>AST PN</td>\n    <td>iLIDS-VID</td>\n    <td>30</td>\n    <td>58</td>\n    <td>71</td>\n    <td>85</td>\n  </tr>\n  <tr>\n    <td>AST PN*</td>\n    <td>iLIDS-VID</td>\n    <td>15</td>\n    <td>33</td>\n    <td>46</td>\n    <td>63</td>\n  </tr>\n  <tr>\n    <td>RNN-CNN</td>\n    <td>iLIDS-VID</td>\n    <td>28</td>\n    <td>57</td>\n    <td>69</td>\n    <td>81</td>\n  </tr>\n  <tr>\n    <td>RNN-CNN*</td>\n    <td>iLIDS-VID</td>\n    <td>14</td>\n    <td>31</td>\n    <td>45</td>\n    <td>61</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        }
+    ]
+}

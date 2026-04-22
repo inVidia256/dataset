@@ -1,0 +1,70 @@
+{
+    "total_count": 4,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                191,
+                79,
+                419,
+                326
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Word-level perplexity on the Penn Tree Bank dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Validation set</td>\n    <td>Test set</td>\n  </tr>\n  <tr>\n    <td>A single model</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Pascanu etal.(2013)</td>\n    <td>107.5</td>\n  </tr>\n  <tr>\n    <td>Cheng etal.</td>\n    <td>100.0</td>\n  </tr>\n  <tr>\n    <td>non-regularized LSTM</td>\n    <td>120.7</td>\n  </tr>\n  <tr>\n    <td>Medium regularized LSTM</td>\n    <td>86.2</td>\n  </tr>\n  <tr>\n    <td>Large regularized LSTM</td>\n    <td>82.2</td>\n  </tr>\n  <tr>\n    <td>Model averaging</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Mikolov(2012)</td>\n    <td>83.5</td>\n  </tr>\n  <tr>\n    <td>Cheng etal.</td>\n    <td>80.6</td>\n  </tr>\n  <tr>\n    <td>2 non-regularized LSTMs</td>\n    <td>100.4</td>\n  </tr>\n  <tr>\n    <td>5 non-regularized LSTMs</td>\n    <td>87.9</td>\n  </tr>\n  <tr>\n    <td>10 non-regularized LSTMs</td>\n    <td>83.5</td>\n  </tr>\n  <tr>\n    <td>2 medium regularized LSTMs</td>\n    <td>80.6</td>\n  </tr>\n  <tr>\n    <td>5 medium regularized LSTMs</td>\n    <td>76.7</td>\n  </tr>\n  <tr>\n    <td>10 medium regularized LSTMs</td>\n    <td>75.2</td>\n  </tr>\n  <tr>\n    <td>2 large regularized LSTMs</td>\n    <td>76.9</td>\n  </tr>\n  <tr>\n    <td>10 large regularized LSTMs</td>\n    <td>72.8</td>\n  </tr>\n  <tr>\n    <td>38 large regularized LSTMs</td>\n    <td>71.9</td>\n  </tr>\n  <tr>\n    <td>Model averaging with dynamic RNNsand n-gram models</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Mikolov&Zweig(2012)</td>\n    <td>72.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                198,
+                80,
+                413,
+                118
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Training set</td>\n    <td>Validation set</td>\n  </tr>\n  <tr>\n    <td>Non-regularized LSTM</td>\n    <td>71.6</td>\n    <td>68.9</td>\n  </tr>\n  <tr>\n    <td>Regularized LSTM</td>\n    <td>69.4</td>\n    <td>70.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                186,
+                148,
+                425,
+                198
+            ],
+            "caption": "Table 2: Frame-level accuracy on the Icelandic Speech Dataset. The training set has 93k utterances. The text content from the image is:\n\n\"Table 3: Results on the English to French translation task.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Test perplexity</td>\n    <td>Test BLEU score</td>\n  </tr>\n  <tr>\n    <td>Non-regularized LSTM</td>\n    <td>5.8</td>\n    <td>25.9</td>\n  </tr>\n  <tr>\n    <td>Regularized LSTM</td>\n    <td>5.0</td>\n    <td>29.03</td>\n  </tr>\n  <tr>\n    <td>LIUM system</td>\n    <td>33.30</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                181,
+                80,
+                429,
+                129
+            ],
+            "caption": "Table 4: Results on the image caption generation task. Table 4: Results on the image caption generation task.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Test perplexity</td>\n    <td>Test BLEU score</td>\n  </tr>\n  <tr>\n    <td>Non-regularized model</td>\n    <td>8.47</td>\n    <td>23.5</td>\n  </tr>\n  <tr>\n    <td>Regularized model</td>\n    <td>7.99</td>\n    <td>24.3</td>\n  </tr>\n  <tr>\n    <td>10 non-regularized models</td>\n    <td>7.5</td>\n    <td>24.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        }
+    ]
+}

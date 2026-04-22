@@ -1,0 +1,262 @@
+{
+    "total_count": 16,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                77,
+                83,
+                536,
+                279
+            ],
+            "caption": "The text content from the image is as follows:\n\n```\nTABLE 1\n(Left) ResNet-50 [13]. (Middle) SE-ResNet-50. (Right) SE-ResNeXt-50 with a 32×4d template. The shapes and operations with specific parameter settings of a residual building block are listed inside the brackets and the number of stacked blocks in a stage is presented outside. The inner brackets following by fc indicates the output dimension of the two fully connected layers in an SE module.\n``` The text content from the image is \"TABLE 2\". The text content from the image is \"TABLE 2\".",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Output size</td>\n    <td>ResNet-50</td>\n    <td>SE-ResNet-50</td>\n    <td>SE-ResNeXt-50(32x4d)</td>\n  </tr>\n  <tr>\n    <td>112x112</td>\n    <td></td>\n    <td>conv，7x7，64，stride 2</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>56x56</td>\n    <td></td>\n    <td>max pool，3x3，stride 2</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，1x1，64]</td>\n    <td>[conv，1x1，64]</td>\n    <td>[conv，1x1，128</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，3x3，64]</td>\n    <td>[conv，3x3，64]</td>\n    <td>[conv，3x3，128</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，1x1，256]</td>\n    <td>[conv，1x1，256]</td>\n    <td>[conv，1x1，256</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>fc，[16，256]</td>\n    <td></td>\n    <td>C=32</td>\n  </tr>\n  <tr>\n    <td>28x28</td>\n    <td>[conv，1x1，128]</td>\n    <td>[conv，1x1，128]</td>\n    <td>[conv，1x1，256</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，3x3，128]</td>\n    <td>[conv，3x3，128]</td>\n    <td>[conv，3x3，256</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，1x1，512]</td>\n    <td>[conv，1x1，512]</td>\n    <td>[conv，1x1，512</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>fc，[32，512]</td>\n    <td></td>\n    <td>C=32</td>\n  </tr>\n  <tr>\n    <td>14x14</td>\n    <td>[conv，1x1，256]</td>\n    <td>[conv，1x1，256]</td>\n    <td>[conv，1x1，512</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，3x3，256]</td>\n    <td>[conv，3x3，256]</td>\n    <td>[conv，3x3，512</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，1x1，1024]</td>\n    <td>[conv，1x1，1024]</td>\n    <td>[conv，1x1，1024</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>fc，[64，1024]</td>\n    <td></td>\n    <td>C=32</td>\n  </tr>\n  <tr>\n    <td>7x7</td>\n    <td>[conv，1x1，512]</td>\n    <td>[conv，1x1，512]</td>\n    <td>[conv，1x1，1024</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，3x3，512]</td>\n    <td>[conv，3x3，512]</td>\n    <td>[conv，3x3，1024</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[conv，1x1，2048]</td>\n    <td>[conv，1x1，2048]</td>\n    <td>[conv，1x1，2048</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>fc，[128，2048]</td>\n    <td></td>\n    <td>C=32</td>\n  </tr>\n  <tr>\n    <td>1x1</td>\n    <td></td>\n    <td>global average pool，1000-dfc，softmax</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                65,
+                363,
+                548,
+                466
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html>\n<table>\n  <tr>\n    <td></td>\n    <td>original</td>\n    <td>re-implementation</td>\n    <td>SENet</td>\n  </tr>\n  <tr>\n    <td>top-1 err.top-5 err.</td>\n    <td>top-1 err.top-5 err.</td>\n    <td>GFLOPs</td>\n    <td>top-1 err.top-5 err.</td>\n    <td>GFLOPs</td>\n  </tr>\n  <tr>\n    <td>ResNet-50[13]</td>\n    <td>24.77.8</td>\n    <td>24.807.48</td>\n    <td>3.86</td>\n    <td>23.29(1.51)6.62(0.86)</td>\n    <td>3.87</td>\n  </tr>\n  <tr>\n    <td>ResNet-101[13]</td>\n    <td>23.67.1</td>\n    <td>23.176.52</td>\n    <td>7.58</td>\n    <td>22.38(0.79)6.07(0.45)</td>\n    <td>7.60</td>\n  </tr>\n  <tr>\n    <td>ResNet-152[13]</td>\n    <td>23.06.7</td>\n    <td>22.426.34</td>\n    <td>11.30</td>\n    <td>21.57(0.85)5.73(0.61)</td>\n    <td>11.32</td>\n  </tr>\n  <tr>\n    <td>ResNeXt-50[19]</td>\n    <td>22.2-</td>\n    <td>22.115.90</td>\n    <td>4.24</td>\n    <td>21.10(1.01)5.49(0.41)</td>\n    <td>4.25</td>\n  </tr>\n  <tr>\n    <td>ResNeXt-101[19]</td>\n    <td>21.25.6</td>\n    <td>21.185.57</td>\n    <td>7.99</td>\n    <td>20.70(0.48)5.01(0.56)</td>\n    <td>8.00</td>\n  </tr>\n  <tr>\n    <td>VGG-16[11]</td>\n    <td>-</td>\n    <td>27.028.81</td>\n    <td>15.47</td>\n    <td>25.22(1.80)7.70(1.11)</td>\n    <td>15.48</td>\n  </tr>\n  <tr>\n    <td>BN-Inception[6]</td>\n    <td>25.27.82</td>\n    <td>25.387.89</td>\n    <td>2.03</td>\n    <td>24.23(1.15)7.14(0.75)</td>\n    <td>2.04</td>\n  </tr>\n  <tr>\n    <td>Inception-ResNet-v2[21]</td>\n    <td>19.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.919.91\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                57,
+                74,
+                556,
+                115
+            ],
+            "caption": "TABLE 3\n\nSingle-crop error rates (%) on the ImageNet validation set and complexity comparisons. MobileNet refers to \"1.0 MobileNet-224\" in [64] and ShuffleNet refers to \"ShuffleNet 1 × (g = 3)\" in [65]. The numbers in brackets denote the performance improvement over the re-implementation.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>original</td>\n    <td>re-implementation</td>\n    <td></td>\n    <td>SENet</td>\n  </tr>\n  <tr>\n    <td>top-1 err.top-5 err.</td>\n    <td>top-1 err.top-5 err.</td>\n    <td>MFLOPsParams</td>\n    <td>top-1 err.top-5 err.MFLOPsParams</td>\n  </tr>\n  <tr>\n    <td>MobileNet[64]</td>\n    <td>29.4-</td>\n    <td>28.49.4</td>\n    <td>5694.2M</td>\n    <td>25.3(3.1)7.7(1.7)</td>\n    <td>5724.7M</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet[65]</td>\n    <td>32.6-</td>\n    <td>32.612.5</td>\n    <td>1401.8M</td>\n    <td>31.0(1.6)11.1(1.4)</td>\n    <td>1422.4M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                55,
+                64,
+                294,
+                117
+            ],
+            "caption": "TABLE 4\nClassification error (%) on CIFAR-10.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>original</td>\n    <td>SENet</td>\n  </tr>\n  <tr>\n    <td>ResNet-110[14]</td>\n    <td>6.37</td>\n    <td>5.21</td>\n  </tr>\n  <tr>\n    <td>ResNet-164[14]</td>\n    <td>5.46</td>\n    <td>4.39</td>\n  </tr>\n  <tr>\n    <td>WRN-16-8[67]</td>\n    <td>4.27</td>\n    <td>3.88</td>\n  </tr>\n  <tr>\n    <td>Shake-Shake 262x96d[68]+Cutout[69]</td>\n    <td>2.56</td>\n    <td>2.12</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                53,
+                156,
+                297,
+                209
+            ],
+            "caption": "TABLE 5\nClassification error (%) on CIFAR-100.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>original</td>\n    <td>SENet</td>\n  </tr>\n  <tr>\n    <td>ResNet-110[14]</td>\n    <td>26.88</td>\n    <td>23.85</td>\n  </tr>\n  <tr>\n    <td>ResNet-164[14]</td>\n    <td>24.33</td>\n    <td>21.31</td>\n  </tr>\n  <tr>\n    <td>WRN-16-8[67]</td>\n    <td>20.43</td>\n    <td>19.14</td>\n  </tr>\n  <tr>\n    <td>Shake-Even 292x4x64d[68]+Cutout[69]</td>\n    <td>15.85</td>\n    <td>15.41</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                345,
+                66,
+                533,
+                111
+            ],
+            "caption": "The text content from the image is:\n\n\"TABLE 6\nSingle-crop error rates (%) on Places365 validation set.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Places-365-CNN [72]</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n  </tr>\n  <tr>\n    <td>ResNet-152(ours)</td>\n    <td>41.07</td>\n    <td>11.48</td>\n  </tr>\n  <tr>\n    <td>SE-ResNet-152</td>\n    <td>41.15</td>\n    <td>11.61</td>\n  </tr>\n  <tr>\n    <td>40.37</td>\n    <td>11.01</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                333,
+                153,
+                545,
+                210
+            ],
+            "caption": "The text content from the image is:\n\n\"TABLE 7\nFaster R-CNN object detection results (%) on COCO minival set.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>AP@IoU=0.5</td>\n    <td>AP</td>\n  </tr>\n  <tr>\n    <td>ResNet-50</td>\n    <td>57.9</td>\n    <td>38.0</td>\n  </tr>\n  <tr>\n    <td>SE-ResNet-50</td>\n    <td>61.0</td>\n    <td>40.4</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>60.1</td>\n    <td>39.9</td>\n  </tr>\n  <tr>\n    <td>SE-ResNet-101</td>\n    <td>62.7</td>\n    <td>41.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                48,
+                74,
+                299,
+                224
+            ],
+            "caption": "The text content from the image is as follows:\n\n```\nTABLE 8\nSingle-crop error rates (%) of state-of-the-art CNNs on ImageNet validation set with crop sizes 224 × 224 and 320 × 320 / 299 × 299.\n```",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>224x224</td>\n    <td>320x320/299x299</td>\n  </tr>\n  <tr>\n    <td>top-1err.</td>\n    <td>top-5err.</td>\n    <td>top-1err.</td>\n    <td>top-5err.</td>\n  </tr>\n  <tr>\n    <td>ResNet-152[13]</td>\n    <td>23.0</td>\n    <td>6.7</td>\n    <td>21.3</td>\n    <td>5.5</td>\n  </tr>\n  <tr>\n    <td>ResNet-200[14]</td>\n    <td>21.7</td>\n    <td>5.8</td>\n    <td>20.1</td>\n    <td>4.8</td>\n  </tr>\n  <tr>\n    <td>Inception-v3[20]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>21.2</td>\n    <td>5.6</td>\n  </tr>\n  <tr>\n    <td>Inception-v4[21]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>20.0</td>\n    <td>5.0</td>\n  </tr>\n  <tr>\n    <td>Inception-ResNet-v2[21]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>19.9</td>\n    <td>4.9</td>\n  </tr>\n  <tr>\n    <td>ResNeXt-101(64×4d)[19]</td>\n    <td>20.4</td>\n    <td>5.3</td>\n    <td>19.1</td>\n    <td>4.4</td>\n  </tr>\n  <tr>\n    <td>DenseNet-264[17]</td>\n    <td>22.15</td>\n    <td>6.12</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Attention-92[58]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>19.5</td>\n    <td>4.8</td>\n  </tr>\n  <tr>\n    <td>Pyramid Net-200[77]</td>\n    <td>20.1</td>\n    <td>5.4</td>\n    <td>19.2</td>\n    <td>4.7</td>\n  </tr>\n  <tr>\n    <td>DPN-131[16]</td>\n    <td>19.93</td>\n    <td>5.12</td>\n    <td>18.55</td>\n    <td>4.16</td>\n  </tr>\n  <tr>\n    <td>SENet-154</td>\n    <td>18.68</td>\n    <td>4.47</td>\n    <td>17.28</td>\n    <td>3.79</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                50,
+                285,
+                298,
+                366
+            ],
+            "caption": "TABLE 9\nComparison (%) with state-of-the-art CNNs on ImageNet validation set using larger crop sizes/additional training data. †This model was trained with a crop size of \\(320 \\times 320\\).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>extra</td>\n    <td>crop</td>\n    <td>top-1</td>\n    <td>top-5</td>\n  </tr>\n  <tr>\n    <td>data</td>\n    <td>size</td>\n    <td>err.</td>\n    <td>err.</td>\n  </tr>\n  <tr>\n    <td>Very Deep PolyNet[78]</td>\n    <td>-</td>\n    <td>331</td>\n    <td>18.71</td>\n    <td>4.25</td>\n  </tr>\n  <tr>\n    <td>NAS Net-A(6@4032)[42]</td>\n    <td>-</td>\n    <td>331</td>\n    <td>17.3</td>\n    <td>3.8</td>\n  </tr>\n  <tr>\n    <td>P NAS Net-5(N=4，F=216)[35]</td>\n    <td>-</td>\n    <td>331</td>\n    <td>17.1</td>\n    <td>3.8</td>\n  </tr>\n  <tr>\n    <td>SE Net-154</td>\n    <td>-</td>\n    <td>320</td>\n    <td>16.88</td>\n    <td>3.58</td>\n  </tr>\n  <tr>\n    <td>A moeba Net-C[79]</td>\n    <td>-</td>\n    <td>331</td>\n    <td>16.5</td>\n    <td>3.5</td>\n  </tr>\n  <tr>\n    <td>ResNeXt-10132x48d[80]</td>\n    <td></td>\n    <td>224</td>\n    <td>14.6</td>\n    <td>2.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page008.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                344,
+                82,
+                533,
+                159
+            ],
+            "caption": "TABLE 10\nSingle-crop error rates (%) on ImageNet and parameter sizes for SE-ResNet-50 at different reduction ratios. Here, original refers to ResNet-50.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Ratio r</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n    <td>Params</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>22.29</td>\n    <td>6.00</td>\n    <td>45.7M</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>22.25</td>\n    <td>6.09</td>\n    <td>35.7M</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>22.26</td>\n    <td>5.99</td>\n    <td>30.7M</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>22.28</td>\n    <td>6.03</td>\n    <td>28.1M</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>22.72</td>\n    <td>6.20</td>\n    <td>26.9M</td>\n  </tr>\n  <tr>\n    <td>original</td>\n    <td>23.30</td>\n    <td>6.55</td>\n    <td>25.6M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page008.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                87,
+                75,
+                262,
+                110
+            ],
+            "caption": "The text content from the image is as follows:\n\n```\nTABLE 11\nEffect of using different squeeze operators in SE-ResNet-50 on\nImageNet (error rates %).\n```",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Squeeze</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n  </tr>\n  <tr>\n    <td>Max</td>\n    <td>22.57</td>\n    <td>6.09</td>\n  </tr>\n  <tr>\n    <td>Avg</td>\n    <td>22.28</td>\n    <td>6.03</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page009.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                87,
+                160,
+                262,
+                206
+            ],
+            "caption": "The text content from the image is as follows:\n\n```\nTABLE 12\nEffect of using different non-linearities for the excitation operator in\nSE-ResNet-50 on ImageNet (error rates %).\n```",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Excitation</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n  </tr>\n  <tr>\n    <td>ReLU</td>\n    <td>23.47</td>\n    <td>6.98</td>\n  </tr>\n  <tr>\n    <td>Tanh</td>\n    <td>23.00</td>\n    <td>6.38</td>\n  </tr>\n  <tr>\n    <td>Sigmoid</td>\n    <td>22.28</td>\n    <td>6.03</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page009.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                324,
+                179,
+                552,
+                212
+            ],
+            "caption": "The text content from the image is as follows:\n\n```\nTABLE 15\nEffect of integrating SE blocks at the 3x3 convolutional layer of each residual branch in ResNet-50 on ImageNet (error rates %).\n```",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Design</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n    <td>GFLOPs</td>\n    <td>Params</td>\n  </tr>\n  <tr>\n    <td>SE</td>\n    <td>22.28</td>\n    <td>6.03</td>\n    <td>3.87</td>\n    <td>28.1M</td>\n  </tr>\n  <tr>\n    <td>SE_3x3</td>\n    <td>22.48</td>\n    <td>6.02</td>\n    <td>3.86</td>\n    <td>25.8M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page009.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                363,
+                73,
+                514,
+                129
+            ],
+            "caption": "The text content from the image is as follows:\n\n```\nTABLE 14\nEffect of different SE block integration strategies with ResNet-50 on\nImageNet (error rates %).\n```",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Design</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n  </tr>\n  <tr>\n    <td>SE</td>\n    <td>22.28</td>\n    <td>6.03</td>\n  </tr>\n  <tr>\n    <td>SE-PRE</td>\n    <td>22.23</td>\n    <td>6.00</td>\n  </tr>\n  <tr>\n    <td>SE-POST</td>\n    <td>22.78</td>\n    <td>6.35</td>\n  </tr>\n  <tr>\n    <td>SE-Identity</td>\n    <td>22.20</td>\n    <td>6.15</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page009.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                54,
+                672,
+                297,
+                739
+            ],
+            "caption": "The text content from the image is as follows:\n\n```\nTABLE 13\nEffect of integrating SE blocks with ResNet-50 at different stages on\nImageNet (error rates %).\n```",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Stage</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n    <td>GFLOPs</td>\n    <td>Params</td>\n  </tr>\n  <tr>\n    <td>ResNet-50</td>\n    <td>23.30</td>\n    <td>6.55</td>\n    <td>3.86</td>\n    <td>25.6M</td>\n  </tr>\n  <tr>\n    <td>SE Stage_2</td>\n    <td>23.03</td>\n    <td>6.48</td>\n    <td>3.86</td>\n    <td>25.6M</td>\n  </tr>\n  <tr>\n    <td>SE Stage_3</td>\n    <td>23.04</td>\n    <td>6.32</td>\n    <td>3.86</td>\n    <td>25.7M</td>\n  </tr>\n  <tr>\n    <td>SE Stage_4</td>\n    <td>22.68</td>\n    <td>6.22</td>\n    <td>3.86</td>\n    <td>26.4M</td>\n  </tr>\n  <tr>\n    <td>SE All</td>\n    <td>22.28</td>\n    <td>6.03</td>\n    <td>3.87</td>\n    <td>28.1M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_015_page009.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                55,
+                507,
+                295,
+                553
+            ],
+            "caption": "The text content from the image is:\n\n\"TABLE 16\nEffect of Squeeze operator on ImageNet (error rates %).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n    <td>GFLOPs</td>\n    <td>Params</td>\n  </tr>\n  <tr>\n    <td>ResNet-50</td>\n    <td>23.30</td>\n    <td>6.55</td>\n    <td>3.86</td>\n    <td>25.6M</td>\n  </tr>\n  <tr>\n    <td>No Squeeze</td>\n    <td>22.93</td>\n    <td>6.39</td>\n    <td>4.27</td>\n    <td>28.1M</td>\n  </tr>\n  <tr>\n    <td>SE</td>\n    <td>22.28</td>\n    <td>6.03</td>\n    <td>3.87</td>\n    <td>28.1M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_016_page010.png"
+        }
+    ]
+}

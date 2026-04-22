@@ -1,0 +1,174 @@
+{
+    "total_count": 12,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                146,
+                500,
+                464,
+                713
+            ],
+            "caption": "Figure 1: Synthetic celebrities sampled from our model; see Section 3 for architecture and method, and Section 5 for more results.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                153,
+                70,
+                484,
+                271
+            ],
+            "caption": "Figure 2: We propose a generative flow where each step (left) consists of an actnorm step, followed by an invertible \\(1 \\times 1\\) convolution, followed by an affine transformation (Dinh et al., 2014). This flow is combined with a multi-scale architecture (right). See Section 3 and Table 1. Figure 2: We propose a generative flow where each step (left) consists of an actnorm step, followed by an invertible \\(1 \\times 1\\) convolution, followed by an affine transformation (Dinh et al., 2014). This flow is combined with a multi-scale architecture (right). See Section 3 and Table 1.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                108,
+                82,
+                493,
+                219
+            ],
+            "caption": "Figure 3: Comparison of the three variants - a reversing operation as described in the RealNVP, a fixed random permutation, and our proposed invertible \\(1 \\times 1\\) convolution, with additive (left) versus affine (right) coupling layers. We plot the mean and standard deviation across three runs with different random seeds.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                146,
+                145,
+                465,
+                345
+            ],
+            "caption": "Figure 4: Random samples from the model, with temperature 0.7",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                146,
+                70,
+                465,
+                178
+            ],
+            "caption": "Figure 5: Linear interpolation in latent space between real images",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                125,
+                206,
+                486,
+                364
+            ],
+            "caption": "Figure 6: Manipulation of attributes of a face. Each row is made by interpolating the latent code of an image along a vector corresponding to the attribute, with the middle image being the original image Figure 6: Manipulation of attributes of a face. Each row is made by interpolating the latent code of an image along a vector corresponding to the attribute, with the middle image being the original image",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                110,
+                70,
+                500,
+                198
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 7: Samples from model trained on 5-bit LSUN bedrooms, at temperature 0.875. Resolutions 64, 96 and 128 respectively.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page009.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                186,
+                245,
+                424,
+                349
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 8: Effect of change of temperature. From left to right, samples obtained at temperatures 0, 0.25, 0.6, 0.7, 0.8, 0.9, 1.0\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page009.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                185,
+                610,
+                425,
+                691
+            ],
+            "caption": "Figure 9: Samples from shallow model on left vs deep model on right. Shallow model has \\( L = 4 \\) levels, while deep model has \\( L = 6 \\) levels",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page009.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                168,
+                109,
+                443,
+                670
+            ],
+            "caption": "Figure 10: Class conditional samples on 5-bit CIFAR-10 and 32 × 32 ImageNet respectively. Temperature 0.75 Figure 10: Class conditional samples on 5-bit CIFAR-10 and 32 × 32 ImageNet respectively. Temperature 0.75",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page013.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                108,
+                184,
+                502,
+                578
+            ],
+            "caption": "Figure 11: Samples from 8-bit, 64×64 LSUN bedrooms, church and towers respectively. Temperature 1.0",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page014.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                168,
+                243,
+                442,
+                518
+            ],
+            "caption": "Figure 12: Samples from an unconditional model with affine coupling layers trained on the CIFAR-10 dataset with temperature 1.0.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page015.png"
+        }
+    ]
+}

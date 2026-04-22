@@ -1,0 +1,118 @@
+{
+    "total_count": 8,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                112,
+                522,
+                498,
+                650
+            ],
+            "caption": "Figure 1: Class-conditional 256x256 image samples from a two-level model trained on ImageNet.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                118,
+                75,
+                294,
+                201
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                110,
+                322,
+                500,
+                435
+            ],
+            "caption": "Figure 2: VQ-VAE architecture. Figure 3: Reconstructions from a hierarchical VQ-VAE with three latent maps (top, middle, bottom). The rightmost image is the original. Each latent map adds extra detail to the reconstruction. These latent maps are approximately 3072x, 768x, 192x times smaller than the original image (respectively).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                334,
+                74,
+                479,
+                201
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                107,
+                123,
+                504,
+                633
+            ],
+            "caption": "Figure 4: Class conditional random samples. Classes from the top row are: 108 sea anemone, 109 brain coral, 114 slug, 11 goldfinch, 130 flamingo, 141 redshank, 154 Pekinese, 157 papillon, 97 drake, and 28 spotted salamander.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                109,
+                109,
+                501,
+                671
+            ],
+            "caption": "Figure 5: Sample diversity comparison for the proposed method and BigGan Deep for Tinca-Tinca (1st ImageNet class) and Ostrich (10th ImageNet class). BigGAN samples were taken with the truncation level 1.0, to yield its maximum diversity. There are several kinds of samples such as top view of the fish or different kinds of poses such as a close up ostrich absent from BigGAN’s samples. Please zoom into the pdf version for more details and refer to the Supplementary material for diversity comparison on more classes.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                109,
+                89,
+                501,
+                655
+            ],
+            "caption": "Figure 6: Representative samples from the three level hierarchical model trained on FFHQ-1024 × 1024. The model generates realistic looking faces that respect long-range dependencies such as matching eye colour or symmetric facial features, while covering lower density modes of the dataset (e.g., green hair). Please refer to the supplementary material for more samples, including full resolution samples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page009.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                110,
+                70,
+                496,
+                291
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 7: Quantitative Evaluation of Diversity-Quality trade-off with FID/IS and Precision/Recall.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page011.png"
+        }
+    ]
+}

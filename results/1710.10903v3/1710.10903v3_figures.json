@@ -1,0 +1,34 @@
+{
+    "total_count": 2,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                106,
+                76,
+                506,
+                269
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                127,
+                457,
+                483,
+                651
+            ],
+            "caption": "Figure 2: A t-SNE plot of the computed feature representations of a pre-trained GAT model’s first hidden layer on the Cora dataset. Node colors denote classes. Edge thickness indicates aggregated normalized attention coefficients between nodes \\(i\\) and \\(j\\), across all eight attention heads \\(\\left(\\sum_{k=1}^{K} \\alpha_{ij}^k + \\alpha_{ji}^k\\right)\\).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page009.png"
+        }
+    ]
+}

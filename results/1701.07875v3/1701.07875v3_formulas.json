@@ -1,0 +1,762 @@
+{
+    "total_count": 63,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                255,
+                379,
+                356,
+                410
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\max_{\\theta \\in \\mathbb{R}^d} \\frac{1}{m} \\sum_{i=1}^{m} \\log P_\\theta(x^{(i)})\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\max_{\\theta \\in \\mathbb{R}^d} \\frac{1}{m} \\sum_{i=1}^{m} \\log P_\\theta(x^{(i)})\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                223,
+                527,
+                412,
+                555
+            ],
+            "content": "K L ( \\mathbb { P } _ { r } \\| \\mathbb { P } _ { g } ) = \\int \\log \\left( \\frac { P _ { r } ( x ) } { P _ { g } ( x ) } \\right) P _ { r } ( x ) d \\mu ( x ) \\ ,",
+            "latex": "K L ( \\mathbb { P } _ { r } \\| \\mathbb { P } _ { g } ) = \\int \\log \\left( \\frac { P _ { r } ( x ) } { P _ { g } ( x ) } \\right) P _ { r } ( x ) d \\mu ( x ) \\ ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                244,
+                472,
+                391,
+                494
+            ],
+            "content": "```latex\n\\delta(\\mathbb{P}_r, \\mathbb{P}_g) = \\sup_{A \\in \\Sigma} |\\mathbb{P}_r(A) - \\mathbb{P}_g(A)|.\n```",
+            "latex": "```latex\n\\delta(\\mathbb{P}_r, \\mathbb{P}_g) = \\sup_{A \\in \\Sigma} |\\mathbb{P}_r(A) - \\mathbb{P}_g(A)|.\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                222,
+                221,
+                414,
+                243
+            ],
+            "content": "```latex\nW(\\mathbb{P}_r, \\mathbb{P}_g) = \\inf_{\\gamma \\in \\Pi(\\mathbb{P}_r, \\mathbb{P}_g)} \\mathbb{E}_{(x,y) \\sim \\gamma} \\left[ \\| x - y \\| \\right],\n```",
+            "latex": "```latex\nW(\\mathbb{P}_r, \\mathbb{P}_g) = \\inf_{\\gamma \\in \\Pi(\\mathbb{P}_r, \\mathbb{P}_g)} \\mathbb{E}_{(x,y) \\sim \\gamma} \\left[ \\| x - y \\| \\right],\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                225,
+                147,
+                411,
+                162
+            ],
+            "content": "J S ( \\mathbb { P } _ { r } , \\mathbb { P } _ { g } ) = K L ( \\mathbb { P } _ { r } \\| \\mathbb { P } _ { m } ) + K L ( \\mathbb { P } _ { g } \\| \\mathbb { P } _ { m } ) ~ ,",
+            "latex": "J S ( \\mathbb { P } _ { r } , \\mathbb { P } _ { g } ) = K L ( \\mathbb { P } _ { r } \\| \\mathbb { P } _ { m } ) + K L ( \\mathbb { P } _ { g } \\| \\mathbb { P } _ { m } ) ~ ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                138,
+                429,
+                364,
+                558
+            ],
+            "content": "```latex\n\\begin{itemize}\n    \\item $W(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = |\\theta|$,\n    \\item $JS(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            \\log 2 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $KL(\\mathbb{P}_{\\theta} \\| \\mathbb{P}_0) = KL(\\mathbb{P}_0 \\| \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            +\\infty & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $\\delta(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            1 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$.\n\\end{itemize}\n```",
+            "latex": "```latex\n\\begin{itemize}\n    \\item $W(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = |\\theta|$,\n    \\item $JS(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            \\log 2 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $KL(\\mathbb{P}_{\\theta} \\| \\mathbb{P}_0) = KL(\\mathbb{P}_0 \\| \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            +\\infty & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $\\delta(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            1 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$.\n\\end{itemize}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                138,
+                428,
+                363,
+                559
+            ],
+            "content": "```latex\n\\begin{itemize}\n    \\item $W(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = |\\theta|$,\n    \\item $JS(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            \\log 2 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $KL(\\mathbb{P}_{\\theta} \\| \\mathbb{P}_0) = KL(\\mathbb{P}_0 \\| \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            +\\infty & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $\\delta(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            1 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$.\n\\end{itemize}\n```",
+            "latex": "```latex\n\\begin{itemize}\n    \\item $W(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = |\\theta|$,\n    \\item $JS(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            \\log 2 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $KL(\\mathbb{P}_{\\theta} \\| \\mathbb{P}_0) = KL(\\mathbb{P}_0 \\| \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            +\\infty & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$,\n    \\item $\\delta(\\mathbb{P}_0, \\mathbb{P}_{\\theta}) = \n        \\begin{cases} \n            1 & \\text{if } \\theta \\neq 0 \\\\\n            0 & \\text{if } \\theta = 0\n        \\end{cases}$.\n\\end{itemize}\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                203,
+                599,
+                408,
+                622
+            ],
+            "content": "W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\operatorname* { s u p } _ { \\| f \\| _ { L } \\leq 1 } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ]",
+            "latex": "W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\operatorname* { s u p } _ { \\| f \\| _ { L } \\leq 1 } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ]"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                162,
+                341,
+                487,
+                384
+            ],
+            "content": "```latex\n- W(\\mathbb{P}_n, \\mathbb{P}) \\to 0.\n- \\mathbb{P}_n \\xrightarrow{D} \\mathbb{P} \\text{ where } \\xrightarrow{D} \\text{ represents convergence in distribution for random variables.}\n```",
+            "latex": "```latex\n- W(\\mathbb{P}_n, \\mathbb{P}) \\to 0.\n- \\mathbb{P}_n \\xrightarrow{D} \\mathbb{P} \\text{ where } \\xrightarrow{D} \\text{ represents convergence in distribution for random variables.}\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                232,
+                309,
+                379,
+                329
+            ],
+            "content": "\\operatorname* { m a x } _ { \\| f \\| _ { L } \\leq 1 } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ]",
+            "latex": "\\operatorname* { m a x } _ { \\| f \\| _ { L } \\leq 1 } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ]"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                222,
+                349,
+                389,
+                363
+            ],
+            "content": "```latex\n\\begin{equation}\n\\nabla_{\\theta}W(\\mathbb{P}_r, \\mathbb{P}_{\\theta}) = -\\mathbb{E}_{z \\sim p(z)}[\\nabla_{\\theta}f(g_{\\theta}(z))]\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\n\\nabla_{\\theta}W(\\mathbb{P}_r, \\mathbb{P}_{\\theta}) = -\\mathbb{E}_{z \\sim p(z)}[\\nabla_{\\theta}f(g_{\\theta}(z))]\n\\end{equation}\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                222,
+                150,
+                390,
+                167
+            ],
+            "content": "```latex\n\\max_{w \\in \\mathcal{W}} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[f_w(x)] - \\mathbb{E}_{z \\sim p(z)}[f_w(g_\\theta(z))]\n```",
+            "latex": "```latex\n\\max_{w \\in \\mathcal{W}} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[f_w(x)] - \\mathbb{E}_{z \\sim p(z)}[f_w(g_\\theta(z))]\n```"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                194,
+                611,
+                418,
+                626
+            ],
+            "content": "L ( D , g _ { \\theta } ) = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ \\log D ( x ) ] + \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ \\log ( 1 - D ( x ) ) ]",
+            "latex": "L ( D , g _ { \\theta } ) = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ \\log D ( x ) ] + \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ \\log ( 1 - D ( x ) ) ]"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                208,
+                545,
+                403,
+                566
+            ],
+            "content": "d _ { \\mathcal { F } } ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\operatorname* { s u p } _ { f \\in \\mathcal { F } } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ]",
+            "latex": "d _ { \\mathcal { F } } ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\operatorname* { s u p } _ { f \\in \\mathcal { F } } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ]"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                259,
+                327,
+                352,
+                348
+            ],
+            "content": "\\| \\mu \\| _ { T V } = \\operatorname* { s u p } _ { A \\subseteq { \\mathcal { X } } } | \\mu ( A ) |",
+            "latex": "\\| \\mu \\| _ { T V } = \\operatorname* { s u p } _ { A \\subseteq { \\mathcal { X } } } | \\mu ( A ) |"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                249,
+                389,
+                361,
+                403
+            ],
+            "content": "\\delta ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) : = \\| \\mathbb { P } _ { r } - \\mathbb { P } _ { \\theta } \\| _ { T V }",
+            "latex": "\\delta ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) : = \\| \\mathbb { P } _ { r } - \\mathbb { P } _ { \\theta } \\| _ { T V }"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                230,
+                435,
+                380,
+                448
+            ],
+            "content": "```latex\n\\Phi : (\\text{Prob}(\\mathcal{X}), \\delta) \\to (C_b(\\mathcal{X})^*, \\| \\cdot \\|)\n```",
+            "latex": "```latex\n\\Phi : (\\text{Prob}(\\mathcal{X}), \\delta) \\to (C_b(\\mathcal{X})^*, \\| \\cdot \\|)\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                184,
+                260,
+                425,
+                273
+            ],
+            "content": "```latex\nC_b(\\mathcal{X})^* = \\{\\phi : C_b(\\mathcal{X}) \\to \\mathbb{R}, \\phi \\text{ is linear and continuous}\\}\n```",
+            "latex": "```latex\nC_b(\\mathcal{X})^* = \\{\\phi : C_b(\\mathcal{X}) \\to \\mathbb{R}, \\phi \\text{ is linear and continuous}\\}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                190,
+                193,
+                420,
+                207
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nC_b(\\mathcal{X}) = \\{ f : \\mathcal{X} \\to \\mathbb{R}, \\text{$f$ is continuous and bounded} \\}\n```\n\nThis will render the same mathematical expression as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nC_b(\\mathcal{X}) = \\{ f : \\mathcal{X} \\to \\mathbb{R}, \\text{$f$ is continuous and bounded} \\}\n```\n\nThis will render the same mathematical expression as shown in the image."
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                231,
+                325,
+                380,
+                383
+            ],
+            "content": "```latex\nW(\\mathbb{P}_{\\theta}, \\mathbb{P}_{\\theta'}) \\leq \\int_{\\mathcal{X} \\times \\mathcal{X}} \\|x - y\\| \\, \\mathrm{d}\\gamma\n\n= \\mathbb{E}_{(x,y) \\sim \\gamma}[\\|x - y\\|]\n\n= \\mathbb{E}_z[\\|g_\\theta(z) - g_{\\theta'}(z)\\|]\n```",
+            "latex": "```latex\nW(\\mathbb{P}_{\\theta}, \\mathbb{P}_{\\theta'}) \\leq \\int_{\\mathcal{X} \\times \\mathcal{X}} \\|x - y\\| \\, \\mathrm{d}\\gamma\n\n= \\mathbb{E}_{(x,y) \\sim \\gamma}[\\|x - y\\|]\n\n= \\mathbb{E}_z[\\|g_\\theta(z) - g_{\\theta'}(z)\\|]\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                204,
+                554,
+                408,
+                568
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\|g_\\theta(z) - g'_\\theta(z')\\| \\leq L(\\theta, z)(\\|\\theta - \\theta'\\| + \\|z - z'\\|)\n```\n\nThis will render the mathematical expression correctly in a LaTeX document.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\|g_\\theta(z) - g'_\\theta(z')\\| \\leq L(\\theta, z)(\\|\\theta - \\theta'\\| + \\|z - z'\\|)\n```\n\nThis will render the mathematical expression correctly in a LaTeX document."
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                211,
+                444,
+                400,
+                459
+            ],
+            "content": "```latex\nW(\\mathbb{P}_{\\theta}, \\mathbb{P}_{\\theta'}) \\leq \\mathbb{E}_z[\\|g_{\\theta}(z) - g_{\\theta'}(z)\\|] \\rightarrow_{\\theta \\rightarrow \\theta'} 0\n```",
+            "latex": "```latex\nW(\\mathbb{P}_{\\theta}, \\mathbb{P}_{\\theta'}) \\leq \\mathbb{E}_z[\\|g_{\\theta}(z) - g_{\\theta'}(z)\\|] \\rightarrow_{\\theta \\rightarrow \\theta'} 0\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                213,
+                590,
+                398,
+                606
+            ],
+            "content": "```latex\n\\mathbb{E}_z[\\|g_{\\theta}(z) - g_{\\theta'}(z)\\|] \\leq \\|{\\theta} - {\\theta'}\\|\\mathbb{E}_z[L({\\theta}, z)]\n```",
+            "latex": "```latex\n\\mathbb{E}_z[\\|g_{\\theta}(z) - g_{\\theta'}(z)\\|] \\leq \\|{\\theta} - {\\theta'}\\|\\mathbb{E}_z[L({\\theta}, z)]\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                185,
+                655,
+                425,
+                669
+            ],
+            "content": "| W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) - W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta ^ { \\prime } } ) | \\leq W ( \\mathbb { P } _ { \\theta } , \\mathbb { P } _ { \\theta ^ { \\prime } } ) \\leq L ( \\theta ) \\| \\theta - \\theta ^ { \\prime } \\|",
+            "latex": "| W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) - W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta ^ { \\prime } } ) | \\leq W ( \\mathbb { P } _ { \\theta } , \\mathbb { P } _ { \\theta ^ { \\prime } } ) \\leq L ( \\theta ) \\| \\theta - \\theta ^ { \\prime } \\|"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                260,
+                203,
+                351,
+                218
+            ],
+            "content": "{ \\mathbb { E } } _ { z \\sim p } [ L ( \\theta , z ) ] < + \\infty",
+            "latex": "{ \\mathbb { E } } _ { z \\sim p } [ L ( \\theta , z ) ] < + \\infty"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                200,
+                485,
+                411,
+                500
+            ],
+            "content": "```latex\n|W(\\mathbb{P}_r, \\mathbb{P}_{\\theta}) - W(\\mathbb{P}_r, \\mathbb{P}_{\\theta'})| \\leq W(\\mathbb{P}_{\\theta}, \\mathbb{P}_{\\theta'}) \\rightarrow_{\\theta \\rightarrow \\theta'} 0\n```",
+            "latex": "```latex\n|W(\\mathbb{P}_r, \\mathbb{P}_{\\theta}) - W(\\mathbb{P}_r, \\mathbb{P}_{\\theta'})| \\leq W(\\mathbb{P}_{\\theta}, \\mathbb{P}_{\\theta'}) \\rightarrow_{\\theta \\rightarrow \\theta'} 0\n```"
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                255,
+                580,
+                403,
+                667
+            ],
+            "content": "\\begin{array} { l } { { \\delta ( \\mathbb { P } _ { m } , \\mathbb { P } _ { n } ) = \\| \\mathbb { P } _ { m } - \\mathbb { P } _ { n } \\| _ { T V } } } \\\\ { { = \\| \\frac { 1 } { 2 } \\mathbb { P } + \\frac { 1 } { 2 } \\mathbb { P } _ { n } - \\mathbb { P } _ { n } \\| _ { T V } } } \\\\ { { = \\frac { 1 } { 2 } \\| \\mathbb { P } - \\mathbb { P } _ { n } \\| _ { T V } } } \\\\ { { = \\frac { 1 } { 2 } \\delta ( \\mathbb { P } , \\mathbb { P } ) \\leq \\delta ( \\mathbb { P } _ { n } , \\mathbb { P } ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { \\delta ( \\mathbb { P } _ { m } , \\mathbb { P } _ { n } ) = \\| \\mathbb { P } _ { m } - \\mathbb { P } _ { n } \\| _ { T V } } } \\\\ { { = \\| \\frac { 1 } { 2 } \\mathbb { P } + \\frac { 1 } { 2 } \\mathbb { P } _ { n } - \\mathbb { P } _ { n } \\| _ { T V } } } \\\\ { { = \\frac { 1 } { 2 } \\| \\mathbb { P } - \\mathbb { P } _ { n } \\| _ { T V } } } \\\\ { { = \\frac { 1 } { 2 } \\delta ( \\mathbb { P } , \\mathbb { P } ) \\leq \\delta ( \\mathbb { P } _ { n } , \\mathbb { P } ) } } \\end{array}"
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                154,
+                335,
+                455,
+                407
+            ],
+            "content": "```latex\n\\|\\nabla_{z,\\theta}g_\\theta(z)\\| \\leq \\|\\prod_{i=1}^{H} W_i D_i\\| + \\sum_{k=1}^{H} \\left\\|\\left(\\left(\\prod_{i=k+1}^{H} W_i D_i\\right)D_k\\right)f_{1:k-1}(z)\\right\\|\n\n\\leq L^H \\prod_{i=H}^{K} \\|W_i\\| + \\sum_{k=1}^{H} \\|z\\|L^H \\left(\\prod_{i=1}^{k-1} \\|W_i\\|\\right) \\left(\\prod_{i=k+1}^{H} \\|W_i\\|\\right)\n```",
+            "latex": "```latex\n\\|\\nabla_{z,\\theta}g_\\theta(z)\\| \\leq \\|\\prod_{i=1}^{H} W_i D_i\\| + \\sum_{k=1}^{H} \\left\\|\\left(\\left(\\prod_{i=k+1}^{H} W_i D_i\\right)D_k\\right)f_{1:k-1}(z)\\right\\|\n\n\\leq L^H \\prod_{i=H}^{K} \\|W_i\\| + \\sum_{k=1}^{H} \\|z\\|L^H \\left(\\prod_{i=1}^{k-1} \\|W_i\\|\\right) \\left(\\prod_{i=k+1}^{H} \\|W_i\\|\\right)\n```"
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                244,
+                225,
+                367,
+                240
+            ],
+            "content": "\\mathbb { E } _ { z \\sim p ( z ) } [ \\| \\nabla _ { \\theta , z } g _ { \\theta } ( z ) \\| ] < + \\infty",
+            "latex": "\\mathbb { E } _ { z \\sim p ( z ) } [ \\| \\nabla _ { \\theta , z } g _ { \\theta } ( z ) \\| ] < + \\infty"
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                180,
+                443,
+                430,
+                458
+            ],
+            "content": "```latex\n\\mathbb{E}_{z \\sim p(z)}[\\|\\nabla_{\\theta,z}g_\\theta(z)\\|] \\leq C_1(\\theta) + C_2(\\theta)\\mathbb{E}_{z \\sim p(z)}[\\|z\\|] < +\\infty\n```",
+            "latex": "```latex\n\\mathbb{E}_{z \\sim p(z)}[\\|\\nabla_{\\theta,z}g_\\theta(z)\\|] \\leq C_1(\\theta) + C_2(\\theta)\\mathbb{E}_{z \\sim p(z)}[\\|z\\|] < +\\infty\n```"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                216,
+                508,
+                442,
+                605
+            ],
+            "content": "```latex\nKL(\\mathbb{P}_n \\parallel \\mathbb{P}_m) = \\int \\log(f_n) \\, d\\mathbb{P}_n\n\n\\leq \\log(1 + \\epsilon) + \\int_{A_n} \\log(f_n) \\, d\\mathbb{P}_n\n\n\\leq \\log(1 + \\epsilon) + \\log(3)\\mathbb{P}_n(A_n)\n\n\\leq \\log(1 + \\epsilon) + \\log(3)\\left(\\frac{1}{\\epsilon} + 1\\right)\\delta(\\mathbb{P}_n, \\mathbb{P})\n```",
+            "latex": "```latex\nKL(\\mathbb{P}_n \\parallel \\mathbb{P}_m) = \\int \\log(f_n) \\, d\\mathbb{P}_n\n\n\\leq \\log(1 + \\epsilon) + \\int_{A_n} \\log(f_n) \\, d\\mathbb{P}_n\n\n\\leq \\log(1 + \\epsilon) + \\log(3)\\mathbb{P}_n(A_n)\n\n\\leq \\log(1 + \\epsilon) + \\log(3)\\left(\\frac{1}{\\epsilon} + 1\\right)\\delta(\\mathbb{P}_n, \\mathbb{P})\n```"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                259,
+                308,
+                398,
+                368
+            ],
+            "content": "```latex\n\\epsilon \\mathbb{P}_m(A_n) \\leq \\mathbb{P}_n(A_n) - \\mathbb{P}_m(A_n)\n\\leq |\\mathbb{P}_n(A_n) - \\mathbb{P}_m(A_n)|\n\\leq \\delta(\\mathbb{P}_n, \\mathbb{P}_m)\n\\leq \\delta(\\mathbb{P}_n, \\mathbb{P}).\n```",
+            "latex": "```latex\n\\epsilon \\mathbb{P}_m(A_n) \\leq \\mathbb{P}_n(A_n) - \\mathbb{P}_m(A_n)\n\\leq |\\mathbb{P}_n(A_n) - \\mathbb{P}_m(A_n)|\n\\leq \\delta(\\mathbb{P}_n, \\mathbb{P}_m)\n\\leq \\delta(\\mathbb{P}_n, \\mathbb{P}).\n```"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                238,
+                394,
+                418,
+                486
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbb{P}_n(A_n) &\\leq \\mathbb{P}_m(A_n) + |\\mathbb{P}_n(A_n) - \\mathbb{P}_m(A_n)| \\\\\n&\\leq \\frac{1}{\\epsilon} \\delta(\\mathbb{P}_n, \\mathbb{P}) + \\delta(\\mathbb{P}_n, \\mathbb{P}_m) \\\\\n&\\leq \\frac{1}{\\epsilon} \\delta(\\mathbb{P}_n, \\mathbb{P}) + \\delta(\\mathbb{P}_n, \\mathbb{P}) \\\\\n&\\leq \\left( \\frac{1}{\\epsilon} + 1 \\right) \\delta(\\mathbb{P}_n, \\mathbb{P})\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbb{P}_n(A_n) &\\leq \\mathbb{P}_m(A_n) + |\\mathbb{P}_n(A_n) - \\mathbb{P}_m(A_n)| \\\\\n&\\leq \\frac{1}{\\epsilon} \\delta(\\mathbb{P}_n, \\mathbb{P}) + \\delta(\\mathbb{P}_n, \\mathbb{P}_m) \\\\\n&\\leq \\frac{1}{\\epsilon} \\delta(\\mathbb{P}_n, \\mathbb{P}) + \\delta(\\mathbb{P}_n, \\mathbb{P}) \\\\\n&\\leq \\left( \\frac{1}{\\epsilon} + 1 \\right) \\delta(\\mathbb{P}_n, \\mathbb{P})\n\\end{align*}\n```"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                261,
+                169,
+                397,
+                195
+            ],
+            "content": "\\mathbb { P } _ { n } ( A ) = \\int _ { A } f _ { n } \\, \\mathrm { d } \\mathbb { P } _ { m } \\geq 3 \\mathbb { P } _ { m } ( A )",
+            "latex": "\\mathbb { P } _ { n } ( A ) = \\int _ { A } f _ { n } \\, \\mathrm { d } \\mathbb { P } _ { m } \\geq 3 \\mathbb { P } _ { m } ( A )"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                241,
+                258,
+                416,
+                284
+            ],
+            "content": "\\mathbb { P } _ { n } ( A _ { n } ) = \\int _ { A _ { n } } f _ { n } \\, \\mathrm { d } \\mathbb { P } _ { m } \\geq ( 1 + \\epsilon ) \\mathbb { P } _ { m } ( A _ { n } )",
+            "latex": "\\mathbb { P } _ { n } ( A _ { n } ) = \\int _ { A _ { n } } f _ { n } \\, \\mathrm { d } \\mathbb { P } _ { m } \\geq ( 1 + \\epsilon ) \\mathbb { P } _ { m } ( A _ { n } )"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                223,
+                655,
+                435,
+                670
+            ],
+            "content": "```latex\n2\\mathbb{P}_m(\\{g_n > 3\\}) \\geq \\mathbb{P}(\\{g_n > 3\\}) \\geq 3\\mathbb{P}_m(\\{g_n > 3\\})\n```",
+            "latex": "```latex\n2\\mathbb{P}_m(\\{g_n > 3\\}) \\geq \\mathbb{P}(\\{g_n > 3\\}) \\geq 3\\mathbb{P}_m(\\{g_n > 3\\})\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                228,
+                397,
+                429,
+                459
+            ],
+            "content": "```latex\n\\delta(\\mathbb{P}_n, \\mathbb{P}) \\leq \\delta(\\mathbb{P}_n, \\mathbb{P}_m) + \\delta(\\mathbb{P}, \\mathbb{P}_m)\n\n\\leq \\sqrt{\\frac{1}{2} KL(\\mathbb{P}_n || \\mathbb{P}_m)} + \\sqrt{\\frac{1}{2} KL(\\mathbb{P} || \\mathbb{P}_m)}\n\n\\leq 2 \\sqrt{JS(\\overline{\\mathbb{P}_n}, \\overline{\\mathbb{P}})} \\to 0\n```",
+            "latex": "```latex\n\\delta(\\mathbb{P}_n, \\mathbb{P}) \\leq \\delta(\\mathbb{P}_n, \\mathbb{P}_m) + \\delta(\\mathbb{P}, \\mathbb{P}_m)\n\n\\leq \\sqrt{\\frac{1}{2} KL(\\mathbb{P}_n || \\mathbb{P}_m)} + \\sqrt{\\frac{1}{2} KL(\\mathbb{P} || \\mathbb{P}_m)}\n\n\\leq 2 \\sqrt{JS(\\overline{\\mathbb{P}_n}, \\overline{\\mathbb{P}})} \\to 0\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                250,
+                535,
+                386,
+                591
+            ],
+            "content": "```latex\n\\delta(\\mathbb{P}_n, \\mathbb{P}) \\leq \\sqrt{\\frac{1}{2} KL(\\mathbb{P}_n \\| \\mathbb{P})} \\to 0\n\n\\delta(\\mathbb{P}, \\mathbb{P}_n) \\leq \\sqrt{\\frac{1}{2} KL(\\mathbb{P} \\| \\mathbb{P}_n)} \\to 0\n```",
+            "latex": "```latex\n\\delta(\\mathbb{P}_n, \\mathbb{P}) \\leq \\sqrt{\\frac{1}{2} KL(\\mathbb{P}_n \\| \\mathbb{P})} \\to 0\n\n\\delta(\\mathbb{P}, \\mathbb{P}_n) \\leq \\sqrt{\\frac{1}{2} KL(\\mathbb{P} \\| \\mathbb{P}_n)} \\to 0\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                244,
+                162,
+                414,
+                187
+            ],
+            "content": "\\mathbb { P } ( B _ { n } ) = \\int _ { B _ { n } } g _ { n } \\, \\mathrm { d } \\mathbb { P } _ { m } \\geq ( 1 + \\epsilon ) \\mathbb { P } _ { m } ( B _ { n } )",
+            "latex": "\\mathbb { P } ( B _ { n } ) = \\int _ { B _ { n } } g _ { n } \\, \\mathrm { d } \\mathbb { P } _ { m } \\geq ( 1 + \\epsilon ) \\mathbb { P } _ { m } ( B _ { n } )"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                239,
+                223,
+                420,
+                292
+            ],
+            "content": "```latex\nKL(\\mathbb{P} \\|\\mathbb{P}_m) = \\int \\log(g_n) \\, d\\mathbb{P}\n\n\\leq \\log(1 + \\epsilon) + \\int_{B_n} \\log(g_n) \\, d\\mathbb{P}\n\n\\leq \\log(1 + \\epsilon) + \\log(3)\\mathbb{P}(B_n)\n```",
+            "latex": "```latex\nKL(\\mathbb{P} \\|\\mathbb{P}_m) = \\int \\log(g_n) \\, d\\mathbb{P}\n\n\\leq \\log(1 + \\epsilon) + \\int_{B_n} \\log(g_n) \\, d\\mathbb{P}\n\n\\leq \\log(1 + \\epsilon) + \\log(3)\\mathbb{P}(B_n)\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                225,
+                332,
+                434,
+                356
+            ],
+            "content": "```latex\nJS(\\mathbb{P}_n, \\mathbb{P}) = \\frac{1}{2} KL(\\mathbb{P}_n || \\mathbb{P}_m) + \\frac{1}{2} KL(\\mathbb{P} || \\mathbb{P}_m) \\to 0\n```",
+            "latex": "```latex\nJS(\\mathbb{P}_n, \\mathbb{P}) = \\frac{1}{2} KL(\\mathbb{P}_n || \\mathbb{P}_m) + \\frac{1}{2} KL(\\mathbb{P} || \\mathbb{P}_m) \\to 0\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                194,
+                352,
+                419,
+                397
+            ],
+            "content": "```latex\n\\begin{align*}\n\\nabla_{\\theta} W(\\mathbb{P}_r, \\mathbb{P}_{\\theta}) &= \\nabla_{\\theta} V(f, \\theta) \\\\\n&= \\nabla_{\\theta} [\\mathbb{E}_{x \\sim \\mathbb{P}_r}[f(x)] - \\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta}(z))]] \\\\\n&= -\\nabla_{\\theta} \\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta}(z))]\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\nabla_{\\theta} W(\\mathbb{P}_r, \\mathbb{P}_{\\theta}) &= \\nabla_{\\theta} V(f, \\theta) \\\\\n&= \\nabla_{\\theta} [\\mathbb{E}_{x \\sim \\mathbb{P}_r}[f(x)] - \\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta}(z))]] \\\\\n&= -\\nabla_{\\theta} \\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta}(z))]\n\\end{align*}\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                214,
+                144,
+                398,
+                177
+            ],
+            "content": "\\begin{array} { l } { { V ( \\widetilde { f } , \\theta ) = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ \\widetilde { f } ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ \\widetilde { f } ( x ) ] } } \\\\ { { = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ \\widetilde { f } ( x ) ] - \\mathbb { E } _ { z \\sim p ( z ) } [ \\widetilde { f } ( g _ { \\theta } ( z ) ) ] } } \\end{array}",
+            "latex": "\\begin{array} { l } { { V ( \\widetilde { f } , \\theta ) = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ \\widetilde { f } ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ \\widetilde { f } ( x ) ] } } \\\\ { { = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ \\widetilde { f } ( x ) ] - \\mathbb { E } _ { z \\sim p ( z ) } [ \\widetilde { f } ( g _ { \\theta } ( z ) ) ] } } \\end{array}"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                229,
+                226,
+                382,
+                250
+            ],
+            "content": "W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\operatorname* { s u p } _ { \\tilde { f } \\in \\mathcal { F } } V ( \\tilde { f } , \\theta ) = V ( f , \\theta )",
+            "latex": "W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\operatorname* { s u p } _ { \\tilde { f } \\in \\mathcal { F } } V ( \\tilde { f } , \\theta ) = V ( f , \\theta )"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                204,
+                433,
+                408,
+                448
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n\\[\n-\\nabla_{\\theta} \\mathbb{E}_{z \\sim p(z)} [f(g_{\\theta}(z))] = -\\mathbb{E}_{z \\sim p(z)} [\\nabla_{\\theta} f(g_{\\theta}(z))]\n\\]",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n\\[\n-\\nabla_{\\theta} \\mathbb{E}_{z \\sim p(z)} [f(g_{\\theta}(z))] = -\\mathbb{E}_{z \\sim p(z)} [\\nabla_{\\theta} f(g_{\\theta}(z))]\n\\]"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                138,
+                643,
+                460,
+                672
+            ],
+            "content": "```latex\n\\frac{\\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta}(z))] - \\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta_0}(z))] - \\langle (\\theta - \\theta_0), \\mathbb{E}_{z \\sim p(z)}[\\nabla_\\theta f(g_{\\theta}(z)) | \\theta_0] \\rangle}{\\|\\theta - \\theta_0\\|}\n```",
+            "latex": "```latex\n\\frac{\\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta}(z))] - \\mathbb{E}_{z \\sim p(z)}[f(g_{\\theta_0}(z))] - \\langle (\\theta - \\theta_0), \\mathbb{E}_{z \\sim p(z)}[\\nabla_\\theta f(g_{\\theta}(z)) | \\theta_0] \\rangle}{\\|\\theta - \\theta_0\\|}\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                248,
+                292,
+                364,
+                306
+            ],
+            "content": "\\nabla _ { \\theta } W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\nabla _ { \\theta } V ( f , \\theta )",
+            "latex": "\\nabla _ { \\theta } W ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } ) = \\nabla _ { \\theta } V ( f , \\theta )"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                192,
+                604,
+                418,
+                619
+            ],
+            "content": "```latex\n\\mathbb{E}_{z \\sim p(z)}[\\|\\nabla_{\\theta} f(g_{\\theta}(z))|_{\\theta_0}\\|] \\leq \\mathbb{E}_{z \\sim p(z)}[L(\\theta_0, z)] < +\\infty\n```",
+            "latex": "```latex\n\\mathbb{E}_{z \\sim p(z)}[\\|\\nabla_{\\theta} f(g_{\\theta}(z))|_{\\theta_0}\\|] \\leq \\mathbb{E}_{z \\sim p(z)}[L(\\theta_0, z)] < +\\infty\n```"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                212,
+                320,
+                400,
+                336
+            ],
+            "content": "\\nabla _ { \\theta } \\mathbb { E } _ { z \\sim p ( z ) } [ f ( g _ { \\theta } ( z ) ) ] = \\mathbb { E } _ { z \\sim p ( z ) } [ \\nabla _ { \\theta } f ( g _ { \\theta } ( z ) ) ]",
+            "latex": "\\nabla _ { \\theta } \\mathbb { E } _ { z \\sim p ( z ) } [ f ( g _ { \\theta } ( z ) ) ] = \\mathbb { E } _ { z \\sim p ( z ) } [ \\nabla _ { \\theta } f ( g _ { \\theta } ( z ) ) ]"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                174,
+                122,
+                437,
+                151
+            ],
+            "content": "```latex\n= \\mathbb{E}_{z \\sim p(z)} \\left[ \\frac{f(g_{\\theta}(z)) - f(g_{\\theta_0}(z)) - \\langle (\\theta - \\theta_0), \\nabla_{\\theta} f(g_{\\theta}(z)) |_{\\theta_0} \\rangle}{\\|\\theta - \\theta_0\\|} \\right]\n```",
+            "latex": "```latex\n= \\mathbb{E}_{z \\sim p(z)} \\left[ \\frac{f(g_{\\theta}(z)) - f(g_{\\theta_0}(z)) - \\langle (\\theta - \\theta_0), \\nabla_{\\theta} f(g_{\\theta}(z)) |_{\\theta_0} \\rangle}{\\|\\theta - \\theta_0\\|} \\right]\n```"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                135,
+                208,
+                408,
+                264
+            ],
+            "content": "```latex\n\\begin{align*}\n&\\left\\|\\frac{f(g_{\\theta}(z))-f(g_{\\theta_0}(z))-\\langle(\\theta-\\theta_0), \\nabla_\\theta f(g_{\\theta}(z))|_{\\theta_0}\\rangle}{\\|\\theta-\\theta_0\\|}\\right\\| \\\\\n&\\qquad\\leq \\frac{\\|\\theta-\\theta_0\\|L(\\theta_0,z)+\\|\\theta-\\theta_0\\|\\|\\nabla_\\theta f(g_{\\theta}(z))|_{\\theta_0}\\|}{\\|\\theta-\\theta_0\\|}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n&\\left\\|\\frac{f(g_{\\theta}(z))-f(g_{\\theta_0}(z))-\\langle(\\theta-\\theta_0), \\nabla_\\theta f(g_{\\theta}(z))|_{\\theta_0}\\rangle}{\\|\\theta-\\theta_0\\|}\\right\\| \\\\\n&\\qquad\\leq \\frac{\\|\\theta-\\theta_0\\|L(\\theta_0,z)+\\|\\theta-\\theta_0\\|\\|\\nabla_\\theta f(g_{\\theta}(z))|_{\\theta_0}\\|}{\\|\\theta-\\theta_0\\|}\n\\end{align*}\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                189,
+                597,
+                422,
+                658
+            ],
+            "content": "```latex\nL_D(D, g_\\theta) = \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] + \\mathbb{E}_{z \\sim p(z)}[(m - D(g_\\theta(z)))^+]\n= \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] + \\mathbb{E}_{z \\sim p(z)}[m - D(g_\\theta(z))]\n= m + \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{z \\sim p(z)}[D(g_\\theta(z))]\n= m + \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D(x)]\n```",
+            "latex": "```latex\nL_D(D, g_\\theta) = \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] + \\mathbb{E}_{z \\sim p(z)}[(m - D(g_\\theta(z)))^+]\n= \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] + \\mathbb{E}_{z \\sim p(z)}[m - D(g_\\theta(z))]\n= m + \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{z \\sim p(z)}[D(g_\\theta(z))]\n= m + \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D(x)]\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                249,
+                477,
+                362,
+                498
+            ],
+            "content": "L _ { G } ( D ^ { * } , g _ { \\theta } ) = \\frac { m } { 2 } \\delta ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } )",
+            "latex": "L _ { G } ( D ^ { * } , g _ { \\theta } ) = \\frac { m } { 2 } \\delta ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } )"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                188,
+                217,
+                423,
+                232
+            ],
+            "content": "L _ { D } ( D , g _ { \\theta } ) = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ D ( x ) ] + \\mathbb { E } _ { z \\sim p ( z ) } [ [ m - D ( g _ { \\theta } ( z ) ) ] ^ { + } ]",
+            "latex": "L _ { D } ( D , g _ { \\theta } ) = \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ D ( x ) ] + \\mathbb { E } _ { z \\sim p ( z ) } [ [ m - D ( g _ { \\theta } ( z ) ) ] ^ { + } ]"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                205,
+                263,
+                407,
+                278
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nL_G(D, g_\\theta) = \\mathbb{E}_{z \\sim p(z)} [D(g_\\theta(z))] - \\mathbb{E}_{x \\sim \\mathbb{P}_r} [D(x)]\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nL_G(D, g_\\theta) = \\mathbb{E}_{z \\sim p(z)} [D(g_\\theta(z))] - \\mathbb{E}_{x \\sim \\mathbb{P}_r} [D(x)]\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                205,
+                263,
+                406,
+                278
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nL_G(D, g_\\theta) = \\mathbb{E}_{z \\sim p(z)} [D(g_\\theta(z))] - \\mathbb{E}_{x \\sim \\mathbb{P}_r} [D(x)]\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nL_G(D, g_\\theta) = \\mathbb{E}_{z \\sim p(z)} [D(g_\\theta(z))] - \\mathbb{E}_{x \\sim \\mathbb{P}_r} [D(x)]\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                156,
+                147,
+                455,
+                215
+            ],
+            "content": "```latex\n\\begin{align*}\n\\inf_{0 \\leq D(x) \\leq m} L_D(D, g_\\theta) &= m + \\inf_{0 \\leq D(x) \\leq m} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D(x)] \\\\\n&= m + \\inf_{-\\frac{m}{2} \\leq D(x) \\leq \\frac{m}{2}} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D(x)] \\\\\n&= m + \\frac{m}{2} \\inf_{-1 \\leq f(x) \\leq 1} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[f(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[f(x)]\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\inf_{0 \\leq D(x) \\leq m} L_D(D, g_\\theta) &= m + \\inf_{0 \\leq D(x) \\leq m} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D(x)] \\\\\n&= m + \\inf_{-\\frac{m}{2} \\leq D(x) \\leq \\frac{m}{2}} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D(x)] \\\\\n&= m + \\frac{m}{2} \\inf_{-1 \\leq f(x) \\leq 1} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[f(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[f(x)]\n\\end{align*}\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                198,
+                439,
+                413,
+                492
+            ],
+            "content": "```latex\nL_G(D^*, g_\\theta) = \\mathbb{E}_{z \\sim p(z)}[D^*(g_\\theta(z))] - \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D^*(x)]\n\n= -L_D(D^*, g_\\theta) + m\n\n= \\frac{m}{2} \\delta(\\mathbb{P}_r, \\mathbb{P}_g)\n```",
+            "latex": "```latex\nL_G(D^*, g_\\theta) = \\mathbb{E}_{z \\sim p(z)}[D^*(g_\\theta(z))] - \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D^*(x)]\n\n= -L_D(D^*, g_\\theta) + m\n\n= \\frac{m}{2} \\delta(\\mathbb{P}_r, \\mathbb{P}_g)\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                194,
+                330,
+                417,
+                410
+            ],
+            "content": "```latex\nL_D(D^*, g_\\theta) = m + \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D^*(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D^*(x)]\n\n= m + \\frac{m}{2} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D^*(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[f^*(x)]\n\n= m - \\frac{m}{2} \\delta(\\mathbb{P}_r, \\mathbb{P}_\\theta)\n\n= \\inf_{0 \\leq D(x) \\leq m} L_D(D, g_\\theta)\n```",
+            "latex": "```latex\nL_D(D^*, g_\\theta) = m + \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D^*(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[D^*(x)]\n\n= m + \\frac{m}{2} \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D^*(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[f^*(x)]\n\n= m - \\frac{m}{2} \\delta(\\mathbb{P}_r, \\mathbb{P}_\\theta)\n\n= \\inf_{0 \\leq D(x) \\leq m} L_D(D, g_\\theta)\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                196,
+                243,
+                416,
+                264
+            ],
+            "content": "{ \\underset { - 1 \\leq f ( x ) \\leq 1 } { \\operatorname* { i n f } } } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ] = - \\delta ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } )",
+            "latex": "{ \\underset { - 1 \\leq f ( x ) \\leq 1 } { \\operatorname* { i n f } } } \\mathbb { E } _ { x \\sim \\mathbb { P } _ { r } } [ f ( x ) ] - \\mathbb { E } _ { x \\sim \\mathbb { P } _ { \\theta } } [ f ( x ) ] = - \\delta ( \\mathbb { P } _ { r } , \\mathbb { P } _ { \\theta } )"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                171,
+                567,
+                439,
+                637
+            ],
+            "content": "```latex\nEE_{x\\sim\\mathbb{P}_{r}}[f^{*}(x)]-\\mathbb{E}_{x\\sim\\mathbb{P}_{\\theta}}[f^{*}(x)]=\\int f^{*}\\,\\mathrm{d}\\mu=\\mu(Q)-\\mu(P)\n\n=-(\\mu(P)-\\mu(Q))=-\\|\\mu\\|_{TV}\n\n=-\\|\\mathbb{P}_{r}-\\mathbb{P}_{\\theta}\\|_{TV}\n\n=-\\delta(\\mathbb{P}_{r},\\mathbb{P}_{\\theta})\n```",
+            "latex": "```latex\nEE_{x\\sim\\mathbb{P}_{r}}[f^{*}(x)]-\\mathbb{E}_{x\\sim\\mathbb{P}_{\\theta}}[f^{*}(x)]=\\int f^{*}\\,\\mathrm{d}\\mu=\\mu(Q)-\\mu(P)\n\n=-(\\mu(P)-\\mu(Q))=-\\|\\mu\\|_{TV}\n\n=-\\|\\mathbb{P}_{r}-\\mathbb{P}_{\\theta}\\|_{TV}\n\n=-\\delta(\\mathbb{P}_{r},\\mathbb{P}_{\\theta})\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                171,
+                567,
+                440,
+                637
+            ],
+            "content": "```latex\nEE_{x\\sim\\mathbb{P}_{r}}[f^{*}(x)]-\\mathbb{E}_{x\\sim\\mathbb{P}_{\\theta}}[f^{*}(x)]=\\int f^{*}\\,\\mathrm{d}\\mu=\\mu(Q)-\\mu(P)\n\n=-(\\mu(P)-\\mu(Q))=-\\|\\mu\\|_{TV}\n\n=-\\|\\mathbb{P}_{r}-\\mathbb{P}_{\\theta}\\|_{TV}\n\n=-\\delta(\\mathbb{P}_{r},\\mathbb{P}_{\\theta})\n```",
+            "latex": "```latex\nEE_{x\\sim\\mathbb{P}_{r}}[f^{*}(x)]-\\mathbb{E}_{x\\sim\\mathbb{P}_{\\theta}}[f^{*}(x)]=\\int f^{*}\\,\\mathrm{d}\\mu=\\mu(Q)-\\mu(P)\n\n=-(\\mu(P)-\\mu(Q))=-\\|\\mu\\|_{TV}\n\n=-\\|\\mathbb{P}_{r}-\\mathbb{P}_{\\theta}\\|_{TV}\n\n=-\\delta(\\mathbb{P}_{r},\\mathbb{P}_{\\theta})\n```"
+        },
+        {
+            "page": 28,
+            "type": "formula",
+            "bbox": [
+                176,
+                145,
+                434,
+                240
+            ],
+            "content": "```latex\n\\begin{align*}\n|\\mathbb{E}_{x \\sim \\mathbb{P}_r}[f(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[f(x)]| &= |\\int f \\, \\mathrm{d}\\mathbb{P}_r - \\int f \\, \\mathrm{d}\\mathbb{P}_\\theta| \\\\\n&= |\\int f \\, \\mathrm{d}\\mu| \\\\\n&\\leq \\int |f| \\, \\mathrm{d}|\\mu| \\leq \\int 1 \\, \\mathrm{d}|\\mu| \\\\\n&= |\\mu|(\\mathcal{X}) = \\| \\mu \\|_{TV} = \\delta(\\mathbb{P}_r, \\mathbb{P}_\\theta)\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n|\\mathbb{E}_{x \\sim \\mathbb{P}_r}[f(x)] - \\mathbb{E}_{x \\sim \\mathbb{P}_\\theta}[f(x)]| &= |\\int f \\, \\mathrm{d}\\mathbb{P}_r - \\int f \\, \\mathrm{d}\\mathbb{P}_\\theta| \\\\\n&= |\\int f \\, \\mathrm{d}\\mu| \\\\\n&\\leq \\int |f| \\, \\mathrm{d}|\\mu| \\leq \\int 1 \\, \\mathrm{d}|\\mu| \\\\\n&= |\\mu|(\\mathcal{X}) = \\| \\mu \\|_{TV} = \\delta(\\mathbb{P}_r, \\mathbb{P}_\\theta)\n\\end{align*}\n```"
+        }
+    ]
+}

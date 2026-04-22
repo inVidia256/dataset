@@ -1,0 +1,70 @@
+{
+    "total_count": 4,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                117,
+                111,
+                494,
+                188
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations for different layer types. n is the sequence length, d is the representation dimension, k is the kernel size of convolutions and r the size of the neighborhood in restricted self-attention.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Layer Type</td>\n    <td>Complexity per Layer</td>\n    <td>SequentialOperations</td>\n    <td>Maximum Path Length</td>\n  </tr>\n  <tr>\n    <td>Self-Attention</td>\n    <td>O(n2.d)</td>\n    <td>O(1)</td>\n    <td>O(1)</td>\n  </tr>\n  <tr>\n    <td>Recurrent</td>\n    <td>O(n·d2)</td>\n    <td>O(n)</td>\n    <td>O(n)</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>O(k·n·d2)</td>\n    <td>O(1)</td>\n    <td>O(logk(n))</td>\n  </tr>\n  <tr>\n    <td>Self-Attention(restricted)</td>\n    <td>O(r·n·d)</td>\n    <td>O(1)</td>\n    <td>O(n/r)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                128,
+                93,
+                483,
+                245
+            ],
+            "caption": "The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>BLEU</td>\n    <td>Training Cost(FLOPs)</td>\n  </tr>\n  <tr>\n    <td>EN-DE</td>\n    <td>EN-FR</td>\n    <td>EN-DE</td>\n    <td>EN-FR</td>\n  </tr>\n  <tr>\n    <td>Byte Net[18]</td>\n    <td>23.75</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Deep Att+Pos Unk[39]</td>\n    <td>39.2</td>\n    <td>1.0·1020</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GN MT+RL[38]</td>\n    <td>24.6</td>\n    <td>39.92</td>\n    <td>2.3·1019</td>\n    <td>1.4·1020</td>\n  </tr>\n  <tr>\n    <td>ConvS2S[9]</td>\n    <td>25.16</td>\n    <td>40.46</td>\n    <td>9.6·1018</td>\n    <td>1.5·1020</td>\n  </tr>\n  <tr>\n    <td>MoE[32]</td>\n    <td>26.03</td>\n    <td>40.56</td>\n    <td>2.0·1019</td>\n    <td>1.2·1020</td>\n  </tr>\n  <tr>\n    <td>Deep Att+Pos Unk Ensemble[39]</td>\n    <td>40.4</td>\n    <td>8.0·1020</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GN MT+RL Ensemble[38]</td>\n    <td>26.30</td>\n    <td>41.16</td>\n    <td>1.8·1020</td>\n    <td>1.1·1021</td>\n  </tr>\n  <tr>\n    <td>ConvS2S Ensemble[9]</td>\n    <td>26.36</td>\n    <td>41.29</td>\n    <td>7.7·1019</td>\n    <td>1.2·1021</td>\n  </tr>\n  <tr>\n    <td>Transformer(base model)</td>\n    <td>27.3</td>\n    <td>38.1</td>\n    <td>3.3·1018</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Transformer(big)</td>\n    <td>28.4</td>\n    <td>41.8</td>\n    <td>2.3·1019</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                105,
+                127,
+                509,
+                385
+            ],
+            "caption": "Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Listed perplexities are per-wordpiece, according to our byte-pair encoding, and should not be compared to per-word perplexities. Table 3: Variations on the Transformer architecture. Unlisted values are identical to those of the base model. All metrics are on the English-to-German translation development set, newstest2013. Listed perplexities are per-wordpiece, according to our byte-pair encoding, and should not be compared to per-word perplexities.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>N</td>\n    <td>d model</td>\n    <td>df</td>\n    <td>h</td>\n    <td>dk</td>\n    <td>dv</td>\n    <td>Pdrop</td>\n    <td>et s</td>\n    <td>trainsteps</td>\n    <td>PPL(dev)</td>\n    <td>BLEU(dev)</td>\n    <td>paramsx106</td>\n  </tr>\n  <tr>\n    <td>base</td>\n    <td>6</td>\n    <td>512</td>\n    <td>2048</td>\n    <td>8</td>\n    <td>64</td>\n    <td>64</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>100K</td>\n    <td>4.92</td>\n    <td>25.8</td>\n    <td>65</td>\n  </tr>\n  <tr>\n    <td>(A)</td>\n    <td>1</td>\n    <td>512</td>\n    <td>512</td>\n    <td>5.29</td>\n    <td>24.9</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>128</td>\n    <td>128</td>\n    <td>5.00</td>\n    <td>25.5</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>32</td>\n    <td>32</td>\n    <td>4.91</td>\n    <td>25.8</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>16</td>\n    <td>16</td>\n    <td>5.01</td>\n    <td>25.4</td>\n  </tr>\n  <tr>\n    <td>(B)</td>\n    <td>16</td>\n    <td>5.16</td>\n    <td>25.1</td>\n    <td>58</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>5.01</td>\n    <td>25.4</td>\n    <td>60</td>\n  </tr>\n  <tr>\n    <td>(C)</td>\n    <td>2</td>\n    <td>6.11</td>\n    <td>23.7</td>\n    <td>36</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>5.19</td>\n    <td>25.3</td>\n    <td>50</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>4.88</td>\n    <td>25.5</td>\n    <td>80</td>\n  </tr>\n  <tr>\n    <td>256</td>\n    <td>5.75</td>\n    <td>24.5</td>\n    <td>28</td>\n  </tr>\n  <tr>\n    <td>1024</td>\n    <td>4.66</td>\n    <td>26.0</td>\n    <td>168</td>\n  </tr>\n  <tr>\n    <td>1024</td>\n    <td>5.12</td>\n    <td>25.4</td>\n    <td>53</td>\n  </tr>\n  <tr>\n    <td>4096</td>\n    <td>4.75</td>\n    <td>26.2</td>\n    <td>90</td>\n  </tr>\n  <tr>\n    <td>(D)</td>\n    <td>0.0</td>\n    <td>5.77</td>\n    <td>24.6</td>\n  </tr>\n  <tr>\n    <td>0.2</td>\n    <td>4.95</td>\n    <td>25.5</td>\n  </tr>\n  <tr>\n    <td>0.0</td>\n    <td>4.67</td>\n    <td>25.3</td>\n  </tr>\n  <tr>\n    <td>0.2</td>\n    <td>5.47</td>\n    <td>25.7</td>\n  </tr>\n  <tr>\n    <td>(E)</td>\n    <td>positional embedding instead of sinusoids</td>\n    <td>4.92</td>\n    <td>25.7</td>\n  </tr>\n  <tr>\n    <td>big</td>\n    <td>6</td>\n    <td>1024</td>\n    <td>4096</td>\n    <td>16</td>\n    <td>0.3</td>\n    <td>300K</td>\n    <td>4.33</td>\n    <td>26.4</td>\n    <td>213</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                143,
+                92,
+                467,
+                237
+            ],
+            "caption": "The Transformer generalizes well to English constituency parsing (Results are on Section 23 of WSJ)",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Parser</td>\n    <td>Training</td>\n    <td>WSJ 23 F1</td>\n  </tr>\n  <tr>\n    <td>Vinyals &amp; Kaiser el al.(2014) [37]</td>\n    <td>WSJ only， discriminative</td>\n    <td>88.3</td>\n  </tr>\n  <tr>\n    <td>Petrov et al.(2006) [29]</td>\n    <td>WSJ only， discriminative</td>\n    <td>90.4</td>\n  </tr>\n  <tr>\n    <td>Zhu et al.(2013) [40]</td>\n    <td>WSJ only， discriminative</td>\n    <td>90.4</td>\n  </tr>\n  <tr>\n    <td>Dyer et al.(2016) [8]</td>\n    <td>WSJ only， discriminative</td>\n    <td>91.7</td>\n  </tr>\n  <tr>\n    <td>Transformer(4 layers)</td>\n    <td>WSJ only， discriminative</td>\n    <td>91.3</td>\n  </tr>\n  <tr>\n    <td>Zhu et al.(2013) [40]</td>\n    <td>semi-supervised</td>\n    <td>91.3</td>\n  </tr>\n  <tr>\n    <td>Huang & Harper(2009) [14]</td>\n    <td>semi-supervised</td>\n    <td>91.3</td>\n  </tr>\n  <tr>\n    <td>McClosky et al.(2006) [26]</td>\n    <td>semi-supervised</td>\n    <td>92.1</td>\n  </tr>\n  <tr>\n    <td>Vinyals &amp; Kaiser el al.(2014) [37]</td>\n    <td>semi-supervised</td>\n    <td>92.1</td>\n  </tr>\n  <tr>\n    <td>Transformer(4 layers)</td>\n    <td>semi-supervised</td>\n    <td>92.7</td>\n  </tr>\n  <tr>\n    <td>Luong et al.(2015) [23]</td>\n    <td>multi-task</td>\n    <td>93.0</td>\n  </tr>\n  <tr>\n    <td>Dyer et al.(2016) [8]</td>\n    <td>generative</td>\n    <td>93.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page010.png"
+        }
+    ]
+}

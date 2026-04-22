@@ -1,0 +1,234 @@
+{
+    "total_count": 19,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                329,
+                631,
+                547,
+                644
+            ],
+            "content": "Q _ { \\pi } ( s , a ) \\equiv \\mathbb { E } \\left[ R _ { 1 } + \\gamma R _ { 2 } + \\ldots \\mid S _ { 0 } = s , A _ { 0 } = a , \\pi \\right] ,",
+            "latex": "Q _ { \\pi } ( s , a ) \\equiv \\mathbb { E } \\left[ R _ { 1 } + \\gamma R _ { 2 } + \\ldots \\mid S _ { 0 } = s , A _ { 0 } = a , \\pi \\right] ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                96,
+                192,
+                249,
+                210
+            ],
+            "content": "Y _ { t } ^ { \\mathrm { Q } } \\equiv R _ { t + 1 } + \\gamma \\operatorname* { m a x } _ { a } Q ( S _ { t + 1 } , a ; \\theta _ { t } ) .",
+            "latex": "Y _ { t } ^ { \\mathrm { Q } } \\equiv R _ { t + 1 } + \\gamma \\operatorname* { m a x } _ { a } Q ( S _ { t + 1 } , a ; \\theta _ { t } ) ."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                90,
+                406,
+                255,
+                425
+            ],
+            "content": "Y _ { t } ^ { \\mathrm { D Q N } } \\equiv R _ { t + 1 } + \\gamma \\operatorname* { m a x } _ { a } Q ( S _ { t + 1 } , a ; \\theta _ { t } ^ { - } ) .",
+            "latex": "Y _ { t } ^ { \\mathrm { D Q N } } \\equiv R _ { t + 1 } + \\gamma \\operatorname* { m a x } _ { a } Q ( S _ { t + 1 } , a ; \\theta _ { t } ^ { - } ) ."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                56,
+                150,
+                274,
+                165
+            ],
+            "content": "```latex\n\\theta_{t+1} = \\theta_t + \\alpha(Y_t^Q - Q(S_t, A_t; \\theta_t)) \\nabla_{\\theta_t} Q(S_t, A_t; \\theta_t).\n```",
+            "latex": "```latex\n\\theta_{t+1} = \\theta_t + \\alpha(Y_t^Q - Q(S_t, A_t; \\theta_t)) \\nabla_{\\theta_t} Q(S_t, A_t; \\theta_t).\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                63,
+                687,
+                281,
+                706
+            ],
+            "content": "```latex\nY_t^Q = R_{t+1} + \\gamma Q(S_{t+1}, \\argmax_a Q(S_{t+1}, a; \\theta_t); \\theta_t).\n```",
+            "latex": "```latex\nY_t^Q = R_{t+1} + \\gamma Q(S_{t+1}, \\argmax_a Q(S_{t+1}, a; \\theta_t); \\theta_t).\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                319,
+                71,
+                556,
+                90
+            ],
+            "content": "```latex\nY_t^{\\text{DoubleQ}} \\equiv R_{t+1} + \\gamma Q(S_{t+1}, \\argmax_a Q(S_{t+1}, a; \\boldsymbol{\\theta}_t); \\boldsymbol{\\theta}'_t).\n```",
+            "latex": "```latex\nY_t^{\\text{DoubleQ}} \\equiv R_{t+1} + \\gamma Q(S_{t+1}, \\argmax_a Q(S_{t+1}, a; \\boldsymbol{\\theta}_t); \\boldsymbol{\\theta}'_t).\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                382,
+                675,
+                494,
+                707
+            ],
+            "content": "\\frac { 1 } { T } \\sum _ { t = 1 } ^ { T } \\operatorname* { a r g m a x } _ { a } Q ( S _ { t } , a ; \\boldsymbol { \\theta } ) \\, .",
+            "latex": "\\frac { 1 } { T } \\sum _ { t = 1 } ^ { T } \\operatorname* { a r g m a x } _ { a } Q ( S _ { t } , a ; \\boldsymbol { \\theta } ) \\, ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                53,
+                458,
+                299,
+                475
+            ],
+            "content": "```latex\nY_t^{\\text{DoubleDQN}} \\equiv R_{t+1} + \\gamma Q(S_{t+1}, \\argmax_{a} Q(S_{t+1}, a; \\theta_t), \\theta_t^-).\n```",
+            "latex": "```latex\nY_t^{\\text{DoubleDQN}} \\equiv R_{t+1} + \\gamma Q(S_{t+1}, \\argmax_{a} Q(S_{t+1}, a; \\theta_t), \\theta_t^-).\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                88,
+                246,
+                257,
+                271
+            ],
+            "content": "\\mathrm { s c o r e _ { n o r m a l i z e d } } = \\frac { \\mathrm { s c o r e _ { a g e n t } } - \\mathrm { s c o r e _ { r a n d o m } } } { \\mathrm { s c o r e _ { h u m a n } } - \\mathrm { s c o r e _ { r a n d o m } } } .",
+            "latex": "\\mathrm { s c o r e _ { n o r m a l i z e d } } = \\frac { \\mathrm { s c o r e _ { a g e n t } } - \\mathrm { s c o r e _ { r a n d o m } } } { \\mathrm { s c o r e _ { h u m a n } } - \\mathrm { s c o r e _ { r a n d o m } } } ."
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                345,
+                339,
+                525,
+                403
+            ],
+            "content": "```latex\nP(\\max_{a} \\epsilon_a \\leq x) = \\prod_{a=1}^{m} P(\\epsilon_a \\leq x)\n\n= \\begin{cases}\n0 & \\text{if } x \\leq -1 \\\\\n\\left(\\frac{1+x}{2}\\right)^m & \\text{if } x \\in (-1, 1) \\\\\n1 & \\text{if } x \\geq 1\n\\end{cases}\n```",
+            "latex": "```latex\nP(\\max_{a} \\epsilon_a \\leq x) = \\prod_{a=1}^{m} P(\\epsilon_a \\leq x)\n\n= \\begin{cases}\n0 & \\text{if } x \\leq -1 \\\\\n\\left(\\frac{1+x}{2}\\right)^m & \\text{if } x \\in (-1, 1) \\\\\n1 & \\text{if } x \\geq 1\n\\end{cases}\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                85,
+                395,
+                259,
+                488
+            ],
+            "content": "```latex\n\\sum_{a=1}^{m} (\\epsilon_a)^2 = \\sum_{i=1}^{n} (\\epsilon_i^+)^2 + \\sum_{j=1}^{m-n} (\\epsilon_j^-)^2\n\n< n \\frac{C}{m-1} + n \\sqrt{\\frac{C}{m-1}} n \\sqrt{\\frac{C}{m-1}}\n\n= C \\frac{n(n+1)}{m-1}\n\n\\leq mC.\n```",
+            "latex": "```latex\n\\sum_{a=1}^{m} (\\epsilon_a)^2 = \\sum_{i=1}^{n} (\\epsilon_i^+)^2 + \\sum_{j=1}^{m-n} (\\epsilon_j^-)^2\n\n< n \\frac{C}{m-1} + n \\sqrt{\\frac{C}{m-1}} n \\sqrt{\\frac{C}{m-1}}\n\n= C \\frac{n(n+1)}{m-1}\n\n\\leq mC.\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                328,
+                193,
+                548,
+                240
+            ],
+            "content": "```latex\nP(\\max_{a} \\epsilon_a \\leq x) = P(X_1 \\leq x \\land X_2 \\leq x \\land \\ldots \\land X_m \\leq x)\n= \\prod_{a=1}^{m} P(\\epsilon_a \\leq x).\n```",
+            "latex": "```latex\nP(\\max_{a} \\epsilon_a \\leq x) = P(X_1 \\leq x \\land X_2 \\leq x \\land \\ldots \\land X_m \\leq x)\n= \\prod_{a=1}^{m} P(\\epsilon_a \\leq x).\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                360,
+                524,
+                515,
+                601
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbb{E}\\left[\\max_{a} \\epsilon_a\\right] &= \\int_{-1}^{1} x f_{\\max}(x) \\, \\mathrm{d}x \\\\\n&= \\left[\\left(\\frac{x+1}{2}\\right)^m \\frac{mx-1}{m+1}\\right]_{-1}^{1} \\\\\n&= \\frac{m-1}{m+1}.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbb{E}\\left[\\max_{a} \\epsilon_a\\right] &= \\int_{-1}^{1} x f_{\\max}(x) \\, \\mathrm{d}x \\\\\n&= \\left[\\left(\\frac{x+1}{2}\\right)^m \\frac{mx-1}{m+1}\\right]_{-1}^{1} \\\\\n&= \\frac{m-1}{m+1}.\n\\end{align*}\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                362,
+                277,
+                507,
+                312
+            ],
+            "content": "P ( \\epsilon _ { a } \\leq x ) = \\left\\{ \\begin{array} { l l } { { 0 } } & { { \\mathrm { i f ~ } x \\leq - 1 } } \\\\ { { \\frac { 1 + x } { 2 } } } & { { \\mathrm { i f ~ } x \\in ( - 1 , 1 ) } } \\\\ { { 1 / 2 } } & { { \\mathrm { i f ~ } x \\geq 1 } } \\end{array} \\right.",
+            "latex": "P ( \\epsilon _ { a } \\leq x ) = \\left\\{ \\begin{array} { l l } { { 0 } } & { { \\mathrm { i f ~ } x \\leq - 1 } } \\\\ { { \\frac { 1 + x } { 2 } } } & { { \\mathrm { i f ~ } x \\in ( - 1 , 1 ) } } \\\\ { { 1 / 2 } } & { { \\mathrm { i f ~ } x \\geq 1 } } \\end{array} \\right."
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                104,
+                308,
+                241,
+                365
+            ],
+            "content": "\\begin{array} { l } { { \\displaystyle \\sum _ { j = 1 } ^ { m - n } ( \\epsilon _ { j } ^ { - } ) ^ { 2 } \\leq \\displaystyle \\sum _ { j = 1 } ^ { m - n } | \\epsilon _ { j } ^ { - } | \\cdot \\operatorname* { m a x } _ { j } | \\epsilon _ { j } ^ { - } | } } \\\\ { { < n \\sqrt { \\frac { C } { m - 1 } } n \\sqrt { \\frac { C } { m - 1 } } . } } \\end{array}",
+            "latex": "\\begin{array} { l } { { \\displaystyle \\sum _ { j = 1 } ^ { m - n } ( \\epsilon _ { j } ^ { - } ) ^ { 2 } \\leq \\displaystyle \\sum _ { j = 1 } ^ { m - n } | \\epsilon _ { j } ^ { - } | \\cdot \\operatorname* { m a x } _ { j } | \\epsilon _ { j } ^ { - } | } } \\\\ { { < n \\sqrt { \\frac { C } { m - 1 } } n \\sqrt { \\frac { C } { m - 1 } } . } } \\end{array}"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                375,
+                440,
+                500,
+                465
+            ],
+            "content": "\\mathbb { E } \\left[ \\operatorname* { m a x } _ { a } \\epsilon _ { a } \\right] = \\int _ { - 1 } ^ { 1 } x f _ { \\operatorname* { m a x } } ( x ) \\, \\mathrm { d } x \\ ,",
+            "latex": "\\mathbb { E } \\left[ \\operatorname* { m a x } _ { a } \\epsilon _ { a } \\right] = \\int _ { - 1 } ^ { 1 } x f _ { \\operatorname* { m a x } } ( x ) \\, \\mathrm { d } x \\ ,"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                82,
+                640,
+                262,
+                668
+            ],
+            "content": "```latex\nQ_t(s, a_i) = V_*(s) - \\sqrt{C \\frac{1}{m(m-1)}}, \\text{ for } i > 1.\n```",
+            "latex": "```latex\nQ_t(s, a_i) = V_*(s) - \\sqrt{C \\frac{1}{m(m-1)}}, \\text{ for } i > 1.\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                367,
+                104,
+                507,
+                126
+            ],
+            "content": "```latex\n\\mathbb{E}\\left[\\max_{a} Q_t(s,a) - V_*(s)\\right] = \\frac{m-1}{m+1}\n```",
+            "latex": "```latex\n\\mathbb{E}\\left[\\max_{a} Q_t(s,a) - V_*(s)\\right] = \\frac{m-1}{m+1}\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                108,
+                596,
+                237,
+                621
+            ],
+            "content": "Q _ { t } ( s , a _ { 1 } ) = V _ { * } ( s ) + \\sqrt { C \\frac { m - 1 } { m } } \\, ,",
+            "latex": "Q _ { t } ( s , a _ { 1 } ) = V _ { * } ( s ) + \\sqrt { C \\frac { m - 1 } { m } } \\, ,"
+        }
+    ]
+}

@@ -1,0 +1,462 @@
+{
+    "total_count": 38,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                239,
+                131,
+                370,
+                161
+            ],
+            "content": "p _ { \\theta } ( \\boldsymbol { \\pi } | s ) = \\prod _ { t = 1 } ^ { n } p _ { \\theta } ( \\pi _ { t } | s , \\boldsymbol { \\pi } _ { 1 : t - 1 } ) .",
+            "latex": "p _ { \\theta } ( \\boldsymbol { \\pi } | s ) = \\prod _ { t = 1 } ^ { n } p _ { \\theta } ( \\pi _ { t } | s , \\boldsymbol { \\pi } _ { 1 : t - 1 } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                202,
+                534,
+                414,
+                555
+            ],
+            "content": "```latex\n\\hat{\\mathbf{h}}_i = \\text{BN}^\\ell \\left( \\mathbf{h}_i^{(\\ell-1)} + \\text{MHA}_i^\\ell \\left( \\mathbf{h}_1^{(\\ell-1)}, \\ldots, \\mathbf{h}_n^{(\\ell-1)} \\right) \\right)\n```",
+            "latex": "```latex\n\\hat{\\mathbf{h}}_i = \\text{BN}^\\ell \\left( \\mathbf{h}_i^{(\\ell-1)} + \\text{MHA}_i^\\ell \\left( \\mathbf{h}_1^{(\\ell-1)}, \\ldots, \\mathbf{h}_n^{(\\ell-1)} \\right) \\right)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                196,
+                557,
+                317,
+                577
+            ],
+            "content": "```latex\n\\mathbf{h}_i^{(\\ell)} = \\text{BN}^\\ell \\left( \\hat{\\mathbf{h}}_i + \\text{FF}^\\ell (\\hat{\\mathbf{h}}_i) \\right).\n```",
+            "latex": "```latex\n\\mathbf{h}_i^{(\\ell)} = \\text{BN}^\\ell \\left( \\hat{\\mathbf{h}}_i + \\text{FF}^\\ell (\\hat{\\mathbf{h}}_i) \\right).\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                197,
+                534,
+                417,
+                577
+            ],
+            "content": "```latex\n\\hat{\\mathbf{h}}_{i} = \\text{BN}^{\\ell}\\left(\\mathbf{h}_{i}^{(\\ell-1)} + \\text{MHA}^{\\ell}_{i}\\left(\\mathbf{h}_{1}^{(\\ell-1)}, \\ldots, \\mathbf{h}_{n}^{(\\ell-1)}\\right)\\right)\n\n\\mathbf{h}_{i}^{(\\ell)} = \\text{BN}^{\\ell}\\left(\\hat{\\mathbf{h}}_{i} + \\text{FF}^{\\ell}(\\hat{\\mathbf{h}}_{i})\\right).\n```",
+            "latex": "```latex\n\\hat{\\mathbf{h}}_{i} = \\text{BN}^{\\ell}\\left(\\mathbf{h}_{i}^{(\\ell-1)} + \\text{MHA}^{\\ell}_{i}\\left(\\mathbf{h}_{1}^{(\\ell-1)}, \\ldots, \\mathbf{h}_{n}^{(\\ell-1)}\\right)\\right)\n\n\\mathbf{h}_{i}^{(\\ell)} = \\text{BN}^{\\ell}\\left(\\hat{\\mathbf{h}}_{i} + \\text{FF}^{\\ell}(\\hat{\\mathbf{h}}_{i})\\right).\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                227,
+                481,
+                384,
+                514
+            ],
+            "content": "```latex\nu_{(c)}j = \\begin{cases} \n\\frac{\\mathbf{q}_{(c)}^T \\mathbf{k}_j}{\\sqrt{d_k}} & \\text{if } j \\neq \\pi_{t'} \\quad \\forall t' < t \\\\\n-\\infty & \\text{otherwise}.\n\\end{cases}\n```",
+            "latex": "```latex\nu_{(c)}j = \\begin{cases} \n\\frac{\\mathbf{q}_{(c)}^T \\mathbf{k}_j}{\\sqrt{d_k}} & \\text{if } j \\neq \\pi_{t'} \\quad \\forall t' < t \\\\\n-\\infty & \\text{otherwise}.\n\\end{cases}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                223,
+                298,
+                384,
+                331
+            ],
+            "content": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n[\\overline{\\mathbf{h}}_{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, \\mathbf{h}_{\\pi_1}^{(N)}] & t > 1 \\\\\n[\\overline{\\mathbf{h}}_{(N)}^-, \\mathbf{v}^\\mathrm{l}, \\mathbf{v}^\\mathrm{f}] & t = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n[\\overline{\\mathbf{h}}_{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, \\mathbf{h}_{\\pi_1}^{(N)}] & t > 1 \\\\\n[\\overline{\\mathbf{h}}_{(N)}^-, \\mathbf{v}^\\mathrm{l}, \\mathbf{v}^\\mathrm{f}] & t = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                223,
+                708,
+                387,
+                735
+            ],
+            "content": "p _ { i } = p _ { \\boldsymbol { \\theta } } ( \\pi _ { t } = i | s , \\boldsymbol { \\pi } _ { 1 : t - 1 } ) = { \\frac { e ^ { u _ { ( c ) i } } } { \\sum _ { j } e ^ { u _ { ( c ) j } } } } .",
+            "latex": "p _ { i } = p _ { \\boldsymbol { \\theta } } ( \\pi _ { t } = i | s , \\boldsymbol { \\pi } _ { 1 : t - 1 } ) = { \\frac { e ^ { u _ { ( c ) i } } } { \\sum _ { j } e ^ { u _ { ( c ) j } } } } ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                201,
+                640,
+                410,
+                679
+            ],
+            "content": "```latex\nu_{(c)j} = \n\\begin{cases} \nC \\cdot \\tanh \\left( \\frac{\\mathbf{q}_{(c)}^T \\mathbf{k}_j}{\\sqrt{d_k}} \\right) & \\text{if } j \\neq \\pi_{t'} \\quad \\forall t' < t \\\\\n-\\infty & \\text{otherwise}.\n\\end{cases}\n```",
+            "latex": "```latex\nu_{(c)j} = \n\\begin{cases} \nC \\cdot \\tanh \\left( \\frac{\\mathbf{q}_{(c)}^T \\mathbf{k}_j}{\\sqrt{d_k}} \\right) & \\text{if } j \\neq \\pi_{t'} \\quad \\forall t' < t \\\\\n-\\infty & \\text{otherwise}.\n\\end{cases}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                208,
+                438,
+                402,
+                453
+            ],
+            "content": "```latex\n\\mathbf{q}_{(c)} = W^{Q} \\mathbf{h}_{(c)} \\quad \\mathbf{k}_{i} = W^{K} \\mathbf{h}_{i}, \\quad \\mathbf{v}_{i} = W^{V} \\mathbf{h}_{i}.\n```",
+            "latex": "```latex\n\\mathbf{q}_{(c)} = W^{Q} \\mathbf{h}_{(c)} \\quad \\mathbf{k}_{i} = W^{K} \\mathbf{h}_{i}, \\quad \\mathbf{v}_{i} = W^{V} \\mathbf{h}_{i}.\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                198,
+                162,
+                412,
+                177
+            ],
+            "content": "\\nabla \\mathcal { L } ( \\theta | s ) = \\operatorname { E } _ { p _ { \\theta } ( \\pi | s ) } [ ( L ( \\pi ) - b ( s ) ) \\nabla \\log p _ { \\theta } ( \\pi | s ) ] .",
+            "latex": "\\nabla \\mathcal { L } ( \\theta | s ) = \\operatorname { E } _ { p _ { \\theta } ( \\pi | s ) } [ ( L ( \\pi ) - b ( s ) ) \\nabla \\log p _ { \\theta } ( \\pi | s ) ] ."
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                238,
+                369,
+                372,
+                400
+            ],
+            "content": "u _ { i j } = \\left\\{ \\begin{array} { l l } { { \\frac { \\mathbf { q } _ { i } ^ { T } \\mathbf { k } _ { j } } { \\sqrt { d _ { k } } } } } & { { \\mathrm { i f ~ } i \\mathrm { ~ a d j a c e n t ~ t o ~ } j } } \\\\ { { - \\infty } } & { { \\mathrm { o t h e r w i s e . } } } \\end{array} \\right.",
+            "latex": "u _ { i j } = \\left\\{ \\begin{array} { l l } { { \\frac { \\mathbf { q } _ { i } ^ { T } \\mathbf { k } _ { j } } { \\sqrt { d _ { k } } } } } & { { \\mathrm { i f ~ } i \\mathrm { ~ a d j a c e n t ~ t o ~ } j } } \\\\ { { - \\infty } } & { { \\mathrm { o t h e r w i s e . } } } \\end{array} \\right."
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                230,
+                587,
+                380,
+                619
+            ],
+            "content": "```latex\n\\text{MHA}_i(\\mathbf{h}_1, \\ldots, \\mathbf{h}_n) = \\sum_{m=1}^{M} W_m^O \\mathbf{h}_{im}'.\n```",
+            "latex": "```latex\n\\text{MHA}_i(\\mathbf{h}_1, \\ldots, \\mathbf{h}_n) = \\sum_{m=1}^{M} W_m^O \\mathbf{h}_{im}'.\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                207,
+                653,
+                402,
+                667
+            ],
+            "content": "```latex\n\\text{FF}(\\hat{\\mathbf{h}}_i) = W^{\\text{ff},1} \\cdot \\text{ReLU}(W^{\\text{ff},0}\\hat{\\mathbf{h}}_i + b^{\\text{ff},0}) + b^{\\text{ff},1}.\n```",
+            "latex": "```latex\n\\text{FF}(\\hat{\\mathbf{h}}_i) = W^{\\text{ff},1} \\cdot \\text{ReLU}(W^{\\text{ff},0}\\hat{\\mathbf{h}}_i + b^{\\text{ff},0}) + b^{\\text{ff},1}.\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                271,
+                474,
+                338,
+                501
+            ],
+            "content": "{ \\mathbf { h } } _ { i } ^ { \\prime } = \\sum _ { j } a _ { i j } \\mathbf { v } _ { j } .",
+            "latex": "{ \\mathbf { h } } _ { i } ^ { \\prime } = \\sum _ { j } a _ { i j } \\mathbf { v } _ { j } ."
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                270,
+                434,
+                340,
+                460
+            ],
+            "content": "a _ { i j } = \\frac { e ^ { u _ { i j } } } { \\sum _ { j ^ { \\prime } } e ^ { u _ { i j ^ { \\prime } } } } .",
+            "latex": "a _ { i j } = \\frac { e ^ { u _ { i j } } } { \\sum _ { j ^ { \\prime } } e ^ { u _ { i j ^ { \\prime } } } } ."
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                239,
+                694,
+                371,
+                708
+            ],
+            "content": "\\mathrm { B N } ( \\mathbf { h } _ { i } ) = \\boldsymbol { w } ^ { \\mathrm { b n } } \\odot \\overline { { { \\mathrm { B N } } } } ( \\mathbf { h } _ { i } ) + \\boldsymbol { b } ^ { \\mathrm { b n } } .",
+            "latex": "\\mathrm { B N } ( \\mathbf { h } _ { i } ) = \\boldsymbol { w } ^ { \\mathrm { b n } } \\odot \\overline { { { \\mathrm { B N } } } } ( \\mathbf { h } _ { i } ) + \\boldsymbol { b } ^ { \\mathrm { b n } } ."
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                213,
+                318,
+                397,
+                332
+            ],
+            "content": "```latex\n\\mathbf{q}_i = W^Q \\mathbf{h}_i, \\quad \\mathbf{k}_i = W^K \\mathbf{h}_i, \\quad \\mathbf{v}_i = W^V \\mathbf{h}_i.\n```",
+            "latex": "```latex\n\\mathbf{q}_i = W^Q \\mathbf{h}_i, \\quad \\mathbf{k}_i = W^K \\mathbf{h}_i, \\quad \\mathbf{v}_i = W^V \\mathbf{h}_i.\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                213,
+                318,
+                397,
+                332
+            ],
+            "content": "```latex\n\\mathbf{q}_i = W^Q \\mathbf{h}_i, \\quad \\mathbf{k}_i = W^K \\mathbf{h}_i, \\quad \\mathbf{v}_i = W^V \\mathbf{h}_i.\n```",
+            "latex": "```latex\n\\mathbf{q}_i = W^Q \\mathbf{h}_i, \\quad \\mathbf{k}_i = W^K \\mathbf{h}_i, \\quad \\mathbf{v}_i = W^V \\mathbf{h}_i.\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                259,
+                543,
+                351,
+                563
+            ],
+            "content": "i ^ { * } = \\operatorname* { a r g ~ m a x } _ { i \\notin S } \\operatorname* { m i n } _ { j \\in S } d _ { i j } .",
+            "latex": "i ^ { * } = \\operatorname* { a r g ~ m a x } _ { i \\notin S } \\operatorname* { m i n } _ { j \\in S } d _ { i j } ."
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                260,
+                498,
+                350,
+                517
+            ],
+            "content": "i ^ { * } = \\operatorname* { a r g \\, m i n } _ { i \\notin S } \\operatorname* { m i n } _ { j \\in S } d _ { i j } .",
+            "latex": "i ^ { * } = \\operatorname* { a r g \\, m i n } _ { i \\notin S } \\operatorname* { m i n } _ { j \\in S } d _ { i j } ."
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                227,
+                650,
+                380,
+                689
+            ],
+            "content": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, \\hat{D}_t] & t > 1 \\\\\n[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_0^{(N)}, \\hat{D}_t] & t = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, \\hat{D}_t] & t > 1 \\\\\n[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_0^{(N)}, \\hat{D}_t] & t = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                217,
+                407,
+                390,
+                441
+            ],
+            "content": "```latex\n\\mathbf{h}_i^{(0)} = \n\\begin{cases} \nW_0^{\\mathbf{x}} \\mathbf{x}_i + \\mathbf{b}_0^{\\mathbf{x}} & i=0 \\\\\nW^{\\mathbf{x}} \\left[ \\mathbf{x}_i, \\hat{\\delta}_i \\right] + \\mathbf{b}^{\\mathbf{x}} & i=1,\\ldots,n.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_i^{(0)} = \n\\begin{cases} \nW_0^{\\mathbf{x}} \\mathbf{x}_i + \\mathbf{b}_0^{\\mathbf{x}} & i=0 \\\\\nW^{\\mathbf{x}} \\left[ \\mathbf{x}_i, \\hat{\\delta}_i \\right] + \\mathbf{b}^{\\mathbf{x}} & i=1,\\ldots,n.\n\\end{cases}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                222,
+                541,
+                386,
+                572
+            ],
+            "content": "```latex\n\\hat{D}_{t+1} = \n\\begin{cases} \n\\max(\\hat{D}_t - \\hat{\\delta}_{\\pi_t,t}, 0) & \\pi_t \\neq 0 \\\\\n1 & \\pi_t = 0.\n\\end{cases}\n```",
+            "latex": "```latex\n\\hat{D}_{t+1} = \n\\begin{cases} \n\\max(\\hat{D}_t - \\hat{\\delta}_{\\pi_t,t}, 0) & \\pi_t \\neq 0 \\\\\n1 & \\pi_t = 0.\n\\end{cases}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                225,
+                504,
+                384,
+                536
+            ],
+            "content": "```latex\n\\hat{\\delta}_{i,t+1} = \n\\begin{cases} \n\\max(0, \\hat{\\delta}_{i,t} - \\hat{D}_t) & \\pi_t = i \\\\\n\\hat{\\delta}_{i,t} & \\pi_t \\neq i \n\\end{cases}\n```",
+            "latex": "```latex\n\\hat{\\delta}_{i,t+1} = \n\\begin{cases} \n\\max(0, \\hat{\\delta}_{i,t} - \\hat{D}_t) & \\pi_t = i \\\\\n\\hat{\\delta}_{i,t} & \\pi_t \\neq i \n\\end{cases}\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                164,
+                242,
+                446,
+                258
+            ],
+            "content": "```latex\n\\mathbf{q}_{(c)} = W^{Q} \\mathbf{h}_{(c)} \\quad \\mathbf{k}_{i} = W^{K} \\mathbf{h}_{i} + W_{d}^{K} \\hat{\\delta}_{i,t}, \\quad \\mathbf{v}_{i} = W^{V} \\mathbf{h}_{i} + W_{d}^{V} \\hat{\\delta}_{i,t}.\n```",
+            "latex": "```latex\n\\mathbf{q}_{(c)} = W^{Q} \\mathbf{h}_{(c)} \\quad \\mathbf{k}_{i} = W^{K} \\mathbf{h}_{i} + W_{d}^{K} \\hat{\\delta}_{i,t}, \\quad \\mathbf{v}_{i} = W^{V} \\mathbf{h}_{i} + W_{d}^{V} \\hat{\\delta}_{i,t}.\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                219,
+                556,
+                388,
+                583
+            ],
+            "content": "```latex\n\\mathbf{h}_i^{(0)} = \n\\begin{cases} \nW_0^{\\mathrm{x}} \\mathbf{x}_i + \\mathbf{b}_0^{\\mathrm{x}} & i=0 \\\\\nW^{\\mathrm{x}} [\\mathbf{x}_i, \\hat{\\rho}_i] + \\mathbf{b}^{\\mathrm{x}} & i=1,\\ldots,n.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_i^{(0)} = \n\\begin{cases} \nW_0^{\\mathrm{x}} \\mathbf{x}_i + \\mathbf{b}_0^{\\mathrm{x}} & i=0 \\\\\nW^{\\mathrm{x}} [\\mathbf{x}_i, \\hat{\\rho}_i] + \\mathbf{b}^{\\mathrm{x}} & i=1,\\ldots,n.\n\\end{cases}\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                259,
+                624,
+                351,
+                638
+            ],
+            "content": "T _ { t + 1 } = T _ { t } - d _ { \\pi _ { t - 1 } , \\pi _ { t } } .",
+            "latex": "T _ { t + 1 } = T _ { t } - d _ { \\pi _ { t - 1 } , \\pi _ { t } } ."
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                228,
+                109,
+                379,
+                150
+            ],
+            "content": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, T_t\\right] & t > 1 \\\\\n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_0^{(N)}, T_t\\right] & t = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, T_t\\right] & t > 1 \\\\\n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_0^{(N)}, T_t\\right] & t = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                198,
+                490,
+                409,
+                522
+            ],
+            "content": "```latex\np_i = p_{\\theta}(\\pi_t = i | s, \\boldsymbol{\\pi}_{1:t-1}) = \n\\begin{cases} \n\\frac{s_i}{\\sum_{j \\in S} s_j} & \\text{if } i \\in S \\\\\n0 & \\text{otherwise}.\n\\end{cases}\n```",
+            "latex": "```latex\np_i = p_{\\theta}(\\pi_t = i | s, \\boldsymbol{\\pi}_{1:t-1}) = \n\\begin{cases} \n\\frac{s_i}{\\sum_{j \\in S} s_j} & \\text{if } i \\in S \\\\\n0 & \\text{otherwise}.\n\\end{cases}\n```"
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                267,
+                428,
+                343,
+                457
+            ],
+            "content": "s _ { i } = \\left( \\frac { \\hat { \\rho } _ { i } } { d _ { \\pi _ { t - 1 } , i } } \\right) ^ { 4 } .",
+            "latex": "s _ { i } = \\left( \\frac { \\hat { \\rho } _ { i } } { d _ { \\pi _ { t - 1 } , i } } \\right) ^ { 4 } ."
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                192,
+                198,
+                418,
+                212
+            ],
+            "content": "```latex\nu_{(c)j} = -\\infty \\Leftrightarrow \\exists t' < t : \\pi_{t'} = j \\text{ or } d_{\\pi_{t-1},j} + d_{j0} > T_t\n```",
+            "latex": "```latex\nu_{(c)j} = -\\infty \\Leftrightarrow \\exists t' < t : \\pi_{t'} = j \\text{ or } d_{\\pi_{t-1},j} + d_{j0} > T_t\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                228,
+                338,
+                379,
+                378
+            ],
+            "content": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, P_t\\right] & t > 1 \\\\\n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_0^{(N)}, P_t\\right] & t = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_{(c)}^{(N)} = \n\\begin{cases} \n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_{\\pi_{t-1}}^{(N)}, P_t\\right] & t > 1 \\\\\n\\left[\\bar{\\mathbf{h}}^{(N)}, \\mathbf{h}_0^{(N)}, P_t\\right] & t = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                210,
+                135,
+                397,
+                169
+            ],
+            "content": "```latex\n\\mathbf{h}_i^{(0)} = \n\\begin{cases} \nW_0^{\\mathbf{x}} \\mathbf{x}_i + \\mathbf{b}_0^{\\mathbf{x}} & i=0 \\\\\nW^{\\mathbf{x}} \\left[ \\mathbf{x}_i, \\hat{\\rho}_i, \\hat{\\beta}_i \\right] + \\mathbf{b}^{\\mathbf{x}} & i=1,\\ldots,n.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_i^{(0)} = \n\\begin{cases} \nW_0^{\\mathbf{x}} \\mathbf{x}_i + \\mathbf{b}_0^{\\mathbf{x}} & i=0 \\\\\nW^{\\mathbf{x}} \\left[ \\mathbf{x}_i, \\hat{\\rho}_i, \\hat{\\beta}_i \\right] + \\mathbf{b}^{\\mathbf{x}} & i=1,\\ldots,n.\n\\end{cases}\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                251,
+                221,
+                360,
+                234
+            ],
+            "content": "P _ { t + 1 } = \\operatorname* { m a x } ( 0 , P _ { t } - \\hat { \\rho } _ { \\pi _ { t } } ) .",
+            "latex": "P _ { t + 1 } = \\operatorname* { m a x } ( 0 , P _ { t } - \\hat { \\rho } _ { \\pi _ { t } } ) ."
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                235,
+                419,
+                376,
+                432
+            ],
+            "content": "u _ { ( c ) 0 } = - \\infty \\Leftrightarrow P _ { t } > 0 \\mathrm { ~ a n d ~ } t \\leq n .",
+            "latex": "u _ { ( c ) 0 } = - \\infty \\Leftrightarrow P _ { t } > 0 \\mathrm { ~ a n d ~ } t \\leq n ."
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                236,
+                456,
+                375,
+                470
+            ],
+            "content": "u _ { ( e ) j } = - \\infty \\Leftrightarrow \\exists t ^ { \\prime } < t : \\pi _ { t ^ { \\prime } } = j .",
+            "latex": "u _ { ( e ) j } = - \\infty \\Leftrightarrow \\exists t ^ { \\prime } < t : \\pi _ { t ^ { \\prime } } = j ."
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                234,
+                419,
+                376,
+                432
+            ],
+            "content": "u _ { ( c ) 0 } = - \\infty \\Leftrightarrow P _ { t } > 0 \\mathrm { ~ a n d ~ } t \\leq n .",
+            "latex": "u _ { ( c ) 0 } = - \\infty \\Leftrightarrow P _ { t } > 0 \\mathrm { ~ a n d ~ } t \\leq n ."
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                251,
+                199,
+                360,
+                213
+            ],
+            "content": "P _ { t + 1 } = \\operatorname* { m a x } ( 0 , P _ { t } - \\hat { \\rho } _ { \\pi _ { t } } ^ { * } ) .",
+            "latex": "P _ { t + 1 } = \\operatorname* { m a x } ( 0 , P _ { t } - \\hat { \\rho } _ { \\pi _ { t } } ^ { * } ) ."
+        }
+    ]
+}

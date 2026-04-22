@@ -1,0 +1,48 @@
+{
+    "total_count": 3,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                111,
+                87,
+                500,
+                263
+            ],
+            "caption": "Figure 1: Two distinct classes from the 1000 classes of the ILSVRC 2014 classification challenge.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                112,
+                86,
+                497,
+                197
+            ],
+            "caption": "Figure 2: Inception module",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                238,
+                149,
+                374,
+                712
+            ],
+            "caption": "Figure 3: GoogLeNet network with all the bells and whistles Figure 3: GoogLeNet network with all the bells and whistles",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page007.png"
+        }
+    ]
+}

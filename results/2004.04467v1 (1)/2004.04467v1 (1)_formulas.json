@@ -1,0 +1,126 @@
+{
+    "total_count": 10,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                315,
+                483,
+                526,
+                498
+            ],
+            "content": "V ( \\mathsf { G } , \\mathsf { D } ) = E _ { p _ { \\mathsf { D } } ( x ) } [ f ( \\mathsf { D } ( x ) ) ] + E _ { p _ { ( z ) } } [ f ( - \\mathsf { D } ( \\mathsf { G } ( z ) ) ) ] ~ ,",
+            "latex": "V ( \\mathsf { G } , \\mathsf { D } ) = E _ { p _ { \\mathsf { D } } ( x ) } [ f ( \\mathsf { D } ( x ) ) ] + E _ { p _ { ( z ) } } [ f ( - \\mathsf { D } ( \\mathsf { G } ( z ) ) ) ] ~ ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                356,
+                643,
+                495,
+                656
+            ],
+            "content": "{ \\mathsf { G } } = G \\circ F ~ , \\quad \\mathrm { a n d } \\quad { \\mathsf { D } } = D \\circ E ~ ,",
+            "latex": "{ \\mathsf { G } } = G \\circ F ~ , \\quad \\mathrm { a n d } \\quad { \\mathsf { D } } = D \\circ E ~ ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                356,
+                642,
+                496,
+                656
+            ],
+            "content": "\\mathrm { G } = G \\circ F ~ , \\quad \\mathrm { and } \\quad \\mathrm { D } = D \\circ E ~ ,",
+            "latex": "\\mathrm { G } = G \\circ F ~ , \\quad \\mathrm { and } \\quad \\mathrm { D } = D \\circ E ~ ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                74,
+                311,
+                261,
+                338
+            ],
+            "content": "q ( x ) = \\int _ { w } \\int _ { \\eta } q _ { G } ( x | w , \\eta ) q _ { F } ( w ) p _ { \\eta } ( \\eta ) ~ \\mathrm { d } \\eta \\, \\mathrm { d } w \\ ,",
+            "latex": "q ( x ) = \\int _ { w } \\int _ { \\eta } q _ { G } ( x | w , \\eta ) q _ { F } ( w ) p _ { \\eta } ( \\eta ) ~ \\mathrm { d } \\eta \\, \\mathrm { d } w \\ ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                106,
+                378,
+                230,
+                402
+            ],
+            "content": "q _ { E } ( w ) = \\int _ { x } q _ { E } ( w | x ) q ( x ) \\mathrm { d } x ~ ,",
+            "latex": "q _ { E } ( w ) = \\int _ { x } q _ { E } ( w | x ) q ( x ) \\mathrm { d } x ~ ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                131,
+                543,
+                204,
+                557
+            ],
+            "content": "q _ { F } ( w ) = q _ { E } ( w ) \\ .",
+            "latex": "q _ { F } ( w ) = q _ { E } ( w ) \\ ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                97,
+                655,
+                237,
+                667
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{F,G} \\max_{E,D} V(G \\circ F, D \\circ E)\n```\n\nThis LaTeX code will produce the same mathematical expression shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{F,G} \\max_{E,D} V(G \\circ F, D \\circ E)\n```\n\nThis LaTeX code will produce the same mathematical expression shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                114,
+                669,
+                221,
+                682
+            ],
+            "content": "\\operatorname* { m i n } _ { E , G } \\, \\Delta ( F \\| E \\circ G \\circ F )",
+            "latex": "\\operatorname* { m i n } _ { E , G } \\, \\Delta ( F \\| E \\circ G \\circ F )"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                383,
+                236,
+                470,
+                270
+            ],
+            "content": "w = \\sum _ { i = 1 } ^ { N } C _ { i } \\left[ \\mu ( y _ { i } ^ { E } ) \\right] \\left[ \\sigma ( y _ { i } ^ { E } ) \\right]",
+            "latex": "w = \\sum _ { i = 1 } ^ { N } C _ { i } \\left[ \\mu ( y _ { i } ^ { E } ) \\right] \\left[ \\sigma ( y _ { i } ^ { E } ) \\right]"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                53,
+                312,
+                270,
+                328
+            ],
+            "content": "```latex\n\\Delta(F \\| E \\circ G \\circ F) = E_{p(z)} \\left[ \\| F(z) - E \\circ G \\circ F(z) \\|_2^2 \\right]\n```",
+            "latex": "```latex\n\\Delta(F \\| E \\circ G \\circ F) = E_{p(z)} \\left[ \\| F(z) - E \\circ G \\circ F(z) \\|_2^2 \\right]\n```"
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                58,
+                60,
+                537,
+                208
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 1. Zero-shot task performance of WebText LMs as a function of model size on many NLP tasks. Reading Comprehension results are on CoQA (Reddy et al., 2018), translation on WMT-14 Fr-En (Artetxe et al., 2017), summarization on CNN and Daily Mail (See et al., 2017), and Question Answering on Natural Questions (Kwiatkowski et al., 2019). Section 3 contains detailed descriptions of each result.\" The text content from the image is as follows:\n\n\"Figure 1. Zero-shot task performance of WebText LMs as a function of model size on many NLP tasks. Reading Comprehension results are on CoQA (Reddy et al., 2018), translation on WMT-14 Fr-En (Artetxe et al., 2017), summarization on CNN and Daily Mail (See et al., 2017), and Question Answering on Natural Questions (Kwiatkowski et al., 2019). Section 3 contains detailed descriptions of each result.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                56,
+                530,
+                287,
+                654
+            ],
+            "caption": "Figure 2. Performance on the Children’s Book Test as a function of model capacity. Human performance are from Bajgar et al. (2016), instead of the much lower estimates from the original paper.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                56,
+                127,
+                285,
+                296
+            ],
+            "caption": "The text content from the image is \"3.4. Winograd Schema Challenge\". The text content from the image is \"3.4. Winograd Schema Challenge\". Figure 3. Performance on the Winograd Schema Challenge as a function of model capacity.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                58,
+                69,
+                283,
+                278
+            ],
+            "caption": "Figure 4. The performance of LMs trained on WebText as a function of model size.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page009.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                55,
+                390,
+                269,
+                594
+            ],
+            "caption": "Figure 5. CDF of percentage 8-gram overlap with WebText training set, for both WebText test set and samples (conditioned on WebText test set, with top-k truncated random sampling with k = 40). Most samples have less than 1% overlap, including over 30% of samples with no overlap, whereas the median for test set is 2.6% overlap. Figure 5. CDF of percentage 8-gram overlap with WebText training set, for both WebText test set and samples (conditioned on WebText test set, with top-k truncated random sampling with k = 40). Most samples have less than 1% overlap, including over 30% of samples with no overlap, whereas the median for test set is 2.6% overlap.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page013.png"
+        }
+    ]
+}

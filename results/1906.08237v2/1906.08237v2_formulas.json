@@ -1,0 +1,198 @@
+{
+    "total_count": 16,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                140,
+                692,
+                470,
+                725
+            ],
+            "content": "```latex\n\\max_{\\theta} \\quad \\log p_\\theta(\\mathbf{x}) = \\sum_{t=1}^{T} \\log p_\\theta(x_t \\mid \\mathbf{x}_{<t}) = \\sum_{t=1}^{T} \\log \\frac{\\exp \\left( h_\\theta(\\mathbf{x}_{1:t-1})^\\top e(x_t) \\right)}{\\sum_{x'} \\exp \\left( h_\\theta(\\mathbf{x}_{1:t-1})^\\top e(x') \\right)},\n```",
+            "latex": "```latex\n\\max_{\\theta} \\quad \\log p_\\theta(\\mathbf{x}) = \\sum_{t=1}^{T} \\log p_\\theta(x_t \\mid \\mathbf{x}_{<t}) = \\sum_{t=1}^{T} \\log \\frac{\\exp \\left( h_\\theta(\\mathbf{x}_{1:t-1})^\\top e(x_t) \\right)}{\\sum_{x'} \\exp \\left( h_\\theta(\\mathbf{x}_{1:t-1})^\\top e(x') \\right)},\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                131,
+                135,
+                479,
+                167
+            ],
+            "content": "```latex\n\\max_{\\theta} \\quad \\log p_\\theta(\\bar{\\mathbf{x}} \\mid \\hat{\\mathbf{x}}) \\approx \\sum_{t=1}^{T} m_t \\log p_\\theta(x_t \\mid \\hat{\\mathbf{x}}) = \\sum_{t=1}^{T} m_t \\log \\frac{\\exp \\left( H_\\theta(\\hat{\\mathbf{x}})_t^\\top e(x_t) \\right)}{\\sum_{x'} \\exp \\left( H_\\theta(\\hat{\\mathbf{x}})_t^\\top e(x') \\right)},\n```",
+            "latex": "```latex\n\\max_{\\theta} \\quad \\log p_\\theta(\\bar{\\mathbf{x}} \\mid \\hat{\\mathbf{x}}) \\approx \\sum_{t=1}^{T} m_t \\log p_\\theta(x_t \\mid \\hat{\\mathbf{x}}) = \\sum_{t=1}^{T} m_t \\log \\frac{\\exp \\left( H_\\theta(\\hat{\\mathbf{x}})_t^\\top e(x_t) \\right)}{\\sum_{x'} \\exp \\left( H_\\theta(\\hat{\\mathbf{x}})_t^\\top e(x') \\right)},\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                223,
+                530,
+                387,
+                564
+            ],
+            "content": "```latex\n\\max_{\\theta} \\quad \\mathbb{E}_{\\mathbf{z} \\sim \\mathcal{Z}_T} \\left[ \\sum_{t=1}^{T} \\log p_\\theta(x_{z_t} \\mid \\mathbf{x}_{\\mathbf{z}_{<t}}) \\right].\n```",
+            "latex": "```latex\n\\max_{\\theta} \\quad \\mathbb{E}_{\\mathbf{z} \\sim \\mathcal{Z}_T} \\left[ \\sum_{t=1}^{T} \\log p_\\theta(x_{z_t} \\mid \\mathbf{x}_{\\mathbf{z}_{<t}}) \\right].\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                194,
+                427,
+                416,
+                456
+            ],
+            "content": "p _ { \\theta } ( X _ { z _ { t } } = x \\mid \\mathbf { x } _ { z < t } ) = { \\frac { \\exp \\left( e ( x ) ^ { \\top } g _ { \\theta } ( \\mathbf { x } _ { \\mathbf { z } < t } , z _ { t } ) \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } g _ { \\theta } ( \\mathbf { x } _ { \\mathbf { z } < t } , z _ { t } ) \\right) } } ,",
+            "latex": "p _ { \\theta } ( X _ { z _ { t } } = x \\mid \\mathbf { x } _ { z < t } ) = { \\frac { \\exp \\left( e ( x ) ^ { \\top } g _ { \\theta } ( \\mathbf { x } _ { \\mathbf { z } < t } , z _ { t } ) \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } g _ { \\theta } ( \\mathbf { x } _ { \\mathbf { z } < t } , z _ { t } ) \\right) } } ,"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                152,
+                254,
+                458,
+                293
+            ],
+            "content": "```latex\n\\max_{\\theta} \\quad \\mathbb{E}_{\\mathbf{z} \\sim \\mathcal{Z}_T} \\left[ \\log p_\\theta(\\mathbf{x}_{\\mathbf{z}_{>c}} \\mid \\mathbf{x}_{\\mathbf{z}_{\\leq c}}) \\right] = \\mathbb{E}_{\\mathbf{z} \\sim \\mathcal{Z}_T} \\left[ \\sum_{t=c+1}^{|\\mathbf{z}|} \\log p_\\theta(x_{z_t} \\mid \\mathbf{x}_{\\mathbf{z}_{<t}}) \\right].\n```",
+            "latex": "```latex\n\\max_{\\theta} \\quad \\mathbb{E}_{\\mathbf{z} \\sim \\mathcal{Z}_T} \\left[ \\log p_\\theta(\\mathbf{x}_{\\mathbf{z}_{>c}} \\mid \\mathbf{x}_{\\mathbf{z}_{\\leq c}}) \\right] = \\mathbb{E}_{\\mathbf{z} \\sim \\mathcal{Z}_T} \\left[ \\sum_{t=c+1}^{|\\mathbf{z}|} \\log p_\\theta(x_{z_t} \\mid \\mathbf{x}_{\\mathbf{z}_{<t}}) \\right].\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                181,
+                505,
+                430,
+                526
+            ],
+            "content": "```latex\nh_{z_t}^{(m)} \\leftarrow \\text{Attention}(Q = h_{z_t}^{(m-1)}, KV = [\\tilde{\\mathbf{h}}_{(m-1)}, \\mathbf{h}_{\\mathbf{z} \\leq t}^{(m-1)}]; \\theta)\n```",
+            "latex": "```latex\nh_{z_t}^{(m)} \\leftarrow \\text{Attention}(Q = h_{z_t}^{(m-1)}, KV = [\\tilde{\\mathbf{h}}_{(m-1)}, \\mathbf{h}_{\\mathbf{z} \\leq t}^{(m-1)}]; \\theta)\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                192,
+                409,
+                418,
+                421
+            ],
+            "content": "```latex\n\\mathcal{I}_{BERT} = \\log p(\\text{New} \\mid \\text{is a city}) + \\log p(\\text{York} \\mid \\text{is a city}),\n```",
+            "latex": "```latex\n\\mathcal{I}_{BERT} = \\log p(\\text{New} \\mid \\text{is a city}) + \\log p(\\text{York} \\mid \\text{is a city}),\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                180,
+                426,
+                430,
+                439
+            ],
+            "content": "```latex\n\\mathcal{J}_{XLNet} = \\log p(\\text{New} \\mid \\text{is a city}) + \\log p(\\text{York} \\mid \\text{New}, \\text{is a city}).\n```",
+            "latex": "```latex\n\\mathcal{J}_{XLNet} = \\log p(\\text{New} \\mid \\text{is a city}) + \\log p(\\text{York} \\mid \\text{New}, \\text{is a city}).\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                124,
+                369,
+                486,
+                456
+            ],
+            "content": "```latex\n\\forall t = 1, \\ldots, T:\n\\begin{aligned}\n\\hat{h}_{z_t}^{(m)} &= \\text{LayerNorm}\\left(h_{z_t}^{(m-1)} + \\text{RelAttn}\\left(h_{z_t}^{(m-1)}, \\left[\\tilde{\\mathbf{h}}^{(m-1)}, \\mathbf{h}_{\\mathbf{z} \\leq t}^{(m-1)}\\right]\\right)\\right) \\\\\nh_{z_t}^{(m)} &= \\text{LayerNorm}\\left(\\hat{h}_{z_t}^{(m)} + \\text{PosFF}\\left(\\hat{h}_{z_t}^{(m)}\\right)\\right) \\\\\n\\hat{g}_{z_t}^{(m)} &= \\text{LayerNorm}\\left(g_{z_t}^{(m-1)} + \\text{RelAttn}\\left(g_{z_t}^{(m-1)}, \\left[\\tilde{\\mathbf{h}}^{(m-1)}, \\mathbf{h}_{\\mathbf{z} < t}^{(m-1)}\\right]\\right)\\right) \\\\\ng_{z_t}^{(m)} &= \\text{LayerNorm}\\left(\\hat{g}_{z_t}^{(m)} + \\text{PosFF}\\left(\\hat{g}_{z_t}^{(m)}\\right)\\right)\n\\end{aligned}\n```",
+            "latex": "```latex\n\\forall t = 1, \\ldots, T:\n\\begin{aligned}\n\\hat{h}_{z_t}^{(m)} &= \\text{LayerNorm}\\left(h_{z_t}^{(m-1)} + \\text{RelAttn}\\left(h_{z_t}^{(m-1)}, \\left[\\tilde{\\mathbf{h}}^{(m-1)}, \\mathbf{h}_{\\mathbf{z} \\leq t}^{(m-1)}\\right]\\right)\\right) \\\\\nh_{z_t}^{(m)} &= \\text{LayerNorm}\\left(\\hat{h}_{z_t}^{(m)} + \\text{PosFF}\\left(\\hat{h}_{z_t}^{(m)}\\right)\\right) \\\\\n\\hat{g}_{z_t}^{(m)} &= \\text{LayerNorm}\\left(g_{z_t}^{(m-1)} + \\text{RelAttn}\\left(g_{z_t}^{(m-1)}, \\left[\\tilde{\\mathbf{h}}^{(m-1)}, \\mathbf{h}_{\\mathbf{z} < t}^{(m-1)}\\right]\\right)\\right) \\\\\ng_{z_t}^{(m)} &= \\text{LayerNorm}\\left(\\hat{g}_{z_t}^{(m)} + \\text{PosFF}\\left(\\hat{g}_{z_t}^{(m)}\\right)\\right)\n\\end{aligned}\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                138,
+                470,
+                336,
+                512
+            ],
+            "content": "p _ { \\theta } ( X _ { z _ { t } } = x \\mid \\mathbf { x } _ { z < t } ) = \\frac { \\exp \\left( e ( x ) ^ { \\top } g _ { z _ { t } } ^ { ( M ) } \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } g _ { z _ { t } } ^ { ( M ) } \\right) } ,",
+            "latex": "p _ { \\theta } ( X _ { z _ { t } } = x \\mid \\mathbf { x } _ { z < t } ) = \\frac { \\exp \\left( e ( x ) ^ { \\top } g _ { z _ { t } } ^ { ( M ) } \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } g _ { z _ { t } } ^ { ( M ) } \\right) } ,"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                159,
+                182,
+                448,
+                221
+            ],
+            "content": "\\underbrace { p _ { \\theta } ( X _ { i } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = i , \\; \\mathbf { z } _ { < t } ^ { ( 1 ) } = \\mathbf { z } _ { < t } } = \\underbrace { p _ { \\theta } ( X _ { j } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = j , \\; \\mathbf { z } _ { < t } ^ { ( 2 ) } = \\mathbf { z } _ { < t } } = { \\frac { \\exp \\left( e ( x ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } < t } ) \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } < t } ) \\right) } } .",
+            "latex": "\\underbrace { p _ { \\theta } ( X _ { i } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = i , \\; \\mathbf { z } _ { < t } ^ { ( 1 ) } = \\mathbf { z } _ { < t } } = \\underbrace { p _ { \\theta } ( X _ { j } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = j , \\; \\mathbf { z } _ { < t } ^ { ( 2 ) } = \\mathbf { z } _ { < t } } = { \\frac { \\exp \\left( e ( x ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } < t } ) \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } < t } ) \\right) } } ."
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                210,
+                151,
+                399,
+                167
+            ],
+            "content": "\\mathbf { z } _ { < t } ^ { ( 1 ) } = \\mathbf { z } _ { < t } ^ { ( 2 ) } = \\mathbf { z } _ { < t } \\quad \\mathrm { b u t } \\quad z _ { t } ^ { ( 1 ) } = i \\neq j = z _ { t } ^ { ( 2 ) } .",
+            "latex": "\\mathbf { z } _ { < t } ^ { ( 1 ) } = \\mathbf { z } _ { < t } ^ { ( 2 ) } = \\mathbf { z } _ { < t } \\quad \\mathrm { b u t } \\quad z _ { t } ^ { ( 1 ) } = i \\neq j = z _ { t } ^ { ( 2 ) } ."
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                134,
+                315,
+                320,
+                329
+            ],
+            "content": "\\forall t = 1 , \\ldots , T : \\quad h _ { t } = e ( x _ { t } ) \\quad \\mathrm { a n d } \\quad g _ { t } = w",
+            "latex": "\\forall t = 1 , \\ldots , T : \\quad h _ { t } = e ( x _ { t } ) \\quad \\mathrm { a n d } \\quad g _ { t } = w"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                159,
+                182,
+                450,
+                221
+            ],
+            "content": "\\underbrace { p _ { \\theta } ( X _ { i } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = i , \\; \\mathbf { z } _ { < t } ^ { ( 1 ) } = \\mathbf { z } _ { < t } } = \\underbrace { p _ { \\theta } ( X _ { j } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = j , \\; \\mathbf { z } _ { < t } ^ { ( 2 ) } = \\mathbf { z } _ { < t } } = \\frac { \\exp \\left( e ( x ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } _ { < t } } ) \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } _ { < t } } ) \\right) } .",
+            "latex": "\\underbrace { p _ { \\theta } ( X _ { i } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = i , \\; \\mathbf { z } _ { < t } ^ { ( 1 ) } = \\mathbf { z } _ { < t } } = \\underbrace { p _ { \\theta } ( X _ { j } = x \\mid \\mathbf { x } _ { \\mathbf { z } < t } ) } _ { z _ { t } ^ { ( 1 ) } = j , \\; \\mathbf { z } _ { < t } ^ { ( 2 ) } = \\mathbf { z } _ { < t } } = \\frac { \\exp \\left( e ( x ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } _ { < t } } ) \\right) } { \\sum _ { x ^ { \\prime } } \\exp \\left( e ( x ^ { \\prime } ) ^ { \\top } h ( \\mathbf { x } _ { \\mathbf { z } _ { < t } } ) \\right) } ."
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                176,
+                401,
+                435,
+                428
+            ],
+            "content": "```latex\n\\mathcal{J}_{BERT} = \\sum_{x \\in \\mathcal{T}} \\log p(x \\mid \\mathcal{N}); \\quad \n\\mathcal{J}_{XLNet} = \\sum_{x \\in \\mathcal{T}} \\log p(x \\mid \\mathcal{N} \\cup \\mathcal{T}_{<x})\n```",
+            "latex": "```latex\n\\mathcal{J}_{BERT} = \\sum_{x \\in \\mathcal{T}} \\log p(x \\mid \\mathcal{N}); \\quad \n\\mathcal{J}_{XLNet} = \\sum_{x \\in \\mathcal{T}} \\log p(x \\mid \\mathcal{N} \\cup \\mathcal{T}_{<x})\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                108,
+                322,
+                502,
+                339
+            ],
+            "content": "{ \\mathcal { I } } = \\left\\{ ( x = \\mathrm { Y o r k } , { \\mathcal { U } } = \\{ \\mathrm { N e w } \\} ) , \\, \\, ( x = \\mathrm { Y o r k } , { \\mathcal { U } } = \\{ \\mathrm { c i t y } \\} ) , \\, \\, ( x = \\mathrm { Y o r k } , { \\mathcal { U } } = \\{ \\mathrm { N e w , ~ c i t y } \\} ) , \\, \\, \\cdots \\right\\} .",
+            "latex": "{ \\mathcal { I } } = \\left\\{ ( x = \\mathrm { Y o r k } , { \\mathcal { U } } = \\{ \\mathrm { N e w } \\} ) , \\, \\, ( x = \\mathrm { Y o r k } , { \\mathcal { U } } = \\{ \\mathrm { c i t y } \\} ) , \\, \\, ( x = \\mathrm { Y o r k } , { \\mathcal { U } } = \\{ \\mathrm { N e w , ~ c i t y } \\} ) , \\, \\, \\cdots \\right\\} ."
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "total_count": 2,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                111,
+                663,
+                250,
+                694
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{X}_1 &= \\text{self-attention}(\\mathbf{X}_0) + \\mathbf{X}_0 \\\\\n\\mathbf{X}_2 &= \\text{feedforward}(\\mathbf{X}_1) + \\mathbf{X}_1\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{X}_1 &= \\text{self-attention}(\\mathbf{X}_0) + \\mathbf{X}_0 \\\\\n\\mathbf{X}_2 &= \\text{feedforward}(\\mathbf{X}_1) + \\mathbf{X}_1\n\\end{align*}\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                336,
+                668,
+                496,
+                716
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{Y}_1 &= \\text{self-attention}(\\mathbf{Y}_0) + \\mathbf{Y}_0 \\\\\n\\mathbf{Y}_2 &= \\text{cross-attention}(\\mathbf{Y}_1, \\mathbf{X}) + \\mathbf{Y}_1 \\\\\n\\mathbf{Y}_3 &= \\text{feedforward}(\\mathbf{Y}_2) + \\mathbf{Y}_2\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{Y}_1 &= \\text{self-attention}(\\mathbf{Y}_0) + \\mathbf{Y}_0 \\\\\n\\mathbf{Y}_2 &= \\text{cross-attention}(\\mathbf{Y}_1, \\mathbf{X}) + \\mathbf{Y}_1 \\\\\n\\mathbf{Y}_3 &= \\text{feedforward}(\\mathbf{Y}_2) + \\mathbf{Y}_2\n\\end{align*}\n```"
+        }
+    ]
+}

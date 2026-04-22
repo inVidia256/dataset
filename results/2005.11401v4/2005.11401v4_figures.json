@@ -1,0 +1,62 @@
+{
+    "total_count": 4,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                108,
+                70,
+                503,
+                185
+            ],
+            "caption": "Figure 1: Overview of our approach. We combine a pre-trained retriever (Query Encoder + Document Index) with a pre-trained seq2seq model (Generator) and fine-tune end-to-end. For query x, we use Maximum Inner Product Search (MIPS) to find the top-K documents zi. For final prediction y, we treat z as a latent variable and marginalize over seq2seq predictions given different documents.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                289,
+                73,
+                500,
+                137
+            ],
+            "caption": "Figure 2: RAG-Token document posterior p(z_i|x, y_i, y_{-i}) for each generated token for input \"Hemingway\" for Jeopardy generation with 5 retrieved documents. The posterior for document 1 is high when generating \"A Farewell to Arms\" and for document 2 when generating \"The Sun Also Rises\".",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                106,
+                496,
+                504,
+                580
+            ],
+            "caption": "Figure 3: Left: NQ performance as more documents are retrieved. Center: Retrieval recall performance in NQ. Right: MS-MARCO Bleu-1 and Rouge-L as more documents are retrieved.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                110,
+                273,
+                500,
+                419
+            ],
+            "caption": "Figure 4: Annotation interface for human evaluation of factuality. A pop-out for detailed instructions and a worked example appear when clicking \"view tool guide\". Figure 4: Annotation interface for human evaluation of factuality. A pop-out for detailed instructions and a worked example appear when clicking \"view tool guide\".",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page017.png"
+        }
+    ]
+}

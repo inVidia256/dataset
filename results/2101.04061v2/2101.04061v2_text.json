@@ -1,0 +1,1414 @@
+{
+    "total_count": 128,
+    "content_type": "text",
+    "data": [
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                495,
+                546,
+                686
+            ],
+            "content": "Blind face restoration aims at recovering high-quality faces from the low-quality counterparts suffering from unknown degradation, such as low-resolution [13, 48, 9], noise [71], blur [39, 58], compression artifacts [12], etc. When applied to real-world scenarios, it becomes more challenging, due to more complicated degradation, diverse poses and expressions. Previous works [9, 69, 6] typically exploit face-specific priors in face restoration, such as facial landmarks [9], parsing maps [6, 9], facial component heatmaps [69], and show that those geometry facial priors are pivotal to recover accurate face shape and details. However, those priors are usually estimated from input images and inevitably degrades with very low-quality inputs in the real world. In addition, despite their semantic guidance, the above priors contain limited texture information for restoring facial details (e.g., eye pupil)."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                504,
+                286,
+                719
+            ],
+            "content": "Blind face restoration usually relies on facial priors, such as facial geometry prior or reference prior, to restore realistic and faithful details. However, very low-quality inputs cannot offer accurate geometric prior while high-quality references are inaccessible, limiting the applicability in real-world scenarios. In this work, we propose GFP-GAN that leverages rich and diverse priors encapsulated in a pretrained face GAN for blind face restoration. This Generative Facial Prior (GFP) is incorporated into the face restoration process via spatial feature transform layers, which allow our method to achieve a good balance of realness and fidelity. Thanks to the powerful generative facial prior and delicate designs, our GFP-GAN could jointly restore facial details and enhance colors with just a single forward pass, while GAN inversion methods require image-specific optimization at inference. Extensive experiments show that our method achieves superior performance to prior art on both synthetic and real-world datasets."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                690,
+                546,
+                713
+            ],
+            "content": "Another category of approaches investigates reference priors, i.e., high-quality guided faces [46, 45, 11] or facial"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                475,
+                385,
+                488
+            ],
+            "content": "1. Introduction"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                145,
+                475,
+                191,
+                488
+            ],
+            "content": "The word in the image is \"Abstract\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                82,
+                523,
+                99
+            ],
+            "content": "The text content from the image is:\n\n\"Towards Real-World Blind Face Restoration with Generative Facial Prior\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                419,
+                546,
+                465
+            ],
+            "content": "Figure 1: Comparisons with state-of-the-art face restoration methods: HiFaceGAN [67], DFDNet [44], Wan et al. [61] and PULSE [52] on the real-world low-quality images. While previous methods struggle to restore faithful facial details or retain face identity, our proposed GFP-GAN achieves a good balance of realness and fidelity with much fewer artifacts. In addition, the powerful generative facial prior allows us to perform restoration and color enhancement jointly. (Zoom in for best view)"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                96,
+                121,
+                499,
+                175
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nXintao Wang    Yu Li    Honglun Zhang    Ying Shan\nApplied Research Center (ARC), Tencent PCG\n{xintaowang, ianyli, honlanzhang, yingsshan}@tencent.com\nhttps://github.com/TencentARC/GFPGAN\n```"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                164,
+                122,
+                429,
+                149
+            ],
+            "content": "The text content from the image is:\n\nXintao Wang Yu Li Honglun Zhang Ying Shan\nApplied Research Center (ARC), Tencent PCG"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                419,
+                546,
+                465
+            ],
+            "content": "Figure 1: Comparisons with state-of-the-art face restoration methods: HiFaceGAN [67], DFDNet [44], Wan et al. [61] and PULSE [52] on the real-world low-quality images. While previous methods struggle to restore faithful facial details or retain face identity, our proposed GFP-GAN achieves a good balance of realism and fidelity with much fewer artifacts. In addition, the powerful generative facial prior allows us to perform restoration and color enhancement jointly. (Zoom in for best view)"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                336,
+                286,
+                514
+            ],
+            "content": "To address these challenges, we propose the GFP-GAN with delicate designs to achieve a good balance of realness and fidelity in a single forward pass. Specifically, GFP-GAN consists of a degradation removal module and a pre-trained face GAN as facial prior. They are connected by a direct latent code mapping, and several Channel-Split Spatial Feature Transform (CS-SFT) layers in a coarse-to-fine manner. The proposed CS-SFT layers perform spatial modulation on a split of features and leave the left features to directly pass through for better information preservation, allowing our method to effectively incorporate generative prior while retraining high fidelity. Besides, we introduce facial component loss with local discriminators to further enhance perceptual facial details, while employing identity preserving loss to further improve fidelity."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                515,
+                286,
+                657
+            ],
+            "content": "We summarize the contributions as follows. (1) We leverage rich and diverse generative facial priors for blind face restoration. Those priors contain sufficient facial textures and color information, allowing us to jointly perform face restoration and color enhancement. (2) We propose the GFP-GAN framework with delicate designs of architectures and losses to incorporate generative facial prior. Our GFP-GAN with CS-SFT layers achieves a good balance of fidelity and texture faithfulness in a single forward pass. (3) Extensive experiments show that our method achieves superior performance to prior art on both synthetic and real-world datasets."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                134,
+                546,
+                277
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Face Restoration. Based on general face hallucination [5, 30, 66, 70], two typical face-specific priors: geometry priors and reference priors, are incorporated to further improve the performance. The geometry priors include facial landmarks [9, 37, 77], face parsing maps [58, 6, 9] and facial component heatmaps [69]. However, 1) those priors require estimations from low-quality inputs and inevitably degrades in real-world scenarios. 2) They mainly focus on geometry constraints and may not contain adequate details for restoration. Instead, our employed GFP does not involve an explicit geometry estimation from degraded images, and contains adequate textures inside its pretrained network.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                73,
+                546,
+                132
+            ],
+            "content": "To achieve visually-pleasing results, generative adversarial network [18] is usually employed as loss supervisions to push the solutions closer to the natural manifold [41, 57, 64, 7, 14], while our work attempts to leverage the pretrained face GANs as generative facial priors (GFP)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                133,
+                286,
+                335
+            ],
+            "content": "In this study, we leverage Generative Facial Prior (GFP) for real-world blind face restoration, i.e., the prior implicitly encapsulated in pretrained face Generative Adversarial Network (GAN) [18] models such as StyleGAN [35, 36]. These face GANs are capable of generating faithful faces with a high degree of variability, and thereby providing rich and diverse priors such as geometry, facial textures and colors, making it possible to jointly restore facial details and enhance colors (Fig. 1). However, it is challenging to incorporate such generative priors into the restoration process. Previous attempts typically use GAN inversion [19, 54, 52]. They first ‘invert’ the degraded image back to a latent code of the pretrained GAN, and then conduct expensive imagespecific optimization to reconstruct images. Despite visually realistic outputs, they usually produce images with low fidelity, as the low-dimension latent codes are insufficient to guide accurate restoration."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                582,
+                546,
+                713
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Channel Split Operation is usually explored to design compact models and improve model representation ability. MobileNet [28] proposes depthwise convolutions and GhostNet [23] splits the convolutional layer into two parts and uses fewer filters to generate intrinsic feature maps. Dual path architecture in DPN [8] enables feature re-usage and new feature exploration for each path, thus improving its representation ability. A similar idea is also employed in super-resolution [75]. Our CS-SFT layers share the similar spirits, but with different operations and purposes. We adopt spatial feature transform [63, 55] on one split and\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                73,
+                286,
+                132
+            ],
+            "content": "component dictionaries [44], to generate realistic results and alleviate the dependency on degraded inputs. However, the inaccessibility of high-resolution references limits its practical applicability, while the limited capacity of dictionaries restricts its diversity and richness of facial details."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                678,
+                286,
+                713
+            ],
+            "content": "The text content from the image is:\n\n\"Image Restoration typically includes super-resolution [13, 48, 60, 49, 74, 68, 22, 50], denoising [71, 42, 26], deblurring [65, 39, 58] and compression removal [12, 21].\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                662,
+                133,
+                675
+            ],
+            "content": "The text content from the image is \"2. Related Work\"."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                279,
+                546,
+                411
+            ],
+            "content": "Reference priors [46, 45, 11] usually rely on reference images of the same identity. To overcome this issue, DFD-Net [44] suggests to construct a face dictionary of each component (e.g., eyes, mouth) with CNN features to guide the restoration. However, DFDNet mainly focuses on components in the dictionary and thus degrades in the regions beyond its dictionary scope (e.g., hair, ears and face contour), instead, our GFP-GAN could treat faces as a whole to restore. Moreover, the limited size of dictionary restricts its diversity and richness, while the GFP could provide rich and diverse priors including geometry, textures and colors."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                412,
+                546,
+                581
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Generative Priors of pretrained GANs [34, 35, 36, 3] is previously exploited by GAN inversion [1, 76, 54, 19], whose primary aim is to find the closest latent codes given an input image. PULSE [52] iteratively optimizes the latent code of StyleGAN [35] until the distance between outputs and inputs is below a threshold. mGANprior [19] attempts to optimize multiple codes to improve the reconstruction quality. However, these methods usually produce images with low fidelity, as the low-dimension latent codes are insufficient to guide the restoration. In contrast, our proposed CS-SFT modulation layers enable prior incorporation on multi-resolution spatial features to achieve high fidelity. Besides, expensive iterative optimization is not required in our GFP-GAN during inference.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                280,
+                546,
+                581
+            ],
+            "content": "Reference priors [46, 45, 11] usually rely on reference images of the same identity. To overcome this issue, DFDNet [44] suggests to construct a face dictionary of each component (e.g., eyes, mouth) with CNN features to guide the restoration. However, DFDNet mainly focuses on components in the dictionary and thus degrades in the regions beyond its dictionary scope (e.g., hair, ears and face contour), instead, our GFP-GAN could treat faces as a whole to restore. Moreover, the limited size of dictionary restricts its diversity and richness, while the GFP could provide rich and diverse priors including geometry, textures and colors.\nGenerative Priors of pretrained GANs [34, 35, 36, 3] is previously exploited by GAN inversion [1, 76, 54, 19], whose primary aim is to find the closest latent codes given an input image. PULSE [52] iteratively optimizes the latent code of StyleGAN [35] until the distance between outputs and inputs is below a threshold. mGANprior [19] attempts to optimize multiple codes to improve the reconstruction quality. However, these methods usually produce images with low fidelity, as the low-dimension latent codes are insufficient to guide the restoration. In contrast, our proposed CS-SFT modulation layers enable prior incorporation on multi-resolution spatial features to achieve high fidelity. Besides, expensive iterative optimization is not required in our GFP-GAN during inference."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                460,
+                287,
+                519
+            ],
+            "content": "We describe GFP-GAN framework in this section. Given an input facial image \\( x \\) suffering from unknown degradation, the aim of blind face restoration is to estimate a high-quality image \\( \\hat{y} \\), which is as similar as possible to the ground-truth image \\( y \\), in terms of realness and fidelity."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                521,
+                286,
+                653
+            ],
+            "content": "The overall framework of GFP-GAN is depicted in Fig. 2. GFP-GAN is comprised of a degradation removal module (U-Net) and a pretrained face GAN (such as StyleGAN2 [36]) as prior. They are bridged by a latent code mapping and several Channel-Split Spatial Feature Transform (CS-SFT) layers. Specifically, the degradation removal module is designed to remove complicated degradation, and extract two kinds of features, i.e., 1) latent features \\( F_{latent} \\) to map the input image to the closest latent code in StyleGAN2, and 2) multi-resolution spatial features \\( F_{spatial} \\) for modulating the StyleGAN2 features."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                654,
+                286,
+                713
+            ],
+            "content": "After that, \\( \\boldsymbol{F}_{latent} \\) is mapped to intermediate latent codes \\( \\mathcal{W} \\) by several linear layers. Given the close latent code to the input image, StyleGAN2 could generate intermediate convolutional features, denoted by \\( \\boldsymbol{F}_{GAN} \\). These features provide rich facial details captured in the weights of pre-"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                642,
+                545,
+                713
+            ],
+            "content": "In order to have an intermediate supervision for removing degradation, we employ the L1 restoration loss in each resolution scale in the early stage of training. Specifically, we also output images for each resolution scale of the U-Net decoder, and then restrict these outputs to be close to the pyramid of the ground-truth image."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                323,
+                287,
+                405
+            ],
+            "content": "The text content from the image is:\n\n\"Local Component Discriminators. Local discriminator is proposed to focus on local patch distributions [32, 47, 62]. When applied to faces, those discriminative losses are imposed on separate semantic facial regions [43, 20]. Our introduced facial component loss also adopts such designs but with a further style supervision based on the learned discriminative features.\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                437,
+                546,
+                556
+            ],
+            "content": "Real-world blind face restoration faces with complicated and severe degradation, which is typically a mixture of low-resolution, blur, noise and JPEG artifacts. The degradation removal module is designed to explicitly remove the above degradation and extract 'clean' features \\( \\boldsymbol{F}_{latent} \\) and \\( \\boldsymbol{F}_{spatial} \\), alleviating the burden of subsequent modules. We adopt the U-Net [56] structure as our degradation removal module, as it could 1) increase receptive field for large blur elimination, and 2) generate multi-resolution features. The formulation is as follows:"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                347,
+                546,
+                406
+            ],
+            "content": "During training, except for the global discriminative loss, we introduce facial component loss with discriminators to enhance the perceptually significant face components, i.e., eyes and mouth. In order to retrain identity, we also employ identity preserving guidance."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                593,
+                545,
+                640
+            ],
+            "content": "The latent features \\( F_{latent} \\) is used to map the input image to the closest latent code in StyleGAN2 (Sec. 3.3). The multi-resolution spatial features \\( F_{spatial} \\) are used to modulate the StyleGAN2 features (Sec. 3.4)."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                297,
+                545,
+                344
+            ],
+            "content": "The text content from the image is:\n\n\"trained GAN. Multi-resolution features \\( F_{spatial} \\) are used to spatially modulate the face GAN features \\( F_{GAN} \\) with the proposed CS-SFT layers in a coarse-to-fine manner, achieving realistic results while preserving high fidelity.\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                417,
+                469,
+                429
+            ],
+            "content": "The text content from the image is \"3.2. Degradation Removal Module\"."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                297,
+                287,
+                321
+            ],
+            "content": "leave the left split as identity to achieve a good balance of realness and fidelity."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                241,
+                546,
+                290
+            ],
+            "content": "Figure 2: Overview of GFP-GAN framework. It consists of a degradation removal module (U-Net) and a pretrained face GAN as facial prior. They are bridged by a latent code mapping and several Channel-Split Spatial Feature Transform (CS-SFT) layers. During training, we employ 1) intermediate restoration losses to remove complex degradation, 2) Facial component loss with discriminators to enhance facial details, and 3) identity preserving loss to retain face identity."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                441,
+                178,
+                453
+            ],
+            "content": "3.1. Overview of GFP-GAN"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                420,
+                128,
+                433
+            ],
+            "content": "3. Methodology"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                102,
+                286,
+                257
+            ],
+            "content": "A pre-trained face GAN captures a distribution over faces in its leaned weights of convolutions, namely, generative prior [19, 54]. We leverage such pretrained face GANs to provide diverse and rich facial details for our task. A typical way of deploying generative priors is to map the input image to its closest latent codes Z, and then generate the corresponding output by a pretrained GAN [1, 76, 54, 19]. However, these methods usually require time-consuming iterative optimization for preserving fidelity. Instead of producing a final image directly, we generate intermediate convolutional features FGAN of the closest face, as it contains more details and could be further modulated by input features for better fidelity (see Sec. 3.4)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                558,
+                286,
+                690
+            ],
+            "content": "In order to better preserve fidelity, we further use the input spatial features \\( F_{spatial} \\) (produced by the U-Net, Eq. 1) to modulate the GAN features \\( F_{GAN} \\) from Eq. 2. Preserving spatial information from inputs is crucial for face restoration, as it usually requires local characteristics for fidelity preservation, and adaptive restoration at different spatial locations of a face. Therefore, we employ Spatial Feature Transform (SFT) [63], which generates affine transformation parameters for spatial-wise feature modulation, and has shown its effectiveness in incorporating other conditions in image restoration [63, 44] and image generation [55]."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                296,
+                545,
+                367
+            ],
+            "content": "As a result, CS-SFT enjoys the benefits of directly incorporating prior information and effective modulating by input images, thereby achieving a good balance between texture faithfulness and fidelity. Besides, CS-SFT could also reduce complexity as it requires fewer channels for modulation, similar to GhostNet [23]."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                147,
+                546,
+                218
+            ],
+            "content": "To achieve a better balance of realness and fidelity, we further propose channel-split spatial feature transform (CS-SFT) layers, which perform spatial modulation on part of the GAN features by input features \\( F_{spatial} \\) (contributing to fidelity) and leave the left GAN features (contributing to realness) to directly pass through, as shown in Fig. 2:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                390,
+                286,
+                533
+            ],
+            "content": "Discussion: Joint Restoration and Color Enhancement.\nGenerative models capture diverse and rich priors beyond realistic details and vivid textures. For instance, they also encapsulate color priors, which could be employed in our task for joint face restoration and color enhancement. Real-world face images, e.g., old photos, usually have black-and-white color, vintage yellow color, or dim color. Lively color prior in generative facial prior allows us to perform color enhancement including colorization [72]. We believe the generative facial priors also incorporate conventional geometric priors [9, 69], 3D priors [16], etc. for restoration and manipulation."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                539,
+                545,
+                584
+            ],
+            "content": "The text content from the image is:\n\n```\nwhere φ is the pretrained VGG-19 network [59] and we use the {conv1, ···, conv5} feature maps before activation [64]. λl1 and λper denote the loss weights of L1 and perceptual loss, respectively.\n```"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                73,
+                545,
+                108
+            ],
+            "content": "The text content from the image is:\n\n\"features \\( F_{spatial} \\) by several convolutional layers. After that, the modulation is carried out by scaling and shifting the GAN features \\( F_{GAN} \\), formulated by:\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                585,
+                545,
+                631
+            ],
+            "content": "Adversarial Loss. We employ adversarial loss \\( L_{adv} \\) to encourage the GFP-GAN to favor the solutions in the natural image manifold and generate realistic textures. Similar to StyleGAN2 [36], logistic loss [18] is adopted:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                258,
+                545,
+                295
+            ],
+            "content": "The text content from the image is:\n\n\"where \\( \\mathbf{F}_{\\text{GAN}}^{\\text{split}0} \\) and \\( \\mathbf{F}_{\\text{GAN}}^{\\text{split}1} \\) are split features from \\( \\mathbf{F}_{\\text{GAN}} \\) in channel dimension, and Concat[·, ·] denotes the concatenation operation.\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                258,
+                287,
+                353
+            ],
+            "content": "Specifically, given the encoded vector \\( F_{latent} \\) of the input image (produced by the U-Net, Eq. 1), we first map it to intermediate latent codes \\( W \\) for better preserving semantic property i.e., the intermediate space transformed from \\( Z \\) with several multi-layer perceptron layers (MLP) [76]. The latent codes \\( W \\) then pass through each convolution layer in the pre-trained GAN, and generate GAN features for each resolution scale."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                368,
+                545,
+                392
+            ],
+            "content": "We conduct channel-split SFT layers at each resolution scale, and finally generate a restored face ŷ."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                690,
+                286,
+                713
+            ],
+            "content": "Specifically, at each resolution scale, we generate a pair of affine transformation parameters (α, β) from input features."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                654,
+                545,
+                677
+            ],
+            "content": "The text in the image reads:\n\n\"where \\( D \\) denotes the discriminator and \\( \\lambda_{adv} \\) represents the adversarial loss weight.\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                678,
+                545,
+                713
+            ],
+            "content": "The text content from the image is:\n\n\"Facial Component Loss. In order to further enhance the perceptually significant face components, we introduce facial component loss with local discriminators for left eye,\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                72,
+                261,
+                97
+            ],
+            "content": "The text content from the image is:\n\n\"3.3. Generative Facial Prior and Latent Code Mapping\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                540,
+                262,
+                552
+            ],
+            "content": "The text content from the image is:\n\n\"3.4. Channel-Split Spatial Feature Transform\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                398,
+                410,
+                411
+            ],
+            "content": "The text content from the image is \"3.5. Model Objectives\"."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                417,
+                545,
+                476
+            ],
+            "content": "The learning objective of training our GFP-GAN consists of: 1) reconstruction loss that constraints the outputs ŷ close to the ground-truth y, 2) adversarial loss for restoring realistic textures, 3) proposed facial component loss to further enhance facial details, and 4) identity preserving loss."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                477,
+                545,
+                511
+            ],
+            "content": "The text content from the image is:\n\n\"Reconstruction Loss. We adopt the widely-used L1 loss and perceptual loss [33, 41] as our reconstruction loss \\( \\mathcal{L}_{rec} \\), defined as follows:\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                417,
+                546,
+                512
+            ],
+            "content": "The learning objective of training our GFP-GAN consists of: 1) reconstruction loss that constraints the outputs ŷ close to the ground-truth y, 2) adversarial loss for restoring realistic textures, 3) proposed facial component loss to further enhance facial details, and 4) identity preserving loss. Reconstruction Loss. We adopt the widely-used L1 loss and perceptual loss [33, 41] as our reconstruction loss Lrec, defined as follows:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                390,
+                286,
+                401
+            ],
+            "content": "The text content from the image is:\n\n\"Discussion: Joint Restoration and Color Enhancement.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                132,
+                286,
+                287
+            ],
+            "content": "Inspired by [62], we further incorporate a feature style loss based on the learned discriminators. Different from previous feature matching loss with spatial-wise constraints [62], our feature style loss attempts to match the Gram matrix statistics [15] of real and restored patches. Gram matrix calculates the feature correlations and usually effectively captures texture information [17]. We extract features from multiple layers of the learned local discriminators and learn to match these Gram statistic of intermediate representations from the real and restored patches. Empirically, we found the feature style loss performs better than previous feature matching loss in terms of generating realistic facial details and reducing unpleasant artifacts."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                146,
+                545,
+                205
+            ],
+            "content": "Our GFP-GAN is trained on synthetic data that approximate to the real low-quality images and generalize to real-world images during inference. We follow the practice in [46, 44] and adopt the following degradation model to synthesize training data:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                378,
+                286,
+                449
+            ],
+            "content": "The text content from the image is as follows:\n\n\"where ROI is region of interest from the component collection {left_eye, right_eye, mouth}. DROI is the local discriminator for each region. ψ denotes the multi-resolution features from the learned discriminators. λlocal and λfs represent the loss weights of local discriminative loss and feature style loss, respectively.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                558,
+                546,
+                653
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Implementation. We adopt the pretrained StyleGAN2 [36] with 512² outputs as our generative facial prior. The channel multiplier of StyleGAN2 is set to one for compact model size. The UNet for degradation removal consists of seven downsamples and seven upsamples, each with a residual block [25]. For each CS-SFT layer, we use two convolutional layers to generate the affine parameters α and β respectively.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                235,
+                545,
+                330
+            ],
+            "content": "The high quality image y is first convolved with Gaussian blur kernel kσ followed by a downsampling operation with a scale factor r. After that, additive white Gaussian noise nd is added to the image and finally it is compressed by JPEG with quality factor q. Similar to [44], for each training pair, we randomly sample σ, r, δ and q from {0.2 : 10}, {1 : 8}, {0 : 15}, {60 : 100}, respectively. We also add color jittering during training for color enhancement."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                72,
+                287,
+                132
+            ],
+            "content": "The text content from the image is:\n\n\"right eye and mouth. As shown in Fig. 2, we first crop interested regions with ROI align [24]. For each region, we train separate and small local discriminators to distinguish whether the restore patches are real, pushing the patches close to the natural facial component distributions.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                487,
+                546,
+                557
+            ],
+            "content": "- WebPhoto-Test. We crawled 188 low-quality photos in real life from the Internet and extracted 407 faces to construct the WebPhoto testing dataset. These photos have diverse and complicated degradation. Some of them are old photos with very severe degradation on both details and color."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                109,
+                545,
+                145
+            ],
+            "content": "The text content from the image is:\n\n\"Training Datasets. We train our GFP-GAN on the FFHQ dataset [35], which consists of 70,000 high-quality images. We resize all the images to 512² during training.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                449,
+                286,
+                557
+            ],
+            "content": "Identity Preserving Loss. We draw inspiration from [31] and apply identity preserving loss in our model. Similar to perceptual loss [33], we define the loss based on the feature embedding of an input face. Specifically, we adopt the pretrained face recognition ArcFace [10] model, which captures the most prominent features for identity discrimination. The identity preserving loss enforces the restored result to have a small distance with the ground truth in the compact deep feature space:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                654,
+                546,
+                713
+            ],
+            "content": "The training mini-batch size is set to 12. We augment the training data with horizontal flip and color jittering. We consider three components: left_eye, right_eye, mouth for face component loss as they are perceptually significant. Each component is cropped by ROI align [24] with face"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                585,
+                286,
+                621
+            ],
+            "content": "where η represents face feature extractor, i.e. ArcFace [10] in our implementation. λ_id denotes the weight of identity preserving loss."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                288,
+                287,
+                323
+            ],
+            "content": "The facial component loss is defined as follows. The first term is the discriminative loss [18] and the second term is the feature style loss:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                331,
+                546,
+                378
+            ],
+            "content": "Testing Datasets. We construct one synthetic dataset and three different real datasets with distinct sources. All these datasets have no overlap with our training dataset. We provide a brief introduction here."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                379,
+                545,
+                414
+            ],
+            "content": "The text content from the image is:\n\n- CelebA-Test is the synthetic dataset with 3,000 CelebA-HQ images from its testing partition [51]. The generation way is the same as that during training."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                415,
+                546,
+                450
+            ],
+            "content": "- LFW-Test. LFW [29] contains low-quality images in the wild. We group all the first image for each identity in the validation partition, forming 1711 testing images."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                678,
+                287,
+                712
+            ],
+            "content": "The loss hyper-parameters are set as follows: λl1 = 0.1, λper = 1, λadv = 0.1, λlocal = 1, λfs = 200 and λid = 10."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                451,
+                545,
+                486
+            ],
+            "content": "- CelebChild-Test contains 180 child faces of celebrities collected from the Internet. They are low-quality and many of them are black-and-white old photos."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                626,
+                286,
+                649
+            ],
+            "content": "The overall model objective is a combination of the above losses:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                91,
+                465,
+                103
+            ],
+            "content": "The text content from the image is:\n\n\"4.1. Datasets and Implementation\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                72,
+                386,
+                84
+            ],
+            "content": "The text content from the image is \"4. Experiments\"."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                461,
+                286,
+                580
+            ],
+            "content": "We compare our GFP-GAN with several state-of-the-art face restoration methods: HiFaceGAN [67], DFDNet [44], PSFRGAN [6], Super-FAN [4] and Wan et al. [61]. GAN inversion methods for face restoration: PULSE [52] and mGANprior [19] are also included for comparison. We also compare our GFP-GAN with image restoration methods: RCAN [74], ESRGAN [64] and DeblurGANv2 [40], and we finetune them on our face training set for fair comparisons. We adopt their official codes except for Super-FAN, for which we use a re-implementation."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                582,
+                286,
+                664
+            ],
+            "content": "The text content from the image is as follows:\n\n\"For the evaluation, we employ the widely-used non-reference perceptual metrics: FID [27] and NIQE [53]. We also adopt pixel-wise metrics (PSNR and SSIM) and the perceptual metric (LPIPS [73]) for the CelebA-Test with Ground-Truth (GT). We measure the identity distance with angels in the ArcFace [10] feature embedding, where smaller values indicate closer identity to the GT.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                401,
+                546,
+                603
+            ],
+            "content": "The quantitative results for each setting are shown in Table. 1 and Table. 2. On both settings, GFP-GAN achieves the lowest LPIPS, indicating that our results is perceptually close to the ground-truth. GFP-GAN also obtain the lowest FID and NIQE, showing that the outputs have a close distance to the real face distribution and natural image distribution, respectively. Besides the perceptual performance, our method also retains better identity, indicated by the smallest degree in the face feature embedding. Note that 1) the lower FID and NIQE of our method than GT does not indicate that our performance is better than GT, as those ‘perceptual’ metrics are well correlated with the human-opinion-scores on a coarse scale, but not always well correlated on a finer scale [2]; 2) the pixel-wise metrics PSNR and SSIM are not correlation well with the subjective evaluation of human observers [2, 41] and our model is not good at these two metrics."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                362,
+                286,
+                433
+            ],
+            "content": "The text content from the image is:\n\n\"landmarks provided in the origin training dataset. We train our model with Adam optimizer [38] for a total of 800k iterations. The learning rate was set to \\(2 \\times 10^{-3}\\) and then decayed by a factor of 2 at the 700k-th, 750k-th iterations. We implement our models with the PyTorch framework and train them using four NVIDIA Tesla P40 GPUs.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                666,
+                287,
+                713
+            ],
+            "content": "The text content from the image is:\n\n\"Synthetic CelebA-Test. The comparisons are conducted under two settings: 1) blind face restoration whose inputs and outputs have the same resolution. 2) 4× face super-resolution. Note that our method could take upsampled images.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                606,
+                545,
+                714
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Qualitative results are presented in Fig. 3 and Fig. 4. 1) Thanks to the powerful generative facial prior, our GFP-GAN recovers faithful details in the eyes (pupils and eyelashes), teeth, etc. 2) Our method treats faces as whole in restoration and could also generate realistic hair, while previous methods that rely on component dictionaries (DFD-Net) or parsing maps (PSFRGAN) fail to produce faithful hair textures (2nd row, Fig. 3). 3) GFP-GAN is capable of retaining fidelity, e.g., it produces natural closed mouth.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                317,
+                287,
+                353
+            ],
+            "content": "Figure 4: Comparison on the CelebA-Test for ×4 face super-resolution. Our GFP-GAN restores realistic teeth and faithful eye gaze direction. Zoom in for best view."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                171,
+                546,
+                194
+            ],
+            "content": "Figure 3: Qualitative comparison on the CelebA-Test for blind face restoration. Our GFP-GAN produces faithful details in eyes, mouth and hair. Zoom in for best view."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                442,
+                273,
+                455
+            ],
+            "content": "The text content from the image is:\n\n\"4.2. Comparisons with State-of-the-art Methods\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                387,
+                467,
+                397
+            ],
+            "content": "ages as inputs for face super-resolution."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                198,
+                546,
+                245
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: Quantitative comparison on CelebA-Test for blind face restoration. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                198,
+                546,
+                245
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: Quantitative comparison on CelebA-Test for blind face restoration. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                642,
+                545,
+                713
+            ],
+            "content": "The qualitative comparisons are shown in Fig. 5. GFP-GAN could jointly conduct face restoration and color enhancement for real-life photos with the powerful generative prior. Our method could produce plausible and realistic faces on complicated real-world degradation while other methods fail to recover faithful facial details or produces ar-"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                618,
+                286,
+                713
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Real-World LFW, CelebChild and WedPhoto-Test. To test the generalization ability, we evaluate our model on three different real-world datasets. The quantitative results are shown in Table 3. Our GFP-GAN achieves superior performance on all the three real-world datasets, showing its remarkable generalization capability. Although PULSE [52] could also obtain high perceptual quality (lower FID scores), it could not retain the face identity as\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                581,
+                286,
+                616
+            ],
+            "content": "The text content from the image is:\n\n\"without forced addition of teeth as PSFRGAN does (2nd row, Fig. 3). And in Fig. 4, GFP-GAN also restores reasonable eye gaze direction.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                444,
+                547,
+                492
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 3: Quantitative comparison on the real-world LFW, CelebChild, WebPhoto. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                626,
+                370,
+                637
+            ],
+            "content": "shown in Fig 5."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                444,
+                287,
+                492
+            ],
+            "content": "Table 2: Quantitative comparison on CelebA-Test for 4× face super-resolution. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                172,
+                427,
+                469,
+                438
+            ],
+            "content": "The text content from the image is:\n\n\"Qualitative comparisons on three real-world datasets. Zoom in for best view.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                444,
+                287,
+                492
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 2: Quantitative comparison on CelebA-Test for 4× face super-resolution. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                544,
+                287,
+                627
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Pyramid Restoration Loss. Pyramid restoration loss is employed in the degradation removal module and strengthens the restoration ability for complicated degradation in the real world. Without this intermediate supervision, the multi-resolution spatial features for subsequent modulations may still have degradation, resulting in inferior performance, as shown in Table. 4 [configuration d)] and Fig. 6.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                182,
+                287,
+                277
+            ],
+            "content": "The text content from the image is as follows:\n\n\"tifacts (especially in WebPhoto-Test in Fig 5). Besides the common facial components like eyes and teeth, GFP-GAN also performs better in hair and ears, as the GFP prior takes the whole face into consideration rather than separate parts. With SC-SFT layers, our model is capable of achieving high fidelity. As shown in the last row of Fig. 5, most previous methods fail to recover the closed eyes, while ours could successfully restore them with fewer artifacts.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                312,
+                286,
+                492
+            ],
+            "content": "CS-SFT layers. As shown in Table. 4 [configuration a)] and Fig. 6, when we remove spatial modulation layers, i.e., only keep the latent code mapping without spatial information, the restored faces could not retain face identity even with identity-preserving loss (high LIPS score and large Deg.). Thus, the multi-resolution spatial features used in CS-SFT layers is vital to preserve fidelity. When we switch CS-SFT layers to simple SFT layers [configuration b) in Table. 4], we observe that 1) the perceptual quality degrades on all metrics and 2) it preserves stronger identity (smaller Deg.), as the input image features impose influence on all the modulated features and the outputs bias to the degraded inputs, thus leading to lower perceptual quality. By contrast, CS-SFT layers provide a good balance of realness and fidelity by modulating a split of features."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                630,
+                287,
+                713
+            ],
+            "content": "The text content from the image is:\n\n\"Facial Component Loss. We compare the results of 1) removing all the facial component loss, 2) only keeping the component discriminators, 3) adding extra feature matching loss as in [62], and 4) adopting extra feature style loss based on Gram statistics [15]. It is shown in Fig 7 that component discriminators with feature style loss could better capture the eye distribution and restore the plausible details.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                494,
+                287,
+                542
+            ],
+            "content": "The text content from the image is:\n\n\"Pretrained GAN as GFP. Pretrained GAN provides rich and diverse features for restoration. A performance drop is observed if we do not use the generative facial prior, as shown in Table. 4 [configuration c)] and Fig. 6.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                484,
+                546,
+                578
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Limitations. As shown in Fig. 9, when the degradation of real images is severe, the restored facial details by GFP-GAN are twisted with artifacts. Our method also produces unnatural results for very large poses. This is because the synthetic degradation and training data distribution are different from those in real-world. One possible way is to learn those distributions from real data instead of merely using synthetic data, which is left as future work.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                599,
+                546,
+                707
+            ],
+            "content": "We have proposed the GFP-GAN framework that leverages the rich and diverse generative facial prior for the challenging blind face restoration task. This prior is incorporated into the restoration process with channel-split spatial feature transform layers, allowing us to achieve a good balance of realness and fidelity. Extensive comparisons demonstrate the superior capability of GFP-GAN in joint face restoration and color enhancement for real-world images, outperforming prior art."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                65,
+                287,
+                88
+            ],
+            "content": "The text content from the image is:\n\n\"Table 4: Ablation study results on CelebA-Test under blind face restoration.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                585,
+                378,
+                597
+            ],
+            "content": "5. Conclusion"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                376,
+                546,
+                483
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Training bias. Our method performs well on most dark-skinned faces and various population groups (Fig. 8), as our method uses both the pretrained GAN and input image features for modulation. Beside, we employ reconstruction loss and identity preserving loss to restrict the outputs to retain fidelity with inputs. However, when input images are gray-scale, the face color may have a bias (last example in Fig. 8), as the inputs do not contain sufficient color information. Thus, a diverse and balanced dataset is in need.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                50,
+                291,
+                147,
+                304
+            ],
+            "content": "The text content from the image is \"4.3. Ablation Studies\"."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                357,
+                455,
+                369
+            ],
+            "content": "The text content from the image is \"4.4. Discussion and Limitations\"."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                106,
+                546,
+                137
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nGFP-GAN   a) No SC-SFT    b) SFT     c) No GFP    d) No Pyramid\nFigure 6: Ablation studies on CS-SFT layers, GFP prior and pyramid restoration loss. Zoom in for best view.\n```"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                200,
+                546,
+                223
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Figure 7: Ablation studies on facial component loss. In the figure, D, fm, fs denotes component discriminator, feature\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                106,
+                546,
+                137
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nGFP-GAN   a) No SC-SFT    b) SFT     c) No GFP    d) No Pyramid\nFigure 6: Ablation studies on CS-SFT layers, GFP prior and pyramid restoration loss. Zoom in for best view.\n```"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                326,
+                545,
+                350
+            ],
+            "content": "The text content from the image is:\n\n\"Figure 9: Limitations of our model. The results of PSFR-GAN [6] are also presented.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                322,
+                263,
+                510,
+                278
+            ],
+            "content": "The text content from the image is:\n\n\"Figure 8: Results on dark-skinned faces.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                326,
+                545,
+                350
+            ],
+            "content": "The text content from the image is:\n\n\"Figure 9: Limitations of our model. The results of PSFR-GAN [6] are also presented.\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                71,
+                106,
+                84
+            ],
+            "content": "References"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                148,
+                546,
+                713
+            ],
+            "content": "Here is the text content from the image:\n\n[21] Jun Guo and Hongyang Chao. Building dual-domain representations for compression artifacts reduction. In ECCV, 2016.\n\n[22] Yong Guo, Jian Chen, Jingdong Wang, Qi Chen, Jiezhang Cao, Zeshuai Deng, Yanwu Xu, and Mingkui Tan. Closed-loop matters: Dual regression networks for single image super-resolution. In CVPR, 2020.\n\n[23] Kai Han, Yunhe Wang, Qi Tian, Jianyuan Guo, Chunjing Xu, and Chang Xu. Ghostnet: More features from cheap operations. In CVPR, 2020.\n\n[24] Kaiming He, Georgia Gkioxari, Piotr Dollár, and Ross Girshick. Mask r-cnn. In ICCV, 2017.\n\n[25] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In CVPR, 2016.\n\n[26] Majed El Helou, Ruofan Zhou, and Sabine Süsstrunk. Stochastic frequency masking to improve super-resolution and denoising networks. In ECCV, 2020.\n\n[27] Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, and Sepp Hochreiter. Gans trained by a two time-scale update rule converge to a local nash equilibrium. In NeurIPS, 2017.\n\n[28] Andrew G Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, and Hartwig Adam. Mobilenets: Efficient convolutional neural networks for mobile vision applications. arXiv:1704.04861, 2017.\n\n[29] Gary B. Huang, Manu Ramesh, Tamara Berg, and Erik Learned-Miller. Labeled faces in the wild: A database for studying face recognition in unconstrained environments. Technical report, University of Massachusetts, Amherst, 2007.\n\n[30] Huaibo Huang, Ran He, Zhenan Sun, and Tieniu Tan. Wavelet-srnet: A wavelet-based cnn for multi-scale face super resolution. In ICCV, 2017.\n\n[31] Rui Huang, Shu Zhang, Tianyu Li, and Ran He. Beyond face rotation: Global and local perception gan for photorealistic and identity preserving frontal view synthesis. In CVPR, 2017.\n\n[32] Satoshi Iizuka, Edgar Simo-Serra, and Hiroshi Ishikawa. Globally and locally consistent image completion. ACM Transactions on Graphics (ToG), 36(4):1–14, 2017.\n\n[33] Justin Johnson, Alexandre Alahi, and Li Fei-Fei. Perceptual losses for real-time style transfer and super-resolution. In ECCV, 2016.\n\n[34] Tero Karras, Timo Aila, Samuli Laine, and Jaakko Lehtinen. Progressive growing of gans for improved quality, stability, and variation. In ICLR, 2018.\n\n[35] Tero Karras, Samuli Laine, and Timo Aila. A style-based generator architecture for generative adversarial networks. In CVPR, 2018."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                148,
+                288,
+                713
+            ],
+            "content": "The text content from the image is as follows:\n\n1. [3] Andrew Brock, Jeff Donahue, and Karen Simonyan. Large scale gan training for high fidelity natural image synthesis. arXiv preprint arXiv:1809.11096, 2018.\n2. [4] Adrian Bulat and Georgios Tzimiropoulos. Super-fan: Integrated facial landmark localization and super-resolution of real-world low resolution faces in arbitrary poses with gans. In CVPR, 2018.\n3. [5] Qingxing Cao, Liang Lin, Yukai Shi, Xiaodan Liang, and Guanbin Li. Attention-aware face hallucination via deep reinforcement learning. In CVPR, 2017.\n4. [6] Chaofeng Chen, Xiaoming Li, Lingbo Yang, Xianhui Lin, Lei Zhang, and Kwan-Yee K. Wong. Progressive semantic-aware style transformation for blind face restoration. arXiv:2009.08709, 2020.\n5. [7] Jingwen Chen, Jiawei Chen, Hongyang Chao, and Ming Yang. Image blind denoising with generative adversarial network based noise modeling. In CVPR, 2018.\n6. [8] Yunpeng Chen, Jianan Li, Huaxin Xiao, Xiaojie Jin, Shuicheng Yan, and Jiashi Feng. Dual path networks. In NeurIPS, 2017.\n7. [9] Yu Chen, Ying Tai, Xiaoming Liu, Chunhua Shen, and Jian Yang. Fsrnet: End-to-end learning face super-resolution with facial priors. In CVPR, 2018.\n8. [10] Jiankang Deng, Jia Guo, Niannan Xue, and Stefanos Zafeiriou. Arcface: Additive angular margin loss for deep face recognition. In CVPR, 2019.\n9. [11] Berk Dogan, Shuhang Gu, and Radu Timofte. Exemplar guided face image super-resolution without facial landmarks. In CVPRW, 2019.\n10. [12] Chao Dong, Yubin Deng, Chen Change Loy, and Xiaoou Tang. Compression artifacts reduction by a deep convolutional network. In ICCV, 2015.\n11. [13] Chao Dong, Chen Change Loy, Kaiming He, and Xiaoou Tang. Learning a deep convolutional network for image super-resolution. In ECCV, 2014.\n12. [14] Leonardo Galteri, Lorenzo Seidenari, Marco Bertini, and Alberto Del Bimbo. Deep generative adversarial compression artifact removal. In ICCV, 2017.\n13. [15] Leon A Gatys, Alexander S Ecker, and Matthias Bethge. Image style transfer using convolutional neural networks. In CVPR, 2016.\n14. [16] Baris Gecer, Stylianos Ploumpis, Irene Kotsia, and Stefanos Zafeiriou. Ganfit: Generative adversarial network fitting for high fidelity 3d face reconstruction. In CVPR, 2019.\n15. [17] Muhammad Waleed Gondal, Bernhard Schölkopf, and Michael Hirsch. The unreasonable effectiveness of texture transfer for single image super-resolution. In ECCV, 2018.\n16. [18] Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                148,
+                547,
+                713
+            ],
+            "content": "Here is the text content from the image:\n\n[56] Olaf Ronneberger, Philipp Fischer, and Thomas Brox. U-net: Convolutional networks for biomedical image segmentation. In International Conference on Medical Image Computing and Computer-Assisted Intervention, 2015.\n\n[57] Mehdi SM Sajjadi, Bernhard Scholkopf, and Michael Hirsch. Enhancenet: Single image super-resolution through automated texture synthesis. In ECCV, 2017.\n\n[58] Ziyi Shen, Wei-Sheng Lai, Tingfa Xu, Jan Kautz, and Ming-Hsuan Yang. Deep semantic face deblurring. In CVPR, 2018.\n\n[59] Karen Simonyan and Andrew Zisserman. Very deep convolutional networks for large-scale image recognition. In ICLR, 2015.\n\n[60] Radu Timofte, Eirikur Agustsson, Luc Van Gool, Ming-Hsuan Yang, and Lei Zhang. Ntire 2017 challenge on single image super-resolution: Methods and results. In CVPRW, 2017.\n\n[61] Ziyu Wan, Bo Zhang, Dongdong Chen, Pan Zhang, Dong Chen, Jing Liao, and Fang Wen. Bringing old photos back to life. In CVPR, 2020.\n\n[62] Ting-Chun Wang, Ming-Yu Liu, Jun-Yan Zhu, Andrew Tao, Jan Kautz, and Bryan Catanzaro. High-resolution image synthesis and semantic manipulation with conditional gans. In CVPR, 2018.\n\n[63] Xintao Wang, Ke Yu, Chao Dong, and Chen Change Loy. Recovering realistic texture in image super-resolution by deep spatial feature transform. In CVPR, 2018.\n\n[64] Xintao Wang, Ke Yu, Shixiang Wu, Jinjin Gu, Yihao Liu, Chao Dong, Yu Qiao, and Chen Change Loy. Esrgan: Enhanced super-resolution generative adversarial networks. In ECCVW, 2018.\n\n[65] Li Xu, Jimmy S Ren, Ce Liu, and Jiaya Jia. Deep convolutional neural network for image deconvolution. In NeurIPS, 2014.\n\n[66] Xiangyu Xu, Deqing Sun, Jinshan Pan, Yujin Zhang, Hanspeter Pfister, and Ming-Hsuan Yang. Learning to super-resolve blurry face and text images. In ICCV, 2017.\n\n[67] Lingbo Yang, Chang Liu, Pan Wang, Shanshe Wang, Peiran Ren, Siwei Ma, and Wen Gao. Hifacegan: Face renovation via collaborative suppression and replenishment. ACM Multimedia, 2020.\n\n[68] Ke Yu, Xintao Wang, Chao Dong, Xiaou Tang, and Chen Change Loy. Path-restore: Learning network path selection for image restoration. arXiv:1904.10343, 2019.\n\n[69] Xin Yu, Basura Fernando, Bernard Ghanem, Fatih Porikli, and Richard Hartley. Face super-resolution guided by facial component heatmaps. In ECCV, pages 217–233, 2018.\n\n[70] Xin Yu, Basura Fernando, Richard Hartley, and Fatih Porikli. Super-resolving very low-resolution face images with supplementary attributes. In CVPR, 2018."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                148,
+                288,
+                713
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nstochastic optimization. In ICLR, 2015. 6\n\n[39] Orest Kupyn, Volodymyr Budzan, Mykola Mykhailych, Dmytro Mishkin, and Jiří Matas. Deblurgan: Blind motion deblurring using conditional adversarial networks. In CVPR, 2018. 1, 2\n\n[40] Orest Kupyn, Tetiana Martyniuk, Junru Wu, and Zhangyang Wang. Deblurgan-v2: Deblurring (orders-of-magnitude) faster and better. In ICCV, 2019. 6, 7\n\n[41] Christian Ledig, Lucas Theis, Ferenc Huszár, Jose Caballero, Andrew Cunningham, Alejandro Acosta, Andrew Aitken, Alykhan Tejani, Johannes Totz, Zehan Wang, et al. Photo-realistic single image super-resolution using a generative adversarial network. In CVPR, 2017. 2, 4, 6\n\n[42] Stamatis Lefkimmiatis. Non-local color image denoising with convolutional neural networks. In CVPR, 2017. 2\n\n[43] Tingting Li, Ruihe Qian, Chao Dong, Si Liu, Qiong Yan, Wenwu Zhu, and Liang Lin. Beautygan: Instance-level facial makeup transfer with deep generative adversarial network. In ACM MM, 2018. 3\n\n[44] Xiaoming Li, Chaofeng Chen, Shangchen Zhou, Xianhui Lin, Wangmeng Zuo, and Lei Zhang. Blind face restoration via deep multi-scale component dictionaries. In ECCV, 2020. 1, 2, 4, 5, 6, 7\n\n[45] Xiaoming Li, Wenyu Li, Dongwei Ren, Hongzhi Zhang, Meng Wang, and Wangmeng Zuo. Enhanced blind face restoration with multi-exemplar images and adaptive spatial feature fusion. In CVPR, 2020. 1, 2\n\n[46] Xiaoming Li, Ming Liu, Yuting Ye, Wangmeng Zuo, Liang Lin, and Ruigang Yang. Learning warped guidance for blind face restoration. In ECCV, 2018. 1, 2, 5\n\n[47] Yijun Li, Sifei Liu, Jimei Yang, and Ming-Hsuan Yang. Generative face completion. In CVPR, 2017. 3\n\n[48] Bee Lim, Sanghyun Son, Heewon Kim, Seungjun Nah, and Kyoung Mu Lee. Enhanced deep residual networks for single image super-resolution. In CVPRW, 2017. 1, 2\n\n[49] Ding Liu, Bihan Wen, Yuchen Fan, Chen Change Loy, and Thomas S Huang. Non-local recurrent network for image restoration. In NeurIPS, 2018. 2\n\n[50] Jie Liu, Wenjie Zhang, Yuting Tang, Jie Tang, and Gangshan Wu. Residual feature aggregation network for image super-resolution. In CVPR, 2020. 2\n\n[51] Ziwei Liu, Ping Luo, Xiaogang Wang, and Xiaoou Tang. Deep learning face attributes in the wild. In ICCV, 2015. 5\n\n[52] Sachit Menon, Alexandru Damian, Shijia Hu, Nikhil Ravi, and Cynthia Rudin. Pulse: Self-supervised photo upsampling via latent space exploration of generative models. In CVPR, 2020. 1, 2, 6, 7\n\n[53] Anish Mittal, Rajiv Soundararajan, and Alan C Bovik. Making a “completely blind” image quality analyzer. IEEE Signal processing letters, 20(3):209–212, 2012. 6\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                73,
+                288,
+                320
+            ],
+            "content": "The text content from the image is as follows:\n\n[71] Kai Zhang, Wangmeng Zuo, Yunjin Chen, Deyu Meng, and Lei Zhang. Beyond a gaussian denoiser: Residual learning of deep cnn for image denoising. IEEE TIP, 26(7):3142–3155, 2017.\n\n[72] Richard Zhang, Phillip Isola, and Alexei A Efros. Colorful image colorization. In ECCV, 2016.\n\n[73] Richard Zhang, Phillip Isola, Alexei A Efros, Eli Shechtman, and Oliver Wang. The unreasonable effectiveness of deep features as a perceptual metric. In CVPR, 2018.\n\n[74] Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, and Yun Fu. Image super-resolution using very deep residual channel attention networks. In ECCV, 2018.\n\n[75] Xiaole Zhao, Yulun Zhang, Tao Zhang, and Xueming Zou. Channel splitting network for single mr image super-resolution. IEEE Transactions on Image Processing, 28(11):5649–5662, 2019.\n\n[76] Jiapeng Zhu, Yujun Shen, Deli Zhao, and Bolei Zhou. In-domain gan inversion for real image editing. In ECCV, 2020.\n\n[77] Shizhan Zhu, Sifei Liu, Chen Change Loy, and Xiaoou Tang. Deep cascaded bi-network for face hallucination. In ECCV, 2016."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                48,
+                73,
+                288,
+                116
+            ],
+            "content": "The text content from the image is:\n\n[71] Kai Zhang, Wangmeng Zuo, Yunjin Chen, Deyu Meng, and Lei Zhang. Beyond a gaussian denoiser: Residual learning of deep cnn for image denoising. IEEE TIP, 26(7):3142–3155, 2017."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                254,
+                286,
+                286
+            ],
+            "content": "The text content from the image is:\n\n[76] Jiapeng Zhu, Yujun Shen, Deli Zhao, and Bolei Zhou. In-domain gan inversion for real image editing. In ECCV, 2020.\n\n2, 4"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                118,
+                287,
+                140
+            ],
+            "content": "The text content from the image is:\n\n[72] Richard Zhang, Phillip Isola, and Alexei A Efros. Colorful image colorization. In ECCV, 2016."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                288,
+                287,
+                320
+            ],
+            "content": "The text content from the image is:\n\n[77] Shizhan Zhu, Sifei Liu, Chen Change Loy, and Xiaoou Tang. Deep cascaded bi-network for face hallucination. In ECCV, 2016."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                209,
+                287,
+                252
+            ],
+            "content": "The text content from the image is as follows:\n\n[75] Xiaole Zhao, Yulun Zhang, Tao Zhang, and Xueming Zou. Channel splitting network for single mr image super-resolution. IEEE Transactions on Image Processing, 28(11):5649–5662, 2019."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                141,
+                287,
+                174
+            ],
+            "content": "The text content from the image is as follows:\n\n[73] Richard Zhang, Phillip Isola, Alexei A Efros, Eli Shechtman, and Oliver Wang. The unreasonable effectiveness of deep features as a perceptual metric. In CVPR, 2018."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                49,
+                176,
+                287,
+                207
+            ],
+            "content": "The text content from the image is:\n\n[74] Yulun Zhang, Kunpeng Li, Kai Li, Lichen Wang, Bineng Zhong, and Yun Fu. Image super-resolution using very deep residual channel attention networks. In ECCV, 2018. 2, 6, 7"
+        }
+    ]
+}

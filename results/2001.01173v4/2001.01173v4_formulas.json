@@ -1,0 +1,126 @@
+{
+    "total_count": 10,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                144,
+                579,
+                460,
+                610
+            ],
+            "content": "```latex\n\\min_{G} \\max_{D} \\mathcal{L} = \\underbrace{\\mathbb{E}_{\\boldsymbol{x}^s, \\boldsymbol{a}^s \\sim p_{data}} [\\log D(\\boldsymbol{x}^s, \\boldsymbol{a}^s)]}_{\\mathcal{L}_{data}} + \\underbrace{\\mathbb{E}_{\\boldsymbol{x}^t, \\boldsymbol{a}^t \\sim p_g} [\\log(1 - D(\\boldsymbol{x}^t, \\boldsymbol{a}^t))]}_{\\mathcal{L}_g},\n```",
+            "latex": "```latex\n\\min_{G} \\max_{D} \\mathcal{L} = \\underbrace{\\mathbb{E}_{\\boldsymbol{x}^s, \\boldsymbol{a}^s \\sim p_{data}} [\\log D(\\boldsymbol{x}^s, \\boldsymbol{a}^s)]}_{\\mathcal{L}_{data}} + \\underbrace{\\mathbb{E}_{\\boldsymbol{x}^t, \\boldsymbol{a}^t \\sim p_g} [\\log(1 - D(\\boldsymbol{x}^t, \\boldsymbol{a}^t))]}_{\\mathcal{L}_g},\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                254,
+                341,
+                360,
+                367
+            ],
+            "content": "D ^ { * } ( \\boldsymbol { x } ^ { t } ) = { \\frac { 1 } { 1 + e ^ { - \\widetilde { D } ^ { * } ( \\boldsymbol { x } ^ { t } ) } } } .",
+            "latex": "D ^ { * } ( \\boldsymbol { x } ^ { t } ) = { \\frac { 1 } { 1 + e ^ { - \\widetilde { D } ^ { * } ( \\boldsymbol { x } ^ { t } ) } } } ."
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                242,
+                266,
+                373,
+                293
+            ],
+            "content": "D ^ { * } ( \\boldsymbol { x } ^ { t } ) = \\frac { p _ { d a t a } ( \\boldsymbol { x } ^ { t } ) } { p _ { d a t a } ( \\boldsymbol { x } ^ { t } ) + p _ { g } ( \\boldsymbol { x } ^ { t } ) } ,",
+            "latex": "D ^ { * } ( \\boldsymbol { x } ^ { t } ) = \\frac { p _ { d a t a } ( \\boldsymbol { x } ^ { t } ) } { p _ { d a t a } ( \\boldsymbol { x } ^ { t } ) + p _ { g } ( \\boldsymbol { x } ^ { t } ) } ,"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                211,
+                410,
+                403,
+                427
+            ],
+            "content": "{ \\mathcal { L } } _ { g } = \\mathbb { E } _ { \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } \\sim p _ { g } } [ e ^ { \\widetilde { D } ^ { * } ( \\boldsymbol { x } ^ { t } ) } \\cdot \\log ( 1 - D ( \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } ) ) ] .",
+            "latex": "{ \\mathcal { L } } _ { g } = \\mathbb { E } _ { \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } \\sim p _ { g } } [ e ^ { \\widetilde { D } ^ { * } ( \\boldsymbol { x } ^ { t } ) } \\cdot \\log ( 1 - D ( \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } ) ) ] ."
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                188,
+                626,
+                427,
+                668
+            ],
+            "content": "```latex\n\\Delta l = \\left( \\sum_{i,j} e_{ij} - \\sum_i e_i \\right) - \\sum_i e_i = \\sum_{i,j} e_{ij} - 2 \\cdot \\text{trace}(\\boldsymbol{E}),\n```",
+            "latex": "```latex\n\\Delta l = \\left( \\sum_{i,j} e_{ij} - \\sum_i e_i \\right) - \\sum_i e_i = \\sum_{i,j} e_{ij} - 2 \\cdot \\text{trace}(\\boldsymbol{E}),\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                189,
+                626,
+                427,
+                668
+            ],
+            "content": "```latex\n\\Delta l = \\underbrace{\\left(\\sum_{i,j} e_{ij} - \\sum_i e_i\\right)}_{\\Delta l_n} - \\underbrace{\\sum_i e_i}_{\\Delta l_p} = \\sum_{i,j} e_{ij} - 2 \\cdot \\text{trace}(\\boldsymbol{E}),\n```",
+            "latex": "```latex\n\\Delta l = \\underbrace{\\left(\\sum_{i,j} e_{ij} - \\sum_i e_i\\right)}_{\\Delta l_n} - \\underbrace{\\sum_i e_i}_{\\Delta l_p} = \\sum_{i,j} e_{ij} - 2 \\cdot \\text{trace}(\\boldsymbol{E}),\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                223,
+                430,
+                391,
+                447
+            ],
+            "content": "\\operatorname { A I W } ( \\boldsymbol { x } ^ { t } ) = \\| 1 + ( \\Delta l ^ { * } - \\Delta l ) \\| ^ { 2 } \\cdot e ^ { \\widetilde { D } ( \\boldsymbol { x } ^ { t } ) } .",
+            "latex": "\\operatorname { A I W } ( \\boldsymbol { x } ^ { t } ) = \\| 1 + ( \\Delta l ^ { * } - \\Delta l ) \\| ^ { 2 } \\cdot e ^ { \\widetilde { D } ( \\boldsymbol { x } ^ { t } ) } ."
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                207,
+                490,
+                408,
+                505
+            ],
+            "content": "{ \\mathcal { L } } _ { g } = \\mathbb { E } _ { \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } \\sim p _ { g } } [ \\mathrm { A I W } ( \\boldsymbol { x } ^ { t } ) \\cdot \\log ( 1 - D ( \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } ) ) ] .",
+            "latex": "{ \\mathcal { L } } _ { g } = \\mathbb { E } _ { \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } \\sim p _ { g } } [ \\mathrm { A I W } ( \\boldsymbol { x } ^ { t } ) \\cdot \\log ( 1 - D ( \\boldsymbol { x } ^ { t } , \\boldsymbol { a } ^ { t } ) ) ] ."
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                205,
+                640,
+                410,
+                667
+            ],
+            "content": "```latex\n\\boldsymbol{x}^{t_N} = \\overbrace{G(\\cdots G(G(\\boldsymbol{x}^s, \\boldsymbol{a}^{t_1}), \\boldsymbol{a}^{t_2}), \\cdots)}^{N}, \\boldsymbol{a}^{t_N}),\n```",
+            "latex": "```latex\n\\boldsymbol{x}^{t_N} = \\overbrace{G(\\cdots G(G(\\boldsymbol{x}^s, \\boldsymbol{a}^{t_1}), \\boldsymbol{a}^{t_2}), \\cdots)}^{N}, \\boldsymbol{a}^{t_N}),\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                182,
+                517,
+                431,
+                549
+            ],
+            "content": "```latex\n\\mathcal{L}_g = \\sum_{n=1}^{N} \\mathbb{E}_{p_g} [\\text{AIW}(\\boldsymbol{x}^t) \\cdot \\mathbb{E}_{p_\\text{n-hop}} [\\sum_{i=1}^{n} \\log(1 - D(\\boldsymbol{x}^{t_i}, \\boldsymbol{\\alpha}^{t_i}))]],\n```",
+            "latex": "```latex\n\\mathcal{L}_g = \\sum_{n=1}^{N} \\mathbb{E}_{p_g} [\\text{AIW}(\\boldsymbol{x}^t) \\cdot \\mathbb{E}_{p_\\text{n-hop}} [\\sum_{i=1}^{n} \\log(1 - D(\\boldsymbol{x}^{t_i}, \\boldsymbol{\\alpha}^{t_i}))]],\n```"
+        }
+    ]
+}

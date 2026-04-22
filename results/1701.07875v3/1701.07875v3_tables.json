@@ -1,0 +1,22 @@
+{
+    "total_count": 1,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                123,
+                124,
+                489,
+                334
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Algorithm 1 WGAN， our proposed algorithm.All experiments in the paper used</td>\n    <td>the default values α = 0.000005，c = 0.01，m = 64，ncritic = 5.</td>\n  </tr>\n  <tr>\n    <td>Require：α，the learning rate.c，the clipping parameter.m，the batch size.</td>\n    <td>ncritic，the number of iterations of the critic per generator iteration.</td>\n  </tr>\n  <tr>\n    <td>Require：w，initial critic parameters.θ，initial generator's parameters.</td>\n  </tr>\n  <tr>\n    <td>while θ has not converged do</td>\n  </tr>\n  <tr>\n    <td>for t=0,...，ncritic do</td>\n  </tr>\n  <tr>\n    <td>Sample {x(i)}m</td>\n    <td>i=1</td>\n    <td>~Pr a batch from the real data.</td>\n  </tr>\n  <tr>\n    <td>Sample {z(i)}m</td>\n    <td>i=1</td>\n    <td>p(z) a batch of prior samples.</td>\n  </tr>\n  <tr>\n    <td>gw←∇w[1m</td>\n    <td>∑m</td>\n    <td>f(w(x(i)) - 1m</td>\n    <td>∑m</td>\n    <td>f(w(g(z(i)))]</td>\n  </tr>\n  <tr>\n    <td>w←w+α.RMSPprop(w，gw)</td>\n  </tr>\n  <tr>\n    <td>w←clip(w，-c，c)</td>\n  </tr>\n  <tr>\n    <td>end for</td>\n  </tr>\n  <tr>\n    <td>Sample {z(i)}m</td>\n    <td>i=1</td>\n    <td>p(z) a batch of prior samples.</td>\n  </tr>\n  <tr>\n    <td>gθ←-∇θ1m</td>\n    <td>∑m</td>\n    <td>f(w(g(z(i)))</td>\n  </tr>\n  <tr>\n    <td>θ←θ-α.RMSPprop(θ，gθ)</td>\n  </tr>\n  <tr>\n    <td>end while</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page008.png"
+        }
+    ]
+}

@@ -1,0 +1,510 @@
+{
+    "total_count": 42,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                350,
+                154,
+                482,
+                185
+            ],
+            "content": "The formula in the image is:\n\n\\[\n\\text{softmax}(z) = \\frac{\\exp(z_j)}{\\sum_{j'} \\exp(z_{j'})}.\n\\]",
+            "latex": "The formula in the image is:\n\n\\[\n\\text{softmax}(z) = \\frac{\\exp(z_j)}{\\sum_{j'} \\exp(z_{j'})}.\n\\]"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                104,
+                706,
+                258,
+                737
+            ],
+            "content": "\\operatorname { A t t } ( Q , K , V ) = \\pi \\left( { \\frac { Q K ^ { \\top } } { \\sqrt { d } } } \\right) V ,",
+            "latex": "\\operatorname { A t t } ( Q , K , V ) = \\pi \\left( { \\frac { Q K ^ { \\top } } { \\sqrt { d } } } \\right) V ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                306,
+                351,
+                506,
+                368
+            ],
+            "content": "```latex\n\\text{Head}_i(Q, K, V) = \\text{Att}(QW_i^Q, KW_i^K, VW_i^V)\n```",
+            "latex": "```latex\n\\text{Head}_i(Q, K, V) = \\text{Att}(QW_i^Q, KW_i^K, VW_i^V)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                83,
+                700,
+                268,
+                769
+            ],
+            "content": "```latex\n\\frac{\\partial \\alpha\\text{-entmax}(z)}{\\partial z} = \\text{diag}(s) - \\frac{1}{\\sum_j s_j}s s^\\top,\n\nwhere \\quad s_i = \n\\begin{cases}\n(p_i^*)^{2-\\alpha}, & p_i^* > 0, \\\\\n0, & p_i^* = 0.\n\\end{cases}\n```",
+            "latex": "```latex\n\\frac{\\partial \\alpha\\text{-entmax}(z)}{\\partial z} = \\text{diag}(s) - \\frac{1}{\\sum_j s_j}s s^\\top,\n\nwhere \\quad s_i = \n\\begin{cases}\n(p_i^*)^{2-\\alpha}, & p_i^* > 0, \\\\\n0, & p_i^* = 0.\n\\end{cases}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                80,
+                192,
+                268,
+                231
+            ],
+            "content": "```latex\n\\mathrm{H}_{\\alpha}^{\\mathrm{T}}(\\boldsymbol{p}) := \\begin{cases}\n\\frac{1}{\\alpha(\\alpha-1)} \\sum_{j} \\left(p_{j} - p_{j}^{\\alpha}\\right), & \\alpha \\neq 1, \\\\\n-\\sum_{j} p_{j} \\log p_{j}, & \\alpha = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathrm{H}_{\\alpha}^{\\mathrm{T}}(\\boldsymbol{p}) := \\begin{cases}\n\\frac{1}{\\alpha(\\alpha-1)} \\sum_{j} \\left(p_{j} - p_{j}^{\\alpha}\\right), & \\alpha \\neq 1, \\\\\n-\\sum_{j} p_{j} \\log p_{j}, & \\alpha = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                88,
+                340,
+                261,
+                357
+            ],
+            "content": "\\alpha \\mathrm { - e n t m a x } ( z ) = [ ( \\alpha - 1 ) z - \\tau 1 ] _ { + } ^ { 1 / \\alpha - 1 } ,",
+            "latex": "\\alpha \\mathrm { - e n t m a x } ( z ) = [ ( \\alpha - 1 ) z - \\tau 1 ] _ { + } ^ { 1 / \\alpha - 1 } ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                85,
+                110,
+                264,
+                136
+            ],
+            "content": "\\alpha \\mathrm { - e n t m a x } ( z ) : = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } p ^ { \\top } z + H _ { \\alpha } ^ { \\mathrm { T } } ( p ) ,",
+            "latex": "\\alpha \\mathrm { - e n t m a x } ( z ) : = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } p ^ { \\top } z + H _ { \\alpha } ^ { \\mathrm { T } } ( p ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                358,
+                290,
+                475,
+                305
+            ],
+            "content": "\\pi ( Z ) _ { i j } = \\alpha \\mathrm {- entmax } ( z _ { i } ) _ { j }",
+            "latex": "\\pi ( Z ) _ { i j } = \\alpha \\mathrm {- entmax } ( z _ { i } ) _ { j }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                86,
+                159,
+                261,
+                205
+            ],
+            "content": "g _ { i } = \\left\\{ \\begin{array} { l l } { { \\displaystyle \\frac { p _ { i } ^ { * } - \\tilde { p } _ { i } } { ( \\alpha - 1 ) ^ { 2 } } + \\frac { h _ { i } - \\tilde { p } _ { i } \\sum _ { j } h _ { j } } { \\alpha - 1 } , } } & { { \\alpha > 1 , } } \\\\ { { } } \\\\ { { \\displaystyle \\frac { h _ { i } \\log p _ { i } ^ { * } - p _ { i } ^ { * } \\sum _ { j } h _ { j } \\log p _ { j } ^ { * } } { 2 } , } } & { { \\alpha = 1 . } } \\end{array} \\right.",
+            "latex": "g _ { i } = \\left\\{ \\begin{array} { l l } { { \\displaystyle \\frac { p _ { i } ^ { * } - \\tilde { p } _ { i } } { ( \\alpha - 1 ) ^ { 2 } } + \\frac { h _ { i } - \\tilde { p } _ { i } \\sum _ { j } h _ { j } } { \\alpha - 1 } , } } & { { \\alpha > 1 , } } \\\\ { { } } \\\\ { { \\displaystyle \\frac { h _ { i } \\log p _ { i } ^ { * } - p _ { i } ^ { * } \\sum _ { j } h _ { j } \\log p _ { j } ^ { * } } { 2 } , } } & { { \\alpha = 1 . } } \\end{array} \\right."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                72,
+                682,
+                271,
+                717
+            ],
+            "content": "```latex\n\\{a_{i,j}^t \\in \\mathbb{R}: i \\in \\{1, \\ldots, L\\}, j \\in \\{1, \\ldots, H\\}, t \\in \\{\\text{enc}, \\text{ctx}, \\text{dec}\\}\\},\n```",
+            "latex": "```latex\n\\{a_{i,j}^t \\in \\mathbb{R}: i \\in \\{1, \\ldots, L\\}, j \\in \\{1, \\ldots, H\\}, t \\in \\{\\text{enc}, \\text{ctx}, \\text{dec}\\}\\},\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                79,
+                410,
+                264,
+                453
+            ],
+            "content": "J S = \\operatorname { H } ^ { S } \\left( { \\frac { 1 } { H } } \\sum _ { j = 1 } ^ { H } p _ { j } \\right) - { \\frac { 1 } { H } } \\sum _ { j = 1 } ^ { H } \\operatorname { H } ^ { S } ( p _ { j } )",
+            "latex": "J S = \\operatorname { H } ^ { S } \\left( { \\frac { 1 } { H } } \\sum _ { j = 1 } ^ { H } p _ { j } \\right) - { \\frac { 1 } { H } } \\sum _ { j = 1 } ^ { H } \\operatorname { H } ^ { S } ( p _ { j } )"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                238,
+                363,
+                358,
+                379
+            ],
+            "content": "\\alpha \\mathrm { - e n t m a x } ( z ) \\equiv \\pi _ { - H _ { \\alpha } ^ { \\mathrm { T } } } ( z ) .",
+            "latex": "\\alpha \\mathrm { - e n t m a x } ( z ) \\equiv \\pi _ { - H _ { \\alpha } ^ { \\mathrm { T } } } ( z ) ."
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                215,
+                414,
+                383,
+                450
+            ],
+            "content": "{ - ( \\alpha - 1 ) } { \\sf H } _ { \\alpha } ^ { \\sf T } ( p ) = { \\frac { 1 } { \\alpha } } \\sum _ { i = 1 } ^ { d } p _ { i } ^ { \\alpha } + { \\mathrm { c o n s t . } }",
+            "latex": "{ - ( \\alpha - 1 ) } { \\sf H } _ { \\alpha } ^ { \\sf T } ( p ) = { \\frac { 1 } { \\alpha } } \\sum _ { i = 1 } ^ { d } p _ { i } ^ { \\alpha } + { \\mathrm { c o n s t . } }"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                225,
+                153,
+                372,
+                179
+            ],
+            "content": "\\pi _ { \\Omega } ( z ) = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } \\left( p ^ { \\top } z - \\Omega ( p ) \\right)",
+            "latex": "\\pi _ { \\Omega } ( z ) = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } \\left( p ^ { \\top } z - \\Omega ( p ) \\right)"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                219,
+                690,
+                377,
+                714
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{sparsemax}(z) := \\argmin_{p \\in \\Delta} \\| p - z \\|_2.\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{sparsemax}(z) := \\argmin_{p \\in \\Delta} \\| p - z \\|_2.\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                209,
+                304,
+                388,
+                329
+            ],
+            "content": "\\alpha \\mathrm { - e n t m a x } ( z ) : = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } p ^ { \\top } z + H _ { \\alpha } ^ { \\mathrm { T } } ( p ) ,",
+            "latex": "\\alpha \\mathrm { - e n t m a x } ( z ) : = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } p ^ { \\top } z + H _ { \\alpha } ^ { \\mathrm { T } } ( p ) ,"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                209,
+                245,
+                387,
+                263
+            ],
+            "content": "\\alpha \\mathrm { - e n t m a x } ( z ) = [ ( \\alpha - 1 ) z - \\tau ^ { * } \\mathbf { 1 } ] _ { + } ^ { 1 / \\alpha - 1 } .",
+            "latex": "\\alpha \\mathrm { - e n t m a x } ( z ) = [ ( \\alpha - 1 ) z - \\tau ^ { * } \\mathbf { 1 } ] _ { + } ^ { 1 / \\alpha - 1 } ."
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                234,
+                752,
+                363,
+                767
+            ],
+            "content": "\\operatorname { s p a r s e m a x } ( z ) = [ z - \\tau 1 ] _ { + } .",
+            "latex": "\\operatorname { s p a r s e m a x } ( z ) = [ z - \\tau 1 ] _ { + } ."
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                112,
+                556,
+                483,
+                574
+            ],
+            "content": "\\pi _ { \\Omega } ( z ) = [ z - \\tau ^ { \\star } \\mathbf { 1 } ] _ { + } ^ { 1 / \\alpha - 1 } , \\quad \\mathrm { a n d ~ t h e r e f o r e } \\quad \\alpha \\mathrm {- entmax} ( z ) = [ ( \\alpha - 1 ) z - \\tau ^ { \\star } \\mathbf { 1 } ] _ { + } ^ { 1 / \\alpha - 1 } .",
+            "latex": "\\pi _ { \\Omega } ( z ) = [ z - \\tau ^ { \\star } \\mathbf { 1 } ] _ { + } ^ { 1 / \\alpha - 1 } , \\quad \\mathrm { a n d ~ t h e r e f o r e } \\quad \\alpha \\mathrm {- entmax} ( z ) = [ ( \\alpha - 1 ) z - \\tau ^ { \\star } \\mathbf { 1 } ] _ { + } ^ { 1 / \\alpha - 1 } ."
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                145,
+                483,
+                453,
+                520
+            ],
+            "content": "```latex\n\\pi_{-\\text{HT}}_{\\alpha}(z) = \\pi_{\\Omega}((\\alpha - 1)z), \\quad \\text{with} \\quad \\Omega(\\boldsymbol{p}) = \\sum_{j=1}^{d} g(p_j), \\quad g(t) = \\frac{t^\\alpha}{\\alpha}.\n```",
+            "latex": "```latex\n\\pi_{-\\text{HT}}_{\\alpha}(z) = \\pi_{\\Omega}((\\alpha - 1)z), \\quad \\text{with} \\quad \\Omega(\\boldsymbol{p}) = \\sum_{j=1}^{d} g(p_j), \\quad g(t) = \\frac{t^\\alpha}{\\alpha}.\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                143,
+                483,
+                454,
+                520
+            ],
+            "content": "```latex\n\\pi_{-\\text{HT}}(\\alpha) = \\pi_\\Omega((\\alpha-1)z), \\quad \\text{with} \\quad \\Omega(p) = \\sum_{j=1}^d g(p_j), \\quad g(t) = \\frac{t^\\alpha}{\\alpha}.\n```",
+            "latex": "```latex\n\\pi_{-\\text{HT}}(\\alpha) = \\pi_\\Omega((\\alpha-1)z), \\quad \\text{with} \\quad \\Omega(p) = \\sum_{j=1}^d g(p_j), \\quad g(t) = \\frac{t^\\alpha}{\\alpha}.\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                203,
+                413,
+                393,
+                452
+            ],
+            "content": "```latex\n\\text{H}^\\text{T}_\\alpha(\\boldsymbol{p}) := \\begin{cases}\n\\frac{1}{\\alpha(\\alpha-1)} \\sum_j \\left(p_j - p_j^\\alpha\\right), & \\alpha \\neq 1, \\\\\n\\text{H}^\\text{S}(\\boldsymbol{p}), & \\alpha = 1,\n\\end{cases}\n```",
+            "latex": "```latex\n\\text{H}^\\text{T}_\\alpha(\\boldsymbol{p}) := \\begin{cases}\n\\frac{1}{\\alpha(\\alpha-1)} \\sum_j \\left(p_j - p_j^\\alpha\\right), & \\alpha \\neq 1, \\\\\n\\text{H}^\\text{S}(\\boldsymbol{p}), & \\alpha = 1,\n\\end{cases}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                233,
+                134,
+                365,
+                165
+            ],
+            "content": "\\operatorname { s o f t m a x } ( z ) _ { i } : = \\frac { \\exp ( z _ { i } ) } { \\sum _ { j } \\exp ( z _ { j } ) } ,",
+            "latex": "\\operatorname { s o f t m a x } ( z ) _ { i } : = \\frac { \\exp ( z _ { i } ) } { \\sum _ { j } \\exp ( z _ { j } ) } ,"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                209,
+                354,
+                389,
+                380
+            ],
+            "content": "\\alpha \\mathrm { - e n t m a x } ( z ) : = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } p ^ { \\top } z + H _ { \\alpha } ^ { \\mathrm { T } } ( p ) ,",
+            "latex": "\\alpha \\mathrm { - e n t m a x } ( z ) : = \\operatorname* { a r g m a x } _ { p \\in \\triangle ^ { d } } p ^ { \\top } z + H _ { \\alpha } ^ { \\mathrm { T } } ( p ) ,"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                263,
+                683,
+                334,
+                711
+            ],
+            "content": "\\frac { \\partial \\, \\alpha \\mathrm { - e n t m a x } ( z ) } { \\partial \\alpha }",
+            "latex": "\\frac { \\partial \\, \\alpha \\mathrm { - e n t m a x } ( z ) } { \\partial \\alpha }"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                221,
+                628,
+                375,
+                655
+            ],
+            "content": "```latex\n\\sum_{i} \\left[ (\\alpha - 1) (z_i - \\tau^*) \\right]_+^{1/(\\alpha-1)} = 1.\n```",
+            "latex": "```latex\n\\sum_{i} \\left[ (\\alpha - 1) (z_i - \\tau^*) \\right]_+^{1/(\\alpha-1)} = 1.\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                212,
+                195,
+                385,
+                220
+            ],
+            "content": "```latex\n\\text{softmax}(z)_i = \\underset{\\boldsymbol{p} \\in \\Delta}{\\operatorname{argmax}} \\boldsymbol{p}^\\top z + H^S(\\boldsymbol{p}),\n```",
+            "latex": "```latex\n\\text{softmax}(z)_i = \\underset{\\boldsymbol{p} \\in \\Delta}{\\operatorname{argmax}} \\boldsymbol{p}^\\top z + H^S(\\boldsymbol{p}),\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                225,
+                575,
+                370,
+                594
+            ],
+            "content": "p _ { i } ^ { \\star } = [ ( \\alpha - 1 ) ( z _ { i } - \\tau ^ { \\star } ) ] _ { + } ^ { 1 / ( \\alpha - 1 ) } ,",
+            "latex": "p _ { i } ^ { \\star } = [ ( \\alpha - 1 ) ( z _ { i } - \\tau ^ { \\star } ) ] _ { + } ^ { 1 / ( \\alpha - 1 ) } ,"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                140,
+                641,
+                453,
+                747
+            ],
+            "content": "```latex\n\\begin{align*}\n\\frac{\\partial p_i^*}{\\partial \\alpha} &= \\frac{p_i^*}{(\\alpha - 1)^2} \\left[1 - \\frac{1}{(p_i^*)^{\\alpha-1}} \\frac{\\partial \\tau^*}{\\partial \\alpha} - (\\alpha - 1) \\log p_i^*\\right] \\\\\n&= \\frac{p_i^*}{(\\alpha - 1)^2} \\left[1 - \\frac{1}{(p_i^*)^{\\alpha-1}} \\frac{1}{(\\alpha-1)^2} + \\frac{\\text{H}^S(p^*)}{\\alpha-1} - (\\alpha - 1) \\log p_i^*\\right] \\\\\n&= \\frac{p_i^* - \\tilde{p}_i(\\alpha)}{(\\alpha - 1)^2} - \\frac{p_i^* \\log p_i^* + \\tilde{p}_i(\\alpha) \\text{H}^S(p^*)}{\\alpha - 1},\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\frac{\\partial p_i^*}{\\partial \\alpha} &= \\frac{p_i^*}{(\\alpha - 1)^2} \\left[1 - \\frac{1}{(p_i^*)^{\\alpha-1}} \\frac{\\partial \\tau^*}{\\partial \\alpha} - (\\alpha - 1) \\log p_i^*\\right] \\\\\n&= \\frac{p_i^*}{(\\alpha - 1)^2} \\left[1 - \\frac{1}{(p_i^*)^{\\alpha-1}} \\frac{1}{(\\alpha-1)^2} + \\frac{\\text{H}^S(p^*)}{\\alpha-1} - (\\alpha - 1) \\log p_i^*\\right] \\\\\n&= \\frac{p_i^* - \\tilde{p}_i(\\alpha)}{(\\alpha - 1)^2} - \\frac{p_i^* \\log p_i^* + \\tilde{p}_i(\\alpha) \\text{H}^S(p^*)}{\\alpha - 1},\n\\end{align*}\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                109,
+                369,
+                489,
+                539
+            ],
+            "content": "```latex\n0 = \\sum_{i\\in\\mathcal{S}} \\frac{\\partial}{\\partial\\alpha} \\left[ (\\alpha-1)(z_i-\\tau^\\star) \\right]^{1/(\\alpha-1)}\n\n= \\sum_{i\\in\\mathcal{S}} \\frac{p_i^\\star}{(\\alpha-1)^2} \\left[ 1 - \\frac{\\alpha-1}{z_i-\\tau^\\star} \\frac{\\partial\\tau^\\star}{\\partial\\alpha} - \\log[(\\alpha-1)(z_i-\\tau^\\star)] \\right]\n\n= \\frac{1}{(\\alpha-1)^2} - \\frac{\\partial\\tau^\\star}{\\partial\\alpha} \\sum_{i\\in\\mathcal{S}} \\frac{p_i^\\star}{(\\alpha-1)(z_i-\\tau^\\star)} - \\sum_{i\\in\\mathcal{S}} \\frac{p_i^\\star}{(\\alpha-1)^2} \\log[(\\alpha-1)(z_i-\\tau^\\star)]\n\n= \\frac{1}{(\\alpha-1)^2} - \\frac{\\partial\\tau^\\star}{\\partial\\alpha} \\sum_{i}(p_i^\\star)^{2-\\alpha} - \\sum_{i} \\frac{p_i^\\star}{\\alpha-1} \\log p_i^\\star\n\n= \\frac{1}{(\\alpha-1)^2} - \\frac{\\partial\\tau^\\star}{\\partial\\alpha} \\sum_{i}(p_i^\\star)^{2-\\alpha} + \\frac{\\text{HS}(\\boldsymbol{p}^\\star)}{\\alpha-1},\n```",
+            "latex": "```latex\n0 = \\sum_{i\\in\\mathcal{S}} \\frac{\\partial}{\\partial\\alpha} \\left[ (\\alpha-1)(z_i-\\tau^\\star) \\right]^{1/(\\alpha-1)}\n\n= \\sum_{i\\in\\mathcal{S}} \\frac{p_i^\\star}{(\\alpha-1)^2} \\left[ 1 - \\frac{\\alpha-1}{z_i-\\tau^\\star} \\frac{\\partial\\tau^\\star}{\\partial\\alpha} - \\log[(\\alpha-1)(z_i-\\tau^\\star)] \\right]\n\n= \\frac{1}{(\\alpha-1)^2} - \\frac{\\partial\\tau^\\star}{\\partial\\alpha} \\sum_{i\\in\\mathcal{S}} \\frac{p_i^\\star}{(\\alpha-1)(z_i-\\tau^\\star)} - \\sum_{i\\in\\mathcal{S}} \\frac{p_i^\\star}{(\\alpha-1)^2} \\log[(\\alpha-1)(z_i-\\tau^\\star)]\n\n= \\frac{1}{(\\alpha-1)^2} - \\frac{\\partial\\tau^\\star}{\\partial\\alpha} \\sum_{i}(p_i^\\star)^{2-\\alpha} - \\sum_{i} \\frac{p_i^\\star}{\\alpha-1} \\log p_i^\\star\n\n= \\frac{1}{(\\alpha-1)^2} - \\frac{\\partial\\tau^\\star}{\\partial\\alpha} \\sum_{i}(p_i^\\star)^{2-\\alpha} + \\frac{\\text{HS}(\\boldsymbol{p}^\\star)}{\\alpha-1},\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                140,
+                112,
+                453,
+                304
+            ],
+            "content": "```latex\n\\begin{align*}\n\\frac{\\partial p_i^*}{\\partial \\alpha} &= \\frac{\\partial}{\\partial \\alpha} \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right]^{\\frac{1}{\\alpha-1}} \\\\\n&= \\frac{\\partial}{\\partial \\alpha} \\exp \\left[ \\frac{1}{\\alpha-1} \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= p_i^* \\frac{\\partial}{\\partial \\alpha} \\left[ \\frac{1}{\\alpha-1} \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= \\frac{p_i^*}{(\\alpha-1)^2} \\left[ \\frac{\\partial}{\\partial \\alpha} \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] - \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= \\frac{p_i^*}{(\\alpha-1)^2} \\left[ \\frac{z_i - \\tau^* - (\\alpha - 1) \\frac{\\partial \\tau^*}{\\partial \\alpha}}{z_i - \\tau^*} - \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= \\frac{p_i^*}{(\\alpha-1)^2} \\left[ 1 - \\frac{\\alpha - 1}{z_i - \\tau^*} \\frac{\\partial \\tau^*}{\\partial \\alpha} - \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right].\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\frac{\\partial p_i^*}{\\partial \\alpha} &= \\frac{\\partial}{\\partial \\alpha} \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right]^{\\frac{1}{\\alpha-1}} \\\\\n&= \\frac{\\partial}{\\partial \\alpha} \\exp \\left[ \\frac{1}{\\alpha-1} \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= p_i^* \\frac{\\partial}{\\partial \\alpha} \\left[ \\frac{1}{\\alpha-1} \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= \\frac{p_i^*}{(\\alpha-1)^2} \\left[ \\frac{\\partial}{\\partial \\alpha} \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] - \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= \\frac{p_i^*}{(\\alpha-1)^2} \\left[ \\frac{z_i - \\tau^* - (\\alpha - 1) \\frac{\\partial \\tau^*}{\\partial \\alpha}}{z_i - \\tau^*} - \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right] \\\\\n&= \\frac{p_i^*}{(\\alpha-1)^2} \\left[ 1 - \\frac{\\alpha - 1}{z_i - \\tau^*} \\frac{\\partial \\tau^*}{\\partial \\alpha} - \\log \\left[ (\\alpha - 1)(z_i - \\tau^*) \\right] \\right].\n\\end{align*}\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                235,
+                568,
+                362,
+                606
+            ],
+            "content": "```latex\n\\frac{\\partial \\tau^*}{\\partial \\alpha} = \\frac{1}{(\\alpha-1)^2} + \\frac{\\text{H}^S(p^*)}{\\alpha-1} \\cdot \\frac{1}{\\sum_i (p_i^*)^{2-\\alpha}}.\n```",
+            "latex": "```latex\n\\frac{\\partial \\tau^*}{\\partial \\alpha} = \\frac{1}{(\\alpha-1)^2} + \\frac{\\text{H}^S(p^*)}{\\alpha-1} \\cdot \\frac{1}{\\sum_i (p_i^*)^{2-\\alpha}}.\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                136,
+                710,
+                459,
+                742
+            ],
+            "content": "```latex\nB = \\lim_{\\alpha \\to 1^+} \\frac{\\tilde{p}_i(\\alpha)(\\log p_i^* - \\sum_j \\tilde{p}_j(\\alpha)\\log p_j^*) - p_i^*\\log p_i^* - \\tilde{p}_i(\\alpha)H^S(p^*)}{2(\\alpha-1)}.\n```",
+            "latex": "```latex\nB = \\lim_{\\alpha \\to 1^+} \\frac{\\tilde{p}_i(\\alpha)(\\log p_i^* - \\sum_j \\tilde{p}_j(\\alpha)\\log p_j^*) - p_i^*\\log p_i^* - \\tilde{p}_i(\\alpha)H^S(p^*)}{2(\\alpha-1)}.\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                134,
+                395,
+                463,
+                502
+            ],
+            "content": "```latex\n\\begin{align*}\n\\frac{\\partial}{\\partial \\alpha} \\tilde{p}_i(\\alpha) &= \\frac{\\partial}{\\partial \\alpha} \\frac{(p_i^*)^{2-\\alpha}}{\\sum_j (p_j^*)^{2-\\alpha}} \\\\\n&= \\frac{-(p_i^*)^{2-\\alpha} \\log p_i^* \\sum_j (p_j^*)^{2-\\alpha} + (p_i^*)^{2-\\alpha} \\sum_j (p_j^*)^{2-\\alpha} \\log p_j^*}{\\left( \\sum_j (p_j^*)^{2-\\alpha} \\right)^2} \\\\\n&= -\\tilde{p}_i(\\alpha) \\log p_i^* + \\tilde{p}_i(\\alpha) \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^*.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\frac{\\partial}{\\partial \\alpha} \\tilde{p}_i(\\alpha) &= \\frac{\\partial}{\\partial \\alpha} \\frac{(p_i^*)^{2-\\alpha}}{\\sum_j (p_j^*)^{2-\\alpha}} \\\\\n&= \\frac{-(p_i^*)^{2-\\alpha} \\log p_i^* \\sum_j (p_j^*)^{2-\\alpha} + (p_i^*)^{2-\\alpha} \\sum_j (p_j^*)^{2-\\alpha} \\log p_j^*}{\\left( \\sum_j (p_j^*)^{2-\\alpha} \\right)^2} \\\\\n&= -\\tilde{p}_i(\\alpha) \\log p_i^* + \\tilde{p}_i(\\alpha) \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^*.\n\\end{align*}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                248,
+                79,
+                347,
+                111
+            ],
+            "content": "\\tilde { p } _ { i } ( \\alpha ) = \\frac { ( p _ { i } ^ { * } ) ^ { 2 - \\alpha } } { \\sum _ { j } ( p _ { j } ^ { * } ) ^ { 2 - \\alpha } } .",
+            "latex": "\\tilde { p } _ { i } ( \\alpha ) = \\frac { ( p _ { i } ^ { * } ) ^ { 2 - \\alpha } } { \\sum _ { j } ( p _ { j } ^ { * } ) ^ { 2 - \\alpha } } ."
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                161,
+                625,
+                436,
+                685
+            ],
+            "content": "```latex\nA = \\lim_{\\alpha \\to 1^+} \\frac{\\mathsf{H}^\\mathrm{S}(p^*) \\tilde{p}_i(\\alpha) (\\log p_i^* - \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^*) \\mathsf{H}^\\mathrm{S}(p^*)}{2}\n= \\frac{\\mathsf{H}^\\mathrm{S}(p^*) p_i^* \\log p_i^* + p_i^*(\\mathsf{H}^\\mathrm{S}(p^*))^2}{2},\n```",
+            "latex": "```latex\nA = \\lim_{\\alpha \\to 1^+} \\frac{\\mathsf{H}^\\mathrm{S}(p^*) \\tilde{p}_i(\\alpha) (\\log p_i^* - \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^*) \\mathsf{H}^\\mathrm{S}(p^*)}{2}\n= \\frac{\\mathsf{H}^\\mathrm{S}(p^*) p_i^* \\log p_i^* + p_i^*(\\mathsf{H}^\\mathrm{S}(p^*))^2}{2},\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                163,
+                225,
+                432,
+                256
+            ],
+            "content": "```latex\n\\frac{\\partial p_i^*}{\\partial \\alpha} = \\frac{p_i^* - \\tilde{p}_i(\\alpha) - (\\alpha - 1)(p_i^* \\log p_i^* + \\tilde{p}_i(\\alpha) H^S(p^*))}{(\\alpha - 1)^2}.\n```",
+            "latex": "```latex\n\\frac{\\partial p_i^*}{\\partial \\alpha} = \\frac{p_i^* - \\tilde{p}_i(\\alpha) - (\\alpha - 1)(p_i^* \\log p_i^* + \\tilde{p}_i(\\alpha) H^S(p^*))}{(\\alpha - 1)^2}.\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                227,
+                334,
+                371,
+                361
+            ],
+            "content": "\\frac { \\partial } { \\partial \\alpha } ( p _ { i } ^ { * } ) ^ { 2 - \\alpha } = - ( p _ { i } ^ { * } ) ^ { 2 - \\alpha } \\log p _ { i } ^ { * } ,",
+            "latex": "\\frac { \\partial } { \\partial \\alpha } ( p _ { i } ^ { * } ) ^ { 2 - \\alpha } = - ( p _ { i } ^ { * } ) ^ { 2 - \\alpha } \\log p _ { i } ^ { * } ,"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                78,
+                540,
+                518,
+                587
+            ],
+            "content": "```latex\n\\frac{\\partial p_i^*}{\\partial \\alpha} = \\lim_{\\alpha \\to 1^+} \\frac{(1 + (\\alpha - 1)H^S(\\boldsymbol{p}^*))\\tilde{p}_i(\\alpha)(\\log p_i^* - \\sum_j \\tilde{p}_j(\\alpha)\\log p_j^*) - p_i^*\\log p_i^* - \\tilde{p}_i(\\alpha)H^S(\\boldsymbol{p}^*)}{2(\\alpha - 1)} = A + B,\n```",
+            "latex": "```latex\n\\frac{\\partial p_i^*}{\\partial \\alpha} = \\lim_{\\alpha \\to 1^+} \\frac{(1 + (\\alpha - 1)H^S(\\boldsymbol{p}^*))\\tilde{p}_i(\\alpha)(\\log p_i^* - \\sum_j \\tilde{p}_j(\\alpha)\\log p_j^*) - p_i^*\\log p_i^* - \\tilde{p}_i(\\alpha)H^S(\\boldsymbol{p}^*)}{2(\\alpha - 1)} = A + B,\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                126,
+                84,
+                467,
+                275
+            ],
+            "content": "```latex\nB = \\frac{1}{2} \\lim_{\\alpha \\to 1^+} \\left\\{\n\\tilde{p}_i(\\alpha) \\log p_i^\\star \\left( \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star - \\log p_i^\\star \\right)\n- \\tilde{p}_i(\\alpha) \\left( \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star - \\log p_i^\\star \\right) \\left( \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star + H^S(p^\\star) \\right)\n- \\tilde{p}_i(\\alpha) \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star \\left( \\sum_k \\tilde{p}_k(\\alpha) \\log p_k^\\star - \\log p_j^\\star \\right)\n\\right\\}\n= \\frac{-p_i^\\star \\log p_i^\\star (H^S(p^\\star) + \\log p_i^\\star) + p_i^\\star \\sum_j p_j^\\star \\log p_j^\\star (H^S(p^\\star) + \\log p_j^\\star)}{2}\n= \\frac{-H^S(p^\\star)p_i^\\star \\log p_i^\\star - p_i^\\star (H^S(p^\\star))^2 - p_i^\\star \\log^2 p_i^\\star + p_i^\\star \\sum_j p_j^\\star \\log^2 p_j^\\star}{2}.\n```",
+            "latex": "```latex\nB = \\frac{1}{2} \\lim_{\\alpha \\to 1^+} \\left\\{\n\\tilde{p}_i(\\alpha) \\log p_i^\\star \\left( \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star - \\log p_i^\\star \\right)\n- \\tilde{p}_i(\\alpha) \\left( \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star - \\log p_i^\\star \\right) \\left( \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star + H^S(p^\\star) \\right)\n- \\tilde{p}_i(\\alpha) \\sum_j \\tilde{p}_j(\\alpha) \\log p_j^\\star \\left( \\sum_k \\tilde{p}_k(\\alpha) \\log p_k^\\star - \\log p_j^\\star \\right)\n\\right\\}\n= \\frac{-p_i^\\star \\log p_i^\\star (H^S(p^\\star) + \\log p_i^\\star) + p_i^\\star \\sum_j p_j^\\star \\log p_j^\\star (H^S(p^\\star) + \\log p_j^\\star)}{2}\n= \\frac{-H^S(p^\\star)p_i^\\star \\log p_i^\\star - p_i^\\star (H^S(p^\\star))^2 - p_i^\\star \\log^2 p_i^\\star + p_i^\\star \\sum_j p_j^\\star \\log^2 p_j^\\star}{2}.\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                173,
+                408,
+                416,
+                450
+            ],
+            "content": "```latex\n\\frac{\\partial p_{i}^{*}}{\\partial \\alpha} = \n\\begin{cases}\n\\frac{p_{i}^{*}-\\tilde{p}_{i}(\\alpha)}{(\\alpha-1)^{2}} - \\frac{p_{i}^{*}\\log p_{i}^{*}+\\tilde{p}_{i}(\\alpha)\\text{H}^{\\text{S}}(p^{*})}{\\alpha-1}, & \\text{for } \\alpha > 1 \\\\\n\\frac{-p_{i}^{*}\\log^{2} p_{i}^{*}+p_{i}^{*}\\sum_{j}p_{j}^{*}\\log^{2} p_{j}^{*}}{2}, & \\text{for } \\alpha = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\frac{\\partial p_{i}^{*}}{\\partial \\alpha} = \n\\begin{cases}\n\\frac{p_{i}^{*}-\\tilde{p}_{i}(\\alpha)}{(\\alpha-1)^{2}} - \\frac{p_{i}^{*}\\log p_{i}^{*}+\\tilde{p}_{i}(\\alpha)\\text{H}^{\\text{S}}(p^{*})}{\\alpha-1}, & \\text{for } \\alpha > 1 \\\\\n\\frac{-p_{i}^{*}\\log^{2} p_{i}^{*}+p_{i}^{*}\\sum_{j}p_{j}^{*}\\log^{2} p_{j}^{*}}{2}, & \\text{for } \\alpha = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                192,
+                304,
+                405,
+                338
+            ],
+            "content": "```latex\n\\left.\\frac{\\partial p_i^*}{\\partial \\alpha}\\right|_{\\alpha=1} = \\frac{-p_i^*\\log^2 p_i^* + p_i^*\\sum_j p_j^*\\log^2 p_j^*}{2}.\n```",
+            "latex": "```latex\n\\left.\\frac{\\partial p_i^*}{\\partial \\alpha}\\right|_{\\alpha=1} = \\frac{-p_i^*\\log^2 p_i^* + p_i^*\\sum_j p_j^*\\log^2 p_j^*}{2}.\n```"
+        }
+    ]
+}

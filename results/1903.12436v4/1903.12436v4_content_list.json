@@ -1,0 +1,3373 @@
+[
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Generative models lie at the core of machine learning. By capturing the mechanisms behind the data generation process, one can reason about data probabilistically, access and traverse the low-dimensional manifold the data is assumed to live on, and ultimately generate new data. It is therefore not surprising that generative models have gained momentum in applications such as computer vision (Sohn et al., 2015; Brock et al., 2019), NLP (Bowman et al., 2016; Severyn et al., 2017), and chemistry (Kusner et al., 2017; Jin et al., 2018; Gómez-Bombarelli et al., 2018).\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Variational Autoencoders (VAEs) provide a theoretically-backed and popular framework for deep generative models. However, learning a VAE from data poses still unanswered theoretical questions and considerable practical challenges. In this work, we propose an alternative framework for generative modeling that is simpler, easier to train, and deterministic, yet has many of the advantages of VAEs. We observe that sampling a stochastic encoder in a Gaussian VAE can be interpreted as simply injecting noise into the input of a deterministic decoder. We investigate how substituting this kind of stochasticity, with other explicit and implicit regularization schemes, can lead to an equally smooth and meaningful latent space without forcing it to conform to an arbitrarily chosen prior. To retrieve a generative mechanism to sample new data, we introduce an ex-post density estimation step that can be readily applied also to existing VAEs, improving their sample quality. We show, in a rigorous empirical study, that the proposed regularized deterministic autoencoders are able to generate samples that are comparable to, or better than, those of VAEs and more powerful alternatives when applied to images as well as to structured data such as molecules. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Variational Autoencoders (VAEs) (Kingma & Welling, 2014; Rezende et al., 2014) cast learning representations for high-dimensional distributions as a variational inference problem. Learning a VAE amounts to the optimization of an objective balancing the quality of samples that are autoencoded through a stochastic encoder-decoder pair while encouraging the latent space to follow a fixed prior distribution. Since their introduction, VAEs have become one of the frameworks of choice among the different generative models. VAEs promise theoretically well-founded and more stable training than Generative Adversarial Networks (GANs) (Goodfellow et al., 2014) and more efficient sampling mechanisms than autoregressive models (Larochelle & Murray, 2011; Germain et al., 2015).\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "However, the VAE framework is still far from delivering the promised generative mechanism, as there are several practical and theoretical challenges yet to be solved. A major weakness of VAEs is ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\n† Max Planck Institute for Intelligent Systems, Tübingen, Germany\n{pghosh,msajjadi,black,bs}@tue.mpg.de\n‡ University of California, Los Angeles, USA\naver@cs.ucla.edu\n\\`\\`\\` ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"1 INTRODUCTION\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"ABSTRACT\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Bernhard Schölkopf†\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"FROM VARIATIONAL TO DETERMINISTIC AUTOENCODERS\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "FROM VARIATIONAL TO DETERMINISTIC AUTOENCODERS ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nPartha Ghosh†\\*\nMehdi S. M. Sajjadi†\\*\nAntonio Vergari‡ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMehdi S. M. Sajjadi†\\*\nAntonio Vergari‡ ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMehdi S. M. Sajjadi†\\* ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMehdi S. M. Sajjadi†\\*\nAntonio Vergari‡\nMichael Bla ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "ABSTRACT ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"Michael Black†\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Bernhard Schölkopf†\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"Partha Ghosh†\\*\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"Antonio Vergari†\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "the tendency to strike an unsatisfying compromise between sample quality and reconstruction quality. In practice, this has been attributed to overly simplistic prior distributions (Tomczak & Welling, 2018; Dai & Wipf, 2019) or alternatively, to the inherent over-regularization induced by the KL divergence term in the VAE objective (Tolstikhin et al., 2017). Most importantly, the VAE objective itself poses several challenges as it admits trivial solutions that decouple the latent space from the input (Chen et al., 2017; Zhao et al., 2017), leading to the posterior collapse phenomenon in conjunction with powerful decoders (van den Oord et al., 2017). Furthermore, due to its variational formulation, training a VAE requires approximating expectations through sampling at the cost of increased variance in gradients (Burda et al., 2015; Tucker et al., 2017), making initialization, validation, and annealing of hyperparameters essential in practice (Bowman et al., 2016; Higgins et al., 2017; Bauer & Mnih, 2019). Lastly, even after a satisfactory convergence of the objective, the learned aggregated posterior distribution rarely matches the assumed latent prior in practice (Kingma et al., 2016; Bauer & Mnih, 2019; Dai & Wipf, 2019), ultimately hurting the quality of generated samples. All in all, much of the attention around VAEs is still directed towards “fixing” the aforementioned drawbacks associated with them. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In summary, our contributions are as follows: i) we introduce the RAE framework for generative modeling as a drop-in replacement for many common VAE architectures; ii) we propose an ex-post density estimation scheme which greatly improves sample quality for VAEs, WAEs and RAEs without the need to retrain the models; iii) we conduct a rigorous empirical evaluation to compare RAEs with VAEs and several baselines on standard image datasets and on more challenging structured domains such as molecule generation (Kusner et al., 2017; Gómez-Bombarelli et al., 2018). ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In this work, we take a different route: we question whether the variational framework adopted by VAEs is necessary for generative modeling and, in particular, to obtain a smooth latent space. We propose to adopt a simpler, deterministic version of VAEs that scales better, is simpler to optimize, and, most importantly, still produces a meaningful latent space and equivalently good or better samples than VAEs or stronger alternatives, e.g., Wasserstein Autoencoders (WAEs) (Tolstikhin et al., 2017). We do so by observing that, under commonly used distributional assumptions, training a stochastic encoder-decoder pair in VAEs does not differ from training a deterministic architecture where noise is added to the decoder’s input. We investigate how to substitute this noise injection mechanism with other regularization schemes in the proposed deterministic Regularized Autoencoders (RAEs), and we thoroughly analyze how this affects performance. Finally, we equip RAEs with a generative mechanism via a simple ex-post density estimation step on the learned latent space. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "For a general discussion, we consider a collection of high-dimensional i.i.d. samples \\(\\mathcal{X} = \\{\\mathbf{x}_i\\}_{i=1}^N\\) drawn from the true data distribution \\(p_{\\text{data}}(\\mathbf{x})\\) over a random variable \\(\\mathbf{X}\\) taking values in the input space. The aim of generative modeling is to learn from \\(\\mathcal{X}\\) a mechanism to draw new samples \\(\\mathbf{x}_{\\text{new}} \\sim p_{\\text{data}}\\). Variational Autoencoders provide a powerful latent variable framework to infer such a mechanism. The generative process of the VAE is defined as ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"where \\( q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x}) \\) is the posterior distribution given by a second function \\( f_{\\phi} \\) parameterized by \\( \\phi \\). Computing the marginal log-likelihood \\( \\log p_{\\theta}(\\mathbf{x}) \\) is generally intractable. One therefore follows a variational approach, maximizing the evidence lower bound (ELBO) for a sample \\( \\mathbf{x} \\):\"\n\nThis text describes a scenario in machine learning where the posterior distribution is approximated using a variational inference method to compute the marginal likelihood, which is often intractable directly. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"links the latent space to the input space through the likelihood distribution pθ, where gθ is an expressive non-linear function parameterized by θ.2 As a result, a VAE estimates pdata(x) as the infinite mixture model pθ(x) = ∫ pθ(x | z)p(z)dz. At the same time, the input space is mapped to the latent space via a stochastic encoder.\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE _ { \\phi } ( \\mathbf { x } ) = \\mathbf { z } \\sim q _ { \\phi } ( \\mathbf { z } \\, | \\, \\mathbf { x } ) = q ( \\mathbf { Z } \\, | \\, f _ { \\phi } ( \\mathbf { x } ) )\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\nD _ { \\theta } ( \\mathbf { z } ) = \\mathbf { x } \\sim p _ { \\theta } ( \\mathbf { x } \\mid \\mathbf { z } ) = p ( \\mathbf { X } \\mid g _ { \\theta } ( \\mathbf { z } ) )\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{z}_{\\text{new}} \\sim p(\\mathbf{Z}), \\quad \\quad \\mathbf{x}_{\\text{new}} \\sim p_{\\theta}(\\mathbf{X} \\mid \\mathbf{Z} = \\mathbf{z}_{\\text{new}})\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"2 VARIATIONAL AUTOENCODERS\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"where p(Z) is a fixed prior distribution over a low-dimensional latent space Z. A stochastic decoder\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\log p_{\\theta}(\\mathbf{x}) \\geq \\text{ELBO}(\\phi, \\theta, \\mathbf{x}) = \\mathbb{E}_{\\mathbf{z} \\sim q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x})} \\log p_{\\theta}(\\mathbf{x} \\mid \\mathbf{z}) - \\text{KL}(q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x}) || p(\\mathbf{z}))\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"with means μφ, μθ and covariance parameters σφ, σθ given by fφ and gθ. In practice, the covariance of the decoder is set to the identity matrix for all z, i.e., σθ(z) = 1 (Dai & Wipf, 2019). The expectation of LREC in Eq. 6 must be approximated via k Monte Carlo point estimates. It is expected that the quality of the Monte Carlo estimate, and hence convergence during learning and sample quality increases for larger k (Burda et al., 2015). However, only a 1-sample approximation is generally carried out (Kingma & Welling, 2014) since memory and time requirements are prohibitive for large k. With the 1-sample approximation, LREC can be computed as the mean squared error between input samples and their mean reconstructions μθ by a decoder that is deterministic in practice:\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "While the above assumptions make VAEs easy to implement, the stochasticity in the encoder and decoder are still problematic in practice (Makhzani et al., 2016; Tolstikhin et al., 2017; Dai & Wipf, 2019). In particular, one has to carefully balance the trade-off between the \\( \\mathcal{L}_{\\text{KL}} \\) term and \\( \\mathcal{L}_{\\text{REC}} \\) during optimization (Dai & Wipf, 2019; Bauer & Mnih, 2019). A too-large weight on the \\( \\mathcal{L}_{\\text{KL}} \\) term can dominate \\( \\mathcal{L}_{\\text{ELBO}} \\), having the effect of over-regularization. As this would smooth the latent space, it can directly affect sample quality in a negative way. Heuristics to avoid this include manually fine-tuning or gradually annealing the importance of \\( \\mathcal{L}_{\\text{KL}} \\) during training (Bowman et al., 2016; Bauer & Mnih, 2019). We also observe this trade-off in a practical experiment in Appendix A. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Even after employing the full array of approximations and 'tricks' to reach convergence of Eq. 5 for a satisfactory set of parameters, there is no guarantee that the learned latent space is distributed according to the assumed prior distribution. In other words, the aggregated posterior distribution \\( q_{\\phi}(\\mathbf{z}) = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}} q(\\mathbf{z} | \\mathbf{x}) \\) has been shown not to conform well to \\( p(\\mathbf{z}) \\) after training (Tolstikhin et al., 2017; Bauer & Mnih, 2019; Dai & Wipf, 2019). This critical issue severely hinders the generative mechanism of VAEs (cf. Eq. 1) since latent codes sampled from \\( p(\\mathbf{z}) \\) (instead of \\( q(\\mathbf{z}) \\)) might lead to regions of the latent space that are previously unseen to \\( D_{\\theta} \\) during training. This results in generating out-of-distribution samples. We refer the reader to Appendix H for a visual demonstration of this phenomenon on the latent space of VAEs. We analyze solutions to this problem in Section 4.\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "To fit a VAE to data through Eq. 5 one has to specify the parametric forms for \\( p(\\mathbf{z}) \\), \\( q_\\phi(\\mathbf{z} | \\mathbf{x}) \\), \\( p_\\theta(\\mathbf{x} | \\mathbf{z}) \\), and hence the deterministic mappings \\( f_\\phi \\) and \\( g_\\theta \\). In practice, the choice for the above distributions is guided by trading off computational complexity with model expressiveness. In the most commonly adopted formulation of the VAE, \\( q_\\phi(\\mathbf{z} | \\mathbf{x}) \\) and \\( p_\\theta(\\mathbf{x} | \\mathbf{z}) \\) are assumed to be Gaussian: ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Intuitively, the reconstruction loss \\( \\mathcal{L}_{\\text{REC}} \\) takes into account the quality of autoencoded samples \\( \\mathbf{x} \\) through \\( D_{\\theta}(E_{\\phi}(\\mathbf{x})) \\), while the KL-divergence term \\( \\mathcal{L}_{\\mathrm{KL}} \\) encourages \\( q_{\\phi}(\\mathbf{z}|\\mathbf{x}) \\) to match the prior \\( p(\\mathbf{z}) \\) for each \\( \\mathbf{z} \\) which acts as a regularizer during training (Hoffman & Johnson, 2016).\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Gradients w.r.t. the encoder parameters φ are computed through the expectation of LREC in Eq. 6 via the reparametrization trick (Kingma & Welling, 2014) where the stochasticity of Eφ is relegated to an auxiliary random variable ε which does not depend on φ: ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"where ⊙ denotes the Hadamard product. An additional simplifying assumption involves fixing the prior p(ζ) to be a d-dimensional isotropic Gaussian N(ζ | 0, I). For this choice, the KL-divergence for a sample x is given in closed form: 2LKL = ||μφ(x)||₂² + d + ∑ᵢσφ(x)i − log σφ(x)i.\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"where \\( \\mathcal{L}_{\\text{REC}} \\) and \\( \\mathcal{L}_{\\text{KL}} \\) are defined for a sample \\( \\mathbf{x} \\) as follows:\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\nE_{\\phi}(\\mathbf{x}) \\sim \\mathcal{N}(\\mathbf{Z} | \\boldsymbol{\\mu}_{\\phi}(\\mathbf{x}), \\text{diag}(\\boldsymbol{\\sigma}_{\\phi}(\\mathbf{x}))) \\qquad D_{\\theta}(E_{\\phi}(\\mathbf{x})) \\sim \\mathcal{N}(\\mathbf{X} | \\boldsymbol{\\mu}_{\\theta}(\\mathbf{z}), \\text{diag}(\\boldsymbol{\\sigma}_{\\theta}(\\mathbf{z})))\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE _ { \\phi } ( \\mathbf { x } ) = \\mu _ { \\phi } ( \\mathbf { x } ) + \\sigma _ { \\phi } ( \\mathbf { x } ) \\odot \\epsilon , \\qquad \\epsilon \\sim { \\mathcal { N } } ( \\mathbf { 0 } , \\mathbf { I } )\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text in the image reads:\n\n\"Maximizing Eq. 4 over data X w.r.t. model parameters φ, θ corresponds to minimizing the loss\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathcal { L } } _ { \\mathrm { R E C } } = \\| \\mathbf { x } - \\mu _ { \\theta } ( E _ { \\phi } ( \\mathbf { x } ) ) \\| _ { 2 } ^ { 2 }\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nThe formulas in the image can be written in LaTeX as follows:\n\n```latex\n\\mathcal{L}_{\\text{REC}} = -\\mathbb{E}_{\\mathbf{z} \\sim q_\\phi(\\mathbf{z} \\mid \\mathbf{x})} \\log p_\\theta(\\mathbf{x} \\mid \\mathbf{z})\n\\qquad\n\\mathcal{L}_{\\text{KL}} = \\mathbb{K}\\mathbb{L}(q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) || p(\\mathbf{z}))\n```\n\nThis will produce the same equations as shown in the image.\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "equation",
+        "text": "$$\nThe formula in the image can be written in LaTeX as follows:\n\n```latex\n\\arg \\min_{\\phi, \\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}} \\mathcal{L}_{\\text{ELBO}} = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n```\n\nThis will render the equation as shown in the image.\n$$",
+        "text_format": "latex",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"2.1 PRACTICE AND SHORTCOMINGS OF VAEs\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"where σ is a fixed scalar. Then, the KL loss term in a Gaussian VAE simplifies (up to a constant) to \\( \\mathcal{L}_{\\text{KL}}^{\\text{CV}} = ||\\mu_{\\phi}(\\mathbf{x})||_2^2 \\). We name this variant Constant-Variance VAEs (CV-VAEs). While CV-VAEs have been adopted in some applications such as variational image compression (Ballé et al., 2017) and adversarial robustness (Ghosh et al., 2019), to the best of our knowledge, there is no systematic study of them in the literature. We will fill this gap in our experiments in Section 6. Lastly, note that now σ in Eq.10 is not learned along the encoder as in Eq. 9. Nevertheless, it can still be fitted as an hyperparameter, e.g., by cross-validation, to maximise the model likelihood. This highlights the possibility to estimate a better parametric form for the latent space distribution after training, or in a outer-loop including training. We address this provide a more complex and flexible solution to deal with the prior structure over Z via ex-post density estimation in Section 4.\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We argue that this noise injection mechanism is a key factor in having a regularized decoder. Using random noise injection to regularize neural networks is a well-known technique that dates back several decades (Sietsma & Dow, 1991; An, 1996). It implicitly helps to smooth the function learned by the network at the price of increased variance in the gradients during training. In turn, decoder regularization is a key component in generalization for VAEs, as it improves random sample quality and achieves a smoother latent space. Indeed, from a generative perspective, regularization is motivated by the goal to learn a smooth latent space where similar data points x are mapped to similar latent codes z, and small variations in Z lead to reconstructions by Dθ that vary only slightly. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We propose to substitute noise injection with an explicit regularization scheme for the decoder. This entails the substitution of the variational framework in VAEs, which enforces regularization on the encoder posterior through \\( \\mathcal{L}_{\\text{KL}} \\), with a deterministic framework that applies other flavors of decoder regularization. By removing noise injection from a CV-VAE, we are effectively left with a deterministic autoencoder (AE). Coupled with explicit regularization for the decoder, we obtain a Regularized Autoencoder (RAE). Training a RAE thus involves minimizing the simplified loss ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Note that for RAEs, no Monte Carlo approximation is required to compute \\( \\mathcal{L}_{\\text{REC}} \\). This relieves the need for more samples from \\( q_{\\phi}(\\mathbf{z} | \\mathbf{x}) \\) to achieve better image quality (cf. Appendix A). Moreover, by abandoning the variational framework and the \\( \\mathcal{L}_{\\mathrm{KL}} \\) term, there is no need in RAEs for a fixed prior distribution over \\( \\mathbf{Z} \\). Doing so however loses a clear generative mechanism for RAEs to sample from \\( \\mathbf{Z} \\). We propose a method to regain random sampling ability in Section 4 by performing density estimation on \\( \\mathbf{Z} \\) ex-post, a step that is otherwise still needed for VAEs to alleviate the posterior mismatch issue. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The encoder deterministically maps a data point x to mean μφ(x) and variance σφ(x) in the latent space. The input to Dθ is then simply the mean μφ(x) augmented with Gaussian noise scaled by σφ(x) via the reparametrization trick (cf. Eq. 9). In the CV-VAE, this relationship is even more obvious, as the magnitude of the noise is fixed for all data points (cf. Eq. 10). In this light, a VAE can be seen as a deterministic autoencoder where (Gaussian) noise is added to the decoder’s input. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Before introducing our fully-deterministic take on VAEs, it is worth investigating intermediate flavors of VAEs with reduced stochasticity. Analogous to what is commonly done for decoders as discussed in the previous section, one can fix the variance of \\( q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) \\) to be constant for all \\(\\mathbf{x}\\). This simplifies the computation of \\( E_\\phi \\) from Eq. 9 to ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"where \\( \\mathcal{L}_{\\text{REG}} \\) represents the explicit regularizer for \\( D_{\\theta} \\) (discussed in Section 3.1) and \\( \\mathcal{L}_{\\mathbf{Z}}^{\\text{RAE}} = \\frac{1}{2} ||\\mathbf{z}||_2^2 \\) (resulting from simplifying \\( \\mathcal{L}_{\\text{KL}}^{\\text{CV}} \\)) is equivalent to constraining the size of the learned latent space, which is still needed to prevent unbounded optimization. Finally, \\( \\beta \\) and \\( \\lambda \\) are two hyperparameters that balance the different loss terms.\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Autoencoding in VAEs is defined in a probabilistic fashion: \\( E_{\\phi} \\) and \\( D_{\\theta} \\) map data points not to a single point, but rather to parameterized distributions (cf. Eq. 7). However, common implementations of VAEs as discussed in Section 2 admit a simpler, deterministic view for this probabilistic mechanism. A glance at the autoencoding mechanism of the VAE is revealing. ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nE _ { \\phi } ^ { \\mathrm { C V } } ( \\mathbf { x } ) = \\mu _ { \\phi } ( \\mathbf { x } ) + \\epsilon , \\qquad \\epsilon \\sim { \\mathcal { N } } ( \\mathbf { 0 } , \\sigma \\mathbf { I } )\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"3 DETERMINISTIC REGULARIZED AUTOENCODERS\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathcal { L } } _ { \\mathrm { R A E } } = { \\mathcal { L } } _ { \\mathrm { R E C } } + \\beta { \\mathcal { L } } _ { Z } ^ { \\mathrm { R A E } } + \\lambda { \\mathcal { L } } _ { \\mathrm { R E G } }\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"2.2 CONSTANT-VARIANCE ENCODERS\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathcal { L } } _ { \\mathrm { R A E } } = { \\mathcal { L } } _ { \\mathrm { R E C } } + \\beta { \\mathcal { L } } _ { Z } ^ { \\mathrm { R A E } } + \\lambda { \\mathcal { L } } _ { \\mathrm { R E G } }\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Another option comes from the recent GAN literature where regularization is a hot topic (Kurach et al., 2018) and where injecting noise to the input of the adversarial discriminator has led to improved performance in a technique called instance noise (Sønderby et al., 2017). To enforce Lipschitz continuity on adversarial discriminators, weight clipping has been proposed (Arjovsky et al., 2017), which is however known to significantly slow down training. More successfully, a gradient penalty on the discriminator can be used similar to Gulrajani et al. (2017); Mescheder et al. (2018), yielding the objective \\( \\mathcal{L}_{\\text{REG}} = \\mathcal{L}_{\\text{GP}} = ||\\nabla D_\\theta(E_\\phi(\\mathbf{x}))||_2^2 \\) which bounds the gradient norm of the decoder w.r.t. its input. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Lastly, it is worth questioning if it is possible to formally derive our RAE framework from first principles. We answer this affirmatively, and show how to augment the ELBO optimization problem of a VAE with an explicit constraint, while not fixing a parametric form for \\( q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x}) \\). This indeed leads to a special case of the RAE loss in Eq. 11. Specifically, we derive a regularizer like \\( \\mathcal{L}_{\\text{GP}} \\) for a deterministic version of the CV-VAE. Note that this derivation legitimates bounding the decoder’s gradients and as such it justifies the spectral norm regularizer as well since the latter enforces the decoder’s Lipschitzness. We accommodate the full derivation in Appendix B. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In light of the recent successes of deep networks without explicit regularization (Zagoruyko & Komodakis, 2016; Zhang et al., 2017), it is intriguing to question the need for explicit regularization of the decoder in order to obtain a meaningful latent space. The assumption here is that techniques such as dropout (Srivastava et al., 2014), batch normalization (Ioffe & Szegedy, 2015), adding noise during training (An, 1996) implicitly regularize the networks enough. Therefore, as a natural baseline to the \\( L_{\\text{RAE}} \\) objectives introduced above, we also consider the RAE framework without \\( L_{\\text{REG}} \\) and \\( L_{\\text{Z}}^{\\text{RAE}} \\), i.e., a standard deterministic autoencoder optimizing \\( L_{\\text{REC}} \\) only. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "By removing stochasticity and ultimately, the KL divergence term \\( \\mathcal{L}_{\\text{KL}} \\) from RAEs, we have simplified the original VAE objective at the cost of detaching the encoder from the prior \\( p(\\mathbf{z}) \\) over the latent space. This implies that i) we cannot ensure that the latent space \\( \\mathbf{z} \\) is distributed according to a simple distribution (e.g., isotropic Gaussian) anymore and consequently, ii) we lose the simple mechanism provided by \\( p(\\mathbf{z}) \\) to sample from \\( \\mathbf{z} \\) as in Eq. 1. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Among possible choices for \\( \\mathcal{L}_{\\text{REG}} \\), a first obvious candidate is Tikhonov regularization (Tikhonov & Arsenin, 1977) since it is known to be related to the addition of low-magnitude input noise (Bishop, 2006). Training a RAE within this framework thus amounts to adopting \\( \\mathcal{L}_{\\text{REG}} = \\mathcal{L}_{\\ell_2} = ||\\theta||^2_2 \\) which effectively applies weight decay on the decoder parameters \\( \\theta \\). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "As discussed in Section 2.1, issue i) is compromising the VAE framework in any case, as reported in several works (Hoffman & Johnson, 2016; Rosca et al., 2018; Dai & Wipf, 2019). To fix this, some works extend the VAE objective by encouraging the aggregated posterior to match \\( p(\\mathbf{z}) \\) (Tolstikhin et al., 2017) or by utilizing more complex priors (Kingma et al., 2016; Tomczak & Welling, 2018; Bauer & Mnih, 2019). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "To overcome both i) and ii), we instead propose to employ ex-post density estimation over Z. We fit a density estimator denoted as qδ(z) to {z = Eφ(x)|x ∈ X}. This simple approach not only fits our RAE framework well, but it can also be readily adopted for any VAE or variants thereof such as the WAE as a practical remedy to the aggregated posterior mismatch without adding any computational overhead to the costly training phase. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Additionally, spectral normalization (SN) has been successfully proposed as an alternative way to bound the Lipschitz norm of an adversarial discriminator (Miyato et al., 2018). SN normalizes each weight matrix θℓ in the decoder by an estimate of its largest singular value: θℓSN = θℓ/s(θℓ) where s(θℓ) is the current estimate obtained through the power method. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "To complete our \"autopsy\" of the VAE loss, we additionally investigate deterministic autoencoders with decoder regularization, but without the \\( \\mathcal{L}_{\\mathbf{Z}}^{\\mathrm{RAE}} \\) term, as well as possible combinations of different regularizers in our RAE framework (cf. Table 3 in Appendix I). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"4 EX-POST DENSITY ESTIMATION\" ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"3.1 REGULARIZATION SCHEMES FOR RAEs\" ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"3.1 REGULARIZATION SCHEMES FOR RAEs\" ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Deterministic denoising (Vincent et al., 2008) and contractive autoencoders (CAEs) (Rifai et al., 2011) have received attention in the past for their ability to capture a smooth data manifold. Heuristic attempts to equip them with a generative mechanism include MCMC schemes (Rifai et al., 2012; Bengio et al., 2013). However, they are hard to diagnose for convergence, require a considerable effort in tuning (Cowles & Carlin, 1996), and have not scaled beyond MNIST, leading to them being superseded by VAEs. While computing the Jacobian for CAEs (Rifai et al., 2011) is close in spirit to \\( \\mathcal{L}_{\\text{GP}} \\) for RAEs, the latter is much more computationally efficient. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Approaches to cope with the aggregated posterior mismatch involve fixing a more expressive form for p(z) (Kingma et al., 2016; Bauer & Mnih, 2019) therefore altering the VAE objective and requiring considerable additional computational efforts. Estimating the latent space of a VAE with a second VAE (Dai & Wipf, 2019) reintroduces many of the optimization shortcomings discussed for VAEs and is much more expensive in practice compared to fitting a simple qδ(z) after training.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The choice of \\( q_\\delta(\\mathbf{z}) \\) needs to trade-off expressiveness – to provide a good fit of an arbitrary space for \\(\\mathbf{Z}\\) – with simplicity, to improve generalization. For example, placing a Dirac distribution on each latent point \\(\\mathbf{z}\\) would allow the decoder to output only training sample reconstructions which have a high quality, but do not generalize. Striving for simplicity, we employ and compare a full covariance multivariate Gaussian with a 10-component Gaussian mixture model (GMM) in our experiments. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Many works have focused on diagnosing the VAE framework, the terms in its objective (Hoffman & Johnson, 2016; Zhao et al., 2017; Alemi et al., 2018), and ultimately augmenting it to solve optimization issues (Rezende & Viola, 2018; Dai & Wipf, 2019). With RAE, we argue that a simpler deterministic framework can be competitive for generative modeling. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Wasserstein Autoencoders (WAE) (Tolstikhin et al., 2017) have been introduced as a generalization of AAEs by casting autoencoding as an optimal transport (OT) problem. Both stochastic and deterministic models can be trained by minimizing a relaxed OT cost function employing either an adversarial loss term or the maximum mean discrepancy score between p(z) and qφ(z) as a regularization term.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Adversarial Autoencoders (AAE) (Makhzani et al., 2016) add a discriminator to a deterministic encoder-decoder pair, leading to sharper samples at the expense of higher computational overhead and the introduction of instabilities caused by the adversarial nature of the training process. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"5 RELATED WORKS\". ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Figure 1: Qualitative evaluation of sample quality for VAEs, WAEs, 2sVAEs, and RAEs on CelebA. RAE provides slightly sharper samples and reconstructions while interpolating smoothly in the latent space. Corresponding qualitative overviews for MNIST and CIFAR-10 are provided in Appendix F.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Figure 1: Qualitative evaluation of sample quality for VAEs, WAEs, 2sVAEs, and RAEs on CelebA. RAE provides slightly sharper samples and reconstructions while interpolating smoothly in the latent space. Corresponding qualitative overviews for MNIST and CIFAR-10 are provided in Appendix F.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Table 1: Evaluation of all models by FID (lower is better, best models in bold). We evaluate each model by REC.: test sample reconstruction; N: random samples generated according to the prior distribution p(z) (isotropic Gaussian for VAE / WAE, another VAE for 2SVAE) or by fitting a Gaussian to qδ(z) (for the remaining models); GMM: random samples generated by fitting a mixture of 10 Gaussians in the latent space; Interp.: mid-point interpolation between random pairs of test reconstructions. The RAE models are competitive with or outperform previous models throughout the evaluation. Interestingly, interpolations do not suffer from the lack of explicit priors on the latent space in our models. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The most successful VAE architectures for images and audio so far are variations of the VQ-VAE (van den Oord et al., 2017; Razavi et al., 2019). Despite the name, VQ-VAEs are neither stochastic, nor variational, but they are deterministic autoencoders. VQ-VAEs are similar to RAEs in that they adopt ex-post density estimation. However, VQ-VAEs necessitates complex discrete autoregressive density estimators and a training loss that is non-differentiable due to quantizing Z. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "As baselines, we employ the regular VAE, constant-variance VAE (CV-VAE), Wasserstein Autoencoder (WAE) with the MMD loss as a state-of-the-art method, and the recent 2-stage VAE (2sVAE) (Dai & Wipf, 2019) which performs a form of ex-post density estimation via another VAE. For a fair comparison, we use the same network architecture for all models. Further details about the architecture and training are given in Appendix C. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "We evaluate all regularization schemes from Section 3.1: RAE-GP, RAE-L2, and RAE-SN. For a thorough ablation study, we also consider only adding the latent code regularizer \\( \\mathcal{L}_{\\mathbf{Z}}^{\\text{RAE}} \\) to \\( \\mathcal{L}_{\\text{REC}} \\) (RAE), and an autoencoder without any explicit regularization (AE). We check the effect of applying one regularization scheme while not including the \\( \\mathcal{L}_{\\mathbf{Z}}^{\\text{RAE}} \\) term in the AE-L2 model. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Lastly, RAEs share some similarities with GLO (Bojanowski et al., 2018). However, differently from RAEs, GLO can be interpreted as a deterministic AE without an encoder, and when the latent space is built \"on-demand\" by optimization. On the other hand, RAEs augment deterministic decoders as in GANs with deterministic encoders. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"ularizer in place of LKL. Within the RAE framework, we look at this problem from a different perspective: instead of explicitly imposing a simple structure on Z that might impair the ability to fit high-dimensional data during training, we propose to model the latent space by an ex-post density estimation step.\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "We measure the following quantities: held-out sample reconstruction quality, random sample quality, and interpolation quality. While reconstructions give us a lower bound on the best quality ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Our experiments are designed to answer the following questions: Q1: Are sample quality and latent space structure in RAEs comparable to VAEs? Q2: How do different regularizations impact RAE performance? Q3: What is the effect of ex-post density estimation on VAEs and its variants? ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"6 EXPERIMENTS\". ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "6.1 RAES FOR IMAGE MODELING ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Table 1 summarizes our main results. All of the proposed RAE variants are competitive with the VAE, WAE and 2sVAE w.r.t. generated image quality in all settings. Sampling RAEs achieve the best FIDs across all datasets when a modest 10-component GMM is employed for ex-post density estimation. Furthermore, even when 𝒩 is considered as qδ(𝒛), RAEs rank first with the exception of MNIST, where it competes for the second position with a VAE. Our best RAE FIDs are lower than the best results reported for VAEs in the large scale comparison of (Lucic et al., 2018a), challenging even the best scores reported for GANs. While we are employing a slightly different architecture than theirs, our models underwent only modest finetuning instead of an extensive hyperparameter search. A comparison of the different regularization schemes for RAEs (Q2) yields no clear winner across all settings as all perform equally well. Striving for a simpler implementation, one may prefer RAE-L2 over the GP and SN variants. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "To this end, we adopt the exact architectures and experimental settings of the GrammarVAE (GVAE) (Kusner et al., 2017), which has been shown to outperform other generative alternatives such as the CharacterVAE (CVAE) (Gómez-Bombarelli et al., 2018). As in Kusner et al. (2017), we are interested in traversing the latent space learned by our models to generate samples (molecules or expressions) that best fit some downstream metric. This is done by Bayesian optimization (BO) by considering the log(1 + MSE) (lower is better) for the generated expressions w.r.t. some ground truth points, and the water-octanol partition coefficient (log P) (Pyzer-Knapp et al., 2015) (higher is better) in the case of molecules. A well-behaved latent space will not only generate molecules or expressions with better scores during the BO step, but it will also contain syntactically valid ones, i.e., samples abide to a grammar of rules describing the problem. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Sure, here is the text content from the image:\n\n\"Surprisingly, the implicitly regularized RAE and AE models are shown to be able to score impressive FIDs when \\( q_{\\delta}(\\mathbf{z}) \\) is fit through GMMS. FIDs for AEs decrease from 58.73 to 10.66 on MNIST and from 127.85 to 45.10 on CelebA – a value close to the state of the art. This is a remarkable result that follows a long series of recent confirmations that neural networks are surprisingly smooth by design (Neyshabur et al., 2017). It is also surprising that the lack of an explicitly fixed structure on the latent space of the RAE does not impede interpolation quality. This is further confirmed by the qualitative evaluation on CelebA as reported in Fig. 1 and for the other datasets in Appendix F, where RAE interpolated samples seem sharper than competitors and transitions smoother.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Our results further confirm and quantify the effect of the aggregated posterior mismatch. In Table 1, ex-post density estimation consistently improves sample quality across all settings and models. A 10-component GMM halves FID scores from \\~20 to \\~10 for WAE and RAE models on MNIST and from 116 to 46 on CelebA. This is especially striking since this additional step is much cheaper and simpler than training a second-stage VAE as in 2sVAE (Q3). In summary, the results strongly support the conjecture that the simple deterministic RAE framework can challenge VAEs and stronger alternatives (Q1). ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"achievable by the generative model, random sample quality indicates how well the model generalizes. Finally, interpolation quality sheds light on the structure of the learned latent space. The evaluation of generative models is a nontrivial research question (Theis et al., 2016; Sajjadi et al., 2017; Lucic et al., 2018a). We report here the ubiquitous Fréchet Inception Distance (FID) (Heusel et al., 2017) and we provide precision and recall scores (PRD) (Sajjadi et al., 2018) in Appendix E.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We now evaluate RAEs for generating complex structured objects such as molecules and arithmetic expressions. We do this with a twofold aim: i) to investigate the latent space learned by RAE for more challenging input spaces that abide to some structural constraints, and ii) to quantify the gain of replacing the VAE in a state-of-the-art generative model with a RAE. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For completeness, we investigate applying multiple regularization schemes to our RAE models. We report the results of all possible combinations in Table 3, Appendix I. There, no significant boost of performance can be spotted when comparing to singly regularized RAEs. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Figure 2 summarizes our results over 5 trials of BO. Our GRAEs (Grammar RAE) achieve better average scores than CVAEs and GVAEs in generating expressions and molecules. This is visible also for the three best samples and their scores for all models, with the exception of the first best expression of GVAE. We include in the comparison also the GCVVAE, the equivalent of a CV-VAE ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "6.2 GRAMMARAE: MODELING STRUCTURED INPUTS ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n6.2 GRAMMARAE: MODELING STRUCTURED INPUTS ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "While the theoretical derivation of the VAE has helped popularize the framework for generative modeling, recent works have started to expose some discrepancies between theory and practice. We have shown that viewing sampling in VAEs as noise injection to enforce smoothness can enable one to distill a deterministic autoencoding framework that is compatible with several regularization techniques to learn a meaningful latent space. We have demonstrated that such an autoencoding framework can generate comparable or better samples than VAEs while getting around the practical drawbacks tied to a stochastic framework. Furthermore, we have shown that our solution of fitting a simple density estimator on the learned latent space consistently improves sample quality both for the proposed RAE framework as well as for VAEs, WAEs, and 2sVAEs which solves the mismatch between the prior and the aggregated posterior in VAEs. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "for structured objects, as an additional baseline. We can observe that while the GCVVAE delivers better average scores for the simpler task of generating equations (even though the single three best equations are on par with GRAE), when generating molecules GRAEs deliver samples associated to much higher scores. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "More interestingly, while GRAEs are almost equivalent to GVAEs for the easier task of generating expressions, the proportion of syntactically valid molecules for GRAEs greatly improves over GVAEs (from 28% to 72%). ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "We would like to thank Anant Raj, Matthias Bauer, Paul Rubenstein and Soubhik Sanyal for fruitful discussions. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"7 CONCLUSION\". ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "ACKNOWLEDGEMENTS ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Figure 2: Generating structured objects by GVAE, CVAE and GRAE. (Upper left) Percentage of valid samples and their average mean score (see text, Section 6.2). The three best expressions (lower left) and molecules (upper right) and their scores are reported for all models. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Figure 2: Generating structured objects by GVAE, CVAE and GRAE. (Upper left) Percentage of valid samples and their average mean score (see text, Section 6.2). The three best expressions (lower left) and molecules (upper right) and their scores are reported for all models. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Figure 2: Generating structured objects by GVAE, CVAE and GRAE. (Upper left) Percentage of valid samples and their average mean score (see text, Section 6.2). The three best expressions (lower left) and molecules (upper right) and their scores are reported for all models. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nYoshua Bengio, Li Yao, Guillaume Alain, and Pascal Vincent. Generalized denoising auto-encoders as generative models. In NeurIPS, 2013. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Mary Kathryn Cowles and Bradley P Carlin. Markov chain Monte Carlo convergence diagnostics: a comparative review. In Journal of the American Statistical Association, 1996.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nPiotr Bojanowski, Armand Joulin, David Lopez-Paz, and Arthur Szlam. Optimizing the latent space of generative networks. In International Conference on Machine Learning, 2018. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Samuel R Bowman, Luke Vilnis, Oriol Vinyals, Andrew M Dai, Rafal Jozefowicz, and Samy Bengio. Generating sentences from a continuous space. In CoNLL, 2016.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Xi Chen, Diederik P Kingma, Tim Salimans, Yan Duan, Prafulla Dhariwal, John Schulman, Ilya Sutskever, and Pieter Abbeel. Variational lossy autoencoder. In ICLR, 2017.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMathieu Germain, Karol Gregor, Iain Murray, and Hugo Larochelle. Made: Masked autoencoder for distribution estimation. In International Conference on Machine Learning, pp. 881–889, 2015. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Partha Ghosh, Arpan Losalka, and Michael J Black. Resisting adversarial attacks using Gaussian mixture variational autoencoders. In AAAI, 2019.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nYuri Burda, Roger Grosse, and Ruslan Salakhutdinov. Importance weighted autoencoders. arXiv preprint arXiv:1509.00519, 2015. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAndrew Brock, Jeff Donahue, and Karen Simonyan. Large scale gan training for high fidelity natural image synthesis. In ICLR, 2019. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nJohannes Ballé, Valero Laparra, and Eero P Simoncelli. End-to-end optimized image compression. In ICLR, 2017. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"M. Bauer and A. Mnih. Resampled priors for variational autoencoders. In AISTATS, 2019.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Alexander Alemi, Ben Poole, Ian Fischer, Joshua Dillon, Rif A Saurous, and Kevin Murphy. Fixing a broken ELBO. In ICML, 2018.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nRafael Gómez-Bombarelli, Jennifer N Wei, David Duvenaud, José Miguel Hernández-Lobato, Benjamín Sánchez-Lengeling, Dennis Sheberla, Jorge Aguilera-Iparraguirre, Timothy D Hirzel, Ryan P Adams, and Alán Aspuru-Guzik. Automatic chemical design using a data-driven continuous representation of molecules. In ACS central science, 2018. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nIan Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In NeurIPS, 2014. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Martin Arjovsky, Soumith Chintala, and Léon Bottou. Wasserstein generative adversarial networks. In ICML, 2017.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nIrina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, and Alexander Lerchner. Beta-VAE: Learning basic visual concepts with a constrained variational framework. In ICLR, 2017. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nGuozhong An. The effects of adding noise during backpropagation training on a generalization performance. In Neural computation, 1996. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nIshaan Gulrajani, Faruk Ahmed, Martin Arjovsky, Vincent Dumoulin, and Aaron C Courville. Improved training of Wasserstein GANs. In NeurIPS, 2017. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, Günter Klambauer, and Sepp Hochreiter. GANs trained by a two time-scale update rule converge to a Nash equilibrium. In NeurIPS, 2017.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"ai and David Wipf. Diagnosing and enhancing VAE models. In ICLR, 201\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Christopher M Bishop. Pattern recognition and machine learning. Springer, 2004.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "REFERENCES ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nJohannes Ballé, Valero Laparra, and Eero P Simoncelli. End-to-end optimized image compression. In ICLR, 2017.\n\nM. Bauer and A. Mnih. Resampled priors for variational autoencoders. In AISTATS, 2019.\n\nYoshua Bengio, Li Yao, Guillaume Alain, and Pascal Vincent. Generalized denoising auto-encoders as generative models. In NeurIPS, 2013.\n\nChristopher M Bishop. Pattern recognition and machine learning. Springer, 2006.\n\nPiotr Bojanowski, Armand Joulin, David Lopez-Paz, and Arthur Szlam. Optimizing the latent space of generative networks. In International Conference on Machine Learning, 2018.\n\nSamuel R Bowman, Luke Vilnis, Oriol Vinyals, Andrew M Dai, Rafal Jozefowicz, and Samy Bengio. Generating sentences from a continuous space. In CoNLL, 2016.\n\nAndrew Brock, Jeff Donahue, and Karen Simonyan. Large scale gan training for high fidelity natural image synthesis. In ICLR, 2019.\n\nYuri Burda, Roger Grosse, and Ruslan Salakhutdinov. Importance weighted autoencoders. arXiv preprint arXiv:1509.00519, 2015.\n\nXi Chen, Diederik P Kingma, Tim Salimans, Yan Duan, Prafulla Dhariwal, John Schulman, Ilya Sutskever, and Pieter Abbeel. Variational lossy autoencoder. In ICLR, 2017.\n\nMary Kathryn Cowles and Bradley P Carlin. Markov chain Monte Carlo convergence diagnostics: a comparative review. In Journal of the American Statistical Association, 1996.\n\nBin Dai and David Wipf. Diagnosing and enhancing VAE models. In ICLR, 2019.\n\nMathieu Germain, Karol Gregor, Iain Murray, and Hugo Larochelle. MADE: Masked autoencoder for distribution estimation. In International Conference on Machine Learning, pp. 881–889, 2015.\n\nPartha Ghosh, Arpan Losalka, and Michael J Black. Resisting adversarial attacks using Gaussian mixture variational autoencoders. In AAAI, 2019.\n\nRafael Gómez-Bombarelli, Jennifer N Wei, David Duvenaud, José Miguel Hernández-Lobato, Benjamín Sánchez-Lengeling, Dennis Sheberla, Jorge Aguilera-Iparraguirre, Timothy D Hirzel, Ryan P Adams, and Alán Aspuru-Guzik. Automatic chemical design using a data-driven continuous representation of molecules. In ACS central science, 2018.\n\nIan Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In NeurIPS, 2014.\n\nIshaan Gulrajani, Faruk Ahmed, Martin Arjovsky, Vincent Dumoulin, and Aaron C Courville. Improved training of Wasserstein GANs. In NeurIPS, 2017.\n\nMartin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, Günter Klambauer, and Sepp Hochreiter. GANs trained by a two time-scale update rule converge to a Nash equilibrium. In NeurIPS, 2017.\n\nIrina Higgins, Loic Matthey, Arka Pal, Christopher Burgess, Xavier Glorot, Matthew Botvinick, Shakir Mohamed, and Alexander Lerchner. Beta-VAE: Learning basic visual concepts with a constrained variational framework. In ICLR, 2017. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nDiederik P Kingma, Tim Salimans, Rafal Jozefowicz, Xi Chen, Ilya Sutskever, and Max Welling.\nImproving variational inference with inverse autoregressive flow.\nIn NeurIPS, 2016. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nKarol Kurach, Mario Lucic, Xiaohua Zhai, Marcin Michalski, and Sylvain Gelly. The GAN landscape: Losses, architectures, regularization, and normalization. arXiv preprint arXiv:1807.04720, 2018. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nYann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner. Gradient-based learning applied to document recognition. In IEEE, 1998. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Are GANs created equal? A large-scale study. In NeurIPS, 2018a.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Alex Krizhevsky and Geoffrey Hinton. Learning Multiple Layers of Features from Tiny Images, 2009.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nZiwei Liu, Ping Luo, Xiaogang Wang, and Xiaoou Tang. Deep Learning Face Attributes in the Wild. In ICCV, 2015. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Mario Lucic, Karol Kurach, Marcin Michalski, Sylvain Gelly, and Olivier Bousquet. Are gans created equal? a large-scale study. In Advances in neural information processing systems, pp. 700–709, 2018b.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nHugo Larochelle and Iain Murray. The neural autoregressive distribution estimator. In AISTATS, 2011. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nMatt J Kusner, Brooks Paige, and José Miguel Hernández-Lobato. Grammar variational autoencoder. In ICML, 2017. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nDanilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra. Stochastic backpropagation and approximate inference in deep generative models. In ICML, 2014. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nAlireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow, and Brendan Frey. Adversarial autoencoders. In ICLR, 2016. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nTakeru Miyato, Toshiki Kataoka, Masanori Koyama, and Yuichi Yoshida. Spectral normalization for generative adversarial networks. In ICLR, 2018. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Lars Mescheder, Andreas Geiger, and Sebastian Nowozin. Which training methods for GANs do actually converge? In ICML, 2018.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Diederik P Kingma and Max Welling. Auto-encoding variational Bayes. In ICLR, 2014.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nWengong Jin, Regina Barzilay, and Tommi Jaakkola. Junction tree variational autoencoder for molecular graph generation. arXiv preprint arXiv:1802.04364, 2018. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nBehnam Neyshabur, Ryota Tomioka, Ruslan Salakhutdinov, and Nathan Srebro. Geometry of optimization and implicit regularization in deep learning. arXiv preprint arXiv:1705.03071, 2017. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAli Razavi, Aaron van den Oord, and Oriol Vinyals. Generating diverse high-fidelity images with VQ-VAE-2. arXiv preprint arXiv:1906.00446, 2019. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Matthew D Hoffman and Matthew J Johnson. Elbo surgery: yet another way to carve up the variational evidence lower bound. In Workshop in Advances in Approximate Bayesian Inference, NeurIPS, 2016.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Edward O Pyzer-Knapp, Changwon Suh, Rafael Gómez-Bombarelli, Jorge Aguilera-Iparraguirre, and Alán Aspuru-Guzik. What is high-throughput virtual screening? A perspective from organic materials discovery. Annual Review of Materials Research, 2015.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Sergey Ioffe and Christian Szegedy. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In ICML, 2015.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Here is the text content from the image:\n\n\\`\\`\\`\nmolecular graph generation. arXiv preprint arXiv:1802.04364, 2018.\n\nDiederik P Kingma and Max Welling. Auto-encoding variational Bayes. In ICLR, 2014.\n\nDiederik P Kingma, Tim Salimans, Rafal Jozefowicz, Xi Chen, Ilya Sutskever, and Max Welling. Improving variational inference with inverse autoregressive flow. In NeurIPS, 2016.\n\nAlex Krizhevsky and Geoffrey Hinton. Learning Multiple Layers of Features from Tiny Images, 2009.\n\nKarol Kurach, Mario Lucic, Xiaohua Zhai, Marcin Michalski, and Sylvain Gelly. The GAN landscape: Losses, architectures, regularization, and normalization. arXiv preprint arXiv:1807.04720, 2018.\n\nMatt J Kusner, Brooks Paige, and José Miguel Hernández-Lobato. Grammar variational autoencoder. In ICML, 2017.\n\nHugo Larochelle and Iain Murray. The neural autoregressive distribution estimator. In AISTATS, 2011.\n\nYann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner. Gradient-based learning applied to document recognition. In IEEE, 1998.\n\nZiwei Liu, Ping Luo, Xiaogang Wang, and Xiaoou Tang. Deep Learning Face Attributes in the Wild. In ICCV, 2015.\n\nMario Lucic, Karol Kurach, Marcin Michalski, Sylvain Gelly, and Olivier Bousquet. Are GANs created equal? A large-scale study. In NeurIPS, 2018a.\n\nMario Lucic, Karol Kurach, Marcin Michalski, Sylvain Gelly, and Olivier Bousquet. Are gans created equal? a large-scale study. In Advances in neural information processing systems, pp. 700–709, 2018b.\n\nAlireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow, and Brendan Frey. Adversarial autoencoders. In ICLR, 2016.\n\nLars Mescheder, Andreas Geiger, and Sebastian Nowozin. Which training methods for GANs do actually converge? In ICML, 2018.\n\nTakeru Miyato, Toshiki Kataoka, Masanori Koyama, and Yuichi Yoshida. Spectral normalization for generative adversarial networks. In ICLR, 2018.\n\nBehnam Neyshabur, Ryota Tomioka, Ruslan Salakhutdinov, and Nathan Srebro. Geometry of optimization and implicit regularization in deep learning. arXiv preprint arXiv:1705.03071, 2017.\n\nEdward O Pyzer-Knapp, Changwon Suh, Rafael Gómez-Bombarelli, Jorge Aguilera-Iparraguirre, and Alán Aspuru-Guzik. What is high-throughput virtual screening? A perspective from organic materials discovery. Annual Review of Materials Research, 2015.\n\nAli Razavi, Aaron van den Oord, and Oriol Vinyals. Generating diverse high-fidelity images with VQ-VAE-2. arXiv preprint arXiv:1906.00446, 2019.\n\nDanilo Jimenez Rezende and Fabio Viola. Taming VAEs. arXiv preprint arXiv:1810.00597, 2018.\n\nDanilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra. Stochastic backpropagation and approximate inference in deep generative models. In ICML, 2014.\n\\`\\`\\` ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nDanilo Jimenez Rezende and Fabio Viola. Taming VAEs. arXiv preprint arXiv:1810.00597, 2018. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"e and Fabio Viola. Taming VAEs. arXiv preprint arXiv:1810.00597, 2018.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Diederik P Kingma and Max Welling. Auto-encoding variational Bayes. In ICLR, 2014.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Here is the text content from the image:\n\n\\`\\`\\`\nImproving variational inference with inverse autoregressive flow. In NeurIPS, 2016.\n\nAlex Krizhevsky and Geoffrey Hinton. Learning Multiple Layers of Features from Tiny Images, 2009.\n\nKarol Kurach, Mario Lucic, Xiaohua Zhai, Marcin Michalski, and Sylvain Gelly. The GAN landscape: Losses, architectures, regularization, and normalization. arXiv preprint arXiv:1807.04720, 2018.\n\nMatt J Kusner, Brooks Paige, and José Miguel Hernández-Lobato. Grammar variational autoencoder. In ICML, 2017.\n\nHugo Larochelle and Iain Murray. The neural autoregressive distribution estimator. In AISTATS, 2011.\n\nYann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner. Gradient-based learning applied to document recognition. In IEEE, 1998.\n\nZiwei Liu, Ping Luo, Xiaogang Wang, and Xiaoou Tang. Deep Learning Face Attributes in the Wild. In ICCV, 2015.\n\nMario Lucic, Karol Kurach, Marcin Michalski, Sylvain Gelly, and Olivier Bousquet. Are GANs created equal? A large-scale study. In NeurIPS, 2018a.\n\nMario Lucic, Karol Kurach, Marcin Michalski, Sylvain Gelly, and Olivier Bousquet. Are GANs created equal? A large-scale study. In Advances in neural information processing systems, pp. 700–709, 2018b.\n\nAlireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow, and Brendan Frey. Adversarial autoencoders. In ICLR, 2016.\n\nLars Mescheder, Andreas Geiger, and Sebastian Nowozin. Which training methods for GANs do actually converge? In ICML, 2018.\n\nTakeru Miyato, Toshiki Kataoka, Masanori Koyama, and Yuichi Yoshida. Spectral normalization for generative adversarial networks. In ICLR, 2018.\n\nBehnam Neyshabur, Ryota Tomioka, Ruslan Salakhutdinov, and Nathan Srebro. Geometry of optimization and implicit regularization in deep learning. arXiv preprint arXiv:1705.03071, 2017.\n\nEdward O Pyzer-Knapp, Changwon Suh, Rafael Gómez-Bombarelli, Jorge Aguilera-Iparraguirre, and Alán Aspuru-Guzik. What is high-throughput virtual screening? A perspective from organic materials discovery. Annual Review of Materials Research, 2015.\n\nAli Razavi, Aaron van den Oord, and Oriol Vinyals. Generating diverse high-fidelity images with VQ-VAE-2. arXiv preprint arXiv:1906.00446, 2019.\n\nDanilo Jimenez Rezende and Fabio Viola. Taming VAEs. arXiv preprint arXiv:1810.00597, 2018.\n\nDanilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra. Stochastic backpropagation and\n\\`\\`\\` ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"George Tucker, Andriy Mnih, Chris J Maddison, John Lawson, and Jascha Sohl-Dickstein. REBAR: low-variance, unbiased gradient estimates for discrete latent variable models. In NeurIPS, 2017.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Andrey N Tikhonov and Vasilii Iakkovlevich Arsenin. Solutions of ill-posed problems, volume 14. Winston, Washington, DC, 1977.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nIlya Tolstikhin, Olivier Bousquet, Sylvain Gelly, and Bernhard Schölkopf. Wasserstein auto-encoders. In ICLR, 2017. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Lucas Theis, Aäron van den Oord, and Matthias Bethge. A note on the evaluation of generative models. In ICLR, 2016.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Sergey Zagoruyko and Nikos Komodakis. Wide Residual Networks. In BMVC, 2016.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nNitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov.\nDropout: A simple way to prevent neural networks from overfitting.\nThe journal of machine learning research, 15(1):1929–1958, 2014. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nCasper Kaae Sønderby, Jose Caballero, Lucas Theis, Wenzhe Shi, and Ferenc Huszár. Amortised MAP Inference for Image Super-resolution. In ICLR, 2017. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Jakub Tomczak and Max Welling. VAE with a VampPrior. In AISTATS, 2018.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Chiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, and Oriol Vinyals. Understanding deep learning requires rethinking generalization. In ICLR, 2017.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nPascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol. Extracting and composing robust features with denoising autoencoders. In ICML, 2008. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nJocelyn Sietsma and Robert JF Dow. Creating artificial neural networks that generalize. In Neural networks. Elsevier, 1991. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nShengjia Zhao, Jiaming Song, and Stefano Ermon. Towards deeper understanding of variational autoencoding models. arXiv preprint arXiv:1702.08658, 2017. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nKihyuk Sohn, Honglak Lee, and Xinchen Yan. Learning structured output representation using deep conditional generative models. In NeurIPS, 2015. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Aliaksei Severyn, Erhardt Barth, and Stanislau Semeniuta. A hybrid convolutional variational autoencoder for text generation. In Empirical Methods in Natural Language Processing, 2017.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMehdi S. M. Sajjadi, Olivier Bachem, Mario Lucic, Olivier Bousquet, and Sylvain Gelly. Assessing generative models via precision and recall. In NeurIPS, 2018. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nSalah Rifai, Pascal Vincent, Xavier Muller, Xavier Glorot, and Yoshua Bengio. Contractive auto-encoders: Explicit invariance during feature extraction. In ICML, 2011. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMihaela Rosca, Balaji Lakshminarayanan, and Shakir Mohamed. Distribution matching in variational inference. arXiv preprint arXiv:1802.06847, 2018. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nMehdi S. M. Sajjadi, Bernhard Schölkopf, and Michael Hirsch. Enhancenet: Single image super-resolution through automated texture synthesis. In ICCV, 2017. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Sure, here is the text content from the image:\n\n\\`\\`\\`\nSalah Rifai, Yoshua Bengio, Yann Dauphin, and Pascal Vincent. A generative process for sampling contractive auto-encoders. In ICML, 2012.\n\nMihaela Rosca, Balaji Lakshminarayanan, and Shakir Mohamed. Distribution matching in variational inference. arXiv preprint arXiv:1802.06847, 2018.\n\nMehdi S. M. Sajjadi, Bernhard Schölkopf, and Michael Hirsch. Enhancenet: Single image super-resolution through automated texture synthesis. In ICCV, 2017.\n\nMehdi S. M. Sajjadi, Olivier Bachem, Mario Lucic, Olivier Bousquet, and Sylvain Gelly. Assessing generative models via precision and recall. In NeurIPS, 2018.\n\nAliaksei Severyn, Erhardt Barth, and Stanislau Semeniuta. A hybrid convolutional variational autoencoder for text generation. In Empirical Methods in Natural Language Processing, 2017.\n\nJocelyn Sietsma and Robert JF Dow. Creating artificial neural networks that generalize. In Neural networks. Elsevier, 1991.\n\nKihyuk Sohn, Honglak Lee, and Xinchen Yan. Learning structured output representation using deep conditional generative models. In NeurIPS, 2015.\n\nCasper Kaae Sønderby, Jose Caballero, Lucas Theis, Wenzhe Shi, and Ferenc Huszár. Amortised MAP Inference for Image Super-resolution. In ICLR, 2017.\n\nNitish Srivastava, Geoffrey Hinton, Alex Krizhevsky, Ilya Sutskever, and Ruslan Salakhutdinov. Dropout: A simple way to prevent neural networks from overfitting. The journal of machine learning research, 15(1):1929–1958, 2014.\n\nLucas Theis, Aäron van den Oord, and Matthias Bethge. A note on the evaluation of generative models. In ICLR, 2016.\n\nAndrey N Tikhonov and Vasilii Iakkovlevich Arsenin. Solutions of ill-posed problems, volume 14. Winston, Washington, DC, 1977.\n\nIlya Tolstikhin, Olivier Bousquet, Sylvain Gelly, and Bernhard Schölkopf. Wasserstein auto-encoders. In ICLR, 2017.\n\nJakub Tomczak and Max Welling. VAE with a VampPrior. In AISTATS, 2018.\n\nGeorge Tucker, Andriy Mnih, Chris J Maddison, John Lawson, and Jascha Sohl-Dickstein. REBAR: low-variance, unbiased gradient estimates for discrete latent variable models. In NeurIPS, 2017.\n\nAaron van den Oord, Oriol Vinyals, et al. Neural discrete representation learning. In NeurIPS, 2017.\n\nPascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol. Extracting and composing robust features with denoising autoencoders. In ICML, 2008.\n\nSergey Zagoruyko and Nikos Komodakis. Wide Residual Networks. In BMVC, 2016.\n\nChiyuan Zhang, Samy Bengio, Moritz Hardt, Benjamin Recht, and Oriol Vinyals. Understanding deep learning requires rethinking generalization. In ICLR, 2017.\n\nShengjia Zhao, Jiaming Song, and Stefano Ermon. Towards deeper understanding of variational autoencoding models. arXiv preprint arXiv:1702.08658, 2017.\n\\`\\`\\` ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Salah Rifai, Yoshua Bengio, Yann Dauphin, and Pascal Vincent. A generative process for sampling contractive auto-encoders. In ICML, 2012.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Oriol Vinyals, et al. Neural discrete representation learning. In NeurIPS, 2017.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 12
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\nwhere \\( D_\\theta(\\mathbf{z}) = \\mu_\\theta(E_\\phi(\\mathbf{x})) \\) and the constraint on the decoder encodes that the output has to vary, in the sense of an \\( L_p \\) norm, only by a small amount \\( \\epsilon \\) for any two possible draws from the encoding of \\( \\mathbf{x} \\). Let \\( D_\\theta(\\mathbf{z}): \\mathbb{R}^{\\dim(\\mathbf{z})} \\to \\mathbb{R}^{\\dim(\\mathbf{x})} \\) be given by a set of \\( \\dim(\\mathbf{x}) \\) given by \\( \\{d_i(\\mathbf{z}): \\mathbb{R}^{\\dim(\\mathbf{z})} \\to \\mathbb{R}^1\\} \\). Now we can upper bound the quantity \\( ||D_\\theta(\\mathbf{z}_1) - D_\\theta(\\mathbf{z}_2)||_p \\) by \\( \\dim(\\mathbf{x}) \\* sup_i\\{||d_i(\\mathbf{z}_1) - d_i(\\mathbf{z}_2)||_p\\} \\). Using mean value theorem \\( ||d_i(\\mathbf{z}_1) - d_i(\\mathbf{z}_2)||_p \\leq ||\\nabla_t d_i((1-t)\\mathbf{z}_1 + t\\mathbf{z}_2)||_p \\* ||\\mathbf{z}_1 - \\mathbf{z}_2||_p \\). Hence \\( sup_i\\{||d_i(\\mathbf{z}_1) - d_i(\\mathbf{z}_2)||_p\\} \\leq sup_i\\{||\\nabla_t d_i((1-t)\\mathbf{z}_1 + t\\mathbf{z}_2)||_p \\* ||\\mathbf{z}_1 - \\mathbf{z}_2||_p\\} \\). Now if we choose the domain of \\( q_\\phi(\\mathbf{z}|\\mathbf{x}) \\) to be isotopic the contribution of \\( ||\\mathbf{z}_2 - \\mathbf{z}_1||_p \\) to the aforementioned quantity becomes a constant factor. Loosely speaking it is the radius of the bounding ball of domain of \\( q_\\phi(\\mathbf{z}|\\mathbf{x}) \\). Hence the above term simplifies to \\( sup_i\\{||\\nabla_t d_i((1-t)\\mathbf{z}_1 + t\\mathbf{z}_2)||_p\\} \\). Recognizing that here \\( \\mathbf{z}_1 \\) and \\( \\mathbf{z}_2 \\) is arbitrary lets us simplify this further to \\( sup_i\\{||\\nabla_z d_i(\\mathbf{z})||_p\\} \\)\n\\`\\`\\` ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "In this section, we propose an alternative view on enforcing smoothness on the output of \\( D_\\theta \\) by augmenting the ELBO optimization problem for VAEs with an explicit constraint. While we keep the Gaussianity assumptions over a stochastic \\( D_\\theta \\) and \\( p(\\mathbf{z}) \\) for convenience, we however are not fixing a parametric form for \\( q_\\phi(\\mathbf{z} | \\mathbf{x}) \\) yet. We discuss next how some parametric restrictions over \\( q_\\phi(\\mathbf{z} | \\mathbf{x}) \\) lead to a variation of the RAE framework in Eq. 11, specifically the introduction of \\( \\mathcal{L}_{\\text{GP}} \\) as a regularizer of a deterministic version of the CV-VAE. To start, we augment Eq. 5 as: ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "We train a VAE on MNIST while monitoring the test set reconstruction quality by FID. Figure 3 (left) clearly shows the impact of more expensive \\( k > 1 \\) Monte Carlo approximations of Eq. 7 on sample quality during training. The commonly used 1-sample approximation is a clear limitation for VAE training. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Figure 3 (right) depicts the inherent trade-off between reconstruction and random sample quality in VAEs. Enforcing structure and smoothness in the latent space of a VAE affects random sample quality in a negative way. In practice, a compromise needs to be made, ultimately leading to subpar performance. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "From this form of the smoothness constraint, it is apparent why the choice of a parametric form for \\( q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) \\) can be impactful during training. For a compactly supported isotropic PDF \\( q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) \\), the ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"B A PROBABILISTIC DERIVATION OF REGULARIZATION\" ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A RECONSTRUCTION AND REGULARIZATION TRADE-OFF ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Figure 3: (Left) Test reconstruction quality for a VAE trained on MNIST with different numbers of samples in the latent space as in Eq. 7 measured by FID (lower is better). Larger numbers of Monte-Carlo samples clearly improve training, however, the increased accuracy comes with larger requirements for memory and computation. In practice, the most common choice is therefore \\( k = 1 \\). (Right) Reconstruction and random sample quality (FID, y-axis, lower is better) of a VAE on MNIST for different trade-offs between \\( L_{REC} \\) and \\( L_{KL} \\) (x-axis, see Eq. 5). Higher weights for \\( L_{KL} \\) improve random samples but hurt reconstruction. This is especially noticeable towards the optimality point (\\( \\beta \\approx 10^1 \\)). This indicates that enforcing structure in the VAE latent space leads to a penalty in quality. ",
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\nThe formula in the image can be written in LaTeX as follows:\n\n```latex\n\\arg \\min_{\\phi, \\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n```\n\nThis will render the equation as shown in the image.\n$$",
+        "text_format": "latex",
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\text{s.t. } ||D_\\theta(\\mathbf{z}_1) - D_\\theta(\\mathbf{z}_2)||_p < \\epsilon \\quad \\forall \\; \\mathbf{z}_1, \\mathbf{z}_2 \\sim q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) \\quad \\forall \\mathbf{x} \\sim p_{\\text{data}}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "APPENDIX ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "Figure 3: (Left) Test reconstruction quality for a VAE trained on MNIST with different numbers of samples in the latent space as in Eq. 7 measured by FID (lower is better). Larger numbers of Monte-Carlo samples clearly improve training, however, the increased accuracy comes with larger requirements for memory and computation. In practice, the most common choice is therefore \\( k = 1 \\). (Right) Reconstruction and random sample quality (FID, y-axis, lower is better) of a VAE on MNIST for different trade-offs between \\( L_{REC} \\) and \\( L_{KL} \\) (x-axis, see Eq. 5). Higher weights for \\( L_{KL} \\) improve random samples but hurt reconstruction. This is especially noticeable towards the optimality point (\\( \\beta \\approx 10^1 \\)). This indicates that enforcing structure in the VAE latent space leads to a penalty in quality. ",
+        "page_idx": 12
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\begin{equation}\n\\arg \\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n\\end{equation}\n\n\\begin{equation}\n\\text{s.t. } ||D_\\theta(\\mathbf{z}_1) - D_\\theta(\\mathbf{z}_2)||_p < \\epsilon \\quad \\forall \\, \\mathbf{z}_1, \\mathbf{z}_2 \\sim q_\\phi(\\mathbf{z}|\\mathbf{x}) \\quad \\forall \\mathbf{x} \\sim p_{\\text{data}}\n\\end{equation}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "A RECONSTRUCTION AND REGULARIZATION TRADE-OFF ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "APPENDIX ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "B A PROBABILISTIC DERIVATION OF REGULARIZATION ",
+        "page_idx": 12
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\nwhere 𝒬LANG = r(ℍ(qφ(z|x))) \\* ||∇Dθ(z)||p. We argue that a reasonable simplifying assumption for qφ(z|x) is to fix ℍ(qφ(z|x)) to a single constant for all samples x. Intuitively, this can be understood as fixing the variance in qφ(z|x) as we did for the CV-VAE in Section 2.2. With this simplification, Eq. 14 further reduces to\n\\`\\`\\` ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "We use the official train, validation and test splits of CelebA. For MNIST and CIFAR, we set aside 10k train samples for validation. For random sample evaluation, we draw samples from N(0, I) for VAE and WAE-MMD and for all remaining models, samples are drawn from a multivariate Gaussian whose parameters (mean and covariance) are estimated using training set embeddings. For the GMM density estimation, we also utilize the training set embeddings for fitting and validation set embeddings to verify that GMM models are not overfitting to training embeddings. However, due to the very low number of mixture components (10), we did not encounter overfitting at this step. The GMM parameters are estimated by running EM for at most 100 iterations. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "We follow the models adopted by Tolstikhin et al. (2017) with the difference that we consistently apply batch normalization (Ioffe & Szegedy, 2015). The latent space dimension is 16 for MNIST (LeCun et al., 1998), 128 for CIFAR-10 (Krizhevsky & Hinton, 2009) and 64 for CelebA (Liu et al., 2015). ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "For all experiments, we use the Adam optimizer with a starting learning rate of \\(10^{-3}\\) which is cut in half every time the validation loss plateaus. All models are trained for a maximum of 100 epochs on MNIST and CIFAR and 70 epochs on CelebA. We use a mini-batch size of 100 and pad MNIST digits with zeros to make the size \\(32 \\times 32\\). ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Intuitively, one would look for parametric distributions that do not favor overfitting, e.g., degenerating in Dirac-deltas (minimal entropy and support) along any dimensions. To this end, an isotropic nature of \\( q_\\phi(\\mathbf{z}|\\mathbf{x}) \\) would favor such a robustness against decoder over-fitting. We can now rewrite the constraint as ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The extension of the support \\( \\sup\\{\\| \\mathbf{z}_1 - \\mathbf{z}_2 \\|_p\\} \\) would depend on its entropy \\( \\mathbb{H}(q_\\phi(\\mathbf{z} | \\mathbf{x})) \\). Through some functional \\( r \\). For instance, a uniform posterior over a hypersphere in \\( \\mathbf{z} \\) would ascertain \\( r(\\mathbb{H}(q_\\phi(\\mathbf{z} | \\mathbf{x}))) \\cong e^{\\mathbb{H}(q_\\phi(\\mathbf{z} | \\mathbf{x}))/n} \\) where \\( n \\) is the dimensionality of the latent space. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The \\( \\mathcal{L}_{\\text{KL}} \\) term can be expressed in terms of \\( \\mathbb{H}(q_{\\phi}(\\mathbf{z} | \\mathbf{x})) \\), by decomposing it as \\( \\mathcal{L}_{\\text{KL}} = \\mathcal{L}_{\\text{CE}} - \\mathcal{L}_{\\text{H}} \\), where \\( \\mathcal{L}_{\\text{H}} = \\mathbb{H}(q_{\\phi}(\\mathbf{z} | \\mathbf{x})) \\) and \\( \\mathcal{L}_{\\text{CE}} = \\mathbb{H}(q_{\\phi}(\\mathbf{z} | \\mathbf{x}), p(\\mathbf{z})) \\) represents a cross-entropy term. Therefore, the constrained problem in Eq. 12 can be written in a Lagrangian formulation by including Eq. 13: ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "We can see that ||∇Dθ(z)||p results to be the gradient penalty LGP and LCE = ||z||2 corresponds to LRAE, thus recovering our RAE framework as presented in Eq. 11. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Conv_n represents a convolutional layer with n filters. All convolutions Conv_n and transposed convolutions ConvT_n have a filter size of 4×4 for MNIST and CIFAR-10 and 5×5 for CELEBA.\" ",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\arg\\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x}\\sim p_{\\text{data}}} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{CE}} - \\mathcal{L}_{\\text{H}} + \\lambda\\mathcal{L}_{\\text{LANG}}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\nr(\\mathbb{H}(q_\\phi(\\mathbf{z}|\\mathbf{x}))) \\cdot sup\\{\\|\\nabla D_\\theta(\\mathbf{z})\\|_p\\} < \\epsilon\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\arg\\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x}\\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{CE}} + \\lambda ||\\nabla D_\\theta(\\mathbf{z})||_p\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "C NETWORK ARCHITECTURE, TRAINING DETAILS AND EVALUATION ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "C NETWORK ARCHITECTURE, TRAINING DETAILS AND EVALUATION ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "We compute the FID of the reconstructions of random validation samples against the test set to evaluate reconstruction quality. For evaluating generative modeling capabilities, we compute the FID between the test data and randomly drawn samples from a single Gaussian that is either the isotropic \\( p(\\mathbf{z}) \\) fixed for VAEs and WAEs, a learned second stage VAE for 2sVAEs, or a single Gaussian fit to \\( q_\\delta(\\mathbf{z}) \\) for CV-VAEs and RAES. For all models, we also evaluate random samples from a 10-component Gaussian Mixture model (GMM) fit to \\( q_\\delta(\\mathbf{z}) \\). Using only 10 components prevents us from overfitting (which would indeed give good FIDs when compared with the test set)³. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "We use 10k samples for all FID and PRD evaluations. Scores for random samples are evaluated against the test set. Reconstruction scores are computed from validation set reconstructions against the respective test set. Interpolation scores are computed by interpolating latent codes of a pair of randomly chosen validation embeddings vs test set samples. The visualized interpolation samples are interpolations between two randomly chosen test set images. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "Table 2: Evaluation of random sample quality by precision / recall (Sajjadi et al., 2018) (higher numbers are better, best value for each dataset in bold). It is notable that the proposed ex-post density estimation improves not only precision, but also recall throughout the experiment. For example, WAE seems to have a comparably low recall of only 0.88 on MNIST which is raised considerably to 0.95 by fitting a GMM. In all cases, GMM gives the best results. Another interesting point is the low precision but high recall of all models on CIFAR-10 – this is also visible upon inspection of the samples in Fig. 9. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "all have a stride of size 2 except for the last convolutional layer in the decoder. Finally, \\( M = 1 \\) for all models except for the VAE which has \\( M = 2 \\) as the encoder has to produce both mean and variance for each input. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "For interpolations, we report the FID for the furthest interpolation points resulted by applying spherical interpolation to randomly selected validation reconstruction pairs. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"D EVALUATION SETUP\" ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"E EVALUATION BY PRECISION AND RECALL\" ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"E EVALUATION BY PRECISION AND RECALL\" ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Figure 4: PRD curves of all RAE methods (left), reflects a similar story as FID scores do. RAE-SN seems to perform the best in both precision and recall metric. PRD curves of all traditional VAE variants (middle). Similar to the conclusion predicted by FID scores there are no clear winner. PRD curves for the WAE (with isotropic Gaussian prior), WAE-GMM model with ex-post density estimation by a 10-component GMM and RAE+SN-GMM (right). This finer grained view shows how the WAE-GMM scores higher recall but lower precision than a RAE+SN-GMM while scoring comparable FID scores. Note that ex-post density estimation greatly boosts the WAE model in both PRD and FID scores. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Figure 4: PRD curves of all RAE methods (left), reflects a similar story as FID scores do. RAE-SN seems to perform the best in both precision and recall metric. PRD curves of all traditional VAE variants (middle). Similar to the conclusion predicted by FID scores there are no clear winner. PRD curves for the WAE (with isotropic Gaussian prior), WAE-GMM model with ex-post density estimation by a 10-component GMM and RAE+SN-GMM (right). This finer grained view shows how the WAE-GMM scores higher recall but lower precision than a RAE+SN-GMM while scoring comparable FID scores. Note that ex-post density estimation greatly boosts the WAE model in both PRD and FID scores. ",
+        "page_idx": 15
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Figure 5: PRD curves of all methods on image data experiments on MNIST. For each plot, we show the PRD curve when applying the fixed or the fitted one by ex-post density estimation (XPDE). XPDE greatly boosts both precision and recall for all models. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Figure 6: PRD curves of all methods on image data experiments on CIFAR10. For each plot, we show the PRD curve when applying the fixed or the fitted one by ex-post density estimation (XPDE). XPDE greatly boosts both precision and recall for all models. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Figure 7: PRD curves of all methods on image data experiments on CELEBA. For each plot, we show the PRD curve when applying the fixed or the fitted one by ex-post density estimation (XPDE). XPDE greatly boosts both precision and recall for all models. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Figure 8: Qualitative evaluation for sample quality for VAEs, WAEs and RAEs on MNIST. Left: reconstructed samples (top row is ground truth). Middle: randomly generated samples. Right: spherical interpolations between two images (first and last column). ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"F MORE QUALITATIVE RESULTS\" ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Figure 8: Qualitative evaluation for sample quality for VAEs, WAEs and RAEs on MNIST. Left: reconstructed samples (top row is ground truth). Middle: randomly generated samples. Right: spherical interpolations between two images (first and last column). ",
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Figure 9: Qualitative evaluation for sample quality for VAEs, WAEs and RAEs on CIFAR-10. Left: reconstructed samples (top row is ground truth). Middle: randomly generated samples. Right: spherical interpolations between two images (first and last column). ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 21
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Figure 10: Nearest neighbors to generated samples (leftmost image, red box) from training set. It seems that the models have generalized well and fitting only 10 Gaussians to the latent space prevents overfitting. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"G INVESTIGATING OVERFITTING\" ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Figure 10: Nearest neighbors to generated samples (leftmost image, red box) from training set. It seems that the models have generalized well and fitting only 10 Gaussians to the latent space prevents overfitting. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"G INVESTIGATING OVERFITTING\" ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"G INVESTIGATING OVERFITTING\" ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "To visualize that ex-post density estimation does indeed help reduce the mismatch between the aggregated posterior and the prior we train a VAE on the MNIST dataset whose latent space is 2 dimensional. The unique advantage of this setting is that one can simply visualize the density of test sample in the latent space by plotting them as a scatterplot. As it can be seen from figure 11, an expressive density estimator effectively fixes the miss-match and this as reported earlier results in better sample quality. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Here in figure 12 we perform the same visualization on with all the models trained on the MNIST dataset as employed on our large evaluation in Table 1. Clearly every model depicts rather large mismatch between aggregate posterior and prior. Once again the advantage of ex-post density estimate is clearly visible. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\\`\\`\\`\nH    VISUALIZING EX-POST DENSITY ESTIMATION\n\\`\\`\\` ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Figure 11: Different density estimations of the 2-dimensional latent space of a VAE learned on MNIST. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). This clearly shows the aggregated posterior mismatch w.r.t. to the isotropic Gaussian prior imposed by VAEs and how ex-post density estimation can help fix the estimate. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Figure 11: Different density estimations of the 2-dimensional latent space of a VAE learned on MNIST. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). This clearly shows the aggregated posterior mismatch w.r.t. to the isotropic Gaussian prior imposed by VAEs and how ex-post density estimation can help fix the estimate. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Figure 12: Different density estimations of the 16-dimensional latent spaces learned by all models on MNIST (see Table 1) here projected in 2d via T-SNE. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). Ex-post density estimation greatly improves sampling the latent space. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Figure 12: Different density estimations of the 16-dimensional latent spaces learned by all models on MNIST (see Table 1) here projected in 2d via T-SNE. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). Ex-post density estimation greatly improves sampling the latent space. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Further more a recent GAN literature Lucic et al. (2018b) report that often a combination of regularizations boost performance of neural networks. Following this, we combine multiple regularization techniques in out framework. However note that this rather drastically increases the hyper parameters and the models become harder to train and goes against the core theme of this work, which strives for simplicity. Hence we perform simplistic effort to tune all the hyper parameters to see if this can provide boost in the performance, which seem not to be the case. These experiments are summarized in the second half of the table 3 ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "The rather intriguing facts that AE without explicit decoder regularization performs reasonably well as seen from table 1, indicates that convolutional neural networks when combined with gradient based optimizers inherit some implicit regularization. This motivates us to investigate a few different combinations of regularizations e.g. we regularize the decoder of an auto-encoder while drop the regularization in the z space. The results of this experiment is reported in the row marked AE-L2 in table 3. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "Table 3: Comparing multiple regularization schemes for RAE models. The improvement in reconstruction, random sample quality and interpolated test samples is generally comparable, but hardly much better. This can be explained with the fact that the additional regularization losses make tuning their hyperparameters more difficult, in practice. ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "I COMBINING MULTIPLE REGULARIZATION TERMS ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    }
+]

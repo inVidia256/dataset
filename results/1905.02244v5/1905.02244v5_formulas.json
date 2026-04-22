@@ -1,0 +1,30 @@
+{
+    "total_count": 2,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                362,
+                527,
+                490,
+                552
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\[\nh-\\text{swish}[x] = x \\frac{\\text{ReLU}_6(x + 3)}{6}\n\\]\n```\n\nThis will render the function `h-swish` defined as `x` multiplied by the result of applying the ReLU6 activation function to `x + 3`, divided by 6.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\[\nh-\\text{swish}[x] = x \\frac{\\text{ReLU}_6(x + 3)}{6}\n\\]\n```\n\nThis will render the function `h-swish` defined as `x` multiplied by the result of applying the ReLU6 activation function to `x + 3`, divided by 6."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                387,
+                388,
+                466,
+                401
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{swish } x = x \\cdot \\sigma(x)\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{swish } x = x \\cdot \\sigma(x)\n```\n\nThis will render the equation as shown in the image."
+        }
+    ]
+}

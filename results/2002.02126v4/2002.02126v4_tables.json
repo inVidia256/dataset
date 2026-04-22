@@ -1,0 +1,102 @@
+{
+    "total_count": 6,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "table",
+            "bbox": [
+                347,
+                95,
+                528,
+                167
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Performance of NGCF and its three variants.\" The text content from the image is:\n\n\"Table 1: Performance of NGCF and its three variants.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Gowalla</td>\n    <td>Amazon-Book</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>recallndcg</td>\n    <td>recallndcg</td>\n  </tr>\n  <tr>\n    <td>NG CF</td>\n    <td>0.15470.1307</td>\n    <td>0.03300.0254</td>\n  </tr>\n  <tr>\n    <td>NG CF-f</td>\n    <td>0.16860.1439</td>\n    <td>0.03680.0283</td>\n  </tr>\n  <tr>\n    <td>NG CF-n</td>\n    <td>0.15360.1295</td>\n    <td>0.03360.0258</td>\n  </tr>\n  <tr>\n    <td>NG CF-fn</td>\n    <td>0.17420.1476</td>\n    <td>0.03990.0303</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                53,
+                95,
+                294,
+                145
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Statistics of the experimented data.\" The text content from the image is:\n\n\"Table 2: Statistics of the experimented data.\" The text content from the image is:\n\n\"Table 2: Statistics of the experimented data.\" The text content from the image is:\n\n\"Table 2: Statistics of the experimented data.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>User#</td>\n    <td>Item#</td>\n    <td>Interaction#</td>\n    <td>Density</td>\n  </tr>\n  <tr>\n    <td>Gowalla</td>\n    <td>29，858</td>\n    <td>40，981</td>\n    <td>1，027，370</td>\n    <td>0.00084</td>\n  </tr>\n  <tr>\n    <td>Yelp2018</td>\n    <td>31，668</td>\n    <td>38，048</td>\n    <td>1，561，406</td>\n    <td>0.00130</td>\n  </tr>\n  <tr>\n    <td>Amazon-Book</td>\n    <td>52，643</td>\n    <td>91，599</td>\n    <td>2，984，108</td>\n    <td>0.00062</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                78,
+                95,
+                533,
+                201
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Performance comparison between NGCF and LightGCN at different layers.\"",
+            "footnote": "The scores of NGCF on Gowalla and Amazon-Book are directly copied from Table 3 of the NGCF paper (https://arxiv.org/abs/1905.08108)",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Gowalla</td>\n    <td>Yelp2018</td>\n    <td>Amazon-Book</td>\n  </tr>\n  <tr>\n    <td>Layer#</td>\n    <td>Method</td>\n    <td>recall</td>\n    <td>ndcg</td>\n    <td>recall</td>\n    <td>ndcg</td>\n    <td>recall</td>\n    <td>ndcg</td>\n  </tr>\n  <tr>\n    <td>1 Layer</td>\n    <td>NG CF</td>\n    <td>0.1556</td>\n    <td>0.1315</td>\n    <td>0.0543</td>\n    <td>0.0442</td>\n    <td>0.0313</td>\n    <td>0.0241</td>\n  </tr>\n  <tr>\n    <td>Light GCN</td>\n    <td>0.1755(+12.79%)</td>\n    <td>0.1492(+13.46%)</td>\n    <td>0.0631(+16.20%)</td>\n    <td>0.0515(+16.51%)</td>\n    <td>0.0384(+22.68%)</td>\n    <td>0.0298(+23.65%)</td>\n  </tr>\n  <tr>\n    <td>2 Layers</td>\n    <td>NG CF</td>\n    <td>0.1547</td>\n    <td>0.1307</td>\n    <td>0.0566</td>\n    <td>0.0465</td>\n    <td>0.0330</td>\n    <td>0.0254</td>\n  </tr>\n  <tr>\n    <td>Light GCN</td>\n    <td>0.1777(+14.84%)</td>\n    <td>0.1524(+16.60%)</td>\n    <td>0.0622(+9.89%)</td>\n    <td>0.0504(+8.38%)</td>\n    <td>0.0411(+24.54%)</td>\n    <td>0.0315(+24.02%)</td>\n  </tr>\n  <tr>\n    <td>3 Layers</td>\n    <td>NG CF</td>\n    <td>0.1569</td>\n    <td>0.1327</td>\n    <td>0.0579</td>\n    <td>0.0477</td>\n    <td>0.0337</td>\n    <td>0.0261</td>\n  </tr>\n  <tr>\n    <td>Light GCN</td>\n    <td>0.1823(+16.19%)</td>\n    <td>0.1555(+17.18%)</td>\n    <td>0.0639(+10.38%)</td>\n    <td>0.0525(+10.06%)</td>\n    <td>0.0410(+21.66%)</td>\n    <td>0.0318(+21.84%)</td>\n  </tr>\n  <tr>\n    <td>4 Layers</td>\n    <td>NG CF</td>\n    <td>0.1570</td>\n    <td>0.1327</td>\n    <td>0.0566</td>\n    <td>0.0461</td>\n    <td>0.0344</td>\n    <td>0.0263</td>\n  </tr>\n  <tr>\n    <td>Light GCN</td>\n    <td>0.1830(+16.56%)</td>\n    <td>0.1550(+16.80%)</td>\n    <td>0.0649(+14.58%)</td>\n    <td>0.0530(+15.02%)</td>\n    <td>0.0406(+17.92%)</td>\n    <td>0.0313(+18.92%)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                319,
+                453,
+                558,
+                527
+            ],
+            "caption": "The comparison of overall performance among LightGCN and competing methods.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Gowalla</td>\n    <td></td>\n    <td>Yelp2018</td>\n    <td></td>\n    <td>Amazon-Book</td>\n  </tr>\n  <tr>\n    <td>Method</td>\n    <td>recall ndcg</td>\n    <td>recall ndcg</td>\n    <td>recall ndcg</td>\n    <td>recall ndcg</td>\n  </tr>\n  <tr>\n    <td>NG CF</td>\n    <td>0.15700.1327</td>\n    <td>0.05790.0477</td>\n    <td>0.03440.0263</td>\n  </tr>\n  <tr>\n    <td>Mult-VAE</td>\n    <td>0.16410.1335</td>\n    <td>0.05840.0450</td>\n    <td>0.04070.0315</td>\n  </tr>\n  <tr>\n    <td>GR MF</td>\n    <td>0.14770.1205</td>\n    <td>0.05710.0462</td>\n    <td>0.03540.0270</td>\n  </tr>\n  <tr>\n    <td>GR MF-norm</td>\n    <td>0.15570.1261</td>\n    <td>0.05610.0454</td>\n    <td>0.03520.0269</td>\n  </tr>\n  <tr>\n    <td>Light GCN</td>\n    <td>0.18300.1554</td>\n    <td>0.06490.0530</td>\n    <td>0.04110.0315</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                54,
+                247,
+                295,
+                329
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5: Performance of the 3-layer LightGCN with different choices of normalization schemes in graph convolution.\"",
+            "footnote": "The method notation provided in the image is as follows:\n\n- **-L** means only the left-side norm is used.\n- **-R** means only the right-side norm is used.\n- **-L₁** means the \\( L_1 \\) norm is used.\n\nThis notation is typically used in optimization problems or linear algebra contexts to specify which norms are applied to different parts of the problem.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Gowalla</td>\n    <td>Yelp2018</td>\n    <td>Amazon-Book</td>\n  </tr>\n  <tr>\n    <td>Method</td>\n    <td>recallndcg</td>\n    <td>recallndcg</td>\n    <td>recallndcg</td>\n  </tr>\n  <tr>\n    <td>Light GCN-L1-L</td>\n    <td>0.17240.1414</td>\n    <td>0.06300.0511</td>\n    <td>0.04190.0320</td>\n  </tr>\n  <tr>\n    <td>Light GCN-L1-R</td>\n    <td>0.15780.1348</td>\n    <td>0.05870.0477</td>\n    <td>0.03340.0259</td>\n  </tr>\n  <tr>\n    <td>Light GCN-L1</td>\n    <td>0.1590.1319</td>\n    <td>0.05730.0465</td>\n    <td>0.03610.0275</td>\n  </tr>\n  <tr>\n    <td>Light GCN-L</td>\n    <td>0.15890.1317</td>\n    <td>0.06190.0509</td>\n    <td>0.03830.0299</td>\n  </tr>\n  <tr>\n    <td>Light GCN-R</td>\n    <td>0.14200.1156</td>\n    <td>0.05210.0401</td>\n    <td>0.02520.0196</td>\n  </tr>\n  <tr>\n    <td>Light GCN</td>\n    <td>0.18300.1554</td>\n    <td>0.06490.0530</td>\n    <td>0.04110.0315</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                320,
+                247,
+                552,
+                329
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Gowalla</td>\n    <td>Yelp2018</td>\n    <td>Amazon-book</td>\n  </tr>\n  <tr>\n    <td>Smoothness of User Embeddings</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>MF</td>\n    <td>15449.3</td>\n    <td>16258.2</td>\n    <td>38034.2</td>\n  </tr>\n  <tr>\n    <td>Light GCN-single</td>\n    <td>12872.7</td>\n    <td>10091.7</td>\n    <td>32191.1</td>\n  </tr>\n  <tr>\n    <td>Smoothness of Item Embeddings</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>MF</td>\n    <td>12106.7</td>\n    <td>16632.1</td>\n    <td>28307.9</td>\n  </tr>\n  <tr>\n    <td>Light GCN-single</td>\n    <td>5829.0</td>\n    <td>6459.8</td>\n    <td>16866.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page008.png"
+        }
+    ]
+}

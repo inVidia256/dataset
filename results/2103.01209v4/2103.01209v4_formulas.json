@@ -1,0 +1,54 @@
+{
+    "total_count": 4,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                338,
+                646,
+                510,
+                659
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nu^a(X, Y) = LayerNorm(X + a(X, Y))\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nu^a(X, Y) = LayerNorm(X + a(X, Y))\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                334,
+                467,
+                515,
+                510
+            ],
+            "content": "```latex\nAttention(Q, K, V) = \\text{softmax} \\left( \\frac{QK^T}{\\sqrt{d}} \\right) V\n\na(X, Y) = Attention(q(X), k(Y), v(Y))\n```",
+            "latex": "```latex\nAttention(Q, K, V) = \\text{softmax} \\left( \\frac{QK^T}{\\sqrt{d}} \\right) V\n\na(X, Y) = Attention(q(X), k(Y), v(Y))\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                71,
+                196,
+                272,
+                210
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nu^s(X,Y) = \\gamma(a(X,Y)) \\odot \\omega(X) + \\beta(a(X,Y))\n```\n\nThis will produce the same mathematical expression as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nu^s(X,Y) = \\gamma(a(X,Y)) \\odot \\omega(X) + \\beta(a(X,Y))\n```\n\nThis will produce the same mathematical expression as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                57,
+                496,
+                285,
+                510
+            ],
+            "content": "u ^ { d } ( X , Y ) = \\gamma ( A ( Q , K , V ) ) \\odot \\omega ( X ) + \\beta ( A ( Q , K , V ) )",
+            "latex": "u ^ { d } ( X , Y ) = \\gamma ( A ( Q , K , V ) ) \\odot \\omega ( X ) + \\beta ( A ( Q , K , V ) )"
+        }
+    ]
+}

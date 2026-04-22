@@ -1,0 +1,62 @@
+{
+    "total_count": 4,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                140,
+                63,
+                457,
+                146
+            ],
+            "caption": "(a) BERT: Random tokens are replaced with masks, and the document is encoded bidirectionally. Missing tokens are predicted independently, so BERT cannot easily be used for generation. (a) BERT: Random tokens are replaced with masks, and the document is encoded bidirectionally. Missing tokens are predicted independently, so BERT cannot easily be used for generation.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                190,
+                198,
+                406,
+                280
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                139,
+                60,
+                456,
+                146
+            ],
+            "caption": "Figure 2: Transformations for noising the input that we experiment with. These transformations can be composed.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                87,
+                63,
+                511,
+                185
+            ],
+            "caption": "Figure 3: Fine tuning BART for classification and translation. Figure 3: Fine tuning BART for classification and translation.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        }
+    ]
+}

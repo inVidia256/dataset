@@ -1,0 +1,22 @@
+{
+    "total_count": 1,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                190,
+                61,
+                406,
+                115
+            ],
+            "caption": "",
+            "footnote": "Table 1: Machine translation tokenized BLEU test results on IWSLT 2017 DE→EN, KFTT JA→EN, WMT 2016 RO→EN and WMT 2014 EN→DE, respectively.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>activation</td>\n    <td>DE→EN</td>\n    <td>J A→EN</td>\n    <td>RO→EN</td>\n    <td>EN→DE</td>\n  </tr>\n  <tr>\n    <td>softmax</td>\n    <td>29.79</td>\n    <td>21.57</td>\n    <td>32.70</td>\n    <td>26.02</td>\n  </tr>\n  <tr>\n    <td>1.5-ent max</td>\n    <td>29.83</td>\n    <td>22.13</td>\n    <td>33.10</td>\n    <td>25.89</td>\n  </tr>\n  <tr>\n    <td>a-ent max</td>\n    <td>29.90</td>\n    <td>21.74</td>\n    <td>32.89</td>\n    <td>26.93</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        }
+    ]
+}

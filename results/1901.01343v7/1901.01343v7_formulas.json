@@ -1,0 +1,270 @@
+{
+    "total_count": 22,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                92,
+                482,
+                251,
+                532
+            ],
+            "content": "```latex\n\\bar{\\mathbf{X}} = \\sum_{m=1}^{M} h(\\lambda_m) \\mathbf{u}_m \\mathbf{u}_m^T \\mathbf{X} =\n= \\mathbf{U} \\text{diag}[h(\\lambda_1), \\ldots, h(\\lambda_M)] \\mathbf{U}^T \\mathbf{X}.\n```",
+            "latex": "```latex\n\\bar{\\mathbf{X}} = \\sum_{m=1}^{M} h(\\lambda_m) \\mathbf{u}_m \\mathbf{u}_m^T \\mathbf{X} =\n= \\mathbf{U} \\text{diag}[h(\\lambda_1), \\ldots, h(\\lambda_M)] \\mathbf{U}^T \\mathbf{X}.\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                363,
+                653,
+                485,
+                687
+            ],
+            "content": "\\bar { \\mathbf { X } } = \\sigma \\left( \\sum _ { k = 0 } ^ { K - 1 } T _ { k } ( \\tilde { \\mathbf { L } } ) \\mathbf { X W } _ { k } \\right) ,",
+            "latex": "\\bar { \\mathbf { X } } = \\sigma \\left( \\sum _ { k = 0 } ^ { K - 1 } T _ { k } ( \\tilde { \\mathbf { L } } ) \\mathbf { X W } _ { k } \\right) ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                317,
+                468,
+                520,
+                520
+            ],
+            "content": "```latex\n\\bar{\\mathbf{X}} = \\left(w_0 \\mathbf{I} + w_1 \\mathbf{L} + w_2 \\mathbf{L}^2 + \\cdots + w_K \\mathbf{L}^K\\right) \\mathbf{X} =\n= \\sum_{k=0}^{K} w_k \\mathbf{L}^k \\mathbf{X}.\n```",
+            "latex": "```latex\n\\bar{\\mathbf{X}} = \\left(w_0 \\mathbf{I} + w_1 \\mathbf{L} + w_2 \\mathbf{L}^2 + \\cdots + w_K \\mathbf{L}^K\\right) \\mathbf{X} =\n= \\sum_{k=0}^{K} w_k \\mathbf{L}^k \\mathbf{X}.\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                376,
+                236,
+                471,
+                269
+            ],
+            "content": "h _ { \\mathrm { P O L Y } } ( \\lambda ) = \\sum _ { k = 0 } ^ { K } w _ { k } \\lambda ^ { k } ,",
+            "latex": "h _ { \\mathrm { P O L Y } } ( \\lambda ) = \\sum _ { k = 0 } ^ { K } w _ { k } \\lambda ^ { k } ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                107,
+                689,
+                237,
+                721
+            ],
+            "content": "h _ { \\mathrm { A R M A } _ { K } } ( \\lambda ) = { \\frac { \\sum _ { k = 0 } ^ { K - 1 } p _ { k } \\lambda ^ { k } } { 1 + \\sum _ { k = 1 } ^ { K } q _ { k } \\lambda ^ { k } } } ,",
+            "latex": "h _ { \\mathrm { A R M A } _ { K } } ( \\lambda ) = { \\frac { \\sum _ { k = 0 } ^ { K - 1 } p _ { k } \\lambda ^ { k } } { 1 + \\sum _ { k = 1 } ^ { K } q _ { k } \\lambda ^ { k } } } ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                327,
+                545,
+                503,
+                579
+            ],
+            "content": "\\bar { \\mathbf { X } } = \\operatorname* { l i m } _ { t \\to \\infty } \\left[ ( a \\mathbf { M } ) ^ { t } \\bar { \\mathbf { X } } ^ { ( 0 ) } + b \\sum _ { i = 0 } ^ { t } ( a \\mathbf { M } ) ^ { i } \\mathbf { X } \\right] .",
+            "latex": "\\bar { \\mathbf { X } } = \\operatorname* { l i m } _ { t \\to \\infty } \\left[ ( a \\mathbf { M } ) ^ { t } \\bar { \\mathbf { X } } ^ { ( 0 ) } + b \\sum _ { i = 0 } ^ { t } ( a \\mathbf { M } ) ^ { i } \\mathbf { X } \\right] ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                366,
+                385,
+                482,
+                408
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\documentclass{article}\n\\usepackage{amsmath}\n\n\\begin{document}\n\n\\[\nM = \\frac{1}{2} (\\lambda_{\\text{max}} - \\lambda_{\\text{min}}) I - L.\n\\]\n\n\\end{document}\n```\n\nThis LaTeX code will produce the same equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\documentclass{article}\n\\usepackage{amsmath}\n\n\\begin{document}\n\n\\[\nM = \\frac{1}{2} (\\lambda_{\\text{max}} - \\lambda_{\\text{min}}) I - L.\n\\]\n\n\\end{document}\n```\n\nThis LaTeX code will produce the same equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                335,
+                96,
+                511,
+                133
+            ],
+            "content": "\\bar { \\mathbf { X } } = \\left( \\mathbf { I } + \\sum _ { k = 1 } ^ { K } q _ { k } \\mathbf { L } ^ { k } \\right) ^ { - 1 } \\left( \\sum _ { k = 0 } ^ { K - 1 } p _ { k } \\mathbf { L } ^ { k } \\right) \\mathbf { X } .",
+            "latex": "\\bar { \\mathbf { X } } = \\left( \\mathbf { I } + \\sum _ { k = 1 } ^ { K } q _ { k } \\mathbf { L } ^ { k } \\right) ^ { - 1 } \\left( \\sum _ { k = 0 } ^ { K - 1 } p _ { k } \\mathbf { L } ^ { k } \\right) \\mathbf { X } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                369,
+                695,
+                478,
+                721
+            ],
+            "content": "h _ { \\mathrm { A R M A } _ { 1 } } ( \\mu _ { m } ) = \\frac { b } { 1 - a \\mu _ { m } } .",
+            "latex": "h _ { \\mathrm { A R M A } _ { 1 } } ( \\mu _ { m } ) = \\frac { b } { 1 - a \\mu _ { m } } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                370,
+                356,
+                478,
+                370
+            ],
+            "content": "\\bar { \\mathbf { X } } ^ { ( t + 1 ) } = a \\mathbf { M } \\bar { \\mathbf { X } } ^ { ( t ) } + b \\mathbf { X } ,",
+            "latex": "\\bar { \\mathbf { X } } ^ { ( t + 1 ) } = a \\mathbf { M } \\bar { \\mathbf { X } } ^ { ( t ) } + b \\mathbf { X } ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                133,
+                366,
+                210,
+                388
+            ],
+            "content": "\\bar { \\mathbf { X } } = \\sigma \\left( \\hat { \\mathbf { A } } \\mathbf { X } \\mathbf { W } \\right) .",
+            "latex": "\\bar { \\mathbf { X } } = \\sigma \\left( \\hat { \\mathbf { A } } \\mathbf { X } \\mathbf { W } \\right) ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                101,
+                113,
+                244,
+                147
+            ],
+            "content": "\\bar { \\mathbf { X } } = \\sum _ { k = 1 } ^ { K } \\sum _ { m = 1 } ^ { M } { \\frac { b _ { k } } { 1 - a _ { k } \\mu _ { m } } } \\mathbf { u } _ { m } \\mathbf { u } _ { m } ^ { T } \\mathbf { X } ,",
+            "latex": "\\bar { \\mathbf { X } } = \\sum _ { k = 1 } ^ { K } \\sum _ { m = 1 } ^ { M } { \\frac { b _ { k } } { 1 - a _ { k } \\mu _ { m } } } \\mathbf { u } _ { m } \\mathbf { u } _ { m } ^ { T } \\mathbf { X } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                105,
+                167,
+                238,
+                200
+            ],
+            "content": "```latex\nh_{\\text{ARMA}_K}(\\mu_m) = \\sum_{k=1}^{K} \\frac{b_k}{1 - a_k \\mu_m}.\n```",
+            "latex": "```latex\nh_{\\text{ARMA}_K}(\\mu_m) = \\sum_{k=1}^{K} \\frac{b_k}{1 - a_k \\mu_m}.\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                104,
+                465,
+                239,
+                487
+            ],
+            "content": "\\bar { \\mathbf { X } } ^ { ( t + 1 ) } = \\sigma \\left( \\tilde { \\mathbf { L } } \\bar { \\mathbf { X } } ^ { ( t ) } \\mathbf { W } + \\bar { \\mathbf { X } } \\mathbf { V } \\right) ,",
+            "latex": "\\bar { \\mathbf { X } } ^ { ( t + 1 ) } = \\sigma \\left( \\tilde { \\mathbf { L } } \\bar { \\mathbf { X } } ^ { ( t ) } \\mathbf { W } + \\bar { \\mathbf { X } } \\mathbf { V } \\right) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                328,
+                559,
+                519,
+                581
+            ],
+            "content": "```latex\n\\exists T_\\epsilon < \\infty \\text{ s.t. } \\left\\| \\bar{\\mathbf{X}}^{(t+1)} - \\bar{\\mathbf{X}}^{(t)} \\right\\|_2 \\leq \\epsilon, \\forall t \\geq T_\\epsilon.\n```",
+            "latex": "```latex\n\\exists T_\\epsilon < \\infty \\text{ s.t. } \\left\\| \\bar{\\mathbf{X}}^{(t+1)} - \\bar{\\mathbf{X}}^{(t)} \\right\\|_2 \\leq \\epsilon, \\forall t \\geq T_\\epsilon.\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                312,
+                284,
+                538,
+                398
+            ],
+            "content": "```latex\n\\begin{align*}\n&\\left\\|\\bar{\\mathbf{X}}_{a}^{(t+1)} - \\bar{\\mathbf{X}}_{b}^{(t+1)}\\right\\|_2 = \\\\\n&= \\left\\|\\sigma\\left(\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{a}^{(t)}\\mathbf{W} + \\mathbf{X}\\mathbf{V}\\right) - \\sigma\\left(\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{b}^{(t)}\\mathbf{W} + \\mathbf{X}\\mathbf{V}\\right)\\right\\|_2 \\leq \\\\\n&\\leq \\left\\|\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{a}^{(t)}\\mathbf{W} + \\mathbf{X}\\mathbf{V} - \\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{b}^{(t)}\\mathbf{W} - \\mathbf{X}\\mathbf{V}\\right\\|_2 = \\\\\n&= \\left\\|\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{a}^{(t)}\\mathbf{W} - \\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{b}^{(t)}\\mathbf{W}\\right\\|_2 \\leq \\\\\n&\\leq \\left\\|\\tilde{\\mathbf{L}}\\right\\|_2 \\left\\|\\mathbf{W}\\right\\|_2 \\left\\|\\bar{\\mathbf{X}}_{a}^{(t)} - \\bar{\\mathbf{X}}_{b}^{(t)}\\right\\|_2.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n&\\left\\|\\bar{\\mathbf{X}}_{a}^{(t+1)} - \\bar{\\mathbf{X}}_{b}^{(t+1)}\\right\\|_2 = \\\\\n&= \\left\\|\\sigma\\left(\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{a}^{(t)}\\mathbf{W} + \\mathbf{X}\\mathbf{V}\\right) - \\sigma\\left(\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{b}^{(t)}\\mathbf{W} + \\mathbf{X}\\mathbf{V}\\right)\\right\\|_2 \\leq \\\\\n&\\leq \\left\\|\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{a}^{(t)}\\mathbf{W} + \\mathbf{X}\\mathbf{V} - \\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{b}^{(t)}\\mathbf{W} - \\mathbf{X}\\mathbf{V}\\right\\|_2 = \\\\\n&= \\left\\|\\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{a}^{(t)}\\mathbf{W} - \\tilde{\\mathbf{L}}\\bar{\\mathbf{X}}_{b}^{(t)}\\mathbf{W}\\right\\|_2 \\leq \\\\\n&\\leq \\left\\|\\tilde{\\mathbf{L}}\\right\\|_2 \\left\\|\\mathbf{W}\\right\\|_2 \\left\\|\\bar{\\mathbf{X}}_{a}^{(t)} - \\bar{\\mathbf{X}}_{b}^{(t)}\\right\\|_2.\n\\end{align*}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                385,
+                334,
+                463,
+                366
+            ],
+            "content": "\\bar { \\mathbf { X } } = { \\frac { 1 } { K } } \\sum _ { k = 1 } ^ { K } \\bar { \\mathbf { X } } _ { k } ^ { ( T ) } ,",
+            "latex": "\\bar { \\mathbf { X } } = { \\frac { 1 } { K } } \\sum _ { k = 1 } ^ { K } \\bar { \\mathbf { X } } _ { k } ^ { ( T ) } ,"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                324,
+                362,
+                506,
+                414
+            ],
+            "content": "```latex\n\\mathbf{U}^T \\bar{\\mathbf{X}} = \\text{diag}[h(\\lambda_1), \\ldots, h(\\lambda_M)] \\mathbf{U}^T \\mathbf{X},\n\\sum_{m=1}^{M} \\mathbf{u}_m^T \\bar{\\mathbf{X}} = \\sum_{m=1}^{M} h(\\lambda_m) \\mathbf{u}_m^T \\mathbf{X}.\n```",
+            "latex": "```latex\n\\mathbf{U}^T \\bar{\\mathbf{X}} = \\text{diag}[h(\\lambda_1), \\ldots, h(\\lambda_M)] \\mathbf{U}^T \\mathbf{X},\n\\sum_{m=1}^{M} \\mathbf{u}_m^T \\bar{\\mathbf{X}} = \\sum_{m=1}^{M} h(\\lambda_m) \\mathbf{u}_m^T \\mathbf{X}.\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                371,
+                507,
+                477,
+                541
+            ],
+            "content": "\\tilde { h } _ { m } = \\frac { F _ { \\mathrm { i n } } } { F _ { \\mathrm { o u t } } } \\frac { \\sum _ { f = 1 } ^ { F _ { \\mathrm { o u t } } } \\mathbf { u } _ { m } ^ { T } \\bar { \\mathbf { x } } _ { f } } { \\sum _ { f = 1 } ^ { F _ { \\mathrm { i n } } } \\mathbf { u } _ { m } ^ { T } \\mathbf { x } _ { f } } ,",
+            "latex": "\\tilde { h } _ { m } = \\frac { F _ { \\mathrm { i n } } } { F _ { \\mathrm { o u t } } } \\frac { \\sum _ { f = 1 } ^ { F _ { \\mathrm { o u t } } } \\mathbf { u } _ { m } ^ { T } \\bar { \\mathbf { x } } _ { f } } { \\sum _ { f = 1 } ^ { F _ { \\mathrm { i n } } } \\mathbf { u } _ { m } ^ { T } \\mathbf { x } _ { f } } ,"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                59,
+                581,
+                268,
+                622
+            ],
+            "content": "```latex\n\\bar{\\mathbf{X}} \\approx \\sigma \\left( w_0 \\mathbf{X} + 2 \\text{Re} \\left\\{ \\sum_{k=1}^{K} w_k \\left( \\sum_{t=1}^{T} \\hat{\\mathbf{L}}^t \\right)^k \\right\\} \\mathbf{X} \\right),\n```",
+            "latex": "```latex\n\\bar{\\mathbf{X}} \\approx \\sigma \\left( w_0 \\mathbf{X} + 2 \\text{Re} \\left\\{ \\sum_{k=1}^{K} w_k \\left( \\sum_{t=1}^{T} \\hat{\\mathbf{L}}^t \\right)^k \\right\\} \\mathbf{X} \\right),\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                63,
+                441,
+                279,
+                474
+            ],
+            "content": "```latex\n\\bar{\\mathbf{X}} = w_0 \\mathbf{X} + 2 \\text{Re} \\left\\{ \\sum_{k=1}^{K} w_k (\\mathbf{L} + i \\mathbf{I})^k (\\mathbf{L} - i \\mathbf{I})^{-k} \\right\\} \\mathbf{X}.\n```",
+            "latex": "```latex\n\\bar{\\mathbf{X}} = w_0 \\mathbf{X} + 2 \\text{Re} \\left\\{ \\sum_{k=1}^{K} w_k (\\mathbf{L} + i \\mathbf{I})^k (\\mathbf{L} - i \\mathbf{I})^{-k} \\right\\} \\mathbf{X}.\n```"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                367,
+                302,
+                480,
+                334
+            ],
+            "content": "a _ { i j } = \\left\\{ \\begin{array} { l l } { { 1 } } & { { \\mathrm { i f ~ } v _ { j } \\in { \\mathcal N } ( v _ { i } ) ; } } \\\\ { { 0 } } & { { \\mathrm { o t h e r w i s e . } } } \\end{array} \\right.",
+            "latex": "a _ { i j } = \\left\\{ \\begin{array} { l l } { { 1 } } & { { \\mathrm { i f ~ } v _ { j } \\in { \\mathcal N } ( v _ { i } ) ; } } \\\\ { { 0 } } & { { \\mathrm { o t h e r w i s e . } } } \\end{array} \\right."
+        }
+    ]
+}

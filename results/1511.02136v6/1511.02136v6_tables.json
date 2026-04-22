@@ -1,0 +1,38 @@
+{
+    "total_count": 2,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                119,
+                548,
+                491,
+                638
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Cora</td>\n    <td></td>\n    <td>Pubmed</td>\n  </tr>\n  <tr>\n    <td>Accuracy</td>\n    <td>F(micro)</td>\n    <td>F(macro)</td>\n    <td>Accuracy</td>\n    <td>F(micro)</td>\n    <td>F(macro)</td>\n  </tr>\n  <tr>\n    <td>11 logistic</td>\n    <td>0.7087</td>\n    <td>0.7087</td>\n    <td>0.6829</td>\n    <td>0.8718</td>\n    <td>0.8718</td>\n    <td>0.8698</td>\n  </tr>\n  <tr>\n    <td>l2 logistic</td>\n    <td>0.7292</td>\n    <td>0.7292</td>\n    <td>0.7013</td>\n    <td>0.8631</td>\n    <td>0.8631</td>\n    <td>0.8614</td>\n  </tr>\n  <tr>\n    <td>KED</td>\n    <td>0.8044</td>\n    <td>0.8044</td>\n    <td>0.7928</td>\n    <td>0.8125</td>\n    <td>0.8125</td>\n    <td>0.7978</td>\n  </tr>\n  <tr>\n    <td>KLED</td>\n    <td>0.8229</td>\n    <td>0.8229</td>\n    <td>0.8117</td>\n    <td>0.8228</td>\n    <td>0.8228</td>\n    <td>0.8086</td>\n  </tr>\n  <tr>\n    <td>CRF-LBP</td>\n    <td>0.8449</td>\n    <td>-</td>\n    <td>0.8248</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>2-hop DCNN</td>\n    <td>0.8677</td>\n    <td>0.8677</td>\n    <td>0.8584</td>\n    <td>0.8976</td>\n    <td>0.8976</td>\n    <td>0.8943</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                106,
+                70,
+                479,
+                306
+            ],
+            "caption": "Table 2: A comparison of the performance between baseline methods and two and five-hop DCNNs on several graph classification datasets. Table 2: A comparison of the performance between baseline methods and two and five-hop DCNNs on several graph classification datasets.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>NCI1</td>\n    <td>NCI109</td>\n  </tr>\n  <tr>\n    <td>AccuracyF(micro)F(macro)</td>\n    <td>AccuracyF(micro)F(macro)</td>\n  </tr>\n  <tr>\n    <td>11 logistic</td>\n    <td>0.57280.57280.5711</td>\n    <td>0.55550.55550.5411</td>\n  </tr>\n  <tr>\n    <td>12 logistic</td>\n    <td>0.56880.56880.5641</td>\n    <td>0.55860.55680.5402</td>\n  </tr>\n  <tr>\n    <td>deep wl</td>\n    <td>0.62150.62150.5821</td>\n    <td>0.58010.58010.5178</td>\n  </tr>\n  <tr>\n    <td>2-hop DCNN</td>\n    <td>0.62500.58070.5807</td>\n    <td>0.62750.58840.5884</td>\n  </tr>\n  <tr>\n    <td>5-hop DCNN</td>\n    <td>0.62610.58980.5898</td>\n    <td>0.62860.59500.5899</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>MUTAG</td>\n    <td>PTC</td>\n  </tr>\n  <tr>\n    <td>AccuracyF(micro)F(macro)</td>\n    <td>AccuracyF(micro)F(macro)</td>\n  </tr>\n  <tr>\n    <td>11 logistic</td>\n    <td>0.71900.71900.6405</td>\n    <td>0.54700.54700.4272</td>\n  </tr>\n  <tr>\n    <td>12 logistic</td>\n    <td>0.70160.70160.5795</td>\n    <td>0.55650.55650.4460</td>\n  </tr>\n  <tr>\n    <td>deep wl</td>\n    <td>0.65630.65630.5942</td>\n    <td>0.51130.51130.4444</td>\n  </tr>\n  <tr>\n    <td>2-hop DCNN</td>\n    <td>0.66350.79750.79747</td>\n    <td>0.56600.05000.0531</td>\n  </tr>\n  <tr>\n    <td>5-hop DCNN</td>\n    <td>0.66980.80130.8013</td>\n    <td>0.55300.00.0526</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>ENZYMES</td>\n  </tr>\n  <tr>\n    <td>AccuracyF(micro)F(macro)</td>\n  </tr>\n  <tr>\n    <td>11 logistic</td>\n    <td>0.16400.16400.0904</td>\n  </tr>\n  <tr>\n    <td>12 logistic</td>\n    <td>0.20300.20300.1110</td>\n  </tr>\n  <tr>\n    <td>deep wl</td>\n    <td>0.21550.21550.1431</td>\n  </tr>\n  <tr>\n    <td>2-hop DCNN</td>\n    <td>0.15900.15900.0809</td>\n  </tr>\n  <tr>\n    <td>5-hop DCNN</td>\n    <td>0.18100.18100.0991</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        }
+    ]
+}

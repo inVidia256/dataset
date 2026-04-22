@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                55,
+                69,
+                279,
+                136
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Loss</td>\n    <td>Map→Photo</td>\n    <td>Photo→Map</td>\n  </tr>\n  <tr>\n    <td>% Turkers labeled real</td>\n    <td>% Turkers labeled real</td>\n  </tr>\n  <tr>\n    <td>Co GAN[32]</td>\n    <td>0.6%</td>\n    <td>0.9%</td>\n  </tr>\n  <tr>\n    <td>BiGAN/ALI[9，7]</td>\n    <td>2.1%</td>\n    <td>1.9%</td>\n  </tr>\n  <tr>\n    <td>Sim GAN[46]</td>\n    <td>0.7%</td>\n    <td>2.6%</td>\n  </tr>\n  <tr>\n    <td>Feature loss+GAN</td>\n    <td>1.2%</td>\n    <td>0.3%</td>\n  </tr>\n  <tr>\n    <td>Cycle GAN(ours)</td>\n    <td>26.8%</td>\n    <td>23.2%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                57,
+                167,
+                277,
+                233
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: AMT 'real vs fake' test on maps↔aerial photos at 256 × 256 resolution.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Loss</td>\n    <td>Per-pixel acc.</td>\n    <td>Per-class acc.</td>\n    <td>Class IOU</td>\n  </tr>\n  <tr>\n    <td>CoGAN[32]</td>\n    <td>0.40</td>\n    <td>0.10</td>\n    <td>0.06</td>\n  </tr>\n  <tr>\n    <td>BiG AN/ALI[9，7]</td>\n    <td>0.19</td>\n    <td>0.06</td>\n    <td>0.02</td>\n  </tr>\n  <tr>\n    <td>Sim GAN[46]</td>\n    <td>0.20</td>\n    <td>0.10</td>\n    <td>0.04</td>\n  </tr>\n  <tr>\n    <td>Feature loss+GAN</td>\n    <td>0.06</td>\n    <td>0.04</td>\n    <td>0.01</td>\n  </tr>\n  <tr>\n    <td>Cycle GAN(ours)</td>\n    <td>0.52</td>\n    <td>0.17</td>\n    <td>0.11</td>\n  </tr>\n  <tr>\n    <td>pix2pix[22]</td>\n    <td>0.71</td>\n    <td>0.25</td>\n    <td>0.18</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                57,
+                263,
+                276,
+                330
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: FCN-scores for different methods, evaluated on Cityscapes labels→photo.\" The text content from the image is as follows:\n\n\"Table 3: Classification performance of photo→labels for different methods on cityscapes.\" The text content from the image is as follows:\n\n\"Table 3: Classification performance of photo→labels for different methods on cityscapes.\" The text content from the image is as follows:\n\n\"Table 3: Classification performance of photo→labels for different methods on cityscapes.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Loss</td>\n    <td>Per-pixel acc.</td>\n    <td>Per-class acc.</td>\n    <td>Class IOU</td>\n  </tr>\n  <tr>\n    <td>CoGAN[32]</td>\n    <td>0.45</td>\n    <td>0.11</td>\n    <td>0.08</td>\n  </tr>\n  <tr>\n    <td>BiG AN/ALI[9，7]</td>\n    <td>0.41</td>\n    <td>0.13</td>\n    <td>0.07</td>\n  </tr>\n  <tr>\n    <td>Sim GAN[46]</td>\n    <td>0.47</td>\n    <td>0.11</td>\n    <td>0.07</td>\n  </tr>\n  <tr>\n    <td>Feature loss+GAN</td>\n    <td>0.50</td>\n    <td>0.10</td>\n    <td>0.06</td>\n  </tr>\n  <tr>\n    <td>Cycle GAN(ours)</td>\n    <td>0.58</td>\n    <td>0.22</td>\n    <td>0.16</td>\n  </tr>\n  <tr>\n    <td>pix2pix[22]</td>\n    <td>0.85</td>\n    <td>0.40</td>\n    <td>0.32</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                314,
+                78,
+                539,
+                136
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Loss</td>\n    <td>Per-pixel acc.</td>\n    <td>Per-class acc.</td>\n    <td>Class IOU</td>\n  </tr>\n  <tr>\n    <td>Cycle alone</td>\n    <td>0.22</td>\n    <td>0.07</td>\n    <td>0.02</td>\n  </tr>\n  <tr>\n    <td>GAN alone</td>\n    <td>0.51</td>\n    <td>0.11</td>\n    <td>0.08</td>\n  </tr>\n  <tr>\n    <td>GAN+forward cycle</td>\n    <td>0.55</td>\n    <td>0.18</td>\n    <td>0.12</td>\n  </tr>\n  <tr>\n    <td>GAN+backward cycle</td>\n    <td>0.39</td>\n    <td>0.14</td>\n    <td>0.06</td>\n  </tr>\n  <tr>\n    <td>Cycle GAN(ours)</td>\n    <td>0.52</td>\n    <td>0.17</td>\n    <td>0.11</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                313,
+                167,
+                539,
+                224
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 4: Ablation study: FCN-scores for different variants of our method, evaluated on Cityscapes labels→photo.\" The text content from the image is as follows:\n\n\"Table 4: Ablation study: FCN-scores for different variants of our method, evaluated on Cityscapes labels→photo.\"",
+            "footnote": "The text content from the image is as follows:\n\n\"Table 5: Ablation study: classification performance of photo→labels for different losses, evaluated on Cityscapes.\" The text content from the image is:\n\n\"Table 5: Ablation study: classification performance of photo→labels for different losses, evaluated on Cityscapes.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Loss</td>\n    <td>Per-pixel acc.</td>\n    <td>Per-class acc.</td>\n    <td>Class IOU</td>\n  </tr>\n  <tr>\n    <td>Cycle alone</td>\n    <td>0.10</td>\n    <td>0.05</td>\n    <td>0.02</td>\n  </tr>\n  <tr>\n    <td>GAN alone</td>\n    <td>0.53</td>\n    <td>0.11</td>\n    <td>0.07</td>\n  </tr>\n  <tr>\n    <td>GAN+forward cycle</td>\n    <td>0.49</td>\n    <td>0.11</td>\n    <td>0.07</td>\n  </tr>\n  <tr>\n    <td>GAN+backward cycle</td>\n    <td>0.01</td>\n    <td>0.06</td>\n    <td>0.01</td>\n  </tr>\n  <tr>\n    <td>Cycle GAN(ours)</td>\n    <td>0.58</td>\n    <td>0.22</td>\n    <td>0.16</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        }
+    ]
+}

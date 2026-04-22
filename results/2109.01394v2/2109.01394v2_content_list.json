@@ -1,0 +1,3460 @@
+[
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "In this work we seek to bridge the concepts of topographic organization and equivariance in neural networks. To accomplish this, we introduce the Topographic VAE: a novel method for efficiently training deep generative models with topographically organized latent variables. We show that such a model indeed learns to organize its activations according to salient characteristics such as digit class, width, and style on MNIST. Furthermore, through topographic organization over time (i.e. temporal coherence), we demonstrate how predefined latent space transformation operators can be encouraged for observed transformed input sequences – a primitive form of unsupervised learned equivariance. We demonstrate that this model successfully learns sets of approximately equivariant features (i.e. \"capsules\") directly from sequences and achieves higher likelihood on correspondingly transforming test sequences. Equivariance is verified quantitatively by measuring the approximate commutativity of the inference network and the sequence transformations. Finally, we demonstrate approximate equivariance to complex transformations, expanding upon the capabilities of existing group equivariant neural networks. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Many parts of the brain are organized topographically. Famous examples are the ocular dominance maps and the orientation maps in V1. What is the advantage of such organization and what can we learn from it to develop better inductive biases for deep neural network architectures? ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Figure 1: Overview of the Topographic VAE with shifting temporal coherence. The combined color/rotation transformation in input space τg becomes encoded as a Roll within the capsule dimension. The model is thus able decode unseen sequence elements by encoding a partial sequence and Rolling activations within the capsules. We see this resembles a commutative diagram. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"1 Introduction\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Topographic VAEs learn Equivariant Capsules\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"35th Conference on Neural Information Processing Systems (NeurIPS 2021).\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nT. Anderson Keller\nUvA-Bosch Delta Lab\nUniversity of Amsterdam\nt.anderson.keller@gmail.com ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nT. Anderson Keller\nUvA-Bosch Delta Lab\nUniversity of Amsterdam\nt.anderson.keller@gmail.com ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"Max Welling\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nUvA-Bosch Delta Lab\nUniversity of Amsterdam\nm.welling@uva.nl ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"T. Anderson Keller\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMax Welling\nUvA-Bosch Delta Lab\nUniversity of Amsterdam\nm.welling@uva.nl ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "UvA-Bosch Delta Lab\nUniversity of Amsterdam\nt.anderson.keller@gmail.com ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "A second, almost independent body of literature developed the idea of “equivariance” of neural network feature maps under symmetry transformations. The idea of equivariance is that symmetry transformations define equivalence classes as the orbits of their transformations, and we wish to maintain this structure in the deeper layers of a neural network. For instance, for images, asserting a rotated image contains the same object for all rotations, the transformation of rotation then defines an orbit where the elements of that orbit can be interpreted as pose or angular orientation. When an image is processed by a neural network, we want features at different orientations to be able to be combined to form new features, but we want to ensure the relative pose information between the features is preserved for all orientations. This has the advantage that the equivalence class of rotations for the complex composite features is guaranteed to be maintained, allowing for the extraction of invariant features, a unified pose, and increased data efficiency. Such ideas are reminiscent of the capsule networks of Hinton et al. [21, 22, 51], and indeed formal connections to equivariance have been made [39]. Interestingly, by explicitly building neural networks to be equivariant, we additionally see geometric organization of activations into these equivalence classes, and further, the elements within an equivalence class are seen to exhibit higher-order non-Gaussian dependencies [40, 41, 56, 57]. The insight of this connection between topographic organization and equivariance hints at a possibility to encourage approximate equivariance from an induced topology in feature space. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "One potential explanation for the emergence of topographic organization is provided by the principle of redundancy reduction [1]. In the language of Information Theory, redundancy wastes channel capacity, and thus to represent information as efficiently as possible, the brain may strive to transform the input to a neural code where the activations are statistically maximally independent. In the machine learning literature, this idea resulted in Independent Component Analysis (ICA) which linearly transforms the input to a new basis where the activities are independent and sparse [2, 13, 29, 44]. It was soon realized that there are remaining higher order dependencies (such as correlation between absolute values) that can not be transformed away by a linear transformation. For example, along edges of an image, linear-ICA components (e.g. gabor filters) still activate in clusters even though the sign of their activity is unpredictable [48, 56]. This led to new algorithms that explicitly model these remaining dependencies through a topographic organization of feature activations [27, 45, 46, 59]. Such topographic features were reminiscent of pinwheel structures observed in V1, encouraging multiple comparisons with topographic organization in the biological visual system [28, 30, 42]. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The history of statistical models upon which this work builds is vast, including sparse coding [44], Independent Component Analysis (ICA) [2, 13, 29], Slow Feature Analysis (SFA) [54, 60], and Gaussian scale mixtures [41, 48, 56, 57]. Most related to this work are topographic generative models including Generative Topographic Maps [6], Bubbles [25], Topographic ICA [27], and the Topographic Product of Student’s-t [46, 59]. Prior work on learning equivariant and invariant representations is similarly vast and also has a deep relationship with these generative models. Specifically, Independent Subspace Analysis [26, 53], models involving temporal coherence [18, 24, 52, 60], and Adaptive Subspace Self Organizing Maps [35] have all demonstrated the ability to learn invariant feature subspaces and even ‘disentangle’ space and time [19, 53]. Our work assumes a similar generative model to these works while additionally allowing for efficient estimation of ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "To build a model, we need to ask what mechanisms could induce topographic organization of observed transformations specifically? We have argued that removing dependencies between latent variables is a possible mechanism; however, to obtain the more structured organization of equivariant capsule representations, the usual approach is to hard-code this structure into the network, or to encourage it through regularization terms [4, 15]. To achieve this same structure unsupervised, we propose to incorporate another key inductive bias: “temporal coherence” [18, 24, 52, 60]. The principle of temporal coherence, or “slowness”, asserts than when processing correlated sequences, we wish for our representations to change smoothly and slowly over space and time. Thinking of time sequences as symmetry transformations on the input, we desire features undergoing such transformations to be grouped into equivariant capsules. We therefore suggest that encouraging slow feature transformations to take place within a capsule could induce such grouping from sequences alone. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In the following sections we will explain the details of our Topographic Variational Autoencoder which lies at the intersection of topographic organization, equivariance, and temporal coherence, thereby learning approximately equivariant capsules from sequence data completely unsupervised. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"2 Related Work\". ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Such generative models can be seen as hierarchical generative models where there exist higher level independent 'variance generating' variables V which are combined locally to generate the variances σ = φ(WV) of the lower level topographic variables T \\~ N(0, σ²I), for an appropriate non-linearity φ. The variables T are thus independent conditioned on σ. Other related models which can be described under this umbrella include Independent Subspace Analysis (ISA) [26] where all variables within a predefined subspace (or ‘capsule’) share a common variance, and ‘temporally coherent’ models [24] where the energy of a given variable between time steps is correlated by extending the topographic neighborhoods over the time dimension [25]. The topographic latent variable T can additionally be described as an instance of a Gaussian scale mixture (GSM). GSMS have previously been used to model the observed non-Gaussian dependencies between coefficients of steerable wavelet pyramids (interestingly also equivariant to translation & rotation) [48, 56, 57]. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Another line of work has focused on constructing neural networks with equivariant representations separate from the framework of generative modeling. Analytically equivariant networks such as Group Equivariant Neural Networks [11], and other extensions [9, 16, 17, 55, 49, 58, 61, 62] propose to explicitly enforce symmetry to group transformations in neural networks through structured weight sharing. Alternatively, others propose supervised and self-supervised methods for learning equivariance or invariance directly from the data itself [4, 14, 15]. One related example in this category uses a group sparsity regularization term to similarly learn topographic features for the purpose of modeling invariance [31]. We believe the Topographic Variational Autoencoder presented in this paper is another promising step in the direction of learning approximate equivariance, and may even hint at how such structure could be learned in biological neural networks. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Inspired by Topographic ICA, the class of Topographic Generative models can be understood as generative models where the joint distribution over latent variables does not factorize into entirely independent factors, as is commonly done in ICA or VAEs, but instead has a more complex 'local' correlation structure. The locality is defined by arranging the latent variables into an n-dimensional lattice or grid, and organizing variables such that those which are closer together on this grid have greater correlation of activities than those which are further apart. In the related literature, activations which are nearby in this grid are defined to have higher-order correlation, e.g. correlations of squared activations (aka ‘energy’), asserting that all first order correlations are removed by the initial ICA de-mixing matrix. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Furthermore, the idea of disentangled representations [3] has also been connected to equivariance and representation theory in multiple recent papers [8, 12, 10, 20]. Our work shares a fundamental connection to this distributed operator definition of disentanglement, where the slow roll of capsule activations can be seen as the latent operator. Recently, the authors of [34] demonstrated that incorporating the principle of ‘slowness’ in a variational autoencoder (VAE) yields the ability to learn disentangled representations from natural sequences. While similar in motivation, the generative model proposed in [34] is unrelated to topographic organization and equivariance, and is more aligned with traditional notions of disentanglement. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Finally, and importantly, in the neuroscience literature, another popular explanation for topographic organization arises as the solution to the ‘wiring length’ minimization problem [36]. Recently, models which attempt to incorporate wiring length constraints have been shown to yield topographic organization of higher level features, ultimately resembling the ‘face patches’ found in primates [32, 38]. Interestingly, the model presented in this paper organizes activity based on the same statistical property (local correlation) as the wiring length proxies developed in [38], but from a generative modeling perspective, demonstrating a computationally principled explanation for the same phenomenon. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The model in this paper is a first attempt at bridging two yet disjoint classes of models: Topographic Generative Models, and Equivariant Neural Networks. In this section, we will provide a brief background on these two frameworks. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "the model through variational inference [33, 50]. Although our work is not the first to combine Student’s-t distributions and variational inference [7], it is the first to provide an efficient method to do so for Topographic Student’s-t distributions. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"3.1 Topographic Generative models\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"3 Background\". ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "It is well known that convolutional maps in neural networks are translation equivariant, i.e., given a translation Γρ (applied to each feature map separately) and a convolutional map f(·), we have f(Γρ[𝐱]) = Γρ[f(𝐱)]. This can be extended to other transformations (e.g. rotation or mirroring) using Group convolutions (G-convolutions) [11]. As a result of the design of G-convolutions, feature maps that are related to each other by a rotation of the filter/input are grouped together. Moreover, a rotation of the input results in a transformation (i.e. a permutation and rotation) on the activations of each of these groups in the output. Hence, we can think of these equivalence class groups as capsules where transformations of the input only cause structured transformations within a capsule. As we will demonstrate later, this is indeed analogous to the structure of the representation learned by the Topographic VAE with temporal coherence – a transformation of the input yields a cyclic permutation of activations within each capsule. However, due to the approximate learned nature of the equivariant representation, the Topographic VAE does not require the transformations τρ to constitute a group. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The goal of training is thus to learn the parameters θ such that the marginal distribution of the model pθ(x) matches that of the observed data. Unfortunately, the marginal likelihood is generally intractable except for all but the simplest choices of gθ and pT [45]. Prior work has therefore resorted to techniques such as contrastive divergence with Gibbs sampling [59] to train TPoT models as energy based models. In the following section, we instead demonstrate how TPoT variables can be constructed as a deterministic function of Gaussian random variables, enabling the use of variational inference and efficient maximization of the likelihood through the evidence lower bound (ELBO). ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The generative model proposed in this paper is based on the Topographic Product of Student’s-t (TPoT) model as developed in [46, 59]. In the following, we will show how a TPoT random variable can be constructed from a set of independent univariate standard normal random variables, enabling efficient training through variational inference. Subsequently, we will construct a new model where topographic neighborhoods are extended over time, introducing temporal coherence and encouraging the unsupervised learning of approximately equivariant subspaces we call ‘capsules’. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Equivariance is the mathematical notion of symmetry for functions. A function is said to be an equivariant map if the result of transforming the input and then computing the function is the same as first computing the function and then transforming the output. In other words, the function and the transformation commute. Formally, \\( f(\\tau_\\rho[\\mathbf{x}]) = \\Gamma_\\rho[f(\\mathbf{x})] \\), where \\(\\tau\\) and \\(\\Gamma\\) denote the (potentially different) operators on the domain and co-domain respectively, but are indexed by the same element \\(\\rho\\). ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We assume that our observed data is generated by a latent variable model where the joint distribution over observed and latent variables x and t factorizes into the product of the conditional and the prior. The prior distribution p_T(t) is assumed to be a Topographic Product of Student’s-t (TPoT) distribution, and we parameterize the conditional distribution with a flexible function approximator: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Where Z and {U_i}_{i=1}^{ν} are independent standard normal random variables. If T is a multidimensional Student’s-t random variable, composed of independent Z_i and U_i, then T \\~ PoT(ν), i.e.:\"\n\nThis describes a statistical concept where T follows a Multivariate Student's t-distribution with ν degrees of freedom (PoT(ν)), constructed from independent standard normal variables Z and U_i. ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\nT = { \\frac { Z } { \\sqrt { { \\frac { 1 } { \\nu } } \\sum _ { i } ^ { \\nu } U _ { i } ^ { 2 } } } } \\quad { \\mathrm { w i t h ~ } } \\ Z , U _ { i } \\sim { \\mathcal { N } } ( 0 , 1 ) \\ \\forall i\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "First, note a univariate Student's-t random variable \\( T \\) with \\( \\nu \\) degrees of freedom can be defined as: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"4.1 The Product of Student's-t Model\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"3.2 Group Equivariant Neural Networks\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The Generative Model ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "4.2 Constructing the Product of Student’s-t Distribution ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=1}^{\\nu} U_i^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=\\nu+1}^{2\\cdot\\nu} U_i^2}}, & \n\\cdots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=(n-1)\\cdot\\nu+1}^{n\\cdot\\nu} U_i^2}}\n\\end{bmatrix} \\sim \\text{PoT}(\\nu)\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\np _ { \\mathbf { X } , \\mathbf { T } } ( \\mathbf { x } , \\mathbf { t } ) = p _ { \\mathbf { X } | \\mathbf { T } } ( \\mathbf { x } | \\mathbf { t } ) p _ { \\mathbf { T } } ( \\mathbf { t } ) \\qquad p _ { \\mathbf { X } | \\mathbf { T } } ( \\mathbf { x } | \\mathbf { t } ) = p _ { \\theta } ( \\mathbf { x } | g _ { \\theta } ( \\mathbf { t } ) ) \\qquad p _ { \\mathbf { T } } ( \\mathbf { t } ) = \\operatorname { T P o T } ( \\mathbf { t } ; \\nu )\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "We now describe how the induced topographic organization can be leveraged to learn a basis of approximately equivariant capsules for observed transformation sequences. The resulting representation is composed of a large set of 'capsules' where the dimensions inside the capsule are topographically structured, but between the capsules there is independence. To benefit from sequences of input, we encourage topographic structure over time between sequentially permuted activations within a capsule, a property we refer to as shifting temporal coherence. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "One setting of neighborhood structure W which is of particular interest is when there exist multiple sets of disjoint neighborhoods. Statistically, the variables of two disjoint topologies are completely independent. An example of a capsule neighborhood structure is shown in Figure 2. The idea of independent subspaces has previously been shown to learn invariant feature subspaces in the linear setting and is present in early work on Independent Subspace Analysis [26] and Adaptive Subspace Self Organizing Maps (AS-SOM) [35]. It is also very reminiscent of the transformed sets of features present in a group equivariant convolutional neural network. In the next section, we will show how temporal coherence can be leveraged to induce the encoding of observed transformations into the internal dimensions of such capsules thereby yielding unsupervised approximately equivariant capsules. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "To make the PoT distribution topographic, we strive to correlate the scales of \\( T_j \\) which are 'nearby' in our topographic layout. One way to accomplish this is by sharing some \\( U_i \\)-variables between neighboring \\( T_j \\)'s. Formally, we define overlapping neighborhoods \\( N(j) \\) for each variable \\( T_j \\) and write: ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Given this construction, we observe that the TPoT generative model can instead be viewed as a latent variable model where all random variables are Gaussian and the construction of T in Equation 6 is the first layer of the generative ‘decoder’: gθ(t) = gθ(u,z). In Section 5 we then leverage this interpretation to show how an approximate posterior for the latent variables Z and U can be trained through variational inference. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Note that the Student’s-t variable \\( T \\) is large when most of the \\(\\{U_i\\}_i\\) in its set are small. We can therefore think of the \\(\\{U_i\\}_i\\) as constraint violations rather then pattern matches: if the input matches all constraints \\( U_i \\approx 0 \\), the corresponding \\( T \\) variables will activate (see [23] for further discussion). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "With some abuse of notation, if we define \\(\\mathbf{W}\\) to be the adjacency matrix which defines our neighborhood structure, \\(\\mathbf{U}\\) and \\(\\mathbf{Z}\\) to be the vectors of random variables \\(U_i\\) and \\(Z_j\\), we can write the above succinctly as: ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Due to non-linearities such as ReLUs which may alter input distributions, it is beneficial to allow the Z variables to model the mean and scale. We found this can be achieved with the following parameterization: τ = (Z - μ) / σ√(1/νWU^2). In practice, we found that σ = √ν often works well, finally yielding: ",
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\nThe formula in the image can be written in LaTeX as:\n\n\\[\n\\mathbf{T} = \\frac{\\mathbf{Z} - \\mu}{\\sqrt{\\mathbf{WU}^2}}\n\\]\n$$",
+        "text_format": "latex",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Figure 2: An example of a neighborhood structure which induces disjoint topologies (aka capsules). Lines between variables \\( T_i \\) indicate that sharing of \\( U_i \\), and thus correlation. ",
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} W_1 \\mathbf{U}^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} W_2 \\mathbf{U}^2}}, & \n\\ldots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} W_n \\mathbf{U}^2}}\n\\end{bmatrix} = \\frac{\\mathbf{Z}}{\\sqrt{\\frac{1}{\\nu} \\mathbf{W} \\mathbf{U}^2}} \\sim \\text{TPoT}(\\nu)\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 4
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(1)} U_i^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(2)} U_i^2}}, & \n\\ldots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(n)} U_i^2}}\n\\end{bmatrix} \\sim \\text{TPoT}(\\nu)\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"4.5 Temporal Coherence and Learned Equivariance\" ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"4.4 Capsules as Disjoint Topologies\" ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "4.3 Introducing Topography ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Where \\([\\mathbf{U}_{l+L}^2; \\cdots ; \\mathbf{U}_{l-L}^2]\\) denotes vertical concatenation of the column vectors \\(\\mathbf{U}_l\\), and \\(2L\\) can be seen as the window size. We see that the choice of \\(\\mathbf{W}\\) now defines correlation structure over time. In prior work on temporal coherence (denoted 'Bubbles' [25]), the grouping over time is such that a given variable \\(T_{l,i}\\) has correlated energy with the same spatial location (\\(i\\)) at a previous time step (\\(l-1\\)) (i.e., \\(\\text{cov}(T_{l,i}^2, T_{l-1,i}^2) > 0\\)). This can be implemented as: ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Where Rollδ(U2l+δ) denotes a cyclic permutation of δ steps along the capsule dimension. The exact implementation of Roll can be found in Section A.11. As we will show in Section 6.3, TVAE models with such a topographic structure learn to encode observed sequence transformations as Rolls within the capsule dimension, analogous to a group equivariant neural network where τρ and Roll1 can be seen as the action of the transformation ρ on the input and output spaces respectively.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Temporal Coherence can be measured as the correlation of squared activation between time steps. One way we can achieve this in our model is by having \\( T_j \\) share \\( U_i \\) between time steps. Formally, the generative model is identical to Equation 1, factorizing over timesteps denoted by subscript \\( l \\), i.e., \\( p_{\\mathbf{X}_l, \\mathbf{T}_l}(\\mathbf{x}_l, \\mathbf{t}_l) = p_{\\mathbf{X}_l | \\mathbf{T}_l}(\\mathbf{x}_l | \\mathbf{t}_l)p_{\\mathbf{T}_l}(\\mathbf{t}_l) \\). However, \\( \\mathbf{T}_l \\) is now a function of a sequence \\( \\{\\mathbf{U}_{l+\\delta}\\}_{\\delta=-L}^L \\): ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In our model, instead of requiring a single location to have correlated energies over a sequence, we would like variables at sequentially permuted locations within a capsule to have correlated energy between timesteps (cov(Tl,i, Tl−1,i−1) > 0). Similarly, this can be implemented as: ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "To train the parameters of the generative model θ, we use the above formulation to parameterize an approximate posterior for t in terms of a deterministic transformation of approximate posteriors over simpler Gaussian latent variables u and z. Explicitly: ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "In the following experiments, we demonstrate the viability of the Topographic VAE as a novel method for training deep topographic generative models. Additionally, we quantitatively verify that shifting ",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\mathbf{W} \\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{W}\\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right] = \\sum_{\\delta=-L}^{L} \\mathbf{W}_\\delta \\text{Roll}_\\delta(\\mathbf{U}_{l+\\delta}^2)\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "We denote this model the Topographic VAE (TVAE) and optimize the parameters θ, φ, γ (and μ) through the ELBO, summed over the sequence length S: ",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{W} \\left[ \\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2 \\right] = \\sum_{\\delta=-L}^{L} \\mathbf{W}_\\delta \\mathbf{U}_{l+\\delta}^2\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"5 Topographic VAE\". ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"6 Experiments\". ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"4.5.1 Temporal Coherence\". ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Where \\( \\mathbf{W}_\\delta \\) defines the topography for a single timestep, and is typically the same for all timesteps. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"4.5.2 Learned Equivariance with Shifting Temporal Coherence\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\nq_{\\gamma}(\\mathbf{u}_l | \\mathbf{x}_l) = \\mathcal{N}\\left( \\mathbf{u}_l; \\mu_{\\gamma}(\\mathbf{x}_l), \\sigma_{\\gamma}(\\mathbf{x}_l)\\mathbf{I} \\right)\n\n\\mathbf{t}_l = \\frac{\\mathbf{z}_l - \\mu}{\\sqrt{\\mathbf{W}\\left[\\mathbf{u}_{l+L}^2, \\cdots, \\mathbf{u}_{l-L}^2\\right]}}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\nq_{\\phi}(\\mathbf{z}_l | \\mathbf{x}_l) = \\mathcal{N}\\left(\\mathbf{z}_l; \\mu_{\\phi}(\\mathbf{x}_l), \\sigma_{\\phi}(\\mathbf{x}_l)\\mathbf{I}\\right)\n\np_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{t}_l)) = p_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{z}_l, \\{\\mathbf{u}_l\\}))\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\sum_{l=1}^{S}\\mathbb{E}_{Q_{\\phi,\\gamma}(\\mathbf{z}_l,\\mathbf{u}_l|\\{\\mathbf{x}_l\\})}\\left([\\log p_\\theta(\\mathbf{x}_l|g_\\theta(\\mathbf{t}_l))]-D_{KL}[q_\\phi(\\mathbf{z}_l|\\mathbf{x}_l)||p_\\mathbf{Z}(\\mathbf{z}_l)]-D_{KL}[q_\\gamma(\\mathbf{u}_l|\\mathbf{x}_l)||p_\\mathbf{U}(\\mathbf{u}_l)]\\right)\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\left\\{\\mathbf{x}_{l}\\right\\}) = q_{\\phi}(\\mathbf{z}_{l}|\\mathbf{x}_{l}) \\prod_{\\delta=-L}^{L} q_{\\gamma}(\\mathbf{u}_{l+\\delta}|\\mathbf{x}_{l+\\delta}), \\text{ and } \\left\\{\\cdot\\right\\} \\text{ denotes a set over time}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"where \\( Q_{\\phi,\\gamma}(\\mathbf{z}_l, \\mathbf{u}_l|\\{\\mathbf{x}_l\\}) = q_\\phi(\\mathbf{z}_l|\\mathbf{x}_l) \\prod_{\\delta=-L}^{L} q_\\gamma(\\mathbf{u}_{l+\\delta}|\\mathbf{x}_{l+\\delta}) \\), and \\{\\cdot\\} denotes a set over time.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\\[\n\\{\\mathbf{x}_l\\} = q_\\phi(\\mathbf{z}_l | \\mathbf{x}_l) \\prod_{\\delta=-L}^{L} q_\\gamma(\\mathbf{u}_{l+\\delta} | \\mathbf{x}_{l+\\delta}), \\text{ and } \\{\\cdot\\} \\text{ denotes a set over time}\n\\] ",
+        "page_idx": 5
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\begin{align*}\nq_{\\phi}(\\mathbf{z}_l | \\mathbf{x}_l) &= \\mathcal{N}\\left( \\mathbf{z}_l; \\mu_{\\phi}(\\mathbf{x}_l), \\sigma_{\\phi}(\\mathbf{x}_l) \\mathbf{I} \\right) \\\\\nq_{\\gamma}(\\mathbf{u}_l | \\mathbf{x}_l) &= \\mathcal{N}\\left( \\mathbf{u}_l; \\mu_{\\gamma}(\\mathbf{x}_l), \\sigma_{\\gamma}(\\mathbf{x}_l) \\mathbf{I} \\right) \\\\\np_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{t}_l)) &= p_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{z}_l, \\{\\mathbf{u}_l\\})) \\\\\n\\mathbf{t}_l &= \\frac{\\mathbf{z}_l - \\mu}{\\sqrt{\\mathbf{W} \\left[ \\mathbf{u}_{l+L}^2; \\cdots ; \\mathbf{u}_{l-L}^2 \\right]}}\n\\end{align*}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The image contains a mathematical expression that appears to be related to variational inference or a similar topic in machine learning. The expression is as follows:\n\n\\[\n\\sum_{l=1}^{S} \\mathbb{E}_{Q_{\\phi,\\gamma}(\\mathbf{z}_l, \\mathbf{u}_l | \\{\\mathbf{x}_l\\})} \\left( [\\log p_\\theta(\\mathbf{x}_l | g_\\theta(\\mathbf{t}_l))] - D_{KL}[q_\\phi(\\mathbf{z}_l | \\mathbf{x}_l) || p_\\mathbf{Z}(\\mathbf{z}_l)] - D_{KL}[q_\\gamma(\\mathbf{u}_l | \\mathbf{x}_l) || p_\\mathbf{U}(\\mathbf{u}_l)] \\right)\n\\]\n\nThis expression likely represents an objective function for training a model, possibly involving a variational autoencoder (VAE) or a similar framework. Here's a breakdown of the components:\n\n- \\( Q_{\\phi,\\gamma}(\\mathbf{z}_l, \\mathbf{u}_l | \\{\\mathbf{x}_l\\}) \\): This is the approximate posterior distribution over latent variables \\(\\mathbf{z}_l\\) and \\(\\mathbf{u}_l\\) given the observed data \\(\\mathbf{x}_l\\).\n- \\( p_\\theta(\\mathbf{x}_l | g_\\theta(\\mathbf{t}_l)) \\): This is the likelihood of the observed data \\(\\mathbf{x}_l\\) given some parameters \\(\\theta\\) and a function \\(g_\\theta\\) that maps the time \\(\\mathbf{t}_l\\) to the data.\n- \\( D_{KL}[q_\\phi(\\mathbf{z}_l | \\mathbf{x}_l) || p_\\mathbf{Z}(\\mathbf{z}_l)] \\): This is the Kullback-Leibler divergence between the approximate posterior \\( q_\\phi(\\mathbf{z}_l | \\mathbf{x}_l) \\) and the prior distribution \\( p_\\mathbf{Z}(\\mathbf{z}_l) \\) over the latent variable \\(\\mathbf{z}_l\\).\n- \\( D_{KL}[q_\\gamma(\\mathbf{u}_l | \\mathbf{x}_l) || p_\\mathbf{U}(\\mathbf{u}_l)] \\): This is the Kullback-Leibler divergence between the approximate posterior \\( q_\\gamma(\\mathbf{u}_l | \\mathbf{x}_l) \\) and the prior distribution \\( p_\\mathbf{U}(\\mathbf{u}_l) \\) over another latent variable \\(\\mathbf{u}_l\\).\n\nThe summation over \\( l = 1 \\) to \\( S \\) suggests that this expression is averaged over multiple data points or samples. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Where ∗ is discrete periodic cross-correlation across the capsule dimension, and the correlation coefficient is computed across the entire dataset. We see the argmax of the cross-correlation is an estimate of the degree to which a capsule activation has shifted from time l to l + δ. To extend this to multiple capsules, we can replace the argmax function with the mode of the argmax computed for all capsules. We provide additional details and extensions of this metric in Section A.10. For measuring capsule-metrics on baseline models which do not naturally have capsules, we simply arbitrarily divide the latent space into a fixed set of corresponding capsules and capsule dimensions, and provide such results as equivalent to ‘random baselines’ for these metrics. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "To validate the TVAE is capable of learning topographically organized representations with deep neural networks, we first perform experiments on a Topographic VAE without Temporal Coherence. The model is constructed as in Equations 10 and 11 with L = 0, and is trained to maximize Equation 12. We fix W such that globally the latent variables are arranged in a grid on a 2-dimensional torus (a single capsule), and locally W sums over 5x5 2D groups of variables. In this setting, W can be easily implemented as 2D convolution with a 5x5 kernel of 1's, stride 1, and cyclic padding. We see that training the model with 3-layer MLP’s for the encoders and decoder indeed yields a 2D topographic organization of higher level features. In Figure 3, we show the maximum activating image for each final layer neuron of the capsule, plotted as a flattened torus. We see that the neurons become arranged according to class, orientation, width, and other learned features. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Additionally, inspired by existing disentanglement metrics, we measure the degree to which observed transformations in capsule space are correlated with input transformations by introducing a new metric we call CapCorr_y. Simply, this metric computes the correlation between the amount of observed Roll of a capsule's activation at two timesteps l and l + δ, and the shift of the ground truth generative factors y_l in that same time. Formally, for a correlation coefficient Corr: ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "As depicted in Figure 1, we make use of capsule traversals to qualitatively visualize the transformations learned by our network. Simply, these are constructed by encoding a partial sequence into a t0 variable, and decoding sequentially Rolled copies of this variable. Explicitly, in the top row we show the data sequence {xl}l, and in the bottom row we show the decoded sequence: {gθ(Rolll(t0))}l. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "To measure equivariance quantitatively, we measure an equivariance error similar to [15]. The equivariance error can be seen as the difference between traversing the two distinct paths of the commutative diagram, and provides some measure of how precisely the function and the transform commute. Formally, for a sequence of length \\( S \\), and \\( \\hat{\\mathbf{t}} = \\mathbf{t} / ||\\mathbf{t}||_2 \\), the error is defined as: ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"temporal coherence yields approximately equivariant capsules by computing an 'equivariance loss' and a correlation metric inspired by the disentanglement literature. We show that equivariant capsule models yield higher likelihood than baselines on test sequences, and qualitatively support these results with visualizations of sequences reconstructed purely from Rolled capsule activations.\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathcal{E}_{eq}(\\{\\hat{\\mathbf{t}}_l\\}_{l=1}^S) = \\sum_{l=1}^{S-1}\\sum_{\\delta=1}^{S-l} ||\\text{Roll}_\\delta(\\hat{\\mathbf{t}}_l) - \\hat{\\mathbf{t}}_{l+\\delta}||_1\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"In the remaining experiments, we provide evidence that the Topographic VAE can be leveraged to learn equivariant capsules by incorporating shifting temporal coherence into a 1D baseline topographic\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Figure 3: Maximum activating images for a Topographic VAE trained with a 2D torus topography on MNIST. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"6.3 Learning Equivariant Capsules\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"6.2 Topographic VAE without Temporal Coherence\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\text{CapCorr}(\\mathbf{t}_l, \\mathbf{t}_{l+\\delta}, y_l, y_{l+\\delta}) = \\text{Corr}\\left(\\argmax[\\mathbf{t}_l \\star \\mathbf{t}_{l+\\delta}], |y_l - y_{l+\\delta}|\\right)\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"6.1 Evaluation Methods\". ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "23777774911112\n23377779779112\n2222229997000002\n222228888533333666\n62222/32333336666\n62222/228888533338666\n621//2888888000216\n1117978888888800216\n111777988933818216\n1459777499981111/\n13777774449911112 ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Capsule traversals for the non-equivariant baselines, as well as TVAEs with smaller values of L (which only learn approximate equivariance to partial sequences) are shown in Section D. We note that the capsule traversal plotted in Figure 1 demonstrates a transformation where color and rotation change simultaneously, differing from how the models in this section are trained. However, as we describe in more detail in Section B.4, we observe that TVAEs trained with individual transformations in isolation (as in this section) are able to generalize, generating sequences of combined transformations when presented with such partial input sequences at test time. We believe this generalization capability to be promising for data efficiency, but leave further exploration to future work. Additional capsule traversals with such unseen combined transformations are shown in Section B.4 and further complex learned transformations (such as perspective transforms) are shown at the end of Section D.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In all experiments we use a 3-layer MLP with ReLU activations for both encoders and the decoder. We arrange the latent space into 15 circular capsules each of 15-dimensions for dSprites [43], and 18 circular capsules each of 18-dimensions for MNIST [37]. Example sequences {x_l}^S_{l=1} are formed by taking a random initial example, and sequentially transforming it according to one of the available transformations: (X-Pos, Y-Pos, Orientation, Scale) for dSprites, and (Color, Scale, Orientation) for MNIST. All transformation sequences are cyclic such that when the maximum transformation parameter is reached, the subsequent value returns to the minimum. We denote the length of a full transformation sequence by S, and the time-extent of the induced temporal coherence (i.e. the length of the input sequence) by 2L. For simplicity, both datasets are constructed such that the sequence length S equals the capsule dimension (for dSprites this involves taking a subset of the full dataset and looping the scale 3-times for a scale-sequence). Exact details are in Sections A.8 & A.9. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "In Figure 4, we show the capsule traversals for TVAE models with \\( L \\approx \\frac{1}{3} S \\). We see that despite the \\( t_0 \\) variable encoding only \\( \\frac{2}{3} \\) of the sequence, the remainder of the transformation sequence can be decoded nearly perfectly by permuting the activation through the full capsule – implying the model has learned to be approximately equivariant to full sequences while only observing partial sequences per training point. Furthermore, we see that the model is able to successfully learn all transformations simultaneously for the respective datasets. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For a more quantitative evaluation, in Table 1 we measure the equivariance error and log-likelihood (reported in nats) of the test data under our trained MNIST models as estimated by importance sampling with 10 samples. We observe that models which incorporate temporal coherence (Bubble-VAE and TVAE with \\( L > 0 \\)) achieve low equivariance error, while the TVAE models with shifting temporal coherence achieve the highest likelihood and the lowest equivariance error simultaneously. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"model. We compare against two baselines: standard normal VAEs and models that have non-shifting 'stationary' temporal coherence as defined in Equation 8 (denoted ‘BubbleVAE’ [25]).\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 1: Log Likelihood and Equivariance Error on MNIST for different settings of temporal coherence length \\( L \\) relative to sequence length \\( S \\). Mean ± std. over 3 random initializations.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Figure 4: Capsule Traversals for TVAE models on dSprites and MNIST. The top rows show the encoded sequences (with greyed-out images held-out), and the bottom rows show the images generated by decoding sequentially Rolled copies of the initial activation t0 (indicated by a grey border). ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Figure 4: Capsule Traversals for TVAE models on dSprites and MNIST. The top rows show the encoded sequences (with greyed-out images held-out), and the bottom rows show the images generated by decoding sequentially Rolled copies of the initial activation t0 (indicated by a grey border). ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "To further understand how capsules transform for observed input transformations, in Table 2 we measure \\( \\mathcal{E}_{eq} \\) and the CapCorr metric on the dSprites dataset for the four proposed transformations. We see that the TVAE with \\( L \\geq \\frac{1}{3}S \\) achieves perfect correlation – implying the learned representation indeed permutes cyclically within capsules for observed transformation sequences. Further, this correlation gradually decreases as \\( L \\) decreases, eventually reaching the same level as the baselines. We also see that, on both datasets, the equivariance losses for the TVAE with \\( L = 0 \\) and the BubbleVAE are significantly lower than the baseline VAE, while conversely, the CapCorr metric is not significantly better. We believe this to be due to the fundamental difference between the metrics: \\( \\mathcal{E}_{eq} \\) measures continuous L1 similarity which is still low when a representation is locally smooth (even if the change of the representation does not follow the observed transformation), whereas CapCorr more strictly measures the correspondence between the transformation of the input and the transformation of the representation. In other words, \\( \\mathcal{E}_{eq} \\) may be misleadingly low for invariant capsule representations (as with the BubbleVAE), whereas CapCorr strictly measures equivariance. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "In the above work we introduce the Topographic Variational Autoencoder as a method to train deep topographic generative models, and show how topography can be leveraged to learn approximately equivariant sets of features, a.k.a. capsules, directly from sequences of data with no other supervision. Ultimately, we believe these results may shine some light on how biological systems could hard-wire themselves to more effectively learn representations with equivariant capsule structure. In terms of broader impact, it is foreseeable our model could be used to generate more realistic transformations of ‘deepfakes’, enhancing disinformation. Given that the model learns approximate equivariance, we caution against the over-reliance on equivariant properties as these have no known formal guarantees. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The model presented in this work has a number of limitations in its existing form which we believe to be interesting directions for future research. Foremost, the model is challenging to compare directly with existing disentanglement and equivariance literature since it requires an input sequence which determines the transformations reachable through the capsule roll. Related to this, we note the temporal coherence proposed in our model is not 'causal' (i.e., t_0 depends on future x_l). We believe these limitations could be at least partially alleviated with minor extensions detailed in Section C. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Finally, we note that while this work does demonstrate improved log-likelihood and equivariance error, the study is inherently preliminary and does not examine all important benefits of topographic or approximately equivariant representations. Specifically, further study of the TVAE both with and without temporal coherence in terms of the sample complexity, semi-supervised classification accuracy, and invariance through structured topographic pooling would be enlightening. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "We additionally note that some model developers may find a priori definition of topographic structure burdensome. While true, we know that the construction of appropriate priors is always a challenging task in latent variable models, and we observe that our proposed TVAE achieves strong performance even with improper specification. Furthermore, in future work, we believe adding learned flexibility to the parameters W may alleviate some of this burden. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 2: Equivariance error (Eeq ↓) and correlation of observed capsule roll with ground truth factor shift (CapCorr ↑) for the dSprites dataset. Mean ± standard deviation over 3 random initializations.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"7 Future Work & Limitations\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"8 Conclusion\". ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\n1828, 2013.\n\n[4] Gregory Benton, Marc Finzi, Pavel Izmailov, and Andrew Gordon Wilson. Learning invariances in neural networks. Advances in Neural Information Processing Systems, December, 2020.\n\n[5] Lukas Biewald. Experiment tracking with weights and biases, 2020. Software available from wandb.com.\n\n[6] Christopher Bishop, Markus Svensen, and Christopher Williams. Gtm: The generative topographic mapping. Neural Computation, 10:215–234, 05 1997.\n\n[7] Benedikt Boenninghoff, Steffen Zeiler, Robert M. Nickel, and Dorothea Kolossa. Variational autoencoder with embedded student-t mixture model for authorship attribution. ArXiv, abs/2005.13930, 2020.\n\n[8] Diane Bouchacourt, Mark Ibrahim, and Stéphane Deny. Addressing the topological defects of disentanglement via distributed operators. ArXiv, abs/2102.05623, 2021.\n\n[9] Taco Cohen and M. Welling. Steerable cnns. ArXiv, abs/1612.08498, 2017.\n\n[10] Taco Cohen and Max Welling. Learning the irreducible representations of commutative lie groups. In Proceedings of the 31st International Conference on Machine Learning, volume 32 of Proceedings of Machine Learning Research, pages 1755–1763, Beijing, China, 22–24 Jun 2014. PMLR.\n\n[11] Taco Cohen and Max Welling. Group equivariant convolutional networks. In International conference on machine learning, pages 2990–2999, 2016.\n\n[12] Taco S. Cohen and Max Welling. Transformation properties of learned visual representations. In 3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings, 2015.\n\n[13] Pierre Comon. Independent component analysis, a new concept? Signal processing, 36(3):287–314, 1994.\n\n[14] Marissa Connor, Gregory Canal, and Christopher Rozell. Variational autoencoder with learned latent structure. In Proceedings of The 24th International Conference on Artificial Intelligence and Statistics, volume 130 of Proceedings of Machine Learning Research, pages 2359–2367. PMLR, 13–15 Apr 2021.\n\n[15] Nichita Diaconu and Daniel Worrall. Learning to convolve: A generalized weight-tying approach. In Kamalika Chaudhuri and Ruslan Salakhutdinov, editors, Proceedings of the 36th International Conference on Machine Learning, volume 97 of Proceedings of Machine Learning Research, pages 1586–1595. PMLR, 09–15 Jun 2019.\n\n[16] Marc Finzi, Samuel Stanton, Pavel Izmailov, and Andrew Gordon Wilson. Generalizing convolutional neural networks for equivariance to lie groups on arbitrary continuous data. In Proceedings of the 37th International Conference on Machine Learning, volume 119 of Proceedings of Machine Learning Research, pages 3165–3176. PMLR, 13–18 Jul 2020.\n\n[17] Marc Finzi, Max Welling, and Andrew Gordon Wilson. A practical method for constructing equivariant multilayer perceptrons for arbitrary matrix groups. In Marina Meila and Tong Zhang, editors, Proceedings of the 38th International Conference on Machine Learning, volume 139 of Proceedings of Machine Learning Research, pages 3318–3328. PMLR, 18–24 Jul 2021.\n\n[18] Peter Földiák. Learning invariance from transformation sequences. Neural Computation, 3:194–200, 06 1991.\n\n[19] Will Grathwohl and Aaron Wilson. Disentangling space and time in video with hierarchical variational auto-encoders. CoRR, abs/1612.04440, 2016.\n\\`\\`\\` ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[15] Nichita Diaconu and Daniel Worrall. Learning to convolve: A generalized weight-tying approach. In Kamalika Chaudhuri and Ruslan Salakhutdinov, editors, Proceedings of the 36th International Conference on Machine Learning, volume 97 of Proceedings of Machine Learning Research, pages 1586–1595. PMLR, 09–15 Jun 2019. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[19] Will Grathwohl and Aaron Wilson. Disentangling space and time in video with hierarchical variational auto-encoders. CoRR, abs/1612.04440, 2016. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[14] Marissa Connor, Gregory Canal, and Christopher Rozell. Variational autoencoder with learned latent structure. In Proceedings of The 24th International Conference on Artificial Intelligence and Statistics, volume 130 of Proceedings of Machine Learning Research, pages 2359–2367. PMLR, 13–15 Apr 2021. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[17] Marc Finzi, Max Welling, and Andrew Gordon Gordon Wilson. A practical method for constructing equivariant multilayer perceptrons for arbitrary matrix groups. In Marina Meila and Tong Zhang, editors, Proceedings of the 38th International Conference on Machine Learning, volume 139 of Proceedings of Machine Learning Research, pages 3318–3328. PMLR, 18–24 Jul 2021. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[10] Taco Cohen and Max Welling. Learning the irreducible representations of commutative lie groups. In Proceedings of the 31st International Conference on Machine Learning, volume 32 of Proceedings of Machine Learning Research, pages 1755–1763, Beijing, China, 22–24 Jun 2014. PMLR. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[13] Pierre Comon. Independent component analysis, a new concept? Signal processing, 36(3):287–314, 1994. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[12] Taco S. Cohen and Max Welling. Transformation properties of learned visual representations. In 3rd International Conference on Learning Representations, ICLR 2015, San Diego, CA, USA, May 7-9, 2015, Conference Track Proceedings, 2015. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[9] Taco Cohen and M. Welling. Steerable cnns. ArXiv, abs/1612.08498, 2017. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[16] Marc Finzi, Samuel Stanton, Pavel Izmailov, and Andrew Gordon Wilson. Generalizing convolutional neural networks for equivariance to lie groups on arbitrary continuous data. In Proceedings of the 37th International Conference on Machine Learning, volume 119 of Proceedings of Machine Learning Research, pages 3165–3176. PMLR, 13–18 Jul 2020. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[7] Benedikt Boenninghoff, Steffen Zeiler, Robert M. Nickel, and Dorothea Kolossa. Variational autoencoder with embedded student-t mixture model for authorship attribution. ArXiv, abs/2005.13930, 2020. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[18] Peter Földiák. Learning invariance from transformation sequences. Neural Computation, 3:194–200, 06 1991. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[11] Taco Cohen and Max Welling. Group equivariant convolutional networks. In International conference on machine learning, pages 2990–2999, 2016. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[6] Christopher Bishop, Markus Svensen, and Christopher Williams. Gtm: The generative topographic mapping. Neural Computation, 10:215–234, 05 1997. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[5] Lukas Biewald. Experiment tracking with weights and biases, 2020. Software available from wandb.com. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[8] Diane Bouchacourt, Mark Ibrahim, and Stéphane Deny. Addressing the topological defects of disentanglement via distributed operators. ArXiv, abs/2102.05623, 2021. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[2] Anthony J. Bell and Terrence J. Sejnowski. An Information-Maximization Approach to Blind Separation and Blind Deconvolution. Neural Computation, 7(6):1129–1159, 11 1995. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[3] Yoshua Bengio, Aaron Courville, and Pascal Vincent. Representation learning: A review and new perspectives. IEEE transactions on pattern analysis and machine intelligence, 35(8):1798–1828, 2013. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[1] Horace B Barlow et al. Possible principles underlying the transformation of sensory messages. Sensory communication, 1(01), 1961. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[4] Gregory Benton, Marc Finzi, Pavel Izmailov, and Andrew Gordon Wilson. Learning invariances in neural networks. Advances in Neural Information Processing Systems, December, 2020. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Here is the text content from the image:\n\n\\`\\`\\`\nInternational Conference on Learning Representations, 2018.\n\n[23] Geoffrey E. Hinton and Yee-Whye Teh. Discovering multiple constraints that are frequently approximately satisfied. In Proceedings of the Seventeenth Conference on Uncertainty in Artificial Intelligence, UAI'01, page 227–234, 2001.\n\n[24] Jarmo Hurri and Aapo Hyvärinen. Simple-Cell-Like Receptive Fields Maximize Temporal Coherence in Natural Video. Neural Computation, 15(3):663–691, 03 2003.\n\n[25] A. Hyvärinen, J. Hurri, and Jaakko J. Väyrynen. A unifying framework for natural image statistics: spatiotemporal activity bubbles. Neurocomputing, 58-60:801–806, 2004.\n\n[26] Aapo Hyvärinen and Patrik Hoyer. Emergence of phase-and shift-invariant features by decomposition of natural images into independent feature subspaces. Neural computation, 12(7):1705–1720, 2000.\n\n[27] Aapo Hyvärinen, Patrik O Hoyer, and Mika Inki. Topographic independent component analysis. Neural computation, 13(7):1527–1558, 2001.\n\n[28] Aapo Hyvärinen, Jarmo Hurri, and Patrick O Hoyer. Natural image statistics: A probabilistic approach to early computational vision., volume 39. Springer Science & Business Media, 2009.\n\n[29] Aapo Hyvärinen and Erkki Oja. Independent component analysis: algorithms and applications. Neural networks, 13(4-5):411–430, 2000.\n\n[30] Aapo Hyvärinen and Patrik O. Hoyer. A two-layer sparse coding model learns simple and complex cell receptive fields and topography from natural images. Vision Research, 41(18):2413–2423, 2001.\n\n[31] Koray Kavukcuoglu, Marc’Aurelio Ranzato, Rob Fergus, and Yann LeCun. Learning invariant features through topographic filter maps. In 2009 IEEE Conference on Computer Vision and Pattern Recognition, pages 1605–1612. IEEE, 2009.\n\n[32] T. Anderson Keller, Qinghe Gao, and Max Welling. Modeling category-selective cortical regions with topographic variational autoencoders. In SVRHM 2021 Workshop @ NeurIPS, 2021.\n\n[33] Diederik P. Kingma and Max Welling. Auto-Encoding Variational Bayes. In 2nd International Conference on Learning Representations, ICLR 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings, 2014.\n\n[34] David A. Klindt, Lukas Schott, Yash Sharma, Ivan Ustyuzhaninov, Wieland Brendel, Matthias Bethge, and Dylan Paiton. Towards nonlinear disentanglement in natural data with temporal sparse coding. In International Conference on Learning Representations, 2021.\n\n[35] Teuvo Kohonen. Emergence of invariant-feature detectors in the adaptive-subspace self-organizing map. Biological cybernetics, 75(4):281–291, 1996.\n\n[36] Alexei A Koulakov and Dmitri B Chklovskii. Orientation preference patterns in mammalian visual cortex: a wire length minimization approach. Neuron, 29(2):519–527, 2001.\n\n[37] Yann LeCun, Corinna Cortes, and CJ Burges. Mnist handwritten digit database. ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist, 2, 2010.\n\n[38] Hyodong Lee, Eshed Margalit, Kamila M. Jozwik, Michael A. Cohen, Nancy Kanwisher, Daniel L. K. Yamins, and James J. DiCarlo. Topographic deep artificial neural networks reproduce the hallmarks of the primate inferior temporal cortex face processing network. bioRxiv, 07/2020 2020.\n\n[39] Jan Eric Lenssen, Matthias Fey, and Pascal Libuschewski. Group equivariant capsule networks. In NeurIPS, pages 8858–8867, 2018.\n\\`\\`\\` ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[30] Aapo Hyvärinen and Patrik O. Hoyer. A two-layer sparse coding model learns simple and complex cell receptive fields and topography from natural images. Vision Research, 41(18):2413–2423, 2001. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[26] Aapo Hyvärinen and Patrik Hoyer. Emergence of phase-and shift-invariant features by decomposition of natural images into independent feature subspaces. Neural computation, 12(7):1705–1720, 2000. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[33] Diederik P. Kingma and Max Welling. Auto-Encoding Variational Bayes. In 2nd International Conference on Learning Representations, ICLR 2014, Banff, AB, Canada, April 14-16, 2014, Conference Track Proceedings, 2014. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[28] Aapo Hyvärinen, Jarmo Hurri, and Patrick O Hoyer. Natural image statistics: A probabilistic approach to early computational vision., volume 39. Springer Science & Business Media, 2009. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[38] Hyodong Lee, Eshed Margalit, Kamila M. Jozwik, Michael A. Cohen, Nancy Kanwisher, Daniel L. K. Yamins, and James J. DiCarlo. Topographic deep artificial neural networks reproduce the hallmarks of the primate inferior temporal cortex face processing network. bioRxiv, 07/2020 2020. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[39] Jan Eric Lenssen, Matthias Fey, and Pascal Libuschewski. Group equivariant capsule networks. In NeurIPS, pages 8858–8867, 2018. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[31] Koray Kavukcuoglu, Marc'Aurelio Ranzato, Rob Fergus, and Yann LeCun. Learning invariant features through topographic filter maps. In 2009 IEEE Conference on Computer Vision and Pattern Recognition, pages 1605–1612. IEEE, 2009. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[34] David A. Klindt, Lukas Schott, Yash Sharma, Ivan Ustyuzhaninov, Wieland Brendel, Matthias Bethge, and Dylan Paiton. Towards nonlinear disentanglement in natural data with temporal sparse coding. In International Conference on Learning Representations, 2021. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[24] Jarmo Hurri and Aapo Hyvärinen. Simple-Cell-Like Receptive Fields Maximize Temporal Coherence in Natural Video. Neural Computation, 15(3):663–691, 03 2003. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[36] Alexei A Koulakov and Dmitri B Chklovskii. Orientation preference patterns in mammalian visual cortex: a wire length minimization approach. Neuron, 29(2):519–527, 2001. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[29] Aapo Hyvärinen and Erkki Oja. Independent component analysis: algorithms and applications. Neural networks, 13(4-5):411–430, 2000. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[23] Geoffrey E. Hinton and Yee-Whye Teh. Discovering multiple constraints that are frequently approximately satisfied. In Proceedings of the Seventeenth Conference on Uncertainty in Artificial Intelligence, UAI'01, page 227–234, 2001. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[20] Irina Higgins, David Amos, David Pfau, Sebastien Racaniere, Loic Matthey, Danilo Rezende, and Alexander Lerchner. Towards a definition of disentangled representations. ArXiv, abs/1812.02230, 2018. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[37] Yann LeCun, Corinna Cortes, and CJ Burges. Mnist handwritten digit database. ATT Labs [Online]. Available: http://yann.lecun.com/exdb/mnist, 2, 2010. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[32] T. Anderson Keller, Qinghe Gao, and Max Welling. Modeling category-selective cortical regions with topographic variational autoencoders. In SVRHM 2021 Workshop @ NeurIPS, 2021. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[27] Aapo Hyvärinen, Patrik O Hoyer, and Mika Inki. Topographic independent component analysis. Neural computation, 13(7):1527–1558, 2001. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[25] A. Hyvärinen, J. Hurri, and Jaakko J. Väyrynen. A unifying framework for natural image statistics: spatiotemporal activity bubbles. Neurocomputing, 58-60:801–806, 2004. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[21] Geoffrey E. Hinton, Alex Krizhevsky, and Sida D. Wang. Transforming auto-encoders. In Timo Honkela, Włodzisław Duch, Mark Girolami, and Samuel Kaski, editors, Artificial Neural Networks and Machine Learning – ICANN 2011, pages 44–51, Berlin, Heidelberg, 2011. Springer Berlin Heidelberg. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[22] Geoffrey E Hinton, Sara Sabour, and Nicholas Frosst. Matrix capsules with EM routing. In International Conference on Learning Representations, 2018. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[35] Teuvo Kohonen. Emergence of invariant-feature detectors in the adaptive-subspace self-organizing map. Biological cybernetics, 75(4):281–291, 1996. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Here is the text content from the image:\n\n[43] Loic Matthey, Irina Higgins, Demis Hassabis, and Alexander Lerchner. dsprites: Disentanglement testing sprites dataset. https://github.com/deepmind/dsprites-dataset/, 2017.\n\n[44] Bruno A Olshausen and David J Field. Sparse coding with an overcomplete basis set: A strategy employed by V1? Vision research, 37(23):3311–3325, 1997.\n\n[45] Simon Osindero, Max Welling, and Geoffrey E. Hinton. Topographic Product Models Applied to Natural Scene Statistics. Neural Computation, 18(2):381–414, 02 2006.\n\n[46] Simon Kayode Osindero. Contrastive Topographic Models. PhD thesis, University of London, 2004.\n\n[47] Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. Pytorch: An imperative style, high-performance deep learning library. In Advances in Neural Information Processing Systems 32, pages 8024–8035. 2019.\n\n[48] J Portilla, V Strela, M J Wainwright, and E P Simoncelli. Image denoising using scale mixtures of Gaussians in the wavelet domain. IEEE Trans Image Processing, 12(11):1338–1351, Nov 2003. Recipient, IEEE Signal Processing Society Best Paper Award, 2008.\n\n[49] Siamak Ravanbakhsh, Jeff Schneider, and Barnabás Póczos. Equivariance through parameter-sharing. In Doina Precup and Yee Whye Teh, editors, Proceedings of the 34th International Conference on Machine Learning, volume 70 of Proceedings of Machine Learning Research, pages 2892–2901. PMLR, 06–11 Aug 2017.\n\n[50] Danilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra. Stochastic backpropagation and approximate inference in deep generative models. In Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32, ICML’14, page II–1278–II–1286. JMLR.org, 2014.\n\n[51] Sara Sabour, Nicholas Frosst, and Geoffrey E. Hinton. Dynamic routing between capsules. In Proceedings of the 31st International Conference on Neural Information Processing Systems, NIPS’17, page 3859–3869, Red Hook, NY, USA, 2017. Curran Associates Inc.\n\n[52] James V. Stone. Learning Perceptually Salient Visual Parameters Using Spatiotemporal Smoothness Constraints. Neural Computation, 8(7):1463–1492, 10 1996.\n\n[53] Jan Stühmer, Richard E. Turner, and Sebastian Nowozin. Independent subspace analysis for unsupervised learning of disentangled representations, 2019.\n\n[54] Richard Turner and Maneesh Sahani. A maximum-likelihood interpretation for slow feature analysis. Neural computation, 19:1022–38, 05 2007.\n\n[55] Elise van der Pol, Daniel E. Worrall, Herke van Hoof, Frans A. Oliehoek, and Max Welling. MDP homomorphic networks: Group symmetries in reinforcement learning. CoRR, abs/2006.16908, 2020.\n\n[56] M J Wainwright and E P Simoncelli. Scale mixtures of Gaussians and the statistics of natural images. In S. A. Solla, T. K. Leen, and K.-R. Müller, editors, Adv. Neural Information Processing Systems (NIPS\\*99), volume 12, pages 855–861, Cambridge, MA, May 2000. MIT Press.\n\n[57] M J Wainwright, E P Simoncelli, and A S Willsky. Random cascades on wavelet trees and their use in analyzing and modeling natural images. Applied and Computational Harmonic Analysis, 11(1):89–123, Jul 2001. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[47] Adam Paszke, Sam Gross, Francisco Massa, Adam Lerer, James Bradbury, Gregory Chanan, Trevor Killeen, Zeming Lin, Natalia Gimelshein, Luca Antiga, Alban Desmaison, Andreas Kopf, Edward Yang, Zachary DeVito, Martin Raison, Alykhan Tejani, Sasank Chilamkurthy, Benoit Steiner, Lu Fang, Junjie Bai, and Soumith Chintala. Pytorch: An imperative style, high-performance deep learning library. In Advances in Neural Information Processing Systems 32, pages 8024–8035. 2019. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[49] Siamak Ravanbakhsh, Jeff Schneider, and Barnabás Póczos. Equivariance through parameter-sharing. In Doina Precup and Yee Whye Teh, editors, Proceedings of the 34th International Conference on Machine Learning, volume 70 of Proceedings of Machine Learning Research, pages 2892–2901. PMLR, 06–11 Aug 2017. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[50] Danilo Jimenez Rezende, Shakir Mohamed, and Daan Wierstra. Stochastic backpropagation and approximate inference in deep generative models. In Proceedings of the 31st International Conference on International Conference on Machine Learning - Volume 32, ICML'14, page II–1278–II–1286. JMLR.org, 2014. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[48] J Portilla, V Strela, M J Wainwright, and E P Simoncelli. Image denoising using scale mixtures of Gaussians in the wavelet domain. IEEE Trans Image Processing, 12(11):1338–1351, Nov 2003. Recipient, IEEE Signal Processing Society Best Paper Award, 2008. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[55] Elise van der Pol, Daniel E. Worrall, Herke van Hoof, Frans A. Oliehoek, and Max Welling. MDP homomorphic networks: Group symmetries in reinforcement learning. CoRR, abs/2006.16908, 2020. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[53] Jan Stühmer, Richard E. Turner, and Sebastian Nowozin. Independent subspace analysis for unsupervised learning of disentangled representations, 2019. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[51] Sara Sabour, Nicholas Frosst, and Geoffrey E. Hinton. Dynamic routing between capsules. In Proceedings of the 31st International Conference on Neural Information Processing Systems, NIPS'17, page 3859–3869, Red Hook, NY, USA, 2017. Curran Associates Inc. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[57] M J Wainwright, E P Simoncelli, and A S Willsky. Random cascades on wavelet trees and their use in analyzing and modeling natural images. Applied and Computational Harmonic Analysis, 11(1):89–123, Jul 2001. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n[46] Simon Kayode Osindero. Contrastive Topographic Models. PhD thesis, University of London, 2004. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[56] M J Wainwright and E P Simoncelli. Scale mixtures of Gaussians and the statistics of natural images. In S. A. Solla, T. K. Leen, and K.-R. Müller, editors, Adv. Neural Information Processing Systems (NIPS\\*99), volume 12, pages 855–861, Cambridge, MA, May 2000. MIT Press. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[44] Bruno A Olshausen and David J Field. Sparse coding with an overcomplete basis set: A strategy employed by V1? Vision research, 37(23):3311–3325, 1997. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[54] Richard Turner and Maneesh Sahani. A maximum-likelihood interpretation for slow feature analysis. Neural computation, 19:1022–38, 05 2007. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[40] S Lyu and E P Simoncelli. Nonlinear image representation using divisive normalization. In Proc. Computer Vision and Pattern Recognition, pages 1–8. IEEE Computer Society, Jun 23-28 2008. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[41] S Lyu and E P Simoncelli. Modeling multiscale subbands of photographic images with fields of Gaussian scale mixtures. IEEE Trans. Patt. Analysis and Machine Intelligence, 31(4):693–706, Apr 2009. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[43] Loic Matthey, Irina Higgins, Demis Hassabis, and Alexander Lerchner. dsprites: Disentanglement testing sprites dataset. https://github.com/deepmind/dsprites-dataset/, 2017. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[52] James V. Stone. Learning Perceptually Salient Visual Parameters Using Spatiotemporal Smoothness Constraints. Neural Computation, 8(7):1463–1492, 10 1996. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[45] Simon Osindero, Max Welling, and Geoffrey E. Hinton. Topographic Product Models Applied to Natural Scene Statistics. Neural Computation, 18(2):381–414, 02 2006. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[42] Libo Ma and Liqing Zhang. Overcomplete topographic independent component analysis. Neurocomputing, 71(10-12):2217–2223, 2008. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "We would like to thank Jorn Peters for his invaluable contributions to this work at its earliest stages. We would additionally like to thank Patrick Forré, Emiel Hoogeboom, and Anna Khoreva for their helpful guidance throughout the project. We would like to thank the creators of Weight & Biases [5] and PyTorch [47]. Without these tools our work would not have been possible. Finally, we thank the Bosch Center for Artificial Intelligence for funding, and the reviewers for their helpful comments. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"9 Acknowledgements\" ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[58] Maurice Weiler, Mario Geiger, Max Welling, Wouter Boomsma, and Taco Cohen. 3d steerable cnns: Learning rotationally equivariant features in volumetric data. In Proceedings of the 32nd International Conference on Neural Information Processing Systems, NIPS'18, page 10402–10413, Red Hook, NY, USA, 2018. Curran Associates Inc.\n\n[59] Max Welling, Simon Osindero, and Geoffrey E Hinton. Learning sparse topographic representations with products of student-t distributions. In Advances in neural information processing systems, pages 1383–1390, 2003.\n\n[60] Laurenz Wiskott and Terrence J Sejnowski. Slow feature analysis: Unsupervised learning of invariances. Neural computation, 14(4):715–770, 2002.\n\n[61] Daniel Worrall and Max Welling. Deep scale-spaces: Equivariance over scale. In H. Wallach, H. Larochelle, A. Beygelzimer, F. d’Alché-Buc, E. Fox, and R. Garnett, editors, Advances in Neural Information Processing Systems, volume 32. Curran Associates, Inc., 2019.\n\n[62] Daniel E. Worrall, Stephan J. Garbin, Daniyar Turmukhambetov, and Gabriel J. Brostow. Harmonic networks: Deep translation and rotation equivariance. 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pages 7168–7177, 2017. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[62] Daniel E. Worrall, Stephan J. Garbin, Daniyar Turmukhambetov, and Gabriel J. Brostow. Harmonic networks: Deep translation and rotation equivariance. 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), pages 7168–7177, 2017. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[58] Maurice Weiler, Mario Geiger, Max Welling, Wouter Boomsma, and Taco Cohen. 3d steerable cnns: Learning rotationally equivariant features in volumetric data. In Proceedings of the 32nd International Conference on Neural Information Processing Systems, NIPS'18, page 10402–10413, Red Hook, NY, USA, 2018. Curran Associates Inc. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[59] Max Welling, Simon Osindero, and Geoffrey E Hinton. Learning sparse topographic representations with products of student-t distributions. In Advances in neural information processing systems, pages 1383–1390, 2003. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[61] Daniel Worrall and Max Welling. Deep scale-spaces: Equivariance over scale. In H. Wallach, H. Larochelle, A. Beygelzimer, F. d'Alché-Buc, E. Fox, and R. Garnett, editors, Advances in Neural Information Processing Systems, volume 32. Curran Associates, Inc., 2019. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n[60] Laurenz Wiskott and Terrence J Sejnowski. Slow feature analysis: Unsupervised learning of invariances. Neural computation, 14(4):715–770, 2002. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "All models presented in this paper make use of the same 3-Layer MLP for parameterizing the encoders and decoders. Specifically, the model is constructed as 3 fully connected layers with ReLU activations in-between the layers. For MNIST, the layers of both the u and z encoders have (972, 648, 648) output units each for the first, second, and third layers respectively. The 648 units in the third layer are divided into two sets to compute the mean and log standard deviation of the respective u's and z's, yielding 324 t variables. This is then divided into 18 capsules, each of 18 dimensions. The layers of the decoder have (648, 972, 2352) output units respectively. For dSprites, both encoder layers have output sizes (674, 450, 450), where the resulting 225 t variables are divided into 15 capsules, each of 15 dimensions. The decoder layers then have output sizes (450, 675, 4096). We note the non-topographic VAE baselines make use of only a single encoder for the Gaussian variable z (as u is not needed), and do not incorporate a μ parameter. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The choice of Wδ determines the local topographic structure within a single timestep. For all TVAE models with L > 0, we experimented with local neighborhood sizes (denoted K) of 3 units (effective kernel size 3 in the capsule dimension), and 1 unit (no neighborhood). For MNIST it was observed that K = 3 performed best, while K = 1 worked best for dSprites. This is likely due to the slower, smoother, and more overlapping transformations constructed on MNIST, whereas our subset of dSprites contained non-smooth transformations where the overlap between successive images was smaller (e.g., due to sub-setting, see Section A.9), which made larger neighborhood sizes K > 1 less fitting. For TVAE models with L = 0, Wδ = W was fixed to sum over neighborhoods of size K = 9 for MNIST and K = 3 for dSprites. These values were chosen to be sufficiently large to achieve notably lower equivariance error than the VAE baseline, and thus demonstrate the impact of topographic organization without temporal coherence. For BubbleVAE models, the extent of topographic organization in the capsule dimension was set to K = 3 on MNIST to match the TVAE. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "Given the differences between the training procedures of the model presented in Section 6.2, and those in Section 6.3, the optimizer parameters for the two settings differed slightly. The 2D Topographic VAE without Temporal Coherence presented in Figure 3 was trained with stochastic gradient descent on batches of size 128, using a learning rate of \\(1 \\times 10^{-4}\\), and standard momentum of 0.9 for 250 epochs. All models in Section 6.3 were trained with stochastic gradient descent on batches of size 8 (due to each batch-example being a length 15 or 18 sequence), using a learning rate of \\(1 \\times 10^{-4}\\), and standard momentum of 0.9 for 100 epochs. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "For all topographic models (TVAE and BubbleVAE) in Section 6.3, the global topographic organization afforded by W was fixed to a set of 1-D tori ('circular capsules') as depicted in Figure 1. The model presented in Section 6.2 organizes its variables as a single 2-D torus. Practically, multiplication by W was performed by convolution over the appropriate dimensions (time & capsule dimension) with a kernel of all 1's, taking advantage of circular padding to achieve toroidal structure. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "All weights of the models were initialized with uniformly random samples from \\( U\\left(-\\frac{1}{\\sqrt{m}}, \\frac{1}{\\sqrt{m}}\\right) \\), where \\( m \\) is the number of input units. For all topographic models including BubbleVAE, \\( \\mu \\) was initialized to a large value (30.0) as this was observed to increase the speed of convergence and was sometimes necessary for observed topographic organization in deeper models. For the 2D topographic model in Figure 3, \\( \\mu \\) was initialized to 10. ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The code for reproducing all experiments in this paper can be found in the following GitHub repository: https://github.com/AKAndyKeller/TopographicVAE ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"A.2 Initialization\". ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A.3 Model Architectures ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"A.5 Choice of Wδ\" ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A.1 Optimizer Parameters ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A.4 Choice of W ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "A Experiment Details ",
+        "page_idx": 13
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Hyperparameters such as learning rate, batch size, number of capsules, capsule size, and ultimately model architecture were chosen to allow for quick training on limited resources and were not tuned significantly. Since it was conceptually simpler to have an equal number of capsule dimensions and sequence elements, this limited the number of capsules we could then train efficiently. In Section C.1 we explain how a model with fewer capsule dimensions than sequence elements could be constructed with an alternative Roll operator. Additionally, from preliminary experiments, we observe that models with a number of internal capsule dimensions different from the number of sequence elements achieve similar likelihood values while also learning coherent transformations as decoded through the capsule roll. We believe these findings in combination with the extra studies provided in Section B suggest a satisfying degree of robustness to hyperparameter selection.\" ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The second set of experiments presented in this paper are based on the dSprites dataset [43] (Apache-2.0 License). To reduce computational complexity of this dataset, we took a subset of the dataset which consisted of all 3 shapes, the largest 5 scales, and every other example from the first 30 orientations, x-positions, and y-positions. The resulting dataset thus had 50,625 total images (3 shapes, 5 scales, 15 orientations, 15 x-positions, 15 y-positions), compared to the original 737,280 images. To construct sequences, we followed the same procedure as for MNIST, whereby first a random example and transformation were chosen, and a sequence of 15 images was constructed where only the chosen transformation was applied successively. We define the transformations available for sequences as scale, orientation, x-position, and y-position, omitting shape since smooth shape transforms are not present in the dSprites dataset. Again, we define all transformations to be cyclic such that once the 15th element is reached, the 1st element follows. For scale transformations, we simply loop over all 5 scales 3 times per sequence. We observe that although these sequences do not match the latent priors exactly, the models still train relatively well, implying some degree of robustness. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The first set of experiments presented in this paper are based on the MNIST dataset [37] (MIT Licence). For Section 6.2 (Figure 3) an MNIST training set of 48,000 images was used, while the standard test set of 10,000 images was used to compute the maximum activating image. For Section 6.3 (Figure 4 and Table 1), sequences of MNIST images were created by picking a random training image (with a random transformation ‘pose’) and successively transforming it according to one of the 3 available transformations (e.g., only one attribute is changed per sequence). The available transformations consisted of rotation, color (hue rotation), and scale with increments of 20-degrees for rotation and color, and 3.66% increments for scale. Since scale is inherently non-cyclic, the bounds of the transformation were set at 60% and 126%, and the transformations were constructed to be periodic such that once scale reached 126%, the next element was at 60% scale. The final sequences were thus constructed to be 18 images long, where each element in the batch had an independently randomly chosen transformation. Again, the likelihood log p(x) and equivariance error εeq were computed on the held-out 10,000 example test set, where the same random transformation sequences were applied. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The choice of \\( L \\) determines the extent of temporal coherence where \\( 2L \\) equals the input sequence length, and \\( L = 0 \\) corresponds to single inputs. For Table 1, we experimented with values of \\( L \\) in the set \\(\\{0, \\frac{5}{36}S, \\frac{1}{4}S, \\frac{1}{2}S\\}\\) for both the TVAE and BubbleVAE. Both the BubbleVAE and TVAE achieved highest likelihoods at \\( L = \\frac{5}{36}S \\), and TVAE achieved lowest equivariance error at \\( L = \\frac{1}{2}S \\). We additionally included TVAE experiments with \\( L = \\frac{13}{36}S \\) for purposes of visualization in Figures 1 and 4 as this yielded the best qualitative generalization. For Table 2, we experimented with values of \\( L \\) in the set \\(\\{0, \\frac{1}{6}S, \\frac{4}{15}S, \\frac{1}{3}S, \\frac{2}{5}S, \\frac{1}{2}S\\}\\) for both TVAE and BubbleVAE, and presented a broad selection in the table. The results of all models are shown in Section B below. ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"and was set to be equal to the organization in time dimension \\( K = 2L \\) for dSprites. A further quantitative comparison on the impact of the choice of the \\( K \\) parameter can be found in Section B.2.\" ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A.9 dSprites Transformations ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A.8 MNIST Transformations ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A.7 Hyperparameter Selection ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "A.6 Choice of L ",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 14
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Where the correlation coefficient Corr is then computed across all examples for the entire dataset. In our experiments we use the Pearson correlation coefficient for Corr. We thus see this metric is the correlation of the estimated observed capsule roll with the shift in ground truth generative factors, which is equal to 1 when the model is perfectly equivariant. To extend this definition to multiple capsules, we estimate ObservedRoll for each capsule separately, and then correlate the mode of all ObservedRoll values with the true shift in ground truth generative factors. We see empirically that the ObservedRolls for all capsules are almost always identical (i.e. all capsules roll simultaneously for each transformation), therefore computing the mode does not destroy significant information. Finally, for transformation sequences which have multiple timesteps where \\( y_l \\) is at the canonical position (e.g. scale transformations on dSprites where scale is looped 3 times), we select \\( l = \\Omega \\) to be the one from this possible set which yields the minimal absolute distance between \\( |y_\\Omega - y_0| \\) and ObservedRoll(t_\\Omega, t_0). ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Here we define CapCorr more precisely as it is implemented in our work. First, we denote the ground truth transformation parameter of the sequence at timestep l as y_l (e.g., the rotation angle at timestep l for a rotation sequence), and the corresponding activation at time l as t_l. Next, to get an arbitrary starting point, we let l = Ω denote the timestep when y_l is at its canonical position (e.g., rotation angle 0, x-position 0, or scale 1). We see Ω is not necessarily 0 since the first timestep of each sequence (l = 0) is a randomly transformed example. Then, we observe that we can measure the approximate observed roll in the capsule dimension between time 0 and Ω as a ‘phase shift’ by computing the index of the maximum value of a discrete (periodic) cross-correlation of t_Ω and t_0: ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "In Table 5, we show a small set of experiments with different settings of Wδ, and specifically changing values of K (the coherence window within a capsule). As can be seen, increasing K generally reduces equivariance error, but decreases the log-likelihood. This can be further understood by examining the capsule traversals of such models in Figures 9, 10, 11, 12, & 13. We see that larger values of K appear to induce smoother transformations within the capsule dimensions, eventually resulting in invariant representations when K is equal to the capsule dimensionality. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "In this section we provide extended results for all tested hyperparameters (Tables 3 & 4), a further analysis of the impact of the coherence window within a capsule Wδ (Table 5), samples from the model in Section 6.2, and additional capsule traversal experiments highlighting the generalization capabilities of the TVAE to combinations of transformations unseen during training (Figure 6). ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "In Tables 3 & 4 below, we present extended versions of Tables 1 & 2 respectively, showing all tested settings of the TVAE & BubbleVAE. We observe the TVAE achieves perfect correlation (CapCorr = 1) for L ≥ 1/3, and steadily decreasing correlation for lower values of L. ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "As stated in Section 4.5.2, Roll\\(_{\\delta}\\) (\\(\\mathbf{u}\\)), is defined as a cyclic permutation of \\(\\delta\\) steps along the capsule dimension of \\(\\mathbf{u}\\). Explicitly, if \\(\\mathbf{u}\\) is divided into \\(C\\) capsules each with \\(D\\) dimensions, the Roll\\(_{\\delta}\\) operation can be written as: ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "Where ∗ is discrete (periodic) cross-correlation across the (cyclic) capsule dimension and argmax is also subsequently performed over the capsule dimension. Then, the CapCorr metric for a single capsule is given as: ",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\nThe formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{ObservedRoll}(\\mathbf{t}_\\Omega, \\mathbf{t}_0) = \\argmax [\\mathbf{t}_\\Omega \\star \\mathbf{t}_0]\n```\n\nThis will produce the same equation as shown in the image.\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "A.11 Definition of Roll for Capsules ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "B.1 Extended Tables 1 & 2 ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"A.10 Capsule Correlation Metric (CapCorr)\" ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"B.2 Impact of Wδ\" ",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\\`\\`\\`\nB Extended Results\n\\`\\`\\` ",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\text{CapCorr}(\\mathbf{t}_{\\Omega}, \\mathbf{t}_0, y_{\\Omega}, y_0) = \\text{Corr}\\left(\\text{ObservedRoll}(\\mathbf{t}_{\\Omega}, \\mathbf{t}_0), |y_{\\Omega} - y_0|\\right)\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\text{Roll}_\\delta(\\mathbf{u}) = \\text{Roll}_\\delta\\left([u_1, u_2, \\ldots, u_{C \\cdot D}]\\right)\n= [u_D, u_1, \\ldots, u_{D-1}, u_{2 \\cdot D}, u_{D+1}, \\ldots, u_{2 \\cdot D-1}, u_{3 \\cdot D}, \\ldots, \\ldots, u_{C \\cdot D - 1}]\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 15
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 15
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Table 3: Log Likelihood and Equivariance Error on MNIST for all models tested. Mean ± std. over 3 random initializations. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "Table 4: Equivariance error and CapCorr for all models tested on the dSprites dataset. Mean ± standard deviation over 3 random initializations. ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Table 5: Impact of Wδ (i.e., K) on MNIST performance.\" ",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 16
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Explicitly, we train the model identically to that presented in Figure 4, (TVAE L = \\(\\frac{13}{36}\\)S), and examine the sequences generated by a capsule roll when the partial input sequences contain combinations of transformations previously unseen during training. The results of this experiment, tested on combinations of rotation and color transforms on the MNIST test set, are presented in Figure 6 below. Although this generalization capability is not known to be guaranteed a priori, we see that the capsule traversals are frequently remarkably coherent with the input transformation, implying that the model may indeed be able to generalize to combinations of transformations. Furthermore, we observe with \\(L = \\frac{1}{2}S\\) (results not shown), this generalization capability is nearly perfect.\" ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "In this section, we test the ability of the model to generate sequences composed of multiple transformations through a capsule roll, despite only being trained on individual transformations in isolation. In other words, we intend to measure the extent to which the transformations learned by a set of capsules can be combined simply by passing input sequences with corresponding combined transformations. Such generalization suggests powerful benefits to data efficiency, effectively factorizing a set of complex transformations. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "In Figure 5, we provide samples from our model in the \\( L = 0 \\) setting to validate that the learned latent distribution closely matches the \\( TPoT \\) distribution described in Equation 6. Explicitly, the samples are generated by sampling standard normal random variables \\( \\mathbf{Z} \\) and \\( \\mathbf{U} \\), constructing \\( \\mathbf{T} \\) as in Equation 6, and then passing these sampled \\( \\mathbf{T} \\) through the decoder. We see that the samples resemble true MNIST digits (accounting for the limited capacity of the model), implying that the distribution after training indeed follows the desired distribution, and the model has learned to become a good generative model of the data. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"B.4 Generalization to Combined Transformations at Test Time\" ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Figure 6: Capsule Traversals for MNIST TVAE \\( L = \\frac{13}{36} S \\), trained on individual transformations in isolation, and tested on combined color and rotation transformations. Top row shows the input sequence, middle row shows the direct reconstruction \\(\\{g_\\theta(\\mathbf{t}_l)\\}_l\\), and bottom row shows the capsule traversal \\(\\{g_\\theta(\\text{Roll}_l[\\mathbf{t}_0])\\}_l\\). ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "Figure 5: Samples from the TVAE in Section 6.2. ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "B.3 Samples ",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 17
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "In consideration of transformations which may naturally live in multiple dimensions, we wish to extend the original model to support multi-dimensional capsules. Such multi-dimensional capsules could additionally support more well-defined ‘disentanglement’ of transformations by encouraging each transformation to be axis-aligned with one dimension of each capsule. We see that in the non-temporally coherent case (L = 0), the model can easily be extended to capsules of multiple dimensions through multi-dimensional neighborhoods. An example of a model with 2-dimensional neighborhoods is presented in Figure 3. However, when considering shifting temporal coherence as we defined in Section 6.3, it is not clear how the shift operator or the neighborhoods should be defined for higher dimensional capsules. In this section we propose to modify the definitions of T in Equations 7 and 9 with an extension resembling ‘group sparsity’ in the denominator. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "The Roll operation can be seen as defining the speed at which t transforms corresponding to an observed transformation. For example, with Roll defined as in Section A.11 above, we implicitly assume that for each observed timestep, we would like the representation t to cyclically permute 1-unit within the capsule. For this to match the observed data, it requires the model to have an equal number of capsule dimensions and sequence elements. If we wish to reduce the size of our representation, we could instead encourage a 'partial permutation' for each observed transformation. For a single capsule with D elements, an example of a simple linear version of such a partial permutation (for 0 < α ≤ 1) can be implemented as: ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "We can also see that there is nothing beyond convenience which inherently requires the capsules to be circular (i.e., have periodic boundary conditions). To implement linear capsules, we propose one solution is to add \\( L \\) additional \\( U_i \\) variables to both the left and right boundaries of each capsule. In this way, the vector \\( \\mathbf{U} \\) is larger than the vector \\( \\mathbf{Z} \\) and can be seen as a 'padded' version, where the padding is composed of independent random variables. Additionally, the transformation sequences can then be padded on both sides by replicating the first and final elements \\( L \\) times. The construction of \\( \\mathbf{T} \\) variables is then performed identically as in Equations 7 and 9. The Roll operation can then be similarly defined as filling the boundaries with 0 since these values will not be used as part of the computation. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "A slightly more principled partial roll for periodic signals could also be achieved by performing a phase shift of the signal in Fourier space, and performing the inverse Fourier transform to obtain the resulting rolled signal. To extend the CapCorr metric to similarly allow for partial Rolls, we see that we can simply redefine the ObservedRoll (originally given by discrete cross-correlation) to be given by the argmax of the inner product of a sequentially partially rolled activation with the initial activation \\( t_\\Omega \\). Formally: ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "Where \\( \\mathbf{W}_{\\delta}^{d} \\) refers to a matrix which sums locally along the \\( d^{th} \\) dimension of each capsule, and not at all along the others, and similarly \\( \\text{Roll}_{\\delta}^{d} \\) rolls only along the \\( d^{th} \\) dimension. In practice we observe such models can indeed disentangle up to 2 distinct transformations, but become more challenging to optimize for higher dimensions. We believe this is potentially due to the exponential growth in capsule size with increasing dimension, but leave further exploration to future work. ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "First, we again assume that each input sequence is an observation of a single transformation at a time. Formally, the multi-dimensional capsules are then constructed by arranging U into a D dimensional lattice. In such a model, we desire to roll and sum only along a single axis of the lattice for a given sequence. Incorporating this into the construction of T yields the following: ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sum_{d=1}^{D} \\sqrt{\\mathbf{W}^d \\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}} = \\frac{\\mathbf{Z}_l - \\mu}{\\sum_{d=1}^{D} \\sqrt{\\sum_{\\delta=-L}^{L} \\mathbf{W}^d_\\delta \\text{Roll}^d_\\delta (\\mathbf{U}_{l+\\delta}^2)}}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"C.3 Multi-dimensional Temporally Coherent Capsules\" ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"C.1 Extensions to Roll & CapCorr\" ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"C Proposed Model Extensions\" ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "C.2 Non-Cyclic Capsules ",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\text{Roll}_{\\alpha}(\\mathbf{u}) = \\left[\\alpha u_D + (1-\\alpha)u_1, \\; \\alpha u_1 + (1-\\alpha)u_2, \\; \\ldots, \\; \\alpha u_{D-1} + (1-\\alpha)u_D\\right]\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 18
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\Omega, t_0) = \\argmax [\\mathbf{t}_\\Omega \\cdot \\text{Roll}_0(t_0), \\mathbf{t}_\\Omega \\cdot \\text{Roll}_\\alpha(t_0), \\ldots, \\mathbf{t}_\\Omega \\cdot \\text{Roll}_{D-\\alpha}(t_0)]\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\\[\n\\Omega, t_0) = \\argmax [\\mathbf{t}_\\Omega \\cdot \\text{Roll}_0(t_0), \\mathbf{t}_\\Omega \\cdot \\text{Roll}_\\alpha(t_0), \\ldots, \\mathbf{t}_\\Omega \\cdot \\text{Roll}_{D-\\alpha}(t_0)]\n\\] ",
+        "page_idx": 18
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "In this section we provide a set of 12 capsule traversals for each of the models presented in main text. The traversals are randomly selected such that all transformations (and dSprites shapes) are shown evenly. Unlike the main section, we additionally include a middle row which shows the direct reconstruction of the input without any rolling (i.e. {gθ(tl)}l). We find the direct reconstructions valuable to determine if poor traversals are due to bad reconstructions (low log pθ(x|t)) or a lack of equivariance (high Eeq). For example, with the baseline VAE models, we see that the reconstructions in the middle row are accurate for the full sequence, while the capsule traversals obtained by sequentially rolling the initial activation (shown in the bottom row) are nothing like the input transformation (top row). In all traversals, the left-most image corresponds to t0, and thus input sequences of length 2L cover both the left and right edges when L > 0. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "As noted in the limitations, the sequence model in this paper is not 'causal', meaning that each variable \\(\\mathbf{T}_l\\) requires variables from future timesteps in the sequence (\\(\\mathbf{U}_{l+\\delta}\\) for \\(\\delta > 0\\)). Although for the purpose of learning equivariance in practice this may not be an issue, it may be relevant for some online learning applications. We can modify Equations 7 and 9 by changing the matrix W (implemented as convolution) to a causal convolution (i.e., masking out \\(W_\\delta\\) for \\(\\delta > 0\\)). Formally: ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "In a causal setting, it is also likely the transformations are no longer assumed to be circular. We thus refer the reader to Section C.2 above on non-circular capsules, which can be combined with Equation 21, to achieve such a model. ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Finally, in Figures 22 & 23 at the end of the section, we include capsule traversals for models trained on MNIST with more complex transformations such as combined color & rotation, and combined color & perspective transforms. These models were trained in an identical manner to the other MNIST models, with the same architecture, only changing the transformation sequences of the training dataset. ",
+        "page_idx": 19
+    },
+    {
+        "type": "equation",
+        "text": "$$\n```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\mathbf{W}\\left[\\mathbf{U}_l^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}} = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\sum_{\\delta=-L}^{0} \\mathbf{W}_\\delta \\text{Roll}_\\delta(\\mathbf{U}_{l+\\delta}^2)}}\n```\n$$",
+        "text_format": "latex",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "D Capsule Traversals ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "Figure 7: MNIST TVAE \\( L = \\frac{1}{2}S, K = 3 \\) ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "C.4 Causal Temporal Coherence ",
+        "page_idx": 19
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 19
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Figure 9: MNIST TVAE \\( L = \\frac{5}{36}S, K = 3 \\). We see with values of \\( L < \\frac{1}{3}S \\) the transformations decoded through the capsule roll are only partially coherent with the input sequence. ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Figure 8: MNIST TVAE \\( L = \\frac{13}{36}S, K = 3 \\) ",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 20
+    },
+    {
+        "type": "text",
+        "text": "Figure 9: MNIST TVAE \\( L = \\frac{5}{36}S, K = 3 \\). We see with values of \\( L < \\frac{1}{3}S \\) the transformations decoded through the capsule roll are only partially coherent with the input sequence. ",
+        "page_idx": 20
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Figure 11: MNIST TVAE L = 0, K = 3. We see for sufficiently small values of K, the TVAE can reach a degenerate solution where topographic organization is almost entirely lost. ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Figure 10: MNIST TVAE \\( L = \\frac{5}{36}S, K = 9 \\)\" ",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 21
+    },
+    {
+        "type": "text",
+        "text": "Figure 11: MNIST TVAE L = 0, K = 3. We see for sufficiently small values of K, the TVAE can reach a degenerate solution where topographic organization is almost entirely lost. ",
+        "page_idx": 21
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Figure 12: MNIST TVAE L = 0, K = 9 ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "Figure 13: MNIST TVAE L = 0, K = 18. We see when K is equal to the capsule size (making the model analogous to ISA), the model learns an invariant capsule representation – meaning Rolling a capsule activation produces no significant transformation in the observation space. ",
+        "page_idx": 22
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 22
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Figure 15: MNIST VAE L = 0, K = 1. We see images generated through capsule traversal with the baseline VAE appear entirely random, as expected due to the non-topographic nature of the VAE’s latent space. ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "Figure 14: MNIST BubbleVAE \\( L = \\frac{5}{36}S, K = 2L \\) ",
+        "page_idx": 23
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 23
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Figure 17: dSprites TVAE L = \\frac{1}{3}S, K = 1\" ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Figure 16: dSprites TVAE L = \\frac{1}{2}S, K = 1\" ",
+        "page_idx": 24
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 24
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Figure 18: dSprites TVAE L = 1/6S, K = 1\" ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "Figure 19: dSprites TVAE L = 0, K = 3 ",
+        "page_idx": 25
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 25
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "Figure 20: dSprites BubbleVAE \\( L = \\frac{1}{3} S, K = 2L \\). We see the capsule traversals for the BubbleVAE produce only relatively minor transformations in the observation space (e.g., shape or rotation change, but position appears constant). This reinforces the intuition that models with stationary temporal coherence are likely to learn invariant capsule representations. ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Figure 21: dSprites VAE L = 0, K = 1\" ",
+        "page_idx": 26
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Figure 21: dSprites VAE L = 0, K = 1\" ",
+        "page_idx": 26
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Figure 23: Combined Color & Perspective MNIST TVAE \\( L = \\frac{13}{36} S, K = 3 \\). We see the TVAE is able to additionally learn combinations of complex transformations (like out-of-plane rotation) without any changes to the training procedure other than a change of dataset. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Figure 22: Combined Color & Rotation MNIST TVAE \\( L = \\frac{13}{36} S, K = 3 \\). We see these generated sequences are slightly more accurate than those in Figure 6. This is to be expected since the model in this figure is trained explicitly on combinations of transformations, whereas the model in Figure 6 was trained on transformations in isolation and tested on combinations to explore its generalization. ",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 27
+    },
+    {
+        "type": "text",
+        "text": "Figure 22: Combined Color & Rotation MNIST TVAE \\( L = \\frac{13}{36} S, K = 3 \\). We see these generated sequences are slightly more accurate than those in Figure 6. This is to be expected since the model in this figure is trained explicitly on combinations of transformations, whereas the model in Figure 6 was trained on transformations in isolation and tested on combinations to explore its generalization. ",
+        "page_idx": 27
+    }
+]

@@ -1,0 +1,48 @@
+{
+    "total_count": 3,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                342,
+                65,
+                503,
+                207
+            ],
+            "caption": "Figure 1. The architecture of the WaveRNN with the dual softmax layer. c represents the coarse (high 8-bits) of the sample and f represents the fine (low 8-bits) of the sample. The multiplication by R happens for both the coarse and fine bits simultaneously, then output of the gates is evaluated for the coarse bits only and ct is sampled. Once ct has been sampled from P(ct), the gates are evaluated for the fine bits and ft is sampled.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                57,
+                237,
+                289,
+                393
+            ],
+            "caption": "The text in the image reads: \"NLL vs. Sparsity for Constant Parameter Counts\" Figure 2. The Sparse WaveRNNs on each curve have the same number of parameters. The Sparse WaveRNNs with structured sparsity \\(16 \\times 1\\) and \\(4 \\times 4\\) hit a point of maximum performance at a high degree of sparsity. The points of maximum performance for the unstructured Sparse WaveRNNs fall beyond the tested range.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                54,
+                57,
+                541,
+                233
+            ],
+            "caption": "Figure 3. The dependency scheme of Subscale WaveRNN. Each box corresponds to one 16-bit sample. Subscaling first reshapes the tensor into B sub-tensors of interleaving samples. Then each sub-tensor is generated conditioned on past and future samples of previously generated sub-tensors; the past horizon is unbounded, whereas the future horizon of size F is tied to the receptive field of the conditioning network. Batched sampling can then be applied. The final tensor in the original scale is reconstituted from the generated sub-tensors. Figure 3. The dependency scheme of Subscale WaveRNN. Each box corresponds to one 16-bit sample. Subscaling first reshapes the tensor into B sub-tensors of interleaving samples. Then each sub-tensor is generated conditioned on past and future samples of previously generated sub-tensors; the past horizon is unbounded, whereas the future horizon of size F is tied to the receptive field of the conditioning network. Batched sampling can then be applied. The final tensor in the original scale is reconstituted from the generated sub-tensors.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        }
+    ]
+}

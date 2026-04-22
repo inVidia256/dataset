@@ -1,0 +1,354 @@
+{
+    "total_count": 29,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                116,
+                579,
+                493,
+                610
+            ],
+            "content": "V ( D , E , G ) : = \\mathbb { E } _ { \\mathbf { x } \\sim p _ { \\mathbf { X } } } \\Big [ \\underbrace { \\mathbb { E } _ { \\mathbf { z } \\sim p _ { E } ( \\cdot | \\mathbf { x } ) } \\left[ \\log D ( \\mathbf { x } , \\mathbf { z } ) \\right] } _ { \\log D ( \\mathbf { x } , E ( \\mathbf { x } ) ) } + \\mathbb { E } _ { \\mathbf { z } \\sim p _ { \\mathbf { Z } } } \\Big [ \\underbrace { \\mathbb { E } _ { \\mathbf { x } \\sim p _ { G } ( \\cdot | \\mathbf { z } ) } \\left[ \\log \\left( 1 - D ( \\mathbf { x } , \\mathbf { z } ) \\right) \\right] } _ { \\log ( 1 - D ( G ( \\mathbf { z } ) , \\mathbf { z } ) ) } \\Big ] .",
+            "latex": "V ( D , E , G ) : = \\mathbb { E } _ { \\mathbf { x } \\sim p _ { \\mathbf { X } } } \\Big [ \\underbrace { \\mathbb { E } _ { \\mathbf { z } \\sim p _ { E } ( \\cdot | \\mathbf { x } ) } \\left[ \\log D ( \\mathbf { x } , \\mathbf { z } ) \\right] } _ { \\log D ( \\mathbf { x } , E ( \\mathbf { x } ) ) } + \\mathbb { E } _ { \\mathbf { z } \\sim p _ { \\mathbf { Z } } } \\Big [ \\underbrace { \\mathbb { E } _ { \\mathbf { x } \\sim p _ { G } ( \\cdot | \\mathbf { z } ) } \\left[ \\log \\left( 1 - D ( \\mathbf { x } , \\mathbf { z } ) \\right) \\right] } _ { \\log ( 1 - D ( G ( \\mathbf { z } ) , \\mathbf { z } ) ) } \\Big ] ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                187,
+                174,
+                425,
+                205
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nV(D, G) := \\mathbb{E}_{\\mathbf{x} \\sim p_X} [\\log D(\\mathbf{x})] + \n\\underbrace{\\mathbb{E}_{\\mathbf{x} \\sim p_G} [\\log (1 - D(\\mathbf{x}))]}_{\\mathbb{E}_{\\mathbf{z} \\sim p_Z} [\\log (1 - D(G(\\mathbf{z})))]}\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nV(D, G) := \\mathbb{E}_{\\mathbf{x} \\sim p_X} [\\log D(\\mathbf{x})] + \n\\underbrace{\\mathbb{E}_{\\mathbf{x} \\sim p_G} [\\log (1 - D(\\mathbf{x}))]}_{\\mathbb{E}_{\\mathbf{z} \\sim p_Z} [\\log (1 - D(G(\\mathbf{z})))]}\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                260,
+                542,
+                351,
+                560
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{G,E} \\max_{D} V(D,E,G)\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{G,E} \\max_{D} V(D,E,G)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                129,
+                97,
+                483,
+                129
+            ],
+            "content": "```latex\nP_{E\\mathbf{X}}(R) := \\int_{\\Omega} p_{E\\mathbf{X}}(\\mathbf{x}, \\mathbf{z}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d(\\mathbf{x}, \\mathbf{z}) = \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) \\int_{\\Omega_{\\mathbf{Z}}} p_{E}(\\mathbf{z}|\\mathbf{x}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{z} \\, d\\mathbf{x}\n\nP_{G\\mathbf{Z}}(R) := \\int_{\\Omega} p_{G\\mathbf{Z}}(\\mathbf{x}, \\mathbf{z}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d(\\mathbf{x}, \\mathbf{z}) = \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) \\int_{\\Omega_{\\mathbf{X}}} p_{G}(\\mathbf{x}|\\mathbf{z}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{x} \\, d\\mathbf{z}\n```",
+            "latex": "```latex\nP_{E\\mathbf{X}}(R) := \\int_{\\Omega} p_{E\\mathbf{X}}(\\mathbf{x}, \\mathbf{z}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d(\\mathbf{x}, \\mathbf{z}) = \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) \\int_{\\Omega_{\\mathbf{Z}}} p_{E}(\\mathbf{z}|\\mathbf{x}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{z} \\, d\\mathbf{x}\n\nP_{G\\mathbf{Z}}(R) := \\int_{\\Omega} p_{G\\mathbf{Z}}(\\mathbf{x}, \\mathbf{z}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d(\\mathbf{x}, \\mathbf{z}) = \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) \\int_{\\Omega_{\\mathbf{X}}} p_{G}(\\mathbf{x}|\\mathbf{z}) 1_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{x} \\, d\\mathbf{z}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                177,
+                214,
+                434,
+                251
+            ],
+            "content": "```latex\n\\begin{align*}\nD_{\\text{KL}}(P \\parallel Q) &:= \\mathbb{E}_{\\mathbf{x} \\sim P}[\\log f_{PQ}(\\mathbf{x})] \\\\\nD_{\\text{JS}}(P \\parallel Q) &:= \\frac{1}{2}\\left(D_{\\text{KL}}\\left(P \\parallel \\frac{P+Q}{2}\\right) + D_{\\text{KL}}\\left(Q \\parallel \\frac{P+Q}{2}\\right)\\right),\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\nD_{\\text{KL}}(P \\parallel Q) &:= \\mathbb{E}_{\\mathbf{x} \\sim P}[\\log f_{PQ}(\\mathbf{x})] \\\\\nD_{\\text{JS}}(P \\parallel Q) &:= \\frac{1}{2}\\left(D_{\\text{KL}}\\left(P \\parallel \\frac{P+Q}{2}\\right) + D_{\\text{KL}}\\left(Q \\parallel \\frac{P+Q}{2}\\right)\\right),\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                145,
+                146,
+                466,
+                162
+            ],
+            "content": "```latex\nP_{\\mathbf{X}}(R_{\\mathbf{X}}) := \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) 1_{[\\mathbf{x} \\in R_{\\mathbf{X}}]} \\, d\\mathbf{x}\n\nP_{\\mathbf{Z}}(R_{\\mathbf{Z}}) := \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) 1_{[\\mathbf{z} \\in R_{\\mathbf{Z}}]} \\, d\\mathbf{z}\n```",
+            "latex": "```latex\nP_{\\mathbf{X}}(R_{\\mathbf{X}}) := \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) 1_{[\\mathbf{x} \\in R_{\\mathbf{X}}]} \\, d\\mathbf{x}\n\nP_{\\mathbf{Z}}(R_{\\mathbf{Z}}) := \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) 1_{[\\mathbf{z} \\in R_{\\mathbf{Z}}]} \\, d\\mathbf{z}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                165,
+                480,
+                444,
+                523
+            ],
+            "content": "```latex\nC(E, G) = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\mathbf{1}_{[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{Z}} \\land G(E(\\mathbf{x})) = \\mathbf{x}]} \\log f_{EG}(\\mathbf{x}, E(\\mathbf{x})) \\right] + \n\\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[ \\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{\\mathbf{X}} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z})) \\right]\n```",
+            "latex": "```latex\nC(E, G) = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\mathbf{1}_{[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{Z}} \\land G(E(\\mathbf{x})) = \\mathbf{x}]} \\log f_{EG}(\\mathbf{x}, E(\\mathbf{x})) \\right] + \n\\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[ \\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{\\mathbf{X}} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z})) \\right]\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                337,
+                110,
+                439,
+                124
+            ],
+            "content": "( b ) \\, z \\in { \\hat { \\Omega } } _ { Z } \\; \\land \\; G ( z ) = x",
+            "latex": "( b ) \\, z \\in { \\hat { \\Omega } } _ { Z } \\; \\land \\; G ( z ) = x"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                171,
+                110,
+                439,
+                124
+            ],
+            "content": "```latex\n(a) \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}} \\land E(\\mathbf{x}) = \\mathbf{z}\n\n(b) \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}} \\land G(\\mathbf{z}) = \\mathbf{x}\n```",
+            "latex": "```latex\n(a) \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}} \\land E(\\mathbf{x}) = \\mathbf{z}\n\n(b) \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}} \\land G(\\mathbf{z}) = \\mathbf{x}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                172,
+                110,
+                275,
+                124
+            ],
+            "content": "( \\mathrm { a } ) ~ \\mathbf { x } \\in \\hat { \\Omega } _ { \\mathbf { x } } ~ \\land ~ E ( \\mathbf { x } ) = \\mathbf { z }",
+            "latex": "( \\mathrm { a } ) ~ \\mathbf { x } \\in \\hat { \\Omega } _ { \\mathbf { x } } ~ \\land ~ E ( \\mathbf { x } ) = \\mathbf { z }"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                126,
+                301,
+                482,
+                333
+            ],
+            "content": "```latex\n\\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\underbrace{\\mathbb{E}_{\\mathbf{z}' \\sim p_E(\\cdot|\\mathbf{x})} \\left[ \\log D(g_{\\mathbf{X}}(\\mathbf{x}), \\mathbf{z}') \\right]}_{\\text{log } D(g_{\\mathbf{X}}(\\mathbf{x}), E(\\mathbf{x}))} \\right] + \\mathbb{E}_{\\mathbf{z} \\sim p_Z} \\left[ \\underbrace{\\mathbb{E}_{\\mathbf{x}' \\sim p_G(\\cdot|\\mathbf{z})} \\left[ \\log (1 - D(\\mathbf{x}', g_{\\mathbf{Z}}(\\mathbf{z}))) \\right]}_{\\text{log}(1-D(G(\\mathbf{z}), g_{\\mathbf{Z}}(\\mathbf{z})))} \\right].\n```",
+            "latex": "```latex\n\\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\underbrace{\\mathbb{E}_{\\mathbf{z}' \\sim p_E(\\cdot|\\mathbf{x})} \\left[ \\log D(g_{\\mathbf{X}}(\\mathbf{x}), \\mathbf{z}') \\right]}_{\\text{log } D(g_{\\mathbf{X}}(\\mathbf{x}), E(\\mathbf{x}))} \\right] + \\mathbb{E}_{\\mathbf{z} \\sim p_Z} \\left[ \\underbrace{\\mathbb{E}_{\\mathbf{x}' \\sim p_G(\\cdot|\\mathbf{z})} \\left[ \\log (1 - D(\\mathbf{x}', g_{\\mathbf{Z}}(\\mathbf{z}))) \\right]}_{\\text{log}(1-D(G(\\mathbf{z}), g_{\\mathbf{Z}}(\\mathbf{z})))} \\right].\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                136,
+                543,
+                477,
+                650
+            ],
+            "content": "```latex\nC(E,G) = \\max_{D} V(D,E,G) = V(D^{*}_{EG},E,G)\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{EX}} [\\log D^{*}_{EG}(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{GZ}} [\\log (1 - D^{*}_{EG}(\\mathbf{x},\\mathbf{z}))]\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{EX}} [\\log f_{EG}(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{GZ}} [\\log f_{GE}(\\mathbf{x},\\mathbf{z})]\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{EX}} [\\log (2f_{EG}(\\mathbf{x},\\mathbf{z}))] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{GZ}} [\\log (2f_{GE}(\\mathbf{x},\\mathbf{z}))] - \\log 4\n\n= \\text{D}_{\\text{KL}} \\left( P_{EX} || P_{EG} \\right) + \\text{D}_{\\text{KL}} \\left( P_{GZ} || P_{EG} \\right) - \\log 4\n\n= \\text{D}_{\\text{KL}} \\left( P_{EX} || \\frac{P_{EX}+P_{GZ}}{2} \\right) + \\text{D}_{\\text{KL}} \\left( P_{GZ} || \\frac{P_{EX}+P_{GZ}}{2} \\right) - \\log 4\n\n= 2 \\text{D}_{\\text{JS}} \\left( P_{EX} || P_{GZ} \\right) - \\log 4.\n```",
+            "latex": "```latex\nC(E,G) = \\max_{D} V(D,E,G) = V(D^{*}_{EG},E,G)\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{EX}} [\\log D^{*}_{EG}(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{GZ}} [\\log (1 - D^{*}_{EG}(\\mathbf{x},\\mathbf{z}))]\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{EX}} [\\log f_{EG}(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{GZ}} [\\log f_{GE}(\\mathbf{x},\\mathbf{z})]\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{EX}} [\\log (2f_{EG}(\\mathbf{x},\\mathbf{z}))] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z}) \\sim P_{GZ}} [\\log (2f_{GE}(\\mathbf{x},\\mathbf{z}))] - \\log 4\n\n= \\text{D}_{\\text{KL}} \\left( P_{EX} || P_{EG} \\right) + \\text{D}_{\\text{KL}} \\left( P_{GZ} || P_{EG} \\right) - \\log 4\n\n= \\text{D}_{\\text{KL}} \\left( P_{EX} || \\frac{P_{EX}+P_{GZ}}{2} \\right) + \\text{D}_{\\text{KL}} \\left( P_{GZ} || \\frac{P_{EX}+P_{GZ}}{2} \\right) - \\log 4\n\n= 2 \\text{D}_{\\text{JS}} \\left( P_{EX} || P_{GZ} \\right) - \\log 4.\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                108,
+                335,
+                504,
+                418
+            ],
+            "content": "```latex\nV(D,E,G) = \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EX}} [\\log D(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{GZ}} [\\log (1-D(\\mathbf{x},\\mathbf{z}))]\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [2f_{EG}(\\mathbf{x},\\mathbf{z}) \\log D(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [2f_{GE}(\\mathbf{x},\\mathbf{z}) \\log (1-D(\\mathbf{x},\\mathbf{z}))]\n\n= 2 \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [f_{EG}(\\mathbf{x},\\mathbf{z}) \\log D(\\mathbf{x},\\mathbf{z}) + f_{GE}(\\mathbf{x},\\mathbf{z}) \\log (1-D(\\mathbf{x},\\mathbf{z}))]\n\n= 2 \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [f_{EG}(\\mathbf{x},\\mathbf{z}) \\log D(\\mathbf{x},\\mathbf{z}) + (1-f_{EG}(\\mathbf{x},\\mathbf{z})) \\log (1-D(\\mathbf{x},\\mathbf{z}))].\n```",
+            "latex": "```latex\nV(D,E,G) = \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EX}} [\\log D(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{GZ}} [\\log (1-D(\\mathbf{x},\\mathbf{z}))]\n\n= \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [2f_{EG}(\\mathbf{x},\\mathbf{z}) \\log D(\\mathbf{x},\\mathbf{z})] + \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [2f_{GE}(\\mathbf{x},\\mathbf{z}) \\log (1-D(\\mathbf{x},\\mathbf{z}))]\n\n= 2 \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [f_{EG}(\\mathbf{x},\\mathbf{z}) \\log D(\\mathbf{x},\\mathbf{z}) + f_{GE}(\\mathbf{x},\\mathbf{z}) \\log (1-D(\\mathbf{x},\\mathbf{z}))]\n\n= 2 \\mathbb{E}_{(\\mathbf{x},\\mathbf{z})\\sim P_{EG}} [f_{EG}(\\mathbf{x},\\mathbf{z}) \\log D(\\mathbf{x},\\mathbf{z}) + (1-f_{EG}(\\mathbf{x},\\mathbf{z})) \\log (1-D(\\mathbf{x},\\mathbf{z}))].\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                144,
+                215,
+                466,
+                232
+            ],
+            "content": "```latex\n\\mathbb{E}_{\\mathbf{x} \\sim P}[g(\\mathbf{x})] = \\int_{\\Omega} g \\, \\mathrm{d}P = \\int_{\\Omega} g \\frac{\\mathrm{d}P}{\\mathrm{d}Q} \\, \\mathrm{d}Q = \\int_{\\Omega} gf_{PQ} \\, \\mathrm{d}Q = \\mathbb{E}_{\\mathbf{x} \\sim Q}[f_{PQ}(\\mathbf{x})g(\\mathbf{x})].\n```",
+            "latex": "```latex\n\\mathbb{E}_{\\mathbf{x} \\sim P}[g(\\mathbf{x})] = \\int_{\\Omega} g \\, \\mathrm{d}P = \\int_{\\Omega} g \\frac{\\mathrm{d}P}{\\mathrm{d}Q} \\, \\mathrm{d}Q = \\int_{\\Omega} gf_{PQ} \\, \\mathrm{d}Q = \\mathbb{E}_{\\mathbf{x} \\sim Q}[f_{PQ}(\\mathbf{x})g(\\mathbf{x})].\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                174,
+                289,
+                437,
+                308
+            ],
+            "content": "f _ { E G } + f _ { G E } = \\frac { \\mathrm { d } P _ { E X } } { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } + \\frac { \\mathrm { d } P _ { G Z } } { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } = \\frac { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } = 1 .",
+            "latex": "f _ { E G } + f _ { G E } = \\frac { \\mathrm { d } P _ { E X } } { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } + \\frac { \\mathrm { d } P _ { G Z } } { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } = \\frac { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } { \\mathrm { d } ( P _ { E X } + P _ { G Z } ) } = 1 ."
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                185,
+                109,
+                428,
+                220
+            ],
+            "content": "```latex\nP_{EX}(R) = \\int_{\\Omega_X} p_X(\\mathbf{x}) \\int_{\\Omega_Z} p_E(\\mathbf{z}|\\mathbf{x}) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{z} \\, d\\mathbf{x}\n= \\int_{\\Omega_X} p_X(\\mathbf{x}) \\left( \\int_{\\Omega_Z} \\delta(\\mathbf{z} - E(\\mathbf{x})) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{z} \\right) \\, d\\mathbf{x}\n= \\int_{\\Omega_X} p_X(\\mathbf{x}) \\mathbf{1}_{[(\\mathbf{x}, E(\\mathbf{x})) \\in R]} \\, d\\mathbf{x}\n\nP_{GZ}(R) = \\int_{\\Omega_Z} p_Z(\\mathbf{z}) \\int_{\\Omega_X} p_G(\\mathbf{x}|\\mathbf{z}) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{x} \\, d\\mathbf{z}\n= \\int_{\\Omega_Z} p_Z(\\mathbf{z}) \\left( \\int_{\\Omega_X} \\delta(\\mathbf{x} - G(\\mathbf{z})) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{x} \\right) \\, d\\mathbf{z}\n= \\int_{\\Omega_Z} p_Z(\\mathbf{z}) \\mathbf{1}_{[(G(\\mathbf{z}), \\mathbf{z}) \\in R]} \\, d\\mathbf{z}\n```",
+            "latex": "```latex\nP_{EX}(R) = \\int_{\\Omega_X} p_X(\\mathbf{x}) \\int_{\\Omega_Z} p_E(\\mathbf{z}|\\mathbf{x}) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{z} \\, d\\mathbf{x}\n= \\int_{\\Omega_X} p_X(\\mathbf{x}) \\left( \\int_{\\Omega_Z} \\delta(\\mathbf{z} - E(\\mathbf{x})) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{z} \\right) \\, d\\mathbf{x}\n= \\int_{\\Omega_X} p_X(\\mathbf{x}) \\mathbf{1}_{[(\\mathbf{x}, E(\\mathbf{x})) \\in R]} \\, d\\mathbf{x}\n\nP_{GZ}(R) = \\int_{\\Omega_Z} p_Z(\\mathbf{z}) \\int_{\\Omega_X} p_G(\\mathbf{x}|\\mathbf{z}) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{x} \\, d\\mathbf{z}\n= \\int_{\\Omega_Z} p_Z(\\mathbf{z}) \\left( \\int_{\\Omega_X} \\delta(\\mathbf{x} - G(\\mathbf{z})) \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R]} \\, d\\mathbf{x} \\right) \\, d\\mathbf{z}\n= \\int_{\\Omega_Z} p_Z(\\mathbf{z}) \\mathbf{1}_{[(G(\\mathbf{z}), \\mathbf{z}) \\in R]} \\, d\\mathbf{z}\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                169,
+                648,
+                440,
+                702
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathrm{D}_{\\mathrm{KL}} \\left( P_{EX} \\parallel \\frac{P_{EX} + P_{GZ}}{2} \\right) &= \\log 2 + \\int_{\\Omega} \\log \\frac{\\mathrm{d}P_{EX}}{\\mathrm{d}(P_{EX} + P_{GZ})} \\, \\mathrm{d}P_{EX} \\\\\n&= \\log 2 + \\int_{\\Omega} \\log f \\, \\mathrm{d}P_{EX},\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathrm{D}_{\\mathrm{KL}} \\left( P_{EX} \\parallel \\frac{P_{EX} + P_{GZ}}{2} \\right) &= \\log 2 + \\int_{\\Omega} \\log \\frac{\\mathrm{d}P_{EX}}{\\mathrm{d}(P_{EX} + P_{GZ})} \\, \\mathrm{d}P_{EX} \\\\\n&= \\log 2 + \\int_{\\Omega} \\log f \\, \\mathrm{d}P_{EX},\n\\end{align*}\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                168,
+                360,
+                444,
+                507
+            ],
+            "content": "```latex\nP_{\\mathbf{X}}(R^{0}_{\\mathbf{X}}) = \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) 1_{[\\mathbf{x} \\in R^{0}_{\\mathbf{X}}]} \\, d\\mathbf{x}\n= \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) 1_{[(\\mathbf{x}, E(\\mathbf{x})) \\in R^{0}]} \\, d\\mathbf{x}\n= P_{E\\mathbf{X}}(R^{0})\n= P_{G\\mathbf{Z}}(R^{0})\n= \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) 1_{[(G(\\mathbf{z}), \\mathbf{z}) \\in R^{0}]} \\, d\\mathbf{z}\n= \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) 1_{[\\mathbf{z} = E(G(\\mathbf{z})) \\land G(\\mathbf{z}) \\in R^{0}_{\\mathbf{X}}]} \\, d\\mathbf{z}\n= \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) \\underbrace{1_{[\\mathbf{z} = E(G(\\mathbf{z})) \\land G(\\mathbf{z}) \\neq G(E(G(\\mathbf{z})))]}}_{=0 \\text{ for any } \\mathbf{z}, \\text{ as } \\mathbf{z} = E(G(\\mathbf{z})) \\implies G(\\mathbf{z}) = G(E(G(\\mathbf{z})))} \\, d\\mathbf{z}\n= 0.\n```",
+            "latex": "```latex\nP_{\\mathbf{X}}(R^{0}_{\\mathbf{X}}) = \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) 1_{[\\mathbf{x} \\in R^{0}_{\\mathbf{X}}]} \\, d\\mathbf{x}\n= \\int_{\\Omega_{\\mathbf{X}}} p_{\\mathbf{X}}(\\mathbf{x}) 1_{[(\\mathbf{x}, E(\\mathbf{x})) \\in R^{0}]} \\, d\\mathbf{x}\n= P_{E\\mathbf{X}}(R^{0})\n= P_{G\\mathbf{Z}}(R^{0})\n= \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) 1_{[(G(\\mathbf{z}), \\mathbf{z}) \\in R^{0}]} \\, d\\mathbf{z}\n= \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) 1_{[\\mathbf{z} = E(G(\\mathbf{z})) \\land G(\\mathbf{z}) \\in R^{0}_{\\mathbf{X}}]} \\, d\\mathbf{z}\n= \\int_{\\Omega_{\\mathbf{Z}}} p_{\\mathbf{Z}}(\\mathbf{z}) \\underbrace{1_{[\\mathbf{z} = E(G(\\mathbf{z})) \\land G(\\mathbf{z}) \\neq G(E(G(\\mathbf{z})))]}}_{=0 \\text{ for any } \\mathbf{z}, \\text{ as } \\mathbf{z} = E(G(\\mathbf{z})) \\implies G(\\mathbf{z}) = G(E(G(\\mathbf{z})))} \\, d\\mathbf{z}\n= 0.\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                184,
+                115,
+                426,
+                141
+            ],
+            "content": "```latex\nF(R) := \\int_R \\log \\frac{\\mathrm{d}P_{\\mathbf{EX}}}{\\mathrm{d}(P_{\\mathbf{EX}} + P_{G\\mathbf{Z}})} \\, \\mathrm{d}P_{\\mathbf{EX}} = \\int_R \\log f \\, \\mathrm{d}P_{\\mathbf{EX}}.\n```",
+            "latex": "```latex\nF(R) := \\int_R \\log \\frac{\\mathrm{d}P_{\\mathbf{EX}}}{\\mathrm{d}(P_{\\mathbf{EX}} + P_{G\\mathbf{Z}})} \\, \\mathrm{d}P_{\\mathbf{EX}} = \\int_R \\log f \\, \\mathrm{d}P_{\\mathbf{EX}}.\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                165,
+                618,
+                444,
+                662
+            ],
+            "content": "```latex\nC(E, G) = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\mathbf{1}_{[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{Z}} \\land G(E(\\mathbf{x})) = \\mathbf{x}]} \\log f_{EG}(\\mathbf{x}, E(\\mathbf{x})) \\right] + \n\\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[ \\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{\\mathbf{X}} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z})) \\right]\n```",
+            "latex": "```latex\nC(E, G) = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\mathbf{1}_{[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{Z}} \\land G(E(\\mathbf{x})) = \\mathbf{x}]} \\log f_{EG}(\\mathbf{x}, E(\\mathbf{x})) \\right] + \n\\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[ \\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{\\mathbf{X}} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z})) \\right]\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                110,
+                346,
+                501,
+                391
+            ],
+            "content": "```latex\nP_{\\mathbf{EX}}(R^{f<1}) = \\int_{R^{f<1}} f \\, \\mathrm{d}(P_{\\mathbf{EX}} + P_{GZ}) = \\int_{R^{f<1}} f \\, \\mathrm{d}P_{\\mathbf{EX}} + \\int_{R^{f<1}} f \\, \\mathrm{d}P_{GZ} \\leq \\varepsilon P_{\\mathbf{EX}}(R^{f<1})\n\n< P_{\\mathbf{EX}}(R^{f<1}),\n```",
+            "latex": "```latex\nP_{\\mathbf{EX}}(R^{f<1}) = \\int_{R^{f<1}} f \\, \\mathrm{d}(P_{\\mathbf{EX}} + P_{GZ}) = \\int_{R^{f<1}} f \\, \\mathrm{d}P_{\\mathbf{EX}} + \\int_{R^{f<1}} f \\, \\mathrm{d}P_{GZ} \\leq \\varepsilon P_{\\mathbf{EX}}(R^{f<1})\n\n< P_{\\mathbf{EX}}(R^{f<1}),\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                120,
+                720,
+                343,
+                732
+            ],
+            "content": "```latex\nWe use the definition $U \\cap C \\neq \\emptyset \\implies \\mu(U \\cap C) > 0$ here.\n```",
+            "latex": "```latex\nWe use the definition $U \\cap C \\neq \\emptyset \\implies \\mu(U \\cap C) > 0$ here.\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                106,
+                534,
+                506,
+                550
+            ],
+            "content": "P _ { E X } ( R ^ { f = 1 } ) = \\int _ { R ^ { f = 1 } } f \\, \\mathrm { d } ( P _ { E X } + P _ { G Z } ) = \\int _ { R ^ { f = 1 } } 1 \\, \\mathrm { d } ( P _ { E X } + P _ { G Z } ) = P _ { E X } ( R ^ { f = 1 } ) + P _ { G Z } ( R ^ { f = 1 } ) ,",
+            "latex": "P _ { E X } ( R ^ { f = 1 } ) = \\int _ { R ^ { f = 1 } } f \\, \\mathrm { d } ( P _ { E X } + P _ { G Z } ) = \\int _ { R ^ { f = 1 } } 1 \\, \\mathrm { d } ( P _ { E X } + P _ { G Z } ) = P _ { E X } ( R ^ { f = 1 } ) + P _ { G Z } ( R ^ { f = 1 } ) ,"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                156,
+                433,
+                455,
+                510
+            ],
+            "content": "```latex\nC(E,G) = 2 \\text{D}_{\\text{JS}} \\left( P_{EX} || P_{GZ} \\right) - \\log 4\n\n= \\text{D}_{\\text{KL}} \\left( P_{EX} || \\frac{P_{EX} + P_{GZ}}{2} \\right) + \\text{D}_{\\text{KL}} \\left( P_{GZ} || \\frac{P_{EX} + P_{GZ}}{2} \\right) - \\log 4\n\n= \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{x}}} \\left[ \\mathbf{1}_{\\left[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{z}} \\wedge G(E(\\mathbf{x})) = \\mathbf{x}\\right]} \\log f_{EG}(\\mathbf{x}, E(\\mathbf{x})) \\right] + \n\n\\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{z}}} \\left[ \\mathbf{1}_{\\left[G(\\mathbf{z}) \\in \\hat{\\Omega}_{\\mathbf{x}} \\wedge E(G(\\mathbf{z})) = \\mathbf{z}\\right]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z})) \\right]\n```",
+            "latex": "```latex\nC(E,G) = 2 \\text{D}_{\\text{JS}} \\left( P_{EX} || P_{GZ} \\right) - \\log 4\n\n= \\text{D}_{\\text{KL}} \\left( P_{EX} || \\frac{P_{EX} + P_{GZ}}{2} \\right) + \\text{D}_{\\text{KL}} \\left( P_{GZ} || \\frac{P_{EX} + P_{GZ}}{2} \\right) - \\log 4\n\n= \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{x}}} \\left[ \\mathbf{1}_{\\left[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{z}} \\wedge G(E(\\mathbf{x})) = \\mathbf{x}\\right]} \\log f_{EG}(\\mathbf{x}, E(\\mathbf{x})) \\right] + \n\n\\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{z}}} \\left[ \\mathbf{1}_{\\left[G(\\mathbf{z}) \\in \\hat{\\Omega}_{\\mathbf{x}} \\wedge E(G(\\mathbf{z})) = \\mathbf{z}\\right]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z})) \\right]\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                116,
+                610,
+                492,
+                642
+            ],
+            "content": "```latex\n\\Lambda(D, G, E) = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\underbrace{\\mathbb{E}_{\\mathbf{z} \\sim p_E(\\cdot|\\mathbf{x})} \\left[ \\log \\left( 1 - D(\\mathbf{x}, \\mathbf{z}) \\right) \\right]}_{\\log(1-D(\\mathbf{x}, E(\\mathbf{x})))} + \\underbrace{\\mathbb{E}_{\\mathbf{z} \\sim p_Z} \\left[ \\mathbb{E}_{\\mathbf{x} \\sim p_G(\\cdot|\\mathbf{z})} \\left[ \\log D(\\mathbf{x}, \\mathbf{z}) \\right] \\right]}_{\\log D(G(\\mathbf{z}), \\mathbf{z})} \\right].\n```",
+            "latex": "```latex\n\\Lambda(D, G, E) = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{X}}} \\left[ \\underbrace{\\mathbb{E}_{\\mathbf{z} \\sim p_E(\\cdot|\\mathbf{x})} \\left[ \\log \\left( 1 - D(\\mathbf{x}, \\mathbf{z}) \\right) \\right]}_{\\log(1-D(\\mathbf{x}, E(\\mathbf{x})))} + \\underbrace{\\mathbb{E}_{\\mathbf{z} \\sim p_Z} \\left[ \\mathbb{E}_{\\mathbf{x} \\sim p_G(\\cdot|\\mathbf{z})} \\left[ \\log D(\\mathbf{x}, \\mathbf{z}) \\right] \\right]}_{\\log D(G(\\mathbf{z}), \\mathbf{z})} \\right].\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                117,
+                365,
+                490,
+                409
+            ],
+            "content": "```latex\n\\documentclass{article}\n\\usepackage{amsmath}\n\n\\begin{document}\n\n\\begin{equation}\nD_{KL}\\left(P_{GZ} \\parallel \\frac{P_{EX} + P_{GZ}}{2}\\right) - \\log 2 = \\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[\\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{X} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log f_{GE}(G(\\mathbf{z}), \\mathbf{z})\\right]\n= \\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[\\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{X} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z}))\\right]\n\\end{equation}\n\n\\end{document}\n```",
+            "latex": "```latex\n\\documentclass{article}\n\\usepackage{amsmath}\n\n\\begin{document}\n\n\\begin{equation}\nD_{KL}\\left(P_{GZ} \\parallel \\frac{P_{EX} + P_{GZ}}{2}\\right) - \\log 2 = \\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[\\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{X} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log f_{GE}(G(\\mathbf{z}), \\mathbf{z})\\right]\n= \\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} \\left[\\mathbf{1}_{[G(\\mathbf{z}) \\in \\hat{\\Omega}_{X} \\land E(G(\\mathbf{z})) = \\mathbf{z}]} \\log (1 - f_{EG}(G(\\mathbf{z}), \\mathbf{z}))\\right]\n\\end{equation}\n\n\\end{document}\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                132,
+                198,
+                478,
+                301
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathrm{D}_{\\mathrm{KL}} \\left( P_{E\\mathbf{x}} \\, || \\, \\frac{P_{E\\mathbf{x}} + P_{G\\mathbf{z}}}{2} \\right) - \\log 2 &= F(\\Omega) = F(R^1) \\\\\n&= \\int_{R^1} \\log f(\\mathbf{x}, \\mathbf{z}) \\, \\mathrm{d}P_{E\\mathbf{x}} \\\\\n&= \\int_{\\Omega} \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R^1]} \\log f(\\mathbf{x}, \\mathbf{z}) \\, \\mathrm{d}P_{E\\mathbf{x}} \\\\\n&= \\mathbb{E}_{(\\mathbf{x}, \\mathbf{z}) \\sim P_{E\\mathbf{x}}} \\left[ \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R^1]} \\log f(\\mathbf{x}, \\mathbf{z}) \\right] \\\\\n&= \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{x}}} \\left[ \\mathbf{1}_{[(\\mathbf{x}, E(\\mathbf{x})) \\in R^1]} \\log f(\\mathbf{x}, E(\\mathbf{x})) \\right] \\\\\n&= \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{x}}} \\left[ \\mathbf{1}_{[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{z}} \\land G(E(\\mathbf{x})) = \\mathbf{x}]} \\log f(\\mathbf{x}, E(\\mathbf{x})) \\right].\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathrm{D}_{\\mathrm{KL}} \\left( P_{E\\mathbf{x}} \\, || \\, \\frac{P_{E\\mathbf{x}} + P_{G\\mathbf{z}}}{2} \\right) - \\log 2 &= F(\\Omega) = F(R^1) \\\\\n&= \\int_{R^1} \\log f(\\mathbf{x}, \\mathbf{z}) \\, \\mathrm{d}P_{E\\mathbf{x}} \\\\\n&= \\int_{\\Omega} \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R^1]} \\log f(\\mathbf{x}, \\mathbf{z}) \\, \\mathrm{d}P_{E\\mathbf{x}} \\\\\n&= \\mathbb{E}_{(\\mathbf{x}, \\mathbf{z}) \\sim P_{E\\mathbf{x}}} \\left[ \\mathbf{1}_{[(\\mathbf{x}, \\mathbf{z}) \\in R^1]} \\log f(\\mathbf{x}, \\mathbf{z}) \\right] \\\\\n&= \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{x}}} \\left[ \\mathbf{1}_{[(\\mathbf{x}, E(\\mathbf{x})) \\in R^1]} \\log f(\\mathbf{x}, E(\\mathbf{x})) \\right] \\\\\n&= \\mathbb{E}_{\\mathbf{x} \\sim p_{\\mathbf{x}}} \\left[ \\mathbf{1}_{[E(\\mathbf{x}) \\in \\hat{\\Omega}_{\\mathbf{z}} \\land G(E(\\mathbf{x})) = \\mathbf{x}]} \\log f(\\mathbf{x}, E(\\mathbf{x})) \\right].\n\\end{align*}\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                219,
+                100,
+                374,
+                132
+            ],
+            "content": "```latex\n\\begin{align*}\n\\text{supp}(P_{E\\mathbf{x}}) &= \\left\\{(\\mathbf{x}, E(\\mathbf{x})) : \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}}\\right\\} \\\\\n\\text{supp}(P_{G\\mathbf{z}}) &= \\left\\{(G(\\mathbf{z}), \\mathbf{z}) : \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}}\\right\\}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\text{supp}(P_{E\\mathbf{x}}) &= \\left\\{(\\mathbf{x}, E(\\mathbf{x})) : \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}}\\right\\} \\\\\n\\text{supp}(P_{G\\mathbf{z}}) &= \\left\\{(G(\\mathbf{z}), \\mathbf{z}) : \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}}\\right\\}\n\\end{align*}\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                124,
+                101,
+                502,
+                133
+            ],
+            "content": "```latex\n\\begin{align*}\n\\text{supp}(P_{E\\mathbf{x}}) &= \\left\\{(\\mathbf{x}, E(\\mathbf{x})) : \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}}\\right\\} \\\\\n\\text{supp}(P_{G\\mathbf{z}}) &= \\left\\{(G(\\mathbf{z}), \\mathbf{z}) : \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}}\\right\\}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\text{supp}(P_{E\\mathbf{x}}) &= \\left\\{(\\mathbf{x}, E(\\mathbf{x})) : \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}}\\right\\} \\\\\n\\text{supp}(P_{G\\mathbf{z}}) &= \\left\\{(G(\\mathbf{z}), \\mathbf{z}) : \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}}\\right\\}\n\\end{align*}\n```"
+        }
+    ]
+}

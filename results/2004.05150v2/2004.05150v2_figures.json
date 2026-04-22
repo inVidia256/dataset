@@ -1,0 +1,48 @@
+{
+    "total_count": 3,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                306,
+                220,
+                526,
+                317
+            ],
+            "caption": "Figure 1: Runtime and memory of full self-attention and different implementations of Longformer’s self-attention; Longformer-loop is non-vectorized, Longformer-chunk is vectorized, and Longformer-cuda is a custom cuda kernel implementation. Longformer’s memory usage scales linearly with the sequence length, unlike the full self-attention mechanism that runs out of memory for long sequences on current GPUs. Different implementations vary in speed, with the vectorized Longformer-chunk being the fastest. More details are in section 3.2.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                87,
+                61,
+                520,
+                151
+            ],
+            "caption": "The text content from the image is:\n\n\"self-attention pattern and the configuration of attention patterns in our Longform\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                105,
+                226,
+                255,
+                339
+            ],
+            "caption": "Figure 3: ROUGE-1 and ROUGE-2 of LED when varying the input size (arXiv validation set).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page010.png"
+        }
+    ]
+}

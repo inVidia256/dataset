@@ -1,0 +1,160 @@
+{
+    "total_count": 11,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                106,
+                73,
+                502,
+                240
+            ],
+            "caption": "Figure 1: DCGAN generator used for LSUN scene modeling. A 100 dimensional uniform distribution Z is projected to a small spatial extent convolutional representation with many feature maps. A series of four fractionally-strided convolutions (in some recent papers, these are wrongly called deconvolutions) then convert this high level representation into a 64 × 64 pixel image. Notably, no fully connected or pooling layers are used. Figure 1: DCGAN generator used for LSUN scene modeling. A 100 dimensional uniform distribution Z is projected to a small spatial extent convolutional representation with many feature maps. A series of four fractionally-strided convolutions (in some recent papers, these are wrongly called deconvolutions) then convert this high level representation into a 64 × 64 pixel image. Notably, no fully connected or pooling layers are used.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                108,
+                80,
+                502,
+                279
+            ],
+            "caption": "Figure 2: Generated bedrooms after one training pass through the dataset. Theoretically, the model could learn to memorize training examples, but this is experimentally unlikely as we train with a small learning rate and minibatch SGD. We are aware of no prior empirical evidence demonstrating memorization with SGD and a small learning rate. Figure 2: Generated bedrooms after one training pass through the dataset. Theoretically, the model could learn to memorize training examples, but this is experimentally unlikely as we train with a small learning rate and minibatch SGD. We are aware of no prior empirical evidence demonstrating memorization with SGD and a small learning rate.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                108,
+                379,
+                503,
+                578
+            ],
+            "caption": "Figure 3: Generated bedrooms after five epochs of training. There appears to be evidence of visual under-fitting via repeated noise textures across multiple samples such as the base boards of some of the beds.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                108,
+                79,
+                502,
+                477
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                108,
+                80,
+                503,
+                338
+            ],
+            "caption": "Figure 5: On the right, guided backpropagation visualizations of maximal axis-aligned responses for the first 6 learned convolutional features from the last convolution layer in the discriminator. Notice a significant minority of features respond to beds - the central object in the LSUN bedrooms dataset. On the left is a random filter baseline. Comparing to the previous responses there is little to no discrimination and random structure. Figure 5: On the right, guided backpropagation visualizations of maximal axis-aligned responses for the first 6 learned convolutional features from the last convolution layer in the discriminator. Notice a significant minority of features respond to beds - the central object in the LSUN bedrooms dataset. On the left is a random filter baseline. Comparing to the previous responses there is little to no discrimination and random structure. Figure 5: On the right, guided backpropagation visualizations of maximal axis-aligned responses for the first 6 learned convolutional features from the last convolution layer in the discriminator. Notice a significant minority of features respond to beds - the central object in the LSUN bedrooms dataset. On the left is a random filter baseline. Comparing to the previous responses there is little to no discrimination and random structure.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page009.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                108,
+                424,
+                503,
+                504
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                107,
+                75,
+                505,
+                616
+            ],
+            "caption": "Figure 7: Vector arithmetic for visual concepts. For each column, the Z vectors of samples are averaged. Arithmetic was then performed on the mean vectors creating a new vector Y. The center sample on the right hand side is produced by feeding Y as input to the generator. To demonstrate the interpolation capabilities of the generator, uniform noise sampled with scale ±0.25 was added to Y to produce the 8 other samples. Applying arithmetic in the input space (bottom two examples) results in noisy overlap due to misalignment. Figure 7: Vector arithmetic for visual concepts. For each column, the Z vectors of samples are averaged. Arithmetic was then performed on the mean vectors creating a new vector Y. The center sample on the right hand side is produced by feeding Y as input to the generator. To demonstrate the interpolation capabilities of the generator, uniform noise sampled with scale ±0.25 was added to Y to produce the 8 other samples. Applying arithmetic in the input space (bottom two examples) results in noisy overlap due to misalignment.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page010.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                108,
+                75,
+                503,
+                306
+            ],
+            "caption": "Figure 8: A \"turn\" vector was created from four averaged samples of faces looking left vs looking right. By adding interpolations along this axis to random samples we were able to reliably transform their pose. Figure 8: A \"turn\" vector was created from four averaged samples of faces looking left vs looking right. By adding interpolations along this axis to random samples we were able to reliably transform their pose.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page011.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                108,
+                415,
+                502,
+                628
+            ],
+            "caption": "Figure 9: Side-by-side illustration of (from left-to-right) the MNIST dataset, generations from a baseline GAN, and generations from our DCGAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page014.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                108,
+                193,
+                502,
+                590
+            ],
+            "caption": "Figure 10: More face generations from our Face DCGAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page015.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                108,
+                148,
+                503,
+                713
+            ],
+            "caption": "Figure 11: Generations of a DCGAN that was trained on the Imagenet-1k dataset.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page016.png"
+        }
+    ]
+}

@@ -1,0 +1,1315 @@
+{
+    "total_count": 119,
+    "content_type": "text",
+    "data": [
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                509,
+                505,
+                620
+            ],
+            "content": "Recurrent Neural Networks (RNNs) have been used for learning functions over sequences from examples for more than three decades [3]. However, their architecture limited them to settings where the inputs and outputs were available at a fixed frame rate (e.g. [4]). The recently introduced sequence-to-sequence paradigm [1] removed these constraints by using one RNN to map an input sequence to an embedding and another (possibly the same) RNN to map the embedding to an output sequence. Bahdanau et. al. augmented the decoder by propagating extra contextual information from the input using a content-based attentional mechanism [5, 2, 6]. These developments have made it possible to apply RNNs to new domains, achieving state-of-the-art results in core problems in natural language processing such as translation [1, 5] and parsing [7], image and video captioning [8, 9], and even learning to execute small programs [2, 10]."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                142,
+                243,
+                469,
+                463
+            ],
+            "content": "We introduce a new neural architecture to learn the conditional probability of an output sequence with elements that are discrete tokens corresponding to positions in an input sequence. Such problems cannot be trivially addressed by existent approaches such as sequence-to-sequence [1] and Neural Turing Machines [2], because the number of target classes in each step of the output depends on the length of the input, which is variable. Problems such as sorting variable sized sequences, and various combinatorial optimization problems belong to this class. Our model solves the problem of variable size output dictionaries using a recently proposed mechanism of neural attention. It differs from the previous attention attempts in that, instead of using attention to blend hidden units of an encoder to a context vector at each decoder step, it uses attention as a pointer to select a member of the input sequence as the output. We call this architecture a Pointer Net (Ptr-Net). We show Ptr-Nets can be used to learn approximate solutions to three challenging geometric problems – finding planar convex hulls, computing Delaunay triangulations, and the planar Travelling Salesman Problem – using training examples alone. Ptr-Nets not only improve over sequence-to-sequence with input attention, but also allow us to generalize to variable size output dictionaries. We show that the learnt models generalize beyond the maximum lengths they were trained on. We hope our results on these tasks will encourage a broader exploration of neural learning for discrete problems."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                625,
+                505,
+                714
+            ],
+            "content": "Nonetheless, these methods still require the size of the output dictionary to be fixed a priori. Because of this constraint we cannot directly apply this framework to combinatorial problems where the size of the output dictionary depends on the length of the input sequence. In this paper, we address this limitation by repurposing the attention mechanism of [5] to create pointers to input elements. We show that the resulting architecture, which we name Pointer Networks (Ptr-Nets), can be trained to output satisfactory solutions to three combinatorial optimization problems – computing planar convex hulls, Delaunay triangulations and the symmetric planar Travelling Salesman Problem (TSP). The resulting models produce approximate solutions to these problems in a purely data driven fashion."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                484,
+                191,
+                497
+            ],
+            "content": "The text content from the image is \"1 Introduction\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                283,
+                217,
+                329,
+                230
+            ],
+            "content": "Abstract"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                166,
+                194,
+                189
+            ],
+            "content": "The text content from the image is:\n\n\"Oriol Vinyals*\nGoogle Brain\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                218,
+                166,
+                389,
+                189
+            ],
+            "content": "The text content from the image is:\n\nMeire Fortunato*\nDepartment of Mathematics, UC Berkeley"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                240,
+                108,
+                371,
+                126
+            ],
+            "content": "The text content from the image is \"Pointer Networks\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                240,
+                108,
+                371,
+                126
+            ],
+            "content": "Pointer Networks"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                416,
+                166,
+                481,
+                189
+            ],
+            "content": "The text content from the image is:\n\n\"Navdeep Jaitly\nGoogle Brain\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                267,
+                166,
+                343,
+                177
+            ],
+            "content": "The text content from the image is \"Meire Fortunato\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                219,
+                178,
+                388,
+                188
+            ],
+            "content": "The text content from the image is:\n\n\"Department of Mathematics, UC Berkeley\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                663,
+                504,
+                697
+            ],
+            "content": "The text content from the image is:\n\n\"Given a training pair, (P, CP), the sequence-to-sequence model computes the conditional probability p(CP|P; θ) using a parametric model (an RNN with parameters θ) to estimate the terms of the probability chain rule (also see Figure 1), i.e.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                607,
+                505,
+                629
+            ],
+            "content": "We review the sequence-to-sequence [1] and input-attention models [5] that are the baselines for this work in Sections 2.1 and 2.2. We then describe our model - Ptr-Net in Section 2.3."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                460,
+                505,
+                567
+            ],
+            "content": "- We propose a new architecture, that we call Pointer Net, which is simple and effective. It deals with the fundamental problem of representing variable length dictionaries by using a softmax probability distribution as a “pointer”.\n- We apply the Pointer Net model to three distinct non-trivial algorithmic problems involving geometry. We show that the learned model generalizes to test problems with more points than the training problems.\n- Our Pointer Net model learns a competitive small scale (n ≤ 50) TSP approximate solver. Our results demonstrate that a purely data driven approach can learn approximate solutions to problems that are computationally intractable."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                412,
+                505,
+                435
+            ],
+            "content": "The proposed approach is depicted in Figure 1."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                642,
+                255,
+                654
+            ],
+            "content": "2.1 Sequence-to-Sequence Model"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                582,
+                164,
+                595
+            ],
+            "content": "2 Models"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                440,
+                311,
+                452
+            ],
+            "content": "The main contributions of our work are as follows:"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                304,
+                505,
+                393
+            ],
+            "content": "Figure 1: (a) Sequence-to-Sequence - An RNN (blue) processes the input sequence to create a code vector that is used to generate the output sequence (purple) using the probability chain rule and another RNN. The output dimensionality is fixed by the dimensionality of the problem and it is the same during training and inference [1]. (b) Ptr-Net - An encoding RNN converts the input sequence to a code (blue) that is fed to the generating network (purple). At each step, the generating network produces a vector that modulates a content-based attention mechanism over inputs ([5, 2]). The output of the attention mechanism is a softmax distribution with dictionary size equal to the length of the input."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                383,
+                280,
+                425,
+                291
+            ],
+            "content": "(b) Ptr-Net"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                163,
+                285,
+                259,
+                295
+            ],
+            "content": "(a) Sequence-to-Sequence"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                304,
+                505,
+                393
+            ],
+            "content": "Figure 1: (a) Sequence-to-Sequence - An RNN (blue) processes the input sequence to create a code vector that is used to generate the output sequence (purple) using the probability chain rule and another RNN. The output dimensionality is fixed by the dimensionality of the problem and it is the same during training and inference [1]. (b) Ptr-Net - An encoding RNN converts the input sequence to a code (blue) that is fed to the generating network (purple). At each step, the generating network produces a vector that modulates a content-based attention mechanism over inputs ([5, 2]). The output of the attention mechanism is a softmax distribution with dictionary size equal to the length of the input."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                453,
+                505,
+                520
+            ],
+            "content": "The vanilla sequence-to-sequence model produces the entire output sequence \\( \\mathcal{C}^{\\mathcal{P}} \\) using the fixed dimensional state of the recognition RNN at the end of the input sequence \\( \\mathcal{P} \\). This constrains the amount of information and computation that can flow through to the generative model. The attention model of [5] ameliorates this problem by augmenting the encoder and decoder RNNs with an additional neural network that uses an attention mechanism over the entire sequence of encoder RNN states."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                325,
+                505,
+                370
+            ],
+            "content": "In this sequence-to-sequence model, the output dictionary size for all symbols \\( C_i \\) is fixed and equal to \\( n \\), since the outputs are chosen from the input. Thus, we need to train a separate model for each \\( n \\). This prevents us from learning solutions to problems that have an output dictionary with a size that depends on the input sequence length."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                648,
+                505,
+                704
+            ],
+            "content": "The text content from the image is as follows:\n\n\"where softmax normalizes the vector \\( u^i \\) (of length \\( n \\)) to be the 'attention' mask over the inputs, and \\( v \\), \\( W_1 \\), and \\( W_2 \\) are learnable parameters of the model. In all our experiments, we use the same hidden dimensionality at the encoder and decoder (typically 512), so \\( v \\) is a vector and \\( W_1 \\) and \\( W_2 \\) are square matrices. Lastly, \\( d'_i \\) and \\( d_i \\) are concatenated and used as the hidden states from which we make predictions and which we feed to the next time step in the recurrent model.\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                375,
+                505,
+                420
+            ],
+            "content": "Under the assumption that the number of outputs is O(n) this model has computational complexity of O(n). However, exact algorithms for the problems we are dealing with are more costly. For example, the convex hull problem has complexity O(n log n). The attention mechanism (see Section 2.2) adds more “computational capacity” to this model."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                525,
+                505,
+                570
+            ],
+            "content": "For notation purposes, let us define the encoder and decoder hidden states as (e₁, . . . , eₙ) and (d₁, . . . , dₘ(𝑃)), respectively. For the LSTM RNNs, we use the state after the output gate has been component-wise multiplied by the cell activations. We compute the attention vector at each output time i as follows:"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                178,
+                505,
+                224
+            ],
+            "content": "As in [1], we use an Long Short Term Memory (LSTM) [11] to model \\( p_{\\theta}(C_i | C_1, \\ldots, C_{i-1}, P; \\theta) \\). The RNN is fed \\( P_i \\) at each time step, \\( i \\), until the end of the input sequence is reached, at which time a special symbol, \\( \\Rightarrow \\) is input to the model. The model then switches to the generation mode until the network encounters the special symbol \\( \\Leftarrow \\), which represents termination of the output sequence."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                267,
+                505,
+                321
+            ],
+            "content": "During inference, given a sequence \\( \\mathcal{P} \\), the learnt parameters \\( \\theta^* \\) are used to select the sequence \\( \\hat{\\mathcal{C}}^\\mathcal{P} \\) with the highest probability, i.e., \\( \\hat{\\mathcal{C}}^\\mathcal{P} = \\arg \\max_{\\mathcal{C}^\\mathcal{P}} p(\\mathcal{C}^\\mathcal{P} | \\mathcal{P}; \\theta^*) \\). Finding the optimal sequence \\( \\hat{\\mathcal{C}} \\) is computationally impractical because of the combinatorial number of possible output sequences. Instead we use a beam search procedure to find the best possible sequence given a beam size."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                228,
+                504,
+                262
+            ],
+            "content": "Note that this model makes no statistical independence assumptions. We use two separate RNNs (one to encode the sequence of vectors \\( P_j \\), and another one to produce or decode the output symbols \\( C_i \\)). We call the former RNN the encoder and the latter the decoder or the generative RNN."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                709,
+                505,
+                732
+            ],
+            "content": "Note that for each output we have to perform n operations, so the computational complexity at inference time becomes O(n²)."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                111,
+                505,
+                133
+            ],
+            "content": "The parameters of the model are learnt by maximizing the conditional probabilities for the training set, i.e.,"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                81,
+                505,
+                106
+            ],
+            "content": "Here \\(\\mathcal{P} = \\{P_1, \\ldots, P_n\\}\\) is a sequence of \\(n\\) vectors and \\(\\mathcal{C}^\\mathcal{P} = \\{C_1, \\ldots, C_{m(\\mathcal{P})}\\}\\) is a sequence of \\(m(\\mathcal{P})\\) indices, each between 1 and \\(n\\)."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                433,
+                262,
+                445
+            ],
+            "content": "2.2 Content Based Input Attention"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                162,
+                271,
+                174
+            ],
+            "content": "where the sum is over training examples."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                497,
+                505,
+                564
+            ],
+            "content": "In the training data, the inputs are planar point sets \\(\\mathcal{P} = \\{P_1, \\ldots, P_n\\}\\) with \\(n\\) elements each, where \\(P_j = (x_j, y_j)\\) are the cartesian coordinates of the points over which we find the convex hull, the Delaunay triangulation or the solution to the corresponding Travelling Salesman Problem. In all cases, we sample from a uniform distribution in \\([0, 1] \\times [0, 1]\\). The outputs \\(\\mathcal{C}^{\\mathcal{P}} = \\{C_1, \\ldots, C_{m(\\mathcal{P})}\\}\\) are sequences representing the solution associated to the point set \\(\\mathcal{P}\\). In Figure 2, we find an illustration of an input/output pair \\((\\mathcal{P}, \\mathcal{C}^{\\mathcal{P}})\\) for the convex hull and the Delaunay problems."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                363,
+                505,
+                430
+            ],
+            "content": "We also note that our approach specifically targets problems whose outputs are discrete and correspond to positions in the input. Such problems may be addressed artificially – for example we could learn to output the coordinates of the target point directly using an RNN. However, at inference, this solution does not respect the constraint that the outputs map back to the inputs exactly. Without the constraints, the predictions are bound to become blurry over longer sequences as shown in sequence-to-sequence models for videos [12]."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                597,
+                505,
+                653
+            ],
+            "content": "We used this example as a baseline to develop our models and to understand the difficulty of solving combinatorial problems with data driven approaches. Finding the convex hull of a finite number of points is a well understood task in computational geometry, and there are several exact solutions available (see [13, 14, 15]). In general, finding the (generally unique) solution has complexity O(n log n), where n is the number of points considered."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                290,
+                505,
+                358
+            ],
+            "content": "The text content from the image is as follows:\n\n\"where softmax normalizes the vector \\( u^i \\) (of length \\( n \\)) to be an output distribution over the dictionary of inputs, and \\( v \\), \\( W_1 \\), and \\( W_2 \\) are learnable parameters of the output model. Here, we do not blend the encoder state \\( e_j \\) to propagate extra information to the decoder, but instead, use \\( u_j^i \\) as pointers to the input elements. In a similar way, to condition on \\( C_{i-1} \\) as in Equation 1, we simply copy the corresponding \\( P_{C_{i-1}} \\) as the input. Both our method and the attention model can be seen as an application of content-based attention mechanisms proposed in [6, 5, 2].\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                658,
+                505,
+                714
+            ],
+            "content": "The vectors \\( \\mathcal{P}_j \\) are uniformly sampled from \\([0,1] \\times [0,1]\\). The elements \\( C_i \\) are indices between 1 and \\( n \\) corresponding to positions in the sequence \\( \\mathcal{P} \\), or special tokens representing beginning or end of sequence. See Figure 2 (a) for an illustration. To represent the output as a sequence, we start from the point with the lowest index, and go counter-clockwise – this is an arbitrary choice but helps reducing ambiguities during training."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                155,
+                504,
+                189
+            ],
+            "content": "We now describe a very simple modification of the attention model that allows us to apply the method to solve combinatorial optimization problems where the output dictionary size depends on the number of elements in the input sequence."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                194,
+                504,
+                239
+            ],
+            "content": "The sequence-to-sequence model of Section 2.1 uses a softmax distribution over a fixed-sized output dictionary to compute \\( p(C_i | C_1, \\ldots, C_{i-1}, P) \\) in Equation 1. Thus it cannot be used for our problems where the size of the output dictionary is equal to the length of the input sequence. To solve this problem we model \\( p(C_i | C_1, \\ldots, C_{i-1}, P) \\) using the attention mechanism of Equation 3 as follows:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                470,
+                505,
+                492
+            ],
+            "content": "In the following sections, we review each of the three problems we considered, as well as our data generation protocol."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                82,
+                504,
+                105
+            ],
+            "content": "This model performs significantly better than the sequence-to-sequence model on the convex hull problem, but it is not applicable to problems where the output dictionary size depends on the input."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                444,
+                303,
+                458
+            ],
+            "content": "The text content from the image is:\n\n\"3 Motivation and Datasets Structure\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                577,
+                185,
+                588
+            ],
+            "content": "The text content from the image is \"3.1 Convex Hull\"."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                134,
+                163,
+                146
+            ],
+            "content": "The text content from the image is \"2.3 Ptr-Net\"."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                202,
+                110,
+                498,
+                122
+            ],
+            "content": "The triple extension (or rather reduction) of the model allows us to do this easily."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                400,
+                505,
+                468
+            ],
+            "content": "We note that any permutation of the sequence \\( \\mathcal{C}^{\\mathcal{P}} \\) represents the same triangulation for \\( \\mathcal{P} \\), additionally each triangle representation \\( C_i \\) of three integers can also be permuted. Without loss of generality, and similarly to what we did for convex hulls at training time, we order the triangles \\( C_i \\) by their incenter coordinates (lexicographic order) and choose the increasing triangle representation\\(^2\\). Without ordering, the models learned were not as good, and finding a better ordering that the Ptr-Net could better exploit is part of future work."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                507,
+                505,
+                573
+            ],
+            "content": "TSP arises in many areas of theoretical computer science and is an important algorithm used for microchip design or DNA sequencing. In our work we focused on the planar symmetric TSP: given a list of cities, we wish to find the shortest possible route that visits each city exactly once and returns to the starting point. Additionally, we assume the distance between two cities is the same in each opposite direction. This is an NP-hard problem which allows us to test the capabilities and limitations of our model."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                578,
+                505,
+                635
+            ],
+            "content": "The input/output pairs (\\(\\mathcal{P}, \\mathcal{C}^{\\mathcal{P}}\\)) have a similar format as in the Convex Hull problem described in Section 3.1. \\(\\mathcal{P}\\) will be the cartesian coordinates representing the cities, which are chosen randomly in the [0, 1] × [0, 1] square. \\(\\mathcal{C}^{\\mathcal{P}} = \\{C_1, \\ldots, C_n\\}\\) will be a permutation of integers from 1 to n representing the optimal path (or tour). For consistency, in the training dataset, we always start in the first city without loss of generality."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                639,
+                505,
+                706
+            ],
+            "content": "To generate exact data, we implemented the Held-Karp algorithm [17] which finds the optimal solution in O(2^n n^2) (we used it up to n = 20). For larger n, producing exact solutions is extremely costly, therefore we also considered algorithms that produce approximated solutions: A1 [18] and A2 [19], which are both O(n^2), and A3 [20] which implements the O(n^3) Christofides algorithm. The latter algorithm is guaranteed to find a solution within a factor of 1.5 from the optimal length. Table 2 shows how they performed in our test sets."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                323,
+                505,
+                357
+            ],
+            "content": "A Delaunay triangulation for a set \\( \\mathcal{P} \\) of points in a plane is a triangulation such that each circumcircle of every triangle is empty, that is, there is no point from \\( \\mathcal{P} \\) in its interior. Exact \\( O(n \\log n) \\) solutions are available [16], where \\( n \\) is the number of points in \\( \\mathcal{P} \\)."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                226,
+                307,
+                260
+            ],
+            "content": "(a) Input \\( \\mathcal{P} = \\{P_1, \\ldots, P_{10}\\} \\), and the output sequence \\( \\mathcal{C}^{\\mathcal{P}} = \\{\\Rightarrow, 2, 4, 3, 5, 6, 7, 2, \\Leftarrow\\} \\) representing its convex hull."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                362,
+                505,
+                396
+            ],
+            "content": "The text content from the image is as follows:\n\n\"In this example, the outputs \\( \\mathcal{C}^{\\mathcal{P}} = \\{C_1, \\ldots, C_{m(\\mathcal{P})}\\} \\) are the corresponding sequences representing the triangulation of the point set \\( \\mathcal{P} \\). Each \\( C_i \\) is a triple of integers from 1 to \\( n \\) corresponding to the position of triangle vertices in \\( \\mathcal{P} \\) or the beginning/end of sequence tokens. See Figure 2 (b).\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                268,
+                505,
+                291
+            ],
+            "content": "Figure 2: Input/output representation for (a) convex hull and (b) Delaunay triangulation. The tokens \\(\\Rightarrow\\) and \\(\\Leftarrow\\) represent beginning and end of sequence, respectively."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                484,
+                283,
+                497
+            ],
+            "content": "The text content from the image is:\n\n\"3.3 Travelling Salesman Problem (TSP)\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                301,
+                232,
+                313
+            ],
+            "content": "3.2 Delaunay Triangulation"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                316,
+                226,
+                524,
+                261
+            ],
+            "content": "(b) Input \\( \\mathcal{P} = \\{P_1, \\ldots, P_5\\} \\), and the output \\( \\mathcal{C}^{\\mathcal{P}} = \\{\\Rightarrow, (1, 2, 4), (1, 4, 5), (1, 3, 5), (1, 2, 3), \\Leftarrow\\} \\) representing its Delaunay Triangulation."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                226,
+                525,
+                261
+            ],
+            "content": "(a) Input \\( \\mathcal{P} = \\{P_1, \\ldots, P_{10}\\} \\), and the output sequence \\( C^{\\mathcal{P}} = \\{\\Rightarrow, 2, 4, 3, 5, 6, 7, 2, \\Leftarrow\\} \\) representing its convex hull.\n(b) Input \\( \\mathcal{P} = \\{P_1, \\ldots, P_5\\} \\), and the output \\( C^{\\mathcal{P}} = \\{\\Rightarrow, (1, 2, 4), (1, 4, 5), (1, 3, 5), (1, 2, 3), \\Leftarrow\\} \\) representing its Delaunay Triangulation."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                524,
+                505,
+                623
+            ],
+            "content": "More than outperforming both the LSTM and the LSTM with attention, our model has the key advantage of being inherently variable length. The bottom half of Table 1 shows that, when training our model on a variety of lengths ranging from 5 to 50 (uniformly sampled, as we found other forms of curriculum learning to not be effective), a single model is able to perform quite well on all lengths it has been trained on (but some degradation for n = 50 can be observed w.r.t. the model trained only on length 50 instances). More impressive is the fact that the model does extrapolate to lengths that it has never seen during training. Even for n = 500, our results are satisfactory and indirectly indicate that the model has learned more than a simple lookup. Neither LSTM or LSTM with attention can be used for any given n' ≠ n without training a new model on n'."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                430,
+                505,
+                518
+            ],
+            "content": "It was seen that the order in which the inputs are presented to the encoder during inference affects its performance. When the points on the true convex hull are seen “late” in the input sequence, the accuracy is lower. This is possibly the network does not have enough processing steps to “update” the convex hull it computed until the latest points were seen. In order to overcome this problem, we used the attention mechanism described in Section 2.2, which allows the decoder to look at the whole input at any time. This modification boosted the model performance significantly. We inspected what attention was focusing on, and we observed that it was “pointing” at the correct answer on the input side. This inspired us to create the Ptr-Net model described in Section 2.3."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                128,
+                505,
+                184
+            ],
+            "content": "No extensive architecture or hyperparameter search of the Ptr-Net was done in the work presented here, and we used virtually the same architecture throughout all the experiments and datasets. Even though there are likely some gains to be obtained by tuning the model, we felt that having the same model hyperparameters operate on all the problems would make the main message of the paper stronger."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                309,
+                505,
+                375
+            ],
+            "content": "We reported two metrics: accuracy, and area covered of the true convex hull (note that any simple polygon will have full intersection with the true convex hull). To compute the accuracy, we considered two output sequences \\( C^1 \\) and \\( C^2 \\) to be the same if they represent the same polygon. For simplicity, we only computed the area coverage for the test examples in which the output represents a simple polygon (i.e., without self-intersections). If an algorithm fails to produce a simple polygon in more than 1% of the cases, we simply reported FAIL."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                189,
+                505,
+                234
+            ],
+            "content": "As a result, all our models used a single layer LSTM with either 256 or 512 hidden units, trained with stochastic gradient descent with a learning rate of 1.0, batch size of 128, random uniform weight initialization from -0.08 to 0.08, and L2 gradient clipping of 2.0. We generated 1M training example pairs, and we did observe overfitting in some cases where the task was simpler (i.e., for small n)."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                380,
+                505,
+                425
+            ],
+            "content": "The results are presented in Table 1. We note that the area coverage achieved with the Ptr-Net is close to 100%. Looking at examples of mistakes, we see that most problems come from points that are aligned (see Figure 3 (d) for a mistake for n = 500) – this is a common source of errors in most algorithms to solve the convex hull."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                270,
+                505,
+                303
+            ],
+            "content": "We used the convex hull as the guiding task which allowed us to understand the deficiencies of standard models such as the sequence-to-sequence approach, and also setting up our expectations on what a purely data driven model would be able to achieve with respect to an exact solution."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                687,
+                505,
+                732
+            ],
+            "content": "We reported two metrics: accuracy and triangle coverage in percentage (the percentage of triangles the model predicted correctly). Note that, in this case, for an input point set \\( \\mathcal{P} \\), the output sequence \\( \\mathcal{C}(\\mathcal{P}) \\) is, in fact, a set. As a consequence, any permutation of its elements will represent the same triangulation."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                660,
+                504,
+                682
+            ],
+            "content": "The Delaunay Triangulation test case is connected to our first problem of finding the convex hull. In fact, the Delaunay Triangulation for a given set of points triangulates the convex hull of these points."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                106,
+                282,
+                119
+            ],
+            "content": "The text content from the image is:\n\n\"4.1 Architecture and Hyperparameters\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                638,
+                232,
+                650
+            ],
+            "content": "4.3 Delaunay Triangulation"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                248,
+                184,
+                260
+            ],
+            "content": "The text content from the image is \"4.2 Convex Hull\"."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                218,
+                95
+            ],
+            "content": "The text content from the image is \"4 Empirical Results\"."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                660,
+                505,
+                704
+            ],
+            "content": "As discussed in Section 3.3, it is feasible to generate exact solutions for relatively small values of n to be used as training data. For larger n, due to the importance of TSP, good and efficient algorithms providing reasonable approximate solutions exist. We used three different algorithms in our experiments – A1, A2, and A3 (see Section 3.3 for references)."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                610,
+                505,
+                654
+            ],
+            "content": "We considered the planar symmetric travelling salesman problem (TSP), which is NP-hard as the third problem. Similarly to finding convex hulls, it also has sequential outputs. Given that the Ptr-Net implements an O(n²) algorithm, it was unclear if it would have enough capacity to learn a useful algorithm solely from data."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                709,
+                505,
+                732
+            ],
+            "content": "Table 2 shows all of our results on TSP. The number reported is the length of the proposed tour. Unlike the convex hull and Delaunay triangulation cases, where the decoder was unconstrained, in"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                588,
+                255,
+                601
+            ],
+            "content": "4.4 Travelling Salesman Problem"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                538,
+                505,
+                582
+            ],
+            "content": "Using the Ptr-Net model for \\( n = 5 \\), we obtained an accuracy of 80.7% and triangle coverage of 93.0%. For \\( n = 10 \\), the accuracy was 22.6% and the triangle coverage 81.3%. For \\( n = 50 \\), we did not produce any precisely correct triangulation, but obtained 52.8% triangle coverage. See the middle column of Figure 3 for an example for \\( n = 50 \\)."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                80,
+                505,
+                102
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: Comparison between LSTM, LSTM with attention, and our Ptr-Net model on the convex hull problem. Note that the baselines must be trained on the same n that they are tested on.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                503,
+                505,
+                582
+            ],
+            "content": "Figure 3: Examples of our model on Convex hulls (left), Delaunay (center) and TSP (right), trained on \\( m \\) points, and tested on \\( n \\) points. A failure of the LSTM sequence-to-sequence model for Convex hulls is shown in (a). Note that the baselines cannot be applied to a different length from training. Using the Ptr-Net model for \\( n = 5 \\), we obtained an accuracy of 80.7% and triangle coverage of 93.0%. For \\( n = 10 \\), the accuracy was 22.6% and the triangle coverage 81.3%. For \\( n = 50 \\), we did not produce any precisely correct triangulation, but obtained 52.8% triangle coverage. See the middle column of Figure 3 for an example for \\( n = 50 \\)."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                379,
+                274,
+                495,
+                282
+            ],
+            "content": "Ground Truth: tour length is 3.518"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                504,
+                505,
+                537
+            ],
+            "content": "Figure 3: Examples of our model on Convex hulls (left), Delaunay (center) and TSP (right), trained on m points, and tested on n points. A failure of the LSTM sequence-to-sequence model for Convex hulls is shown in (a). Note that the baselines cannot be applied to a different length from training."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                504,
+                505,
+                537
+            ],
+            "content": "Figure 3: Examples of our model on Convex hulls (left), Delaunay (center) and TSP (right), trained on m points, and tested on n points. A failure of the LSTM sequence-to-sequence model for Convex hulls is shown in (a). Note that the baselines cannot be applied to a different length from training."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                80,
+                505,
+                102
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: Comparison between LSTM, LSTM with attention, and our Ptr-Net model on the convex hull problem. Note that the baselines must be trained on the same n that they are tested on.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                384,
+                484,
+                485,
+                494
+            ],
+            "content": "(f) Ptr-Net, m=5-20, n=20"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                80,
+                505,
+                102
+            ],
+            "content": "Table 1: Comparison between LSTM, LSTM with attention, and our Ptr-Net model on the convex hull problem. Note that the baselines must be trained on the same n that they are tested on."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                464,
+                505,
+                542
+            ],
+            "content": "In this paper we described Ptr-Net, a new architecture that allows us to learn a conditional probability of one sequence \\( CP \\) given another sequence \\( P \\), where \\( CP \\) is a sequence of discrete tokens corresponding to positions in \\( P \\). We show that Ptr-Nets can be used to learn solutions to three different combinatorial optimization problems. Our method works on variable sized inputs (yielding variable sized output dictionaries), something the baseline models (sequence-to-sequence with or without attention) cannot do directly. Even more impressively, they outperform the baselines on fixed input size problems - to which both the models can be applied."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                547,
+                505,
+                625
+            ],
+            "content": "Previous methods such as RNNSearch, Memory Networks and Neural Turing Machines [5, 6, 2] have used attention mechanisms to process inputs. However these methods do not directly address problems that arise with variable output dictionaries. We have shown that an attention mechanism can be applied to the output to solve such problems. In so doing, we have opened up a new class of problems to which neural networks can be applied without artificial assumptions. In this paper, we have applied this extension to RNNSearch, but the methods are equally applicable to Memory Networks and Neural Turing Machines."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                364,
+                505,
+                430
+            ],
+            "content": "The second group of rows in the table show how the Ptr-Net trained on optimal data with 5 to 20 cities can generalize beyond that. The results are virtually perfect for \\( n = 25 \\), and good for \\( n = 30 \\), but it seems to break for 40 and beyond (still, the results are far better than chance). This contrasts with the convex hull case, where we were able to generalize by a factor of 10. However, the underlying algorithms are of far greater complexity than \\( O(n \\log n) \\), which could explain this phenomenon."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                314,
+                505,
+                359
+            ],
+            "content": "The first group of rows in the table show the Ptr-Net trained on optimal data, except for \\( n = 50 \\), since that is not feasible computationally (we trained a separate model for each \\( n \\)). Interestingly, when using the worst algorithm (A1) data to train the Ptr-Net, our model outperforms the algorithm that is trying to imitate."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                630,
+                505,
+                664
+            ],
+            "content": "Future work will try and show its applicability to other problems such as sorting where the outputs are chosen from the inputs. We are also excited about the possibility of using this approach to other combinatorial optimization problems."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                264,
+                505,
+                308
+            ],
+            "content": "this example we set the beam search procedure to only consider valid tours. Otherwise, the Ptr-Net model would sometimes output an invalid tour – for instance, it would repeat two cities or decided to ignore a destination. This procedure was relevant for n > 20, where at least 10% of instances would not produce any valid tour."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                699,
+                505,
+                732
+            ],
+            "content": "We would like to thank Rafał Jozefowicz, Ilya Sutskever, Quoc Le and Samy Bengio for useful discussions on this topic. We would also like to thank Daniel Gillick for his help with the final manuscript."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                678,
+                187,
+                690
+            ],
+            "content": "Acknowledgments"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                438,
+                189,
+                451
+            ],
+            "content": "The text content from the image is \"5 Conclusions\"."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                192,
+                73,
+                489,
+                85
+            ],
+            "content": "The text content from the image is:\n\n\"1 of the Ptr-Net and a collection of algorithms on a small scale TSP problem\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                164,
+                94
+            ],
+            "content": "References"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                100,
+                506,
+                633
+            ],
+            "content": "[1] Ilya Sutskever, Oriol Vinyals, and Quoc V Le. Sequence to sequence learning with neural networks. In Advances in Neural Information Processing Systems, pages 3104–3112, 2014.\n\n[2] Alex Graves, Greg Wayne, and Ivo Danihelka. Neural turing machines. arXiv preprint arXiv:1410.5401, 2014.\n\n[3] David E Rumelhart, Geoffrey E Hinton, and Ronald J Williams. Learning internal representations by error propagation. Technical report, DTIC Document, 1985.\n\n[4] Anthony J Robinson. An application of recurrent nets to phone probability estimation. Neural Networks, IEEE Transactions on, 5(2):298–305, 1994.\n\n[5] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. In ICLR 2015, arXiv preprint arXiv:1409.0473, 2014.\n\n[6] Jason Weston, Sumit Chopra, and Antoine Bordes. Memory networks. In ICLEAR 2015, arXiv preprint arXiv:1410.3916, 2014.\n\n[7] Oriol Vinyals, Lukasz Kaiser, Terry Koo, Slav Petrov, Ilya Sutskever, and Geoffrey Hinton. Grammar as a foreign language. arXiv preprint arXiv:1412.7449, 2014.\n\n[8] Oriol Vinyals, Alexander Toshev, Samy Bengio, and Dumitru Erhan. Show and tell: A neural image caption generator. In CVPR 2015, arXiv preprint arXiv:1411.4555, 2014.\n\n[9] Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, and Trevor Darrell. Long-term recurrent convolutional networks for visual recognition and description. In CVPR 2015, arXiv preprint arXiv:1411.4389, 2014.\n\n[10] Wojciech Zaremba and Ilya Sutskever. Learning to execute. arXiv preprint arXiv:1410.4615, 2014.\n\n[11] Sepp Hochreiter and Jürgen Schmidhuber. Long short-term memory. Neural computation, 9(8):1735–1780, 1997.\n\n[12] Nitish Srivastava, Elman Mansimov, and Ruslan Salakhutdinov. Unsupervised learning of video representations using lstms. In ICML 2015, arXiv preprint arXiv:1502.04681, 2015.\n\n[13] Ray A Jarvis. On the identification of the convex hull of a finite set of points in the plane. Information Processing Letters, 2(1):18–21, 1973.\n\n[14] Ronald L. Graham. An efficient algorithm for determining the convex hull of a finite planar set. Information processing letters, 1(4):132–133, 1972.\n\n[15] Franco P. Preparata and Se June Hong. Convex hulls of finite sets of points in two and three dimensions. Communications of the ACM, 20(2):87–93, 1977.\n\n[16] S1 Rebay. Efficient unstructured mesh generation by means of delaunay triangulation and bowyer-watson algorithm. Journal of computational physics, 106(1):125–138, 1993.\n\n[17] Richard Bellman. Dynamic programming treatment of the travelling salesman problem. Journal of the ACM (JACM), 9(1):61–63, 1962.\n\n[18] Suboptimal travelling salesman problem (tsp) solver, 2015. Available at https://github.com/dmishin/tsp-solver.\n\n[19] Traveling salesman problem c++ implementation, 2015. Available at https://github.com/samlbest/traveling-salesman.\n\n[20] C++ implementation of traveling salesman problem using christofides and 2-opt, 2015. Available at https://github.com/beckysag/traveling-salesman."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                112,
+                283,
+                505,
+                307
+            ],
+            "content": "The text content from the image is as follows:\n\n[8] Oriol Vinyals, Alexander Toshev, Samy Bengio, and Dumitru Erhan. Show and tell: A neural image caption generator. In CVPR 2015, arXiv preprint arXiv:1411.4555, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                398,
+                505,
+                421
+            ],
+            "content": "The text content from the image is as follows:\n\n[12] Nitish Srivastava, Elman Mansimov, and Ruslan Salakhutdinov. Unsupervised learning of video representations using lstms. In ICML 2015, arXiv preprint arXiv:1502.04681, 2015."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                346,
+                504,
+                369
+            ],
+            "content": "The text content from the image is:\n\n[10] Wojciech Zaremba and Ilya Sutskever. Learning to execute. arXiv preprint arXiv:1410.4615, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                111,
+                309,
+                505,
+                343
+            ],
+            "content": "The text content from the image is as follows:\n\n[9] Jeff Donahue, Lisa Anne Hendricks, Sergio Guadarrama, Marcus Rohrbach, Subhashini Venugopalan, Kate Saenko, and Trevor Darrell. Long-term recurrent convolutional networks for visual recognition and description. In CVPR 2015, arXiv preprint arXiv:1411.4389, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                605,
+                505,
+                628
+            ],
+            "content": "[20] C++ implementation of traveling salesman problem using christofides and 2-opt, 2015. Available at https://github.com/beckysag/traveling-salesman."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                372,
+                505,
+                394
+            ],
+            "content": "The text content from the image is:\n\n[11] Sepp Hochreiter and Jürgen Schmidhuber. Long short-term memory. Neural computation, 9(8):1735–1780, 1997."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                475,
+                504,
+                498
+            ],
+            "content": "The text content from the image is as follows:\n\n[15] Franco P. Preparata and Se June Hong. Convex hulls of finite sets of points in two and three dimensions. Communications of the ACM, 20(2):87–93, 1977."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                553,
+                505,
+                576
+            ],
+            "content": "The text content from the image is:\n\n[18] Suboptimal travelling salesman problem (tsp) solver, 2015. Available at https://github.com/dmishin/tsp-solver."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                424,
+                504,
+                447
+            ],
+            "content": "The text content from the image is:\n\n[13] Ray A Jarvis. On the identification of the convex hull of a finite set of points in the plane. Information Processing Letters, 2(1):18–21, 1973."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                502,
+                505,
+                525
+            ],
+            "content": "The text content from the image is as follows:\n\n[16] S1 Rebay. Efficient unstructured mesh generation by means of delaunay triangulation and bowyer-watson algorithm. Journal of computational physics, 106(1):125–138, 1993."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                257,
+                504,
+                280
+            ],
+            "content": "The text content from the image is:\n\n[7] Oriol Vinyals, Lukasz Kaiser, Terry Koo, Slav Petrov, Ilya Sutskever, and Geoffrey Hinton. Grammar as a foreign language. arXiv preprint arXiv:1412.7449, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                579,
+                505,
+                603
+            ],
+            "content": "The text content from the image is as follows:\n\n[19] Traveling salesman problem c++ implementation, 2015. Available at https://github.com/samlbest/traveling-salesman."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                112,
+                128,
+                505,
+                151
+            ],
+            "content": "The text content from the image is:\n\n[2] Alex Graves, Greg Wayne, and Ivo Danihelka. Neural turing machines. arXiv preprint arXiv:1410.5401, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                111,
+                102,
+                505,
+                125
+            ],
+            "content": "The text content from the image is as follows:\n\n[1] Ilya Sutskever, Oriol Vinyals, and Quoc V Le. Sequence to sequence learning with neural networks. In Advances in Neural Information Processing Systems, pages 3104–3112, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                450,
+                504,
+                473
+            ],
+            "content": "The text content from the image is as follows:\n\n[14] Ronald L. Graham. An efficient algorithm for determining the convex hull of a finite planar set. Information processing letters, 1(4):132–133, 1972."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                528,
+                505,
+                551
+            ],
+            "content": "The text content from the image is as follows:\n\n[17] Richard Bellman. Dynamic programming treatment of the travelling salesman problem. Journal of the ACM (JACM), 9(1):61–63, 1962."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                180,
+                505,
+                203
+            ],
+            "content": "The text content from the image is as follows:\n\n[4] Anthony J Robinson. An application of recurrent nets to phone probability estimation. Neural Networks, IEEE Transactions on, 5(2):298–305, 1994."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                231,
+                504,
+                254
+            ],
+            "content": "The text content from the image is as follows:\n\n[6] Jason Weston, Sumit Chopra, and Antoine Bordes. Memory networks. In ICLEAR 2015, arXiv preprint arXiv:1410.3916, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                112,
+                206,
+                504,
+                229
+            ],
+            "content": "The text content from the image is as follows:\n\n[5] Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. In ICLR 2015, arXiv preprint arXiv:1409.0473, 2014."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                154,
+                505,
+                177
+            ],
+            "content": "The text content from the image is as follows:\n\n[3] David E Rumelhart, Geoffrey E Hinton, and Ronald J Williams. Learning internal representations by error propagation. Technical report, DTIC Document, 1985."
+        }
+    ]
+}

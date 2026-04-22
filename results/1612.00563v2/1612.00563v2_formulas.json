@@ -1,0 +1,198 @@
+{
+    "total_count": 16,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                343,
+                541,
+                511,
+                573
+            ],
+            "content": "L ( \\theta ) = - \\sum _ { t = 1 } ^ { T } \\log ( p _ { \\theta } ( w _ { t } ^ { * } | w _ { 1 } ^ { * } , \\ldots w _ { t - 1 } ^ { * } ) ) ,",
+            "latex": "L ( \\theta ) = - \\sum _ { t = 1 } ^ { T } \\log ( p _ { \\theta } ( w _ { t } ^ { * } | w _ { 1 } ^ { * } , \\ldots w _ { t - 1 } ^ { * } ) ) ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                322,
+                262,
+                532,
+                366
+            ],
+            "content": "```latex\n\\begin{align*}\nx_t &= E1_{w_{t-1}} \\text{ for } t > 1, \\quad x_1 = W_I CNN(F) \\\\\ni_t &= \\sigma(W_{ix} x_t + W_{ih} h_{t-1} + b_i) \\quad (\\text{Input Gate}) \\\\\nf_t &= \\sigma(W_{fx} x_t + W_{fh} h_{t-1} + b_f) \\quad (\\text{Forget Gate}) \\\\\no_t &= \\sigma(W_{ox} x_t + W_{oh} h_{t-1} + b_o) \\quad (\\text{Output Gate}) \\\\\nc_t &= i_t \\odot \\phi(W_{zx}^{\\otimes} x_t + W_{zh}^{\\otimes} h_{t-1} + b_z^{\\otimes}) + f_t \\odot c_{t-1} \\\\\nh_t &= o_t \\odot \\tanh(c_t) \\\\\ns_t &= W_s h_t,\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\nx_t &= E1_{w_{t-1}} \\text{ for } t > 1, \\quad x_1 = W_I CNN(F) \\\\\ni_t &= \\sigma(W_{ix} x_t + W_{ih} h_{t-1} + b_i) \\quad (\\text{Input Gate}) \\\\\nf_t &= \\sigma(W_{fx} x_t + W_{fh} h_{t-1} + b_f) \\quad (\\text{Forget Gate}) \\\\\no_t &= \\sigma(W_{ox} x_t + W_{oh} h_{t-1} + b_o) \\quad (\\text{Output Gate}) \\\\\nc_t &= i_t \\odot \\phi(W_{zx}^{\\otimes} x_t + W_{zh}^{\\otimes} h_{t-1} + b_z^{\\otimes}) + f_t \\odot c_{t-1} \\\\\nh_t &= o_t \\odot \\tanh(c_t) \\\\\ns_t &= W_s h_t,\n\\end{align*}\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                387,
+                433,
+                465,
+                446
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n\\[ w_t \\sim \\text{softmax}\\left(s_t\\right) \\]",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n\\[ w_t \\sim \\text{softmax}\\left(s_t\\right) \\]"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                336,
+                380,
+                516,
+                450
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbb{E}_{w^s \\sim p_\\theta} [b\\nabla_\\theta \\log p_\\theta(w^s)] &= b \\sum_{w_s} \\nabla_\\theta p_\\theta(w^s) \\\\\n&= b \\nabla_\\theta \\sum_{w_s} p_\\theta(w^s) \\\\\n&= b \\nabla_\\theta 1 = 0.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbb{E}_{w^s \\sim p_\\theta} [b\\nabla_\\theta \\log p_\\theta(w^s)] &= b \\sum_{w_s} \\nabla_\\theta p_\\theta(w^s) \\\\\n&= b \\nabla_\\theta \\sum_{w_s} p_\\theta(w^s) \\\\\n&= b \\nabla_\\theta 1 = 0.\n\\end{align*}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                371,
+                604,
+                482,
+                637
+            ],
+            "content": "\\nabla _ { \\theta } L ( \\theta ) = \\sum _ { t = 1 } ^ { T } { \\frac { \\partial L ( \\theta ) } { \\partial s _ { t } } } { \\frac { \\partial s _ { t } } { \\partial \\theta } } ,",
+            "latex": "\\nabla _ { \\theta } L ( \\theta ) = \\sum _ { t = 1 } ^ { T } { \\frac { \\partial L ( \\theta ) } { \\partial s _ { t } } } { \\frac { \\partial s _ { t } } { \\partial \\theta } } ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                344,
+                514,
+                509,
+                528
+            ],
+            "content": "\\nabla _ { \\theta } L ( \\theta ) \\approx - ( r ( w ^ { s } ) - b ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) .",
+            "latex": "\\nabla _ { \\theta } L ( \\theta ) \\approx - ( r ( w ^ { s } ) - b ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                50,
+                93,
+                297,
+                198
+            ],
+            "content": "```latex\nx_t = E1_{w_{t-1}} \\text{ for } t \\geq 1, w_0 = BOS\n\ni_t = \\sigma(W_{ix} x_t + W_{ih} h_{t-1} + b_i) \\quad (\\text{Input Gate})\n\nf_t = \\sigma(W_{fx} x_t + W_{fh} h_{t-1} + b_f) \\quad (\\text{Forget Gate})\n\no_t = \\sigma(W_{ox} x_t + W_{oh} h_{t-1} + b_o) \\quad (\\text{Output Gate})\n\nc_t = i_t \\odot \\phi(W_{zx}^{\\otimes} x_t + W_{zI}^{\\otimes} I_t + W_{zh}^{\\otimes} h_{t-1} + b_z^{\\otimes}) + f_t \\odot c_{t-1}\n\nh_t = o_t \\odot \\tanh(c_t)\n\ns_t = W_s h_t,\n```",
+            "latex": "```latex\nx_t = E1_{w_{t-1}} \\text{ for } t \\geq 1, w_0 = BOS\n\ni_t = \\sigma(W_{ix} x_t + W_{ih} h_{t-1} + b_i) \\quad (\\text{Input Gate})\n\nf_t = \\sigma(W_{fx} x_t + W_{fh} h_{t-1} + b_f) \\quad (\\text{Forget Gate})\n\no_t = \\sigma(W_{ox} x_t + W_{oh} h_{t-1} + b_o) \\quad (\\text{Output Gate})\n\nc_t = i_t \\odot \\phi(W_{zx}^{\\otimes} x_t + W_{zI}^{\\otimes} I_t + W_{zh}^{\\otimes} h_{t-1} + b_z^{\\otimes}) + f_t \\odot c_{t-1}\n\nh_t = o_t \\odot \\tanh(c_t)\n\ns_t = W_s h_t,\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                342,
+                691,
+                511,
+                717
+            ],
+            "content": "\\frac { \\partial L ( \\theta ) } { \\partial s _ { t } } \\approx ( r ( w ^ { s } ) - b ) ( p _ { \\theta } ( w _ { t } | h _ { t } ) - 1 _ { w _ { t } ^ { s } } ) .",
+            "latex": "\\frac { \\partial L ( \\theta ) } { \\partial s _ { t } } \\approx ( r ( w ^ { s } ) - b ) ( p _ { \\theta } ( w _ { t } | h _ { t } ) - 1 _ { w _ { t } ^ { s } } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                336,
+                182,
+                517,
+                197
+            ],
+            "content": "\\nabla _ { \\theta } L ( \\theta ) = - \\mathbb { E } _ { w ^ { s } \\sim p _ { \\theta } } \\left[ r ( w ^ { s } ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) \\right] .",
+            "latex": "\\nabla _ { \\theta } L ( \\theta ) = - \\mathbb { E } _ { w ^ { s } \\sim p _ { \\theta } } \\left[ r ( w ^ { s } ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) \\right] ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                371,
+                93,
+                481,
+                106
+            ],
+            "content": "L ( \\theta ) \\approx - r ( w ^ { s } ) , ~ w ^ { s } \\sim p _ { \\theta } .",
+            "latex": "L ( \\theta ) \\approx - r ( w ^ { s } ) , ~ w ^ { s } \\sim p _ { \\theta } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                318,
+                327,
+                522,
+                341
+            ],
+            "content": "\\nabla _ { \\theta } L ( \\theta ) = - \\mathbb { E } _ { w ^ { s } \\sim p _ { \\theta } } \\left[ ( r ( w ^ { s } ) - b ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) \\right] .",
+            "latex": "\\nabla _ { \\theta } L ( \\theta ) = - \\mathbb { E } _ { w ^ { s } \\sim p _ { \\theta } } \\left[ ( r ( w ^ { s } ) - b ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) \\right] ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                113,
+                666,
+                223,
+                681
+            ],
+            "content": "L ( \\theta ) = - \\mathbb { E } _ { w ^ { s } \\sim p _ { \\theta } } \\left[ r ( w ^ { s } ) \\right] ,",
+            "latex": "L ( \\theta ) = - \\mathbb { E } _ { w ^ { s } \\sim p _ { \\theta } } \\left[ r ( w ^ { s } ) \\right] ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                356,
+                249,
+                496,
+                263
+            ],
+            "content": "\\nabla _ { \\theta } L ( \\theta ) \\approx - r ( w ^ { s } ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) .",
+            "latex": "\\nabla _ { \\theta } L ( \\theta ) \\approx - r ( w ^ { s } ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                356,
+                249,
+                496,
+                263
+            ],
+            "content": "\\nabla _ { \\theta } L ( \\theta ) \\approx - r ( w ^ { s } ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) .",
+            "latex": "\\nabla _ { \\theta } L ( \\theta ) \\approx - r ( w ^ { s } ) \\nabla _ { \\theta } \\log p _ { \\theta } ( w ^ { s } ) ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                75,
+                170,
+                260,
+                195
+            ],
+            "content": "\\frac { \\partial L ( \\theta ) } { \\partial s _ { t } } = ( r ( w ^ { s } ) - r ( \\hat { w } ) ) ( p _ { \\theta } ( w _ { t } | h _ { t } ) - 1 _ { w _ { t } ^ { s } } ) .",
+            "latex": "\\frac { \\partial L ( \\theta ) } { \\partial s _ { t } } = ( r ( w ^ { s } ) - r ( \\hat { w } ) ) ( p _ { \\theta } ( w _ { t } | h _ { t } ) - 1 _ { w _ { t } ^ { s } } ) ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                117,
+                513,
+                218,
+                530
+            ],
+            "content": "\\hat { w } _ { t } = \\operatorname* { a r g ~ m a x } _ { w _ { t } } p ( w _ { t } \\mid h _ { t } )",
+            "latex": "\\hat { w } _ { t } = \\operatorname* { a r g ~ m a x } _ { w _ { t } } p ( w _ { t } \\mid h _ { t } )"
+        }
+    ]
+}

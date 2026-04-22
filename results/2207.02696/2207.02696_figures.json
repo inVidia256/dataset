@@ -1,0 +1,174 @@
+{
+    "total_count": 12,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                312,
+                223,
+                537,
+                392
+            ],
+            "caption": "Figure 1: Comparison with other real-time object detectors, our proposed methods achieve state-of-the-arts performance.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                47,
+                72,
+                546,
+                253
+            ],
+            "caption": "Figure 2: Extended efficient layer aggregation networks. The proposed extended ELAN (E-ELAN) does not change the gradient transmission path of the original architecture at all, but use group convolution to increase the cardinality of the added features, and combine the features of different groups in a shuffle and merge cardinality manner. This way of operation can enhance the features learned by different feature maps and improve the use of parameters and calculations.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                55,
+                71,
+                540,
+                164
+            ],
+            "caption": "Figure 3: Model scaling for concatenation-based models. From (a) to (b), we observe that when depth scaling is performed on concatenation-based models, the output width of a computational block also increases. This phenomenon will cause the input width of the subsequent transmission layer to increase. Therefore, we propose (c), that is, when performing model scaling on concatenation-based models, only the depth in a computational block needs to be scaled, and the remaining of transmission layer is performed with corresponding width scaling. (c) compound scaling up depth and width for concatenation-based model",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                54,
+                75,
+                291,
+                164
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                313,
+                245,
+                539,
+                416
+            ],
+            "caption": "Figure 4: Planned re-parameterized model. In the proposed planned re-parameterized model, we found that a layer with residual or concatenation connections, its RepConv should not have identity connection. Under these circumstances, it can be replaced by RepConvN that contains no identity connections.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page004.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                52,
+                69,
+                533,
+                167
+            ],
+            "caption": "Figure 5: Coarse for auxiliary and fine for lead head label assigner. Compare with normal model (a), the schema in (b) has auxiliary head. Different from the usual independent label assigner (c), we propose (d) lead head guided label assigner and (e) coarse-to-fine lead head guided label assigner. The proposed label assigner is optimized by lead head prediction and the ground truth to get the labels of training lead head and auxiliary head at the same time. The detailed coarse-to-fine implementation method and constraint design details will be elaborated in Appendix.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page005.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                321,
+                76,
+                531,
+                177
+            ],
+            "caption": "Figure 6: Planned RepConv 3-stacked ELAN. Blue circles are the position we replace Conv by RepConv.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                311,
+                464,
+                542,
+                537
+            ],
+            "caption": "Figure 7: Reversed CSPDarknet. We reverse the position of \\(1 \\times 1\\) and \\(3 \\times 3\\) convolutional layer in dark block to fit our planned reparameterized model design strategy.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                49,
+                71,
+                545,
+                180
+            ],
+            "caption": "Figure 8: Objectness map predicted by different methods at auxiliary head and lead head.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page009.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                89,
+                74,
+                502,
+                321
+            ],
+            "caption": "Figure 9: Comparison with other object detectors.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page011.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                89,
+                340,
+                501,
+                493
+            ],
+            "caption": "Figure 10: Comparison with other real-time object detectors.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page011.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                322,
+                530,
+                529,
+                683
+            ],
+            "caption": "Figure 11: Comparison with other real-time object detectors.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page011.png"
+        }
+    ]
+}

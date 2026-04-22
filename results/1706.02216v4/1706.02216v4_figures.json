@@ -1,0 +1,48 @@
+{
+    "total_count": 3,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                113,
+                52,
+                501,
+                186
+            ],
+            "caption": "Figure 1: Visual illustration of the GraphSAGE sample and aggregate approach.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                112,
+                242,
+                496,
+                353
+            ],
+            "caption": "Figure 2: A: Timing experiments on Reddit data, with training batches of size 512 and inference on the full test set (79,534 nodes). B: Model performance with respect to the size of the sampled neighborhood, where the “neighborhood sample size” refers to the number of neighbors sampled at each depth for K = 2 with S1 = S2 (on the citation data using GraphSAGE-mean).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                133,
+                79,
+                474,
+                277
+            ],
+            "caption": "Figure 3: Accuracy (in F1-score) for different approaches on the citation data as the feature matrix is incrementally replaced with random Gaussian noise.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page019.png"
+        }
+    ]
+}

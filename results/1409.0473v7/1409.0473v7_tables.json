@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                109,
+                95,
+                276,
+                178
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>All</td>\n    <td>No UNK°</td>\n  </tr>\n  <tr>\n    <td>RNN enc dec -30</td>\n    <td>13.93</td>\n    <td>24.19</td>\n  </tr>\n  <tr>\n    <td>RNN search -30</td>\n    <td>21.50</td>\n    <td>31.44</td>\n  </tr>\n  <tr>\n    <td>RNN enc dec -50</td>\n    <td>17.82</td>\n    <td>26.71</td>\n  </tr>\n  <tr>\n    <td>RNN search -50</td>\n    <td>26.75</td>\n    <td>34.16</td>\n  </tr>\n  <tr>\n    <td>RNN search -50*</td>\n    <td>28.45</td>\n    <td>36.15</td>\n  </tr>\n  <tr>\n    <td>Moses</td>\n    <td>33.30</td>\n    <td>35.63</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                106,
+                78,
+                510,
+                151
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Updates(x105)</td>\n    <td>Epochs</td>\n    <td>Hours</td>\n    <td>GPU</td>\n    <td>Train NLL</td>\n    <td>Dev.NLL</td>\n  </tr>\n  <tr>\n    <td>RNN enc-30</td>\n    <td>8.46</td>\n    <td>6.4</td>\n    <td>109</td>\n    <td>TITAN BLACK</td>\n    <td>28.1</td>\n    <td>53.0</td>\n  </tr>\n  <tr>\n    <td>RNN enc-50</td>\n    <td>6.00</td>\n    <td>4.5</td>\n    <td>108</td>\n    <td>Quadro K-6000</td>\n    <td>44.0</td>\n    <td>43.6</td>\n  </tr>\n  <tr>\n    <td>RNN search -30</td>\n    <td>4.71</td>\n    <td>3.6</td>\n    <td>113</td>\n    <td>TITAN BLACK</td>\n    <td>26.7</td>\n    <td>47.2</td>\n  </tr>\n  <tr>\n    <td>RNN search -50</td>\n    <td>2.88</td>\n    <td>2.2</td>\n    <td>111</td>\n    <td>Quadro K-6000</td>\n    <td>40.7</td>\n    <td>38.1</td>\n  </tr>\n  <tr>\n    <td>RNN search -50*</td>\n    <td>6.67</td>\n    <td>5.0</td>\n    <td>252</td>\n    <td>Quadro K-6000</td>\n    <td>36.7</td>\n    <td>35.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page014.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                107,
+                225,
+                526,
+                359
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Source</td>\n    <td>An admitting privilege is the right of a doctor to admit a patient to a hospital or a medical centreto carry out a diagnosis or a procedure， based on his status as a health care worker at a hospital.</td>\n  </tr>\n  <tr>\n    <td>Reference</td>\n    <td>Le privilège d'admission est le droit d'un médecin, en vertu de son statut de membre soignantd'un hopital， dadmettre un patient dans un hopital ou un centre medicaafin dy delivrer undiagnostic ou un traitement.</td>\n  </tr>\n  <tr>\n    <td>RNN enc-50</td>\n    <td>Un privilège d'admission est le droit d'un médecin de reconnaître un patient a l'hopital ou uncentre medica d'un diagnostic ou de prendre un diagnostic en fonction de son etat desante.</td>\n  </tr>\n  <tr>\n    <td>RNN search -50</td>\n    <td>Un privilège d'admission est le droit d'un médecin d'admettre un patient a un hopital ou uncentre medica pour effectuer un diagnostic ou une procedure， selon son statut de travailleurdessoins de santé a l'hopital.</td>\n  </tr>\n  <tr>\n    <td>GoogleTranslate</td>\n    <td>Un privilège admettre est le droit d'un médecin d'admettre un patient dans un hopital ou uncentre medica pour effectuer un diagnostic ou une procedure， fondée sur sa situation entant que travailleur de soins de santé dans un hopital.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page015.png"
+        }
+    ]
+}

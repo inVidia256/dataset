@@ -1,0 +1,18 @@
+{
+    "total_count": 1,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                391,
+                510,
+                461,
+                571
+            ],
+            "content": "```latex\nb_x = \\sigma(t_x) + c_x\nb_y = \\sigma(t_y) + c_y\nb_w = p_w e^{t_w}\nb_h = p_h e^{t_h}\n```",
+            "latex": "```latex\nb_x = \\sigma(t_x) + c_x\nb_y = \\sigma(t_y) + c_y\nb_w = p_w e^{t_w}\nb_h = p_h e^{t_h}\n```"
+        }
+    ]
+}

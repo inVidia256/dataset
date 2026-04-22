@@ -1,0 +1,34 @@
+{
+    "total_count": 2,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                113,
+                69,
+                498,
+                226
+            ],
+            "caption": "Figure 1: (left) Transformer architecture and training objectives used in this work. (right) Input transformations for fine-tuning on different tasks. We convert all structured inputs into token sequences to be processed by our pre-trained model, followed by a linear+softmax layer. Figure 1: (left) Transformer architecture and training objectives used in this work. (right) Input transformations for fine-tuning on different tasks. We convert all structured inputs into token sequences to be processed by our pre-trained model, followed by a linear+softmax layer.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                111,
+                443,
+                497,
+                610
+            ],
+            "caption": "Figure 2: (left) Effect of transferring increasing number of layers from the pre-trained language model on RACE and MultiNLI. (right) Plot showing the evolution of zero-shot performance on different tasks as a function of LM pre-training updates. Performance per task is normalized between a random guess baseline and the current state-of-the-art with a single model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        }
+    ]
+}

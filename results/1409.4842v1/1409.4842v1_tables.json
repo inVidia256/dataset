@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                106,
+                79,
+                508,
+                293
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: GoogLeNet incarnation of the Inception architecture\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>type</td>\n    <td>patch size/stride</td>\n    <td>outputsize</td>\n    <td>depth</td>\n    <td>#1x1</td>\n    <td>#3x3reduce</td>\n    <td>#3x3</td>\n    <td>#3x3reduce</td>\n    <td>#5x5</td>\n    <td>#5x5</td>\n    <td>poolproj</td>\n    <td>params</td>\n    <td>ops</td>\n  </tr>\n  <tr>\n    <td>convolution</td>\n    <td>7x7/2</td>\n    <td>112x112x64</td>\n    <td>1</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>2.7K</td>\n    <td>34M</td>\n  </tr>\n  <tr>\n    <td>max pool</td>\n    <td>3x3/2</td>\n    <td>56x56x64</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>convolution</td>\n    <td>3x3/1</td>\n    <td>56x56x192</td>\n    <td>2</td>\n    <td>64</td>\n    <td>192</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>112K</td>\n    <td>360M</td>\n  </tr>\n  <tr>\n    <td>max pool</td>\n    <td>3x3/2</td>\n    <td>28x28x192</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>inception(3a)</td>\n    <td>28x28x256</td>\n    <td>2</td>\n    <td>64</td>\n    <td>96</td>\n    <td>128</td>\n    <td>16</td>\n    <td>32</td>\n    <td>32</td>\n    <td>159K</td>\n    <td>128M</td>\n  </tr>\n  <tr>\n    <td>inception(3b)</td>\n    <td>28x28x480</td>\n    <td>2</td>\n    <td>128</td>\n    <td>128</td>\n    <td>192</td>\n    <td>32</td>\n    <td>96</td>\n    <td>64</td>\n    <td>380K</td>\n    <td>304M</td>\n  </tr>\n  <tr>\n    <td>max pool</td>\n    <td>3x3/2</td>\n    <td>14x14x480</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>inception(4a)</td>\n    <td>14x14x512</td>\n    <td>2</td>\n    <td>192</td>\n    <td>96</td>\n    <td>208</td>\n    <td>16</td>\n    <td>48</td>\n    <td>64</td>\n    <td>364K</td>\n    <td>73M</td>\n  </tr>\n  <tr>\n    <td>inception(4b)</td>\n    <td>14x14x512</td>\n    <td>2</td>\n    <td>160</td>\n    <td>112</td>\n    <td>224</td>\n    <td>24</td>\n    <td>64</td>\n    <td>64</td>\n    <td>437K</td>\n    <td>88M</td>\n  </tr>\n  <tr>\n    <td>inception(4c)</td>\n    <td>14x14x512</td>\n    <td>2</td>\n    <td>128</td>\n    <td>128</td>\n    <td>256</td>\n    <td>24</td>\n    <td>64</td>\n    <td>64</td>\n    <td>463K</td>\n    <td>100M</td>\n  </tr>\n  <tr>\n    <td>inception(4d)</td>\n    <td>14x14x528</td>\n    <td>2</td>\n    <td>112</td>\n    <td>144</td>\n    <td>288</td>\n    <td>32</td>\n    <td>64</td>\n    <td>64</td>\n    <td>580K</td>\n    <td>119M</td>\n  </tr>\n  <tr>\n    <td>inception(4e)</td>\n    <td>14x14x832</td>\n    <td>2</td>\n    <td>256</td>\n    <td>160</td>\n    <td>320</td>\n    <td>32</td>\n    <td>128</td>\n    <td>128</td>\n    <td>840K</td>\n    <td>170M</td>\n  </tr>\n  <tr>\n    <td>max pool</td>\n    <td>3x3/2</td>\n    <td>7x7x832</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>inception(5a)</td>\n    <td></td>\n    <td>7x7x832</td>\n    <td>2</td>\n    <td>256</td>\n    <td>160</td>\n    <td>320</td>\n    <td>32</td>\n    <td>128</td>\n    <td>128</td>\n    <td>1072K</td>\n    <td>54M</td>\n  </tr>\n  <tr>\n    <td>inception(5b)</td>\n    <td></td>\n    <td>7x7x1024</td>\n    <td>2</td>\n    <td>384</td>\n    <td>192</td>\n    <td>384</td>\n    <td>48</td>\n    <td>128</td>\n    <td>128</td>\n    <td>1388K</td>\n    <td>71M</td>\n  </tr>\n  <tr>\n    <td>avg pool</td>\n    <td>7x7/1</td>\n    <td>1x1x1024</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>dropout(40%)</td>\n    <td>1x1x1024</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>linear</td>\n    <td></td>\n    <td>1x1x1000</td>\n    <td>1</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>1000K</td>\n    <td>1M</td>\n  </tr>\n  <tr>\n    <td>softmax</td>\n    <td></td>\n    <td>1x1x1000</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                160,
+                80,
+                450,
+                211
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Team</td>\n    <td>Year</td>\n    <td>Place</td>\n    <td>Error(top-5)</td>\n    <td>Uses external data</td>\n  </tr>\n  <tr>\n    <td>Super Vision</td>\n    <td>2012</td>\n    <td>1st</td>\n    <td>16.4%</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Super Vision</td>\n    <td>2012</td>\n    <td>1st</td>\n    <td>15.3%</td>\n    <td>Imagenet 22k</td>\n  </tr>\n  <tr>\n    <td>Clarifai</td>\n    <td>2013</td>\n    <td>1st</td>\n    <td>11.7%</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Clarifai</td>\n    <td>2013</td>\n    <td>1st</td>\n    <td>11.2%</td>\n    <td>Imagenet 22k</td>\n  </tr>\n  <tr>\n    <td>MSRA</td>\n    <td>2014</td>\n    <td>3rd</td>\n    <td>7.35%</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>VGG</td>\n    <td>2014</td>\n    <td>2nd</td>\n    <td>7.32%</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet</td>\n    <td>2014</td>\n    <td>1st</td>\n    <td>6.67%</td>\n    <td>no</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page009.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                125,
+                240,
+                486,
+                353
+            ],
+            "caption": "Table 2: Classification performance The text content from the image is:\n\n\"Table 3: GoogLeNet classification performance break down\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Number of models</td>\n    <td>Number of Crops</td>\n    <td>Cost</td>\n    <td>Top-5 error</td>\n    <td>compared to base</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>10.07%</td>\n    <td>base</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>10</td>\n    <td>10</td>\n    <td>9.15%</td>\n    <td>-0.92%</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>144</td>\n    <td>144</td>\n    <td>7.89%</td>\n    <td>-2.18%</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>1</td>\n    <td>7</td>\n    <td>8.09%</td>\n    <td>-1.98%</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>10</td>\n    <td>70</td>\n    <td>7.62%</td>\n    <td>-2.45%</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>144</td>\n    <td>1008</td>\n    <td>6.67%</td>\n    <td>-3.45%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                111,
+                80,
+                499,
+                162
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Team</td>\n    <td>Year</td>\n    <td>Place</td>\n    <td>mAP</td>\n    <td>external data</td>\n    <td>ensemble</td>\n    <td>approach</td>\n  </tr>\n  <tr>\n    <td>UvA-Euvision</td>\n    <td>2013</td>\n    <td>1st</td>\n    <td>22.6%</td>\n    <td>none</td>\n    <td>?</td>\n    <td>Fisher vectors</td>\n  </tr>\n  <tr>\n    <td>Deep Insight</td>\n    <td>2014</td>\n    <td>3rd</td>\n    <td>40.5%</td>\n    <td>ImageNet 1k</td>\n    <td>3</td>\n    <td>CNN</td>\n  </tr>\n  <tr>\n    <td>CUHK DeepID-Net</td>\n    <td>2014</td>\n    <td>2nd</td>\n    <td>40.7%</td>\n    <td>ImageNet 1k</td>\n    <td>?</td>\n    <td>CNN</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet</td>\n    <td>2014</td>\n    <td>1st</td>\n    <td>43.9%</td>\n    <td>ImageNet 1k</td>\n    <td>6</td>\n    <td>CNN</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page010.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                130,
+                191,
+                480,
+                304
+            ],
+            "caption": "Table 4: Detection performance The text content from the image is:\n\n\"Table 5: Single model performance for detection\" The text content from the image is:\n\n\"Table 5: Single model performance for detection\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Team</td>\n    <td>mAP</td>\n    <td>Contextual model</td>\n    <td>Bounding box regression</td>\n  </tr>\n  <tr>\n    <td>Trimps-Soushen</td>\n    <td>31.6%</td>\n    <td>no</td>\n    <td>?</td>\n  </tr>\n  <tr>\n    <td>Berkeley Vision</td>\n    <td>34.5%</td>\n    <td>no</td>\n    <td>yes</td>\n  </tr>\n  <tr>\n    <td>UvA-Euvision</td>\n    <td>35.4%</td>\n    <td>?</td>\n    <td>?</td>\n  </tr>\n  <tr>\n    <td>CUHK DeepID-Net2</td>\n    <td>37.7%</td>\n    <td>no</td>\n    <td>?</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet</td>\n    <td>38.02%</td>\n    <td>no</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Deep Insight</td>\n    <td>40.2%</td>\n    <td>yes</td>\n    <td>yes</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page010.png"
+        }
+    ]
+}

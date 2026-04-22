@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                189,
+                80,
+                423,
+                115
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: One Nearest Neighbors (1NN) classification accuracy (%) on the permutation-invariant MNIST (LeCun et al., 1998) test set in the feature space learned by BiGAN, Latent Regressor (LR), Joint Latent Regressor (JLR), and an autoencoder (AE) using an \\( \\ell_1 \\) or \\( \\ell_2 \\) distance.\" The text content from the image is as follows:\n\n\"Table 1: One Nearest Neighbors (1NN) classification accuracy (%) on the permutation-invariant MNIST (LeCun et al., 1998) test set in the feature space learned by BiGAN, Latent Regressor (LR), Joint Latent Regressor (JLR), and an autoencoder (AE) using an \\( \\ell_1 \\) or \\( \\ell_2 \\) distance.\" The text content from the image is as follows:\n\n\"Table 1: One Nearest Neighbors (1NN) classification accuracy (%) on the permutation-invariant MNIST (LeCun et al., 1998) test set in the feature space learned by BiGAN, Latent Regressor (LR), Joint Latent Regressor (JLR), and an autoencoder (AE) using an \\( \\ell_1 \\) or \\( \\ell_2 \\) distance.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Bi GAN</td>\n    <td>D</td>\n    <td>LR</td>\n    <td>J LR</td>\n    <td>AE(12)</td>\n    <td>AE(11)</td>\n  </tr>\n  <tr>\n    <td>97.39</td>\n    <td>97.30</td>\n    <td>97.44</td>\n    <td>97.13</td>\n    <td>97.58</td>\n    <td>97.63</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                138,
+                80,
+                472,
+                175
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>conv1</td>\n    <td>conv2</td>\n    <td>conv3</td>\n    <td>conv4</td>\n    <td>conv5</td>\n  </tr>\n  <tr>\n    <td>Random(Noroozi&Favaro，2016)</td>\n    <td>48.5</td>\n    <td>41.0</td>\n    <td>34.8</td>\n    <td>27.1</td>\n    <td>12.0</td>\n  </tr>\n  <tr>\n    <td>Wang&Gupta(2015)</td>\n    <td>51.8</td>\n    <td>46.9</td>\n    <td>42.8</td>\n    <td>38.8</td>\n    <td>29.8</td>\n  </tr>\n  <tr>\n    <td>Doersch etal.(2015)</td>\n    <td>53.1</td>\n    <td>47.6</td>\n    <td>48.7</td>\n    <td>45.6</td>\n    <td>30.4</td>\n  </tr>\n  <tr>\n    <td>Noroozi&Favaro(2016)*</td>\n    <td>57.1</td>\n    <td>56.0</td>\n    <td>52.4</td>\n    <td>48.3</td>\n    <td>38.1</td>\n  </tr>\n  <tr>\n    <td>BiGAN(ours)</td>\n    <td>56.2</td>\n    <td>54.4</td>\n    <td>49.4</td>\n    <td>43.9</td>\n    <td>33.3</td>\n  </tr>\n  <tr>\n    <td>BiGAN，112x112E(ours)</td>\n    <td>55.3</td>\n    <td>53.2</td>\n    <td>49.3</td>\n    <td>44.4</td>\n    <td>34.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page009.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                113,
+                80,
+                497,
+                263
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>trained layers</td>\n    <td>Classification(% mAP)</td>\n    <td>FRCNDetection(% mAP)</td>\n    <td>FCNSegmentation(% mIU)</td>\n  </tr>\n  <tr>\n    <td>sup.</td>\n    <td>ImageNet(Krizhevsky etal.(2012)</td>\n    <td>77.0</td>\n    <td>78.8</td>\n    <td>78.3</td>\n    <td>56.8</td>\n    <td>48.0</td>\n  </tr>\n  <tr>\n    <td>self-sup.</td>\n    <td>Agrawal etal.(2015)</td>\n    <td>31.2</td>\n    <td>31.0</td>\n    <td>54.2</td>\n    <td>43.9</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Pathak etal.(2016)</td>\n    <td>30.5</td>\n    <td>34.6</td>\n    <td>56.5</td>\n    <td>44.5</td>\n    <td>30.0</td>\n  </tr>\n  <tr>\n    <td>Wang&Gupta(2015)</td>\n    <td>28.4</td>\n    <td>55.6</td>\n    <td>63.1</td>\n    <td>47.4</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Doersch etal.(2015)</td>\n    <td>44.7</td>\n    <td>55.1</td>\n    <td>65.3</td>\n    <td>51.1</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>k-means(Krahenbuhl etal.(2016)</td>\n    <td>32.0</td>\n    <td>39.2</td>\n    <td>56.6</td>\n    <td>45.6</td>\n    <td>32.6</td>\n  </tr>\n  <tr>\n    <td>Discriminator(D)</td>\n    <td>30.7</td>\n    <td>40.5</td>\n    <td>56.4</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Latent Regressor(LR)</td>\n    <td>36.9</td>\n    <td>47.9</td>\n    <td>57.1</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Joint LR</td>\n    <td>37.1</td>\n    <td>47.9</td>\n    <td>56.5</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Autoencoder(12)</td>\n    <td>24.8</td>\n    <td>16.0</td>\n    <td>53.8</td>\n    <td>41.9</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BiGAN(ours)</td>\n    <td>37.5</td>\n    <td>48.7</td>\n    <td>58.9</td>\n    <td>46.2</td>\n    <td>34.9</td>\n  </tr>\n  <tr>\n    <td>BiGAN，112x112E(ours)</td>\n    <td>41.7</td>\n    <td>52.5</td>\n    <td>60.3</td>\n    <td>46.9</td>\n    <td>35.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page010.png"
+        }
+    ]
+}

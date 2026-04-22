@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                140,
+                69,
+                489,
+                307
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 1 Architecture of CPT and the counterpart PTMs. Different from other PTMs, CPT consists of three parts: a shared encoder (S-Enc), an understanding decoder (U-Dec) and a generation decoder (G-Dec).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                106,
+                69,
+                527,
+                247
+            ],
+            "caption": "Figure 2 Five ways to fine-tune CPT for text classification. “T1-4” and “P1-2” refer to text input x and prompt tokens, respectively. V(y) is the mapping function that maps the language model predictions to the label. [C] and [S] are abbreviations for [CLS] and [SEP], respectively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                135,
+                106,
+                504,
+                193
+            ],
+            "caption": "The text content from the image is as follows:\n\nFigure 3 Two examples of fine-tuning CPT for sequence labeling. \"T1-4\" and \"L1-4\" refer to text input x and token labels, respectively. Figure 3 Two examples of fine-tuning CPT for sequence labeling. “T1-4” and “L1-4” refer to text input x and token labels, respectively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                136,
+                338,
+                228,
+                396
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                325,
+                347,
+                504,
+                397
+            ],
+            "caption": "Figure 4 Two examples of fine-tuning CPT for Machine Reading Comprehension. “P1-3”, “Q1-2” refer to passages and questions, respectively.\n\nFigure 5 Example of fine-tuning CPTg for Conditional Generation. “S1-4” and “T1-4” refer to input and target sequences, respectively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                100,
+                413,
+                492,
+                562
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 6 Inference throughput for BART and CPT. It is measured on the same parts of datasets that the models are evaluated. The beam size is 4 and the batch size is 8.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page010.png"
+        }
+    ]
+}

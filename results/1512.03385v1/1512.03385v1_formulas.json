@@ -1,0 +1,30 @@
+{
+    "total_count": 2,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                121,
+                624,
+                213,
+                638
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n```latex\n\\mathbf{y} = \\mathcal{F}(\\mathbf{x}, \\{W_i\\}) + \\mathbf{x}.\n```\n\nThis will produce the same output as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n```latex\n\\mathbf{y} = \\mathcal{F}(\\mathbf{x}, \\{W_i\\}) + \\mathbf{x}.\n```\n\nThis will produce the same output as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                373,
+                262,
+                479,
+                276
+            ],
+            "content": "\\mathbf { y } = \\mathcal { F } ( \\mathbf { x } , \\{ W _ { i } \\} ) + W _ { s } \\mathbf { x } .",
+            "latex": "\\mathbf { y } = \\mathcal { F } ( \\mathbf { x } , \\{ W _ { i } \\} ) + W _ { s } \\mathbf { x } ."
+        }
+    ]
+}

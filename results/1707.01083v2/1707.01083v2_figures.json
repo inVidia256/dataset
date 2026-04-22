@@ -1,0 +1,34 @@
+{
+    "total_count": 2,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                71,
+                68,
+                523,
+                235
+            ],
+            "caption": "Figure 1. Channel shuffle with two stacked group convolutions. GConv stands for group convolution. a) two stacked convolution layers with the same number of groups. Each output channel only relates to the input channels within the group. No cross talk; b) input and output channels are fully related when GConv2 takes data from different groups after GConv1; c) an equivalent implementation to b) using channel shuffle.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                114,
+                68,
+                471,
+                271
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 2. ShuffleNet Units. a) bottleneck unit [9] with depthwise convolution (DWConv) [3, 12]; b) ShuffleNet unit with pointwise group convolution (GConv) and channel shuffle; c) ShuffleNet unit with stride = 2.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        }
+    ]
+}

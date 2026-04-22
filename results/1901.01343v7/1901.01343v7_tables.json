@@ -1,0 +1,198 @@
+{
+    "total_count": 12,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                55,
+                86,
+                288,
+                185
+            ],
+            "caption": "Table 1. Node classification accuracy.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Cora</td>\n    <td>Cite seer</td>\n    <td>Pubmed</td>\n    <td>PPI</td>\n  </tr>\n  <tr>\n    <td>GAT</td>\n    <td>83.1±0.6</td>\n    <td>70.9±0.6</td>\n    <td>78.5±0.3</td>\n    <td>81.3±0.1</td>\n  </tr>\n  <tr>\n    <td>GraphSAGE</td>\n    <td>73.7±1.8</td>\n    <td>65.9±0.9</td>\n    <td>78.5±0.6</td>\n    <td>70.0±0.0</td>\n  </tr>\n  <tr>\n    <td>GIN</td>\n    <td>75.1±1.7</td>\n    <td>63.1±2.0</td>\n    <td>77.1±0.7</td>\n    <td>78.1±2.6</td>\n  </tr>\n  <tr>\n    <td>GCN</td>\n    <td>81.5±0.4</td>\n    <td>70.1±0.7</td>\n    <td>79.0±0.5</td>\n    <td>80.8±0.1</td>\n  </tr>\n  <tr>\n    <td>Chebyshev</td>\n    <td>79.5±1.2</td>\n    <td>70.1±0.8</td>\n    <td>74.4±1.1</td>\n    <td>86.4±0.1</td>\n  </tr>\n  <tr>\n    <td>Cay ley Net</td>\n    <td>81.2±1.2</td>\n    <td>67.1±2.4</td>\n    <td>75.6±3.6</td>\n    <td>84.9±1.2</td>\n  </tr>\n  <tr>\n    <td>ARMA</td>\n    <td>83.4±0.6</td>\n    <td>72.5±0.4</td>\n    <td>78.9±0.3</td>\n    <td>90.5±0.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page009.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                342,
+                86,
+                504,
+                150
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2. Graph signal classification accuracy.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>GNN layer</td>\n    <td>MNIST</td>\n    <td>20news</td>\n  </tr>\n  <tr>\n    <td>GCN</td>\n    <td>98.48±0.2</td>\n    <td>65.45±0.2</td>\n  </tr>\n  <tr>\n    <td>Chebyshev</td>\n    <td>99.14±0.1</td>\n    <td>68.24±0.2</td>\n  </tr>\n  <tr>\n    <td>Cayley Net</td>\n    <td>99.18±0.1</td>\n    <td>68.84±0.3</td>\n  </tr>\n  <tr>\n    <td>ARMA</td>\n    <td>99.20±0.1</td>\n    <td>70.02±0.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page009.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                306,
+                87,
+                544,
+                185
+            ],
+            "caption": "Table 3. Graph classification accuracy.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Enzymes</td>\n    <td>Proteins</td>\n    <td>D&D</td>\n    <td>MUTAG</td>\n    <td>B Hard</td>\n  </tr>\n  <tr>\n    <td>GAT</td>\n    <td>51.7±4.3</td>\n    <td>72.3±3.1</td>\n    <td>70.9±4.0</td>\n    <td>87.3±5.3</td>\n    <td>30.1±0.7</td>\n  </tr>\n  <tr>\n    <td>Graph SAGE</td>\n    <td>60.3±7.1</td>\n    <td>70.2±3.9</td>\n    <td>73.6±4.1</td>\n    <td>85.7±4.7</td>\n    <td>71.8±1.0</td>\n  </tr>\n  <tr>\n    <td>GIN</td>\n    <td>45.7±7.7</td>\n    <td>71.4±4.5</td>\n    <td>71.2±5.4</td>\n    <td>86.3±9.1</td>\n    <td>72.1±1.1</td>\n  </tr>\n  <tr>\n    <td>GCN</td>\n    <td>53.0±5.3</td>\n    <td>71.0±2.7</td>\n    <td>74.7±3.8</td>\n    <td>85.7±6.6</td>\n    <td>71.9±1.2</td>\n  </tr>\n  <tr>\n    <td>Chebyshev</td>\n    <td>57.9±2.6</td>\n    <td>72.1±3.5</td>\n    <td>73.7±3.7</td>\n    <td>82.6±5.2</td>\n    <td>71.3±1.2</td>\n  </tr>\n  <tr>\n    <td>Cayley Net</td>\n    <td>43.1±10.7</td>\n    <td>65.6±5.7</td>\n    <td>70.3±11.6</td>\n    <td>87.8±10.0</td>\n    <td>70.7±2.4</td>\n  </tr>\n  <tr>\n    <td>ARMA</td>\n    <td>60.6±7.2</td>\n    <td>73.7±3.4</td>\n    <td>77.6±2.7</td>\n    <td>91.5±4.2</td>\n    <td>74.1±0.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page010.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                306,
+                247,
+                543,
+                360
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4. Graph regression mean squared error.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Property</td>\n    <td>GCN</td>\n    <td>Chebyshev</td>\n    <td>Cayley Net</td>\n    <td>ARMA</td>\n  </tr>\n  <tr>\n    <td>mu</td>\n    <td>0.445±0.007</td>\n    <td>0.433±0.003</td>\n    <td>0.442±0.009</td>\n    <td>0.394±0.005</td>\n  </tr>\n  <tr>\n    <td>alpha</td>\n    <td>0.141±0.016</td>\n    <td>0.171±0.008</td>\n    <td>0.118±0.005</td>\n    <td>0.098±0.005</td>\n  </tr>\n  <tr>\n    <td>HOMO</td>\n    <td>0.371±0.030</td>\n    <td>0.391±0.012</td>\n    <td>0.336±0.007</td>\n    <td>0.326±0.010</td>\n  </tr>\n  <tr>\n    <td>LUMO</td>\n    <td>0.584±0.051</td>\n    <td>0.528±0.005</td>\n    <td>0.679±0.148</td>\n    <td>0.508±0.011</td>\n  </tr>\n  <tr>\n    <td>gap</td>\n    <td>0.650±0.070</td>\n    <td>0.565±0.015</td>\n    <td>0.758±0.106</td>\n    <td>0.552±0.013</td>\n  </tr>\n  <tr>\n    <td>R2</td>\n    <td>0.132±0.005</td>\n    <td>0.294±0.022</td>\n    <td>0.185±0.043</td>\n    <td>0.119±0.019</td>\n  </tr>\n  <tr>\n    <td>ZPVE</td>\n    <td>0.349±0.022</td>\n    <td>0.358±0.001</td>\n    <td>0.555±0.174</td>\n    <td>0.338±0.001</td>\n  </tr>\n  <tr>\n    <td>U0_atom</td>\n    <td>0.064±0.003</td>\n    <td>0.126±0.017</td>\n    <td>1.493±1.414</td>\n    <td>0.053±0.004</td>\n  </tr>\n  <tr>\n    <td>Cv</td>\n    <td>0.192±0.012</td>\n    <td>0.215±0.010</td>\n    <td>0.184±0.009</td>\n    <td>0.163±0.007</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page010.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                54,
+                262,
+                290,
+                325
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5. Summary of the node classification datasets.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Nodes</td>\n    <td>Edges</td>\n    <td>Node attr.</td>\n    <td>Avg.SP</td>\n    <td>Node classes</td>\n  </tr>\n  <tr>\n    <td>Cora</td>\n    <td>2708</td>\n    <td>5429</td>\n    <td>1433</td>\n    <td>5.87±1.52</td>\n    <td>7(single label)</td>\n  </tr>\n  <tr>\n    <td>Cite seer</td>\n    <td>3327</td>\n    <td>9228</td>\n    <td>3703</td>\n    <td>6.31±2.00</td>\n    <td>6(single label)</td>\n  </tr>\n  <tr>\n    <td>Pubmed</td>\n    <td>19717</td>\n    <td>88651</td>\n    <td>500</td>\n    <td>6.34±1.22</td>\n    <td>3(single label)</td>\n  </tr>\n  <tr>\n    <td>PPI</td>\n    <td>56944</td>\n    <td>818716</td>\n    <td>50</td>\n    <td>2.76±0.56</td>\n    <td>121(multi-label)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page011.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                56,
+                378,
+                286,
+                451
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 6. Hyperparameters for node classification.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>L2 reg.</td>\n    <td>p drop</td>\n    <td>lr</td>\n    <td>GCN</td>\n    <td>Cheby.</td>\n    <td>Cayley</td>\n    <td>ARMA</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>L</td>\n    <td>K</td>\n    <td>KT</td>\n    <td>KT</td>\n  </tr>\n  <tr>\n    <td>Cora</td>\n    <td>5e-4</td>\n    <td>0.750.01</td>\n    <td>1</td>\n    <td>2</td>\n    <td>1</td>\n    <td>5</td>\n    <td>21</td>\n  </tr>\n  <tr>\n    <td>Cite seer</td>\n    <td>5e-4</td>\n    <td>0.750.01</td>\n    <td>1</td>\n    <td>3</td>\n    <td>1</td>\n    <td>5</td>\n    <td>31</td>\n  </tr>\n  <tr>\n    <td>Pubmed</td>\n    <td>5e-4</td>\n    <td>0.250.01</td>\n    <td>1</td>\n    <td>3</td>\n    <td>2</td>\n    <td>5</td>\n    <td>11</td>\n  </tr>\n  <tr>\n    <td>PPI</td>\n    <td>0.0</td>\n    <td>0.250.01</td>\n    <td>2</td>\n    <td>3</td>\n    <td>3</td>\n    <td>5</td>\n    <td>32</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page011.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                315,
+                244,
+                533,
+                278
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 7. Summary of the graph regression dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Samples</td>\n    <td>Avg.nodes</td>\n    <td>Avg.edges</td>\n    <td>Node attr.</td>\n  </tr>\n  <tr>\n    <td>133，885</td>\n    <td>8.79</td>\n    <td>27.61</td>\n    <td>1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page011.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                317,
+                331,
+                528,
+                375
+            ],
+            "caption": "Table 8. Hyperparameters for graph classification and graph regression.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>GCN</td>\n    <td>Cheby.</td>\n    <td>Cayley</td>\n    <td>ARMA</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>K</td>\n    <td>K</td>\n    <td>T</td>\n    <td>p drop</td>\n    <td>K</td>\n    <td>T</td>\n  </tr>\n  <tr>\n    <td>QM9</td>\n    <td>3</td>\n    <td>3</td>\n    <td>3</td>\n    <td>3</td>\n    <td>0.75</td>\n    <td>3</td>\n    <td>3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page011.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                123,
+                87,
+                473,
+                160
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 9. Summary of the graph classification datasets.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Samples</td>\n    <td>Classes</td>\n    <td>Avg.nodes</td>\n    <td>Avg.edges</td>\n    <td>Node attr.</td>\n    <td>Node labels</td>\n  </tr>\n  <tr>\n    <td>Bench hard</td>\n    <td>1，800</td>\n    <td>3</td>\n    <td>148.32</td>\n    <td>572.32</td>\n    <td></td>\n    <td>yes</td>\n  </tr>\n  <tr>\n    <td>Enzymes</td>\n    <td>600</td>\n    <td>6</td>\n    <td>32.63</td>\n    <td>62.14</td>\n    <td>18</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Proteins</td>\n    <td>1，113</td>\n    <td>2</td>\n    <td>39.06</td>\n    <td>72.82</td>\n    <td>1</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>D&D</td>\n    <td>1，178</td>\n    <td>2</td>\n    <td>284.32</td>\n    <td>715.66</td>\n    <td></td>\n    <td>yes</td>\n  </tr>\n  <tr>\n    <td>MUTAG</td>\n    <td>188</td>\n    <td>2</td>\n    <td>17.93</td>\n    <td>19.79</td>\n    <td></td>\n    <td>yes</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page012.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                59,
+                213,
+                282,
+                297
+            ],
+            "caption": "Table 10. Hyperparameters for graph classification and graph regression.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>GCL</td>\n    <td>ChebyK</td>\n    <td>CayleyK</td>\n    <td>T</td>\n    <td>ARMA</td>\n    <td>p drop</td>\n    <td>K</td>\n    <td>T</td>\n  </tr>\n  <tr>\n    <td>Bench-hard</td>\n    <td>2</td>\n    <td>2</td>\n    <td>2</td>\n    <td>10</td>\n    <td>0.4</td>\n    <td>1</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>Enzymes</td>\n    <td>2</td>\n    <td>2</td>\n    <td>2</td>\n    <td>10</td>\n    <td>0.6</td>\n    <td>2</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>Proteins</td>\n    <td>4</td>\n    <td>4</td>\n    <td>4</td>\n    <td>10</td>\n    <td>0.6</td>\n    <td>4</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>D&D</td>\n    <td>4</td>\n    <td>4</td>\n    <td>4</td>\n    <td>10</td>\n    <td>0.0</td>\n    <td>4</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>MUTAG</td>\n    <td>4</td>\n    <td>4</td>\n    <td>4</td>\n    <td>10</td>\n    <td>0.0</td>\n    <td>4</td>\n    <td>4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page012.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                56,
+                332,
+                285,
+                379
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 11. Summary of the graph signal classification datasets.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Nodes</td>\n    <td>Edges</td>\n    <td>Avg.SP</td>\n    <td>Class</td>\n    <td>Train</td>\n    <td>Val</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>MNIST</td>\n    <td>784</td>\n    <td>5，928</td>\n    <td>12.36±5.45</td>\n    <td>10</td>\n    <td>55k</td>\n    <td>5k</td>\n    <td>10k</td>\n  </tr>\n  <tr>\n    <td>20news</td>\n    <td>10k</td>\n    <td>249，944</td>\n    <td>4.21±0.94</td>\n    <td>20</td>\n    <td>10，168</td>\n    <td>7，071</td>\n    <td>7，071</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page012.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                60,
+                413,
+                281,
+                466
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 12. Hyperparameters for graph signal classification.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset L2 reg.</td>\n    <td>lr</td>\n    <td>p drop</td>\n    <td>GCN</td>\n    <td>Cheby.</td>\n    <td>Cayley</td>\n    <td>ARMA</td>\n  </tr>\n  <tr>\n    <td>GCN L</td>\n    <td>Cheby.K</td>\n    <td>KT</td>\n    <td>KT</td>\n  </tr>\n  <tr>\n    <td>MNIST</td>\n    <td>5e-4</td>\n    <td>1e-3</td>\n    <td>0.5</td>\n    <td>3</td>\n    <td>25</td>\n    <td>1211</td>\n    <td>510</td>\n  </tr>\n  <tr>\n    <td>20news</td>\n    <td>1e-3</td>\n    <td>1e-3</td>\n    <td>0.7</td>\n    <td>1</td>\n    <td>5</td>\n    <td>510</td>\n    <td>11</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page012.png"
+        }
+    ]
+}

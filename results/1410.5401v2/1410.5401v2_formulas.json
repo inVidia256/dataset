@@ -1,0 +1,126 @@
+{
+    "total_count": 10,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                221,
+                465,
+                389,
+                483
+            ],
+            "content": "\\tilde { \\bf M } _ { t } ( i ) \\leftarrow { \\bf M } _ { t - 1 } ( i ) \\left[ { \\bf 1 } - w _ { t } ( i ) { \\bf e } _ { t } \\right] ,",
+            "latex": "\\tilde { \\bf M } _ { t } ( i ) \\leftarrow { \\bf M } _ { t - 1 } ( i ) \\left[ { \\bf 1 } - w _ { t } ( i ) { \\bf e } _ { t } \\right] ,"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                234,
+                595,
+                376,
+                613
+            ],
+            "content": "```latex\n\\mathbf{M}_t(i) \\leftarrow \\tilde{\\mathbf{M}}_t(i) + w_t(i) \\mathbf{a}_t.\n```",
+            "latex": "```latex\n\\mathbf{M}_t(i) \\leftarrow \\tilde{\\mathbf{M}}_t(i) + w_t(i) \\mathbf{a}_t.\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                213,
+                226,
+                400,
+                255
+            ],
+            "content": "\\sum _ { i } w _ { t } ( i ) = 1 , \\qquad 0 \\leq w _ { t } ( i ) \\leq 1 , \\, \\forall i .",
+            "latex": "\\sum _ { i } w _ { t } ( i ) = 1 , \\qquad 0 \\leq w _ { t } ( i ) \\leq 1 , \\, \\forall i ."
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                248,
+                295,
+                363,
+                325
+            ],
+            "content": "{ \\bf r } _ { t } \\leftarrow \\sum _ { i } w _ { t } ( i ) { \\bf M } _ { t } ( i ) ,",
+            "latex": "{ \\bf r } _ { t } \\leftarrow \\sum _ { i } w _ { t } ( i ) { \\bf M } _ { t } ( i ) ,"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                201,
+                193,
+                408,
+                257
+            ],
+            "content": "```latex\nw_t^c(i) \\leftarrow \\frac{\\exp\\left(\\beta_t K[\\mathbf{k}_t, \\mathbf{M}_t(i)]\\right)}{\\sum_j \\exp\\left(\\beta_t K[\\mathbf{k}_t, \\mathbf{M}_t(j)]\\right)}.\n```",
+            "latex": "```latex\nw_t^c(i) \\leftarrow \\frac{\\exp\\left(\\beta_t K[\\mathbf{k}_t, \\mathbf{M}_t(i)]\\right)}{\\sum_j \\exp\\left(\\beta_t K[\\mathbf{k}_t, \\mathbf{M}_t(j)]\\right)}.\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                242,
+                289,
+                369,
+                320
+            ],
+            "content": "K [ \\mathbf { u } , \\mathbf { v } ] ~ = ~ { \\frac { \\mathbf { u } \\cdot \\mathbf { v } } { \\| \\mathbf { u } \\| \\cdot \\| \\mathbf { v } \\| } } .",
+            "latex": "K [ \\mathbf { u } , \\mathbf { v } ] ~ = ~ { \\frac { \\mathbf { u } \\cdot \\mathbf { v } } { \\| \\mathbf { u } \\| \\cdot \\| \\mathbf { v } \\| } } ."
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                232,
+                496,
+                378,
+                514
+            ],
+            "content": "{ \\bf w } _ { t } ^ { g } \\leftarrow g _ { t } { \\bf w } _ { t } ^ { c } + ( 1 - g _ { t } ) { \\bf w } _ { t - 1 } .",
+            "latex": "{ \\bf w } _ { t } ^ { g } \\leftarrow g _ { t } { \\bf w } _ { t } ^ { c } + ( 1 - g _ { t } ) { \\bf w } _ { t - 1 } ."
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                232,
+                129,
+                379,
+                169
+            ],
+            "content": "\\tilde { w } _ { t } ( i ) \\leftarrow \\sum _ { j = 0 } ^ { N - 1 } w _ { t } ^ { g } ( j ) \\, s _ { t } ( i - j )",
+            "latex": "\\tilde { w } _ { t } ( i ) \\leftarrow \\sum _ { j = 0 } ^ { N - 1 } w _ { t } ^ { g } ( j ) \\, s _ { t } ( i - j )"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                251,
+                273,
+                360,
+                308
+            ],
+            "content": "w _ { t } ( i ) \\leftarrow \\frac { \\tilde { w } _ { t } ( i ) ^ { \\gamma _ { t } } } { \\sum _ { j } \\tilde { w } _ { t } ( j ) ^ { \\gamma _ { t } } }",
+            "latex": "w _ { t } ( i ) \\leftarrow \\frac { \\tilde { w } _ { t } ( i ) ^ { \\gamma _ { t } } } { \\sum _ { j } \\tilde { w } _ { t } ( j ) ^ { \\gamma _ { t } } }"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                215,
+                329,
+                396,
+                361
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nP(B = 1 | N_1, N_0, \\mathbf{c}) = \\frac{N_1 + \\frac{1}{2}}{N_1 + N_0 + 1}\n```\n\nThis will render the same mathematical expression shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nP(B = 1 | N_1, N_0, \\mathbf{c}) = \\frac{N_1 + \\frac{1}{2}}{N_1 + N_0 + 1}\n```\n\nThis will render the same mathematical expression shown in the image."
+        }
+    ]
+}

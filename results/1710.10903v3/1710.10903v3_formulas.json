@@ -1,0 +1,78 @@
+{
+    "total_count": 6,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                194,
+                646,
+                416,
+                688
+            ],
+            "content": "```latex\n\\alpha_{ij} = \\frac{\\exp \\left( \\text{LeakyReLU} \\left( \\vec{a}^T [\\mathbf{W}\\vec{h}_i || \\mathbf{W}\\vec{h}_j] \\right) \\right)}{\\sum_{k \\in \\mathcal{N}_i} \\exp \\left( \\text{LeakyReLU} \\left( \\vec{a}^T [\\mathbf{W}\\vec{h}_i || \\mathbf{W}\\vec{h}_k] \\right) \\right)}\n```",
+            "latex": "```latex\n\\alpha_{ij} = \\frac{\\exp \\left( \\text{LeakyReLU} \\left( \\vec{a}^T [\\mathbf{W}\\vec{h}_i || \\mathbf{W}\\vec{h}_j] \\right) \\right)}{\\sum_{k \\in \\mathcal{N}_i} \\exp \\left( \\text{LeakyReLU} \\left( \\vec{a}^T [\\mathbf{W}\\vec{h}_i || \\mathbf{W}\\vec{h}_k] \\right) \\right)}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                219,
+                562,
+                392,
+                590
+            ],
+            "content": "\\alpha _ { i j } = \\operatorname { s o f t m a x } _ { j } ( e _ { i j } ) = { \\frac { \\exp ( e _ { i j } ) } { \\sum _ { k \\in { \\mathcal { N } } _ { i } } \\exp ( e _ { i k } ) } } .",
+            "latex": "\\alpha _ { i j } = \\operatorname { s o f t m a x } _ { j } ( e _ { i j } ) = { \\frac { \\exp ( e _ { i j } ) } { \\sum _ { k \\in { \\mathcal { N } } _ { i } } \\exp ( e _ { i k } ) } } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                261,
+                471,
+                349,
+                486
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\ne_{ij} = a(\\vec{Wh_i}, \\vec{Wh_j})\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\ne_{ij} = a(\\vec{Wh_i}, \\vec{Wh_j})\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                241,
+                461,
+                367,
+                499
+            ],
+            "content": "\\vec { h } _ { i } ^ { \\prime } = \\prod _ { k = 1 } ^ { K } \\sigma \\left( \\sum _ { j \\in \\mathcal { N } _ { i } } \\alpha _ { i j } ^ { k } \\mathbf { W } ^ { k } \\vec { h } _ { j } \\right)",
+            "latex": "\\vec { h } _ { i } ^ { \\prime } = \\prod _ { k = 1 } ^ { K } \\sigma \\left( \\sum _ { j \\in \\mathcal { N } _ { i } } \\alpha _ { i j } ^ { k } \\mathbf { W } ^ { k } \\vec { h } _ { j } \\right)"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                250,
+                369,
+                359,
+                407
+            ],
+            "content": "\\vec { h } _ { i } ^ { \\prime } = \\sigma \\left( \\sum _ { j \\in \\mathcal { N } _ { i } } \\alpha _ { i j } \\mathbf { W } \\vec { h } _ { j } \\right) .",
+            "latex": "\\vec { h } _ { i } ^ { \\prime } = \\sigma \\left( \\sum _ { j \\in \\mathcal { N } _ { i } } \\alpha _ { i j } \\mathbf { W } \\vec { h } _ { j } \\right) ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                235,
+                593,
+                374,
+                631
+            ],
+            "content": "\\vec { h } _ { i } ^ { \\prime } = \\sigma \\left( \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\sum _ { j \\in \\mathcal { N } _ { i } } \\alpha _ { i j } ^ { k } \\, \\vec { W } ^ { k } \\vec { h } _ { j } \\right)",
+            "latex": "\\vec { h } _ { i } ^ { \\prime } = \\sigma \\left( \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\sum _ { j \\in \\mathcal { N } _ { i } } \\alpha _ { i j } ^ { k } \\, \\vec { W } ^ { k } \\vec { h } _ { j } \\right)"
+        }
+    ]
+}

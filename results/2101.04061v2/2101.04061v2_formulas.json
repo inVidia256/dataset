@@ -1,0 +1,150 @@
+{
+    "total_count": 12,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                365,
+                568,
+                487,
+                582
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{F}_{latent}, \\mathbf{F}_{spatial} = \\text{U-Net}(\\boldsymbol{x}).\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{F}_{latent}, \\mathbf{F}_{spatial} = \\text{U-Net}(\\boldsymbol{x}).\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                331,
+                116,
+                522,
+                145
+            ],
+            "content": "```latex\n\\alpha, \\beta = \\text{Conv}(F_{spatial}), \\\\\nF_{output} = \\text{SFT}(F_{GAN} | \\alpha, \\beta) = \\alpha \\odot F_{GAN} + \\beta.\n```",
+            "latex": "```latex\n\\alpha, \\beta = \\text{Conv}(F_{spatial}), \\\\\nF_{output} = \\text{SFT}(F_{GAN} | \\alpha, \\beta) = \\alpha \\odot F_{GAN} + \\beta.\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                334,
+                518,
+                519,
+                532
+            ],
+            "content": "{ \\mathcal { L } } _ { r e c } = \\lambda _ { l 1 } \\| { \\hat { y } } - y \\| _ { 1 } + \\lambda _ { p e r } \\| \\phi ( { \\hat { y } } ) - \\phi ( y ) \\| _ { 1 } ,",
+            "latex": "{ \\mathcal { L } } _ { r e c } = \\lambda _ { l 1 } \\| { \\hat { y } } - y \\| _ { 1 } + \\lambda _ { p e r } \\| \\phi ( { \\hat { y } } ) - \\phi ( y ) \\| _ { 1 } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                352,
+                633,
+                501,
+                646
+            ],
+            "content": "\\mathcal { L } _ { a d v } = - \\lambda _ { a d v } \\mathbb { E } _ { \\hat { y } } \\operatorname { s o f t p l u s } ( D ( \\hat { y } ) )",
+            "latex": "\\mathcal { L } _ { a d v } = - \\lambda _ { a d v } \\mathbb { E } _ { \\hat { y } } \\operatorname { s o f t p l u s } ( D ( \\hat { y } ) )"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                118,
+                357,
+                218,
+                385
+            ],
+            "content": "\\begin{array} { c } { { \\mathcal W = \\operatorname { M L P } ( \\boldsymbol { F } _ { l a t e n t } ) , } } \\\\ { { \\boldsymbol { F } _ { G A N } = \\operatorname { S t y l e G A N } ( \\mathcal W ) . } } \\end{array}",
+            "latex": "\\begin{array} { c } { { \\mathcal W = \\operatorname { M L P } ( \\boldsymbol { F } _ { l a t e n t } ) , } } \\\\ { { \\boldsymbol { F } _ { G A N } = \\operatorname { S t y l e G A N } ( \\mathcal W ) . } } \\end{array}"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                341,
+                235,
+                544,
+                250
+            ],
+            "content": "```latex\n= Concat[Identity(\\mathbf{F}_{GAN}^{split0}), \\alpha \\odot \\mathbf{F}_{GAN}^{split1} + \\beta],\n```",
+            "latex": "```latex\n= Concat[Identity(\\mathbf{F}_{GAN}^{split0}), \\alpha \\odot \\mathbf{F}_{GAN}^{split1} + \\beta],\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                308,
+                219,
+                545,
+                250
+            ],
+            "content": "```latex\nF_{output} = \\text{CS-SFT}(F_{GAN}|\\alpha, \\beta)\n= \\text{Concat}[Identity(F_{GAN}^{split0}), \\alpha \\odot F_{GAN}^{split1} + \\beta],\n```",
+            "latex": "```latex\nF_{output} = \\text{CS-SFT}(F_{GAN}|\\alpha, \\beta)\n= \\text{Concat}[Identity(F_{GAN}^{split0}), \\alpha \\odot F_{GAN}^{split1} + \\beta],\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                309,
+                219,
+                435,
+                232
+            ],
+            "content": "```latex\nF_{output} = \\text{CS-SFT}(F_{GAN} | \\alpha, \\beta)\n```",
+            "latex": "```latex\nF_{output} = \\text{CS-SFT}(F_{GAN} | \\alpha, \\beta)\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                88,
+                657,
+                246,
+                671
+            ],
+            "content": "\\mathcal { L } _ { t o t a l } = \\mathcal { L } _ { r e c } + \\mathcal { L } _ { a d v } + \\mathcal { L } _ { c o m p } + \\mathcal { L } _ { i d } .",
+            "latex": "\\mathcal { L } _ { t o t a l } = \\mathcal { L } _ { r e c } + \\mathcal { L } _ { a d v } + \\mathcal { L } _ { c o m p } + \\mathcal { L } _ { i d } ."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                62,
+                330,
+                262,
+                372
+            ],
+            "content": "```latex\n\\mathcal{L}_{comp} = \\sum_{ROI} \\lambda_{local} \\mathbb{E}_{\\hat{\\boldsymbol{y}}_{ROI}} [\\log(1 - D_{ROI}(\\hat{\\boldsymbol{y}}_{ROI}))] + \\lambda_{fs} ||\\text{Gram}(\\psi(\\hat{\\boldsymbol{y}}_{ROI})) - \\text{Gram}(\\psi(\\boldsymbol{y}_{ROI}))||_1\n```",
+            "latex": "```latex\n\\mathcal{L}_{comp} = \\sum_{ROI} \\lambda_{local} \\mathbb{E}_{\\hat{\\boldsymbol{y}}_{ROI}} [\\log(1 - D_{ROI}(\\hat{\\boldsymbol{y}}_{ROI}))] + \\lambda_{fs} ||\\text{Gram}(\\psi(\\hat{\\boldsymbol{y}}_{ROI})) - \\text{Gram}(\\psi(\\boldsymbol{y}_{ROI}))||_1\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                365,
+                216,
+                487,
+                231
+            ],
+            "content": "\\boldsymbol { x } = [ ( \\boldsymbol { y } * k _ { \\sigma } ) \\downarrow _ { r } + n _ { \\delta } ] \\mathrm { J P E G } _ { q } .",
+            "latex": "\\boldsymbol { x } = [ ( \\boldsymbol { y } * k _ { \\sigma } ) \\downarrow _ { r } + n _ { \\delta } ] \\mathrm { J P E G } _ { q } ."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                112,
+                564,
+                224,
+                578
+            ],
+            "content": "{ \\mathcal { L } } _ { i d } = \\lambda _ { i d } \\| \\eta ( { \\hat { y } } ) - \\eta ( y ) \\| _ { 1 } ,",
+            "latex": "{ \\mathcal { L } } _ { i d } = \\lambda _ { i d } \\| \\eta ( { \\hat { y } } ) - \\eta ( y ) \\| _ { 1 } ,"
+        }
+    ]
+}

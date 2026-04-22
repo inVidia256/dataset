@@ -1,0 +1,54 @@
+{
+    "total_count": 4,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                385,
+                160,
+                467,
+                189
+            ],
+            "content": "\\begin{array} { l } { { x = ( t _ { x } * w _ { a } ) - x _ { a } } } \\\\ { { y = ( t _ { y } * h _ { a } ) - y _ { a } } } \\end{array}",
+            "latex": "\\begin{array} { l } { { x = ( t _ { x } * w _ { a } ) - x _ { a } } } \\\\ { { y = ( t _ { y } * h _ { a } ) - y _ { a } } } \\end{array}"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                80,
+                389,
+                254,
+                402
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nd(\\text{box}, \\text{centroid}) = 1 - \\text{IOU}(\\text{box}, \\text{centroid})\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nd(\\text{box}, \\text{centroid}) = 1 - \\text{IOU}(\\text{box}, \\text{centroid})\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                339,
+                420,
+                513,
+                496
+            ],
+            "content": "```latex\n\\begin{align*}\nb_x &= \\sigma(t_x) + c_x \\\\\nb_y &= \\sigma(t_y) + c_y \\\\\nb_w &= p_w e^{t_w} \\\\\nb_h &= p_h e^{t_h} \\\\\nPr(\\text{object}) * IOU(b, \\text{object}) &= \\sigma(t_o)\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\nb_x &= \\sigma(t_x) + c_x \\\\\nb_y &= \\sigma(t_y) + c_y \\\\\nb_w &= p_w e^{t_w} \\\\\nb_h &= p_h e^{t_h} \\\\\nPr(\\text{object}) * IOU(b, \\text{object}) &= \\sigma(t_o)\n\\end{align*}\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                68,
+                316,
+                266,
+                388
+            ],
+            "content": "```latex\nPr(\\text{Norfolk terrier}) = Pr(\\text{Norfolk terrier}|\\text{terrier}) \\\\\n*Pr(\\text{terrier}|\\text{hunting dog}) \\\\\n*...* \\\\\n*Pr(\\text{mammal}|\\text{animal}) \\\\\n*Pr(\\text{animal}|\\text{physical object})\n```",
+            "latex": "```latex\nPr(\\text{Norfolk terrier}) = Pr(\\text{Norfolk terrier}|\\text{terrier}) \\\\\n*Pr(\\text{terrier}|\\text{hunting dog}) \\\\\n*...* \\\\\n*Pr(\\text{mammal}|\\text{animal}) \\\\\n*Pr(\\text{animal}|\\text{physical object})\n```"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "total_count": 4,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                144,
+                195,
+                467,
+                219
+            ],
+            "content": "```latex\n\\tilde{\\mathcal{X}}_{t+1}, \\ldots, \\tilde{\\mathcal{X}}_{t+K} = \\argmax_{\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K}} p(\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K} \\mid \\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t)\n```",
+            "latex": "```latex\n\\tilde{\\mathcal{X}}_{t+1}, \\ldots, \\tilde{\\mathcal{X}}_{t+K} = \\argmax_{\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K}} p(\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K} \\mid \\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                199,
+                520,
+                414,
+                590
+            ],
+            "content": "```latex\n\\begin{align*}\ni_t &= \\sigma(W_{xi}x_t + W_{hi}h_{t-1} + W_{ci} \\circ c_{t-1} + b_i) \\\\\nf_t &= \\sigma(W_{xf}x_t + W_{hf}h_{t-1} + W_{cf} \\circ c_{t-1} + b_f) \\\\\nc_t &= f_t \\circ c_{t-1} + i_t \\circ \\tanh(W_{xc}x_t + W_{hc}h_{t-1} + b_c) \\\\\no_t &= \\sigma(W_{xo}x_t + W_{ho}h_{t-1} + W_{co} \\circ c_t + b_o) \\\\\nh_t &= o_t \\circ \\tanh(c_t)\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\ni_t &= \\sigma(W_{xi}x_t + W_{hi}h_{t-1} + W_{ci} \\circ c_{t-1} + b_i) \\\\\nf_t &= \\sigma(W_{xf}x_t + W_{hf}h_{t-1} + W_{cf} \\circ c_{t-1} + b_f) \\\\\nc_t &= f_t \\circ c_{t-1} + i_t \\circ \\tanh(W_{xc}x_t + W_{hc}h_{t-1} + b_c) \\\\\no_t &= \\sigma(W_{xo}x_t + W_{ho}h_{t-1} + W_{co} \\circ c_t + b_o) \\\\\nh_t &= o_t \\circ \\tanh(c_t)\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                188,
+                326,
+                428,
+                395
+            ],
+            "content": "```latex\n\\begin{align*}\ni_t &= \\sigma(W_{xi} * X_t + W_{hi} * H_{t-1} + W_{ci} \\circ C_{t-1} + b_i) \\\\\nf_t &= \\sigma(W_{xf} * X_t + W_{hf} * H_{t-1} + W_{cf} \\circ C_{t-1} + b_f) \\\\\nC_t &= f_t \\circ C_{t-1} + i_t \\circ \\tanh(W_{xc} * X_t + W_{hc} * H_{t-1} + b_c) \\\\\no_t &= \\sigma(W_{xo} * X_t + W_{ho} * H_{t-1} + W_{co} \\circ C_t + b_o) \\\\\nH_t &= o_t \\circ \\tanh(C_t)\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\ni_t &= \\sigma(W_{xi} * X_t + W_{hi} * H_{t-1} + W_{ci} \\circ C_{t-1} + b_i) \\\\\nf_t &= \\sigma(W_{xf} * X_t + W_{hf} * H_{t-1} + W_{cf} \\circ C_{t-1} + b_f) \\\\\nC_t &= f_t \\circ C_{t-1} + i_t \\circ \\tanh(W_{xc} * X_t + W_{hc} * H_{t-1} + b_c) \\\\\no_t &= \\sigma(W_{xo} * X_t + W_{ho} * H_{t-1} + W_{co} \\circ C_t + b_o) \\\\\nH_t &= o_t \\circ \\tanh(C_t)\n\\end{align*}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                116,
+                227,
+                484,
+                293
+            ],
+            "content": "```latex\n\\tilde{\\mathcal{X}}_{t+1}, \\ldots, \\tilde{\\mathcal{X}}_{t+K} = \\argmax_{\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K}} p(\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K} \\mid \\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t)\n\n\\approx \\argmax_{\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K}} p(\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K} \\mid f_{encoding}(\\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t))\n\n\\approx g_{forecasting}(f_{encoding}(\\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t))\n```",
+            "latex": "```latex\n\\tilde{\\mathcal{X}}_{t+1}, \\ldots, \\tilde{\\mathcal{X}}_{t+K} = \\argmax_{\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K}} p(\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K} \\mid \\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t)\n\n\\approx \\argmax_{\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K}} p(\\mathcal{X}_{t+1}, \\ldots, \\mathcal{X}_{t+K} \\mid f_{encoding}(\\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t))\n\n\\approx g_{forecasting}(f_{encoding}(\\hat{\\mathcal{X}}_{t-J+1}, \\hat{\\mathcal{X}}_{t-J+2}, \\ldots, \\hat{\\mathcal{X}}_t))\n```"
+        }
+    ]
+}

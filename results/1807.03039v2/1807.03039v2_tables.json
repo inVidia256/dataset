@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                105,
+                396,
+                505,
+                547
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Description</td>\n    <td>Function</td>\n    <td>Reverse Function</td>\n    <td>Log-determinant</td>\n  </tr>\n  <tr>\n    <td>Actnorm.See Section 3.1.</td>\n    <td>V i，j ：y，j=s⊙x，j+b</td>\n    <td>V i，j ：x，j=(y，j-b)/s</td>\n    <td>h·w·sum(log|s|)</td>\n  </tr>\n  <tr>\n    <td>Invertible 1×1 convolution.W：[c×c].See Section 3.2.</td>\n    <td>V i，j ：y，j=Wx，j</td>\n    <td>V i，j ：x，j=W-1y，j</td>\n    <td>h·w·log|det(W)|orh·w·sum(log|s|)(see eq.(10))</td>\n  </tr>\n  <tr>\n    <td>Affine coupling layer.See Section 3.3 and(Dinh et al.，2014)</td>\n    <td>x，a，x，b=split(x)(log s，t)=NN(x，b)s=exp(log s)y，a=s⊙x，a+ty，b=x，by=y，a，y，b</td>\n    <td>y，a，y，b=split(y)(log s，t)=NN(y，b)s=exp(log s)x，a=(y，a-t)/sy，b=y，b</td>\n    <td>sum(log(|s|))</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                106,
+                90,
+                504,
+                127
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Best results in bits per dimension of our model compared to RealNVP.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>CIFAR-10</td>\n    <td>ImageNet 32x32</td>\n    <td>ImageNet 64x64</td>\n    <td>LSUN(bedroom)</td>\n    <td>LSUN(tower)</td>\n    <td>LSUN(church outdoor)</td>\n  </tr>\n  <tr>\n    <td>Real NVP</td>\n    <td>3.49</td>\n    <td>4.28</td>\n    <td>3.98</td>\n    <td>2.72</td>\n    <td>2.81</td>\n    <td>3.08</td>\n  </tr>\n  <tr>\n    <td>Glow</td>\n    <td>3.35</td>\n    <td>4.09</td>\n    <td>3.81</td>\n    <td>2.38</td>\n    <td>2.46</td>\n    <td>2.67</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                224,
+                388,
+                387,
+                469
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Quantitative results in bits per dimension on the test set.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Glow</td>\n  </tr>\n  <tr>\n    <td>CIFAR-10，32x32，5-bit</td>\n    <td>1.67</td>\n  </tr>\n  <tr>\n    <td>ImageNet，32x32，5-bit</td>\n    <td>1.99</td>\n  </tr>\n  <tr>\n    <td>ImageNet，64x64，5-bit</td>\n    <td>1.76</td>\n  </tr>\n  <tr>\n    <td>CelebA HQ，256x256，5-bit</td>\n    <td>1.03</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page011.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                129,
+                281,
+                481,
+                362
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Hyperparameters for results in Section 5, Table 2\" The text content from the image is:\n\n\"Table 4: Hyperparameters for results in Section 5, Table 2\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Minibatch Size</td>\n    <td>Levels(L)</td>\n    <td>Depth per level(K)</td>\n    <td>Coupling</td>\n  </tr>\n  <tr>\n    <td>CIFAR-10</td>\n    <td>512</td>\n    <td>3</td>\n    <td>32</td>\n    <td>Affine</td>\n  </tr>\n  <tr>\n    <td>ImageNet，32x32</td>\n    <td>512</td>\n    <td>3</td>\n    <td>48</td>\n    <td>Affine</td>\n  </tr>\n  <tr>\n    <td>ImageNet，64x64</td>\n    <td>128</td>\n    <td>4</td>\n    <td>48</td>\n    <td>Affine</td>\n  </tr>\n  <tr>\n    <td>LSUN，64x64</td>\n    <td>128</td>\n    <td>4</td>\n    <td>48</td>\n    <td>Affine</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page012.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                109,
+                422,
+                502,
+                504
+            ],
+            "caption": "Table 5: Hyperparameters for results in Section 6",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Minibatch Size</td>\n    <td>Levels(L)</td>\n    <td>Depth per level(K)</td>\n    <td>Coupling</td>\n  </tr>\n  <tr>\n    <td>LSUN，64×64，5-bit</td>\n    <td>128</td>\n    <td>4</td>\n    <td>48</td>\n    <td>Additive</td>\n  </tr>\n  <tr>\n    <td>LSUN，96×96，5-bit</td>\n    <td>320</td>\n    <td>5</td>\n    <td>64</td>\n    <td>Additive</td>\n  </tr>\n  <tr>\n    <td>LSUN，128×128，5-bit</td>\n    <td>160</td>\n    <td>5</td>\n    <td>64</td>\n    <td>Additive</td>\n  </tr>\n  <tr>\n    <td>CelebA HQ，256×256，5-bit</td>\n    <td>40</td>\n    <td>6</td>\n    <td>32</td>\n    <td>Additive</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page012.png"
+        }
+    ]
+}

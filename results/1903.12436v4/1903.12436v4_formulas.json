@@ -1,0 +1,222 @@
+{
+    "total_count": 18,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                227,
+                638,
+                384,
+                651
+            ],
+            "content": "E _ { \\phi } ( \\mathbf { x } ) = \\mathbf { z } \\sim q _ { \\phi } ( \\mathbf { z } \\, | \\, \\mathbf { x } ) = q ( \\mathbf { Z } \\, | \\, f _ { \\phi } ( \\mathbf { x } ) )",
+            "latex": "E _ { \\phi } ( \\mathbf { x } ) = \\mathbf { z } \\sim q _ { \\phi } ( \\mathbf { z } \\, | \\, \\mathbf { x } ) = q ( \\mathbf { Z } \\, | \\, f _ { \\phi } ( \\mathbf { x } ) )"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                227,
+                574,
+                384,
+                588
+            ],
+            "content": "D _ { \\theta } ( \\mathbf { z } ) = \\mathbf { x } \\sim p _ { \\theta } ( \\mathbf { x } \\mid \\mathbf { z } ) = p ( \\mathbf { X } \\mid g _ { \\theta } ( \\mathbf { z } ) )",
+            "latex": "D _ { \\theta } ( \\mathbf { z } ) = \\mathbf { x } \\sim p _ { \\theta } ( \\mathbf { x } \\mid \\mathbf { z } ) = p ( \\mathbf { X } \\mid g _ { \\theta } ( \\mathbf { z } ) )"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                215,
+                544,
+                396,
+                557
+            ],
+            "content": "```latex\n\\mathbf{z}_{\\text{new}} \\sim p(\\mathbf{Z}), \\quad \\quad \\mathbf{x}_{\\text{new}} \\sim p_{\\theta}(\\mathbf{X} \\mid \\mathbf{Z} = \\mathbf{z}_{\\text{new}})\n```",
+            "latex": "```latex\n\\mathbf{z}_{\\text{new}} \\sim p(\\mathbf{Z}), \\quad \\quad \\mathbf{x}_{\\text{new}} \\sim p_{\\theta}(\\mathbf{X} \\mid \\mathbf{Z} = \\mathbf{z}_{\\text{new}})\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                145,
+                690,
+                465,
+                704
+            ],
+            "content": "```latex\n\\log p_{\\theta}(\\mathbf{x}) \\geq \\text{ELBO}(\\phi, \\theta, \\mathbf{x}) = \\mathbb{E}_{\\mathbf{z} \\sim q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x})} \\log p_{\\theta}(\\mathbf{x} \\mid \\mathbf{z}) - \\text{KL}(q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x}) || p(\\mathbf{z}))\n```",
+            "latex": "```latex\n\\log p_{\\theta}(\\mathbf{x}) \\geq \\text{ELBO}(\\phi, \\theta, \\mathbf{x}) = \\mathbb{E}_{\\mathbf{z} \\sim q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x})} \\log p_{\\theta}(\\mathbf{x} \\mid \\mathbf{z}) - \\text{KL}(q_{\\phi}(\\mathbf{z} \\mid \\mathbf{x}) || p(\\mathbf{z}))\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                131,
+                295,
+                480,
+                310
+            ],
+            "content": "```latex\nE_{\\phi}(\\mathbf{x}) \\sim \\mathcal{N}(\\mathbf{Z} | \\boldsymbol{\\mu}_{\\phi}(\\mathbf{x}), \\text{diag}(\\boldsymbol{\\sigma}_{\\phi}(\\mathbf{x}))) \\qquad D_{\\theta}(E_{\\phi}(\\mathbf{x})) \\sim \\mathcal{N}(\\mathbf{X} | \\boldsymbol{\\mu}_{\\theta}(\\mathbf{z}), \\text{diag}(\\boldsymbol{\\sigma}_{\\theta}(\\mathbf{z})))\n```",
+            "latex": "```latex\nE_{\\phi}(\\mathbf{x}) \\sim \\mathcal{N}(\\mathbf{Z} | \\boldsymbol{\\mu}_{\\phi}(\\mathbf{x}), \\text{diag}(\\boldsymbol{\\sigma}_{\\phi}(\\mathbf{x}))) \\qquad D_{\\theta}(E_{\\phi}(\\mathbf{x})) \\sim \\mathcal{N}(\\mathbf{X} | \\boldsymbol{\\mu}_{\\theta}(\\mathbf{z}), \\text{diag}(\\boldsymbol{\\sigma}_{\\theta}(\\mathbf{z})))\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                207,
+                476,
+                405,
+                491
+            ],
+            "content": "E _ { \\phi } ( \\mathbf { x } ) = \\mu _ { \\phi } ( \\mathbf { x } ) + \\sigma _ { \\phi } ( \\mathbf { x } ) \\odot \\epsilon , \\qquad \\epsilon \\sim { \\mathcal { N } } ( \\mathbf { 0 } , \\mathbf { I } )",
+            "latex": "E _ { \\phi } ( \\mathbf { x } ) = \\mu _ { \\phi } ( \\mathbf { x } ) + \\sigma _ { \\phi } ( \\mathbf { x } ) \\odot \\epsilon , \\qquad \\epsilon \\sim { \\mathcal { N } } ( \\mathbf { 0 } , \\mathbf { I } )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                247,
+                413,
+                364,
+                428
+            ],
+            "content": "{ \\mathcal { L } } _ { \\mathrm { R E C } } = \\| \\mathbf { x } - \\mu _ { \\theta } ( E _ { \\phi } ( \\mathbf { x } ) ) \\| _ { 2 } ^ { 2 }",
+            "latex": "{ \\mathcal { L } } _ { \\mathrm { R E C } } = \\| \\mathbf { x } - \\mu _ { \\theta } ( E _ { \\phi } ( \\mathbf { x } ) ) \\| _ { 2 } ^ { 2 }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                164,
+                150,
+                446,
+                165
+            ],
+            "content": "The formulas in the image can be written in LaTeX as follows:\n\n```latex\n\\mathcal{L}_{\\text{REC}} = -\\mathbb{E}_{\\mathbf{z} \\sim q_\\phi(\\mathbf{z} \\mid \\mathbf{x})} \\log p_\\theta(\\mathbf{x} \\mid \\mathbf{z})\n\\qquad\n\\mathcal{L}_{\\text{KL}} = \\mathbb{K}\\mathbb{L}(q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) || p(\\mathbf{z}))\n```\n\nThis will produce the same equations as shown in the image.",
+            "latex": "The formulas in the image can be written in LaTeX as follows:\n\n```latex\n\\mathcal{L}_{\\text{REC}} = -\\mathbb{E}_{\\mathbf{z} \\sim q_\\phi(\\mathbf{z} \\mid \\mathbf{x})} \\log p_\\theta(\\mathbf{x} \\mid \\mathbf{z})\n\\qquad\n\\mathcal{L}_{\\text{KL}} = \\mathbb{K}\\mathbb{L}(q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) || p(\\mathbf{z}))\n```\n\nThis will produce the same equations as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                206,
+                102,
+                406,
+                122
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\arg \\min_{\\phi, \\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}} \\mathcal{L}_{\\text{ELBO}} = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\arg \\min_{\\phi, \\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}} \\mathcal{L}_{\\text{ELBO}} = \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                221,
+                150,
+                391,
+                164
+            ],
+            "content": "E _ { \\phi } ^ { \\mathrm { C V } } ( \\mathbf { x } ) = \\mu _ { \\phi } ( \\mathbf { x } ) + \\epsilon , \\qquad \\epsilon \\sim { \\mathcal { N } } ( \\mathbf { 0 } , \\sigma \\mathbf { I } )",
+            "latex": "E _ { \\phi } ^ { \\mathrm { C V } } ( \\mathbf { x } ) = \\mu _ { \\phi } ( \\mathbf { x } ) + \\epsilon , \\qquad \\epsilon \\sim { \\mathcal { N } } ( \\mathbf { 0 } , \\sigma \\mathbf { I } )"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                237,
+                588,
+                375,
+                602
+            ],
+            "content": "{ \\mathcal { L } } _ { \\mathrm { R A E } } = { \\mathcal { L } } _ { \\mathrm { R E C } } + \\beta { \\mathcal { L } } _ { Z } ^ { \\mathrm { R A E } } + \\lambda { \\mathcal { L } } _ { \\mathrm { R E G } }",
+            "latex": "{ \\mathcal { L } } _ { \\mathrm { R A E } } = { \\mathcal { L } } _ { \\mathrm { R E C } } + \\beta { \\mathcal { L } } _ { Z } ^ { \\mathrm { R A E } } + \\lambda { \\mathcal { L } } _ { \\mathrm { R E G } }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                236,
+                588,
+                375,
+                602
+            ],
+            "content": "{ \\mathcal { L } } _ { \\mathrm { R A E } } = { \\mathcal { L } } _ { \\mathrm { R E C } } + \\beta { \\mathcal { L } } _ { Z } ^ { \\mathrm { R A E } } + \\lambda { \\mathcal { L } } _ { \\mathrm { R E G } }",
+            "latex": "{ \\mathcal { L } } _ { \\mathrm { R A E } } = { \\mathcal { L } } _ { \\mathrm { R E C } } + \\beta { \\mathcal { L } } _ { Z } ^ { \\mathrm { R A E } } + \\lambda { \\mathcal { L } } _ { \\mathrm { R E G } }"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                239,
+                555,
+                374,
+                574
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\arg \\min_{\\phi, \\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\arg \\min_{\\phi, \\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                171,
+                577,
+                439,
+                591
+            ],
+            "content": "```latex\n\\text{s.t. } ||D_\\theta(\\mathbf{z}_1) - D_\\theta(\\mathbf{z}_2)||_p < \\epsilon \\quad \\forall \\; \\mathbf{z}_1, \\mathbf{z}_2 \\sim q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) \\quad \\forall \\mathbf{x} \\sim p_{\\text{data}}\n```",
+            "latex": "```latex\n\\text{s.t. } ||D_\\theta(\\mathbf{z}_1) - D_\\theta(\\mathbf{z}_2)||_p < \\epsilon \\quad \\forall \\; \\mathbf{z}_1, \\mathbf{z}_2 \\sim q_\\phi(\\mathbf{z} \\mid \\mathbf{x}) \\quad \\forall \\mathbf{x} \\sim p_{\\text{data}}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                171,
+                555,
+                441,
+                591
+            ],
+            "content": "```latex\n\\begin{equation}\n\\arg \\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n\\end{equation}\n\n\\begin{equation}\n\\text{s.t. } ||D_\\theta(\\mathbf{z}_1) - D_\\theta(\\mathbf{z}_2)||_p < \\epsilon \\quad \\forall \\, \\mathbf{z}_1, \\mathbf{z}_2 \\sim q_\\phi(\\mathbf{z}|\\mathbf{x}) \\quad \\forall \\mathbf{x} \\sim p_{\\text{data}}\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\n\\arg \\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x} \\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{KL}}\n\\end{equation}\n\n\\begin{equation}\n\\text{s.t. } ||D_\\theta(\\mathbf{z}_1) - D_\\theta(\\mathbf{z}_2)||_p < \\epsilon \\quad \\forall \\, \\mathbf{z}_1, \\mathbf{z}_2 \\sim q_\\phi(\\mathbf{z}|\\mathbf{x}) \\quad \\forall \\mathbf{x} \\sim p_{\\text{data}}\n\\end{equation}\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                208,
+                218,
+                402,
+                238
+            ],
+            "content": "```latex\n\\arg\\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x}\\sim p_{\\text{data}}} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{CE}} - \\mathcal{L}_{\\text{H}} + \\lambda\\mathcal{L}_{\\text{LANG}}\n```",
+            "latex": "```latex\n\\arg\\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x}\\sim p_{\\text{data}}} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{CE}} - \\mathcal{L}_{\\text{H}} + \\lambda\\mathcal{L}_{\\text{LANG}}\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                222,
+                166,
+                389,
+                179
+            ],
+            "content": "```latex\nr(\\mathbb{H}(q_\\phi(\\mathbf{z}|\\mathbf{x}))) \\cdot sup\\{\\|\\nabla D_\\theta(\\mathbf{z})\\|_p\\} < \\epsilon\n```",
+            "latex": "```latex\nr(\\mathbb{H}(q_\\phi(\\mathbf{z}|\\mathbf{x}))) \\cdot sup\\{\\|\\nabla D_\\theta(\\mathbf{z})\\|_p\\} < \\epsilon\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                203,
+                293,
+                408,
+                312
+            ],
+            "content": "```latex\n\\arg\\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x}\\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{CE}} + \\lambda ||\\nabla D_\\theta(\\mathbf{z})||_p\n```",
+            "latex": "```latex\n\\arg\\min_{\\phi,\\theta} \\mathbb{E}_{\\mathbf{x}\\sim p_{\\text{data}}(\\mathbf{x})} \\mathcal{L}_{\\text{REC}} + \\mathcal{L}_{\\text{CE}} + \\lambda ||\\nabla D_\\theta(\\mathbf{z})||_p\n```"
+        }
+    ]
+}

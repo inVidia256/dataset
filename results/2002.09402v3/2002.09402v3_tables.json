@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                106,
+                80,
+                308,
+                235
+            ],
+            "caption": "Table 1: Accuracy on toy tasks. Char is character accuracy, Seq is sequence accuracy.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>Transformer</td>\n    <td>FeedbackTrans.</td>\n  </tr>\n  <tr>\n    <td>Copy</td>\n    <td>Char</td>\n    <td>59.1</td>\n    <td>76.2</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Seq</td>\n    <td>6.2</td>\n    <td>23.6</td>\n  </tr>\n  <tr>\n    <td>Reverse</td>\n    <td>Char</td>\n    <td>50.2</td>\n    <td>74.8</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Seq</td>\n    <td>5.9</td>\n    <td>29.2</td>\n  </tr>\n  <tr>\n    <td>Counting</td>\n    <td>Len 50</td>\n    <td>99.6</td>\n    <td>99.7</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Len 1K</td>\n    <td>82.4</td>\n    <td>95.3</td>\n  </tr>\n  <tr>\n    <td>Random Walk</td>\n    <td></td>\n    <td>68</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Algorithmic</td>\n    <td>3vars</td>\n    <td>33.7</td>\n    <td>99.1</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>5vars</td>\n    <td>37.5</td>\n    <td>92.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                117,
+                80,
+                276,
+                225
+            ],
+            "caption": "Table 2: Results on WMT En-De comparing the Feedback Transformer to Recurrent architectures, hybrid Recurrent-Transformer models, and standard Transformers. Table 2: Results on WMT En-De comparing the Feedback Transformer to Recurrent architectures, hybrid Recurrent-Transformer models, and standard Transformers. Table 2: Results on WMT En-De comparing the Feedback Transformer to Recurrent architectures, hybrid Recurrent-Transformer models, and standard Transformers.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>Recurrent Architectures</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Dense NMT Shen et al.(2018)</td>\n    <td>25.5</td>\n  </tr>\n  <tr>\n    <td>RN MT+(Chen et al.，2018)</td>\n    <td>28.5</td>\n  </tr>\n  <tr>\n    <td>Hybrid Architectures</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Bi ARN(Hao et al.，2019)</td>\n    <td>28.9</td>\n  </tr>\n  <tr>\n    <td>SRU(Lei et al.，2017)</td>\n    <td>28.4</td>\n  </tr>\n  <tr>\n    <td>Transformer Architectures</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Transformer(Vaswani etal.，2017)28.4</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Transformer(Ott etal.，2018)</td>\n    <td>29.3</td>\n  </tr>\n  <tr>\n    <td>Feedback Transformer</td>\n    <td>29.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                106,
+                80,
+                298,
+                154
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Params</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>Best Existing(Roy etal，2020)</td>\n    <td></td>\n    <td>15.8</td>\n  </tr>\n  <tr>\n    <td>Trans-XL(Dai etal，2019)</td>\n    <td>257M</td>\n    <td>18.3</td>\n  </tr>\n  <tr>\n    <td>Our Transformer</td>\n    <td>140M</td>\n    <td>19.9</td>\n  </tr>\n  <tr>\n    <td>Feedback Transformer</td>\n    <td>126M</td>\n    <td>18.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                117,
+                197,
+                493,
+                298
+            ],
+            "caption": "Table 3: Results on WikiText-103. We report perplexity on test. Table 4: Results on Enwiki8. We report bit-per-byte on test.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>Model</td>\n    <td>Training Speed</td>\n    <td>Inference Speed</td>\n  </tr>\n  <tr>\n    <td>Language Modeling</td>\n    <td>Transformer</td>\n    <td>296K</td>\n    <td>592</td>\n  </tr>\n  <tr>\n    <td>Feedback Transformer</td>\n    <td>84.4K</td>\n    <td>2176</td>\n  </tr>\n  <tr>\n    <td>Translation</td>\n    <td>Transformer</td>\n    <td>280K</td>\n    <td>3190</td>\n  </tr>\n  <tr>\n    <td>Feedback Transformer</td>\n    <td>126K</td>\n    <td>5410</td>\n  </tr>\n  <tr>\n    <td>Reinforcement Learning</td>\n    <td>Transformer</td>\n    <td>22.3K</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Feedback Transformer</td>\n    <td>22.3K</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page009.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                316,
+                86,
+                500,
+                148
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Params</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>Best Existing(Rae etal，2020)</td>\n    <td>277M</td>\n    <td>0.97</td>\n  </tr>\n  <tr>\n    <td>Trans-XL(Dai etal，2019)</td>\n    <td>277M</td>\n    <td>0.99</td>\n  </tr>\n  <tr>\n    <td>Feedback Transformer</td>\n    <td>77M</td>\n    <td>0.96</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page009.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                188,
+                80,
+                423,
+                203
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Pre-norm+higher LR</td>\n    <td>Adapt.span</td>\n    <td>IncreaseBPTT</td>\n    <td>devppl</td>\n  </tr>\n  <tr>\n    <td>Transformer</td>\n    <td>no</td>\n    <td>no</td>\n    <td>no</td>\n    <td>22.9</td>\n  </tr>\n  <tr>\n    <td>Transformer</td>\n    <td>no</td>\n    <td>no</td>\n    <td>yes</td>\n    <td>22.9</td>\n  </tr>\n  <tr>\n    <td>Transformer</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>yes</td>\n    <td>21.0</td>\n  </tr>\n  <tr>\n    <td>Transformer</td>\n    <td>yes</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>20.6</td>\n  </tr>\n  <tr>\n    <td>Feedback</td>\n    <td>no</td>\n    <td>no</td>\n    <td>no</td>\n    <td>19.7</td>\n  </tr>\n  <tr>\n    <td>Feedback</td>\n    <td>no</td>\n    <td>no</td>\n    <td>yes</td>\n    <td>19.9</td>\n  </tr>\n  <tr>\n    <td>Feedback</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>yes</td>\n    <td>19.6</td>\n  </tr>\n  <tr>\n    <td>Feedback</td>\n    <td>yes</td>\n    <td>yes</td>\n    <td>yes</td>\n    <td>19.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page015.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                162,
+                80,
+                448,
+                181
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Hyperparameter</td>\n    <td>Summarization</td>\n    <td>WMT En-De</td>\n    <td>IWSLT De-En</td>\n  </tr>\n  <tr>\n    <td>Encoder Layers</td>\n    <td>6</td>\n    <td>6</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>Decoder Layers</td>\n    <td>6</td>\n    <td>6</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>FFN Size</td>\n    <td>2048</td>\n    <td>4096</td>\n    <td>1024</td>\n  </tr>\n  <tr>\n    <td>Attention Heads</td>\n    <td>8</td>\n    <td>16</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>Dropout</td>\n    <td>0.3</td>\n    <td>0.3</td>\n    <td>0.3</td>\n  </tr>\n  <tr>\n    <td>Hidden Size</td>\n    <td>512</td>\n    <td>1024</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Learning Rate</td>\n    <td>0.0005</td>\n    <td>0.001</td>\n    <td>0.0005</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page017.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                113,
+                214,
+                498,
+                408
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 8: Hyperparameters for sequence to sequence experiments.\" The text content from the image is:\n\n\"Table 8: Hyperparameters for sequence to sequence experiments.\"",
+            "footnote": "Table 9: Hyperparameters for language modeling experiments. Here * indicates the adaptive span.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Hyperparameter</td>\n    <td>Random WalkAlgorithmic</td>\n    <td>char-PTB</td>\n    <td>Enwik8</td>\n    <td>WikiText-103small</td>\n    <td>WikiText-103large</td>\n  </tr>\n  <tr>\n    <td>Layers</td>\n    <td>4</td>\n    <td>6</td>\n    <td>12</td>\n    <td>4</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>Hidden size(d)</td>\n    <td>256</td>\n    <td>384</td>\n    <td>512</td>\n    <td>512</td>\n    <td>1024</td>\n  </tr>\n  <tr>\n    <td>FF size</td>\n    <td>4d</td>\n    <td>4d</td>\n    <td>8d</td>\n    <td>8d</td>\n    <td>4d</td>\n  </tr>\n  <tr>\n    <td>Head count(h)</td>\n    <td>4</td>\n    <td>4</td>\n    <td>8</td>\n    <td>8</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>Head dim</td>\n    <td>d/h</td>\n    <td>d/h</td>\n    <td>2d/h</td>\n    <td>2d/h</td>\n    <td>d/h</td>\n  </tr>\n  <tr>\n    <td>Attention span</td>\n    <td>100</td>\n    <td>512</td>\n    <td>8192*</td>\n    <td>512</td>\n    <td>512，2048*</td>\n  </tr>\n  <tr>\n    <td>Dropout rate</td>\n    <td>0.2</td>\n    <td>0.5</td>\n    <td>0.5</td>\n    <td>0.1</td>\n    <td>0.3</td>\n  </tr>\n  <tr>\n    <td>Embed.dropout</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>0.1</td>\n    <td>0.2</td>\n  </tr>\n  <tr>\n    <td>BPTT len(M)</td>\n    <td>64</td>\n    <td>128</td>\n    <td>128</td>\n    <td>256</td>\n    <td>256</td>\n  </tr>\n  <tr>\n    <td>Batch size(B)</td>\n    <td>512</td>\n    <td>2048</td>\n    <td>1024</td>\n    <td>512</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Learning rate</td>\n    <td>0.0001</td>\n    <td>0.0015</td>\n    <td>0.0015</td>\n    <td>0.0007</td>\n    <td>0.0007</td>\n  </tr>\n  <tr>\n    <td>Gradient clip</td>\n    <td>0.1</td>\n    <td>1.0</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>LR warm-up steps</td>\n    <td>1k</td>\n    <td>1k</td>\n    <td>8k</td>\n    <td>8k</td>\n    <td>8k</td>\n  </tr>\n  <tr>\n    <td>Parameters</td>\n    <td>3.2M</td>\n    <td>10.7M</td>\n    <td>77M</td>\n    <td>44M</td>\n    <td>139M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page017.png"
+        }
+    ]
+}

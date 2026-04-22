@@ -1,0 +1,384 @@
+{
+    "total_count": 27,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                47,
+                197,
+                547,
+                451
+            ],
+            "caption": "Figure 1: Various image editing results on multiple datasets. Local editing mixes multiple parts of reference images with the original image. Unlike other methods (Global case), ours can do semantic manipulation locally (Yellow box, Local case).",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                69,
+                70,
+                527,
+                315
+            ],
+            "caption": "Figure 2: StyleMapGAN Interactive Demo. Please see our code for further details.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                311,
+                72,
+                545,
+                241
+            ],
+            "caption": "Figure 3: StyleMapGAN Generator. The stylemap w is resized to w+ through convolutional layers to match the spatial resolution of each feature in the synthesis network. Here \"A\" stands for a learned affine transform, which produces spatial modulation parameters (γ and β in Equation 1). \"Mod\" indicates modulation consisting of element-wise multiplication and addition. Note that the synthesis network starts from a learned constant input, and the output image's style is adjusted by resized stylemaps.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                55,
+                73,
+                280,
+                275
+            ],
+            "caption": "Figure 4: The upper figure contains an overall training scheme. Green and red arrows refer to flows associated with the real image and the generated image from Gaussian distribution, respectively. Dashed lines indicate loss functions. The lower figure shows our local editing method on the stylemap. Table 1: Losses for training each network. Non-saturating loss [16] is used as the adversarial loss. R1-regularization is applied every 16 steps [26] for D to stabilize training. Latent reconstruction loss is mean squared error (MSE) in the w space. Image reconstruction is MSE in image pixel-level space. We use learned perceptual image patch similarity (LPIPS) as perceptual loss for calculating perceptual differences between original and reconstructed images. Domain-guided loss is related to adversarial training that reconstructed images from the encoder tries to be classified as real by the discriminator. Table 1: Losses for training each network. Non-saturating loss [16] is used as the adversarial loss. R1-regularization is applied every 16 steps [26] for D to stabilize training. Latent reconstruction loss is mean squared error (MSE) in the w space. Image reconstruction is MSE in image pixel-level space. We use learned perceptual image patch similarity (LPIPS) as perceptual loss for calculating perceptual differences between original and reconstructed images. Domain-guided loss is related to adversarial training that reconstructed images from the encoder tries to be classified as real by the discriminator.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                53,
+                59,
+                542,
+                350
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                51,
+                450,
+                543,
+                624
+            ],
+            "caption": "Figure 5: Local editing comparison across different resolutions of the stylemap. Regions to be discarded are faded on the original and the reference images. 4 × 4 suffers from the poor reconstruction. Resolutions greater than or equal to 16 × 16 result in too heterogeneous images. 8 × 8 resolution shows acceptable reconstruction and natural integration. Note that our method works well even in the case that the mask locates improperly as shown in the reference image of the first row.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                55,
+                68,
+                539,
+                339
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                54,
+                68,
+                541,
+                217
+            ],
+            "caption": "Figure 6: Local editing comparison on CelebA-HQ. The first two baselines [3, 11] even fail to preserve the untouched region. In-DomainGAN loses a lot of the original image’s identity and poorly blends the two images, leaking colors to faces, hair, or background, respectively. SEAN locally transfers coarse structure and color but significantly loses details. Ours seamlessly transplants the target region from the reference to the original.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                52,
+                281,
+                542,
+                453
+            ],
+            "caption": "Figure 7: Local editing comparison on AFHQ. Each row blends the two images with horizontal and custom masks, respectively. Our method seamlessly composes two species with well-preserved details resulting in novel creatures, while others tend to lean towards one species. Figure 7: Local editing comparison on AFHQ. Each row blends the two images with horizontal and custom masks, respectively. Our method seamlessly composes two species with well-preserved details resulting in novel creatures, while others tend to lean towards one species.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page008.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                55,
+                70,
+                532,
+                387
+            ],
+            "caption": "Figure 8: Examples of unaligned transplantation. StyleMapGAN allows composing arbitrary number of any regions. The size and pose of the tower, bumper and wheels are automatically adjusted regarding the surroundings. The masks are specified on \\(8 \\times 8\\) grid and the stylemaps are blended on w space. The first row shows an example of copying one area of the reference image into multiple areas of the original images. The second row shows another example of copying two areas of the reference image. Our method can transplant the arbitrary number and size of areas of reference images. Figure 8: Examples of unaligned transplantation. StyleMapGAN allows composing arbitrary number of any regions. The size and pose of the tower, bumper and wheels are automatically adjusted regarding the surroundings. The masks are specified on \\(8 \\times 8\\) grid and the stylemaps are blended on w space. The first row shows an example of copying one area of the reference image into multiple areas of the original images. The second row shows another example of copying two areas of the reference image. Our method can transplant the arbitrary number and size of areas of reference images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page009.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                50,
+                82,
+                545,
+                292
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page010.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                52,
+                67,
+                541,
+                353
+            ],
+            "caption": "Table 5: Comparison with StyleGAN2 on 1024 × 1024 FFHQ. We also explored the effect of other components such as generator size and joint learning. StyleMapGAN-Light has reduced the number of channels of the stylemap resizer. 32 × 32 stylemap is used for the large size of the image. “G” denotes the generator. Table 5: Comparison with StyleGAN2 on 1024 × 1024 FFHQ. We also explored the effect of other components such as generator size and joint learning. StyleMapGAN-Light has reduced the number of channels of the stylemap resizer. 32 × 32 stylemap is used for the large size of the image. “G” denotes the generator. Table 5: Comparison with StyleGAN2 on 1024 × 1024 FFHQ. We also explored the effect of other components such as generator size and joint learning. StyleMapGAN-Light has reduced the number of channels of the stylemap resizer. 32 × 32 stylemap is used for the large size of the image. “G” denotes the generator.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page011.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                49,
+                66,
+                544,
+                276
+            ],
+            "caption": "Figure 10: Local editing comparison across different mapping network architectures of StyleMapGAN. MLP-based architecture provides more natural images compared to autoencoder-based and convolution-based architecture.",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page012.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                308,
+                364,
+                543,
+                527
+            ],
+            "caption": "Figure 11: This figure shows the interpolation results of different networks. Leftmost images are results of a network trained using whole losses. Second column images are generated by a network trained without random Gaussian noise, which is similar to AutoEncoder. A network trained without domain-guided loss generates rightmost column images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page012.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                73,
+                73,
+                297,
+                369
+            ],
+            "caption": "The text content from the image is:\n\n\"LSUN Car, FID: 4.15\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page017.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                72,
+                128,
+                530,
+                694
+            ],
+            "caption": "Figure 12: Uncurated random generation results in four datasets.",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page017.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                306,
+                72,
+                530,
+                370
+            ],
+            "caption": "The text content from the image is:\n\n\"LSUN Church, FID: 2.95\" The text content from the image is:\n\n\"LSUN Church, FID: 2.95\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page017.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                55,
+                89,
+                538,
+                655
+            ],
+            "caption": "Figure 13: Reconstruction results in encoder-based methods. ALAE [45] does not preserve identities in the original images. In-DomainGAN [62] has better reconstruction results than ALAE, but it sometimes fails to generate human-like images as shown in the second-last row. Note that In-DomainGAN requires additional optimization steps which take seconds. SEAN [65] fails to preserve the shape of original images (e.g., background, hair curl, and cloth). Our method reconstructs images well not only the color and texture but also the shape.",
+            "footnote": "",
+            "cropped_image": "figures/figure_018_page018.png"
+        },
+        {
+            "serial_number": 19,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                49,
+                79,
+                534,
+                634
+            ],
+            "caption": "Figure 14: Comparison with Image2StyleGAN for interpolation quality. Image2StyleGAN shows rugged and discontinuous interpolations, even though the reconstruction quality is visually good. Our method produces clearer and smoother interpolations, which reveal our superiority in both pixel-level and semantic-level (i.e., the semantics of the original latent space) reconstruction. Note that the reconstruction speed of our method is 2000× faster than Image2StyleGAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_019_page019.png"
+        },
+        {
+            "serial_number": 20,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                55,
+                109,
+                539,
+                612
+            ],
+            "caption": "Figure 15: Local editing comparison in CelebA-HQ. Each row edits hair, eyes, nose, cloth, and background. In-DomainGAN [62] only optimizes region in the target mask and it changes identities of the original images. SEAN [65] tends to bring only the color and the texture of reference images, not the shape (especially on hair lines). Our method reflects the shape of the reference image as well and preserves the identity of the original image.",
+            "footnote": "",
+            "cropped_image": "figures/figure_020_page020.png"
+        },
+        {
+            "serial_number": 21,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                55,
+                127,
+                532,
+                628
+            ],
+            "caption": "Figure 16: Transplantation results of our method in LSUN Car. We transplant the cabin, wheel, and bumper.",
+            "footnote": "",
+            "cropped_image": "figures/figure_021_page021.png"
+        },
+        {
+            "serial_number": 22,
+            "page": 22,
+            "type": "figure",
+            "bbox": [
+                55,
+                116,
+                532,
+                612
+            ],
+            "caption": "Figure 17: Transplanting tower, gate and windows in LSUN Church by our method. Our method can transplant the arbitrary number and location of areas in reference images to the original images. Note that our method adjusts color tone and structure of the same references regarding the original images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_022_page022.png"
+        },
+        {
+            "serial_number": 23,
+            "page": 23,
+            "type": "figure",
+            "bbox": [
+                49,
+                109,
+                542,
+                673
+            ],
+            "caption": "Figure 18: The results of the global and local version of semantic manipulation in our method. In local manipulation, we apply the semantic direction in the yellow box area.",
+            "footnote": "",
+            "cropped_image": "figures/figure_023_page023.png"
+        },
+        {
+            "serial_number": 24,
+            "page": 24,
+            "type": "figure",
+            "bbox": [
+                47,
+                109,
+                542,
+                671
+            ],
+            "caption": "Figure 19: The results of style mixing in our method. Please refer to E.6 for details.",
+            "footnote": "",
+            "cropped_image": "figures/figure_024_page024.png"
+        },
+        {
+            "serial_number": 25,
+            "page": 25,
+            "type": "figure",
+            "bbox": [
+                49,
+                88,
+                544,
+                199
+            ],
+            "caption": "Figure 20: 4th column shows the transplantation of all identity including shape, texture, and color. The rightmost image shows the transplantation of structure alone.",
+            "footnote": "",
+            "cropped_image": "figures/figure_025_page025.png"
+        },
+        {
+            "serial_number": 26,
+            "page": 25,
+            "type": "figure",
+            "bbox": [
+                50,
+                276,
+                545,
+                433
+            ],
+            "caption": "Figure 21: Failure cases of interpolation in our method due to extreme pose difference.",
+            "footnote": "",
+            "cropped_image": "figures/figure_026_page025.png"
+        },
+        {
+            "serial_number": 27,
+            "page": 25,
+            "type": "figure",
+            "bbox": [
+                49,
+                503,
+                542,
+                668
+            ],
+            "caption": "Figure 22: Failure cases of transplantation in our method due to different sizes of the masks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_027_page025.png"
+        }
+    ]
+}

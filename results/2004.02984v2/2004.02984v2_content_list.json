@@ -1,0 +1,2299 @@
+[
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "At first glance, it may seem straightforward to obtain a task-agnostic compact BERT. For example, one may just take a narrower or shallower version of BERT, and train it until convergence by minimizing a convex combination of the prediction loss and distillation loss (Turc et al., 2019; Sun et al., 2019). Unfortunately, empirical results show that such a straightforward approach results in significant accuracy loss (Turc et al., 2019). This may not be that surprising. It is well-known that shallow networks usually do not have enough representation power while narrow and deep networks are difficult to train. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "There have been some efforts that task-specifically distill BERT into compact models (Turc et al., 2019; Tang et al., 2019; Sun et al., 2019; Tsai et al., 2019). To the best of our knowledge, there is not yet any work for building a task-agnostic lightweight pre-trained model, that is, a model that can be generically fine-tuned on different downstream NLP tasks as the original BERT does. In this paper, we propose MobileBERT to fill this gap. In practice, task-agnostic compression of BERT is desirable. Task-specific compression needs to first fine-tune the original large BERT model into a task-specific teacher and then distill. Such a process is much more complicated (Wu et al., 2019) and costly than directly fine-tuning a task-agnostic compact model. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Natural Language Processing (NLP) has recently achieved great success by using huge pre-trained models with hundreds of millions of parameters. However, these models suffer from heavy model sizes and high latency such that they cannot be deployed to resource-limited mobile devices. In this paper, we propose MobileBERT for compressing and accelerating the popular BERT model. Like the original BERT, MobileBERT is task-agnostic, that is, it can be generically applied to various downstream NLP tasks via simple fine-tuning. Basically, MobileBERT is a thin version of BERT_LARGE, while equipped with bottleneck structures and a carefully designed balance between self-attentions and feed-forward networks. To train MobileBERT, we first train a specially designed teacher model, an inverted-bottleneck incorporated BERT_LARGE model. Then, we conduct knowledge transfer from this teacher to MobileBERT. Empirical studies show that MobileBERT is 4.3× smaller and 5.5× faster than BERTBASE while achieving competitive results on well-known benchmarks. On the natural language inference tasks of GLUE, MobileBERT achieves a GLUE score of 77.7 (0.6 lower than BERTBASE), and 62 ms latency on a Pixel 4 phone. On the SQuAD v1.1/v2.0 question answering task, MobileBERT achieves a dev F1 score of 90.0/79.2 (1.5/2.1 higher than BERTBASE). ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "shows substantial accuracy improvements. However, as one of the largest models ever in NLP, BERT suffers from the heavy model size and high latency, making it impractical for resource-limited mobile devices to deploy the power of BERT in mobile-based machine translation, dialogue modeling, and the like. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The NLP community has witnessed a revolution of pre-training self-supervised models. These models usually have hundreds of millions of parameters (Peters et al., 2018; Radford et al., 2018; Devlin et al., 2018; Radford et al., 2019; Yang et al., 2019). Among these models, BERT (Devlin et al., 2018) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Our MobileBERT is designed to be as deep as BERT_LARGE while each layer is made much narrower via adopting bottleneck structures and balancing between self-attentions and feed-forward ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"1 Introduction\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The word in the image is \"Abstract\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nZhiqing Sun\\(^{1, \\*}\\), Hongkun Yu\\(^{2}\\), Xiaodan Song\\(^{2}\\), Renjie Liu\\(^{2}\\), Yiming Yang\\(^{1}\\), Denny Zhou\\(^{2}\\) ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\n^1Carnegie Mellon University {zhiqings, yiming}@cs.cmu.edu\n^2Google Brain {hongkuny, xiaodansong, renjieliu, dennyzhou}@google.com\n\\`\\`\\` ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Empirical evaluations1 show that MobileBERT is 4.3× smaller and 5.5× faster than BERTBASE, while it can still achieve competitive results on well-known NLP benchmarks. On the natural language inference tasks of GLUE, MobileBERT can achieve a GLUE score of 77.7, which is only 0.6 lower than BERTBASE, with a latency of 62 ms on a Pixel 4 phone. On the SQuAD v1.1/v2.0 question answering task, MobileBER obtains a dev F1 score of 90.3/80.2, which is even 1.5/2.1 higher than BERTBASE. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Concurrently to our work, Sun et al. (2019) distill BERT into shallower students through knowledge distillation and an additional knowledge transfer of hidden states on multiple intermediate layers. Jiao et al. (2019) propose TinyBERT, which also uses a layer-wise distillation strategy for BERT but in both pre-training and fine-tuning stages. Sanh et al. (2019) propose DistilBERT, which successfully halves the depth of BERT model by knowledge distillation in the pre-training stage and an optional fine-tuning stage.\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In this section, we present the detailed architecture design of MobileBERT and training strategies to efficiently train MobileBERT. The specific model settings are summarized in Table 1. These settings are obtained by extensive architecture search experiments which will be presented in Section 4.1. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"networks (Figure 1). To train MobileBERT, a deep and thin model, we first train a specially designed teacher model, an inverted-bottleneck incorporated BERT_LARGE model (IB-BERT). Then, we conduct knowledge transfer from IB-BERT to MobileBERT. A variety of knowledge transfer strategies are carefully investigated in our empirical studies.\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Recently, compression of BERT has attracted much attention. Turc et al. (2019) propose to pre-train the smaller BERT models to improve task-specific knowledge distillation. Tang et al. (2019) distill BERT into an extremely small LSTM model. Tsai et al. (2019) distill a multilingual BERT into smaller BERT models on sequence labeling tasks. Clark et al. (2019b) use several single-task BERT\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In contrast to these existing literature, we only use knowledge transfer in the pre-training stage and do not require a fine-tuned teacher or data augmentation (Wu et al., 2019) in the down-stream tasks. Another key difference is that these previous work try to compress BERT by reducing its depth, while we focus on compressing BERT by reducing its width, which has been shown to be more effective (Turc et al., 2019). ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"models to teach a multi-task BERT. Liu et al. (2019a) distill knowledge from an ensemble of BERT models into a single BERT.\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "Figure 1: Illustration of three models: (a) BERT; (b) Inverted-Bottleneck BERT (IB-BERT); and (c) MobileBERT. In (b) and (c), red lines denote inter-block flows while blue lines intra-block flows. MobileBERT is trained by layer-to-layer imitating IB-BERT. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"2 Related Work\". ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"3 MobileBERT\". ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The architecture of MobileBERT is illustrated in Figure 1(c). It is as deep as BERT_LARGE, but each building block is made much smaller. As shown in Table 1, the hidden dimension of each building block is only 128. On the other hand, we introduce two linear transformations for each building block to adjust its input and output dimensions to 512. Following the terminology in (He et al., 2016), we refer to such an architecture as bottleneck. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "A problem introduced by the bottleneck structure of MobileBERT is that the balance between the Multi-Head Attention (MHA) module and the Feed-Forward Network (FFN) module is broken. MHA and FFN play different roles in the Transformer architecture: The former allows the model to jointly attend to information from different subspaces, while the latter increases the non-linearity of the model. In original BERT, the ratio of the parameter numbers in MHA and FFN is always 1:2. But in the bottleneck structure, the inputs to the MHA are from wider feature maps (of inter-block size), while the inputs to the FFN are from narrower bottlenecks (of intra-block size). This results in that the MHA modules in MobileBERT relatively contain more parameters. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "It is challenging to train such a deep and thin network. To overcome the training issue, we first construct a teacher network and train it until convergence, and then conduct knowledge transfer from this teacher network to MobileBERT. We find that this is much better than directly training MobileBERT from scratch. Various training strategies will be discussed in a later section. Here, we introduce the architecture design of the teacher network which is illustrated in Figure 1(b). In fact, the teacher network is just BERT_LARGE while augmented with inverted-bottleneck structures (Sandler et al., 2018) to adjust its feature map size to 512. In what follows, we refer to the teacher network as IB-BERT_LARGE. Note that IB-BERT and MobileBERT have the same feature map size which is 512. Thus, we can directly compare the layer-wise output difference between IB-BERT and MobileBERT. Such a direct comparison is needed in our knowledge transfer strategy. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "To fix this issue, we propose to use stacked feed-forward networks in MobileBERT to re-balance the relative size between MHA and FFN. As illustrated in Figure 1(c), each MobileBERT layer contains one MHA but several stacked FFN. In MobileBERT, we use 4 stacked FFN after each MHA. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "It is worth pointing out that the simultaneously introduced bottleneck and inverted-bottleneck structures result in a fairly flexible architecture design. One may either only use the bottlenecks for MobileBERT (correspondingly the ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "teacher becomes BERT_LARGE) or only the inverted-bottlenecks for IB-BERT (then there is no bottleneck in MobileBERT) to align their feature maps. However, when using both of them, we can allow IB-BERT_LARGE to preserve the performance of BERT_LARGE while having MobileBERT sufficiently compact. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"3.1 Bottleneck and Inverted-Bottleneck\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"3.2 Stacked Feed-Forward Networks\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 1: The detailed model settings of a few models. h_inter, h_FFN, h_embedding, #Head and #Params denote the inter-block hidden size (feature map size), FFN intermediate size, embedding table size, the number of heads in multi-head attention, and the number of parameters, respectively.\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 1: The detailed model settings of a few models. h_inter, h_FFN, h_embedding, #Head and #Params denote the inter-block hidden size (feature map size), FFN intermediate size, embedding table size, the number of heads in multi-head attention, and the number of parameters, respectively.\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 1: The detailed model settings of a few models. h_inter, h_FFN, h_embedding, #Head and #Params denote the inter-block hidden size (feature map size), FFN intermediate size, embedding table size, the number of heads in multi-head attention, and the number of parameters, respectively.\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Attention Transfer (AT) The attention mechanism greatly boosts the performance of NLP and becomes a crucial building block in Transformer and BERT (Clark et al., 2019a; Jawahar et al., 2019). This motivates us to use self-attention maps from the well-optimized teacher to help the training of MobileBERT in augmentation to the feature map transfer. In particular, we minimize the KL-divergence between the per-head self-attention distributions of the MobileBERT student and the IB-BERT teacher: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Pre-training Distillation (PD) Besides layer-wise knowledge transfer, we can also use a knowledge distillation loss when pre-training MobileBERT. We use a linear combination of the original masked language modeling (MLM) loss, next sentence prediction (NSP) loss, and the new MLM Knowledge Distillation (KD) loss as our pre-training distillation loss: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The embedding table in BERT models accounts for a substantial proportion of model size. To compress the embedding layer, as shown in Table 1, we reduce the embedding dimension to 128 in MobileBERT. Then, we apply a 1D convolution with kernel size 3 on the raw token embedding to produce a 512 dimensional output. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "By model latency analysis2, we find that layer normalization (Ba et al., 2016) and gelu activation (Hendrycks and Gimpel, 2016) accounted for a considerable proportion of total latency. Therefore, we propose to replace them with new operations in our MobileBERT. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "We propose to use the following two knowledge transfer objectives, i.e., feature map transfer and attention transfer, to train MobileBERT. Figure 1 illustrates the proposed layer-wise knowledge transfer objectives. Our final layer-wise knowledge transfer loss \\( \\mathcal{L}_{KT}^{\\ell} \\) for the \\( \\ell^{th} \\) layer is a linear combination of the two objectives stated below: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Auxiliary Knowledge Transfer In this strategy, we regard intermediate knowledge transfer as an auxiliary task for knowledge distillation. We use a single loss, which is a linear combination of knowledge transfer losses from all layers as well as the pre-training distillation loss.\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Feature Map Transfer (FMT) Since each layer in BERT merely takes the output of the previous layer as input, the most important thing in layer-wise knowledge transfer is that the feature maps of each layer should be as close as possible to those of the teacher. In particular, the mean squared error between the feature maps of the MobileBERT ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where \\( \\ell \\) is the index of layers, \\( T \\) is the sequence length, and \\( N \\) is the feature map size. In practice, we find that decomposing this loss term into normalized feature map discrepancy and feature map statistics discrepancy can help stabilize training. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Given the objectives defined above, there can be various combination strategies in training. We discuss three strategies in this paper. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where γ, β ∈ ℝ^n and ⊙ denotes the Hadamard product. Please note that NoNorm has different properties from LayerNorm even in test mode since the original layer normalization is not a linear operation for a batch of vectors. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Use relu activation We replace the gelu activation with simpler relu activation (Nair and Hinton, 2010). ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Remove layer normalization We replace the layer normalization of a n-channel hidden state h with an element-wise linear transformation:\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text in the image reads:\n\n\"student and the IB-BERT teacher is used as the knowledge transfer objective:\" ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathcal { L } } _ { A T } ^ { \\ell } = { \\frac { 1 } { T A } } \\sum _ { t = 1 } ^ { T } \\sum _ { a = 1 } ^ { A } D _ { K L } ( a _ { t , \\ell , a } ^ { t r } | | a _ { t , \\ell , a } ^ { s t } ) ,\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathcal { L } } _ { F M T } ^ { \\ell } = { \\frac { 1 } { T N } } \\sum _ { t = 1 } ^ { T } \\sum _ { n = 1 } ^ { N } ( H _ { t , \\ell , n } ^ { t r } - H _ { t , \\ell , n } ^ { s t } ) ^ { 2 } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where A is the number of attention heads. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "where α is a hyperparameter in (0, 1). ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.5 Training Objectives ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"3.4 Embedding Factorization\". ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.6 Training Strategies ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3.3 Operational Optimizations ",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n{ \\mathcal { L } } _ { P D } = \\alpha { \\mathcal { L } } _ { M L M } + ( 1 - \\alpha ) { \\mathcal { L } } _ { K D } + { \\mathcal { L } } _ { N S P } ,\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm { N o N o r m } ( \\mathbf { h } ) = \\gamma \\circ \\mathbf { h } + \\beta ,\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "equation",
+        "text": "$$\n\\mathrm { N o N o r m } ( \\mathbf { h } ) = \\gamma \\circ \\mathbf { h } + \\beta ,\n$$",
+        "text_format": "latex",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Diagram of three strategies Figure 2 illustrates the diagram of the three strategies. For joint knowledge transfer and progressive knowledge transfer, there is no knowledge transfer for the beginning embedding layer and the final classifier in the layer-wise knowledge transfer stage. They are copied from the IB-BERT teacher to the MobileBERT student. Moreover, for progressive knowledge transfer, when we train the ℓth layer, we freeze all the trainable parameters in the layers below. In practice, we can soften the training process as follows. When training a layer, we further tune the lower layers with a small learning rate rather than entirely freezing them. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "We conduct extensive experiments to search good model settings for the IB-BERT teacher and the MobileBERT student. We start with SQuAD v1.1 dev F1 score as the performance metric in the search of model settings. In this section, we only train each model for 125k steps with 2048 batch size, which halves the training schedule of original BERT (Devlin et al., 2018; You et al., 2019). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Progressive Knowledge Transfer One may also concern that if MobileBERT cannot perfectly mimic the IB-BERT teacher, the errors from the lower layers may affect the knowledge transfer in the higher layers. Therefore, we propose to progressively train each layer in the knowledge transfer. The progressive knowledge transfer is divided into L stages, where L is the number of layers. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Joint Knowledge Transfer However, the intermediate knowledge of the IB-BERT teacher (i.e., attention maps and feature maps) may not be an optimal solution for the MobileBERT student. Therefore, we propose to separate these two loss terms, where we first train MobileBERT with all layer-wise knowledge transfer losses jointly, and then further train it by pre-training distillation. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Architecture Search for IB-BERT Our design philosophy for the teacher model is to use as small inter-block hidden size (feature map size) as possible, as long as there is no accuracy loss. Under this guideline, we design experiments to manipulate the inter-block size of a BERT_LARGE-sized IB-BERT, and the results are shown in Table 2 with labels (a)-(e). We can see that reducing the inter-block hidden size doesn’t damage the performance.\" ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "In this section, we first present our architecture search experiments which lead to the model settings in Table 1, and then present the empirical ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "results on benchmarks from MobileBERT and various baselines. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"4 Experiments\". ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"4.1 Model Settings\". ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Figure 2: Diagrams of (a) auxiliary knowledge transfer (AKT), (b) joint knowledge transfer (JKT), and (c) progressive knowledge transfer (PKT). Lighter colored blocks represent that they are frozen in that stage. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Table 2: Experimental results on SQuAD v1.1 dev F1 score in search of good model settings for the IB-BERT_LARGE teacher. The number of layers is set to 24 for all models. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Table 2: Experimental results on SQuAD v1.1 dev F1 score in search of good model settings for the IB-BERT_LARGE teacher. The number of layers is set to 24 for all models. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Architecture Search for MobileBERT We seek a compression ratio of 4× for BERTBASE, so we design a set of MobileBERT models all with approximately 25M parameters but different ratios of the parameter numbers in MHA and FFN to select a good MobileBERT student model. Table 3 shows our experimental results. They have different balances between MHA and FFN. From the table, we can see that the model performance reaches the peak when the ratio of parameters in MHA and FFN is 0.4 \\~ 0.6. This may justify why the original Transformer chooses the parameter ratio of MHA and FFN to 0.5.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One may wonder whether we can also shrink the intra-block hidden size of the teacher. We conduct experiments and the results are shown in Table 2 with labels (f)-(i). We can see that when the intra-block hidden size is reduced, the model performance is dramatically worse. This means that the intra-block hidden size, which represents the representation power of non-linear modules, plays a crucial role in BERT. Therefore, unlike the inter-block hidden size, we do not shrink the intra-block hidden size of our teacher model. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "We choose the architecture with 128 intra-block hidden size and 4 stacked FFNs as the MobileBERT student model in consideration of model accuracy and training efficiency. We also accordingly set the number of attention heads in the teacher model to 4 in preparation for the layer-wise knowledge transfer. Table 1 demonstrates the model settings of our IB-BERT_LARGE teacher and MobileBERT student. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The General Language Understanding Evaluation (GLUE) benchmark (Wang et al., 2018) is a collection of 9 natural language understanding tasks. We compare MobileBERT with BERTBASE and a few state-of-the-art pre-BERT models on the GLUE leaderboard3: OpenAI GPT (Radford et al., 2018) and ELMo (Peters et al., 2018). We also compare with three recently proposed compressed BERT models: BERT-PKD (Sun et al., 2019), and DistilBERT (Sanh et al., 2019). To further show the advantage of MobileBERT over recent small BERT models, we also evaluate a smaller variant of our ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "For the downstream tasks, all reported results are obtained by simply fine-tuning MobileBERT just like what the original BERT does. To fine-tune the pre-trained models, we search the optimization hyperparameters in a search space including different batch sizes (16/32/48), learning rates ((1-10) \\* e-5), and the number of epochs (2-10). The search space is different from the original BERT because we find that MobileBERT usually needs a larger learning rate and more training epochs in fine-tuning. We select the model for testing according to their performance on the development (dev) set. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "One may wonder whether reducing the number of heads will harm the performance of the teacher model. By comparing (a) and (f) in Table 2, we can see that reducing the number of heads from 16 to 4 ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Following BERT (Devlin et al., 2018), we use the BooksCorpus (Zhu et al., 2015) and English Wikipedia as our pre-training data. To make the IB-BERT_LARGE teacher reach the same accuracy as original BERT_LARGE, we train IB-BERT_LARGE on 256 TPU v3 chips for 500k steps with a batch size of 4096 and LAMB optimizer (You et al., 2019). For a fair comparison with the original BERT, we do not use training tricks in other BERT variants (Liu et al., 2019b; Joshi et al., 2019). For MobileBERT, we use the same training schedule in the pre-training distillation stage. Additionally, we use progressive knowledge transfer to train MobileBERT, which takes additional 240k steps over 24 layers. In ablation studies, we halve the pre-training distillation schedule of MobileBERT to accelerate experiments. Moreover, in the ablation study of knowledge transfer strategies, for a fair comparison, joint knowledge transfer and auxiliary knowledge transfer also take additional 240k steps. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"of BERT until it is smaller than 512. Hence, we choose IB-BERT_LARGE with its inter-block hidden size being 512 as the teacher model.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"4.3 Results on GLUE\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text in the image reads: \"does not affect the performance of IB-BERT_LARGE.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Table 3: Experimental results on SQuAD v1.1 dev F1 score in search of good model settings for the MobileBERT student. The number of layers is set to 24 and the inter-block hidden size is set to 512 for all models. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.2 Implementation Details ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "4.2 Implementation Details ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Table 3: Experimental results on SQuAD v1.1 dev F1 score in search of good model settings for the MobileBERT student. The number of layers is set to 24 and the inter-block hidden size is set to 512 for all models. ",
+        "page_idx": 5
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"model with approximately 15M parameters called MobileBERT_TINY^4, which reduces the number of FFNs in each layer and uses a lighter MHA structure. Besides, to verify the performance of MobileBERT on real-world mobile devices, we export the models with TensorFlow Lite^5 APIs and measure the inference latencies on a 4-thread Pixel 4 phone with a fixed sequence length of 128. The results are listed in Table 4.^6\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"ing 4.3× smaller and 5.5× faster than BERTBASE. Moreover, It outperforms the strong OpenAI GPT baseline by 0.8 GLUE score with 4.3× smaller model size. It also outperforms all the other compressed BERT models with smaller or similar model sizes. Finally, we find that the introduced operational optimizations hurt the model performance a bit. Without these optimizations, MobileBERT can even outperform BERTBASE by 0.2 GLUE score.\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"SQuAD is a large-scale reading comprehension dataset. SQuAD1.1 (Rajpurkar et al., 2016) only contains questions that always have an answer in the given context, while SQuAD2.0 (Rajpurkar et al., 2018) contains unanswerable questions. We evaluate MobileBERT only on the SQuAD dev datasets, as there is nearly no single model submission on SQuAD test leaderboard. We compare our MobileBERT with BERTBASE, DistilBERT, and a strong baseline DocQA (Clark and Gardner, 2017).\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "From the table, we can see that MobileBERT is very competitive on the GLUE benchmark. MobileBERT achieves an overall GLUE score of 77.7, which is only 0.6 lower than BERTBASE, while be",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n4.4 Results on SQuAD ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Table 4: The test results on the GLUE benchmark (except WNLI). The number below each task denotes the number of training examples. The metrics for these tasks can be found in the GLUE paper (Wang et al., 2018). “OPT” denotes the operational optimizations introduced in Section 3.3. †denotes that the results are taken from (Jiao et al., 2019). \\*denotes that it can be unfair to directly compare MobileBERT with these models since MobileBERT is task-agnostically compressed while these models use the teacher model in the fine-tuning stage. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 5: The results on the SQuAD dev datasets.\n†marks our runs with the official code. ‡denotes that the results are taken from (Jiao et al., 2019).\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Table 6: Results of MobileBERT on GLUE dev accuracy and SQuAD v1.1 dev F1 score with 8-bit Quantization. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Table 6: Results of MobileBERT on GLUE dev accuracy and SQuAD v1.1 dev F1 score with 8-bit Quantization. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"4.4 Results on SQuAD\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 5: The results on the SQuAD dev datasets.\n†marks our runs with the official code. ‡denotes that the results are taken from (Jiao et al., 2019).\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We evaluate the effectiveness of the two operational optimizations introduced in Section 3.3, i.e., replacing layer normalization (LayerNorm) with NoNorm and replacing gelu activation with relu activation. We report the inference latencies using the same experimental setting as in Section 4.6.1. From Table 7, we can see that both NoNorm and relu are very effective in reducing the latency of MobileBERT, while the two operational optimizations do not reduce FLOPS. This reveals the gap between the real-world inference latency and the theoretical computation overhead (i.e., FLOPS). ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We can see that the proposed Feature Map Transfer contributes most to the performance improvement of MobileBERT, while Attention Transfer and Pre-training Distillation also play positive roles. We can also find that our IB-BERT_LARGE teacher is as powerful as the original IB-BERT_LARGE while MobileBERT degrades greatly when compared to its teacher. So we believe that there is still a big room in the improvement of MobileBERT. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"in Table 8, progressive knowledge transfer consistently outperforms the other two strategies. We notice that there is a significant performance gap between auxiliary knowledge transfer and the other two strategies. We think the reason is that the intermediate layer-wise knowledge (i.e., attention maps and feature maps) from the teacher may not be optimal for the student, so the student needs an additional pre-training distillation stage to fine-tune its parameters.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We finally conduct a set of ablation experiments with regard to Attention Transfer (AT), Feature Map Transfer (FMT) and Pre-training Distillation (PD). The operational OPTimizations (OPT) are removed in these experiments to make a fair comparison between MobileBERT and the original BERT. The results are listed in Table 9. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We apply the standard post-training quantization in TensorFlow Lite to MobileBERT. The results are shown in Table 6. We find that while quantization can further compress MobileBERT by 4×, there is nearly no performance degradation from it. This indicates that there is still a big room in the compression of MobileBERT. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We also study how the choice of training strategy, i.e., auxiliary knowledge transfer, joint knowledge transfer, and progressive knowledge transfer, can affect the performance of MobileBERT. As shown ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "We have presented MobileBERT which is a task-agnostic compact variant of BERT. Empirical results on popular NLP benchmarks show that MobileBERT is comparable with BERTBASE while being much smaller and faster. MobileBERT can ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "As shown in Table 5, MobileBERT outperforms a large margin over all the other models with smaller or similar model sizes. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The effectiveness of operational optimizations on real-world inference latency for MobileBERT. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.6.1 Operational Optimizations ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"4.5 Quantization\". ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.6.3 Training Objectives ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"5 Conclusion\". ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "4.6.2 Training Strategies ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"4.6 Ablation Studies\". ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "Table 9: Ablation on the dev sets of GLUE benchmark. BERTBASE and the bare MobileBERT (i.e., w/o PD, FMT, AT, FMT & OPT) use the standard BERT pre-training scheme. PD, AT, FMT, and OPT denote Pretraining Distillation, Attention Transfer, Feature Map Transfer, and operational OPTimizations respectively. †marks our runs with the official code. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 8: Ablation study of MobileBERT on GLUE dev accuracy and SQuAD v1.1 dev F1 score with Auxiliary Knowledge Transfer (AKT), Joint Knowledge Transfer (JKT), and Progressive Knowledge Transfer (PKT).\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"In this paper, we show that 1) it is crucial to keep MobileBERT deep and thin, 2) bottleneck/inverted-bottleneck structures enable effective layer-wise knowledge transfer, and 3) progressive knowledge transfer can efficiently train MobileBERT. We believe our findings are generic and can be applied to other model compression problems.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "enable various NLP applications7 to be easily deployed on mobile devices. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nFei Gao, Lijun Wu, Li Zhao, Tao Qin, Xueqi Cheng, and Tie-Yan Liu. 2018. Efficient sequence learning with group recurrent networks. In Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers), pages 799–808. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Ganesh Jawahar, Benoît Sagot, Djamé Seddah, Samuel Unicomb, Gerardo Iñiguez, Márton Karsai, Yannick Léo, Márton Karsai, Carlos Sarraute, Éric Fleury, et al. 2019. What does bert learn about the structure of language? In 57th Annual Meeting of the Association for Computational Linguistics (ACL), Florence, Italy.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Forrest N Iandola, Song Han, Matthew W Moskewicz, Khalid Ashraf, William J Dally, and Kurt Keutzer. 2016. SqueezeNet: Alexnet-level accuracy with 50x fewer parameters and 0.5 mb model size. arXiv preprint arXiv:1602.07360.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Kevin Clark, Minh-Thang Luong, Urvashi Khandelwal, Christopher D Manning, and Quoc V Le. 2019b. Bam! born-again multi-task networks for natural language understanding. arXiv preprint arXiv:1907.04829.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"William B Dolan and Chris. Brockett. 2005. Automatically constructing a corpus of sentential paraphrases. In Proceedings of the International Workshop on Paraphrasing.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAndrew G Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, and Hartwig Adam. 2017. MobileNets: Efficient convolutional neural networks for mobile vision applications. arXiv preprint arXiv:1704.04861. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nDaniel Cer, Mona Diab, Eneko Agirre, Inigo Lopez-Gazpio, and Lucia Specia. 2017. Semeval-2017 task 1: Semantic textual similarity-multilingual and cross-lingual focused evaluation. arXiv preprint arXiv:1708.00055. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nKaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 770–778. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAndrew Howard, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo Chen, Mingxing Tan, Weijun Wang, Yukun Zhu, Ruoming Pang, Vijay Vasudevan, et al. 2019. Searching for mobilenetv3. arXiv preprint arXiv:1905.02244. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Kevin Clark, Urvashi Khandelwal, Omer Levy, and Christopher D Manning. 2019a. What does bert look at? an analysis of bert's attention. arXiv preprint arXiv:1906.04341.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nCristian Bucilu, Rich Caruana, and Alexandru Niculescu-Mizil. 2006. Model compression. In Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining, pages 535–541. ACM. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nJimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer normalization. arXiv preprint arXiv:1607.06450. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nGeoffrey Hinton, Oriol Vinyals, and Jeff Dean. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nChristopher Clark and Matt Gardner. 2017. Simple and effective multi-paragraph reading comprehension. arXiv preprint arXiv:1710.10723. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nDan Hendrycks and Kevin Gimpel. 2016. Bridging nonlinearities and stochastic regularizers with gaussian error linear units. arXiv. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nOleksii Kuchaiev and Boris Ginsburg. 2017. Factorization tricks for lstm networks. arXiv preprint arXiv:1703.10722. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nJacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. arXiv preprint arXiv:1810.04805. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nZ. Chen, H. Zhang, X. Zhang, and L. Zhao. 2018. Quora question pairs. Quora. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nXiaoqi Jiao, Yichun Yin, Lifeng Shang, Xin Jiang, Xiao Chen, Linlin Li, Fang Wang, and Qun Liu. 2019. Tinybert: Distilling bert for natural language understanding. arXiv preprint arXiv:1909.10351. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nYoon Kim and Alexander M Rush. 2016. Sequence-level knowledge distillation. arXiv preprint arXiv:1606.07947. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMandar Joshi, Danqi Chen, Yinhan Liu, Daniel S Weld, Luke Zettlemoyer, and Omer Levy. 2019. Spanbert: Improving pre-training by representing and predicting spans. arXiv preprint arXiv:1907.10529. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nLuisa Bentivogli, Ido Dagan, Hoa Trang Dang, Danilo Giampiccolo, and Bernardo Magnini. 2009. The fifth PASCAL recognizing textual entailment challenge. TAC. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Here is the text content from the image:\n\n\\`\\`\\`\nKaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. 2016. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, pages 770–778.\n\nDan Hendrycks and Kevin Gimpel. 2016. Bridging nonlinearities and stochastic regularizers with gaussian error linear units. arXiv.\n\nGeoffrey Hinton, Oriol Vinyals, and Jeff Dean. 2015. Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531.\n\nAndrew Howard, Mark Sandler, Grace Chu, Liang-Chieh Chen, Bo Chen, Mingxing Tan, Weijun Wang, Yukun Zhu, Ruoming Pang, Vijay Vasudevan, et al. 2019. Searching for mobilenetv3. arXiv preprint arXiv:1905.02244.\n\nAndrew G Howard, Menglong Zhu, Bo Chen, Dmitry Kalenichenko, Weijun Wang, Tobias Weyand, Marco Andreetto, and Hartwig Adam. 2017. Mobilenets: Efficient convolutional neural networks for mobile vision applications. arXiv preprint arXiv:1704.04861.\n\nForrest N Iandola, Song Han, Matthew W Moskewicz, Khalid Ashraf, William J Dally, and Kurt Keutzer. 2016. Squeezenet: Alexnet-level accuracy with 50x fewer parameters and; 0.5 mb model size. arXiv preprint arXiv:1602.07360.\n\nGanesh Jawahar, Benoît Sagot, Djamé Seddah, Samuel Unicomb, Gerardo Iñiguez, Márton Karsai, Yannick Léo, Márton Karsai, Carlos Sarraute, Éric Fleury, et al. 2019. What does bert learn about the structure of language? In 57th Annual Meeting of the Association for Computational Linguistics (ACL), Florence, Italy.\n\nXiaoqi Jiao, Yichun Yin, Lifeng Shang, Xin Jiang, Xiao Chen, Linlin Li, Fang Wang, and Qun Liu. 2019. Tinybert: Distilling bert for natural language understanding. arXiv preprint arXiv:1909.10351.\n\nMandar Joshi, Danqi Chen, Yinhan Liu, Daniel S Weld, Luke Zettlemoyer, and Omer Levy. 2019. Spanbert: Improving pre-training by representing and predicting spans. arXiv preprint arXiv:1907.10529.\n\nYoon Kim and Alexander M Rush. 2016. Sequence-level knowledge distillation. arXiv preprint arXiv:1606.07947.\n\nOleksii Kuchaiev and Boris Ginsburg. 2017. Factorization tricks for lstm networks. arXiv preprint\n\\`\\`\\` ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "\\`\\`\\`markdown\n# References\n\n- Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. 2016. Layer normalization. \\*arXiv preprint arXiv:1607.06450\\*.\n\n- Luisa Bentivogli, Ido Dagan, Hoa Trang Dang, Danilo Giampiccolo, and Bernardo Magnini. 2009. The fifth PASCAL recognizing textual entailment challenge. \\*TAC\\*.\n\n- Cristian Bucilu, Rich Caruana, and Alexandru Niculescu-Mizil. 2006. Model compression. In \\*Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining\\*, pages 535–541. ACM.\n\n- Daniel Cer, Mona Diab, Eneko Agirre, Inigo Lopez-Gazpio, and Lucia Specia. 2017. Semeval-2017 task 1: Semantic textual similarity-multilingual and cross-lingual focused evaluation. \\*arXiv preprint arXiv:1708.00055\\*.\n\n- Z. Chen, H. Zhang, X. Zhang, and L. Zhao. 2018. Quora question pairs. \\*Quora\\*.\n\n- Christopher Clark and Matt Gardner. 2017. Simple and effective multi-paragraph reading comprehension. \\*arXiv preprint arXiv:1710.10723\\*.\n\n- Kevin Clark, Urvashi Khandelwal, Omer Levy, and Christopher D Manning. 2019a. What does bert look at? an analysis of bert’s attention. \\*arXiv preprint arXiv:1906.04341\\*.\n\n- Kevin Clark, Minh-Thang Luong, Urvashi Khandelwal, Christopher D Manning, and Quoc V Le. 2019b. Bam! born-again multi-task networks for natural language understanding. \\*arXiv preprint arXiv:1907.04829\\*.\n\n- Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2018. Bert: Pre-training of deep bidirectional transformers for language understanding. \\*arXiv preprint arXiv:1810.04805\\*.\n\n- William B Dolan and Chris. Brockett. 2005. Automatically constructing a corpus of sentential paraphrases. In \\*Proceedings of the International Workshop on Paraphrasing\\*.\n\\`\\`\\` ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMingxing Tan, Bo Chen, Ruoming Pang, Vijay Vasudevan, Mark Sandler, Andrew Howard, and Quoc V Le. 2019. Mnasnet: Platform-aware neural architecture search for mobile. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 2820–2828. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Mark Sandler, Andrew Howard, Menglong Zhu, Andrey Zhmoginov, and Liang-Chieh Chen. 2018. MobileNetv2: Inverted residuals and linear bottlenecks. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 4510–4520.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAdriana Romero, Nicolas Ballas, Samira Ebrahimi Kahou, Antoine Chassang, Carlo Gatta, and Yoshua Bengio. 2014. Fitnets: Hints for thin deep nets. arXiv preprint arXiv:1412.6550. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nYinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019b. Roberta: A robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nHector J Levesque, Ernest Davis, and Leora Morgenstern. 2011. The Winograd schema challenge. In AAAI Spring Symposium: Logical Formalizations of Commonsense Reasoning., volume 46, page 47. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. Improving language understanding by generative pre-training. URL https://s3-us-west-2.amazonaws.com/openai-assets/researchcovers/languageunsupervised/languageunderstandingpaper.pdf. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nTaku Kudo and John Richardson. 2018. Sentencepiece: A simple and language independent subword tokenizer and detokenizer for neural text processing. arXiv preprint arXiv:1808.06226. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nXiaodong Liu, Pengcheng He, Weizhu Chen, and Jianfeng Gao. 2019a. Multi-task deep neural networks for natural language understanding. arXiv preprint arXiv:1901.11504. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nZhuohan Li, Di He, Fei Tian, Tao Qin, Liwei Wang, and Tie-Yan Liu. 2019. Hint-based training for non-autoregressive translation. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nVictor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf. 2019. Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter. arXiv preprint arXiv:1910.01108. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nPranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad: 100,000+ questions for machine comprehension of text. arXiv preprint arXiv:1606.05250. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAdina Williams, Nikita Nangia, and Samuel R. Bowman. 2018. A broad-coverage challenge corpus for sentence understanding through inference. In Proceedings of NAACL-HLT. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nHenry Tsai, Jason Riesa, Melvin Johnson, Naveen Arivazhagan, Xin Li, and Amelia Archer. 2019. Small and practical bert models for sequence labeling. arXiv preprint arXiv:1909.00100. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nSiqi Sun, Yu Cheng, Zhe Gan, and Jingjing Liu. 2019. Patient knowledge distillation for bert model compression. arXiv preprint arXiv:1908.09355. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nRichard Socher, Alex Perelygin, Jean Wu, Jason Chuang, Christopher D Manning, Andrew Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of EMNLP., pages 1631–1642. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nIulia Turc, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. Well-read students learn better: The impact of student initialization on knowledge distillation. arXiv preprint arXiv:1908.08962. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nMatthew E Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep contextualized word representations. arXiv preprint arXiv:1802.05365. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nRaphael Tang, Yao Lu, Linqing Liu, Lili Mou, Olga Vechtomova, and Jimmy Lin. 2019. Distilling task-specific knowledge from bert into simple neural networks. arXiv preprint arXiv:1903.12136. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nPing Luo, Zhenyao Zhu, Ziwei Liu, Xiaogang Wang, and Xiaou Tang. 2016. Face model compression by distilling knowledge from neurons. In Thirtieth AAAI Conference on Artificial Intelligence. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Vinod Nair and Geoffrey E Hinton. 2010. Rectified linear units improve restricted boltzmann machines. In Proceedings of the 27th international conference on machine learning (ICML-10), pages 807–814. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAlex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel R Bowman. 2018. Glue: A multi-task benchmark and analysis platform for natural language understanding. arXiv preprint arXiv:1804.07461. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nBrian W Matthews. 1975. Comparison of the predicted and observed secondary structure of t4 phage lysozyme. Biochimica et Biophysica Acta (BBA)-Protein Structure, 405(2):442–451. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. 2019. Language models are unsupervised multitask learners. OpenAI Blog, 1(8).\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Pranav Rajpurkar, Robin Jia, and Percy Liang. 2018. Know what you don’t know: Unanswerable questions for squad. arXiv preprint arXiv:1806.03822.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nAlex Warstadt, Amanpreet Singh, and Samuel R. Bowman. 2018. Neural network acceptability judgments. arXiv preprint 1805.12471. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Victor Sanh, Lysandre Debut, Julien Chaumond, and Thomas Wolf. 2019. Distilbert, a distilled version of bert: smaller, faster, cheaper and lighter. arXiv preprint arXiv:1910.01108.\n\nRichard Socher, Alex Perelygin, Jean Wu, Jason Chuang, Christopher D Manning, Andrew Ng, and Christopher. Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of EMNLP, pages 1631–1642.\n\nSiqi Sun, Yu Cheng, Zhe Gan, and Jingjing Liu. 2019. Patient knowledge distillation for bert model compression. arXiv preprint arXiv:1908.09355.\n\nMingxing Tan, Bo Chen, Ruoming Pang, Vijay Vasudevan, Mark Sandler, Andrew Howard, and Quoc V Le. 2019. Mnasnet: Platform-aware neural architecture search for mobile. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 2820–2828.\n\nRaphael Tang, Yao Lu, Lingqing Liu, Lili Mou, Olga Vechtomova, and Jimmy Lin. 2019. Distilling task-specific knowledge from bert into simple neural networks. arXiv preprint arXiv:1903.12136.\n\nHenry Tsai, Jason Riesa, Melvin Johnson, Naveen Arivazhagan, Xin Li, and Amelia Archer. 2019. Small and practical bert models for sequence labeling. arXiv preprint arXiv:1909.00100.\n\nIulia Turc, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. Well-read students learn better: The impact of student initialization on knowledge distillation. arXiv preprint arXiv:1908.08962.\n\nAlex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel R Bowman. 2018. Glue: A multi-task benchmark and analysis platform for natural language understanding. arXiv preprint arXiv:1804.07461.\n\nAlex Warstadt, Amanpreet Singh, and Samuel R. Bowman. 2018. Neural network acceptability judgments. arXiv preprint 1805.12471.\n\nAdina Williams, Nikita Nangia, and Samuel R. Bowman. 2018. A broad-coverage challenge corpus for sentence understanding through inference. In Proceedings of NAACL-HLT. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "Sure, here is the text content from the image:\n\nZhuohan Li, Di He, Yer Han, Tao Qin, Liwei Wang, and Tie-Yan Liu. 2019. Hint-based training for non-autoregressive translation.\n\nXiaodong Liu, Pengcheng He, Weizhu Chen, and Jianfeng Gao. 2019a. Multi-task deep neural networks for natural language understanding. arXiv preprint arXiv:1901.11504.\n\nYinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, and Veselin Stoyanov. 2019b. Roberta: A robustly optimized bert pretraining approach. arXiv preprint arXiv:1907.11692.\n\nPing Luo, Zhenyao Zhu, Ziwei Liu, Xiaogang Wang, and Xiaoou Tang. 2016. Face model compression by distilling knowledge from neurons. In Thirtieth AAAI Conference on Artificial Intelligence.\n\nBrian W Matthews. 1975. Comparison of the predicted and observed secondary structure of t4 phage lysozyme. Biochimica et Biophysica Acta (BBA)-Protein Structure, 405(2):442–451.\n\nVinod Nair and Geoffrey E Hinton. 2010. Rectified linear units improve restricted boltzmann machines. In Proceedings of the 27th international conference on machine learning (ICML-10), pages 807–814.\n\nMatthew E Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018. Deep contextualized word representations. arXiv preprint arXiv:1802.05365.\n\nAlec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. Improving language understanding by generative pre-training. URL https://s3-us-west-2.amazonaws.com/openai-assets/researchcovers/languageunsupervised/languageunderstandingpaper.pdf.\n\nAlec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. 2019. Language models are unsupervised multitask learners. OpenAI Blog, 1(8).\n\nPranav Rajpurkar, Robin Jia, and Percy Liang. 2018. Know what you don’t know: Unanswerable questions for squad. arXiv preprint arXiv:1806.03822.\n\nPranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad: 100,000+ questions for machine comprehension of text. arXiv preprint arXiv:1606.05250. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "While much recent research has focused on improving efficient Convolutional Neural Networks (CNN) for mobile vision applications (Iandola et al., 2016; Howard et al., 2017; Zhang et al., 2017, 2018; Sandler et al., 2018; Tan et al., 2019; Howard et al., 2019), they are usually tailored for CNN. Popular lightweight operations such as depth-wise convolution (Howard et al., 2017) cannot be directly applied to Transformer or BERT. In the NLP literature, the most relevant work can be group LSTMs (Kuchaiev and Ginsburg, 2017; Gao et al., 2018), which employs the idea of group convolution (Zhang et al., 2017, 2018) into Recurrent Neural Networks (RNN). ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "We visualize the attention distributions of the 1st and the 12th layers of a few models in the ablation study for further investigation. They are shown in Figure 3. We find that the proposed attention transfer can help the student mimic the attention distributions of the teacher very well. Surprisingly, we find that the attention distributions in the attention heads of \"MobileBERT(bare)+PD+FMT\" are exactly a re-order of those of \"MobileBERT(bare)+PD+FMT+AT\" (also the teacher model), even if it has not been trained by the attention transfer objective. This phenomenon indicates that multi-head attention is a crucial and unique part of the non-linearity of BERT. Moreover, it can explain the minor improvements of Attention Transfer in the ablation study table, since the alignment of feature maps lead to the alignment of attention distributions. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"and deep networks. Luo et al. (2016) show that the knowledge of the teacher can also be obtained from the neurons in the top hidden layer. Similar to our proposed progressive knowledge transfer scheme, Yeo et al. (2018) proposed a sequential knowledge transfer scheme to distill knowledge from a deep teacher into a shallow student in a sequential way. Zagoruyko and Komodakis (2016) proposed to transfer the attention maps of the teacher on images. Li et al. (2019) proposed to transfer the similarity of hidden states and word alignment from an autoregressive Transformer teacher to a non-autoregressive student.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Exploiting knowledge transfer to compress model size was first proposed by Bucilu et al. (2006). The idea was then adopted in knowledge distillation (Hinton et al., 2015), which requires the smaller student network to mimic the class distribution output of the larger teacher network. Fitnets (Romero et al., 2014) make the student mimic the intermediate hidden layers of the teacher to train narrow.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nYukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and Sanja Fidler. 2015. Aligning books and movies: Towards story-like visual explanations by watching movies and reading books. In Proceedings of the IEEE international conference on computer vision, pages 19–27. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nDoyeob Yeo, Ji-Roon Bae, Nae-Soo Kim, Cheol-Sig Pyo, Junho Yim, and Junmo Kim. 2018. Sequential knowledge transfer in teacher-student framework using densely distilled flow-based information. In 2018 25th IEEE International Conference on Image Processing (ICIP), pages 674–678. IEEE. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nXing Wu, Shangwen Lv, Liangjun Zang, Jizhong Han, and Songlin Hu. 2019. Conditional bert contextual augmentation. In International Conference on Computational Science, pages 84–95. Springer. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nZhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Ruslan Salakhutdinov, and Quoc V Le. 2019. Xlnet: Generalized autoregressive pretraining for language understanding. arXiv preprint arXiv:1906.08237. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nXiangyu Zhang, Xinyu Zhou, Mengxiao Lin, and Jian Sun. 2018. Shufflenet: An extremely efficient convolutional neural network for mobile devices. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 6848–6856. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Sergey Zagoruyko and Nikos Komodakis. 2016. Paying more attention to attention: Improving the performance of convolutional neural networks via attention transfer. arXiv preprint arXiv:1612.03928.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nTing Zhang, Guo-Jun Qi, Bin Xiao, and Jingdong Wang. 2017. Interleaved group convolutions. In Proceedings of the IEEE International Conference on Computer Vision, pages 4373–4382. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nYang You, Jing Li, Sashank Reddi, Jonathan Hseu, Sanjiv Kumar, Srinadh Bhojanapalli, Xiaodan Song, James Demmel, and Cho-Jui Hsieh. 2019. Large batch optimization for deep learning: Training bert in 76 minutes. arXiv preprint arXiv:1904.00962. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"B Extra Related Work on Compact Architecture Design\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "C Visualization of Attention Distributions ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Appendix for \"MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "A Extra Related Work on Knowledge Transfer ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "For a fair comparison with original BERT, we follow the same pre-processing scheme as BERT, where we mask 15% of all WordPiece (Kudo and Richardson, 2018) tokens in each sequence at random and use next sentence prediction. Please note that MobileBERT can be potentially further improved by several training techniques recently introduced, such as span prediction (Joshi et al., 2019) or removing next sentence prediction objective (Liu et al., 2019b). We leave it for future work. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "We use a lighter MHA structure for MobileBERT_TINY. As illustrated in Figure 4, instead of using hidden states from the inter-block feature maps as inputs to MHA, we use the reduced intra-block feature maps as key, query, and values in MHA for MobileBERT_TINY. This can effectively reduce the parameters in MHA modules, but might harm the model capacity. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In pre-training distillation, the hyperparameter α is used to balance the original masked language modeling loss and the distillation loss. Following (Kim and Rush, 2016), we set α to 0.5. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "ceptability judgments drawn from books and journal articles on linguistic theory. The task is to predict whether an example is a grammatical English sentence and is evaluated by Matthews correlation coefficient (Matthews, 1975). ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "In this section, we provide a brief description of the tasks in the GLUE benchmark (Wang et al., 2018). ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "SST-2 The Stanford Sentiment Treebank (Socher et al., 2013) is a collection of sentences from movie reviews and human annotations of their sentiment. The task is to predict the sentiment of a given sentence and is evaluated by accuracy. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Figure 4: Illustration of MobileBERT_TINY. red lines denote inter-block flows while blue lines intra-block flows.\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"CoLA The Corpus of Linguistic Acceptability (Warstadt et al., 2018) is a collection of English ac-\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"D Extra Experimental Settings\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"E Architecture of MobileBERT_TINY\" ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"F GLUE Dataset\". ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Figure 3: The visualization of the attention distributions in some attention heads of the IB-BERT teacher and different MobileBERT models. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Figure 3: The visualization of the attention distributions in some attention heads of the IB-BERT teacher and different MobileBERT models. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The Microsoft Research Paraphrase Corpus (Dolan and Brockett, 2005) is a collection of sentence pairs automatically extracted from online news sources. They are labeled by human annotations for whether the sentences in the pair are semantically equivalent. The performance is evaluated by both accuracy and F1 score. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The Multi-Genre Natural Language Inference Corpus (Williams et al., 2018) is a collection of sentence pairs with textual entailment annotations. Given a premise sentence and a hypothesis sentence, the task is to predict whether the premise entails the hypothesis (entailment), contradicts the hypothesis (contradiction), or neither (neutral) and is evaluated by accuracy on both matched (in-domain) and mismatched (cross-domain) sections of the test data. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The Semantic Textual Similarity Benchmark (Cer et al., 2017) is a collection of sentence pairs drawn from news headlines, video and image captions, and natural language inference data. Each pair is human-annotated with a similarity score from 1 to 5. The task is to predict these scores and is evaluated by Pearson and Spearman correlation coefficients. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The Quora Question Pairs (Chen et al., 2018) dataset is a collection of question pairs from the community question-answering website Quora. The task is to determine whether a pair of questions are semantically equivalent and is evaluated by both accuracy and F1 score. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "QNLI The Question-answering NLI dataset is converted from the Stanford Question Answering Dataset (SQuAD) (Rajpurkar et al., 2016). The task is to determine whether the context sentence contains the answer to the question and is evaluated by the test accuracy. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "RTE The Recognizing Textual Entailment (RTE) datasets come from a series of annual textual entailment challenges (Bentivogli et al., 2009). The task is to predict whether sentences in a sentence pair are entailment and is evaluated by accuracy. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "from a list of choices. We follow Devlin et al. (2018) to skip this task in our experiments, because few previous works do better than predicting the majority class for this task. ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The Winograd Schema Challenge (Levesque et al., 2011) is a reading comprehension task in which a system must read a sentence with a pronoun and select the referent of that pronoun ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    }
+]

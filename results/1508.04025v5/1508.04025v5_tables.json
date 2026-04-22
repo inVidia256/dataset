@@ -1,0 +1,102 @@
+{
+    "total_count": 6,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                75,
+                60,
+                521,
+                262
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>Ppl</td>\n    <td>BLEU</td>\n  </tr>\n  <tr>\n    <td>Winning WMT'14 system - phrase-based + large LM(Buck etal，2014)</td>\n    <td></td>\n    <td>20.7</td>\n  </tr>\n  <tr>\n    <td>Existing NMT systems</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>RNN search(Jean etal，2015)</td>\n    <td></td>\n    <td>16.5</td>\n  </tr>\n  <tr>\n    <td>RNN search+unk replace(Jean etal，2015)</td>\n    <td></td>\n    <td>19.0</td>\n  </tr>\n  <tr>\n    <td>RNN search+unk replace+large vocab+ensemble 8 models(Jean etal，2015)</td>\n    <td></td>\n    <td>21.6</td>\n  </tr>\n  <tr>\n    <td>Our NMT systems</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Base</td>\n    <td>10.6</td>\n    <td>11.3</td>\n  </tr>\n  <tr>\n    <td>Base+reverse</td>\n    <td>9.9</td>\n    <td>12.6(+1.3)</td>\n  </tr>\n  <tr>\n    <td>Base+reverse+dropout</td>\n    <td>8.1</td>\n    <td>14.0(+1.4)</td>\n  </tr>\n  <tr>\n    <td>Base+reverse+dropout+global attention(location)</td>\n    <td>7.3</td>\n    <td>16.8(+2.8)</td>\n  </tr>\n  <tr>\n    <td>Base+reverse+dropout+global attention(location)+feed input</td>\n    <td>6.4</td>\n    <td>18.1(+1.3)</td>\n  </tr>\n  <tr>\n    <td>Base+reverse+dropout+local-p attention(general)+feed input</td>\n    <td>5.9</td>\n    <td>19.0(+0.9)</td>\n  </tr>\n  <tr>\n    <td>Base+reverse+dropout+local-p attention(general)+feed input+unk replace</td>\n    <td>5.9</td>\n    <td>20.9(+1.9)</td>\n  </tr>\n  <tr>\n    <td>Ensemble 8 models+unk replace</td>\n    <td></td>\n    <td>23.0(+2.1)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                73,
+                86,
+                296,
+                129
+            ],
+            "caption": "The text content from the image is:\n\n\"best system (Jean et al., 2015) by +1.4 BLEU.\" The text content from the image is:\n\n\"best system (Jean et al., 2015) by +1.4 BLEU.\" Table 2: WMT'15 English-German results – NIST BLEU scores of the winning entry in WMT'15 and our best one on newstest2015. Table 2: WMT'15 English-German results – NIST BLEU scores of the winning entry in WMT'15 and our best one on newstest2015.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>BLEU</td>\n  </tr>\n  <tr>\n    <td>Top-NMT + 5-gram rerank (Montreal)</td>\n    <td>24.9</td>\n  </tr>\n  <tr>\n    <td>Our ensemble 8 models + unk replace</td>\n    <td>25.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                307,
+                60,
+                532,
+                183
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>Ppl.</td>\n    <td>BLEU</td>\n  </tr>\n  <tr>\n    <td>WMT'15 systems</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>SOTA-phrase-based(Edinburgh)</td>\n    <td></td>\n    <td>29.2</td>\n  </tr>\n  <tr>\n    <td>NMT+5-gram rerank(MILA)</td>\n    <td></td>\n    <td>27.6</td>\n  </tr>\n  <tr>\n    <td>Our NMT systems</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Base(reverse)</td>\n    <td>14.3</td>\n    <td>16.9</td>\n  </tr>\n  <tr>\n    <td>+global(location)</td>\n    <td>12.7</td>\n    <td>19.1(+2.2)</td>\n  </tr>\n  <tr>\n    <td>+global(location)+feed</td>\n    <td>10.9</td>\n    <td>20.1(+1.0)</td>\n  </tr>\n  <tr>\n    <td>+global(dot)+drop+feed</td>\n    <td>9.7</td>\n    <td>22.8(+2.7)</td>\n  </tr>\n  <tr>\n    <td>+global(dot)+drop+feed+unk</td>\n    <td></td>\n    <td>24.9(+2.1)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                72,
+                229,
+                296,
+                356
+            ],
+            "caption": "Table 4: Attentional Architectures – performances of different attentional models. We trained two local-m (dot) models; both have ppl > 7.0. Table 4: Attentional Architectures – performances of different attentional models. We trained two local-m (dot) models; both have ppl > 7.0. Table 4: Attentional Architectures – performances of different attentional models. We trained two local-m (dot) models; both have ppl > 7.0.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>Ppl</td>\n    <td>BLEU</td>\n  </tr>\n  <tr>\n    <td>Before</td>\n    <td>After unk</td>\n  </tr>\n  <tr>\n    <td>global(location)</td>\n    <td>6.4</td>\n    <td>18.1</td>\n    <td>19.3(+1.2)</td>\n  </tr>\n  <tr>\n    <td>global(dot)</td>\n    <td>6.1</td>\n    <td>18.6</td>\n    <td>20.5(+1.9)</td>\n  </tr>\n  <tr>\n    <td>global(general)</td>\n    <td>6.1</td>\n    <td>17.3</td>\n    <td>19.1(+1.8)</td>\n  </tr>\n  <tr>\n    <td>local-m(dot)</td>\n    <td>&gt;7.0</td>\n    <td>x</td>\n    <td>x</td>\n  </tr>\n  <tr>\n    <td>local-m(general)</td>\n    <td>6.2</td>\n    <td>18.6</td>\n    <td>20.4(+1.8)</td>\n  </tr>\n  <tr>\n    <td>local-p(dot)</td>\n    <td>6.6</td>\n    <td>18.0</td>\n    <td>19.6(+1.9)</td>\n  </tr>\n  <tr>\n    <td>local-p(general)</td>\n    <td>5.9</td>\n    <td>19</td>\n    <td>20.9(+1.9)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                352,
+                61,
+                478,
+                145
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 6: AER scores – results of various models on the RWTH English-German alignment data.\" The text content from the image is:\n\n\"Table 6: AER scores – results of various models on the RWTH English-German alignment data.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>AER</td>\n  </tr>\n  <tr>\n    <td>global(location)</td>\n    <td>0.39</td>\n  </tr>\n  <tr>\n    <td>local-m(general)</td>\n    <td>0.34</td>\n  </tr>\n  <tr>\n    <td>local-p(general)</td>\n    <td>0.36</td>\n  </tr>\n  <tr>\n    <td>dashed line</td>\n    <td>dashed line</td>\n  </tr>\n  <tr>\n    <td>ensemble</td>\n    <td>0.34</td>\n  </tr>\n  <tr>\n    <td>Berkeley Aligner</td>\n    <td>0.32</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                85,
+                73,
+                510,
+                454
+            ],
+            "caption": "English-German translations English-German translations",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>src</td>\n    <td>Orlando Bloom and Miranda Kerr still love each other</td>\n  </tr>\n  <tr>\n    <td>ref</td>\n    <td>Orlando Bloom und Miranda Kerr lieben sich noch immer</td>\n  </tr>\n  <tr>\n    <td>best</td>\n    <td>Orlando Bloom und Miranda Kerr lieben einander noch immer.</td>\n  </tr>\n  <tr>\n    <td>base</td>\n    <td>Orlando Bloom und Lucas Miranda lieben einander noch immer.</td>\n  </tr>\n  <tr>\n    <td>src</td>\n    <td>\"We're pleased the FAA recognizes that an enjoyable passenger experience is not incompatible with safety and security，\" said Roger Dow，CEO of the U.S.Travel Association.</td>\n  </tr>\n  <tr>\n    <td>ref</td>\n    <td>“Wir freuen uns， dass die FAA erkennt，dass ein angenehmes Passagiererlebnis nicht im Widerspruch zur Sicherheit steht”，sagte Roger Dow，CEO der U.S.Travel Association.</td>\n  </tr>\n  <tr>\n    <td>best</td>\n    <td>“Wir freuen uns， dass die FAA anerkennt，dass ein angenehmes ist nicht mit Sicherheit und Sicherheit unvereinbar ist”，sagte Roger Dow，CEO der US-die.</td>\n  </tr>\n  <tr>\n    <td>base</td>\n    <td>“Wir freuen uns über die<unk>，dass ein<unk> unk>mit Sicherheit nicht vereinbar ist mit Sicherheit und Sicherheit”，sagte Roger Cameron，CEO der US<unk>.</unk></unk></unk></td>\n  </tr>\n  <tr>\n    <td>German-English translations</td>\n  </tr>\n  <tr>\n    <td>src</td>\n    <td>In einem Interview sagte Bloom jedoch，dass er und Kerr sich noch immer lieben.</td>\n  </tr>\n  <tr>\n    <td>ref</td>\n    <td>However，in an interview，Bloom has said that he and Kerr still love each other.</td>\n  </tr>\n  <tr>\n    <td>best</td>\n    <td>In an interview，however，Bloom said that he and Kerr still love.</td>\n  </tr>\n  <tr>\n    <td>base</td>\n    <td>However，in an interview，Bloom said that he and Tina were still<unk>.</unk></td>\n  </tr>\n  <tr>\n    <td>src</td>\n    <td>Wegen der von Berlin und der Europaischen Zentralbank verhangenen strengen Sparpolitik in Verbindung mit der Zwangsjacke，in die die jeweilige nationale Wirtschaft durch das Festhalten an der gemeinsamen Wahrung genotigt wird，sind viele Menschen der Ansicht，das Projekt Europa sei zu weit gegangen</td>\n  </tr>\n  <tr>\n    <td>ref</td>\n    <td>The austerity imposed by Berlin and the European Central Bank，coupled with the straitjacket imposed on national economies through adherence to the common currency，has led many people to think Project Europe has gone too far.</td>\n  </tr>\n  <tr>\n    <td>best</td>\n    <td>Because of the strict austerity measures imposed by Berlin and the European Central Bank in connection with the straitjacket in which the respective national economy is forced to adhere to the common currency，many people believe that the European project has gone too far.</td>\n  </tr>\n  <tr>\n    <td>base</td>\n    <td>Because of the pressure imposed by the European Central Bank and the Federal Central Bank with the strict austerity imposed on the national economy in the face of the single currency，many people believe that the European project has gone too far.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page009.png"
+        }
+    ]
+}

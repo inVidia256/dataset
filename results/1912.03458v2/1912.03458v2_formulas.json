@@ -1,0 +1,66 @@
+{
+    "total_count": 5,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                63,
+                628,
+                271,
+                666
+            ],
+            "content": "```latex\nO(\\tilde{W}^T x + \\tilde{b}) \\gg O\\left( \\sum \\pi_k \\tilde{W}_k \\right) + O\\left( \\sum \\pi_k \\tilde{b}_k \\right) + O(\\pi(x))\n```",
+            "latex": "```latex\nO(\\tilde{W}^T x + \\tilde{b}) \\gg O\\left( \\sum \\pi_k \\tilde{W}_k \\right) + O\\left( \\sum \\pi_k \\tilde{b}_k \\right) + O(\\pi(x))\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                73,
+                297,
+                262,
+                384
+            ],
+            "content": "```latex\n\\begin{align*}\ny &= g(\\tilde{W}^T(x)x + \\tilde{b}(x)) \\\\\n\\tilde{W}(x) &= \\sum_{k=1}^{K} \\pi_k(x)\\tilde{W}_k, \\quad \\tilde{b}(x) = \\sum_{k=1}^{K} \\pi_k(x)\\tilde{b}_k \\\\\n&\\text{s.t. } 0 \\leq \\pi_k(x) \\leq 1, \\sum_{k=1}^{K} \\pi_k(x) = 1,\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\ny &= g(\\tilde{W}^T(x)x + \\tilde{b}(x)) \\\\\n\\tilde{W}(x) &= \\sum_{k=1}^{K} \\pi_k(x)\\tilde{W}_k, \\quad \\tilde{b}(x) = \\sum_{k=1}^{K} \\pi_k(x)\\tilde{b}_k \\\\\n&\\text{s.t. } 0 \\leq \\pi_k(x) \\leq 1, \\sum_{k=1}^{K} \\pi_k(x) = 1,\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                382,
+                451,
+                472,
+                479
+            ],
+            "content": "\\pi _ { k } = \\frac { \\exp ( z _ { k } / \\tau ) } { \\sum _ { j } \\exp ( z _ { j } / \\tau ) } ,",
+            "latex": "\\pi _ { k } = \\frac { \\exp ( z _ { k } / \\tau ) } { \\sum _ { j } \\exp ( z _ { j } / \\tau ) } ,"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                347,
+                202,
+                506,
+                247
+            ],
+            "content": "\\begin{array} { l } { { y = \\boldsymbol { w } ^ { T } \\operatorname* { m a x } \\{ 0 , \\boldsymbol { W } ^ { T } \\boldsymbol { x } + b \\} } } \\\\ { { \\boldsymbol { w } = \\left[ \\begin{array} { l } { 1 } \\\\ { - 2 } \\end{array} \\right] , \\boldsymbol { W } = \\left[ \\begin{array} { l l } { 1 } & { 1 } \\\\ { 1 } & { 1 } \\end{array} \\right] \\boldsymbol { b } = \\left[ \\begin{array} { l } { 0 } \\\\ { - 1 } \\end{array} \\right] , } } \\end{array}",
+            "latex": "\\begin{array} { l } { { y = \\boldsymbol { w } ^ { T } \\operatorname* { m a x } \\{ 0 , \\boldsymbol { W } ^ { T } \\boldsymbol { x } + b \\} } } \\\\ { { \\boldsymbol { w } = \\left[ \\begin{array} { l } { 1 } \\\\ { - 2 } \\end{array} \\right] , \\boldsymbol { W } = \\left[ \\begin{array} { l l } { 1 } & { 1 } \\\\ { 1 } & { 1 } \\end{array} \\right] \\boldsymbol { b } = \\left[ \\begin{array} { l } { 0 } \\\\ { - 1 } \\end{array} \\right] , } } \\end{array}"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                313,
+                274,
+                541,
+                336
+            ],
+            "content": "```latex\n\\begin{align*}\ny &= \\sum_{k=1}^{2} \\left[ \\left( \\pi_k(\\boldsymbol{x}) \\tilde{\\boldsymbol{W}}_k^T \\right) \\boldsymbol{x} + \\pi_k(\\boldsymbol{x}) \\tilde{\\boldsymbol{b}}_k \\right] \\\\\n\\tilde{\\boldsymbol{W}}_1 &= \\begin{bmatrix} -1 & 0 \\\\ 0 & 0 \\end{bmatrix}, \\quad \\tilde{\\boldsymbol{b}}_1 = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\quad \\tilde{\\boldsymbol{W}}_2 = \\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}, \\quad \\tilde{\\boldsymbol{b}}_2 = \\begin{bmatrix} 0 \\\\ 0 \\end{bmatrix},\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\ny &= \\sum_{k=1}^{2} \\left[ \\left( \\pi_k(\\boldsymbol{x}) \\tilde{\\boldsymbol{W}}_k^T \\right) \\boldsymbol{x} + \\pi_k(\\boldsymbol{x}) \\tilde{\\boldsymbol{b}}_k \\right] \\\\\n\\tilde{\\boldsymbol{W}}_1 &= \\begin{bmatrix} -1 & 0 \\\\ 0 & 0 \\end{bmatrix}, \\quad \\tilde{\\boldsymbol{b}}_1 = \\begin{bmatrix} 1 \\\\ 0 \\end{bmatrix}, \\quad \\tilde{\\boldsymbol{W}}_2 = \\begin{bmatrix} 1 & 0 \\\\ 0 & 0 \\end{bmatrix}, \\quad \\tilde{\\boldsymbol{b}}_2 = \\begin{bmatrix} 0 \\\\ 0 \\end{bmatrix},\n\\end{align*}\n```"
+        }
+    ]
+}

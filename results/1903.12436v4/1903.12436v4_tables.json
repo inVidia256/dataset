@@ -1,0 +1,118 @@
+{
+    "total_count": 7,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                106,
+                319,
+                509,
+                451
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>VAE</td>\n    <td>18.26</td>\n    <td>19.21</td>\n    <td>17.66</td>\n    <td>18.21</td>\n    <td>CIFAR</td>\n    <td>57.94</td>\n    <td>106.37</td>\n    <td>103.78</td>\n    <td>88.62</td>\n    <td>CELEBA</td>\n    <td>39.12</td>\n    <td>48.12</td>\n    <td>45.52</td>\n    <td>44.49</td>\n  </tr>\n  <tr>\n    <td>CV-VAE</td>\n    <td>15.15</td>\n    <td>33.79</td>\n    <td>17.87</td>\n    <td>25.12</td>\n    <td>37.74</td>\n    <td>94.75</td>\n    <td>86.64</td>\n    <td>69.71</td>\n    <td>40.41</td>\n    <td>48.87</td>\n    <td>49.30</td>\n    <td>44.96</td>\n  </tr>\n  <tr>\n    <td>WAE</td>\n    <td>10.03</td>\n    <td>20.42</td>\n    <td>9.39</td>\n    <td>14.34</td>\n    <td>35.97</td>\n    <td>117.44</td>\n    <td>93.53</td>\n    <td>76.89</td>\n    <td>34.81</td>\n    <td>53.67</td>\n    <td>42.73</td>\n    <td>40.93</td>\n  </tr>\n  <tr>\n    <td>2s VAE</td>\n    <td>20.31</td>\n    <td>18.81</td>\n    <td></td>\n    <td>18.35</td>\n    <td>62.54</td>\n    <td>109.77</td>\n    <td></td>\n    <td>89.06</td>\n    <td>42.04</td>\n    <td>49.70</td>\n    <td></td>\n    <td>47.54</td>\n  </tr>\n  <tr>\n    <td>RAE-GP</td>\n    <td>14.04</td>\n    <td>22.21</td>\n    <td>11.54</td>\n    <td>15.32</td>\n    <td>32.17</td>\n    <td>83.05</td>\n    <td>76.33</td>\n    <td>64.08</td>\n    <td>39.71</td>\n    <td>116.30</td>\n    <td>45.63</td>\n    <td>47.00</td>\n  </tr>\n  <tr>\n    <td>RAE-L2</td>\n    <td>10.53</td>\n    <td>22.22</td>\n    <td>8.69</td>\n    <td>14.54</td>\n    <td>32.24</td>\n    <td>80.80</td>\n    <td>74.16</td>\n    <td>62.54</td>\n    <td>43.52</td>\n    <td>51.13</td>\n    <td>47.97</td>\n    <td>45.98</td>\n  </tr>\n  <tr>\n    <td>RAE-SN</td>\n    <td>15.65</td>\n    <td>19.67</td>\n    <td>11.74</td>\n    <td>15.15</td>\n    <td>27.61</td>\n    <td>84.25</td>\n    <td>75.30</td>\n    <td>63.62</td>\n    <td>36.01</td>\n    <td>44.74</td>\n    <td>40.95</td>\n    <td>39.53</td>\n  </tr>\n  <tr>\n    <td>RAE</td>\n    <td>11.67</td>\n    <td>23.92</td>\n    <td>9.81</td>\n    <td>14.67</td>\n    <td>29.05</td>\n    <td>83.87</td>\n    <td>76.28</td>\n    <td>63.27</td>\n    <td>40.18</td>\n    <td>48.20</td>\n    <td>44.68</td>\n    <td>43.67</td>\n  </tr>\n  <tr>\n    <td>AE</td>\n    <td>12.95</td>\n    <td>58.73</td>\n    <td>10.66</td>\n    <td>17.12</td>\n    <td>30.52</td>\n    <td>84.74</td>\n    <td>76.47</td>\n    <td>61.57</td>\n    <td>40.79</td>\n    <td>127.85</td>\n    <td>45.10</td>\n    <td>50.94</td>\n  </tr>\n  <tr>\n    <td>AE-L2</td>\n    <td>11.19</td>\n    <td>315.15</td>\n    <td>9.36</td>\n    <td>17.15</td>\n    <td>34.35</td>\n    <td>247.48</td>\n    <td>75.40</td>\n    <td>61.09</td>\n    <td>44.72</td>\n    <td>346.29</td>\n    <td>48.42</td>\n    <td>56.16</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                114,
+                85,
+                291,
+                315
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>PROBLEM</td>\n    <td>MODEL</td>\n    <td>% VALID</td>\n    <td>AVG.SCOR E</td>\n  </tr>\n  <tr>\n    <td>GRAE</td>\n    <td>1.00±0.00</td>\n    <td>3.22±0.03</td>\n  </tr>\n  <tr>\n    <td>EXPRESSIONS</td>\n    <td>GCV VAE</td>\n    <td>0.99±0.01</td>\n    <td>2.85±0.08</td>\n  </tr>\n  <tr>\n    <td>GVAE</td>\n    <td>0.99±0.01</td>\n    <td>3.26±0.20</td>\n  </tr>\n  <tr>\n    <td>CVAE</td>\n    <td>0.82±0.07</td>\n    <td>4.74±0.25</td>\n  </tr>\n  <tr>\n    <td>Molecules</td>\n    <td>GRAE</td>\n    <td>0.72±0.09</td>\n    <td>-5.62±0.71</td>\n  </tr>\n  <tr>\n    <td>GCV VAE</td>\n    <td>0.76±0.06</td>\n    <td>-6.40±0.80</td>\n  </tr>\n  <tr>\n    <td>GVAE</td>\n    <td>0.28±0.04</td>\n    <td>-7.89±1.90</td>\n  </tr>\n  <tr>\n    <td>CVAE</td>\n    <td>0.16±0.04</td>\n    <td>-25.64±6.35</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>MODEL</td>\n    <td>#</td>\n    <td>EXPRESSION</td>\n    <td>SCORE</td>\n  </tr>\n  <tr>\n    <td>GRAE</td>\n    <td>1</td>\n    <td>sin(3) +x</td>\n    <td>0.39</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>x+1/exp(1)</td>\n    <td>0.39</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>x+1+2*sin(3+1+2)</td>\n    <td>0.43</td>\n  </tr>\n  <tr>\n    <td>GCV VAE</td>\n    <td>1</td>\n    <td>x+sin(3)*1</td>\n    <td>0.39</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>x/x/3+x</td>\n    <td>0.40</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>sin(exp(exp(1))) +x/2*2</td>\n    <td>0.43</td>\n  </tr>\n  <tr>\n    <td>GVAE</td>\n    <td>1</td>\n    <td>x/1+sin(x)+sin(x*x)</td>\n    <td>0.10</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>1/2+(x)+sin(x*x)</td>\n    <td>0.46</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>x/2+sin(1)+(x/2)</td>\n    <td>0.52</td>\n  </tr>\n  <tr>\n    <td>CVAE</td>\n    <td>1</td>\n    <td>x*1+sin(x)+sin(3+x)</td>\n    <td>0.45</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>x/1+sin(1)+sin(2*2)</td>\n    <td>0.48</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>1/1+(x)+sin(1/2)</td>\n    <td>0.61</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page009.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                298,
+                80,
+                494,
+                279
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>MODEL</td>\n    <td>1ST</td>\n    <td>2ND</td>\n    <td>3RD</td>\n  </tr>\n  <tr>\n    <td>GRA E</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>SCORE</td>\n    <td>3.74</td>\n    <td>3.52</td>\n    <td>3.14</td>\n  </tr>\n  <tr>\n    <td>GCV VAE</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>SCORE</td>\n    <td>3.22</td>\n    <td>2.83</td>\n    <td>2.63</td>\n  </tr>\n  <tr>\n    <td>GVAE</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>SCORE</td>\n    <td>3.13</td>\n    <td>3.10</td>\n    <td>2.37</td>\n  </tr>\n  <tr>\n    <td>CVAE</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>SCORE</td>\n    <td>2.75</td>\n    <td>0.82</td>\n    <td>0.63</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                106,
+                579,
+                501,
+                699
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>MNIST</td>\n    <td>CIFAR-10</td>\n    <td>CELEBA</td>\n  </tr>\n  <tr>\n    <td>ENCODER：</td>\n    <td>x∈R32x32</td>\n    <td>x∈R32x32</td>\n    <td>x∈R64x64</td>\n  </tr>\n  <tr>\n    <td>→CONV128→BN→ReLU</td>\n    <td>→CONV128→BN→ReLU</td>\n    <td>→CONV128→BN→ReLU</td>\n  </tr>\n  <tr>\n    <td>→CONV256→BN→ReLU</td>\n    <td>→CONV256→BN→ReLU</td>\n    <td>→CONV256→BN→ReLU</td>\n  </tr>\n  <tr>\n    <td>→CONV512→BN→ReLU</td>\n    <td>→CONV512→BN→ReLU</td>\n    <td>→CONV512→BN→ReLU</td>\n  </tr>\n  <tr>\n    <td>→CONV1024→BN→ReLU</td>\n    <td>→CONV1024→BN→ReLU</td>\n    <td>→CONV1024→BN→ReLU</td>\n  </tr>\n  <tr>\n    <td>→FLATTEN→FC16×M</td>\n    <td>→FLATTEN→FC128×M</td>\n    <td>→FLATTEN→FC64×M</td>\n  </tr>\n  <tr>\n    <td>DECODER：</td>\n    <td>z∈R16→FC8x8x1024</td>\n    <td>z∈R128→FC8x8x1024</td>\n    <td>z∈R64→FC8x8x1024</td>\n  </tr>\n  <tr>\n    <td>→BN→ReLU</td>\n    <td>→BN→ReLU</td>\n    <td>→BN→ReLU</td>\n  </tr>\n  <tr>\n    <td>→CONVT512→BN→ReLU</td>\n    <td>→CONVT512→BN→ReLU</td>\n    <td>→CONVT512→BN→ReLU</td>\n  </tr>\n  <tr>\n    <td>→CONVT256→BN→ReLU</td>\n    <td>→CONVT256→BN→ReLU</td>\n    <td>→CONVT256→BN→ReLU</td>\n  </tr>\n  <tr>\n    <td>→CONVT1</td>\n    <td>→CONVT1</td>\n    <td>→CONVT1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page014.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                115,
+                377,
+                490,
+                500
+            ],
+            "caption": "The text content from the image is:\n\n\"E EVALUATION BY PRECISION AND RECALL\" The text content from the image is:\n\n\"E EVALUATION BY PRECISION AND RECALL\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>MNIST</td>\n    <td>CIFAR-10</td>\n    <td>CELEBA</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>N</td>\n    <td>GMM</td>\n    <td>N</td>\n    <td>GMM</td>\n    <td>N</td>\n    <td>GMM</td>\n  </tr>\n  <tr>\n    <td>VAE</td>\n    <td>0.96/0.92</td>\n    <td>0.95/0.96</td>\n    <td>0.25/0.55</td>\n    <td>0.37/0.56</td>\n    <td>0.54/0.66</td>\n    <td>0.50/0.66</td>\n  </tr>\n  <tr>\n    <td>CV-VAE</td>\n    <td>0.84/0.73</td>\n    <td>0.96/0.89</td>\n    <td>0.31/0.64</td>\n    <td>0.42/0.68</td>\n    <td>0.25/0.43</td>\n    <td>0.32/0.55</td>\n  </tr>\n  <tr>\n    <td>WAE</td>\n    <td>0.93/0.88</td>\n    <td>0.98/0.95</td>\n    <td>0.38/0.68</td>\n    <td>0.51/0.81</td>\n    <td>0.59/0.68</td>\n    <td>0.69/0.77</td>\n  </tr>\n  <tr>\n    <td>RAE-GP</td>\n    <td>0.93/0.87</td>\n    <td>0.97/0.98</td>\n    <td>0.36/0.70</td>\n    <td>0.46/0.77</td>\n    <td>0.38/0.55</td>\n    <td>0.44/0.67</td>\n  </tr>\n  <tr>\n    <td>RAE-L2</td>\n    <td>0.92/0.87</td>\n    <td>0.98/0.98</td>\n    <td>0.41/0.77</td>\n    <td>0.57/0.81</td>\n    <td>0.36/0.64</td>\n    <td>0.44/0.65</td>\n  </tr>\n  <tr>\n    <td>RAE-SN</td>\n    <td>0.89/0.95</td>\n    <td>0.98/0.97</td>\n    <td>0.36/0.73</td>\n    <td>0.52/0.81</td>\n    <td>0.54/0.68</td>\n    <td>0.55/0.74</td>\n  </tr>\n  <tr>\n    <td>RAE</td>\n    <td>0.92/0.85</td>\n    <td>0.98/0.98</td>\n    <td>0.45/0.73</td>\n    <td>0.53/0.80</td>\n    <td>0.46/0.59</td>\n    <td>0.52/0.69</td>\n  </tr>\n  <tr>\n    <td>AE</td>\n    <td>0.90/0.90</td>\n    <td>0.98/0.97</td>\n    <td>0.37/0.73</td>\n    <td>0.50/0.80</td>\n    <td>0.45/0.66</td>\n    <td>0.47/0.71</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page015.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 22,
+            "type": "table",
+            "bbox": [
+                110,
+                108,
+                528,
+                275
+            ],
+            "caption": "The text content from the image is:\n\n\"G INVESTIGATING OVERFITTING\" The text content from the image is:\n\n\"G INVESTIGATING OVERFITTING\" The text content from the image is:\n\n\"G INVESTIGATING OVERFITTING\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>MNIST</td>\n    <td>CIFAR-10</td>\n    <td>CELEBA</td>\n  </tr>\n  <tr>\n    <td>VAE</td>\n    <td><img src=\"https://i.imgur.com/1.png\" alt=\"MNIST VAE\"></td>\n    <td><img src=\"https://i.imgur.com/2.png\" alt=\"CIFAR-10 VAE\"></td>\n    <td><img src=\"https://i.imgur.com/3.png\" alt=\"CELEBA VAE\"></td>\n  </tr>\n  <tr>\n    <td>CV-VAE</td>\n    <td><img src=\"https://i.imgur.com/4.png\" alt=\"MNIST CV-VAE\"></td>\n    <td><img src=\"https://i.imgur.com/5.png\" alt=\"CIFAR-10 CV-VAE\"></td>\n    <td><img src=\"https://i.imgur.com/6.png\" alt=\"CELEBA CV-VAE\"></td>\n  </tr>\n  <tr>\n    <td>WAE</td>\n    <td><img src=\"https://i.imgur.com/7.png\" alt=\"MNIST WAE\"></td>\n    <td><img src=\"https://i.imgur.com/8.png\" alt=\"CIFAR-10 WAE\"></td>\n    <td><img src=\"https://i.imgur.com/9.png\" alt=\"CELEBA WAE\"></td>\n  </tr>\n  <tr>\n    <td>RAE-GP</td>\n    <td><img src=\"https://i.imgur.com/10.png\" alt=\"MNIST RAE-GP\"></td>\n    <td><img src=\"https://i.imgur.com/11.png\" alt=\"CIFAR-10 RAE-GP\"></td>\n    <td><img src=\"https://i.imgur.com/12.png\" alt=\"CELEBA RAE-GP\"></td>\n  </tr>\n  <tr>\n    <td>RAE-L2</td>\n    <td><img src=\"https://i.imgur.com/13.png\" alt=\"MNIST RAE-L2\"></td>\n    <td><img src=\"https://i.imgur.com/14.png\" alt=\"CIFAR-10 RAE-L2\"></td>\n    <td><img src=\"https://i.imgur.com/15.png\" alt=\"CELEBA RAE-L2\"></td>\n  </tr>\n  <tr>\n    <td>RAE-SN</td>\n    <td><img src=\"https://i.imgur.com/16.png\" alt=\"MNIST RAE-SN\"></td>\n    <td><img src=\"https://i.imgur.com/17.png\" alt=\"CIFAR-10 RAE-SN\"></td>\n    <td><img src=\"https://i.imgur.com/18.png\" alt=\"CELEBA RAE-SN\"></td>\n  </tr>\n  <tr>\n    <td>RAE</td>\n    <td><img src=\"https://i.imgur.com/19.png\" alt=\"MNIST RAE\"></td>\n    <td><img src=\"https://i.imgur.com/20.png\" alt=\"CIFAR-10 RAE\"></td>\n    <td><img src=\"https://i.imgur.com/21.png\" alt=\"CELEBA RAE\"></td>\n  </tr>\n  <tr>\n    <td>AE</td>\n    <td><img src=\"https://i.imgur.com/22.png\" alt=\"MNIST AE\"></td>\n    <td><img src=\"https://i.imgur.com/23.png\" alt=\"CIFAR-10 AE\"></td>\n    <td><img src=\"https://i.imgur.com/24.png\" alt=\"CELEBA AE\"></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page022.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 25,
+            "type": "table",
+            "bbox": [
+                110,
+                80,
+                497,
+                211
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>RAE-GP</td>\n    <td>14.04</td>\n    <td>22.21</td>\n    <td>11.54</td>\n    <td>15.32</td>\n    <td>RAE-L2</td>\n    <td>10.53</td>\n    <td>22.22</td>\n    <td>8.69</td>\n    <td>14.54</td>\n    <td>RAE-SN</td>\n    <td>15.65</td>\n    <td>19.67</td>\n    <td>11.74</td>\n    <td>15.15</td>\n    <td>RAE</td>\n    <td>11.67</td>\n    <td>23.92</td>\n    <td>9.81</td>\n    <td>14.67</td>\n    <td>AE</td>\n    <td>12.95</td>\n    <td>58.73</td>\n    <td>10.66</td>\n    <td>17.12</td>\n    <td>AE-L2</td>\n    <td>11.19</td>\n    <td>315.15</td>\n    <td>9.36</td>\n    <td>17.15</td>\n  </tr>\n  <tr>\n    <td>REC.</td>\n    <td>SAMPLES</td>\n    <td></td>\n    <td>GMM</td>\n    <td>Interp.</td>\n    <td>REC.</td>\n    <td>SAMPLES</td>\n    <td></td>\n    <td>GMM</td>\n    <td>Interp.</td>\n    <td>REC.</td>\n    <td>SAMPLES</td>\n    <td></td>\n    <td>GMM</td>\n    <td>Interp.</td>\n  </tr>\n  <tr>\n    <td>RAE-GP-L2</td>\n    <td>9.70</td>\n    <td>72.64</td>\n    <td>9.07</td>\n    <td>16.07</td>\n    <td>RAE-L2-SN</td>\n    <td>10.67</td>\n    <td>50.63</td>\n    <td>9.42</td>\n    <td>15.73</td>\n    <td>RAE-SN-GP</td>\n    <td>17.00</td>\n    <td>139.61</td>\n    <td>13.12</td>\n    <td>16.62</td>\n    <td>RAE-L2-SN-GP</td>\n    <td>16.75</td>\n    <td>144.51</td>\n    <td>13.93</td>\n    <td>16.75</td>\n  </tr>\n  <tr>\n    <td>MNIST</td>\n    <td>CIFAR</td>\n    <td>CELEBA</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page025.png"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                53,
+                52,
+                559,
+                213
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Lap PE</td>\n    <td>L</td>\n    <td>#Param</td>\n    <td>Test Perf.+s.d.</td>\n    <td>Train Perf.+s.d.</td>\n    <td>#Epoch</td>\n    <td>Epoch/Total</td>\n    <td>Test Perf.+s.d.</td>\n    <td>Train Perf.+s.d.</td>\n    <td>#Epoch</td>\n    <td>Epoch/Total</td>\n  </tr>\n  <tr>\n    <td>Batch Norm：False；Layer Norm：True</td>\n  </tr>\n  <tr>\n    <td>ZINC</td>\n    <td></td>\n    <td>10</td>\n    <td>588353</td>\n    <td>0.278±0.018</td>\n    <td>0.027±0.004</td>\n    <td>274.75</td>\n    <td>26.87s/2.06hr</td>\n    <td>0.741±0.008</td>\n    <td>0.431±0.013</td>\n    <td>196.75</td>\n    <td>37.64s/2.09hr</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>10</td>\n    <td>588929</td>\n    <td>0.284±0.012</td>\n    <td>0.031±0.006</td>\n    <td>263.00</td>\n    <td>26.64s/1.98hr</td>\n    <td>0.735±0.006</td>\n    <td>0.442±0.031</td>\n    <td>196.75</td>\n    <td>31.50s/1.77hr</td>\n  </tr>\n  <tr>\n    <td>CLUSTER</td>\n    <td></td>\n    <td>10</td>\n    <td>523146</td>\n    <td>70.879±0.295</td>\n    <td>86.174±0.365</td>\n    <td>128.50</td>\n    <td>202.68s/7.32hr</td>\n    <td>19.596±2.071</td>\n    <td>19.570±2.053</td>\n    <td>103.00</td>\n    <td>512.34s/15.15hr</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>10</td>\n    <td>524026</td>\n    <td>70.649±0.250</td>\n    <td>86.395±0.528</td>\n    <td>130.75</td>\n    <td>200.55s/7.43hr</td>\n    <td>27.091±3.920</td>\n    <td>26.916±3.764</td>\n    <td>139.50</td>\n    <td>565.13s/22.37hr</td>\n  </tr>\n  <tr>\n    <td>PATTERN</td>\n    <td></td>\n    <td>10</td>\n    <td>522742</td>\n    <td>73.140±13.633</td>\n    <td>73.070±13.589</td>\n    <td>184.25</td>\n    <td>276.66s/13.75hr</td>\n    <td>50.854±0.111</td>\n    <td>50.906±0.005</td>\n    <td>108.00</td>\n    <td>540.85s/16.77hr</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>10</td>\n    <td>522982</td>\n    <td>71.005±11.831</td>\n    <td>71.125±11.977</td>\n    <td>192.50</td>\n    <td>294.91s/14.79hr</td>\n    <td>56.482±3.549</td>\n    <td>56.565±3.546</td>\n    <td>124.50</td>\n    <td>637.55s/22.69hr</td>\n  </tr>\n  <tr>\n    <td>Batch Norm：True；Layer Norm：False</td>\n  </tr>\n  <tr>\n    <td>ZINC</td>\n    <td></td>\n    <td>10</td>\n    <td>588353</td>\n    <td>0.264±0.008</td>\n    <td>0.048±0.006</td>\n    <td>321.50</td>\n    <td>28.01s/2.52hr</td>\n    <td>0.724±0.013</td>\n    <td>0.518±0.013</td>\n    <td>192.25</td>\n    <td>50.27s/2.72hr</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>10</td>\n    <td>588929</td>\n    <td>0.226±0.014</td>\n    <td>0.059±0.011</td>\n    <td>287.50</td>\n    <td>27.78s/2.25hr</td>\n    <td>0.598±0.049</td>\n    <td>0.339±0.123</td>\n    <td>273.50</td>\n    <td>45.26s/3.50hr</td>\n  </tr>\n  <tr>\n    <td>CLUSTER</td>\n    <td></td>\n    <td>10</td>\n    <td>523146</td>\n    <td>72.139±0.405</td>\n    <td>85.857±0.555</td>\n    <td>121.75</td>\n    <td>200.85s/6.88hr</td>\n    <td>21.092±0.134</td>\n    <td>21.071±0.037</td>\n    <td>100.25</td>\n    <td>595.24s/17.10hr</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>10</td>\n    <td>524026</td>\n    <td>73.169±0.622</td>\n    <td>86.585±0.905</td>\n    <td>126.50</td>\n    <td>201.06s/7.20hr</td>\n    <td>27.121±8.471</td>\n    <td>27.192±8.485</td>\n    <td>133.75</td>\n    <td>552.06s/20.72hr</td>\n  </tr>\n  <tr>\n    <td>PATTERN</td>\n    <td></td>\n    <td>10</td>\n    <td>522742</td>\n    <td>83.949±0.303</td>\n    <td>83.864±0.489</td>\n    <td>236.50</td>\n    <td>299.54s/19.71hr</td>\n    <td>50.889±0.069</td>\n    <td>50.873±0.039</td>\n    <td>104.50</td>\n    <td>621.33s/17.53hr</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>10</td>\n    <td>522982</td>\n    <td>84.808±0.068</td>\n    <td>86.559±0.116</td>\n    <td>145.25</td>\n    <td>309.95s/12.67hr</td>\n    <td>54.941±3.739</td>\n    <td>54.915±3.769</td>\n    <td>117.75</td>\n    <td>683.53s/22.77hr</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                65,
+                295,
+                279,
+                380
+            ],
+            "caption": "Table 2: Comparison of our best performing scores (from Table 1) on each dataset against the GNN baselines (GCN (Kipf and Welling 2017), GAT (Veličković et al. 2018), GatedGCN(Bresson and Laurent 2017)) of 500k model parameters. Note: Only GatedGCN and GT models use the available edge attributes in ZINC.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ZINC</td>\n    <td>CLUSTER</td>\n    <td>PATTERN</td>\n  </tr>\n  <tr>\n    <td>GNN BASELINE SCORES from(Dwivedi etal.2020)</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GCN</td>\n    <td>0.367±0.011</td>\n    <td>68.498±0.976</td>\n    <td>71.892±0.334</td>\n  </tr>\n  <tr>\n    <td>GAT</td>\n    <td>0.384±0.007</td>\n    <td>70.587±0.447</td>\n    <td>78.271±0.186</td>\n  </tr>\n  <tr>\n    <td>Gated GCN</td>\n    <td>0.214±0.013</td>\n    <td>76.082±0.196</td>\n    <td>86.508±0.085</td>\n  </tr>\n  <tr>\n    <td>OUR RESULTS</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GT(Ours)</td>\n    <td>0.226±0.014</td>\n    <td>73.169±0.622</td>\n    <td>84.808±0.068</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                320,
+                295,
+                556,
+                390
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3: Analysis of GraphTransformer (GT) using different PE schemes. Notations x: No PE; L: LapPE (ours); W: WL-PE (Zhang et al. 2020). Bold: the best performing model for each dataset.\" The text content from the image is as follows:\n\n\"Table 3: Analysis of GraphTransformer (GT) using different PE schemes. Notations x: No PE; L: LapPE (ours); W: WL-PE (Zhang et al. 2020). Bold: the best performing model for each dataset.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>PE</td>\n    <td>#Param</td>\n    <td>Sparse Graph</td>\n  </tr>\n  <tr>\n    <td>Batch Norm：True；Layer Norm：False；L=10</td>\n  </tr>\n  <tr>\n    <td>ZINC</td>\n    <td>x</td>\n    <td>588353</td>\n    <td>0.264±0.008</td>\n    <td>0.048±0.006</td>\n    <td>321.50</td>\n    <td>28.01s/2.52hr</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>588929</td>\n    <td>0.226±0.014</td>\n    <td>0.059±0.011</td>\n    <td>287.50</td>\n    <td>27.78s/2.25hr</td>\n  </tr>\n  <tr>\n    <td>W</td>\n    <td>590721</td>\n    <td>0.267±0.012</td>\n    <td>0.059±0.010</td>\n    <td>263.25</td>\n    <td>27.04s/2.00hr</td>\n  </tr>\n  <tr>\n    <td>CLUSTER</td>\n    <td>x</td>\n    <td>523146</td>\n    <td>72.139±0.405</td>\n    <td>85.857±0.555</td>\n    <td>121.75</td>\n    <td>200.85s/6.88hr</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>524026</td>\n    <td>73.169±0.622</td>\n    <td>86.585±0.905</td>\n    <td>126.50</td>\n    <td>201.06s/7.20hr</td>\n  </tr>\n  <tr>\n    <td>W</td>\n    <td>531146</td>\n    <td>70.790±0.537</td>\n    <td>86.829±0.745</td>\n    <td>119.00</td>\n    <td>196.41s/6.69hr</td>\n  </tr>\n  <tr>\n    <td>PATTERN</td>\n    <td>x</td>\n    <td>5227742</td>\n    <td>83.949±0.303</td>\n    <td>83.864±0.489</td>\n    <td>236.50</td>\n    <td>299.54s/19.71hr</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>522982</td>\n    <td>84.808±0.068</td>\n    <td>86.559±0.116</td>\n    <td>145.25</td>\n    <td>309.95s/12.67hr</td>\n  </tr>\n  <tr>\n    <td>W</td>\n    <td>530742</td>\n    <td>75.489±0.216</td>\n    <td>97.028±0.104</td>\n    <td>109.25</td>\n    <td>310.11s/9.73hr</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        }
+    ]
+}

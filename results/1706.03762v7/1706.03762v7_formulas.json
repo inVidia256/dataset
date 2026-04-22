@@ -1,0 +1,78 @@
+{
+    "total_count": 6,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                219,
+                464,
+                393,
+                491
+            ],
+            "content": "```latex\n\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V\n```",
+            "latex": "```latex\n\\text{Attention}(Q, K, V) = \\text{softmax}\\left(\\frac{QK^T}{\\sqrt{d_k}}\\right)V\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                225,
+                566,
+                386,
+                579
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{FFN}(x) = \\max(0, xW_1 + b_1)W_2 + b_2\n```\n\nThis will render the function as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{FFN}(x) = \\max(0, xW_1 + b_1)W_2 + b_2\n```\n\nThis will render the function as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                185,
+                144,
+                426,
+                175
+            ],
+            "content": "```latex\n\\text{MultiHead}(Q, K, V) = \\text{Concat(head}_1, ..., \\text{head}_h)W^O\n\n\\text{where head}_i = \\text{Attention}(QW_i^Q, KW_i^K, VW_i^V)\n```",
+            "latex": "```latex\n\\text{MultiHead}(Q, K, V) = \\text{Concat(head}_1, ..., \\text{head}_h)W^O\n\n\\text{where head}_i = \\text{Attention}(QW_i^Q, KW_i^K, VW_i^V)\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                225,
+                566,
+                387,
+                579
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{FFN}(x) = \\max(0, xW_1 + b_1)W_2 + b_2\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{FFN}(x) = \\max(0, xW_1 + b_1)W_2 + b_2\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                225,
+                334,
+                387,
+                367
+            ],
+            "content": "```latex\nPE_{(pos,2i)} = sin(pos/10000^{2i}/d_{\\text{model}})\n\nPE_{(pos,2i+1)} = cos(pos/10000^{2i}/d_{\\text{model}})\n```",
+            "latex": "```latex\nPE_{(pos,2i)} = sin(pos/10000^{2i}/d_{\\text{model}})\n\nPE_{(pos,2i+1)} = cos(pos/10000^{2i}/d_{\\text{model}})\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                162,
+                615,
+                450,
+                631
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nlrate = d_{\\text{model}}^{-0.5} \\cdot \\min(step\\_num^{-0.5}, step\\_num \\cdot warmup\\_steps^{-1.5})\n```\n\nThis will render the formula correctly in a LaTeX document.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nlrate = d_{\\text{model}}^{-0.5} \\cdot \\min(step\\_num^{-0.5}, step\\_num \\cdot warmup\\_steps^{-1.5})\n```\n\nThis will render the formula correctly in a LaTeX document."
+        }
+    ]
+}

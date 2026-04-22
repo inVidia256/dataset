@@ -1,0 +1,538 @@
+{
+    "total_count": 38,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                70,
+                446,
+                473,
+                645
+            ],
+            "caption": "Figure 1.1: Language model meta-learning. During unsupervised pre-training, a language model develops a broad set of skills and pattern recognition abilities. It then uses these abilities at inference time to rapidly adapt to or recognize the desired task. We use the term “in-context learning” to describe the inner loop of this process, which occurs within the forward-pass upon each sequence. The sequences in this diagram are not intended to be representative of the data a model would see during pre-training, but are intended to show that there are sometimes repeated sub-tasks embedded within a single sequence.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                114,
+                68,
+                493,
+                274
+            ],
+            "caption": "Figure 1.2: Larger models make increasingly efficient use of in-context information. We show in-context learning performance on a simple task requiring the model to remove random symbols from a word, both with and without a natural language task description (see Sec. 3.9.2). The steeper “in-context learning curves” for large models demonstrate improved ability to learn a task from contextual information. We see qualitatively similar behavior across a wide range of tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                142,
+                70,
+                469,
+                273
+            ],
+            "caption": "Figure 1.3: Aggregate performance for all 42 accuracy-denominated benchmarks While zero-shot performance improves steadily with model size, few-shot performance increases more rapidly, demonstrating that larger models are more proficient at in-context learning. See Figure 3.8 for a more detailed analysis on SuperGLUE, a standard NLP benchmark suite.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                117,
+                128,
+                289,
+                163
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                117,
+                222,
+                290,
+                271
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                319,
+                128,
+                484,
+                315
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                117,
+                330,
+                290,
+                402
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 2.1: Zero-shot, one-shot and few-shot, contrasted with traditional fine-tuning. The panels above show four methods for performing a task with a language model – fine-tuning is the traditional method, whereas zero-, one-, and few-shot, which we study in this work, require the model to perform the task with only forward passes at test time. We typically present the model with a few dozen examples in the few shot setting. Exact phrasings for all task descriptions, examples and prompts can be found in Appendix G.\" The text content from the image is as follows:\n\n\"Figure 2.1: Zero-shot, one-shot and few-shot, contrasted with traditional fine-tuning. The panels above show four methods for performing a task with a language model – fine-tuning is the traditional method, whereas zero-, one-, and few-shot, which we study in this work, require the model to perform the task with only forward passes at test time. We typically present the model with a few dozen examples in the few shot setting. Exact phrasings for all task descriptions, examples and prompts can be found in Appendix G.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                92,
+                92,
+                520,
+                305
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 2.2: Total compute used during training. Based on the analysis in Scaling Laws For Neural Language Models [KMH+20] we train much larger models on many fewer tokens than is typical. As a consequence, although GPT-3 3B is almost 10x larger than RoBERTa-Large (355M params), both models took roughly 50 petaflop/s-days of compute during pre-training. Methodology for these calculations can be found in Appendix D.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page009.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                164,
+                81,
+                460,
+                308
+            ],
+            "caption": "Figure 3.1: Smooth scaling of performance with compute. Performance (measured in terms of cross-entropy validation loss) follows a power-law trend with the amount of compute used for training. The power-law behavior observed in [KMH+20] continues for an additional two orders of magnitude with only small deviations from the predicted curve. For this figure, we exclude embedding parameters from compute and parameter counts.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page011.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                138,
+                230,
+                464,
+                442
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3.2: Performance on cloze and completion tasks. GPT-3 significantly improves SOTA on LAMBADA while achieving respectable performance on two difficult completion prediction datasets. \\(a\\) [Tur20] \\(b\\) [RWC+19] \\(c\\) [LDL19] \\(d\\) [LCH+20]\" The text content from the image is as follows:\n\n\"Table 3.2: Performance on cloze and completion tasks. GPT-3 significantly improves SOTA on LAMBADA while achieving respectable performance on two difficult completion prediction datasets. \\(a\\) [Tur20] \\(b\\) [RWC\\(^{+}\\)19] \\(c\\) [LDL19] \\(d\\) [LCH\\(^{+}\\)20]\" The text content from the image is as follows:\n\n\"Table 3.2: Performance on cloze and completion tasks. GPT-3 significantly improves SOTA on LAMBADA while achieving respectable performance on two difficult completion prediction datasets. \\(a\\) [Tur20] \\(b\\) [RWC+19] \\(c\\) [LDL19] \\(d\\) [LCH+20]\" Figure 3.2: On LAMBADA, the few-shot capability of language models results in a strong boost to accuracy. GPT-3 2.7B outperforms the SOTA 17B parameter Turing-NLG [Tur20] in this setting, and GPT-3 175B advances the state of the art by 18%. Note zero-shot uses a different format from one-shot and few-shot as described in the text.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page012.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                138,
+                77,
+                464,
+                289
+            ],
+            "caption": "Figure 3.3: On TriviaQA GPT3’s performance grows smoothly with model size, suggesting that language models continue to absorb knowledge as their capacity increases. One-shot and few-shot performance make significant gains over zero-shot behavior, matching and exceeding the performance of the SOTA fine-tuned open-domain model, RAG [LPP+20]",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page014.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                138,
+                424,
+                464,
+                636
+            ],
+            "caption": "Figure 3.4: Few-shot translation performance on 6 language pairs as model capacity increases. There is a consistent trend of improvement across all datasets as the model scales, and as well as tendency for translation into English to be stronger than translation from English.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page015.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                138,
+                211,
+                464,
+                425
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 3.5: Zero-, one-, and few-shot performance on the adversarial Winogrande dataset as model capacity scales. Scaling is relatively smooth with the gains to few-shot learning increasing with model size, and few-shot GPT-3 175B is competitive with a fine-tuned RoBERTA-large.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page016.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                138,
+                214,
+                464,
+                428
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3.6: GPT-3 results on three commonsense reasoning tasks, PIQA, ARC, and OpenBookQA. GPT-3 Few-Shot PIQA result is evaluated on the test server. See Section 4 for details on potential contamination issues on the PIQA test set.\" The text content from the image is as follows:\n\n\"Table 3.6: GPT-3 results on three commonsense reasoning tasks, PIQA, ARC, and OpenBookQA. GPT-3 Few-Shot PIQA result is evaluated on the test server. See Section 4 for details on potential contamination issues on the PIQA test set.\" The text content from the image is as follows:\n\n\"Table 3.6: GPT-3 results on three commonsense reasoning tasks, PIQA, ARC, and OpenBookQA. GPT-3 Few-Shot PIQA result is evaluated on the test server. See Section 4 for details on potential contamination issues on the PIQA test set.\" Figure 3.6: GPT-3 results on PIQA in the zero-shot, one-shot, and few-shot settings. The largest model achieves a score on the development set in all three conditions that exceeds the best recorded score on the task.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page017.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                138,
+                133,
+                465,
+                344
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 3.7: GPT-3 results on CoQA reading comprehension task. GPT-3 175B achieves 85 F1 in the few-shot setting, only a few points behind measured human performance and state-of-the-art fine-tuned models. Zero-shot and one-shot performance is a few points behind, with the gains to few-shot being largest for bigger models.\" Table 3.8: Performance of GPT-3 on SuperGLUE compared to fine-tuned baselines and SOTA. All results are reported on the test set. GPT-3 few-shot is given a total of 32 examples within the context of each task and performs no gradient updates. Table 3.8: Performance of GPT-3 on SuperGLUE compared to fine-tuned baselines and SOTA. All results are reported on the test set. GPT-3 few-shot is given a total of 32 examples within the context of each task and performs no gradient updates.",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page019.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                75,
+                72,
+                535,
+                284
+            ],
+            "caption": "Figure 3.8: Performance on SuperGLUE increases with model size and number of examples in context. A value of \\( K = 32 \\) means that our model was shown 32 examples per task, for 256 examples total divided across the 8 tasks in SuperGLUE. We report GPT-3 values on the dev set, so our numbers are not directly comparable to the dotted reference lines (our test set results are in Table 3.8). The BERT-Large reference model was fine-tuned on the SuperGLUE training set (125K examples), whereas BERT++ was first fine-tuned on MultiNLI (392K examples) and SWAG (113K examples) before further fine-tuning on the SuperGLUE training set (for a total of 630K fine-tuning examples). We find the difference in performance between the BERT-Large and BERT++ to be roughly equivalent to the difference between GPT-3 with one example per context versus eight examples per context.",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page020.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                139,
+                87,
+                465,
+                298
+            ],
+            "caption": "Figure 3.9: Performance of GPT-3 on ANLI Round 3. Results are on the dev-set, which has only 1500 examples and therefore has high variance (we estimate a standard deviation of 1.2%). We find that smaller models hover around random chance, while few-shot GPT-3 175B closes almost half the gap from random chance to SOTA. Results for ANLI rounds 1 and 2 are shown in the appendix.",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page021.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 22,
+            "type": "figure",
+            "bbox": [
+                134,
+                86,
+                465,
+                298
+            ],
+            "caption": "Figure 3.10: Results on all 10 arithmetic tasks in the few-shot settings for models of different sizes. There is a significant jump from the second largest model (GPT-3 13B) to the largest model (GPT-3 175), with the latter being able to reliably accurate 2 digit arithmetic, usually accurate 3 digit arithmetic, and correct answers a significant fraction of the time on 4-5 digit arithmetic, 2 digit multiplication, and compound operations. Results for one-shot and zero-shot are shown in the appendix.",
+            "footnote": "",
+            "cropped_image": "figures/figure_018_page022.png"
+        },
+        {
+            "serial_number": 19,
+            "page": 24,
+            "type": "figure",
+            "bbox": [
+                139,
+                87,
+                465,
+                298
+            ],
+            "caption": "Figure 3.11: Few-shot performance on the five word scrambling tasks for different sizes of model. There is generally smooth improvement with model size although the random insertion task shows an upward slope of improvement with the 175B model solving the task the majority of the time. Scaling of one-shot and zero-shot performance is shown in the appendix. All tasks are done with K = 100.",
+            "footnote": "",
+            "cropped_image": "figures/figure_019_page024.png"
+        },
+        {
+            "serial_number": 20,
+            "page": 25,
+            "type": "figure",
+            "bbox": [
+                138,
+                87,
+                464,
+                298
+            ],
+            "caption": "Figure 3.12: Zero-, one-, and few-shot performance on SAT analogy tasks, for different sizes of model. The largest model achieves 65% accuracy in the few-shot setting, and also demonstrates significant gains to in-context learning which are not present in smaller models.",
+            "footnote": "",
+            "cropped_image": "figures/figure_020_page025.png"
+        },
+        {
+            "serial_number": 21,
+            "page": 27,
+            "type": "figure",
+            "bbox": [
+                76,
+                126,
+                536,
+                414
+            ],
+            "caption": "Figure 3.13: People’s ability to identify whether news articles are model-generated (measured by the ratio of correct assignments to non-neutral assignments) decreases as model size increases. Accuracy on the outputs on the deliberately-bad control model (an unconditioned GPT-3 Small model with higher output randomness) is indicated with the dashed line at the top, and the random chance (50%) is indicated with the dashed line at the bottom. Line of best fit is a power law with 95% confidence intervals. The text content from the image is as follows:\n\n\"Table 3.12: People’s ability to identify whether ~500 word articles are model generated (as measured by the ratio of correct assignments to non-neutral assignments) was 88% on the control model and 52% on GPT-3 175B. This table shows the results of a two-sample T-Test for the difference in mean accuracy between GPT-3 175B and the control model (an unconditional GPT-3 Small model with increased output randomness).\" Table 3.12: People’s ability to identify whether ~500 word articles are model generated (as measured by the ratio of correct assignments to non-neutral assignments) was 88% on the control model and 52% on GPT-3 175B. This table shows the results of a two-sample T-Test for the difference in mean accuracy between GPT-3 175B and the control model (an unconditional GPT-3 Small model with increased output randomness). Table 3.12: People’s ability to identify whether ~500 word articles are model generated (as measured by the ratio of correct assignments to non-neutral assignments) was 88% on the control model and 52% on GPT-3 175B. This table shows the results of a two-sample T-Test for the difference in mean accuracy between GPT-3 175B and the control model (an unconditional GPT-3 Small model with increased output randomness). The text content from the image is as follows:\n\n\"Table 3.12: People’s ability to identify whether ~500 word articles are model generated (as measured by the ratio of correct assignments to non-neutral assignments) was 88% on the control model and 52% on GPT-3 175B. This table shows the results of a two-sample T-Test for the difference in mean accuracy between GPT-3 175B and the control model (an unconditional GPT-3 Small model with increased output randomness).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_021_page027.png"
+        },
+        {
+            "serial_number": 22,
+            "page": 28,
+            "type": "figure",
+            "bbox": [
+                88,
+                91,
+                517,
+                363
+            ],
+            "caption": "The GPT-3 generated news article that humans had the greatest difficulty distinguishing from a human written article (accuracy: 12%).",
+            "footnote": "",
+            "cropped_image": "figures/figure_022_page028.png"
+        },
+        {
+            "serial_number": 23,
+            "page": 28,
+            "type": "figure",
+            "bbox": [
+                87,
+                434,
+                526,
+                677
+            ],
+            "caption": "The GPT-3 generated news article that humans found the easiest to distinguish from a human written article (accuracy: 61%).",
+            "footnote": "",
+            "cropped_image": "figures/figure_023_page028.png"
+        },
+        {
+            "serial_number": 24,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                117,
+                70,
+                495,
+                279
+            ],
+            "caption": "Figure 4.1: GPT-3 Training Curves We measure model performance during training on a deduplicated validation split of our training distribution. Though there is some gap between training and validation performance, the gap grows only minimally with model size and training time, suggesting that most of the gap comes from a difference in difficulty rather than overfitting.",
+            "footnote": "",
+            "cropped_image": "figures/figure_024_page031.png"
+        },
+        {
+            "serial_number": 25,
+            "page": 32,
+            "type": "figure",
+            "bbox": [
+                99,
+                68,
+                513,
+                248
+            ],
+            "caption": "Figure 4.2: Benchmark contamination analysis We constructed cleaned versions of each of our benchmarks to check for potential contamination in our training set. The x-axis is a conservative lower bound for how much of the dataset is known with high confidence to be clean, and the y-axis shows the difference in performance when evaluating only on the verified clean subset. Performance on most benchmarks changed negligibly, but some were flagged for further review. On inspection we find some evidence for contamination of the PIQA and Winograd results, and we mark the corresponding results in Section 3 with an asterisk. We find no evidence that other benchmarks are affected. Figure 4.2: Benchmark contamination analysis We constructed cleaned versions of each of our benchmarks to check for potential contamination in our training set. The x-axis is a conservative lower bound for how much of the dataset is known with high confidence to be clean, and the y-axis shows the difference in performance when evaluating only on the verified clean subset. Performance on most benchmarks changed negligibly, but some were flagged for further review. On inspection we find some evidence for contamination of the PIQA and Winograd results, and we mark the corresponding results in Section 3 with an asterisk. We find no evidence that other benchmarks are affected. Percentage of Data Clean in Dataset",
+            "footnote": "",
+            "cropped_image": "figures/figure_025_page032.png"
+        },
+        {
+            "serial_number": 26,
+            "page": 38,
+            "type": "figure",
+            "bbox": [
+                171,
+                82,
+                420,
+                256
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 6.1: Racial Sentiment Across Models\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_026_page038.png"
+        },
+        {
+            "serial_number": 27,
+            "page": 47,
+            "type": "figure",
+            "bbox": [
+                148,
+                272,
+                459,
+                504
+            ],
+            "caption": "Table E.1: Participant details and article lengths for each experiment to evaluate human detection of ~ 200 word model generated news articles. Participants were excluded due to internet check fails. Table E.1: Participant details and article lengths for each experiment to evaluate human detection of ~ 200 word model generated news articles. Participants were excluded due to internet check fails. Figure E.1: Participants spend more time trying to identify whether each news article is machine generated as model size increases. Duration on the control model is indicated with the dashed line. Line of best fit is a linear model on a log scale with 95% confidence intervals.",
+            "footnote": "",
+            "cropped_image": "figures/figure_027_page047.png"
+        },
+        {
+            "serial_number": 28,
+            "page": 64,
+            "type": "figure",
+            "bbox": [
+                81,
+                105,
+                558,
+                492
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure H.1: All results for all SuperGLUE tasks.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_028_page064.png"
+        },
+        {
+            "serial_number": 29,
+            "page": 64,
+            "type": "figure",
+            "bbox": [
+                84,
+                581,
+                221,
+                671
+            ],
+            "caption": "Figure H.2: Results for SAT task.",
+            "footnote": "",
+            "cropped_image": "figures/figure_029_page064.png"
+        },
+        {
+            "serial_number": 30,
+            "page": 64,
+            "type": "figure",
+            "bbox": [
+                270,
+                579,
+                574,
+                671
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure H.3: All results for all Winograd tasks.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_030_page064.png"
+        },
+        {
+            "serial_number": 31,
+            "page": 65,
+            "type": "figure",
+            "bbox": [
+                80,
+                105,
+                559,
+                492
+            ],
+            "caption": "Figure H.4: All results for all Arithmetic tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_031_page065.png"
+        },
+        {
+            "serial_number": 32,
+            "page": 65,
+            "type": "figure",
+            "bbox": [
+                83,
+                576,
+                557,
+                672
+            ],
+            "caption": "Figure H.5: All results for all Cloze and Completion tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_032_page065.png"
+        },
+        {
+            "serial_number": 33,
+            "page": 66,
+            "type": "figure",
+            "bbox": [
+                83,
+                83,
+                557,
+                178
+            ],
+            "caption": "Figure H.6: All results for all Common Sense Reasoning tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_033_page066.png"
+        },
+        {
+            "serial_number": 34,
+            "page": 66,
+            "type": "figure",
+            "bbox": [
+                83,
+                229,
+                557,
+                326
+            ],
+            "caption": "Figure H.7: All results for all QA tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_034_page066.png"
+        },
+        {
+            "serial_number": 35,
+            "page": 66,
+            "type": "figure",
+            "bbox": [
+                83,
+                367,
+                558,
+                561
+            ],
+            "caption": "Figure H.8: All results for all Reading Comprehension tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_035_page066.png"
+        },
+        {
+            "serial_number": 36,
+            "page": 66,
+            "type": "figure",
+            "bbox": [
+                82,
+                602,
+                532,
+                694
+            ],
+            "caption": "Figure H.9: All results for all ANLI rounds.",
+            "footnote": "",
+            "cropped_image": "figures/figure_036_page066.png"
+        },
+        {
+            "serial_number": 37,
+            "page": 67,
+            "type": "figure",
+            "bbox": [
+                83,
+                81,
+                559,
+                272
+            ],
+            "caption": "Figure H.10: All results for all Scramble tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_037_page067.png"
+        },
+        {
+            "serial_number": 38,
+            "page": 67,
+            "type": "figure",
+            "bbox": [
+                81,
+                304,
+                559,
+                698
+            ],
+            "caption": "Figure H.11: All results for all Translation tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_038_page067.png"
+        }
+    ]
+}

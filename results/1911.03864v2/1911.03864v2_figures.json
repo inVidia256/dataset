@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                308,
+                63,
+                523,
+                212
+            ],
+            "caption": "Figure 2: The perplexities on the WikiText-103 development set of 20 randomly generated models with 16 self-attention and 16 feedforward sublayers and of the 5 baselines (the standard transformer trained with different random seeds).",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                309,
+                63,
+                523,
+                212
+            ],
+            "caption": "Figure 3: The perplexities on the WikiText-103 development set of 20 randomly generated models with the same number of parameters as the baseline, and of the 5 baselines (the standard transformer trained with different random seeds).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                77,
+                65,
+                513,
+                224
+            ],
+            "caption": "Figure 4: Analysis of sublayer distribution in models that do better or worse than the average baseline, split across bottom (a) and top (b) halves of the model. Figure 4: Analysis of sublayer distribution in models that do better or worse than the average baseline, split across bottom (a) and top (b) halves of the model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                309,
+                62,
+                523,
+                205
+            ],
+            "caption": "Figure 5: The transformer’s sandwich coefficient (k) and validation perplexity, for k ∈ {1, . . . , 15}. The dotted line is the average baseline model’s perplexity (trained with different random seeds), whereas the dashed line represents the best baseline model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                315,
+                302,
+                516,
+                430
+            ],
+            "caption": "Figure 6: Performance on the WikiText-103 development set of the Sandwich16 transformer and the baseline. Each model is trained with 5 different random seeds to assess the perplexity distribution.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page005.png"
+        }
+    ]
+}

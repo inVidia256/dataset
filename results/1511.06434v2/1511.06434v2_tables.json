@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                107,
+                412,
+                504,
+                481
+            ],
+            "caption": "Table 1: CIFAR-10 classification results using our pre-trained model. Our DCGAN is not pretrained on CIFAR-10, but on Imagenet-1k, and the features are used to classify CIFAR-10 images.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Accuracy</td>\n    <td>Accuracy(400 per class)</td>\n    <td>max#of features units</td>\n  </tr>\n  <tr>\n    <td>1 Layer K-means</td>\n    <td>80.6%</td>\n    <td>63.7%(±0.7%)</td>\n    <td>4800</td>\n  </tr>\n  <tr>\n    <td>3 Layer K-means Learned RF</td>\n    <td>82.0%</td>\n    <td>70.7%(±0.7%)</td>\n    <td>3200</td>\n  </tr>\n  <tr>\n    <td>View Invariant K-means</td>\n    <td>81.9%</td>\n    <td>72.6%(±0.7%)</td>\n    <td>6400</td>\n  </tr>\n  <tr>\n    <td>Exemplar CNN</td>\n    <td>84.3%</td>\n    <td>77.4%(±0.2%)</td>\n    <td>1024</td>\n  </tr>\n  <tr>\n    <td>DC GAN(ours) + L2-SVM</td>\n    <td>82.8%</td>\n    <td>73.8%(±0.4%)</td>\n    <td>512</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                165,
+                103,
+                446,
+                217
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: SVHN classification with 1000 labels\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>error rate</td>\n  </tr>\n  <tr>\n    <td>KNN</td>\n    <td>77.93%</td>\n  </tr>\n  <tr>\n    <td>TS VM</td>\n    <td>66.55%</td>\n  </tr>\n  <tr>\n    <td>M1+KNN</td>\n    <td>65.63%</td>\n  </tr>\n  <tr>\n    <td>M1+TS VM</td>\n    <td>54.33%</td>\n  </tr>\n  <tr>\n    <td>M1+M2</td>\n    <td>36.02%</td>\n  </tr>\n  <tr>\n    <td>SWW AE without dropout</td>\n    <td>27.83%</td>\n  </tr>\n  <tr>\n    <td>SWW AE with dropout</td>\n    <td>23.56%</td>\n  </tr>\n  <tr>\n    <td>DC GAN(ours) +L 2-SVM</td>\n    <td>22.48%</td>\n  </tr>\n  <tr>\n    <td>Supervised CNN with the same architecture</td>\n    <td>28.87%(validation)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                151,
+                324,
+                459,
+                394
+            ],
+            "caption": "Table 3: Nearest neighbor classification results.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Test Error@50K samples</td>\n    <td>Test Error@10M samples</td>\n  </tr>\n  <tr>\n    <td>Align MNIST</td>\n    <td>-</td>\n    <td>1.4%</td>\n  </tr>\n  <tr>\n    <td>Infi MNIST</td>\n    <td>-</td>\n    <td>2.6%</td>\n  </tr>\n  <tr>\n    <td>Real Data</td>\n    <td>3.1%</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>GAN</td>\n    <td>6.28%</td>\n    <td>5.65%</td>\n  </tr>\n  <tr>\n    <td>DCGAN(ours)</td>\n    <td>2.98%</td>\n    <td>1.48%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page014.png"
+        }
+    ]
+}

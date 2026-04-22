@@ -1,0 +1,1678 @@
+{
+    "total_count": 152,
+    "content_type": "text",
+    "data": [
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                143,
+                253,
+                470,
+                352
+            ],
+            "content": "Flow-based generative models (Dinh et al., 2014) are conceptually attractive due to tractability of the exact log-likelihood, tractability of exact latent-variable inference, and parallelizability of both training and synthesis. In this paper we propose Glow, a simple type of generative flow using an invertible \\(1 \\times 1\\) convolution. Using our method we demonstrate a significant improvement in log-likelihood on standard benchmarks. Perhaps most strikingly, we demonstrate that a generative model optimized towards the plain log-likelihood objective is capable of efficient realistic-looking synthesis and manipulation of large images. The code for our model is available at https://github.com/openai/glow."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                398,
+                505,
+                442
+            ],
+            "content": "Two major unsolved problems in the field of machine learning are (1) data-efficiency: the ability to learn from few datapoints, like humans; and (2) generalization: robustness to changes of the task or its context. AI systems, for example, often do not work at all when given inputs that are different from their training distribution. A promise of generative models, a major branch of machine learning,"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                718,
+                506,
+                741
+            ],
+            "content": "Figure 1: Synthetic celebrities sampled from our model; see Section 3 for architecture and method, and Section 5 for more results."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                182,
+                97,
+                429,
+                136
+            ],
+            "content": "The text content from the image is:\n\n\"Glow: Generative Flow with Invertible 1×1 Convolutions\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                372,
+                191,
+                386
+            ],
+            "content": "The text content from the image is \"1 Introduction\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                219,
+                176,
+                394,
+                200
+            ],
+            "content": "The text content from the image is:\n\nDiederik P. Kingma*, Prafulla Dhariwal*\nOpenAI, San Francisco"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                282,
+                227,
+                329,
+                241
+            ],
+            "content": "The word in the image is \"Abstract\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                479,
+                205,
+                489
+            ],
+            "content": "The text content from the image is:\n\n\"Preprint. Work in progress.\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                120,
+                450,
+                193,
+                460
+            ],
+            "content": "*Equal contribution.*"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                72,
+                505,
+                149
+            ],
+            "content": "The text content from the image is as follows:\n\n\"is to overcome these limitations by: (1) learning realistic world models, potentially allowing agents to plan in a world model before actual interaction with the world, and (2) learning meaningful features of the input while requiring little or no human supervision or labeling. Since such features can be learned from large unlabeled datasets and are not necessarily task-specific, downstream solutions based on those features could potentially be more robust and more data efficient. In this paper we work towards this ultimate vision, in addition to intermediate applications, by aiming to improve upon the state-of-the-art of generative models.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                154,
+                505,
+                220
+            ],
+            "content": "Generative modeling is generally concerned with the extremely challenging task of modeling all dependencies within very high-dimensional input data, usually specified in the form of a full joint probability distribution. Since such joint models potentially capture all patterns that are present in the data, the applications of accurate generative models are near endless. Immediate applications are as diverse as speech synthesis, text analysis, semi-supervised learning and model-based control; see Section 4 for references."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                226,
+                506,
+                269
+            ],
+            "content": "The discipline of generative modeling has experienced enormous leaps in capabilities in recent years, mostly with likelihood-based methods (Graves, 2013; Kingma and Welling, 2013, 2018; Dinh et al., 2014; van den Oord et al., 2016a) and generative adversarial networks (GANs) (Goodfellow et al., 2014) (see Section 4). Likelihood-based methods can be divided into three categories:"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                437,
+                505,
+                470
+            ],
+            "content": "Flow-based generative models have so far gained little attention in the research community compared to GANs (Goodfellow et al., 2014) and VAEs (Kingma and Welling, 2013). Some of the merits of flow-based generative models include:"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                689,
+                505,
+                722
+            ],
+            "content": "- Significant potential for memory savings. Computing gradients in reversible neural networks requires an amount of memory that is constant instead of linear in their depth, as explained in the RevNet paper (Gomez et al., 2017)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                605,
+                505,
+                682
+            ],
+            "content": "- Useful latent space for downstream tasks. The hidden layers of autoregressive models have unknown marginal distributions, making it much more difficult to perform valid manipulation of data. In GANs, datapoints can usually not be directly represented in a latent space, as they have no encoder and might not have full support over the data distribution. (Grover et al., 2018). This is not the case for reversible generative models and VAEs, which allow for various applications such as interpolations between datapoints and meaningful modifications of existing datapoints."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                543,
+                505,
+                598
+            ],
+            "content": "- Efficient inference and efficient synthesis. Autoregressive models, such as the Pixel-CNN (van den Oord et al., 2016b), are also reversible, however synthesis from such models is difficult to parallelize, and typically inefficient on parallel hardware. Flow-based generative models like Glow (and RealNVP) are efficient to parallelize for both inference and synthesis."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                481,
+                505,
+                536
+            ],
+            "content": "- Exact latent-variable inference and log-likelihood evaluation. In VAEs, one is able to infer only approximately the value of the latent variables that correspond to a datapoint. GAN's have no encoder at all to infer the latents. In reversible generative models, this can be done exactly without approximation. Not only does this lead to accurate inference, it also enables optimization of the exact log-likelihood of the data, instead of a lower bound of it."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                342,
+                505,
+                387
+            ],
+            "content": "2. Variational autoencoders (VAEs) (Kingma and Welling, 2013, 2018), which optimize a lower bound on the log-likelihood of the data. Variational autoencoders have the advantage of parallelizability of training and synthesis, but can be comparatively challenging to optimize (Kingma et al., 2016)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                280,
+                505,
+                335
+            ],
+            "content": "1. Autoregressive models (Hochreiter and Schmidhuber, 1997; Graves, 2013; van den Oord et al., 2016a,b; Van Den Oord et al., 2016). Those have the advantage of simplicity, but have as disadvantage that synthesis has limited parallelizability, since the computational length of synthesis is proportional to the dimensionality of the data; this is especially troublesome for large images or video."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                129,
+                279,
+                506,
+                427
+            ],
+            "content": "1. Autoregressive models (Hochreiter and Schmidhuber, 1997; Graves, 2013; van den Oord et al., 2016a,b; Van Den Oord et al., 2016). Those have the advantage of simplicity, but have as disadvantage that synthesis has limited parallelizability, since the computational length of synthesis is proportional to the dimensionality of the data; this is especially troublesome for large images or video.\n\n2. Variational autoencoders (VAEs) (Kingma and Welling, 2013, 2018), which optimize a lower bound on the log-likelihood of the data. Variational autoencoders have the advantage of parallelizability of training and synthesis, but can be comparatively challenging to optimize (Kingma et al., 2016).\n\n3. Flow-based generative models, first described in NICE (Dinh et al., 2014) and extended in RealNVP (Dinh et al., 2016). We explain the key ideas behind this class of model in the following sections."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                393,
+                504,
+                426
+            ],
+            "content": "3. Flow-based generative models, first described in NICE (Dinh et al., 2014) and extended in RealNVP (Dinh et al., 2016). We explain the key ideas behind this class of model in the following sections."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                482,
+                506,
+                723
+            ],
+            "content": "- Exact latent-variable inference and log-likelihood evaluation. In VAEs, one is able to infer only approximately the value of the latent variables that correspond to a datapoint. GAN’s have no encoder at all to infer the latents. In reversible generative models, this can be done exactly without approximation. Not only does this lead to accurate inference, it also enables optimization of the exact log-likelihood of the data, instead of a lower bound of it.\n- Efficient inference and efficient synthesis. Autoregressive models, such as the Pixel-CNN (van den Oord et al., 2016b), are also reversible, however synthesis from such models is difficult to parallelize, and typically inefficient on parallel hardware. Flow-based generative models like Glow (and RealNVP) are efficient to parallelize for both inference and synthesis.\n- Useful latent space for downstream tasks. The hidden layers of autoregressive models have unknown marginal distributions, making it much more difficult to perform valid manipulation of data. In GANs, datapoints can usually not be directly represented in a latent space, as they have no encoder and might not have full support over the data distribution. (Grover et al., 2018). This is not the case for reversible generative models and VAEs, which allow for various applications such as interpolations between datapoints and meaningful modifications of existing datapoints.\n- Significant potential for memory savings. Computing gradients in reversible neural networks requires an amount of memory that is constant instead of linear in their depth, as explained in the RevNet paper (Gomez et al., 2017)."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                585,
+                505,
+                675
+            ],
+            "content": "The text content from the image is as follows:\n\n\"where we define h_0 ≜ x and h_K ≜ z for conciseness. The scalar value log |det(dh_i/dh_{i-1})| is the logarithm of the absolute value of the determinant of the Jacobian matrix (dh_i/dh_{i-1}), also called the log-determinant. This value is the change in log-density when going from h_{i-1} to h_i under transformation f_i. While it may look intimidating, its value can be surprisingly simple to compute for certain choices of transformations, as previously explored in (Deco and Brauer, 1995; Dinh et al., 2014; Rezende and Mohamed, 2015; Kingma et al., 2016). The basic idea is to choose transformations whose Jacobian dh_i/dh_{i-1} is a triangular matrix. For those transformations, the log-determinant is simple:\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                285,
+                505,
+                331
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nwhere ŷ(i) = x(i) + u with u ∼ U(0, a), and c = −M · log a where a is determined by the discretization level of the data and M is the dimensionality of x. Both objectives (eqs. (1) and (2)) measure the expected compression cost in nats or bits; see (Dinh et al., 2016). Optimization is done through stochastic gradient descent using minibatches of data (Kingma and Ba, 2015).\n```"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                386,
+                505,
+                433
+            ],
+            "content": "The text content from the image is as follows:\n\n\"where z is the latent variable and pθ(z) has a (typically simple) tractable density, such as a spherical multivariate Gaussian distribution: pθ(z) = N(z; 0, I). The function gθ(…) is invertible, also called bijective, such that given a datapoint x, latent-variable inference is done by z = fθ(x) = gθ⁻¹(x). For brevity, we will omit subscript θ from fθ and gθ.\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                147,
+                505,
+                181
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Let x be a high-dimensional random vector with unknown true distribution x ∼ p*(x). We collect an i.i.d. dataset D, and choose a model p_θ(x) with parameters θ. In case of discrete data x, the log-likelihood objective is then equivalent to minimizing:\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                72,
+                505,
+                106
+            ],
+            "content": "In this paper we propose a new generative flow coined Glow, with various new elements as described in Section 3. In Section 5, we compare our model quantitatively with previous flows, and in Section 6, we study the qualitative aspects of our model on high-resolution datasets."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                489,
+                505,
+                523
+            ],
+            "content": "Such a sequence of invertible transformations is also called a (normalizing) flow (Rezende and Mohamed, 2015). Under the change of variables of eq. (4), the probability density function (pdf) of the model given a datapoint can be written as:"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                699,
+                505,
+                722
+            ],
+            "content": "The text content from the image is:\n\n\"where sum() takes the sum over all vector elements, log() takes the element-wise logarithm, and diag() takes the diagonal of the Jacobian matrix.\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                122,
+                355,
+                136
+            ],
+            "content": "2 Background: Flow-based Generative Models"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                436,
+                505,
+                460
+            ],
+            "content": "We focus on functions where f (and, likewise, g) is composed of a sequence of transformations: f = f₁ o f₂ o ⋅⋅⋅ o f_K, such that the relationship between x and z can be written as:"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                227,
+                336,
+                238
+            ],
+            "content": "In case of continuous data x, we minimize the following:"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                335,
+                505,
+                347
+            ],
+            "content": "In most flow-based generative models (Dinh et al., 2014, 2016), the generative process is defined as:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                592,
+                506,
+                638
+            ],
+            "content": "We propose a new flow, building on the NICE and RealNVP flows proposed in (Dinh et al., 2014, 2016). It consists of a series of steps of flow, combined in a multi-scale architecture; see Figure 2. Each step of flow consists of actnorm (Section 3.1) followed by an invertible 1 × 1 convolution (Section 3.2), followed by a coupling layer (Section 3.3)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                700,
+                505,
+                722
+            ],
+            "content": "In Dinh et al. (2016), the authors propose the use of batch normalization (Ioffe and Szegedy, 2015) to alleviate the problems encountered when training deep models. However, since the variance of"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                642,
+                505,
+                665
+            ],
+            "content": "This flow is combined with a multi-scale architecture; due to space constraints we refer to (Dinh et al., 2016) for more details. This architecture has a depth of flow K, and number of levels L (Figure 2)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                567,
+                261,
+                581
+            ],
+            "content": "The text content from the image is:\n\n\"3 Proposed Generative Flow\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                288,
+                505,
+                321
+            ],
+            "content": "Figure 2: We propose a generative flow where each step (left) consists of an actnorm step, followed by an invertible \\(1 \\times 1\\) convolution, followed by an affine transformation (Dinh et al., 2014). This flow is combined with a multi-scale architecture (right). See Section 3 and Table 1."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                679,
+                404,
+                691
+            ],
+            "content": "The text content from the image is:\n\n\"3.1 Actnorm: scale and bias layer with data dependent initialization\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                340,
+                505,
+                396
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: The three main components of our proposed flow, their reverses, and their log-determinants. Here, x signifies the input of the layer, and y signifies its output. Both x and y are tensors of shape [h × w × c] with spatial dimensions (h, w) and channel dimension c. With (i, j) we denote spatial indices into tensors x and y. The function NN() is a nonlinear mapping, such as a (shallow) convolutional neural network like in ResNets (He et al., 2016) and RealNVP (Dinh et al., 2016).\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                340,
+                505,
+                396
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: The three main components of our proposed flow, their reverses, and their log-determinants. Here, x signifies the input of the layer, and y signifies its output. Both x and y are tensors of shape [h × w × c] with spatial dimensions (h, w) and channel dimension c. With (i, j) we denote spatial indices into tensors x and y. The function NN() is a nonlinear mapping, such as a (shallow) convolutional neural network like in ResNets (He et al., 2016) and RealNVP (Dinh et al., 2016).\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                311,
+                257,
+                480,
+                267
+            ],
+            "content": "(b) Multi-scale architecture (Dinh et al., 2016)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                679,
+                399,
+                691
+            ],
+            "content": "The text content from the image is:\n\n\"3.1 Actnorm: scale and bias layer with data dependent initialization\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                288,
+                505,
+                321
+            ],
+            "content": "Figure 2: We propose a generative flow where each step (left) consists of an actnorm step, followed by an invertible \\(1 \\times 1\\) convolution, followed by an affine transformation (Dinh et al., 2014). This flow is combined with a multi-scale architecture (right). See Section 3 and Table 1."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                679,
+                404,
+                691
+            ],
+            "content": "The text content from the image is:\n\n\"3.1 Actnorm: scale and bias layer with data dependent initialization\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                666,
+                506,
+                723
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Split and concatenation. As in (Dinh et al., 2014), the split() function splits h the input tensor into two halves along the channel dimension, while the concat() operation performs the corresponding reverse operation: concatenation into a single tensor. In (Dinh et al., 2016), another type of split was introduced: along the spatial dimensions using a checkerboard pattern. In this work we only perform splits along the channel dimension, simplifying the overall architecture.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                204,
+                505,
+                260
+            ],
+            "content": "(Dinh et al., 2014, 2016) proposed a flow containing the equivalent of a permutation that reverses the ordering of the channels. We propose to replace this fixed permutation with a (learned) invertible \\(1 \\times 1\\) convolution, where the weight matrix is initialized as a random rotation matrix. Note that a \\(1 \\times 1\\) convolution with equal number of input and output channels is a generalization of a permutation operation."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                566,
+                506,
+                610
+            ],
+            "content": "A powerful reversible transformation where the forward function, the reverse function and the log-determinant are computationally efficient, is the affine coupling layer introduced in (Dinh et al., 2014, 2016). See Table 1. An additive coupling layer is a special case with s = 1 and a log-determinant of 0."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                72,
+                506,
+                171
+            ],
+            "content": "activations noise added by batch normalization is inversely proportional to minibatch size per GPU or other processing unit (PU), performance is known to degrade for small per-PU minibatch size. For large images, due to memory constraints, we learn with minibatch size 1 per PU. We propose an actnorm layer (for activation normalization), that performs an affine transformation of the activations using a scale and bias parameter per channel, similar to batch normalization. These parameters are initialized such that the post-actnorm activations per-channel have zero mean and unit variance given an initial minibatch of data. This is a form of data dependent initialization (Salimans and Kingma, 2016). After initialization, the scale and bias are treated as regular trainable parameters that are independent of the data."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                324,
+                505,
+                359
+            ],
+            "content": "The cost of computing or differentiating det(W) is O(c^3), which is often comparable to the cost computing conv2D(h; W) which is O(h · w · c^2). We initialize the weights W as a random rotation matrix, having a log-determinant of 0; after one SGD step these values start to diverge from 0."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                416,
+                505,
+                449
+            ],
+            "content": "where P is a permutation matrix, L is a lower triangular matrix with ones on the diagonal, U is an upper triangular matrix with zeros on the diagonal, and s is a vector. The log-determinant is then simply:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                500,
+                505,
+                534
+            ],
+            "content": "In this parameterization, we initialize the parameters by first sampling a random rotation matrix W, then computing the corresponding value of P (which remains fixed) and the corresponding initial values of L and U and s (which are optimized)."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                264,
+                505,
+                287
+            ],
+            "content": "The log-determinant of an invertible \\(1 \\times 1\\) convolution of a \\(h \\times w \\times c\\) tensor \\(\\mathbf{h}\\) with \\(c \\times c\\) weight matrix \\(\\mathbf{W}\\) is straightforward to compute:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                369,
+                504,
+                392
+            ],
+            "content": "The text content from the image is:\n\n\"LU Decomposition. This cost of computing det(W) can be reduced from O(c^3) to O(c) by parameterizing W directly in its LU decomposition:\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                473,
+                505,
+                496
+            ],
+            "content": "The difference in computational cost will become significant for large \\( c \\), although for the networks in our experiments we did not measure a large difference in wallclock computation time."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                546,
+                231,
+                558
+            ],
+            "content": "3.3 Affine Coupling Layers"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                622,
+                505,
+                655
+            ],
+            "content": "Zero initialization. We initialize the last convolution of each NN() with zeros, such that each affine coupling layer initially performs an identity function; we found that this helps training very deep networks."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                184,
+                249,
+                195
+            ],
+            "content": "The text content from the image is:\n\n3.2 Invertible 1 × 1 convolution"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                184,
+                249,
+                195
+            ],
+            "content": "The text content from the image is:\n\n\"3.2 Invertible 1 × 1 convolution\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                622,
+                505,
+                655
+            ],
+            "content": "Zero initialization. We initialize the last convolution of each NN() with zeros, such that each affine coupling layer initially performs an identity function; we found that this helps training very deep networks."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                406,
+                505,
+                505
+            ],
+            "content": "This work builds upon the ideas and flows proposed in (Dinh et al., 2014) (NICE) and (Dinh et al., 2016) (RealNVP); comparisons with this work are made throughout this paper. In (Papamakarios et al., 2017) (MAF), the authors propose a generative flow based on IAF (Kingma et al., 2016); however, since synthesis from MAF is non-parallelizable and therefore inefficient, we omit it from comparisons. Synthesis from autoregressive (AR) models (Hochreiter and Schmidhuber, 1997; Graves, 2013; van den Oord et al., 2016a,b; Van Den Oord et al., 2016) is similarly non-parallelizable. Synthesis of high-dimensional data typically takes multiple orders of magnitude longer with AR models; see (Kingma et al., 2016; Oord et al., 2017) for evidence. Sampling 256 × 256 images with our largest models takes less than one second on current hardware."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                510,
+                505,
+                565
+            ],
+            "content": "GANs (Goodfellow et al., 2014) are arguably best known for their ability to synthesize large and realistic images (Karras et al., 2017), in contrast with likelihood-based methods. Downsides of GANs are their general lack of latent-space encoders, their general lack of full support over the data (Grover et al., 2018), their difficulty of optimization, and their difficulty of assessing overfitting and generalization."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                294,
+                505,
+                361
+            ],
+            "content": "Permutation. Each step of flow above should be preceded by some kind of permutation of the variables that ensures that after sufficient steps of flow, each dimension can affect every other dimension. The type of permutation specifically done in (Dinh et al., 2014, 2016) is equivalent to simply reversing the ordering of the channels (features) before performing an additive coupling layer. An alternative is to perform a (fixed) random permutation. Our invertible 1x1 convolution is a generalization of such permutations. In experiments we compare these three choices."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                611,
+                505,
+                688
+            ],
+            "content": "We begin our experiments by comparing how our new flow compares against RealNVP (Dinh et al., 2016). We then apply our model on other standard datasets and compare log-likelihoods against previous generative models. See the appendix for optimization details. In our experiments, we let each NN() have three convolutional layers, where the two hidden layers have ReLU activation functions and 512 channels. The first and last convolutions are 3 × 3, while the center convolution is 1 × 1, since both its input and output have a large number of channels, in contrast with the first and last convolution."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                584,
+                259,
+                598
+            ],
+            "content": "The text content from the image is:\n\n\"5 Quantitative Experiments\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                379,
+                197,
+                393
+            ],
+            "content": "The text content from the image is \"4 Related Work\"."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                226,
+                505,
+                269
+            ],
+            "content": "Figure 3: Comparison of the three variants - a reversing operation as described in the RealNVP, a fixed random permutation, and our proposed invertible \\(1 \\times 1\\) convolution, with additive (left) versus affine (right) coupling layers. We plot the mean and standard deviation across three runs with different random seeds."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                367,
+                209,
+                441,
+                219
+            ],
+            "content": "(b) Affine coupling."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                473,
+                505,
+                549
+            ],
+            "content": "We compare the average negative log-likelihood (bits per dimension) on the CIFAR-10 (Krizhevsky, 2009) dataset, keeping all training conditions constant and averaging across three random seeds. The results are in Figure 3. As we see, for both additive and affine couplings, the invertible \\(1 \\times 1\\) convolution achieves a lower negative log likelihood and converges faster. The affine coupling models also converge faster than the additive coupling models. We noted that the increase in wallclock time for the invertible \\(1 \\times 1\\) convolution model was only \\(\\approx 7\\%\\), thus the operation is computationally efficient as well."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                390,
+                506,
+                468
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Gains using invertible 1 × 1 Convolution. We choose the architecture described in Section 3, and consider three variations for the permutation of the channel variables - a reversing operation as described in the RealNVP, a fixed random permutation, and our invertible 1 × 1 convolution. We compare for models with only additive coupling layers, and models with affine coupling. As described earlier, we initialize all models with a data-dependent initialization which normalizes the activations of each layer. All models were trained with K = 32 and L = 3. The model with 1 × 1 convolution has a negligible 0.2% larger amount of parameters.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                569,
+                505,
+                680
+            ],
+            "content": "Comparison with RealNVP on standard benchmarks. Besides the permutation operation, the RealNVP architecture has other differences such as the spatial coupling layers. In order to verify that our proposed architecture is overall competitive with the RealNVP architecture, we compare our models on various natural images datasets. In particular, we compare on CIFAR-10, ImageNet (Russakovsky et al., 2015) and LSUN (Yu et al., 2015) datasets. We follow the same preprocessing as in (Dinh et al., 2016). For Imagenet, we use the 32 × 32 and 64 × 64 downsampled version of ImageNet (Oord et al., 2016), and for LSUN we downsample to 96 × 96 and take random crops of 64 × 64. We also include the bits/dimension for our model trained on 256 × 256 CelebA HQ used in our qualitative experiments.3 As we see in Table 2, our model achieves a significant improvement on all the datasets."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                174,
+                350,
+                437,
+                361
+            ],
+            "content": "Figure 4: Random samples from the model, with temperature 0.7"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                162,
+                78,
+                459,
+                88
+            ],
+            "content": "The text content from the image is:\n\n\"le 2: Best results in bits per dimension of our model compared to RealNVI\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                145,
+                77,
+                465,
+                89
+            ],
+            "content": "The text content from the image is:\n\n\"Table 2: Best results in bits per dimension of our model compared to RealNVP.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                437,
+                505,
+                537
+            ],
+            "content": "We now study the qualitative aspects of the model on high-resolution datasets. We choose the CelebA-HQ dataset (Karras et al., 2017), which consists of 30,000 high-resolution images from the CelebA dataset, and train the same architecture as above but now for images at a resolution of \\(256^2\\), \\(K = 32\\) and \\(L = 6\\). To improve visual quality at the cost of slight decrease in color fidelity, we train our models on 5-bit images. We aim to study if our model can scale to high resolutions, produce realistic samples, and produce a meaningful latent space. Due to device memory constraints, at these resolutions we work with minibatch size 1 per PU, and use gradient checkpointing (Salimans and Bulatov, 2017). In the future, we could use a constant amount of memory independent of depth by utilizing the reversibility of the model (Gomez et al., 2017)."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                541,
+                505,
+                599
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Consistent with earlier work on likelihood-based generative models (Parmar et al., 2018), we found that sampling from a reduced-temperature model often results in higher-quality samples. When sampling with temperature \\( T \\), we sample from the distribution \\( p_{\\theta, T}(\\mathbf{x}) \\propto (p_{\\theta}(\\mathbf{x}))^{T^2} \\). In case of additive coupling layers, this can be achieved simply by multiplying the standard deviation of \\( p_{\\theta}(\\mathbf{z}) \\) by a factor of \\( T \\).\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                610,
+                505,
+                677
+            ],
+            "content": "Synthesis and Interpolation. Figure 4 shows the random samples obtained from our model. The images are extremely high quality for a non-autoregressive likelihood based model. To see how well we can interpolate, we take a pair of real images, encode them with the encoder, and linearly interpolate between the latents to obtain samples. The results in Figure 5 show that the image manifold of the generator distribution is extremely smooth and almost all intermediate samples look like realistic faces."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                689,
+                505,
+                722
+            ],
+            "content": "Semantic Manipulation. We now consider modifying attributes of an image. To do so, we use the labels in the CelebA dataset. Each image has a binary label corresponding to presence or absence of attributes like smiling, blond hair, young, etc. This gives us 30000 binary labels for each attribute."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                412,
+                252,
+                426
+            ],
+            "content": "6 Qualitative Experiments"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                173,
+                183,
+                438,
+                195
+            ],
+            "content": "Figure 5: Linear interpolation in latent space between real images"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                370,
+                505,
+                393
+            ],
+            "content": "Figure 6: Manipulation of attributes of a face. Each row is made by interpolating the latent code of an image along a vector corresponding to the attribute, with the middle image being the original image"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                370,
+                505,
+                393
+            ],
+            "content": "Figure 6: Manipulation of attributes of a face. Each row is made by interpolating the latent code of an image along a vector corresponding to the attribute, with the middle image being the original image"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                406,
+                505,
+                462
+            ],
+            "content": "We then calculate the average latent vector z_pos for images with the attribute and z_neg for images without, and then use the difference (z_pos - z_neg) as a direction for manipulating. Note that this is a relatively small amount of supervision, and is done after the model is trained (no labels were used while training), making it extremely easy to do for a variety of different target attributes. The results are shown in Figure 6."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                482,
+                505,
+                538
+            ],
+            "content": "Effect of temperature and model depth. Figure 8 shows how the sample quality and diversity varies with temperature. The highest temperatures have noisy images, possibly due to overestimating the entropy of the data distribution, and thus we choose a temperature of 0.7 as a sweet spot for diversity and quality of samples. Figure 9 shows how model depth affects the ability of the model to learn long-range dependencies."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                204,
+                504,
+                227
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Figure 7: Samples from model trained on 5-bit LSUN bedrooms, at temperature 0.875. Resolutions 64, 96 and 128 respectively.\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                696,
+                506,
+                719
+            ],
+            "content": "Figure 9: Samples from shallow model on left vs deep model on right. Shallow model has \\( L = 4 \\) levels, while deep model has \\( L = 6 \\) levels"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                354,
+                505,
+                377
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Figure 8: Effect of change of temperature. From left to right, samples obtained at temperatures 0, 0.25, 0.6, 0.7, 0.8, 0.9, 1.0\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                96,
+                505,
+                151
+            ],
+            "content": "We propose a new type of flow, coined Glow, and demonstrate improved quantitative performance in terms of log-likelihood on standard image modeling benchmarks. In addition, we demonstrate that when trained on high-resolution faces, our model is able to synthesize realistic images. Our model is, to the best of our knowledge, the first likelihood-based model in the literature that can efficiently synthesize high-resolution natural images."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                165,
+                164,
+                178
+            ],
+            "content": "References"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                71,
+                184,
+                84
+            ],
+            "content": "The text content from the image is \"7 Conclusion\"."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                173,
+                506,
+                732
+            ],
+            "content": "Here is the text content from the image:\n\n```\nReferences\n\nDeco, G. and Brauer, W. (1995). Higher order statistical decorrelation without information loss. Advances in Neural Information Processing Systems, pages 247–254.\n\nDinh, L., Krueger, D., and Bengio, Y. (2014). Nice: non-linear independent components estimation. arXiv preprint arXiv:1410.8516.\n\nDinh, L., Sohl-Dickstein, J., and Bengio, S. (2016). Density estimation using Real NVP. arXiv preprint arXiv:1605.08803.\n\nGomez, A. N., Ren, M., Urtasun, R., and Grosse, R. B. (2017). The reversible residual network: Backpropagation without storing activations. In Advances in Neural Information Processing Systems, pages 2211–2221.\n\nGoodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., and Bengio, Y. (2014). Generative adversarial nets. In Advances in Neural Information Processing Systems, pages 2672–2680.\n\nGraves, A. (2013). Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850.\n\nGrover, A., Dhar, M., and Ermon, S. (2018). Flow-gan: Combining maximum likelihood and adversarial learning in generative models. In AAAI Conference on Artificial Intelligence.\n\nHe, K., Zhang, X., Ren, S., and Sun, J. (2016). Identity mappings in deep residual networks. arXiv preprint arXiv:1603.05027.\n\nHochreiter, S. and Schmidhuber, J. (1997). Long Short-Term Memory. Neural computation, 9(8):1735–1780.\n\nIoffe, S. and Szegedy, C. (2015). Batch normalization: Accelerating deep network training by reducing internal covariate shift. arXiv preprint arXiv:1502.03167.\n\nKarras, T., Aila, T., Laine, S., and Lehtinen, J. (2017). Progressive growing of gans for improved quality, stability, and variation. arXiv preprint arXiv:1710.10196.\n\nKingma, D. and Ba, J. (2015). Adam: A method for stochastic optimization. Proceedings of the International Conference on Learning Representations 2015.\n\nKingma, D. P., Salimans, T., Jozefowicz, R., Chen, X., Sutskever, I., and Welling, M. (2016). Improved variational inference with inverse autoregressive flow. In Advances in Neural Information Processing Systems, pages 4743–4751.\n\nKingma, D. P. and Welling, M. (2013). Auto-encoding variational Bayes. Proceedings of the 2nd International Conference on Learning Representations.\n\nKingma, D. P. and Welling, M. (2018). Variational autoencoders. Under Review.\n\nKrizhevsky, A. (2009). Learning multiple layers of features from tiny images.\n\nOord, A. v. d., Kalchbrenner, N., and Kavukcuoglu, K. (2016). Pixel recurrent neural networks. arXiv preprint arXiv:1601.06759.\n\nOord, A. v. d., Li, Y., Babuschkin, I., Simonyan, K., Vinyals, O., Kavukcuoglu, K., Driessche, G. v. d., Lockhart, E., Cobo, L. C., Stimberg, F., et al. (2017). Parallel wavenet: Fast high-fidelity speech synthesis. arXiv preprint arXiv:1711.10433.\n\nPapamakarios, G., Murray, I., and Pavlakou, T. (2017). Masked autoregressive flow for density estimation. In Advances in Neural Information Processing Systems, pages 2335–2344.\n\nParmar, N., Vaswani, A., Uszkoreit, J., Kaiser, L., Shazeer, N., and Ku, A. (2018). Image transformer. arXiv preprint arXiv:1802.05751.\n```"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                541,
+                505,
+                563
+            ],
+            "content": "The text content from the image is as follows:\n\nKingma, D. P. and Welling, M. (2013). Auto-encoding variational Bayes. Proceedings of the 2nd International Conference on Learning Representations."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                183,
+                505,
+                204
+            ],
+            "content": "Deco, G. and Brauer, W. (1995). Higher order statistical decorrelation without information loss. Advances in Neural Information Processing Systems, pages 247–254."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                570,
+                377,
+                581
+            ],
+            "content": "The text content from the image is:\n\nKingma, D. P. and Welling, M. (2018). Variational autoencoders. Under Review."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                418,
+                505,
+                439
+            ],
+            "content": "The text content from the image is:\n\nIoffe, S. and Szegedy, C. (2015). Batch normalization: Accelerating deep network training by reducing internal covariate shift. arXiv preprint arXiv:1502.03167."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                588,
+                367,
+                600
+            ],
+            "content": "The text content from the image is:\n\nKrizhevsky, A. (2009). Learning multiple layers of features from tiny images."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                502,
+                506,
+                534
+            ],
+            "content": "The text content from the image is as follows:\n\nKingma, D. P., Salimans, T., Jozefowicz, R., Chen, X., Sutskever, I., and Welling, M. (2016). Improved variational inference with inverse autoregressive flow. In Advances in Neural Information Processing Systems, pages 4743–4751."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                634,
+                505,
+                666
+            ],
+            "content": "The text content from the image is:\n\nOord, A. v. d., Li, Y., Babuschkin, I., Simonyan, K., Vinyals, O., Kavukcuoglu, K., Driessche, G. v. d., Lockhart, E., Cobo, L. C., Stimberg, F., et al. (2017). Parallel wavenet: Fast high-fidelity speech synthesis. arXiv preprint arXiv:1711.10433."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                701,
+                505,
+                722
+            ],
+            "content": "The text content from the image is as follows:\n\nParmar, N., Vaswani, A., Uszkoreit, J., Kaiser, Ł., Shazeer, N., and Ku, A. (2018). Image transformer. arXiv preprint arXiv:1802.05751."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                343,
+                505,
+                365
+            ],
+            "content": "The text content from the image is as follows:\n\nGrover, A., Dhar, M., and Ermon, S. (2018). Flow-gan: Combining maximum likelihood and adversarial learning in generative models. In AAAI Conference on Artificial Intelligence."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                446,
+                505,
+                468
+            ],
+            "content": "The text content from the image is as follows:\n\nKarras, T., Aila, T., Laine, S., and Lehtinen, J. (2017). Progressive growing of gans for improved quality, stability, and variation. arXiv preprint arXiv:1710.10196."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                325,
+                464,
+                336
+            ],
+            "content": "The text content from the image is:\n\nGraves, A. (2013). Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                475,
+                505,
+                496
+            ],
+            "content": "The text content from the image is as follows:\n\nKingma, D. and Ba, J. (2015). Adam: A method for stochastic optimization. Proceedings of the International Conference on Learning Representations 2015."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                240,
+                505,
+                261
+            ],
+            "content": "The text content from the image is:\n\nDinh, L., Sohl-Dickstein, J., and Bengio, S. (2016). Density estimation using Real NVP. arXiv preprint arXiv:1605.08803."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                399,
+                472,
+                411
+            ],
+            "content": "The text content from the image is:\n\nHochreiter, S. and Schmidhuber, J. (1997). Long Short-Term Memory. Neural computation, 9(8):1735–1780."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                606,
+                505,
+                627
+            ],
+            "content": "The text content from the image is:\n\nOord, A. v. d., Kalchbrenner, N., and Kavukcuoglu, K. (2016). Pixel recurrent neural networks. arXiv preprint arXiv:1601.06759."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                211,
+                505,
+                232
+            ],
+            "content": "The text content from the image is as follows:\n\nDinh, L., Krueger, D., and Bengio, Y. (2014). Nice: non-linear independent components estimation. arXiv preprint arXiv:1410.8516."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                296,
+                505,
+                318
+            ],
+            "content": "The text content from the image is as follows:\n\nGoodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., and Bengio, Y. (2014). Generative adversarial nets. In Advances in Neural Information Processing Systems, pages 2672–2680."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                267,
+                505,
+                289
+            ],
+            "content": "The text content from the image is as follows:\n\nGomez, A. N., Ren, M., Urtasun, R., and Grosse, R. B. (2017). The reversible residual network: Backpropagation without storing activations. In Advances in Neural Information Processing Systems, pages 2211–2221."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                673,
+                505,
+                694
+            ],
+            "content": "The text content from the image is as follows:\n\nPapamakarios, G., Murray, I., and Pavlakou, T. (2017). Masked autoregressive flow for density estimation. In Advances in Neural Information Processing Systems, pages 2335–2344."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                371,
+                505,
+                393
+            ],
+            "content": "The text content from the image is:\n\nHe, K., Zhang, X., Ren, S., and Sun, J. (2016). Identity mappings in deep residual networks. arXiv preprint arXiv:1603.05027."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                172,
+                504,
+                734
+            ],
+            "content": "Here is the text content from the image:\n\n```\nReferences\n\nDeco, G. and Brauer, W. (1995). Higher order statistical decorrelation without information loss. Advances in Neural Information Processing Systems, pages 247–254.\n\nDinh, L., Krueger, D., and Bengio, Y. (2014). Nice: non-linear independent components estimation. arXiv preprint arXiv:1410.8516.\n\nDinh, L., Sohl-Dickstein, J., and Bengio, S. (2016). Density estimation using Real NVP. arXiv preprint arXiv:1605.08803.\n\nGomez, A. N., Ren, M., Urtasun, R., and Grosse, R. B. (2017). The reversible residual network: Backpropagation without storing activations. In Advances in Neural Information Processing Systems, pages 2211–2221.\n\nGoodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., and Bengio, Y. (2014) Generative adversarial nets. In Advances in Neural Information Processing Systems, pages 2672–2680.\n\nGraves, A. (2013). Generating sequences with recurrent neural networks. arXiv preprint arXiv:1308.0850.\n\nGrover, A., Dhar, M., and Ermon, S. (2018). Flow-gan: Combining maximum likelihood and adversarial learning in generative models. In AAAI Conference on Artificial Intelligence.\n\nHe, K., Zhang, X., Ren, S., and Sun, J. (2016). Identity mappings in deep residual networks. arXiv preprint arXiv:1603.05027.\n\nHochreiter, S. and Schmidhuber, J. (1997). Long Short-Term Memory. Neural computation, 9(8):1735–1780.\n\nIoffe, S. and Szegedy, C. (2015). Batch normalization: Accelerating deep network training by reducing internal covariate shift. arXiv preprint arXiv:1502.03167.\n\nKarras, T., Aila, T., Laine, S., and Lehtinen, J. (2017). Progressive growing of gans for improved quality, stability, and variation. arXiv preprint arXiv:1710.10196.\n\nKingma, D. and Ba, J. (2015). Adam: A method for stochastic optimization. Proceedings of the International Conference on Learning Representations 2015.\n\nKingma, D. P., Salimans, T., Jozefowicz, R., Chen, X., Sutskever, I., and Welling, M. (2016). Improved variational inference with inverse autoregressive flow. In Advances in Neural Information Processing Systems, pages 4743–4751.\n\nKingma, D. P. and Welling, M. (2013). Auto-encoding variational Bayes. Proceedings of the 2nd International Conference on Learning Representations.\n\nKingma, D. P. and Welling, M. (2018). Variational autoencoders. Under Review.\n\nKrizhevsky, A. (2009). Learning multiple layers of features from tiny images.\n\nOord, A. v. d., Kalchbrenner, N., and Kavukcuoglu, K. (2016). Pixel recurrent neural networks. arXiv preprint arXiv:1601.06759.\n\nOord, A. v. d., Li, Y., Babuschkin, I., Simonyan, K., Vinyals, O., Kavukcuoglu, K., Driessche, G. v. d., Lockhart, E., Cobo, L. C., Stimberg, F., et al. (2017). Parallel wavenet: Fast high-fidelity speech synthesis. arXiv preprint arXiv:1711.10433.\n\nPapamakarios, G., Murray, I., and Pavlakou, T. (2017). Masked autoregressive flow for density estimation. In Advances in Neural Information Processing Systems, pages 2335–2344.\n\nParmar, N., Vaswani, A., Uszkoreit, J., Kaiser, L., Shazeer, N., and Ku, A. (2018). Image transformer. arXiv preprint arXiv:1802.05751.\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                323,
+                285,
+                337
+            ],
+            "content": "The text content from the image is:\n\n\"A Additional quantitative results\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                176,
+                375,
+                434,
+                387
+            ],
+            "content": "The text content from the image is:\n\n\"Table 3: Quantitative results in bits per dimension on the test set.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                348,
+                156,
+                360
+            ],
+            "content": "See Table 3."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                498,
+                460,
+                513
+            ],
+            "content": "The text content from the image is:\n\n```\nB   Simple python implementation of the invertible 1 × 1 convolution\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                282,
+                505,
+                303
+            ],
+            "content": "The text content from the image is as follows:\n\nYu, F., Zhang, Y., Song, S., Seff, A., and Xiao, J. (2015). Lsun: Construction of a large-scale image dataset using deep learning with humans in the loop. arXiv preprint arXiv:1506.03365."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                127,
+                580,
+                428,
+                613
+            ],
+            "content": "The text content from the image is:\n\n```\n# Sample a random orthogonal matrix to initialise weights\nw_init = np.linalg.qr(np.random.randn(c,c))[0]\nw = tf.get_variable(\"W\", initializer=w_init)\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                127,
+                624,
+                416,
+                646
+            ],
+            "content": "The text content from the image is:\n\n```\n# Compute log determinant\ndlogdet = h * w * tf.log(abs(tf.matrix_determinant(w)))\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                525,
+                363,
+                570
+            ],
+            "content": "```\n# Invertible 1x1 conv\ndef invertible_1x1_conv(z, logdet, forward=True):\n    # Shape\n    h, w, c = z.shape[1:]\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                225,
+                505,
+                246
+            ],
+            "content": "The text content from the image is:\n\nvan den Oord, A., Kalchbrenner, N., and Kavukcuoglu, K. (2016a). Pixel recurrent neural networks. arXiv preprint arXiv:1601.06759."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                254,
+                505,
+                275
+            ],
+            "content": "The text content from the image is:\n\nvan den Oord, A., Kalchbrenner, N., Vinyals, O., Espeholt, L., Graves, A., and Kavukcuoglu, K. (2016b). Conditional image generation with PixelCNN decoders. arXiv preprint arXiv:1606.05328."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                73,
+                506,
+                94
+            ],
+            "content": "The text content from the image is as follows:\n\nRezende, D. and Mohamed, S. (2015). Variational inference with normalizing flows. In Proceedings of The 32nd International Conference on Machine Learning, pages 1530–1538."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                128,
+                657,
+                370,
+                712
+            ],
+            "content": "```\nif forward:\n    # Forward computation\n    _w = tf.reshape(w, [1, 1, c, c])\n    z = tf.nn.conv2d(z, _w, [1, 1, 1, 1], 'SAME')\n    logdet += dlogdet\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                196,
+                505,
+                218
+            ],
+            "content": "The text content from the image is as follows:\n\nVan Den Oord, A., Dieleman, S., Zen, H., Simonyan, K., Vinyals, O., Graves, A., Kalchbrenner, N., Senior, A., and Kavukcuoglu, K. (2016). Wavenet: A generative model for raw audio. arXiv preprint arXiv:1609.03499."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                168,
+                505,
+                190
+            ],
+            "content": "The text content from the image is:\n\nSalimans, T. and Kingma, D. P. (2016). Weight normalization: A simple reparameterization to accelerate training of deep neural networks. arXiv preprint arXiv:1602.07868."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                101,
+                506,
+                132
+            ],
+            "content": "The text content from the image is as follows:\n\nRussakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z., Karpathy, A., Khosla, A., Bernstein, M., et al. (2015). Imagenet large scale visual recognition challenge. International Journal of Computer Vision, 115(3):211–252."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                140,
+                505,
+                162
+            ],
+            "content": "The text content from the image is:\n\nSalimans, T. and Bulatov, Y. (2017). Gradient checkpointing. https://github.com/openai/gradient-checkpointing."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                73,
+                504,
+                305
+            ],
+            "content": "The text content from the image is as follows:\n\nRezende, D. and Mohamed, S. (2015). Variational inference with normalizing flows. In Proceedings of The 32nd International Conference on Machine Learning, pages 1530–1538.\n\nRussakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z., Karpathy, A., Khosla, A., Bernstein, M., et al. (2015). Imagenet large scale visual recognition challenge. International Journal of Computer Vision, 115(3):211–252.\n\nSalimans, T. and Bulatov, Y. (2017). Gradient checkpointing. https://github.com/openai/gradient-checkpointing.\n\nSalimans, T. and Kingma, D. P. (2016). Weight normalization: A simple reparameterization to accelerate training of deep neural networks. arXiv preprint arXiv:1602.07868.\n\nVan Den Oord, A., Dieleman, S., Zen, H., Simonyan, K., Vinyals, O., Graves, A., Kalchbrenner, N., Senior, A., and Kavukcuoglu, K. (2016). Wavenet: A generative model for raw audio. arXiv preprint arXiv:1609.03499.\n\nvan den Oord, A., Kalchbrenner, N., and Kavukcuoglu, K. (2016a). Pixel recurrent neural networks. arXiv preprint arXiv:1601.06759.\n\nvan den Oord, A., Kalchbrenner, N., Vinyals, O., Espeholt, L., Graves, A., and Kavukcuoglu, K. (2016b). Conditional image generation with PixelCNN decoders. arXiv preprint arXiv:1606.05328.\n\nYu, F., Zhang, Y., Song, S., Seff, A., and Xiao, J. (2015). LSUN: Construction of a large-scale image dataset using deep learning with humans in the loop. arXiv preprint arXiv:1506.03365."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                147,
+                668,
+                369,
+                712
+            ],
+            "content": "```\n# Forward computation\n_w = tf.reshape(w, [1, 1, c, c])\nz = tf.nn.conv2d(z, _w, [1, 1, 1, 1], 'SAME')\nlogdet += dlogdet\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                525,
+                430,
+                713
+            ],
+            "content": "```python\n# Invertible 1x1 conv\ndef invertible_1x1_conv(z, logdet, forward=True):\n    # Shape\n    h, w, c = z.shape[1:]\n\n    # Sample a random orthogonal matrix to initialise weights\n    w_init = np.linalg.qr(np.random.randn(c, c))[0]\n    w = tf.get_variable(\"W\", initializer=w_init)\n\n    # Compute log determinant\n    dlogdet = h * w * tf.log(abs(tf.matrix_determinant(w)))\n\n    if forward:\n        # Forward computation\n        _w = tf.reshape(w, [1, 1, c, c])\n        z = tf.nn.conv2d(z, _w, [1, 1, 1, 1], 'SAME')\n        logdet += dlogdet\n```"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                555,
+                505,
+                600
+            ],
+            "content": "For the class conditional CIFAR-10 and 32×32 ImageNet samples, we used the same hyperparameters as the quantitative experiments, but with a class dependent prior at the top-most level. We also added a classification loss to predict the class label from the second last layer of the encoder, with a weight of λ = 0.01. The results are in Figure 10."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                639,
+                506,
+                662
+            ],
+            "content": "For direct comparison with other work, datasets are preprocessed exactly as in Dinh et al. (2016). Results are in Figure 11 and Figure 12."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                220,
+                505,
+                243
+            ],
+            "content": "We use the Adam optimizer (Kingma and Ba, 2015) with α = 0.001 and default β₁ and β₂. In our quantitative experiments (Section 5, Table 2) we used the following hyperparameters (Table 4)."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                614,
+                379,
+                628
+            ],
+            "content": "The text content from the image is:\n\n\"E Extra samples from the quantitative experiments\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                530,
+                353,
+                545
+            ],
+            "content": "The text content from the image is:\n\n\"D Extra samples from qualitative experiments\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                205,
+                410,
+                405,
+                421
+            ],
+            "content": "Table 5: Hyperparameters for results in Section 6"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                381,
+                476,
+                393
+            ],
+            "content": "In our qualitative experiments (Section 6), we used the following hyperparameters (Table 5)"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                189,
+                269,
+                422,
+                280
+            ],
+            "content": "The text content from the image is:\n\n\"Table 4: Hyperparameters for results in Section 5, Table 2\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                148,
+                161,
+                234,
+                172
+            ],
+            "content": "The text content from the image is:\n\n```\nreturn z, logdet\n```"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                189,
+                269,
+                422,
+                280
+            ],
+            "content": "The text content from the image is:\n\n\"Table 4: Hyperparameters for results in Section 5, Table 2\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                195,
+                233,
+                210
+            ],
+            "content": "C Optimization details"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                128,
+                73,
+                369,
+                150
+            ],
+            "content": "```\nreturn z, logdet\nelse:\n# Reverse computation\n_w = tf.matrix_inverse(w)\n_w = tf.reshape(_w, [1, 1, c, c])\nz = tf.nn.conv2d(z, _w, [1, 1, 1, 1], 'SAME')\nlogdet -= dlogdet\n```"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                129,
+                73,
+                368,
+                151
+            ],
+            "content": "```\n    return z, logdet\nelse:\n    # Reverse computation\n    _w = tf.matrix_inverse(w)\n    _w = tf.reshape(_w, [1, 1, c, c])\n    z = tf.nn.conv2d(z, _w, [1, 1, 1, 1], 'SAME')\n    logdet -= dlogdet\n```"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                195,
+                234,
+                210
+            ],
+            "content": "C Optimization details"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                73,
+                505,
+                176
+            ],
+            "content": "```\n    return z, logdet\nelse:\n    # Reverse computation\n    _w = tf.matrix_inverse(w)\n    _w = tf.reshape(_w, [1, 1, c, c])\n    z = tf.nn.conv2d(z, _w, [1, 1, 1, 1], 'SAME')\n    logdet -= dlogdet\n\n    return z, logdet\n```"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                109,
+                73,
+                484,
+                176
+            ],
+            "content": "```\n    return z, logdet\nelse:\n    # Reverse computation\n    _w = tf.matrix_inverse(_w)\n    _w = tf.reshape(_w, [1, 1, c, c])\n    z = tf.nn.conv2d(z, _w, [1, 1, 1, 1], 'SAME')\n    logdet -= dlogdet\n\n    return z, logdet\n```"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                676,
+                506,
+                700
+            ],
+            "content": "Figure 10: Class conditional samples on 5-bit CIFAR-10 and 32 × 32 ImageNet respectively. Temperature 0.75"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                216,
+                660,
+                394,
+                670
+            ],
+            "content": "(b) Class conditional 32 × 32 ImageNet samples"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                676,
+                506,
+                700
+            ],
+            "content": "Figure 10: Class conditional samples on 5-bit CIFAR-10 and 32 × 32 ImageNet respectively. Temperature 0.75"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                581,
+                505,
+                603
+            ],
+            "content": "Figure 11: Samples from 8-bit, 64×64 LSUN bedrooms, church and towers respectively. Temperature 1.0"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                523,
+                505,
+                546
+            ],
+            "content": "Figure 12: Samples from an unconditional model with affine coupling layers trained on the CIFAR-10 dataset with temperature 1.0."
+        }
+    ]
+}

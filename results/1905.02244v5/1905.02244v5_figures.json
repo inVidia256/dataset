@@ -1,0 +1,146 @@
+{
+    "total_count": 10,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                100,
+                146,
+                533,
+                172
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                310,
+                219,
+                541,
+                314
+            ],
+            "caption": "Figure 1. The trade-off between Pixel 1 latency and top-1 ImageNet accuracy. All models use the input resolution 224. V3 large and V3 small use multipliers 0.75, 1 and 1.25 to show optimal frontier. All latencies were measured on a single large core of the same device using TFLite[1]. MobileNetV3-Small and Large are our proposed next-generation mobile models.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page001.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                309,
+                396,
+                542,
+                525
+            ],
+            "caption": "Figure 2. The trade-off between MAAdds and top-1 accuracy. This allows to compare models that were targeted different hardware or software frameworks. All MobileNetV3 are for input resolution 224 and use multipliers 0.35, 0.5, 0.75, 1 and 1.25. See section 6 for other resolutions. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page001.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                55,
+                84,
+                281,
+                170
+            ],
+            "caption": "The text content from the image is:\n\n\"Mobilenet V2: bottleneck with residual\" Figure 3. MobileNetV2 [39] layer (Inverted Residual and Linear Bottleneck). Each block consists of narrow input and output (bottleneck), which don’t have nonlinearity, followed by expansion to a much higher-dimensional space and projection to the output. The residual connects bottleneck (rather than expansion).",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page003.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                54,
+                242,
+                276,
+                321
+            ],
+            "caption": "Figure 4. MobileNetV2 + Squeeze-and-Excite [20]. In contrast with [20] we apply the squeeze and excite in the residual layer. We use different nonlinearity depending on the layer, see section 5.2 for details.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page003.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                308,
+                69,
+                544,
+                168
+            ],
+            "caption": "Figure 5. Comparison of original last stage and efficient last stage. This more efficient last stage is able to drop three expensive layers at the end of the network at no loss of accuracy.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page004.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                51,
+                71,
+                284,
+                128
+            ],
+            "caption": "Figure 6. Sigmoid and swish nonlinearities and their \"hard\" counterparts.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page005.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                52,
+                72,
+                282,
+                194
+            ],
+            "caption": "Figure 8. Impact of h-swish vs ReLU on latency for optimized and non-optimized h-swish. The curve shows a frontier of using depth multiplier. Note that placing h-swish at all layers with 80 channels or more (V3) provides the best trade-offs for both optimized h-swish and non-optimized h-swish. Top-1 accuracy is on ImageNet and latency is in ms.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page007.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                52,
+                276,
+                283,
+                385
+            ],
+            "caption": "Figure 9. Impact of individual components in the development of MobileNetV3. Progress is measured by moving up and to the left.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page007.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                309,
+                261,
+                544,
+                339
+            ],
+            "caption": "Figure 10. Building on MobileNetV3, the proposed segmentation head, Lite R-ASPP, delivers fast semantic segmentation results while mixing features from multiple resolutions.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page007.png"
+        }
+    ]
+}

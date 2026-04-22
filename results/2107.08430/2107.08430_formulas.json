@@ -1,0 +1,18 @@
+{
+    "total_count": 1,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                385,
+                335,
+                468,
+                352
+            ],
+            "content": "c _ { i j } = L _ { i j } ^ { c l s } + \\lambda L _ { i j } ^ { r e g } ,",
+            "latex": "c _ { i j } = L _ { i j } ^ { c l s } + \\lambda L _ { i j } ^ { r e g } ,"
+        }
+    ]
+}

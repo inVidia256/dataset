@@ -1,0 +1,146 @@
+{
+    "total_count": 10,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                111,
+                415,
+                506,
+                623
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 1: Qualitative evaluation of sample quality for VAEs, WAEs, 2sVAEs, and RAEs on CelebA. RAE provides slightly sharper samples and reconstructions while interpolating smoothly in the latent space. Corresponding qualitative overviews for MNIST and CIFAR-10 are provided in Appendix F.\" The text content from the image is as follows:\n\n\"Figure 1: Qualitative evaluation of sample quality for VAEs, WAEs, 2sVAEs, and RAEs on CelebA. RAE provides slightly sharper samples and reconstructions while interpolating smoothly in the latent space. Corresponding qualitative overviews for MNIST and CIFAR-10 are provided in Appendix F.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                128,
+                237,
+                480,
+                337
+            ],
+            "caption": "Figure 3: (Left) Test reconstruction quality for a VAE trained on MNIST with different numbers of samples in the latent space as in Eq. 7 measured by FID (lower is better). Larger numbers of Monte-Carlo samples clearly improve training, however, the increased accuracy comes with larger requirements for memory and computation. In practice, the most common choice is therefore \\( k = 1 \\). (Right) Reconstruction and random sample quality (FID, y-axis, lower is better) of a VAE on MNIST for different trade-offs between \\( L_{REC} \\) and \\( L_{KL} \\) (x-axis, see Eq. 5). Higher weights for \\( L_{KL} \\) improve random samples but hurt reconstruction. This is especially noticeable towards the optimality point (\\( \\beta \\approx 10^1 \\)). This indicates that enforcing structure in the VAE latent space leads to a penalty in quality. Figure 3: (Left) Test reconstruction quality for a VAE trained on MNIST with different numbers of samples in the latent space as in Eq. 7 measured by FID (lower is better). Larger numbers of Monte-Carlo samples clearly improve training, however, the increased accuracy comes with larger requirements for memory and computation. In practice, the most common choice is therefore \\( k = 1 \\). (Right) Reconstruction and random sample quality (FID, y-axis, lower is better) of a VAE on MNIST for different trade-offs between \\( L_{REC} \\) and \\( L_{KL} \\) (x-axis, see Eq. 5). Higher weights for \\( L_{KL} \\) improve random samples but hurt reconstruction. This is especially noticeable towards the optimality point (\\( \\beta \\approx 10^1 \\)). This indicates that enforcing structure in the VAE latent space leads to a penalty in quality.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page013.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                128,
+                290,
+                478,
+                414
+            ],
+            "caption": "Figure 4: PRD curves of all RAE methods (left), reflects a similar story as FID scores do. RAE-SN seems to perform the best in both precision and recall metric. PRD curves of all traditional VAE variants (middle). Similar to the conclusion predicted by FID scores there are no clear winner. PRD curves for the WAE (with isotropic Gaussian prior), WAE-GMM model with ex-post density estimation by a 10-component GMM and RAE+SN-GMM (right). This finer grained view shows how the WAE-GMM scores higher recall but lower precision than a RAE+SN-GMM while scoring comparable FID scores. Note that ex-post density estimation greatly boosts the WAE model in both PRD and FID scores. Figure 4: PRD curves of all RAE methods (left), reflects a similar story as FID scores do. RAE-SN seems to perform the best in both precision and recall metric. PRD curves of all traditional VAE variants (middle). Similar to the conclusion predicted by FID scores there are no clear winner. PRD curves for the WAE (with isotropic Gaussian prior), WAE-GMM model with ex-post density estimation by a 10-component GMM and RAE+SN-GMM (right). This finer grained view shows how the WAE-GMM scores higher recall but lower precision than a RAE+SN-GMM while scoring comparable FID scores. Note that ex-post density estimation greatly boosts the WAE model in both PRD and FID scores.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page016.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                134,
+                182,
+                475,
+                576
+            ],
+            "caption": "Figure 5: PRD curves of all methods on image data experiments on MNIST. For each plot, we show the PRD curve when applying the fixed or the fitted one by ex-post density estimation (XPDE). XPDE greatly boosts both precision and recall for all models.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page017.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                135,
+                183,
+                475,
+                576
+            ],
+            "caption": "Figure 6: PRD curves of all methods on image data experiments on CIFAR10. For each plot, we show the PRD curve when applying the fixed or the fitted one by ex-post density estimation (XPDE). XPDE greatly boosts both precision and recall for all models.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page018.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                134,
+                183,
+                475,
+                576
+            ],
+            "caption": "Figure 7: PRD curves of all methods on image data experiments on CELEBA. For each plot, we show the PRD curve when applying the fixed or the fitted one by ex-post density estimation (XPDE). XPDE greatly boosts both precision and recall for all models.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page019.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                110,
+                107,
+                506,
+                509
+            ],
+            "caption": "Figure 8: Qualitative evaluation for sample quality for VAEs, WAEs and RAEs on MNIST. Left: reconstructed samples (top row is ground truth). Middle: randomly generated samples. Right: spherical interpolations between two images (first and last column). Figure 8: Qualitative evaluation for sample quality for VAEs, WAEs and RAEs on MNIST. Left: reconstructed samples (top row is ground truth). Middle: randomly generated samples. Right: spherical interpolations between two images (first and last column).",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page020.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                111,
+                178,
+                506,
+                579
+            ],
+            "caption": "Figure 9: Qualitative evaluation for sample quality for VAEs, WAEs and RAEs on CIFAR-10. Left: reconstructed samples (top row is ground truth). Middle: randomly generated samples. Right: spherical interpolations between two images (first and last column).",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page021.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 23,
+            "type": "figure",
+            "bbox": [
+                135,
+                182,
+                475,
+                292
+            ],
+            "caption": "Figure 11: Different density estimations of the 2-dimensional latent space of a VAE learned on MNIST. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). This clearly shows the aggregated posterior mismatch w.r.t. to the isotropic Gaussian prior imposed by VAEs and how ex-post density estimation can help fix the estimate. Figure 11: Different density estimations of the 2-dimensional latent space of a VAE learned on MNIST. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). This clearly shows the aggregated posterior mismatch w.r.t. to the isotropic Gaussian prior imposed by VAEs and how ex-post density estimation can help fix the estimate.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page023.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 24,
+            "type": "figure",
+            "bbox": [
+                162,
+                109,
+                447,
+                668
+            ],
+            "caption": "Figure 12: Different density estimations of the 16-dimensional latent spaces learned by all models on MNIST (see Table 1) here projected in 2d via T-SNE. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). Ex-post density estimation greatly improves sampling the latent space. Figure 12: Different density estimations of the 16-dimensional latent spaces learned by all models on MNIST (see Table 1) here projected in 2d via T-SNE. The blue points are 2000 test set samples while the orange ones are drawn from the estimator indicated in each column: isotropic Gaussian (left), multivariate Gaussian with mean and covariance estimated on the training set (center) and a 10-component GMM (right). Ex-post density estimation greatly improves sampling the latent space.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page024.png"
+        }
+    ]
+}

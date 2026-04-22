@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                331,
+                281,
+                540,
+                659
+            ],
+            "caption": "The Fast-YOLOv4-SmallObj model, a modified version of Fast-YOLOv4 to improve the detection of small objects. We added layers 38-44 so that the network predicts bounding boxes at 3 different scales (layers 30, 37, and 44) instead of 2 (layers 30 and 37).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>#</td>\n    <td>Layer</td>\n    <td>Filters</td>\n    <td>Size</td>\n    <td>Input</td>\n    <td>Output</td>\n  </tr>\n  <tr>\n    <td>0</td>\n    <td>conv</td>\n    <td>32</td>\n    <td>3x3/2</td>\n    <td>384x384x3</td>\n    <td>192x192x32</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>3x3/2</td>\n    <td>192x192x32</td>\n    <td>96x96x64</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>3x3/1</td>\n    <td>96x96x64</td>\n    <td>96x96x64</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>route[2]</td>\n    <td></td>\n    <td>x1/2</td>\n    <td></td>\n    <td>96x96x32</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>conv</td>\n    <td>32</td>\n    <td>3x3/1</td>\n    <td>96x96x32</td>\n    <td>96x96x32</td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>conv</td>\n    <td>32</td>\n    <td>3x3/1</td>\n    <td>96x96x32</td>\n    <td>96x96x32</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>route[5，4]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>96x96x64</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>1x1/1</td>\n    <td>96x96x64</td>\n    <td>96x96x64</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>route[2，7]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>96x96x128</td>\n  </tr>\n  <tr>\n    <td>9</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>96x96x128</td>\n    <td>48x48x128</td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>3x3/1</td>\n    <td>48x48x128</td>\n    <td>48x48x128</td>\n  </tr>\n  <tr>\n    <td>11</td>\n    <td>route[10]</td>\n    <td></td>\n    <td>x1/2</td>\n    <td></td>\n    <td>48x48x64</td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>3x3/1</td>\n    <td>48x48x64</td>\n    <td>48x48x64</td>\n  </tr>\n  <tr>\n    <td>13</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>3x3/1</td>\n    <td>48x48x64</td>\n    <td>48x48x64</td>\n  </tr>\n  <tr>\n    <td>14</td>\n    <td>route[13，12]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>48x48x128</td>\n  </tr>\n  <tr>\n    <td>15</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>1x1/1</td>\n    <td>48x48x128</td>\n    <td>48x48x128</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>route[10，15]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>48x48x256</td>\n  </tr>\n  <tr>\n    <td>17</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>48x48x256</td>\n    <td>24x24x256</td>\n  </tr>\n  <tr>\n    <td>18</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>3x3/1</td>\n    <td>24x24x256</td>\n    <td>24x24x256</td>\n  </tr>\n  <tr>\n    <td>19</td>\n    <td>route[18]</td>\n    <td></td>\n    <td>x1/2</td>\n    <td></td>\n    <td>24x24x128</td>\n  </tr>\n  <tr>\n    <td>20</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>3x3/1</td>\n    <td>24x24x128</td>\n    <td>24x24x128</td>\n  </tr>\n  <tr>\n    <td>21</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>3x3/1</td>\n    <td>24x24x128</td>\n    <td>24x24x128</td>\n  </tr>\n  <tr>\n    <td>22</td>\n    <td>route[21，20]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>24x24x256</td>\n  </tr>\n  <tr>\n    <td>23</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>1x1/1</td>\n    <td>24x24x256</td>\n    <td>24x24x256</td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>route[18，23]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>24x24x512</td>\n  </tr>\n  <tr>\n    <td>25</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>24x24x512</td>\n    <td>12x12x512</td>\n  </tr>\n  <tr>\n    <td>26</td>\n    <td>conv</td>\n    <td>512</td>\n    <td>3x3/1</td>\n    <td>12x12x512</td>\n    <td>12x12x512</td>\n  </tr>\n  <tr>\n    <td>27</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>1x1/1</td>\n    <td>12x12x512</td>\n    <td>12x12x256</td>\n  </tr>\n  <tr>\n    <td>28</td>\n    <td>conv</td>\n    <td>512</td>\n    <td>3x3/1</td>\n    <td>12x12x256</td>\n    <td>12x12x512</td>\n  </tr>\n  <tr>\n    <td>29</td>\n    <td>conv</td>\n    <td>18</td>\n    <td>1x1/1</td>\n    <td>12x12x512</td>\n    <td>12x12x18</td>\n  </tr>\n  <tr>\n    <td>30</td>\n    <td>detection</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>31</td>\n    <td>route[27]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>12x12x256</td>\n  </tr>\n  <tr>\n    <td>32</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>1x1/1</td>\n    <td>12x12x256</td>\n    <td>12x12x128</td>\n  </tr>\n  <tr>\n    <td>33</td>\n    <td>upsample</td>\n    <td>2x</td>\n    <td>12x12x128</td>\n    <td>24x24x128</td>\n  </tr>\n  <tr>\n    <td>34</td>\n    <td>route[33，23]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>24x24x384</td>\n  </tr>\n  <tr>\n    <td>35</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>3x3/1</td>\n    <td>24x24x384</td>\n    <td>24x24x256</td>\n  </tr>\n  <tr>\n    <td>36</td>\n    <td>conv</td>\n    <td>18</td>\n    <td>1x1/1</td>\n    <td>24x24x256</td>\n    <td>24x24x18</td>\n  </tr>\n  <tr>\n    <td>37</td>\n    <td>detection</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>38</td>\n    <td>route[35]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>24x24x256</td>\n  </tr>\n  <tr>\n    <td>39</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>1x1/1</td>\n    <td>24x24x256</td>\n    <td>24x24x64</td>\n  </tr>\n  <tr>\n    <td>40</td>\n    <td>upsample</td>\n    <td>2x</td>\n    <td>24x24x64</td>\n    <td>48x48x64</td>\n  </tr>\n  <tr>\n    <td>41</td>\n    <td>route[40，15]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>48x48x192</td>\n  </tr>\n  <tr>\n    <td>42</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>3x3/1</td>\n    <td>48x48x192</td>\n    <td>48x48x128</td>\n  </tr>\n  <tr>\n    <td>43</td>\n    <td>conv</td>\n    <td>18</td>\n    <td>1x1/1</td>\n    <td>48x48x128</td>\n    <td>48x48x18</td>\n  </tr>\n  <tr>\n    <td>44</td>\n    <td>detection</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                55,
+                392,
+                296,
+                494
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2. CDCC-NET's layers and hyperparameters. It is relatively shallow and has two dense layers for each of the 9 outputs (i.e., x0/w, y0/h, x1/w, y1/h, x2/w, y2/h, x3/w, y3/h, [legible, illegible]).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>#</td>\n    <td>Layer</td>\n    <td>Filters</td>\n    <td>Size</td>\n    <td>Input</td>\n    <td>Output</td>\n  </tr>\n  <tr>\n    <td>0</td>\n    <td>conv</td>\n    <td>16</td>\n    <td>3x3/1</td>\n    <td>192x64x3</td>\n    <td>192x64x16</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>192x64x16</td>\n    <td>96x32x16</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>conv</td>\n    <td>32</td>\n    <td>3x3/1</td>\n    <td>96x32x16</td>\n    <td>96x32x32</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>96x32x32</td>\n    <td>48x16x32</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>3x3/1</td>\n    <td>48x16x32</td>\n    <td>48x16x64</td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>48x16x64</td>\n    <td>24x8x64</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>flatten</td>\n    <td></td>\n    <td></td>\n    <td>24x8x64</td>\n    <td>12288</td>\n  </tr>\n  <tr>\n    <td>#</td>\n    <td>Layer</td>\n    <td>Connected to</td>\n    <td>Units</td>\n    <td>Input</td>\n    <td>Output</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>non-shared dense[0..8]</td>\n    <td>#6</td>\n    <td>128</td>\n    <td>12288</td>\n    <td>128</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>non-shared dense_corners[0..7]</td>\n    <td>#7</td>\n    <td>1</td>\n    <td>128</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>9</td>\n    <td>non-shared dense_counter_class[8]</td>\n    <td>#7</td>\n    <td>2</td>\n    <td>128</td>\n    <td>2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                321,
+                244,
+                552,
+                430
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3. The architecture of the Fast-OCR model, proposed for counter recognition.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>#</td>\n    <td>Layer</td>\n    <td>Filters</td>\n    <td>Size</td>\n    <td>Input</td>\n    <td>Output</td>\n    <td>BFLOP</td>\n  </tr>\n  <tr>\n    <td>0</td>\n    <td>conv</td>\n    <td>32</td>\n    <td>3x3/1</td>\n    <td>384x128x3</td>\n    <td>384x128x32</td>\n    <td>0.085</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>384x128x32</td>\n    <td>192x64x32</td>\n    <td>0.002</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>conv</td>\n    <td>64</td>\n    <td>3x3/1</td>\n    <td>192x64x32</td>\n    <td>192x64x64</td>\n    <td>0.453</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>192x64x64</td>\n    <td>96x32x64</td>\n    <td>0.001</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>3x3/1</td>\n    <td>96x32x64</td>\n    <td>96x32x128</td>\n    <td>0.453</td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>96x32x128</td>\n    <td>48x16x128</td>\n    <td>0.000</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>3x3/1</td>\n    <td>48x16x128</td>\n    <td>48x16x256</td>\n    <td>0.453</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>conv</td>\n    <td>128</td>\n    <td>1x1/1</td>\n    <td>48x16x256</td>\n    <td>48x16x128</td>\n    <td>0.050</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>3x3/1</td>\n    <td>48x16x128</td>\n    <td>48x16x256</td>\n    <td>0.453</td>\n  </tr>\n  <tr>\n    <td>9</td>\n    <td>max</td>\n    <td>2x2/2</td>\n    <td>48x16x256</td>\n    <td>24x8x256</td>\n    <td>0.000</td>\n  </tr>\n  <tr>\n    <td>10</td>\n    <td>conv</td>\n    <td>512</td>\n    <td>3x3/1</td>\n    <td>24x8x256</td>\n    <td>24x8x512</td>\n    <td>0.453</td>\n  </tr>\n  <tr>\n    <td>11</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>1x1/1</td>\n    <td>24x8x512</td>\n    <td>24x8x256</td>\n    <td>0.050</td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>conv</td>\n    <td>512</td>\n    <td>3x3/1</td>\n    <td>24x8x256</td>\n    <td>24x8x512</td>\n    <td>0.453</td>\n  </tr>\n  <tr>\n    <td>13</td>\n    <td>conv</td>\n    <td>45</td>\n    <td>1x1/1</td>\n    <td>24x8x512</td>\n    <td>24x8x45</td>\n    <td>0.009</td>\n  </tr>\n  <tr>\n    <td>14</td>\n    <td>detection</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>24x8x256</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>15</td>\n    <td>route[11]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>24x8x256</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>conv</td>\n    <td>256</td>\n    <td>1x1/1</td>\n    <td>24x8x256</td>\n    <td>24x8x256</td>\n    <td>0.025</td>\n  </tr>\n  <tr>\n    <td>17</td>\n    <td>upsample</td>\n    <td>2x</td>\n    <td>24x8x256</td>\n    <td>48x16x256</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>18</td>\n    <td>route[17，6]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>48x16x512</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>19</td>\n    <td>conv</td>\n    <td>512</td>\n    <td>3x3/1</td>\n    <td>48x16x512</td>\n    <td>48x16x512</td>\n    <td>3.624</td>\n  </tr>\n  <tr>\n    <td>20</td>\n    <td>conv</td>\n    <td>45</td>\n    <td>1x1/1</td>\n    <td>48x16x512</td>\n    <td>48x16x45</td>\n    <td>0.035</td>\n  </tr>\n  <tr>\n    <td>21</td>\n    <td>detection</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                315,
+                135,
+                557,
+                209
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 4. F-measure values obtained over different IoU thresholds, from 0.5 to 0.95, in the counter detection stage. Note that Fast-YOLOv4-SmallObj achieves considerably better results at higher IoU thresholds (i.e., 0.8-0.95), which indicates that its predictions are much better aligned with the ground truth.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>0.5</td>\n    <td>0.6</td>\n    <td>0.7</td>\n    <td>0.8</td>\n    <td>0.9</td>\n    <td>0.95</td>\n    <td>0.5：0.95</td>\n  </tr>\n  <tr>\n    <td>UF PR-AMR[3]</td>\n    <td>Fast-YOLO v4(608x608)</td>\n    <td>98.1%</td>\n    <td>97.8%</td>\n    <td>97.6%</td>\n    <td>94.6%</td>\n    <td>75.9%</td>\n    <td>38.6%</td>\n    <td>83.8%</td>\n  </tr>\n  <tr>\n    <td>Fast-YOLO v4-Small Obj</td>\n    <td>99.9%</td>\n    <td>99.9%</td>\n    <td>99.9%</td>\n    <td>98.1%</td>\n    <td>80.0%</td>\n    <td>38.9%</td>\n    <td>86.1%</td>\n  </tr>\n  <tr>\n    <td>Copel-AMR</td>\n    <td>Fast-YOLO v4(608x608)</td>\n    <td>99.0%</td>\n    <td>98.3%</td>\n    <td>95.3%</td>\n    <td>84.2%</td>\n    <td>52.2%</td>\n    <td>17.0%</td>\n    <td>74.3%</td>\n  </tr>\n  <tr>\n    <td>Fast-YOLO v4-Small Obj</td>\n    <td>99.7%</td>\n    <td>99.5%</td>\n    <td>98.8%</td>\n    <td>96.1%</td>\n    <td>75.3%</td>\n    <td>28.8%</td>\n    <td>83.0%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page010.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                54,
+                437,
+                296,
+                509
+            ],
+            "caption": "Table 5. Comparison of the corner detection results obtained by CDCC-NET and three baselines. The proposed model presents similar accuracy to Hybrid-MobileNetV2 but is twice as fast. Also, it performs almost as fast as Smaller-LocateNet, even though it predicts much more accurate corner positions.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>FPS</td>\n    <td>Mean pixel distance between the predictedcorners and the ground truth(normalized)</td>\n  </tr>\n  <tr>\n    <td>UFPR-AMR</td>\n    <td>Copel-AMR</td>\n    <td>Average</td>\n  </tr>\n  <tr>\n    <td>Smaller-LocateNet[43]</td>\n    <td>207</td>\n    <td>0.0059</td>\n    <td>0.0173</td>\n    <td>0.0116</td>\n  </tr>\n  <tr>\n    <td>LocateNet[43]</td>\n    <td>166</td>\n    <td>0.0031</td>\n    <td>0.0098</td>\n    <td>0.0065</td>\n  </tr>\n  <tr>\n    <td>CDCC-NET(Ours)</td>\n    <td>191</td>\n    <td>0.0017</td>\n    <td>0.0055</td>\n    <td>0.0036</td>\n  </tr>\n  <tr>\n    <td>Hybrid-MobileNetV2[44]</td>\n    <td>97</td>\n    <td>0.0016</td>\n    <td>0.0046</td>\n    <td>0.0031</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page011.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                348,
+                661,
+                524,
+                721
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 6. Results achieved by CDCC-NET in the counter classification task. It is able to filter out 98.9% of the illegible/faulty meters, while correctly accepting 99.82% (on average of both datasets) of the legible/operational meters.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Class</td>\n    <td>Legible/Operational</td>\n    <td>Illegible/Faulty</td>\n  </tr>\n  <tr>\n    <td>Dataset</td>\n    <td>UF PR-AMR</td>\n    <td>99.88%</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Copel AMR</td>\n    <td>99.75%</td>\n    <td>98.90%</td>\n  </tr>\n  <tr>\n    <td>Average</td>\n    <td>99.82%</td>\n    <td>98.90%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page011.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                123,
+                103,
+                488,
+                264
+            ],
+            "caption": "Table 7. Recognition rates obtained by the proposed AMR system, a version without counter rectification of our system, and 10 baselines in both datasets used in our experiments. Note that exactly the same images were used for training the proposed methods and the baselines.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Approach</td>\n    <td>FPS</td>\n    <td>Recognition Rate</td>\n  </tr>\n  <tr>\n    <td>UFPR-AMR</td>\n    <td>Copel-AMR</td>\n    <td>Average</td>\n  </tr>\n  <tr>\n    <td>Fast-YOLOv4-SmallObj+Gomez etal.[15]</td>\n    <td>66</td>\n    <td>88.25%</td>\n    <td>83.93%</td>\n    <td>86.09%</td>\n  </tr>\n  <tr>\n    <td>Fast-YOLOv4-SmallObj+CRNN[28]</td>\n    <td>69</td>\n    <td>89.62%</td>\n    <td>84.07%</td>\n    <td>86.85%</td>\n  </tr>\n  <tr>\n    <td>Larocaetal.[3](Multi-task)</td>\n    <td>58</td>\n    <td>89.12%</td>\n    <td>87.02%</td>\n    <td>88.07%</td>\n  </tr>\n  <tr>\n    <td>Liao etal.[21]</td>\n    <td>61</td>\n    <td>91.37%</td>\n    <td>92.25%</td>\n    <td>91.81%</td>\n  </tr>\n  <tr>\n    <td>Fast-YOLOv4-SmallObj+Baek etal.[57](TRBA)</td>\n    <td>31</td>\n    <td>93.87%</td>\n    <td>90.80%</td>\n    <td>92.34%</td>\n  </tr>\n  <tr>\n    <td>YOLOv4(416x416)[40]</td>\n    <td>58</td>\n    <td>91.63%</td>\n    <td>93.75%</td>\n    <td>92.69%</td>\n  </tr>\n  <tr>\n    <td>Liao etal.[21](larger input size)</td>\n    <td>42</td>\n    <td>92.25%</td>\n    <td>94.27%</td>\n    <td>93.26%</td>\n  </tr>\n  <tr>\n    <td>Fast-YOLOv4-SmallObj+Calefati etal.[30]</td>\n    <td>58</td>\n    <td>93.87%</td>\n    <td>95.15%</td>\n    <td>94.51%</td>\n  </tr>\n  <tr>\n    <td>YOLOv4(608x608)[40]</td>\n    <td>40</td>\n    <td>94.00%</td>\n    <td>95.33%</td>\n    <td>94.67%</td>\n  </tr>\n  <tr>\n    <td>Laroca etal.[3](CR-NET)</td>\n    <td>41</td>\n    <td>94.25%</td>\n    <td>95.20%</td>\n    <td>94.73%</td>\n  </tr>\n  <tr>\n    <td>Ours-unrectified(Fast-YOLOv4-SmallObj+Fast-OCR)</td>\n    <td>78</td>\n    <td>94.37%</td>\n    <td>95.43%</td>\n    <td>94.90%</td>\n  </tr>\n  <tr>\n    <td>Ours(Fast-YOLOv4-SmallObj+CDCC-NET+Fast-OCR)</td>\n    <td>55</td>\n    <td>94.75%</td>\n    <td>96.98%</td>\n    <td>95.87%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page013.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                318,
+                632,
+                555,
+                702
+            ],
+            "caption": "Table 8. Recognition rates reached by the proposed AMR system when discarding/rejecting the readings returned with lower confidence values by the Fast-OCR network. Our system achieves impressive recognition rates (i.e., ≥ 99% on average) when using a confidence threshold that rejects 15% of the images. Table 8. Recognition rates reached by the proposed AMR system when discarding/rejecting the readings returned with lower confidence values by the Fast-OCR network. Our system achieves impressive recognition rates (i.e., ≥ 99% on average) when using a confidence threshold that rejects 15% of the images.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Rejection Rate</td>\n  </tr>\n  <tr>\n    <td>UF PR-AMR</td>\n    <td>0%</td>\n    <td>5%</td>\n    <td>10%</td>\n    <td>15%</td>\n    <td>20%</td>\n  </tr>\n  <tr>\n    <td>Copel AMR</td>\n    <td>94.75%</td>\n    <td>97.63%</td>\n    <td>98.47%</td>\n    <td>98.82%</td>\n    <td>99.22%</td>\n  </tr>\n  <tr>\n    <td>Average</td>\n    <td>96.98%</td>\n    <td>98.61%</td>\n    <td>99.00%</td>\n    <td>99.24%</td>\n    <td>99.44%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page013.png"
+        }
+    ]
+}

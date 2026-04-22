@@ -1,0 +1,198 @@
+{
+    "total_count": 16,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                216,
+                672,
+                394,
+                692
+            ],
+            "content": "```latex\n\\theta^* = \\arg\\max_{\\theta} \\mathbb{E}_{P \\sim \\rho} \\left[ \\mathbb{E}_{\\pi \\sim F_\\theta(P)} \\left[ R(\\pi; P) \\right] \\right]\n```",
+            "latex": "```latex\n\\theta^* = \\arg\\max_{\\theta} \\mathbb{E}_{P \\sim \\rho} \\left[ \\mathbb{E}_{\\pi \\sim F_\\theta(P)} \\left[ R(\\pi; P) \\right] \\right]\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                209,
+                707,
+                402,
+                720
+            ],
+            "content": "{ \\mathcal { L } } _ { \\mathrm { t o t a l } } = { \\mathcal { L } } _ { \\mathrm { S y m - R L } } + \\alpha { \\mathcal { L } } _ { \\mathrm { i n v } } = { \\mathcal { L } } _ { \\mathrm { p s } } + \\beta { \\mathcal { L } } _ { \\mathrm { s s } } + \\alpha { \\mathcal { L } } _ { \\mathrm { i n v } }",
+            "latex": "{ \\mathcal { L } } _ { \\mathrm { t o t a l } } = { \\mathcal { L } } _ { \\mathrm { S y m - R L } } + \\alpha { \\mathcal { L } } _ { \\mathrm { i n v } } = { \\mathcal { L } } _ { \\mathrm { p s } } + \\beta { \\mathcal { L } } _ { \\mathrm { s s } } + \\alpha { \\mathcal { L } } _ { \\mathrm { i n v } }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                210,
+                537,
+                402,
+                571
+            ],
+            "content": "\\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\left[ R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) - \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) \\right] = 0",
+            "latex": "\\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\left[ R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) - \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) \\right] = 0"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                204,
+                426,
+                434,
+                459
+            ],
+            "content": "\\approx - \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\left[ \\left[ R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) - \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) \\right] \\nabla _ { \\theta } \\log F _ { \\theta } \\right]",
+            "latex": "\\approx - \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } \\left[ \\left[ R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) - \\frac { 1 } { K } \\sum _ { k = 1 } ^ { K } R ( \\boldsymbol { \\pi } ^ { k } ; \\boldsymbol { P } ) \\right] \\nabla _ { \\theta } \\log F _ { \\theta } \\right]"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                176,
+                404,
+                397,
+                424
+            ],
+            "content": "```latex\n\\begin{equation}\n\\nabla_{\\theta}\\mathcal{L}_{\\text{ss}} = -\\mathbb{E}_{\\boldsymbol{\\pi} \\sim F_{\\theta}(\\cdot|\\boldsymbol{P})}\\left[\\left[R(\\boldsymbol{\\pi};\\boldsymbol{P})-b(\\boldsymbol{P})\\right]\\nabla_{\\theta}\\log F_{\\theta}\\right]\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\n\\nabla_{\\theta}\\mathcal{L}_{\\text{ss}} = -\\mathbb{E}_{\\boldsymbol{\\pi} \\sim F_{\\theta}(\\cdot|\\boldsymbol{P})}\\left[\\left[R(\\boldsymbol{\\pi};\\boldsymbol{P})-b(\\boldsymbol{P})\\right]\\nabla_{\\theta}\\log F_{\\theta}\\right]\n\\end{equation}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                189,
+                387,
+                315,
+                403
+            ],
+            "content": "{ \\mathcal { L } } _ { \\mathrm { s s } } = - \\operatorname { E } _ { \\boldsymbol { \\pi } \\sim F _ { \\theta } ( \\cdot | \\boldsymbol { P } ) } \\left[ R ( \\boldsymbol { \\pi } ; \\boldsymbol { P } ) \\right]",
+            "latex": "{ \\mathcal { L } } _ { \\mathrm { s s } } = - \\operatorname { E } _ { \\boldsymbol { \\pi } \\sim F _ { \\theta } ( \\cdot | \\boldsymbol { P } ) } \\left[ R ( \\boldsymbol { \\pi } ; \\boldsymbol { P } ) \\right]"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                224,
+                447,
+                387,
+                474
+            ],
+            "content": "{ \\mathcal { L } } _ { \\mathrm { i n v } } = - S _ { \\cos } \\left( g \\left( h ( x ) \\right) , g \\left( h ( Q ( x ) ) \\right) \\right)",
+            "latex": "{ \\mathcal { L } } _ { \\mathrm { i n v } } = - S _ { \\cos } \\left( g \\left( h ( x ) \\right) , g \\left( h ( Q ( x ) ) \\right) \\right)"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                178,
+                134,
+                459,
+                167
+            ],
+            "content": "\\approx \\frac { 1 } { L K } \\sum _ { l = 1 } ^ { L } \\sum _ { k = 1 } ^ { K } \\left[ \\left[ R ( \\boldsymbol { \\pi } ^ { l , k } ; \\boldsymbol { P } ) - \\frac { 1 } { L K } \\sum _ { l = 1 } ^ { L } \\sum _ { k = 1 } ^ { K } R ( \\boldsymbol { \\pi } ^ { l , k } ; \\boldsymbol { P } ) \\right] \\nabla _ { \\theta } \\log F _ { \\theta } \\right]",
+            "latex": "\\approx \\frac { 1 } { L K } \\sum _ { l = 1 } ^ { L } \\sum _ { k = 1 } ^ { K } \\left[ \\left[ R ( \\boldsymbol { \\pi } ^ { l , k } ; \\boldsymbol { P } ) - \\frac { 1 } { L K } \\sum _ { l = 1 } ^ { L } \\sum _ { k = 1 } ^ { K } R ( \\boldsymbol { \\pi } ^ { l , k } ; \\boldsymbol { P } ) \\right] \\nabla _ { \\theta } \\log F _ { \\theta } \\right]"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                161,
+                89,
+                333,
+                104
+            ],
+            "content": "{ \\mathcal { L } } _ { \\mathrm { p s } } = - \\operatorname { E } _ { Q ^ { l } \\sim { \\bf Q } } \\operatorname { E } _ { \\pi \\sim F _ { \\theta } ( \\cdot | Q ^ { l } ( P ) ) } \\left[ R ( \\pi ; P ) \\right]",
+            "latex": "{ \\mathcal { L } } _ { \\mathrm { p s } } = - \\operatorname { E } _ { Q ^ { l } \\sim { \\bf Q } } \\operatorname { E } _ { \\pi \\sim F _ { \\theta } ( \\cdot | Q ^ { l } ( P ) ) } \\left[ R ( \\pi ; P ) \\right]"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                153,
+                107,
+                438,
+                131
+            ],
+            "content": "```latex\n\\begin{equation}\n\\nabla_{\\theta} \\mathcal{L}_{\\text{ps}} = -\\mathbb{E}_{Q^l \\sim Q}\\left[\\mathbb{E}_{\\pi \\sim F_{\\theta}(\\cdot|Q^l(P))}\\left[R(\\pi;P) - b(P,Q)\\right]\\nabla_{\\theta} \\log F_{\\theta}\\right]\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\n\\nabla_{\\theta} \\mathcal{L}_{\\text{ps}} = -\\mathbb{E}_{Q^l \\sim Q}\\left[\\mathbb{E}_{\\pi \\sim F_{\\theta}(\\cdot|Q^l(P))}\\left[R(\\pi;P) - b(P,Q)\\right]\\nabla_{\\theta} \\log F_{\\theta}\\right]\n\\end{equation}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                150,
+                106,
+                440,
+                131
+            ],
+            "content": "```latex\n\\begin{equation}\n\\nabla_{\\theta} \\mathcal{L}_{\\text{ps}} = -\\mathbb{E}_{Q^l \\sim Q} \\left[ \\mathbb{E}_{\\pi \\sim F_{\\theta}(\\cdot | Q^l(P))} \\left[ R(\\pi; P) - b(P, Q) \\right] \\nabla_{\\theta} \\log F_{\\theta} \\right]\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\n\\nabla_{\\theta} \\mathcal{L}_{\\text{ps}} = -\\mathbb{E}_{Q^l \\sim Q} \\left[ \\mathbb{E}_{\\pi \\sim F_{\\theta}(\\cdot | Q^l(P))} \\left[ R(\\pi; P) - b(P, Q) \\right] \\nabla_{\\theta} \\log F_{\\theta} \\right]\n\\end{equation}\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                179,
+                265,
+                430,
+                394
+            ],
+            "content": "```latex\nR^*(Q(\\boldsymbol{P})) = R(\\boldsymbol{\\pi}^*, Q(\\boldsymbol{P}))\n\n= R(\\boldsymbol{\\pi}^*; \\{||Qx_i - Qx_j||, \\boldsymbol{f}\\})\n\n= R\\left(\\boldsymbol{\\pi}^*; \\{\\sqrt{(Qx_i - Qx_j)^T(Qx_i - Qx_j)}, \\boldsymbol{f}\\}\\right)\n\n= R\\left(\\boldsymbol{\\pi}^*; \\{\\sqrt{(x_i - x_j)^TQ^TQ(x_i - x_j)}, \\boldsymbol{f}\\}\\right)\n\n= R\\left(\\boldsymbol{\\pi}^*; \\{\\sqrt{(x_i - x_j)^TI(x_i - x_j)}, \\boldsymbol{f}\\}\\right)\n\n= R(\\boldsymbol{\\pi}^*; \\{||x_i - x_j||, \\boldsymbol{f}\\}) = R(\\boldsymbol{\\pi}^*; \\boldsymbol{P}) = R^*(\\boldsymbol{P})\n```",
+            "latex": "```latex\nR^*(Q(\\boldsymbol{P})) = R(\\boldsymbol{\\pi}^*, Q(\\boldsymbol{P}))\n\n= R(\\boldsymbol{\\pi}^*; \\{||Qx_i - Qx_j||, \\boldsymbol{f}\\})\n\n= R\\left(\\boldsymbol{\\pi}^*; \\{\\sqrt{(Qx_i - Qx_j)^T(Qx_i - Qx_j)}, \\boldsymbol{f}\\}\\right)\n\n= R\\left(\\boldsymbol{\\pi}^*; \\{\\sqrt{(x_i - x_j)^TQ^TQ(x_i - x_j)}, \\boldsymbol{f}\\}\\right)\n\n= R\\left(\\boldsymbol{\\pi}^*; \\{\\sqrt{(x_i - x_j)^TI(x_i - x_j)}, \\boldsymbol{f}\\}\\right)\n\n= R(\\boldsymbol{\\pi}^*; \\{||x_i - x_j||, \\boldsymbol{f}\\}) = R(\\boldsymbol{\\pi}^*; \\boldsymbol{P}) = R^*(\\boldsymbol{P})\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                208,
+                200,
+                403,
+                215
+            ],
+            "content": "```latex\nR^*(\\boldsymbol{P}) = R(\\pi^*; \\boldsymbol{P}) = R(\\pi^*; \\{\\|x_i - x_j\\|, \\boldsymbol{f}\\})\n```",
+            "latex": "```latex\nR^*(\\boldsymbol{P}) = R(\\pi^*; \\boldsymbol{P}) = R(\\pi^*; \\{\\|x_i - x_j\\|, \\boldsymbol{f}\\})\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                226,
+                556,
+                385,
+                571
+            ],
+            "content": "R ( \\pi ^ { i } ( P ) ; P ) = R ^ { * } ( P ) = R ^ { * } ( Q ( P ) )",
+            "latex": "R ( \\pi ^ { i } ( P ) ; P ) = R ^ { * } ( P ) = R ^ { * } ( Q ( P ) )"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                211,
+                480,
+                400,
+                496
+            ],
+            "content": "```latex\nR(\\pi^i(Q(P)); Q(P)) = R^*(Q(P)) = R^*(P)\n```",
+            "latex": "```latex\nR(\\pi^i(Q(P)); Q(P)) = R^*(Q(P)) = R^*(P)\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                199,
+                604,
+                413,
+                621
+            ],
+            "content": "```latex\nTherefore, \\(\\Pi^*(P) = \\Pi^*(Q(P))\\), i.e., \\(P \\xleftrightarrow{\\text{sym}} Q(P)\\).\n```",
+            "latex": "```latex\nTherefore, \\(\\Pi^*(P) = \\Pi^*(Q(P))\\), i.e., \\(P \\xleftrightarrow{\\text{sym}} Q(P)\\).\n```"
+        }
+    ]
+}

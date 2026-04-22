@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                90,
+                61,
+                271,
+                147
+            ],
+            "caption": "Table 1: BLEU scores computed on the development and test sets using different combinations of approaches. WP denotes a word penalty, where we penalizes the number of unknown words to neural networks. Table 1: BLEU scores computed on the development and test sets using different combinations of approaches. WP denotes a word penalty, where we penalizes the number of unknown words to neural networks.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Models</td>\n    <td>BLEU</td>\n  </tr>\n  <tr>\n    <td>dev</td>\n    <td>test</td>\n  </tr>\n  <tr>\n    <td>Baseline</td>\n    <td>30.64</td>\n    <td>33.30</td>\n  </tr>\n  <tr>\n    <td>RNN</td>\n    <td>31.20</td>\n    <td>33.87</td>\n  </tr>\n  <tr>\n    <td>CSLM+RNN</td>\n    <td>31.48</td>\n    <td>34.64</td>\n  </tr>\n  <tr>\n    <td>CSLM+RNN+WP</td>\n    <td>31.50</td>\n    <td>34.54</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                69,
+                60,
+                535,
+                332
+            ],
+            "caption": "",
+            "footnote": "(b) Long, rare source phrases",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Source</td>\n    <td>Translation Model</td>\n    <td>RNN Encoder-Decoder</td>\n  </tr>\n  <tr>\n    <td>at the end of the</td>\n    <td>[a la fin de la] [f la fin des annees] [etre supprim es a la fin de la]</td>\n    <td>[a la fin du] [a la fin des] [a la fin de la]</td>\n  </tr>\n  <tr>\n    <td>for the first time</td>\n    <td>[r C pour la premi re fois] [ete donne s pour la premiere fois] [ete comm emor e pour la premiere fois]</td>\n    <td>[pour la premiere fois] [pour la premiere fois，] [pour la premiere fois que]</td>\n  </tr>\n  <tr>\n    <td>in the United Statesand</td>\n    <td>[?aux ?tats-Unis et] [ete ouvertes aux Etats-Unis et] [ete constate es aux Etats-Unis et]</td>\n    <td>[aux Etats-Unis et] [des Etats-Unis et] [des Etats-Unis et]</td>\n  </tr>\n  <tr>\n    <td>as well as</td>\n    <td>[?s，qu'] [?s，ainsi que] [?re aussi bien que]</td>\n    <td>[，ainsi qu'] [，ainsi que] [，ainsi que les]</td>\n  </tr>\n  <tr>\n    <td>one of the most</td>\n    <td>[?t?!l'un des plus] [?!l'un des plus] [etre retenue comme un de ses plus]</td>\n    <td>[l'un des] [le] [un des]</td>\n  </tr>\n  <tr>\n    <td>(a) Long， frequent source phrases</td>\n  </tr>\n  <tr>\n    <td>Source</td>\n    <td>Translation Model</td>\n    <td>RNN Encoder-Decoder</td>\n  </tr>\n  <tr>\n    <td>，Minister of Communications and Transport</td>\n    <td>[Secretaire aux communications et aux transports：] [Secretaire aux communications et aux transports]</td>\n    <td>[Secretaire aux communications et aux transports：]</td>\n  </tr>\n  <tr>\n    <td>did not comply with the</td>\n    <td>[vestimentaire，ne correspondaient pas a des] [susmentionnee n'etait pas conforme aux] [presentees n'etaient pas conformes a la]</td>\n    <td>[n'ont pas respecte les] [n'etait pas conforme aux] [n'ont pas respecte la]</td>\n  </tr>\n  <tr>\n    <td>parts of the world.</td>\n    <td>[C gions du monde.] [regions du monde consid eres.] [region du monde consid ere.]</td>\n    <td>[parties du monde.] [les parties du monde.] [des parties du monde.]</td>\n  </tr>\n  <tr>\n    <td>the past few days.</td>\n    <td>[le petit texte.] [cours des tout derniers jours.] [les tout derniers jours.]</td>\n    <td>[ces derniers jours.] [les derniers jours.] [cours des derniers jours.]</td>\n  </tr>\n  <tr>\n    <td>on Friday and Saturday</td>\n    <td>[vendredi et samedi a la] [se deroulera vendredi et samedi，]</td>\n    <td>[le vendredi et le samedi] [le vendredi et samedi] [vendredi et samedi]</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                70,
+                60,
+                551,
+                223
+            ],
+            "caption": "",
+            "footnote": "(b) Long, rare source phrases (b) Long, rare source phrases",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Source</td>\n    <td>Samples from RNN Encoder-Decoder</td>\n  </tr>\n  <tr>\n    <td>at the end of the</td>\n    <td>[a la fin de la](x11)</td>\n  </tr>\n  <tr>\n    <td>for the first time</td>\n    <td>[pour la première fois](x24) [pour la première fois que](x2)</td>\n  </tr>\n  <tr>\n    <td>in the United States and</td>\n    <td>[aux Etats-Unis et](x6) [dans les Etats-Unis](x4)</td>\n  </tr>\n  <tr>\n    <td>， as well as</td>\n    <td>[， ainsi que](，)] [， ainsi que](，] [， ainsi qu'] [et UNK]</td>\n  </tr>\n  <tr>\n    <td>one of the most</td>\n    <td>[l'un des plus](x9) [l'un des](x5) [l'une des plus](x2)</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Source</td>\n    <td>Samples from RNN Encoder-Decoder</td>\n  </tr>\n  <tr>\n    <td>， Minister of Communications and Transport</td>\n    <td>[， ministre des communications et le transport](x13)</td>\n  </tr>\n  <tr>\n    <td)did not comply with the</td>\n    <td>[n'tait pas conforme aux](x2) [n'a pas respect l'](x2) [n'a pas respect la](x3)</td>\n  </tr>\n  <tr>\n    <td>parts of the world.</td>\n    <td>[arts du monde.](x11) [des arts du monde.](x7)</td>\n  </tr>\n  <tr>\n    <td>the past few days.</td>\n    <td>[quelques jours.](x5) [les derniers jours.](x5) [ces derniers jours.](x2)</td>\n  </tr>\n  <tr>\n    <td>on Friday and Saturday</td>\n    <td>[vendredi et samedi](x5) [le vendredi et samedi](x7) [le vendredi et le samedi](x4)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        }
+    ]
+}

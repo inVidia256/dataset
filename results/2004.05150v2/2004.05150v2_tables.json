@@ -1,0 +1,230 @@
+{
+    "total_count": 14,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "table",
+            "bbox": [
+                307,
+                61,
+                525,
+                186
+            ],
+            "caption": "Table 1: Summary of prior work on adapting Transformers for long documents. ltr: left-to-right. Table 1: Summary of prior work on adapting Transformers for long documents. ltr: left-to-right.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>attention char-LM</td>\n    <td>matrix</td>\n    <td>other</td>\n    <td>pretrain</td>\n  </tr>\n  <tr>\n    <td>Transformer-XL(2019)</td>\n    <td>ltr</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Adaptive Span(2019)</td>\n    <td>ltr</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Compressive(2020)</td>\n    <td>ltr</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Reformer(2020)</td>\n    <td>sparse</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Sparse(2019)</td>\n    <td>sparse</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Routing(2020)</td>\n    <td>sparse</td>\n    <td>yes</td>\n    <td>no</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>BP-Transformer(2019)</td>\n    <td>sparse</td>\n    <td>yes</td>\n    <td>MT</td>\n    <td>no</td>\n  </tr>\n  <tr>\n    <td>Blockwise(2019)</td>\n    <td>sparse</td>\n    <td>no</td>\n    <td>QA</td>\n    <td>yes</td>\n  </tr>\n  <tr>\n    <td>Our Longformer</td>\n    <td>sparse</td>\n    <td>yes</td>\n    <td>multiple</td>\n    <td>yes</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                305,
+                61,
+                527,
+                209
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>#Param</td>\n    <td>Dev</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>Dataset text 8</td>\n    <td>T12(Al-Rfou etal，2018)</td>\n    <td>44M</td>\n    <td>-</td>\n    <td>1.18</td>\n  </tr>\n  <tr>\n    <td>Adaptive(Sukhbaatar etal，2019)</td>\n    <td>38M</td>\n    <td>1.05</td>\n    <td>1.11</td>\n  </tr>\n  <tr>\n    <td>BP-Transformer(Ye etal，2019)</td>\n    <td>39M</td>\n    <td>-</td>\n    <td>1.11</td>\n  </tr>\n  <tr>\n    <td>Our Longformer</td>\n    <td>41M</td>\n    <td>1.04</td>\n    <td>1.10</td>\n  </tr>\n  <tr>\n    <td>Dataset enwik 8</td>\n    <td>T12(Al-Rfou etal，2018)</td>\n    <td>44M</td>\n    <td>-</td>\n    <td>1.11</td>\n  </tr>\n  <tr>\n    <td>Transformer-XL(Dai etal，2019)</td>\n    <td>41M</td>\n    <td>-</td>\n    <td>1.06</td>\n  </tr>\n  <tr>\n    <td>Reformer(Kitaev etal，2020)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>1.05</td>\n  </tr>\n  <tr>\n    <td>Adaptive(Sukhbaatar etal，2019)</td>\n    <td>39M</td>\n    <td>1.04</td>\n    <td>1.02</td>\n  </tr>\n  <tr>\n    <td>BP-Transformer(Ye etal，2019)</td>\n    <td>38M</td>\n    <td>-</td>\n    <td>1.02</td>\n  </tr>\n  <tr>\n    <td>Our Longformer</td>\n    <td>41M</td>\n    <td>1.02</td>\n    <td>1.00</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                307,
+                249,
+                525,
+                343
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Small model BPC on text8 & enwik8\" The text content from the image is:\n\n\"Table 3: Performance of large models on enwik8\" The text content from the image is:\n\n\"Table 3: Performance of large models on enwik8\" Table 3: Performance of large models on enwik8",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>#Param</td>\n    <td>Test BPC</td>\n  </tr>\n  <tr>\n    <td>Transformer-XL(18 layers)</td>\n    <td>88M</td>\n    <td>1.03</td>\n  </tr>\n  <tr>\n    <td>Sparse(Child etal，2019)</td>\n    <td>100M</td>\n    <td>0.99</td>\n  </tr>\n  <tr>\n    <td>Transformer-XL(24 layers)</td>\n    <td>277M</td>\n    <td>0.99</td>\n  </tr>\n  <tr>\n    <td>Adaptive(Sukhbaatar etal，2019)</td>\n    <td>209M</td>\n    <td>0.98</td>\n  </tr>\n  <tr>\n    <td>Compressive(Rae etal，2020)</td>\n    <td>277M</td>\n    <td>0.97</td>\n  </tr>\n  <tr>\n    <td>Routing(Roy etal，2020)</td>\n    <td>223M</td>\n    <td>0.99</td>\n  </tr>\n  <tr>\n    <td>Our Long former</td>\n    <td>102M</td>\n    <td>0.99</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                100,
+                61,
+                261,
+                141
+            ],
+            "caption": "",
+            "footnote": "Table 4: Top: changing window size across layers. Bottom: with/without dilation (@ 150K steps on phase1) Table 4: Top: changing window size across layers. Bottom: with/without dilation (@ 150K steps on phase1)",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Dev BPC</td>\n  </tr>\n  <tr>\n    <td>Decreasing w(from 512 to 32)</td>\n    <td>1.24</td>\n  </tr>\n  <tr>\n    <td>Fixed w(=230)</td>\n    <td>1.23</td>\n  </tr>\n  <tr>\n    <td>Increasing w(from 32 to 512)</td>\n    <td>1.21</td>\n  </tr>\n  <tr>\n    <td>No Dilation</td>\n    <td>1.21</td>\n  </tr>\n  <tr>\n    <td>Dilation on 2 heads</td>\n    <td>1.20</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                304,
+                61,
+                530,
+                145
+            ],
+            "caption": "Table 5: MLM BPC for RoBERTa and various pretrained Longformer configurations. Table 5: MLM BPC for RoBERTa and various pretrained Longformer configurations.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>base</td>\n    <td>large</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(seq len：512)</td>\n    <td>1.846</td>\n    <td>1.496</td>\n  </tr>\n  <tr>\n    <td>Longformer(seq len：4，096)</td>\n    <td>10.299</td>\n    <td>8.738</td>\n  </tr>\n  <tr>\n    <td>+ copy position embeddings</td>\n    <td>1.957</td>\n    <td>1.597</td>\n  </tr>\n  <tr>\n    <td>+2K gradient updates</td>\n    <td>1.753</td>\n    <td>1.414</td>\n  </tr>\n  <tr>\n    <td>+65K gradient updates</td>\n    <td>1.705</td>\n    <td>1.358</td>\n  </tr>\n  <tr>\n    <td>Longformer(train extra pos.embed.only)</td>\n    <td>1.850</td>\n    <td>1.504</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                75,
+                61,
+                287,
+                105
+            ],
+            "caption": "Table 6: Average and 95th percentile of context length of datasets in wordpieces. WH: WikiHop, TQA: TriviaQA, HQA: HotpotQA, ON: OntoNotes, HY: Hyperpartisan news Table 6: Average and 95th percentile of context length of datasets in wordpieces. WH: WikiHop, TQA: TriviaQA, HQA: HotpotQA, ON: OntoNotes, HY: Hyperpartisan news",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Word pieces</td>\n    <td>WH</td>\n    <td>TQA</td>\n    <td>HQA</td>\n    <td>ON</td>\n    <td>IMDB</td>\n    <td>HY</td>\n  </tr>\n  <tr>\n    <td>avg.</td>\n    <td>1，535</td>\n    <td>6，589</td>\n    <td>1，316</td>\n    <td>506</td>\n    <td>300</td>\n    <td>705</td>\n  </tr>\n  <tr>\n    <td>95th pctl.</td>\n    <td>3，627</td>\n    <td>17，126</td>\n    <td>1，889</td>\n    <td>1，147</td>\n    <td>705</td>\n    <td>1，975</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                120,
+                61,
+                476,
+                120
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Wiki Hop</td>\n    <td>Trivia QA</td>\n    <td>Hotpot QA</td>\n    <td>Onto Notes</td>\n    <td>IMDB</td>\n    <td>Hyper partisan</td>\n  </tr>\n  <tr>\n    <td>RoBERTa-base</td>\n    <td>72.4</td>\n    <td>74.3</td>\n    <td>63.5</td>\n    <td>78.4</td>\n    <td>95.3</td>\n    <td>87.4</td>\n  </tr>\n  <tr>\n    <td>Long former-base</td>\n    <td>75.0</td>\n    <td>75.2</td>\n    <td>64.4</td>\n    <td>78.6</td>\n    <td>95.7</td>\n    <td>94.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                311,
+                184,
+                521,
+                228
+            ],
+            "caption": "Table 7: Summary of finetuning results on QA, coreference resolution, and document classification. Results are on the development sets comparing our Longformer-base with RoBERTa-base. TriviaQA, Hyperpartisan metrics are F1, WikiHop and IMDB use accuracy, HotpotQA is joint F1, OntoNotes is average F1. Table 7: Summary of finetuning results on QA, coreference resolution, and document classification. Results are on the development sets comparing our Longformer-base with RoBERTa-base. TriviaQA, Hyperpartisan metrics are F1, WikiHop and IMDB use accuracy, HotpotQA is joint F1, OntoNotes is average F1. Table 7: Summary of finetuning results on QA, coreference resolution, and document classification. Results are on the development sets comparing our Longformer-base with RoBERTa-base. TriviaQA, Hyperpartisan metrics are F1, WikiHop and IMDB use accuracy, HotpotQA is joint F1, OntoNotes is average F1. Table 8: Leaderboard results of Longformer-large at time of submission (May 2020). All numbers are F1 scores.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Wiki Hop</td>\n    <td>Trivia QA</td>\n    <td>Hotpot QA</td>\n  </tr>\n  <tr>\n    <td>Current* SOTA</td>\n    <td>78.3</td>\n    <td>73.3</td>\n    <td>74.2</td>\n  </tr>\n  <tr>\n    <td>Longformer-large</td>\n    <td>81.9</td>\n    <td>77.3</td>\n    <td>73.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                74,
+                61,
+                287,
+                176
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ans.</td>\n    <td>supp.</td>\n    <td>joint</td>\n  </tr>\n  <tr>\n    <td>TAP2(ensemble) (GlaB et al， 2019)</td>\n    <td>79.8</td>\n    <td>86.7</td>\n    <td>70.7</td>\n  </tr>\n  <tr>\n    <td>SAE(Tu et al， 2019)</td>\n    <td>79.6</td>\n    <td>86.7</td>\n    <td>71.4</td>\n  </tr>\n  <tr>\n    <td>Quark(dev)(Groeneveld et al， 2020)</td>\n    <td>81.2</td>\n    <td>87.0</td>\n    <td>72.3</td>\n  </tr>\n  <tr>\n    <td>C2F Reader(Shao et al， 2020)</td>\n    <td>81.2</td>\n    <td>87.6</td>\n    <td>72.8</td>\n  </tr>\n  <tr>\n    <td>Long former-large</td>\n    <td>81.3</td>\n    <td>88.3</td>\n    <td>73.2</td>\n  </tr>\n  <tr>\n    <td>ETC-large( Ainslie et al， 2020)</td>\n    <td>81.2</td>\n    <td>89.1</td>\n    <td>73.6</td>\n  </tr>\n  <tr>\n    <td>GSAN-large( GSAN-large( Fang et al， 2020)</td>\n    <td>81.6</td>\n    <td>88.7</td>\n    <td>73.9</td>\n  </tr>\n  <tr>\n    <td>HGN-large(Fang et al， 2020)</td>\n    <td>82.2</td>\n    <td>88.5</td>\n    <td>74.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page009.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                69,
+                254,
+                293,
+                374
+            ],
+            "caption": "Table 9: HotpotQA results in distractor setting test set. Quark’s test results are not available. All numbers are F1 scores. † shows contemporaneous leaderboard submissions. Table 9: HotpotQA results in distractor setting test set. Quark’s test results are not available. All numbers are F1 scores. † shows contemporaneous leaderboard submissions. Table 9: HotpotQA results in distractor setting test set. Quark’s test results are not available. All numbers are F1 scores. † shows contemporaneous leaderboard submissions. The text content from the image is:\n\n\"Table 10: WikiHop development set ablations\" The text content from the image is:\n\n\"Table 10: WikiHop development set ablations\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Accuracy / A</td>\n  </tr>\n  <tr>\n    <td>Longformer(seq len：4，096)</td>\n    <td>73.8</td>\n  </tr>\n  <tr>\n    <td>RoBERTa-base(seq len：512)</td>\n    <td>72.4/-1.4</td>\n  </tr>\n  <tr>\n    <td>Longformer(seq len：4，096，15 epochs)</td>\n    <td>75.0/ +1.2</td>\n  </tr>\n  <tr>\n    <td>Longformer(seq len：512，attention：n2)</td>\n    <td>71.7/-2.1</td>\n  </tr>\n  <tr>\n    <td>Longformer(seq len：2，048)</td>\n    <td>73.1/-0.7</td>\n  </tr>\n  <tr>\n    <td>Longformer(no MLM pretraining)</td>\n    <td>73.2/-0.6</td>\n  </tr>\n  <tr>\n    <td>Longformer(no linear proj.)</td>\n    <td>72.2/-1.6</td>\n  </tr>\n  <tr>\n    <td>Longformer(no linear proj.no global atten.)</td>\n    <td>65.5/-8.3</td>\n  </tr>\n  <tr>\n    <td>Longformer(pretrain extra position embed.only)</td>\n    <td>73.5/-0.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page009.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                69,
+                61,
+                293,
+                155
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>R-1</td>\n    <td>R-2</td>\n    <td>R-L</td>\n  </tr>\n  <tr>\n    <td>Discourse-aware(2018)</td>\n    <td>35.80</td>\n    <td>11.05</td>\n    <td>31.80</td>\n  </tr>\n  <tr>\n    <td>Extr-Abst-TLM(2020)</td>\n    <td>41.62</td>\n    <td>14.69</td>\n    <td>38.03</td>\n  </tr>\n  <tr>\n    <td>Dancer(2020)</td>\n    <td>42.70</td>\n    <td>16.54</td>\n    <td>38.44</td>\n  </tr>\n  <tr>\n    <td>Pegasus(2020)</td>\n    <td>44.21</td>\n    <td>16.95</td>\n    <td>38.83</td>\n  </tr>\n  <tr>\n    <td>LED-large(seq len：4，096)(ours)</td>\n    <td>44.40</td>\n    <td>17.94</td>\n    <td>39.76</td>\n  </tr>\n  <tr>\n    <td>Big Bird(seq len：4，096)(2020)</td>\n    <td>46.63</td>\n    <td>19.02</td>\n    <td>41.77</td>\n  </tr>\n  <tr>\n    <td>LED-large(seq len：16，384)(ours)</td>\n    <td>46.63</td>\n    <td>19.62</td>\n    <td>41.83</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page010.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                127,
+                61,
+                469,
+                325
+            ],
+            "caption": "",
+            "footnote": "hyperparameters for the best performing model for character-level language modeling hyperparameters for the best performing model for character-level language modeling",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Param</td>\n    <td>Value</td>\n  </tr>\n  <tr>\n    <td>Position Embeddings</td>\n    <td>Relative and Sinusoidal as inDai etal.(2019)</td>\n  </tr>\n  <tr>\n    <td>Small model config</td>\n    <td>12 layers，8 heads，512 hidden size as in Dai etal.(2019)</td>\n  </tr>\n  <tr>\n    <td>Large model config</td>\n    <td>30 layers，8 heads，512 hidden size as in Child etal.(2019)</td>\n  </tr>\n  <tr>\n    <td>Optimizer</td>\n    <td>AdamW</td>\n  </tr>\n  <tr>\n    <td>Dropout</td>\n    <td>0.2(small model)，0.4(large model)</td>\n  </tr>\n  <tr>\n    <td>Gradient clipping</td>\n    <td>0.25</td>\n  </tr>\n  <tr>\n    <td>Weight Decay</td>\n    <td>0.01</td>\n  </tr>\n  <tr>\n    <td>Layernorm Location</td>\n    <td>pre-layernorm(Xiongetal.，2020)</td>\n  </tr>\n  <tr>\n    <td>Activation</td>\n    <td>Gelu</td>\n  </tr>\n  <tr>\n    <td>Number of phases</td>\n    <td>5</td>\n  </tr>\n  <tr>\n    <td>Phase 1 window sizes</td>\n    <td>32(bottom layer)-8，192(top layer)</td>\n  </tr>\n  <tr>\n    <td>Phase 5 window sizes</td>\n    <td>512(bottom layer)-(top layer)</td>\n  </tr>\n  <tr>\n    <td>Phase 1 sequence length</td>\n    <td>2，048</td>\n  </tr>\n  <tr>\n    <td>Phase 5 sequence length</td>\n    <td>23，040(gpu memory limit)</td>\n  </tr>\n  <tr>\n    <td>Phase 1 LR</td>\n    <td>0.000025</td>\n  </tr>\n  <tr>\n    <td>Phase 5 LR</td>\n    <td>0000015625</td>\n  </tr>\n  <tr>\n    <td>Batch size per phase</td>\n    <td>32，32，16，16，16</td>\n  </tr>\n  <tr>\n    <td>#Steps per phase(small)</td>\n    <td>430K，50k，50k，35k，5k</td>\n  </tr>\n  <tr>\n    <td>#Steps per phase(large)</td>\n    <td>350K，25k，10k，5k，5k</td>\n  </tr>\n  <tr>\n    <td>Warmup</td>\n    <td>10%of the phase steps with maximum 10K steps</td>\n  </tr>\n  <tr>\n    <td>LR scheduler</td>\n    <td>constant throughout each phase</td>\n  </tr>\n  <tr>\n    <td>Dilation(small model)</td>\n    <td>0(layers 0-5)，1(layers 6-7)，2(layers 8-9)，3(layers 10-11)</td>\n  </tr>\n  <tr>\n    <td>Dilation(large model)</td>\n    <td>0(layers 0-14)，1(layers 15-19)，2(layers 20-24)，3(layers 25-29)</td>\n  </tr>\n  <tr>\n    <td>Dilation heads</td>\n    <td>2heads only</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page015.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                77,
+                365,
+                284,
+                428
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 13: Pretraining data\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Source</td>\n    <td>Tokens</td>\n    <td>Avg doc len</td>\n  </tr>\n  <tr>\n    <td>Books(Zhu etal，2015)</td>\n    <td>0.5B</td>\n    <td>95.9K</td>\n  </tr>\n  <tr>\n    <td>English Wikipedia</td>\n    <td>2.1B</td>\n    <td>506</td>\n  </tr>\n  <tr>\n    <td>Real news(Zellers etal，2019)</td>\n    <td>1.8B</td>\n    <td>1.7K</td>\n  </tr>\n  <tr>\n    <td>Stories(Trinh and Le，2018)</td>\n    <td>2.1B</td>\n    <td>7.8K</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page015.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                318,
+                61,
+                514,
+                135
+            ],
+            "caption": "Table 14: Hyperparameters of the QA models. All models use a similar scheduler with linear warmup and decay. Table 14: Hyperparameters of the QA models. All models use a similar scheduler with linear warmup and decay.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Param</td>\n    <td>Wiki Hop</td>\n    <td>Trivia QA</td>\n    <td>Hotpot QA</td>\n  </tr>\n  <tr>\n    <td>Epochs</td>\n    <td>15</td>\n    <td>5</td>\n    <td>5</td>\n  </tr>\n  <tr>\n    <td>LR</td>\n    <td>3e-5</td>\n    <td>3e-5</td>\n    <td>5e-5</td>\n  </tr>\n  <tr>\n    <td>Warmup steps</td>\n    <td>200</td>\n    <td>1000</td>\n    <td>1000</td>\n  </tr>\n  <tr>\n    <td>Batch size</td>\n    <td>32</td>\n    <td>32</td>\n    <td>32</td>\n  </tr>\n  <tr>\n    <td>Optimizer</td>\n    <td>Adam</td>\n    <td>Adam</td>\n    <td>Adam</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page016.png"
+        }
+    ]
+}

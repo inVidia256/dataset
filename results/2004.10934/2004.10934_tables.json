@@ -1,0 +1,166 @@
+{
+    "total_count": 10,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                60,
+                83,
+                533,
+                153
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Parameters of neural networks for image classification.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Backbone model</td>\n    <td>Input networkresolution</td>\n    <td>Receptivefield size</td>\n    <td>Parameters</td>\n    <td>Average sizeof layer output(WxHxC)</td>\n    <td>BFLOPs(512x512 network resolution)</td>\n    <td>FPS(GPU RTX 2070)</td>\n  </tr>\n  <tr>\n    <td>CSP ResNext 50</td>\n    <td>512x512</td>\n    <td>425x425</td>\n    <td>20.6M</td>\n    <td>1058K</td>\n    <td>31(15.5FMA)</td>\n    <td>62</td>\n  </tr>\n  <tr>\n    <td>CSP Darknet 53</td>\n    <td>512x512</td>\n    <td>725x725</td>\n    <td>27.6M</td>\n    <td>950K</td>\n    <td>52(26.0FMA)</td>\n    <td>66</td>\n  </tr>\n  <tr>\n    <td>Efficient Net-B3(ours)</td>\n    <td>512x512</td>\n    <td>1311x1311</td>\n    <td>12.0M</td>\n    <td>668K</td>\n    <td>11(5.5FMA)</td>\n    <td>26</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                48,
+                491,
+                289,
+                617
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Influence of BoF and Mish on the CSPResNeXt-50 classifier accuracy.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>MixUp CutMix Mosaic Bluring</td>\n    <td>LabelSmoothing</td>\n    <td>Swish</td>\n    <td>Mish</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>77.9%94.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>77.2%94.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>78.0%94.3%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>78.1%94.5%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>77.5%93.8%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>78.1%94.4%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>64.5%86.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>78.9%94.5%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>78.5%94.8%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>79.8%95.2%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                49,
+                651,
+                289,
+                711
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3: Influence of BoF and Mish on the CSPDarknet-53 classifier accuracy.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>MixUp CutMix Mosaic Bluring</td>\n    <td>Label Smoothing</td>\n    <td>Swish</td>\n    <td>Mish</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>77.2%</td>\n    <td>93.6%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>77.8%</td>\n    <td>94.4%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>78.7%</td>\n    <td>94.8%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                128,
+                83,
+                466,
+                267
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Ablation Studies of Bag-of-Freebies. (CSPResNeXt50-PANet-SPP, 512x512)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>S</td>\n    <td>M</td>\n    <td>IT</td>\n    <td>GA</td>\n    <td>LS</td>\n    <td>CBN</td>\n    <td>CA</td>\n    <td>DM</td>\n    <td>OA</td>\n    <td>loss</td>\n    <td>AP</td>\n    <td>AP50</td>\n    <td>AP75</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>38.0%</td>\n    <td>60.0%</td>\n    <td>40.8%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>37.7%</td>\n    <td>59.9%</td>\n    <td>40.5%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>39.1%</td>\n    <td>61.8%</td>\n    <td>42.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>36.9%</td>\n    <td>59.7%</td>\n    <td>39.4%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>38.9%</td>\n    <td>61.7%</td>\n    <td>41.9%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>33.0%</td>\n    <td>55.4%</td>\n    <td>35.4%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>38.4%</td>\n    <td>60.7%</td>\n    <td>41.3%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>38.7%</td>\n    <td>60.7%</td>\n    <td>41.9%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>35.3%</td>\n    <td>57.2%</td>\n    <td>38.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>GIoU</td>\n    <td>39.4%</td>\n    <td>59.4%</td>\n    <td>42.5%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>D IoU</td>\n    <td>39.1%</td>\n    <td>58.8%</td>\n    <td>42.1%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>C IoU</td>\n    <td>39.6%</td>\n    <td>59.2%</td>\n    <td>42.6%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>C IoU</td>\n    <td>41.5%</td>\n    <td>64.0%</td>\n    <td>44.8%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>C IoU</td>\n    <td>36.1%</td>\n    <td>56.5%</td>\n    <td>38.4%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>MSE</td>\n    <td>40.3%</td>\n    <td>64.0%</td>\n    <td>43.1%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>GIoU</td>\n    <td>42.4%</td>\n    <td>64.4%</td>\n    <td>45.9%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>C IoU</td>\n    <td>42.4%</td>\n    <td>64.4%</td>\n    <td>45.9%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page009.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                55,
+                298,
+                281,
+                367
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5: Ablation Studies of Bag-of-Specials. (Size 512x512).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>AP</td>\n    <td>AP50</td>\n    <td>AP75</td>\n  </tr>\n  <tr>\n    <td>CSPResNeXt50-PANet-SPP</td>\n    <td>42.4%</td>\n    <td>64.4%</td>\n    <td>45.9%</td>\n  </tr>\n  <tr>\n    <td>CSPRESNeXt50-PANet-SPP-RFB</td>\n    <td>41.8%</td>\n    <td>62.7%</td>\n    <td>45.1%</td>\n  </tr>\n  <tr>\n    <td>CSPRESNeXt50-PANet-SPP-SAM</td>\n    <td>42.7%</td>\n    <td>64.6%</td>\n    <td>46.3%</td>\n  </tr>\n  <tr>\n    <td>CSPResNeXt50-PANet-SPP-SAM-G</td>\n    <td>41.6%</td>\n    <td>62.7%</td>\n    <td>45.0%</td>\n  </tr>\n  <tr>\n    <td>CSPResNeXt50-PANet-SPP-ASFF-RFB</td>\n    <td>41.1%</td>\n    <td>62.6%</td>\n    <td>44.4%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page009.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                307,
+                320,
+                545,
+                432
+            ],
+            "caption": "Table 6: Using different classifier pre-trained weightings for detector training (all other training parameters are similar in all models).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model(with optimal setting)</td>\n    <td>Size</td>\n    <td>AP</td>\n    <td>AP50</td>\n    <td>AP75</td>\n  </tr>\n  <tr>\n    <td>CSP ResNeXt 50-PANet-SPP</td>\n    <td>512x512</td>\n    <td>42.4</td>\n    <td>64.4</td>\n    <td>45.9</td>\n  </tr>\n  <tr>\n    <td>CSP ResNeXt 50-PANet-SPP(BoF-backbone)</td>\n    <td>512x512</td>\n    <td>42.3</td>\n    <td>64.3</td>\n    <td>45.7</td>\n  </tr>\n  <tr>\n    <td>CSP ResNeXt 50-PANet-SPP(BoF-backbone+Mish)</td>\n    <td>512x512</td>\n    <td>42.3</td>\n    <td>64.2</td>\n    <td>45.8</td>\n  </tr>\n  <tr>\n    <td>CSP Darknet 53-PANet-SPP(BoF-backbone)</td>\n    <td>512x512</td>\n    <td>42.4</td>\n    <td>64.5</td>\n    <td>46.0</td>\n  </tr>\n  <tr>\n    <td>CSP Darknet 53-PANet-SPP(BoF-backbone+Mish)</td>\n    <td>512x512</td>\n    <td>43.0</td>\n    <td>64.9</td>\n    <td>46.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                310,
+                590,
+                543,
+                693
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 7: Using different mini-batch size for detector training.\" The text content from the image is:\n\n\"Table 7: Using different mini-batch size for detector training.\" The text content from the image is:\n\n\"Table 7: Using different mini-batch size for detector training.\" The text content from the image is:\n\n\"Table 7: Using different mini-batch size for detector training.\" The text content from the image is:\n\n\"Table 7: Using different mini-batch size for detector training.\" The text content from the image is:\n\n\"Table 7: Using different mini-batch size for detector training.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model(without OA)</td>\n    <td>Size</td>\n    <td>AP</td>\n    <td>AP50</td>\n    <td>AP75</td>\n  </tr>\n  <tr>\n    <td>CSP ResNeXt 50-PA Net-SPP(without BoF/BoS， mini-batch 4)</td>\n    <td>608</td>\n    <td>37.1</td>\n    <td>59.2</td>\n    <td>39.9</td>\n  </tr>\n  <tr>\n    <td>CSP ResNeXt 50-PA Net-SPP(without BoF/BoS， mini-batch 8)</td>\n    <td>608</td>\n    <td>38.4</td>\n    <td>60.6</td>\n    <td>41.6</td>\n  </tr>\n  <tr>\n    <td>CSP Darknet 53-PA Net-SPP(with BoF/BoS， mini-batch 4)</td>\n    <td>512</td>\n    <td>41.6</td>\n    <td>64.1</td>\n    <td>45.0</td>\n  </tr>\n  <tr>\n    <td>CSP Darknet 53-PA Net-SPP(with BoF/BoS， mini-batch 8)</td>\n    <td>512</td>\n    <td>41.7</td>\n    <td>64.2</td>\n    <td>45.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page009.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                101,
+                162,
+                492,
+                650
+            ],
+            "caption": "Table 8: Comparison of the speed and accuracy of different object detectors on the MS COCO dataset (test-dev 2017). (Real-time detectors with FPS 30 or higher are highlighted here. We compare the results with batch=1 without using tensorRT.)",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Backbone</td>\n    <td>Size</td>\n    <td>FPS</td>\n    <td>AP</td>\n    <td>AP50</td>\n    <td>AP75</td>\n    <td>APS</td>\n    <td>APM</td>\n    <td>APL</td>\n  </tr>\n  <tr>\n    <td>YOLOv4：Optimal Speed and Accuracy of Object Detection</td>\n    <td>YOLOv4</td>\n    <td>CSP Darknet-53</td>\n    <td>416</td>\n    <td>38(M)</td>\n    <td>41.2%</td>\n    <td>62.8%</td>\n    <td>44.3%</td>\n    <td>20.4%</td>\n    <td>44.4%</td>\n    <td>56.0%</td>\n  </tr>\n  <tr>\n    <td>YOLOv4</td>\n    <td>CSP Darknet-53</td>\n    <td>512</td>\n    <td>31(M)</td>\n    <td>43.0%</td>\n    <td>64.9%</td>\n    <td>46.5%</td>\n    <td>24.3%</td>\n    <td>46.1%</td>\n    <td>55.2%</td>\n  </tr>\n  <tr>\n    <td>YOLOv4</td>\n    <td>CSP Darknet-53</td>\n    <td>608</td>\n    <td>23(M)</td>\n    <td>43.5%</td>\n    <td>65.7%</td>\n    <td>47.3%</td>\n    <td>26.7%</td>\n    <td>46.7%</td>\n    <td>53.3%</td>\n  </tr>\n  <tr>\n    <td>Learning Rich Features at High-Speed for Single-Shot Object Detection[84]</td>\n    <td>LRF</td>\n    <td>VGG-16</td>\n    <td>300</td>\n    <td>76.9(M)</td>\n    <td>32.0%</td>\n    <td>51.5%</td>\n    <td>33.8%</td>\n    <td>12.6%</td>\n    <td>34.9%</td>\n    <td>47.0%</td>\n  </tr>\n  <tr>\n    <td>LRF</td>\n    <td>ResNet-101</td>\n    <td>300</td>\n    <td>52.6(M)</td>\n    <td>34.3%</td>\n    <td>54.1%</td>\n    <td>36.6%</td>\n    <td>13.2%</td>\n    <td>38.2%</td>\n    <td>50.7%</td>\n  </tr>\n  <tr>\n    <td>LRF</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>38.5(M)</td>\n    <td>36.2%</td>\n    <td>56.6%</td>\n    <td>38.7%</td>\n    <td>19.0%</td>\n    <td>39.9%</td>\n    <td>48.8%</td>\n  </tr>\n  <tr>\n    <td>LRF</td>\n    <td>ResNet-101</td>\n    <td>512</td>\n    <td>31.3(M)</td>\n    <td>37.3%</td>\n    <td>58.5%</td>\n    <td>39.7%</td>\n    <td>19.7%</td>\n    <td>42.8%</td>\n    <td>50.1%</td>\n  </tr>\n  <tr>\n    <td>Receptive Field Block Net for Accurate and Fast Object Detection[47]</td>\n    <td>RFB Net</td>\n    <td>VGG-16</td>\n    <td>300</td>\n    <td>66.7(M)</td>\n    <td>30.3%</td>\n    <td>49.3%</td>\n    <td>31.8%</td>\n    <td>11.8%</td>\n    <td>31.9%</td>\n    <td>45.9%</td>\n  </tr>\n  <tr>\n    <td>RFB Net</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>33.3(M)</td>\n    <td>33.8%</td>\n    <td>54.2%</td>\n    <td>35.9%</td>\n    <td>16.2%</td>\n    <td>37.1%</td>\n    <td>47.4%</td>\n  </tr>\n  <tr>\n    <td>RFB Net-E</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>30.3(M)</td>\n    <td>34.4%</td>\n    <td>55.7%</td>\n    <td>36.4%</td>\n    <td>17.6%</td>\n    <td>37.0%</td>\n    <td>47.6%</td>\n  </tr>\n  <tr>\n    <td>YOLOv3：An incremental improvement[63]</td>\n    <td>YOLOv3</td>\n    <td>Darknet-53</td>\n    <td>320</td>\n    <td>45(M)</td>\n    <td>28.2%</td>\n    <td>51.5%</td>\n    <td>29.7%</td>\n    <td>11.9%</td>\n    <td>30.6%</td>\n    <td>43.4%</td>\n  </tr>\n  <tr>\n    <td>YOLOv3</td>\n    <td>Darknet-53</td>\n    <td>416</td>\n    <td>35(M)</td>\n    <td>31.0%</td>\n    <td>55.3%</td>\n    <td>32.3%</td>\n    <td>15.2%</td>\n    <td>33.2%</td>\n    <td>42.8%</td>\n  </tr>\n  <tr>\n    <td>YOLOv3</td>\n    <td>Darknet-53</td>\n    <td>608</td>\n    <td>20(M)</td>\n    <td>33.0%</td>\n    <td>57.9%</td>\n    <td>34.4%</td>\n    <td>18.3%</td>\n    <td>35.4%</td>\n    <td>41.9%</td>\n  </tr>\n  <tr>\n    <td>YOLOv3-SPP</td>\n    <td>Darknet-53</td>\n    <td>608</td>\n    <td>20(M)</td>\n    <td>36.2%</td>\n    <td>60.6%</td>\n    <td>38.2%</td>\n    <td>20.6%</td>\n    <td>37.4%</td>\n    <td>46.1%</td>\n  </tr>\n  <tr>\n    <td>SSD：Single shot multibox detector[50]</td>\n    <td>SSD</td>\n    <td>VGG-16</td>\n    <td>300</td>\n    <td>43(M)</td>\n    <td>25.1%</td>\n    <td>43.1%</td>\n    <td>25.8%</td>\n    <td>6.6%</td>\n    <td>25.9%</td>\n    <td>41.4%</td>\n  </tr>\n  <tr>\n    <td>SSD</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>22(M)</td>\n    <td>28.8%</td>\n    <td>48.5%</td>\n    <td>30.3%</td>\n    <td>10.9%</td>\n    <td>31.8%</td>\n    <td>43.5%</td>\n  </tr>\n  <tr>\n    <td>Single-shot refinement neural network for object detection[95]</td>\n    <td>Refine Det</td>\n    <td>VGG-16</td>\n    <td>320</td>\n    <td>38.7(M)</td>\n    <td>29.4%</td>\n    <td>49.2%</td>\n    <td>31.3%</td>\n    <td>10.0%</td>\n    <td>32.0%</td>\n    <td>44.4%</td>\n  </tr>\n  <tr>\n    <td>Refine Det</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>22.3(M)</td>\n    <td>33.0%</td>\n    <td>54.5%</td>\n    <td>35.5%</td>\n    <td>16.3%</td>\n    <td>36.3%</td>\n    <td>44.3%</td>\n  </tr>\n  <tr>\n    <td>M2det：A single-shot object detector based on multi-level feature pyramid network[98]</td>\n    <td>M2det</td>\n    <td>VGG-16</td>\n    <td>320</td>\n    <td>33.4(M)</td>\n    <td>33.5%</td>\n    <td>52.4%</td>\n    <td>35.6%</td>\n    <td>14.4%</td>\n    <td>37.6%</td>\n    <td>47.6%</td>\n  </tr>\n  <tr>\n    <td>M2det</td>\n    <td>ResNet-101</td>\n    <td>320</td>\n    <td>21.7(M)</td>\n    <td>34.3%</td>\n    <td>53.5%</td>\n    <td>36.5%</td>\n    <td>14.8%</td>\n    <td>38.8%</td>\n    <td>47.9%</td>\n  </tr>\n  <tr>\n    <td>M2det</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>18(M)</td>\n    <td>37.6%</td>\n    <td>56.6%</td>\n    <td>40.5%</td>\n    <td>18.4%</td>\n    <td>43.4%</td>\n    <td>51.2%</td>\n  </tr>\n  <tr>\n    <td>M2det</td>\n    <td>ResNet-101</td>\n    <td>512</td>\n    <td>15.8(M)</td>\n    <td>38.8%</td>\n    <td>59.4%</td>\n    <td>41.7%</td>\n    <td>20.5%</td>\n    <td>43.9%</td>\n    <td>53.4%</td>\n  </tr>\n  <tr>\n    <td>M2det</td>\n    <td>VGG-16</td>\n    <td>800</td>\n    <td>11.8(M)</td>\n    <td>41.0%</td>\n    <td>59.7%</td>\n    <td>45.0%</td>\n    <td>22.1%</td>\n    <td>46.5%</td>\n    <td>53.8%</td>\n  </tr>\n  <tr>\n    <td>Parallel Feature Pyramid Network for Object Detection[34]</td>\n    <td>PFP Net-R</td>\n    <td>VGG-16</td>\n    <td>320</td>\n    <td>33(M)</td>\n    <td>31.8%</td>\n    <td>52.9%</td>\n    <td>33.6%</td>\n    <td>12%</td>\n    <td>35.5%</td>\n    <td>46.1%</td>\n  </tr>\n  <tr>\n    <td>PFP Net-R</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>24(M)</td>\n    <td>35.2%</td>\n    <td>57.6%</td>\n    <td>37.9%</td>\n    <td>18.7%</td>\n    <td>38.6%</td>\n    <td>45.9%</td>\n  </tr>\n  <tr>\n    <td>Focal Loss for Dense Object Detection[45]</td>\n    <td>Retina Net</td>\n    <td>ResNet-50</td>\n    <td>500</td>\n    <td>13.9(M)</td>\n    <td>32.5%</td>\n    <td>50.9%</td>\n    <td>34.8%</td>\n    <td>13.9%</td>\n    <td>35.8%</td>\n    <td>46.7%</td>\n  </tr>\n  <tr>\n    <td>Retina Net</td>\n    <td>ResNet-101</td>\n    <td>500</td>\n    <td>11.1(M)</td>\n    <td>34.4%</td>\n    <td>53.1%</td>\n    <td>36.8%</td>\n    <td>14.7%</td>\n    <td>38.5%</td>\n    <td>49.1%</td>\n  </tr>\n  <tr>\n    <td>Retina Net</td>\n    <td>ResNet-50</td>\n    <td>800</td>\n    <td>6.5(M)</td>\n    <td>35.7%</td>\n    <td>55.0%</td>\n    <td>38.5%</td>\n    <td>18.9%</td>\n    <td>38.9%</td>\n    <td>46.3%</td>\n  </tr>\n  <tr>\n    <td>Retina Net</td>\n    <td>ResNet-101</td>\n    <td>800</td>\n    <td>5.1(M)</td>\n    <td>37.8%</td>\n    <td>57.5%</td>\n    <td>40.8%</td>\n    <td>20.2%</td>\n    <td>41.1%</td>\n    <td>49.2%</td>\n  </tr>\n  <tr>\n    <td>Feature Selective Anchor-Free Module for Single-Shot Object Detection[102]</td>\n    <td>AB+FSAF</td>\n    <td>ResNet-101</td>\n    <td>800</td>\n    <td>5.6(M)</td>\n    <td>40.9%</td>\n    <td>61.5%</td>\n    <td>44.0%</td>\n    <td>24.0%</td>\n    <td>44.2%</td>\n    <td>51.3%</td>\n  </tr>\n  <tr>\n    <td>AB+FSAF</td>\n    <td>ResNeXt-101</td>\n    <td>800</td>\n    <td>2.8(M)</td>\n    <td>42.9%</td>\n    <td>63.8%</td>\n    <td>46.3%</td>\n    <td>26.6%</td>\n    <td>46.2%</td>\n    <td>52.7%</td>\n  </tr>\n  <tr>\n    <td>Corner Net：Detecting objects as paired keypoints[37]</td>\n    <td>Corner Net</td>\n    <td>Hourglass</td>\n    <td>512</td>\n    <td>4.4(M)</td>\n    <td>40.5%</td>\n    <td>57.8%</td>\n    <td>45.3%</td>\n    <td>20.8%</td>\n    <td>44.8%</td>\n    <td>56.7%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page011.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                86,
+                297,
+                510,
+                347
+            ],
+            "caption": "Table 9: Comparison of the speed and accuracy of different object detectors on the MS COCO dataset (test-dev 2017). (Real-time detectors with FPS 30 or higher are highlighted here. We compare the results with batch=1 without using tensorRT.) Hierarchical Shot Detector [3] The text content from the image is:\n\n\"Dynamic anchor feature selection for single-shot object detection [41]\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>HSD</td>\n    <td>VGG-16</td>\n    <td>320</td>\n    <td>40(P)</td>\n    <td>33.5%</td>\n    <td>53.2%</td>\n    <td>36.1%</td>\n    <td>15.0%</td>\n    <td>35.0%</td>\n    <td>47.8%</td>\n  </tr>\n  <tr>\n    <td>HSD</td>\n    <td>VGG-16</td>\n    <td>512</td>\n    <td>23.3(P)</td>\n    <td>38.8%</td>\n    <td>58.2%</td>\n    <td>42.5%</td>\n    <td>21.8%</td>\n    <td>41.9%</td>\n    <td>50.2%</td>\n  </tr>\n  <tr>\n    <td>HSD</td>\n    <td>ResNet-101</td>\n    <td>512</td>\n    <td>20.8(P)</td>\n    <td>40.2%</td>\n    <td>59.4%</td>\n    <td>44.0%</td>\n    <td>20.0%</td>\n    <td>44.4%</td>\n    <td>54.9%</td>\n  </tr>\n  <tr>\n    <td>HSD</td>\n    <td>ResNeXt-101</td>\n    <td>512</td>\n    <td>15.2(P)</td>\n    <td>41.9%</td>\n    <td>61.1%</td>\n    <td>46.2%</td>\n    <td>21.8%</td>\n    <td>46.6%</td>\n    <td>57.0%</td>\n  </tr>\n  <tr>\n    <td>HSD</td>\n    <td>ResNet-101</td>\n    <td>768</td>\n    <td>10.9(P)</td>\n    <td>42.3%</td>\n    <td>61.2%</td>\n    <td>46.9%</td>\n    <td>22.8%</td>\n    <td>47.3%</td>\n    <td>55.9%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page012.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                79,
+                192,
+                513,
+                630
+            ],
+            "caption": "Table 10: Comparison of the speed and accuracy of different object detectors on the MS COCO dataset (test-dev 2017). (Real-time detectors with FPS 30 or higher are highlighted here. We compare the results with batch=1 without using tensorRT.)",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Backbone</td>\n    <td>Size</td>\n    <td>FPS</td>\n    <td>AP</td>\n    <td>AP50</td>\n    <td>AP75</td>\n    <td>APS</td>\n    <td>APM</td>\n    <td>APL</td>\n  </tr>\n  <tr>\n    <td>YOLOv4：Optimal Speed and Accuracy of Object Detection</td>\n    <td>YOLOv4</td>\n    <td>CSP Darknet-53</td>\n    <td>416</td>\n    <td>96(V)</td>\n    <td>41.2%</td>\n    <td>62.8%</td>\n    <td>44.3%</td>\n    <td>20.4%</td>\n    <td>44.4%</td>\n    <td>56.0%</td>\n  </tr>\n  <tr>\n    <td>YOLOv4</td>\n    <td>CSP Darknet-53</td>\n    <td>512</td>\n    <td>83(V)</td>\n    <td>43.0%</td>\n    <td>64.9%</td>\n    <td>46.5%</td>\n    <td>24.3%</td>\n    <td>46.1%</td>\n    <td>55.2%</td>\n  </tr>\n  <tr>\n    <td>YOLOv4</td>\n    <td>CSP Darknet-53</td>\n    <td>608</td>\n    <td>62(V)</td>\n    <td>43.5%</td>\n    <td>65.7%</td>\n    <td>47.3%</td>\n    <td>26.7%</td>\n    <td>46.7%</td>\n    <td>53.3%</td>\n  </tr>\n  <tr>\n    <td>Efficient Det：Scalable and Efficient Object Detection[77]</td>\n    <td>Efficient Det-D 0</td>\n    <td>Efficient-B 0</td>\n    <td>512</td>\n    <td>62.5(V)</td>\n    <td>33.8%</td>\n    <td>52.2%</td>\n    <td>35.8%</td>\n    <td>12.0%</td>\n    <td>38.3%</td>\n    <td>51.2%</td>\n  </tr>\n  <tr>\n    <td>Efficient Det-D 1</td>\n    <td>Efficient-B 1</td>\n    <td>640</td>\n    <td>50.0(V)</td>\n    <td>39.6%</td>\n    <td>58.6%</td>\n    <td>42.3%</td>\n    <td>17.9%</td>\n    <td>44.3%</td>\n    <td>56.0%</td>\n  </tr>\n  <tr>\n    <td>Efficient Det-D 2</td>\n    <td>Efficient-B 2</td>\n    <td>768</td>\n    <td>41.7(V)</td>\n    <td>43.0%</td>\n    <td>62.3%</td>\n    <td>46.2%</td>\n    <td>22.5%</td>\n    <td>47.0%</td>\n    <td>58.4%</td>\n  </tr>\n  <tr>\n    <td>Efficient Det-D 3</td>\n    <td>Efficient-B 3</td>\n    <td>896</td>\n    <td>23.8(V)</td>\n    <td>45.8%</td>\n    <td>65.0%</td>\n    <td>49.3%</td>\n    <td>26.6%</td>\n    <td>49.4%</td>\n    <td>59.8%</td>\n  </tr>\n  <tr>\n    <td>Learning Spatial Fusion for Single-Shot Object Detection[48]</td>\n    <td>YOLO v3+AS FF*</td>\n    <td>Darknet-53</td>\n    <td>320</td>\n    <td>60(V)</td>\n    <td>38.1%</td>\n    <td>57.4%</td>\n    <td>42.1%</td>\n    <td>16.1%</td>\n    <td>41.6%</td>\n    <td>53.6%</td>\n  </tr>\n  <tr>\n    <td>YOLO v3+AS FF*</td>\n    <td>Darknet-53</td>\n    <td>416</td>\n    <td>54(V)</td>\n    <td>40.6%</td>\n    <td>60.6%</td>\n    <td>45.1%</td>\n    <td>20.3%</td>\n    <td>44.2%</td>\n    <td>54.1%</td>\n  </tr>\n  <tr>\n    <td>YOLO v3+AS FF*</td>\n    <td>Darknet-53</td>\n    <td>608x</td>\n    <td>45.5(V)</td>\n    <td>42.4%</td>\n    <td>63.0%</td>\n    <td>47.4%</td>\n    <td>25.5%</td>\n    <td>45.7%</td>\n    <td>52.3%</td>\n  </tr>\n  <tr>\n    <td>YOLO v3+AS FF*</td>\n    <td>Darknet-53</td>\n    <td>800x</td>\n    <td>29.4(V)</td>\n    <td>43.9%</td>\n    <td>64.1%</td>\n    <td>49.2%</td>\n    <td>27.0%</td>\n    <td>46.6%</td>\n    <td>53.4%</td>\n  </tr>\n  <tr>\n    <td>HarD Net：A Low Memory Traffic Network[4]</td>\n    <td>RFB Net</td>\n    <td>HarD Net 68</td>\n    <td>512</td>\n    <td>41.5(V)</td>\n    <td>33.9%</td>\n    <td>54.3%</td>\n    <td>36.2%</td>\n    <td>14.7%</td>\n    <td>36.6%</td>\n    <td>50.5%</td>\n  </tr>\n  <tr>\n    <td>RFB Net</td>\n    <td>HarD Net 85</td>\n    <td>512</td>\n    <td>37.1(V)</td>\n    <td>36.8%</td>\n    <td>57.1%</td>\n    <td>39.5%</td>\n    <td>16.9%</td>\n    <td>40.5%</td>\n    <td>52.9%</td>\n  </tr>\n  <tr>\n    <td>Focal Loss for Dense Object Detection[45]</td>\n    <td>Retina Net</td>\n    <td>ResNet-50</td>\n    <td>640</td>\n    <td>37(V)</td>\n    <td>37.0%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Retina Net</td>\n    <td>ResNet-101</td>\n    <td>640</td>\n    <td>29.4</td>\n    <td>37.9%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Retina Net</td>\n    <td>ResNet-50</td>\n    <td>1024</td>\n    <td>19.6(V)</td>\n    <td>40.1%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Retina Net</td>\n    <td>ResNet-101</td>\n    <td>1024</td>\n    <td>15.4(V)</td>\n    <td>41.1%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>SM-NAS：Structural-to-Modular Neural Architecture Search for Object Detection[88]</td>\n    <td>SM-NAS：E 2</td>\n    <td>-</td>\n    <td>800x600</td>\n    <td>25.3(V)</td>\n    <td>40.0%</td>\n    <td>58.2%</td>\n    <td>43.4%</td>\n    <td>21.1%</td>\n    <td>42.4%</td>\n    <td>51.7%</td>\n  </tr>\n  <tr>\n    <td>SM-NAS：E 3</td>\n    <td>-</td>\n    <td>800x600</td>\n    <td>19.7(V)</td>\n    <td>42.8%</td>\n    <td>61.2%</td>\n    <td>46.5%</td>\n    <td>23.5%</td>\n    <td>45.5%</td>\n    <td>55.6%</td>\n  </tr>\n  <tr>\n    <td>SM-NAS：E 5</td>\n    <td>-</td>\n    <td>1333x800</td>\n    <td>9.3(V)</td>\n    <td>45.9%</td>\n    <td>64.6%</td>\n    <td>49.6%</td>\n    <td>27.1%</td>\n    <td>49.0%</td>\n    <td>58.0%</td>\n  </tr>\n  <tr>\n    <td>NAS-FPN：Learning scalable feature pyramid architecture for object detection[17]</td>\n    <td>NAS-FPN</td>\n    <td>ResNet-50</td>\n    <td>640</td>\n    <td>24.4(V)</td>\n    <td>39.9%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>NAS-FPN</td>\n    <td>ResNet-50</td>\n    <td>1024</td>\n    <td>12.7(V)</td>\n    <td>44.2%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Bridging the Gap Between Anchor-based and Anchor-free Detection via Adaptive Training Sample Selection[94]</td>\n    <td>ATSS</td>\n    <td>ResNet-101</td>\n    <td>800x</td>\n    <td>17.5(V)</td>\n    <td>43.6%</td>\n    <td>62.1%</td>\n    <td>47.4%</td>\n    <td>26.1%</td>\n    <td>47.0%</td>\n    <td>53.6%</td>\n  </tr>\n  <tr>\n    <td>ATSS</td>\n    <td>ResNet-101-DCN</td>\n    <td>800x</td>\n    <td>13.7(V)</td>\n    <td>46.3%</td>\n    <td>64.7%</td>\n    <td>50.4%</td>\n    <td>27.7%</td>\n    <td>49.8%</td>\n    <td>58.4%</td>\n  </tr>\n  <tr>\n    <td>RDS Net：A New Deep Architecture for Reciprocal Object Detection and Instance Segmentation[83]</td>\n    <td>RDS Net</td>\n    <td>ResNet-101</td>\n    <td>600</td>\n    <td>16.8(V)</td>\n    <td>36.0%</td>\n    <td>55.2%</td>\n    <td>38.7%</td>\n    <td>17.4%</td>\n    <td>39.6%</td>\n    <td>49.7%</td>\n  </tr>\n  <tr>\n    <td>RDS Net</td>\n    <td>ResNet-101</td>\n    <td>800</td>\n    <td>10.9(V)</td>\n    <td>38.1%</td>\n    <td>58.5%</td>\n    <td>40.8%</td>\n    <td>21.2%</td>\n    <td>41.5%</td>\n    <td>48.2%</td>\n  </tr>\n  <tr>\n    <td>Center Mask：Real-Time Anchor-Free Instance Segmentation[40]</td>\n    <td>Center Mask</td>\n    <td>ResNet-101-FPN</td>\n    <td>800x</td>\n    <td>15.2(V)</td>\n    <td>44.0%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>25.8%</td>\n    <td>46.8%</td>\n    <td>54.9%</td>\n  </tr>\n  <tr>\n    <td>Center Mask</td>\n    <td>VoV Net-99-FPN</td>\n    <td>800x</td>\n    <td>12.9(V)</td>\n    <td>46.5%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>28.7%</td>\n    <td>48.9%</td>\n    <td>57.2%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page013.png"
+        }
+    ]
+}

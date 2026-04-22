@@ -1,0 +1,18 @@
+{
+    "total_count": 1,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                311,
+                170,
+                513,
+                201
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{Attention}(Q, K, V) = \\text{softmax} \\left( \\frac{QK^T}{\\sqrt{d_k}} \\right) V\n```\n\nThis will produce the same mathematical expression shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{Attention}(Q, K, V) = \\text{softmax} \\left( \\frac{QK^T}{\\sqrt{d_k}} \\right) V\n```\n\nThis will produce the same mathematical expression shown in the image."
+        }
+    ]
+}

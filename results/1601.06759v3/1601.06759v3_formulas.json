@@ -1,0 +1,42 @@
+{
+    "total_count": 3,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                363,
+                686,
+                484,
+                720
+            ],
+            "content": "p ( \\mathbf { x } ) = \\prod _ { i = 1 } ^ { n ^ { 2 } } p ( x _ { i } | x _ { 1 } , \\ldots , x _ { i - 1 } )",
+            "latex": "p ( \\mathbf { x } ) = \\prod _ { i = 1 } ^ { n ^ { 2 } } p ( x _ { i } | x _ { 1 } , \\ldots , x _ { i - 1 } )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                335,
+                502,
+                514,
+                547
+            ],
+            "content": "```latex\n\\begin{align*}\n[\\mathbf{o}_i, \\mathbf{f}_i, \\mathbf{i}_i, \\mathbf{g}_i] &= \\sigma(\\mathbf{K}^{ss} \\odot \\mathbf{h}_{i-1} + \\mathbf{K}^{is} \\odot \\mathbf{x}_i) \\\\\n\\mathbf{c}_i &= \\mathbf{f}_i \\odot \\mathbf{c}_{i-1} + \\mathbf{i}_i \\odot \\mathbf{g}_i \\\\\n\\mathbf{h}_i &= \\mathbf{o}_i \\odot \\tanh(\\mathbf{c}_i)\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n[\\mathbf{o}_i, \\mathbf{f}_i, \\mathbf{i}_i, \\mathbf{g}_i] &= \\sigma(\\mathbf{K}^{ss} \\odot \\mathbf{h}_{i-1} + \\mathbf{K}^{is} \\odot \\mathbf{x}_i) \\\\\n\\mathbf{c}_i &= \\mathbf{f}_i \\odot \\mathbf{c}_{i-1} + \\mathbf{i}_i \\odot \\mathbf{g}_i \\\\\n\\mathbf{h}_i &= \\mathbf{o}_i \\odot \\tanh(\\mathbf{c}_i)\n\\end{align*}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                57,
+                176,
+                272,
+                191
+            ],
+            "content": "p ( x _ { i , R } | \\mathbf { x } _ { < i } ) p ( x _ { i , G } | \\mathbf { x } _ { < i } , x _ { i , R } ) p ( x _ { i , B } | \\mathbf { x } _ { < i } , x _ { i , R } , x _ { i , G } )",
+            "latex": "p ( x _ { i , R } | \\mathbf { x } _ { < i } ) p ( x _ { i , G } | \\mathbf { x } _ { < i } , x _ { i , R } ) p ( x _ { i , B } | \\mathbf { x } _ { < i } , x _ { i , R } , x _ { i , G } )"
+        }
+    ]
+}

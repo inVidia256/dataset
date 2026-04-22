@@ -1,0 +1,104 @@
+{
+    "total_count": 7,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                310,
+                201,
+                508,
+                324
+            ],
+            "caption": "Figure 1: Neural machine translation – a stacking recurrent architecture for translating a source sequence A B C D into a target sequence X Y Z. Here, <eos> marks the end of a sentence.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                311,
+                52,
+                517,
+                237
+            ],
+            "caption": "Figure 2: Global attentional model – at each time step t, the model infers a variable-length alignment weight vector a_t based on the current target state h_t and all source states h_s. A global context vector c_t is then computed as the weighted average, according to a_t, over all the source states.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                75,
+                53,
+                282,
+                237
+            ],
+            "caption": "Figure 3: Local attention model – the model first predicts a single aligned position \\( p_t \\) for the current target word. A window centered around the source position \\( p_t \\) is then used to compute a context vector \\( c_t \\), a weighted average of the source hidden states in the window. The weights \\( a_t \\) are inferred from the current target state \\( h_t \\) and those source states \\( \\bar{h}_s \\) in the window.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                87,
+                59,
+                262,
+                233
+            ],
+            "caption": "Figure 4: Input-feeding approach – Attentional vectors ĥt are fed as inputs to the next time steps to inform the model about past alignment decisions.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                309,
+                277,
+                513,
+                390
+            ],
+            "caption": "Figure 5: Learning curves – test cost (In perplexity) on newstest2014 for English-German NMTs as training progresses.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                71,
+                66,
+                288,
+                183
+            ],
+            "caption": "Figure 6: Length Analysis – translation qualities of different systems as sentences become longer. Figure 6: Length Analysis – translation qualities of different systems as sentences become longer.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                109,
+                258,
+                467,
+                511
+            ],
+            "caption": "Figure 7: Alignment visualizations – shown are images of the attention weights learned by various models: (top left) global, (top right) local-m, and (bottom left) local-p. The gold alignments are displayed at the bottom right corner. Figure 7: Alignment visualizations – shown are images of the attention weights learned by various models: (top left) global, (top right) local-m, and (bottom left) local-p. The gold alignments are displayed at the bottom right corner.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page011.png"
+        }
+    ]
+}

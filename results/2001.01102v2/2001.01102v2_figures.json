@@ -1,0 +1,20 @@
+{
+    "total_count": 1,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                132,
+                126,
+                478,
+                253
+            ],
+            "caption": "Figure 1: Rendering and some results on Breakout of DQN and some of its variants.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page004.png"
+        }
+    ]
+}

@@ -1,0 +1,202 @@
+{
+    "total_count": 14,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                306,
+                219,
+                527,
+                304
+            ],
+            "caption": "Figure 1: Attention distributions of different self-attention heads for the time step of the token “over”, shown to compare our model to other related work. While the sparse Transformer (Child et al., 2019) and the adaptive span Transformer (Sukhbaatar et al., 2019) only attend to words within a contiguous span of the past tokens, our model is not only able to obtain different and not necessarily contiguous sparsity patterns for each attention head, but is also able to tune its support over which tokens to attend adaptively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                311,
+                190,
+                507,
+                338
+            ],
+            "caption": "Figure 2: Trajectories of α values for a subset of the heads during training. Initialized at random, most heads become denser in the beginning, before converging. This suggests that dense attention may be more beneficial while the network is still uncertain, being replaced by sparse attention afterwards.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                73,
+                63,
+                288,
+                278
+            ],
+            "caption": "Figure 3: Distribution of learned α values per attention block. While the encoder self-attention has a bimodal distribution of values of α, the decoder self-attention and context attention have a single mode.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                312,
+                61,
+                520,
+                320
+            ],
+            "caption": "Figure 4: Distribution of attention densities (average number of tokens receiving non-zero attention weight) for all attention heads and all validation sentences. When compared to 1.5-entmax, α-entmax distributes the sparsity in a more uniform manner, with a clear mode at fully dense attentions, corresponding to the heads with low α. In the softmax case, this distribution would lead to a single bar with density 1.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                77,
+                62,
+                283,
+                326
+            ],
+            "caption": "Figure 5: Head density per layer for fixed and learned α. Each line corresponds to an attention head; lower values mean that that attention head is sparser. Learned α has higher variance.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                309,
+                64,
+                523,
+                310
+            ],
+            "caption": "Figure 6: Jensen-Shannon Divergence between heads at each layer. Measures the disagreement between heads: the higher the value, the more the heads are disagreeing with each other in terms of where to attend. Models using sparse entmax have more diverse attention than the softmax baseline.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                74,
+                62,
+                288,
+                149
+            ],
+            "caption": "Figure 7: Self-attention from the most confidently previous-position head in each model. The learned parameter in the α-entmax model is α = 1.91. Quantitatively more confident, visual inspection confirms that the adaptive head behaves more consistently.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                72,
+                237,
+                285,
+                452
+            ],
+            "caption": "Figure 8: BPE-merging head (α = 1.91) discovered in the α-entmax model. Found in the first encoder layer, this head learns to discover some subword units and combine their information, leaving most words intact. It places 99.09% of its probability mass within the same BPE cluster as the current token: more than any head in any other model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                311,
+                63,
+                523,
+                238
+            ],
+            "caption": "Figure 9: Interrogation-detecting heads in the three models. The top sentence is interrogative while the bottom one is declarative but includes the interrogative word “what”. In the top example, these interrogation heads assign a high probability to the question mark in the time step of the interrogative word (with ≥ 97.0% probability), while in the bottom example since there is no question mark, the same head does not assign a high probability to the last token in the sentence during the interrogative word time step. Surprisingly, this head prefers a low α = 1.05, as can be seen from the dense weights. This allows the head to identify the noun phrase “Armani Polo” better. Figure 9: Interrogation-detecting heads in the three models. The top sentence is interrogative while the bottom one is declarative but includes the interrogative word “what”. In the top example, these interrogation heads assign a high probability to the question mark in the time step of the interrogative word (with ≥ 97.0% probability), while in the bottom example since there is no question mark, the same head does not assign a high probability to the last token in the sentence during the interrogative word time step. Surprisingly, this head prefers a low α = 1.05, as can be seen from the dense weights. This allows the head to identify the noun phrase “Armani Polo” better.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page008.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                73,
+                64,
+                287,
+                170
+            ],
+            "caption": "Figure 10: Example of two sentences of similar length where the same head (α = 1.33) exhibits different sparsity. The longer phrase in the example on the right “a sexually transmitted disease” is handled with higher confidence, leading to more sparsity.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page009.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                82,
+                126,
+                514,
+                591
+            ],
+            "caption": "Figure 11: Histograms of α values.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page012.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                83,
+                105,
+                513,
+                693
+            ],
+            "caption": "Figure 12: Histograms of head densities.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page013.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                85,
+                140,
+                513,
+                669
+            ],
+            "caption": "Figure 13: Jensen-Shannon divergence over layers.",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page014.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                83,
+                104,
+                513,
+                695
+            ],
+            "caption": "Figure 14: Head densities over layers.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page015.png"
+        }
+    ]
+}

@@ -1,0 +1,270 @@
+{
+    "total_count": 22,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                149,
+                298,
+                460,
+                331
+            ],
+            "content": "```latex\n\\log p(\\mathbf{x}) \\geq E_{q_\\phi(z^{(1)}|\\mathbf{x})} \\cdots E_{q_\\phi(z^{(K)}|\\mathbf{x})} \\left[ \\log \\sum_{k=1}^K \\frac{p_\\theta(\\mathbf{x}, \\mathbf{z}^{(k)})}{q_\\phi(\\mathbf{z}^{(k)}|\\mathbf{x})} \\right] \\geq \\mathcal{L}_K(\\theta, \\phi; \\mathbf{x}) .\n```",
+            "latex": "```latex\n\\log p(\\mathbf{x}) \\geq E_{q_\\phi(z^{(1)}|\\mathbf{x})} \\cdots E_{q_\\phi(z^{(K)}|\\mathbf{x})} \\left[ \\log \\sum_{k=1}^K \\frac{p_\\theta(\\mathbf{x}, \\mathbf{z}^{(k)})}{q_\\phi(\\mathbf{z}^{(k)}|\\mathbf{x})} \\right] \\geq \\mathcal{L}_K(\\theta, \\phi; \\mathbf{x}) .\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                203,
+                439,
+                349,
+                471
+            ],
+            "content": "```latex\nq_{\\phi}(\\mathbf{z}|\\mathbf{x}) = q_{\\phi}(\\mathbf{z}_1|\\mathbf{x}) \\prod_{i=2}^{L} q_{\\phi}(\\mathbf{z}_i|\\mathbf{z}_{i-1})\n```",
+            "latex": "```latex\nq_{\\phi}(\\mathbf{z}|\\mathbf{x}) = q_{\\phi}(\\mathbf{z}_1|\\mathbf{x}) \\prod_{i=2}^{L} q_{\\phi}(\\mathbf{z}_i|\\mathbf{z}_{i-1})\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                187,
+                489,
+                423,
+                504
+            ],
+            "content": "```latex\nq_{\\phi}(\\mathbf{z}_i|\\mathbf{z}_{i-1}) = \\mathcal{N}\\left(\\mathbf{z}_i|\\mu_{q,i}(\\mathbf{z}_{i-1}), \\sigma^2_{q,i}(\\mathbf{z}_{i-1})\\right), \\quad i=2\\dots L.\n```",
+            "latex": "```latex\nq_{\\phi}(\\mathbf{z}_i|\\mathbf{z}_{i-1}) = \\mathcal{N}\\left(\\mathbf{z}_i|\\mu_{q,i}(\\mathbf{z}_{i-1}), \\sigma^2_{q,i}(\\mathbf{z}_{i-1})\\right), \\quad i=2\\dots L.\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                229,
+                595,
+                380,
+                609
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\sigma^2(y) = \\text{Softplus}(\\text{Linear}(d(y))) \\,,\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\sigma^2(y) = \\text{Softplus}(\\text{Linear}(d(y))) \\,,\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                234,
+                566,
+                296,
+                578
+            ],
+            "content": "The expression in the image can be written in LaTeX as:\n\n\\[\nd(y) = \\text{MLP}(y)\n\\]",
+            "latex": "The expression in the image can be written in LaTeX as:\n\n\\[\nd(y) = \\text{MLP}(y)\n\\]"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                234,
+                581,
+                326,
+                592
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mu(y) = \\text{Linear}(d(y))\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mu(y) = \\text{Linear}(d(y))\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                199,
+                473,
+                348,
+                488
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nq_\\phi(\\mathbf{z}_1 | \\mathbf{x}) = \\mathcal{N}\\left( \\mathbf{z}_1 | \\mu_{q,1}(\\mathbf{x}), \\sigma_{q,1}^2(\\mathbf{x}) \\right)\n```\n\nThis will produce the same equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nq_\\phi(\\mathbf{z}_1 | \\mathbf{x}) = \\mathcal{N}\\left( \\mathbf{z}_1 | \\mu_{q,1}(\\mathbf{x}), \\sigma_{q,1}^2(\\mathbf{x}) \\right)\n```\n\nThis will produce the same equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                185,
+                89,
+                318,
+                121
+            ],
+            "content": "p _ { \\theta } ( \\mathbf { z } ) = p _ { \\theta } ( \\mathbf { z } _ { L } ) \\prod _ { i = 1 } ^ { L - 1 } p _ { \\theta } ( \\mathbf { z } _ { i } | \\mathbf { z } _ { i + 1 } )",
+            "latex": "p _ { \\theta } ( \\mathbf { z } ) = p _ { \\theta } ( \\mathbf { z } _ { L } ) \\prod _ { i = 1 } ^ { L - 1 } p _ { \\theta } ( \\mathbf { z } _ { i } | \\mathbf { z } _ { i + 1 } )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                170,
+                139,
+                449,
+                154
+            ],
+            "content": "```latex\np_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{N}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1}), \\sigma^{2}_{p,0}(\\mathbf{z}_{1})\\right) \\text{ or } P_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{B}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1})\\right)\n```",
+            "latex": "```latex\np_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{N}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1}), \\sigma^{2}_{p,0}(\\mathbf{z}_{1})\\right) \\text{ or } P_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{B}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1})\\right)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                220,
+                255,
+                427,
+                269
+            ],
+            "content": "= - K L ( q _ { \\phi } ( \\mathbf { z } | \\mathbf { x } ) \\| p _ { \\theta } ( \\mathbf { z } ) ) + E _ { q _ { \\phi } ( \\mathbf { z } | \\mathbf { x } ) } [ \\log p _ { \\theta } ( \\mathbf { x } | \\mathbf { z } ) ] ,",
+            "latex": "= - K L ( q _ { \\phi } ( \\mathbf { z } | \\mathbf { x } ) \\| p _ { \\theta } ( \\mathbf { z } ) ) + E _ { q _ { \\phi } ( \\mathbf { z } | \\mathbf { x } ) } [ \\log p _ { \\theta } ( \\mathbf { x } | \\mathbf { z } ) ] ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                161,
+                123,
+                444,
+                138
+            ],
+            "content": "```latex\np_{\\theta}(\\mathbf{z}_i|\\mathbf{z}_{i+1}) = \\mathcal{N}\\left(\\mathbf{z}_i|\\mu_{p,i}(\\mathbf{z}_{i+1}), \\sigma^2_{p,i}(\\mathbf{z}_{i+1})\\right), \\quad p_{\\theta}(\\mathbf{z}_L) = \\mathcal{N}\\left(\\mathbf{z}_L|\\mathbf{0}, \\mathbf{I}\\right)\n```",
+            "latex": "```latex\np_{\\theta}(\\mathbf{z}_i|\\mathbf{z}_{i+1}) = \\mathcal{N}\\left(\\mathbf{z}_i|\\mu_{p,i}(\\mathbf{z}_{i+1}), \\sigma^2_{p,i}(\\mathbf{z}_{i+1})\\right), \\quad p_{\\theta}(\\mathbf{z}_L) = \\mathcal{N}\\left(\\mathbf{z}_L|\\mathbf{0}, \\mathbf{I}\\right)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                185,
+                226,
+                383,
+                253
+            ],
+            "content": "```latex\n\\log p(\\mathbf{x}) \\geq E_{q_\\phi(z|x)} \\left[ \\log \\frac{p_\\theta(\\mathbf{x}, \\mathbf{z})}{q_\\phi(\\mathbf{z}|\\mathbf{x})} \\right] = \\mathcal{L}(\\theta, \\phi; \\mathbf{x})\n```",
+            "latex": "```latex\n\\log p(\\mathbf{x}) \\geq E_{q_\\phi(z|x)} \\left[ \\log \\frac{p_\\theta(\\mathbf{x}, \\mathbf{z})}{q_\\phi(\\mathbf{z}|\\mathbf{x})} \\right] = \\mathcal{L}(\\theta, \\phi; \\mathbf{x})\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                184,
+                226,
+                394,
+                269
+            ],
+            "content": "```latex\n\\begin{align*}\n\\log p(\\mathbf{x}) & \\geq E_{q_\\phi(z|x)}\\left[\\log \\frac{p_\\theta(\\mathbf{x},\\mathbf{z})}{q_\\phi(\\mathbf{z}|\\mathbf{x})}\\right] = \\mathcal{L}(\\theta,\\phi;\\mathbf{x}) \\\\\n& = -KL(q_\\phi(\\mathbf{z}|\\mathbf{x})||p_\\theta(\\mathbf{z})) + E_{q_\\phi(\\mathbf{z}|\\mathbf{x})}[\\log p_\\ell\n```",
+            "latex": "```latex\n\\begin{align*}\n\\log p(\\mathbf{x}) & \\geq E_{q_\\phi(z|x)}\\left[\\log \\frac{p_\\theta(\\mathbf{x},\\mathbf{z})}{q_\\phi(\\mathbf{z}|\\mathbf{x})}\\right] = \\mathcal{L}(\\theta,\\phi;\\mathbf{x}) \\\\\n& = -KL(q_\\phi(\\mathbf{z}|\\mathbf{x})||p_\\theta(\\mathbf{z})) + E_{q_\\phi(\\mathbf{z}|\\mathbf{x})}[\\log p_\\ell\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                160,
+                88,
+                446,
+                154
+            ],
+            "content": "```latex\np_{\\theta}(\\mathbf{z}) = p_{\\theta}(\\mathbf{z}_{L}) \\prod_{i=1}^{L-1} p_{\\theta}(\\mathbf{z}_{i}|\\mathbf{z}_{i+1})\n\np_{\\theta}(\\mathbf{z}_{i}|\\mathbf{z}_{i+1}) = \\mathcal{N}\\left(\\mathbf{z}_{i}|\\mu_{p,i}(\\mathbf{z}_{i+1}), \\sigma_{p,i}^{2}(\\mathbf{z}_{i+1})\\right), \\quad p_{\\theta}(\\mathbf{z}_{L}) = \\mathcal{N}\\left(\\mathbf{z}_{L}|\\mathbf{0}, \\mathbf{I}\\right)\n\np_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{N}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1}), \\sigma_{p,0}^{2}(\\mathbf{z}_{1})\\right) \\text{ or } P_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{B}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1})\\right).\n```",
+            "latex": "```latex\np_{\\theta}(\\mathbf{z}) = p_{\\theta}(\\mathbf{z}_{L}) \\prod_{i=1}^{L-1} p_{\\theta}(\\mathbf{z}_{i}|\\mathbf{z}_{i+1})\n\np_{\\theta}(\\mathbf{z}_{i}|\\mathbf{z}_{i+1}) = \\mathcal{N}\\left(\\mathbf{z}_{i}|\\mu_{p,i}(\\mathbf{z}_{i+1}), \\sigma_{p,i}^{2}(\\mathbf{z}_{i+1})\\right), \\quad p_{\\theta}(\\mathbf{z}_{L}) = \\mathcal{N}\\left(\\mathbf{z}_{L}|\\mathbf{0}, \\mathbf{I}\\right)\n\np_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{N}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1}), \\sigma_{p,0}^{2}(\\mathbf{z}_{1})\\right) \\text{ or } P_{\\theta}(\\mathbf{x}|\\mathbf{z}_{1}) = \\mathcal{B}\\left(\\mathbf{x}|\\mu_{p,0}(\\mathbf{z}_{1})\\right).\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                231,
+                341,
+                379,
+                373
+            ],
+            "content": "```latex\nq_{\\phi}(\\mathbf{z}|\\mathbf{x}) = q_{\\phi}(\\mathbf{z}_L|\\mathbf{x}) \\prod_{i=1}^{L-1} q_{\\phi}(\\mathbf{z}_i|\\mathbf{z}_{i+1})\n```",
+            "latex": "```latex\nq_{\\phi}(\\mathbf{z}|\\mathbf{x}) = q_{\\phi}(\\mathbf{z}_L|\\mathbf{x}) \\prod_{i=1}^{L-1} q_{\\phi}(\\mathbf{z}_i|\\mathbf{z}_{i+1})\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                245,
+                405,
+                355,
+                435
+            ],
+            "content": "\\mu _ { q , i } = \\frac { \\hat { \\mu } _ { q , i } \\hat { \\sigma } _ { q , i } ^ { - 2 } + \\mu _ { p , i } \\sigma _ { p , i } ^ { - 2 } } { \\hat { \\sigma } _ { q , i } ^ { - 2 } + \\sigma _ { p , i } ^ { - 2 } }",
+            "latex": "\\mu _ { q , i } = \\frac { \\hat { \\mu } _ { q , i } \\hat { \\sigma } _ { q , i } ^ { - 2 } + \\mu _ { p , i } \\sigma _ { p , i } ^ { - 2 } } { \\hat { \\sigma } _ { q , i } ^ { - 2 } + \\sigma _ { p , i } ^ { - 2 } }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                218,
+                291,
+                393,
+                306
+            ],
+            "content": "\\hat { \\sigma } _ { q , i } ^ { 2 } = \\mathrm { S o f t p l u s } ( \\mathrm { L i n e a r } ( d _ { i } ) ) , i = 1 . . . L",
+            "latex": "\\hat { \\sigma } _ { q , i } ^ { 2 } = \\mathrm { S o f t p l u s } ( \\mathrm { L i n e a r } ( d _ { i } ) ) , i = 1 . . . L"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                242,
+                437,
+                360,
+                452
+            ],
+            "content": "q _ { \\phi } ( \\mathbf { z } _ { i } | \\cdot ) = { \\mathcal { N } } \\left( \\mathbf { z } _ { i } | \\mu _ { q , i } , \\sigma _ { q , i } ^ { 2 } \\right) ,",
+            "latex": "q _ { \\phi } ( \\mathbf { z } _ { i } | \\cdot ) = { \\mathcal { N } } \\left( \\mathbf { z } _ { i } | \\mu _ { q , i } , \\sigma _ { q , i } ^ { 2 } \\right) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                248,
+                376,
+                324,
+                403
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\sigma_{q,i} = \\frac{1}{\\hat{\\sigma}_{q,i}^{-2} + \\sigma_{p,i}^{-2}}\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\sigma_{q,i} = \\frac{1}{\\hat{\\sigma}_{q,i}^{-2} + \\sigma_{p,i}^{-2}}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                218,
+                276,
+                343,
+                289
+            ],
+            "content": "```latex\n\\hat{\\mu}_{q,i} = \\text{Linear}(\\mathbf{d}_i), i = 1 \\ldots L\n```",
+            "latex": "```latex\n\\hat{\\mu}_{q,i} = \\text{Linear}(\\mathbf{d}_i), i = 1 \\ldots L\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                222,
+                262,
+                291,
+                275
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{d}_n = \\text{MLP}(\\mathbf{d}_{n-1})\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{d}_n = \\text{MLP}(\\mathbf{d}_{n-1})\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                174,
+                139,
+                436,
+                154
+            ],
+            "content": "{ \\mathcal { L } } ( \\theta , \\phi ; \\mathbf { x } ) _ { T } = - \\beta K L ( q _ { \\phi } ( z | x ) \\| p _ { \\theta } ( \\mathbf { z } ) ) + E _ { q _ { \\phi } ( z | x ) } [ \\log p _ { \\theta } ( \\mathbf { x } | \\mathbf { z } ) ] \\, ,",
+            "latex": "{ \\mathcal { L } } ( \\theta , \\phi ; \\mathbf { x } ) _ { T } = - \\beta K L ( q _ { \\phi } ( z | x ) \\| p _ { \\theta } ( \\mathbf { z } ) ) + E _ { q _ { \\phi } ( z | x ) } [ \\log p _ { \\theta } ( \\mathbf { x } | \\mathbf { z } ) ] \\, ,"
+        }
+    ]
+}

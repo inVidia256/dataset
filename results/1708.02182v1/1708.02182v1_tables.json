@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                54,
+                287,
+                290,
+                520
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Algorithm 1 Non-monotonically Triggered ASGD(NTASGD)</td>\n  </tr>\n  <tr>\n    <td>Inputs：Initial point wo，learning rate γ，logging interval L，non-monotone interval n.</td>\n  </tr>\n  <tr>\n    <td>1：Initialize k←0，t←0，T←0，logs←[]</td>\n  </tr>\n  <tr>\n    <td>2：while stopping criterion not met do</td>\n  </tr>\n  <tr>\n    <td>3：Compute stochastic gradient Vf(w) and take SGD step (1).</td>\n  </tr>\n  <tr>\n    <td>4：if mod(k，L)=0 and T=0 then</td>\n  </tr>\n  <tr>\n    <td>5：Compute validation perplexity v.</td>\n  </tr>\n  <tr>\n    <td>6：if t&gt;n and v&gt;minlogs[1] then</td>\n  </tr>\n  <tr>\n    <td>7：Set T←k</td>\n  </tr>\n  <tr>\n    <td>8：end if</td>\n  </tr>\n  <tr>\n    <td>9：Append v to logs</td>\n  </tr>\n  <tr>\n    <td>10：t←t+1</td>\n  </tr>\n  <tr>\n    <td>11：end if</td>\n  </tr>\n  <tr>\n    <td>12：end while</td>\n  </tr>\n  <tr>\n    <td>return ∑ki=Twi</td>\n  </tr>\n  <tr>\n    <td>(k-T+1)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                79,
+                99,
+                518,
+                408
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is as follows:\n\n\"Table 1. Single model perplexity on validation and test sets for the Penn Treebank language modeling task. Parameter numbers with † are estimates based upon our understanding of the model and with reference to Merity et al. (2016). Models noting tied use weight tying on the embedding and softmax weights. Our model, AWD-LSTM, stands for ASGD Weight-Dropped LSTM.\" The text content from the image is as follows:\n\n\"Table 1. Single model perplexity on validation and test sets for the Penn Treebank language modeling task. Parameter numbers with † are estimates based upon our understanding of the model and with reference to Merity et al. (2016). Models noting tied use weight tying on the embedding and softmax weights. Our model, AWD-LSTM, stands for ASGD Weight-Dropped LSTM.\" The text content from the image is as follows:\n\n\"Table 1. Single model perplexity on validation and test sets for the Penn Treebank language modeling task. Parameter numbers with † are estimates based upon our understanding of the model and with reference to Merity et al. (2016). Models noting tied use weight tying on the embedding and softmax weights. Our model, AWD-LSTM, stands for ASGD Weight-Dropped LSTM.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Parameters</td>\n    <td>Validation</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>Mikolov&Zweig(2012)-KN-5</td>\n    <td>2M</td>\n    <td></td>\n    <td>141.2</td>\n  </tr>\n  <tr>\n    <td>Mikolov&Zweig(2012)-KN5+cache</td>\n    <td>2M</td>\n    <td></td>\n    <td>125.7</td>\n  </tr>\n  <tr>\n    <td>Mikolov&Zweig(2012)-RNN</td>\n    <td>6M</td>\n    <td></td>\n    <td>124.7</td>\n  </tr>\n  <tr>\n    <td>Mikolov&Zweig(2012)-RNN-LDA</td>\n    <td>7M</td>\n    <td></td>\n    <td>113.7</td>\n  </tr>\n  <tr>\n    <td>Mikolov&Zweig(2012)-RNN-LDA+KN-5+cache</td>\n    <td>9M</td>\n    <td></td>\n    <td>92.0</td>\n  </tr>\n  <tr>\n    <td>Zaremba etal.(2014)-LSTM(medium)</td>\n    <td>20M</td>\n    <td>86.2</td>\n    <td>82.7</td>\n  </tr>\n  <tr>\n    <td>Zaremba etal.(2014)-LSTM(large)</td>\n    <td>66M</td>\n    <td>82.2</td>\n    <td>78.4</td>\n  </tr>\n  <tr>\n    <td>Gal&Ghahramani(2016)-VariationalLSTM(medium)</td>\n    <td>20M</td>\n    <td>81.9±0.2</td>\n    <td>79.7±0.1</td>\n  </tr>\n  <tr>\n    <td>Gal&Ghahramani(2016)-VariationalLSTM(medium，MC)</td>\n    <td>20M</td>\n    <td></td>\n    <td>78.6±0.1</td>\n  </tr>\n  <tr>\n    <td>Gal&Ghahramani(2016)-VariationalLSTM(large)</td>\n    <td>66M</td>\n    <td>77.9±0.3</td>\n    <td>75.2±0.2</td>\n  </tr>\n  <tr>\n    <td>Gal&Ghahramani(2016)-VariationalLSTM(large，MC)</td>\n    <td>66M</td>\n    <td></td>\n    <td>73.4±0.0</td>\n  </tr>\n  <tr>\n    <td>Kim etal.(2016)-Char CNN</td>\n    <td>19M</td>\n    <td></td>\n    <td>78.9</td>\n  </tr>\n  <tr>\n    <td>Merity etal.(2016)-Pointer Sentinel-LSTM</td>\n    <td>21M</td>\n    <td>72.4</td>\n    <td>70.9</td>\n  </tr>\n  <tr>\n    <td>Grave etal.(2016)-LSTM</td>\n    <td></td>\n    <td></td>\n    <td>82.3</td>\n  </tr>\n  <tr>\n    <td>Grave etal.(2016)-LSTM+continuous cache pointer</td>\n    <td></td>\n    <td></td>\n    <td>72.1</td>\n  </tr>\n  <tr>\n    <td>Inan etal.(2016)-VariationalLSTM(tied)+augmented loss</td>\n    <td>24M</td>\n    <td>75.7</td>\n    <td>73.2</td>\n  </tr>\n  <tr>\n    <td>Inan etal.(2016)-VariationalLSTM(tied)+augmented loss</td>\n    <td>51M</td>\n    <td>71.1</td>\n    <td>68.5</td>\n  </tr>\n  <tr>\n    <td>Zilly etal.(2016)-VariationalRHN(tied)</td>\n    <td>23M</td>\n    <td>67.9</td>\n    <td>65.4</td>\n  </tr>\n  <tr>\n    <td>Zoph&Le(2016)-NAS Cell(tied)</td>\n    <td>25M</td>\n    <td></td>\n    <td>64.0</td>\n  </tr>\n  <tr>\n    <td>Zoph&Le(2016)-NAS Cell(tied)</td>\n    <td>54M</td>\n    <td></td>\n    <td>62.4</td>\n  </tr>\n  <tr>\n    <td>Melis etal.(2017)-4-layer skip connection LSTM(tied)</td>\n    <td>24M</td>\n    <td>60.9</td>\n    <td>58.3</td>\n  </tr>\n  <tr>\n    <td>AWD-LSTM-3-layer LSTM(tied)</td>\n    <td>24M</td>\n    <td>60.0</td>\n    <td>57.3</td>\n  </tr>\n  <tr>\n    <td>AWD-LSTM-3-layer LSTM(tied)+continuous cache pointer</td>\n    <td>24M</td>\n    <td>53.9</td>\n    <td>52.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                73,
+                522,
+                524,
+                652
+            ],
+            "caption": "",
+            "footnote": "Table 2. Single model perplexity over WikiText-2. Models noting tied use weight tying on the embedding and softmax weights. Our model, AWD-LSTM, stands for ASGD Weight-Dropped LSTM.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Parameters</td>\n    <td>Validation</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>Inan etal.(2016) - Variational LSTM(tied)(h=650)</td>\n    <td>28M</td>\n    <td>92.3</td>\n    <td>87.7</td>\n  </tr>\n  <tr>\n    <td>Inan etal.(2016) - Variational LSTM(tied)(h=650)+ augmented loss</td>\n    <td>28M</td>\n    <td>91.5</td>\n    <td>87.0</td>\n  </tr>\n  <tr>\n    <td>Grave etal.(2016) - LSTM</td>\n    <td></td>\n    <td>-</td>\n    <td>99.3</td>\n  </tr>\n  <tr>\n    <td>Grave etal.(2016) - LSTM+ continuous cache pointer</td>\n    <td></td>\n    <td>-</td>\n    <td>68.9</td>\n  </tr>\n  <tr>\n    <td>Melis etal.(2017) - 1-layer LSTM(tied)</td>\n    <td>24M</td>\n    <td>69.3</td>\n    <td>65.9</td>\n  </tr>\n  <tr>\n    <td>Melis etal.(2017) - 2-layer skip connection LSTM(tied)</td>\n    <td>24M</td>\n    <td>69.1</td>\n    <td>65.9</td>\n  </tr>\n  <tr>\n    <td>AWD-LSTM-3-layer LSTM(tied)</td>\n    <td>33M</td>\n    <td>68.6</td>\n    <td>65.8</td>\n  </tr>\n  <tr>\n    <td>AWD-LSTM-3-layer LSTM(tied)+ continuous cache pointer</td>\n    <td>33M</td>\n    <td>53.8</td>\n    <td>52.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                305,
+                65,
+                544,
+                290
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Word</td>\n    <td>Count</td>\n    <td>Al loss</td>\n    <td>Word</td>\n    <td>Count</td>\n    <td>Al loss</td>\n  </tr>\n  <tr>\n    <td>.</td>\n    <td>7632</td>\n    <td>-696.45</td>\n    <td></td>\n    <td>11540</td>\n    <td>5047.34</td>\n  </tr>\n  <tr>\n    <td>，</td>\n    <td>9857</td>\n    <td>-687.49</td>\n    <td>Meridian</td>\n    <td>161</td>\n    <td>1057.78</td>\n  </tr>\n  <tr>\n    <td>of</td>\n    <td>5816</td>\n    <td>-365.21</td>\n    <td>Churchill</td>\n    <td>137</td>\n    <td>849.43</td>\n  </tr>\n  <tr>\n    <td>=</td>\n    <td>2884</td>\n    <td>-342.01</td>\n    <td></td>\n    <td>67</td>\n    <td>682.15</td>\n  </tr>\n  <tr>\n    <td>to</td>\n    <td>4048</td>\n    <td>-283.10</td>\n    <td>Blythe</td>\n    <td>97</td>\n    <td>554.95</td>\n  </tr>\n  <tr>\n    <td>in</td>\n    <td>4178</td>\n    <td>-222.94</td>\n    <td>Sonic</td>\n    <td>75</td>\n    <td>543.85</td>\n  </tr>\n  <tr>\n    <td><eos></td>\n    <td>3690</td>\n    <td>-216.42</td>\n    <td>Richmond</td>\n    <td>101</td>\n    <td>429.18</td>\n  </tr>\n  <tr>\n    <td>and</td>\n    <td>5251</td>\n    <td>-215.38</td>\n    <td>Starr</td>\n    <td>74</td>\n    <td>416.52</td>\n  </tr>\n  <tr>\n    <td>the</td>\n    <td>12481</td>\n    <td>-209.97</td>\n    <td>Australian</td>\n    <td>234</td>\n    <td>366.36</td>\n  </tr>\n  <tr>\n    <td>a</td>\n    <td>3381</td>\n    <td>-149.78</td>\n    <td>Pagan</td>\n    <td>54</td>\n    <td>365.19</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>2540</td>\n    <td>-127.99</td>\n    <td>Asahi</td>\n    <td>39</td>\n    <td>316.24</td>\n  </tr>\n  <tr>\n    <td>that</td>\n    <td>1365</td>\n    <td>-118.09</td>\n    <td>Japanese</td>\n    <td>181</td>\n    <td>295.97</td>\n  </tr>\n  <tr>\n    <td>by</td>\n    <td>1252</td>\n    <td>-113.05</td>\n    <td>Hu</td>\n    <td>43</td>\n    <td>285.58</td>\n  </tr>\n  <tr>\n    <td>was</td>\n    <td>2279</td>\n    <td>-107.95</td>\n    <td>Hedgehog</td>\n    <td>29</td>\n    <td>266.48</td>\n  </tr>\n  <tr>\n    <td>)</td>\n    <td>1101</td>\n    <td>-94.74</td>\n    <td>Burma</td>\n    <td>35</td>\n    <td>263.65</td>\n  </tr>\n  <tr>\n    <td>with</td>\n    <td>1176</td>\n    <td>-93.01</td>\n    <td>29</td>\n    <td>92</td>\n    <td>260.88</td>\n  </tr>\n  <tr>\n    <td>for</td>\n    <td>1215</td>\n    <td>-87.68</td>\n    <td>Mississippi</td>\n    <td>72</td>\n    <td>241.59</td>\n  </tr>\n  <tr>\n    <td>on</td>\n    <td>1485</td>\n    <td>-81.55</td>\n    <td>German</td>\n    <td>108</td>\n    <td>241.23</td>\n  </tr>\n  <tr>\n    <td>as</td>\n    <td>1338</td>\n    <td>-77.05</td>\n    <td>mill</td>\n    <td>67</td>\n    <td>237.76</td>\n  </tr>\n  <tr>\n    <td>at</td>\n    <td>879</td>\n    <td>-59.86</td>\n    <td>Cooke</td>\n    <td>33</td>\n    <td>231.11</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                150,
+                63,
+                446,
+                220
+            ],
+            "caption": "The text content from the image is:\n\n\"Regularizing and Optimizing LSTM Language Models\"",
+            "footnote": "Table 4. Model ablations for our best LSTM models reporting results over the validation and test set on Penn Treebank and WikiText-2. Ablations are split into optimization and regularization variants, sorted according to the achieved validation perplexity on WikiText-2. Table 4. Model ablations for our best LSTM models reporting results over the validation and test set on Penn Treebank and WikiText-2. Ablations are split into optimization and regularization variants, sorted according to the achieved validation perplexity on WikiText-2. Table 4. Model ablations for our best LSTM models reporting results over the validation and test set on Penn Treebank and WikiText-2. Ablations are split into optimization and regularization variants, sorted according to the achieved validation perplexity on WikiText-2.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>PTB</td>\n    <td>WT2</td>\n  </tr>\n  <tr>\n    <td>Validation</td>\n    <td>Test</td>\n    <td>Validation</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>AWD-LSTM(tied)</td>\n    <td>60.0</td>\n    <td>57.3</td>\n    <td>68.6</td>\n    <td>65.8</td>\n  </tr>\n  <tr>\n    <td>-fine-tuning</td>\n    <td>60.7</td>\n    <td>58.8</td>\n    <td>69.1</td>\n    <td>66.0</td>\n  </tr>\n  <tr>\n    <td>-NT-AS GD</td>\n    <td>66.3</td>\n    <td>63.7</td>\n    <td>73.3</td>\n    <td>69.7</td>\n  </tr>\n  <tr>\n    <td>-variable sequence lengths</td>\n    <td>61.3</td>\n    <td>58.9</td>\n    <td>69.3</td>\n    <td>66.2</td>\n  </tr>\n  <tr>\n    <td>-embedding dropout</td>\n    <td>65.1</td>\n    <td>62.7</td>\n    <td>71.1</td>\n    <td>68.1</td>\n  </tr>\n  <tr>\n    <td>-weight decay</td>\n    <td>63.7</td>\n    <td>61.0</td>\n    <td>71.9</td>\n    <td>68.7</td>\n  </tr>\n  <tr>\n    <td>-AR/TAR</td>\n    <td>62.7</td>\n    <td>60.3</td>\n    <td>73.2</td>\n    <td>70.1</td>\n  </tr>\n  <tr>\n    <td>-full sized embedding</td>\n    <td>68.0</td>\n    <td>65.6</td>\n    <td>73.7</td>\n    <td>70.7</td>\n  </tr>\n  <tr>\n    <td>-weight-dropping</td>\n    <td>71.1</td>\n    <td>68.9</td>\n    <td>78.4</td>\n    <td>74.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        }
+    ]
+}

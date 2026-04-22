@@ -1,0 +1,258 @@
+{
+    "total_count": 21,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                158,
+                701,
+                214,
+                727
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\frac{1}{m} \\frac{\\partial \\ell(x_i, \\Theta)}{\\partial \\Theta}.\n```",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\frac{1}{m} \\frac{\\partial \\ell(x_i, \\Theta)}{\\partial \\Theta}.\n```"
+        },
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                357,
+                600,
+                492,
+                631
+            ],
+            "content": "```latex\n\\Theta_2 \\leftarrow \\Theta_2 - \\frac{\\alpha}{m} \\sum_{i=1}^{m} \\frac{\\partial F_2(\\mathbf{x}_i, \\Theta_2)}{\\partial \\Theta_2}\n```",
+            "latex": "```latex\n\\Theta_2 \\leftarrow \\Theta_2 - \\frac{\\alpha}{m} \\sum_{i=1}^{m} \\frac{\\partial F_2(\\mathbf{x}_i, \\Theta_2)}{\\partial \\Theta_2}\n```"
+        },
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                126,
+                601,
+                246,
+                633
+            ],
+            "content": "\\Theta = \\operatorname* { a r g ~ m i n } _ { \\Theta } { \\frac { 1 } { N } } \\sum _ { i = 1 } ^ { N } \\ell ( \\mathbf { x } _ { i } , \\Theta )",
+            "latex": "\\Theta = \\operatorname* { a r g ~ m i n } _ { \\Theta } { \\frac { 1 } { N } } \\sum _ { i = 1 } ^ { N } \\ell ( \\mathbf { x } _ { i } , \\Theta )"
+        },
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                376,
+                480,
+                473,
+                493
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\ell = F_2(F_1(u, \\Theta_1), \\Theta_2)\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\ell = F_2(F_1(u, \\Theta_1), \\Theta_2)\n```"
+        },
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                393,
+                558,
+                455,
+                571
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n```latex\n\\ell = F_2(x, \\Theta_2).\n```",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n```latex\n\\ell = F_2(x, \\Theta_2).\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                139,
+                566,
+                231,
+                596
+            ],
+            "content": "\\widehat { x } ^ { ( k ) } = \\frac { x ^ { ( k ) } - \\operatorname { E } [ x ^ { ( k ) } ] } { \\sqrt { \\operatorname { V a r } [ x ^ { ( k ) } ] } }",
+            "latex": "\\widehat { x } ^ { ( k ) } = \\frac { x ^ { ( k ) } - \\operatorname { E } [ x ^ { ( k ) } ] } { \\sqrt { \\operatorname { V a r } [ x ^ { ( k ) } ] } }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                115,
+                144,
+                258,
+                170
+            ],
+            "content": "\\frac { \\partial \\mathrm { N o r m } ( x , \\mathcal { X } ) } { \\partial x } ~ \\mathrm { a n d } ~ \\frac { \\partial \\mathrm { N o r m } ( x , \\mathcal { X } ) } { \\partial \\mathcal { X } } ;",
+            "latex": "\\frac { \\partial \\mathrm { N o r m } ( x , \\mathcal { X } ) } { \\partial x } ~ \\mathrm { a n d } ~ \\frac { \\partial \\mathrm { N o r m } ( x , \\mathcal { X } ) } { \\partial \\mathcal { X } } ;"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                375,
+                66,
+                473,
+                82
+            ],
+            "content": "y ^ { ( k ) } = \\gamma ^ { ( k ) } \\widehat { x } ^ { ( k ) } + \\beta ^ { ( k ) } .",
+            "latex": "y ^ { ( k ) } = \\gamma ^ { ( k ) } \\widehat { x } ^ { ( k ) } + \\beta ^ { ( k ) } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                375,
+                429,
+                474,
+                442
+            ],
+            "content": "\\mathrm { B N } _ { \\gamma , \\beta } : x _ { 1 . . m } \\to y _ { 1 . . m }",
+            "latex": "\\mathrm { B N } _ { \\gamma , \\beta } : x _ { 1 . . m } \\to y _ { 1 . . m }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                395,
+                374,
+                454,
+                388
+            ],
+            "content": "{ \\mathcal { B } } = \\{ x _ { 1 } . . . m \\} .",
+            "latex": "{ \\mathcal { B } } = \\{ x _ { 1 } . . . m \\} ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                150,
+                72,
+                221,
+                84
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n\\[\n\\widehat{\\mathbf{x}} = \\operatorname{Norm}(\\mathbf{x}, \\mathcal{X})\n\\]",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n\\[\n\\widehat{\\mathbf{x}} = \\operatorname{Norm}(\\mathbf{x}, \\mathcal{X})\n\\]"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                308,
+                495,
+                543,
+                665
+            ],
+            "content": "```latex\n\\begin{algorithm}[H]\n\\caption{Batch Normalization}\n\\textbf{Input:} Values of $x$ over a mini-batch: $\\mathcal{B} = \\{x_1, ..., x_m\\}$; Parameters to be learned: $\\gamma$, $\\beta$\n\\textbf{Output:} $\\{y_i = \\text{BN}_{\\gamma, \\beta}(x_i)\\}$\n\n\\begin{align*}\n\\mu_{\\mathcal{B}} &\\leftarrow \\frac{1}{m} \\sum_{i=1}^{m} x_i && \\text{// mini-batch mean} \\\\\n\\sigma_{\\mathcal{B}}^2 &\\leftarrow \\frac{1}{m} \\sum_{i=1}^{m} (x_i - \\mu_{\\mathcal{B}})^2 && \\text{// mini-batch variance} \\\\\n\\widehat{x}_i &\\leftarrow \\frac{x_i - \\mu_{\\mathcal{B}}}{\\sqrt{\\sigma_{\\mathcal{B}}^2 + \\epsilon}} && \\text{// normalize} \\\\\ny_i &\\leftarrow \\gamma \\widehat{x}_i + \\beta \\equiv \\text{BN}_{\\gamma, \\beta}(x_i) && \\text{// scale and shift}\n\\end{align*}\n\\end{algorithm}\n```",
+            "latex": "```latex\n\\begin{algorithm}[H]\n\\caption{Batch Normalization}\n\\textbf{Input:} Values of $x$ over a mini-batch: $\\mathcal{B} = \\{x_1, ..., x_m\\}$; Parameters to be learned: $\\gamma$, $\\beta$\n\\textbf{Output:} $\\{y_i = \\text{BN}_{\\gamma, \\beta}(x_i)\\}$\n\n\\begin{align*}\n\\mu_{\\mathcal{B}} &\\leftarrow \\frac{1}{m} \\sum_{i=1}^{m} x_i && \\text{// mini-batch mean} \\\\\n\\sigma_{\\mathcal{B}}^2 &\\leftarrow \\frac{1}{m} \\sum_{i=1}^{m} (x_i - \\mu_{\\mathcal{B}})^2 && \\text{// mini-batch variance} \\\\\n\\widehat{x}_i &\\leftarrow \\frac{x_i - \\mu_{\\mathcal{B}}}{\\sqrt{\\sigma_{\\mathcal{B}}^2 + \\epsilon}} && \\text{// normalize} \\\\\ny_i &\\leftarrow \\gamma \\widehat{x}_i + \\beta \\equiv \\text{BN}_{\\gamma, \\beta}(x_i) && \\text{// scale and shift}\n\\end{align*}\n\\end{algorithm}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                387,
+                106,
+                463,
+                134
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\hat{x} = \\frac{x - \\operatorname{E}[x]}{\\sqrt{\\operatorname{Var}[x] + \\epsilon}}\n```\n\nThis will render the same mathematical expression shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\hat{x} = \\frac{x - \\operatorname{E}[x]}{\\sqrt{\\operatorname{Var}[x] + \\epsilon}}\n```\n\nThis will render the same mathematical expression shown in the image."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                73,
+                367,
+                299,
+                489
+            ],
+            "content": "```latex\n\\begin{align*}\n\\frac{\\partial \\ell}{\\partial x_i} &= \\frac{\\partial \\ell}{\\partial y_i} \\cdot \\gamma \\\\\n\\frac{\\partial \\ell}{\\partial \\sigma_B^2} &= \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial \\widehat{x}_i} \\cdot (x_i - \\mu_B) \\cdot \\frac{-1}{2} (\\sigma_B^2 + \\epsilon)^{-3/2} \\\\\n\\frac{\\partial \\ell}{\\partial \\mu_B} &= \\left( \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial \\widehat{x}_i} \\cdot \\frac{-1}{\\sqrt{\\sigma_B^2 + \\epsilon}} \\right) + \\frac{\\partial \\ell}{\\partial \\sigma_B^2} \\cdot \\frac{\\sum_{i=1}^{m} -2(x_i - \\mu_B)}{m} \\\\\n\\frac{\\partial \\ell}{\\partial x_i} &= \\frac{\\partial \\ell}{\\partial \\widehat{x}_i} \\cdot \\frac{1}{\\sqrt{\\sigma_B^2 + \\epsilon}} + \\frac{\\partial \\ell}{\\partial \\sigma_B^2} \\cdot \\frac{2(x_i - \\mu_B)}{m} + \\frac{\\partial \\ell}{\\partial \\mu_B} \\cdot \\frac{1}{m} \\\\\n\\frac{\\partial \\ell}{\\partial \\gamma} &= \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial y_i} \\cdot \\widehat{x}_i \\\\\n\\frac{\\partial \\ell}{\\partial \\beta} &= \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial y_i}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\frac{\\partial \\ell}{\\partial x_i} &= \\frac{\\partial \\ell}{\\partial y_i} \\cdot \\gamma \\\\\n\\frac{\\partial \\ell}{\\partial \\sigma_B^2} &= \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial \\widehat{x}_i} \\cdot (x_i - \\mu_B) \\cdot \\frac{-1}{2} (\\sigma_B^2 + \\epsilon)^{-3/2} \\\\\n\\frac{\\partial \\ell}{\\partial \\mu_B} &= \\left( \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial \\widehat{x}_i} \\cdot \\frac{-1}{\\sqrt{\\sigma_B^2 + \\epsilon}} \\right) + \\frac{\\partial \\ell}{\\partial \\sigma_B^2} \\cdot \\frac{\\sum_{i=1}^{m} -2(x_i - \\mu_B)}{m} \\\\\n\\frac{\\partial \\ell}{\\partial x_i} &= \\frac{\\partial \\ell}{\\partial \\widehat{x}_i} \\cdot \\frac{1}{\\sqrt{\\sigma_B^2 + \\epsilon}} + \\frac{\\partial \\ell}{\\partial \\sigma_B^2} \\cdot \\frac{2(x_i - \\mu_B)}{m} + \\frac{\\partial \\ell}{\\partial \\mu_B} \\cdot \\frac{1}{m} \\\\\n\\frac{\\partial \\ell}{\\partial \\gamma} &= \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial y_i} \\cdot \\widehat{x}_i \\\\\n\\frac{\\partial \\ell}{\\partial \\beta} &= \\sum_{i=1}^{m} \\frac{\\partial \\ell}{\\partial y_i}\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                333,
+                591,
+                486,
+                610
+            ],
+            "content": "y = { \\frac { \\gamma } { \\sqrt { \\operatorname { V a r } [ x ] + \\epsilon } } } \\cdot x + \\left( \\beta - { \\frac { \\gamma \\operatorname { E } [ x ] } { \\sqrt { \\operatorname { V a r } [ x ] + \\epsilon } } } \\right)",
+            "latex": "y = { \\frac { \\gamma } { \\sqrt { \\operatorname { V a r } [ x ] + \\epsilon } } } \\cdot x + \\left( \\beta - { \\frac { \\gamma \\operatorname { E } [ x ] } { \\sqrt { \\operatorname { V a r } [ x ] + \\epsilon } } } \\right)"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                393,
+                536,
+                484,
+                566
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbb{E}[x] &\\leftarrow \\mathbb{E}_{\\mathcal{B}}[\\mu_{\\mathcal{B}}] \\\\\n\\text{Var}[x] &\\leftarrow \\frac{m}{m-1} \\mathbb{E}_{\\mathcal{B}}[\\sigma_{\\mathcal{B}}^2]\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbb{E}[x] &\\leftarrow \\mathbb{E}_{\\mathcal{B}}[\\mu_{\\mathcal{B}}] \\\\\n\\text{Var}[x] &\\leftarrow \\frac{m}{m-1} \\mathbb{E}_{\\mathcal{B}}[\\sigma_{\\mathcal{B}}^2]\n\\end{align*}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                369,
+                134,
+                480,
+                171
+            ],
+            "content": "\\begin{array} { l } { { \\frac { \\partial \\mathrm { B N } ( ( a W ) u ) } { \\partial u } = \\frac { \\partial \\mathrm { B N } ( W u ) } { \\partial u } } } \\\\ { { \\frac { \\partial \\mathrm { B N } ( ( a W ) u ) } { \\partial ( a W ) } = \\frac { 1 } { a } \\cdot \\frac { \\partial \\mathrm { B N } ( W u ) } { \\partial W } } } \\end{array}",
+            "latex": "\\begin{array} { l } { { \\frac { \\partial \\mathrm { B N } ( ( a W ) u ) } { \\partial u } = \\frac { \\partial \\mathrm { B N } ( W u ) } { \\partial u } } } \\\\ { { \\frac { \\partial \\mathrm { B N } ( ( a W ) u ) } { \\partial ( a W ) } = \\frac { 1 } { a } \\cdot \\frac { \\partial \\mathrm { B N } ( W u ) } { \\partial W } } } \\end{array}"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                372,
+                93,
+                477,
+                107
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\documentclass{article}\n\\usepackage{amsmath}\n\n\\begin{document}\n\n\\[\n\\text{BN}(Wu) = \\text{BN}((aW)u)\n\\]\n\n\\end{document}\n```\n\nThis will produce the equation shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\documentclass{article}\n\\usepackage{amsmath}\n\n\\begin{document}\n\n\\[\n\\text{BN}(Wu) = \\text{BN}((aW)u)\n\\]\n\n\\end{document}\n```\n\nThis will produce the equation shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                150,
+                304,
+                221,
+                317
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n\\[ z = g(\\text{BN}(Wu)) \\]",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n\\[ z = g(\\text{BN}(Wu)) \\]"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                152,
+                69,
+                219,
+                83
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nz = g(Wu + b)\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nz = g(Wu + b)\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                152,
+                69,
+                219,
+                83
+            ],
+            "content": "The expression in the image can be written in LaTeX as:\n\n\\[ z = g(Wu + b) \\]",
+            "latex": "The expression in the image can be written in LaTeX as:\n\n\\[ z = g(Wu + b) \\]"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "total_count": 7,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                105,
+                69,
+                502,
+                145
+            ],
+            "caption": "Figure 2: Illustration of symmetricities in CO (exampled in TSP)",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                306,
+                214,
+                505,
+                348
+            ],
+            "caption": "(b) Solution symmetry (b) Solution symmetry Figure 1: Illustration that describes an advantage of Sym-NCO. An optimal training parameter is in symmetric space. Sym-NCO makes a more compact training space compared with previous DRL-NCO and supports the NCO model efficiently converges in near-optimal parameters.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                144,
+                72,
+                463,
+                184
+            ],
+            "caption": "Figure 3: An overview of Sym-NCO",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                106,
+                72,
+                505,
+                271
+            ],
+            "caption": "Figure 5: Time vs. cost plots. Green, orange, and blue colored lines visualize the results of hand-craft heuristics, neural baselines, and Sym-NCO, respectively. For OP (d), higher y-axis values are better.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                108,
+                72,
+                503,
+                176
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page009.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                106,
+                213,
+                503,
+                319
+            ],
+            "caption": "(a) Cost curves of the loss designs Figure 7: Comparisons of Sym-NCO and EGNN",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                208,
+                162,
+                402,
+                295
+            ],
+            "caption": "Figure 8: Alblation Study for α ∈ {0.1, 0.2}",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page019.png"
+        }
+    ]
+}

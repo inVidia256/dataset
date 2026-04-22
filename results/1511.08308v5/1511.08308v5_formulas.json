@@ -1,0 +1,30 @@
+{
+    "total_count": 2,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                324,
+                601,
+                526,
+                636
+            ],
+            "content": "```latex\nS([x]_1^T, [i]_1^T, \\theta') = \\sum_{t=1}^{T} \\left( A_{[i]_{t-1}, [i]_t} + [f_\\theta]_{[i]_t, t} \\right)\n```",
+            "latex": "```latex\nS([x]_1^T, [i]_1^T, \\theta') = \\sum_{t=1}^{T} \\left( A_{[i]_{t-1}, [i]_t} + [f_\\theta]_{[i]_t, t} \\right)\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                88,
+                422,
+                283,
+                473
+            ],
+            "content": "```latex\n\\log P([y]_1^T | [x]_1^T, \\theta') = S([x]_1^T, [y]_1^T, \\theta') - \\log \\sum_{\\forall [j]_1^T} e^{S([x]_1^T, [j]_1^T, \\theta')}\n```",
+            "latex": "```latex\n\\log P([y]_1^T | [x]_1^T, \\theta') = S([x]_1^T, [y]_1^T, \\theta') - \\log \\sum_{\\forall [j]_1^T} e^{S([x]_1^T, [j]_1^T, \\theta')}\n```"
+        }
+    ]
+}

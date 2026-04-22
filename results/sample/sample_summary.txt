@@ -3,8 +3,8 @@ PDF Content Extraction Summary
 ============================================================
 
 Text Blocks: 114
-Figures: 0
-Tables: 0
+Figures: 2
+Tables: 2
 Formulas: 11
 
 ------------------------------------------------------------
@@ -58,7 +58,7 @@ Alternative criteria that do not approximate or bound the log-likelihood have al
 This framework can yield specific training algorithms for many kinds of model and optimization algorithm. In this article, we explore the special case when the generative model generates samples by passing random noise through a multilayer perceptron, and the discriminative model is also a multilayer perceptron. We refer to this special case as adversarial nets. In this case, we can train both models using only the highly successful backpropagation and dropout algorithms [17] and sample from the generative model using only forward propagation. No approximate inference or Markov chains are necessary.
 
 [Page 2] (ocr_text)
-The adversarial modeling framework is most straightforward to apply when the models are both multilayer perceptrons. To learn the generator's distribution \( p_g \) over data \( x \), we define a prior on input noise variables \( p_z(z) \), then represent a mapping to data space as \( G(z; \theta_g) \), where \( G \) is a differentiable function represented by a multilayer perceptron with parameters \( \theta_g \). We also define a second multilayer perceptron \( D(x; \theta_d) \) that outputs a single scalar. \( D(x) \) represents the probability that \( x \) came from the data rather than \( p_g \). We train \( D \) to maximize the probability of assigning the correct label to both training examples and samples from \( G \). We simultaneously train \( G \) to minimize \( \log(1 - D(G(z))) \):
+The adversarial modeling framework is most straightforward to apply when the models are both multilayer perceptrons. To learn the generator’s distribution \( p_g \) over data \( x \), we define a prior on input noise variables \( p_z(z) \), then represent a mapping to data space as \( G(z; \theta_g) \), where \( G \) is a differentiable function represented by a multilayer perceptron with parameters \( \theta_g \). We also define a second multilayer perceptron \( D(x; \theta_d) \) that outputs a single scalar. \( D(x) \) represents the probability that \( x \) came from the data rather than \( p_g \). We train \( D \) to maximize the probability of assigning the correct label to both training examples and samples from \( G \). We simultaneously train \( G \) to minimize \( \log(1 - D(G(z))) \):
 
 [Page 2] (ocr_text)
 Deep belief networks (DBNs) [16] are hybrid models containing a single undirected layer and several directed layers. While a fast approximate layer-wise training criterion exists, DBNs incur the computational difficulties associated with both undirected and directed models.
@@ -82,9 +82,11 @@ In the next section, we present a theoretical analysis of adversarial nets, esse
 We will show in section 4.1 that this minimax game has a global optimum for \( p_g = p_{\text{data}} \). We will then show in section 4.2 that Algorithm 1 optimizes Eq 1, thus obtaining the desired result.
 
 [Page 3] (ocr_text)
-The image contains the following text:
+The image contains a single line of text that reads:
 
-4 Theoretical Results
+"4 Theoretical Results"
+
+This appears to be the title or heading for a section in a document, likely indicating that the following content will discuss theoretical findings or results related to a specific topic.
 
 [Page 3] (ocr_text)
 The text content from the image is as follows:
@@ -104,7 +106,7 @@ The text content from the image is as follows:
 ---
 
 [Page 3] (ocr_text)
-In other words, \( D \) and \( G \) play the following two-player minimax game with value function \( V(G, D) \):
+In other words, D and G play the following two-player minimax game with value function V(G, D):
 
 [Page 3] (ocr_text)
 The text content from the image is as follows:
@@ -141,7 +143,7 @@ The gradient-based updates can use any standard gradient-based learning rule. We
 [Page 4] (ocr_text)
 The text content from the image is:
 
-"4.1 Global Optimality of \( p_g = p_{data} \)"
+"4.1 Global Optimality of \( p_g = p_{\text{data}} \)"
 
 [Page 4] (ocr_text)
 We first consider the optimal discriminator \( D \) for any given generator \( G \).
@@ -162,6 +164,8 @@ for number of training iterations do
 ```
 
 [Page 4] (ocr_text)
+The text content from the image is as follows:
+
 - Sample minibatch of \( m \) noise samples \(\{z^{(1)}, \ldots, z^{(m)}\}\) from noise prior \( p_g(z) \).
 - Sample minibatch of \( m \) examples \(\{x^{(1)}, \ldots, x^{(m)}\}\) from data generating distribution \( p_{\text{data}}(x) \).
 - Update the discriminator by ascending its stochastic gradient:
@@ -209,9 +213,7 @@ We trained adversarial nets on a range of datasets including MNIST [23], the Tor
 In practice, adversarial nets represent a limited family of \( p_g \) distributions via the function \( G(z; \theta_g) \), and we optimize \( \theta_g \) rather than \( p_g \) itself. Using a multilayer perceptron to define \( G \) introduces multiple critical points in parameter space. However, the excellent performance of multilayer perceptrons in practice suggests that they are a reasonable model to use despite their lack of theoretical guarantees.
 
 [Page 5] (ocr_text)
-The text content from the image is as follows:
-
-"Since the Jensen-Shannon divergence between two distributions is always non-negative and zero only when they are equal, we have shown that \( C^* = -\log(4) \) is the global minimum of \( C(G) \) and that the only solution is \( p_g = p_{\text{data}} \), i.e., the generative model perfectly replicating the data generating process."
+Since the Jensen–Shannon divergence between two distributions is always non-negative and zero only when they are equal, we have shown that \( C^* = -\log(4) \) is the global minimum of \( C(G) \) and that the only solution is \( p_g = p_{\text{data}} \), i.e., the generative model perfectly replicating the data generating process.
 
 [Page 5] (ocr_text)
 The text content from the image is as follows:
@@ -227,13 +229,15 @@ The text content from the image is:
 We estimate probability of the test set data under \( p_g \) by fitting a Gaussian Parzen window to the samples generated with \( G \) and reporting the log-likelihood under this distribution. The \( \sigma \) parameter
 
 [Page 5] (ocr_text)
-The text in the image reads: "where KL is the Kullback-Leibler divergence. We recognize in the previous expression the Jensen-Shannon divergence between the model’s distribution and the data generating process:"
+The text content from the image is:
+
+"where KL is the Kullback-Leibler divergence. We recognize in the previous expression the Jensen-Shannon divergence between the model's distribution and the data generating process:"
 
 [Page 5] (ocr_text)
 The global minimum of the virtual training criterion \( C(G) \) is achieved if and only if \( p_g = p_{data} \). At that point, \( C(G) \) achieves the value \(-\log 4\).
 
 [Page 5] (ocr_text)
-The text in the image reads:
+The text content from the image is:
 
 "and that by subtracting this expression from \( C(G) = V(D_G^*, G) \), we obtain:"
 
@@ -293,15 +297,17 @@ The text content from the image is:
 This framework admits many straightforward extensions:
 
 [Page 7] (ocr_text)
-`s obtained by linearly interpolating between coordinates in z space of the full model`
+The text content from the image is:
+
+"s obtained by linearly interpolating between coordinates in z space of the full model"
+
+[Page 7] (ocr_text)
+Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.
 
 [Page 7] (ocr_text)
 The text content from the image is as follows:
 
 "Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model."
-
-[Page 7] (ocr_text)
-Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.
 
 [Page 7] (ocr_text)
 Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.
@@ -334,15 +340,15 @@ Here is the text content from the image:
 
 [8] Breuleux, O., Bengio, Y., and Vincent, P. (2011). Quickly generating representative samples from an RBM-derived process. Neural Computation, 23(8), 2053–2073.
 
-[9] Glorot, X., Bordes, A., and Bengio, Y. (2011). Deep sparse rectifier neural networks. In AISTATS’2011.
+[9] Glorot, X., Bordes, A., and Bengio, Y. (2011). Deep sparse rectifier neural networks. In AISTATS'2011.
 
-[10] Goodfellow, I. J., Warde-Farley, D., Mirza, M., Courville, A., and Bengio, Y. (2013a). Maxout networks. In ICML’2013.
+[10] Goodfellow, I. J., Warde-Farley, D., Mirza, M., Courville, A., and Bengio, Y. (2013a). Maxout networks. In ICML'2013.
 
-[11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS’2013.
+[11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS'2013.
 
 [12] Goodfellow, I. J., Warde-Farley, D., Lamblin, P., Dumoulin, V., Mirza, M., Pascanu, R., Bergstra, J., Bastien, F., and Bengio, Y. (2013c). Pylearn2: a machine learning research library. arXiv preprint arXiv:1308.4214.
 
-[13] Gutmann, M. and Hyvarinen, A. (2010). Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In AISTATS’2010.
+[13] Gutmann, M. and Hyvarinen, A. (2010). Noise-contrastive estimation: A new estimation principle for unnormalized statistical models. In AISTATS'2010.
 
 [14] Hinton, G., Deng, L., Dahl, G. E., Mohamed, A., Jaitly, N., Senior, A., Vanhoucke, V., Nguyen, P., Sainath, T., and Kingsbury, B. (2012a). Deep neural networks for acoustic modeling in speech recognition. IEEE Signal Processing Magazine, 29(6), 82–97.
 
@@ -425,7 +431,7 @@ The text content from the image is:
 [11] Goodfellow, I. J., Mirza, M., Courville, A., and Bengio, Y. (2013b). Multi-prediction deep Boltzmann machines. In NIPS'2013.
 
 [Page 8] (ocr_text)
-The text content from the image is as follows:
+The text content from the image is:
 
 [3] Bengio, Y., Mesnil, G., Dauphin, Y., and Rifai, S. (2013a). Better mixing via deep representations. In ICML'13.
 
@@ -449,7 +455,7 @@ The text content from the image is:
 
 [18] Hyvärinen, A. (2005). Estimation of non-normalized statistical models using score matching. J. Machine Learning Res., 6.
 
-[19] Jarrett, K., Kavukcuoglu, K., Ranzato, M., and LeCun, Y. (2009). What is the best multi-stage architecture for object recognition? In Proc. International Conference on Computer Vision (ICCV'09), pages 2146–2153. IEEE.
+[19] Jarrett, K., Kavukcuoglu, K., Ranzato, M., and LeCun, Y. (2009). What is the best multi-stage architecture for object recognition? In Proc. International Conference on Computer Vision (ICCV’09), pages 2146–2153. IEEE.
 
 [20] Kingma, D. P. and Welling, M. (2014). Auto-encoding variational bayes. In Proceedings of the International Conference on Learning Representations (ICLR).
 
@@ -560,10 +566,55 @@ The text content from the image is as follows:
 FIGURES
 ------------------------------------------------------------
 
+[Page 3] Figure
+Caption: The text content from the image is as follows:
+
+---
+
+**Figure 1:** Generative adversarial nets are trained by simultaneously updating the discriminative distribution (D, blue, dashed line) so that it discriminates between samples from the data generating distribution (black, dotted line) \( p_{\boldsymbol{x}} \) from those of the generative distribution \( p_g \) (G, green, solid line). The lower horizontal line is the domain from which \( \boldsymbol{z} \) is sampled, in this case uniformly. The horizontal line above is part of the domain of \( \boldsymbol{x} \). The upward arrows show how the mapping \( \boldsymbol{x} = G(\boldsymbol{z}) \) imposes the non-uniform distribution \( p_g \) on transformed samples. \( G \) contracts in regions of high density and expands in regions of low density of \( p_g \).
+
+(a) Consider an adversarial pair near convergence: \( p_g \) is similar to \( p_{\text{data}} \) and \( D \) is a partially accurate classifier.
+
+(b) In the inner loop of the algorithm \( D \) is trained to discriminate samples from data, converging to \( D^*(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x}) + p_g(\boldsymbol{x})} \).
+
+(c) After an update to \( G \), gradient of \( D \) has guided \( G(\boldsymbol{z}) \) to flow to regions that are more likely to be classified as data.
+
+(d) After several steps of training, if \( G \) and \( D \) have enough capacity, they will reach a point at which both cannot improve because \( p_g = p_{\text{data}} \). The discriminator is unable to differentiate between the two distributions, i.e., \( D(\boldsymbol{x}) = \frac{1}{2} \).
+
+--- The text content from the image is as follows:
+
+---
+
+**Figure 1:** Generative adversarial nets are trained by simultaneously updating the discriminative distribution (D, blue, dashed line) so that it discriminates between samples from the data generating distribution (black, dotted line) \( p_{\boldsymbol{x}} \) from those of the generative distribution \( p_g \) (G, green, solid line). The lower horizontal line is the domain from which \( \boldsymbol{z} \) is sampled, in this case uniformly. The horizontal line above is part of the domain of \( \boldsymbol{x} \). The upward arrows show how the mapping \( \boldsymbol{x} = G(\boldsymbol{z}) \) imposes the non-uniform distribution \( p_g \) on transformed samples. \( G \) contracts in regions of high density and expands in regions of low density of \( p_g \).
+
+(a) Consider an adversarial pair near convergence: \( p_g \) is similar to \( p_{\text{data}} \) and \( D \) is a partially accurate classifier.
+
+(b) In the inner loop of the algorithm \( D \) is trained to discriminate samples from data, converging to \( D^*(\boldsymbol{x}) = \frac{p_{\text{data}}(\boldsymbol{x})}{p_{\text{data}}(\boldsymbol{x}) + p_g(\boldsymbol{x})} \).
+
+(c) After an update to \( G \), gradient of \( D \) has guided \( G(\boldsymbol{z}) \) to flow to regions that are more likely to be classified as data.
+
+(d) After several steps of training, if \( G \) and \( D \) have enough capacity, they will reach a point at which both cannot improve because \( p_g = p_{\text{data}} \). The discriminator is unable to differentiate between the two distributions, i.e., \( D(\boldsymbol{x}) = \frac{1}{2} \).
+
+---
+Image: figures/figure_001_page003.png
+
+[Page 6] Figure
+Caption: Table 1: Parzen window-based log-likelihood estimates. The reported numbers on MNIST are the mean log-likelihood of samples on test set, with the standard error of the mean computed across examples. On TFD, we computed the standard error across folds of the dataset, with a different σ chosen using the validation set of each fold. On TFD, σ was cross validated on each fold and mean log-likelihood on each fold were computed. For MNIST we compare against other models of the real-valued (rather than binary) version of dataset. Table 1: Parzen window-based log-likelihood estimates. The reported numbers on MNIST are the mean log-likelihood of samples on test set, with the standard error of the mean computed across examples. On TFD, we computed the standard error across folds of the dataset, with a different σ chosen using the validation set of each fold. On TFD, σ was cross validated on each fold and mean log-likelihood on each fold were computed. For MNIST we compare against other models of the real-valued (rather than binary) version of dataset. Table 1: Parzen window-based log-likelihood estimates. The reported numbers on MNIST are the mean log-likelihood of samples on test set, with the standard error of the mean computed across examples. On TFD, we computed the standard error across folds of the dataset, with a different σ chosen using the validation set of each fold. On TFD, σ was cross validated on each fold and mean log-likelihood on each fold were computed. For MNIST we compare against other models of the real-valued (rather than binary) version of dataset. Figure 2: Visualization of samples from the model. Rightmost column shows the nearest training example of the neighboring sample, in order to demonstrate that the model has not memorized the training set. Samples are fair random draws, not cherry-picked. Unlike most other visualizations of deep generative models, these images show actual samples from the model distributions, not conditional means given samples of hidden units. Moreover, these samples are uncorrelated because the sampling process does not depend on Markov chain mixing. a) MNIST b) TFD c) CIFAR-10 (fully connected model) d) CIFAR-10 (convolutional discriminator and “deconvolutional” generator) Figure 2: Visualization of samples from the model. Rightmost column shows the nearest training example of the neighboring sample, in order to demonstrate that the model has not memorized the training set. Samples are fair random draws, not cherry-picked. Unlike most other visualizations of deep generative models, these images show actual samples from the model distributions, not conditional means given samples of hidden units. Moreover, these samples are uncorrelated because the sampling process does not depend on Markov chain mixing. a) MNIST b) TFD c) CIFAR-10 (fully connected model) d) CIFAR-10 (convolutional discriminator and “deconvolutional” generator)
+Image: figures/figure_002_page006.png
+
 
 ------------------------------------------------------------
 TABLES
 ------------------------------------------------------------
+
+[Page 6] Table
+
+[Page 7] Table
+Caption: The text content from the image is:
+
+"s obtained by linearly interpolating between coordinates in z space of the full model" Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model. The text content from the image is as follows:
+
+"Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model." Table 2: Challenges in generative modeling: a summary of the difficulties encountered by different approaches to deep generative modeling for each of the major operations involving a model.
 
 
 ------------------------------------------------------------
@@ -571,23 +622,15 @@ FORMULAS
 ------------------------------------------------------------
 
 [Page 3] Formula
-The formula in the image is:
-
-\[
-\max_D V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
-\]
-LaTeX: The formula in the image is:
-
-\[
-\max_D V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_{\boldsymbol{z}}(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
-\]
+{ \mathrm { i n m a x } } _ { D } V ( D , G ) = \mathbb { E } _ { \boldsymbol { x } \sim p _ { d a t a } ( \boldsymbol { x } ) } [ \log D ( \boldsymbol { x } ) ] + \mathbb { E } _ { \boldsymbol { z } \sim p _ { z } ( \boldsymbol { z } ) } [ \log ( 1 - D ( G ( \boldsymbol { z } ) ) ) ] .
+LaTeX: { \mathrm { i n m a x } } _ { D } V ( D , G ) = \mathbb { E } _ { \boldsymbol { x } \sim p _ { d a t a } ( \boldsymbol { x } ) } [ \log D ( \boldsymbol { x } ) ] + \mathbb { E } _ { \boldsymbol { z } \sim p _ { z } ( \boldsymbol { z } ) } [ \log ( 1 - D ( G ( \boldsymbol { z } ) ) ) ] .
 
 [Page 3] Formula
 ```latex
-\min_G \max_D V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_z(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
+\min_{G} \max_{D} V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{data}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_{z}(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
 ```
 LaTeX: ```latex
-\min_G \max_D V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{\text{data}}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_z(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
+\min_{G} \max_{D} V(D, G) = \mathbb{E}_{\boldsymbol{x} \sim p_{data}(\boldsymbol{x})}[\log D(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{z} \sim p_{z}(\boldsymbol{z})}[\log(1 - D(G(\boldsymbol{z})))].
 ```
 
 [Page 4] Formula
@@ -599,12 +642,8 @@ LaTeX: D _ { G } ^ { * } ( \boldsymbol { x } ) = \frac { p _ { d a t a } ( \bold
 LaTeX: \nabla _ { \theta _ { g } } \frac { 1 } { m } \sum _ { i = 1 } ^ { m } \log \left( 1 - D \left( G \left( z ^ { ( i ) } \right) \right) \right) .
 
 [Page 4] Formula
-```latex
-\nabla_{\theta_d} \frac{1}{m} \sum_{i=1}^{m} \left[ \log D \left( \boldsymbol{x}^{(i)} \right) + \log \left( 1 - D \left( G \left( \boldsymbol{z}^{(i)} \right) \right) \right) \right].
-```
-LaTeX: ```latex
-\nabla_{\theta_d} \frac{1}{m} \sum_{i=1}^{m} \left[ \log D \left( \boldsymbol{x}^{(i)} \right) + \log \left( 1 - D \left( G \left( \boldsymbol{z}^{(i)} \right) \right) \right) \right].
-```
+\nabla _ { \theta _ { d } } \frac { 1 } { m } \sum _ { i = 1 } ^ { m } \left[ \log D \left( x ^ { ( i ) } \right) + \log \left( 1 - D \left( G \left( z ^ { ( i ) } \right) \right) \right) \right] .
+LaTeX: \nabla _ { \theta _ { d } } \frac { 1 } { m } \sum _ { i = 1 } ^ { m } \left[ \log D \left( x ^ { ( i ) } \right) + \log \left( 1 - D \left( G \left( z ^ { ( i ) } \right) \right) \right) \right] .
 
 [Page 4] Formula
 ```latex
@@ -631,8 +670,12 @@ C(G) = \max_{D} V(G, D)
 LaTeX: \begin{array} { l } { { V ( G , D ) = \int _ { x } p _ { \mathrm { d a t a } } ( \boldsymbol { x } ) \log ( D ( \boldsymbol { x } ) ) d x + \int _ { z } p _ { z } ( z ) \log ( 1 - D ( g ( z ) ) ) d z } } \\ { { = \int _ { x } p _ { \mathrm { d a t a } } ( \boldsymbol { x } ) \log ( D ( \boldsymbol { x } ) ) + p _ { g } ( \boldsymbol { x } ) \log ( 1 - D ( \boldsymbol { x } ) ) d x } } \end{array}
 
 [Page 5] Formula
-C ( G ) = - \log ( 4 ) + 2 \cdot J S D \left( p _ { \mathrm { d a t a } } \| p _ { g } \right)
-LaTeX: C ( G ) = - \log ( 4 ) + 2 \cdot J S D \left( p _ { \mathrm { d a t a } } \| p _ { g } \right)
+```latex
+C(G) = -\log(4) + 2 \cdot JSD(p_{data} \| p_g)
+```
+LaTeX: ```latex
+C(G) = -\log(4) + 2 \cdot JSD(p_{data} \| p_g)
+```
 
 [Page 5] Formula
 The formula in the image can be written in LaTeX as follows:
@@ -654,17 +697,17 @@ This will render the equation as shown in the image.
 The expression in the image can be written in LaTeX as follows:
 
 ```latex
-\mathbb{E}_{\boldsymbol{x} \sim p_{data}} [\log D_G^*(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{x} \sim p_g} [\log(1 - D_G^*(\boldsymbol{x}))]
+\mathbb{E}_{\boldsymbol{x} \sim p_{data}} [\log D_G^*(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{x} \sim p_g} [\log (1 - D_G^*(\boldsymbol{x}))]
 ```
 
-This will render the formula as shown in the image.
+This will render the equation as shown in the image.
 LaTeX: The expression in the image can be written in LaTeX as follows:
 
 ```latex
-\mathbb{E}_{\boldsymbol{x} \sim p_{data}} [\log D_G^*(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{x} \sim p_g} [\log(1 - D_G^*(\boldsymbol{x}))]
+\mathbb{E}_{\boldsymbol{x} \sim p_{data}} [\log D_G^*(\boldsymbol{x})] + \mathbb{E}_{\boldsymbol{x} \sim p_g} [\log (1 - D_G^*(\boldsymbol{x}))]
 ```
 
-This will render the formula as shown in the image.
+This will render the equation as shown in the image.
 
 [Page 5] Formula
 ```latex

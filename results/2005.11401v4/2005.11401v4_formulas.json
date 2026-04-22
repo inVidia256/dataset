@@ -1,0 +1,42 @@
+{
+    "total_count": 3,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                179,
+                360,
+                431,
+                395
+            ],
+            "content": "```latex\np_{\\text{RAG-Token}}(y|x) \\approx \\prod_{i=1}^{N} \\sum_{z \\in \\text{top-}k(p(\\cdot|x))} p_\\eta(z|x)p_\\theta(y_i|x,z,y_{1:i-1})\n```",
+            "latex": "```latex\np_{\\text{RAG-Token}}(y|x) \\approx \\prod_{i=1}^{N} \\sum_{z \\in \\text{top-}k(p(\\cdot|x))} p_\\eta(z|x)p_\\theta(y_i|x,z,y_{1:i-1})\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                141,
+                258,
+                469,
+                293
+            ],
+            "content": "```latex\np_{\\text{RAG-Sequence}}(y|x) \\approx \\sum_{z \\in \\text{top}-k(p(\\cdot|x))} p_\\eta(z|x)p_\\theta(y|x,z) = \\sum_{z \\in \\text{top}-k(p(\\cdot|x))} p_\\eta(z|x)\\prod_{i}^{N} p_\\theta(y_i|x,z,y_{1:i-1})\n```",
+            "latex": "```latex\np_{\\text{RAG-Sequence}}(y|x) \\approx \\sum_{z \\in \\text{top}-k(p(\\cdot|x))} p_\\eta(z|x)p_\\theta(y|x,z) = \\sum_{z \\in \\text{top}-k(p(\\cdot|x))} p_\\eta(z|x)\\prod_{i}^{N} p_\\theta(y_i|x,z,y_{1:i-1})\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                150,
+                474,
+                459,
+                488
+            ],
+            "content": "```latex\np_{\\eta}(z|x) \\propto \\exp \\left( \\mathbf{d}(z)^{\\top} \\mathbf{q}(x) \\right)\n\\quad \\quad \n\\mathbf{d}(z) = \\text{BERT}_{d}(z), \\quad \\mathbf{q}(x) = \\text{BERT}_{q}(x)\n```",
+            "latex": "```latex\np_{\\eta}(z|x) \\propto \\exp \\left( \\mathbf{d}(z)^{\\top} \\mathbf{q}(x) \\right)\n\\quad \\quad \n\\mathbf{d}(z) = \\text{BERT}_{d}(z), \\quad \\mathbf{q}(x) = \\text{BERT}_{q}(x)\n```"
+        }
+    ]
+}

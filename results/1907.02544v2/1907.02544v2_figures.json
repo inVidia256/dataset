@@ -1,0 +1,370 @@
+{
+    "total_count": 26,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                116,
+                73,
+                499,
+                242
+            ],
+            "caption": "The structure of the BigBiGAN framework. The joint discriminator \\( \\mathcal{D} \\) is used to compute the loss \\( \\ell \\). Its inputs are data-latent pairs, either \\( (\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}(\\mathbf{x})) \\), sampled from the data distribution \\( P_{\\mathbf{x}} \\) and encoder \\( \\mathcal{E} \\) outputs, or \\( (\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z}), \\mathbf{z} \\sim P_{\\mathbf{z}}) \\), sampled from the generator \\( \\mathcal{G} \\) outputs and the latent distribution \\( P_{\\mathbf{z}} \\). The loss \\( \\ell \\) includes the unary data term \\( s_{\\mathbf{x}} \\) and the unary latent term \\( s_{\\mathbf{z}} \\), as well as the joint term \\( s_{\\mathbf{x}\\mathbf{z}} \\) which ties the data and latent distributions. The structure of the BigBiGAN framework. The joint discriminator \\( \\mathcal{D} \\) is used to compute the loss \\( \\ell \\). Its inputs are data-latent pairs, either \\( (\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}(\\mathbf{x})) \\), sampled from the data distribution \\( P_{\\mathbf{x}} \\) and encoder \\( \\mathcal{E} \\) outputs, or \\( (\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z}), \\mathbf{z} \\sim P_{\\mathbf{z}}) \\), sampled from the generator \\( \\mathcal{G} \\) outputs and the latent distribution \\( P_{\\mathbf{z}} \\). The loss \\( \\ell \\) includes the unary data term \\( s_{\\mathbf{x}} \\) and the unary latent term \\( s_{\\mathbf{z}} \\), as well as the joint term \\( s_{\\mathbf{x}\\mathbf{z}} \\) which ties the data and latent distributions.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                117,
+                70,
+                494,
+                176
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 2: Selected reconstructions from an unsupervised BigBiGAN model (Section 3.3). Top row images are real data x ∼ P_x; bottom row images are generated reconstructions of the above image x computed by G(E(x)). Unlike most explicit reconstruction costs (e.g., pixel-wise), the reconstruction cost implicitly minimized by a (Big)BiGAN [7, 10] tends to emphasize more semantic, high-level details. Additional reconstructions are presented in Appendix B.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                109,
+                69,
+                501,
+                266
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page013.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                106,
+                118,
+                505,
+                653
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 4: 128 × 128 samples \\(\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z})\\) from an unsupervised BigBiGAN generator \\(\\mathcal{G}\\), trained using the Base method from Table 1.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page015.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                106,
+                97,
+                505,
+                654
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 5: 128 × 128 reconstructions from an unsupervised BigBiGAN model, trained using the Base method from Table 1. The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x)).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page016.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                106,
+                118,
+                505,
+                653
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 6: 128 × 128 samples \\(\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z})\\) from an unsupervised BigBiGAN generator \\(\\mathcal{G}\\), trained using the lighter augmentation from [27] with generation results reported in Table 3.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page017.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                106,
+                98,
+                505,
+                654
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 7: 128 × 128 reconstructions from an unsupervised BigBiGAN model, trained using the lighter augmentation from [27] with generation results reported in Table 3. The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x)).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page018.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                106,
+                118,
+                505,
+                653
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 8: 128 × 128 samples \\(\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z})\\) from an unsupervised BigBiGAN generator \\(\\mathcal{G}\\), trained using the High Res E (256) configuration from Table 1.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page019.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                106,
+                92,
+                504,
+                654
+            ],
+            "caption": "Figure 9: 128 × 128 reconstructions of 256 × 256 encoder input images from an unsupervised BigBiGAN model, trained using the High Res E (256) configuration from Table 1. Reconstructions are upsampled from 128 × 128 to 256 × 256 for visualization. The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x)).",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page020.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                106,
+                118,
+                505,
+                653
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 10: 256 × 256 samples \\(\\hat{\\mathbf{x}}\\) ∼ G(z) from an unsupervised BigBiGAN generator G, trained with a high-resolution E and G (High Res G (256) from Table 1).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page021.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 22,
+            "type": "figure",
+            "bbox": [
+                106,
+                98,
+                504,
+                655
+            ],
+            "caption": "Figure 11: 256 × 256 reconstructions from an unsupervised BigBiGAN model, trained with a high-resolution E and G (High Res G (256) from Table 1). The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x)).",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page022.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 23,
+            "type": "figure",
+            "bbox": [
+                123,
+                89,
+                488,
+                652
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 12: Iterated reconstructions from an unsupervised BigBiGAN model, trained using the ResNet (↑ E LR) method from Table 1, computed by recursively running the reconstruction operation G(E(·)) on its own output as described in Appendix B. In each pair of columns, the left column shows a real input image R0 at the top, and R1 through R9 in the remaining rows, the results of iterating reconstruction one to nine times, The right column shows the result of up to 500 iterations sampled at longer intervals, displaying R10, R20, R30, R40, R50, R100, R200, R300, R400, and R500.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page023.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 25,
+            "type": "figure",
+            "bbox": [
+                109,
+                96,
+                502,
+                652
+            ],
+            "caption": "Figure 13: Nearest neighbors in BigBiGAN $\\mathcal{E}$ feature space, from our best performing model (RevNet $\\times 4$, $\\uparrow$ $\\mathcal{E}$ LR). In each row, the first (left) column is a query image, and the remaining columns are its three nearest neighbors from the training set (the leftmost being the nearest, next being the second nearest, etc.). The query images above are the first 24 images in the ImageNet validation set.",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page025.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 26,
+            "type": "figure",
+            "bbox": [
+                106,
+                71,
+                502,
+                469
+            ],
+            "caption": "Figure 14: Image generation learning curves for several of the ablations in Section 3, including a comparison of BigBiGAN to standard GAN. Legend entries correspond to the following rows in Table 1: Base, No ξ (GAN), and High Res ξ (256).",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page026.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 27,
+            "type": "figure",
+            "bbox": [
+                107,
+                78,
+                500,
+                274
+            ],
+            "caption": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\" The text content from the image is:\n\n\"Relative L1 Reconstruction Error (%)\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page027.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 27,
+            "type": "figure",
+            "bbox": [
+                108,
+                113,
+                500,
+                672
+            ],
+            "caption": "Figure 15: Image generation and representation learning curves for the latent space variations explored in Section 3. Legend entries correspond to the following rows in Table 1: Base, Deterministic 𝒖, and Uniform 𝑃𝑧.",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page027.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 28,
+            "type": "figure",
+            "bbox": [
+                107,
+                78,
+                500,
+                274
+            ],
+            "caption": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\" The text content from the image is:\n\n\"Relative L1 Reconstruction Error (%)\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page028.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 28,
+            "type": "figure",
+            "bbox": [
+                108,
+                110,
+                501,
+                673
+            ],
+            "caption": "Figure 16: Image generation and representation learning curves for the unary loss component variations explored in Section 3. Legend entries correspond to the following rows in Table 1: Base, x Unary Only, z Unary Only, and No Unaries (BiGAN).",
+            "footnote": "",
+            "cropped_image": "figures/figure_018_page028.png"
+        },
+        {
+            "serial_number": 19,
+            "page": 29,
+            "type": "figure",
+            "bbox": [
+                108,
+                78,
+                500,
+                274
+            ],
+            "caption": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\" The text content from the image is \"Relative L1 Reconstruction Error (%)\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_019_page029.png"
+        },
+        {
+            "serial_number": 20,
+            "page": 29,
+            "type": "figure",
+            "bbox": [
+                107,
+                165,
+                501,
+                680
+            ],
+            "caption": "Figure 17: Image generation and representation learning curves for the G size variations explored in Section 3. Legend entries correspond to the following rows in Table 1: Base, Small G (32), and Small G (64).",
+            "footnote": "",
+            "cropped_image": "figures/figure_020_page029.png"
+        },
+        {
+            "serial_number": 21,
+            "page": 30,
+            "type": "figure",
+            "bbox": [
+                107,
+                78,
+                500,
+                275
+            ],
+            "caption": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_021_page030.png"
+        },
+        {
+            "serial_number": 22,
+            "page": 30,
+            "type": "figure",
+            "bbox": [
+                107,
+                130,
+                500,
+                684
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 18: Image generation and representation learning curves for high resolution \\( \\mathcal{E} \\) with varying resolution \\( \\mathcal{G} \\) explored in Section 3. Legend entries correspond to the following rows in Table 1: High Res \\( \\mathcal{E} \\) (256), Low Res \\( \\mathcal{G} \\) (64), and High Res \\( \\mathcal{G} \\) (256).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_022_page030.png"
+        },
+        {
+            "serial_number": 23,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                107,
+                78,
+                499,
+                274
+            ],
+            "caption": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_023_page031.png"
+        },
+        {
+            "serial_number": 24,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                108,
+                109,
+                499,
+                674
+            ],
+            "caption": "Figure 19: Image generation and representation learning curves for the \\(\\mathcal{E}\\) architecture variations explored in Section 3. Legend entries correspond to the following rows in Table 1: High Res \\(\\mathcal{E}\\) (256), ResNet-101, ResNet \\(\\times\\) 2, RevNet, RevNet \\(\\times\\) 2, and RevNet \\(\\times\\) 4.",
+            "footnote": "",
+            "cropped_image": "figures/figure_024_page031.png"
+        },
+        {
+            "serial_number": 25,
+            "page": 32,
+            "type": "figure",
+            "bbox": [
+                107,
+                78,
+                499,
+                275
+            ],
+            "caption": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_025_page032.png"
+        },
+        {
+            "serial_number": 26,
+            "page": 32,
+            "type": "figure",
+            "bbox": [
+                108,
+                109,
+                499,
+                675
+            ],
+            "caption": "Figure 20: Image generation and representation learning curves showing the effect of decoupling the \\( \\mathcal{E} \\) and \\( \\mathcal{G} \\) optimizers to train \\( \\mathcal{E} \\) with 10× higher learning rate. Legend entries correspond to the following rows in Table 1: High Res \\( \\mathcal{E} \\) (256), ResNet (\\( \\uparrow \\mathcal{E} \\) LR), RevNet ×4, and RevNet ×4 (\\( \\uparrow \\mathcal{E} \\) LR).",
+            "footnote": "",
+            "cropped_image": "figures/figure_026_page032.png"
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "total_count": 8,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                72,
+                71,
+                290,
+                99
+            ],
+            "caption": "Figure 1: Examples of ReLU transformations of low-dimensional manifolds embedded in higher-dimensional spaces. In these examples the initial spiral is embedded into an n-dimensional space using random matrix T followed by ReLU, and then projected back to the 2D space using T−1. In examples above n = 2,3 result in information loss where certain points of the manifold collapse into each other, while for n = 15 to 30 the transformation is highly non-convex. Figure 1: Examples of ReLU transformations of low-dimensional manifolds embedded in higher-dimensional spaces. In these examples the initial spiral is embedded into an n-dimensional space using random matrix T followed by ReLU, and then projected back to the 2D space using T−1. In examples above n = 2,3 result in information loss where certain points of the manifold collapse into each other, while for n = 15 to 30 the transformation is highly non-convex.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                77,
+                210,
+                288,
+                362
+            ],
+            "caption": "Figure 2: Evolution of separable convolution blocks. The diagonally hatched texture indicates layers that do not contain non-linearities. The last (lightly colored) layer indicates the beginning of the next block. Note: 2d and 2c are equivalent blocks when stacked. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                320,
+                70,
+                525,
+                133
+            ],
+            "caption": "Figure 3: The difference between residual block [8, 30] and inverted residual. Diagonally hatched layers do not use non-linearities. We use thickness of each block to indicate its relative number of channels. Note how classical residuals connects the layers with high number of channels, whereas the inverted residuals connect the bottlenecks. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                321,
+                78,
+                537,
+                299
+            ],
+            "caption": "Figure 4: Comparison of convolutional blocks for different architectures. ShuffleNet uses Group Convolutions [20] and shuffling, it also uses conventional residual approach where inner blocks are narrower than output. ShuffleNet and NasNet illustrations are from respective papers.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                317,
+                72,
+                538,
+                193
+            ],
+            "caption": "Figure 5: Performance curve of MobileNetV2 vs MobileNetV1, ShuffleNet, NAS. For our networks we use multipliers 0.35, 0.5, 0.75, 1.0 for all resolutions, and additional 1.4 for for 224. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                319,
+                267,
+                535,
+                325
+            ],
+            "caption": "(a) Impact of non-linearity in the bottleneck layer.\n(b) Impact of variations in residual blocks. (a) Impact of non-linearity in the bottleneck layer.\n(b) Impact of variations in residual blocks. Figure 6: The impact of non-linearities and various types of shortcut (residual) connections.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                88,
+                72,
+                501,
+                164
+            ],
+            "caption": "Figure 7: Distribution of activation patterns. The x-axis is the layer index, and we show minimum/maximum/average number of positive channels after each convolution with ReLU. y-axis is either absolute or relative number of channels. The “threshold” line indicates the ReLU invertibility threshold - that is the number of positive dimensions is higher than the input space. In our case this is 1/6 fraction of the channels. Note how at the beginning of the training on Figure 7a the distribution is much more tightly concentrated around the mean. After the training has finished (Figure 7b), the average hasn’t changed but the standard deviation grew dramatically. Best viewed in color. Figure 7: Distribution of activation patterns. The x-axis is the layer index, and we show minimum/maximum/average number of positive channels after each convolution with ReLU. y-axis is either absolute or relative number of channels. The “threshold” line indicates the ReLU invertibility threshold - that is the number of positive dimensions is higher than the input space. In our case this is 1/6 fraction of the channels. Note how at the beginning of the training on Figure 7a the distribution is much more tightly concentrated around the mean. After the training has finished (Figure 7b), the average hasn’t changed but the standard deviation grew dramatically. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page013.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                102,
+                128,
+                509,
+                686
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 8: MobileNetv2 semantic segmentation visualization results on PASCAL VOC 2012 val set. OS: output_stride. S: single scale input. MS+F: Multi-scale inputs with scales = {0.5, 0.75, 1, 1.25, 1.5, 1.75} and left-right flipped inputs. Employing output_stride = 16 and single input scale = 1 attains a good trade-off between FLOPS and accuracy.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page014.png"
+        }
+    ]
+}

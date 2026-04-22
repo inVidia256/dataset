@@ -1,0 +1,30 @@
+{
+    "total_count": 2,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                146,
+                469,
+                268,
+                519
+            ],
+            "content": "```latex\n\\begin{align*}\n\\text{MAC} &= hw(c_1 + c_2) + \\frac{c_1c_2}{g} \\\\\n&= hw c_1 + \\frac{Bg}{c_1} + \\frac{B}{hw},\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\text{MAC} &= hw(c_1 + c_2) + \\frac{c_1c_2}{g} \\\\\n&= hw c_1 + \\frac{Bg}{c_1} + \\frac{B}{hw},\n\\end{align*}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                154,
+                178,
+                258,
+                202
+            ],
+            "content": "\\mathrm { M A C } \\geq 2 \\sqrt { h w B } + { \\frac { B } { h w } } .",
+            "latex": "\\mathrm { M A C } \\geq 2 \\sqrt { h w B } + { \\frac { B } { h w } } ."
+        }
+    ]
+}

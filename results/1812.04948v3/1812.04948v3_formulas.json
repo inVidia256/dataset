@@ -1,0 +1,42 @@
+{
+    "total_count": 3,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                87,
+                527,
+                250,
+                554
+            ],
+            "content": "```latex\nAdaIN(\\mathbf{x}_i, \\mathbf{y}) = \\mathbf{y}_{s,i} \\frac{\\mathbf{x}_i - \\mu(\\mathbf{x}_i)}{\\sigma(\\mathbf{x}_i)} + \\mathbf{y}_{b,i},\n```",
+            "latex": "```latex\nAdaIN(\\mathbf{x}_i, \\mathbf{y}) = \\mathbf{y}_{s,i} \\frac{\\mathbf{x}_i - \\mu(\\mathbf{x}_i)}{\\sigma(\\mathbf{x}_i)} + \\mathbf{y}_{b,i},\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                339,
+                642,
+                505,
+                683
+            ],
+            "content": "l _ { Z } = \\mathbb { E } \\left[ \\frac { 1 } { \\epsilon ^ { 2 } } d \\big ( G ( \\operatorname { s l e r p } ( \\mathbf { z } _ { 1 } , \\mathbf { z } _ { 2 } ; t ) ) , \\right. \\left. G ( \\operatorname { s l e r p } ( \\mathbf { z } _ { 1 } , \\mathbf { z } _ { 2 } ; t + \\epsilon ) ) \\big ) \\right] ,",
+            "latex": "l _ { Z } = \\mathbb { E } \\left[ \\frac { 1 } { \\epsilon ^ { 2 } } d \\big ( G ( \\operatorname { s l e r p } ( \\mathbf { z } _ { 1 } , \\mathbf { z } _ { 2 } ; t ) ) , \\right. \\left. G ( \\operatorname { s l e r p } ( \\mathbf { z } _ { 1 } , \\mathbf { z } _ { 2 } ; t + \\epsilon ) ) \\big ) \\right] ,"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                69,
+                378,
+                258,
+                418
+            ],
+            "content": "l _ { \\mathcal W } = \\mathbb E \\left[ \\frac 1 { \\epsilon ^ { 2 } } d \\big ( g ( \\operatorname { lerp } ( f ( \\mathbf z _ { 1 } ) , f ( \\mathbf z _ { 2 } ) ; t ) ) , \\right. \\left. g ( \\operatorname { lerp } ( f ( \\mathbf z _ { 1 } ) , f ( \\mathbf z _ { 2 } ) ; t + \\epsilon ) ) \\big ) \\right] ,",
+            "latex": "l _ { \\mathcal W } = \\mathbb E \\left[ \\frac 1 { \\epsilon ^ { 2 } } d \\big ( g ( \\operatorname { lerp } ( f ( \\mathbf z _ { 1 } ) , f ( \\mathbf z _ { 2 } ) ; t ) ) , \\right. \\left. g ( \\operatorname { lerp } ( f ( \\mathbf z _ { 1 } ) , f ( \\mathbf z _ { 2 } ) ; t + \\epsilon ) ) \\big ) \\right] ,"
+        }
+    ]
+}

@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                109,
+                70,
+                502,
+                264
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Encoder(E)</td>\n    <td>Gen.(G)</td>\n    <td>Loss L*</td>\n    <td>Pz</td>\n    <td>Results</td>\n  </tr>\n  <tr>\n    <td>A.D.C.R.Var.</td>\n    <td>C.R.</td>\n    <td>sxzsxsz</td>\n    <td>IS(±)</td>\n    <td>FID(±)</td>\n    <td>Cls.(±)</td>\n  </tr>\n  <tr>\n    <td>Base</td>\n    <td>S501128√1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>22.66±0.18</td>\n    <td>31.19±0.37</td>\n    <td>48.10±0.13</td>\n  </tr>\n  <tr>\n    <td>Deterministic EUniform Pz</td>\n    <td>S501128(-)1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>(U)</td>\n    <td>22.83±0.24</td>\n    <td>31.52±0.28</td>\n    <td>45.11±0.93</td>\n  </tr>\n  <tr>\n    <td>x Unary Only</td>\n    <td>S501128√1</td>\n    <td>96128</td>\n    <td>√(-)</td>\n    <td>N</td>\n    <td>23.19±0.28</td>\n    <td>31.99±0.30</td>\n    <td>47.74±0.20</td>\n  </tr>\n  <tr>\n    <td>z Unary Only</td>\n    <td>S501128√1</td>\n    <td>96128</td>\n    <td>√(-)</td>\n    <td>N</td>\n    <td>19.52±0.39</td>\n    <td>39.48±1.00</td>\n    <td>47.78±0.28</td>\n  </tr>\n  <tr>\n    <td>No Unaries(BiGAN)</td>\n    <td>S501128√1</td>\n    <td>96128</td>\n    <td>(-)(-)</td>\n    <td>N</td>\n    <td>19.70±0.30</td>\n    <td>42.92±0.92</td>\n    <td>46.71±0.88</td>\n  </tr>\n  <tr>\n    <td>Small G(32)</td>\n    <td>S501128(32)1</td>\n    <td>128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>3.28±0.18</td>\n    <td>247.30±10.31</td>\n    <td>43.59±0.34</td>\n  </tr>\n  <tr>\n    <td>Small G(64)</td>\n    <td>S501128(64)1</td>\n    <td>128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>19.96±0.15</td>\n    <td>38.93±0.39</td>\n    <td>47.54±0.33</td>\n  </tr>\n  <tr>\n    <td>NoE(GAN)*</td>\n    <td>(-)</td>\n    <td>96128</td>\n    <td>(-)(-)</td>\n    <td>N</td>\n    <td>23.56±0.37</td>\n    <td>30.91±0.23</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>High ResE(256)</td>\n    <td>S501(256)1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.45±0.14</td>\n    <td>27.86±0.13</td>\n    <td>50.80±0.30</td>\n  </tr>\n  <tr>\n    <td>Low ResG(64)</td>\n    <td>S501(64)1</td>\n    <td>96(64)</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>19.40±0.19</td>\n    <td>15.82±0.06</td>\n    <td>47.51±0.09</td>\n  </tr>\n  <tr>\n    <td>High ResG(256)</td>\n    <td>S501(256)1</td>\n    <td>96(256)</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>24.70</td>\n    <td>38.58</td>\n    <td>51.49</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>S(101)1(256)1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.29</td>\n    <td>28.01</td>\n    <td>51.21</td>\n  </tr>\n  <tr>\n    <td>ResNetx2</td>\n    <td>S501(2)1(256)1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.68</td>\n    <td>27.81</td>\n    <td>52.66</td>\n  </tr>\n  <tr>\n    <td>RevNet(V)</td>\n    <td>501(2)1(256)1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.33±0.09</td>\n    <td>27.78±0.06</td>\n    <td>49.42±0.18</td>\n  </tr>\n  <tr>\n    <td>RevNetx2</td>\n    <td>(V)501(2)1(256)1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.21</td>\n    <td>27.96</td>\n    <td>54.40</td>\n  </tr>\n  <tr>\n    <td>RevNetx4</td>\n    <td>(V)501(4)1(256)1</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.23</td>\n    <td>28.15</td>\n    <td>57.15</td>\n  </tr>\n  <tr>\n    <td>ResNet(↑E LR)</td>\n    <td>S501(256)1(10)</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.27±0.22</td>\n    <td>28.51±0.44</td>\n    <td>53.70±0.15</td>\n  </tr>\n  <tr>\n    <td>RevNetx4(↑E LR)</td>\n    <td>(V)501(4)(256)1(10)</td>\n    <td>96128</td>\n    <td>√√√</td>\n    <td>N</td>\n    <td>23.08</td>\n    <td>28.54</td>\n    <td>60.15</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                122,
+                70,
+                488,
+                247
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Architecture</td>\n    <td>Feature</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>Bi GAN[7，42]</td>\n    <td>Alex Net</td>\n    <td>Conv3</td>\n    <td>31.0</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>SS-GAN[4]</td>\n    <td>ResNet-19</td>\n    <td>Block6</td>\n    <td>38.3</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Motion Segmentation(MS)[30，6]</td>\n    <td>ResNet-101</td>\n    <td>Ave Pool</td>\n    <td>27.6</td>\n    <td>48.3</td>\n  </tr>\n  <tr>\n    <td>Exemplar(Ex)[8，6]</td>\n    <td>ResNet-101</td>\n    <td>Ave Pool</td>\n    <td>31.5</td>\n    <td>53.1</td>\n  </tr>\n  <tr>\n    <td>Relative Position(RP)[5，6]</td>\n    <td>ResNet-101</td>\n    <td>Ave Pool</td>\n    <td>36.2</td>\n    <td>59.2</td>\n  </tr>\n  <tr>\n    <td>Colorization(Col)[41，6]</td>\n    <td>ResNet-101</td>\n    <td>Ave Pool</td>\n    <td>39.6</td>\n    <td>62.5</td>\n  </tr>\n  <tr>\n    <td>Combination of MS+Ex+RP+Col[6]</td>\n    <td>ResNet-101</td>\n    <td>Ave Pool</td>\n    <td>-</td>\n    <td>69.3</td>\n  </tr>\n  <tr>\n    <td>CPC[39]</td>\n    <td>ResNet-101</td>\n    <td>Ave Pool</td>\n    <td>48.7</td>\n    <td>73.6</td>\n  </tr>\n  <tr>\n    <td>Rotation[11，24]</td>\n    <td>RevNet-50x4</td>\n    <td>Ave Pool</td>\n    <td>55.4</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Efficient CPC[17]</td>\n    <td>ResNet-170</td>\n    <td>Ave Pool</td>\n    <td>61.0</td>\n    <td>83.0</td>\n  </tr>\n  <tr>\n    <td>Big Bi GAN(ours)</td>\n    <td>ResNet-50</td>\n    <td>Ave Pool</td>\n    <td>55.4</td>\n    <td>77.4</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>ResNet-50</td>\n    <td>BN+C ReLU</td>\n    <td>56.6</td>\n    <td>78.6</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>RevNet-50x4</td>\n    <td>Ave Pool</td>\n    <td>60.8</td>\n    <td>81.4</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>RevNet-50x4</td>\n    <td>BN+C ReLU</td>\n    <td>61.3</td>\n    <td>81.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                108,
+                320,
+                503,
+                385
+            ],
+            "caption": "Table 2: Comparison of BigBiGAN models on the official ImageNet validation set against recent competing approaches with a supervised logistic regression classifier. BigBiGAN results are selected with early stopping based on highest accuracy on our train_val subset of 10K training set images. ResNet-50 results correspond to row ResNet (↑ E LR) in Table 1, and RevNet-50 ×4 corresponds to RevNet ×4 (↑ E LR). Table 2: Comparison of BigBiGAN models on the official ImageNet validation set against recent competing approaches with a supervised logistic regression classifier. BigBiGAN results are selected with early stopping based on highest accuracy on our train_val subset of 10K training set images. ResNet-50 results correspond to row ResNet (↑ E LR) in Table 1, and RevNet-50 ×4 corresponds to RevNet ×4 (↑ E LR).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Steps</td>\n    <td>IS(↑)</td>\n    <td>FID vs.Train(↓)</td>\n    <td>FID vs.Val.(↓)</td>\n  </tr>\n  <tr>\n    <td>Big GAN+SL[27]</td>\n    <td>500K</td>\n    <td>20.4(15.4±7.57)</td>\n    <td>-</td>\n    <td>25.3(71.7±66.32)</td>\n  </tr>\n  <tr>\n    <td>Big GAN+Clustering[27]</td>\n    <td>500K</td>\n    <td>22.7(22.8±0.42)</td>\n    <td>-</td>\n    <td>23.2(22.7±0.80)</td>\n  </tr>\n  <tr>\n    <td>Big BiG AN+SL(ours)</td>\n    <td>500K</td>\n    <td>25.38(25.33±0.17)</td>\n    <td>22.78(22.63±0.23)</td>\n    <td>23.60(23.56±0.12)</td>\n  </tr>\n  <tr>\n    <td>Big BiG AN High ResE+SL(ours)</td>\n    <td>500K</td>\n    <td>25.43(25.45±0.04)</td>\n    <td>22.34(22.36±0.04)</td>\n    <td>22.94(23.00±0.15)</td>\n  </tr>\n  <tr>\n    <td>Big BiG AN High ResE+SL(ours)</td>\n    <td>1M</td>\n    <td>27.94(27.80±0.21)</td>\n    <td>20.32(20.27±0.09)</td>\n    <td>21.61(21.62±0.09)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                234,
+                490,
+                377,
+                568
+            ],
+            "caption": "Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments. Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments. Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments. Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Architecture</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>ResNet-50</td>\n    <td>76.3</td>\n    <td>93.1</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>77.8</td>\n    <td>93.8</td>\n  </tr>\n  <tr>\n    <td>RevNet-50</td>\n    <td>71.8</td>\n    <td>90.5</td>\n  </tr>\n  <tr>\n    <td>RevNet-50×2</td>\n    <td>74.9</td>\n    <td>92.2</td>\n  </tr>\n  <tr>\n    <td>RevNet-50×4</td>\n    <td>76.6</td>\n    <td>93.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page012.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 24,
+            "type": "table",
+            "bbox": [
+                166,
+                70,
+                445,
+                127
+            ],
+            "caption": "",
+            "footnote": "Table 6: Accuracy of k nearest neighbors classifiers in BigBiGAN feature space on the ImageNet validation set. We report results under the normalized ℓ1 distance D1 as well as the normalized ℓ2 (cosine) distance D2. Table 6: Accuracy of \\( k \\) nearest neighbors classifiers in BigBiGAN feature space on the ImageNet validation set. We report results under the normalized \\(\\ell_{1}\\) distance \\( D_{1} \\) as well as the normalized \\(\\ell_{2}\\) (cosine) distance \\( D_{2} \\). Table 6: Accuracy of k nearest neighbors classifiers in BigBiGAN feature space on the ImageNet validation set. We report results under the normalized ℓ1 distance D1 as well as the normalized ℓ2 (cosine) distance D2.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Top-1/Top-5 Acc.(%)</td>\n  </tr>\n  <tr>\n    <td>Metric</td>\n    <td>k= 1</td>\n    <td>k= 5</td>\n    <td>k= 25</td>\n    <td>k= 50</td>\n  </tr>\n  <tr>\n    <td>D1</td>\n    <td>38.09/-</td>\n    <td>41.28/58.56</td>\n    <td>43.32/65.12</td>\n    <td>42.73/66.22</td>\n  </tr>\n  <tr>\n    <td>D2</td>\n    <td>35.68/-</td>\n    <td>38.61/55.59</td>\n    <td>40.65/62.23</td>\n    <td>40.15/63.42</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page024.png"
+        }
+    ]
+}

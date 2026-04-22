@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 22,
+            "type": "table",
+            "bbox": [
+                103,
+                299,
+                508,
+                396
+            ],
+            "caption": "Figure 18: Priority Sort Learning Curves. Figure 18: Priority Sort Learning Curves. 1: NTM with Feedforward Controller Experimental Settings",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>#Heads</td>\n    <td>Controller Size</td>\n    <td>Memory Size</td>\n    <td>Learning Rate</td>\n    <td>#Parameters</td>\n  </tr>\n  <tr>\n    <td>Copy</td>\n    <td>1</td>\n    <td>100</td>\n    <td>128x20</td>\n    <td>10-4</td>\n    <td>17，162</td>\n  </tr>\n  <tr>\n    <td>Repeat Copy</td>\n    <td>1</td>\n    <td>100</td>\n    <td>128x20</td>\n    <td>10-4</td>\n    <td>16，712</td>\n  </tr>\n  <tr>\n    <td>Associative</td>\n    <td>4</td>\n    <td>256</td>\n    <td>128x20</td>\n    <td>10-4</td>\n    <td>146，845</td>\n  </tr>\n  <tr>\n    <td>N-Grams</td>\n    <td>1</td>\n    <td>100</td>\n    <td>128x20</td>\n    <td>3x10-5</td>\n    <td>14，656</td>\n  </tr>\n  <tr>\n    <td>Priority Sort</td>\n    <td>8</td>\n    <td>512</td>\n    <td>128x20</td>\n    <td>3x10-5</td>\n    <td>508，305</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page022.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 23,
+            "type": "table",
+            "bbox": [
+                103,
+                91,
+                508,
+                187
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>#Heads</td>\n    <td>Controller Size</td>\n    <td>Memory Size</td>\n    <td>Learning Rate</td>\n    <td>#Parameters</td>\n  </tr>\n  <tr>\n    <td>Copy</td>\n    <td>1</td>\n    <td>100</td>\n    <td>128x20</td>\n    <td>10-4</td>\n    <td>67，561</td>\n  </tr>\n  <tr>\n    <td>Repeat Copy</td>\n    <td>1</td>\n    <td>100</td>\n    <td>128x20</td>\n    <td>10-4</td>\n    <td>66，111</td>\n  </tr>\n  <tr>\n    <td>Associative</td>\n    <td>1</td>\n    <td>100</td>\n    <td>128x20</td>\n    <td>10-4</td>\n    <td>70，330</td>\n  </tr>\n  <tr>\n    <td>N-Grams</td>\n    <td>1</td>\n    <td>100</td>\n    <td>128x20</td>\n    <td>3x10-5</td>\n    <td>61，749</td>\n  </tr>\n  <tr>\n    <td>Priority Sort</td>\n    <td>5</td>\n    <td>2x100</td>\n    <td>128x20</td>\n    <td>3x10-5</td>\n    <td>269，038</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page023.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 23,
+            "type": "table",
+            "bbox": [
+                163,
+                226,
+                447,
+                324
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: NTM with LSTM Controller Experimental Settings\" The text content from the image is:\n\n\"Table 3: LSTM Network Experimental Settings\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>Network Size</td>\n    <td>Learning Rate</td>\n    <td>#Parameters</td>\n  </tr>\n  <tr>\n    <td>Copy</td>\n    <td>3x256</td>\n    <td>3x10-5</td>\n    <td>1，352，969</td>\n  </tr>\n  <tr>\n    <td>Repeat Copy</td>\n    <td>3x512</td>\n    <td>3x10-5</td>\n    <td>5，312，007</td>\n  </tr>\n  <tr>\n    <td>Associative</td>\n    <td>3x256</td>\n    <td>10-4</td>\n    <td>1，344，518</td>\n  </tr>\n  <tr>\n    <td>N-Grams</td>\n    <td>3x128</td>\n    <td>10-4</td>\n    <td>331，905</td>\n  </tr>\n  <tr>\n    <td>Priority Sort</td>\n    <td>3x128</td>\n    <td>3x10-5</td>\n    <td>384，424</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page023.png"
+        }
+    ]
+}

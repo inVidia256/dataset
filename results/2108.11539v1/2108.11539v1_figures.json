@@ -1,0 +1,132 @@
+{
+    "total_count": 9,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                331,
+                244,
+                522,
+                535
+            ],
+            "caption": "Figure 1. Intuitive cases to explain the three main problems in object detection on drone-captured images. The cases in first row, second row and third row respectively shows the size variation, high-density and large coverage of objects on drone-captured images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                97,
+                70,
+                497,
+                194
+            ],
+            "caption": "Figure 2. The overview of working pipeline using TPH-YOLOv5. Compared to original version, we mainly improve the head by applying Transformer Prediction Head (TPH). We also add one more head to better detect different scale objects. In addition, we employ bag of tricks like data augmentation, multi-scale testing, model ensemble and self-trained classifier to make TPH-YOLOv5 stronger.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                60,
+                69,
+                531,
+                307
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 3. The architecture of the TPH-YOLOv5.\na) CSPDarknet53 backbone with three transformer encoder blocks at the end.\nb) The Neck use the structure like PANet.\nc) Four TPHs (transformer prediction heads) use the feature maps from transformer encoder blocks in Neck. In addition, the number of each block is marked with orange numbers on the left side of the block.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                133,
+                98,
+                203,
+                325
+            ],
+            "caption": "Figure 4. The architecture of transformer encoder, which contains two main blocks, a multi-head attention block and a feed-forward neural network (MLP). LayerNorm and Dropout layers help the network converge better and prevent the network from overfitting. Multi-head attention can help the current node not only pay attention to the current pixels, but also obtain the semantics of the context.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                308,
+                71,
+                546,
+                138
+            ],
+            "caption": "Figure 5. The overview of CBAM module. Two sequential submodules are used to refine feature map that go through CBAM, residual paths are also used.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page005.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                64,
+                142,
+                266,
+                317
+            ],
+            "caption": "Figure 6. Confusion matrix was made at IoU threshold of 0.45, confidence threshold of 0.25.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                308,
+                71,
+                545,
+                205
+            ],
+            "caption": "Figure 7. Some images were taken too high, resulting in many small objects, which cannot be recognized.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page006.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                326,
+                224,
+                529,
+                440
+            ],
+            "caption": "Figure 8. The number of labels of each category.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page007.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                48,
+                169,
+                545,
+                392
+            ],
+            "caption": "Figure 9. Some visualization results from our TPH-YOLOv5 on testset-challenge, different category use bounding boxes with different color. The performance is good at localization tiny objects, dense objects and objects blurred by motion. Figure 9. Some visualization results from our TPH-YOLOv5 on testset-challenge, different category use bounding boxes with different color. The performance is good at localization tiny objects, dense objects and objects blurred by motion.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page008.png"
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "total_count": 13,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                328,
+                62,
+                504,
+                247
+            ],
+            "caption": "Figure 1: An illustration of the proposed RNN Encoder-Decoder.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                338,
+                61,
+                494,
+                140
+            ],
+            "caption": "Figure 2: An illustration of the proposed hidden activation function. The update gate z selects whether the hidden state is to be updated with a new hidden state ĥ. The reset gate r decides whether the previous hidden state is ignored. See Eqs. (5)-(8) for the detailed equations of r, z, h and ĥ. Figure 2: An illustration of the proposed hidden activation function. The update gate z selects whether the hidden state is to be updated with a new hidden state ĥ. The reset gate r decides whether the previous hidden state is ignored. See Eqs. (5)-(8) for the detailed equations of r, z, h and ĥ.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                325,
+                464,
+                497,
+                602
+            ],
+            "caption": "Figure 3: The visualization of phrase pairs according to their scores (log-probabilities) by the RNN Encoder–Decoder and the translation model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                92,
+                271,
+                527,
+                427
+            ],
+            "caption": "The text in the image reads:\n\n\"Table 3: Samples generated from the RNN Encoder–Decoder for each source phrase used in Table 2. We show the top-5 target phrases out of 50 samples. They are sorted by the RNN Encoder–Decoder scores.\" Table 3: Samples generated from the RNN Encoder–Decoder for each source phrase used in Table 2. We show the top-5 target phrases out of 50 samples. They are sorted by the RNN Encoder–Decoder scores. Figure 4: 2-D embedding of the learned word representation. The left one shows the full embedding space, while the right one shows a zoomed-in view of one region (color-coded). For more plots, see the supplementary material.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                70,
+                60,
+                529,
+                389
+            ],
+            "caption": "Figure 5: 2-D embedding of the learned phrase representation. The top left one shows the full representation space (5000 randomly selected points), while the other three figures show the zoomed-in view of specific regions (color-coded).",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page009.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                305,
+                59,
+                526,
+                381
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                96,
+                32,
+                405,
+                513
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page014.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                115,
+                30,
+                740,
+                515
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page014.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                447,
+                30,
+                762,
+                509
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page014.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                78,
+                31,
+                394,
+                521
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page015.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                115,
+                24,
+                746,
+                520
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page015.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                77,
+                282,
+                419,
+                522
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page015.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                415,
+                12,
+                764,
+                514
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page015.png"
+        }
+    ]
+}

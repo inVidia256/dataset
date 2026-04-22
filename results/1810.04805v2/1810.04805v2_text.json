@@ -1,0 +1,2855 @@
+{
+    "total_count": 259,
+    "content_type": "text",
+    "data": [
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                577,
+                291,
+                766
+            ],
+            "content": "Language model pre-training has been shown to be effective for improving many natural language processing tasks (Dai and Le, 2015; Peters et al., 2018a; Radford et al., 2018; Howard and Ruder, 2018). These include sentence-level tasks such as natural language inference (Bowman et al., 2015; Williams et al., 2018) and paraphrasing (Dolan and Brockett, 2005), which aim to predict the relationships between sentences by analyzing them holistically, as well as token-level tasks such as named entity recognition and question answering, where models are required to produce fine-grained output at the token level (Tjong Kim Sang and De Meulder, 2003; Rajpurkar et al., 2016)."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                223,
+                527,
+                426
+            ],
+            "content": "There are two existing strategies for applying pre-trained language representations to downstream tasks: feature-based and fine-tuning. The feature-based approach, such as ELMo (Peters et al., 2018a), uses task-specific architectures that include the pre-trained representations as additional features. The fine-tuning approach, such as the Generative Pre-trained Transformer (OpenAI GPT) (Radford et al., 2018), introduces minimal task-specific parameters, and is trained on the downstream tasks by simply fine-tuning all pre-trained parameters. The two approaches share the same objective function during pre-training, where they use unidirectional language models to learn general language representations."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                428,
+                526,
+                629
+            ],
+            "content": "We argue that current techniques restrict the power of the pre-trained representations, especially for the fine-tuning approaches. The major limitation is that standard language models are unidirectional, and this limits the choice of architectures that can be used during pre-training. For example, in OpenAI GPT, the authors use a left-to-right architecture, where every token can only attend to previous tokens in the self-attention layers of the Transformer (Vaswani et al., 2017). Such restrictions are sub-optimal for sentence-level tasks, and could be very harmful when applying fine-tuning based approaches to token-level tasks such as question answering, where it is crucial to incorporate context from both directions."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                87,
+                244,
+                273,
+                422
+            ],
+            "content": "We introduce a new language representation model called BERT, which stands for Bidirectional Encoder Representations from Transformers. Unlike recent language representation models (Peters et al., 2018a; Radford et al., 2018), BERT is designed to pre-train deep bidirectional representations from unlabeled text by jointly conditioning on both left and right context in all layers. As a result, the pre-trained BERT model can be fine-tuned with just one additional output layer to create state-of-the-art models for a wide range of tasks, such as question answering and language inference, without substantial task-specific architecture modifications."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                631,
+                526,
+                766
+            ],
+            "content": "In this paper, we improve the fine-tuning based approaches by proposing BERT: Bidirectional Encoder Representations from Transformers. BERT alleviates the previously mentioned unidirectionality constraint by using a \"masked language model\" (MLM) pre-training objective, inspired by the Cloze task (Taylor, 1953). The masked language model randomly masks some of the tokens from the input, and the objective is to predict the original vocabulary id of the masked"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                88,
+                428,
+                274,
+                546
+            ],
+            "content": "BERT is conceptually simple and empirically powerful. It obtains new state-of-the-art results on eleven natural language processing tasks, including pushing the GLUE score to 80.5% (7.7% point absolute improvement), MultiNLI accuracy to 86.7% (4.6% absolute improvement), SQuAD v1.1 question answering Test F1 to 93.2 (1.5 point absolute improvement) and SQuAD v2.0 Test F1 to 83.1 (5.1 point absolute improvement)."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                116,
+                68,
+                482,
+                101
+            ],
+            "content": "The text content from the image is:\n\n\"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                555,
+                154,
+                568
+            ],
+            "content": "The text content from the image is \"1 Introduction\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                158,
+                223,
+                203,
+                236
+            ],
+            "content": "The word in the image is \"Abstract\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                128,
+                492,
+                170
+            ],
+            "content": "The text content from the image is:\n\nJacob Devlin Ming-Wei Chang Kenton Lee Kristina Toutanova\nGoogle AI Language\n{jacobdevlin, mingweichang, kentonl, kristout}@google.com"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                176,
+                158,
+                492,
+                170
+            ],
+            "content": "The text content from the image is:\n\n```\n.in,mingweichang,kentonl,kristout}@google.com\n```"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                115,
+                128,
+                485,
+                156
+            ],
+            "content": "The text content from the image is:\n\nJacob Devlin    Ming-Wei Chang    Kenton Lee    Kristina Toutanova\nGoogle AI Language"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                577,
+                291,
+                766
+            ],
+            "content": "Learning widely applicable representations of words has been an active area of research for decades, including non-neural (Brown et al., 1992; Ando and Zhang, 2005; Blitzer et al., 2006) and neural (Mikolov et al., 2013; Pennington et al., 2014) methods. Pre-trained word embeddings are an integral part of modern NLP systems, offering significant improvements over embeddings learned from scratch (Turian et al., 2010). To pre-train word embedding vectors, left-to-right language modeling objectives have been used (Mnih and Hinton, 2009), as well as objectives to discriminate correct from incorrect words in left and right context (Mikolov et al., 2013)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                604,
+                526,
+                766
+            ],
+            "content": "More recently, sentence or document encoders which produce contextual token representations have been pre-trained from unlabeled text and fine-tuned for a supervised downstream task (Dai and Le, 2015; Howard and Ruder, 2018; Radford et al., 2018). The advantage of these approaches is that few parameters need to be learned from scratch. At least partly due to this advantage, OpenAI GPT (Radford et al., 2018) achieved previously state-of-the-art results on many sentence-level tasks from the GLUE benchmark (Wang et al., 2018a). Left-to-right language model-"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                64,
+                527,
+                212
+            ],
+            "content": "These approaches have been generalized to coarser granularities, such as sentence embeddings (Kiros et al., 2015; Logeswaran and Lee, 2018) or paragraph embeddings (Le and Mikolov, 2014). To train sentence representations, prior work has used objectives to rank candidate next sentences (Jernite et al., 2017; Logeswaran and Lee, 2018), left-to-right generation of next sentence words given a representation of the previous sentence (Kiros et al., 2015), or denoising auto-encoder derived objectives (Hill et al., 2016)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                548,
+                526,
+                601
+            ],
+            "content": "As with the feature-based approaches, the first works in this direction only pre-trained word embedding parameters from unlabeled text (Collobert and Weston, 2008)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                63,
+                291,
+                185
+            ],
+            "content": "word based only on its context. Unlike left-to-right language model pre-training, the MLM objective enables the representation to fuse the left and the right context, which allows us to pre-train a deep bidirectional Transformer. In addition to the masked language model, we also use a “next sentence prediction” task that jointly pre-trains text-pair representations. The contributions of our paper are as follows:"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                214,
+                527,
+                510
+            ],
+            "content": "ELMo and its predecessor (Peters et al., 2017, 2018a) generalize traditional word embedding research along a different dimension. They extract context-sensitive features from a left-to-right and a right-to-left language model. The contextual representation of each token is the concatenation of the left-to-right and right-to-left representations. When integrating contextual word embeddings with existing task-specific architectures, ELMo advances the state of the art for several major NLP benchmarks (Peters et al., 2018a) including question answering (Rajpurkar et al., 2016), sentiment analysis (Socher et al., 2013), and named entity recognition (Tjong Kim Sang and De Meulder, 2003). Melamud et al. (2016) proposed learning contextual representations through a task to predict a single word from both left and right context using LSTMs. Similar to ELMo, their model is feature-based and not deeply bidirectional. Fedus et al. (2018) shows that the cloze task can be used to improve the robustness of text generation models."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                73,
+                426,
+                290,
+                478
+            ],
+            "content": "BERT advances the state of the art for eleven NLP tasks. The code and pre-trained models are available at https://github.com/google-research/bert."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                510,
+                291,
+                550
+            ],
+            "content": "There is a long history of pre-training general language representations, and we briefly review the most widely-used approaches in this section."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                323,
+                291,
+                416
+            ],
+            "content": "- We show that pre-trained representations reduce the need for many heavily-engineered task-specific architectures. BERT is the first fine-tuning based representation model that achieves state-of-the-art performance on a large suite of sentence-level and token-level tasks, outperforming many task-specific architectures."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                559,
+                288,
+                572
+            ],
+            "content": "The text content from the image is:\n\n\"2.1 Unsupervised Feature-based Approaches\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                73,
+                192,
+                291,
+                313
+            ],
+            "content": "We demonstrate the importance of bidirectional pre-training for language representations. Unlike Radford et al. (2018), which uses unidirectional language models for pre-training, BERT uses masked language models to enable pretrained deep bidirectional representations. This is also in contrast to Peters et al. (2018a), which uses a shallow concatenation of independently trained left-to-right and right-to-left LMs."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                527,
+                512,
+                540
+            ],
+            "content": "2.2 Unsupervised Fine-tuning Approaches"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                489,
+                161,
+                502
+            ],
+            "content": "The text content from the image is \"2 Related Work\"."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                375,
+                526,
+                523
+            ],
+            "content": "Model Architecture BERT's model architecture is a multi-layer bidirectional Transformer encoder based on the original implementation described in Vaswani et al. (2017) and released in the tensor2tensor library.1 Because the use of Transformers has become common and our implementation is almost identical to the original, we will omit an exhaustive background description of the model architecture and refer readers to Vaswani et al. (2017) as well as excellent guides such as \"The Annotated Transformer.\"2"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                407,
+                290,
+                529
+            ],
+            "content": "There has also been work showing effective transfer from supervised tasks with large datasets, such as natural language inference (Conneau et al., 2017) and machine translation (McCann et al., 2017). Computer vision research has also demonstrated the importance of transfer learning from large pre-trained models, where an effective recipe is to fine-tune models pre-trained with ImageNet (Deng et al., 2009; Yosinski et al., 2014)."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                563,
+                291,
+                737
+            ],
+            "content": "We introduce BERT and its detailed implementation in this section. There are two steps in our framework: pre-training and fine-tuning. During pre-training, the model is trained on unlabeled data over different pre-training tasks. For fine-tuning, the BERT model is first initialized with the pre-trained parameters, and all of the parameters are fine-tuned using labeled data from the downstream tasks. Each downstream task has separate fine-tuned models, even though they are initialized with the same pre-trained parameters. The question-answering example in Figure 1 will serve as a running example for this section."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                525,
+                526,
+                619
+            ],
+            "content": "In this work, we denote the number of layers (i.e., Transformer blocks) as L, the hidden size as H, and the number of self-attention heads as A. We primarily report results on two model sizes: BERTBASE (L=12, H=768, A=12, Total Parameters=110M) and BERTLARGE (L=24, H=1024, A=16, Total Parameters=340M)."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                621,
+                527,
+                700
+            ],
+            "content": "BERTBASE was chosen to have the same model size as OpenAI GPT for comparison purposes. Critically, however, the BERT Transformer uses bidirectional self-attention, while the GPT Transformer uses constrained self-attention where every token can only attend to context to its left."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                339,
+                290,
+                378
+            ],
+            "content": "The text content from the image is:\n\n\"ing and auto-encoder objectives have been used for pre-training such models (Howard and Ruder, 2018; Radford et al., 2018; Dai and Le, 2015).\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                257,
+                526,
+                316
+            ],
+            "content": "Figure 1: Overall pre-training and fine-tuning procedures for BERT. Apart from output layers, the same architectures are used in both pre-training and fine-tuning. The same pre-trained model parameters are used to initialize models for different down-stream tasks. During fine-tuning, all parameters are fine-tuned. [CLS] is a special symbol added in front of every input example, and [SEP] is a special separator token (e.g., separating questions/answers)."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                740,
+                290,
+                765
+            ],
+            "content": "A distinctive feature of BERT is its unified architecture across different tasks. There is mini-"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                339,
+                526,
+                364
+            ],
+            "content": "mal difference between the pre-trained architecture and the final downstream architecture."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                389,
+                288,
+                402
+            ],
+            "content": "The text content from the image is:\n\n\"2.3 Transfer Learning from Supervised Data\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                540,
+                122,
+                553
+            ],
+            "content": "The text content from the image is \"3 BERT\"."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                200,
+                291,
+                415
+            ],
+            "content": "We use WordPiece embeddings (Wu et al., 2016) with a 30,000 token vocabulary. The first token of every sequence is always a special classification token ([CLS]). The final hidden state corresponding to this token is used as the aggregate sequence representation for classification tasks. Sentence pairs are packed together into a single sequence. We differentiate the sentences in two ways. First, we separate them with a special token ([SEP]). Second, we add a learned embedding to every token indicating whether it belongs to sentence A or sentence B. As shown in Figure 1, we denote input embedding as E, the final hidden vector of the special [CLS] token as C ∈ ℝ^H, and the final hidden vector for the i^{th} input token as T_i ∈ ℝ^H."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                64,
+                527,
+                252
+            ],
+            "content": "In order to train a deep bidirectional representation, we simply mask some percentage of the input tokens at random, and then predict those masked tokens. We refer to this procedure as a “masked LM” (MLM), although it is often referred to as a Cloze task in the literature (Taylor, 1953). In this case, the final hidden vectors corresponding to the mask tokens are fed into an output softmax over the vocabulary, as in a standard LM. In all of our experiments, we mask 15% of all WordPiece tokens in each sequence at random. In contrast to denoising auto-encoders (Vincent et al., 2008), we only predict the masked words rather than reconstructing the entire input."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                417,
+                291,
+                470
+            ],
+            "content": "For a given token, its input representation is constructed by summing the corresponding token, segment, and position embeddings. A visualization of this construction can be seen in Figure 2."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                500,
+                291,
+                581
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Unlike Peters et al. (2018a) and Radford et al. (2018), we do not use traditional left-to-right or right-to-left language models to pre-train BERT. Instead, we pre-train BERT using two unsupervised tasks, described in this section. This step is presented in the left part of Figure 1.\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                591,
+                291,
+                725
+            ],
+            "content": "Task #1: Masked LM Intuitively, it is reasonable to believe that a deep bidirectional model is strictly more powerful than either a left-to-right model or the shallow concatenation of a left-to-right and a right-to-left model. Unfortunately, standard conditional language models can only be trained left-to-right or right-to-left, since bidirectional conditioning would allow each word to indirectly “see itself”, and the model could trivially predict the target word in a multi-layered context."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                63,
+                291,
+                199
+            ],
+            "content": "Input/Output Representations To make BERT handle a variety of down-stream tasks, our input representation is able to unambiguously represent both a single sentence and a pair of sentences (e.g., ⟨Question, Answer⟩) in one token sequence. Throughout this work, a “sentence” can be an arbitrary span of contiguous text, rather than an actual linguistic sentence. A “sequence” refers to the input token sequence to BERT, which may be a single sentence or two sentences packed together."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                469,
+                526,
+                725
+            ],
+            "content": "Task #2: Next Sentence Prediction (NSP)\nMany important downstream tasks such as Question Answering (QA) and Natural Language Inference (NLI) are based on understanding the relationship between two sentences, which is not directly captured by language modeling. In order to train a model that understands sentence relationships, we pre-train for a binarized next sentence prediction task that can be trivially generated from any monolingual corpus. Specifically, when choosing the sentences A and B for each pre-training example, 50% of the time B is the actual next sentence that follows A (labeled as IsNext), and 50% of the time it is a random sentence from the corpus (labeled as NotNext). As we show in Figure 1, C is used for next sentence prediction (NSP). Despite its simplicity, we demonstrate in Section 5.1 that pre-training towards this task is very beneficial to both QA and NLI."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                482,
+                186,
+                494
+            ],
+            "content": "The text content from the image is \"3.1 Pre-training BERT\"."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                254,
+                526,
+                456
+            ],
+            "content": "Although this allows us to obtain a bidirectional pre-trained model, a downside is that we are creating a mismatch between pre-training and fine-tuning, since the [MASK] token does not appear during fine-tuning. To mitigate this, we do not always replace \"masked\" words with the actual [MASK] token. The training data generator chooses 15% of the token positions at random for prediction. If the i-th token is chosen, we replace the i-th token with (1) the [MASK] token 80% of the time (2) a random token 10% of the time (3) the unchanged i-th token 10% of the time. Then, Ti will be used to predict the original token with cross entropy loss. We compare variations of this procedure in Appendix C.2."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                254,
+                526,
+                456
+            ],
+            "content": "Although this allows us to obtain a bidirectional pre-trained model, a downside is that we are creating a mismatch between pre-training and fine-tuning, since the [MASK] token does not appear during fine-tuning. To mitigate this, we do not always replace \"masked\" words with the actual [MASK] token. The training data generator chooses 15% of the token positions at random for prediction. If the i-th token is chosen, we replace the i-th token with (1) the [MASK] token 80% of the time (2) a random token 10% of the time (3) the unchanged i-th token 10% of the time. Then, Ti will be used to predict the original token with cross entropy loss. We compare variations of this procedure in Appendix C.2."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                495,
+                291,
+                669
+            ],
+            "content": "Fine-tuning is straightforward since the self-attention mechanism in the Transformer allows BERT to model many downstream tasks—whether they involve single text or text pairs—by swapping out the appropriate inputs and outputs. For applications involving text pairs, a common pattern is to independently encode text pairs before applying bidirectional cross attention, such as Parikh et al. (2016); Seo et al. (2017). BERT instead uses the self-attention mechanism to unify these two stages, as encoding a concatenated text pair with self-attention effectively includes bidirectional cross attention between two sentences."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                318,
+                291,
+                466
+            ],
+            "content": "Pre-training data The pre-training procedure largely follows the existing literature on language model pre-training. For the pre-training corpus we use the BooksCorpus (800M words) (Zhu et al., 2015) and English Wikipedia (2,500M words). For Wikipedia we extract only the text passages and ignore lists, tables, and headers. It is critical to use a document-level corpus rather than a shuffled sentence-level corpus such as the Billion Word Benchmark (Chelba et al., 2013) in order to extract long contiguous sequences."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                323,
+                526,
+                430
+            ],
+            "content": "Compared to pre-training, fine-tuning is relatively inexpensive. All of the results in the paper can be replicated in at most 1 hour on a single Cloud TPU, or a few hours on a GPU, starting from the exact same pre-trained model.7 We describe the task-specific details in the corresponding subsections of Section 4. More details can be found in Appendix A.5."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                672,
+                291,
+                766
+            ],
+            "content": "For each task, we simply plug in the task-specific inputs and outputs into BERT and fine-tune all the parameters end-to-end. At the input, sentence A and sentence B from pre-training are analogous to (1) sentence pairs in paraphrasing, (2) hypothesis-premise pairs in entailment, (3) question-passage pairs in question answering,"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                582,
+                526,
+                716
+            ],
+            "content": "To fine-tune on GLUE, we represent the input sequence (for single sentence or sentence pairs) as described in Section 3, and use the final hidden vector \\( C \\in \\mathbb{R}^H \\) corresponding to the first input token ([CLS]) as the aggregate representation. The only new parameters introduced during fine-tuning are classification layer weights \\( W \\in \\mathbb{R}^{K \\times H} \\), where \\( K \\) is the number of labels. We compute a standard classification loss with \\( C \\) and \\( W \\), i.e., log(softmax(\\( CW^T \\)))."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                228,
+                526,
+                322
+            ],
+            "content": "(4) a degenerate text-∅ pair in text classification or sequence tagging. At the output, the token representations are fed into an output layer for token-level tasks, such as sequence tagging or question answering, and the [CLS] representation is fed into an output layer for classification, such as entailment or sentiment analysis."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                228,
+                291,
+                308
+            ],
+            "content": "The NSP task is closely related to representation-learning objectives used in Jernite et al. (2017) and Logeswaran and Lee (2018). However, in prior work, only sentence embeddings are transferred to down-stream tasks, where BERT transfers all parameters to initialize end-task model parameters."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                514,
+                526,
+                581
+            ],
+            "content": "The General Language Understanding Evaluation (GLUE) benchmark (Wang et al., 2018a) is a collection of diverse natural language understanding tasks. Detailed descriptions of GLUE datasets are included in Appendix B.1."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                462,
+                526,
+                486
+            ],
+            "content": "In this section, we present BERT fine-tuning results on 11 NLP tasks."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                440,
+                391,
+                453
+            ],
+            "content": "The text content from the image is \"4 Experiments\"."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                477,
+                183,
+                490
+            ],
+            "content": "The text content from the image is \"3.2 Fine-tuning BERT\"."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                497,
+                364,
+                509
+            ],
+            "content": "4.1 GLUE"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                182,
+                525,
+                206
+            ],
+            "content": "Figure 2: BERT input representation. The input embeddings are the sum of the token embeddings, the segmentation embeddings and the position embeddings."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                399,
+                290,
+                574
+            ],
+            "content": "Results are presented in Table 1. Both BERTBASE and BERTLARGE outperform all systems on all tasks by a substantial margin, obtaining 4.5% and 7.0% respective average accuracy improvement over the prior state of the art. Note that BERTBASE and OpenAI GPT are nearly identical in terms of model architecture apart from the attention masking. For the largest and most widely reported GLUE task, MNLI, BERT obtains a 4.6% absolute accuracy improvement. On the official GLUE leaderboard10, BERTLARGE obtains a score of 80.5, compared to OpenAI GPT, which obtains 72.8 as of the date of writing."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                528,
+                526,
+                663
+            ],
+            "content": "Table 2 shows top leaderboard entries as well as results from top published systems (Seo et al., 2017; Clark and Gardner, 2018; Peters et al., 2018a; Hu et al., 2018). The top results from the SQuAD leaderboard do not have up-to-date public system descriptions available,11 and are allowed to use any public data when training their systems. We therefore use modest data augmentation in our system by first fine-tuning on TriviaQA (Joshi et al., 2017) before fine-tuning on SQuAD."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                249,
+                291,
+                397
+            ],
+            "content": "We use a batch size of 32 and fine-tune for 3 epochs over the data for all GLUE tasks. For each task, we selected the best fine-tuning learning rate (among 5e-5, 4e-5, 3e-5, and 2e-5) on the Dev set. Additionally, for BERT_LARGE we found that fine-tuning was sometimes unstable on small datasets, so we ran several random restarts and selected the best model on the Dev set. With random restarts, we use the same pre-trained checkpoint but perform different fine-tuning data shuffling and classifier layer initialization."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                576,
+                290,
+                629
+            ],
+            "content": "We find that BERT_LARGE significantly outperforms BERT_BASE across all tasks, especially those with very little training data. The effect of model size is explored more thoroughly in Section 5.2."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                660,
+                291,
+                713
+            ],
+            "content": "The Stanford Question Answering Dataset (SQuAD v1.1) is a collection of 100k crowd-sourced question/answer pairs (Rajpurkar et al., 2016). Given a question and a passage from"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                665,
+                526,
+                731
+            ],
+            "content": "Our best performing system outperforms the top leaderboard system by +1.5 F1 in ensembling and +1.3 F1 as a single system. In fact, our single BERT model outperforms the top ensemble system in terms of F1 score. Without TriviaQA fine-"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                250,
+                526,
+                276
+            ],
+            "content": "Wikipedia containing the answer, the task is to predict the answer text span in the passage."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                641,
+                154,
+                654
+            ],
+            "content": "The text content from the image is:\n\n4.2 SQuAD v1.1"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                278,
+                527,
+                526
+            ],
+            "content": "As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding. We only introduce a start vector \\( S \\in \\mathbb{R}^H \\) and an end vector \\( E \\in \\mathbb{R}^H \\) during fine-tuning. The probability of word \\( i \\) being the start of the answer span is computed as a dot product between \\( T_i \\) and \\( S \\) followed by a softmax over all of the words in the paragraph: \\( P_i = \\frac{e^{S \\cdot T_i}}{\\sum_j e^{S \\cdot T_j}} \\). The analogous formula is used for the end of the answer span. The score of a candidate span from position \\( i \\) to position \\( j \\) is defined as \\( S \\cdot T_i + E \\cdot T_j \\), and the maximum scoring span where \\( j \\geq i \\) is used as a prediction. The training objective is the sum of the log-likelihoods of the correct start and end positions. We fine-tune for 3 epochs with a learning rate of 5e-5 and a batch size of 32."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                163,
+                527,
+                222
+            ],
+            "content": "Table 1: GLUE Test results, scored by the evaluation server (https://gluebenchmark.com/leaderboard). The number below each task denotes the number of training examples. The “Average” column is slightly different than the official GLUE score, since we exclude the problematic WNLI set.8 BERT and OpenAI GPT are single-model, single-task. F1 scores are reported for QQP and MRPC, Spearman correlations are reported for STS-B, and accuracy scores are reported for the other tasks. We exclude entries that use BERT as one of their components."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                278,
+                526,
+                416
+            ],
+            "content": "As shown in Figure 1, in the question answering task, we represent the input question and passage as a single packed sequence, with the question using the A embedding and the passage using the B embedding. We only introduce a start vector \\( S \\in \\mathbb{R}^H \\) and an end vector \\( E \\in \\mathbb{R}^H \\) during fine-tuning. The probability of word \\( i \\) being the start of the answer span is computed as a dot product between \\( T_i \\) and \\( S \\) followed by a softmax over all of the words in the paragraph: \\( P_i = \\frac{e^{S \\cdot T_i}}{\\sum_{j} e^{S \\cdot T_j}} \\)."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                163,
+                527,
+                222
+            ],
+            "content": "Table 1: GLUE Test results, scored by the evaluation server (https://gluebenchmark.com/leaderboard). The number below each task denotes the number of training examples. The “Average” column is slightly different than the official GLUE score, since we exclude the problematic WNLI set.8 BERT and OpenAI GPT are single-model, single-task. F1 scores are reported for QQP and MRPC, Spearman correlations are reported for STS-B, and accuracy scores are reported for the other tasks. We exclude entries that use BERT as one of their components."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                163,
+                527,
+                222
+            ],
+            "content": "Table 1: GLUE Test results, scored by the evaluation server (https://gluebenchmark.com/leaderboard). The number below each task denotes the number of training examples. The “Average” column is slightly different than the official GLUE score, since we exclude the problematic WNLI set.8 BERT and OpenAI GPT are single-model, single-task. F1 scores are reported for QQP and MRPC, Spearman correlations are reported for STS-B, and accuracy scores are reported for the other tasks. We exclude entries that use BERT as one of their components."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                418,
+                526,
+                526
+            ],
+            "content": "The analogous formula is used for the end of the answer span. The score of a candidate span from position i to position j is defined as S·T_i + E·T_j, and the maximum scoring span where j ≥ i is used as a prediction. The training objective is the sum of the log-likelihoods of the correct start and end positions. We fine-tune for 3 epochs with a learning rate of 5e-5 and a batch size of 32."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                515,
+                526,
+                622
+            ],
+            "content": "When fine-tuning on the SWAG dataset, we construct four input sequences, each containing the concatenation of the given sentence (sentence A) and a possible continuation (sentence B). The only task-specific parameters introduced is a vector whose dot product with the [CLS] token representation C denotes a score for each choice which is normalized with a softmax layer."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                603,
+                290,
+                724
+            ],
+            "content": "We use a simple approach to extend the SQuAD v1.1 BERT model for this task. We treat questions that do not have an answer as having an answer span with start and end at the [CLS] token. The probability space for the start and end answer span positions is extended to include the position of the [CLS] token. For prediction, we compare the score of the no-answer span: \\( s_{\\text{null}} = S \\cdot C + E \\cdot C \\) to the score of the best non-null span"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                322,
+                526,
+                402
+            ],
+            "content": "The results compared to prior leaderboard entries and top published work (Sun et al., 2018; Wang et al., 2018b) are shown in Table 3, excluding systems that use BERT as one of their components. We observe a +5.1 F1 improvement over the previous best system."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                433,
+                527,
+                513
+            ],
+            "content": "The Situations With Adversarial Generations (SWAG) dataset contains 113k sentence-pair completion examples that evaluate grounded commonsense inference (Zellers et al., 2018). Given a sentence, the task is to choose the most plausible continuation among four choices."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                240,
+                526,
+                320
+            ],
+            "content": "The text content from the image is:\n\n`ŝi,j = maxj≥i S·Ti + E·Tj. We predict a non-null answer when ŝi,j > snull + τ, where the threshold τ is selected on the dev set to maximize F1. We did not use TriviaQA data for this model. We fine-tuned for 2 epochs with a learning rate of 5e-5 and a batch size of 48.`"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                624,
+                526,
+                690
+            ],
+            "content": "We fine-tune the model for 3 epochs with a learning rate of 2e-5 and a batch size of 16. Results are presented in Table 4. BERT_LARGE outperforms the authors' baseline ESIM+ELMo system by +27.1% and OpenAI GPT by 8.3%."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                726,
+                526,
+                765
+            ],
+            "content": "In this section, we perform ablation experiments over a number of facets of BERT in order to better understand their relative importance. Additional"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                548,
+                290,
+                601
+            ],
+            "content": "The SQuAD 2.0 task extends the SQuAD 1.1 problem definition by allowing for the possibility that no short answer exists in the provided paragraph, making the problem more realistic."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                493,
+                289,
+                519
+            ],
+            "content": "tuning data, we only lose 0.1-0.4 F1, still outperforming all existing systems by a wide margin."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                249,
+                291,
+                285
+            ],
+            "content": "Table 2: SQuAD 1.1 results. The BERT ensemble is 7x systems which use different pre-training checkpoints and fine-tuning seeds."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                702,
+                410,
+                716
+            ],
+            "content": "The text content from the image is \"5 Ablation Studies\"."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                530,
+                155,
+                543
+            ],
+            "content": "The text content from the image is:\n\n4.3 SQuAD v2.0"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                414,
+                363,
+                426
+            ],
+            "content": "4.4 SWAG"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                176,
+                526,
+                212
+            ],
+            "content": "Table 4: SWAG Dev and Test accuracies. †Human performance is measured with 100 samples, as reported in the SWAG paper."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                446,
+                291,
+                469
+            ],
+            "content": "Table 3: SQuAD 2.0 results. We exclude entries that use BERT as one of their components."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                176,
+                526,
+                212
+            ],
+            "content": "Table 4: SWAG Dev and Test accuracies. †Human performance is measured with 100 samples, as reported in the SWAG paper."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                446,
+                291,
+                469
+            ],
+            "content": "Table 3: SQuAD 2.0 results. We exclude entries that use BERT as one of their components."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                276,
+                527,
+                356
+            ],
+            "content": "In this section, we explore the effect of model size on fine-tuning task accuracy. We trained a number of BERT models with a differing number of layers, hidden units, and attention heads, while otherwise using the same hyperparameters and training procedure as described previously."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                562,
+                291,
+                669
+            ],
+            "content": "We first examine the impact brought by the NSP task. In Table 5, we show that removing NSP hurts performance significantly on QNLI, MNLI, and SQuAD 1.1. Next, we evaluate the impact of training bidirectional representations by comparing “No NSP” to “LTR & No NSP”. The LTR model performs worse than the MLM model on all tasks, with large drops on MRPC and SQuAD."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                106,
+                526,
+                241
+            ],
+            "content": "We recognize that it would also be possible to train separate LTR and RTL models and represent each token as the concatenation of the two models, as ELMo does. However: (a) this is twice as expensive as a single bidirectional model; (b) this is non-intuitive for tasks like QA, since the RTL model would not be able to condition the answer on the question; (c) this it is strictly less powerful than a deep bidirectional model, since it can use both left and right context at every layer."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                618,
+                526,
+                766
+            ],
+            "content": "It has long been known that increasing the model size will lead to continual improvements on large-scale tasks such as machine translation and language modeling, which is demonstrated by the LM perplexity of held-out training data shown in Table 6. However, we believe that this is the first work to demonstrate convincingly that scaling to extreme model sizes also leads to large improvements on very small scale tasks, provided that the model has been sufficiently pre-trained. Peters et al. (2018b) presented"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                671,
+                291,
+                766
+            ],
+            "content": "For SQuAD it is intuitively clear that a LTR model will perform poorly at token predictions, since the token-level hidden states have no right-side context. In order to make a good faith attempt at strengthening the LTR system, we added a randomly initialized BiLSTM on top. This does significantly improve results on SQuAD, but the"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                358,
+                526,
+                615
+            ],
+            "content": "Results on selected GLUE tasks are shown in Table 6. In this table, we report the average Dev Set accuracy from 5 random restarts of fine-tuning. We can see that larger models lead to a strict accuracy improvement across all four datasets, even for MRPC which only has 3,600 labeled training examples, and is substantially different from the pre-training tasks. It is also perhaps surprising that we are able to achieve such significant improvements on top of models which are already quite large relative to the existing literature. For example, the largest Transformer explored in Vaswani et al. (2017) is (L=6, H=1024, A=16) with 100M parameters for the encoder, and the largest Transformer we have found in the literature is (L=64, H=512, A=2) with 235M parameters (Al-Rfou et al., 2018). By contrast, BERTBASE contains 110M parameters and BERTLARGE contains 340M parameters."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                308,
+                291,
+                375
+            ],
+            "content": "We demonstrate the importance of the deep bidirectionality of BERT by evaluating two pre-training objectives using exactly the same pre-training data, fine-tuning scheme, and hyperparameters as BERTBASE:"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                425,
+                291,
+                560
+            ],
+            "content": "LTR & No NSP: A left-context-only model which is trained using a standard Left-to-Right (LTR) LM, rather than an MLM. The left-only constraint was also applied at fine-tuning, because removing it introduced a pre-train/fine-tune mismatch that degraded downstream performance. Additionally, this model was pre-trained without the NSP task. This is directly comparable to OpenAI GPT, but using our larger training dataset, our input representation, and our fine-tuning scheme."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                64,
+                526,
+                103
+            ],
+            "content": "results are still far worse than those of the pretrained bidirectional models. The BiLSTM hurts performance on the GLUE tasks."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                384,
+                291,
+                424
+            ],
+            "content": "No NSP: A bidirectional model which is trained using the \"masked LM\" (MLM) but without the \"next sentence prediction\" (NSP) task."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                288,
+                225,
+                301
+            ],
+            "content": "5.1 Effect of Pre-training Tasks"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                154,
+                291,
+                237
+            ],
+            "content": "Table 5: Ablation over the pre-training tasks using the BERTBASE architecture. “No NSP” is trained without the next sentence prediction task. “LTR & No NSP” is trained as a left-to-right LM without the next sentence prediction, like OpenAI GPT. “+ BiLSTM” adds a randomly initialized BiLSTM on top of the “LTR + No NSP” model during fine-tuning."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                262,
+                269,
+                274
+            ],
+            "content": "The text content from the image is:\n\n\"ablation studies can be found in Appendix C.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                255,
+                425,
+                267
+            ],
+            "content": "The text content from the image is \"5.2 Effect of Model Size\"."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                64,
+                291,
+                252
+            ],
+            "content": "mixed results on the downstream task impact of increasing the pre-trained bi-LM size from two to four layers and Melamud et al. (2016) mentioned in passing that increasing hidden dimension size from 200 to 600 helped, but increasing further to 1,000 did not bring further improvements. Both of these prior works used a feature-based approach — we hypothesize that when the model is fine-tuned directly on the downstream tasks and uses only a very small number of randomly initialized additional parameters, the task-specific models can benefit from the larger, more expressive pre-trained representations even when downstream task data is very small."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                455,
+                526,
+                563
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Results are presented in Table 7. BERT_LARGE performs competitively with state-of-the-art methods. The best performing method concatenates the token representations from the top four hidden layers of the pre-trained Transformer, which is only 0.3 F1 behind fine-tuning the entire model. This demonstrates that BERT is effective for both fine-tuning and feature-based approaches.\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                284,
+                291,
+                473
+            ],
+            "content": "All of the BERT results presented so far have used the fine-tuning approach, where a simple classification layer is added to the pre-trained model, and all parameters are jointly fine-tuned on a downstream task. However, the feature-based approach, where fixed features are extracted from the pre-trained model, has certain advantages. First, not all tasks can be easily represented by a Transformer encoder architecture, and therefore require a task-specific model architecture to be added. Second, there are major computational benefits to pre-compute an expensive representation of the training data once and then run many experiments with cheaper models on top of this representation."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                356,
+                526,
+                450
+            ],
+            "content": "To ablate the fine-tuning approach, we apply the feature-based approach by extracting the activations from one or more layers without fine-tuning any parameters of BERT. These contextual embeddings are used as input to a randomly initialized two-layer 768-dimensional BiLSTM before the classification layer."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                617,
+                527,
+                752
+            ],
+            "content": "Recent empirical improvements due to transfer learning with language models have demonstrated that rich, unsupervised pre-training is an integral part of many language understanding systems. In particular, these results enable even low-resource tasks to benefit from deep unidirectional architectures. Our major contribution is further generalizing these findings to deep bidirectional architectures, allowing the same pre-trained model to successfully tackle a broad set of NLP tasks."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                475,
+                291,
+                582
+            ],
+            "content": "In this section, we compare the two approaches by applying BERT to the CoNLL-2003 Named Entity Recognition (NER) task (Tjong Kim Sang and De Meulder, 2003). In the input to BERT, we use a case-preserving WordPiece model, and we include the maximal document context provided by the data. Following standard practice, we formulate this as a tagging task but do not use a CRF"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                312,
+                526,
+                350
+            ],
+            "content": "layer in the output. We use the representation of the first sub-token as the input to the token-level classifier over the NER label set."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                264,
+                268,
+                277
+            ],
+            "content": "The text content from the image is:\n\n5.3 Feature-based Approach with BERT"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                586,
+                382,
+                599
+            ],
+            "content": "The text content from the image is \"6 Conclusion\"."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                234,
+                527,
+                282
+            ],
+            "content": "Table 7: CoNLL-2003 Named Entity Recognition results. Hyperparameters were selected using the Dev set. The reported Dev and Test scores are averaged over 5 random restarts using those hyperparameters."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                714,
+                291,
+                761
+            ],
+            "content": "Table 6: Ablation over BERT model size. #L = the number of layers; #H = hidden size; #A = number of attention heads. “LM (ppl)” is the masked LM perplexity of held-out training data."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                714,
+                291,
+                761
+            ],
+            "content": "Table 6: Ablation over BERT model size. #L = the number of layers; #H = hidden size; #A = number of attention heads. “LM (ppl)” is the masked LM perplexity of held-out training data."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                234,
+                527,
+                282
+            ],
+            "content": "Table 7: CoNLL-2003 Named Entity Recognition results. Hyperparameters were selected using the Dev set. The reported Dev and Test scores are averaged over 5 random restarts using those hyperparameters."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                264,
+                267,
+                277
+            ],
+            "content": "The text content from the image is:\n\n5.3 Feature-based Approach with BERT"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                324,
+                291,
+                389
+            ],
+            "content": "The text content from the image is:\n\n\"John Blitzer, Ryan McDonald, and Fernando Pereira. 2006. Domain adaptation with structural correspondence learning. In Proceedings of the 2006 conference on empirical methods in natural language processing, pages 120–128. Association for Computational Linguistics.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                528,
+                291,
+                616
+            ],
+            "content": "The text content from the image is as follows:\n\nDaniel Cer, Mona Diab, Eneko Agirre, Inigo Lopez-Gazpio, and Lucia Specia. 2017. Semeval-2017 task 1: Semantic textual similarity multilingual and crosslingual focused evaluation. In Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017), pages 1–14, Vancouver, Canada. Association for Computational Linguistics."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                207,
+                527,
+                294
+            ],
+            "content": "The text content from the image is as follows:\n\nAlexis Conneau, Douwe Kiela, Holger Schwenk, Loïc Barrault, and Antoine Bordes. 2017. Supervised learning of universal sentence representations from natural language inference data. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pages 670–680, Copenhagen, Denmark. Association for Computational Linguistics."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                535,
+                527,
+                611
+            ],
+            "content": "The text content from the image is as follows:\n\nFelix Hill, Kyunghyun Cho, and Anna Korhonen. 2016. Learning distributed representations of sentences from unlabelled data. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. Association for Computational Linguistics."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                65,
+                526,
+                130
+            ],
+            "content": "The text content from the image is:\n\n\"Kevin Clark, Minh-Thang Luong, Christopher D Manning, and Quoc Le. 2018. Semi-supervised sequence modeling with cross-view training. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 1914–1925.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                403,
+                291,
+                457
+            ],
+            "content": "The text content from the image is:\n\nSamuel R. Bowman, Gabor Angeli, Christopher Potts, and Christopher D. Manning. 2015. A large annotated corpus for learning natural language inference. In EMNLP. Association for Computational Linguistics."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                141,
+                526,
+                196
+            ],
+            "content": "Ronan Collobert and Jason Weston. 2008. A unified architecture for natural language processing: Deep neural networks with multitask learning. In Proceedings of the 25th international conference on Machine learning, pages 160–167. ACM."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                471,
+                291,
+                515
+            ],
+            "content": "The text content from the image is:\n\nPeter F Brown, Peter V Desouza, Robert L Mercer, Vincent J Della Pietra, and Jenifer C Lai. 1992. Class-based n-gram models of natural language. Computational linguistics, 18(4):467–479."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                84,
+                291,
+                139
+            ],
+            "content": "The text content from the image is as follows:\n\nAlan Akbik, Duncan Blythe, and Roland Vollgraf. 2018. Contextual string embeddings for sequence labeling. In Proceedings of the 27th International Conference on Computational Linguistics, pages 1638–1649."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                63,
+                128,
+                76
+            ],
+            "content": "References"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                267,
+                291,
+                311
+            ],
+            "content": "The text content from the image is:\n\nLuisa Bentivogli, Bernardo Magnini, Ido Dagan, Hoa Trang Dang, and Danilo Giampiccolo. 2009. The fifth PASCAL recognizing textual entailment challenge. In TAC. NIST."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                732,
+                291,
+                765
+            ],
+            "content": "The text content from the image is:\n\nChristopher Clark and Matt Gardner. 2018. Simple and effective multi-paragraph reading comprehension. In ACL."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                629,
+                291,
+                684
+            ],
+            "content": "The text content from the image is:\n\nCiprian Chelba, Tomas Mikolov, Mike Schuster, Qi Ge, Thorsten Brants, Philipp Koehn, and Tony Robinson. 2013. One billion word benchmark for measuring progress in statistical language modeling. arXiv preprint arXiv:1312.3005."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                448,
+                526,
+                480
+            ],
+            "content": "The text content from the image is:\n\nWilliam Fedus, Ian Goodfellow, and Andrew M Dai. 2018. Maskgan: Better text generation via filling in the_. arXiv preprint arXiv:1801.07736."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                393,
+                526,
+                437
+            ],
+            "content": "The text content from the image is:\n\n\"William B Dolan and Chris Brockett. 2005. Automatically constructing a corpus of sentential paraphrases. In Proceedings of the Third International Workshop on Paraphrasing (IWP2005).\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                721,
+                526,
+                764
+            ],
+            "content": "The text content from the image is:\n\nYacine Jernite, Samuel R. Bowman, and David Sontag. 2017. Discourse-based objectives for fast unsupervised sentence representation learning. CoRR, abs/1705.00557."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                153,
+                291,
+                196
+            ],
+            "content": "The text content from the image is:\n\nRami Al-Rfou, Dokook Choe, Noah Constant, Mandy Guo, and Llion Jones. 2018. Character-level language modeling with deeper self-attention. arXiv preprint arXiv:1808.04444."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                305,
+                526,
+                339
+            ],
+            "content": "The text content from the image is:\n\nAndrew M Dai and Quoc V Le. 2015. Semi-supervised sequence learning. In Advances in neural information processing systems, pages 3079–3087."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                491,
+                526,
+                524
+            ],
+            "content": "The text content from the image is:\n\nDan Hendrycks and Kevin Gimpel. 2016. Bridging nonlinearities and stochastic regularizers with gaussian error linear units. CoRR, abs/1606.08415."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                210,
+                291,
+                254
+            ],
+            "content": "The text content from the image is:\n\nRie Kubota Ando and Tong Zhang. 2005. A framework for learning predictive structures from multiple tasks and unlabeled data. Journal of Machine Learning Research, 6(Nov):1817–1853."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                349,
+                526,
+                382
+            ],
+            "content": "The text content from the image is:\n\nJ. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei. 2009. ImageNet: A Large-Scale Hierarchical Image Database. In CVPR09."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                696,
+                290,
+                719
+            ],
+            "content": "The text content from the image is:\n\n\"Z. Chen, H. Zhang, X. Zhang, and L. Zhao. 2018. Quora question pairs.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                623,
+                526,
+                656
+            ],
+            "content": "The text content from the image is:\n\n\"Jeremy Howard and Sebastian Ruder. 2018. Universal language model fine-tuning for text classification. In ACL. Association for Computational Linguistics.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                666,
+                526,
+                710
+            ],
+            "content": "The text content from the image is:\n\nMinghao Hu, Yuxing Peng, Zhen Huang, Xipeng Qiu, Furu Wei, and Ming Zhou. 2018. Reinforced mnemonic reader for machine reading comprehension. In IJCAI."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                179,
+                528,
+                776
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nceedings of the 25th international conference on\nMachine learning, pages 160–167. ACM.\n\nAlexis Conneau, Douwe Kiela, Holger Schwenk, Loïc Barrault, and Antoine Bordes. 2017. Supervised learning of universal sentence representations from natural language inference data. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pages 670–680, Copenhagen, Denmark. Association for Computational Linguistics.\n\nAndrew M Dai and Quoc V Le. 2015. Semi-supervised sequence learning. In Advances in neural information processing systems, pages 3079–3087.\n\nJ. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei. 2009. ImageNet: A Large-Scale Hierarchical Image Database. In CVPR09.\n\nWilliam B Dolan and Chris Brockett. 2005. Automatically constructing a corpus of sentential paraphrases. In Proceedings of the Third International Workshop on Paraphrasing (IWP2005).\n\nWilliam Fedus, Ian Goodfellow, and Andrew M Dai. 2018. Maskgan: Better text generation via filling in the.. arXiv preprint arXiv:1801.07736.\n\nDan Hendrycks and Kevin Gimpel. 2016. Bridging nonlinearities and stochastic regularizers with gaussian error linear units. CoRR, abs/1606.08415.\n\nFelix Hill, Kyunghyun Cho, and Anna Korhonen. 2016. Learning distributed representations of sentences from unlabelled data. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies. Association for Computational Linguistics.\n\nJeremy Howard and Sebastian Ruder. 2018. Universal language model fine-tuning for text classification. In ACL. Association for Computational Linguistics.\n\nMinghao Hu, Yuxing Peng, Zhen Huang, Xipeng Qiu, Furu Wei, and Ming Zhou. 2018. Reinforced mnemonic reader for machine reading comprehension. In IJCAI.\n\nYacine Jernite, Samuel R. Bowman, and David Sontag. 2017. Discourse-based objectives for fast unsupervised sentence representation learning. CoRR, abs/1705.00557.\n```"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                69,
+                179,
+                293,
+                778
+            ],
+            "content": "Sure, here is the text content from the image:\n\n```\nLanguage modeling with deeper self-attention. arXiv preprint arXiv:1808.04444.\n\nRie Kubota Ando and Tong Zhang. 2005. A framework for learning predictive structures from multiple tasks and unlabeled data. Journal of Machine Learning Research, 6(Nov):1817–1853.\n\nLuisa Bentivogli, Bernardo Magnini, Ido Dagan, Hoa Trang Dang, and Danilo Giampiccolo. 2009. The fifth PASCAL recognizing textual entailment challenge. In TAC. NIST.\n\nJohn Blitzer, Ryan McDonald, and Fernando Pereira. 2006. Domain adaptation with structural correspondence learning. In Proceedings of the 2006 conference on empirical methods in natural language processing, pages 120–128. Association for Computational Linguistics.\n\nSamuel R. Bowman, Gabor Angeli, Christopher Potts, and Christopher D. Manning. 2015. A large annotated corpus for learning natural language inference. In EMNLP. Association for Computational Linguistics.\n\nPeter F Brown, Peter V Desouza, Robert L Mercer, Vincent J Della Pietra, and Jenifer C Lai. 1992. Class-based n-gram models of natural language. Computational linguistics, 18(4):467–479.\n\nDaniel Cer, Mona Diab, Eneko Agirre, Inigo Lopez-Gazpio, and Lucia Specia. 2017. Semeval-2017 task 1: Semantic textual similarity multilingual and crosslingual focused evaluation. In Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017), pages 1–14, Vancouver, Canada. Association for Computational Linguistics.\n\nCiprian Chelba, Tomas Mikolov, Mike Schuster, Qi Ge, Thorsten Brants, Philipp Koehn, and Tony Robinson. 2013. One billion word benchmark for measuring progress in statistical language modeling. arXiv preprint arXiv:1312.3005.\n\nZ. Chen, H. Zhang, X. Zhang, and L. Zhao. 2018. Quora question pairs.\n\nChristopher Clark and Matt Gardner. 2018. Simple and effective multi-paragraph reading comprehension. In ACL.\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                64,
+                291,
+                108
+            ],
+            "content": "The text content from the image is:\n\nMandar Joshi, Eunsol Choi, Daniel S Weld, and Luke Zettlemoyer. 2017. Triviaqa: A large scale distantly supervised challenge dataset for reading comprehension. In ACL."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                65,
+                527,
+                130
+            ],
+            "content": "The text content from the image is:\n\nMatthew Peters, Mark Neumann, Luke Zettlemoyer, and Wen-tau Yih. 2018b. Dissecting contextual word embeddings: Architecture and representation. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, pages 1499–1509."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                417,
+                291,
+                483
+            ],
+            "content": "The text content from the image is:\n\nTomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality. In Advances in Neural Information Processing Systems 26, pages 3111–3119. Curran Associates, Inc."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                297,
+                526,
+                374
+            ],
+            "content": "The text content from the image is:\n\nRichard Socher, Alex Perelygin, Jean Wu, Jason Chuang, Christopher D Manning, Andrew Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of the 2013 conference on empirical methods in natural language processing, pages 1631–1642."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                657,
+                527,
+                722
+            ],
+            "content": "The text content from the image is as follows:\n\nPascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol. 2008. Extracting and composing robust features with denoising autoencoders. In Proceedings of the 25th international conference on Machine learning, pages 1096–1103. ACM."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                116,
+                291,
+                172
+            ],
+            "content": "The text content from the image is:\n\nRyan Kiros, Yukun Zhu, Ruslan R Salakhutdinov, Richard Zemel, Raquel Urtasun, Antonio Torralba, and Sanja Fidler. 2015. Skip-thought vectors. In Advances in neural information processing systems, pages 3294–3302."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                491,
+                291,
+                557
+            ],
+            "content": "The text content from the image is:\n\nAndriy Mnih and Geoffrey E Hinton. 2009. A scalable hierarchical distributed language model. In D. Koller, D. Schuurmans, Y. Bengio, and L. Bottou, editors, Advances in Neural Information Processing Systems 21, pages 1081–1088. Curran Associates, Inc."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                593,
+                526,
+                649
+            ],
+            "content": "The text content from the image is:\n\n\"Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in Neural Information Processing Systems, pages 6000–6010.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                565,
+                291,
+                598
+            ],
+            "content": "The text content from the image is:\n\n\"Ankur P Parikh, Oscar Täckström, Dipanjan Das, and Jakob Uszkoreit. 2016. A decomposable attention model for natural language inference. In EMNLP.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                530,
+                526,
+                585
+            ],
+            "content": "The text content from the image is as follows:\n\nJoseph Turian, Lev Ratinov, and Yoshua Bengio. 2010. Word representations: A simple and general method for semi-supervised learning. In Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics, ACL '10, pages 384–394."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                732,
+                526,
+                765
+            ],
+            "content": "The text content from the image is:\n\nAlex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. 2018a. Glue: A multi-task benchmark and analysis platform"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                284,
+                291,
+                327
+            ],
+            "content": "The text content from the image is:\n\nLajanugen Logeswaran and Honglak Lee. 2018. An efficient framework for learning sentence representations. In International Conference on Learning Representations."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                335,
+                291,
+                368
+            ],
+            "content": "The text content from the image is:\n\n\"Bryan McCann, James Bradbury, Caiming Xiong, and Richard Socher. 2017. Learned in translation: Contextualized word vectors. In NIPS.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                192,
+                527,
+                247
+            ],
+            "content": "The text content from the image is:\n\nPranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad: 100,000+ questions for machine comprehension of text. In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, pages 2383–2392."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                606,
+                291,
+                660
+            ],
+            "content": "The text content from the image is:\n\n\"Jeffrey Pennington, Richard Socher, and Christopher D. Manning. 2014. Glove: Global vectors for word representation. In Empirical Methods in Natural Language Processing (EMNLP), pages 1532–1543.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                376,
+                291,
+                410
+            ],
+            "content": "The text content from the image is:\n\nOren Melamud, Jacob Goldberger, and Ido Dagan. 2016. context2vec: Learning generic context embedding with bidirectional LSTM. In CoNLL."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                231,
+                291,
+                276
+            ],
+            "content": "The text content from the image is:\n\n\"Hector J Levesque, Ernest Davis, and Leora Morgenstern. 2011. The winograd schema challenge. In Aaai spring symposium: Logical formalizations of commonsense reasoning, volume 46, page 47.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                179,
+                291,
+                223
+            ],
+            "content": "The text content from the image is:\n\nQuoc Le and Tomas Mikolov. 2014. Distributed representations of sentences and documents. In International Conference on Machine Learning, pages 1188–1196."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                721,
+                291,
+                765
+            ],
+            "content": "The text content from the image is:\n\nMatthew Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018a. Deep contextualized word representations. In NAACL."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                139,
+                526,
+                183
+            ],
+            "content": "The text content from the image is:\n\n\"Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. Improving language understanding with unsupervised learning. Technical report, OpenAI.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                383,
+                526,
+                426
+            ],
+            "content": "The text content from the image is:\n\nFu Sun, Linyang Li, Xipeng Qiu, and Yang Liu. 2018. U-net: Machine reading comprehension with unanswerable questions. arXiv preprint arXiv:1810.06638."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                435,
+                526,
+                468
+            ],
+            "content": "The text content from the image is:\n\nWilson L Taylor. 1953. Cloze procedure: A new tool for measuring readability. Journalism Bulletin, 30(4):415–433."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                477,
+                526,
+                521
+            ],
+            "content": "The text content from the image is:\n\nErik F Tjong Kim Sang and Fien De Meulder.\n2003. Introduction to the conll-2003 shared task: Language-independent named entity recognition. In CoNLL."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                255,
+                526,
+                288
+            ],
+            "content": "The text content from the image is:\n\nMinjoon Seo, Aniruddha Kembhavi, Ali Farhadi, and Hannaneh Hajishirzi. 2017. Bidirectional attention flow for machine comprehension. In ICLR."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                669,
+                291,
+                713
+            ],
+            "content": "The text content from the image is:\n\n\"Matthew Peters, Waleed Ammar, Chandra Bhagavatula, and Russell Power. 2017. Semi-supervised sequence tagging with bidirectional language models. In ACL.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                179,
+                528,
+                775
+            ],
+            "content": "```html\n<html><body>\n<p>port, OpenAI.</p> \n <p>Pranav Rajpurkar, Jian Zhang, Konstantin Lopyrev, and Percy Liang. 2016. Squad: 100,000+ questions for machine comprehension of text. In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, pages 2383–2392.</p> \n <p>Minjoon Seo, Aniruddha Kembhavi, Ali Farhadi, and Hannaneh Hajishirzi. 2017. Bidirectional attention flow for machine comprehension. In ICLR.</p> \n <p>Richard Socher, Alex Perelygin, Jean Wu, Jason Chuang, Christopher D Manning, Andrew Ng, and Christopher Potts. 2013. Recursive deep models for semantic compositionality over a sentiment treebank. In Proceedings of the 2013 conference on empirical methods in natural language processing, pages 1631–1642.</p> \n <p>Fu Sun, Linyang Li, Xipeng Qiu, and Yang Liu. 2018. U-net: Machine reading comprehension with unanswerable questions. arXiv preprint arXiv:1810.06638.</p> \n <p>Wilson L Taylor. 1953. Cloze procedure: A new tool for measuring readability. Journalism Bulletin, 30(4):415–433.</p> \n <p>Erik F Tjong Kim Sang and Fien De Meulder. 2003. Introduction to the conll-2003 shared task: Language-independent named entity recognition. In CoNLL.</p> \n <p>Joseph Turian, Lev Ratinov, and Yoshua Bengio. 2010. Word representations: A simple and general method for semi-supervised learning. In Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics, ACL ’10, pages 384–394.</p> \n <p>Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Lukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in Neural Information Processing Systems, pages 6000–6010.</p> \n <p>Pascal Vincent, Hugo Larochelle, Yoshua Bengio, and Pierre-Antoine Manzagol. 2008. Extracting and composing robust features with denoising autoencoders. In Proceedings of the 25th international conference on Machine learning, pages 1096–1103. ACM.</p> \n <p>Alex Wang, Amanpreet Singh, Julian Michael, Felix Hill, Omer Levy, and Samuel Bowman. 2018a. Glue: A multi-task benchmark and analysis platform</p> \n</body></html>\n```"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                179,
+                293,
+                779
+            ],
+            "content": "Here is the text content from the image:\n\nQuoc Le and Tomas Mikolov. 2014. Distributed representations of sentences and documents. In International Conference on Machine Learning, pages 1188–1196.\n\nHector J Levesque, Ernest Davis, and Leora Morgenstern. 2011. The winograd schema challenge. In Aaai spring symposium: Logical formalizations of commonsense reasoning, volume 46, page 47.\n\nLajanugen Logeswaran and Honglak Lee. 2018. An efficient framework for learning sentence representations. In International Conference on Learning Representations.\n\nBryan McCann, James Bradbury, Caiming Xiong, and Richard Socher. 2017. Learned in translation: Contextualized word vectors. In NIPS.\n\nOren Melamud, Jacob Goldberger, and Ido Dagan. 2016. context2vec: Learning generic context embedding with bidirectional LSTM. In CoNLL.\n\nTomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality. In Advances in Neural Information Processing Systems 26, pages 3111–3119. Curran Associates, Inc.\n\nAndriy Mnih and Geoffrey E Hinton. 2009. A scalable hierarchical distributed language model. In D. Koller, D. Schuurmans, Y. Bengio, and L. Bottou, editors, Advances in Neural Information Processing Systems 21, pages 1081–1088. Curran Associates, Inc.\n\nAnkur P Parikh, Oscar Täckström, Dipanjan Das, and Jakob Uszkoreit. 2016. A decomposable attention model for natural language inference. In EMNLP.\n\nJeffrey Pennington, Richard Socher, and Christopher D. Manning. 2014. Glove: Global vectors for word representation. In Empirical Methods in Natural Language Processing (EMNLP), pages 1532–1543.\n\nMatthew Peters, Waleed Ammar, Chandra Bhagavatula, and Russell Power. 2017. Semi-supervised sequence tagging with bidirectional language models. In ACL.\n\nMatthew Peters, Mark Neumann, Mohit Iyyer, Matt Gardner, Christopher Clark, Kenton Lee, and Luke Zettlemoyer. 2018a. Deep contextualized word representations. In NAACL."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                563,
+                527,
+                710
+            ],
+            "content": "The advantage of this procedure is that the Transformer encoder does not know which words it will be asked to predict or which have been replaced by random words, so it is forced to keep a distributional contextual representation of every input token. Additionally, because random replacement only occurs for 1.5% of all tokens (i.e., 10% of 15%), this does not seem to harm the model’s language understanding capability. In Section C.2, we evaluate the impact this procedure."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                712,
+                527,
+                766
+            ],
+            "content": "Compared to standard language model training, the masked LM only make predictions on 15% of tokens in each batch, which suggests that more pre-training steps may be required for the model"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                294,
+                526,
+                374
+            ],
+            "content": "Masked LM and the Masking Procedure Assuming the unlabeled sentence is my dog is hairy, and during the random masking procedure we chose the 4-th token (which corresponding to hairy), our masking procedure can be further illustrated by"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                578,
+                291,
+                654
+            ],
+            "content": "The text content from the image is:\n\nYukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and Sanja Fidler. 2015. Aligning books and movies: Towards story-like visual explanations by watching movies and reading books. In Proceedings of the IEEE international conference on computer vision, pages 19–27."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                81,
+                65,
+                291,
+                109
+            ],
+            "content": "for natural language understanding. In Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting Neural Networks for NLP, pages 353–355."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                512,
+                291,
+                568
+            ],
+            "content": "The text content from the image is:\n\n\"Rowan Zellers, Yonatan Bisk, Roy Schwartz, and Yejin Choi. 2018. Swag: A large-scale adversarial dataset for grounded commonsense inference. In Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP).\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                119,
+                291,
+                196
+            ],
+            "content": "The text content from the image is:\n\nWei Wang, Ming Yan, and Chen Wu. 2018b. Multigranularity hierarchical attention fusion networks for reading comprehension and question answering. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers). Association for Computational Linguistics."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                85,
+                667,
+                278,
+                709
+            ],
+            "content": "Appendix for \"BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                304,
+                291,
+                381
+            ],
+            "content": "The text content from the image is as follows:\n\nYonghui Wu, Mike Schuster, Zhifeng Chen, Quoc V Le, Mohammad Norouzi, Wolfgang Macherey, Maxim Krikun, Yuan Cao, Qin Gao, Klaus Macherey, et al. 2016. Google’s neural machine translation system: Bridging the gap between human and machine translation. arXiv preprint arXiv:1609.08144."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                259,
+                526,
+                285
+            ],
+            "content": "We provide examples of the pre-training tasks in the following."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                447,
+                291,
+                502
+            ],
+            "content": "The text content from the image is:\n\nAdams Wei Yu, David Dohan, Minh-Thang Luong, Rui Zhao, Kai Chen, Mohammad Norouzi, and Quoc V Le. 2018. QANet: Combining local convolution with global self-attention for reading comprehension. In ICLR."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                219,
+                474,
+                232
+            ],
+            "content": "The text content from the image is:\n\n\"A Additional Details for BERT\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                206,
+                290,
+                240
+            ],
+            "content": "The text content from the image is:\n\nAlex Warstadt, Amanpreet Singh, and Samuel R Bowman. 2018. Neural network acceptability judgments. arXiv preprint arXiv:1805.12471."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                82,
+                715,
+                281,
+                727
+            ],
+            "content": "We organize the appendix into three sections:"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                392,
+                291,
+                437
+            ],
+            "content": "The text content from the image is:\n\n\"Jason Yosinski, Jeff Clune, Yoshua Bengio, and Hod Lipson. 2014. How transferable are features in deep neural networks? In Advances in neural information processing systems, pages 3320–3328.\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                250,
+                291,
+                294
+            ],
+            "content": "The text content from the image is:\n\nAdina Williams, Nikita Nangia, and Samuel R Bowman. 2018. A broad-coverage challenge corpus for sentence understanding through inference. In NAACL."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                83,
+                739,
+                290,
+                766
+            ],
+            "content": "Additional implementation details for BERT are presented in Appendix A;"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                241,
+                506,
+                254
+            ],
+            "content": "The text content from the image is:\n\n\"A.1 Illustration of the Pre-training Tasks\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                337,
+                166,
+                526,
+                207
+            ],
+            "content": "- Effect of Number of Training Steps; and\n- Ablation for Different Masking Procedures."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                318,
+                385,
+                527,
+                551
+            ],
+            "content": "- 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy → my dog is [MASK]\n- 10% of the time: Replace the word with a random word, e.g., my dog is hairy → my dog is apple\n- 10% of the time: Keep the word unchanged, e.g., my dog is hairy → my dog is hairy. The purpose of this is to bias the representation towards the actual observed word."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                318,
+                485,
+                526,
+                552
+            ],
+            "content": "- 10% of the time: Keep the word unchanged, e.g., my dog is hairy → my dog is hairy. The purpose of this is to bias the representation towards the actual observed word."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                64,
+                526,
+                90
+            ],
+            "content": "Additional details for our experiments are presented in Appendix B; and"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                385,
+                526,
+                425
+            ],
+            "content": "- 80% of the time: Replace the word with the [MASK] token, e.g., my dog is hairy → my dog is [MASK]"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                101,
+                526,
+                127
+            ],
+            "content": "Additional ablation studies are presented in Appendix C."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                435,
+                527,
+                475
+            ],
+            "content": "- 10% of the time: Replace the word with a random word, e.g., my dog is hairy → my dog is apple"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                318,
+                63,
+                527,
+                207
+            ],
+            "content": "- Additional details for our experiments are presented in Appendix B; and\n- Additional ablation studies are presented in Appendix C.\nWe present additional ablation studies for BERT including:\n- Effect of Number of Training Steps; and\n- Ablation for Different Masking Procedures."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                325,
+                133,
+                526,
+                159
+            ],
+            "content": "The text content from the image is:\n\n\"We present additional ablation studies for BERT including:\""
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                536,
+                291,
+                725
+            ],
+            "content": "To generate each training input sequence, we sample two spans of text from the corpus, which we refer to as \"sentences\" even though they are typically much longer than single sentences (but can be shorter also). The first sentence receives the A embedding and the second receives the B embedding. 50% of the time B is the actual next sentence that follows A and 50% of the time it is a random sentence, which is done for the \"next sentence prediction\" task. They are sampled such that the combined length is ≤ 512 tokens. The LM masking is applied after WordPiece tokenization with a uniform masking rate of 15%, and no special consideration given to partial word pieces."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                263,
+                527,
+                411
+            ],
+            "content": "epochs over the 3.3 billion word corpus. We use Adam with learning rate of 1e-4, β₁ = 0.9, β₂ = 0.999, L2 weight decay of 0.01, learning rate warmup over the first 10,000 steps, and linear decay of the learning rate. We use a dropout probability of 0.1 on all layers. We use a gelu activation (Hendrycks and Gimpel, 2016) rather than the standard relu, following OpenAI GPT. The training loss is the sum of the mean masked LM likelihood and the mean next sentence prediction likelihood."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                481,
+                527,
+                575
+            ],
+            "content": "The text content from the image is:\n\n\"Longer sequences are disproportionately expensive because attention is quadratic to the sequence length. To speed up pretraining in our experiments, we pre-train the model with sequence length of 128 for 90% of the steps. Then, we train the rest 10% of the steps of sequence of 512 to learn the positional embeddings.\""
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                606,
+                527,
+                699
+            ],
+            "content": "For fine-tuning, most model hyperparameters are the same as in pre-training, with the exception of the batch size, learning rate, and number of training epochs. The dropout probability was always kept at 0.1. The optimal hyperparameter values are task-specific, but we found the following range of possible values to work well across all tasks:"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                413,
+                526,
+                479
+            ],
+            "content": "Training of BERTBASE was performed on 4 Cloud TPUs in Pod configuration (16 TPU chips total).13 Training of BERTLARGE was performed on 16 Cloud TPUs (64 TPU chips total). Each pretraining took 4 days to complete."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                726,
+                291,
+                766
+            ],
+            "content": "We train with batch size of 256 sequences (256 sequences * 512 tokens = 128,000 tokens/batch) for 1,000,000 steps, which is approximately 40"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                263,
+                291,
+                330
+            ],
+            "content": "to converge. In Section C.1 we demonstrate that MLM does converge marginally slower than a left-to-right model (which predicts every token), but the empirical improvements of the MLM model far outweigh the increased training cost."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                340,
+                290,
+                379
+            ],
+            "content": "Next Sentence Prediction The next sentence prediction task can be illustrated in the following examples."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                181,
+                527,
+                241
+            ],
+            "content": "Figure 3: Differences in pre-training model architectures. BERT uses a bidirectional Transformer. OpenAI GPT uses a left-to-right Transformer. ELMo uses the concatenation of independently trained left-to-right and right-to-left LSTMs to generate features for downstream tasks. Among the three, only BERT representations are jointly conditioned on both left and right context in all layers. In addition to the architecture differences, BERT and OpenAI GPT are fine-tuning approaches, while ELMo is a feature-based approach."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                517,
+                207,
+                530
+            ],
+            "content": "A.2 Pre-training Procedure"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                308,
+                587,
+                440,
+                599
+            ],
+            "content": "A.3 Fine-tuning Procedure"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                321,
+                713,
+                410,
+                725
+            ],
+            "content": "The text content from the image is:\n\n- Batch size: 16, 32"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                392,
+                295,
+                503
+            ],
+            "content": "Input = [CLS] the man went to [MASK] store [SEP]\nhe bought a gallon [MASK] milk [SEP]\n\nLabel = IsNext\n\nInput = [CLS] the man [MASK] to the store [SEP]\npenguin [MASK] are flight ##less birds [SEP]\n\nLabel = NotNext"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                426,
+                138,
+                437
+            ],
+            "content": "The text content in the image is:\n\n```\nLabel = IsNext\n```"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                492,
+                141,
+                503
+            ],
+            "content": "The text content in the image is:\n\n```\nLabel = NotNext\n```"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                393,
+                279,
+                438
+            ],
+            "content": "The image contains a text input and a label, structured as follows:\n\n- **Input**: \n  - [CLS] the man went to [MASK] store [SEP]\n  - he bought a gallon [MASK] milk [SEP]\n\n- **Label**: \n  - IsNext\n\nThis format is typically used in natural language processing tasks, such as next-sentence prediction or question answering systems, where the task is to determine if the second sentence logically follows the first."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                347,
+                291,
+                507
+            ],
+            "content": "The most comparable existing pre-training method to BERT is OpenAI GPT, which trains a left-to-right Transformer LM on a large text corpus. In fact, many of the design decisions in BERT were intentionally made to make it as close to GPT as possible so that the two methods could be minimally compared. The core argument of this work is that the bi-directionality and the two pre-training tasks presented in Section 3.1 account for the majority of the empirical improvements, but we do note that there are several other differences between how BERT and GPT were trained:"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                238,
+                291,
+                345
+            ],
+            "content": "Here we studies the differences in recent popular representation learning models including ELMo, OpenAI GPT and BERT. The comparisons between the model architectures are shown visually in Figure 3. Note that in addition to the architecture differences, BERT and OpenAI GPT are fine-tuning approaches, while ELMo is a feature-based approach."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                102,
+                291,
+                196
+            ],
+            "content": "We also observed that large data sets (e.g., 100k+ labeled training examples) were far less sensitive to hyperparameter choice than small data sets. Fine-tuning is typically very fast, so it is reasonable to simply run an exhaustive search over the above parameters and choose the model that performs best on the development set."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                170,
+                526,
+                332
+            ],
+            "content": "The illustration of fine-tuning BERT on different tasks can be seen in Figure 4. Our task-specific models are formed by incorporating BERT with one additional output layer, so a minimal number of parameters need to be learned from scratch. Among the tasks, (a) and (b) are sequence-level tasks while (c) and (d) are token-level tasks. In the figure, E represents the input embedding, T_i represents the contextual representation of token i, [CLS] is the special symbol for classification output, and [SEP] is the special symbol to separate non-consecutive token sequences."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                64,
+                527,
+                130
+            ],
+            "content": "To isolate the effect of these differences, we perform ablation experiments in Section 5.1 which demonstrate that the majority of the improvements are in fact coming from the two pre-training tasks and the bidirectionality they enable."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                644,
+                527,
+                765
+            ],
+            "content": "QNLI Question Natural Language Inference is a version of the Stanford Question Answering Dataset (Rajpurkar et al., 2016) which has been converted to a binary classification task (Wang et al., 2018a). The positive examples are (question, sentence) pairs which do contain the correct answer, and the negative examples are (question, sentence) from the same paragraph which do not contain the answer."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                496,
+                527,
+                576
+            ],
+            "content": "MNLI Multi-Genre Natural Language Inference is a large-scale, crowdsourced entailment classification task (Williams et al., 2018). Given a pair of sentences, the goal is to predict whether the second sentence is an entailment, contradiction, or neutral with respect to the first one."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                583,
+                526,
+                636
+            ],
+            "content": "The text content from the image is:\n\n\"QQP Quora Question Pairs is a binary classification task where the goal is to determine if two questions asked on Quora are semantically equivalent (Chen et al., 2018).\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                394,
+                527,
+                488
+            ],
+            "content": "Our GLUE results in Table1 are obtained from https://gluebenchmark.com/leaderboard and https://blog.openai.com/language-unsupervised. The GLUE benchmark includes the following datasets, the descriptions of which were originally summarized in Wang et al. (2018a):"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                206,
+                259,
+                232
+            ],
+            "content": "A.4 Comparison of BERT, ELMo ,and OpenAI GPT"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                140,
+                521,
+                165
+            ],
+            "content": "A.5 Illustrations of Fine-tuning on Different Tasks"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                342,
+                475,
+                355
+            ],
+            "content": "The text content from the image is:\n\n\"B Detailed Experimental Setup\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                363,
+                501,
+                389
+            ],
+            "content": "The text content from the image is:\n\n\"B.1 Detailed Descriptions for the GLUE Benchmark Experiments.\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                83,
+                520,
+                291,
+                573
+            ],
+            "content": "GPT is trained on the BooksCorpus (800M words); BERT is trained on the BooksCorpus (800M words) and Wikipedia (2,500M words)."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                83,
+                584,
+                291,
+                651
+            ],
+            "content": "GPT uses a sentence separator ([SEP]) and classifier token ([CLS]) which are only introduced at fine-tuning time; BERT learns [SEP], [CLS] and sentence A/B embeddings during pre-training."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                84,
+                64,
+                273,
+                90
+            ],
+            "content": "- Learning rate (Adam): 5e-5, 3e-5, 2e-5\n- Number of epochs: 2, 3, 4"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                83,
+                662,
+                291,
+                701
+            ],
+            "content": "GPT was trained for 1M steps with a batch size of 32,000 words; BERT was trained for 1M steps with a batch size of 128,000 words."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                83,
+                712,
+                291,
+                766
+            ],
+            "content": "GPT used the same learning rate of 5e-5 for all fine-tuning experiments; BERT chooses a task-specific fine-tuning learning rate which performs the best on the development set."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                82,
+                519,
+                291,
+                766
+            ],
+            "content": "- GPT is trained on the BooksCorpus (800M words); BERT is trained on the BooksCorpus (800M words) and Wikipedia (2,500M words).\n- GPT uses a sentence separator ([SEP]) and classifier token ([CLS]) which are only introduced at fine-tuning time; BERT learns [SEP], [CLS] and sentence A/B embeddings during pre-training.\n- GPT was trained for 1M steps with a batch size of 32,000 words; BERT was trained for 1M steps with a batch size of 128,000 words.\n- GPT used the same learning rate of 5e-5 for all fine-tuning experiments; BERT chooses a task-specific fine-tuning learning rate which performs the best on the development set."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                636,
+                291,
+                717
+            ],
+            "content": "The Semantic Textual Similarity Benchmark is a collection of sentence pairs drawn from news headlines and other sources (Cer et al., 2017). They were annotated with a score from 1 to 5 denoting how similar the two sentences are in terms of semantic meaning."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                572,
+                526,
+                693
+            ],
+            "content": "WNLI Winograd NLI is a small natural language inference dataset (Levesque et al., 2011). The GLUE webpage notes that there are issues with the construction of this dataset, 15 and every trained system that’s been submitted to GLUE has performed worse than the 65.1 baseline accuracy of predicting the majority class. We therefore exclude this set to be fair to OpenAI GPT. For our GLUE submission, we always predicted the ma"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                560,
+                291,
+                627
+            ],
+            "content": "The Corpus of Linguistic Acceptability is a binary single-sentence classification task, where the goal is to predict whether an English sentence is linguistically \"acceptable\" or not (Warstadt et al., 2018)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                726,
+                291,
+                765
+            ],
+            "content": "The text content from the image is:\n\n\"MRPC Microsoft Research Paraphrase Corpus consists of sentence pairs automatically extracted from online news sources, with human annotations.\""
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                485,
+                291,
+                552
+            ],
+            "content": "The Stanford Sentiment Treebank is a binary single-sentence classification task consisting of sentences extracted from movie reviews with human annotations of their sentiment (Socher et al., 2013)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                522,
+                526,
+                561
+            ],
+            "content": "RTE Recognizing Textual Entailment is a binary entailment task similar to MNLI, but with much less training data (Bentivogli et al., 2009)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                485,
+                526,
+                511
+            ],
+            "content": "for whether the sentences in the pair are semantically equivalent (Dolan and Brockett, 2005)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                171,
+                452,
+                425,
+                464
+            ],
+            "content": "Figure 4: Illustrations of Fine-tuning BERT on Different Tasks."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                358,
+                527,
+                437
+            ],
+            "content": "The results are presented in Table 8. In the table, MASK means that we replace the target token with the [MASK] symbol for MLM; SAME means that we keep the target token as is; RND means that we replace the target token with another random token."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                548,
+                527,
+                641
+            ],
+            "content": "From the table it can be seen that fine-tuning is surprisingly robust to different masking strategies. However, as expected, using only the MASK strategy was problematic when applying the feature-based approach to NER. Interestingly, using only the RND strategy performs much worse than our strategy as well."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                439,
+                527,
+                546
+            ],
+            "content": "The numbers in the left part of the table represent the probabilities of the specific strategies used during MLM pre-training (BERT uses 80%, 10%, 10%). The right part of the paper represents the Dev set results. For the feature-based approach, we concatenate the last 4 layers of BERT as the features, which was shown to be the best approach in Section 5.3."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                64,
+                527,
+                198
+            ],
+            "content": "Note that the purpose of the masking strategies is to reduce the mismatch between pre-training and fine-tuning, as the [MASK] symbol never appears during the fine-tuning stage. We report the Dev results for both MNLI and NER. For NER, we report both fine-tuning and feature-based approaches, as we expect the mismatch will be amplified for the feature-based approach as the model will not have the chance to adjust the representations."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                131,
+                291,
+                183
+            ],
+            "content": "Figure 5 presents MNLI Dev accuracy after fine-tuning from a checkpoint that has been pre-trained for k steps. This allows us to answer the following questions:"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                471,
+                291,
+                551
+            ],
+            "content": "In Section 3.1, we mention that BERT uses a mixed strategy for masking the target tokens when pre-training with the masked language model (MLM) objective. The following is an ablation study to evaluate the effect of different masking strategies."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                714,
+                291,
+                761
+            ],
+            "content": "Figure 5: Ablation over number of training steps. This shows the MNLI accuracy after fine-tuning, starting from model parameters that have been pre-trained for k steps. The x-axis is the value of k."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                438,
+                245,
+                464
+            ],
+            "content": "The text content from the image is:\n\n\"C.2 Ablation for Different Masking Procedures\""
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                88,
+                235,
+                102
+            ],
+            "content": "The text content from the image is:\n\n\"C Additional Ablation Studies\""
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                111,
+                263,
+                124
+            ],
+            "content": "The text content from the image is:\n\n\"C.1 Effect of Number of Training Steps\""
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                79,
+                304,
+                291,
+                357
+            ],
+            "content": "2. Question: Does MLM pre-training converge slower than LTR pre-training, since only 15% of words are predicted in each batch rather than every word?"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                92,
+                358,
+                291,
+                425
+            ],
+            "content": "Answer: The MLM model does converge slightly slower than the LTR model. However, in terms of absolute accuracy the MLM model begins to outperform the LTR model almost immediately."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                64,
+                122,
+                76
+            ],
+            "content": "jority class."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                80,
+                197,
+                291,
+                251
+            ],
+            "content": "1. Question: Does BERT really need such a large amount of pre-training (128,000 words/batch * 1,000,000 steps) to achieve high fine-tuning accuracy?"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                311,
+                330,
+                521,
+                341
+            ],
+            "content": "The text content from the image is:\n\n\"Table 8: Ablation over different masking strategies.\""
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                91,
+                252,
+                291,
+                291
+            ],
+            "content": "Answer: Yes, BERTBASE achieves almost 1.0% additional accuracy on MNLI when trained on 1M steps compared to 500k steps."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                77,
+                197,
+                291,
+                425
+            ],
+            "content": "1. Question: Does BERT really need such a large amount of pre-training (128,000 words/batch * 1,000,000 steps) to achieve high fine-tuning accuracy?\nAnswer: Yes, BERTBASE achieves almost 1.0% additional accuracy on MNLI when trained on 1M steps compared to 500k steps.\n\n2. Question: Does MLM pre-training converge slower than LTR pre-training, since only 15% of words are predicted in each batch rather than every word?\nAnswer: The MLM model does converge slightly slower than the LTR model. However, in terms of absolute accuracy the MLM model begins to outperform the LTR model almost immediately."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                311,
+                330,
+                521,
+                341
+            ],
+            "content": "The text content from the image is:\n\n\"Table 8: Ablation over different masking strategies.\""
+        }
+    ]
+}

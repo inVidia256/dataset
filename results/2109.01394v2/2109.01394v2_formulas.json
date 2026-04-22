@@ -1,0 +1,282 @@
+{
+    "total_count": 23,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                206,
+                618,
+                401,
+                650
+            ],
+            "content": "T = { \\frac { Z } { \\sqrt { { \\frac { 1 } { \\nu } } \\sum _ { i } ^ { \\nu } U _ { i } ^ { 2 } } } } \\quad { \\mathrm { w i t h ~ } } \\ Z , U _ { i } \\sim { \\mathcal { N } } ( 0 , 1 ) \\ \\forall i",
+            "latex": "T = { \\frac { Z } { \\sqrt { { \\frac { 1 } { \\nu } } \\sum _ { i } ^ { \\nu } U _ { i } ^ { 2 } } } } \\quad { \\mathrm { w i t h ~ } } \\ Z , U _ { i } \\sim { \\mathcal { N } } ( 0 , 1 ) \\ \\forall i"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                136,
+                684,
+                477,
+                726
+            ],
+            "content": "```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=1}^{\\nu} U_i^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=\\nu+1}^{2\\cdot\\nu} U_i^2}}, & \n\\cdots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=(n-1)\\cdot\\nu+1}^{n\\cdot\\nu} U_i^2}}\n\\end{bmatrix} \\sim \\text{PoT}(\\nu)\n```",
+            "latex": "```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=1}^{\\nu} U_i^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=\\nu+1}^{2\\cdot\\nu} U_i^2}}, & \n\\cdots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} \\sum_{i=(n-1)\\cdot\\nu+1}^{n\\cdot\\nu} U_i^2}}\n\\end{bmatrix} \\sim \\text{PoT}(\\nu)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                121,
+                472,
+                478,
+                487
+            ],
+            "content": "p _ { \\mathbf { X } , \\mathbf { T } } ( \\mathbf { x } , \\mathbf { t } ) = p _ { \\mathbf { X } | \\mathbf { T } } ( \\mathbf { x } | \\mathbf { t } ) p _ { \\mathbf { T } } ( \\mathbf { t } ) \\qquad p _ { \\mathbf { X } | \\mathbf { T } } ( \\mathbf { x } | \\mathbf { t } ) = p _ { \\theta } ( \\mathbf { x } | g _ { \\theta } ( \\mathbf { t } ) ) \\qquad p _ { \\mathbf { T } } ( \\mathbf { t } ) = \\operatorname { T P o T } ( \\mathbf { t } ; \\nu )",
+            "latex": "p _ { \\mathbf { X } , \\mathbf { T } } ( \\mathbf { x } , \\mathbf { t } ) = p _ { \\mathbf { X } | \\mathbf { T } } ( \\mathbf { x } | \\mathbf { t } ) p _ { \\mathbf { T } } ( \\mathbf { t } ) \\qquad p _ { \\mathbf { X } | \\mathbf { T } } ( \\mathbf { x } | \\mathbf { t } ) = p _ { \\theta } ( \\mathbf { x } | g _ { \\theta } ( \\mathbf { t } ) ) \\qquad p _ { \\mathbf { T } } ( \\mathbf { t } ) = \\operatorname { T P o T } ( \\mathbf { t } ; \\nu )"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                276,
+                334,
+                335,
+                360
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n\\[\n\\mathbf{T} = \\frac{\\mathbf{Z} - \\mu}{\\sqrt{\\mathbf{WU}^2}}\n\\]",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n\\[\n\\mathbf{T} = \\frac{\\mathbf{Z} - \\mu}{\\sqrt{\\mathbf{WU}^2}}\n\\]"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                143,
+                253,
+                469,
+                293
+            ],
+            "content": "```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} W_1 \\mathbf{U}^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} W_2 \\mathbf{U}^2}}, & \n\\ldots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} W_n \\mathbf{U}^2}}\n\\end{bmatrix} = \\frac{\\mathbf{Z}}{\\sqrt{\\frac{1}{\\nu} \\mathbf{W} \\mathbf{U}^2}} \\sim \\text{TPoT}(\\nu)\n```",
+            "latex": "```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} W_1 \\mathbf{U}^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} W_2 \\mathbf{U}^2}}, & \n\\ldots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} W_n \\mathbf{U}^2}}\n\\end{bmatrix} = \\frac{\\mathbf{Z}}{\\sqrt{\\frac{1}{\\nu} \\mathbf{W} \\mathbf{U}^2}} \\sim \\text{TPoT}(\\nu)\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                137,
+                175,
+                474,
+                215
+            ],
+            "content": "```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(1)} U_i^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(2)} U_i^2}}, & \n\\ldots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(n)} U_i^2}}\n\\end{bmatrix} \\sim \\text{TPoT}(\\nu)\n```",
+            "latex": "```latex\n\\mathbf{T} = \\begin{bmatrix}\n\\frac{Z_1}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(1)} U_i^2}}, & \n\\frac{Z_2}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(2)} U_i^2}}, & \n\\ldots & \n\\frac{Z_n}{\\sqrt{\\frac{1}{\\nu} \\sum_{i \\in \\mathbb{N}(n)} U_i^2}}\n\\end{bmatrix} \\sim \\text{TPoT}(\\nu)\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                239,
+                141,
+                371,
+                174
+            ],
+            "content": "```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\mathbf{W} \\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}}\n```",
+            "latex": "```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\mathbf{W} \\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}}\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                206,
+                362,
+                406,
+                395
+            ],
+            "content": "```latex\n\\mathbf{W}\\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right] = \\sum_{\\delta=-L}^{L} \\mathbf{W}_\\delta \\text{Roll}_\\delta(\\mathbf{U}_{l+\\delta}^2)\n```",
+            "latex": "```latex\n\\mathbf{W}\\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right] = \\sum_{\\delta=-L}^{L} \\mathbf{W}_\\delta \\text{Roll}_\\delta(\\mathbf{U}_{l+\\delta}^2)\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                220,
+                244,
+                390,
+                276
+            ],
+            "content": "```latex\n\\mathbf{W} \\left[ \\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2 \\right] = \\sum_{\\delta=-L}^{L} \\mathbf{W}_\\delta \\mathbf{U}_{l+\\delta}^2\n```",
+            "latex": "```latex\n\\mathbf{W} \\left[ \\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2 \\right] = \\sum_{\\delta=-L}^{L} \\mathbf{W}_\\delta \\mathbf{U}_{l+\\delta}^2\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                146,
+                549,
+                464,
+                579
+            ],
+            "content": "```latex\nq_{\\gamma}(\\mathbf{u}_l | \\mathbf{x}_l) = \\mathcal{N}\\left( \\mathbf{u}_l; \\mu_{\\gamma}(\\mathbf{x}_l), \\sigma_{\\gamma}(\\mathbf{x}_l)\\mathbf{I} \\right)\n\n\\mathbf{t}_l = \\frac{\\mathbf{z}_l - \\mu}{\\sqrt{\\mathbf{W}\\left[\\mathbf{u}_{l+L}^2, \\cdots, \\mathbf{u}_{l-L}^2\\right]}}\n```",
+            "latex": "```latex\nq_{\\gamma}(\\mathbf{u}_l | \\mathbf{x}_l) = \\mathcal{N}\\left( \\mathbf{u}_l; \\mu_{\\gamma}(\\mathbf{x}_l), \\sigma_{\\gamma}(\\mathbf{x}_l)\\mathbf{I} \\right)\n\n\\mathbf{t}_l = \\frac{\\mathbf{z}_l - \\mu}{\\sqrt{\\mathbf{W}\\left[\\mathbf{u}_{l+L}^2, \\cdots, \\mathbf{u}_{l-L}^2\\right]}}\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                146,
+                532,
+                464,
+                546
+            ],
+            "content": "```latex\nq_{\\phi}(\\mathbf{z}_l | \\mathbf{x}_l) = \\mathcal{N}\\left(\\mathbf{z}_l; \\mu_{\\phi}(\\mathbf{x}_l), \\sigma_{\\phi}(\\mathbf{x}_l)\\mathbf{I}\\right)\n\np_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{t}_l)) = p_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{z}_l, \\{\\mathbf{u}_l\\}))\n```",
+            "latex": "```latex\nq_{\\phi}(\\mathbf{z}_l | \\mathbf{x}_l) = \\mathcal{N}\\left(\\mathbf{z}_l; \\mu_{\\phi}(\\mathbf{x}_l), \\sigma_{\\phi}(\\mathbf{x}_l)\\mathbf{I}\\right)\n\np_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{t}_l)) = p_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{z}_l, \\{\\mathbf{u}_l\\}))\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                109,
+                614,
+                484,
+                642
+            ],
+            "content": "```latex\n\\sum_{l=1}^{S}\\mathbb{E}_{Q_{\\phi,\\gamma}(\\mathbf{z}_l,\\mathbf{u}_l|\\{\\mathbf{x}_l\\})}\\left([\\log p_\\theta(\\mathbf{x}_l|g_\\theta(\\mathbf{t}_l))]-D_{KL}[q_\\phi(\\mathbf{z}_l|\\mathbf{x}_l)||p_\\mathbf{Z}(\\mathbf{z}_l)]-D_{KL}[q_\\gamma(\\mathbf{u}_l|\\mathbf{x}_l)||p_\\mathbf{U}(\\mathbf{u}_l)]\\right)\n```",
+            "latex": "```latex\n\\sum_{l=1}^{S}\\mathbb{E}_{Q_{\\phi,\\gamma}(\\mathbf{z}_l,\\mathbf{u}_l|\\{\\mathbf{x}_l\\})}\\left([\\log p_\\theta(\\mathbf{x}_l|g_\\theta(\\mathbf{t}_l))]-D_{KL}[q_\\phi(\\mathbf{z}_l|\\mathbf{x}_l)||p_\\mathbf{Z}(\\mathbf{z}_l)]-D_{KL}[q_\\gamma(\\mathbf{u}_l|\\mathbf{x}_l)||p_\\mathbf{U}(\\mathbf{u}_l)]\\right)\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                182,
+                646,
+                479,
+                662
+            ],
+            "content": "```latex\n\\left\\{\\mathbf{x}_{l}\\right\\}) = q_{\\phi}(\\mathbf{z}_{l}|\\mathbf{x}_{l}) \\prod_{\\delta=-L}^{L} q_{\\gamma}(\\mathbf{u}_{l+\\delta}|\\mathbf{x}_{l+\\delta}), \\text{ and } \\left\\{\\cdot\\right\\} \\text{ denotes a set over time}\n```",
+            "latex": "```latex\n\\left\\{\\mathbf{x}_{l}\\right\\}) = q_{\\phi}(\\mathbf{z}_{l}|\\mathbf{x}_{l}) \\prod_{\\delta=-L}^{L} q_{\\gamma}(\\mathbf{u}_{l+\\delta}|\\mathbf{x}_{l+\\delta}), \\text{ and } \\left\\{\\cdot\\right\\} \\text{ denotes a set over time}\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                144,
+                531,
+                465,
+                578
+            ],
+            "content": "```latex\n\\begin{align*}\nq_{\\phi}(\\mathbf{z}_l | \\mathbf{x}_l) &= \\mathcal{N}\\left( \\mathbf{z}_l; \\mu_{\\phi}(\\mathbf{x}_l), \\sigma_{\\phi}(\\mathbf{x}_l) \\mathbf{I} \\right) \\\\\nq_{\\gamma}(\\mathbf{u}_l | \\mathbf{x}_l) &= \\mathcal{N}\\left( \\mathbf{u}_l; \\mu_{\\gamma}(\\mathbf{x}_l), \\sigma_{\\gamma}(\\mathbf{x}_l) \\mathbf{I} \\right) \\\\\np_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{t}_l)) &= p_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{z}_l, \\{\\mathbf{u}_l\\})) \\\\\n\\mathbf{t}_l &= \\frac{\\mathbf{z}_l - \\mu}{\\sqrt{\\mathbf{W} \\left[ \\mathbf{u}_{l+L}^2; \\cdots ; \\mathbf{u}_{l-L}^2 \\right]}}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\nq_{\\phi}(\\mathbf{z}_l | \\mathbf{x}_l) &= \\mathcal{N}\\left( \\mathbf{z}_l; \\mu_{\\phi}(\\mathbf{x}_l), \\sigma_{\\phi}(\\mathbf{x}_l) \\mathbf{I} \\right) \\\\\nq_{\\gamma}(\\mathbf{u}_l | \\mathbf{x}_l) &= \\mathcal{N}\\left( \\mathbf{u}_l; \\mu_{\\gamma}(\\mathbf{x}_l), \\sigma_{\\gamma}(\\mathbf{x}_l) \\mathbf{I} \\right) \\\\\np_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{t}_l)) &= p_{\\theta}(\\mathbf{x}_l | g_{\\theta}(\\mathbf{z}_l, \\{\\mathbf{u}_l\\})) \\\\\n\\mathbf{t}_l &= \\frac{\\mathbf{z}_l - \\mu}{\\sqrt{\\mathbf{W} \\left[ \\mathbf{u}_{l+L}^2; \\cdots ; \\mathbf{u}_{l-L}^2 \\right]}}\n\\end{align*}\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                212,
+                248,
+                397,
+                281
+            ],
+            "content": "```latex\n\\mathcal{E}_{eq}(\\{\\hat{\\mathbf{t}}_l\\}_{l=1}^S) = \\sum_{l=1}^{S-1}\\sum_{\\delta=1}^{S-l} ||\\text{Roll}_\\delta(\\hat{\\mathbf{t}}_l) - \\hat{\\mathbf{t}}_{l+\\delta}||_1\n```",
+            "latex": "```latex\n\\mathcal{E}_{eq}(\\{\\hat{\\mathbf{t}}_l\\}_{l=1}^S) = \\sum_{l=1}^{S-1}\\sum_{\\delta=1}^{S-l} ||\\text{Roll}_\\delta(\\hat{\\mathbf{t}}_l) - \\hat{\\mathbf{t}}_{l+\\delta}||_1\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                166,
+                344,
+                445,
+                357
+            ],
+            "content": "```latex\n\\text{CapCorr}(\\mathbf{t}_l, \\mathbf{t}_{l+\\delta}, y_l, y_{l+\\delta}) = \\text{Corr}\\left(\\argmax[\\mathbf{t}_l \\star \\mathbf{t}_{l+\\delta}], |y_l - y_{l+\\delta}|\\right)\n```",
+            "latex": "```latex\n\\text{CapCorr}(\\mathbf{t}_l, \\mathbf{t}_{l+\\delta}, y_l, y_{l+\\delta}) = \\text{Corr}\\left(\\argmax[\\mathbf{t}_l \\star \\mathbf{t}_{l+\\delta}], |y_l - y_{l+\\delta}|\\right)\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                218,
+                183,
+                393,
+                196
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{ObservedRoll}(\\mathbf{t}_\\Omega, \\mathbf{t}_0) = \\argmax [\\mathbf{t}_\\Omega \\star \\mathbf{t}_0]\n```\n\nThis will produce the same equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{ObservedRoll}(\\mathbf{t}_\\Omega, \\mathbf{t}_0) = \\argmax [\\mathbf{t}_\\Omega \\star \\mathbf{t}_0]\n```\n\nThis will produce the same equation as shown in the image."
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                167,
+                234,
+                444,
+                247
+            ],
+            "content": "```latex\n\\text{CapCorr}(\\mathbf{t}_{\\Omega}, \\mathbf{t}_0, y_{\\Omega}, y_0) = \\text{Corr}\\left(\\text{ObservedRoll}(\\mathbf{t}_{\\Omega}, \\mathbf{t}_0), |y_{\\Omega} - y_0|\\right)\n```",
+            "latex": "```latex\n\\text{CapCorr}(\\mathbf{t}_{\\Omega}, \\mathbf{t}_0, y_{\\Omega}, y_0) = \\text{Corr}\\left(\\text{ObservedRoll}(\\mathbf{t}_{\\Omega}, \\mathbf{t}_0), |y_{\\Omega} - y_0|\\right)\n```"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                126,
+                449,
+                468,
+                477
+            ],
+            "content": "```latex\n\\text{Roll}_\\delta(\\mathbf{u}) = \\text{Roll}_\\delta\\left([u_1, u_2, \\ldots, u_{C \\cdot D}]\\right)\n= [u_D, u_1, \\ldots, u_{D-1}, u_{2 \\cdot D}, u_{D+1}, \\ldots, u_{2 \\cdot D-1}, u_{3 \\cdot D}, \\ldots, \\ldots, u_{C \\cdot D - 1}]\n```",
+            "latex": "```latex\n\\text{Roll}_\\delta(\\mathbf{u}) = \\text{Roll}_\\delta\\left([u_1, u_2, \\ldots, u_{C \\cdot D}]\\right)\n= [u_D, u_1, \\ldots, u_{D-1}, u_{2 \\cdot D}, u_{D+1}, \\ldots, u_{2 \\cdot D-1}, u_{3 \\cdot D}, \\ldots, \\ldots, u_{C \\cdot D - 1}]\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                145,
+                627,
+                465,
+                661
+            ],
+            "content": "```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sum_{d=1}^{D} \\sqrt{\\mathbf{W}^d \\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}} = \\frac{\\mathbf{Z}_l - \\mu}{\\sum_{d=1}^{D} \\sqrt{\\sum_{\\delta=-L}^{L} \\mathbf{W}^d_\\delta \\text{Roll}^d_\\delta (\\mathbf{U}_{l+\\delta}^2)}}\n```",
+            "latex": "```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sum_{d=1}^{D} \\sqrt{\\mathbf{W}^d \\left[\\mathbf{U}_{l+L}^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}} = \\frac{\\mathbf{Z}_l - \\mu}{\\sum_{d=1}^{D} \\sqrt{\\sum_{\\delta=-L}^{L} \\mathbf{W}^d_\\delta \\text{Roll}^d_\\delta (\\mathbf{U}_{l+\\delta}^2)}}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                130,
+                206,
+                463,
+                219
+            ],
+            "content": "```latex\n\\text{Roll}_{\\alpha}(\\mathbf{u}) = \\left[\\alpha u_D + (1-\\alpha)u_1, \\; \\alpha u_1 + (1-\\alpha)u_2, \\; \\ldots, \\; \\alpha u_{D-1} + (1-\\alpha)u_D\\right]\n```",
+            "latex": "```latex\n\\text{Roll}_{\\alpha}(\\mathbf{u}) = \\left[\\alpha u_D + (1-\\alpha)u_1, \\; \\alpha u_1 + (1-\\alpha)u_2, \\; \\ldots, \\; \\alpha u_{D-1} + (1-\\alpha)u_D\\right]\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                182,
+                290,
+                478,
+                303
+            ],
+            "content": "```latex\n\\Omega, t_0) = \\argmax [\\mathbf{t}_\\Omega \\cdot \\text{Roll}_0(t_0), \\mathbf{t}_\\Omega \\cdot \\text{Roll}_\\alpha(t_0), \\ldots, \\mathbf{t}_\\Omega \\cdot \\text{Roll}_{D-\\alpha}(t_0)]\n```",
+            "latex": "```latex\n\\Omega, t_0) = \\argmax [\\mathbf{t}_\\Omega \\cdot \\text{Roll}_0(t_0), \\mathbf{t}_\\Omega \\cdot \\text{Roll}_\\alpha(t_0), \\ldots, \\mathbf{t}_\\Omega \\cdot \\text{Roll}_{D-\\alpha}(t_0)]\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                180,
+                152,
+                431,
+                187
+            ],
+            "content": "```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\mathbf{W}\\left[\\mathbf{U}_l^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}} = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\sum_{\\delta=-L}^{0} \\mathbf{W}_\\delta \\text{Roll}_\\delta(\\mathbf{U}_{l+\\delta}^2)}}\n```",
+            "latex": "```latex\n\\mathbf{T}_l = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\mathbf{W}\\left[\\mathbf{U}_l^2; \\cdots; \\mathbf{U}_{l-L}^2\\right]}} = \\frac{\\mathbf{Z}_l - \\mu}{\\sqrt{\\sum_{\\delta=-L}^{0} \\mathbf{W}_\\delta \\text{Roll}_\\delta(\\mathbf{U}_{l+\\delta}^2)}}\n```"
+        }
+    ]
+}

@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                92,
+                70,
+                502,
+                248
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Layer</td>\n    <td>Output size</td>\n    <td>KSize</td>\n    <td>Stride</td>\n    <td>Repeat</td>\n    <td></td>\n    <td>Output channels(g groups)</td>\n  </tr>\n  <tr>\n    <td>g=1</td>\n    <td>g=2</td>\n    <td>g=3</td>\n    <td>g=4</td>\n    <td>g=8</td>\n  </tr>\n  <tr>\n    <td>Image</td>\n    <td>224x224</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>3</td>\n    <td>3</td>\n    <td>3</td>\n    <td>3</td>\n    <td>3</td>\n  </tr>\n  <tr>\n    <td>Conv lMaxPool</td>\n    <td>112x11256x56</td>\n    <td>3x33x3</td>\n    <td>22</td>\n    <td>1</td>\n    <td>24</td>\n    <td>24</td>\n    <td>24</td>\n    <td>24</td>\n    <td>24</td>\n  </tr>\n  <tr>\n    <td>Stage2</td>\n    <td>28x28</td>\n    <td></td>\n    <td>2</td>\n    <td>1</td>\n    <td>144</td>\n    <td>200</td>\n    <td>240</td>\n    <td>272</td>\n    <td>384</td>\n  </tr>\n  <tr>\n    <td>28x28</td>\n    <td>1</td>\n    <td>3</td>\n    <td>144</td>\n    <td>200</td>\n    <td>240</td>\n    <td>272</td>\n    <td>384</td>\n  </tr>\n  <tr>\n    <td>Stage3</td>\n    <td>14x14</td>\n    <td></td>\n    <td>2</td>\n    <td>1</td>\n    <td>288</td>\n    <td>400</td>\n    <td>480</td>\n    <td>544</td>\n    <td>768</td>\n  </tr>\n  <tr>\n    <td>14x14</td>\n    <td>1</td>\n    <td>7</td>\n    <td>288</td>\n    <td>400</td>\n    <td>480</td>\n    <td>544</td>\n    <td>768</td>\n  </tr>\n  <tr>\n    <td>Stage4</td>\n    <td>7x7</td>\n    <td></td>\n    <td>2</td>\n    <td>1</td>\n    <td>576</td>\n    <td>800</td>\n    <td>960</td>\n    <td>1088</td>\n    <td>1536</td>\n  </tr>\n  <tr>\n    <td>7x7</td>\n    <td>1</td>\n    <td>3</td>\n    <td>576</td>\n    <td>800</td>\n    <td>960</td>\n    <td>1088</td>\n    <td>1536</td>\n  </tr>\n  <tr>\n    <td>Global Pool</td>\n    <td>1x1</td>\n    <td>7x7</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>FC</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>1000</td>\n    <td>1000</td>\n    <td>1000</td>\n    <td>1000</td>\n    <td>1000</td>\n  </tr>\n  <tr>\n    <td>Complexity</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>143M</td>\n    <td>140M</td>\n    <td>137M</td>\n    <td>133M</td>\n    <td>137M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                137,
+                287,
+                457,
+                352
+            ],
+            "caption": "The text in the image reads:\n\n\"Table 1. ShuffleNet architecture. The complexity is evaluated with FLOPs, i.e. the number of floating-point multiplication-adds. Note that for Stage 2, we do not apply group convolution on the first pointwise layer because the number of input channels is relatively small.\" The text content from the image is:\n\n\"Table 2. Classification error vs. number of groups g (smaller number represents better performance)\" The text content from the image is:\n\n\"Table 2. Classification error vs. number of groups g (smaller number represents better performance)\" The text content from the image is:\n\n\"Table 2. Classification error vs. number of groups g (smaller number represents better performance)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Complexity(MFLOPs)</td>\n    <td>Classification error(%)</td>\n  </tr>\n  <tr>\n    <td>g=1</td>\n    <td>g=2</td>\n    <td>g=3</td>\n    <td>g=4</td>\n    <td>g=8</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 1×</td>\n    <td>140</td>\n    <td>33.6</td>\n    <td>32.7</td>\n    <td>32.6</td>\n    <td>32.8</td>\n    <td>32.4</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 0.5×</td>\n    <td>38</td>\n    <td>45.1</td>\n    <td>44.4</td>\n    <td>43.2</td>\n    <td>41.6</td>\n    <td>42.3</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 0.25×</td>\n    <td>13</td>\n    <td>57.1</td>\n    <td>56.8</td>\n    <td>55.0</td>\n    <td>54.2</td>\n    <td>52.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                116,
+                69,
+                478,
+                160
+            ],
+            "caption": "The text in the image reads:\n\n`LeNet with/without channel shuffle (smaller number represents better performance` The text in the image reads:\n\n`LeNet with/without channel shuffle (smaller number represents better performance`",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Cls err.(%，no shuffle)</td>\n    <td>Cls err.(%，shuffle)</td>\n    <td>A err.(%)</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 1x(g=3)</td>\n    <td>34.5</td>\n    <td>32.6</td>\n    <td>1.9</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 1x(g=8)</td>\n    <td>37.6</td>\n    <td>32.4</td>\n    <td>5.2</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 0.5x(g=3)</td>\n    <td>45.7</td>\n    <td>43.2</td>\n    <td>2.5</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 0.5x(g=8)</td>\n    <td>48.1</td>\n    <td>42.3</td>\n    <td>5.8</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 0.25x(g=3)</td>\n    <td>56.3</td>\n    <td>55.0</td>\n    <td>1.3</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 0.25x(g=8)</td>\n    <td>56.5</td>\n    <td>52.7</td>\n    <td>3.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                93,
+                70,
+                501,
+                123
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Complexity(MFLOPs)</td>\n    <td>VGG-like</td>\n    <td>ResNet</td>\n    <td>Xception-like</td>\n    <td>ResNeXt</td>\n    <td>ShuffleNet(ours)</td>\n  </tr>\n  <tr>\n    <td>140</td>\n    <td>50.7</td>\n    <td>37.3</td>\n    <td>33.6</td>\n    <td>33.3</td>\n    <td>32.4(1x，g=8)</td>\n  </tr>\n  <tr>\n    <td>38</td>\n    <td>-</td>\n    <td>48.8</td>\n    <td>45.1</td>\n    <td>46.0</td>\n    <td>41.6(0.5x，g=4)</td>\n  </tr>\n  <tr>\n    <td>13</td>\n    <td>-</td>\n    <td>63.7</td>\n    <td>57.1</td>\n    <td>65.2</td>\n    <td>52.7(0.25x，g=8)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                109,
+                163,
+                485,
+                302
+            ],
+            "caption": "Table 4. Classification error vs. various structures (%), smaller number represents better performance). We do not report VGG-like structure on smaller networks because the accuracy is significantly worse. The text content from the image is:\n\n\"Table 5. ShuffleNet vs. MobileNet [12] on ImageNet Classification\" The text content from the image is:\n\n\"Table 5. ShuffleNet vs. MobileNet [12] on ImageNet Classification\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Complexity(MFLOPs)</td>\n    <td>Cls err.(%)</td>\n    <td>A err.(%)</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224</td>\n    <td>569</td>\n    <td>29.4</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Shuffle Net2×(g=3)</td>\n    <td>524</td>\n    <td>26.3</td>\n    <td>3.1</td>\n  </tr>\n  <tr>\n    <td>Shuffle Net2×(with SE[13]，g=3)</td>\n    <td>527</td>\n    <td>24.7</td>\n    <td>4.7</td>\n  </tr>\n  <tr>\n    <td>0.75 MobileNet-224</td>\n    <td>325</td>\n    <td>31.6</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Shuffle Net1.5×(g=3)</td>\n    <td>292</td>\n    <td>28.5</td>\n    <td>3.1</td>\n  </tr>\n  <tr>\n    <td>0.5 MobileNet-224</td>\n    <td>149</td>\n    <td>36.3</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Shuffle Net1×(g=8)</td>\n    <td>140</td>\n    <td>32.4</td>\n    <td>3.9</td>\n  </tr>\n  <tr>\n    <td>0.25 MobileNet-224</td>\n    <td>41</td>\n    <td>49.4</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Shuffle Net0.5×(g=4)</td>\n    <td>38</td>\n    <td>41.6</td>\n    <td>7.8</td>\n  </tr>\n  <tr>\n    <td>Shuffle Net0.5×(shallow，g=3)</td>\n    <td>40</td>\n    <td>42.8</td>\n    <td>6.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                159,
+                70,
+                435,
+                172
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Cls err.(%)</td>\n    <td>Complexity(MFLOPs)</td>\n  </tr>\n  <tr>\n    <td>VGG-16[30]</td>\n    <td>28.5</td>\n    <td>15300</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 2×(g=3)</td>\n    <td>26.3</td>\n    <td>524</td>\n  </tr>\n  <tr>\n    <td>GoogleNet[33]*</td>\n    <td>31.3</td>\n    <td>1500</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 1×(g=8)</td>\n    <td>32.4</td>\n    <td>140</td>\n  </tr>\n  <tr>\n    <td>AlexNet[21]</td>\n    <td>42.8</td>\n    <td>720</td>\n  </tr>\n  <tr>\n    <td>SqueezeNet[14]</td>\n    <td>42.5</td>\n    <td>833</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet 0.5×(g=4)</td>\n    <td>41.6</td>\n    <td>38</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                105,
+                200,
+                488,
+                266
+            ],
+            "caption": "The text in the image reads:\n\n\"Table 6. Complexity comparison. *Implemented by BVLC (https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>mAP [.5,.95] (300×image)</td>\n    <td>mAP [.5,.95] (600×image)</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet2x(g=3)</td>\n    <td>18.7%</td>\n    <td>25.0%</td>\n  </tr>\n  <tr>\n    <td>ShuffleNet1x(g=3)</td>\n    <td>14.5%</td>\n    <td>19.8%</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224[12]</td>\n    <td>16.4%</td>\n    <td>19.8%</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224(our impl.)</td>\n    <td>14.9%</td>\n    <td>19.3%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                107,
+                317,
+                487,
+                394
+            ],
+            "caption": "Table 7. Object detection results on MS COCO (larger numbers represent better performance). For MobileNets we compare two results: 1) COCO detection scores reported by [12]; 2) finetuning from our reimplemented MobileNets, whose training and finetuning settings are exactly the same as that for ShuffleNets. Table 8. Actual inference time on mobile device (smaller number represents better performance). The platform is based on a single Qualcomm Snapdragon 820 processor. All results are evaluated with single thread. Table 8. Actual inference time on mobile device (smaller number represents better performance). The platform is based on a single Qualcomm Snapdragon 820 processor. All results are evaluated with single thread. Table 8. Actual inference time on mobile device (smaller number represents better performance). The platform is based on a single Qualcomm Snapdragon 820 processor. All results are evaluated with single thread.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Cls err.(%)</td>\n    <td>FLOPs</td>\n    <td>224x224</td>\n    <td>480x640</td>\n    <td>720×1280</td>\n  </tr>\n  <tr>\n    <td>Shuffle Net 0.5×(g=3)</td>\n    <td>43.2</td>\n    <td>38M</td>\n    <td>15.2ms</td>\n    <td>87.4ms</td>\n    <td>260.1ms</td>\n  </tr>\n  <tr>\n    <td>Shuffle Net 1×(g=3)</td>\n    <td>32.6</td>\n    <td>140M</td>\n    <td>37.8ms</td>\n    <td>222.2ms</td>\n    <td>684.5ms</td>\n  </tr>\n  <tr>\n    <td>Shuffle Net 2×(g=3)</td>\n    <td>26.3</td>\n    <td>524M</td>\n    <td>108.8ms</td>\n    <td>617.0ms</td>\n    <td>1857.6ms</td>\n  </tr>\n  <tr>\n    <td>AlexNet[21]</td>\n    <td>42.8</td>\n    <td>720M</td>\n    <td>184.0ms</td>\n    <td>1156.7ms</td>\n    <td>3633.9ms</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224[12]</td>\n    <td>29.4</td>\n    <td>569M</td>\n    <td>110.0ms</td>\n    <td>612.0ms</td>\n    <td>1879.2ms</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page007.png"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "total_count": 6,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                316,
+                69,
+                554,
+                127
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Bottleneck residual block transforming from k to k' channels, with stride s, and expansion factor t.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Input</td>\n    <td>Operator</td>\n    <td>Output</td>\n  </tr>\n  <tr>\n    <td>h×w×k</td>\n    <td>1x1conv2d，ReLU6</td>\n    <td>h×w×(tk)</td>\n  </tr>\n  <tr>\n    <td>h×w×tk</td>\n    <td>3x3dwises=s，ReLU6</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>linear 1x1conv2d</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                76,
+                70,
+                290,
+                227
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Input</td>\n    <td>Operator</td>\n    <td>t</td>\n    <td>c</td>\n    <td>n</td>\n    <td>s</td>\n  </tr>\n  <tr>\n    <td>2242x3</td>\n    <td>conv2d</td>\n    <td>-</td>\n    <td>32</td>\n    <td>1</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>1122x32</td>\n    <td>bottleneck</td>\n    <td>1</td>\n    <td>16</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>1122x16</td>\n    <td>bottleneck</td>\n    <td>6</td>\n    <td>24</td>\n    <td>2</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>562x24</td>\n    <td>bottleneck</td>\n    <td>6</td>\n    <td>32</td>\n    <td>3</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>282x32</td>\n    <td>bottleneck</td>\n    <td>6</td>\n    <td>64</td>\n    <td>4</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>142x64</td>\n    <td>bottleneck</td>\n    <td>6</td>\n    <td>96</td>\n    <td>3</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>142x96</td>\n    <td>bottleneck</td>\n    <td>6</td>\n    <td>160</td>\n    <td>3</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>72x160</td>\n    <td>bottleneck</td>\n    <td>6</td>\n    <td>320</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>72x320</td>\n    <td>conv2d 1x1</td>\n    <td>-</td>\n    <td>1280</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>72x1280</td>\n    <td>avgpool 7x7</td>\n    <td>-</td>\n    <td>-</td>\n    <td>1</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>1x1x1280</td>\n    <td>conv2d 1x1</td>\n    <td>-</td>\n    <td>k</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                93,
+                347,
+                273,
+                441
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Size</td>\n    <td>MobileNetV1</td>\n    <td>MobileNetV2</td>\n    <td>ShuffleNet(2x，g=3)</td>\n  </tr>\n  <tr>\n    <td>112x112</td>\n    <td>64/1600</td>\n    <td>16/400</td>\n    <td>32/800</td>\n  </tr>\n  <tr>\n    <td>56x56</td>\n    <td>128/800</td>\n    <td>32/200</td>\n    <td>48/300</td>\n  </tr>\n  <tr>\n    <td>28x28</td>\n    <td>256/400</td>\n    <td>64/100</td>\n    <td>400/600K</td>\n  </tr>\n  <tr>\n    <td>14x14</td>\n    <td>512/200</td>\n    <td>160/62</td>\n    <td>800/310</td>\n  </tr>\n  <tr>\n    <td>7x7</td>\n    <td>1024/199</td>\n    <td>320/32</td>\n    <td>1600/156</td>\n  </tr>\n  <tr>\n    <td>1x1</td>\n    <td>1024/2</td>\n    <td>1280/2</td>\n    <td>1600/3</td>\n  </tr>\n  <tr>\n    <td>max</td>\n    <td>1600K</td>\n    <td>400K</td>\n    <td>600K</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                361,
+                71,
+                494,
+                119
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Params</td>\n    <td>MAAdd s</td>\n  </tr>\n  <tr>\n    <td>SSD[34]</td>\n    <td>14.8M</td>\n    <td>1.25B</td>\n  </tr>\n  <tr>\n    <td>SSDLite</td>\n    <td>2.1M</td>\n    <td>0.35B</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                322,
+                181,
+                534,
+                256
+            ],
+            "caption": "Table 5: Comparison of the size and the computational cost between SSD and SSDLite configured with MobileNetV2 and making predictions for 80 classes.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>mAP</td>\n    <td>Params</td>\n    <td>MAdd</td>\n    <td>CPU</td>\n  </tr>\n  <tr>\n    <td>SSD300[34]</td>\n    <td>23.2</td>\n    <td>36.1M</td>\n    <td>35.2B</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>SSD512[34]</td>\n    <td>26.8</td>\n    <td>36.1M</td>\n    <td>99.5B</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv2[35]</td>\n    <td>21.6</td>\n    <td>50.7M</td>\n    <td>17.5B</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>MNetV1+SSDLite</td>\n    <td>22.2</td>\n    <td>5.1M</td>\n    <td>1.3B</td>\n    <td>270ms</td>\n  </tr>\n  <tr>\n    <td>MNetV2+SSDLite</td>\n    <td>22.1</td>\n    <td>4.3M</td>\n    <td>0.8B</td>\n    <td>200ms</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                317,
+                70,
+                541,
+                181
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>OS</td>\n    <td>ASPP</td>\n    <td>MF</td>\n    <td>mIOU</td>\n    <td>Params</td>\n    <td>MAdds</td>\n  </tr>\n  <tr>\n    <td>MNet V1</td>\n    <td>16</td>\n    <td></td>\n    <td></td>\n    <td>75.29</td>\n    <td>11.15M</td>\n    <td>14.25B</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td></td>\n    <td></td>\n    <td>78.56</td>\n    <td>11.15M</td>\n    <td>941.9B</td>\n  </tr>\n  <tr>\n    <td>MNet V2*</td>\n    <td>16</td>\n    <td></td>\n    <td></td>\n    <td>75.70</td>\n    <td>4.52M</td>\n    <td>5.8B</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td></td>\n    <td></td>\n    <td>78.42</td>\n    <td>4.52M</td>\n    <td>387B</td>\n  </tr>\n  <tr>\n    <td>MNet V2*</td>\n    <td>16</td>\n    <td></td>\n    <td></td>\n    <td>75.32</td>\n    <td>2.11M</td>\n    <td>2.75B</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td></td>\n    <td></td>\n    <td>77.33</td>\n    <td>2.11M</td>\n    <td>152.6B</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>16</td>\n    <td></td>\n    <td></td>\n    <td>80.49</td>\n    <td>58.16M</td>\n    <td>81.0B</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td></td>\n    <td></td>\n    <td>82.70</td>\n    <td>58.16M</td>\n    <td>4870.6B</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page008.png"
+        }
+    ]
+}

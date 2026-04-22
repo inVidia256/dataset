@@ -1,0 +1,2437 @@
+{
+    "total_count": 221,
+    "content_type": "text",
+    "data": [
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                566,
+                505,
+                643
+            ],
+            "content": "Meanwhile, Generative Adversarial Networks (GANs) (Goodfellow et al., 2014) have emerged as a powerful framework for learning generative models of arbitrarily complex data distributions. The GAN framework learns a generator mapping samples from an arbitrary latent distribution to data, as well as an adversarial discriminator which tries to distinguish between real and generated samples as accurately as possible. The generator’s goal is to “fool” the discriminator by producing samples which are as close to real data as possible. When trained on databases of natural images, GANs produce impressive results (Radford et al., 2016; Denton et al., 2015)."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                461,
+                506,
+                560
+            ],
+            "content": "Deep convolutional networks (convnets) have become a staple of the modern computer vision pipeline. After training these models on a massive database of image-label pairs like ImageNet (Russakovsky et al., 2015), the network easily adapts to a variety of similar visual tasks, achieving impressive results on image classification (Donahue et al., 2014; Zeiler & Fergus, 2014; Razavian et al., 2014) or localization (Girshick et al., 2014; Long et al., 2015) tasks. In other perceptual domains such as natural language processing or speech recognition, deep networks have proven highly effective as well (Bahdanau et al., 2015; Sutskever et al., 2014; Vinyals et al., 2015; Graves et al., 2013). However, all of these recent results rely on a supervisory signal from large-scale databases of hand-labeled data, ignoring much of the useful information present in the structure of the data itself."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                143,
+                273,
+                469,
+                417
+            ],
+            "content": "The ability of the Generative Adversarial Networks (GANs) framework to learn generative models mapping from simple latent distributions to arbitrarily complex data distributions has been demonstrated empirically, with compelling results showing that the latent space of such generators captures semantic variation in the data distribution. Intuitively, models trained to predict these semantic latent representations given data may serve as useful feature representations for auxiliary problems where semantics are relevant. However, in their existing form, GANs have no means of learning the inverse mapping – projecting data back into the latent space. We propose Bidirectional Generative Adversarial Networks (BiGANS) as a means of learning this inverse mapping, and demonstrate that the resulting learned feature representation is useful for auxiliary supervised discrimination tasks, competitive with contemporary approaches to unsupervised and self-supervised feature learning."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                649,
+                505,
+                693
+            ],
+            "content": "Interpolations in the latent space of the generator produce smooth and plausible semantic variations, and certain directions in this space correspond to particular semantic attributes along which the data distribution varies. For example, Radford et al. (2016) showed that a GAN trained on a database of human faces learns to associate particular latent directions with gender and the presence of eyeglasses."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                699,
+                505,
+                732
+            ],
+            "content": "A natural question arises from this ostensible \"semantic juice\" flowing through the weights of generators learned using the GAN framework: can GANs be used for unsupervised learning of rich feature representations for arbitrary data distributions? An obvious issue with doing so is that the"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                127,
+                257,
+                159
+            ],
+            "content": "The text content from the image is:\n\njdonahue@cs.berkeley.edu\nComputer Science Division\nUniversity of California, Berkeley"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                79,
+                372,
+                96
+            ],
+            "content": "The text content from the image is \"ADVERSARIAL FEATURE LEARNING\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                189,
+                257,
+                220
+            ],
+            "content": "trevor@eecs.berkeley.edu\nComputer Science Division\nUniversity of California, Berkeley"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                437,
+                207,
+                449
+            ],
+            "content": "The text content from the image is \"1 INTRODUCTION\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                115,
+                171,
+                126
+            ],
+            "content": "The text content from the image is \"Jeff Donahue\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                277,
+                249,
+                334,
+                261
+            ],
+            "content": "The text content from the image is \"ABSTRACT\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                176,
+                177,
+                187
+            ],
+            "content": "The text content from the image is \"Trevor Darrell\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                363,
+                128,
+                498,
+                159
+            ],
+            "content": "philkr@utexas.edu\nDepartment of Computer Science\nUniversity of Texas, Austin"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                363,
+                115,
+                450,
+                127
+            ],
+            "content": "The text content from the image is \"Philipp Krähenbühl\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                362,
+                115,
+                498,
+                159
+            ],
+            "content": "The text content from the image is:\n\nPhilipp Krähenbühl\nphilkr@utexas.edu\nDepartment of Computer Science\nUniversity of Texas, Austin"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                437,
+                505,
+                504
+            ],
+            "content": "Because the BiGAN encoder learns to predict features z given data x, and prior work on GANs has demonstrated that these features capture semantic attributes of the data, we hypothesize that a trained BiGAN encoder may serve as a useful feature representation for related semantic tasks, in the same way that fully supervised visual models trained to predict semantic \"labels\" given images serve as powerful feature representations for related visual tasks. In this context, a latent representation z may be thought of as a \"label\" for x, but one which came for \"free,\" without the need for supervision."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                305,
+                505,
+                371
+            ],
+            "content": "Hence, we propose a novel unsupervised feature learning framework, Bidirectional Generative Adversarial Networks (BiGAN). The overall model is depicted in Figure 1. In short, in addition to the generator G from the standard GAN framework (Goodfellow et al., 2014), BiGAN includes an encoder E which maps data x to latent representations z. The BiGAN discriminator D discriminates not only in data space (x versus G(z)), but jointly in data and latent space (tuples (x, E(x)) versus (G(z), z)), where the latent component is either an encoder output E(x) or a generator input z."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                559,
+                505,
+                615
+            ],
+            "content": "The text content from the image is as follows:\n\n\"BiGANS are a robust and highly generic approach to unsupervised feature learning, making no assumptions about the structure or type of data to which they are applied, as our theoretical results will demonstrate. Our empirical studies will show that despite their generality, BiGANS are competitive with contemporary approaches to self-supervised and weakly supervised feature learning designed specifically for a notoriously complex data distribution – natural images.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                687,
+                505,
+                732
+            ],
+            "content": "The text content from the image is:\n\n\"Let \\( p_X(x) \\) be the distribution of our data for \\( x \\in \\Omega_X \\) (e.g., natural images). The goal of generative modeling is to capture this data distribution using a probabilistic model. Unfortunately, exact modeling of this probability density function is computationally intractable (Hinton et al., 2006; Salakhutdinov & Hinton, 2009) for all but the most trivial models. Generative Adversarial Networks (GANs) (Good-)\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                376,
+                505,
+                432
+            ],
+            "content": "It may not be obvious from this description that the BiGAN encoder \\( E \\) should learn to invert the generator \\( G \\). The two modules cannot directly \"communicate\" with one another: the encoder never \"sees\" generator outputs (\\( E(G(\\mathbf{z})) \\) is not computed), and vice versa. Yet, in Section 3, we will both argue intuitively and formally prove that the encoder and generator must learn to invert one another in order to fool the BiGAN discriminator."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                509,
+                505,
+                554
+            ],
+            "content": "An alternative approach to learning the inverse mapping from data to latent representation is to directly model p(z|G(z)), predicting generator input z given generated data G(z). We’ll refer to this alternative as a latent regressor, later arguing (Section 4.1) that the BiGAN encoder may be preferable in a feature learning context, as well as comparing the approaches empirically."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                277,
+                505,
+                299
+            ],
+            "content": "The text content from the image is:\n\n\"generator maps latent samples to generated data, but the framework does not include an inverse mapping from data to latent representation.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                620,
+                505,
+                642
+            ],
+            "content": "Dumoulin et al. (2016) independently proposed an identical model in their concurrent work, exploring the case of a stochastic encoder \\( E \\) and the ability of such models to learn in a semi-supervised setting."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                136,
+                241,
+                474,
+                253
+            ],
+            "content": "Figure 1: The structure of Bidirectional Generative Adversarial Networks (BiGAN)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                661,
+                208,
+                673
+            ],
+            "content": "The text content from the image is \"2 PRELIMINARIES\"."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                661,
+                208,
+                673
+            ],
+            "content": "The text content from the image is \"2 PRELIMINARIES\"."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                253,
+                505,
+                343
+            ],
+            "content": "The adversarial objective 1 does not directly lend itself to an efficient optimization, as each step in the generator \\( G \\) requires a full discriminator \\( D \\) to be learned. Furthermore, a perfect discriminator no longer provides any gradient information to the generator, as the gradient of any global or local maximum of \\( V(D, G) \\) is 0. To provide a strong gradient signal nonetheless, Goodfellow et al. (2014) slightly alter the objective between generator and discriminator updates, while keeping the same fixed point characteristics. They also propose to optimize (1) using an alternating optimization switching between updates to the generator and discriminator. While this optimization is not guaranteed to converge, empirically it works well if the discriminator and generator are well balanced."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                347,
+                505,
+                414
+            ],
+            "content": "Despite the empirical strength of GANs as generative models of arbitrary data distributions, it is not clear how they can be applied as an unsupervised feature representation. One possibility for learning such representations is to learn an inverse mapping regressing from generated data \\(G(\\mathbf{z})\\) back to the latent input \\(\\mathbf{z}\\). However, unless the generator perfectly models the data distribution \\(p_{\\mathbf{X}}\\), a nearly impossible objective for a complex data distribution such as that of high-resolution natural images, this idea may prove insufficient."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                453,
+                505,
+                522
+            ],
+            "content": "In Bidirectional Generative Adversarial Networks (BiGANs) we not only train a generator, but additionally train an encoder \\( E : \\Omega_{\\mathbf{X}} \\rightarrow \\Omega_{\\mathbf{Z}} \\). The encoder induces a distribution \\( p_E(\\mathbf{z}|\\mathbf{x}) = \\delta(\\mathbf{z} - E(\\mathbf{x})) \\) mapping data points \\(\\mathbf{x}\\) into the latent feature space of the generative model. The discriminator is also modified to take input from the latent space, predicting \\( P_D(Y|\\mathbf{x}, \\mathbf{z}) \\), where \\( Y = 1 \\) if \\(\\mathbf{x}\\) is real (sampled from the real data distribution \\( p_{\\mathbf{X}} \\)), and \\( Y = 0 \\) if \\(\\mathbf{x}\\) is generated (the output of \\( G(\\mathbf{z}), \\mathbf{z} \\sim p_{\\mathbf{Z}} \\))."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                505,
+                128
+            ],
+            "content": "The text content from the image is as follows:\n\n\"fellow et al., 2014) instead model the data distribution as a transformation of a fixed latent distribution \\( p_{\\mathbf{Z}}(\\mathbf{z}) \\) for \\( \\mathbf{z} \\in \\Omega_{\\mathbf{Z}} \\). This transformation, called a generator, is expressed as a deterministic feed forward network \\( G: \\Omega_{\\mathbf{Z}} \\to \\Omega_{\\mathbf{X}} \\) with \\( p_{G}(\\mathbf{x}|\\mathbf{z}) = \\delta(\\mathbf{x} - G(\\mathbf{z})) \\) and \\( p_{G}(\\mathbf{x}) = \\mathbb{E}_{\\mathbf{z} \\sim p_{\\mathbf{Z}}} [p_{G}(\\mathbf{x}|\\mathbf{z})] \\). The goal is to train a generator such that \\( p_{G}(\\mathbf{x}) \\approx p_{\\mathbf{X}}(\\mathbf{x}) \\).\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                653,
+                505,
+                698
+            ],
+            "content": "The text content from the image is as follows:\n\n\"BiGANs share many of the theoretical properties of GANs (Goodfellow et al., 2014), while additionally guaranteeing that at the global optimum, G and E are each other's inverse. BiGANs are also closely related to autoencoders with an \\( \\ell_0 \\) loss function. In the following sections we highlight some of the appealing theoretical properties of BiGANs.\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                215,
+                505,
+                249
+            ],
+            "content": "The text content from the image is:\n\n\"Goodfellow et al. (2014) showed that for an ideal discriminator the objective \\( C(G) := \\max_D V(D, G) \\) is equivalent to the Jensen-Shannon divergence between the two distributions \\( p_G \\) and \\( p_X \\).\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                131,
+                505,
+                169
+            ],
+            "content": "The GAN framework trains a generator, such that no discriminative model \\( D : \\Omega_X \\mapsto [0,1] \\) can distinguish samples of the data distribution from samples of the generative distribution. Both generator and discriminator are learned using the adversarial (minimax) objective min max \\( V(D,G) \\), where"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                625,
+                505,
+                648
+            ],
+            "content": "We optimize this minimax objective using the same alternating gradient based optimization as Goodfellow et al. (2014). See Section 3.4 for details."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                709,
+                505,
+                732
+            ],
+            "content": "The text content from the image is:\n\n\"Definitions Let p_GZ(x, z) := p_G(x|z)p_Z(z) and p_EX(x, z) := p_E(z|x)p_X(x) be the joint distributions modeled by the generator and encoder respectively. Ω := Ω_X × Ω_Z is the joint latent and\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                525,
+                365,
+                537
+            ],
+            "content": "The BiGAN training objective is defined as a minimax objective"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                565,
+                133,
+                575
+            ],
+            "content": "where"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                123,
+                429,
+                419,
+                442
+            ],
+            "content": "The text content from the image is:\n\n\"BIDIRECTIONAL GENERATIVE ADVERSARIAL NETWORKS\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                620,
+                506,
+                676
+            ],
+            "content": "The optimal discriminator, encoder, and generator of BiGAN are similar to the optimal discriminator and generator of the GAN framework (Goodfellow et al., 2014). However, an important difference is that BiGAN optimizes a Jensen-Shannon divergence between a joint distribution over both data X and latent features Z. This joint divergence allows us to further characterize properties of G and E, as shown below."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                254,
+                506,
+                303
+            ],
+            "content": "The text content from the image is as follows:\n\n\"where \\( f_{PQ} := \\frac{\\mathrm{d}P}{\\mathrm{d}Q} \\) is the Radon-Nikodym (RN) derivative of measure \\( P \\) with respect to measure \\( Q \\), with the defining property that \\( P(R) = \\int_R f_{PQ} \\, \\mathrm{d}Q \\). The RN derivative \\( f_{PQ}: \\Omega \\mapsto \\mathbb{R}_{\\geq 0} \\) is defined for any measures \\( P \\) and \\( Q \\) on space \\( \\Omega \\) such that \\( P \\) is absolutely continuous with respect to \\( Q \\): i.e., for any \\( R \\subseteq \\Omega \\), \\( P(R) > 0 \\implies Q(R) > 0 \\).\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                555,
+                506,
+                617
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Proof. From Proposition 2, we have that \\( C(E,G) = 2 \\text{D}_{\\text{JS}}(P_{EX} || P_{GZ}) - \\log 4 \\). The Jensen-Shannon divergence \\( \\text{D}_{\\text{JS}}(P || Q) \\geq 0 \\) for any \\( P \\) and \\( Q \\), and \\( \\text{D}_{\\text{JS}}(P || Q) = 0 \\) if and only if \\( P = Q \\). Therefore, the global minimum of \\( C(E,G) \\) occurs if and only if \\( P_{EX} = P_{GZ} \\), and at this point the value is \\( C(E,G) = -\\log 4 \\). Finally, \\( P_{EX} = P_{GZ} \\) implies that the optimal discriminator is chance: \\( D_{EG}^* = \\frac{\\text{d}P_{EX}}{\\text{d}(P_{EX} + P_{GZ})} = \\frac{\\text{d}P_{EX}}{2 \\text{d}P_{EX}} = \\frac{1}{2} \\). □\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                335,
+                505,
+                369
+            ],
+            "content": "We start by characterizing the optimal discriminator for any generator and encoder, following Goodfellow et al. (2014). This optimal discriminator then allows us to reformulate objective (3), and show that it reduces to the Jensen-Shannon divergence between the joint distributions \\( P_{E\\mathbf{X}} \\) and \\( P_{G\\mathbf{Z}} \\)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                461,
+                505,
+                496
+            ],
+            "content": "The text content from the image is:\n\n\"Proposition 2 The encoder and generator's objective for an optimal discriminator \\( C(E, G) := \\max_D V(D, E, G) = V(D_{EG}^*, E, G) \\) can be rewritten in terms of the Jensen-Shannon divergence between measures \\( P_{EX} \\) and \\( P_{GZ} \\) as \\( C(E, G) = 2D_{JS}(P_{EX} || P_{GZ}) - \\log 4 \\).\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                377,
+                505,
+                415
+            ],
+            "content": "The image contains a proposition that states:\n\n**Proposition 1** For any \\( E \\) and \\( G \\), the optimal discriminator \\( D_{EG}^* := \\arg\\max_D V(D, E, G) \\) is the Radon-Nikodym derivative \\( f_{EG} := \\frac{\\mathrm{d}P_{E\\mathbf{X}}}{\\mathrm{d}(P_{E\\mathbf{X}} + P_{G\\mathbf{Z}})} : \\Omega \\mapsto [0,1] \\) of measure \\( P_{E\\mathbf{X}} \\) with respect to measure \\( P_{E\\mathbf{X}} + P_{G\\mathbf{Z}} \\)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                709,
+                505,
+                732
+            ],
+            "content": "We first present an intuitive argument that, in order to \"fool\" a perfect discriminator, a deterministic BiGAN encoder and generator must invert each other. (Later we will formally state and prove this"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                524,
+                505,
+                549
+            ],
+            "content": "Theorem 1 The global minimum of \\( C(E, G) \\) is achieved if and only if \\( P_{EX} = P_{GZ} \\). At that point, \\( C(E, G) = -\\log 4 \\) and \\( D_{EG}^* = \\frac{1}{2} \\)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                132,
+                336,
+                143
+            ],
+            "content": "The text in the image reads:\n\n\"are probability measures over that region. We also define\"\n\nThis appears to be an incomplete sentence, likely part of a larger discussion or explanation about probability measures and regions."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                237,
+                94
+            ],
+            "content": "data space. For a region \\( R \\subseteq \\Omega \\),"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                440,
+                475,
+                452
+            ],
+            "content": "This optimal discriminator now allows us to characterize the optimal generator and encoder."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                423,
+                231,
+                435
+            ],
+            "content": "Proof. Given in Appendix A.1."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                503,
+                231,
+                515
+            ],
+            "content": "Proof. Given in Appendix A.2."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                164,
+                505,
+                210
+            ],
+            "content": "The text content from the image is as follows:\n\n\"as measures over regions \\( R_X \\subseteq \\Omega_X \\) and \\( R_Z \\subseteq \\Omega_Z \\). We refer to the set of features and data samples in the support of \\( P_X \\) and \\( P_Z \\) as \\( \\hat{\\Omega}_X := \\text{supp}(P_X) \\) and \\( \\hat{\\Omega}_Z := \\text{supp}(P_Z) \\) respectively. D_{KL} (P || Q) and D_{JS} (P || Q) respectively denote the Kullback-Leibler (KL) and Jensen-Shannon divergences between probability measures \\( P \\) and \\( Q \\). By definition,\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                689,
+                345,
+                700
+            ],
+            "content": "The text content from the image is:\n\n\"3.2 OPTIMAL GENERATOR & ENCODER ARE INVERSES\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                315,
+                358,
+                326
+            ],
+            "content": "The text content from the image is:\n\n\"3.1 OPTIMAL DISCRIMINATOR, GENERATOR, & ENCODER\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                164,
+                505,
+                211
+            ],
+            "content": "The text content from the image is as follows:\n\n\"as measures over regions \\( R_X \\subseteq \\Omega_X \\) and \\( R_Z \\subseteq \\Omega_Z \\). We refer to the set of features and data samples in the support of \\( P_X \\) and \\( P_Z \\) as \\( \\hat{\\Omega}_X := \\text{supp}(P_X) \\) and \\( \\hat{\\Omega}_Z := \\text{supp}(P_Z) \\) respectively. D_{KL} (P || Q) and D_{JS} (P || Q) respectively denote the Kullback-Leibler (KL) and Jensen-Shannon divergences between probability measures \\( P \\) and \\( Q \\). By definition,\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                315,
+                358,
+                326
+            ],
+            "content": "3.1 OPTIMAL DISCRIMINATOR, GENERATOR, & ENCODER"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                309,
+                505,
+                365
+            ],
+            "content": "While Theorem 2 characterizes the encoder and decoder at their optimum, due to the non-convex nature of the optimization, this optimum might never be reached. Experimentally, Section 4 shows that on standard datasets, the two are approximate inverses; however, they are rarely exact inverses. It is thus also interesting to show what objective BiGAN optimizes in terms of \\( E \\) and \\( G \\). Next we show that BiGANs are closely related to autoencoders with an \\( \\ell_0 \\) loss function."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                565,
+                505,
+                632
+            ],
+            "content": "Here the indicator function \\( \\mathbf{1}_{[G(E(\\mathbf{x})) = \\mathbf{x}]} \\) in the first term is equivalent to an autoencoder with \\( \\ell_0 \\) loss, while the indicator \\( \\mathbf{1}_{[E(G(\\mathbf{z})) = \\mathbf{z}]} \\) in the second term shows that the BiGAN encoder must invert the generator, the desired property for feature learning. The objective further encourages the functions \\( E(\\mathbf{x}) \\) and \\( G(\\mathbf{z}) \\) to produce valid outputs in the support of \\( P_{\\mathbf{Z}} \\) and \\( P_{\\mathbf{X}} \\) respectively. Unlike regular autoencoders, the \\( \\ell_0 \\) loss function does not make any assumptions about the structure or distribution of the data itself; in fact, all the structural properties of BiGAN are learned as part of the discriminator."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                167,
+                505,
+                213
+            ],
+            "content": "Therefore, in order to fool a perfect discriminator at (x, z) (so that 0 < D^*_{EG}(x, z) < 1), E and G must satisfy both (a) and (b). In this case, we can substitute the equality E(x) = z required by (a) into the equality G(z) = x required by (b), and vice versa, giving the inversion properties x = G(E(x)) and z = E(G(z))."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                398,
+                505,
+                443
+            ],
+            "content": "As argued in Section 1, a model trained to predict features z given data x should learn useful semantic representations. Here we show that the BiGAN objective forces the encoder E to do exactly this: in order to fool the discriminator at a particular z, the encoder must invert the generator at that z, such that E(G(z)) = z."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                665,
+                506,
+                733
+            ],
+            "content": "In practice, as in the GAN framework (Goodfellow et al., 2014), each BiGAN module \\( D \\), \\( G \\), and \\( E \\) is a parametric function (with parameters \\( \\theta_D \\), \\( \\theta_G \\), and \\( \\theta_E \\), respectively). As a whole, BiGAN can be optimized using alternating stochastic gradient steps. In one iteration, the discriminator parameters \\( \\theta_D \\) are updated by taking one or more steps in the positive gradient direction \\( \\nabla_{\\theta_D} V(D, E, G) \\), then the encoder parameters \\( \\theta_E \\) and generator parameters \\( \\theta_G \\) are together updated by taking a step in the negative gradient direction \\( -\\nabla_{\\theta_E, \\theta_G} V(D, E, G) \\). In both cases, the expectation terms of"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                128,
+                505,
+                163
+            ],
+            "content": "If only one of these properties is satisfied, a perfect discriminator can infer the source of (x,z) with certainty: if only (a) is satisfied, (x,z) must be an encoder pair (x,E(x)) and D^*_{EG}(x,z)=1; if only (b) is satisfied, (x,z) must be a generator pair (G(z),z) and D^*_{EG}(x,z)=0."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                506,
+                106
+            ],
+            "content": "The text content from the image is:\n\n\"(property.) Consider a BiGAN discriminator input pair (x, z). Due to the sampling procedure, (x, z) must satisfy at least one of the following two properties:\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                249,
+                505,
+                274
+            ],
+            "content": "Theorem 2 If E and G are an optimal encoder and generator, then E = G⁻¹ almost everywhere; that is, G(E(x)) = x for P_X-almost every x ∈ Ω_X, and E(G(z)) = z for P_Z-almost every z ∈ Ω_Z."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                452,
+                504,
+                475
+            ],
+            "content": "Theorem 3 The encoder and generator objective given an optimal discriminator \\( C(E, G) := \\max_D V(D, E, G) \\) can be rewritten as an \\( \\ell_0 \\) autoencoder loss function"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                217,
+                505,
+                242
+            ],
+            "content": "Formally, we show in Theorem 2 that the optimal generator and encoder invert one another almost everywhere on the support \\(\\hat{\\Omega}_{\\mathbf{X}}\\) and \\(\\hat{\\Omega}_{\\mathbf{Z}}\\) of \\(P_{\\mathbf{X}}\\) and \\(P_{\\mathbf{Z}}\\)."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                645,
+                178,
+                656
+            ],
+            "content": "The text content from the image is \"3.4 LEARNING\"."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                378,
+                281,
+                389
+            ],
+            "content": "The text content from the image is:\n\n\"3.3 RELATIONSHIP TO AUTOENCODERS\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                548,
+                231,
+                560
+            ],
+            "content": "Proof. Given in Appendix A.5."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                202,
+                527,
+                498,
+                540
+            ],
+            "content": "The text content from the image is:\n\n\"and log (1 - f_{EG}) ∈ (-∞, 0) P_EX-almost and P_GZ-almost everywhere\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                293,
+                231,
+                304
+            ],
+            "content": "Proof. Given in Appendix A.4."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                293,
+                231,
+                304
+            ],
+            "content": "Proof. Given in Appendix A.4."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                200,
+                505,
+                267
+            ],
+            "content": "It is often useful to parametrize the output of the generator G and encoder E in a different, usually smaller, space Ω′_X and Ω′_Z rather than the original Ω_X and Ω_Z. For example, for visual feature learning, the images input to the encoder should be of similar resolution to images used in the evaluation. On the other hand, generating high resolution images remains difficult for current generative models. In this situation, the encoder may take higher resolution input while the generator output and discriminator input remain low resolution."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                388,
+                505,
+                472
+            ],
+            "content": "In this case, the encoder and generator respectively induce probability measures \\( P_{E\\mathbf{X}'} \\) and \\( P_{G\\mathbf{Z}'} \\) over regions \\( R \\subseteq \\Omega' \\) of the joint space \\( \\Omega' := \\Omega'_\\mathbf{X} \\times \\Omega'_\\mathbf{Z} \\), with \\( P_{E\\mathbf{X}'}(R) := \\int_{\\Omega_\\mathbf{X}} \\int_{\\Omega'_\\mathbf{X}} \\int_{\\Omega'_\\mathbf{Z}} p_{E\\mathbf{X}}(\\mathbf{x}, \\mathbf{z}') 1_{[(\\mathbf{x}', \\mathbf{z}') \\in R]} \\delta(g_\\mathbf{X}(\\mathbf{x}) - \\mathbf{x}') \\mathrm{d}\\mathbf{z}' \\, \\mathrm{d}\\mathbf{x}' \\, \\mathrm{d}\\mathbf{x} = \\int_{\\Omega_\\mathbf{X}} p_\\mathbf{X}(\\mathbf{x}) 1_{[(g_\\mathbf{X}(\\mathbf{x}), E(\\mathbf{x})) \\in R]} \\, \\mathrm{d}\\mathbf{x} \\), and \\( P_{G\\mathbf{Z}'} \\) defined analogously. For optimal \\( E \\) and \\( G \\), we can show \\( P_{E\\mathbf{X}'} = P_{G\\mathbf{Z}'} \\): a generalization of Theorem 1. When \\( E \\) and \\( G \\) are deterministic and optimal, Theorem 2 – that \\( E \\) and \\( G \\) invert one another – can also be generalized: \\( \\exists_{\\mathbf{z} \\in \\hat{\\Omega}_\\mathbf{Z}} \\{E(\\mathbf{x}) = g_\\mathbf{Z}(\\mathbf{z}) \\land G(\\mathbf{z}) = g_\\mathbf{X}(\\mathbf{x})\\} \\) for \\( P_\\mathbf{X} \\)-almost every \\( \\mathbf{x} \\in \\Omega_\\mathbf{X} \\), and \\( \\exists_{\\mathbf{x} \\in \\hat{\\Omega}_\\mathbf{X}} \\{E(\\mathbf{x}) = g_\\mathbf{Z}(\\mathbf{z}) \\land G(\\mathbf{z}) = g_\\mathbf{X}(\\mathbf{x})\\} \\) for \\( P_\\mathbf{Z} \\)-almost every \\( \\mathbf{z} \\in \\Omega_\\mathbf{Z} \\)."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                110,
+                506,
+                165
+            ],
+            "content": "Goodfellow et al. (2014) found that an objective in which the real and generated labels Y are swapped provides stronger gradient signal to G. We similarly observed in BiGAN training that an “inverse” objective provides stronger gradient signal to G and E. For efficiency, we also update all modules D, G, and E simultaneously at each iteration, rather than alternating between D updates and G, E updates. See Appendix B for details."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                511,
+                505,
+                590
+            ],
+            "content": "We evaluate the feature learning capabilities of BiGANs by first training them unsupervised as described in Section 3.4, then transferring the encoder’s learned feature representations for use in auxiliary supervised learning tasks. To demonstrate that BiGANs are able to learn meaningful feature representations both on arbitrary data vectors, where the model is agnostic to any underlying structure, as well as very high-dimensional and complex distributions, we evaluate on both permutation-invariant MNIST (LeCun et al., 1998) and on the high-resolution natural images of ImageNet (Russakovsky et al., 2015)."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                595,
+                505,
+                640
+            ],
+            "content": "In all experiments, each module \\( D \\), \\( G \\), and \\( E \\) is a parametric deep (multi-layer) network. The BiGAN discriminator \\( D(\\mathbf{x}, \\mathbf{z}) \\) takes data \\( \\mathbf{x} \\) as its initial input, and at each linear layer thereafter, the latent representation \\( \\mathbf{z} \\) is transformed using a learned linear transformation to the hidden layer dimension and added to the non-linearity input."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                338,
+                505,
+                383
+            ],
+            "content": "An identity \\( g_{\\mathbf{X}}(\\mathbf{x}) = \\mathbf{x} \\) and \\( g_{\\mathbf{Z}}(\\mathbf{z}) = \\mathbf{z} \\) (and \\( \\Omega'_{\\mathbf{X}} = \\Omega_{\\mathbf{X}} \\), \\( \\Omega'_{\\mathbf{Z}} = \\Omega_{\\mathbf{Z}} \\)) yields the original objective. For visual feature learning with higher resolution encoder inputs, \\( g_{\\mathbf{X}} \\) is an image resizing function that downsamples a high resolution image \\( \\mathbf{x} \\in \\Omega_{\\mathbf{X}} \\) to a lower resolution image \\( \\mathbf{x}' \\in \\Omega'_{\\mathbf{X}} \\), as output by the generator. (\\( g_{\\mathbf{Z}} \\) is identity.)"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                504,
+                105
+            ],
+            "content": "The text in the image reads:\n\n\"V(D, E, G) are estimated using mini-batches of n samples {x(i) ~ px}i=1^n and {z(i) ~ pz}i=1^n drawn independently for each update step.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                709,
+                505,
+                732
+            ],
+            "content": "The discriminator \\( D \\) in a standard GAN takes data samples \\( \\mathbf{x} \\sim p_{\\mathbf{X}} \\) as input, making its learned intermediate representations natural candidates as feature representations for related tasks."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                272,
+                505,
+                296
+            ],
+            "content": "We generalize the BiGAN objective \\( V(D, G, E) \\) (3) with functions \\( g_{\\mathbf{X}} : \\Omega_{\\mathbf{X}} \\mapsto \\Omega_{\\mathbf{X}}' \\) and \\( g_{\\mathbf{Z}} : \\Omega_{\\mathbf{Z}} \\mapsto \\Omega_{\\mathbf{Z}}' \\), and encoder \\( E : \\Omega_{\\mathbf{X}} \\mapsto \\Omega_{\\mathbf{Z}}' \\), generator \\( G : \\Omega_{\\mathbf{Z}} \\mapsto \\Omega_{\\mathbf{X}}' \\), and discriminator \\( D : \\Omega_{\\mathbf{X}}' \\times \\Omega_{\\mathbf{Z}}' \\mapsto [0, 1] \\):"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                674,
+                505,
+                696
+            ],
+            "content": "Besides the BiGAN framework presented above, we considered alternative approaches to learning feature representations using different GAN variants."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                180,
+                230,
+                191
+            ],
+            "content": "3.5 GENERALIZED BIGAN"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                487,
+                194,
+                499
+            ],
+            "content": "The text content from the image is \"4 EVALUATION\"."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                653,
+                220,
+                664
+            ],
+            "content": "The text content from the image is \"4.1 BASELINE METHODS\"."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                365,
+                506,
+                475
+            ],
+            "content": "Latent regressor We consider an alternative encoder training by minimizing a reconstruction loss L(z, E(G(z))), after or jointly during a regular GAN training, called latent regressor or joint latent regressor respectively. We use a sigmoid cross entropy loss L as it naturally maps to a uniformly distributed output space. Intuitively, a drawback of this approach is that, unlike the encoder in a BiGAN, the latent regressor encoder E is trained only on generated samples G(z), and never “sees” real data x ∼ pX. While this may not be an issue in the theoretical optimum where pG(x) = pX(x) exactly – i.e., G perfectly generates the data distribution pX – in practice, for highly complex data distributions pX, such as the distribution of natural images, the generator will almost never achieve this perfect result. The fact that the real data x are never input to this type of encoder limits its utility as a feature representation for related tasks, as shown later in this section."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                585,
+                505,
+                673
+            ],
+            "content": "Table 1 compares the encoding learned by a BiGAN-trained encoder \\( E \\) with the baselines described in Section 4.1, as well as autoencoders (Hinton & Salakhutdinov, 2006) trained directly to minimize either \\( \\ell_2 \\) or \\( \\ell_1 \\) reconstruction error. The same architecture and optimization algorithm is used across all methods. All methods, including BiGAN, perform at roughly the same level. This result is not overly surprising given the relative simplicity of MNIST digits. For example, digits generated by \\( G \\) in a GAN nearly perfectly match the data distribution (qualitatively), making the latent regressor (LR) baseline method a reasonable choice, as argued in Section 4.1. Qualitative results are presented in Figure 2."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                285,
+                505,
+                352
+            ],
+            "content": "This alternative is appealing as it requires no additional machinery, and is the approach used for unsupervised feature learning in Radford et al. (2016). On the other hand, it is not clear that the task of distinguishing between real and generated data requires or benefits from intermediate representations that are useful as semantic feature representations. In fact, if G successfully generates the true data distribution p_X(x), D may ignore the input data entirely and predict P(Y = 1) = P(Y = 1|x) = 1/2 unconditionally, not learning any meaningful intermediate representations."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                511,
+                506,
+                580
+            ],
+            "content": "We first present results on permutation-invariant MNIST (LeCun et al., 1998). In the permutation-invariant setting, each 28×28 digit image must be treated as an unstructured 784D vector (Goodfellow et al., 2013). In our case, this condition is met by designing each module as a multi-layer perceptron (MLP), agnostic to the underlying spatial structure in the data (as opposed to a convnet, for example). See Appendix C.1 for more architectural and training details. We set the latent distribution pZ = [U(−1, 1)]50 – a 50D continuous uniform distribution."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                709,
+                506,
+                732
+            ],
+            "content": "Next, we present results from training BiGANs on ImageNet LSVRC (Russakovsky et al., 2015), a large-scale database of natural images. GANs trained on ImageNet cannot perfectly reconstruct"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                240,
+                505,
+                263
+            ],
+            "content": "Figure 2: Qualitative results for permutation-invariant MNIST BiGAN training, including generator samples G(z), real data x, and corresponding reconstructions G(E(x))."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                688,
+                180,
+                699
+            ],
+            "content": "The text content from the image is \"4.3 IMAGENET\"."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                491,
+                281,
+                501
+            ],
+            "content": "The text content from the image is:\n\n4.2 PERMUTATION-INARIANT MNIST"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                123,
+                506,
+                157
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: One Nearest Neighbors (1NN) classification accuracy (%) on the permutation-invariant MNIST (LeCun et al., 1998) test set in the feature space learned by BiGAN, Latent Regressor (LR), Joint Latent Regressor (JLR), and an autoencoder (AE) using an \\( \\ell_1 \\) or \\( \\ell_2 \\) distance.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                123,
+                506,
+                157
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: One Nearest Neighbors (1NN) classification accuracy (%) on the permutation-invariant MNIST (LeCun et al., 1998) test set in the feature space learned by BiGAN, Latent Regressor (LR), Joint Latent Regressor (JLR), and an autoencoder (AE) using an \\( \\ell_1 \\) or \\( \\ell_2 \\) distance.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                123,
+                506,
+                157
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: One Nearest Neighbors (1NN) classification accuracy (%) on the permutation-invariant MNIST (LeCun et al., 1998) test set in the feature space learned by BiGAN, Latent Regressor (LR), Joint Latent Regressor (JLR), and an autoencoder (AE) using an \\( \\ell_1 \\) or \\( \\ell_2 \\) distance.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                542,
+                505,
+                621
+            ],
+            "content": "the data, but often capture some interesting aspects. Here, each of \\(D\\), \\(G\\), and \\(E\\) is a convnet. In all experiments, the encoder \\(E\\) architecture follows AlexNet (Krizhevsky et al., 2012) through the fifth and last convolution layer (\\(conv5\\)). We also experiment with an AlexNet-based discriminator \\(D\\) as a baseline feature learning approach. We set the latent distribution \\(p_{Z} = [U(-1, 1)]^{200}\\) – a 200D continuous uniform distribution. Additionally, we experiment with higher resolution encoder input images – \\(112 \\times 112\\) rather than the \\(64 \\times 64\\) used elsewhere – using the generalization described in Section 3.5. See Appendix C.2 for more architectural and training details."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                637,
+                505,
+                704
+            ],
+            "content": "Qualitative results The convolutional filters learned by each of the three modules are shown in Figure 3. We see that the filters learned by the encoder E have clear Gabor-like structure, similar to those originally reported for the fully supervised AlexNet model (Krizhevsky et al., 2012). The filters also have similar “grouping” structure where one half (the bottom half, in this case) is more color sensitive, and the other half is more edge sensitive. (This separation of the filters occurs due to the AlexNet architecture maintaining two separate filter paths for computational efficiency.)"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                709,
+                505,
+                732
+            ],
+            "content": "In Figure 4 we present sample generations G(ż), as well as real data samples x and their BiGAN reconstructions G(E(x)). The reconstructions, while certainly imperfect, demonstrate empirically that"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                230,
+                506,
+                286
+            ],
+            "content": "Figure 3: The convolutional filters learned by the three modules (D, G, and E) of a BiGAN (left, top-middle) trained on the ImageNet (Russakovsky et al., 2015) database. We compare with the filters learned by a discriminator D trained with the same architecture (bottom-middle), as well as the filters reported by Noroozi & Favaro (2016), and by Krizhevsky et al. (2012) for fully supervised ImageNet training (right)."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                493,
+                505,
+                517
+            ],
+            "content": "Figure 4: Qualitative results for ImageNet BiGAN training, including generator samples G(z), real data x, and corresponding reconstructions G(E(x))."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                387,
+                506,
+                542
+            ],
+            "content": "The text content from the image is as follows:\n\n\"VOC classification, detection, and segmentation We evaluate the transferability of BiGAN representations to the PASCAL VOC (Everingham et al., 2014) computer vision benchmark tasks, including classification, object detection, and semantic segmentation. The classification task involves simple binary prediction of presence or absence in a given image for each of 20 object categories. The object detection and semantic segmentation tasks go a step further by requiring the objects to be localized, with semantic segmentation requiring this at the finest scale: pixelwise prediction of object identity. For detection, the pretrained model is used as the initialization for Fast R-CNN (Girshick, 2015) (FRCN) training; and for semantic segmentation, the model is used as the initialization for Fully Convolutional Network (Long et al., 2015) (FCN) training, in each case replacing the AlexNet (Krizhevsky et al., 2012) model trained fully supervised for ImageNet classification. We report results on each of these tasks in Table 3, comparing BiGANs with contemporary approaches to unsupervised (Krähenbühl et al., 2016) and self-supervised (Doersch et al., 2015; Agrawal et al., 2015; Wang & Gupta, 2015; Pathak et al., 2016) feature learning in the visual domain, as well as the baselines discussed in Section 4.1.\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                583,
+                505,
+                693
+            ],
+            "content": "Despite making no assumptions about the underlying structure of the data, the BiGAN unsupervised feature learning framework offers a representation competitive with existing self-supervised and even weakly supervised feature learning approaches for visual feature learning, while still being a purely generative model with the ability to sample data x and predict latent representation z. Furthermore, BiGANs outperform the discriminator (D) and latent regressor (LR) baselines discussed in Section 4.1, confirming our intuition that these approaches may not perform well in the regime of highly complex data distributions such as that of natural images. The version in which the encoder takes a higher resolution image than output by the generator (BiGAN 112 × 112 E) performs better still, and this strategy is not possible under the LR and D baselines as each of those modules take generator outputs as their input."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                699,
+                505,
+                732
+            ],
+            "content": "Although existing self-supervised approaches have shown impressive performance and thus far tended to outshine purely unsupervised approaches in the complex domain of high-resolution images, purely unsupervised approaches to feature learning or pre-training have several potential benefits."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                336,
+                505,
+                370
+            ],
+            "content": "The text content from the image is as follows:\n\n\"ImageNet classification Following Noroozi & Favaro (2016), we evaluate by freezing the first N layers of our pretrained network and randomly reinitializing and training the remainder fully supervised for ImageNet classification. Results are reported in Table 2.\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                297,
+                504,
+                320
+            ],
+            "content": "The BiGAN encoder \\( E \\) and generator \\( G \\) learn approximate inverse mappings, as shown theoretically in Theorem 2. In Appendix C.2, we present nearest neighbors in the BiGAN learned feature space."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                182,
+                505,
+                271
+            ],
+            "content": "Table 2: Classification accuracy (%) for the ImageNet LSVRC (Russakovsky et al., 2015) validation set with various portions of the network frozen, or reinitialized and trained from scratch, following the evaluation from Noroozi & Favaro (2016). In, e.g., the conv3 column, the first three layers – conv1 through conv3 – are transferred and frozen, and the last layers – conv4, conv5, and fully connected layers – are reinitialized and trained fully supervised for ImageNet classification. BiGAN is competitive with these contemporary visual feature learning methods, despite its generality. (*Results from Noroozi & Favaro (2016) are not directly comparable to those of the other methods as a different base convnet architecture with larger intermediate feature maps is used.)"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                560,
+                185,
+                572
+            ],
+            "content": "The text content from the image is \"4.4 DISCUSSION\"."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                474,
+                505,
+                551
+            ],
+            "content": "Furthermore, BiGAN and other unsupervised approaches needn’t suffer from domain shift between the pre-training task and the transfer task, unlike self-supervised methods in which some aspect of the data is normally removed or corrupted in order to create a non-trivial prediction task. In the context prediction task (Doersch et al., 2015), the network sees only small image patches – the global image structure is unobserved. In the context encoder or inpainting task (Pathak et al., 2016), each image is corrupted by removing large areas to be filled in by the prediction network, creating inputs with dramatically different appearance from the uncorrupted natural images seen in the transfer tasks."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                413,
+                505,
+                469
+            ],
+            "content": "BiGAN and other unsupervised learning approaches are agnostic to the domain of the data. The self-supervised approaches are specific to the visual domain, in some cases requiring weak supervision from video unavailable in images alone. For example, the methods are not applicable in the permutation-invariant MNIST setting explored in Section 4.2, as the data are treated as flat vectors rather than 2D images."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                596,
+                505,
+                640
+            ],
+            "content": "We finally note that the results presented here constitute only a preliminary exploration of the space of model architectures possible under the BiGAN framework, and we expect results to improve significantly with advancements in generative image models and discriminative convolutional networks alike."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                671,
+                505,
+                716
+            ],
+            "content": "The authors thank Evan Shelhamer, Jonathan Long, and other Berkeley Vision labmates for helpful discussions throughout this work. This work was supported by DARPA, AFRL, DoD MURI award N000141110688, NSF awards IIS-1427425 and IIS-1212798, and the Berkeley Artificial Intelligence Research laboratory. The GPUs used for this work were donated by NVIDIA."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                557,
+                505,
+                590
+            ],
+            "content": "Other approaches (Agrawal et al., 2015; Wang & Gupta, 2015) rely on auxiliary information unavailable in the static image domain, such as video, egomotion, or tracking. Unlike BiGAN, such approaches cannot learn feature representations from unlabeled static images."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                270,
+                505,
+                392
+            ],
+            "content": "Table 3: Classification and Fast R-CNN (Girshick, 2015) detection results for the PASCAL VOC 2007 (Everingham et al., 2014) test set, and FCN (Long et al., 2015) segmentation results on the PASCAL VOC 2012 validation set, under the standard mean average precision (mAP) or mean intersection over union (mIoU) metrics for each task. Classification models are trained with various portions of the AlexNet (Krizhevsky et al., 2012) model frozen. In the fc8 column, only the linear classifier (a multinomial logistic regression) is learned – in the case of BiGAN, on top of randomly initialized fully connected (FC) layers fc6 and fc7. In the fc6-8 column, all three FC layers are trained fully supervised with all convolution layers frozen. Finally, in the all column, the entire network is “fine-tuned”. BiGAN outperforms other unsupervised (unsup.) feature learning approaches, including the GAN-based baselines described in Section 4.1, and despite its generality, is competitive with contemporary self-supervised (self-sup.) feature learning approaches specific to the visual domain."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                653,
+                200,
+                663
+            ],
+            "content": "The text content from the image is \"ACKNOWLEDGMENTS\"."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                354,
+                505,
+                378
+            ],
+            "content": "The text content from the image is as follows:\n\nIan Goodfellow, David Warde-Farley, Mehdi Mirza, Aaron Courville, and Yoshua Bengio. Maxout networks. In ICML, 2013."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                306,
+                288,
+                318
+            ],
+            "content": "The text content from the image is:\n\n\"Ross Girshick. Fast R-CNN. In ICCV, 2015.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                384,
+                505,
+                407
+            ],
+            "content": "The text content from the image is:\n\nIan Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In NIPS, 2014."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                276,
+                505,
+                300
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Mark Everingham, S. M. Ali Eslami, Luc Van Gool, Christopher K. I. Williams, John Winn, and Andrew Zisserman. The PASCAL Visual Object Classes challenge: A retrospective. IJCV, 2014.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                247,
+                505,
+                271
+            ],
+            "content": "The text content from the image is:\n\nVincent Dumoulin, Ishmael Belghazi, Ben Poole, Alex Lamb, Martin Arjovsky, Olivier Mastropietro, and Aaron Courville. Adversarially learned inference. arXiv:1606.00704, 2016."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                413,
+                505,
+                437
+            ],
+            "content": "The text content from the image is:\n\nAlex Graves, Abdel-rahman Mohamed, and Geoffrey E. Hinton. Speech recognition with deep recurrent neural networks. In ICASSP, 2013."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                100,
+                487,
+                112
+            ],
+            "content": "The text content from the image is:\n\nPulkit Agrawal, Joao Carreira, and Jitendra Malik. Learning to see by moving. In ICCV, 2015."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                443,
+                505,
+                466
+            ],
+            "content": "The text content from the image is:\n\nGeoffrey E. Hinton and Ruslan R. Salakhutdinov. Reducing the dimensionality of data with neural networks. Science, 2006."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                325,
+                505,
+                348
+            ],
+            "content": "The text content from the image is:\n\n\"Ross Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik. Rich feature hierarchies for accurate object detection and semantic segmentation. In CVPR, 2014.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                207,
+                505,
+                241
+            ],
+            "content": "The text content from the image is:\n\n\"Jeff Donahue, Yangqing Jia, Oriol Vinyals, Judy Hoffman, Ning Zhang, Eric Tzeng, and Trevor Darrell. DeCAF: A deep convolutional activation feature for generic visual recognition. In ICML, 2014.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                472,
+                505,
+                496
+            ],
+            "content": "The text content from the image is:\n\n\"Geoffrey E. Hinton, Simon Osindero, and Yee-Whye Teh. A fast learning algorithm for deep belief nets. Neural Computation, 2006.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                502,
+                505,
+                525
+            ],
+            "content": "The text content from the image is:\n\n\"Sergey Ioffe and Christian Szegedy. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In ICML, 2015.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                532,
+                505,
+                566
+            ],
+            "content": "The text content from the image is:\n\nYangqing Jia, Evan Shelhamer, Jeff Donahue, Sergey Karayev, Jonathan Long, Ross Girshick, Sergio Guadarrama, and Trevor Darrell. Caffe: Convolutional architecture for fast feature embedding. arXiv:1408.5093, 2014."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                118,
+                505,
+                142
+            ],
+            "content": "The text content from the image is:\n\n\"Dzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. Neural machine translation by jointly learning to align and translate. In ICLR, 2015.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                147,
+                505,
+                171
+            ],
+            "content": "The text content from the image is as follows:\n\nEmily L. Denton, Soumith Chintala, Arthur Szlam, and Rob Fergus. Deep generative image models using a Laplacian pyramid of adversarial networks. In NIPS, 2015."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                591,
+                505,
+                614
+            ],
+            "content": "The text content from the image is as follows:\n\nPhilipp Krähenbühl, Carl Doersch, Jeff Donahue, and Trevor Darrell. Data-dependent initializations of convolutional neural networks. In ICLR, 2016."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                81,
+                176,
+                94
+            ],
+            "content": "REFERENCES"
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                177,
+                505,
+                200
+            ],
+            "content": "The text content from the image is:\n\n\"Carl Doersch, Abhinav Gupta, and Alexei A. Efros. Unsupervised visual representation learning by context prediction. In ICCV, 2015.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                572,
+                488,
+                585
+            ],
+            "content": "The text content from the image is:\n\nDiederik Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In ICLR, 2015."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                680,
+                505,
+                703
+            ],
+            "content": "The text content from the image is:\n\n\"Jonathan Long, Evan Shelhamer, and Trevor Darrell. Fully convolutional networks for semantic segmentation. In CVPR, 2015.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                621,
+                505,
+                644
+            ],
+            "content": "The text content from the image is:\n\n\"Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton. ImageNet classification with deep convolutional neural networks. In NIPS, 2012.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                709,
+                505,
+                732
+            ],
+            "content": "The text content from the image is:\n\nAndrew L. Maas, Awni Y. Hannun, and Andrew Y. Ng. Rectifier nonlinearities improve neural network acoustic models. In ICML, 2013."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                650,
+                505,
+                673
+            ],
+            "content": "The text content from the image is:\n\nYann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner. Gradient-based learning applied to document recognition. Proc. IEEE, 1998."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                168,
+                504,
+                733
+            ],
+            "content": "Here is the text content from the image:\n\nCarl Doersch, Abhinav Gupta, and Alexei A. Efros. Unsupervised visual representation learning by context prediction. In ICCV, 2015.\n\nJeff Donahue, Yangqing Jia, Oriol Vinyals, Judy Hoffman, Ning Zhang, Eric Tzeng, and Trevor Darrell. DeCAF: A deep convolutional activation feature for generic visual recognition. In ICML, 2014.\n\nVincent Dumoulin, Ishmael Belghazi, Ben Poole, Alex Lamb, Martin Arjovsky, Olivier Mastropietro, and Aaron Courville. Adversarially learned inference. arXiv:1606.00704, 2016.\n\nMark Everingham, S. M. Ali Eslami, Luc Van Gool, Christopher K. I. Williams, John Winn, and Andrew Zisserman. The PASCAL Visual Object Classes challenge: A retrospective. IJCV, 2014.\n\nRoss Girshick. Fast R-CNN. In ICCV, 2015.\n\nRoss Girshick, Jeff Donahue, Trevor Darrell, and Jitendra Malik. Rich feature hierarchies for accurate object detection and semantic segmentation. In CVPR, 2014.\n\nIan Goodfellow, David Warde-Farley, Mehdi Mirza, Aaron Courville, and Yoshua Bengio. Maxout networks. In ICML, 2013.\n\nIan Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In NIPS, 2014.\n\nAlex Graves, Abdel-rahman Mohamed, and Geoffrey E. Hinton. Speech recognition with deep recurrent neural networks. In ICASSP, 2013.\n\nGeoffrey E. Hinton and Ruslan R. Salakhutdinov. Reducing the dimensionality of data with neural networks. Science, 2006.\n\nGeoffrey E. Hinton, Simon Osindero, and Yee-Whye Teh. A fast learning algorithm for deep belief nets. Neural Computation, 2006.\n\nSergey Ioffe and Christian Szegedy. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In ICML, 2015.\n\nYangqing Jia, Evan Shelhamer, Jeff Donahue, Sergey Karayev, Jonathan Long, Ross Girshick, Sergio Guadarrama, and Trevor Darrell. Caffe: Convolutional architecture for fast feature embedding arXiv:1408.5093, 2014.\n\nDiederik Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In ICLR, 2015.\n\nPhilipp Krähenbühl, Carl Doersch, Jeff Donahue, and Trevor Darrell. Data-dependent initializations of convolutional neural networks. In ICLR, 2016.\n\nAlex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton. ImageNet classification with deep convolutional neural networks. In NIPS, 2012.\n\nYann LeCun, Léon Bottou, Yoshua Bengio, and Patrick Haffner. Gradient-based learning applied to document recognition. Proc. IEEE, 1998.\n\nJonathan Long, Evan Shelhamer, and Trevor Darrell. Fully convolutional networks for semantic segmentation. In CVPR, 2015.\n\nAndrew L. Maas, Awni Y. Hannun, and Andrew Y. Ng. Rectifier nonlinearities improve neural network acoustic models. In ICML, 2013."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                81,
+                176,
+                94
+            ],
+            "content": "REFERENCES"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                261,
+                505,
+                285
+            ],
+            "content": "The text content from the image is:\n\nIlya Sutskever, Oriol Vinyals, and Quoc V. Le. Sequence to sequence learning with neural networks.\nIn NIPS, 2014."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                201,
+                506,
+                236
+            ],
+            "content": "The text content from the image is as follows:\n\nOlga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, and Fei-Fei Li. ImageNet large scale visual recognition challenge. IJCV, 2015."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                243,
+                486,
+                255
+            ],
+            "content": "The text content from the image is:\n\nRuslan Salakhutdinov and Geoffrey E. Hinton. Deep Boltzmann machines. In AISTATS, 2009."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                381,
+                506,
+                404
+            ],
+            "content": "The text content from the image is:\n\n\"Matthew D. Zeiler and Rob Fergus. Visualizing and understanding convolutional networks. In ECCV, 2014.\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                321,
+                506,
+                345
+            ],
+            "content": "The text content from the image is:\n\n\"Oriol Vinyals, Łukasz Kaiser, Terry Koo, Slav Petrov, Ilya Sutskever, and Geoffrey E. Hinton.\nGrammar as a foreign language. In NIPS, 2015.\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                505,
+                105
+            ],
+            "content": "The text content from the image is:\n\nMehdi Noroozi and Paolo Favaro. Unsupervised learning of visual representations by solving jigsaw puzzles. In ECCV, 2016."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                291,
+                505,
+                315
+            ],
+            "content": "Theano Development Team. Theano: A Python framework for fast computation of mathematical expressions. arXiv:1605.02688, 2016."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                142,
+                505,
+                165
+            ],
+            "content": "The text content from the image is:\n\n\"Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In ICLR, 2016.\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                172,
+                505,
+                195
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Ali Razavian, Hossein Azizpour, Josephine Sullivan, and Stefan Carlsson. CNN features off-the-shelf: an astounding baseline for recognition. In CVPR Workshops, 2014.\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                82,
+                503,
+                405
+            ],
+            "content": "The text content from the image is as follows:\n\nMehdi Noroozi and Paolo Favaro. Unsupervised learning of visual representations by solving jigsaw puzzles. In ECCV, 2016.\n\nDeepak Pathak, Philipp Krähenbühl, Jeff Donahue, Trevor Darrell, and Alexei A. Efros. Context encoders: Feature learning by inpainting. In CVPR, 2016.\n\nAlec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In ICLR, 2016.\n\nAli Razavian, Hossein Azizpour, Josephine Sullivan, and Stefan Carlsson. CNN features off-the-shelf an astounding baseline for recognition. In CVPR Workshops, 2014.\n\nOlga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, and Fei-Fei Li. ImageNet large scale visual recognition challenge. IJCV, 2015.\n\nRuslan Salakhutdinov and Geoffrey E. Hinton. Deep Boltzmann machines. In AISTATS, 2009.\n\nIlya Sutskever, Oriol Vinyals, and Quoc V. Le. Sequence to sequence learning with neural networks. In NIPS, 2014.\n\nTheano Development Team. Theano: A Python framework for fast computation of mathematical expressions. arXiv:1605.02688, 2016.\n\nOriol Vinyals, Łukasz Kaiser, Terry Koo, Slav Petrov, Ilya Sutskever, and Geoffrey E. Hinton. Grammar as a foreign language. In NIPS, 2015.\n\nXiaolong Wang and Abhinav Gupta. Unsupervised learning of visual representations using videos. In ICCV, 2015.\n\nMatthew D. Zeiler and Rob Fergus. Visualizing and understanding convolutional networks. In ECCV 2014."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                351,
+                506,
+                374
+            ],
+            "content": "The text content from the image is:\n\nXiaolong Wang and Abhinav Gupta. Unsupervised learning of visual representations using videos. In ICCV, 2015."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                112,
+                505,
+                136
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Deepak Pathak, Philipp Krähenbühl, Jeff Donahue, Trevor Darrell, and Alexei A. Efros. Context encoders: Feature learning by inpainting. In CVPR, 2016.\""
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                507,
+                415
+            ],
+            "content": "The text content from the image is as follows:\n\nMehdi Noroozi and Paolo Favaro. Unsupervised learning of visual representations by solving jigsaw puzzles. In ECCV, 2016.\n\nDeepak Pathak, Philipp Krähenbühl, Jeff Donahue, Trevor Darrell, and Alexei A. Efros. Context encoders: Feature learning by inpainting. In CVPR, 2016.\n\nAlec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In ICLR, 2016.\n\nAli Razavian, Hossein Azizpour, Josephine Sullivan, and Stefan Carlsson. CNN features off-the-shelf: an astounding baseline for recognition. In CVPR Workshops, 2014.\n\nOlga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, and Fei-Fei Li. ImageNet large scale visual recognition challenge. IJCV, 2015.\n\nRuslan Salakhutdinov and Geoffrey E. Hinton. Deep Boltzmann machines. In AISTATS, 2009.\n\nIlya Sutskever, Oriol Vinyals, and Quoc V. Le. Sequence to sequence learning with neural networks. In NIPS, 2014.\n\nTheano Development Team. Theano: A Python framework for fast computation of mathematical expressions. arXiv:1605.02688, 2016.\n\nOriol Vinyals, Łukasz Kaiser, Terry Koo, Slav Petrov, Ilya Sutskever, and Geoffrey E. Hinton. Grammar as a foreign language. In NIPS, 2015.\n\nXiaolong Wang and Abhinav Gupta. Unsupervised learning of visual representations using videos. In ICCV, 2015.\n\nMatthew D. Zeiler and Rob Fergus. Visualizing and understanding convolutional networks. In ECCV, 2014."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                687,
+                506,
+                732
+            ],
+            "content": "While Theorem 1 and Propositions 1 and 2 hold for any encoder \\( p_E(\\mathbf{z}|\\mathbf{x}) \\) and generator \\( p_G(\\mathbf{x}|\\mathbf{z}) \\), stochastic or deterministic, Theorems 2 and 3 assume the encoder \\( E \\) and generator \\( G \\) are deterministic functions; i.e., with conditionals \\( p_E(\\mathbf{z}|\\mathbf{x}) = \\delta(\\mathbf{z} - E(\\mathbf{x})) \\) and \\( p_G(\\mathbf{x}|\\mathbf{z}) = \\delta(\\mathbf{x} - G(\\mathbf{z})) \\) defined as \\( \\delta \\) functions."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                130,
+                505,
+                169
+            ],
+            "content": "The image contains a proposition stated as follows:\n\n**Proposition 1:** For any \\( E \\) and \\( G \\), the optimal discriminator \\( D_{EG}^* := \\arg\\max_D V(D, E, G) \\) is the Radon-Nikodym derivative \\( f_{EG} := \\frac{\\mathrm{d}P_{EX}}{\\mathrm{d}(P_{EX} + P_{GZ})} : \\Omega \\mapsto [0, 1] \\) of measure \\( P_{EX} \\) with respect to measure \\( P_{EX} + P_{GZ} \\)."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                240,
+                505,
+                281
+            ],
+            "content": "Let the probability measure \\( P_{EG} := \\frac{P_{EX} + P_{GZ}}{2} \\) denote the average of measures \\( P_{EX} \\) and \\( P_{GZ} \\). Both \\( P_{EX} \\) and \\( P_{GZ} \\) are each absolutely continuous with respect to \\( P_{EG} \\). Hence the RN derivatives \\( f_{EG} := \\frac{\\mathrm{d}P_{EX}}{\\mathrm{d}(P_{EX} + P_{GZ})} = \\frac{1}{2} \\frac{\\mathrm{d}P_{EX}}{\\mathrm{d}P_{EG}} \\) and \\( f_{GE} := \\frac{\\mathrm{d}P_{GZ}}{\\mathrm{d}(P_{EX} + P_{GZ})} = \\frac{1}{2} \\frac{\\mathrm{d}P_{GZ}}{\\mathrm{d}P_{EG}} \\) exist and sum to 1:"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                477,
+                505,
+                512
+            ],
+            "content": "The text content from the image is:\n\n\"Proposition 2 The encoder and generator's objective for an optimal discriminator \\( C(E, G) := \\max_D V(D, E, G) = V(D_{EG}^*, E, G) \\) can be rewritten in terms of the Jensen-Shannon divergence between measures \\( P_{EX} \\) and \\( P_{GZ} \\) as \\( C(E, G) = 2 D_{JS}(P_{EX} || P_{GZ}) - \\log 4 \\).\""
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                180,
+                505,
+                205
+            ],
+            "content": "The text content from the image is:\n\n\"Proof. For measures P and Q on space Ω, with P absolutely continuous with respect to Q, the RN derivative f_{PQ} := dP/dQ exists, and we have\""
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                315,
+                479,
+                328
+            ],
+            "content": "We use (4) and (5) to rewrite the objective \\( V \\) (3) as a single expectation under measure \\( P_{EG} \\):"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                295,
+                94
+            ],
+            "content": "The text content from the image is:\n\n\"APPENDIX A ADDITIONAL PROOFS\""
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                523,
+                501,
+                537
+            ],
+            "content": "Proof. Using Proposition 1 along with (5) (\\(1 - D_{EG}^* = 1 - f_{EG} = f_{GE}\\)) we rewrite the objective"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                665,
+                367,
+                677
+            ],
+            "content": "A.3 MEASURE DEFINITIONS FOR DETERMINISTIC E AND G"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                108,
+                366,
+                120
+            ],
+            "content": "A.1 PROOF OF PROPOSITION 1 (OPTIMAL DISCRIMINATOR)"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                192,
+                425,
+                488,
+                439
+            ],
+            "content": "The text in the image reads:\n\n\\[ a \\log y + (1 - a) \\log(1 - y) = a \\text{ for any } a \\in [0, 1]. \\]\nThus, \\( D_{EG}^* = f_{EG} \\)."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                455,
+                422,
+                467
+            ],
+            "content": "A.2 PROOF OF PROPOSITION 2 (ENCODER AND GENERATOR OBJECTIVE)"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                455,
+                422,
+                467
+            ],
+            "content": "A.2 PROOF OF PROPOSITION 2 (ENCODER AND GENERATOR OBJECTIVE)"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                424,
+                500,
+                440
+            ],
+            "content": "The image contains a mathematical statement and a proof. The statement is:\n\n\"Note that arg max_y {a log y + (1 - a) log(1 - y)} = a for any a ∈ [0, 1]. Thus, D^*_EG = f_EG.\"\n\nThe proof concludes with a square symbol \"□\", which typically signifies the end of a proof in mathematical texts.\n\nThis statement and proof are related to information theory or decision theory, specifically concerning the concept of the expected value of a random variable under different probabilities. The notation suggests that this is part of a larger discussion or proof involving the minimax theorem or a similar concept in decision-making under uncertainty."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                108,
+                366,
+                120
+            ],
+            "content": "A.1 PROOF OF PROPOSITION 1 (OPTIMAL DISCRIMINATOR)"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                598,
+                505,
+                644
+            ],
+            "content": "As shown in Proposition 2 (Section 3), the BiGAN objective is equivalent to the Jensen-Shannon divergence between \\( P_{EX} \\) and \\( P_{GZ} \\). We now go a step further and show that this Jensen-Shannon divergence is closely related to a standard autoencoder loss. Omitting the \\( \\frac{1}{2} \\) scale factor, a KL divergence term of the Jensen-Shannon divergence is given as"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                706,
+                505,
+                732
+            ],
+            "content": "The text in the image reads:\n\n\"where we abbreviate as \\( f \\) the Radon-Nikodym derivative \\( f_{EG} := \\frac{\\mathrm{d}P_{EX}}{\\mathrm{d}(P_{EX} + P_{GZ})} \\in [0,1] \\) defined in Proposition 1 for most of this proof.\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                505,
+                105
+            ],
+            "content": "For use in the proofs of those theorems, we simplify the definitions of measures \\( P_{EX} \\) and \\( P_{GZ} \\) given in Section 3 for the case of deterministic functions \\( E \\) and \\( G \\) below:"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                322,
+                506,
+                357
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Let \\( R^0 := \\{(\\mathbf{x}, \\mathbf{z}) \\in \\Omega : \\mathbf{z} = E(\\mathbf{x}) \\land \\mathbf{x} \\in R^0_{\\mathbf{X}}\\} \\) be the region of \\(\\Omega\\) such that \\((\\mathbf{x}, E(\\mathbf{x})) \\in R^0\\) if and only if \\(\\mathbf{x} \\in R^0_{\\mathbf{X}}\\). We'll use the definitions of \\(P_{E\\mathbf{X}}\\) and \\(P_{G\\mathbf{Z}}\\) for deterministic \\(E\\) and \\(G\\) (Appendix A.3), and the fact that \\(P_{E\\mathbf{X}} = P_{G\\mathbf{Z}}\\) for optimal \\(E\\) and \\(G\\) (Theorem 1).\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                283,
+                505,
+                318
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Proof. Let \\( R_{\\mathbf{X}}^{0} := \\left\\{\\mathbf{x} \\in \\Omega_{\\mathbf{X}} : \\mathbf{x} \\neq G(E(\\mathbf{x}))\\right\\} \\) be the region of \\( \\Omega_{\\mathbf{X}} \\) in which the inversion property \\( \\mathbf{x} = G(E(\\mathbf{x})) \\) does not hold. We will show that, for optimal \\( E \\) and \\( G \\), \\( R_{\\mathbf{X}}^{0} \\) has measure zero under \\( P_{\\mathbf{X}} \\) (i.e., \\( P_{\\mathbf{X}}(R_{\\mathbf{X}}^{0}) = 0 \\)) and therefore \\( \\mathbf{x} = G(E(\\mathbf{x})) \\) holds \\( P_{\\mathbf{X}} \\)-almost everywhere.\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                250,
+                506,
+                275
+            ],
+            "content": "Theorem 2 If E and G are an optimal encoder and generator, then E = G⁻¹ almost everywhere; that is, G(E(x)) = x for P_X-almost every x ∈ Ω_X, and E(G(z)) = z for P_Z-almost every z ∈ Ω_Z."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                541,
+                506,
+                566
+            ],
+            "content": "The text content from the image is:\n\n\"An analogous argument shows that \\( R_{\\mathbf{Z}}^0 := \\{\\mathbf{z} \\in \\Omega_{\\mathbf{Z}} : \\mathbf{z} \\neq E(G(\\mathbf{z}))\\} \\) has measure zero on \\( P_{\\mathbf{Z}} \\) (i.e., \\( P_{\\mathbf{Z}}(R_{\\mathbf{Z}}^0) = 0 \\)) and therefore \\( \\mathbf{z} = E(G(\\mathbf{z})) \\) holds \\( P_{\\mathbf{Z}} \\)-almost everywhere. \\(\\square\\)\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                513,
+                505,
+                537
+            ],
+            "content": "The text in the image reads:\n\n\"Hence region \\( R_{\\mathbf{X}}^{0} \\) has measure zero (\\( P_{\\mathbf{X}}(R_{\\mathbf{X}}^{0}) = 0 \\)), and the inversion property \\( \\mathbf{x} = G(E(\\mathbf{x})) \\) holds \\( P_{\\mathbf{X}} \\)-almost everywhere.\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                162,
+                230,
+                459,
+                242
+            ],
+            "content": "OF THEOREM 2 (OPTIMAL GENERATOR AND ENCODER ARE INVERSES"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                578,
+                389,
+                590
+            ],
+            "content": "A.5 PROOF OF THEOREM 3 (RELATIONSHIP TO AUTOENCODERS)"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                578,
+                389,
+                590
+            ],
+            "content": "A.5 PROOF OF THEOREM 3 (RELATIONSHIP TO AUTOENCODERS)"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                306,
+                505,
+                341
+            ],
+            "content": "We'll first show that in region \\( R_S := \\Omega \\setminus \\text{supp}(P_{G\\mathbf{Z}}) \\), we have \\( f = 1 \\) \\( P_{EX} \\)-almost everywhere. Let \\( R^{f<1} := \\{ (\\mathbf{x}, \\mathbf{z}) \\in R_S : f(\\mathbf{x}, \\mathbf{z}) < 1 \\} \\) be the region of \\( R_S \\) in which \\( f < 1 \\). Let's assume that \\( P_{EX}(R^{f<1}) > 0 \\) has non-zero measure. Then, using the definition of the Radon-Nikodym derivative,"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                144,
+                505,
+                167
+            ],
+            "content": "Next we will show that \\( f > 0 \\) holds \\( P_{EX} \\)-almost everywhere, and hence \\( F \\) is always well defined and finite. We then show that \\( F \\) is equivalent to an autoencoder-like reconstruction loss function."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                491,
+                505,
+                529
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Let \\( R^{f=1} := \\left\\{ (\\mathbf{x}, \\mathbf{z}) \\in R^1 : f(\\mathbf{x}, \\mathbf{z}) = 1 \\right\\} \\) be the region in which \\( f = 1 \\). Let's assume the set \\( R^{f=1} \\neq \\emptyset \\) is not empty. By definition of the support, \\( P_{EX}(R^{f=1}) > 0 \\) and \\( P_{GZ}(R^{f=1}) > 0 \\). The Radon-Nikodym derivative on \\( R^{f=1} \\) is then given by\""
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                82,
+                506,
+                115
+            ],
+            "content": "We'll make use of the definitions of \\( P_{EX} \\) and \\( PGZ \\) for deterministic \\( E \\) and \\( G \\) found in Appendix A.3. The integral term of the KL divergence expression given in (6) over a particular region \\( R \\subseteq \\Omega \\) will be denoted by"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                198,
+                506,
+                235
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Proof. Let \\( R^{f=0} := \\{(\\mathbf{x}, \\mathbf{z}) \\in \\Omega : f(\\mathbf{x}, \\mathbf{z}) = 0\\} \\) be the region of \\(\\Omega\\) in which \\( f = 0 \\). Using the definition of the Radon-Nikodym derivative \\( f \\), the measure \\( P_{E\\mathbf{X}}(R^{f=0}) = \\int_{R^{f=0}} f \\, d(P_{E\\mathbf{X}} + P_{G\\mathbf{Z}}) = \\int_{R^{f=0}} 0 \\, d(P_{E\\mathbf{X}} + P_{G\\mathbf{Z}}) = 0 \\) is zero. Hence \\( f > 0 \\) \\( P_{E\\mathbf{X}} \\)-almost everywhere. \\(\\square\\)\""
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                397,
+                505,
+                433
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nwhere ε is a constant smaller than 1. But P_EX(R^f<1) < P_EX(R^f<1) is a contradiction; hence P_EX(R^f<1) = 0 and f = 1 P_EX-almost everywhere in R_S, implying log f = 0 P_EX-almost everywhere in R_S. Hence F(R_S) = 0. □\n```"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                589,
+                505,
+                613
+            ],
+            "content": "Theorem 3 The encoder and generator objective given an optimal discriminator \\( C(E, G) := \\max_D V(D, E, G) \\) can be rewritten as an \\( \\ell_0 \\) autoencoder loss function"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                239,
+                505,
+                274
+            ],
+            "content": "Proposition 3 ensures that log f is defined \\(P_{EX}\\)-almost everywhere, and \\(F(R)\\) is well-defined. Next we will show that \\(F(R)\\) mimics an autoencoder with \\(\\ell_0\\) loss, meaning \\(F\\) is zero for any region in which \\(G(E(\\mathbf{x})) \\neq \\mathbf{x}\\), and non-zero otherwise."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                688,
+                505,
+                713
+            ],
+            "content": "Proof. Proposition 4 (F(Ω \\ supp(P_GZ)) = 0) and F(Ω \\ supp(P_EX)) = 0 imply that R^1 := supp(P_EX) ∩ supp(P_GZ) is the only region of Ω where F may be non-zero; hence F(Ω) = F(R^1)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                437,
+                505,
+                461
+            ],
+            "content": "By definition, \\( F(\\Omega \\setminus \\text{supp}(P_{EX})) = 0 \\) is also zero. The only region where \\( F \\) might be non-zero is \\( R^1 := \\text{supp}(P_{EX}) \\cap \\text{supp}(P_{GZ}) \\)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                555,
+                506,
+                580
+            ],
+            "content": "which implies \\( P_{G\\mathbf{Z}}(R^{f=1}) = 0 \\) and contradicts the definition of support. Hence \\( R^{f=1} = \\emptyset \\) and \\( f < 1 \\) \\( P_{E\\mathbf{X}} \\)-almost everywhere on \\( R^1 \\), implying \\( \\log f < 0 \\) \\( P_{E\\mathbf{X}} \\)-almost everywhere. \\(\\square\\)"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                176,
+                295,
+                189
+            ],
+            "content": "The text content from the image is:\n\n\"Proposition 3 \\( f > 0 \\) \\( P_{EX}\\)-almost everywhere.\""
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                284,
+                501,
+                297
+            ],
+            "content": "The KL divergence \\( F \\) outside the support of \\( P_{GZ} \\) is zero: \\( F(\\Omega \\setminus \\text{supp}(P_{GZ})) = 0 \\)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                470,
+                321,
+                482
+            ],
+            "content": "The text content from the image is:\n\n\"Proposition 5 \\( f < 1 \\) \\( P_{EX} \\)-almost everywhere in \\( R^1 \\).\""
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                202,
+                666,
+                498,
+                680
+            ],
+            "content": "The text content from the image is:\n\n\"and log (1 - f_EG) ∈ (-∞, 0) P_EX-almost and P_GZ-almost everywhere\""
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                470,
+                321,
+                482
+            ],
+            "content": "The text content from the image is:\n\n\"Proposition 5 \\( f < 1 \\) \\( P_{EX} \\)-almost everywhere in \\( R^1 \\).\""
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                534,
+                506,
+                550
+            ],
+            "content": "The equation in the image is:\n\n\\[ P_{\\text{EX}}(R^{f=1}) = \\int_{R^{f=1}} f \\, d(P_{\\text{EX}} + P_{GZ}) = \\int_{R^{f=1}} 1 \\, d(P_{\\text{EX}} + P_{GZ}) = P_{\\text{EX}}(R^{f=1}) + P_{GZ}(R^{f=1}) \\]\n\nThis equation appears to be expressing a probability measure \\(P_{\\text{EX}}\\) over a set \\(R^{f=1}\\) where the function \\(f\\) is integrated with respect to the combined probability measure \\(P_{\\text{EX}} + P_{GZ}\\). The integral of the constant function \\(1\\) over this measure results in the sum of the probabilities \\(P_{\\text{EX}}(R^{f=1})\\) and \\(P_{GZ}(R^{f=1})\\)."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                549,
+                505,
+                605
+            ],
+            "content": "In this section we provide additional details on the BiGAN learning protocol summarized in Section 3.4. Goodfellow et al. (2014) found for GAN training that an objective in which the real and generated labels Y are swapped provides stronger gradient signal to G. We similarly observed in BiGAN training that an “inverse” objective Λ (with the same fixed point characteristics as V) provides stronger gradient signal to G and E, where"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                676,
+                505,
+                732
+            ],
+            "content": "We also observed that learning behaved similarly when all parameters θ_D, θ_G, θ_E were updated simultaneously at each iteration rather than alternating between θ_D updates and θ_G, θ_E updates, so we took the simultaneous updating (non-alternating) approach for computational efficiency. (For standard GAN training, simultaneous updates of θ_D, θ_G performed similarly well, so our standard GAN experiments also follow this protocol.)"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                156,
+                506,
+                194
+            ],
+            "content": "So a point (x, E(x)) is in R^1 if x ∈ Ω̂_X, E(x) ∈ Ω̂_Z, and G(E(x)) = x. (We can omit the x ∈ Ω̂_X condition from inside an expectation over P_X, as P_X-almost all x ∉ Ω̂_X have 0 probability.) Therefore,"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                307,
+                504,
+                331
+            ],
+            "content": "Finally, with Propositions 3 and 5, we have \\( f \\in (0,1) \\) \\( P_{EX} \\)-almost everywhere in \\( R^1 \\), and therefore \\( \\log f \\in (-\\infty,0) \\), taking a finite and strictly negative value \\( P_{EX} \\)-almost everywhere."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                648,
+                504,
+                672
+            ],
+            "content": "In practice, θ_G and θ_E are updated by moving in the positive gradient direction of this inverse objective ∇_θ_E,θ_G Λ, rather than the negative gradient direction of the original objective."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                335,
+                505,
+                359
+            ],
+            "content": "An analogous argument (along with the fact that \\( f_{EG} + f_{GE} = 1 \\)) lets us rewrite the other KL divergence term"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                415,
+                473,
+                428
+            ],
+            "content": "The Jensen-Shannon divergence is the mean of these two KL divergences, giving \\( C(E, G) \\):"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                146,
+                93
+            ],
+            "content": "Note that"
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                523,
+                288,
+                536
+            ],
+            "content": "The text content from the image is:\n\n\"APPENDIX B LEARNING DETAILS\""
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                111,
+                134,
+                502,
+                149
+            ],
+            "content": "The image contains a mathematical expression that defines a set \\( R^1 \\) as the intersection of the supports of two probability distributions, \\( P_{E\\mathbf{x}} \\) and \\( P_{G\\mathbf{z}} \\). The support of these distributions is defined by the conditions:\n\n\\[ R^1 := \\text{supp}(P_{E\\mathbf{x}}) \\cap \\text{supp}(P_{G\\mathbf{z}}) = \\{(\\mathbf{x}, \\mathbf{z}) : E(\\mathbf{x}) = \\mathbf{z} \\land \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}} \\land G(\\mathbf{z}) = \\mathbf{x} \\land \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}}\\} \\]\n\nHere:\n- \\( E(\\mathbf{x}) = \\mathbf{z} \\) means that the function \\( E \\) applied to the vector \\( \\mathbf{x} \\) results in the vector \\( \\mathbf{z} \\).\n- \\( \\mathbf{x} \\in \\hat{\\Omega}_{\\mathbf{x}} \\) indicates that \\( \\mathbf{x} \\) belongs to the set \\( \\hat{\\Omega}_{\\mathbf{x}} \\).\n- \\( G(\\mathbf{z}) = \\mathbf{x} \\) means that the function \\( G \\) applied to the vector \\( \\mathbf{z} \\) results in the vector \\( \\mathbf{x} \\).\n- \\( \\mathbf{z} \\in \\hat{\\Omega}_{\\mathbf{z}} \\) indicates that \\( \\mathbf{z} \\) belongs to the set \\( \\hat{\\Omega}_{\\mathbf{z}} \\).\n\nThis definition essentially describes the set of all pairs \\( (\\mathbf{x}, \\mathbf{z}) \\) where the functions \\( E \\) and \\( G \\) map each other's arguments correctly within their respective domains."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                144,
+                505,
+                254
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nOptimization For unsupervised training of BiGANs and baseline methods, we use the Adam optimizer (Kingma & Ba, 2015) to compute parameter updates, following the hyperparameters (initial step size α = 2 × 10⁻⁴, momentum β₁ = 0.5 and β₂ = 0.999) used by Radford et al. (2016). The step size α is decayed exponentially to α = 2 × 10⁻⁶ starting halfway through training. The mini-batch size is 128. ℓ₂ weight decay of 2.5 × 10⁻⁵ is applied to all multiplicative weights in linear layers (but not to the learned bias β or scale γ parameters applied after batch normalization). Weights are initialized from a zero-mean normal distribution with a standard deviation of 0.02, with one notable exception: BiGAN discriminator weights that directly multiply z inputs to be added to spatial convolution outputs have initializations scaled by the convolution kernel size – e.g., for a 5 × 5 kernel, weights are initialized with a standard deviation of 0.5, 25 times the standard initialization.\n```"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                474,
+                505,
+                541
+            ],
+            "content": "In all ImageNet experiments (Section 4.3), the encoder \\( E \\) architecture follows AlexNet (Krizhevsky et al., 2012) through the fifth and last convolution layer (\\( conv5 \\)), with local response normalization (LRN) layers removed and batch normalization (Ioffe & Szegedy, 2015) (including the learned scaling and bias) with leaky ReLU non-linearity applied to the output of each convolution at unsupervised training time. (For supervised evaluation, batch normalization is not used, and the pre-trained scale and bias is merged into the preceding convolution’s weights and bias.)"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                596,
+                505,
+                673
+            ],
+            "content": "The sole exception is our discriminator baseline feature learning experiment, in which we let the discriminator \\( D \\) be the AlexNet variant described above. Generally, using AlexNet (or similar convnet architecture) as the discriminator \\( D \\) is detrimental to the visual fidelity of the resulting generated images, likely due to the relatively large convolutional filter kernel size applied to the input image, as well as the max-pooling layers, which explicitly discard information in the input. However, for fair comparison of the discriminator’s feature learning abilities with those of BiGANs, we use the same architecture as used in the BiGAN encoder."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                268,
+                506,
+                334
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Software & hardware We implement BiGANS and baseline feature learning methods using the Theano (Theano Development Team, 2016) framework, based on the convolutional GAN implementation provided by Radford et al. (2016). ImageNet transfer learning experiments (Section 4.3) use the Caffe (Jia et al., 2014) framework, per the Fast R-CNN (Girshick, 2015) and FCN (Long et al., 2015) reference implementations. Most computation is performed on an NVIDIA Titan X or Tesla K40 GPU.\""
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                371,
+                505,
+                438
+            ],
+            "content": "In all permutation-invariant MNIST experiments (Section 4.2), D, G, and E each consist of two hidden layers with 1024 units. The first hidden layer is followed by a non-linearity; the second is followed by (parameter-free) batch normalization (Ioffe & Szegedy, 2015) and a non-linearity. The second hidden layer in each case is the input to a linear prediction layer of the appropriate size. In D and E, a leaky ReLU (Maas et al., 2013) non-linearity with a “leak” of 0.2 is used; in G, a standard ReLU non-linearity is used. All models are trained for 400 epochs."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                546,
+                505,
+                591
+            ],
+            "content": "In most experiments, both the discriminator \\( D \\) and generator \\( G \\) architecture are those used by Radford et al. (2016), consisting of a series of four \\( 5 \\times 5 \\) convolutions (or “deconvolutions” – fractionally-strided convolutions – for the generator \\( G \\)) applied with 2 pixel stride, each followed by batch normalization and rectified non-linearity."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                687,
+                505,
+                732
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Preprocessing To produce a data sample x, we first sample an image from the database, and resize it proportionally such that its shorter edge has a length of 72 pixels. Then, a 64 × 64 crop is randomly selected from the resized image. The crop is flipped horizontally with probability 1/2. Finally, the crop is scaled to [−1, 1], giving the sample x.\""
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                108,
+                504,
+                129
+            ],
+            "content": "In the following sections we present additional details on the models and training protocols used in the permutation-invariant MNIST and ImageNet evaluations presented in Section 4."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                453,
+                181,
+                464
+            ],
+            "content": "The text content from the image is \"C.2 IMAGENET\"."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                350,
+                282,
+                361
+            ],
+            "content": "The text content from the image is:\n\n\"C.1 PERMUTATION-INARIANT MNIST\""
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                81,
+                349,
+                93
+            ],
+            "content": "The text content from the image is:\n\n\"APPENDIX C MODEL AND TRAINING DETAILS\""
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                81,
+                349,
+                93
+            ],
+            "content": "The text content from the image is:\n\n\"APPENDIX C MODEL AND TRAINING DETAILS\""
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                566,
+                505,
+                599
+            ],
+            "content": "Timing A single epoch (one training pass over the 1.2 million images) of BiGAN training takes roughly 40 minutes on a Titan X GPU. Models are trained for 100 epochs, for a total training time of under 3 days."
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                612,
+                505,
+                635
+            ],
+            "content": "Nearest neighbors In Figure 5 we present nearest neighbors in the feature space of the BiGAN encoder E learned in unsupervised ImageNet training."
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                500,
+                505,
+                544
+            ],
+            "content": "Figure 5: For the query images used in Krähenbühl et al. (2016) (left), nearest neighbors (by minimum cosine distance) from the ImageNet LSVRC (Russakovsky et al., 2015) training set in the fc6 feature space of the ImageNet-trained BiGAN encoder E. (The fc6 weights are set randomly; this space is a random projection of the learned conv5 feature space.)"
+        }
+    ]
+}

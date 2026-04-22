@@ -1,0 +1,174 @@
+{
+    "total_count": 14,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                243,
+                188,
+                368,
+                221
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathcal{L}(\\mathcal{D}) = \\frac{1}{N} \\sum_{i=1}^{N} -\\log p_\\theta(\\mathbf{x}^{(i)})\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathcal{L}(\\mathcal{D}) = \\frac{1}{N} \\sum_{i=1}^{N} -\\log p_\\theta(\\mathbf{x}^{(i)})\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                235,
+                246,
+                378,
+                278
+            ],
+            "content": "{ \\mathcal { L } } ( { \\mathcal { D } } ) \\simeq { \\frac { 1 } { N } } \\sum _ { i = 1 } ^ { N } - \\log p _ { \\theta } ( { \\tilde { \\mathbf { x } } } ^ { ( i ) } ) + c",
+            "latex": "{ \\mathcal { L } } ( { \\mathcal { D } } ) \\simeq { \\frac { 1 } { N } } \\sum _ { i = 1 } ^ { N } - \\log p _ { \\theta } ( { \\tilde { \\mathbf { x } } } ^ { ( i ) } ) + c"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                245,
+                466,
+                366,
+                483
+            ],
+            "content": "\\mathbf { x } \\stackrel { f _ { 1 } } { \\longleftarrow } \\mathbf { h } _ { 1 } \\stackrel { f _ { 2 } } { \\longleftarrow } \\mathbf { h } _ { 2 } \\cdots \\stackrel { f _ { K } } { \\longleftarrow } \\mathbf { z }",
+            "latex": "\\mathbf { x } \\stackrel { f _ { 1 } } { \\longleftarrow } \\mathbf { h } _ { 1 } \\stackrel { f _ { 2 } } { \\longleftarrow } \\mathbf { h } _ { 2 } \\cdots \\stackrel { f _ { K } } { \\longleftarrow } \\mathbf { z }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                243,
+                546,
+                410,
+                578
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n= \\log p_{\\theta}(\\mathbf{z}) + \\sum_{i=1}^{K} \\log |\\det(d\\mathbf{h}_i / d\\mathbf{h}_{i-1})|\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n= \\log p_{\\theta}(\\mathbf{z}) + \\sum_{i=1}^{K} \\log |\\det(d\\mathbf{h}_i / d\\mathbf{h}_{i-1})|\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                195,
+                680,
+                416,
+                694
+            ],
+            "content": "```latex\n\\log |\\det(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})| = \\sum (\\log |\\text{diag}(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})|)\n```",
+            "latex": "```latex\n\\log |\\det(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})| = \\sum (\\log |\\text{diag}(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})|)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                284,
+                354,
+                327,
+                367
+            ],
+            "content": "\\mathbf { z } \\sim p _ { \\theta } ( \\mathbf { z } )",
+            "latex": "\\mathbf { z } \\sim p _ { \\theta } ( \\mathbf { z } )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                283,
+                369,
+                327,
+                380
+            ],
+            "content": "The expression in the image can be written in LaTeX as:\n\n\\[\n\\mathbf{x} = g_{\\theta}(\\mathbf{z})\n\\]",
+            "latex": "The expression in the image can be written in LaTeX as:\n\n\\[\n\\mathbf{x} = g_{\\theta}(\\mathbf{z})\n\\]"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                201,
+                529,
+                376,
+                543
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log p_{\\theta}(\\mathbf{x}) = \\log p_{\\theta}(\\mathbf{z}) + \\log |\\det(d\\mathbf{z}/d\\mathbf{x})|\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log p_{\\theta}(\\mathbf{x}) = \\log p_{\\theta}(\\mathbf{z}) + \\log |\\det(d\\mathbf{z}/d\\mathbf{x})|\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                195,
+                680,
+                416,
+                694
+            ],
+            "content": "```latex\n\\log |\\det(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})| = \\sum (\\log |\\text{diag}(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})|)\n```",
+            "latex": "```latex\n\\log |\\det(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})| = \\sum (\\log |\\text{diag}(d\\mathbf{h}_i/d\\mathbf{h}_{i-1})|)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                201,
+                529,
+                375,
+                542
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log p_{\\theta}(\\mathbf{x}) = \\log p_{\\theta}(\\mathbf{z}) + \\log |\\det(d\\mathbf{z}/d\\mathbf{x})|\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log p_{\\theta}(\\mathbf{x}) = \\log p_{\\theta}(\\mathbf{z}) + \\log |\\det(d\\mathbf{z}/d\\mathbf{x})|\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                282,
+                354,
+                328,
+                381
+            ],
+            "content": "\\begin{array} { l } { { \\mathbf { z } \\sim p _ { \\theta } ( \\mathbf { z } ) } } \\\\ { { \\mathbf { x } = g _ { \\theta } ( \\mathbf { z } ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { \\mathbf { z } \\sim p _ { \\theta } ( \\mathbf { z } ) } } \\\\ { { \\mathbf { x } = g _ { \\theta } ( \\mathbf { z } ) } } \\end{array}"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                195,
+                291,
+                416,
+                320
+            ],
+            "content": "```latex\n\\log \\left| \\det \\left( \\frac{d \\operatorname{conv2D}(h; W)}{dh} \\right) \\right| = h \\cdot w \\cdot \\log |\\det(W)|\n```",
+            "latex": "```latex\n\\log \\left| \\det \\left( \\frac{d \\operatorname{conv2D}(h; W)}{dh} \\right) \\right| = h \\cdot w \\cdot \\log |\\det(W)|\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                245,
+                454,
+                365,
+                468
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log |\\det(\\mathbf{W})| = \\sum (\\log |\\mathbf{s}|)\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log |\\det(\\mathbf{W})| = \\sum (\\log |\\mathbf{s}|)\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                255,
+                397,
+                356,
+                411
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{W} = \\mathbf{P}\\mathbf{L}(\\mathbf{U} + \\text{diag}(\\mathbf{s}))\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{W} = \\mathbf{P}\\mathbf{L}(\\mathbf{U} + \\text{diag}(\\mathbf{s}))\n```\n\nThis will render the equation as shown in the image."
+        }
+    ]
+}

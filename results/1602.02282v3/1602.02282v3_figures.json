@@ -1,0 +1,146 @@
+{
+    "total_count": 10,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                112,
+                74,
+                295,
+                196
+            ],
+            "caption": "Figure 1: Inference (or encoder/recognition) and generative (or decoder) models for a) VAE and b) LVAE. Circles are stochastic variables and diamonds are deterministic variables.\n\nFigure 2: MNIST train (full lines) and test (dashed lines) set log-likelihood using one importance sample during training. The LVAE improves performance significantly over the regular VAE.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                312,
+                72,
+                507,
+                192
+            ],
+            "caption": "Figure 2: MNIST train (full lines) and test (dashed lines) set log-likelihood using one importance sample during training. The LVAE improves performance significantly over the regular VAE.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                117,
+                70,
+                495,
+                178
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 3: MNIST log-likelihood values for VAEs and the LVAE model with different number of latent layers, Batch normalization (BN) and Warm-up (WU). a) Train log-likelihood, b) test log-likelihood and c) test log-likelihood with 5000 importance samples.\" The text content from the image is as follows:\n\n\"Figure 3: MNIST log-likelihood values for VAEs and the LVAE model with different number of latent layers, Batch normalization (BN) and Warm-up (WU). a) Train log-likelihood, b) test log-likelihood and c) test log-likelihood with 5000 importance samples.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                105,
+                82,
+                505,
+                238
+            ],
+            "caption": "Figure 4: log KL(q|p) for each latent unit is shown at different training epochs. Low KL (white) corresponds to an inactive unit. The units are sorted for visualization. It is clear that vanilla VAE cannot train the higher latent layers, while introducing batch normalization helps. Warm-up creates more active units early in training, some of which are then gradually pruned away during training, resulting in a more distributed final representation. Lastly, we see that the LVAE activates the highest number of units in each layer. Figure 4: log KL(q|p) for each latent unit is shown at different training epochs. Low KL (white) corresponds to an inactive unit. The units are sorted for visualization. It is clear that vanilla VAE cannot train the higher latent layers, while introducing batch normalization helps. Warm-up creates more active units early in training, some of which are then gradually pruned away during training, resulting in a more distributed final representation. Lastly, we see that the LVAE activates the highest number of units in each layer.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                108,
+                133,
+                303,
+                254
+            ],
+            "caption": "Figure 5: Layer-wise KL[q|p] divergence going from the lowest to the highest layers. In the VAE models the KL divergence is highest in the lowest layers whereas it is more distributed in the LVAE model",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                310,
+                69,
+                506,
+                254
+            ],
+            "caption": "Figure 6: PCA-plots of samples from q(z_i|z_{i-1}) for 5-layer VAE and LVAE models trained on MNIST. Color-coded according to true class label",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                117,
+                99,
+                495,
+                207
+            ],
+            "caption": "Figure 7: MNIST log-likelihood values for VAEs and the LVAE model with different number of latent layers, Batch normalization (BN) and Warm-up (WU). a) Train log-likelihood, b) test log-likelihood and c) test log-likelihood with 5000 importance samples. Note that the LVAE without batch normalization performed very poorly why some of the results fall outside the range of the plots",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page011.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                117,
+                279,
+                495,
+                387
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 8: OMNIGLOT log-likelihood values for VAEs and the LVAE model with different number of latent layers, Batch normalization (BN) and Warm-up (WU). a) Train log-likelihood, b) test log-likelihood and c) test log-likelihood with 5000 importance samples\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page011.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                132,
+                449,
+                475,
+                578
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 9: MNIST samples. a) True data, b) Conditional Reconstructions and c) Samples from the prior distribution\" The text content from the image is as follows:\n\n\"Figure 9: MNIST samples. a) True data, b) Conditional Reconstructions and c) Samples from the prior distribution\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page011.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                131,
+                307,
+                475,
+                434
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 10: OMNIGLOT samples. a) True data, b) Conditional Reconstructions and c) Samples from the prior distribution\" The text content from the image is as follows:\n\n\"Figure 10: OMNIGLOT samples. a) True data, b) Conditional Reconstructions and c) Samples from the prior distribution\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page012.png"
+        }
+    ]
+}

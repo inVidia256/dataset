@@ -1,0 +1,230 @@
+{
+    "total_count": 14,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                122,
+                111,
+                485,
+                318
+            ],
+            "caption": "Table 1: Performance evaluation results for TSP and CVRP. Bold represents the best performances in each task. ‘-’ indicates that the solver does not support the problem. ‘s’ indicates multi-start sampling, ‘bs’ indicates the beam search. ‘×5 for the MDAM indicates the 5 decoder ensemble.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>TSP(N=100)</td>\n    <td>CVRP(N=100)</td>\n  </tr>\n  <tr>\n    <td>Handcrafted Heuristic-based Classical Methods</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Concorde</td>\n    <td>Heuristic[39]</td>\n    <td>7.76</td>\n    <td>0.00%</td>\n    <td>3m</td>\n    <td>15.65</td>\n    <td>0.00%</td>\n    <td>13h</td>\n  </tr>\n  <tr>\n    <td>LKH3</td>\n    <td>Heuristic[40]</td>\n    <td>7.76</td>\n    <td>0.00%</td>\n    <td>21m</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>RL-based Deep Constructive Heuristic methods with greedy rollout</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Pointer Net{greedy.}</td>\n    <td>NIPS'15[10，20]</td>\n    <td>8.60</td>\n    <td>6.90%</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>S2V-DQN{greedy.}</td>\n    <td>NIPS'17[41]</td>\n    <td>8.31</td>\n    <td>7.03%</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>RL{greedy.}</td>\n    <td>NeurIPS'18[22]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>AM{greedy.}</td>\n    <td>ICLR'19[21]</td>\n    <td>8.12</td>\n    <td>4.53%</td>\n    <td>2s</td>\n    <td>16.80</td>\n    <td>7.34%</td>\n    <td>3s</td>\n  </tr>\n  <tr>\n    <td>MD AM{greedy.x5}</td>\n    <td>AAAI'21[25]</td>\n    <td>7.93</td>\n    <td>2.19%</td>\n    <td>36s</td>\n    <td>16.40</td>\n    <td>4.86%</td>\n    <td>45s</td>\n  </tr>\n  <tr>\n    <td>POMO{greedy.}</td>\n    <td>NeurIPS'20[23]</td>\n    <td>7.85</td>\n    <td>1.04%</td>\n    <td>2s</td>\n    <td>16.26</td>\n    <td>3.93%</td>\n    <td>3s</td>\n  </tr>\n  <tr>\n    <td>Sym-NCO{greedy.}</td>\n    <td>This work</td>\n    <td>7.84</td>\n    <td>0.94%</td>\n    <td>2s</td>\n    <td>16.10</td>\n    <td>2.88%</td>\n    <td>3s</td>\n  </tr>\n  <tr>\n    <td>RL-based Deep Constructive Heuristic methods with multi-start rollout</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Nazari et al.{bs.10}</td>\n    <td>NeurIPS'18[22]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>AM{s.1280}</td>\n    <td>ICLR'19[21]</td>\n    <td>7.94</td>\n    <td>2.26%</td>\n    <td>41m</td>\n    <td>16.23</td>\n    <td>3.72%</td>\n    <td>54m</td>\n  </tr>\n  <tr>\n    <td>POMO{s.100}</td>\n    <td>NeurIPS'20[23]</td>\n    <td>7.80</td>\n    <td>0.44%</td>\n    <td>13s</td>\n    <td>15.90</td>\n    <td>1.67%</td>\n    <td>16s</td>\n  </tr>\n  <tr>\n    <td>MD AM{bs.30x5}</td>\n    <td>AAAI'21[25]</td>\n    <td>7.80</td>\n    <td>0.48%</td>\n    <td>20m</td>\n    <td>16.03</td>\n    <td>2.49%</td>\n    <td>1h</td>\n  </tr>\n  <tr>\n    <td>Sym-NCO{s.100}</td>\n    <td>This work</td>\n    <td>7.79</td>\n    <td>0.39%</td>\n    <td>13s</td>\n    <td>15.87</td>\n    <td>1.46%</td>\n    <td>16s</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                129,
+                335,
+                478,
+                493
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Performance evaluation results for PCTSP and OP. Notations are the same with Table 1.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>PCT SP(N=100)</td>\n    <td>OP(N=100)</td>\n  </tr>\n  <tr>\n    <td>Handcrafted Heuristic-based Classical Methods</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>ILS C++</td>\n    <td>Heuristic[21]</td>\n    <td>5.98</td>\n    <td>0.00%</td>\n    <td>12h</td>\n    <td>33.19</td>\n    <td>-</td>\n    <td>0.00%</td>\n    <td>15m</td>\n  </tr>\n  <tr>\n    <td>Compass</td>\n    <td>Heuristic[42]</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>RL-based Deep Constructive Heuristic methods with greedy rollout(zero-shot inference)</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>AM{greedy.}</td>\n    <td>ICLR'19[21]</td>\n    <td>6.25</td>\n    <td>4.46%</td>\n    <td>2s</td>\n    <td>31.62</td>\n    <td>4.75%</td>\n    <td>2s</td>\n  </tr>\n  <tr>\n    <td>MD AM{greedy.x5}</td>\n    <td>AAAI'21[25]</td>\n    <td>6.17</td>\n    <td>3.13%</td>\n    <td>34s</td>\n    <td>32.32</td>\n    <td>2.61%</td>\n    <td>32s</td>\n  </tr>\n  <tr>\n    <td>Sym-N CO{greedy.}</td>\n    <td>This work</td>\n    <td>6.05</td>\n    <td>1.23%</td>\n    <td>2s</td>\n    <td>32.51</td>\n    <td>2.03%</td>\n    <td>2s</td>\n  </tr>\n  <tr>\n    <td>RL-based Deep Constructive Heuristic methods with multi-start rollout(Post-processing)</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>AM{s.1280}</td>\n    <td>ICLR'19[21]</td>\n    <td>6.08</td>\n    <td>1.67%</td>\n    <td>27m</td>\n    <td>32.68</td>\n    <td>1.55%</td>\n    <td>25m</td>\n  </tr>\n  <tr>\n    <td>MD AM{bs.30x5}</td>\n    <td>AAAI'21[25]</td>\n    <td>6.07</td>\n    <td>1.46%</td>\n    <td>16m</td>\n    <td>32.91</td>\n    <td>0.84%</td>\n    <td>14m</td>\n  </tr>\n  <tr>\n    <td>Sym-N CO{s.200}</td>\n    <td>This work</td>\n    <td>5.98</td>\n    <td>-0.02%</td>\n    <td>3m</td>\n    <td>33.04</td>\n    <td>0.45%</td>\n    <td>3m</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                423,
+                314,
+                519,
+                350
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Optimality gap on TSPLIB\" The text content from the image is:\n\n\"Table 3: Optimality gap on TSPLIB\" The text content from the image is:\n\n\"Table 3: Optimality gap on TSPLIB\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Gap</td>\n  </tr>\n  <tr>\n    <td>POMO</td>\n    <td>1.87%</td>\n  </tr>\n  <tr>\n    <td>Sym-NCO</td>\n    <td>1.62%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                190,
+                166,
+                421,
+                255
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is:\n\n\"Table 4: Hyperparameter Setting for AM for all tasks.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>REINFORCE baseline</td>\n    <td>Rollout baseline[21]</td>\n  </tr>\n  <tr>\n    <td>Learning rate</td>\n    <td>1e-4</td>\n  </tr>\n  <tr>\n    <td>The Number of Encoder Layer</td>\n    <td>3</td>\n  </tr>\n  <tr>\n    <td>Embedding Dimension</td>\n    <td>128</td>\n  </tr>\n  <tr>\n    <td>Batch-size</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Epochs</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Epoch size</td>\n    <td>1，280，000</td>\n  </tr>\n  <tr>\n    <td>The Number of Steps</td>\n    <td>250K</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page016.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                190,
+                329,
+                421,
+                440
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is:\n\n\"Table 5: Hyperparameter Setting for AM for all tasks.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>REINFORCE baseline</td>\n    <td>Rollout baseline[21]</td>\n  </tr>\n  <tr>\n    <td>Learning rate</td>\n    <td>le-4</td>\n  </tr>\n  <tr>\n    <td>The Number of Encoder Layer</td>\n    <td>3</td>\n  </tr>\n  <tr>\n    <td>Embedding Dimension</td>\n    <td>128</td>\n  </tr>\n  <tr>\n    <td>Attention Head Number</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>Feed Forward Dimension</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Batch-size</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Epochs</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Epoch size</td>\n    <td>1，280，000</td>\n  </tr>\n  <tr>\n    <td>The Number of Steps</td>\n    <td>250K</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page016.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                175,
+                502,
+                435,
+                635
+            ],
+            "caption": "The POMO is a high-performance DRL-NCO for TSP and CVRP, implemented on the top of the AM. We follow the instruction of open source code with the following hyperparameters. The POMO is a high-performance DRL-NCO for TSP and CVRP, implemented on the top of the AM. We follow the instruction of open source code 2 with the following hyperparameters.",
+            "footnote": "The text content from the image is:\n\n\"Table 6: Hyperparameter Setting for POMO in TSP and CVRP.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>TSP</td>\n    <td>CVRP</td>\n  </tr>\n  <tr>\n    <td>REINFORCE baseline</td>\n    <td>POMO shared baseline[23]</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Learning rate</td>\n    <td>1e-4</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Weight decay</td>\n    <td>1e-6</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>The Number of Encoder Layer</td>\n    <td>6</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Embedding Dimension</td>\n    <td>128</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Attention Head Number</td>\n    <td>8</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Feed Forward Dimension</td>\n    <td>512</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Batch-size</td>\n    <td>64</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Epochs</td>\n    <td>2，000</td>\n    <td>8，000</td>\n  </tr>\n  <tr>\n    <td>Epoch size</td>\n    <td>100，000</td>\n    <td>10，000</td>\n  </tr>\n  <tr>\n    <td>The Number of Steps</td>\n    <td>3.125M</td>\n    <td>1.25M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page016.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                282,
+                184,
+                329,
+                229
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 7: Hyperparameter Setting of Sym-NCO for PointerNet and AM.\" The text content from the image is:\n\n\"Table 7: Hyperparameter Setting of Sym-NCO for PointerNet and AM.\" The text content from the image is:\n\n\"Table 7: Hyperparameter Setting of Sym-NCO for PointerNet and AM.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>α</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>β</td>\n    <td>0</td>\n  </tr>\n  <tr>\n    <td>K</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>10</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page017.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                260,
+                333,
+                350,
+                389
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is:\n\n\"Table 8: Hyperparameter Setting of Sym-NCO for POMO.\" The text content from the image is:\n\n\"Table 8: Hyperparameter Setting of Sym-NCO for POMO.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>TSP</td>\n    <td>CVRP</td>\n  </tr>\n  <tr>\n    <td>α</td>\n    <td>0.1</td>\n    <td>0.2</td>\n  </tr>\n  <tr>\n    <td>β</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>K</td>\n    <td>100</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>2</td>\n    <td>2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page017.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 20,
+            "type": "table",
+            "bbox": [
+                180,
+                199,
+                431,
+                522
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 9: Performance comparison in real-world instances in TSPLIB.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Instance</td>\n    <td>Opt.</td>\n    <td>POMO[23]</td>\n    <td>Sym-NCO(ours)</td>\n  </tr>\n  <tr>\n    <td>Cost</td>\n    <td>Gap</td>\n    <td>Cost</td>\n    <td>Gap</td>\n  </tr>\n  <tr>\n    <td>eil51</td>\n    <td>426</td>\n    <td>429</td>\n    <td>0.82%</td>\n    <td>432</td>\n    <td>1.39%</td>\n  </tr>\n  <tr>\n    <td>berlin52</td>\n    <td>7，542</td>\n    <td>7，545</td>\n    <td>0.04%</td>\n    <td>7，544</td>\n    <td>0.03%</td>\n  </tr>\n  <tr>\n    <td>st70</td>\n    <td>675</td>\n    <td>677</td>\n    <td>0.31%</td>\n    <td>677</td>\n    <td>0.31%</td>\n  </tr>\n  <tr>\n    <td>pr76</td>\n    <td>108，159</td>\n    <td>108，681</td>\n    <td>0.48%</td>\n    <td>108，388</td>\n    <td>0.21%</td>\n  </tr>\n  <tr>\n    <td>eil76</td>\n    <td>538</td>\n    <td>544</td>\n    <td>1.18%</td>\n    <td>544</td>\n    <td>1.18%</td>\n  </tr>\n  <tr>\n    <td>rat99</td>\n    <td>1，211</td>\n    <td>1，270</td>\n    <td>4.90%</td>\n    <td>1，261</td>\n    <td>4.17%</td>\n  </tr>\n  <tr>\n    <td>rd100</td>\n    <td>7，910</td>\n    <td>7，912</td>\n    <td>0.03%</td>\n    <td>7，911</td>\n    <td>0.02%</td>\n  </tr>\n  <tr>\n    <td>KroA 100</td>\n    <td>21，282</td>\n    <td>21，486</td>\n    <td>0.96%</td>\n    <td>21，397</td>\n    <td>0.54%</td>\n  </tr>\n  <tr>\n    <td>KroB 100</td>\n    <td>22，141</td>\n    <td>22，285</td>\n    <td>0.65%</td>\n    <td>22，378</td>\n    <td>1.07%</td>\n  </tr>\n  <tr>\n    <td>KroC 100</td>\n    <td>20，749</td>\n    <td>20，755</td>\n    <td>0.03%</td>\n    <td>20，930</td>\n    <td>0.87%</td>\n  </tr>\n  <tr>\n    <td>KroD 100</td>\n    <td>21，294</td>\n    <td>21，488</td>\n    <td>0.91%</td>\n    <td>21，696</td>\n    <td>1.89%</td>\n  </tr>\n  <tr>\n    <td>KroE 100</td>\n    <td>22，068</td>\n    <td>22，196</td>\n    <td>0.58%</td>\n    <td>22，313</td>\n    <td>1.11%</td>\n  </tr>\n  <tr>\n    <td>eil101</td>\n    <td>629</td>\n    <td>641</td>\n    <td>1.84%</td>\n    <td>641</td>\n    <td>1.84%</td>\n  </tr>\n  <tr>\n    <td>lin105</td>\n    <td>14，379</td>\n    <td>14，690</td>\n    <td>2.16%</td>\n    <td>14，358</td>\n    <td>0.54%</td>\n  </tr>\n  <tr>\n    <td>pr124</td>\n    <td>59，030</td>\n    <td>59，353</td>\n    <td>0.55%</td>\n    <td>59，202</td>\n    <td>0.29%</td>\n  </tr>\n  <tr>\n    <td>bier127</td>\n    <td>118，282</td>\n    <td>125，331</td>\n    <td>5.96%</td>\n    <td>122，664</td>\n    <td>3.70%</td>\n  </tr>\n  <tr>\n    <td>ch130</td>\n    <td>6，110</td>\n    <td>6，112</td>\n    <td>0.03%</td>\n    <td>6，118</td>\n    <td>0.14%</td>\n  </tr>\n  <tr>\n    <td>pr136</td>\n    <td>96，772</td>\n    <td>97，481</td>\n    <td>0.73%</td>\n    <td>97，579</td>\n    <td>0.83%</td>\n  </tr>\n  <tr>\n    <td>pr144</td>\n    <td>58，537</td>\n    <td>59，197</td>\n    <td>1.13%</td>\n    <td>58，930</td>\n    <td>0.67%</td>\n  </tr>\n  <tr>\n    <td>kroA 150</td>\n    <td>26，524</td>\n    <td>26，833</td>\n    <td>1.16%</td>\n    <td>26，865</td>\n    <td>1.28%</td>\n  </tr>\n  <tr>\n    <td>kroB 150</td>\n    <td>26，130</td>\n    <td>26，596</td>\n    <td>1.78%</td>\n    <td>26，648</td>\n    <td>1.98%</td>\n  </tr>\n  <tr>\n    <td>pr152</td>\n    <td>73，682</td>\n    <td>74，372</td>\n    <td>0.94%</td>\n    <td>75，292</td>\n    <td>2.18%</td>\n  </tr>\n  <tr>\n    <td>u159</td>\n    <td>42，080</td>\n    <td>42，567</td>\n    <td>1.16%</td>\n    <td>42，602</td>\n    <td>1.24%</td>\n  </tr>\n  <tr>\n    <td>rat195</td>\n    <td>2，323</td>\n    <td>2，546</td>\n    <td>9.58%</td>\n    <td>2，502</td>\n    <td>7.70%</td>\n  </tr>\n  <tr>\n    <td>kroA 200</td>\n    <td>29，368</td>\n    <td>29，937</td>\n    <td>1.94%</td>\n    <td>29，816</td>\n    <td>1.53%</td>\n  </tr>\n  <tr>\n    <td>ts225</td>\n    <td>126，643</td>\n    <td>131，811</td>\n    <td>4.08%</td>\n    <td>127，742</td>\n    <td>0.87%</td>\n  </tr>\n  <tr>\n    <td>tsp225</td>\n    <td>3，919</td>\n    <td>4，149</td>\n    <td>5.87%</td>\n    <td>4，126</td>\n    <td>5.27%</td>\n  </tr>\n  <tr>\n    <td>pr226</td>\n    <td>80，369</td>\n    <td>82，428</td>\n    <td>2.56%</td>\n    <td>82，337</td>\n    <td>2.45%</td>\n  </tr>\n  <tr>\n    <td>Avg Gap</td>\n    <td>0.00%</td>\n    <td>1.87%</td>\n    <td>1.62%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page020.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 21,
+            "type": "table",
+            "bbox": [
+                173,
+                268,
+                438,
+                348
+            ],
+            "caption": "Table 10: Performance comparison in large scale CVRP. The performance is evaluated on ten random generated CVRP data.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>CVRP(N=500)</td>\n    <td>CVRP(N=1，000)</td>\n  </tr>\n  <tr>\n    <td>Cost</td>\n    <td>Gap</td>\n    <td>Cost</td>\n    <td>Gap</td>\n  </tr>\n  <tr>\n    <td>LKH3[40]</td>\n    <td>60.37</td>\n    <td>0.00%</td>\n    <td>115.74</td>\n    <td>0.00%</td>\n  </tr>\n  <tr>\n    <td>POMO[23]+EAS[44]</td>\n    <td>63.30</td>\n    <td>4.85%</td>\n    <td>126.56</td>\n    <td>9.34%</td>\n  </tr>\n  <tr>\n    <td>Ours+EAS[44]</td>\n    <td>62.41</td>\n    <td>3.37%</td>\n    <td>121.85</td>\n    <td>5.92%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page021.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 21,
+            "type": "table",
+            "bbox": [
+                106,
+                388,
+                514,
+                448
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 11: Performance evaluation of few shot adaptation to large scale CVRP.\" The text content from the image is:\n\n\"Table 11: Performance evaluation of few shot adaptation to large scale CVRP.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>CVRP(N=500)</td>\n    <td></td>\n    <td>CVRP(N=1，000)</td>\n  </tr>\n  <tr>\n    <td>K=1K=2K=5K=10</td>\n    <td>K=1K=2K=5K=10</td>\n  </tr>\n  <tr>\n    <td>POMO[23]+EAS[44]</td>\n    <td>136.91</td>\n    <td>116.77</td>\n    <td>77.57</td>\n    <td>69.90</td>\n    <td>366.61</td>\n    <td>311.41</td>\n    <td>189.26</td>\n    <td>162.64</td>\n  </tr>\n  <tr>\n    <td>Sym-NCO+EAS[44]</td>\n    <td>75.85</td>\n    <td>69.71</td>\n    <td>67.26</td>\n    <td>66.33</td>\n    <td>192.12</td>\n    <td>163.92</td>\n    <td>139.66</td>\n    <td>134.61</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page021.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 22,
+            "type": "table",
+            "bbox": [
+                171,
+                186,
+                440,
+                275
+            ],
+            "caption": "Table 12: Performance comparison with deep improvement heuristics. The \\( I \\) indicates the number of iterations, and the \\( s \\) indicates the number of samples per instance.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>TSP(N=100)</td>\n    <td>TSP(N=100)</td>\n  </tr>\n  <tr>\n    <td>Cost</td>\n    <td>Gap</td>\n    <td>Cost</td>\n    <td>Gap</td>\n  </tr>\n  <tr>\n    <td>Wu etal.(I=5K) [16](I=5K)</td>\n    <td>1.42%</td>\n    <td>2h</td>\n    <td>2.47%</td>\n    <td>5h</td>\n  </tr>\n  <tr>\n    <td>D ACT(I=IK)[25]</td>\n    <td>1.62%</td>\n    <td>48s</td>\n    <td>3.18%</td>\n    <td>2m</td>\n  </tr>\n  <tr>\n    <td>D ACT(I=5K)[25]</td>\n    <td>0.61%</td>\n    <td>4m</td>\n    <td>1.55%</td>\n    <td>8m</td>\n  </tr>\n  <tr>\n    <td>Ours(s.100)</td>\n    <td>0.39%</td>\n    <td>12s</td>\n    <td>1.46%</td>\n    <td>16s</td>\n  </tr>\n  <tr>\n    <td>Ours(s.800)</td>\n    <td>0.14%</td>\n    <td>1m</td>\n    <td>0.90%</td>\n    <td>2m</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page022.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 23,
+            "type": "table",
+            "bbox": [
+                187,
+                437,
+                425,
+                500
+            ],
+            "caption": "Table 13: Performance comparison with symmetric NCO methods",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Optimal Gap</td>\n    <td>Time</td>\n    <td>GPU resources</td>\n  </tr>\n  <tr>\n    <td>Ouyang et al.[37]</td>\n    <td>2.61%</td>\n    <td>1.3m</td>\n    <td>GTX1080Ti</td>\n  </tr>\n  <tr>\n    <td>Hudson et al.[38]</td>\n    <td>0.698%</td>\n    <td>28h</td>\n    <td>TeslaP100</td>\n  </tr>\n  <tr>\n    <td>Ma et al.[25]</td>\n    <td>1.62%</td>\n    <td>48s</td>\n    <td>Titan RTX</td>\n  </tr>\n  <tr>\n    <td>Ours</td>\n    <td>0.39%</td>\n    <td>12s</td>\n    <td>RTX2080Ti</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page023.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 23,
+            "type": "table",
+            "bbox": [
+                167,
+                540,
+                445,
+                603
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 14: Performance comparison with symmetric NCO methods\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Learning Methods</td>\n    <td>Verified Tasks</td>\n  </tr>\n  <tr>\n    <td>Ouyang etal.[37]</td>\n    <td>Reinforcement Learning</td>\n    <td>TSP</td>\n  </tr>\n  <tr>\n    <td>Hudson etal.[38]</td>\n    <td>Supervised Learning</td>\n    <td>TSP</td>\n  </tr>\n  <tr>\n    <td>Ma etal.[25]</td>\n    <td>Reinforcement Learning</td>\n    <td>TSP， CVRP</td>\n  </tr>\n  <tr>\n    <td>Ours</td>\n    <td>Reinforcement Learning</td>\n    <td>TSP， CVRP， PCTSP， OP</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page023.png"
+        }
+    ]
+}

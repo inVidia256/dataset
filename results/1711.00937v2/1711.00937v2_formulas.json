@@ -1,0 +1,138 @@
+{
+    "total_count": 11,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                197,
+                509,
+                407,
+                537
+            ],
+            "content": "```latex\nq(z = k | x) = \n\\begin{cases} \n1 & \\text{for } k = \\argmin_j \\|z_e(x) - e_j\\|_2, \\\\\n0 & \\text{otherwise}\n\\end{cases}\n```",
+            "latex": "```latex\nq(z = k | x) = \n\\begin{cases} \n1 & \\text{for } k = \\argmin_j \\|z_e(x) - e_j\\|_2, \\\\\n0 & \\text{otherwise}\n\\end{cases}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                203,
+                625,
+                408,
+                639
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nz_q(x) = e_k, \\quad \\text{where} \\quad k = \\argmin_j \\|z_e(x) - e_j\\|_2\n```\n\nThis will render the equation with proper formatting and alignment.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nz_q(x) = e_k, \\quad \\text{where} \\quad k = \\argmin_j \\|z_e(x) - e_j\\|_2\n```\n\nThis will render the equation with proper formatting and alignment."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                237,
+                666,
+                373,
+                691
+            ],
+            "content": "\\log p ( x ) = \\log \\sum _ { k } p ( x | z _ { k } ) p ( z _ { k } ) ,",
+            "latex": "\\log p ( x ) = \\log \\sum _ { k } p ( x | z _ { k } ) p ( z _ { k } ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                181,
+                500,
+                430,
+                514
+            ],
+            "content": "L = \\log p ( x | z _ { q } ( x ) ) + \\| \\operatorname { s g } [ z _ { e } ( x ) ] - e \\| _ { 2 } ^ { 2 } + \\beta \\| z _ { e } ( x ) - \\operatorname { s g } [ e ] \\| _ { 2 } ^ { 2 } ,",
+            "latex": "L = \\log p ( x | z _ { q } ( x ) ) + \\| \\operatorname { s g } [ z _ { e } ( x ) ] - e \\| _ { 2 } ^ { 2 } + \\beta \\| z _ { e } ( x ) - \\operatorname { s g } [ e ] \\| _ { 2 } ^ { 2 } ,"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                273,
+                228,
+                337,
+                257
+            ],
+            "content": "e _ { i } = \\frac { 1 } { n _ { i } } \\sum _ { j } ^ { n _ { i } } z _ { i , j } .",
+            "latex": "e _ { i } = \\frac { 1 } { n _ { i } } \\sum _ { j } ^ { n _ { i } } z _ { i , j } ."
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                273,
+                182,
+                338,
+                209
+            ],
+            "content": "\\sum _ { j } ^ { n _ { i } } \\| z _ { i , j } - e _ { i } \\| _ { 2 } ^ { 2 } .",
+            "latex": "\\sum _ { j } ^ { n _ { i } } \\| z _ { i , j } - e _ { i } \\| _ { 2 } ^ { 2 } ."
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                234,
+                318,
+                377,
+                341
+            ],
+            "content": "```latex\nm_i^{(t)} := m_i^{(t-1)} * \\gamma + \\sum_{j} z_{i,j}^{(t)} (1 - \\gamma)\n```",
+            "latex": "```latex\nm_i^{(t)} := m_i^{(t-1)} * \\gamma + \\sum_{j} z_{i,j}^{(t)} (1 - \\gamma)\n```"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                234,
+                302,
+                364,
+                317
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nN_i^{(t)} := N_i^{(t-1)} * \\gamma + n_i^{(t)} (1 - \\gamma)\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nN_i^{(t)} := N_i^{(t-1)} * \\gamma + n_i^{(t)} (1 - \\gamma)\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                237,
+                344,
+                290,
+                372
+            ],
+            "content": "e _ { i } ^ { ( t ) } : = \\frac { m _ { i } ^ { ( t ) } } { N _ { i } ^ { ( t ) } } ,",
+            "latex": "e _ { i } ^ { ( t ) } : = \\frac { m _ { i } ^ { ( t ) } } { N _ { i } ^ { ( t ) } } ,"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                272,
+                140,
+                339,
+                154
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\| \\text{sg}[z_e(x)] - e \\|_2^2.\n```",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\| \\text{sg}[z_e(x)] - e \\|_2^2.\n```"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                272,
+                140,
+                339,
+                154
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\| \\text{sg}[z_e(x)] - e \\|_2^2.\n```",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\| \\text{sg}[z_e(x)] - e \\|_2^2.\n```"
+        }
+    ]
+}

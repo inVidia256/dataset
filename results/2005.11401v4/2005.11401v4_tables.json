@@ -1,0 +1,118 @@
+{
+    "total_count": 7,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                108,
+                126,
+                300,
+                214
+            ],
+            "caption": "Table 1: Open-Domain QA Test Scores. For TQA, left column uses the standard test set for Open-Domain QA, right column uses the TQA-Wiki test set. See Appendix D for further details.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>NQ</td>\n    <td>TQA</td>\n    <td>WQ</td>\n    <td>CT</td>\n  </tr>\n  <tr>\n    <td>ClosedBook</td>\n    <td>T5-11B[52]</td>\n    <td>34.5</td>\n    <td></td>\n    <td>37.4</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>T5-11B+SSM[52]</td>\n    <td>36.6</td>\n    <td></td>\n    <td>60.5</td>\n    <td>44.7</td>\n  </tr>\n  <tr>\n    <td>OpenBook</td>\n    <td>REALM[20]</td>\n    <td>40.4</td>\n    <td></td>\n    <td></td>\n    <td>40.7</td>\n    <td>46.8</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>DPR[26]</td>\n    <td>41.5</td>\n    <td>57.9/</td>\n    <td></td>\n    <td>41.1</td>\n    <td>50.6</td>\n  </tr>\n  <tr>\n    <td>RAG-Token</td>\n    <td>44.1</td>\n    <td>55.2/66.1</td>\n    <td>45.5</td>\n    <td>50.0</td>\n  </tr>\n  <tr>\n    <td>RAG-Seq.</td>\n    <td>44.5</td>\n    <td>56.8/68.0</td>\n    <td>45.2</td>\n    <td>52.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                311,
+                134,
+                502,
+                214
+            ],
+            "caption": "Table 2: Generation and classification Test Scores.\nMS-MARCO SotA is [4], FEVER-3 is [68] and FEVER-2 is [57] *Uses gold context/evidence.\nBest model without gold access underlined. Table 2: Generation and classification Test Scores.\nMS-MARCO SotA is [4], FEVER-3 is [68] and FEVER-2 is [57] *Uses gold context/evidence.\nBest model without gold access underlined.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>JeopardyB-1QB-1</td>\n    <td>MSMARCOR-LB-1</td>\n    <td>FVR3</td>\n    <td>FVR2Label Acc.</td>\n  </tr>\n  <tr>\n    <td>SotA</td>\n    <td>-</td>\n    <td>-</td>\n    <td>49.8*</td>\n    <td>49.9*</td>\n    <td>76.8</td>\n    <td>92.2*</td>\n  </tr>\n  <tr>\n    <td>BART</td>\n    <td>15.1</td>\n    <td>19.7</td>\n    <td>38.2</td>\n    <td>41.6</td>\n    <td>64.0</td>\n    <td>81.1</td>\n  </tr>\n  <tr>\n    <td>RAG-Tok.</td>\n    <td>17.3</td>\n    <td>22.2</td>\n    <td>40.1</td>\n    <td>41.5</td>\n    <td>72.5</td>\n    <td>89.5</td>\n  </tr>\n  <tr>\n    <td>RAG-Seq.</td>\n    <td>14.7</td>\n    <td>21.4</td>\n    <td>40.8</td>\n    <td>44.2</td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                109,
+                217,
+                500,
+                351
+            ],
+            "caption": "Table 3: Examples from generation tasks. RAG models generate more specific and factually accurate responses. '?' indicates factually incorrect responses, '*' indicates partially correct responses.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>Input</td>\n    <td>Model</td>\n    <td>Generation</td>\n  </tr>\n  <tr>\n    <td>MS-MARCO</td>\n    <td>define middleear</td>\n    <td>BART</td>\n    <td>The middle ear is the part of the ear between the middle ear and the nose.</td>\n  </tr>\n  <tr>\n    <td>RAG-T</td>\n    <td>The middle ear is the portion of the ear internal to the eardrum.</td>\n  </tr>\n  <tr>\n    <td>RAG-S</td>\n    <td>The middle ear includes the tympanic cavity and the three ossicles.</td>\n  </tr>\n  <tr>\n    <td>what currencyneeded inscotland</td>\n    <td>BART</td>\n    <td>The currency needed in Scotland is Pound sterling.</td>\n  </tr>\n  <tr>\n    <td>RAG-T</td>\n    <td>Pound is the currency needed in Scotland.</td>\n  </tr>\n  <tr>\n    <td>RAG-S</td>\n    <td>The currency needed in Scotland is the pound sterling.</td>\n  </tr>\n  <tr>\n    <td>JeopardyQuestion</td>\n    <td>Washington</td>\n    <td>BART</td>\n    <td>This state has the largest number of counties in the U.S.</td>\n  </tr>\n  <tr>\n    <td>Genera-tion</td>\n    <td>RAG-T</td>\n    <td>It's the only U.S.state named for a U.S.president</td>\n  </tr>\n  <tr>\n    <td>RAG-S</td>\n    <td>It's the state where you'll find Mount Rainier National Park</td>\n  </tr>\n  <tr>\n    <td>The DivineComedy</td>\n    <td>BART</td>\n    <td>This epic poem by Dante is divided into 3 parts：the Inferno，the Purgatorio&the Purgatorio</td>\n  </tr>\n  <tr>\n    <td>RAG-T</td>\n    <td>Dante's\"Inferno\" is the first part of this epic poem</td>\n  </tr>\n  <tr>\n    <td>RAG-S</td>\n    <td>This 14th century work is divided into 3 sections：\"Inferno\"，\"Purgatorio\"&\"Paradiso\"</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                125,
+                104,
+                284,
+                177
+            ],
+            "caption": "Table 4: Human assessments for the Jeopardy Question Generation Task.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Factuality</td>\n    <td>Specificity</td>\n  </tr>\n  <tr>\n    <td>BART better</td>\n    <td>7.1%</td>\n    <td>16.8%</td>\n  </tr>\n  <tr>\n    <td>RAG better</td>\n    <td>42.7%</td>\n    <td>37.4%</td>\n  </tr>\n  <tr>\n    <td>Both good</td>\n    <td>11.7%</td>\n    <td>11.8%</td>\n  </tr>\n  <tr>\n    <td>Both poor</td>\n    <td>17.7%</td>\n    <td>6.9%</td>\n  </tr>\n  <tr>\n    <td>No majority</td>\n    <td>20.8%</td>\n    <td>20.1%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                106,
+                212,
+                517,
+                316
+            ],
+            "caption": "Table 6: Ablations on the dev set. As FEVER is a classification task, both RAG models are equivalent.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>NQ</td>\n    <td>TQA</td>\n    <td>WQ</td>\n    <td>CT</td>\n    <td>Jeopardy-QGen</td>\n    <td>MSMarco</td>\n    <td>FVR-3</td>\n    <td>FVR-2</td>\n  </tr>\n  <tr>\n    <td>RAG-Token-BM25</td>\n    <td>29.7</td>\n    <td>41.5</td>\n    <td>32.1</td>\n    <td>33.1</td>\n    <td>17.5</td>\n    <td>22.3</td>\n    <td>55.5</td>\n    <td>48.4</td>\n    <td>75.1</td>\n    <td>91.6</td>\n  </tr>\n  <tr>\n    <td>RAG-Sequence-BM25</td>\n    <td>31.8</td>\n    <td>44.1</td>\n    <td>36.6</td>\n    <td>33.8</td>\n    <td>11.1</td>\n    <td>19.5</td>\n    <td>56.5</td>\n    <td>46.9</td>\n  </tr>\n  <tr>\n    <td>RAG-Token-Frozen</td>\n    <td>37.8</td>\n    <td>50.1</td>\n    <td>37.1</td>\n    <td>51.1</td>\n    <td>16.7</td>\n    <td>21.7</td>\n    <td>55.9</td>\n    <td>49.4</td>\n    <td>72.9</td>\n    <td>89.4</td>\n  </tr>\n  <tr>\n    <td>RAG-Sequence-Frozen</td>\n    <td>41.2</td>\n    <td>52.1</td>\n    <td>41.8</td>\n    <td>52.6</td>\n    <td>11.8</td>\n    <td>19.6</td>\n    <td>56.7</td>\n    <td>47.3</td>\n  </tr>\n  <tr>\n    <td>RAG-Token</td>\n    <td>43.5</td>\n    <td>54.8</td>\n    <td>46.5</td>\n    <td>51.9</td>\n    <td>17.9</td>\n    <td>22.6</td>\n    <td>56.2</td>\n    <td>49.4</td>\n    <td>74.5</td>\n    <td>90.6</td>\n  </tr>\n  <tr>\n    <td>RAG-Sequence</td>\n    <td>44.0</td>\n    <td>55.8</td>\n    <td>44.9</td>\n    <td>53.4</td>\n    <td>15.3</td>\n    <td>21.5</td>\n    <td>57.2</td>\n    <td>47.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                308,
+                109,
+                504,
+                172
+            ],
+            "caption": "Table 5: Ratio of distinct to total tri-grams for generation tasks.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>MS MARCO</td>\n    <td>Jeopardy QGen</td>\n  </tr>\n  <tr>\n    <td>Gold</td>\n    <td>89.6%</td>\n    <td>90.0%</td>\n  </tr>\n  <tr>\n    <td>BART</td>\n    <td>70.7%</td>\n    <td>32.4%</td>\n  </tr>\n  <tr>\n    <td>RAG-Token</td>\n    <td>77.8%</td>\n    <td>46.8%</td>\n  </tr>\n  <tr>\n    <td>RAG-Seq.</td>\n    <td>83.5%</td>\n    <td>53.8%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 19,
+            "type": "table",
+            "bbox": [
+                172,
+                93,
+                437,
+                196
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 7: Number of instances in the datasets used. *A hidden subset of this data is used for evaluation\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>Train</td>\n    <td>Development</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>Natural Questions</td>\n    <td>79169</td>\n    <td>8758</td>\n    <td>3611</td>\n  </tr>\n  <tr>\n    <td>TriviaQA</td>\n    <td>78786</td>\n    <td>8838</td>\n    <td>11314</td>\n  </tr>\n  <tr>\n    <td>WebQuestions</td>\n    <td>3418</td>\n    <td>362</td>\n    <td>2033</td>\n  </tr>\n  <tr>\n    <td>Curated Trec</td>\n    <td>635</td>\n    <td>134</td>\n    <td>635</td>\n  </tr>\n  <tr>\n    <td>Jeopardy Question Generation</td>\n    <td>97392</td>\n    <td>13714</td>\n    <td>26849</td>\n  </tr>\n  <tr>\n    <td>MS-MARCO</td>\n    <td>153726</td>\n    <td>12468</td>\n    <td>101093*</td>\n  </tr>\n  <tr>\n    <td>FEVER-3-way</td>\n    <td>145450</td>\n    <td>10000</td>\n    <td>10000</td>\n  </tr>\n  <tr>\n    <td>FEVER-2-way</td>\n    <td>96966</td>\n    <td>6666</td>\n    <td>6666</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page019.png"
+        }
+    ]
+}

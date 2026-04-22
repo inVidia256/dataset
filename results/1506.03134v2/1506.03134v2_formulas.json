@@ -1,0 +1,90 @@
+{
+    "total_count": 7,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                209,
+                702,
+                401,
+                735
+            ],
+            "content": "p ( { \\mathcal { C } } ^ { \\mathcal { P } } | { \\mathcal { P } } ; \\theta ) = \\prod _ { i = 1 } ^ { m ( { \\mathcal { P } } ) } p _ { \\theta } ( C _ { i } | C _ { 1 } , \\ldots , C _ { i - 1 } , { \\mathcal { P } } ; \\theta ) .",
+            "latex": "p ( { \\mathcal { C } } ^ { \\mathcal { P } } | { \\mathcal { P } } ; \\theta ) = \\prod _ { i = 1 } ^ { m ( { \\mathcal { P } } ) } p _ { \\theta } ( C _ { i } | C _ { 1 } , \\ldots , C _ { i - 1 } , { \\mathcal { P } } ; \\theta ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                201,
+                575,
+                410,
+                642
+            ],
+            "content": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\na_j^i = \\text{softmax}(u_j^i) \\quad j \\in (1, \\ldots, n)\nd_i' = \\sum_{j=1}^{n} a_j^i e_j\n```",
+            "latex": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\na_j^i = \\text{softmax}(u_j^i) \\quad j \\in (1, \\ldots, n)\nd_i' = \\sum_{j=1}^{n} a_j^i e_j\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                233,
+                133,
+                378,
+                159
+            ],
+            "content": "\\theta ^ { * } = \\operatorname* { a r g ~ m a x } _ { \\theta } \\sum _ { \\mathcal { P } , \\mathcal { C } ^ { \\mathcal { P } } } \\log p ( \\mathcal { C } ^ { \\mathcal { P } } | \\mathcal { P } ; \\theta ) ,",
+            "latex": "\\theta ^ { * } = \\operatorname* { a r g ~ m a x } _ { \\theta } \\sum _ { \\mathcal { P } , \\mathcal { C } ^ { \\mathcal { P } } } \\log p ( \\mathcal { C } ^ { \\mathcal { P } } | \\mathcal { P } ; \\theta ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                160,
+                243,
+                450,
+                275
+            ],
+            "content": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n\np(C_i | C_1, \\ldots, C_{i-1}, P) = \\text{softmax}(u_j^i)\n```",
+            "latex": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n\np(C_i | C_1, \\ldots, C_{i-1}, P) = \\text{softmax}(u_j^i)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                160,
+                243,
+                449,
+                275
+            ],
+            "content": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n\np(C_i | C_1, \\ldots, C_{i-1}, P) = \\text{softmax}(u^i)\n```",
+            "latex": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n\np(C_i | C_1, \\ldots, C_{i-1}, P) = \\text{softmax}(u^i)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                163,
+                243,
+                450,
+                275
+            ],
+            "content": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n\np(C_i | C_1, \\ldots, C_{i-1}, \\mathcal{P}) = \\text{softmax}(u^i)\n```",
+            "latex": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n\np(C_i | C_1, \\ldots, C_{i-1}, \\mathcal{P}) = \\text{softmax}(u^i)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                244,
+                243,
+                450,
+                257
+            ],
+            "content": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n```",
+            "latex": "```latex\nu_j^i = v^T \\tanh(W_1 e_j + W_2 d_i) \\quad j \\in (1, \\ldots, n)\n```"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "total_count": 8,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                342,
+                454,
+                511,
+                481
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{G}_{k,l,n} = \\sum_{i,j,m} \\mathbf{K}_{i,j,m,n} \\cdot \\mathbf{F}_{k+i-1,l+j-1,m}\n```\n\nThis will render the equation correctly in a LaTeX document.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{G}_{k,l,n} = \\sum_{i,j,m} \\mathbf{K}_{i,j,m,n} \\cdot \\mathbf{F}_{k+i-1,l+j-1,m}\n```\n\nThis will render the equation correctly in a LaTeX document."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                367,
+                511,
+                487,
+                525
+            ],
+            "content": "D _ { K } \\cdot D _ { K } \\cdot M \\cdot N \\cdot D _ { F } \\cdot D _ { F }",
+            "latex": "D _ { K } \\cdot D _ { K } \\cdot M \\cdot N \\cdot D _ { F } \\cdot D _ { F }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                87,
+                224,
+                248,
+                251
+            ],
+            "content": "{ \\hat { \\mathbf { G } } } _ { k , l , m } = \\sum _ { i , j } { \\hat { \\mathbf { K } } } _ { i , j , m } \\cdot \\mathbf { F } _ { k + i - 1 , l + j - 1 , m }",
+            "latex": "{ \\hat { \\mathbf { G } } } _ { k , l , m } = \\sum _ { i , j } { \\hat { \\mathbf { K } } } _ { i , j , m } \\cdot \\mathbf { F } _ { k + i - 1 , l + j - 1 , m }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                68,
+                570,
+                275,
+                624
+            ],
+            "content": "```latex\n\\begin{equation}\n= \\frac{D_K \\cdot D_K \\cdot M \\cdot D_F \\cdot D_F + M \\cdot N \\cdot D_F \\cdot D_F}{D_K \\cdot D_K \\cdot M \\cdot N \\cdot D_F \\cdot D_F} = \\frac{1}{N} + \\frac{1}{D_K^2}\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\n= \\frac{D_K \\cdot D_K \\cdot M \\cdot D_F \\cdot D_F + M \\cdot N \\cdot D_F \\cdot D_F}{D_K \\cdot D_K \\cdot M \\cdot N \\cdot D_F \\cdot D_F} = \\frac{1}{N} + \\frac{1}{D_K^2}\n\\end{equation}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                116,
+                328,
+                220,
+                342
+            ],
+            "content": "D _ { K } \\cdot D _ { K } \\cdot M \\cdot D _ { F } \\cdot D _ { F }",
+            "latex": "D _ { K } \\cdot D _ { K } \\cdot M \\cdot D _ { F } \\cdot D _ { F }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                74,
+                486,
+                261,
+                499
+            ],
+            "content": "D _ { K } \\cdot D _ { K } \\cdot M \\cdot D _ { F } \\cdot D _ { F } + M \\cdot N \\cdot D _ { F } \\cdot D _ { F }",
+            "latex": "D _ { K } \\cdot D _ { K } \\cdot M \\cdot D _ { F } \\cdot D _ { F } + M \\cdot N \\cdot D _ { F } \\cdot D _ { F }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                317,
+                524,
+                524,
+                537
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nD_K \\cdot D_K \\cdot \\alpha M \\cdot D_F \\cdot D_F + \\alpha M \\cdot \\alpha N \\cdot D_F \\cdot D_F\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nD_K \\cdot D_K \\cdot \\alpha M \\cdot D_F \\cdot D_F + \\alpha M \\cdot \\alpha N \\cdot D_F \\cdot D_F\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                53,
+                304,
+                277,
+                317
+            ],
+            "content": "```latex\nD_K \\cdot D_K \\cdot \\alpha M \\cdot \\rho D_F \\cdot \\rho D_F + \\alpha M \\cdot \\alpha N \\cdot \\rho D_F \\cdot \\rho D_F\n```",
+            "latex": "```latex\nD_K \\cdot D_K \\cdot \\alpha M \\cdot \\rho D_F \\cdot \\rho D_F + \\alpha M \\cdot \\alpha N \\cdot \\rho D_F \\cdot \\rho D_F\n```"
+        }
+    ]
+}

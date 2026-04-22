@@ -1,0 +1,118 @@
+{
+    "total_count": 8,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                87,
+                44,
+                524,
+                134
+            ],
+            "caption": "Fig. 1. A Squeeze-and-Excitation block.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                90,
+                51,
+                259,
+                219
+            ],
+            "caption": "The schema of the original Inception module (left) and the SE-Inception module (right).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                343,
+                45,
+                526,
+                222
+            ],
+            "caption": "The schema of the original Residual module (left) and the SE-ResNet module (right).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                68,
+                142,
+                542,
+                242
+            ],
+            "caption": "Fig. 4. Training baseline architectures and their SENet counterparts on ImageNet. SENets exhibit improved optimisation characteristics and produce consistent gains in performance which are sustained throughout the training process.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                67,
+                46,
+                536,
+                451
+            ],
+            "caption": "Fig. 6. Activations induced by the Excitation operator at different depths in the SE-ResNet-50 on ImageNet. Each set of activations is named according to the following scheme: SE_stageID_blockID. With the exception of the unusual behaviour at SE_5_2, the activations become increasingly class-specific with increasing depth.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page010.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                74,
+                48,
+                540,
+                157
+            ],
+            "caption": "The text content from the image is:\n\n\"Fig. 5. SE block integration designs explored in the ablation study.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page010.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                75,
+                54,
+                526,
+                293
+            ],
+            "caption": "Fig. 7. Activations induced by Excitation in the different modules of SE-ResNet-50 on image samples from the goldfish and plane classes of ImageNet. The module is named \"SE_stageID_blockID\".",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page011.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                47,
+                47,
+                297,
+                108
+            ],
+            "caption": "Fig. 8. Sample images from the four classes of ImageNet used in the experiments described in Sec. 7.2.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page012.png"
+        }
+    ]
+}

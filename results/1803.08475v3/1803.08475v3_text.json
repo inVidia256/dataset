@@ -1,0 +1,2888 @@
+{
+    "total_count": 262,
+    "content_type": "text",
+    "data": [
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                622,
+                505,
+                732
+            ],
+            "content": "The world is not a game, and we desire to train models that make decisions to solve real problems. These models must learn to select good solutions for a problem from a combinatorially large set of potential solutions. Classically, approaches to this problem of combinatorial optimization can be divided into exact methods, that guarantee finding optimal solutions, and heuristics, that trade off optimality for computational cost, although exact methods can use heuristics internally and vice versa. Heuristics are typically expressed in the form of rules, which can be interpreted as policies to make decisions. We believe that these policies can be parameterized using DNNs, and be trained to obtain new and stronger algorithms for many different combinatorial optimization problems, similar to the way DNNs have boosted performance in the applications mentioned before. In this paper, we focus on routing problems: an important class of practical combinatorial optimization problems."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                528,
+                505,
+                616
+            ],
+            "content": "Motivation Machine learning algorithms have replaced humans as the engineers of algorithms to solve various tasks. A decade ago, computer vision algorithms used hand-crafted features but today they are learned end-to-end by Deep Neural Networks (DNNs). DNNs have outperformed classic approaches in speech recognition, machine translation, image captioning and other problems, by learning from data (LeCun et al., 2015). While DNNs are mainly used to make predictions, Reinforcement Learning (RL) has enabled algorithms to learn to make decisions, either by interacting with an environment, e.g. to learn to play Atari games (Mnih et al., 2015), or by inducing knowledge through look-ahead search: this was used to master the game of Go (Silver et al., 2017)."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                143,
+                214,
+                469,
+                357
+            ],
+            "content": "The recently presented idea to learn heuristics for combinatorial optimization problems is promising as it can save costly development. However, to push this idea towards practical implementation, we need better models and better ways of training. We contribute in both directions: we propose a model based on attention layers with benefits over the Pointer Network and we show how to train this model using REINFORCE with a simple baseline based on a deterministic greedy rollout, which we find is more efficient than using a value function. We significantly improve over recent learned heuristics for the Travelling Salesman Problem (TSP), getting close to optimal results for problems up to 100 nodes. With the same hyperparameters, we learn strong heuristics for two variants of the Vehicle Routing Problem (VRP), the Orienteering Problem (OP) and (a stochastic variant of) the Prize Collecting TSP (PCTSP), outperforming a wide range of baselines and getting results close to highly optimized and specialized algorithms."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                450,
+                505,
+                516
+            ],
+            "content": "You realize that your problem is equivalent to the Travelling Salesman Problem (conveniently also TSP). This seems discouraging as you know the problem is (NP-)hard (Garey & Johnson, 1979). Fortunately, complexity theory analyzes the worst case, and your Bayesian view considers this unlikely. In particular, you have a strong prior: the posters will probably be laid out regularly. You want a special algorithm that solves not any, but *this* type of problem instance. You have some months left to prepare. As a machine learner, you wonder whether your algorithm can be learned?"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                401,
+                505,
+                444
+            ],
+            "content": "Imagine yourself travelling to a scientific conference. The field is popular, and surely you do not want to miss out on anything. You have selected several posters you want to visit, and naturally you must return to the place where you are now: the coffee corner. In which order should you visit the posters, to minimize your time walking around? This is the Travelling Scientist Problem (TSP)."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                109,
+                78,
+                498,
+                96
+            ],
+            "content": "The text content from the image is:\n\n\"ATTENTION, LEARN TO SOLVE ROUTING PROBLEMS!\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                376,
+                206,
+                388
+            ],
+            "content": "The text content from the image is \"1 INTRODUCTION\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                243,
+                117,
+                351,
+                150
+            ],
+            "content": "The text content from the image is:\n\nHerke van Hoof\nUniversity of Amsterdam\nh.c.vanhoof@uva.nl"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                277,
+                191,
+                334,
+                203
+            ],
+            "content": "The text content from the image is \"ABSTRACT\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                379,
+                118,
+                482,
+                162
+            ],
+            "content": "The text content from the image is:\n\nMax Welling\nUniversity of Amsterdam\nCIFAR\nm.welling@uva.nl"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                117,
+                216,
+                162
+            ],
+            "content": "The text content from the image is:\n\nWouter Kool\nUniversity of Amsterdam\nORTEC\nw.w.m.kool@uva.nl"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                113,
+                118,
+                169,
+                128
+            ],
+            "content": "Wouter Kool"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                379,
+                118,
+                435,
+                128
+            ],
+            "content": "Max Welling"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                243,
+                118,
+                313,
+                128
+            ],
+            "content": "The text content from the image is \"Herke van Hoof\"."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                275,
+                505,
+                407
+            ],
+            "content": "Vinyals et al. (2015) introduce the Pointer Network (PN) as a model that uses attention to output a permutation of the input, and train this model offline to solve the (Euclidean) TSP, supervised by example solutions. Upon test time, their beam search procedure filters invalid tours. Bello et al. (2016) introduce an Actor-Critic algorithm to train the PN without supervised solutions. They consider each instance as a training sample and use the cost (tour length) of a sampled solution for an unbiased Monte-Carlo estimate of the policy gradient. They introduce extra model depth in the decoder by an additional glimpse (Vinyals et al., 2016) at the embeddings, masking nodes already visited. For small instances (\\(n = 20\\)), they get close to the results by Vinyals et al. (2015), they improve for \\(n = 50\\) and additionally include results for \\(n = 100\\). Nazari et al. (2018) replace the LSTM encoder of the PN by element-wise projections, such that the updated embeddings after state-changes can be effectively computed. They apply this model on the Vehicle Routing Problem (VRP) with split deliveries and a stochastic variant."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                82,
+                505,
+                171
+            ],
+            "content": "The promising idea to learn heuristics has been tested on TSP (Bello et al., 2016). In order to push this idea, we need better models and better ways of training. Therefore, we propose to use a powerful model based on attention and we propose to train this model using REINFORCE with a simple but effective greedy rollout baseline. The goal of our method is not to outperform a non-learned, specialized TSP algorithm such as Concorde (Applegate et al., 2006). Rather, we show the flexibility of our approach on multiple (routing) problems of reasonable size, with a single set of hyperparameters. This is important progress towards the situation where we can learn strong heuristics to solve a wide range of different practical problems for which no good heuristics exist."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                495,
+                505,
+                572
+            ],
+            "content": "Nowak et al. (2017) train a Graph Neural Network in a supervised manner to directly output a tour as an adjacency matrix, which is converted into a feasible solution by a beam search. The model is non-autoregressive, so cannot condition its output on the partial tour and the authors report an optimality gap of 2.7% for n = 20, worse than autoregressive approaches mentioned in this section. Kaempfer & Wolf (2018) train a model based on the Transformer architecture (Vaswani et al., 2017) that outputs a fractional solution to the multiple TSP (mTSP). The result can be seen as a solution to the linear relaxation of the problem and they use a beam search to obtain a feasible integer solution."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                412,
+                505,
+                489
+            ],
+            "content": "Dai et al. (2017) do not use a separate encoder and decoder, but a single model based on graph embeddings. They train the model to output the order in which nodes are inserted into a partial tour, using a helper function to insert at the best possible location. Their 1-step DQN (Mnih et al., 2015) training method trains the algorithm per step and incremental rewards provided to the agent at every step effectively encourage greedy behavior. As mentioned in their appendix, they use the negative of the reward, which combined with discounting encourages the agent to insert the farthest nodes first, which is known to be an effective heuristic (Rosenkrantz et al., 2009)."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                214,
+                505,
+                269
+            ],
+            "content": "The application of Neural Networks (NNs) for optimizing decisions in combinatorial optimization problems dates back to Hopfield & Tank (1985), who applied a Hopfield-network for solving small TSP instances. NNs have been applied to many related problems (Smith, 1999), although in most cases in an online manner, starting 'from scratch' and 'learning' a solution for every instance. More recently, (D)NNs have also been used offline to learn about an entire class of problem instances."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                578,
+                505,
+                633
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Independently of our work, Deudon et al. (2018) presented a model for TSP using attention in the OR community. They show performance can improve using 2OPT local search, but do not show benefit of their model in direct comparison to the PN. We use a different decoder and improved training algorithm, both contributing to significantly improved results, without 2OPT and additionally show application to different problems. For a full discussion of the differences, we refer to Appendix B.4.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                677,
+                505,
+                732
+            ],
+            "content": "We define the Attention Model in terms of the TSP. For other problems, the model is the same but the input, mask and decoder context need to be defined accordingly, which is discussed in the Appendix. We define a problem instance s as a graph with n nodes, where node i ∈ {1, . . . , n} is represented by features x_i. For TSP, x_i is the coordinate of node i and the graph is fully connected (with self-connections) but in general, the model can be considered a Graph Attention Network (Velickovic"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                651,
+                226,
+                663
+            ],
+            "content": "The text content from the image is \"3 ATTENTION MODEL\"."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                188,
+                209,
+                201
+            ],
+            "content": "The text content from the image is \"2 RELATED WORK\"."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                163,
+                505,
+                241
+            ],
+            "content": "The encoder produces embeddings of all input nodes. The decoder produces the sequence π of input nodes, one node at a time. It takes as input the encoder embeddings and a problem specific mask and context. For TSP, when a partial tour has been constructed, it cannot be changed and the remaining problem is to find a path from the last node, through all unvisited nodes, to the first node. The order and coordinates of other nodes already visited are irrelevant. To know the first and last node, the decoder context consists (next to the graph embedding) of embeddings of the first and last node. Similar to Bello et al. (2016), the decoder observes a mask to know which nodes have been visited."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                505,
+                127
+            ],
+            "content": "The text content from the image is as follows:\n\n\"et al., 2018) and take graph structure into account by a masking procedure (see Appendix A). We define a solution (tour) π = (π₁, ..., πₙ) as a permutation of the nodes, so πₜ ∈ {1, ..., n} and πₜ ≠ πₜ′ ∀t ≠ t′. Our attention based encoder-decoder model defines a stochastic policy p(π|s) for selecting a solution π given a problem instance s. It is factorized and parameterized by θ as\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                648,
+                505,
+                714
+            ],
+            "content": "Decoding happens sequentially, and at timestep \\( t \\in \\{1, \\ldots, n\\} \\), the decoder outputs the node \\( \\pi_t \\) based on the embeddings from the encoder and the outputs \\( \\pi_{t'} \\) generated at time \\( t' < t \\). During decoding, we augment the graph with a special context node (\\( c \\)) to represent the decoding context. The decoder computes an attention (sub)layer on top of the encoder, but with messages only to the context node for efficiency. The final probabilities are computed using a single-head attention mechanism. See Figure 2 for an illustration of the decoding process."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                476,
+                505,
+                532
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Attention layer Following the Transformer architecture (Vaswani et al., 2017), each attention layer consists of two sublayers: a multi-head attention (MHA) layer that executes message passing between the nodes and a node-wise fully connected feed-forward (FF) layer. Each sublayer adds a skip-connection (He et al., 2016) and batch normalization (BN) (Ioffe & Szegedy, 2015) (which we found to work better than layer normalization (Ba et al., 2016)):"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                579,
+                505,
+                614
+            ],
+            "content": "The layer index \\( \\ell \\) indicates that the layers do not share parameters. The MHA sublayer uses \\( M = 8 \\) heads with dimensionality \\( \\frac{d_h}{M} = 16 \\), and the FF sublayer has one hidden (sub)sublayer with dimension 512 and ReLu activation. See Appendix A for details."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                304,
+                348,
+                504,
+                414
+            ],
+            "content": "Figure 1: Attention based encoder. Input nodes are embedded and processed by N sequential layers, each consisting of a multi-head attention (MHA) and node-wise feed-forward (FF) sub-layer. The graph embedding is computed as the mean of node embeddings. Best viewed in color."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                627,
+                174,
+                639
+            ],
+            "content": "The text content from the image is \"3.2 DECODER\"."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                253,
+                174,
+                265
+            ],
+            "content": "The text content from the image is \"3.1 ENCODER\"."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                425,
+                505,
+                466
+            ],
+            "content": "The embeddings produced by layer \\( \\ell \\in \\{1,..,N\\} \\). The encoder computes an aggregated embedding \\( \\bar{\\mathbf{h}}^{(N)} \\) of the input graph as the mean of the final node embeddings \\( \\mathbf{h}_i^{(N)} \\): \\( \\bar{\\mathbf{h}}^{(N)} = \\frac{1}{n} \\sum_{i=1}^n \\mathbf{h}_i^{(N)} \\). Both the node embeddings \\( \\mathbf{h}_i^{(N)} \\) and the graph embedding \\( \\bar{\\mathbf{h}}^{(N)} \\) are used as input to the decoder."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                274,
+                297,
+                451
+            ],
+            "content": "The encoder that we use (Figure 1) is similar to the encoder used in the Transformer architecture by Vaswani et al. (2017), but we do not use positional encoding such that the resulting node embeddings are invariant to the input order. From the \\(d_x\\)-dimensional input features \\(\\mathbf{x}_i\\) (for TSP \\(d_x = 2\\)), the encoder computes initial \\(d_h\\)-dimensional node embeddings \\(\\mathbf{h}_i^{(0)}\\) (we use \\(d_h = 128\\)) through a learned linear projection with parameters \\(W^x\\) and \\(b^x\\): \\(\\mathbf{h}_i^{(0)} = W^x \\mathbf{x}_i + b^x\\). The embeddings are updated using \\(N\\) attention layers, each consisting of two sublayers. We denote with \\(\\mathbf{h}_i^{(\\ell)}\\) the node embeddings produced by layer \\(\\ell \\in \\{1, \\ldots, N\\}\\). \\(\\bar{\\mathbf{h}}^{(N)}\\) of the input graph as the mean of the fin"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                118,
+                721,
+                472,
+                732
+            ],
+            "content": "The text in the image reads:\n\n\"1^n × n attention between all nodes is expensive to compute in every step of the decoding process.\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                519,
+                505,
+                580
+            ],
+            "content": "Here \\( d_k = \\frac{d_h}{M} \\) is the query/key dimensionality (see Appendix A). Again, we compute \\( u_{(c)j} \\) and \\( v_i \\) for \\( M = 8 \\) heads and compute the final multi-head attention value for the context node using equations 12–14 from Appendix A, but with \\( (c) \\) instead of \\( i \\). This mechanism is similar to our encoder, but does not use skip-connections, batch normalization or the feed-forward sublayer for maximal efficiency. The result \\( h_{(c)}^{(N+1)} \\) is similar to the glimpse described by Bello et al. (2016)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                332,
+                505,
+                387
+            ],
+            "content": "Here [·, ·, ·] is the horizontal concatenation operator and we write the (3 · dh)-dimensional result vector as h(c)N to indicate we interpret it as the embedding of the special context node (c) and use the superscript (N) to align with the node embeddings hi(N). We could project the embedding back to dh dimensions, but we absorb this transformation in the parameter WQ in equation 5."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                591,
+                505,
+                638
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Calculation of log-probabilities To compute output probabilities \\( p_{\\theta}(\\pi_t | s, \\pi_{1:t-1}) \\) in equation 1, we add one final decoder layer with a single attention head (\\( M = 1 \\) so \\( d_k = d_h \\)). For this layer, we only compute the compatibilities \\( u_{(c)j} \\) using equation 6, but following Bello et al. (2016) we clip the result (before masking!) within \\([-C, C]\\) (\\( C = 10 \\)) using tanh:\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                254,
+                505,
+                298
+            ],
+            "content": "The context of the decoder at time \\( t \\) comes from the encoder and the output up to time \\( t \\). As mentioned, for the TSP it consists of the embedding of the graph, the previous (last) node \\( \\pi_{t-1} \\) and the first node \\( \\pi_1 \\). For \\( t = 1 \\) we use learned \\( d_h \\)-dimensional parameters \\( \\mathbf{v}^l \\) and \\( \\mathbf{v}^f \\) as input placeholders:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                392,
+                505,
+                434
+            ],
+            "content": "Now we compute a new context node embedding \\(\\mathbf{h}_{(c)}^{(N+1)}\\) using the (M-head) attention mechanism described in Appendix A. The keys and values come from the node embeddings \\(\\mathbf{h}_i^{(N)}\\), but we only compute a single query \\(\\mathbf{q}_{(c)}\\) (per head) from the context node (we omit the \\((N)\\) for readability):"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                682,
+                505,
+                705
+            ],
+            "content": "We interpret these compatibilities as unnormalized log-probabilities (logits) and compute the final output probability vector p using a softmax (similar to equation 12 in Appendix A):"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                455,
+                505,
+                478
+            ],
+            "content": "We compute the compatibility of the query with all nodes, and mask (set \\( u_{(c)j} = -\\infty \\)) nodes which cannot be visited at time \\( t \\). For TSP, this simply means we mask the nodes already visited:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                181,
+                505,
+                237
+            ],
+            "content": "Figure 2: Attention based decoder for the TSP problem. The decoder takes as input the graph embedding and node embeddings. At each time step t, the context consist of the graph embedding and the embeddings of the first and last (previously output) node of the partial tour, where learned placeholders are used if t = 1. Nodes that cannot be visited (since they are already visited) are masked. The example shows how a tour π = (3, 1, 2, 4) is constructed. Best viewed in color."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                181,
+                505,
+                237
+            ],
+            "content": "Figure 2: Attention based decoder for the TSP problem. The decoder takes as input the graph embedding and node embeddings. At each time step t, the context consist of the graph embedding and the embeddings of the first and last (previously output) node of the partial tour, where learned placeholders are used if t = 1. Nodes that cannot be visited (since they are already visited) are masked. The example shows how a tour π = (3, 1, 2, 4) is constructed. Best viewed in color."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                387,
+                505,
+                465
+            ],
+            "content": "The text content from the image is as follows:\n\n\"**Determining the baseline policy** As the model changes during training, we stabilize the baseline by freezing the greedy rollout policy \\( p_{\\theta^{\\text{BL}}} \\) for a fixed number of steps (every epoch), similar to freezing of the target Q-network in DQN (Mnih et al., 2015). A stronger algorithm defines a stronger baseline, so we compare (with greedy decoding) the current training policy with the baseline policy at the end of every epoch, and replace the parameters \\( \\theta^{\\text{BL}} \\) of the baseline policy only if the improvement is significant according to a paired t-test (\\( \\alpha = 5\\% \\)), on 10000 separate (evaluation) instances. If the baseline policy is updated, we sample new evaluation instances to prevent overfitting.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                294,
+                505,
+                372
+            ],
+            "content": "Motivation The goal of a baseline is to estimate the difficulty of the instance s, such that it can relate to the cost L(π) to estimate the advantage of the solution π selected by the model. We make the following key observation: The difficulty of an instance can (on average) be estimated by the performance of an algorithm applied to it. This follows from the assumption that (on average) an algorithm will have a higher cost on instances that are more difficult. Therefore we form a baseline by applying (rolling out) the algorithm defined by our model during training. To eliminate variance we force the result to be deterministic by selecting greedily the action with maximum probability."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                185,
+                505,
+                241
+            ],
+            "content": "A good baseline \\( b(s) \\) reduces gradient variance and therefore increases speed of learning. A simple example is an exponential moving average \\( b(s) = M \\) with decay \\( \\beta \\). Here \\( M = L(\\boldsymbol{\\pi}) \\) in the first iteration and gets updated as \\( M \\leftarrow \\beta M + (1-\\beta)L(\\boldsymbol{\\pi}) \\) in subsequent iterations. A popular alternative is the use of a learned value function (critic) \\( \\hat{v}(s, \\boldsymbol{w}) \\), where the parameters \\( \\boldsymbol{w} \\) are learned from the observations \\( (s, L(\\boldsymbol{\\pi})) \\). However, getting such actor-critic algorithms to work is non-trivial."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                108,
+                505,
+                154
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Section 3 defined our model that given an instance \\( s \\) defines a probability distribution \\( p_{\\theta}(\\pi | s) \\), from which we can sample to obtain a solution (tour) \\( \\pi | s \\). In order to train our model, we define the loss \\( \\mathcal{L}(\\theta | s) = \\mathbb{E}_{p_{\\theta}(\\pi | s)} [L(\\pi)] \\): the expectation of the cost \\( L(\\pi) \\) (tour length for TSP). We optimize \\( \\mathcal{L} \\) by gradient descent, using the REINFORCE (Williams, 1992) gradient estimator with baseline \\( b(s) \\):\"\n\nThis text describes the training process of a model for solving the Traveling Salesman Problem (TSP) using reinforcement learning techniques."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                480,
+                505,
+                547
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Analysis With the greedy rollout as baseline \\( b(s) \\), the function \\( L(\\pi) - b(s) \\) is negative if the sampled solution \\( \\pi \\) is better than the greedy rollout, causing actions to be reinforced, and vice versa. This way the model is trained to improve over its (greedy) self. We see similarities with self-play improvement (Silver et al., 2017): sampling replaces tree search for exploration and the model is rewarded if it yields improvement ('wins') compared to the best model. Similar to AlphaGo, the evaluation at the end of each epoch ensures that we are always challenged by the best model.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                589,
+                296,
+                731
+            ],
+            "content": "Efficiency Each rollout constitutes an additional forward pass, increasing computation by 50%. However, as the baseline policy is fixed for an epoch, we can sample the data and compute baselines per epoch using larger batch sizes, allowed by the reduced memory requirement as the computations can run in pure inference mode. Empirically we find that it adds only 25% (see Appendix B.5), taking up 20% of total time. If desired, the baseline rollout can be computed in parallel such that there is no increase in time per iteration, as an easy way to benefit from an additional GPU."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                245,
+                504,
+                279
+            ],
+            "content": "We propose to use a rollout baseline in a way that is similar to self-critical training by Rennie et al. (2017), but with periodic updates of the baseline policy. It is defined as follows: \\( b(s) \\) is the cost of a solution from a deterministic greedy rollout of the policy defined by the best model so far."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                562,
+                460,
+                574
+            ],
+            "content": "Algorithm We use Adam (Kingma & Ba, 2015) as optimizer resulting in Algorithm 1."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                379,
+                94
+            ],
+            "content": "The text content from the image is:\n\n\"4 REINFORCE WITH GREEDY ROLLOUT BASELINE\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                609,
+                504,
+                738
+            ],
+            "content": "```plaintext\n1: Input: number of epochs E, steps per epoch T, batch size B, significance α\n2: Init θ, θBL ← θ\n3: for epoch = 1, . . . , E do\n4:     for step = 1, . . . , T do\n5:         si ← RandomInstance() ∀i ∈ {1, . . . , B}\n6:         πi ← SampleRollout(si, pθ) ∀i ∈ {1, . . . , B}\n7:         πBL i ← GreedyRollout(si, pθBL) ∀i ∈ {1, . . . , B}\n8:         ∇L ← ∑B i=1 (L(πi) − L(πBL i)) ∇θ log pθ(πi)\n9:         θ ← Adam(θ, ∇L)\n10:     end for\n11:     if OneSidedPairedTTest(pθ, pθBL) < α then\n12:         θBL ← θ\n13:     end if\n14: end for\n```"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                305,
+                593,
+                504,
+                605
+            ],
+            "content": "The text content from the image is:\n\n\"Algorithm 1 REINFORCE with Rollout Baseline\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                186,
+                505,
+                331
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nHyperparameters We initialize parameters Uniform(−1/√d, 1/√d), with d the input dimension. Every epoch we process 2500 batches of 512 instances (except for VRP with n = 100, where we use 2500 × 256 for memory constraints). For TSP, an epoch takes 5:30 minutes for n = 20, 16:20 for n = 50 (single GPU 1080Ti) and 27:30 for n = 100 (on 2 1080Ti’s). We train for 100 epochs using training data generated on the fly. We found training to be stable and results to be robust against different seeds, where only in one case (PCTSP with n = 20) we had to restart training with a different seed because the run diverged. We use N = 3 layers in the encoder, which we found is a good trade-off between quality of the results and computational complexity. We use a constant learning rate η = 10^−4. Training with a higher learning rate η = 10^−3 is possible and speeds up initial learning, but requires decay (0.96 per epoch) to converge and may be a bit more unstable. See Appendix B.5. With the rollout baseline, we use an exponential baseline (β = 0.8) during the first epoch, to stabilize initial learning, although in many cases learning also succeeds without this ‘warmup’. Our code in PyTorch (Paszke et al., 2017) is publicly available.\n```"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                445,
+                505,
+                588
+            ],
+            "content": "Run times Run times are important but hard to compare: they can vary by two orders of magnitude as a result of implementation (Python vs C++) and hardware (GPU vs CPU). We take a practical view and report the time it takes to solve the test set of 10000 instances, either on a single GPU (1080Ti) or 32 instances in parallel on a 32 virtual CPU system (2 × Xeon E5-2630). This is conservative: our model is parallelizable while most of the baselines are single thread CPU implementations which cannot parallelize when running individually. Also we note that after training our run time can likely be reduced by model compression (Hinton et al., 2015). In Table 1 we do not report running times for the results which were reported by others as they are not directly comparable but we note that in general our model and implementation is fast: for instance Bello et al. (2016) report 10.3s for sampling 1280 TSP solutions (K80 GPU) which we do in less than one second (on a 1080Ti). For most algorithms it is possible to trade off runtime for performance. As reporting full trade-off curves is impractical we tried to pick reasonable spots, reporting the fastest if results were similar or reporting results with different time limits (for example we use Gurobi with time limits as heuristic)."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                343,
+                505,
+                432
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Decoding strategy and baselines For each problem, we report performance on 10000 test instances. At test time we use greedy decoding, where we select the best action (according to the model) at each step, or sampling, where we sample 1280 solutions (in < 1s on a single GPU) and report the best. More sampling improves solution quality at increased computation. In Table 1 we compare greedy decoding against baselines that also construct a single solution, and compare sampling against baselines that also consider multiple solutions, either via sampling or (local) search. For each problem, we also report the ‘best possible solution’: either optimal via Gurobi (2018) (intractable for n > 20 except for TSP) or a problem specific state-of-the-art algorithm.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                106,
+                505,
+                173
+            ],
+            "content": "We focus on routing problems: we consider the TSP, two variants of the VRP, the Orienteering Problem and the (Stochastic) Prize Collecting TSP. These provide a range of different challenges, constraints and objectives and are traditionally solved by different algorithms. For the Attention Model (AM), we adjust the input, mask, decoder context and objective function for each problem (see Appendix for details and data generation) and train on problem instances of n = 20, 50 and 100 nodes. For all problems, we use the same hyperparameters: those we found to work well on TSP."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                623,
+                505,
+                711
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Travelling Salesman Problem (TSP) For the TSP, we report optimal results by Gurobi, as well as by Concorde (Applegate et al., 2006) (faster than Gurobi as it is specialized for TSP) and LKH3 (Helsgaun, 2017), a state-of-the-art heuristic solver that empirically also finds optimal solutions in time comparable to Gurobi. We compare against Nearest, Random and Farthest Insertion, as well as Nearest Neighbor, which is the only non-learned baseline algorithm that also constructs a tour directly in order (i.e. is structurally similar to our model). For details, see Appendix B.3. Additionally we compare against the learned heuristics in Section 2, most importantly Bello et al. (2016), as well as OR Tools reported by Bello et al. (2016) and Christofides + 2OPT local search reported by Vinyals.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                81,
+                200,
+                93
+            ],
+            "content": "The text content from the image is \"5 EXPERIMENTS\"."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                602,
+                179,
+                613
+            ],
+            "content": "The text content from the image is \"5.1 PROBLEMS\"."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                63,
+                503,
+                75
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Table 1: Attention Model (AM) vs baselines. The gap % is w.r.t. the best value across all methods.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                204,
+                505,
+                326
+            ],
+            "content": "Vehicle Routing Problem (VRP) In the Capacitated VRP (CVRP) (Toth & Vigo, 2014), each node has a demand and multiple routes should be constructed (starting and ending at the depot), such that the total demand of the nodes in each route does not exceed the vehicle capacity. We also consider the Split Delivery VRP (SDVRP), which allows to split customer demands over multiple routes. We implement the datasets described by Nazari et al. (2018) and compare against their Reinforcement Learning (RL) framework and the strongest baselines they report. Comparing greedy decoding, we obtain significantly better results. We cannot directly compare our sampling (1280 samples) to their beam search with size 10 (they do not report sampling or larger beam sizes), but note that our greedy method also outperforms their beam search in most (larger) cases, getting (in <1 second/instance) much closer to LKH3 (Helsgaun, 2017), a state-of-the-art algorithm which found best known solutions to CVRP benchmarks. See Appendix C.4 for greedy example solution plots."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                337,
+                505,
+                470
+            ],
+            "content": "The Orienteering Problem (OP) (Golden et al., 1987) is an important problem used to model many real-world problems. Each node has an associated prize, and the goal is to construct a single tour (starting and ending at the depot) that maximizes the sum of prizes of nodes visited while being shorter than a maximum (given) length. We consider the prize distributions proposed in Fischetti et al. (1998): constant, uniform (in Appendix D.4), and increasing with the distance to the depot, which we report here as this is the hardest problem. As 'best possible solution' we report Gurobi (intractable for \\( n > 20 \\)) and Compass, the recent state-of-the-art Genetic Algorithm (GA) by Kobeaga et al. (2018), which is only 2% better than sampling 1280 solutions with our method (objective is maximization). We outperform a Python GA\\(^4\\) (which seems not to scale), as well the construction phase of the heuristic by Tsiligirides (1984) (comparing greedy or 1280 samples) which is structurally similar to the one learned by our model. OR Tools fails to find feasible solutions in a few percent of the cases for \\( n > 20 \\)."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                481,
+                505,
+                592
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Prize Collecting TSP (PCTSP) In the PCTSP (Balas, 1989), each node has not only an associated prize, but also an associated penalty. The goal is to collect at least a minimum total prize, while minimizing the total tour length plus the sum of penalties of unvisited nodes. This problem is difficult as an algorithm has to trade off the penalty for not visiting a node with the marginal cost/tour length of visiting (which depends on the other nodes visited), while also satisfying the minimum total prize constraint. We compare against OR Tools with 10 or 60 seconds of local search, as well as open source C++5 and Python6 implementations of Iterated Local Search (ILS). Although the Attention Model does not find better solutions than OR Tools with 60s of local search, it finds almost equally good results in significantly less time. The results are also within 2% of the C++ ILS algorithm (but obtained much faster), which was the best open-source algorithm for PCTSP we could find.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                505,
+                192
+            ],
+            "content": "The text content from the image is as follows:\n\n\"et al. (2015). Results for Dai et al. (2017) are (optimistically) computed from the optimality gaps they report on 15-20, 40-50 and 50-100 node graphs, respectively. Using a single greedy construction we outperform traditional baselines and we are able to achieve significantly closer to optimal results than previous learned heuristics (from around 1.5% to 0.3% above optimal for n = 20). Naturally, the difference with Bello et al. (2016) gets diluted when sampling many solutions (as with many samples even a random policy performs well), but we still obtain significantly better results, without tuning the softmax temperature. For completeness, we also report results from running the Encode-Attend-Navigate (EAN) code³ which is concurrent work by Deudon et al. (2018) (for details see Appendix B.4). Our model outperforms EAN, even if EAN is improved with 2OPT local search. Appendix B.5 presents the results visually, including generalization results for different n.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                603,
+                505,
+                681
+            ],
+            "content": "The Stochastic variant of the PCTSP (SPCTSP) we consider shows how our model can deal with uncertainty naturally. In the SPCTSP, the expected node prize is known upfront, but the real collected prize only becomes known upon visitation. With penalties, this problem is a generalization of the stochastic k-TSP (Ene et al., 2018). Since our model constructs a tour one node at the time, we only need to use the real prizes to compute the remaining prize constraint. By contrast, any algorithm that selects a fixed tour may fail to satisfy the prize constraint so an algorithm must be adaptive. As a baseline, we implement an algorithm that plans a tour,"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                467,
+                505,
+                556
+            ],
+            "content": "In this work we have introduced a model and training method which both contribute to significantly improved results on learned heuristics for TSP and additionally learned strong (single construction) heuristics for multiple routing problems, which are traditionally solved by problem-specific approaches. We believe that our method is a powerful starting point for learning heuristics for other combinatorial optimization problems defined on graphs, if their solutions can be described as sequential decisions. In practice, operational constraints often lead to many variants of problems for which no good (human-designed) heuristics are available such that the ability to learn heuristics could be of great practical value."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                82,
+                505,
+                171
+            ],
+            "content": "The text content from the image is as follows:\n\n\"executes part of it and then re-optimizes using the C++ ILS algorithm. We either execute all node visits (so planning additional nodes if the result does not satisfy the prize constraint), half of the planned node visits (for O(log n) replanning iterations) or only the first node visit, for maximum adaptivity. We observe that our model outperforms all baselines for n = 20. We think that failure to account for uncertainty (by the baselines) in the prize might result in the need to visit one or two additional nodes, which is relatively costly for small instances but relatively cheap for larger n. Still, our method is beneficial as it provides competitive solutions at a fraction of the computational cost, which is important in online settings.\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                561,
+                505,
+                650
+            ],
+            "content": "Compared to previous works, by using attention instead of recurrence (LSTMs) we introduce invariance to the input order of the nodes, increasing learning efficiency. Also this enables parallelization, for increased computational efficiency. The multi-head attention mechanism can be seen as a message passing algorithm that allows nodes to communicate relevant information over different channels, such that the node embeddings from the encoder can learn to include valuable information about the node in the context of the graph. This information is important in our setting where decisions relate directly to the nodes in a graph. Being a graph based method, our model has increased scaling potential (compared to LSTMs) as it can be applied on a sparse graph and operate locally."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                655,
+                505,
+                732
+            ],
+            "content": "Scaling to larger problem instances is an important direction for future research, where we think we have made an important first step by using a graph based method, which can be sparsified for improved computational efficiency. Another challenge is that many problems of practical importance have feasibility constraints that cannot be satisfied by a simple masking procedure, and we think it is promising to investigate if these problems can be addressed by a combination of heuristic learning and backtracking. This would unleash the potential of our method, already highly competitive to the popular Google OR Tools project, to an even larger class of difficult practical problems."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                205,
+                316,
+                370
+            ],
+            "content": "Figure 3 compares the performance of the TSP20 Attention Model (AM) and our implementation of the Pointer Network (PN) during training. We use a validation set of size 10000 with greedy decoding, and compare to using an exponential (\\(\\beta = 0.8\\)) and a critic (see Appendix B.1) baseline. We used two random seeds and a decaying learning rate of \\(\\eta = 10^{-3} \\times 0.96^{\\text{epoch}}\\). This performs best for the PN, while for the AM results are similar to using \\(\\eta = 10^{-4}\\) (see Appendix B.5). This clearly illustrates how the improvement we obtain is the result of both the AM and the rollout baseline: the AM outperforms the PN using any baseline and the rollout baseline improves the quality and convergence speed for both AM and PN. For the PN with critic"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                370,
+                505,
+                426
+            ],
+            "content": "The text content from the image is as follows:\n\n\"baseline, we are unable to reproduce the 1.5% reported by Bello et al. (2016) (also when using an LSTM based critic), but our reproduction is closer than others have reported (Dai et al., 2017; Nazari et al., 2018). In Table 1 we compare against the original results. Compared to the rollout baseline, the exponential baseline is around 20% faster per epoch, whereas the critic baseline is around 13% slower (see Appendix B.5), so the picture does not change significantly if time is used as x-axis.\""
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                324,
+                305,
+                504,
+                360
+            ],
+            "content": "Figure 3: Held-out validation set optimality gap as a function of the number of epochs for the Attention Model (AM) and Pointer Network (PN) with different baselines (two different seeds)."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                442,
+                190,
+                455
+            ],
+            "content": "The text content from the image is \"6 DISCUSSION\"."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                185,
+                443,
+                196
+            ],
+            "content": "5.2 ATTENTION MODEL VS. POINTER NETWORK AND DIFFERENT BASELINES"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                185,
+                442,
+                196
+            ],
+            "content": "5.2 ATTENTION MODEL VS. POINTER NETWORK AND DIFFERENT BASELINES"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                185,
+                443,
+                196
+            ],
+            "content": "5.2 ATTENTION MODEL VS. POINTER NETWORK AND DIFFERENT BASELINES"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                101,
+                505,
+                146
+            ],
+            "content": "This research was funded by ORTEC Optimization Technology. We thank Thomas Kipf for helpful discussions and anonymous reviewers for comments that helped improve the paper. We thank DAS5 (Bal et al., 2016) for computational resources and we thank SURFsara (www.surfsara.nl) for the support in using the Lisa Compute Cluster."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                181,
+                504,
+                204
+            ],
+            "content": "The text content from the image is:\n\nDavid Applegate, Robert Bixby, Vasek Chvatal, and William Cook. Concorde TSP solver, 2006.\nURL http://www.math.uwaterloo.ca/tsp/concorde/m."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                301,
+                504,
+                325
+            ],
+            "content": "The text content from the image is:\n\nIrwan Bello, Hieu Pham, Quoc V Le, Mohammad Norouzi, and Samy Bengio. Neural combinatorial optimization with reinforcement learning. arXiv preprint arXiv:1611.09940, 2016."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                331,
+                505,
+                365
+            ],
+            "content": "The text content from the image is as follows:\n\nHanjun Dai, Elias B Khalil, Yuyu Zhang, Bistra Dilkina, and Le Song. Learning combinatorial optimization algorithms over graphs. In Advances in Neural Information Processing Systems 30, pp. 6348–6358, 2017."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                241,
+                505,
+                275
+            ],
+            "content": "The text content from the image is as follows:\n\nHenri Bal, Dick Epema, Cees de Laat, Rob van Nieuwenpoort, John Romein, Frank Seinstra, Cees Snoek, and Harry Wijshoff. A medium-scale distributed system for computer science research: Infrastructure for the long term. Computer, (5):54–63, 2016."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                210,
+                505,
+                234
+            ],
+            "content": "The text content from the image is:\n\nJimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                424,
+                505,
+                458
+            ],
+            "content": "The text content from the image is as follows:\n\nAlina Ene, Viswanath Nagarajan, and Rishi Saket. Approximation algorithms for stochastic k-TSP. In 37th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science, 2018."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                162,
+                176,
+                174
+            ],
+            "content": "REFERENCES"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                372,
+                505,
+                417
+            ],
+            "content": "The text content from the image is as follows:\n\nMichel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, and Louis-Martin Rousseau. Learning heuristics for the TSP by policy gradient. In International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research, pp. 170–181. Springer, 2018."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                465,
+                504,
+                489
+            ],
+            "content": "The text content from the image is as follows:\n\nMatteo Fischetti, Juan Jose Salazar Gonzalez, and Paolo Toth. Solving the orienteering problem through branch-and-cut. INFORMS Journal on Computing, 10(2):133–148, 1998."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                282,
+                487,
+                294
+            ],
+            "content": "The text content from the image is:\n\nEgon Balas. The prize collecting traveling salesman problem. Networks, 19(6):621–636, 1989."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                83,
+                206,
+                93
+            ],
+            "content": "The text content from the image is \"ACKNOWLEDGEMENTS\"."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                496,
+                505,
+                529
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Michael R Garey and David S Johnson. Computers and intractability: A guide to the theory of np-completeness (series of books in the mathematical sciences), ed. Computers and Intractability, pp. 340, 1979.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                627,
+                504,
+                661
+            ],
+            "content": "The text content from the image is as follows:\n\nKaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 770–778, 2016."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                537,
+                504,
+                560
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Paul Glasserman and David D Yao. Some guidelines and guarantees for common random numbers. Management Science, 38(6):884–908, 1992.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                698,
+                504,
+                732
+            ],
+            "content": "The text content from the image is as follows:\n\nGeoffrey Hinton, Oriol Vinyals, and Jeffrey Dean. Distilling the knowledge in a neural network. In NIPS Deep Learning and Representation Learning Workshop, 2015. URL http://arxiv.org/abs/1503.02531."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                668,
+                505,
+                691
+            ],
+            "content": "The text content from the image is:\n\nKeld Helsgaun. An extension of the Lin-Kernighan-Helsgaun TSP solver for constrained traveling salesman and vehicle routing problems: Technical report. 2017."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                597,
+                503,
+                620
+            ],
+            "content": "Gurobi Optimization, LLC. Gurobi optimizer reference manual, 2018. URL http://www.gurobi.com."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                567,
+                504,
+                590
+            ],
+            "content": "The text content from the image is:\n\nBruce L Golden, Larry Levy, and Rakesh Vohra. The orienteering problem. Naval Research Logistics (NRL), 34(3):307–318, 1987."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                105,
+                172,
+                507,
+                732
+            ],
+            "content": "David Applegate, Robert Bixby, Vasek Chvatal, and William Cook. Concorde TSP solver, 2006.\nURL http://www.math.uwaterloo.ca/tsp/concorde/m.\n\nJimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016.\n\nHenri Bal, Dick Epema, Cees de Laat, Rob van Nieuwpoort, John Romein, Frank Seinstra, Cees Snoek, and Harry Wijshoff. A medium-scale distributed system for computer science research: Infrastructure for the long term. Computer, (5):54–63, 2016.\n\nEgon Balas. The prize collecting traveling salesman problem. Networks, 19(6):621–636, 1989.\n\nIrwan Bello, Hieu Pham, Quoc V Le, Mohammad Norouzi, and Samy Bengio. Neural combinatorial optimization with reinforcement learning. arXiv preprint arXiv:1611.09940, 2016.\n\nHanjun Dai, Elias B Khalil, Yuyu Zhang, Bistra Dilkina, and Le Song. Learning combinatorial optimization algorithms over graphs. In Advances in Neural Information Processing Systems 30, pp. 6348–6358, 2017.\n\nMichel Deudon, Pierre Cournut, Alexandre Lacoste, Yossiri Adulyasak, and Louis-Martin Rousseau. Learning heuristics for the TSP by policy gradient. In International Conference on the Integration of Constraint Programming, Artificial Intelligence, and Operations Research, pp. 170–181. Springer, 2018.\n\nAlina Ene, Viswanath Nagarajan, and Rishi Saket. Approximation algorithms for stochastic k-TSP. In 37th IARCS Annual Conference on Foundations of Software Technology and Theoretical Computer Science, 2018.\n\nMatteo Fischetti, Juan Jose Salazar Gonzalez, and Paolo Toth. Solving the orienteering problem through branch-and-cut. INFORMS Journal on Computing, 10(2):133–148, 1998.\n\nMichael R Garey and David S Johnson. Computers and intractability: A guide to the theory of np-completeness (series of books in the mathematical sciences), ed. Computers and Intractability, pp. 340, 1979.\n\nPaul Glasserman and David D Yao. Some guidelines and guarantees for common random numbers. Management Science, 38(6):884–908, 1992.\n\nBruce L Golden, Larry Levy, and Rakesh Vohra. The orienteering problem. Naval Research Logistics (NRL), 34(3):307–318, 1987.\n\nGurobi Optimization, LLC. Gurobi optimizer reference manual, 2018. URL http://www.gurobi.com.\n\nKaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Deep residual learning for image recognition. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 770–778, 2016.\n\nKeld Helsgaun. An extension of the Lin-Kernighan-Helsgaun TSP solver for constrained traveling salesman and vehicle routing problems: Technical report. 2017.\n\nGeoffrey Hinton, Oriol Vinyals, and Jeffrey Dean. Distilling the knowledge in a neural network. In NIPS Deep Learning and Representation Learning Workshop, 2015. URL http://arxiv.org/abs/1503.02531."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                83,
+                206,
+                93
+            ],
+            "content": "The text content from the image is \"ACKNOWLEDGEMENTS\"."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                265,
+                505,
+                300
+            ],
+            "content": "The text content from the image is:\n\n\"Volodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei A Rusu, Joel Veness, Marc G Bellemare, Alex Graves, Martin Riedmiller, Andreas K Fidjeland, Georg Ostrovski, et al. Human-level control through deep reinforcement learning. Nature, 518(7540):529, 2015.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                307,
+                505,
+                341
+            ],
+            "content": "The text content from the image is as follows:\n\nMohammadReza Nazari, Afshin Oroojlooy, Lawrence Snyder, and Martin Takac. Reinforcement learning for solving the vehicle routing problem. In Advances in Neural Information Processing Systems, pp. 9860–9870, 2018."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                545,
+                505,
+                568
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Kate A Smith. Neural networks for combinatorial optimization: a review of more than a decade of research. INFORMS Journal on Computing, 11(1):15–34, 1999.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                504,
+                505,
+                537
+            ],
+            "content": "The text content from the image is:\n\nDavid Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja Huang, Arthur Guez, Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton, et al. Mastering the game of go without human knowledge. Nature, 550(7676):354, 2017."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                348,
+                505,
+                372
+            ],
+            "content": "The text content from the image is:\n\nAlex Nowak, Soledad Villar, Afonso S Bandeira, and Joan Bruna. A note on learning algorithms for quadratic assignment with graph neural networks. arXiv preprint arXiv:1706.07450, 2017."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                596,
+                504,
+                618
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Theodore Tsiligirides. Heuristic methods applied to orienteering. Journal of the Operational Research Society, 35(9):797–809, 1984.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                576,
+                502,
+                588
+            ],
+            "content": "The text content from the image is:\n\nPaolo Toth and Daniele Vigo. Vehicle routing: problems, methods, and applications. SIAM, 2014."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                215,
+                505,
+                238
+            ],
+            "content": "The text content from the image is as follows:\n\nGorka Kobeaga, María Merino, and Jose A Lozano. An efficient evolutionary algorithm for the orienteering problem. Computers & Operations Research, 90:42–59, 2018."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                379,
+                505,
+                413
+            ],
+            "content": "The text content from the image is:\n\n\"Adam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer. Automatic differentiation in PyTorch. 2017.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                185,
+                505,
+                208
+            ],
+            "content": "The text content from the image is:\n\nDiederik P Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In International Conference on Learning Representations, 2015."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                246,
+                500,
+                258
+            ],
+            "content": "The text content from the image is:\n\nYann LeCun, Yoshua Bengio, and Geoffrey Hinton. Deep learning. Nature, 521(7553):436, 2015."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                626,
+                505,
+                649
+            ],
+            "content": "The text content from the image is as follows:\n\nPieter Vansteenwegen, Wouter Souffriau, and Dirk Van Oudheusden. The orienteering problem: A survey. European Journal of Operational Research, 209(1):1–10, 2011."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                421,
+                505,
+                455
+            ],
+            "content": "The text content from the image is as follows:\n\nSteven J Rennie, Etienne Marcheret, Youssef Mroueh, Jerret Ross, and Vaibhava Goel. Self-critical sequence training for image captioning. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 7008–7024, 2017."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                504,
+                105
+            ],
+            "content": "The text content from the image is:\n\n\"John J Hopfield and David W Tank. \"Neural\" computation of decisions in optimization problems. Biological cybernetics, 52(3):141–152, 1985.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                699,
+                505,
+                731
+            ],
+            "content": "The text content from the image is:\n\n\"Petar Velickovic, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Li, and Yoshua Bengio. Graph attention networks. In International Conference on Learning Representations, 2018.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                657,
+                505,
+                691
+            ],
+            "content": "The text content from the image is:\n\n\"Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Advances in Neural Information Processing Systems, pp. 5998–6008, 2017.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                154,
+                505,
+                177
+            ],
+            "content": "The text content from the image is:\n\n\"Yoav Kaempfer and Lior Wolf. Learning the multiple traveling salesmen problem with permutation invariant pooling networks. arXiv preprint arXiv:1803.09621, 2018.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                462,
+                505,
+                496
+            ],
+            "content": "The text content from the image is as follows:\n\nDaniel J Rosenkrantz, Richard E Stearns, and Philip M Lewis. An analysis of several heuristics for the traveling salesman problem. In Fundamental Problems in Computing, pp. 45–69. Springer, 2009."
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                113,
+                505,
+                146
+            ],
+            "content": "The text content from the image is:\n\n\"Sergey Ioffe and Christian Szegedy. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In International Conference on Machine Learning, pp. 448-456, 2015.\""
+        },
+        {
+            "page": 11,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                169,
+                507,
+                731
+            ],
+            "content": "The text content from the image is as follows:\n\n```\ninvariant pooling networks. arXiv preprint arXiv:1803.09621, 2018.\n\nDiederik P Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In International Conference on Learning Representations, 2015.\n\nGorka Kobeaga, María Merino, and Jose A Lozano. An efficient evolutionary algorithm for the orienteering problem. Computers & Operations Research, 90:42–59, 2018.\n\nYann LeCun, Yoshua Bengio, and Geoffrey Hinton. Deep learning. Nature, 521(7553):436, 2015.\n\nVolodymyr Mnih, Koray Kavukcuoglu, David Silver, Andrei A Rusu, Joel Veness, Marc G Bellemare, Alex Graves, Martin Riedmiller, Andreas K Fidjeland, Georg Ostrovski, et al. Human-level control through deep reinforcement learning. Nature, 518(7540):529, 2015.\n\nMohammadReza Nazari, Afshin Oroojlooy, Lawrence Snyder, and Martin Takac. Reinforcement learning for solving the vehicle routing problem. In Advances in Neural Information Processing Systems, pp. 9860–9870, 2018.\n\nAlex Nowak, Soledad Villar, Afonso S Bandeira, and Joan Bruna. A note on learning algorithms for quadratic assignment with graph neural networks. arXiv preprint arXiv:1706.07450, 2017.\n\nAdam Paszke, Sam Gross, Soumith Chintala, Gregory Chanan, Edward Yang, Zachary DeVito, Zeming Lin, Alban Desmaison, Luca Antiga, and Adam Lerer. Automatic differentiation in PyTorch. 2017.\n\nSteven J Rennie, Etienne Marcheret, Youssef Mroueh, Jerret Ross, and Vaibhava Goel. Self-critical sequence training for image captioning. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pp. 7008–7024, 2017.\n\nDaniel J Rosenkrantz, Richard E Stearns, and Philip M Lewis. An analysis of several heuristics for the traveling salesman problem. In Fundamental Problems in Computing, pp. 45–69. Springer, 2009.\n\nDavid Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja Huang, Arthur Guez, Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton, et al. Mastering the game of go without human knowledge. Nature, 550(7676):354, 2017.\n\nKate A Smith. Neural networks for combinatorial optimization: a review of more than a decade of research. INFORMS Journal on Computing, 11(1):15–34, 1999.\n\nPaolo Toth and Daniele Vigo. Vehicle routing: problems, methods, and applications. SIAM, 2014.\n\nTheodore Tsiligirides. Heuristic methods applied to orienteering. Journal of the Operational Research Society, 35(9):797–809, 1984.\n\nPieter Vansteenwegen, Wouter Souffriau, and Dirk Van Oudheusden. The orienteering problem: A survey. European Journal of Operational Research, 209(1):1–10, 2011.\n\nAshish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Advances in Neural Information Processing Systems, pp. 5998–6008, 2017.\n\nPetar Velickovic, Guillem Cucurull, Arantxa Casanova, Adriana Romero, Pietro Li, and Yoshua Bengio. Graph attention networks. In International Conference on Learning Representations, 2018.\n```"
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                506,
+                105
+            ],
+            "content": "The text content from the image is as follows:\n\nOriol Vinyals, Meire Fortunato, and Navdeep Jaitly. Pointer networks. In Advances in Neural Information Processing Systems, pp. 2692–2700, 2015."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                172,
+                505,
+                195
+            ],
+            "content": "The text content from the image is:\n\nDavid H Wolpert and William G Macready. No free lunch theorems for optimization. IEEE transactions on evolutionary computation, 1(1):67–82, 1997."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                142,
+                505,
+                165
+            ],
+            "content": "The text content from the image is as follows:\n\nRonald J Williams. Simple statistical gradient-following algorithms for connectionist reinforcement learning. Machine learning, 8(3-4):229–256, 1992."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                112,
+                505,
+                136
+            ],
+            "content": "The text content from the image is as follows:\n\nOriol Vinyals, Samy Bengio, and Manjunath Kudlur. Order matters: Sequence to sequence for sets. In International Conference on Learning Representations, 2016."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                81,
+                506,
+                195
+            ],
+            "content": "The text content from the image is as follows:\n\n1. Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. Pointer networks. In Advances in Neural Information Processing Systems, pp. 2692–2700, 2015.\n2. Oriol Vinyals, Samy Bengio, and Manjunath Kudlur. Order matters: Sequence to sequence for sets. In International Conference on Learning Representations, 2016.\n3. Ronald J Williams. Simple statistical gradient-following algorithms for connectionist reinforcement learning. Machine learning, 8(3-4):229–256, 1992.\n4. David H Wolpert and William G Macready. No free lunch theorems for optimization. IEEE transactions on evolutionary computation, 1(1):67–82, 1997."
+        },
+        {
+            "page": 12,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                81,
+                506,
+                196
+            ],
+            "content": "The text content from the image is as follows:\n\n1. Oriol Vinyals, Meire Fortunato, and Navdeep Jaitly. Pointer networks. In Advances in Neural Information Processing Systems, pp. 2692–2700, 2015.\n2. Oriol Vinyals, Samy Bengio, and Manjunath Kudlur. Order matters: Sequence to sequence for sets. In International Conference on Learning Representations, 2016.\n3. Ronald J Williams. Simple statistical gradient-following algorithms for connectionist reinforcement learning. Machine learning, 8(3-4):229–256, 1992.\n4. David H Wolpert and William G Macready. No free lunch theorems for optimization. IEEE transactions on evolutionary computation, 1(1):67–82, 1997."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                507,
+                505,
+                586
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Multi-head attention As was noted by Vaswani et al. (2017) and Velickovic et al. (2018), it is beneficial to have multiple attention heads. This allows nodes to receive different types of messages from different neighbors. Especially, we compute the value in equation 13 \\( M = 8 \\) times with different parameters, using \\( d_k = d_v = \\frac{d_h}{M} = 16 \\). We denote the result vectors by \\( \\mathbf{h}_{im}' \\) for \\( m \\in 1, \\ldots, M \\). These are projected back to a single \\( d_h \\)-dimensional vector using \\( (d_h \\times d_v) \\) parameter matrices \\( W_m^O \\). The final multi-head attention value for node \\( i \\) is a function of \\( \\mathbf{h}_1, \\ldots, \\mathbf{h}_n \\) through \\( \\mathbf{h}_{im}' \\):\""
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                261,
+                505,
+                317
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Attention mechanism We interpret the attention mechanism by Vaswani et al. (2017) as a weighted message passing algorithm between nodes in a graph. The weight of the message value that a node receives from a neighbor depends on the compatibility of its query with the key of the neighbor, as illustrated in Figure 4. Formally, we define dimensions \\( d_k \\) and \\( d_v \\) and compute the key \\( k_i \\in \\mathbb{R}^{d_k} \\), value \\( v_i \\in \\mathbb{R}^{d_v} \\) and query \\( q_i \\in \\mathbb{R}^{d_k} \\) for each node by projecting the embedding \\( h_i \\):\""
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                333,
+                505,
+                367
+            ],
+            "content": "Here parameters \\( W^Q \\) and \\( W^K \\) are \\((d_k \\times d_h)\\) matrices and \\( W^V \\) has size \\((d_v \\times d_h)\\). From the queries and keys, we compute the compatibility \\( u_{ij} \\in \\mathbb{R} \\) of the query \\( q_i \\) of node \\( i \\) with the key \\( k_j \\) of node \\( j \\) as the (scaled, see Vaswani et al. (2017)) dot-product:"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                402,
+                505,
+                434
+            ],
+            "content": "In a general graph, defining the compatibility of non-adjacent nodes as \\(-\\infty\\) prevents message passing between these nodes. From the compatibilities \\(u_{ij}\\), we compute the attention weights \\(a_{ij} \\in [0, 1]\\) using a softmax:"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                628,
+                504,
+                651
+            ],
+            "content": "The feed-forward sublayer computes node-wise projections using a hidden (sub)layer with dimension \\( d_{\\text{ff}} = 512 \\) and a ReLu activation:"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                709,
+                505,
+                732
+            ],
+            "content": "Here ⊙ denotes the element-wise product and BN refers to batch normalization without affine transformation."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                674,
+                504,
+                695
+            ],
+            "content": "Batch normalization We use batch normalization with learnable \\(d_{\\mathrm{h}}\\)-dimensional affine parameters \\(\\boldsymbol{w}^{\\mathrm{bn}}\\) and \\(\\boldsymbol{b}^{\\mathrm{bn}}\\)."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                461,
+                469,
+                472
+            ],
+            "content": "The vector \\( \\mathbf{h}_i' \\) that is received by node \\( i \\) is the convex combination of messages \\( \\mathbf{v}_j \\)."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                222,
+                504,
+                245
+            ],
+            "content": "Figure 4: Illustration of weighted message passing using a dot-attention mechanism. Only computation of messages received by node 1 are shown for clarity. Best viewed in color."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                222,
+                504,
+                245
+            ],
+            "content": "Figure 4: Illustration of weighted message passing using a dot-attention mechanism. Only computation of messages received by node 1 are shown for clarity. Best viewed in color."
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                276,
+                94
+            ],
+            "content": "The text content from the image is:\n\n```\nA    ATTENTION MODEL DETAILS\n```"
+        },
+        {
+            "page": 13,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                276,
+                94
+            ],
+            "content": "The text content from the image is:\n\n```\nA   ATTENTION MODEL DETAILS\n```"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                304,
+                505,
+                382
+            ],
+            "content": "Nearest neighbor The nearest neighbor heuristic represents the partial solution as a path with a start and end node. The initial path is formed by a single node, selected randomly, which becomes the start node but also the end node of the initial path. In each iteration, the next node is selected as the node nearest to the end node of the partial path. This node is added to the path and becomes the new end node. Finally, after all nodes are added this way, the end node is connected with the start node to form a tour. In our implementation, for deterministic results we always start with the first node in the input, which can be considered random as the instances are generated randomly."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                393,
+                505,
+                460
+            ],
+            "content": "Farthest/nearest/random insertion The insertion heuristics represent a partial solution as a tour, and extends it by inserting nodes one node at the time. In our implementation, we always insert the node using the cheapest insertion cost. This means that when node i is inserted, the place of insertion (between adjacent nodes j and k in the tour) is selected such that it minimizes the insertion costs dji + dik − djk, where dji, dik and djk represent the distances from node j to i, i to k and j to k, respectively."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                126,
+                505,
+                170
+            ],
+            "content": "The critic network architecture uses 3 attention layers similar to our encoder, after which the node embeddings are averaged and processed by an MLP with one hidden layer with 128 neurons and ReLu activation and a single output. We used the same learning rate as for the AM/PN in all experiments."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                204,
+                505,
+                237
+            ],
+            "content": "For all TSP instances, the n node locations are sampled uniformly at random in the unit square. This distribution is chosen to be neither easy nor artificially hard and to be able to compare to other learned heuristics."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                465,
+                504,
+                497
+            ],
+            "content": "The different variants of the insertion heuristic vary in the way in which the node which is inserted is selected. Let \\( S \\) be the set of nodes in the partial tour. Nearest insertion inserts the node \\( i \\) that is nearest to (any node in) the tour:"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                621,
+                504,
+                644
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Independently of our work, Deudon et al. (2018) also developed a model for TSP based on the Transformer (Vaswani et al., 2017). There are important differences to this paper:\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                270,
+                504,
+                293
+            ],
+            "content": "This section describes details of the heuristics implemented for the TSP. All of the heuristics construct a single tour in a single pass, by extending a partial solution one node at the time."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                518,
+                504,
+                540
+            ],
+            "content": "The text in the image reads:\n\n\"Farthest insertion inserts the node \\( i \\) such that the distance to the tour (i.e., the distance from \\( i \\) to the nearest node \\( j \\) in the tour) is maximized.\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                565,
+                505,
+                587
+            ],
+            "content": "The text content from the image is:\n\n\"Random insertion inserts a random node. Similar to nearest neighbor, we consider the input order random so we simply insert the nodes in this order.\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                105,
+                234,
+                117
+            ],
+            "content": "B.1 CRITIC ARCHITECTURE"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                81,
+                309,
+                94
+            ],
+            "content": "The text content from the image is:\n\n```\nB TRAVELLING SALESMAN PROBLEM\n```"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                183,
+                235,
+                194
+            ],
+            "content": "B.2 INSTANCE GENERATION"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                250,
+                234,
+                261
+            ],
+            "content": "B.3 DETAILS OF BASELINES"
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                600,
+                295,
+                612
+            ],
+            "content": "The text content from the image is:\n\n\"B.4 COMPARISON TO CONCURRENT WORK\""
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                651,
+                505,
+                732
+            ],
+            "content": "- As ‘context’ for the decoder, Deudon et al. (2018) use the embeddings of the last \\( K = 3 \\) visited nodes. We use only the last (e.g., \\( K = 1 \\)) node but add the first visited node (as well as the graph embedding), since the first node is important (it is the destination) while the order of the other nodes is irrelevant as we explain in Section 3.\n- Deudon et al. (2018) use a critic as baseline (which also uses the Transformer architecture). We also experiment with using a critic (based on the Transformer architecture), but found that using a rollout baseline is much more effective (see Section 5)."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                651,
+                505,
+                696
+            ],
+            "content": "- As 'context' for the decoder, Deudon et al. (2018) use the embeddings of the last \\( K = 3 \\) visited nodes. We use only the last (e.g., \\( K = 1 \\)) node but add the first visited node (as well as the graph embedding), since the first node is important (it is the destination) while the order of the other nodes is irrelevant as we explain in Section 3."
+        },
+        {
+            "page": 14,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                699,
+                504,
+                732
+            ],
+            "content": "- Deudon et al. (2018) use a critic as baseline (which also uses the Transformer architecture). We also experiment with using a critic (based on the Transformer architecture), but found that using a rollout baseline is much more effective (see Section 5)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                500,
+                505,
+                588
+            ],
+            "content": "Table 2 shows the results in absolute terms as well as the relative optimality gap compared to Gurobi, for all runs using seeds 1234 and 1235 with the two different learning rate schedules. We did not run final experiments for \\( n = 100 \\) with the larger learning rate as we found training with the smaller learning rate to be more stable. It can be seen that in most cases the end results with different learning rate schedules are similar, except for the larger models (\\( N = 5 \\), \\( N = 8 \\)) where some of the runs diverged using the larger learning rate. Experiments with different number of layers \\( N \\) show that \\( N = 3 \\) and \\( N = 5 \\) achieve best performance, and we find \\( N = 3 \\) is a good trade-off between quality of the results and computational complexity (runtime) of the model."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                273,
+                505,
+                394
+            ],
+            "content": "We want to emphasize that this is independent work, but for completeness we include a full empirical comparison of performance. Since the results presented in the paper by Deudon et al. (2018) are not directly comparable, we ran their code7 and report results under the same circumstances: using greedy decoding and sampling 1280 solutions on our test dataset (which has exactly the same generative procedure, e.g. uniform in the unit square). Additionally, we include results of their model with 2OPT, showing that (even without 2OPT) final performance of our model is better. We use the hyperparameters in their code, but increase the batch size to 512 and number of training steps to \\(100 \\times 2500 = 250000\\) for a fair comparison (this increased the performance of their model). As training with \\(n=100\\) gave out-of-memory errors, we train only on \\(n=20\\) and \\(n=50\\) and (following Deudon et al. (2018)) report results for \\(n=100\\) using the model trained for \\(n=50\\). The training time as well as test run times are comparable."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                600,
+                505,
+                710
+            ],
+            "content": "Generalization We test generalization performance on different n than trained for, which we plot in Figure 5 in terms of the relative optimality gap compared to Gurobi. The train sizes are indicated with vertical marker bars. The models generalize when tested on different sizes, although quality degrades as the difference becomes bigger, which can be expected as there is no free lunch (Wolpert & Macready, 1997). Since the architectures are the same, these differences mean the models learn to specialize on the problem sizes trained for. We can make a strong overall algorithm by selecting the trained model with highest validation performance for each instance size n (marked in Figure 5 by the red bar). For reference, we also include the baselines, where for the methods that perform search or sampling we do not connect the dots to prevent cluttering and to make the distinction with methods that consider only a single solution clear."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                428,
+                505,
+                494
+            ],
+            "content": "Hyperparameters We found in general that using a larger learning rate of \\(10^{-3}\\) works better with decay but may be unstable in some cases. A smaller learning rate \\(10^{-4}\\) is more stable and does not require decay. This is illustrated in Figure 6, which shows validation results over time using both \\(10^{-3}\\) and \\(10^{-4}\\) with and without decay for TSP20 and TSP50 (2 seeds). As can be seen, without decay the method has not yet fully converged after 100 epochs and results may improve even further with longer training."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                407,
+                221,
+                419
+            ],
+            "content": "B.5 EXTENDED RESULTS"
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                82,
+                505,
+                263
+            ],
+            "content": "Here is the text content extracted from the image:\n\n- Deudon et al. (2018) report results with sampling 128 solutions, with and without 2OPT local search. We report results without 2OPT, using either a single greedy solution or sampling 1280 solutions and additionally show how this directly improves performance compared to Bello et al. (2016).\n- By adding 2OPT on top of the best sampled solution, Deudon et al. (2018) show that the model does not produce a local optimum and results can improve by using a 'hybrid' approach of a learned algorithm with local search. This is a nice example of combining learned and traditional heuristics, but it is not compared against using the Pointer Network (Bello et al., 2016) with 2OPT.\n- The model of Deudon et al. (2018) uses a higher dimensionality internally in the decoder (for details see their paper). Training is done with 20000 steps with a batch size of 256.\n- Deudon et al. (2018) apply Principal Component Analysis (PCA) on the input coordinates to eliminate rotation symmetry whereas we directly input node coordinates.\n- Additionally to TSP, we also consider two variants of VRP, the OP with different prize distributions and the (stochastic) PCTSP."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                82,
+                504,
+                126
+            ],
+            "content": "- Deudon et al. (2018) report results with sampling 128 solutions, with and without 2OPT local search. We report results without 2OPT, using either a single greedy solution or sampling 1280 solutions and additionally show how this directly improves performance compared to Bello et al. (2016)."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                189,
+                504,
+                212
+            ],
+            "content": "The model of Deudon et al. (2018) uses a higher dimensionality internally in the decoder (for details see their paper). Training is done with 20000 steps with a batch size of 256."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                130,
+                504,
+                185
+            ],
+            "content": "- By adding 2OPT on top of the best sampled solution, Deudon et al. (2018) show that the model does not produce a local optimum and results can improve by using a 'hybrid' approach of a learned algorithm with local search. This is a nice example of combining learned and traditional heuristics, but it is not compared against using the Pointer Network (Bello et al., 2016) with 2OPT."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                134,
+                215,
+                504,
+                237
+            ],
+            "content": "- Deudon et al. (2018) apply Principal Component Analysis (PCA) on the input coordinates to eliminate rotation symmetry whereas we directly input node coordinates."
+        },
+        {
+            "page": 15,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                241,
+                504,
+                263
+            ],
+            "content": "Additionally to TSP, we also consider two variants of VRP, the OP with different prize distributions and the (stochastic) PCTSP."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                479,
+                505,
+                546
+            ],
+            "content": "Figure 5: Optimality gap of different methods as a function of problem size \\( n \\in \\{5, 10, 15, 20, 25, 30, 40, 50, 60, 75, 100, 125\\} \\). General baselines are drawn using dashed lines while learned algorithms are drawn with a solid line. Algorithms (general and learned) that perform search or sampling are plotted without connecting lines for clarity. The *, ***, *** and **** indicate that values are reported from Bello et al. (2016), Vinyals et al. (2015), Dai et al. (2017) and Nowak et al. (2017) respectively. Best viewed in color."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                119,
+                712,
+                490,
+                725
+            ],
+            "content": "Figure 6: Validation set optimality gap as a function of the number of epochs for different η."
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                110,
+                85,
+                500,
+                97
+            ],
+            "content": "The text content from the image is:\n\n\"Table 2: Epoch durations and results and with different seeds and learning rate schedules for TSP.\""
+        },
+        {
+            "page": 16,
+            "type": "ocr_text",
+            "bbox": [
+                331,
+                693,
+                481,
+                703
+            ],
+            "content": "(b) TSP50, four schedules for η (2 seeds)"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                105,
+                505,
+                189
+            ],
+            "content": "The Capacitated Vehicle Routing Problem (CVRP) is a generalization of the TSP in which case there is a depot and multiple routes should be created, each starting and ending at the depot. In our graph based formulation, we add a special depot node with index 0 and coordinates x₀. A vehicle (route) has capacity D > 0 and each (regular) node i ∈ {1, . . . n} has a demand 0 < δ_i ≤ D. Each route starts and ends at the depot and the total demand in each route should not exceed the capacity, so ∑_i∈R_j δ_i ≤ D, where R_j is the set of node indices assigned to route j. Without loss of generality, we assume a normalized Ď = 1 as we can use normalized demands δ̂_i = δ_i/D."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                354,
+                505,
+                402
+            ],
+            "content": "Encoder In order to allow our Attention Model to distinguish the depot node from the regular nodes, we use separate parameters \\( W_0^x \\) and \\( b_0^x \\) to compute the initial embedding \\( h_0^{(0)} \\) of the depot node. Additionally, we provide the normalized demand \\( \\delta_i \\) as input feature (and adjust the size of parameter \\( W^x \\) accordingly):"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                273,
+                505,
+                321
+            ],
+            "content": "We follow Nazari et al. (2018) in the generation of instances for \\( n = 20, 50, 100 \\), but normalize the demands by the capacities. The depot location as well as \\( n \\) node locations are sampled uniformly at random in the unit square. The demands are defined as \\( \\hat{\\delta}_i = \\frac{\\delta_i}{D^n} \\) where \\( \\delta_i \\) is discrete and sampled uniformly from \\( \\{1, \\ldots, 9\\} \\) and \\( D^{20} = 30 \\), \\( D^{50} = 40 \\) and \\( D^{100} = 50 \\)."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                605,
+                505,
+                650
+            ],
+            "content": "Decoder context The context for the decoder for the VRP at time \\( t \\) is the current/last location \\( \\pi_{t-1} \\) and the remaining capacity \\( \\hat{D}_t \\). Compared to TSP, we do not need placeholders if \\( t = 1 \\) as the route starts at the depot and we do not need to provide information about the first node as the route should end at the depot:"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                450,
+                505,
+                499
+            ],
+            "content": "Capacity constraints To facilitate the capacity constraints, we keep track of the remaining demands \\(\\hat{\\delta}_{i,t}\\) for the nodes \\(i \\in \\{1,\\ldots,n\\}\\) and remaining vehicle capacity \\(\\hat{D}_t\\) at time \\(t\\). At \\(t=1\\), these are initialized as \\(\\hat{\\delta}_{i,t} = \\hat{\\delta}_i\\) and \\(\\hat{D}_t = 1\\), after which they are updated as follows (recall that \\(\\pi_t\\) is the index of the node selected at decoding step \\(t\\)):"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                192,
+                505,
+                240
+            ],
+            "content": "The Split Delivery VRP (SDVRP) is a generalization of CVRP in which every node can be visited multiple times, and only a subset of the demand has to be delivered at each visit. Instances for both CVRP and SDVRP are specified in the same way: an instance with size n as a depot location x₀, n node locations xᵢ, i = 1…n and (normalized) demands 0 < δ̂ᵢ ≤ 1, i = 1…n."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                698,
+                505,
+                733
+            ],
+            "content": "Masking The depot can be visited multiple times, but we do not allow it to be visited at two subsequent timesteps. Therefore, in both layers of the decoder, we change the masking for the depot \\( j = 0 \\) and define \\( u_{(c)0} = -\\infty \\) if (and only if) \\( t = 1 \\) or \\( \\pi_{t-1} = 0 \\). The masking for the nodes"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                582,
+                379,
+                595
+            ],
+            "content": "If we do not allow split deliveries, \\(\\hat{\\delta}_{i,t}\\) will be either 0 or \\(\\hat{\\delta}_i\\) for all \\(t\\)."
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                280,
+                94
+            ],
+            "content": "The text content from the image is:\n\n```\nC   VEHICLE ROUTING PROBLEM\n```"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                253,
+                235,
+                264
+            ],
+            "content": "C.1 INSTANCE GENERATION"
+        },
+        {
+            "page": 17,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                333,
+                281,
+                345
+            ],
+            "content": "The text content from the image is:\n\n\"C.2 ATTENTION MODEL FOR THE VRP\""
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                339,
+                505,
+                406
+            ],
+            "content": "Training For the VRP, the length of the output of the model depends on the number of times the depot is visited. In general, the depot is visited multiple times, and in the case of SDVRP also some regular nodes are visited twice. Therefore the length of the solution is larger than n, which requires more memory such that we find it necessary to limit the batch size B to 256 for n = 100 (on 2 GPUs). To keep training times tractable and the total number of parameter updates equal, we still process 2500 batches per epoch, for a total of 0.64M training instances per epoch."
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                518,
+                505,
+                629
+            ],
+            "content": "Figure 7 shows example solutions for the CVRP with \\( n = 100 \\) that were obtained by a single construction using the model with greedy decoding. These visualizations give insight in the heuristic that the model has learned. In general we see that the model constructs the routes from the bottom to the top, starting below the depot. Most routes are densely packed, except for the last route that has to serve some remaining (close to each other) customers. In most cases, the node in the route that is farthest from the depot is somewhere in the middle of the route, such that customers are served on the way to and from the farthest nodes. In some cases, we see that the order of stops within some individual routes is suboptimal, which means that the method will likely benefit from simple further optimizations on top, such as a beam search, a post-processing procedure based on local search (e.g., 2OPT) or solving the individual routes using a TSP solver."
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                156,
+                505,
+                236
+            ],
+            "content": "Split deliveries Without split deliveries, the remaining demand  is either 0 or , corresponding to whether the node has been visited or not, and this information is conveyed to the model via the masking of the nodes already visited. However, when split deliveries are allowed, the remaining demand can take any value . This information cannot be included in the context node as it corresponds to individual nodes. Therefore we include it in the computation of the keys and values in both the attention layer (glimpse) and the output layer of the decoder, such that we compute queries, keys and values using:"
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                264,
+                505,
+                328
+            ],
+            "content": "Here we \\( W_d^K \\) and \\( W_d^V \\) are \\( (d_k \\times 1) \\) parameter matrices and we define \\( \\hat{\\delta}_{i,t} = 0 \\) for the depot \\( i=0 \\). Summing the projection of both \\( \\mathbf{h}_i \\) and \\( \\hat{\\delta}_{i,t} \\) is equivalent to projecting the concatenation \\([ \\mathbf{h}_i, \\hat{\\delta}_{i,t} ]\\) with a single \\( ((d_h + 1) \\times d_k) \\) matrix \\( W^K \\). However, using this formulation we only need to compute the first term once (instead for every \\( t \\)) and by the weight initialization this puts more importance on \\( \\hat{\\delta}_{i,t} \\) initially (which is otherwise just 1 of \\( d_h + 1 = 129 \\) input values)."
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                439,
+                505,
+                484
+            ],
+            "content": "For LKH38 by Helsgaun (2017) we build and run their code with the SPECIAL parameter as specified in their CVRP runscrip9. We perform 1 run with a maximum of 10000 trials, as we found performing 10 runs only marginally improves the quality of the results while taking much more time."
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                505,
+                143
+            ],
+            "content": "The text content from the image is as follows:\n\n\"depends on whether we allow split deliveries. Without split deliveries, we do not allow nodes to be visited if their remaining demand is 0 (if the node was already visited) or exceeds the remaining capacity, so for \\( j \\neq 0 \\) we define \\( u_{(c)}j = -\\infty \\) if (and only if) \\( \\hat{\\delta}_{i,t} = 0 \\) or \\( \\hat{\\delta}_{i,t} > \\hat{D}_t \\). With split deliveries, we only forbid delivery when the remaining demand is 0, so we define \\( u_{(c)}j = -\\infty \\) if (and only if) \\( \\hat{\\delta}_{i,t} = 0 \\).\""
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                498,
+                227,
+                509
+            ],
+            "content": "C.4 EXAMPLE SOLUTIONS"
+        },
+        {
+            "page": 18,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                419,
+                234,
+                430
+            ],
+            "content": "C.3 DETAILS OF BASELINES"
+        },
+        {
+            "page": 19,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                703,
+                505,
+                737
+            ],
+            "content": "Figure 7: Example greedy solutions for the CVRP (n = 100). Edges from and to depot omitted for clarity. Legend order/coloring and arcs indicate the order in which the solution was generated. Legends indicate the number of stops, the used and available capacity and the distance per route."
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                389,
+                505,
+                491
+            ],
+            "content": "The maximum length \\( T^n \\) for instances with \\( n \\) nodes (and a depot) is chosen to be (on average) approximately half of the length of the average TSP tour for uniform TSP instances with \\( n \\) nodes [10]. This idea is that this way approximately (a little more than) half of the nodes can be visited, which results in the most difficult problem instances (Vansteenwegen et al., 2011). This is because the number of possible node selections \\( \\binom{n}{k} \\) is maximized if \\( k = \\frac{n}{2} \\) and additionally determining the actual path is harder with more nodes selected. We set fixed maximum lengths \\( T^{20} = 2 \\), \\( T^{50} = 3 \\) and \\( T^{100} = 4 \\) instead of adjusting the constraint per instance, such that for some instances more or less nodes can be visited. Note that \\( T^n \\) has the same unit as the node coordinates \\( x_i \\), so we do not normalize them."
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                106,
+                505,
+                195
+            ],
+            "content": "In the Orienteering Problem (OP) each node has a prize ρi and the goal is to maximize the total prize of nodes visited, while keeping the total length of the route below a maximum length T. This problem is different from the TSP and the VRP because visiting each node is optional. Similar to the VRP, we add a special depot node with index 0 and coordinates x0. If the model selects the depot, we consider the route to be finished. In order to prevent infeasible solutions, we only allow to visit a node if after visiting that node a return to the depot is still possible within the maximum length constraint. Note that it is always suboptimal to visit the depot if additional nodes can be visited, but we do not enforce this knowledge."
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                229,
+                504,
+                263
+            ],
+            "content": "The depot location as well as n node locations are sampled uniformly at random in the unit square. For the distribution of the prizes, we consider three different variants described by Fischetti et al. (1998), but we normalize the prizes ρi such that the normalized prizes ŷi are between 0 and 1."
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                345,
+                504,
+                385
+            ],
+            "content": "The text content from the image is as follows:\n\n```\nDistance    ρ_i = 1 + ⌊99 · d_0i / max_j=1^n d_0j⌋, ρ̂_i = ρ_i / 100, where d_0i is the distance from the depot to node i.\nEvery node has a (discretized) prize that is proportional to the distance to the depot. This is designed to be challenging as the largest prizes are furthest away from the depot (Fischetti et al., 1998).\n```"
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                526,
+                504,
+                549
+            ],
+            "content": "Encoder Similar to the VRP, we use separate parameters for the depot node embedding. Additionally, we provide the node prize \\(\\hat{\\rho}_{i}\\) as input feature:"
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                678,
+                505,
+                712
+            ],
+            "content": "The context for the decoder for the OP at time \\( t \\) is the current/last location \\( \\pi_{t-1} \\) and the remaining max length \\( T_t \\). Similar to VRP, we do not need placeholders if \\( t = 1 \\) as the route starts at the depot and we do not need to provide information about the first node as the route should"
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                595,
+                504,
+                618
+            ],
+            "content": "The text content from the image is:\n\n\"Max length constraint In order to satisfy the max length constraint, we keep track of the remaining max length \\( T_t \\) at time \\( t \\). Starting at \\( t = 1 \\), \\( T_1 = T \\). Then for \\( t > 0 \\), \\( T \\) is updated as\""
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                275,
+                504,
+                299
+            ],
+            "content": "The text content from the image is:\n\n\"Constant ρi = ρ̂i = 1. Every node has the same prize so the goal becomes to visit as many nodes as possible within the length constraint.\""
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                643,
+                504,
+                666
+            ],
+            "content": "Here \\( d_{\\pi_{t-1}, \\pi_t} \\) is the distance from node \\( \\pi_{t-1} \\) to \\( \\pi_t \\) and we conveniently define \\( \\pi_0 = 0 \\) as we start at the depot."
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                310,
+                504,
+                334
+            ],
+            "content": "The text content from the image is:\n\n\"Uniform ρi ~ DiscreteUniform(1, 100), ŷi = ρi/100. Every node has a prize that is (discretized) uniform.\""
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                505,
+                275,
+                516
+            ],
+            "content": "The text content from the image is:\n\n\"D.2 ATTENTION MODEL FOR THE OP\""
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                81,
+                262,
+                94
+            ],
+            "content": "D ORIENTEERING PROBLEM"
+        },
+        {
+            "page": 20,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                209,
+                236,
+                220
+            ],
+            "content": "D.1 INSTANCE GENERATION"
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                299,
+                505,
+                423
+            ],
+            "content": "Tsiligirides Tsiligirides (1984) describes a heuristic procedure for solving the OP. It consists of sampling 3000 tours through a randomized construction procedure and applies local search on top. The randomized construction part of the heuristic is structurally exactly the same as the heuristic learned by our model, but with a manually engineered function to define the node probabilities. We implement the construction part of the heuristic and compare it to our model (either greedy or sampling 1280 solutions), without the local search (as this can also be applied on top of our model). The final heuristic used by Tsiligirides (1984) uses a formula with multiple terms to define the probability that a node should be selected, but by tuning the weights the form with only one simple term works best, showing the difficulty of manually defining a good probability distribution. In our terms, the heuristic defines a score \\( s_i \\) for each node at time \\( t \\) as the prize divided by the distance from the current node \\( \\pi_{t-1} \\), raised to the 4th power:"
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                244,
+                505,
+                289
+            ],
+            "content": "For Compass11 by Kobeaga et al. (2018), we compile their code and run it with default parameters, only adding --op --op-ea4op to indicate that the Genetic Algorithm for the Orienteering Problem should be used. As Compass uses integer coordinates and prizes, we multiply all floats by 10^7 and round to integers. We run the Python Genetic Algorithm12 with default parameters."
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                159,
+                505,
+                193
+            ],
+            "content": "Masking In the OP, the depot node can always be visited so is never masked. Regular nodes are masked (i.e., cannot be visited) if either they are already visited or if they cannot be visited within the remaining length constraint:"
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                461,
+                505,
+                484
+            ],
+            "content": "The text content from the image is:\n\n\"Let \\( S \\) be the set with the min(4, n - (t - 1)) unvisited nodes with maximum score \\( s_i \\). Then the node probabilities \\( p_i \\) at time \\( t \\) are defined as\""
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                505,
+                105
+            ],
+            "content": "end at the depot. We do not need to provide information on the prizes gathered as this is irrelevant for the remaining decisions. The context is defined as:"
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                645,
+                505,
+                690
+            ],
+            "content": "We multiply all float inputs by \\(10^7\\) and round to integers. Note that OR Tools computes penalties for skipped nodes rather than gains for nodes that are visited. The problem is equivalent, but in order to compare the objective value against our method, we need to add the constant sum of all penalties \\(\\sum_i \\hat{\\rho}_i\\) to the OR Tools objective."
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                533,
+                503,
+                546
+            ],
+            "content": "OR Tools For the Google OR Tools implementation, we modify the formulation for the CVRP13:"
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                224,
+                236,
+                235
+            ],
+            "content": "D.3 DETAILS OF BASELINES"
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                555,
+                505,
+                637
+            ],
+            "content": "- We replace the Manhattan distance by the Euclidean distance.\n- We set the number of vehicles to 1.\n- For each individual node \\( i \\), we add a Disjunction constraint with \\(\\{i\\}\\) as the set of nodes, and a penalty equal to the prize \\(\\hat{\\rho}_i\\). This allows OR tools to skip node \\( i \\) at a cost \\(\\hat{\\rho}_i\\).\n- We replace the capacity constraint by a maximum distance constraint.\n- We remove the objective to minimize the length."
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                585,
+                504,
+                608
+            ],
+            "content": "- For each individual node \\( i \\), we add a Disjunction constraint with \\(\\{i\\}\\) as the set of nodes, and a penalty equal to the prize \\(\\hat{\\rho}_i\\). This allows OR tools to skip node \\( i \\) at a cost \\(\\hat{\\rho}_i\\)."
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                610,
+                424,
+                623
+            ],
+            "content": "We replace the capacity constraint by a maximum distance constraint."
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                555,
+                389,
+                567
+            ],
+            "content": "We replace the Manhattan distance by the Euclidian distance."
+        },
+        {
+            "page": 21,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                626,
+                338,
+                637
+            ],
+            "content": "We remove the objective to minimize the length."
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                573,
+                505,
+                693
+            ],
+            "content": "Penalties If penalties are too small, then node selection is determined almost entirely by the minimum total prize constraint. If penalties are too large, we will always visit all nodes, making the minimum total prize constraint obsolete. We argue that in order for the penalties to be meaningful, they should contribute a term in the objective approximately equal to the total length of the tour. If \\( L^n \\) is the expected TSP tour length with \\( n \\) nodes, we try to achieve this by sampling \\( \\beta_i \\sim \\text{Uniform}(0, 2 \\cdot \\frac{L^n}{n}) \\) such that \\( \\mathbb{E}(\\beta_i) = \\frac{L^n}{n} \\) and the expected total penalty for a subset of \\( \\frac{n}{2} \\) nodes is \\( \\frac{L^n}{2} \\). Following the numbers we use for the OP, we roughly define \\( \\frac{L^n}{2} \\approx K^n = 2, 3, 4 \\) for \\( n = 20, 50, 100^{14} \\). This means that we should sample \\( \\hat{\\beta}_i \\sim \\text{Uniform}(0, 4 \\cdot \\frac{K^n}{n}) \\), but empirically we find that \\( \\hat{\\beta}_i \\sim \\text{Uniform}(0, 3 \\cdot \\frac{K^n}{n}) \\) works better, which means that the prizes and penalties are balanced as the minimum total prize constraint is sometimes binding and sometimes not."
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                482,
+                505,
+                550
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Prizes We consider uniformly distributed prizes. If we sample prizes ρi ∼ Uniform(0, 1), then E(ρi) = 1/2, and the expected total prize of any subset of n/2 nodes (i.e., half of the nodes) would be n/4. Therefore, if S is the set of nodes that is visited, we require that ∑i∈S ρi ≥ n/4, or equivalently ∑i∈S ŷi ≥ 1 where ŷi = ρi·4/n is the normalized prize. Note that it can be the case that ∑i=1n ŷi < 1, in which case the prize constraint may be violated but it is only allowed to return to the depot after all nodes have been visited.\""
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                107,
+                316,
+                174
+            ],
+            "content": "Table 3 displays the results for the OP with constant and uniform prize distributions. The results are similar to the results for the prize distribution based on the distance to the depot, although by the calculation time for Gurobi it is confirmed that indeed constant and uniform prize distributions are easier."
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                299,
+                505,
+                365
+            ],
+            "content": "prizes can be normalized). This problem is related to the OP but inverts the goal (minimizing tour length given a minimum total prize to collect instead of maximizing total prize given a maximum tour length) and additionally adds penalties. Again, we add a special depot node with index 0 and coordinates x₀ and if the model selects the depot, the route is finished. In the PCTSP, it can be beneficial to visit additional nodes, even if the minimum total prize constraint is already satisfied, in order to avoid penalties."
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                232,
+                316,
+                298
+            ],
+            "content": "In the Prize Collecting TSP (PCTSP) each node has a prize \\( \\rho_i \\) and an associated penalty \\( \\beta_i \\). The goal is to minimize the total length of the tour plus the sum of penalties for nodes which are not visited, while collecting at least a given minimum total prize. W.l.o.g. we assume the minimum total prize is equal to 1 (as"
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                414,
+                505,
+                459
+            ],
+            "content": "The depot location as well as n node locations are sampled uniformly at random in the unit square. Similar to the OP, we select the distribution for the prizes and penalties with the idea that for difficult instances approximately half of the nodes should be visited. Additionally, neither the prize nor the penalty should dominate the node selection process."
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                338,
+                85,
+                491,
+                96
+            ],
+            "content": "Table 3: Additional results for the OP"
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                201,
+                254,
+                213
+            ],
+            "content": "E PRIZE COLLECTING TSP"
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                108,
+                389,
+                234,
+                400
+            ],
+            "content": "E.1 INSTANCE GENERATION"
+        },
+        {
+            "page": 22,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                82,
+                221,
+                93
+            ],
+            "content": "D.4 EXTENDED RESULTS"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                264,
+                505,
+                332
+            ],
+            "content": "Decoder context The context for the decoder for the PCTSP at time \\( t \\) is the current/last location \\(\\pi_{t-1}\\) and the remaining prize to collect \\( P_t \\). Again, we do not need placeholders if \\( t = 1 \\) as the route starts at the depot and we do not need to provide information about the first node as the route should end at the depot. The information about the prizes collected is implicitly provided to the model in the form of \\( P_t \\) and we do not need to provide any information about the penalties as this is irrelevant for the remaining decisions:"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                504,
+                505,
+                538
+            ],
+            "content": "For the C++ Iterated Local Search (ILS) algorithm15, we perform 1 run as this takes already 2 minutes per instance (single thread) on average. For the Python ILS algorithm16 we perform 10 runs as this algorithm is fast. This improved results somewhat for n = 20."
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                103,
+                505,
+                128
+            ],
+            "content": "Encoder Again, we use separate parameters for the depot node embedding. Additionally, we provide the node prize \\(\\hat{\\rho}_i\\) and the penalty \\(\\hat{\\beta}_i\\) as input features:"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                180,
+                505,
+                214
+            ],
+            "content": "Minimum prize constraint In order to satisfy the minimum total prize constraint, we keep track of the remaining total prize \\( P_t \\) to collect at time \\( t \\). At \\( t = 1 \\), \\( P_1 = 1 \\) (as we normalized prizes). Then for \\( t > 0 \\), \\( P \\) is updated as"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                389,
+                505,
+                412
+            ],
+            "content": "Masking In the PCTSP, the depot node cannot be visited if the remaining prize to collect \\(P_t\\) is larger than 0 and not yet all nodes have been visited (so \\(t \\leq n\\)):"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                438,
+                432,
+                450
+            ],
+            "content": "The text in the image reads:\n\n\"Regular nodes are masked (i.e., cannot be visited) only if they are already visited.\""
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                240,
+                438,
+                252
+            ],
+            "content": "If the constraint is satisfied after visiting π_t is visited at time t, then P_{t+1} will be 0."
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                666,
+                505,
+                689
+            ],
+            "content": "We multiply all float inputs by \\(10^7\\) and round to integers. Note that we keep the total length objective from the CVRP and add the Disjunction constraint with penalties to obtain the right objective."
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                82,
+                292,
+                94
+            ],
+            "content": "The text content from the image is:\n\n\"E.2 ATTENTION MODEL FOR THE PCTSP\""
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                483,
+                235,
+                495
+            ],
+            "content": "E.3 DETAILS OF BASELINES"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                132,
+                572,
+                505,
+                657
+            ],
+            "content": "- We replace the Manhattan distance by the Euclidean distance.\n- We set the number of vehicles to 1.\n- For each individual node \\( i \\), we add a Disjunction constraint with \\(\\{i\\}\\) as the set of nodes, and a penalty equal to the penalty \\(\\hat{\\beta}_i\\). This allows OR tools to skip node \\( i \\) at a cost \\(\\hat{\\beta}_i\\).\n- We replace the capacity constraint by a minimum total prize constraint by adding the prizes as a Dimension."
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                202,
+                551,
+                498,
+                563
+            ],
+            "content": "In the Google OR Tools implementation, we modify the formulation for the CVRP17"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                634,
+                505,
+                657
+            ],
+            "content": "We replace the capacity constraint by a minimum total prize constraint by adding the prizes as a Dimension."
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                605,
+                505,
+                631
+            ],
+            "content": "- For each individual node \\( i \\), we add a Disjunction constraint with \\(\\{i\\}\\) as the set of nodes, and a penalty equal to the penalty \\(\\hat{\\beta}_i\\). This allows OR tools to skip node \\( i \\) at a cost \\(\\hat{\\beta}_i\\)."
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                483,
+                235,
+                495
+            ],
+            "content": "E.3 DETAILS OF BASELINES"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                573,
+                389,
+                585
+            ],
+            "content": "We replace the Manhattan distance by the Euclidian distance."
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                550,
+                503,
+                564
+            ],
+            "content": "OR Tools For the Google OR Tools implementation, we modify the formulation for the CVRP17:"
+        },
+        {
+            "page": 23,
+            "type": "ocr_text",
+            "bbox": [
+                133,
+                589,
+                284,
+                600
+            ],
+            "content": "We set the number of vehicles to 1."
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                563,
+                505,
+                662
+            ],
+            "content": "Planning of the tours using deterministic prizes means we need to solve a (deterministic) PCTSP, for which we use the ILS C++ algorithm as this was the strongest algorithm for PCTSP (for large n). Note that in (4), we have a variant of the PCTSP where we do not have a single depot, but rather separate start and end points, whereas the ILS C++ implementation assumes starting and ending at a single depot. However, as the ILS C++ implementation uses a distance matrix, we can effectively plan with a start and end node by defining the distance from the 'depot' to node j as the distance from the start node (the last visited node) to node j, whereas we leave the distance from node j to the depot/end node unchanged (so the distance matrix becomes asymmetrical). Additionally, we remove all nodes (rows/columns in the distance matrix) that have already been visited from the problem."
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                305,
+                505,
+                361
+            ],
+            "content": "Instead of sampling the real prizes online, we already sample them when creating the dataset but keep them hidden to the algorithm. This way, when using a rollout baseline, both the greedy rollout baseline as well as the sample (rollout) from the model use the same real prizes, such that any difference between the two is not a result of stochasticity. This can be seen as a variant of using Common Random Numbers for variance reduction (Glasserman & Yao, 1992)."
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                216,
+                504,
+                272
+            ],
+            "content": "We could theoretically use the model trained for PCTSP without retraining, but we choose to retrain. This way the model could (for example) learn that if it needs to gather a remaining (normalized) prize of 0.1, it might prefer to visit a node with expected prize 0.2 over a node with expected prize 0.1 as the first real prize will be ≥ 0.1 with probability 75% (uniform prizes) whereas the latter only with 50% and thus has a probability of 50% to not satisfy the constraint."
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                106,
+                505,
+                140
+            ],
+            "content": "For the SPCTSP, we assume that the real prize collected \\(\\hat{\\rho}_i^*\\) at each node only becomes known when visiting the node, and \\(\\hat{\\rho}_i = \\mathbb{E}[\\hat{\\rho}_i^*]\\) is the expected prize. We assume the real prizes follow a uniform distribution, so \\(\\hat{\\rho}_i^* \\sim \\text{Uniform}(0, 2\\hat{\\rho}_i)\\)."
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                172,
+                504,
+                195
+            ],
+            "content": "In order to apply the Attention Model to the Stochastic PCTSP, the only change we need is that we use the real \\(\\hat{\\rho}_{i}^{*}\\) to update the remaining prize to collect \\(P_{t}\\) in equation 31:"
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                106,
+                394,
+                505,
+                439
+            ],
+            "content": "For the SPCTSP, it is not possible to formulate an exact model that constructs a tour offline (as any tour can be infeasible with nonzero probability) and an algorithm that computes the optimal decision online should take into account an infinite number of scenarios. As a baseline we implement a strategy that:"
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                699,
+                505,
+                731
+            ],
+            "content": "1. All nodes in the planned tour are visited (except the final return to the depot). We only need to replan and visit additional nodes if the constraint is not satisfied, otherwise we return to the depot."
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                667,
+                504,
+                690
+            ],
+            "content": "We consider three variants that differ in the number of nodes that are visited before replanning the tour, for a tradeoff between adaptivity and run time:"
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                80,
+                292,
+                94
+            ],
+            "content": "The text content from the image is:\n\n```\nF   STOCHASTIC PCTSP (SPCTSP)\n```"
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                374,
+                232,
+                385
+            ],
+            "content": "F.3 DETAILS OF BASELINES"
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                129,
+                447,
+                506,
+                554
+            ],
+            "content": "1. Plans a tour using the expected prizes \\(\\hat{\\rho}_i\\)\n2. Executes part of the tour (not returning to the depot), observing the real prizes \\(\\hat{\\rho}_i^*\\)\n3. Computes the remaining total prize that needs to be collected\n4. Computes a new tour (again using expected prizes \\(\\hat{\\rho}_i\\)), starting from the last node that was visited, through nodes that have not yet been visited and ending at the depot\n5. Repeats the steps (2) - (4) above until the minimum total prize has been collected or all nodes have been visited\n6. Returns to the depot"
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                152,
+                297,
+                163
+            ],
+            "content": "The text content from the image is:\n\n\"F.1 ATTENTION MODEL FOR THE SPCTSP\""
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                285,
+                345,
+                296
+            ],
+            "content": "The text content from the image is:\n\n\"F.2 ROLLOUT BASELINE IN THE STOCHASTIC SETTING\""
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                130,
+                543,
+                225,
+                554
+            ],
+            "content": "6. Returns to the depot"
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                107,
+                285,
+                345,
+                296
+            ],
+            "content": "The text content from the image is:\n\n\"F.2 ROLLOUT BASELINE IN THE STOCHASTIC SETTING\""
+        },
+        {
+            "page": 24,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                447,
+                304,
+                459
+            ],
+            "content": "1. Plans a tour using the expected prizes \\(\\hat{\\rho}_i\\)"
+        },
+        {
+            "page": 25,
+            "type": "ocr_text",
+            "bbox": [
+                129,
+                82,
+                506,
+                175
+            ],
+            "content": "2. Half of the nodes in the planned tour are visited, where we visit k nodes if there are 2k + 1 nodes (excluding the return to the depot), so we round down if an odd number of visits is planned. This way, we will have O(log n) replanning iterations, while being more adaptive when we are closer to satisfying the total prize constraint. This is a trade-off of adaptivity vs computation time.\n\n3. Only the first node is visited, after which we directly replan. This allows the algorithm to take new online information about the real prizes into account directly, but is very expensive to compute as it requires O(n) iterations."
+        },
+        {
+            "page": 25,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                141,
+                505,
+                175
+            ],
+            "content": "3. Only the first node is visited, after which we directly replan. This allows the algorithm to take new online information about the real prizes into account directly, but is very expensive to compute as it requires O(n) iterations."
+        },
+        {
+            "page": 25,
+            "type": "ocr_text",
+            "bbox": [
+                131,
+                82,
+                505,
+                138
+            ],
+            "content": "2. Half of the nodes in the planned tour are visited, where we visit k nodes if there are 2k + 1 nodes (excluding the return to the depot), so we round down if an odd number of visits is planned. This way, we will have O(log n) replanning iterations, while being more adaptive when we are closer to satisfying the total prize constraint. This is a trade-off of adaptivity vs computation time."
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                309,
+                197,
+                555,
+                326
+            ],
+            "caption": "Figure 1: Comparing MLP-Mixer to ConvMLP. ConvMLP adopts a simple hierarchical multi-stage co-design of convolutions and MLPs and achieves both more suitable representations as well as better accuracy vs computation trade-offs for visual recognition tasks including classification, detection and segmentation. Figure 1: Comparing MLP-Mixer to ConvMLP. ConvMLP adopts a simple hierarchical multi-stage co-design of convolutions and MLPs and achieves both more suitable representations as well as better accuracy vs computation trade-offs for visual recognition tasks including classification, detection and segmentation.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                51,
+                72,
+                546,
+                208
+            ],
+            "caption": "Figure 2: Overview of ConvMLP framework. The Conv Stage consists of C convolutional blocks with 1 × 1 and 3 × 3 kernel sizes. The MLP-Conv Stage consists of Channelwise MLPs, with skip layers, and a depthwise convolution. This is repeated M times before a down convolution is utilized to express a level L. A level down samples an image L : h × w × c ↦ h/2L × w/2L × 2Lc",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                48,
+                249,
+                546,
+                491
+            ],
+            "caption": "Table 4: Top-1 accuracy when pre-trained on ImageNet-1k and fine-tuned on CIFAR-10, CIFAR100 and Flowers-102. It reaches best performance on Flowers-102 among different model sizes. Table 4: Top-1 accuracy when pre-trained on ImageNet-1k and fine-tuned on CIFAR-10, CIFAR100 and Flowers-102. It reaches best performance on Flowers-102 among different model sizes. Figure 3: Comparisons between ConvMLP, Pure-MLP and ResNet as backbones of RetinaNet, Mask R-CNN on MS COCO and Semantic FPN on ADE20K. ConvMLP-based models show consistent improvements under different evaluation metrics and tasks.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                49,
+                84,
+                539,
+                385
+            ],
+            "caption": "Figure 4: Visualization of feature maps in different stages of ResNet50, MLP-Mixer, Pure-MLP Baseline and ConvMLP-M. Visual representations learned by ConvMLP-M show both semantic and low-level information.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                55,
+                71,
+                541,
+                257
+            ],
+            "caption": "Figure 5: Salient Maps of selected ImageNet images, comparing MLP-Mixer-B/16, ResMLP-B24, and ConvMLP-L. The labels at the top represent the ground truth label and the smaller labels below the images show the network’s prediction.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page011.png"
+        }
+    ]
+}

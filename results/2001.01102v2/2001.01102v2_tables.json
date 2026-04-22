@@ -1,0 +1,22 @@
+{
+    "total_count": 1,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                132,
+                122,
+                498,
+                234
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Some of the available algorithms.\" The text content from the image is:\n\n\"Table 1: Some of the available algorithms.\" The text content from the image is:\n\n\"Table 1: Some of the available algorithms.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>RL</td>\n    <td>Value-based</td>\n    <td>Policy-search</td>\n  </tr>\n  <tr>\n    <td>Q-Learning， Double Q-Learning，Weighted Q-Learning， SpeedyQ-Learning，R-Learning，SARSA，Expected SARSA，True Online SARSA-λ， FQI，LSPI</td>\n    <td>REINFORCE，GPOMDP，eNAC，RWR，PGPE，REPS，COPDAC-Q，Stochastic Actor-Critic</td>\n  </tr>\n  <tr>\n    <td>DQN，Double-DQN，Averaged-DQN，Categorical DQN</td>\n    <td>A2C，DDPG，TD3，SAC，TRPO，PPO</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        }
+    ]
+}

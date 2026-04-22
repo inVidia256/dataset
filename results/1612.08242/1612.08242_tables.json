@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                89,
+                587,
+                248,
+                649
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Box Generation</td>\n    <td>#</td>\n    <td>Avg IOU</td>\n  </tr>\n  <tr>\n    <td>Cluster SSE</td>\n    <td>5</td>\n    <td>58.7</td>\n  </tr>\n  <tr>\n    <td>Cluster IOU</td>\n    <td>5</td>\n    <td>61.0</td>\n  </tr>\n  <tr>\n    <td>Anchor Boxes [15]</td>\n    <td>9</td>\n    <td>60.9</td>\n  </tr>\n  <tr>\n    <td>Cluster IOU</td>\n    <td>9</td>\n    <td>67.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                50,
+                73,
+                288,
+                250
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>c</td>\n    <td>cx</td>\n  </tr>\n  <tr>\n    <td>cy</td>\n    <td>bw</td>\n  </tr>\n  <tr>\n    <td>ph</td>\n    <td>by=σ(ty)+cy</td>\n  </tr>\n  <tr>\n    <td>bw=pwe tw</td>\n  </tr>\n  <tr>\n    <td>bh=phetn</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                307,
+                397,
+                550,
+                540
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Detection Frameworks</td>\n    <td>Train</td>\n    <td>mAP</td>\n    <td>FPS</td>\n  </tr>\n  <tr>\n    <td>Fast R-CNN[5]</td>\n    <td>2007+2012</td>\n    <td>70.0</td>\n    <td>0.5</td>\n  </tr>\n  <tr>\n    <td>Faster R-CNN VGG-16[15]</td>\n    <td>2007+2012</td>\n    <td>73.2</td>\n    <td>7</td>\n  </tr>\n  <tr>\n    <td>Faster R-CNN ResNet[6]</td>\n    <td>2007+2012</td>\n    <td>76.4</td>\n    <td>5</td>\n  </tr>\n  <tr>\n    <td>YOLO[14]</td>\n    <td>2007+2012</td>\n    <td>63.4</td>\n    <td>45</td>\n  </tr>\n  <tr>\n    <td>SSD 300[11]</td>\n    <td>2007+2012</td>\n    <td>74.3</td>\n    <td>46</td>\n  </tr>\n  <tr>\n    <td>SSD 500[11]</td>\n    <td>2007+2012</td>\n    <td>76.8</td>\n    <td>19</td>\n  </tr>\n  <tr>\n    <td>YOLO v2288x288</td>\n    <td>2007+2012</td>\n    <td>69.0</td>\n    <td>91</td>\n  </tr>\n  <tr>\n    <td>YOLO v2352x352</td>\n    <td>2007+2012</td>\n    <td>73.7</td>\n    <td>81</td>\n  </tr>\n  <tr>\n    <td>YOLO v2416x416</td>\n    <td>2007+2012</td>\n    <td>76.8</td>\n    <td>67</td>\n  </tr>\n  <tr>\n    <td>YOLO v2480x480</td>\n    <td>2007+2012</td>\n    <td>77.8</td>\n    <td>59</td>\n  </tr>\n  <tr>\n    <td>YOLO v2544x544</td>\n    <td>2007+2012</td>\n    <td>78.6</td>\n    <td>40</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                122,
+                69,
+                472,
+                213
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>YOLO</td>\n    <td></td>\n    <td>YOLOv2</td>\n  </tr>\n  <tr>\n    <td>batch norm?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>hi-res classifier?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>convolutional?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>anchor boxes?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>new network?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>dimension priors?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>location prediction?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>passthrough?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>multi-scale?</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n    <td>√</td>\n  </tr>\n  <tr>\n    <td>hi-res detector?</td>\n    <td>√</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>VOC2007 mAP</td>\n    <td>63.4</td>\n    <td>65.8</td>\n    <td>69.5</td>\n    <td>69.2</td>\n    <td>69.6</td>\n    <td>74.4</td>\n    <td>75.4</td>\n    <td>76.8</td>\n    <td>78.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                82,
+                266,
+                512,
+                331
+            ],
+            "caption": "The path from YOLO to YOLOv2. Most of the listed design decisions lead to significant increases in mAP. Two exceptions are switching to a fully convolutional network with anchor boxes and using the new network. Switching to the anchor box style approach increased recall without changing mAP while using the new network cut computation by 33%. The text in the image reads:\n\n\"Table 4: PASCAL VOC2012 test detection results. YOLOv2 performs on par with state-of-the-art detectors like Faster R-CNN with ResNet and SSD512 and is 2–10× faster.\" The text in the image reads:\n\n\"Table 4: PASCAL VOC2012 test detection results. YOLOv2 performs on par with state-of-the-art detectors like Faster R-CNN with ResNet and SSD512 and is 2–10× faster.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>data</td>\n    <td>mAP</td>\n    <td>aero</td>\n    <td>bike</td>\n    <td>bird</td>\n    <td>boat</td>\n    <td>bottle</td>\n    <td>bus</td>\n    <td>car</td>\n    <td>cat</td>\n    <td>chair</td>\n    <td>cow</td>\n    <td>table</td>\n    <td>dog</td>\n    <td>horse</td>\n    <td>mbike</td>\n    <td>person</td>\n    <td>plant</td>\n    <td>sheep</td>\n    <td>sofa</td>\n    <td>train</td>\n    <td>tv</td>\n  </tr>\n  <tr>\n    <td>Fast R-CNN[5]</td>\n    <td>07++12</td>\n    <td>68.4</td>\n    <td>82.3</td>\n    <td>78.4</td>\n    <td>70.8</td>\n    <td>52.3</td>\n    <td>38.7</td>\n    <td>77.8</td>\n    <td>71.6</td>\n    <td>89.3</td>\n    <td>44.2</td>\n    <td>73.0</td>\n    <td>55.0</td>\n    <td>87.5</td>\n    <td>80.5</td>\n    <td>80.8</td>\n    <td>72.0</td>\n    <td>35.1</td>\n    <td>68.3</td>\n    <td>65.7</td>\n    <td>80.4</td>\n    <td>64.2</td>\n  </tr>\n  <tr>\n    <td>Faster R-CNN[15]</td>\n    <td>07++12</td>\n    <td>70.4</td>\n    <td>84.9</td>\n    <td>79.8</td>\n    <td>74.3</td>\n    <td>53.9</td>\n    <td>49.8</td>\n    <td>77.5</td>\n    <td>75.9</td>\n    <td>88.5</td>\n    <td>45.6</td>\n    <td>77.1</td>\n    <td>55.3</td>\n    <td>86.9</td>\n    <td>81.7</td>\n    <td>80.9</td>\n    <td>79.6</td>\n    <td>40.1</td>\n    <td>72.6</td>\n    <td>60.9</td>\n    <td>81.2</td>\n    <td>61.5</td>\n  </tr>\n  <tr>\n    <td>YOLO[14]</td>\n    <td>07++12</td>\n    <td>57.9</td>\n    <td>77.0</td>\n    <td>67.2</td>\n    <td>57.7</td>\n    <td>38.3</td>\n    <td>22.7</td>\n    <td>68.3</td>\n    <td>55.9</td>\n    <td>81.4</td>\n    <td>36.2</td>\n    <td>60.8</td>\n    <td>48.5</td>\n    <td>77.2</td>\n    <td>72.3</td>\n    <td>71.3</td>\n    <td>63.5</td>\n    <td>28.9</td>\n    <td>52.2</td>\n    <td>54.8</td>\n    <td>73.9</td>\n    <td>50.8</td>\n  </tr>\n  <tr>\n    <td>SSD 300[11]</td>\n    <td>07++12</td>\n    <td>72.4</td>\n    <td>85.6</td>\n    <td>80.1</td>\n    <td>70.5</td>\n    <td>57.6</td>\n    <td>46.2</td>\n    <td>79.4</td>\n    <td>76.1</td>\n    <td>89.2</td>\n    <td>53.0</td>\n    <td>77.0</td>\n    <td>60.8</td>\n    <td>87.0</td>\n    <td>83.1</td>\n    <td>79.4</td>\n    <td>45.9</td>\n    <td>75.9</td>\n    <td>69.5</td>\n    <td>81.9</td>\n    <td>67.5</td>\n  </tr>\n  <tr>\n    <td>SSD 512[11]</td>\n    <td>07++12</td>\n    <td>74.9</td>\n    <td>87.4</td>\n    <td>82.3</td>\n    <td>75.8</td>\n    <td>59.0</td>\n    <td>52.6</td>\n    <td>81.7</td>\n    <td>81.5</td>\n    <td>90.0</td>\n    <td>55.4</td>\n    <td>79.0</td>\n    <td>59.8</td>\n    <td>88.4</td>\n    <td>84.3</td>\n    <td>84.7</td>\n    <td>83.3</td>\n    <td>50.2</td>\n    <td>78.0</td>\n    <td>66.3</td>\n    <td>86.3</td>\n    <td>72.0</td>\n  </tr>\n  <tr>\n    <td>ResNet[6]</td>\n    <td>07++12</td>\n    <td>73.8</td>\n    <td>86.5</td>\n    <td>81.6</td>\n    <td>77.2</td>\n    <td>58.0</td>\n    <td>51.0</td>\n    <td>78.6</td>\n    <td>76.6</td>\n    <td>93.2</td>\n    <td>48.6</td>\n    <td>80.4</td>\n    <td>59.0</td>\n    <td>92.1</td>\n    <td>85.3</td>\n    <td>84.8</td>\n    <td>80.7</td>\n    <td>48.1</td>\n    <td>77.3</td>\n    <td>66.5</td>\n    <td>84.7</td>\n    <td>65.6</td>\n  </tr>\n  <tr>\n    <td>YOLO v2544</td>\n    <td>07++12</td>\n    <td>73.4</td>\n    <td>86.3</td>\n    <td>82.0</td>\n    <td>74.8</td>\n    <td>59.2</td>\n    <td>51.8</td>\n    <td>79.8</td>\n    <td>76.5</td>\n    <td>90.6</td>\n    <td>52.1</td>\n    <td>78.2</td>\n    <td>58.5</td>\n    <td>89.3</td>\n    <td>82.5</td>\n    <td>83.4</td>\n    <td>81.3</td>\n    <td>49.1</td>\n    <td>77.2</td>\n    <td>62.4</td>\n    <td>83.8</td>\n    <td>68.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page005.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                111,
+                69,
+                483,
+                177
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Fast R-CNN[5]</td>\n    <td>train</td>\n    <td>19.7</td>\n    <td>35.9</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Fast R-CNN[1]</td>\n    <td>train</td>\n    <td>20.5</td>\n    <td>39.9</td>\n    <td>19.4</td>\n    <td>4.1</td>\n    <td>20.0</td>\n    <td>35.8</td>\n    <td>21.3</td>\n    <td>29.5</td>\n    <td>30.1</td>\n    <td>7.3</td>\n    <td>32.1</td>\n    <td>52.0</td>\n  </tr>\n  <tr>\n    <td>Faster R-CNN[15]</td>\n    <td>trainval</td>\n    <td>21.9</td>\n    <td>42.7</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>ION[1]</td>\n    <td>train</td>\n    <td>23.6</td>\n    <td>43.2</td>\n    <td>23.6</td>\n    <td>6.4</td>\n    <td>24.1</td>\n    <td>38.3</td>\n    <td>23.2</td>\n    <td>32.7</td>\n    <td>33.5</td>\n    <td>10.1</td>\n    <td>37.7</td>\n    <td>53.6</td>\n  </tr>\n  <tr>\n    <td>Faster R-CNN[10]</td>\n    <td>trainval</td>\n    <td>24.2</td>\n    <td>45.3</td>\n    <td>23.5</td>\n    <td>7.7</td>\n    <td>26.4</td>\n    <td>37.1</td>\n    <td>23.8</td>\n    <td>34.0</td>\n    <td>34.6</td>\n    <td>12.0</td>\n    <td>38.5</td>\n    <td>54.4</td>\n  </tr>\n  <tr>\n    <td>SSD300[11]</td>\n    <td>trainval 35k</td>\n    <td>23.2</td>\n    <td>41.2</td>\n    <td>23.4</td>\n    <td>5.3</td>\n    <td>23.2</td>\n    <td>39.6</td>\n    <td>22.5</td>\n    <td>33.2</td>\n    <td>35.3</td>\n    <td>9.6</td>\n    <td>37.6</td>\n    <td>56.5</td>\n  </tr>\n  <tr>\n    <td>SSD512[11]</td>\n    <td>trainval 35k</td>\n    <td>26.8</td>\n    <td>46.5</td>\n    <td>27.8</td>\n    <td>9.0</td>\n    <td>28.9</td>\n    <td>41.9</td>\n    <td>24.8</td>\n    <td>37.5</td>\n    <td>39.8</td>\n    <td>14.0</td>\n    <td>43.5</td>\n    <td>59.0</td>\n  </tr>\n  <tr>\n    <td>YOLOv2[11]</td>\n    <td>trainval 35k</td>\n    <td>21.6</td>\n    <td>44.0</td>\n    <td>19.2</td>\n    <td>5.0</td>\n    <td>22.4</td>\n    <td>35.5</td>\n    <td>20.7</td>\n    <td>31.6</td>\n    <td>33.3</td>\n    <td>9.8</td>\n    <td>36.5</td>\n    <td>54.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                81,
+                215,
+                256,
+                432
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5: Results on COCO test-dev2015. Table adapted from [11]\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Type</td>\n    <td>Filters</td>\n    <td>Size/Stride</td>\n    <td>Output</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>32</td>\n    <td>3x3</td>\n    <td>224x224</td>\n  </tr>\n  <tr>\n    <td>Maxpool</td>\n    <td>2x2/2</td>\n    <td>112x112</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>64</td>\n    <td>3x3</td>\n    <td>112x112</td>\n  </tr>\n  <tr>\n    <td>Maxpool</td>\n    <td>2x2/2</td>\n    <td>56x56</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>128</td>\n    <td>3x3</td>\n    <td>56x56</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>64</td>\n    <td>1x1</td>\n    <td>56x56</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>128</td>\n    <td>3x3</td>\n    <td>56x56</td>\n  </tr>\n  <tr>\n    <td>Maxpool</td>\n    <td>2x2/2</td>\n    <td>28x28</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>256</td>\n    <td>3x3</td>\n    <td>28x28</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>128</td>\n    <td>1x1</td>\n    <td>28x28</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>256</td>\n    <td>3x3</td>\n    <td>28x28</td>\n  </tr>\n  <tr>\n    <td>Maxpool</td>\n    <td>2x2/2</td>\n    <td>14x14</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>512</td>\n    <td>3x3</td>\n    <td>14x14</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>256</td>\n    <td>1x1</td>\n    <td>14x14</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>512</td>\n    <td>3x3</td>\n    <td>14x14</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>256</td>\n    <td>1x1</td>\n    <td>14x14</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>512</td>\n    <td>3x3</td>\n    <td>14x14</td>\n  </tr>\n  <tr>\n    <td>Maxpool</td>\n    <td>2x2/2</td>\n    <td>7x7</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>1024</td>\n    <td>3x3</td>\n    <td>7x7</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>512</td>\n    <td>1x1</td>\n    <td>7x7</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>1024</td>\n    <td>3x3</td>\n    <td>7x7</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>512</td>\n    <td>1x1</td>\n    <td>7x7</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>1024</td>\n    <td>3x3</td>\n    <td>7x7</td>\n  </tr>\n  <tr>\n    <td>Convolutional</td>\n    <td>1000</td>\n    <td>1x1</td>\n    <td>Global</td>\n    <td>1000</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page006.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                375,
+                70,
+                479,
+                200
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 7: YOLO9000 Best and Worst Classes on ImageNet.\nThe classes with the highest and lowest AP from the 156 weakly supervised classes. YOLO9000 learns good models for a variety of animals but struggles with new classes like clothing or equipment.\" The text in the image reads:\n\n\"Table 7: YOLO9000 Best and Worst Classes on ImageNet.\nThe classes with the highest and lowest AP from the 156 weakly supervised classes. YOLO9000 learns good models for a variety of animals but struggles with new classes like clothing or equipment.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>diaper</td>\n    <td>0.0</td>\n  </tr>\n  <tr>\n    <td>horizontal bar</td>\n    <td>0.0</td>\n  </tr>\n  <tr>\n    <td>rubber eraser</td>\n    <td>0.0</td>\n  </tr>\n  <tr>\n    <td>sunglasses</td>\n    <td>0.0</td>\n  </tr>\n  <tr>\n    <td>swimming trunks</td>\n    <td>0.0</td>\n  </tr>\n  <tr>\n    <td>...</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>red panda</td>\n    <td>50.7</td>\n  </tr>\n  <tr>\n    <td>fox</td>\n    <td>52.1</td>\n  </tr>\n  <tr>\n    <td>koala bear</td>\n    <td>54.3</td>\n  </tr>\n  <tr>\n    <td>tiger</td>\n    <td>61.0</td>\n  </tr>\n  <tr>\n    <td>armadillo</td>\n    <td>61.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page008.png"
+        }
+    ]
+}

@@ -1,0 +1,1600 @@
+[
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Recently, large-scale pre-trained models (PTMs) have become backbone models for many natural language processing (NLP) tasks [1]. However, existing PTMs are usually trained with different architectures and pre-training tasks. When applying PTMs to a downstream task, we should choose a suitable one as the backbone model according to its pre-training nature. For example, we usually select BERT or RoBERTa [2,3] as the backbone model for natural language understanding (NLU) tasks, and BART or GPT [4,5] for natural language generation (NLG) tasks. With the success of PTMs in English, many works have been done to train the counterparts for Chinese [6–11]. However, these Chinese PTMs usually follow the settings of English PTMs, which makes these models focus on either language understanding or language generation, lacking the use of sharing knowledge between NLU and NLG tasks. Therefore, it is attractive to pre-train a joint model for both NLU and NLG tasks. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Abstract In this paper, we take the advantage of previous pre-trained models (PTMs) and propose a novel Chinese Pre-trained Unbalanced Transformer (CPT). Different from previous Chinese PTMs, CPT is designed to utilize the shared knowledge between natural language understanding (NLU) and natural language generation (NLG) to boost the performance. CPT consists of three parts: a shared encoder, an understanding decoder, and a generation decoder. Two specific decoders with a shared encoder are pre-trained with masked language modeling (MLM) and denoising auto-encoding (DAE) tasks, respectively. With the partially shared architecture and multi-task pre-training, CPT can (1) learn specific knowledge of both NLU or NLG tasks with two decoders and (2) be fine-tuned flexibly that fully exploits the potential of the model. Moreover, the unbalanced Transformer saves the computational and storage cost, which makes CPT competitive and greatly accelerates the inference of text generation. Experimental results on a wide range of Chinese NLU and NLG tasks show the effectiveness of CPT\\*. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"CPT: A Pre-Trained Unbalanced Transformer for Both Chinese Language Understanding and Generation\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\nYunfan Shao1,3, Zhichao Geng1,3, Yitao Liu1,3, Junqi Dai1,3, Hang Yan1,3, Fei Yang2, Li Zhe2, Hujun Bao2 & Xipeng Qiu1,3\\* ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\n1School of Computer Science, Fudan University, Shanghai 200433, China;\n2Zhejiang Lab, Hangzhou 311121, China;\n3Shanghai Key Laboratory of Intelligent Information Processing, Fudan University, Shanghai 200433, China\n\\`\\`\\` ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "Few works attempt to fuse NLU and NLG into a unified model. UniLMs [12, 13] and GLM [14] adapt a unified Transformer encoder for both understanding and generation; however, their architectures restrict them to employ more flexible pre-training tasks, such as denoising auto-encoding (DAE) used in BART, a widely successful pre-training task for NLG. PALM [15] adopts the standard Transformer and adds an auxiliary masked language modeling (MLM) task to enhance the understanding ability; however, it still focuses on language generation tasks. ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\nCitation   Shao Y F, Geng Z C, Liu Y T, et al. CPT: A Pre-Trained Unbalanced Transformer for Both Chinese Language Understanding and Generation. Sci China Inf Sci, for review\n\\`\\`\\` ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"1 Introduction\". ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"pre-trained model, transformer, language model, generation, unified mod\" ",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 0
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "In this paper, we propose CPT, a novel Chinese Pre-trained Unbalanced Transformer for both NLU and NLG tasks. The architecture of CPT is very concise (as shown in Figure 1), which divides a full Transformer encoder-decoder into three parts: 1) a shared encoder to capture the common representation; 2) a decoder for understanding, which uses full self-attention and is pre-trained with masked language modeling (MLM); 3) a decoder for generation, which adopts masked self-attention and is pre-trained with the DAE task. By multi-task pre-training, CPT is able to improve the performance on both language understanding and generation, respectively. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(2) Two separated decoders enable CPT to adapt to various downstream tasks flexibly. For example, CPT could be fine-tuned with at least five modes for classification tasks (as shown in Figure 2), which exploits the full potential of CPT. Thus, we could choose a suitable fine-tuning mode based on the attributes and characteristics of downstream tasks. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "(1) CPT can be regarded as two separated PTMs with a shared encoder. Two specific decoders are pre-trained with MLM and DAE tasks, respectively. Each decoder can learn the specific knowledge on either NLU or NLG tasks, while the shared encoder learns the common knowledge for universal language representation. ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Figure 1 Architecture of CPT and the counterpart PTMs. Different from other PTMs, CPT consists of three parts: a shared encoder (S-Enc), an understanding decoder (U-Dec) and a generation decoder (G-Dec).\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The main properties of CPT are as follows: ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 1 Summary of some representative Chinese PTMs. \"# Params\" refers to the number of parameters. \"Arch.\" refers to the model architecture. \"LM\" refers to language modeling in auto-regression fashion, while \"Seq2Seq MLM\" refers to masked language modeling in Seq2Seq fashion. \"Tok.\", \"Masking\" and \"Prediction\" refer to the tokenization, masking and prediction granularity of the model, respectively. \"✓\" means \"could be directly used to\". And \"✗\" means \"need to be adapted to\".\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 1 Summary of some representative Chinese PTMs. '# Params' refers to the number of parameters. 'Arch.' refers to the model architecture. 'LM' refers to language modeling in auto-regression fashion, while 'Seq2Seq MLM' refers to masked language modeling in Seq2Seq fashion. 'Tok.', 'Masking' and 'Prediction' refer to the tokenization, masking and prediction granularity of the model, respectively. '✓' means 'could be directly used to'. And '✗' means 'need to be adapted to'.\" ",
+        "page_idx": 1
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The first line of works follows BERT and uses MLM with whole word masking strategy to pre-train Transformer encoder, such as Chinese versions of BERT and RoBERTa [6], NEZHA [8], ZEN [17]. Some of them add special features of Chinese characters or words to further boost the performance of NLU tasks, such as ERNIE 1.0/2.0 [7, 18], ChineseBERT [19]. However, these PTMs could not be adopted to text generation directly. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Incorporating multi-task learning into pre-training has drawn increasingly attention recently. Most recent advancements attempt to improve performance by leveraging multi-task learning beyond standard pre-training [20,24–26]. This line of works focuses on downstream task performance improvements by utilizing a collection of labeled datasets. However, our work is focusing on close the gap between language understanding and text generation tasks by applying multi-task learning on large scale unlabeled texts. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The third line of works aims to pre-train the full Transformer encoder-decoder. CPM-2 [10] follows T5 [20] and adopts a Seq2Seq MLM pre-training task, which predicts the masked tokens in a Seq2Seq fashion. Although BART [4] has achieved widely success on conditional text generation tasks, such as text summarization [21,22] and dialogue system [23], it still lacks corresponding Chinese versions1). ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "Recently, there are some efforts to combine language understanding and generation into a single pre-trained model. UniLM [12] pre-trained with an ensemble of attention masks, which allows the model to be used for both generative and classification tasks. A difference is that all parameters of UniLM are shared between generation and discrimination, whereas CPT uses two separated decoders. Thus, CPT can utilize the DAE pre-training task which is proven to be effective for NLG tasks [4]. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "More recently, ERNIE 3.0 [16] also uses a universal encoder and several task-specific decoders, but it adopts Transformer-XL as the backbone and its generative pre-training task is left-to-right LM with a special masked attention matrix. Different from ERNIE 3.0, CPT adopts the encoder-decoder architecture and is more suitable for sequence-to-sequence (Seq2Seq) tasks. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "We conduct experiments on various language understanding and text generation tasks, including datasets for text classification, sequence labeling, machine reading comprehension, summarization, data-to-text generation, etc. Results show that CPT could achieve competitive results with state-of-the-art on these datasets. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "(3) The overall architecture of CPT is an unbalanced Transformer. To make the computational cost and the size of CPT comparable with popular PTMs, such as BERT and BART, we use a novel architecture consisting of a deeper shared encoder and two shallower decoders. Especially, the shallow generation decoder greatly accelerates the inference of text generation. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"PALM [15] is a pre-trained model focusing on conditional generation. To force the encoder to comprehend the meaning of the given context, MLM is added to pre-train the encoder. In contrast, CPT has an individual decoder for MLM which can avoid the negative effects brought by DAE. Therefore CPT also has good performance on NLU tasks.\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The second line of works follows GPT and uses the left-to-right LM task to pre-train a Transformer decoder, such as CPM [10] and PanGu [11]. Although large-scale PTMs with tens of billions parameters have been released recently, the huge computation and storage cost hinders their applications. ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Different from the above Chinese PTMs, CPT is a pre-trained unbalanced Transformer with MLM and DAE tasks, which is capable of achieving competitive results on both NLU and NLG tasks. Besides, CPT is parameter efficient compared to these large-scale models. Table 1 compares different Chinese PTMs.\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "2.3 Multi-Task Pre-Training ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"2 Related Work\". ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"2.2 Chinese PTMs\". ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"2.1 PTMs towards both NLU and NLG\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"have been conducted to pre-train the Chinese counterparts of PTMs\" ",
+        "page_idx": 2
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(2) Denoising Auto-Encoding (DAE): We pre-train the parameters of S-Enc and G-Dec by reconstructing the original document based on the corrupted input. According to the studies of BART [4], we corrupted the input by two effective ways. 1) Token Infilling: a Whole Word Masking (WWM) strategy with single mask replacement. First, a number of words are sampled based on the segmentation. Then, each selected word is replaced with a single [MASK] token, regardless of how many tokens it consists; and 2) Sentence Permutation: sentences are extracted from a document based on punctuation, and shuffled in a random order. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(1) Masked Language Modeling (MLM): We pre-train the parameters of S-Enc and U-Dec with MLM [2, 6]. Given a sentence, we randomly replace some tokens with the [MASK] token and train S-Enc and U-Dec to predict the masked tokens. Following [6], we adopt Whole Word Masking (WWM) to replace the tokens. Compared to randomly token masking, WWM is more suitable for inducing semantic information carried by words and spans. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "With the two specific decoders, CPT can be used flexibly. For example, CPT can be easily fine-tuned for NLU tasks using just S-Enc and U-Dec, and can be regarded as the standard Transformer encoder; while for NLG tasks, CPT adopts S-Enc and G-dec, and forms a Transformer encoder-decoder. With different combinations, CPT is able to be effectively applied on various downstream tasks, which fully exploits the pre-trained parameters and obtains competitive performance. More combinations and use cases will be discussed in Fine-Tuning Section. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "PTMs are usually fine-tuned in only few ways for a given downstream task. For example, for sentence-level classification, we fine-tune BERT by taking the top-layer output of [CLS] token as the representation of the whole sentence, while fine-tune GPT by using the representation of the last token of the sequence. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Different from most PTMs with encoder-decoders, we exploit a deep-shallow framework for shared encoder and decoders. More specifically, we use a deeper encoder and two shallow decoders for CPT. We assume that a shallow decoder retains the performance on text generation and reduces decoding time, which has proven to be effective for neural machine translation [27] and spell checking [28]. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The deep-shallow setup makes CPT more general for both understanding and generative tasks with minor parameter overheads. It also accelerates the inference of CPT for text generation as the G-Dec is a light decoder. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "In practice, We first use a Chinese Word Segmentation (CWS) tool to split the sentences into words. Then, we select 15% of the words and mask the corresponding characters. For the masked characters, we follow the setup of BERT to (1) replace 80% of them with a special [MASK] token, (2) replace 10% of them by random tokens, (3) keep the rest 10% of them unchanged. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "Finally, we train CPT with two pre-training tasks under a multi-task learning framework. Thus, CPT can learn for both understanding and generation, and can easily deal with downstream NLU or NLG tasks. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"4 Pre-Training\". ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"5 Fine-Tuning\". ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "To make CPT good at both NLU and NLG tasks, we introduce two pre-training tasks. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "As shown in Figure 1, The architecture of CPT is a variant of the full Transformer and consists of three parts: ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(3) Generation Decoder (G-Dec): a Transformer decoder with masked self-attention, which is designed for generation tasks with auto-regressive fashion. G-Dec utilizes the output of S-Enc with cross-attention. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 Model Architecture ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(1) Shared Encoder (S-Enc): a Transformer encoder with fully-connected self-attention, which is designed to capture the common semantic representation for both language understanding and generation. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "(2) Understanding Decoder (U-Dec): a shallow Transformer encoder with fully-connected self-attention, which is designed for NLU tasks. The input of U-Dec is the output of S-Enc. ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "3 Model Architecture ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "\\`\\`\\`\n(1) Shared Encoder (S-Enc): a Transformer encoder with fully-connected self-attention, which is designed to capture the common semantic representation for both language understanding and generation tasks.\n(2) Understanding Decoder (U-Dec): a shallow Transformer encoder with fully-connected attention, which is designed for NLU tasks. The input of U-Dec is the output of S-Enc.\n(3) Generation Decoder (G-Dec): a Transformer decoder with masked self-attention, which is designed for generation tasks with auto-regressive fashion. G-Dec utilizes the output of S-Enc with context-based attention.\n\\`\\`\\` ",
+        "page_idx": 3
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "For sequence labeling, each token needs a representation for token-level classification. Similar to sequence-level classification, we leverage PTMs to obtain high quality token representations and then put the representations to a trainable classifier to assign labels for these tokens. Thus, similar to sentence-level ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(2) CPTg+p: Conditional text generation. We encode the input text with S-Enc and train CPT to generate prompt text initialized with corresponding labels by teacher forcing. For inference, we first construct the prompt text for each label. Then, the perplexity of each prompt text is calculated. Finally, the prediction is assigned to the label with the highest corresponding perplexity. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(1) CPTu+p: A MLM task. We manually construct an input template and assign a word to each task label. CPT is fine-tuned to predict the word at the masked positions, which will be mapped to the task labels. Since a word may be tokenized into multiple character tokens, the predicted distributions at masked positions are averaged to get the predicted distribution of labels. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is:\n\n\"Thanks to the separated understanding and generation decoders, CPT can be fine-tuned in multiple patterns. For a given downstream task, one could choose the most suitable way to fully stimulate the potential of CPT to achieve competitive results.\" ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Recently, a powerful and attractive framework, prompt-based learning [29–31], is also able to boost the performance of PTMs. By defining prompting templates and reformulating the classification tasks into a generative fashion, the framework utilizes PTMs to generate words corresponding to task labels. The generative patterns are so close to the pre-training tasks of PTMs that they have the ability of few-shot or even zero-shot learning. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "The prompt-based methods could also be applied on CPT with more flexibly fashions since CPT has two decoders. As shown in Figure 2 (d) and (e), we construct prompts and convert the task into an generation task with CPT by the following two modes: ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "Figure 2 Five ways to fine-tune CPT for text classification. “T1-4” and “P1-2” refer to text input x and prompt tokens, respectively. V(y) is the mapping function that maps the language model predictions to the label. [C] and [S] are abbreviations for [CLS] and [SEP], respectively. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.2 Fine-Tuning for Sequence Labeling ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "5.1 Fine-Tuning for Sentence-Level Classification ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "When incorporating external classifiers, CPT have three fine-tuning modes for sequence-level classification (As shown in Figure 2 (a), (b) and (c)). ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(3) CPT\\(_{ug}\\): The same input is fed into the S-Enc and G-Dec, and the final representation is the concatenation of the first output of U-Dec and the final output of G-Dec. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(1) CPT_u: a BERT-style mode. The sentence representation is from U-Dec module only, which is usually the first state of [CLS] token. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(1) CPT_u: a BERT-style mode. The sentence representation is from U-Dec module only, which is usually the first state of [CLS] token.\n\n(2) CPT_g: a BART-style mode. The same input is fed into the S-Enc and G-Dec, and the representation from the final output token [SEP] from G-Dec is used.\n\n(3) CPT_ug: The same input is fed into the S-Enc and G-Dec, and the final representation is the concatenation of the first output of U-Dec and the final output of G-Dec. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(2) CPTg: a BART-style mode. The same input is fed into the S-Enc and G-Dec, and the representation from the final output token [SEP] from G-Dec is used. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(2) CPTg: a BART-style mode. The same input is fed into the S-Enc and G-Dec, and the representation from the final output token [SEP] from G-Dec is used. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "(1) CPT_u: a BERT-style mode. The sentence representation is from U-Dec module only, which is usually the first state of [CLS] token. ",
+        "page_idx": 4
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "We train our models on the open source large-scale raw text, Chinese Wikipedia and a part of WuDaoCorpus. The training data contains 200GB cleaned text ranges from different domains. We use Jieba to segment Chinese words for Whole Word Masking and use WordPiece tokenizer inherited from BERT to split input text into tokens. We use Adam to train the models for 500k steps, with the batch size of 2048, the learning rate of 1e-4, β₁ = 0.9, β₂ = 0.98, weight decay of 0.01. We warmup the learning rate for first 10,000 steps then do linear decay. In addition, a Chinese BART is pre-trained with the same corpora, tokenization and hyper-parameters as a baseline. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "We implement two versions of CPT, namely, base and large, respectively consisting of 14/28 Transformer layers with 10/20 layers for shared encoder and 2/4 layers for each task specific decoder. And the hidden units and attention heads per layer for base and large versions are 768/1,024 and 12/16, respectively. The total number of layers activated for a given task is always equal to 12/24, which makes our model comparable with base/large-size of BERT and its variants (RoBERTa, ERNIE 1.0/2.0, etc). ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Machine Reading Comprehension requires the model to predict an answer span shown in the passage for a given question. A typical fine-tuning pattern is to train PTMs to predict the start and end positions of the span in the passage. The prediction is based on the tokens of the passage. Thus, CPT_u, CPT_g and CPT_ug can be fine-tuned, similar to sequence-labeling. Figure 4 shows the example of CPT_u. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Apart from NLU tasks, CPT can do text generation efficiently. As shown in Figure 5, we simply fine-tune CPTg with S-Enc and G-Dec modules on text generation tasks, similar to the usage of other auto-regressive PTMs [4]. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"classification, we can fine-tune CPT for sequence labeling as CPTu, CPTg and CPTug, using (1) U-Dec only, (2) G-Dec only, or (3) both U-Dec and G-Dec. Figure 3 shows two examples for sequence labeling.\" ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Figure 4 Two examples of fine-tuning CPT for Machine Reading Comprehension. “P1-3”, “Q1-2” refer to passages and questions, respectively. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Figure 5 Example of fine-tuning CPTg for Conditional Generation. “S1-4” and “T1-4” refer to input and target sequences, respectively. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.3 Fine-Tuning for Machine Reading Comprehension ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "6.1 Pre-Training Setups ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "5.4 Fine-Tuning for Conditional Generation ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"6 Experiments\". ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\nFigure 3 Two examples of fine-tuning CPT for sequence labeling. \"T1-4\" and \"L1-4\" refer to text input x and token labels, respectively. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Figure 4 Two examples of fine-tuning CPT for Machine Reading Comprehension. “P1-3”, “Q1-2” refer to passages and questions, respectively.\n\nFigure 5 Example of fine-tuning CPTg for Conditional Generation. “S1-4” and “T1-4” refer to input and target sequences, respectively. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "The text in the image reads:\n\n'PT for sequence labeling. “T1-4” and “L1-4” refer to text input x and token labels.' ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "Figure 3 Two examples of fine-tuning CPT for sequence labeling. “T1-4” and “L1-4” refer to text input x and token labels, respectively. ",
+        "page_idx": 5
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\nText Generation We use two abstractive summarization datasets, LCSTS [42] and CSL3), and a data-to-text generation dataset, ADGEN [43] to evaluate the text generation ability of our model. Among them, LCSTS is a large corpus of Chinese short text summarization dataset constructed from Sina Weibo, consisting of 2 million real Chinese short texts with short summaries. And CSL is an academic domain text summarization dataset, constructed from abstract and titles from publications in computer science domain. And ADGEN is a data-to-text dataset that requires models to generate long text for advertisement based on some keywords. And we evaluate PTMs on test sets of LCSTS and ADGEN and the development set of CSL. The character-level Rouge-L is used to evaluate the summarization results. For ADGEN, we follow [10] to use BLEU-4.\n\\`\\`\\` ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "PTMs for NLG For text generation, we compare CPT with generative Transformers ranging from normal size to large scale, including BART [4], mBART [44], mT5 [45], CPM-2 [10], and models with pretrained encoders. BART is a sequence-to-sequence model pre-trained with DAE task. Due to the missing of Chinese version, we train a Chinese BART as mentioned in Section 6.1. mBART is a multilingual variant of BART. And mT5 is a multilingual variant of T5 pre-trained on over 101 languages, including Chinese. CPM-2 is a large-scale encoder-decoder model with 11 billion parameters, pre-trained in multiple stages with large-scale Chinese and bilingual data. We also report generative models adopted from Transformer encoders such as RoBERTa and ERNIE 2.0 that follow the generation style of UniLM [12], to further evaluate the effectiveness generative pre-training. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "Sequence Labeling We evaluate our model on Chinese word segmentation (CWS) and named entity recognition (NER), which are two representative sequence labeling tasks. We use two datasets from SIGHAN2005 [34] for CWS, which are MSR, PKU. And for NER, MSRA [35], OntoNotes2) are used. We use the same dataset preprocessing and split methods as in previous work [36–38]. And F1 scores are reported. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Classification We evaluate the model on the Chinese Language Understanding Evaluation Benchmark (CLUE) [32], which contains text classification TNEWS, IFLYTEK, natural language inference (NLI), OCNLI, sentence pair matching (SPM) AFQMC, and coreference resolution (CoRE) CLUEWSC 2020 (WSC.) key word recognition (KwRE) CSL. We conduct data augmentation CSL as [33] performed, and evaluate TNEWS on version 1.1 test set. Accuracy is used for these datasets.\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "PTMs for NLU PTMs with the Transformer Encoder structure and pre-trained with MLM usually perform well in NLU tasks, such as the Chinese versions of BERT and RoBERTa [6], NEZHA [8], ERNIE 2.0 [18], MacBERT [41]. Unless otherwise specified, we use BERT and RoBERTa to refer to BERT-wwm-ext and RoBERTa-wwm-ext, respectively. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"MRC Span based machine reading comprehension (MRC) dataset CMRC 2018 (CMRC) [39] and Traditional Chinese MRC dataset DRCD [40] are used. We follow the data processing in [6, 41] and transform the text from DRCD is transformed to Simplified Chinese. The Exact Match (EM) scores are reported.\" ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "We compare CPT with a series of state-of-the-art PTMs for either natural language understanding or text generation. The details are as follows. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "To evaluate the effectiveness of our model, we conduct experiments on various NLP datasets across different understanding and generation tasks, with details illustrated below. ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "6.3 Compared PTMs ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "6.2 Evaluation Tasks ",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 6
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Classification Table 2 shows the development set results of CLUE Benchmark of different fine-tuning modes. As a result, CPTu (B) achieves a 74.6 on average, surpassing other baselines and fine-tuning patterns on base version of CPT. Besides, CPTug (L) obtains a averaged accuracy 76.2, which is better than RoBERTa (L) by a large margin. Therefore, we choose CPTu (B) and CPTug (L) as the most suitable fine-tuning patterns to do the classification. We find that the best fine-tuning modes are different between base and large models. We believe the difference is brought by the scale of the parameters. For base model, the G-Dec is too shallow to transfer for NLU tasks, which makes CPTug could not beat the CPTu. And the G-Dec in large version of CPT has more parameters and layers, which makes the decoder easy to transfer.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "For prompt-based fine-tuning (Table 2), we find that directly fine-tuning without prompt works well on some datasets, with the small gaps between CPT_u, CPT_g and CPT_ug. Moreover, CPT_u+p achieves good results on some datasets that even outperform methods without prompt tuning. However, the accuracy of prompt-base methods on other datasets drops a lot. As there are many factors that affect prompt tuning performance including prompt design, choices of words for labels, etc. Manually designed prompts may be suboptimal. Besides, we find that CPT_g+p degenerates obviously on TNEWS and IFLYTEK. Both datasets have more than 3 classes, which contains 15 and 112 labels, respectively. Moreover, these ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "To fully release the potential of our model, we fine-tune CPT for NLU tasks in different ways as mentioned in Fine-Tuning Section, denoted as CPT_u, CPT_g and CPT_ug, CPT_u+p and CPT_g+p, respectively. We use (B) and (L) to distinguish base and large version of PTMs, respectively. ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 2 Accuracy results on dev set of CLUE Benchmark. We fine-tune CPT with five different ways as shown in Figure 2. (B) and (L) refer to base-size and large-size of PTMs, respectively.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 3 Results on CLUE benchmarks. For all tasks we report accuracy on test sets.\" ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"6.4 Main Results\". ",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 7
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Table 3 reports the performance of CPT on classification tasks and the comparison with previous representative Chinese PTMs. We report accuracy on the test sets of these datasets. Among the fine-tuned CPTs, we choose base version CPT_u and large version CPT_ug as they obtain the best results on development sets. Base size CPT consistently outperforms BERT, RoBERTa and ERNIE. Moreover, large size CPT achieves a 74.5 averaged score, outperforming RoBERTa (L) with a large margin. We find that generative PTMs, such as BART, also have the ability to handle discrimination tasks (see Table 2 Table 3). However, their performance is suboptimal compared with the CPT. As the uni-directional layers of generative models could hurt the performance of NLU tasks. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "We compare our model with other state-of-the-art methods on sequence labeling datasets. As shown in Table 4, CPT_u (L) achieves the highest performance and exceeds BERT (L), RoBERTa (L) and ERNIE (L) on all sequence labeling tasks, both CWS and NER. And CPT_u (B) obtains comparable results, surpassing base versions of BERT and RoBERTa. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Note that CPT_u g outperforms the CPT_u in the large size while surpassed by CPT_u in the base version. We believe that it is the large discrepancy between pre-training and fine-tuning tasks, which makes the G-Dec trained by the DAE task hard to be transferred to classification. G-Dec is harder to be fine-tuned than understanding decoder (U-Dec), especially in the base model where G-Dec is very shallow. And it also explains that the performance gap between CPT_u and CPT_g in the base version is larger than the large size. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "Sequence Labeling The CPT is fine-tuned as CPTu, CPTg and CPTug and evaluated on development sets. We find that CPTu constantly obtains the best development results. We conjecture that CWS and NER have more dependency on local syntax than complex semantics used for text generation. Thus, CPTu is more suitable for CWS and NER with its bidirectional fully connected self-attention. As a result, we report the test set results of CPTu to compare with other PTMs. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "labels are hard to represented by a single character. In practice we assign words with up to 7 characters to a label. We presume that the large number of labels and the multi-token issue hinders CPTg+p to generate correctly. ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 5 Results on MRC datasets. Exact Match (EM) scores are reported. Models with \\* indicate the results from the corresponding work.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The F1 scores on test sets are reported. Models with \\* indicate the results a ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 5 Results on MRC datasets. Exact Match (EM) scores are reported. Models with \\* indicate the results from the corresponding work.\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 4 Results on sequence labeling datasets. The F1 scores on test sets are reported. Models with \\* indicate the results are from [18].\" ",
+        "page_idx": 8
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "image",
+        "img_path": "",
+        "img_caption": [],
+        "img_footnote": [],
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "As a conclusion, CPTg achieves competitive performance on text generation compared with other methods, such as mT5, CPM-2, BART. In addition, compared with other pre-trained encoders (RoBERTa and ERNIE 2.0), CPTg improves the generation score with the NLG enhanced pre-training. When compared with pre-trained mT5 and CPM-2, CPTg acquires better results on both base and large versions. We assume the difference of pre-training tasks that lead to the performance gaps. Both mT5 and CPM-2 exploit a T5 style masked span generation as their pre-training task, while CPT is pre-trained with DAE, which shows the effectiveness of DAE for text generation pre-training. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"MRC Table 5 shows the experimental results on MRC tasks, which also indicates the effectiveness of CPT. We report the Exact Match (EM) score on CMRC dev set, DRCD dev and test sets. We try and evaluate CPT_u, CPT_u and CPT_u on the development sets of these datasets and choose the pattern that acquires the best results to report. As a conclusion, CPT_u obtains comparable or higher results compared to previous systems that are widely used, such as RoBERTa, MacBERT, ERNIE and NEZHA. Moreover, CPT_u consistently outperforms other strong baselines by a large margin, with 72.3 EM score on the CMRC development set and 91.1 EM on the DRCD test set.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "In addition, the shallow decoder of CPTg may affect the performance on long text generation. However, the performance gaps are still small. And we believe the multi-task pre-training of CPT closes the gaps. Table 7 and Table 8 illustrates some examples generated by BART (L) and CPTg (L). With the help of pre-training for understanding, CPTg is able to summarize text with more information captured in the input content. ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 6 Results on text generation datasets. The small(base) version of mT5 has almost the same parameters as the base(large) version of other PTMs. CPM-2 has a much larger number of parameters than other large size PTMs. Models with \\* and † indicate the results are from [16] and [10], respectively.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Figure 6 Inference throughput for BART and CPT. It is measured on the same parts of datasets that the models are evaluated. The beam size is 4 and the batch size is 8.\" ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\\`\\`\\`\nText Generation   Table 6 compares the performance of our model on generation datasets with other strong methods. The character-level Rouge-L is used to evaluate the summarization results. For ADGEN, we follow [10] to use BLEU-4.\n\\`\\`\\` ",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 9
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "table",
+        "img_path": "",
+        "table_caption": [],
+        "table_footnote": [],
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Moreover, because of the shallow decoder, CPT could generate texts more efficiently (Figure 6), which could be faster than other depth symmetric encoder-decoder Transformers with the same number of layers of the encoder and the decoder. As BART and CPT have similar number of parameters in both base and large versions. On all generation dataset, the decoding speed of CPT surpass BART with a large margin. Our model achieves 1.4× ∼ 1.5× speedup compared with BART and still maintain comparable generation results in base size. And CPT (L) has up to 1.7× relative speedup compared to BART (L). As a conclusion, the shallow G-Dec is able to speed up the generation with minor performance loss. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In this paper, we propose CPT, a novel Chinese PTM for both language understanding and generation. With the flexible design, CPT can be assembled and disassembled in various fashions, which could fully exploit the potential of CPT. Experimental results on a wide range of Chinese NLU and NLG tasks show the effectiveness of CPT. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is \"7 Conclusion\". ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "In future work, we will introduce more specific designs according to Chinese properties, such as better ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Summary examples generated by BART (L) and CPT (L) given input text on LCSTS. ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "Summary examples generated by BART (L) and CPT (L) given input text on LCS ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "The text content from the image is as follows:\n\n\"Table 8 Text examples generated by BART (L) and CPT (L) given keywords on ADGEN.\" ",
+        "page_idx": 10
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "text_level": 1,
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Acknowledgements This work was supported by the National Key Research and Development Program of China (No. 2020AAA0108702), National Natural Science Foundation of China (No. 62022027) and Major Scientific Research Project of Zhejiang Lab (No. 2019KD0AD01). ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "References ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "tokenization, pre-training tasks and model architectures. ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "Here is the text content from the image:\n\nC. Doran, and T. Solorio, Eds., 2019, pp. 4171–4186. [Online]. Available: https://doi.org/10.18653/v1/n19-1423\n\nY. Liu, M. Ott, N. Goyal, J. Du, M. Joshi, D. Chen, O. Levy, M. Lewis, L. Zettlemoyer, and V. Stoyanov, “Roberta: A robustly optimized BERT pretraining approach,” CoRR, vol. abs/1907.11692, 2019. [Online]. Available: http://arxiv.org/abs/1907.11692\n\nM. Lewis, Y. Liu, N. Goyal, M. Ghazvininejad, A. Mohamed, O. Levy, V. Stoyanov, and L. Zettlemoyer, “BART: denoising sequence-to-sequence pre-training for natural language generation, translation, and comprehension,” in ACL 2020, Online, July 5-10, 2020, D. Jurafsky, J. Chai, N. Schluter, and J. R. Tetraeault, Eds., 2020, pp. 7871–7880. [Online]. Available: https://doi.org/10.18653/v1/2020.acl-main.703\n\nA. Radford, “Improving language understanding by generative pre-training,” 2018.\n\nY. Cui, W. Che, T. Liu, B. Qin, Z. Yang, S. Wang, and G. Hu, “Pre-training with whole word masking for chinese BERT,” CoRR, vol. abs/1906.08101, 2019. [Online]. Available: http://arxiv.org/abs/1906.08101\n\nY. Sun, S. Wang, Y. Li, S. Feng, X. Chen, H. Zhang, X. Tian, D. Zhu, H. Tian, and H. Wu, “ERNIE: enhanced representation through knowledge integration,” CoRR, vol. abs/1904.09223, 2019. [Online]. Available: http://arxiv.org/abs/1904.09223\n\nJ. Wei, X. Ren, X. Li, W. Huang, Y. Liao, Y. Wang, J. Lin, X. Jiang, X. Chen, and Q. Liu, “NEZHA: neural contextualized representation for chinese language understanding,” CoRR, vol. abs/1909.00204, 2019. [Online]. Available: http://arxiv.org/abs/1909.00204\n\nZ. Zhang, X. Han, H. Zhou, P. Ke, Y. Gu, D. Ye, Y. Qin, Y. Su, H. Ji, J. Guan, F. Qi, X. Wang, Y. Zheng, G. Zeng, H. Cao, S. Chen, D. Li, Z. Sun, Z. Liu, M. Huang, W. Han, J. Tang, J. Li, X. Zhu, and M. Sun, “CPM: A large-scale generative chinese pre-trained language model,” CoRR, vol. abs/2012.00413, 2020. [Online]. Available: https://arxiv.org/abs/2012.00413\n\nZ. Zhang, Y. Gu, X. Han, S. Chen, C. Xiao, Z. Sun, Y. Yao, F. Qi, J. Guan, P. Ke, Y. Cai, G. Zeng, Z. Tan, Z. Liu, M. Huang, W. Han, Y. Liu, X. Zhu, and M. Sun, “CPM-2: large-scale cost-effective pre-trained language models,” CoRR, vol. abs/2106.10715, 2021. [Online]. Available: https://arxiv.org/abs/2106.10715\n\nW. Zeng, X. Ren, T. Su, H. Wang, Y. Liao, Z. Wang, X. Jiang, Z. Yang, K. Wang, X. Zhang, C. Li, Z. Gong, Y. Yao, X. Huang, J. Wang, J. Yu, Q. Guo, Y. Yu, Y. Zhang, J. Wang, H. Tao, D. Yan, Z. Yi, F. Peng, F. Jiang, H. Zhang, L. Deng, Y. Zhang, Z. Lin, C. Zhang, S. Zhang, M. Guo, S. Gu, G. Fan, Y. Wang, X. Jin, Q. Liu, and Y. Tian, “Pangu-α: Large-scale autoregressive pretrained chinese language models with auto-parallel computation,” CoRR, vol. abs/2104.12369, 2021. [Online]. Available: https://arxiv.org/abs/2104.12369\n\nL. Dong, N. Yang, W. Wang, F. Wei, X. Liu, Y. Wang, J. Gao, M. Zhou, and H. Hon, “Unified language model pre-training for natural language understanding and generation,” in NeurIPS 2019, December 8-14, 2019, Vancouver, BC, Canada, H. M. Wallach, H. Larochelle, A. Beygelzimer, F. d’Alché-Buc, E. B. Fox, and R. Garnett, Eds., 2019, pp. 13042–13054. [Online]. Available: https://proceedings.neurips.cc/paper/2019/hash/c20bb2d9a50d5ac1f713f8b34d9aac5a-Abstract.html\n\nH. Bao, L. Dong, F. Wei, W. Wang, N. Yang, X. Liu, Y. Wang, J. Gao, S. Piao, M. Zhou, and H. Hon, “Unilmv2: Pseudo-masked language models for unified language model pre-training,” in ICML 2020, 13-18 July 2020, Virtual Event, ser. Proceedings of Machine Learning Research, vol. 119. PMLR, 2020, pp. 642–652. [Online]. Available: http://proceedings.mlr.press/v119/bao20a.html\n\nZ. Du, Y. Qian, X. Liu, M. Ding, J. Qiu, Z. Yang, and J. Tang, “All NLP tasks are generation tasks: A general pretraining framework,” CoRR, vol. abs/2103.10360, 2021. [Online]. Available: https://arxiv.org/abs/2103.10360\n\nB. Bi, C. Li, C. Wu, M. Yan, W. Wang, S. Huang, F. Huang, and L. Si, “PALM: pre-training an autoencoding&autoregressive language model for context-conditioned generation,” in EMNLP 2020, Online, November 16-20, 2020, B. Webber, T. Cohn, Y. He, and Y. Liu, Eds., 2020, pp. 8681–8691. [Online]. Available: https://doi.org/10.18653/v1/2020.emnlp-main.700\n\nY. Sun, S. Wang, S. Feng, S. Ding, C. Pang, J. Shang, J. Liu, X. Chen, Y. Zhao, Y. Lu, W. Liu, Z. Wu, W. Gong, J. Liang, Z. Shang, P. Sun, W. Liu, X. Ouyang, D. Yu, H. Tian, H. Wu, and H. Wang, “ERNIE 3.0: Large-scale knowledge enhanced pre-training for language understanding and generation,” CoRR, vol. abs/2107.02137, 2021. [Online]. Available: https://arxiv.org/abs/2107.02137\n\nS. Diao, J. Bai, Y. Song, T. Zhang, and Y. Wang, “ZEN: pre-training chinese text encoder enhanced by n-gram representations,” in EMNLP 2020, Online Event, 16-20 November 2020, T. Cohn, Y. He, and Y. Liu, Eds., 2020, pp. 4729–4740. [Online]. Available: https://doi.org/10.18653/v1/2020.findings-emnlp.425\n\nY. Sun, S. Wang, Y. Li, S. Feng, H. Tian, H. Wu, and H. Wang, “ERNIE 2.0: A continual pre-training framework for language understanding,” in AAAI 2020, New York, NY, USA, February 7-12, 2020. AAAI Press, 2020, pp. 8968–8975. [Online]. Available: https://aaai.org/ojs/index.php/AAAI/article/view/6428\n\nZ. Sun, X. Li, X. Sun, Y. Meng, X. Ao, Q. He, F. Wu, and J. Li, “Chinesebert: Chinese pretraining enhanced by glyph and pinyin information,” CoRR, vol. abs/2106.16038, 2021. [Online]. Available: https://arxiv.org/abs/2106.16038\n\nC. Raffel, N. Shazeer, A. Roberts, K. Lee, S. Narang, M. Matena, Y. Zhou, W. Li, and P. J. Liu, “Exploring the limits of transfer learning with a unified text-to-text transformer,” J. Mach. Learn. Res., vol. 21, pp. 140:1–140:67, 2020. [Online]. Available: http://jmlr.org/papers/v21/20-074.html\n\nZ. Dou, P. Liu, H. Hayashi, Z. Jiang, and G. Neubig, “Gsum: A general framework for guided neural abstractive summarization,” in NAACL-HLT 2021, Online, June 6-11, 2021, K. Toutanova, A. Rumshisky, L. Zettlemoyer, D. Hakkani-Tür, I. Beltagy, S. Bethard, R. Cotterell, T. Chakraborty, and Y. Zhou, Eds., 2021, pp. 4830–4842. [Online]. Available: https://doi.org/10.18653/v1/2021.nacl-main.384\n\nY. Liu and P. Liu, “Simcls: A simple framework for contrastive learning of abstractive summarization,” in ACL/IJCNLP 2021, (Volume 2: Short Papers), Virtual Event, August 1-6, 2021, C. Zong, F. Xia, W. Li, and R. Navigli, Eds., 2021, pp. 1065–1072. [Online]. Available: https://doi.org/10.18653/v1/2021.acl-short.135 ",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 11
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "The image contains a list of references, each with a corresponding number and bibliographic information. Here is the text content extracted from the image:\n\n2019, pp. 4487-4496. [Online]. Available: https://doi.org/10.18653/v1/p19-1441\n\n25 A. Aghajanyan, A. Gupta, A. Shrivastava, X. Chen, L. Zettlemoyer, and S. Gupta, “Muppet: Massive multi-task representations with pre-finetuning,” CoRR, vol. abs/2101.11038, 2021. [Online]. Available: https://arxiv.org/abs/2101.11038\n\n26 J. Wei, M. Bosma, V. Y. Zhao, K. Guu, A. W. Yu, B. Lester, N. Du, A. M. Dai, and Q. V. Le, “Finetuned language models are zero-shot learners,” CoRR, vol. abs/2109.01652, 2021. [Online]. Available: https://arxiv.org/abs/2109.01652\n\n27 J. Kasai, N. Pappas, H. Peng, J. Cross, and N. A. Smith, “Deep encoder, shallow decoder: Reevaluating non-autoregressive machine translation,” in ICLR 2021, Virtual Event, Austria, May 3-7, 2021. OpenReview.net, 2021. [Online]. Available: https://openreview.net/forum?id=KpfasTaLUpq\n\n28 X. Sun, T. Ge, F. Wei, and H. Wang, “Instantaneous grammatical error correction with shallow aggressive decoding,” in ACL/IJCNLP 2021 (Volume 1: Long Papers), Virtual Event, August 1-6, 2021, C. Zong, F. Xia, W. Li, and R. Navigli, Eds., 2021, pp. 5937–5947. [Online]. Available: https://doi.org/10.18653/v1/2021.acl-long.462\n\n29 T. Schick and H. Schütze, “It’s not just size that matters: Small language models are also few-shot learners,” in NAACL-HLT 2021, Online, June 6-11, 2021, K. Toutanova, A. Rumshisky, L. Zettlemoyer, D. Hakkani-Tür, I. Beltagy, S. Bethard, R. Cotterell, T. Chakraborty, and Y. Zhou, Eds., 2021, pp. 2339–2352. [Online]. Available: https://doi.org/10.18653/v1/2021.naacl-main.185\n\n30 T. Gao, A. Fisch, and D. Chen, “Making pre-trained language models better few-shot learners,” in ACL/IJCNLP 2021 (Volume 1: Long Papers), Virtual Event, August 1-6, 2021, C. Zong, F. Xia, W. Li, and R. Navigli, Eds., 2021, pp. 3816–3830. [Online]. Available: https://doi.org/10.18653/v1/2021.acl-long.295\n\n31 P. Liu, W. Yuan, J. Fu, Z. Jiang, H. Hayashi, and G. Neubig, “Pre-train, prompt, and predict: A systematic survey of prompting methods in natural language processing,” CoRR, vol. abs/2107.13586, 2021. [Online]. Available: https://arxiv.org/abs/2107.13586\n\n32 L. Xu, H. Hu, X. Zhang, L. Li, C. Cao, Y. Li, Y. Xu, K. Sun, D. Yu, C. Yu, Y. Tian, Q. Dong, W. Liu, B. Shi, Y. Cui, J. Li, J. Zeng, R. Wang, W. Xie, Y. Li, Y. Patterson, Z. Tian, Y. Zhang, H. Zhou, S. Liu, Z. Zhao, Q. Zhao, C. Yue, X. Zhang, Z. Yang, K. Richardson, and Z. Lan, “CLUE: A chinese language understanding evaluation benchmark,” in COLING 2020, Barcelona, Spain (Online), December 8-13, 2020, D. Scott, N. Bel, and C. Zong, Eds. International Committee on Computational Linguistics, 2020, pp. 4762–4772. [Online]. Available: https://doi.org/10.18653/v1/2020.coling-main.419\n\n33 X. Zhang and H. Li, “AMBERT: A pre-trained language model with multi-grained tokenization,” CoRR, vol. abs/2008.11869, 2020. [Online]. Available: https://arxiv.org/abs/2008.11869\n\n34 T. Emerson, “The second international chinese word segmentation bakeoff,” in SIGHAN@IJCNLP 2005, Jeju Island, Korea, 14-15, 2005. ACL, 2005. [Online]. Available: https://www.aclweb.org/anthology/I05-3017/\n\n35 G. Levow, “The third international chinese language processing bakeoff: Word segmentation and named entity recognition,” in SIGHAN@COLING/ACL 2006, Sydney, Australia, July 22-23, 2006, H. T. Ng and O. O. Y. Kwong, Eds., 2006, pp. 108–117. [Online]. Available: https://www.aclweb.org/anthology/W06-0115/\n\n36 X. Li, Y. Shao, T. Sun, H. Yan, X. Qiu, and X. Huang, “Accelerating BERT inference for sequence labeling via early-exit,” in ACL/IJCNLP 2021 (Volume 1: Long Papers), Virtual Event, August 1-6, 2021, C. Zong, F. Xia, W. Li, and R. Navigli, Eds., 2021, pp. 189–199. [Online]. Available: https://doi.org/10.18653/v1/2021.acl-long.16\n\n37 X. Li, H. Yan, X. Qiu, and X. Huang, “FLAT: chinese NER using flat-lattice transformer,” in ACL 2020, Online, July 5-10, 2020, D. Jurafsky, J. Chai, N. Schluter, and J. R. Tetraeult, Eds., 2020, pp. 6836–6842. [Online]. Available: https://doi.org/10.18653/v1/2020.acl-main.611\n\n38 X. Qiu, H. Pei, H. Yan, and X. Huang, “A concise model for multi-criteria chinese word segmentation with transformer encoder,” in Findings of EMNLP, T. Cohn, Y. He, and Y. Liu, Eds., vol. EMNLP 2020, 2020, pp. 2887–2897.\n\n39 Y. Cui, T. Liu, W. Che, L. Xiao, Z. Chen, W. Ma, S. Wang, and G. Hu, “A span-extraction dataset for chinese machine reading comprehension,” in EMNLP-IJCNLP 2019, Hong Kong, China, November 3-7, 2019, K. Inui, J. Jiang, V. Ng, and X. Wan, Eds., 2019, pp. 5882–5888. [Online]. Available: https://doi.org/10.18653/v1/D19-1600\n\n40 C. Shao, T. Liu, Y. Lai, Y. Tseng, and S. Tsai, “DRCD: a chinese machine reading comprehension dataset,” CoRR, vol. abs/1806.00920, 2018. [Online]. Available: http://arxiv.org/abs/1806.00920\n\n41 Y. Cui, W. Che, T. Liu, B. Qin, S. Wang, and G. Hu, “Revisiting pre-trained models for chinese natural language processing,” in EMNLP 2020, Online Event, 16-20 November 2020, T. Cohn, Y. He, and Y. Liu, Eds., 2020, pp. 657–668. [Online]. Available: https://doi.org/10.18653/v1/2020.findings-emnlp.58\n\n42 B. Hu, Q. Chen, and F. Zhu, “LCSTS: A large scale chinese short text summarization dataset,” in EMNLP 2015, Lisbon, Portugal, September 17-21, 2015, L. Màrquez, C. Callison-Burch, J. Su, D. Pighin, and Y. Marton, Eds. The Association for Computational Linguistics, 2015, pp. 1967–1972. [Online]. Available: https://doi.org/10.18653/v1/d15-1229\n\n43 Z. Shao, M. Huang, J. Wen, W. Xu, and X. Zhu, “Long and diverse text generation with planning-based hierarchical variational model,” in EMNLP-IJCNLP 2019, Hong Kong, China, November 3-7, 2019, K. Inui, J. Jiang, V. Ng, and X. Wan, Eds., 2019, pp. 3255–3266. [Online]. Available: https://doi.org/10.18653/v1/D19-1321\n\n44 Y. Liu, J. Gu, N. Goyal, X. Li, S. Edunov, M. Ghazvininejad, M. Lewis, and L. Zettlemoyer, “Multilingual denoising pre-training for neural machine translation,” Trans. Assoc. Comput. Linguistics, vol. 8, pp. 726–742, 2020. [Online]. Available: https://transacl.org/ojs/index.php/tacl/article/view/2107\n\n45 L. Xue, N. Constant, A. Roberts, M. Kale, R. Al-Rfou, A. Siddhant, A. Barua, and C. Raffel, “mt5: A massively multilingual pre-trained text-to-text transformer,” in NAACL-HLT 2021, Online, June 6-11, 2021, K. Toutanova, A. Rumshisky, L. Zettlemoyer, D. Hakkani-Tür, I. Beltagy, S. Bethard, R. Cotterell, T. Chakraborty, and Y. Zhou, Eds., 2021, pp. 483–498. [Online]. Available: https://doi.org/10.18653/v1/2021.naacl-main.41 ",
+        "page_idx": 12
+    },
+    {
+        "type": "text",
+        "text": "",
+        "page_idx": 12
+    }
+]

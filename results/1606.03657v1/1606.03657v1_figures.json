@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                381,
+                235,
+                483,
+                334
+            ],
+            "caption": "Figure 1: Lower bound \\( L_I \\) over training iterations",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                103,
+                104,
+                493,
+                329
+            ],
+            "caption": "The text content from the image is:\n\n```\nfrom −2 to 2 on InfoGAN (Rotation)    (d) Varying c3 from −2 to 2 on InfoGAN (Width)\n```",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                104,
+                102,
+                493,
+                339
+            ],
+            "caption": "Figure 3: Manipulating latent codes on 3D Faces: We show the effect of the learned continuous latent factors on the outputs as their values vary from −1 to 1. In (a), we show that one of the continuous latent codes consistently captures the azimuth of the face across different shapes; in (b), the continuous code captures elevation; in (c), the continuous code captures the orientation of lighting; and finally in (d), the continuous code learns to interpolate between wide and narrow faces while preserving other visual features. For each factor, we present the representation that most resembles prior supervised results [7] out of 5 random runs to provide direct comparison.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                105,
+                438,
+                490,
+                550
+            ],
+            "caption": "Figure 4: Manipulating latent codes on 3D Chairs: In (a), we show that the continuous code captures the pose of the chair while preserving its shape, although the learned pose mapping varies across different types; in (b), we show that the continuous code can alternatively learn to capture the widths of different chair types, and smoothly interpolate between them. For each factor, we present the representation that most resembles prior supervised results [7] out of 5 random runs to provide direct comparison. Figure 4: Manipulating latent codes on 3D Chairs: In (a), we show that the continuous code captures the pose of the chair while preserving its shape, although the learned pose mapping varies across different types; in (b), we show that the continuous code can alternatively learn to capture the widths of different chair types, and smoothly interpolate between them. For each factor, we present the representation that most resembles prior supervised results [7] out of 5 random runs to provide direct comparison.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                104,
+                104,
+                492,
+                216
+            ],
+            "caption": "Figure 5: Manipulating latent codes on SVHN: In (a), we show that one of the continuous codes captures variation in lighting even though in the dataset each digit is only present with one lighting condition; In (b), one of the categorical codes is shown to control the context of central digit: for example in the 2nd column, a digit 9 is (partially) present on the right whereas in 3rd column, a digit 0 is present, which indicates that InfoGAN has learned to separate central digit from its context.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                104,
+                287,
+                493,
+                523
+            ],
+            "caption": "(b) Discrete variation: Plate Context Figure 6: Manipulating latent codes on CelebA: (a) shows that a categorical code can capture the azimuth of face by discretizing this variation of continuous nature; in (b) a subset of the categorical code is devoted to signal the presence of glasses; (c) shows variation in hair style, roughly ordered from less hair to more hair; (d) shows change in emotion, roughly ordered from stern to happy.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                59,
+                177,
+                532,
+                418
+            ],
+            "caption": "Figure 1: Comparisons with state-of-the-art face restoration methods: HiFaceGAN [67], DFDNet [44], Wan et al. [61] and PULSE [52] on the real-world low-quality images. While previous methods struggle to restore faithful facial details or retain face identity, our proposed GFP-GAN achieves a good balance of realness and fidelity with much fewer artifacts. In addition, the powerful generative facial prior allows us to perform restoration and color enhancement jointly. (Zoom in for best view) Figure 1: Comparisons with state-of-the-art face restoration methods: HiFaceGAN [67], DFDNet [44], Wan et al. [61] and PULSE [52] on the real-world low-quality images. While previous methods struggle to restore faithful facial details or retain face identity, our proposed GFP-GAN achieves a good balance of realism and fidelity with much fewer artifacts. In addition, the powerful generative facial prior allows us to perform restoration and color enhancement jointly. (Zoom in for best view)",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                49,
+                53,
+                540,
+                236
+            ],
+            "caption": "Figure 2: Overview of GFP-GAN framework. It consists of a degradation removal module (U-Net) and a pretrained face GAN as facial prior. They are bridged by a latent code mapping and several Channel-Split Spatial Feature Transform (CS-SFT) layers. During training, we employ 1) intermediate restoration losses to remove complex degradation, 2) Facial component loss with discriminators to enhance facial details, and 3) identity preserving loss to retain face identity.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                49,
+                48,
+                546,
+                168
+            ],
+            "caption": "Figure 3: Qualitative comparison on the CelebA-Test for blind face restoration. Our GFP-GAN produces faithful details in eyes, mouth and hair. Zoom in for best view.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                49,
+                212,
+                286,
+                315
+            ],
+            "caption": "Figure 4: Comparison on the CelebA-Test for ×4 face super-resolution. Our GFP-GAN restores realistic teeth and faithful eye gaze direction. Zoom in for best view.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                50,
+                56,
+                546,
+                426
+            ],
+            "caption": "Table 2: Quantitative comparison on CelebA-Test for 4× face super-resolution. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance. The text content from the image is as follows:\n\n\"Table 2: Quantitative comparison on CelebA-Test for 4× face super-resolution. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance.\" The text content from the image is:\n\n\"Qualitative comparisons on three real-world datasets. Zoom in for best view.\" The text content from the image is as follows:\n\n\"Table 3: Quantitative comparison on the real-world LFW, CelebChild, WebPhoto. Red and blue indicates the best and the second best performance. '*' denotes finetuning on our training set. Deg. represents the identity distance.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                307,
+                59,
+                546,
+                329
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 9: Limitations of our model. The results of PSFR-GAN [6] are also presented.\" The text content from the image is:\n\n\"Figure 9: Limitations of our model. The results of PSFR-GAN [6] are also presented.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        }
+    ]
+}

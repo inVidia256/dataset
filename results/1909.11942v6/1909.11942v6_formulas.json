@@ -1,0 +1,18 @@
+{
+    "total_count": 1,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                265,
+                111,
+                345,
+                141
+            ],
+            "content": "p ( n ) = { \\frac { 1 / n } { \\sum _ { k = 1 } ^ { N } 1 / k } }",
+            "latex": "p ( n ) = { \\frac { 1 / n } { \\sum _ { k = 1 } ^ { N } 1 / k } }"
+        }
+    ]
+}

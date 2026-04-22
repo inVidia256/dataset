@@ -1,0 +1,70 @@
+{
+    "total_count": 4,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                308,
+                495,
+                543,
+                665
+            ],
+            "caption": "",
+            "footnote": "Algorithm 1: Batch Normalizing Transform, applied to activation \\( x \\) over a mini-batch.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Input：Values of x over a mini-batch：B = {x1...m}；Parameters to be learned：γ，β</td>\n  </tr>\n  <tr>\n    <td>Output：{yi = BNγ，β(xi)}</td>\n  </tr>\n  <tr>\n    <td>μB←1m∑mi=1xi//mini-batch mean</td>\n  </tr>\n  <tr>\n    <td>σ2B←1m∑mi=1(xi−μB)2//mini-batch variance</td>\n  </tr>\n  <tr>\n    <td>^xi←xi−μB√σ2B+ε//normalize</td>\n  </tr>\n  <tr>\n    <td>yi←γ^xi+βBNγ，β(xi)//scale and shift</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                326,
+                71,
+                535,
+                146
+            ],
+            "caption": "Figure 3: For Inception and the batch-normalized variants, the number of training steps required to reach the maximum accuracy of Inception (72.2%), and the maximum accuracy achieved by the network. Figure 3: For Inception and the batch-normalized variants, the number of training steps required to reach the maximum accuracy of Inception (72.2%), and the maximum accuracy achieved by the network.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Steps to 72.2%</td>\n    <td>Max accuracy</td>\n  </tr>\n  <tr>\n    <td>Inception</td>\n    <td>31.0·106</td>\n    <td>72.2%</td>\n  </tr>\n  <tr>\n    <td>BN-Baseline</td>\n    <td>13.3·106</td>\n    <td>72.7%</td>\n  </tr>\n  <tr>\n    <td>BN-x5</td>\n    <td>2.1·106</td>\n    <td>73.0%</td>\n  </tr>\n  <tr>\n    <td>BN-x30</td>\n    <td>2.7·106</td>\n    <td>74.8%</td>\n  </tr>\n  <tr>\n    <td>BN-x5-Sigmoid</td>\n    <td></td>\n    <td>69.8%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                123,
+                34,
+                487,
+                133
+            ],
+            "caption": "Figure 4: Batch-Normalized Inception comparison with previous state of the art on the provided validation set comprising 50000 images. *BN-Inception ensemble has reached 4.82% top-5 error on the 100000 images of the test set of the ImageNet as reported by the test server. Figure 4: Batch-Normalized Inception comparison with previous state of the art on the provided validation set comprising 50000 images. *BN-Inception ensemble has reached 4.82% top-5 error on the 100000 images of the test set of the ImageNet as reported by the test server. Figure 4: Batch-Normalized Inception comparison with previous state of the art on the provided validation set comprising 50000 images. *BN-Inception ensemble has reached 4.82% top-5 error on the 100000 images of the test set of the ImageNet as reported by the test server.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Resolution</td>\n    <td>Crops</td>\n    <td>Models</td>\n    <td>Top-1 error</td>\n    <td>Top-5 error</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet ensemble</td>\n    <td>224</td>\n    <td>144</td>\n    <td>7</td>\n    <td></td>\n    <td>6.67%</td>\n  </tr>\n  <tr>\n    <td>Deep Image low-res</td>\n    <td>256</td>\n    <td>-</td>\n    <td>1</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Deep Image high-res</td>\n    <td>512</td>\n    <td>-</td>\n    <td>1</td>\n    <td>24.88</td>\n    <td>7.42%</td>\n  </tr>\n  <tr>\n    <td>Deep Image ensemble</td>\n    <td>variable</td>\n    <td>-</td>\n    <td>-</td>\n    <td></td>\n    <td>5.98%</td>\n  </tr>\n  <tr>\n    <td>BN-Inception single crop</td>\n    <td>224</td>\n    <td>1</td>\n    <td>1</td>\n    <td>25.2%</td>\n    <td>7.82%</td>\n  </tr>\n  <tr>\n    <td>BN-Inception multicrop</td>\n    <td>224</td>\n    <td>144</td>\n    <td>1</td>\n    <td>21.99%</td>\n    <td>5.82%</td>\n  </tr>\n  <tr>\n    <td>BN-Inception ensemble</td>\n    <td>224</td>\n    <td>144</td>\n    <td>6</td>\n    <td>20.1%</td>\n    <td>4.9%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                70,
+                265,
+                583,
+                461
+            ],
+            "caption": "Figure 5: Inception architecture Figure 5: Inception architecture",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>type</td>\n    <td>patch size/stride</td>\n    <td>outputsize</td>\n    <td>depth</td>\n    <td>#1x1</td>\n    <td>#3x3reduce</td>\n    <td>#3x3</td>\n    <td>double#3x3reduce</td>\n    <td>double#3x3</td>\n    <td>Pool+proj</td>\n  </tr>\n  <tr>\n    <td>convolution*</td>\n    <td>7×7/2</td>\n    <td>112×112×64</td>\n    <td>1</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>max pool</td>\n    <td>3×3/2</td>\n    <td>56×56×64</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>convolution</td>\n    <td>3×3/1</td>\n    <td>56×56×192</td>\n    <td>1</td>\n    <td>64</td>\n    <td>192</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>max pool</td>\n    <td>3×3/2</td>\n    <td>28×28×192</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>inception(3a)</td>\n    <td></td>\n    <td>28×28×256</td>\n    <td>3</td>\n    <td>64</td>\n    <td>64</td>\n    <td>64</td>\n    <td>64</td>\n    <td>96</td>\n    <td>avg+32</td>\n  </tr>\n  <tr>\n    <td>inception(3b)</td>\n    <td></td>\n    <td>28×28×320</td>\n    <td>3</td>\n    <td>64</td>\n    <td>64</td>\n    <td>96</td>\n    <td>64</td>\n    <td>96</td>\n    <td>avg+64</td>\n  </tr>\n  <tr>\n    <td>inception(3c)</td>\n    <td>stride 2</td>\n    <td>28×28×576</td>\n    <td>3</td>\n    <td>0</td>\n    <td>128</td>\n    <td>160</td>\n    <td>64</td>\n    <td>96</td>\n    <td>max+pass through</td>\n  </tr>\n  <tr>\n    <td>inception(4a)</td>\n    <td></td>\n    <td>14×14×576</td>\n    <td>3</td>\n    <td>224</td>\n    <td>64</td>\n    <td>96</td>\n    <td>96</td>\n    <td>128</td>\n    <td>avg+128</td>\n  </tr>\n  <tr>\n    <td>inception(4b)</td>\n    <td></td>\n    <td>14×14×576</td>\n    <td>3</td>\n    <td>192</td>\n    <td>96</td>\n    <td>128</td>\n    <td>96</td>\n    <td>128</td>\n    <td>avg+128</td>\n  </tr>\n  <tr>\n    <td>inception(4c)</td>\n    <td></td>\n    <td>14×14×576</td>\n    <td>3</td>\n    <td>160</td>\n    <td>128</td>\n    <td>160</td>\n    <td>128</td>\n    <td>160</td>\n    <td>avg+128</td>\n  </tr>\n  <tr>\n    <td>inception(4d)</td>\n    <td></td>\n    <td>14×14×576</td>\n    <td>3</td>\n    <td>96</td>\n    <td>128</td>\n    <td>192</td>\n    <td>160</td>\n    <td>192</td>\n    <td>avg+128</td>\n  </tr>\n  <tr>\n    <td>inception(4e)</td>\n    <td>stride 2</td>\n    <td>14×14×1024</td>\n    <td>3</td>\n    <td>0</td>\n    <td>128</td>\n    <td>192</td>\n    <td>192</td>\n    <td>256</td>\n    <td>max+pass through</td>\n  </tr>\n  <tr>\n    <td>inception(5a)</td>\n    <td></td>\n    <td>7×7×1024</td>\n    <td>3</td>\n    <td>352</td>\n    <td>192</td>\n    <td>320</td>\n    <td>160</td>\n    <td>224</td>\n    <td>avg+128</td>\n  </tr>\n  <tr>\n    <td>inception(5b)</td>\n    <td></td>\n    <td>7×7×1024</td>\n    <td>3</td>\n    <td>352</td>\n    <td>192</td>\n    <td>320</td>\n    <td>192</td>\n    <td>224</td>\n    <td>max+128</td>\n  </tr>\n  <tr>\n    <td>avg pool</td>\n    <td>7×7/1</td>\n    <td>1×1×1024</td>\n    <td>0</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page011.png"
+        }
+    ]
+}

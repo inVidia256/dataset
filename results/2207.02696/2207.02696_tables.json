@@ -1,0 +1,150 @@
+{
+    "total_count": 9,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                96,
+                83,
+                496,
+                340
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Comparison of baseline object detectors.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>#Param.</td>\n    <td>FLOPs</td>\n    <td>Size</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>YOLOv4[3]</td>\n    <td>64.4M</td>\n    <td>142.8G</td>\n    <td>640</td>\n    <td>49.7%</td>\n    <td>68.2%</td>\n    <td>54.3%</td>\n    <td>32.9%</td>\n    <td>54.8%</td>\n    <td>63.7%</td>\n  </tr>\n  <tr>\n    <td>YOLO u5(r6.1) [81]</td>\n    <td>46.5M</td>\n    <td>109.1G</td>\n    <td>640</td>\n    <td>50.2%</td>\n    <td>68.7%</td>\n    <td>54.6%</td>\n    <td>33.2%</td>\n    <td>55.5%</td>\n    <td>63.7%</td>\n  </tr>\n  <tr>\n    <td>YOLO v4-CSP[79]</td>\n    <td>52.9M</td>\n    <td>120.4G</td>\n    <td>640</td>\n    <td>50.3%</td>\n    <td>68.6%</td>\n    <td>54.9%</td>\n    <td>34.2%</td>\n    <td>55.6%</td>\n    <td>65.1%</td>\n  </tr>\n  <tr>\n    <td>YOLO- CSP[81]</td>\n    <td>52.9M</td>\n    <td>120.4G</td>\n    <td>640</td>\n    <td>50.8%</td>\n    <td>69.5%</td>\n    <td>55.5%</td>\n    <td>33.7%</td>\n    <td>56.0%</td>\n    <td>65.4%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7</td>\n    <td>36.9M</td>\n    <td>104.7G</td>\n    <td>640</td>\n    <td>51.2%</td>\n    <td>69.7%</td>\n    <td>55.5%</td>\n    <td>35.2%</td>\n    <td>56.0%</td>\n    <td>66.7%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-43%</td>\n    <td>-15%</td>\n    <td></td>\n    <td>+0.4</td>\n    <td>+0.2</td>\n    <td>+0.2</td>\n    <td>=</td>\n    <td></td>\n    <td>+1.3</td>\n  </tr>\n  <tr>\n    <td>YOL OR-CSP-X[81]</td>\n    <td>96.9M</td>\n    <td>226.8G</td>\n    <td>640</td>\n    <td>52.7%</td>\n    <td>71.3%</td>\n    <td>57.4%</td>\n    <td>36.3%</td>\n    <td>57.5%</td>\n    <td>68.3%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-X</td>\n    <td>71.3M</td>\n    <td>189.9G</td>\n    <td>640</td>\n    <td>52.9%</td>\n    <td>71.1%</td>\n    <td>57.5%</td>\n    <td>36.9%</td>\n    <td>57.7%</td>\n    <td>68.6%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-36%</td>\n    <td>-19%</td>\n    <td></td>\n    <td>+0.2</td>\n    <td>-0.2</td>\n    <td>+0.1</td>\n    <td>+0.6</td>\n    <td>+0.2</td>\n    <td>+0.3</td>\n  </tr>\n  <tr>\n    <td>YOLO v4-tiny[79]</td>\n    <td>6.1</td>\n    <td>6.9</td>\n    <td>416</td>\n    <td>24.9%</td>\n    <td>42.1%</td>\n    <td>25.7%</td>\n    <td>8.7%</td>\n    <td>28.4%</td>\n    <td>39.2%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-tiny</td>\n    <td>6.2</td>\n    <td>5.8</td>\n    <td>416</td>\n    <td>35.2%</td>\n    <td>52.8%</td>\n    <td>37.3%</td>\n    <td>15.7%</td>\n    <td>38.0%</td>\n    <td>53.4%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>+2%</td>\n    <td>-19%</td>\n    <td></td>\n    <td>+10.3</td>\n    <td>+10.7</td>\n    <td>+11.6</td>\n    <td>+7.0</td>\n    <td>+9.6</td>\n    <td>+14.2</td>\n  </tr>\n  <tr>\n    <td>YOLO v4-tiny-31[79]</td>\n    <td>8.7</td>\n    <td>5.2</td>\n    <td>320</td>\n    <td>30.8%</td>\n    <td>47.3%</td>\n    <td>32.2%</td>\n    <td>10.9%</td>\n    <td>31.9%</td>\n    <td>51.5%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-tiny</td>\n    <td>6.2</td>\n    <td>3.5</td>\n    <td>320</td>\n    <td>30.8%</td>\n    <td>47.3%</td>\n    <td>32.2%</td>\n    <td>10.0%</td>\n    <td>31.9%</td>\n    <td>52.2%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-39%</td>\n    <td>-49%</td>\n    <td></td>\n    <td>=</td>\n    <td>=</td>\n    <td>=</td>\n    <td>-0.9</td>\n    <td>=</td>\n    <td>+0.7</td>\n  </tr>\n  <tr>\n    <td>YOL OR-E6[81]</td>\n    <td>115.8M</td>\n    <td>683.2G</td>\n    <td>1280</td>\n    <td>55.7%</td>\n    <td>73.2%</td>\n    <td>60.7%</td>\n    <td>40.1%</td>\n    <td>60.4%</td>\n    <td>69.2%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-E6</td>\n    <td>97.2M</td>\n    <td>515.2G</td>\n    <td>1280</td>\n    <td>55.9%</td>\n    <td>73.5%</td>\n    <td>61.1%</td>\n    <td>40.6%</td>\n    <td>60.3%</td>\n    <td>70.0%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-19%</td>\n    <td>-33%</td>\n    <td></td>\n    <td>+0.2</td>\n    <td>+0.3</td>\n    <td>+0.4</td>\n    <td>+0.5</td>\n    <td>-0.1</td>\n    <td>+0.8</td>\n  </tr>\n  <tr>\n    <td>YOL OR-D6[81]</td>\n    <td>151.7M</td>\n    <td>935.6G</td>\n    <td>1280</td>\n    <td>56.1%</td>\n    <td>73.9%</td>\n    <td>61.2%</td>\n    <td>42.4%</td>\n    <td>60.5%</td>\n    <td>69.9%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-D6</td>\n    <td>154.7M</td>\n    <td>806.8G</td>\n    <td>1280</td>\n    <td>56.3%</td>\n    <td>73.8%</td>\n    <td>61.4%</td>\n    <td>41.3%</td>\n    <td>60.6%</td>\n    <td>70.1%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-E6E</td>\n    <td>151.7M</td>\n    <td>843.2G</td>\n    <td>1280</td>\n    <td>56.8%</td>\n    <td>74.4%</td>\n    <td>62.1%</td>\n    <td>40.8%</td>\n    <td>62.1%</td>\n    <td>70.6%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>=</td>\n    <td>-11%</td>\n    <td></td>\n    <td>+0.7</td>\n    <td>+0.5</td>\n    <td>+0.9</td>\n    <td>-1.6</td>\n    <td>+1.6</td>\n    <td>+0.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                58,
+                83,
+                532,
+                438
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Comparison of state-of-the-art real-time object detectors.\"",
+            "footnote": "1 Our FLOPs is calculated by rectangle input resolution like 640 × 640 or 1280 × 1280.\n2 Our inference time is estimated by using letterbox resize input image to make its long side equals to 640 or 1280.",
+            "latex": "",
+            "html": "<html>\n<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>#Param.</td>\n    <td>FLOPs</td>\n    <td>Size</td>\n    <td>FPS</td>\n    <td>APtest/ APval</td>\n    <td>APtest50</td>\n    <td>APtest75</td>\n    <td>APtestS</td>\n    <td>APtestM</td>\n    <td>APtestL</td>\n  </tr>\n  <tr>\n    <td>YOLO X[21]</td>\n    <td>9.0M</td>\n    <td>26.8G</td>\n    <td>640</td>\n    <td>102</td>\n    <td>40.5%/40.5%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOX-M[21]</td>\n    <td>25.3M</td>\n    <td>73.8G</td>\n    <td>640</td>\n    <td>81</td>\n    <td>47.2%/46.9%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOX-L[21]</td>\n    <td>54.2M</td>\n    <td>155.6G</td>\n    <td>640</td>\n    <td>69</td>\n    <td>50.1%/49.7%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOX-X[21]</td>\n    <td>99.1M</td>\n    <td>281.9G</td>\n    <td>640</td>\n    <td>58</td>\n    <td>51.5%/51.1%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>PP YOLOE-S[85]</td>\n    <td>7.9M</td>\n    <td>17.4G</td>\n    <td>640</td>\n    <td>208</td>\n    <td>43.1%/42.7%</td>\n    <td>60.5%</td>\n    <td>46.6%</td>\n    <td>23.2%</td>\n    <td>46.4%</td>\n    <td>56.9%</td>\n  </tr>\n  <tr>\n    <td>PP YOLOE-M[85]</td>\n    <td>23.4M</td>\n    <td>49.9G</td>\n    <td>640</td>\n    <td>123</td>\n    <td>48.9%/48.6%</td>\n    <td>66.5%</td>\n    <td>53.0%</td>\n    <td>28.6%</td>\n    <td>52.9%</td>\n    <td>63.8%</td>\n  </tr>\n  <tr>\n    <td>PP YOLOE-L[85]</td>\n    <td>52.2M</td>\n    <td>110.1G</td>\n    <td>640</td>\n    <td>78</td>\n    <td>51.4%/50.9%</td>\n    <td>68.9%</td>\n    <td>55.6%</td>\n    <td>31.4%</td>\n    <td>55.3%</td>\n    <td>66.1%</td>\n  </tr>\n  <tr>\n    <td>PP YOLOE-X[85]</td>\n    <td>98.4M</td>\n    <td>206.6G</td>\n    <td>640</td>\n    <td>45</td>\n    <td>52.2%/51.9%</td>\n    <td>69.9%</td>\n    <td>56.5%</td>\n    <td>33.3%</td>\n    <td>56.3%</td>\n    <td>66.4%</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-N(r6.1)[23]</td>\n    <td>1.9M</td>\n    <td>4.5G</td>\n    <td>640</td>\n    <td>159</td>\n    <td>-/28.0%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-S(r6.1)[23]</td>\n    <td>7.2M</td>\n    <td>16.5G</td>\n    <td>640</td>\n    <td>156</td>\n    <td>-/37.4%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-M(r6.1)[23]</td>\n    <td>21.2M</td>\n    <td>49.0G</td>\n    <td>640</td>\n    <td>122</td>\n    <td>-/45.4%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-L(r6.1)[23]</td>\n    <td>46.5M</td>\n    <td>109.1G</td>\n    <td>640</td>\n    <td>99</td>\n    <td>-/49.0%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-X(r6.1)[23]</td>\n    <td>86.7M</td>\n    <td>205.7G</td>\n    <td>640</td>\n    <td>83</td>\n    <td>-/50.7%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOR-CSP[81]</td>\n    <td>52.9M</td>\n    <td>120.4G</td>\n    <td>640</td>\n    <td>106</td>\n    <td>51.1%/50.8%</td>\n    <td>69.6%</td>\n    <td>55.7%</td>\n    <td>31.7%</td>\n    <td>55.3%</td>\n    <td>64.7%</td>\n  </tr>\n  <tr>\n    <td>YOLOR-CSP-X[81]</td>\n    <td>96.9M</td>\n    <td>226.8G</td>\n    <td>640</td>\n    <td>87</td>\n    <td>53.0%/52.7%</td>\n    <td>71.4%</td>\n    <td>57.9%</td>\n    <td>33.7%</td>\n    <td>57.1%</td>\n    <td>66.8%</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-tiny-SiLU</td>\n    <td>6.2M</td>\n    <td>13.8G</td>\n    <td>640</td>\n    <td>286</td>\n    <td>38.7%/38.7%</td>\n    <td>56.7%</td>\n    <td>41.7%</td>\n    <td>18.8%</td>\n    <td>42.4%</td>\n    <td>51.9%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7</td>\n    <td>36.9M</td>\n    <td>104.7G</td>\n    <td>640</td>\n    <td>161</td>\n    <td>51.4%/51.2%</td>\n    <td>69.7%</td>\n    <td>55.9%</td>\n    <td>31.8%</td>\n    <td>55.5%</td>\n    <td>65.0%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-X</td>\n    <td>71.3M</td>\n    <td>189.9G</td>\n    <td>640</td>\n    <td>114</td>\n    <td>53.1%/52.9%</td>\n    <td>71.2%</td>\n    <td>57.8%</td>\n    <td>33.8%</td>\n    <td>57.1%</td>\n    <td>67.4%</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-N6(r6.1)[23]</td>\n    <td>3.2M</td>\n    <td>18.4G</td>\n    <td>1280</td>\n    <td>123</td>\n    <td>-/36.0%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-S6(r6.1)[23]</td>\n    <td>12.6M</td>\n    <td>67.2G</td>\n    <td>1280</td>\n    <td>122</td>\n    <td>-/44.8%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-M6(r6.1)[23]</td>\n    <td>35.7M</td>\n    <td>200.0G</td>\n    <td>1280</td>\n    <td>90</td>\n    <td>-/51.3%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-L6(r6.1)[23]</td>\n    <td>76.8M</td>\n    <td>445.6G</td>\n    <td>1280</td>\n    <td>63</td>\n    <td>-/53.7%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-X6(r6.1)[23]</td>\n    <td>140.7M</td>\n    <td>839.2G</td>\n    <td>1280</td>\n    <td>38</td>\n    <td>-/55.0%</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>YOLOR-P6[81]</td>\n    <td>37.2M</td>\n    <td>325.6G</td>\n    <td>1280</td>\n    <td>76</td>\n    <td>53.9%/53.5%</td>\n    <td>71.4%</td>\n    <td>58.9%</td>\n    <td>36.1%</td>\n    <td>57.7%</td>\n    <td>65.6%</td>\n  </tr>\n  <tr>\n    <td>YOLOR-W6[81]</td>\n    <td>79.8G</td>\n    <td>453.2G</td>\n    <td>1280</td>\n    <td>66</td>\n    <td>55.2%/54.8%</td>\n    <td>72.7%</td>\n    <td>60.5%</td>\n    <td>37.7%</td>\n    <td>59.1%</td>\n    <td>67.1%</td>\n  </tr>\n  <tr>\n    <td>YOLOR-E6[81]</td>\n    <td>115.8M</td>\n    <td>683.2G</td>\n    <td>1280</td>\n    <td>45</td>\n    <td>55.8%/55.7%</td>\n    <td>73.4%</td>\n    <td>61.1%</td>\n    <td>38.4%</td>\n    <td>59.7%</td>\n    <td>67.7%</td>\n  </tr>\n  <tr>\n    <td>YOLOR-D6[81]</td>\n    <td>151.7M</td>\n    <td>935.6G</td>\n    <td>1280</td>\n    <td>34</td>\n    <td>56.5%/56.1%</td>\n    <td>74.1%</td>\n    <td>61.9%</td>\n    <td>38.9%</td>\n    <td>60.4%</td>\n    <td>68.7%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-W6</td>\n    <td>70.4M</td>\n    <td>360.0G</td>\n    <td>1280</td>\n    <td>84</td>\n    <td>54.9%/54.6%</td>\n    <td>72.6%</td>\n    <td>60.1%</td>\n    <td>37.3%</td>\n    <td>58.7%</td>\n    <td>67.1%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-E6</td>\n    <td>97.2M</td>\n    <td>515.2G</td>\n    <td>1280</td>\n    <td>56</td>\n    <td>56.0%/55.9%</td>\n    <td>73.5%</td>\n    <td>61.2%</td>\n    <td>38.0%</td>\n    <td>59.9%</td>\n    <td>68.4%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-D6</td>\n    <td>154.7M</td>\n    <td>806.8G</td>\n    <td>1280</td>\n    <td>44</td>\n    <td>56.6%/56.3%</td>\n    <td>74.0%</td>\n    <td>61.8%</td>\n    <td>38.8%</td>\n    <td>59.9%</td>\n    <td>69.5%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-E6E</td>\n    <td>151.7M</td>\n    <td>843.2G</td>\n    <td>1280</td>\n    <td>36</td>\n    <td>56.8%/56.8%</td>\n    <td>74.4%</td>\n    <td>62.1%</td>\n    <td>39.3%</td>\n    <td>60.\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                312,
+                232,
+                541,
+                311
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Ablation study on planned RepConcatenation model.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>base(3-S ELAN)</td>\n    <td>52.26%</td>\n    <td>70.41%</td>\n    <td>56.77%</td>\n    <td>35.81%</td>\n    <td>57.00%</td>\n    <td>67.59%</td>\n  </tr>\n  <tr>\n    <td>Figure 6(a)</td>\n    <td>52.18%</td>\n    <td>70.34%</td>\n    <td>56.90%</td>\n    <td>35.71%</td>\n    <td>56.83%</td>\n    <td>67.51%</td>\n  </tr>\n  <tr>\n    <td>Figure 6(b)</td>\n    <td>52.30%</td>\n    <td>70.30%</td>\n    <td>56.92%</td>\n    <td>35.76%</td>\n    <td>56.95%</td>\n    <td>67.74%</td>\n  </tr>\n  <tr>\n    <td>Figure 6(c)</td>\n    <td>52.33%</td>\n    <td>70.56%</td>\n    <td>56.91%</td>\n    <td>35.90%</td>\n    <td>57.06%</td>\n    <td>67.50%</td>\n  </tr>\n  <tr>\n    <td>Figure 6(d)</td>\n    <td>52.17%</td>\n    <td>70.32%</td>\n    <td>56.82%</td>\n    <td>35.33%</td>\n    <td>57.06%</td>\n    <td>68.09%</td>\n  </tr>\n  <tr>\n    <td>Figure 6(e)</td>\n    <td>52.23%</td>\n    <td>70.20%</td>\n    <td>56.81%</td>\n    <td>35.34%</td>\n    <td>56.97%</td>\n    <td>66.88%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                54,
+                429,
+                282,
+                498
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Ablation study on proposed model scaling.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>#Param.</td>\n    <td>FLOPs</td>\n    <td>Size</td>\n    <td>APval</td>\n    <td>APval50</td>\n    <td>APval75</td>\n  </tr>\n  <tr>\n    <td>base(v7-X light)</td>\n    <td>47.0M</td>\n    <td>125.5G</td>\n    <td>640</td>\n    <td>51.7%</td>\n    <td>70.1%</td>\n    <td>56.0%</td>\n  </tr>\n  <tr>\n    <td>width only(1.25w)</td>\n    <td>73.4M</td>\n    <td>195.5G</td>\n    <td>640</td>\n    <td>52.4%</td>\n    <td>70.9%</td>\n    <td>57.1%</td>\n  </tr>\n  <tr>\n    <td>depth only(2.0d)</td>\n    <td>69.3M</td>\n    <td>187.6G</td>\n    <td>640</td>\n    <td>52.7%</td>\n    <td>70.8%</td>\n    <td>57.3%</td>\n  </tr>\n  <tr>\n    <td>compound(v7-X)</td>\n    <td>71.3M</td>\n    <td>189.9G</td>\n    <td>640</td>\n    <td>52.9%</td>\n    <td>71.1%</td>\n    <td>57.5%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>+1.2</td>\n    <td>+1.0</td>\n    <td>+1.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                309,
+                614,
+                543,
+                699
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5: Ablation study on planned RepResidual model.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>base(YOLOR-W6)</td>\n    <td>54.82%</td>\n    <td>72.39%</td>\n    <td>59.95%</td>\n    <td>39.68%</td>\n    <td>59.38%</td>\n    <td>68.30%</td>\n  </tr>\n  <tr>\n    <td>Rep CSP</td>\n    <td>54.67%</td>\n    <td>72.50%</td>\n    <td>59.58%</td>\n    <td>40.22%</td>\n    <td>59.61%</td>\n    <td>67.87%</td>\n  </tr>\n  <tr>\n    <td>RC SP</td>\n    <td>54.36%</td>\n    <td>71.95%</td>\n    <td>59.54%</td>\n    <td>40.15%</td>\n    <td>59.02%</td>\n    <td>67.44%</td>\n  </tr>\n  <tr>\n    <td>Rep RCSP</td>\n    <td>54.85%</td>\n    <td>72.51%</td>\n    <td>60.08%</td>\n    <td>40.53%</td>\n    <td>59.52%</td>\n    <td>68.06%</td>\n  </tr>\n  <tr>\n    <td>base(YOLOR-CSP)</td>\n    <td>50.81%</td>\n    <td>69.47%</td>\n    <td>55.28%</td>\n    <td>33.74%</td>\n    <td>56.01%</td>\n    <td>65.38%</td>\n  </tr>\n  <tr>\n    <td>Rep RCSP</td>\n    <td>50.91%</td>\n    <td>69.54%</td>\n    <td>55.55%</td>\n    <td>34.44%</td>\n    <td>55.74%</td>\n    <td>65.46%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                58,
+                457,
+                278,
+                526
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 6: Ablation study on proposed auxiliary head.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Size</td>\n    <td>APval</td>\n    <td>APval50</td>\n    <td>APval75</td>\n  </tr>\n  <tr>\n    <td>base(v7-E6)</td>\n    <td>1280</td>\n    <td>55.6%</td>\n    <td>73.2%</td>\n    <td>60.7%</td>\n  </tr>\n  <tr>\n    <td>independent</td>\n    <td>1280</td>\n    <td>55.8%</td>\n    <td>73.4%</td>\n    <td>60.9%</td>\n  </tr>\n  <tr>\n    <td>lead guided</td>\n    <td>1280</td>\n    <td>55.9%</td>\n    <td>73.5%</td>\n    <td>61.0%</td>\n  </tr>\n  <tr>\n    <td>coarse-to-fine lead guided</td>\n    <td>1280</td>\n    <td>55.9%</td>\n    <td>73.5%</td>\n    <td>61.1%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-</td>\n    <td>+0.3</td>\n    <td>+0.3</td>\n    <td>+0.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                335,
+                426,
+                516,
+                487
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 8: Ablation study on partial auxiliary head.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Size</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>base(v7-E6E)</td>\n    <td>1280</td>\n    <td>56.3%</td>\n    <td>74.0%</td>\n    <td>61.5%</td>\n  </tr>\n  <tr>\n    <td>aux</td>\n    <td>1280</td>\n    <td>56.5%</td>\n    <td>74.0%</td>\n    <td>61.6%</td>\n  </tr>\n  <tr>\n    <td>partial aux</td>\n    <td>1280</td>\n    <td>56.8%</td>\n    <td>74.4%</td>\n    <td>62.1%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-</td>\n    <td>+0.5</td>\n    <td>+0.4</td>\n    <td>+0.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page009.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                63,
+                650,
+                274,
+                711
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 7: Ablation study on constrained auxiliary head.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Size</td>\n    <td>APval</td>\n    <td>APval50</td>\n    <td>APval75</td>\n  </tr>\n  <tr>\n    <td>base(v7-E6)</td>\n    <td>1280</td>\n    <td>55.6%</td>\n    <td>73.2%</td>\n    <td>60.7%</td>\n  </tr>\n  <tr>\n    <td>aux without constraint</td>\n    <td>1280</td>\n    <td>55.9%</td>\n    <td>73.5%</td>\n    <td>61.0%</td>\n  </tr>\n  <tr>\n    <td>aux with constraint</td>\n    <td>1280</td>\n    <td>55.9%</td>\n    <td>73.5%</td>\n    <td>61.1%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-</td>\n    <td>+0.3</td>\n    <td>+0.3</td>\n    <td>+0.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page009.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                63,
+                532,
+                270,
+                601
+            ],
+            "caption": "Table 10: Comparison of different settings.",
+            "footnote": "* Similar to meituan/YOLOv6 and PPYOLOE, our model could get higher AP when set higher IoU threshold. * Similar to meituan/YOLOv6 and PPYOLOE, our model could get higher AP when set higher IoU threshold.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Presicion</td>\n    <td>IoU threshold</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-X</td>\n    <td>FP16(default)</td>\n    <td>0.65(default)</td>\n    <td>52.9%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-X</td>\n    <td>FP32</td>\n    <td>0.65</td>\n    <td>53.0%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-X</td>\n    <td>FP16</td>\n    <td>0.70</td>\n    <td>53.0%</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-X</td>\n    <td>FP32</td>\n    <td>0.70</td>\n    <td>53.1%</td>\n  </tr>\n  <tr>\n    <td>improvement</td>\n    <td>-</td>\n    <td>-</td>\n    <td>+0.2%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page011.png"
+        }
+    ]
+}

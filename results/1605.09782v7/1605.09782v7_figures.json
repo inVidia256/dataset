@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                111,
+                82,
+                502,
+                233
+            ],
+            "caption": "Figure 1: The structure of Bidirectional Generative Adversarial Networks (BiGAN).",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                131,
+                172,
+                480,
+                232
+            ],
+            "caption": "Figure 2: Qualitative results for permutation-invariant MNIST BiGAN training, including generator samples G(z), real data x, and corresponding reconstructions G(E(x)).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                115,
+                78,
+                489,
+                221
+            ],
+            "caption": "Figure 3: The convolutional filters learned by the three modules (D, G, and E) of a BiGAN (left, top-middle) trained on the ImageNet (Russakovsky et al., 2015) database. We compare with the filters learned by a discriminator D trained with the same architecture (bottom-middle), as well as the filters reported by Noroozi & Favaro (2016), and by Krizhevsky et al. (2012) for fully supervised ImageNet training (right).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                129,
+                304,
+                480,
+                486
+            ],
+            "caption": "Figure 4: Qualitative results for ImageNet BiGAN training, including generator samples G(z), real data x, and corresponding reconstructions G(E(x)).",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                121,
+                77,
+                489,
+                493
+            ],
+            "caption": "Figure 5: For the query images used in Krähenbühl et al. (2016) (left), nearest neighbors (by minimum cosine distance) from the ImageNet LSVRC (Russakovsky et al., 2015) training set in the fc6 feature space of the ImageNet-trained BiGAN encoder E. (The fc6 weights are set randomly; this space is a random projection of the learned conv5 feature space.)",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page018.png"
+        }
+    ]
+}

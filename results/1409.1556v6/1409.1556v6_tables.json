@@ -1,0 +1,198 @@
+{
+    "total_count": 12,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                151,
+                133,
+                457,
+                444
+            ],
+            "caption": "Table 1: ConvNet configurations (shown in columns). The depth of the configurations increases from the left (A) to the right (E), as more layers are added (the added layers are shown in bold). The convolutional layer parameters are denoted as “conv〈receptive field size〉-〈number of channels〉”. The ReLU activation function is not shown for brevity. Table 1: ConvNet configurations (shown in columns). The depth of the configurations increases from the left (A) to the right (E), as more layers are added (the added layers are shown in bold). The convolutional layer parameters are denoted as “conv〈receptive field size〉-〈number of channels〉”. The ReLU activation function is not shown for brevity.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>ConvNet Configuration</td>\n  </tr>\n  <tr>\n    <td>A</td>\n    <td>A-LRN</td>\n    <td>B</td>\n    <td>C</td>\n    <td>D</td>\n    <td>E</td>\n  </tr>\n  <tr>\n    <td>11 weightlayers</td>\n    <td>11 weightlayers</td>\n    <td>13 weightlayers</td>\n    <td>16 weightlayers</td>\n    <td>16 weightlayers</td>\n    <td>19 weightlayers</td>\n  </tr>\n  <tr>\n    <td>input(224×224RGBimage)</td>\n  </tr>\n  <tr>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n  </tr>\n  <tr>\n    <td>LRN</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n    <td>conv3-64</td>\n  </tr>\n  <tr>\n    <td>maxpool</td>\n  </tr>\n  <tr>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n  </tr>\n  <tr>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n    <td>conv3-128</td>\n  </tr>\n  <tr>\n    <td>maxpool</td>\n  </tr>\n  <tr>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n  </tr>\n  <tr>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n    <td>conv3-256</td>\n    <td>conv1-256</td>\n    <td>conv3-256</td>\n  </tr>\n  <tr>\n    <td>maxpool</td>\n  </tr>\n  <tr>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n  </tr>\n  <tr>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv1-512</td>\n    <td>conv3-512</td>\n  </tr>\n  <tr>\n    <td>maxpool</td>\n  </tr>\n  <tr>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n  </tr>\n  <tr>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv3-512</td>\n    <td>conv1-512</td>\n    <td>conv3-512</td>\n  </tr>\n  <tr>\n    <td>maxpool</td>\n  </tr>\n  <tr>\n    <td>FC-4096</td>\n  </tr>\n  <tr>\n    <td>FC-4096</td>\n  </tr>\n  <tr>\n    <td>FC-1000</td>\n  </tr>\n  <tr>\n    <td>soft-max</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                182,
+                468,
+                428,
+                490
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Number of parameters (in millions).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>A，A-LRN</td>\n    <td>B</td>\n    <td>C</td>\n    <td>D</td>\n    <td>E</td>\n  </tr>\n  <tr>\n    <td>Number of parameters</td>\n    <td>133</td>\n    <td>133</td>\n    <td>134</td>\n    <td>138</td>\n    <td>144</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                124,
+                454,
+                485,
+                598
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: ConvNet performance at a single test scale.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>ConvNet config.(Table 1)</td>\n    <td>smallest image side</td>\n    <td>top-1val.error(%)</td>\n    <td>top-5val.error(%)</td>\n  </tr>\n  <tr>\n    <td>train(S)test(Q)</td>\n  </tr>\n  <tr>\n    <td>A</td>\n    <td>256</td>\n    <td>256</td>\n    <td>29.6</td>\n    <td>10.4</td>\n  </tr>\n  <tr>\n    <td>A-LRN</td>\n    <td>256</td>\n    <td>256</td>\n    <td>29.7</td>\n    <td>10.5</td>\n  </tr>\n  <tr>\n    <td>B</td>\n    <td>256</td>\n    <td>256</td>\n    <td>28.7</td>\n    <td>9.9</td>\n  </tr>\n  <tr>\n    <td>C</td>\n    <td>256</td>\n    <td>256</td>\n    <td>28.1</td>\n    <td>9.4</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>384</td>\n    <td>384</td>\n    <td>28.1</td>\n    <td>9.3</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[256;512]</td>\n    <td>384</td>\n    <td>27.3</td>\n    <td>8.8</td>\n  </tr>\n  <tr>\n    <td>D</td>\n    <td>256</td>\n    <td>256</td>\n    <td>27.0</td>\n    <td>8.8</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>384</td>\n    <td>384</td>\n    <td>26.8</td>\n    <td>8.7</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[256;512]</td>\n    <td>384</td>\n    <td>25.6</td>\n    <td>8.1</td>\n  </tr>\n  <tr>\n    <td>E</td>\n    <td>256</td>\n    <td>256</td>\n    <td>27.3</td>\n    <td>9.0</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>384</td>\n    <td>384</td>\n    <td>26.9</td>\n    <td>8.7</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>[256;512]</td>\n    <td>384</td>\n    <td>25.5</td>\n    <td>8.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                115,
+                168,
+                493,
+                291
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: ConvNet performance at multiple test scales.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>ConvNet config.(Table 1)</td>\n    <td>smallest image side</td>\n    <td>top-1val.error(%)</td>\n    <td>top-5val.error(%)</td>\n  </tr>\n  <tr>\n    <td>train(S)test(Q)</td>\n  </tr>\n  <tr>\n    <td>B</td>\n    <td>256</td>\n    <td>224，256，288</td>\n    <td>28.2</td>\n    <td>9.6</td>\n  </tr>\n  <tr>\n    <td>C</td>\n    <td>256</td>\n    <td>224，256，288</td>\n    <td>27.7</td>\n    <td>9.2</td>\n  </tr>\n  <tr>\n    <td>384</td>\n    <td>352，384，416</td>\n    <td>27.8</td>\n    <td>9.2</td>\n  </tr>\n  <tr>\n    <td>[256；512]</td>\n    <td>256，384，512</td>\n    <td>26.3</td>\n    <td>8.2</td>\n  </tr>\n  <tr>\n    <td>D</td>\n    <td>256</td>\n    <td>224，256，288</td>\n    <td>26.6</td>\n    <td>8.6</td>\n  </tr>\n  <tr>\n    <td>384</td>\n    <td>352，384，416</td>\n    <td>26.5</td>\n    <td>8.6</td>\n  </tr>\n  <tr>\n    <td>[256；512]</td>\n    <td>256，384，512</td>\n    <td>24.8</td>\n    <td>7.5</td>\n  </tr>\n  <tr>\n    <td>E</td>\n    <td>256</td>\n    <td>224，256，288</td>\n    <td>26.9</td>\n    <td>8.7</td>\n  </tr>\n  <tr>\n    <td>384</td>\n    <td>352，384，416</td>\n    <td>26.7</td>\n    <td>8.6</td>\n  </tr>\n  <tr>\n    <td>[256；512]</td>\n    <td>256，384，512</td>\n    <td>24.8</td>\n    <td>7.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                127,
+                431,
+                481,
+                504
+            ],
+            "caption": "Table 5: ConvNet evaluation techniques comparison. In all experiments the training scale \\( S \\) was sampled from [256; 512], and three test scales \\( Q \\) were considered: \\(\\{256, 384, 512\\}\\).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>ConvNet config.(Table 1)</td>\n    <td>Evaluation method</td>\n    <td>top-1val.error(%)</td>\n    <td>top-5val.error(%)</td>\n  </tr>\n  <tr>\n    <td>D</td>\n    <td>dense</td>\n    <td>24.8</td>\n    <td>7.5</td>\n  </tr>\n  <tr>\n    <td>multi-crop</td>\n    <td>24.6</td>\n    <td>7.5</td>\n  </tr>\n  <tr>\n    <td>multi-crop&dense</td>\n    <td>24.4</td>\n    <td>7.2</td>\n  </tr>\n  <tr>\n    <td>E</td>\n    <td>dense</td>\n    <td>24.8</td>\n    <td>7.5</td>\n  </tr>\n  <tr>\n    <td>multi-crop</td>\n    <td>24.6</td>\n    <td>7.4</td>\n  </tr>\n  <tr>\n    <td>multi-crop&dense</td>\n    <td>24.4</td>\n    <td>7.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                106,
+                101,
+                516,
+                205
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 6: Multiple ConvNet fusion results.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Combined ConvNet models</td>\n    <td>Error</td>\n  </tr>\n  <tr>\n    <td>ILSVRC submission</td>\n  </tr>\n  <tr>\n    <td>(D/256/224，256，288)，(D/384/352，384，416)，(D/[256；512]/256，384，512)</td>\n    <td>24.7</td>\n    <td>7.5</td>\n    <td>7.3</td>\n  </tr>\n  <tr>\n    <td>(C/256/224，256，288)，(C/384/352，384，416)</td>\n  </tr>\n  <tr>\n    <td>(E/256/224，256，288)，(E/384/352，384，416)</td>\n  </tr>\n  <tr>\n    <td>post-submission</td>\n  </tr>\n  <tr>\n    <td>(D/[256；512]/256，384，512)，(E/[256；512]/256，384，512)，dense eval.</td>\n    <td>24.0</td>\n    <td>7.1</td>\n    <td>7.0</td>\n  </tr>\n  <tr>\n    <td>(D/[256；512]/256，384，512)，(E/[256；512]/256，384，512)，multi-crop</td>\n    <td>23.9</td>\n    <td>7.2</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>(D/[256；512]/256，384，512)，(E/[256；512]/256，384，512)，multi-crop& dense eval.</td>\n    <td>23.7</td>\n    <td>6.8</td>\n    <td>6.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                107,
+                383,
+                516,
+                555
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 7: Comparison with the state of the art in ILSVRC classification. Our method is denoted as \"VGG\". Only the results obtained without outside training data are reported.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>top-1val.error(%)</td>\n    <td>top-5val.error(%)</td>\n    <td>top-5test error(%)</td>\n  </tr>\n  <tr>\n    <td>VGG(2nets， multi-crop&denseeval.)</td>\n    <td>23.7</td>\n    <td>6.8</td>\n    <td>6.8</td>\n  </tr>\n  <tr>\n    <td>VGG(1net， multi-crop&denseeval.)</td>\n    <td>24.4</td>\n    <td>7.1</td>\n    <td>7.0</td>\n  </tr>\n  <tr>\n    <td>VGG(ILSVRC submission， 7nets， denseeval.)</td>\n    <td>24.7</td>\n    <td>7.5</td>\n    <td>7.3</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet(Szegedy etal.， 2014)(1net)</td>\n    <td>-</td>\n    <td>7.9</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet(Szegedy etal.， 2014)(7nets)</td>\n    <td>-</td>\n    <td>6.7</td>\n  </tr>\n  <tr>\n    <td>MSRA(He etal.， 2014)(11nets)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>8.1</td>\n  </tr>\n  <tr>\n    <td>MSRA(He etal.， 2014)(1net)</td>\n    <td>27.9</td>\n    <td>9.1</td>\n    <td>9.1</td>\n  </tr>\n  <tr>\n    <td>Clarifai(Russakovsky etal.， 2014)(multiple nets)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>11.7</td>\n  </tr>\n  <tr>\n    <td>Clarifai(Russakovsky etal.， 2014)(1net)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>12.5</td>\n  </tr>\n  <tr>\n    <td>Zeiler&Fergus(Zeiler&Fergus， 2013)(6nets)</td>\n    <td>36.0</td>\n    <td>14.7</td>\n    <td>14.8</td>\n  </tr>\n  <tr>\n    <td>Zeiler&Fergus(Zeiler&Fergus， 2013)(1net)</td>\n    <td>37.5</td>\n    <td>16.0</td>\n    <td>16.1</td>\n  </tr>\n  <tr>\n    <td>OverFeat(Sermanetetal.， 2014)(7nets)</td>\n    <td>34.0</td>\n    <td>13.2</td>\n    <td>13.6</td>\n  </tr>\n  <tr>\n    <td>OverFeat(Sermanetetal.， 2014)(1net)</td>\n    <td>35.7</td>\n    <td>14.2</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Krizhevsky etal.(Krizhevsky etal.， 2012)(5nets)</td>\n    <td>38.1</td>\n    <td>16.4</td>\n    <td>16.4</td>\n  </tr>\n  <tr>\n    <td>Krizhevsky etal.(Krizhevsky etal.， 2012)(1net)</td>\n    <td>40.7</td>\n    <td>18.2</td>\n    <td>-</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                191,
+                331,
+                417,
+                374
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Fine-tuned layers</td>\n    <td>regression type</td>\n    <td>GT class localisation error</td>\n  </tr>\n  <tr>\n    <td>1st and 2nd FC</td>\n    <td>SCR</td>\n    <td>36.4</td>\n  </tr>\n  <tr>\n    <td>PCR</td>\n    <td>34.3</td>\n  </tr>\n  <tr>\n    <td>all</td>\n    <td>PCR</td>\n    <td>33.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page011.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                182,
+                505,
+                426,
+                572
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 9: Localisation error\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>smallest image side</td>\n    <td>top-5 localisation error(%)</td>\n  </tr>\n  <tr>\n    <td>train(S)</td>\n    <td>test(Q)</td>\n    <td>val.</td>\n    <td>test.</td>\n  </tr>\n  <tr>\n    <td>256</td>\n    <td>256</td>\n    <td>29.5</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>384</td>\n    <td>384</td>\n    <td>28.2</td>\n    <td>26.7</td>\n  </tr>\n  <tr>\n    <td>384</td>\n    <td>352，384</td>\n    <td>27.5</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>fusion：256/256 and 384/352，384</td>\n    <td>26.9</td>\n    <td>25.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page011.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                151,
+                109,
+                457,
+                163
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 10: Comparison with the state of the art in ILSVRC localisation. Our method is denoted as \"VGG\".\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>top-5 val.error(%)</td>\n    <td>top-5 test error(%)</td>\n  </tr>\n  <tr>\n    <td>VGG</td>\n    <td>26.9</td>\n    <td>25.3</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet(Szegedy etal，2014)</td>\n    <td>-</td>\n    <td>26.7</td>\n  </tr>\n  <tr>\n    <td>OverFeat(Sermanetetal，2014)</td>\n    <td>30.0</td>\n    <td>29.9</td>\n  </tr>\n  <tr>\n    <td>Krizhevsky etal(Krizhevsky etal，2012)</td>\n    <td>-</td>\n    <td>34.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page012.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                108,
+                517,
+                500,
+                613
+            ],
+            "caption": "Table 11: Comparison with the state of the art in image classification on VOC-2007, VOC-2012, Caltech-101, and Caltech-256. Our models are denoted as \"VGG\". Results marked with * were achieved using ConvNets pre-trained on the extended ILSVRC dataset (2000 classes).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>VOC-2007(mean AP)</td>\n    <td>VOC-2012(mean AP)</td>\n    <td>Caltech-101(mean class recall)</td>\n    <td>Caltech-256(mean class recall)</td>\n  </tr>\n  <tr>\n    <td>Zeller&Fergus(Zeiler&Fergus，2013)</td>\n    <td>-</td>\n    <td>79.0</td>\n    <td>86.5±0.5</td>\n    <td>74.2±0.3</td>\n  </tr>\n  <tr>\n    <td>Chatfield etal.(Chatfield etal.，2014)</td>\n    <td>82.4</td>\n    <td>83.2</td>\n    <td>88.4±0.6</td>\n    <td>77.6±0.1</td>\n  </tr>\n  <tr>\n    <td>He etal.(He etal.，2014)</td>\n    <td>82.4</td>\n    <td>-</td>\n    <td>93.4±0.5</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Wei etal.(Wei etal.，2014)</td>\n    <td>81.5(85.2*)</td>\n    <td>81.7(90.3*)</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>VGG Net-D(16 layers)</td>\n    <td>89.3</td>\n    <td>89.0</td>\n    <td>91.8±1.0</td>\n    <td>85.0±0.2</td>\n  </tr>\n  <tr>\n    <td>VGG Net-E(19 layers)</td>\n    <td>89.3</td>\n    <td>89.0</td>\n    <td>92.3±0.5</td>\n    <td>85.1±0.3</td>\n  </tr>\n  <tr>\n    <td>VGG Net-D&Net-E</td>\n    <td>89.7</td>\n    <td>89.3</td>\n    <td>92.7±0.5</td>\n    <td>86.2±0.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page012.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                173,
+                123,
+                434,
+                189
+            ],
+            "caption": "Table 12: Comparison with the state of the art in single-image action classification on VOC-2012. Our models are denoted as “VGG”. Results marked with * were achieved using ConvNets pre-trained on the extended ILSVRC dataset (1512 classes). Table 12: Comparison with the state of the art in single-image action classification on VOC-2012. Our models are denoted as “VGG”. Results marked with * were achieved using ConvNets pre-trained on the extended ILSVRC dataset (1512 classes).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>VOC-2012(mean AP)</td>\n  </tr>\n  <tr>\n    <td>(Oquab etal，2014)</td>\n    <td>70.2*</td>\n  </tr>\n  <tr>\n    <td>(Gkioxari etal，2014)</td>\n    <td>73.6</td>\n  </tr>\n  <tr>\n    <td>(Hoai，2014)</td>\n    <td>76.3</td>\n  </tr>\n  <tr>\n    <td>VGG Net-D&Net-E，image-only</td>\n    <td>79.2</td>\n  </tr>\n  <tr>\n    <td>VGG Net-D&Net-E，image and bounding box</td>\n    <td>84.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page014.png"
+        }
+    ]
+}

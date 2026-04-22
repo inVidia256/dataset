@@ -1,0 +1,146 @@
+{
+    "total_count": 10,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                307,
+                219,
+                538,
+                321
+            ],
+            "caption": "Figure 1. Image completions sampled from a PixelRNN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                59,
+                66,
+                288,
+                151
+            ],
+            "caption": "Figure 2. Left: To generate pixel \\( x_i \\) one conditions on all the previously generated pixels left and above of \\( x_i \\). Center: To generate a pixel in the multi-scale case we can also condition on the subsampled image pixels (in light blue). Right: Diagram of the connectivity inside a masked convolution. In the first layer, each of the RGB channels is connected to previous channels and to the context, but is not connected to itself. In subsequent layers, the channels are also connected to themselves.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                311,
+                66,
+                534,
+                137
+            ],
+            "caption": "Figure 3. In the Diagonal BiLSTM, to allow for parallelization along the diagonals, the input map is skewed by offsetting each row by one position with respect to the previous row. When the spatial layer is computed left to right and column by column, the output map is shifted back into the original size. The convolution uses a kernel of size \\(2 \\times 1\\).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                54,
+                64,
+                288,
+                180
+            ],
+            "caption": "Figure 4. Visualization of the input-to-state and state-to-state mappings for the three proposed architectures.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                326,
+                312,
+                523,
+                386
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 5. Residual blocks for a PixelCNN (left) and PixelRNNs.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page004.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                308,
+                216,
+                540,
+                389
+            ],
+            "caption": "Figure 6. Example softmax activations from the model. The top left shows the distribution of the first pixel red value (first value to sample).",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                59,
+                65,
+                536,
+                275
+            ],
+            "caption": "Figure 7. Samples from models trained on CIFAR-10 (left) and ImageNet 32x32 (right) images. In general we can see that the models capture local spatial dependencies relatively well. The ImageNet model seems to be better at capturing more global structures than the CIFAR-10 model. The ImageNet model was larger and trained on much more data, which explains the qualitative difference in samples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                59,
+                64,
+                536,
+                240
+            ],
+            "caption": "Figure 8. Samples from models trained on ImageNet 64x64 images. Left: normal model, right: multi-scale model. The single-scale model trained on 64x64 images is less able to capture global structure than the 32x32 model. The multi-scale model seems to resolve this problem. Although these models get similar performance in log-likelihood, the samples on the right do seem globally more coherent.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                306,
+                297,
+                541,
+                452
+            ],
+            "caption": "Figure 9. Image completions sampled from a model that was trained on 32x32 ImageNet images. Note that diversity of the completions is high, which can be attributed to the log-likelihood loss function used in this generative model, as it encourages models with high entropy. As these are sampled from the model, we can easily generate millions of different completions. It is also interesting to see that textures such as water, wood and shrubbery are also inputted relatively well (see Figure 1). Figure 9. Image completions sampled from a model that was trained on 32x32 ImageNet images. Note that diversity of the completions is high, which can be attributed to the log-likelihood loss function used in this generative model, as it encourages models with high entropy. As these are sampled from the model, we can easily generate millions of different completions. It is also interesting to see that textures such as water, wood and shrubbery are also inpited relative well (see Figure 1).",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page008.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                66,
+                142,
+                529,
+                611
+            ],
+            "caption": "Figure 10. Additional samples from a model trained on ImageNet 32x32 (right) images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page011.png"
+        }
+    ]
+}

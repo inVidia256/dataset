@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "table",
+            "bbox": [
+                308,
+                221,
+                523,
+                381
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Lyrics</td>\n    <td>Edelweiss，E - del-weiss，E - del-weiss，ev-rymorningyougreetme.</td>\n  </tr>\n  <tr>\n    <td>Smallandwhite，cleanandbright，youlookhappytomeet</td>\n  </tr>\n  <tr>\n    <td>SongCi</td>\n    <td>驿外断桥边，寂寞开无主。已是黄昏独自愁，更著风和雨。</td>\n  </tr>\n  <tr>\n    <td>无意苦争春，一任群芳妒。零落成泥碾作尘，只有香如故。</td>\n  </tr>\n  <tr>\n    <td>Sonnet</td>\n    <td>LetmenottothemarriageoftruemindsAdmitimpediments，loveisnotloveWhichalterswhenitalterationfindsOrbendswiththeremover toremove.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                108,
+                61,
+                491,
+                265
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>PPL</td>\n    <td>Diversity(Distinct)</td>\n  </tr>\n  <tr>\n    <td>VAL</td>\n    <td>TEST</td>\n    <td>MA-D-1</td>\n    <td>MI-D-1</td>\n    <td>MA-D-2</td>\n    <td>MI-D-2</td>\n  </tr>\n  <tr>\n    <td>S2S</td>\n    <td>19.61</td>\n    <td>20.43</td>\n    <td>75.35</td>\n    <td>2.48</td>\n    <td>98.35</td>\n    <td>36.23</td>\n  </tr>\n  <tr>\n    <td>GPT2</td>\n    <td>148.11</td>\n    <td>104.99</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>GPT2w/Fine-tuning</td>\n    <td>18.25</td>\n    <td>17.00</td>\n    <td>73.87</td>\n    <td>2.57</td>\n    <td>96.07</td>\n    <td>33.92</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Pre-training)</td>\n    <td>24.41</td>\n    <td>16.23</td>\n    <td>74.84</td>\n    <td>4.59</td>\n    <td>95.09</td>\n    <td>54.98</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Fine-tuning)</td>\n    <td>12.75</td>\n    <td>14.73</td>\n    <td>75.96</td>\n    <td>2.69</td>\n    <td>97.59</td>\n    <td>37.26</td>\n  </tr>\n  <tr>\n    <td>Song Net</td>\n    <td>11.56</td>\n    <td>12.64</td>\n    <td>75.04</td>\n    <td>2.66</td>\n    <td>97.29</td>\n    <td>36.78</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Format</td>\n    <td>Rhyme</td>\n    <td>Integrity</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>MA-F1</td>\n    <td>MI-F1</td>\n    <td>MA-F1</td>\n    <td>MI-F1</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>S2S</td>\n    <td>44.32</td>\n    <td>38.16</td>\n    <td>53.80</td>\n    <td>52.27</td>\n    <td>8.30±2.06</td>\n  </tr>\n  <tr>\n    <td>GPT2w/Fine-tuning</td>\n    <td>35.70</td>\n    <td>35.20</td>\n    <td>53.48</td>\n    <td>52.50</td>\n    <td>45.92±20.12</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Pre-training)</td>\n    <td>29.12</td>\n    <td>29.46</td>\n    <td>53.77</td>\n    <td>53.13</td>\n    <td>30.98±14.06</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Fine-tuning)</td>\n    <td>99.81</td>\n    <td>99.83</td>\n    <td>79.23</td>\n    <td>78.63</td>\n    <td>2.14±0.10</td>\n  </tr>\n  <tr>\n    <td>Song Net</td>\n    <td>99.88</td>\n    <td>99.89</td>\n    <td>73.21</td>\n    <td>72.59</td>\n    <td>1.77±0.16</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                108,
+                296,
+                491,
+                465
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Automatic evaluation results on SongCi\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>PPL</td>\n    <td>Diversity(Distinct)</td>\n  </tr>\n  <tr>\n    <td>VALTEST</td>\n    <td>MA-D-1MI-D-1</td>\n    <td>MA-D-2MI-D-2</td>\n  </tr>\n  <tr>\n    <td>GPT2w/Fine-tuning</td>\n    <td>31.4731.03</td>\n    <td>73.872.57</td>\n    <td>96.0733.92</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Pre-training)</td>\n    <td>28.5628.07</td>\n    <td>49.9225.14</td>\n    <td>85.3565.70</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Fine-tuning)</td>\n    <td>34.6234.53</td>\n    <td>42.314.96</td>\n    <td>90.7647.26</td>\n  </tr>\n  <tr>\n    <td>Song Net</td>\n    <td>27.4627.63</td>\n    <td>43.0110.43</td>\n    <td>80.0656.14</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>Format</td>\n    <td>Rhyme</td>\n    <td>Integrity</td>\n  </tr>\n  <tr>\n    <td>MA-F1MI-F1</td>\n    <td>MA-F1MI-F1</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GPT2w/Fine-tuning</td>\n    <td>2.031.91</td>\n    <td>5.206.24</td>\n    <td>15.77±3.63</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Pre-training)</td>\n    <td>99.9999.99</td>\n    <td>3.934.01</td>\n    <td>15.28±2.04</td>\n  </tr>\n  <tr>\n    <td>Song Net(only Fine-tuning)</td>\n    <td>99.2599.99</td>\n    <td>7.507.41</td>\n    <td>18.86±2.59</td>\n  </tr>\n  <tr>\n    <td>Song Net</td>\n    <td>98.7398.73</td>\n    <td>11.4611.41</td>\n    <td>11.86±3.01</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                77,
+                505,
+                283,
+                550
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Automatic evaluation results on Sonnet\" The text content from the image is:\n\n\"Table 3: Statistics of the datasets SongCi and Sonnet.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Corpus</td>\n    <td>#Train</td>\n    <td>#Dev</td>\n    <td>#Test</td>\n    <td>#Vocab</td>\n  </tr>\n  <tr>\n    <td>Song Ci</td>\n    <td>19，244</td>\n    <td>847</td>\n    <td>962</td>\n    <td>5310</td>\n  </tr>\n  <tr>\n    <td>Sonnet</td>\n    <td>100</td>\n    <td>27</td>\n    <td>27</td>\n    <td>2801</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                114,
+                60,
+                486,
+                294
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Ablation analysis on SongCi\" The text content from the image is:\n\n\"Table 4: Ablation analysis on SongCi\" The text content from the image is:\n\n\"Table 4: Ablation analysis on SongCi\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>PPL</td>\n    <td>Diversity(Distinct)</td>\n  </tr>\n  <tr>\n    <td>VALTEST</td>\n    <td>MA-D-1MI-D-1</td>\n    <td>MA-D-2MI-D-2</td>\n  </tr>\n  <tr>\n    <td>Song Net</td>\n    <td>12.7514.73</td>\n    <td>75.962.69</td>\n    <td>97.5937.26</td>\n  </tr>\n  <tr>\n    <td>Song Net-GRU</td>\n    <td>16.5220.49</td>\n    <td>74.731.77</td>\n    <td>98.3028.98</td>\n  </tr>\n  <tr>\n    <td>SongNetwoC</td>\n    <td>13.5115.38</td>\n    <td>75.422.48</td>\n    <td>97.3634.85</td>\n  </tr>\n  <tr>\n    <td>SongNetw/oP</td>\n    <td>14.1617.16</td>\n    <td>73.732.56</td>\n    <td>97.5234.82</td>\n  </tr>\n  <tr>\n    <td>SongNetw/inverse-P</td>\n    <td>13.4015.13</td>\n    <td>74.952.54</td>\n    <td>97.7635.65</td>\n  </tr>\n  <tr>\n    <td>SongNetwoS</td>\n    <td>13.2315.44</td>\n    <td>75.382.74</td>\n    <td>97.3137.50</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>Format</td>\n    <td>Rhyme</td>\n    <td>Integrity</td>\n  </tr>\n  <tr>\n    <td>MA-F1MI-F1</td>\n    <td>MA-F1MI-F1</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Song Net</td>\n    <td>99.8199.83</td>\n    <td>79.2378.63</td>\n    <td>2.14±0.10</td>\n  </tr>\n  <tr>\n    <td>Song Net-GRU</td>\n    <td>98.9998.99</td>\n    <td>52.1350.93</td>\n    <td>3.28±1.67</td>\n  </tr>\n  <tr>\n    <td>SongNetwoC</td>\n    <td>84.7385.39</td>\n    <td>78.5978.24</td>\n    <td>1.77±0.53</td>\n  </tr>\n  <tr>\n    <td>SongNetw/oP</td>\n    <td>99.6199.59</td>\n    <td>67.8567.29</td>\n    <td>3.33±0.18</td>\n  </tr>\n  <tr>\n    <td>SongNetw/inverse-P</td>\n    <td>99.6899.69</td>\n    <td>65.8965.43</td>\n    <td>2.24±0.21</td>\n  </tr>\n  <tr>\n    <td>SongNetwoS</td>\n    <td>99.8499.86</td>\n    <td>80.4380.13</td>\n    <td>1.99±0.10</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                79,
+                194,
+                517,
+                331
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Cases of Generated Results</td>\n  </tr>\n  <tr>\n    <td>Song Net-Song Ci</td>\n    <td>Ci Pai：Zhe Gu Tian， Format ：7.7.7.7.3，3.7.7.7.</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>南枝欲破春寒浅(qian)。东风一霎春犹暖(nuan)。海棠零乱暗香残(can)，露颗未消红泪满(man)。春不管(guan)，人何远(yuan)。江头旧日清溪伴(ban)。欲凭楼上数行书，却为梦魂无觅伴(ban)。</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Ci Pai：Bu Suan Zi， Format ：5，5.7，5.5，5.7，5.</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>新月挂帘旌，暗草蛩凄楚(chu)。夜半银潢十二阑，画幕灯花吐(tu)。何处笛声残，晓窗风雨(yu)。独许寒梅伴小鬟，香在秋千柱(zhu)。</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Ci Pai：Self-Defined， Format ：3，3，5.3，3，5.7，7.</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>翠岩中，流水外，别有小壶天(tian)。自霜清，独斗芳，谁敢并飞仙(xian)。夜久凉生一曲愁，月如花影似花圆(yuan)。</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Ci Pai：Self-Defined， Format ：9.9.9.9.</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>雨洒黄泉粼粼细作寒(han)。越水西来时节自清闲(xian)。歌笑一杯长唱醉醒间(jian)。春去不堪寻梦绕舍山(shan)。</td>\n  </tr>\n  <tr>\n    <td>Song Net-Sonnet</td>\n    <td>how do you hold such a thing like this，\\when my eyes are so not black? \\but how can i show myself，so strange，\\that all this black is white?where am i to hide this from my eyes，\\from this white mine eyes all fals，where is the good fortune，in me，\\that hath no excuse，no excuse?what is that which can mask the true love\\and for whom is this true love more?\\the one，which shall save the poor my eye，\\from the false truth of my judgment?what lies，for when you are not that，\\no one in this and that can see me lies!</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                79,
+                401,
+                517,
+                537
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Cases of Generated Results Given the Formats with Partial Content</td>\n  </tr>\n  <tr>\n    <td>Song Net-Song Ci</td>\n    <td>Ci Pai：Bu Suan Zi， Format ：5，5.7，5.5，5.7，5.</td>\n  </tr>\n  <tr>\n    <td>Format C：</td>\n    <td>_ _ _ _到。_ _ _ _ _ _ _ _俏。_ _ _ _ _ _ _ _报。_ _ _ _ _ _ _ _笑。</td>\n  </tr>\n  <tr>\n    <td>(1)风暖莺声苦，又是年时到。长爱柳色三分里，多少为春俏。共少年时节，惯得花时报。争似酴径入庐来，步步随春笑。(2)春来春又去，花影几波到。门外绿杨柳萧洒，溪桥人人俏。门外东风马，似旧时香报。但怪桃李晚时羞，冷落无人笑。</td>\n  </tr>\n  <tr>\n    <td>Format C：</td>\n    <td>雨_ _ _ _到。_ _ _ _冰，_ _ _ _俏。_ _ _ _春，_ _春报。_山花_ _ _ _，_ _ _ _笑。</td>\n  </tr>\n  <tr>\n    <td>(1)春雨碧连营，柳暗门巷到。宫殿步辇踏寒冰，百媚生春俏。正日烘晴春，花雾春风报。一点山花醉眼明，半倚阑干笑。(2)雪雨弄轻暖，新涨绿波到。楼上对面湿翠冰，一夜风花俏。晓日烘长春，睡起春宵报。枕畔山花落叶声，不是梦魂笑。</td>\n  </tr>\n  <tr>\n    <td>Song Net-Sonnet</td>\n    <td>___ with_ hearts，_ _ lacking _ dead；_ _ love _ _ _ _ parts，and_ _ _ _ _ buried._many _ _ tear， hath _ _ _ _ _ _ eye，now appear，_ _ _ _ thee lie!_ _ _ _ _ _ buried _ live，_ _ _ _ _ gone，_ _parts _ _ _ give，_ _ _ _ thine alone：_ _ _ _ view_thee，_ _ _ _ all_ _ me.</td>\n    <td>though all thy love with thy hearts， thou still are lacking of my dead；if thy love love is lost to your love and parts， and yet mine own heart can be buried.so many are ill or in tear， hath not this time that we will make their eye，for that which lies not well hath now appear， no longer nor the world that holds thee lie!for if it would be buried in my live， or by the earth of mine was gone，then my own parts as my body and mine give， may not be so far beyond thine alone：so faras thee and this world view find thee， then mine life be far enough from all thee and no me.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                73,
+                61,
+                291,
+                99
+            ],
+            "caption": "Table 7: Human evaluation results.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Relevance</td>\n    <td>Fluency</td>\n    <td>Style</td>\n  </tr>\n  <tr>\n    <td>Song Net-Song Ci</td>\n    <td>1.36</td>\n    <td>1.45</td>\n    <td>2.00</td>\n  </tr>\n  <tr>\n    <td>Song Net-Sonnet</td>\n    <td>0.58</td>\n    <td>0.42</td>\n    <td>0.83</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page009.png"
+        }
+    ]
+}

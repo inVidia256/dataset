@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                70,
+                61,
+                526,
+                154
+            ],
+            "caption": "Table 1: GLUE Test results, scored by the evaluation server (https://gluebenchmark.com/leaderboard). The number below each task denotes the number of training examples. The “Average” column is slightly different than the official GLUE score, since we exclude the problematic WNLI set.8 BERT and OpenAI GPT are single-model, single-task. F1 scores are reported for QQP and MRPC, Spearman correlations are reported for STS-B, and accuracy scores are reported for the other tasks. We exclude entries that use BERT as one of their components. Table 1: GLUE Test results, scored by the evaluation server (https://gluebenchmark.com/leaderboard). The number below each task denotes the number of training examples. The “Average” column is slightly different than the official GLUE score, since we exclude the problematic WNLI set.8 BERT and OpenAI GPT are single-model, single-task. F1 scores are reported for QQP and MRPC, Spearman correlations are reported for STS-B, and accuracy scores are reported for the other tasks. We exclude entries that use BERT as one of their components. Table 1: GLUE Test results, scored by the evaluation server (https://gluebenchmark.com/leaderboard). The number below each task denotes the number of training examples. The “Average” column is slightly different than the official GLUE score, since we exclude the problematic WNLI set.8 BERT and OpenAI GPT are single-model, single-task. F1 scores are reported for QQP and MRPC, Spearman correlations are reported for STS-B, and accuracy scores are reported for the other tasks. We exclude entries that use BERT as one of their components.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>MNLI-(m/mm)</td>\n    <td>QQP</td>\n    <td>QNL I</td>\n    <td>SST-2</td>\n    <td>CoLA</td>\n    <td>STS-B</td>\n    <td>MRPC</td>\n    <td>RTE</td>\n    <td>Average</td>\n  </tr>\n  <tr>\n    <td>392k</td>\n    <td>363k</td>\n    <td>108k</td>\n    <td>67k</td>\n    <td>8.5k</td>\n    <td>5.7k</td>\n    <td>3.5k</td>\n    <td>2.5k</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Pre-OpenAI SOTA</td>\n    <td>80.6/80.1</td>\n    <td>66.1</td>\n    <td>82.3</td>\n    <td>93.2</td>\n    <td>35.0</td>\n    <td>81.0</td>\n    <td>86.0</td>\n    <td>61.7</td>\n    <td>74.0</td>\n  </tr>\n  <tr>\n    <td>BiLSTM+ELMo+Attn</td>\n    <td>76.4/76.1</td>\n    <td>64.8</td>\n    <td>79.8</td>\n    <td>90.4</td>\n    <td>36.0</td>\n    <td>73.3</td>\n    <td>84.9</td>\n    <td>56.8</td>\n    <td>71.0</td>\n  </tr>\n  <tr>\n    <td>OpenAI GPT</td>\n    <td>82.1/81.4</td>\n    <td>70.3</td>\n    <td>87.4</td>\n    <td>91.3</td>\n    <td>45.4</td>\n    <td>80.0</td>\n    <td>82.3</td>\n    <td>56.0</td>\n    <td>75.1</td>\n  </tr>\n  <tr>\n    <td>BERT BASE</td>\n    <td>84.6/83.4</td>\n    <td>71.2</td>\n    <td>90.5</td>\n    <td>93.5</td>\n    <td>52.1</td>\n    <td>85.8</td>\n    <td>88.9</td>\n    <td>66.4</td>\n    <td>79.6</td>\n  </tr>\n  <tr>\n    <td>BERT LARGE</td>\n    <td>86.7/85.9</td>\n    <td>72.1</td>\n    <td>92.7</td>\n    <td>94.9</td>\n    <td>60.5</td>\n    <td>86.5</td>\n    <td>89.3</td>\n    <td>70.1</td>\n    <td>82.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                80,
+                60,
+                281,
+                236
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>Dev</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>EM</td>\n    <td>F1</td>\n    <td>EM</td>\n    <td>F1</td>\n  </tr>\n  <tr>\n    <td>Top Leaderboard Systems(Dec 10th，2018)</td>\n  </tr>\n  <tr>\n    <td>Human</td>\n    <td>-</td>\n    <td>-</td>\n    <td>82.3</td>\n    <td>91.2</td>\n  </tr>\n  <tr>\n    <td>#1 Ensemble-nl net</td>\n    <td>-</td>\n    <td>-</td>\n    <td>86.0</td>\n    <td>91.7</td>\n  </tr>\n  <tr>\n    <td>#2 Ensemble-Q ANet</td>\n    <td>-</td>\n    <td>-</td>\n    <td>84.5</td>\n    <td>90.5</td>\n  </tr>\n  <tr>\n    <td>Published</td>\n  </tr>\n  <tr>\n    <td>BiDAF+EL Mo(Single)</td>\n    <td>-</td>\n    <td>85.6</td>\n    <td>-</td>\n    <td>85.8</td>\n  </tr>\n  <tr>\n    <td>R.M.Reader(Ensemble)</td>\n    <td>81.2</td>\n    <td>87.9</td>\n    <td>82.3</td>\n    <td>88.5</td>\n  </tr>\n  <tr>\n    <td>Ours</td>\n  </tr>\n  <tr>\n    <td>BERT BASE(Single)</td>\n    <td>80.8</td>\n    <td>88.5</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BERT LARGE(Single)</td>\n    <td>84.1</td>\n    <td>90.9</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BERT LARGE(Ensemble)</td>\n    <td>85.8</td>\n    <td>91.8</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BERT LARGE(Sgl.+Trivia QA)</td>\n    <td>84.2</td>\n    <td>91.1</td>\n    <td>85.1</td>\n    <td>91.8</td>\n  </tr>\n  <tr>\n    <td>BERT LARGE(Ens.+Trivia QA)</td>\n    <td>86.2</td>\n    <td>92.2</td>\n    <td>87.4</td>\n    <td>93.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                79,
+                297,
+                282,
+                433
+            ],
+            "caption": "Table 2: SQuAD 1.1 results. The BERT ensemble is 7x systems which use different pre-training checkpoints and fine-tuning seeds. Table 3: SQuAD 2.0 results. We exclude entries that use BERT as one of their components. Table 3: SQuAD 2.0 results. We exclude entries that use BERT as one of their components.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>Dev</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>EM</td>\n    <td>F1</td>\n    <td>EM</td>\n    <td>F1</td>\n  </tr>\n  <tr>\n    <td>Top Leaderboard Systems(Dec 10th，2018)</td>\n  </tr>\n  <tr>\n    <td>Human</td>\n    <td>86.3</td>\n    <td>89.0</td>\n    <td>86.9</td>\n    <td>89.5</td>\n  </tr>\n  <tr>\n    <td>#1 Single-MIR-MRC(F-Net)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>74.8</td>\n    <td>78.0</td>\n  </tr>\n  <tr>\n    <td>#2 Single-nl net</td>\n    <td>-</td>\n    <td>-</td>\n    <td>74.2</td>\n    <td>77.1</td>\n  </tr>\n  <tr>\n    <td>Published</td>\n  </tr>\n  <tr>\n    <td>unet(Ensemble)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>71.4</td>\n    <td>74.9</td>\n  </tr>\n  <tr>\n    <td>SLQA+(Single)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>71.4</td>\n    <td>74.4</td>\n  </tr>\n  <tr>\n    <td>Ours</td>\n  </tr>\n  <tr>\n    <td>BERT LARGE(Single)</td>\n    <td>78.7</td>\n    <td>81.9</td>\n    <td>80.0</td>\n    <td>83.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                344,
+                61,
+                486,
+                168
+            ],
+            "caption": "Table 4: SWAG Dev and Test accuracies. †Human performance is measured with 100 samples, as reported in the SWAG paper. Table 4: SWAG Dev and Test accuracies. †Human performance is measured with 100 samples, as reported in the SWAG paper.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>Dev</td>\n    <td>Test</td>\n  </tr>\n  <tr>\n    <td>ESIM+GloVe</td>\n    <td>51.9</td>\n    <td>52.7</td>\n  </tr>\n  <tr>\n    <td>ESIM+ELMo</td>\n    <td>59.1</td>\n    <td>59.2</td>\n  </tr>\n  <tr>\n    <td>OpenAI GPT</td>\n    <td>-</td>\n    <td>78.0</td>\n  </tr>\n  <tr>\n    <td>BERT BASE</td>\n    <td>81.6</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BERT LARGE</td>\n    <td>86.6</td>\n    <td>86.3</td>\n  </tr>\n  <tr>\n    <td>Human(expert)</td>\n    <td>-</td>\n    <td>85.0</td>\n  </tr>\n  <tr>\n    <td>Human(5 annotations)</td>\n    <td>-</td>\n    <td>88.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                70,
+                61,
+                294,
+                145
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Tasks</td>\n    <td>MNLI-m( Acc)</td>\n    <td>QNLI(Acc)</td>\n    <td>MRPC(Acc)</td>\n    <td>SST-2(Acc)</td>\n    <td>SQuAD(F1)</td>\n  </tr>\n  <tr>\n    <td>BERT BASE</td>\n    <td>84.4</td>\n    <td>88.4</td>\n    <td>86.7</td>\n    <td>92.7</td>\n    <td>88.5</td>\n  </tr>\n  <tr>\n    <td>No NSP</td>\n    <td>83.9</td>\n    <td>84.9</td>\n    <td>86.5</td>\n    <td>92.6</td>\n    <td>87.9</td>\n  </tr>\n  <tr>\n    <td>LTR&No NSP</td>\n    <td>82.1</td>\n    <td>84.3</td>\n    <td>77.5</td>\n    <td>92.1</td>\n    <td>77.8</td>\n  </tr>\n  <tr>\n    <td>+ BiLSTM</td>\n    <td>82.1</td>\n    <td>84.1</td>\n    <td>75.7</td>\n    <td>91.6</td>\n    <td>84.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                314,
+                60,
+                518,
+                226
+            ],
+            "caption": "Table 7: CoNLL-2003 Named Entity Recognition results. Hyperparameters were selected using the Dev set. The reported Dev and Test scores are averaged over 5 random restarts using those hyperparameters. Table 7: CoNLL-2003 Named Entity Recognition results. Hyperparameters were selected using the Dev set. The reported Dev and Test scores are averaged over 5 random restarts using those hyperparameters.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>System</td>\n    <td>Dev F1</td>\n    <td>Test F1</td>\n  </tr>\n  <tr>\n    <td>ELMo(Peters et al.，2018a)</td>\n    <td>95.7</td>\n    <td>92.2</td>\n  </tr>\n  <tr>\n    <td>CVT(Clark etal.，2018)</td>\n    <td>-</td>\n    <td>92.6</td>\n  </tr>\n  <tr>\n    <td>CSE(Akbik etal.，2018)</td>\n    <td>-</td>\n    <td>93.1</td>\n  </tr>\n  <tr>\n    <td>Fine-tuning approach</td>\n    <td>BERT LARGE</td>\n    <td>96.6</td>\n    <td>92.8</td>\n  </tr>\n  <tr>\n    <td>BERT BASE</td>\n    <td>96.4</td>\n    <td>92.4</td>\n  </tr>\n  <tr>\n    <td>Feature-based approach(BERT BASE)</td>\n    <td>Embeddings</td>\n    <td>91.0</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Second-to-Last Hidden</td>\n    <td>95.6</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Last Hidden</td>\n    <td>94.9</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Weighted Sum Last Four Hidden</td>\n    <td>95.9</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Concat Last Four Hidden</td>\n    <td>96.1</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Weighted Sum All 12 Layers</td>\n    <td>95.5</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                83,
+                601,
+                278,
+                701
+            ],
+            "caption": "Table 6: Ablation over BERT model size. #L = the number of layers; #H = hidden size; #A = number of attention heads. “LM (ppl)” is the masked LM perplexity of held-out training data. Table 6: Ablation over BERT model size. #L = the number of layers; #H = hidden size; #A = number of attention heads. “LM (ppl)” is the masked LM perplexity of held-out training data.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Hyperparams</td>\n    <td>Dev Set Accuracy</td>\n  </tr>\n  <tr>\n    <td>#L</td>\n    <td>#H</td>\n    <td>#A</td>\n    <td>LM(ppl)</td>\n    <td>MNLI-m</td>\n    <td>MRPC</td>\n    <td>SST-2</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>768</td>\n    <td>12</td>\n    <td>5.84</td>\n    <td>77.9</td>\n    <td>79.8</td>\n    <td>88.4</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>768</td>\n    <td>3</td>\n    <td>5.24</td>\n    <td>80.6</td>\n    <td>82.2</td>\n    <td>90.7</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>768</td>\n    <td>12</td>\n    <td>4.68</td>\n    <td>81.9</td>\n    <td>84.8</td>\n    <td>91.3</td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>768</td>\n    <td>12</td>\n    <td>3.99</td>\n    <td>84.4</td>\n    <td>86.7</td>\n    <td>92.9</td>\n  </tr>\n  <tr>\n    <td>12</td>\n    <td>1024</td>\n    <td>16</td>\n    <td>3.54</td>\n    <td>85.7</td>\n    <td>86.9</td>\n    <td>93.3</td>\n  </tr>\n  <tr>\n    <td>24</td>\n    <td>1024</td>\n    <td>16</td>\n    <td>3.23</td>\n    <td>86.6</td>\n    <td>87.8</td>\n    <td>93.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page009.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                305,
+                206,
+                528,
+                316
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 8: Ablation over different masking strategies.\" The text content from the image is:\n\n\"Table 8: Ablation over different masking strategies.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Masking Rates</td>\n    <td>Dev Set Results</td>\n  </tr>\n  <tr>\n    <td>MASK SAME RND</td>\n    <td>MNLI Fine-tune NER Fine-tune Feature-based</td>\n  </tr>\n  <tr>\n    <td>80%10%10%</td>\n    <td>84.295.494.9</td>\n  </tr>\n  <tr>\n    <td>100%0%0%</td>\n    <td>84.394.994.0</td>\n  </tr>\n  <tr>\n    <td>80%0%20%</td>\n    <td>84.195.294.6</td>\n  </tr>\n  <tr>\n    <td>80%20%0%</td>\n    <td>84.495.294.7</td>\n  </tr>\n  <tr>\n    <td>0%20%80%</td>\n    <td>83.794.894.6</td>\n  </tr>\n  <tr>\n    <td>0%0%100%</td>\n    <td>83.694.994.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page016.png"
+        }
+    ]
+}

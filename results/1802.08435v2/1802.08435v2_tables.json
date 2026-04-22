@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                99,
+                76,
+                493,
+                140
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is as follows:\n\n\"Table 1. Results of A/B comparison tests between a given model and the WaveRNN-896. Each test includes 800 human ratings with grades between -3 (Much Worse Than) and 3 (Much Better Than). We collapse the counts for the different positive and negative categories.\" The text content from the image is as follows:\n\n\"Table 1. Results of A/B comparison tests between a given model and the WaveRNN-896. Each test includes 800 human ratings with grades between -3 (Much Worse Than) and 3 (Much Better Than). We collapse the counts for the different positive and negative categories.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>MODEL(vs Wave RNN-896)</td>\n    <td>BETTER</td>\n    <td>NEUTRAL</td>\n    <td>WORSE</td>\n    <td>OVERALL</td>\n    <td>SIGNIFICANT</td>\n  </tr>\n  <tr>\n    <td>WAVE NET 512(60)</td>\n    <td>145</td>\n    <td>529</td>\n    <td>126</td>\n    <td>0.02±0.08</td>\n    <td>No</td>\n  </tr>\n  <tr>\n    <td>SPARSE WR 384(2048/96.4%)</td>\n    <td>139</td>\n    <td>441</td>\n    <td>220</td>\n    <td>-0.14±0.08</td>\n    <td>Yes</td>\n  </tr>\n  <tr>\n    <td>SPARSE WR MOBILE</td>\n    <td>71</td>\n    <td>456</td>\n    <td>273</td>\n    <td>-0.40±0.09</td>\n    <td>Yes</td>\n  </tr>\n  <tr>\n    <td>SUB SCALEWR 1024(16x)</td>\n    <td>113</td>\n    <td>558</td>\n    <td>129</td>\n    <td>-0.03±0.05</td>\n    <td>No</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                54,
+                77,
+                299,
+                140
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>SIZE</td>\n    <td>SPARSITY%</td>\n    <td>TYPE</td>\n    <td>PLATFORM</td>\n    <td>SAMPLES/SEC</td>\n  </tr>\n  <tr>\n    <td>512</td>\n    <td>95%</td>\n    <td>4x4</td>\n    <td>SD835</td>\n    <td>29，100</td>\n  </tr>\n  <tr>\n    <td>512</td>\n    <td>95%</td>\n    <td>4x4</td>\n    <td>SD808</td>\n    <td>19，800</td>\n  </tr>\n  <tr>\n    <td>512</td>\n    <td>95%</td>\n    <td>16x1</td>\n    <td>SD835</td>\n    <td>31，400</td>\n  </tr>\n  <tr>\n    <td>512</td>\n    <td>95%</td>\n    <td>16x1</td>\n    <td>SD808</td>\n    <td>21，600</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                56,
+                75,
+                285,
+                224
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>MODEL</td>\n    <td>NLL</td>\n    <td>MOS</td>\n  </tr>\n  <tr>\n    <td>WAVENET</td>\n    <td>5.29</td>\n    <td>4.51±0.08</td>\n  </tr>\n  <tr>\n    <td>WAVE RNN 224</td>\n    <td>5.67</td>\n    <td>3.73±0.09</td>\n  </tr>\n  <tr>\n    <td>WAVE RNN 384</td>\n    <td>5.56</td>\n    <td>4.23±0.09</td>\n  </tr>\n  <tr>\n    <td>WAVE RNN 896</td>\n    <td>5.42</td>\n    <td>4.37±0.07</td>\n  </tr>\n  <tr>\n    <td>WAVE RNN 2048</td>\n    <td>5.33</td>\n    <td>4.46±0.07</td>\n  </tr>\n  <tr>\n    <td>SPARSE WR MOBILE</td>\n    <td>5.52</td>\n    <td>4.33±0.08</td>\n  </tr>\n  <tr>\n    <td>SPARSE WR 224/1536@97.8%</td>\n    <td>5.48</td>\n    <td>4.39±0.07</td>\n  </tr>\n  <tr>\n    <td>SPARSE WR 384/2048@96.4%</td>\n    <td>5.42</td>\n    <td>4.48±0.07</td>\n  </tr>\n  <tr>\n    <td>SUB SCALE WR 1024(16x)</td>\n    <td>5.52</td>\n    <td>4.30±0.08</td>\n  </tr>\n  <tr>\n    <td>SUB SCALE WR 1024(8x)</td>\n    <td>5.46</td>\n    <td>4.39±0.06</td>\n  </tr>\n  <tr>\n    <td>FUSED SUB SCALE WR 896(2x)</td>\n    <td>5.45</td>\n    <td>4.31±0.08</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        }
+    ]
+}

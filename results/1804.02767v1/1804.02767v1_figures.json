@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                294,
+                199,
+                545,
+                345
+            ],
+            "caption": "Figure 1. We adapt this figure from the Focal Loss paper [9]. YOLOv3 runs significantly faster than other detection methods with comparable performance. Times from either an M40 or Titan X, they are basically the same GPU.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                48,
+                46,
+                573,
+                372
+            ],
+            "caption": "Figure 3. Again adapted from the [9], this time displaying speed/accuracy tradeoff on the mAP at .5 IOU metric. You can tell YOLOv3 is good because it’s very high and far to the left. Can you cite your own paper? Guess who’s going to try, this guy → [16]. Oh, I forgot, we also fix a data loading bug in YOLOv2, that helped by like 2 mAP. Just sneaking this in here to not throw off layout.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                53,
+                75,
+                541,
+                212
+            ],
+            "caption": "Figure 4. Zero-axis charts are probably more intellectually honest... and we can still screw with the variables to make ourselves look good!",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                52,
+                95,
+                267,
+                212
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                308,
+                334,
+                545,
+                496
+            ],
+            "caption": "Figure 5. These two hypothetical detectors are perfect according to mAP over these two images. They are both perfect. Totally equal.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                168,
+                114,
+                446,
+                335
+            ],
+            "caption": "Fig. 1: Facial attribute transfer results of different methods. From top to bottom, the target attributes of each row are “beard, no_smiling, black_hair”, “bangs, eyeglasses, black_hair”, and “female, smiling, brown_hair”, respectively. While AttGAN [11] and STGAN [21] show degraded results in these challenging cases, our approach achieves effective attribute transfer and maintains the realism of texture details.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                132,
+                115,
+                479,
+                327
+            ],
+            "caption": "Fig. 2: A illustration about our framework. (a) is our backbone model, which is a Conditional GAN. (b) is the improved version with the proposed AIW (see Section 3.1). Our full model, which combines AIW and MST (see Section 3.2), is represented as (c).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                172,
+                117,
+                445,
+                244
+            ],
+            "caption": "Fig. 3: An illustration about N-hop target image generation. After N times of translations, the generator produces the N-hop target image \\( \\boldsymbol{x}^{t_N} \\).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                133,
+                114,
+                480,
+                242
+            ],
+            "caption": "Fig. 4: Visual examples of single facial attribute editing results. From top to bottom, the rows are results of StarGAN [2], AttGAN [11], STGAN [21], and our INIT.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page009.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                133,
+                114,
+                480,
+                445
+            ],
+            "caption": "Fig. 5: Visual examples of multiple facial attribute editing, which is a very challenging case in multi-domain I2I. Please zoom in for better visualization. We make comparisons with StarGAN [2], AttGAN [11], STGAN [21].",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page011.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                135,
+                114,
+                480,
+                325
+            ],
+            "caption": "The text in the image reads: \"Visual examples of (a) season transfer and (b) edge&photo transfer.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page012.png"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                109,
+                126,
+                505,
+                225
+            ],
+            "caption": "Table 1: Transfer task results for our ViLBERT model compared with existing state-of-the-art and sensible architectural ablations. † indicates models without pretraining on Conceptual Captions. For VCR and VQA which have private test sets, we report test results (in parentheses) only for our full model. Our full ViLBERT model outperforms task-specific state-of-the-art models across all tasks.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>VQA[3]</td>\n    <td>VCR[25]</td>\n    <td>RefCOCO+[32]</td>\n    <td>Image Retrieval[26]</td>\n    <td>ZS Image Retrieval</td>\n  </tr>\n  <tr>\n    <td>SOTA</td>\n    <td>test-dev(test-std)</td>\n    <td>Q→A</td>\n    <td>QA→R</td>\n    <td>Q→AR</td>\n    <td>val</td>\n    <td>testA</td>\n    <td>testB</td>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n  </tr>\n  <tr>\n    <td>DF AF[36]</td>\n    <td>70.22(70.34)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>R2C[25]</td>\n    <td>-</td>\n    <td>63.8(65.1)</td>\n    <td>67.2(67.3)</td>\n    <td>43.1(44.0)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>MATT Net[33]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>65.33</td>\n    <td>71.62</td>\n    <td>56.02</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>SCAN[35]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Single-Stream'</td>\n    <td>65.90</td>\n    <td>68.15</td>\n    <td>68.89</td>\n    <td>47.27</td>\n    <td>65.64</td>\n    <td>72.02</td>\n    <td>56.04</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Ours</td>\n    <td>Single-Stream</td>\n    <td>68.85</td>\n    <td>71.09</td>\n    <td>73.93</td>\n    <td>52.73</td>\n    <td>69.21</td>\n    <td>75.32</td>\n    <td>61.02</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>ViL BERT'</td>\n    <td>68.93</td>\n    <td>69.26</td>\n    <td>71.01</td>\n    <td>49.48</td>\n    <td>68.61</td>\n    <td>75.97</td>\n    <td>58.44</td>\n    <td>45.50</td>\n    <td>76.78</td>\n    <td>85.02</td>\n    <td>0.00</td>\n    <td>0.00</td>\n    <td>0.00</td>\n  </tr>\n  <tr>\n    <td>ViLBERT</td>\n    <td>70.55(70.92)</td>\n    <td>72.42(73.3)</td>\n    <td>74.47(74.6)</td>\n    <td>54.04(54.8)</td>\n    <td>72.34</td>\n    <td>78.52</td>\n    <td>62.61</td>\n    <td>58.20</td>\n    <td>84.90</td>\n    <td>91.52</td>\n    <td>31.86</td>\n    <td>61.12</td>\n    <td>72.80</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                109,
+                636,
+                504,
+                707
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>VQA[3]</td>\n    <td>VCR[25]</td>\n    <td>Ref COCO+[32]</td>\n    <td>Image Retrieval[26]</td>\n    <td>ZS Image Retrieval[26]</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(2-layer)</td>\n    <td>69.92</td>\n    <td>72.44</td>\n    <td>74.80</td>\n    <td>54.40</td>\n    <td>71.74</td>\n    <td>78.61</td>\n    <td>62.28</td>\n    <td>55.68</td>\n    <td>84.26</td>\n    <td>90.56</td>\n    <td>26.14</td>\n    <td>56.04</td>\n    <td>68.80</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(4-layer)</td>\n    <td>70.22</td>\n    <td>72.45</td>\n    <td>74.00</td>\n    <td>53.82</td>\n    <td>72.07</td>\n    <td>78.53</td>\n    <td>63.14</td>\n    <td>55.38</td>\n    <td>84.10</td>\n    <td>90.62</td>\n    <td>26.28</td>\n    <td>54.34</td>\n    <td>66.08</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(6-layer)</td>\n    <td>70.55</td>\n    <td>72.42</td>\n    <td>74.47</td>\n    <td>54.04</td>\n    <td>72.34</td>\n    <td>78.52</td>\n    <td>62.61</td>\n    <td>58.20</td>\n    <td>84.90</td>\n    <td>91.52</td>\n    <td>31.86</td>\n    <td>61.12</td>\n    <td>72.80</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(8-layer)</td>\n    <td>70.47</td>\n    <td>72.33</td>\n    <td>74.15</td>\n    <td>53.79</td>\n    <td>71.66</td>\n    <td>78.29</td>\n    <td>62.43</td>\n    <td>58.78</td>\n    <td>85.60</td>\n    <td>91.42</td>\n    <td>32.80</td>\n    <td>63.38</td>\n    <td>74.62</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                109,
+                104,
+                505,
+                176
+            ],
+            "caption": "Table 3: Transfer task results for ViLBERT as a function of the percentage of the Conceptual Captions dataset used during pre-training. We see monotonic gains as the pretraining dataset size grows.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>VQA[3]</td>\n    <td>VCR[25]</td>\n    <td>Ref COCO+[32]</td>\n    <td>Image Retrieval[26]</td>\n    <td>ZS Image Retrieval[26]</td>\n  </tr>\n  <tr>\n    <td>test-dev</td>\n    <td>Q→A</td>\n    <td>QA→R</td>\n    <td>Q→AR</td>\n    <td>val</td>\n    <td>testA</td>\n    <td>testB</td>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(0%)</td>\n    <td>68.93</td>\n    <td>69.26</td>\n    <td>71.01</td>\n    <td>49.48</td>\n    <td>68.61</td>\n    <td>75.97</td>\n    <td>58.44</td>\n    <td>45.50</td>\n    <td>76.78</td>\n    <td>85.02</td>\n    <td>0.00</td>\n    <td>0.00</td>\n    <td>0.00</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(25%)</td>\n    <td>69.82</td>\n    <td>71.61</td>\n    <td>73.00</td>\n    <td>52.66</td>\n    <td>69.90</td>\n    <td>76.83</td>\n    <td>60.99</td>\n    <td>53.08</td>\n    <td>80.80</td>\n    <td>88.52</td>\n    <td>20.40</td>\n    <td>48.54</td>\n    <td>62.06</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(50%)</td>\n    <td>70.30</td>\n    <td>71.88</td>\n    <td>73.60</td>\n    <td>53.03</td>\n    <td>71.16</td>\n    <td>77.35</td>\n    <td>61.57</td>\n    <td>54.84</td>\n    <td>83.62</td>\n    <td>90.10</td>\n    <td>26.76</td>\n    <td>56.26</td>\n    <td>68.80</td>\n  </tr>\n  <tr>\n    <td>Vi LBERT(100%)</td>\n    <td>70.55</td>\n    <td>72.42</td>\n    <td>74.47</td>\n    <td>54.04</td>\n    <td>72.34</td>\n    <td>78.52</td>\n    <td>62.61</td>\n    <td>58.20</td>\n    <td>84.90</td>\n    <td>91.52</td>\n    <td>31.86</td>\n    <td>61.12</td>\n    <td>72.80</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        }
+    ]
+}

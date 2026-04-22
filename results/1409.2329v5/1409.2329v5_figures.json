@@ -1,0 +1,48 @@
+{
+    "total_count": 3,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                184,
+                91,
+                407,
+                226
+            ],
+            "caption": "Figure 1: A graphical representation of LSTM memory cells used in this paper (there are minor differences in comparison to Graves (2013)).",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                203,
+                310,
+                407,
+                466
+            ],
+            "caption": "Figure 2: Regularized multilayer RNN. The dashed arrows indicate connections where dropout is applied, and the solid lines indicate connections where dropout is not applied.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                203,
+                131,
+                408,
+                286
+            ],
+            "caption": "Figure 3: The thick line shows a typical path of information flow in the LSTM. The information is affected by dropout \\(L + 1\\) times, where \\(L\\) is depth of network.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        }
+    ]
+}

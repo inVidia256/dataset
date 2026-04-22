@@ -1,0 +1,18 @@
+{
+    "total_count": 1,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                363,
+                331,
+                485,
+                363
+            ],
+            "content": "p ( x ) = \\prod _ { i = 1 } ^ { n } p ( s _ { n } | s _ { 1 } , . . . , s _ { n - 1 } )",
+            "latex": "p ( x ) = \\prod _ { i = 1 } ^ { n } p ( s _ { n } | s _ { 1 } , . . . , s _ { n - 1 } )"
+        }
+    ]
+}

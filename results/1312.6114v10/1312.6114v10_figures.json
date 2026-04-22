@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                260,
+                79,
+                351,
+                171
+            ],
+            "caption": "Figure 1: The type of directed graphical model under consideration. Solid lines denote the generative model \\( p_{\\theta}(\\mathbf{z})p_{\\theta}(\\mathbf{x}|\\mathbf{z}) \\), dashed lines denote the variational approximation \\( q_{\\phi}(\\mathbf{z}|\\mathbf{x}) \\) to the intractable posterior \\( p_{\\theta}(\\mathbf{z}|\\mathbf{x}) \\). The variational parameters \\( \\phi \\) are learned jointly with the generative model parameters \\( \\theta \\). Figure 1: The type of directed graphical model under consideration. Solid lines denote the generative model \\( p_{\\theta}(\\mathbf{z})p_{\\theta}(\\mathbf{x}|\\mathbf{z}) \\), dashed lines denote the variational approximation \\( q_{\\phi}(\\mathbf{z}|\\mathbf{x}) \\) to the intractable posterior \\( p_{\\theta}(\\mathbf{z}|\\mathbf{x}) \\). The variational parameters \\( \\phi \\) are learned jointly with the generative model parameters \\( \\theta \\).",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                109,
+                81,
+                480,
+                228
+            ],
+            "caption": "Figure 2: Comparison of our AEVB method to the wake-sleep algorithm, in terms of optimizing the lower bound, for different dimensionality of latent space (Nz). Our method converged considerably faster and reached a better solution in all experiments. Interestingly enough, more latent variables does not result in more overfitting, which is explained by the regularizing effect of the lower bound. Vertical axis: the estimated average variational lower bound per datapoint. The estimator variance was small (<1) and omitted. Horizontal axis: amount of training points evaluated. Computation took around 20-40 minutes per million training samples with a Intel Xeon CPU running at an effective 40 GFLOPS. Figure 2: Comparison of our AEVB method to the wake-sleep algorithm, in terms of optimizing the lower bound, for different dimensionality of latent space (Nz). Our method converged considerably faster and reached a better solution in all experiments. Interestingly enough, more latent variables does not result in more overfitting, which is explained by the regularizing effect of the lower bound. Vertical axis: the estimated average variational lower bound per datapoint. The estimator variance was small (<1) and omitted. Horizontal axis: amount of training points evaluated. Computation took around 20-40 minutes per million training samples with a Intel Xeon CPU running at an effective 40 GFLOPS.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                109,
+                82,
+                502,
+                230
+            ],
+            "caption": "Figure 3: Comparison of AEVB to the wake-sleep algorithm and Monte Carlo EM, in terms of the estimated marginal likelihood, for a different number of training points. Monte Carlo EM is not an on-line algorithm, and (unlike AEVB and the wake-sleep method) can’t be applied efficiently for the full MNIST dataset.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                128,
+                81,
+                488,
+                322
+            ],
+            "caption": "Figure 4: Visualisations of learned data manifold for generative models with two-dimensional latent space, learned with AEVB. Since the prior of the latent space is Gaussian, linearly spaced coordinates on the unit square were transformed through the inverse CDF of the Gaussian to produce values of the latent variables z. For each of these values z, we plotted the corresponding generative pθ(x|z) with the learned parameters θ.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page010.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                122,
+                405,
+                492,
+                513
+            ],
+            "caption": "(b) Learned MNIST manifold Figure 5: Random samples from learned generative models of MNIST for different dimensionalities of latent space. Figure 5: Random samples from learned generative models of MNIST for different dimensionalities of latent space.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page010.png"
+        }
+    ]
+}

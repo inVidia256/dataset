@@ -1,0 +1,114 @@
+{
+    "total_count": 9,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                194,
+                555,
+                400,
+                568
+            ],
+            "content": "I ( X ; Y ) = H ( X ) - H ( X | Y ) = H ( Y ) - H ( Y | X )",
+            "latex": "I ( X ; Y ) = H ( X ) - H ( X | Y ) = H ( Y ) - H ( Y | X )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                201,
+                664,
+                394,
+                681
+            ],
+            "content": "```latex\n\\min_{G} \\max_{D} V_I(D, G) = V(D, G) - \\lambda I(c; G(z, c))\n```",
+            "latex": "```latex\n\\min_{G} \\max_{D} V_I(D, G) = V(D, G) - \\lambda I(c; G(z, c))\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                155,
+                183,
+                439,
+                199
+            ],
+            "content": "```latex\n\\min_{G} \\max_{D} V(D, G) = \\mathbb{E}_{x \\sim P_{\\text{data}}} [\\log D(x)] + \\mathbb{E}_{z \\sim \\text{noise}} [\\log (1 - D(G(z)))]\n```",
+            "latex": "```latex\n\\min_{G} \\max_{D} V(D, G) = \\mathbb{E}_{x \\sim P_{\\text{data}}} [\\log D(x)] + \\mathbb{E}_{z \\sim \\text{noise}} [\\log (1 - D(G(z)))]\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                192,
+                331,
+                415,
+                374
+            ],
+            "content": "```latex\nL_I(G, Q) = E_{c \\sim P(c), x \\sim G(z, c)}[\\log Q(c | x)] + H(c)\n= E_{x \\sim G(z, c)}[\\mathbb{E}_{c' \\sim P(c|x)}[\\log Q(c' | x)]] + H(c)\n\\leq I(c; G(z, c))\n```",
+            "latex": "```latex\nL_I(G, Q) = E_{c \\sim P(c), x \\sim G(z, c)}[\\log Q(c | x)] + H(c)\n= E_{x \\sim G(z, c)}[\\mathbb{E}_{c' \\sim P(c|x)}[\\log Q(c' | x)]] + H(c)\n\\leq I(c; G(z, c))\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                131,
+                121,
+                464,
+                195
+            ],
+            "content": "```latex\nI(c; G(z, c)) = H(c) - H(c | G(z, c))\n\n= \\mathbb{E}_{x \\sim G(z, c)}[\\mathbb{E}_{c' \\sim P(c|x)}[\\log P(c'|x)]] + H(c)\n\n= \\mathbb{E}_{x \\sim G(z, c)}[D_{\\text{KL}}(P(\\cdot|x) \\parallel Q(\\cdot|x))] + \\mathbb{E}_{c' \\sim P(c|x)}[\\log Q(c'|x)] + H(c)\n\n\\geq \\mathbb{E}_{x \\sim G(z, c)}[\\mathbb{E}_{c' \\sim P(c|x)}[\\log Q(c'|x)]] + H(c)\n```",
+            "latex": "```latex\nI(c; G(z, c)) = H(c) - H(c | G(z, c))\n\n= \\mathbb{E}_{x \\sim G(z, c)}[\\mathbb{E}_{c' \\sim P(c|x)}[\\log P(c'|x)]] + H(c)\n\n= \\mathbb{E}_{x \\sim G(z, c)}[D_{\\text{KL}}(P(\\cdot|x) \\parallel Q(\\cdot|x))] + \\mathbb{E}_{c' \\sim P(c|x)}[\\log Q(c'|x)] + H(c)\n\n\\geq \\mathbb{E}_{x \\sim G(z, c)}[\\mathbb{E}_{c' \\sim P(c|x)}[\\log Q(c'|x)]] + H(c)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                187,
+                508,
+                408,
+                525
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{G, Q} \\max_D V_{\\text{InfoGAN}}(D, G, Q) = V(D, G) - \\lambda L_I(G, Q)\n```\n\nThis will produce the same mathematical expression shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{G, Q} \\max_D V_{\\text{InfoGAN}}(D, G, Q) = V(D, G) - \\lambda L_I(G, Q)\n```\n\nThis will produce the same mathematical expression shown in the image."
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                160,
+                177,
+                446,
+                302
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbb{E}_{x \\sim X, y \\sim Y | x}[f(x,y)] &= \\int_x P(x) \\int_y P(y|x)f(x,y)dydx \\\\\n&= \\int_x \\int_y P(x,y)f(x,y)dydx \\\\\n&= \\int_x \\int_y P(x,y)f(x,y)\\int_{x'}P(x'|y)dx'dydx \\\\\n&= \\int_x P(x) \\int_y P(y|x)\\int_{x'}P(x'|y)f(x',y)dx'dydx \\\\\n&= \\mathbb{E}_{x \\sim X, y \\sim Y | x, x' \\sim X | y}[f(x',y)]\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbb{E}_{x \\sim X, y \\sim Y | x}[f(x,y)] &= \\int_x P(x) \\int_y P(y|x)f(x,y)dydx \\\\\n&= \\int_x \\int_y P(x,y)f(x,y)dydx \\\\\n&= \\int_x \\int_y P(x,y)f(x,y)\\int_{x'}P(x'|y)dx'dydx \\\\\n&= \\int_x P(x) \\int_y P(y|x)\\int_{x'}P(x'|y)f(x',y)dx'dydx \\\\\n&= \\mathbb{E}_{x \\sim X, y \\sim Y | x, x' \\sim X | y}[f(x',y)]\n\\end{align*}\n```"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                228,
+                448,
+                369,
+                465
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\max_Q \\mathbb{E}_{c \\sim P(c), x \\sim P_G(x|c)}[\\log Q(c|x)]\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\max_Q \\mathbb{E}_{c \\sim P(c), x \\sim P_G(x|c)}[\\log Q(c|x)]\n```"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                227,
+                399,
+                370,
+                414
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\max_G \\mathbb{E}_{x \\sim \\text{Data}, c \\sim Q(c|x)} [\\log P_G(x|c)]\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\max_G \\mathbb{E}_{x \\sim \\text{Data}, c \\sim Q(c|x)} [\\log P_G(x|c)]\n```"
+        }
+    ]
+}

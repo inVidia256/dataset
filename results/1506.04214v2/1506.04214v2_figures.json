@@ -1,0 +1,160 @@
+{
+    "total_count": 11,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                106,
+                79,
+                249,
+                149
+            ],
+            "caption": "Figure 1: Transforming 2D image into 3D tensor",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                266,
+                88,
+                506,
+                150
+            ],
+            "caption": "Figure 2: Inner structure of ConvLSTM",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                108,
+                82,
+                505,
+                181
+            ],
+            "caption": "3: Encoding-forecasting ConvLSTM network for precipitation nowcasting",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                109,
+                235,
+                506,
+                350
+            ],
+            "caption": "Figure 4: An example showing an “out-of-domain” run. From left to right: input frames; ground truth; prediction by the 3-layer network.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                123,
+                180,
+                285,
+                306
+            ],
+            "caption": "Figure 5: Comparison of different models based on four precipitation nowcasting metrics over time.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                309,
+                189,
+                494,
+                262
+            ],
+            "caption": "Figure 6: Two prediction examples for the precipitation nowcasting problem. All the predictions and ground truths are sampled with an interval of 3. From top to bottom: input frames; ground truth frames; prediction by ConvLSTM network; prediction by ROVER2.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                148,
+                231,
+                467,
+                479
+            ],
+            "caption": "Figure 7: (Larger Version) Comparison of different models based on four precipitation nowcasting metrics over time.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page010.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                119,
+                522,
+                492,
+                671
+            ],
+            "caption": "Figure 8: (Larger Version) Two prediction examples for the precipitation nowcasting problem. All the predictions and ground truths are sampled with an interval of 3. From top to bottom: input frames; ground truth; prediction by ConvLSTM network; prediction by ROVER2.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page010.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                109,
+                112,
+                507,
+                419
+            ],
+            "caption": "Figure 9: An illustrative example showing the in-domain prediction results of different models. From top to bottom: input frames; ground truth; FC-LSTM; ConvLSTM-5X5-5X5-1-layer; ConvLSTM-5X5-5X5-2-layer; ConvLSTM-5X5-5X5-3-layer; ConvLSTM-9X9-1X1-2-layer; ConvLSTM-9X9-1X1-3-layer.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page011.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                109,
+                546,
+                507,
+                662
+            ],
+            "caption": "Figure 10: (Larger Version) An illustrative example showing an out-domain run. From top to bottom: input frames; ground truth; predictions of the 3-layer network.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page011.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                145,
+                238,
+                466,
+                505
+            ],
+            "caption": "Figure 11: Comparison of the 3-layer ConvLSTM and FC-LSTM in the online setting. In each iteration, we generate a new set of training samples and record the average cross entropy of that mini-batch. The x-axis is the number of data cases (starting from 25600) and the y-axis is the average cross entropy of the mini-batches. We can find that the loss of ConvLSTM decreases faster than FC-LSTM.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page012.png"
+        }
+    ]
+}

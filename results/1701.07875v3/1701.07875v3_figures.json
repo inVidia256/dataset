@@ -1,0 +1,202 @@
+{
+    "total_count": 14,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                133,
+                135,
+                478,
+                264
+            ],
+            "caption": "Figure 1: These plots show ρ(Πθ, Π0) as a function of θ when ρ is the EM distance (left plot) or the JS divergence (right plot). The EM plot is continuous and provides a usable gradient everywhere. The JS plot is not continuous and does not provide a usable gradient.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                181,
+                141,
+                423,
+                332
+            ],
+            "caption": "Figure 2: Optimal discriminator and critic when learning to differentiate two Gaussians. As we can see, the discriminator of a minimax GAN saturates and results in vanishing gradients. Our WGAN critic provides very clean gradients on all parts of the space.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page009.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                133,
+                126,
+                480,
+                348
+            ],
+            "caption": "Figure 3: Training curves and samples at different stages of training. We can see a clear correlation between lower error and better sample quality. Upper left: the generator is an MLP with 4 hidden layers and 512 units at each layer. The loss decreases consistently as training progresses and sample quality increases. Upper right: the generator is a standard DCGAN. The loss decreases quickly and sample quality increases as well. In both upper plots the critic is a DCGAN without the sigmoid so losses can be subjected to comparison. Lower half: both the generator and the discriminator are MLPs with substantially high learning rates (so training failed). Loss is constant and samples are constant as well. The training curves were passed through a median filter for visualization purposes. Figure 3: Training curves and samples at different stages of training. We can see a clear correlation between lower error and better sample quality. Upper left: the generator is an MLP with 4 hidden layers and 512 units at each layer. The loss decreases consistently as training progresses and sample quality increases. Upper right: the generator is a standard DCGAN. The loss decreases quickly and sample quality increases as well. In both upper plots the critic is a DCGAN without the sigmoid so losses can be subjected to comparison. Lower half: both the generator and the discriminator are MLPs with substantially high learning rates (so training failed). Loss is constant and samples are constant as well. The training curves were passed through a median filter for visualization purposes.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page010.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                133,
+                126,
+                480,
+                341
+            ],
+            "caption": "Figure 4: JS estimates for an MLP generator (upper left) and a DCGAN generator (upper right) trained with the standard GAN procedure. Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the JS estimate increases or stays constant, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3. Figure 4: JS estimates for an MLP generator (upper left) and a DCGAN generator (upper right) trained with the standard GAN procedure. Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the JS estimate increases or stays constant, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page011.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                135,
+                124,
+                477,
+                168
+            ],
+            "caption": "Figure 5: Algorithms trained with a DCGAN generator. Left: WGAN algorithm. Right: standard GAN formulation. Both algorithms produce high quality samples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page013.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                135,
+                211,
+                475,
+                254
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page013.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                137,
+                340,
+                473,
+                384
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page013.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 29,
+            "type": "figure",
+            "bbox": [
+                134,
+                160,
+                478,
+                375
+            ],
+            "caption": "Figure 8: Cost of the generator during normal GAN training, for an MLP generator (upper left) and a DCGAN generator (upper right). Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the cost of the generator increases, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3. Figure 8: Cost of the generator during normal GAN training, for an MLP generator (upper left) and a DCGAN generator (upper right). Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the cost of the generator increases, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page029.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 30,
+            "type": "figure",
+            "bbox": [
+                156,
+                68,
+                455,
+                369
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 9: WGAN algorithm: generator and critic are DCGANs.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page030.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 30,
+            "type": "figure",
+            "bbox": [
+                154,
+                401,
+                456,
+                702
+            ],
+            "caption": "Figure 10: Standard GAN procedure: generator and discriminator are DCGANs.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page030.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                155,
+                56,
+                456,
+                358
+            ],
+            "caption": "Figure 11: WGAN algorithm: generator is a DCGAN without batchnorm and constant filter size. Critic is a DCGAN. Figure 11: WGAN algorithm: generator is a DCGAN without batchnorm and constant filter size. Critic is a DCGAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page031.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                154,
+                402,
+                456,
+                703
+            ],
+            "caption": "Figure 12: Standard GAN procedure: generator is a DCGAN without batchnorm and constant filter size. Discriminator is a DCGAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page031.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 32,
+            "type": "figure",
+            "bbox": [
+                155,
+                63,
+                456,
+                363
+            ],
+            "caption": "The generator is an MLP with 4 hidden layers of 512 units, and the critic is a DCGAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page032.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 32,
+            "type": "figure",
+            "bbox": [
+                154,
+                396,
+                456,
+                697
+            ],
+            "caption": "Figure 14: Standard GAN procedure: generator is an MLP with 4 hidden layers of 512 units, discriminator is a DCGAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page032.png"
+        }
+    ]
+}

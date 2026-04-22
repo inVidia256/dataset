@@ -1,0 +1,48 @@
+{
+    "total_count": 3,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                57,
+                196,
+                531,
+                369
+            ],
+            "caption": "Figure 1: Speed-accuracy trade-off of accurate models (top) and Size-accuracy curve of lite models on mobile devices (bottom) for YOLOX and other state-of-the-art object detectors.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                105,
+                73,
+                488,
+                292
+            ],
+            "caption": "Figure 2: Illustration of the difference between YOLOv3 head and the proposed decoupled head. For each level of FPN feature, we first adopt a \\(1 \\times 1\\) conv layer to reduce the feature channel to 256 and then add two parallel branches with two \\(3 \\times 3\\) conv layers each for classification and regression tasks respectively. IoU branch is added on the regression branch.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                56,
+                367,
+                278,
+                488
+            ],
+            "caption": "Figure 3: Training curves for detectors with YOLOv3 head or decoupled head. We evaluate the AP on COCO val every 10 epochs. It is obvious that the decoupled head converges much faster than the YOLOv3 head and achieves better result finally.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        }
+    ]
+}

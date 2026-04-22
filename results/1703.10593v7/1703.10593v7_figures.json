@@ -1,0 +1,244 @@
+{
+    "total_count": 17,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                50,
+                171,
+                544,
+                400
+            ],
+            "caption": "Figure 1: Given any two unordered image collections X and Y, our algorithm learns to automatically “translate” an image from one into the other and vice versa: (left) Monet paintings and landscape photos from Flickr; (center) zebras and horses from ImageNet; (right) summer and winter Yosemite photos from Flickr. Example application (bottom): using a collection of paintings of famous artists, our method learns to render natural photographs into the respective styles. Figure 1: Given any two unordered image collections X and Y, our algorithm learns to automatically “translate” an image from one into the other and vice versa: (left) Monet paintings and landscape photos from Flickr; (center) zebras and horses from ImageNet; (right) summer and winter Yosemite photos from Flickr. Example application (bottom): using a collection of paintings of famous artists, our method learns to render natural photographs into the respective styles.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                48,
+                78,
+                284,
+                222
+            ],
+            "caption": "Figure 2: Paired training data (left) consists of training examples {x_i, y_i}_{i=1}^N, where the correspondence between x_i and y_i exists [22]. We instead consider unpaired training data (right), consisting of a source set {x_i}_{i=1}^N (x_i ∈ X) and a target set {y_j}_{j=1}^M (y_j ∈ Y), with no information provided as to which x_i matches which y_j.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                49,
+                71,
+                545,
+                201
+            ],
+            "caption": "Figure 3: (a) Our model contains two mapping functions \\( G : X \\rightarrow Y \\) and \\( F : Y \\rightarrow X \\), and associated adversarial discriminators \\( D_Y \\) and \\( D_X \\). \\( D_Y \\) encourages \\( G \\) to translate \\( X \\) into outputs indistinguishable from domain \\( Y \\), and vice versa for \\( D_X \\) and \\( F \\). To further regularize the mappings, we introduce two cycle consistency losses that capture the intuition that if we translate from one domain to the other and back again we should arrive at where we started: (b) forward cycle-consistency loss: \\( x \\rightarrow G(x) \\rightarrow F(G(x)) \\approx x \\), and (c) backward cycle-consistency loss: \\( y \\rightarrow F(y) \\rightarrow G(F(y)) \\approx y \\).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                310,
+                74,
+                540,
+                327
+            ],
+            "caption": "Figure 4: The input images x, output images G(x) and the reconstructed images F(G(x)) from various experiments. From top to bottom: photo↔Cezanne, horses↔zebras, winter→summer Yosemite, aerial photos↔Google maps.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                63,
+                72,
+                531,
+                170
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 5: Different methods for mapping labels↔photos trained on Cityscapes images. From left to right: input, BiGAN/ALI [7, 9], CoGAN [32], feature loss + GAN, SimGAN [46], CycleGAN (ours), pix2pix [22] trained on paired data, and ground truth.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                60,
+                216,
+                529,
+                450
+            ],
+            "caption": "Figure 6: Different methods for mapping aerial photos↔maps on Google Maps. From left to right: input, BiGAN/ALI [7, 9], CoGAN [32], feature loss + GAN, SimGAN [46], CycleGAN (ours), pix2pix [22] trained on paired data, and ground truth.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                51,
+                70,
+                542,
+                228
+            ],
+            "caption": "Figure 7: Different variants of our method for mapping labels ↔ photos trained on cityscapes. From left to right: input, cycle-consistency loss alone, adversarial loss alone, GAN + forward cycle-consistency loss (F(G(x)) ≈ x), GAN + backward cycle-consistency loss (G(F(y)) ≈ y), CycleGAN (our full method), and ground truth. Both Cycle alone and GAN + backward fail to produce images similar to the target domain. GAN alone and GAN + forward suffer from mode collapse, producing identical label maps regardless of the input photo. Figure 7: Different variants of our method for mapping labels ↔ photos trained on cityscapes. From left to right: input, cycle-consistency loss alone, adversarial loss alone, GAN + forward cycle-consistency loss (F(G(x)) ≈ x), GAN + backward cycle-consistency loss (G(F(y)) ≈ y), CycleGAN (our full method), and ground truth. Both Cycle alone and GAN + backward fail to produce images similar to the target domain. GAN alone and GAN + forward suffer from mode collapse, producing identical label maps regardless of the input photo.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                48,
+                302,
+                287,
+                513
+            ],
+            "caption": "Figure 8: Example results of CycleGAN on paired datasets used in \"pix2pix\" [22] such as architectural labels↔photos and edges↔shoes.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                52,
+                72,
+                285,
+                248
+            ],
+            "caption": "Figure 9: The effect of the identity mapping loss on Monet’s painting→ photos. From left to right: input paintings, CycleGAN without identity mapping loss, CycleGAN with identity mapping loss. The identity mapping loss helps preserve the color of the input paintings.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page009.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                48,
+                73,
+                545,
+                634
+            ],
+            "caption": "Figure 10: Collection style transfer I: we transfer input images into the artistic styles of Monet, Van Gogh, Cezanne, and Ukiyo-e. Please see our website for additional examples. Figure 10: Collection style transfer I: we transfer input images into the artistic styles of Monet, Van Gogh, Cezanne, and Ukiyo-e. Please see our website for additional examples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page010.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                50,
+                89,
+                545,
+                646
+            ],
+            "caption": "Figure 11: Collection style transfer II: we transfer input images into the artistic styles of Monet, Van Gogh, Cezanne, Ukiyo-e. Please see our website for additional examples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page011.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                49,
+                89,
+                545,
+                645
+            ],
+            "caption": "Figure 12: Relatively successful results on mapping Monet’s paintings to a photographic style. Please see our website for additional examples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page012.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                50,
+                69,
+                546,
+                628
+            ],
+            "caption": "Figure 13: Our method applied to several translation problems. These images are selected as relatively successful results – please see our website for more comprehensive and random results. In the top two rows, we show results on object transfiguration between horses and zebras, trained on 939 images from the wild horse class and 1177 images from the zebra class in Imagenet [5]. Also check out the horse→zebra demo video. The middle two rows show results on season transfer, trained on winter and summer photos of Yosemite from Flickr. In the bottom two rows, we train our method on 996 apple images and 1020 navel orange images from ImageNet. Figure 13: Our method applied to several translation problems. These images are selected as relatively successful results – please see our website for more comprehensive and random results. In the top two rows, we show results on object transfiguration between horses and zebras, trained on 939 images from the wild horse class and 1177 images from the zebra class in Imagenet [5]. Also check out the horse→zebra demo video. The middle two rows show results on season transfer, trained on winter and summer photos of Yosemite from Flickr. In the bottom two rows, we train our method on 996 apple images and 1020 navel orange images from ImageNet.",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page013.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                48,
+                86,
+                546,
+                266
+            ],
+            "caption": "Figure 14: Photo enhancement: mapping from a set of smartphone snaps to professional DSLR photographs, the system often learns to produce shallow focus. Here we show some of the most successful results in our test set – average performance is considerably worse. Please see our website for more comprehensive and random examples.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page014.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                49,
+                338,
+                546,
+                659
+            ],
+            "caption": "Figure 15: We compare our method with neural style transfer [13] on photo stylization. Left to right: input image, results from Gatys et al. [13] using two different representative artworks as style images, results from Gatys et al. [13] using the entire collection of the artist, and CycleGAN (ours). Photo → Cezanne",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page014.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                49,
+                88,
+                547,
+                397
+            ],
+            "caption": "Figure 16: We compare our method with neural style transfer [13] on various applications. From top to bottom: apple→orange, horse→zebra, and Monet→photo. Left to right: input image, results from Gatys et al. [13] using two different images as style images, results from Gatys et al. [13] using all the images from the target domain, and CycleGAN (ours). Figure 16: We compare our method with neural style transfer [13] on various applications. From top to bottom: apple→orange, horse→zebra, and Monet→photo. Left to right: input image, results from Gatys et al. [13] using two different images as style images, results from Gatys et al. [13] using all the images from the target domain, and CycleGAN (ours). Monet → photo",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page015.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                51,
+                476,
+                544,
+                655
+            ],
+            "caption": "horse → zebra Figure 17: Typical failure cases of our method. Left: in the task of dog→cat transfiguration, CycleGAN can only make minimal changes to the input. Right: CycleGAN also fails in this horse → zebra example as our model has not seen images of horseback riding during training. Please see our website for more comprehensive results.",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page015.png"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "total_count": 10,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                236,
+                236,
+                374,
+                269
+            ],
+            "content": "Z _ { t i j k } = f \\left( W _ { j k } ^ { c } \\cdot \\sum _ { l = 1 } ^ { N _ { t } } P _ { t i j l } ^ { * } X _ { t l k } \\right)",
+            "latex": "Z _ { t i j k } = f \\left( W _ { j k } ^ { c } \\cdot \\sum _ { l = 1 } ^ { N _ { t } } P _ { t i j l } ^ { * } X _ { t l k } \\right)"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                263,
+                532,
+                348,
+                558
+            ],
+            "content": "A _ { t } ^ { \\prime } = \\left( \\begin{array} { c c } { { A _ { t } } } & { { B _ { t } ^ { T } } } \\\\ { { B _ { t } } } & { { 0 } } \\end{array} \\right)",
+            "latex": "A _ { t } ^ { \\prime } = \\left( \\begin{array} { c c } { { A _ { t } } } & { { B _ { t } ^ { T } } } \\\\ { { B _ { t } } } & { { 0 } } \\end{array} \\right)"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                259,
+                285,
+                352,
+                298
+            ],
+            "content": "Z _ { t } = f \\left( W ^ { c } \\odot P _ { t } ^ { * } X _ { t } \\right)",
+            "latex": "Z _ { t } = f \\left( W ^ { c } \\odot P _ { t } ^ { * } X _ { t } \\right)"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                243,
+                456,
+                367,
+                471
+            ],
+            "content": "Z _ { t } = f \\left( W ^ { c } \\odot 1 _ { N _ { t } } ^ { T } P _ { t } ^ { * } X _ { t } / N _ { t } \\right)",
+            "latex": "Z _ { t } = f \\left( W ^ { c } \\odot 1 _ { N _ { t } } ^ { T } P _ { t } ^ { * } X _ { t } / N _ { t } \\right)"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                258,
+                377,
+                377,
+                392
+            ],
+            "content": "\\hat { Y } = \\arg \\operatorname* { m a x } \\left( f \\left( W ^ { d } \\odot Z \\right) \\right)",
+            "latex": "\\hat { Y } = \\arg \\operatorname* { m a x } \\left( f \\left( W ^ { d } \\odot Z \\right) \\right)"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                232,
+                394,
+                375,
+                408
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{P}(Y|X) = \\text{softmax}\\left(f(W^d \\odot Z)\\right)\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{P}(Y|X) = \\text{softmax}\\left(f(W^d \\odot Z)\\right)\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                214,
+                577,
+                395,
+                646
+            ],
+            "content": "```latex\nZ_{1jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V} \\sum_{v' \\in V} P_{vjv'}^* X_{v'k} / N \\right)\n\nZ_{2jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V} \\sum_{v' \\in V} P_{vjv'}^* X_{v'k} / N \\right)\n```",
+            "latex": "```latex\nZ_{1jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V} \\sum_{v' \\in V} P_{vjv'}^* X_{v'k} / N \\right)\n\nZ_{2jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V} \\sum_{v' \\in V} P_{vjv'}^* X_{v'k} / N \\right)\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                241,
+                104,
+                370,
+                136
+            ],
+            "content": "K _ { E D } = \\sum _ { j = 0 } ^ { \\infty } { \\frac { \\alpha ^ { j } A ^ { j } } { j ! } } = \\exp ( \\alpha A )",
+            "latex": "K _ { E D } = \\sum _ { j = 0 } ^ { \\infty } { \\frac { \\alpha ^ { j } A ^ { j } } { j ! } } = \\exp ( \\alpha A )"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                206,
+                395,
+                403,
+                465
+            ],
+            "content": "```latex\nZ_{1jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V_1} \\sum_{v' \\in V_1} P_{1vjv'}^* X_{1v'k} / N_1 \\right)\n\nZ_{2jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V_2} \\sum_{v' \\in V_2} P_{2vjv'}^* X_{2v'k} / N_2 \\right)\n```",
+            "latex": "```latex\nZ_{1jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V_1} \\sum_{v' \\in V_1} P_{1vjv'}^* X_{1v'k} / N_1 \\right)\n\nZ_{2jk} = f \\left( W_{jk}^c \\odot \\sum_{v \\in V_2} \\sum_{v' \\in V_2} P_{2vjv'}^* X_{2v'k} / N_2 \\right)\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                208,
+                491,
+                403,
+                550
+            ],
+            "content": "```latex\nV_1 = V_2 = V\nX_{1vk} = X_{2vk} = X_{vk} \\forall v \\in V, k \\in [1,F]\nP^*_{1vjv'} = P^*_{2vjv'} = P^*_{vjv'} \\forall v,v' \\in V, j \\in [0,H]\nN_1 = N_2 = N\n```",
+            "latex": "```latex\nV_1 = V_2 = V\nX_{1vk} = X_{2vk} = X_{vk} \\forall v \\in V, k \\in [1,F]\nP^*_{1vjv'} = P^*_{2vjv'} = P^*_{vjv'} \\forall v,v' \\in V, j \\in [0,H]\nN_1 = N_2 = N\n```"
+        }
+    ]
+}

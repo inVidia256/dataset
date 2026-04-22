@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                67,
+                73,
+                527,
+                249
+            ],
+            "caption": "Figure 1. MobileNet models can be applied to various recognition tasks for efficient on-device intelligence.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                317,
+                78,
+                537,
+                359
+            ],
+            "caption": "(c) 1 × 1 Convolutional Filters called Pointwise Convolution in the context of Depthwise Separable Convolution (c) 1 × 1 Convolutional Filters called Pointwise Convolution in the context of Depthwise Separable Convolution",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                74,
+                73,
+                261,
+                187
+            ],
+            "caption": "Figure 3. Left: Standard convolutional layer with batchnorm and ReLU. Right: Depthwise Separable convolutions with Depthwise and Pointwise layers followed by batchnorm and ReLU.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page004.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                61,
+                84,
+                249,
+                212
+            ],
+            "caption": "Figure 4. This figure shows the trade off between computation (Mult-Adds) and accuracy on the ImageNet benchmark. Note the log linear dependence between accuracy and computation.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                61,
+                291,
+                243,
+                420
+            ],
+            "caption": "Figure 5. This figure shows the trade off between the number of parameters and accuracy on the ImageNet benchmark. The colors encode input resolutions. The number of parameters do not vary based on the input resolution.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                308,
+                402,
+                545,
+                560
+            ],
+            "caption": "Figure 6. Example objection detection results using MobileNet SSD.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page007.png"
+        }
+    ]
+}

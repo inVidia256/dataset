@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                114,
+                95,
+                492,
+                271
+            ],
+            "caption": "Figure 1: (a): Content stream attention, which is the same as the standard self-attention. (b): Query stream attention, which does not have access information about the content \\( x_{z_t} \\). (c): Overview of the permutation language modeling training with two-stream attention. Figure 1: (a): Content stream attention, which is the same as the standard self-attention. (b): Query stream attention, which does not have access information about the content \\(x_{z_t}\\). (c): Overview of the permutation language modeling training with two-stream attention.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                107,
+                345,
+                505,
+                440
+            ],
+            "caption": "Figure 2: Attention patterns shared by XLNet and BERT. Rows and columns represent query and key respectively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page015.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                108,
+                597,
+                502,
+                687
+            ],
+            "caption": "Figure 3: Attention patterns that appear only in XLNet. Rows and columns represent query and key respectively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page015.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                104,
+                66,
+                509,
+                374
+            ],
+            "caption": "Figure 4: Illustration of the permutation language modeling objective for predicting \\( x_{3} \\) given the same input sequence \\( x \\) but with different factorization orders. Figure 4: Illustration of the permutation language modeling objective for predicting \\( x_3 \\) given the same input sequence \\( x \\) but with different factorization orders.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page016.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                104,
+                114,
+                507,
+                606
+            ],
+            "caption": "Figure 5: A detailed illustration of the content stream of the proposed objective with both the joint view and split views based on a length-4 sequence under the factorization order [3, 2, 4, 1]. Note that if we ignore the query representation, the computation in this figure is simply the standard self-attention, though with a particular attention mask. Split View of the Content Stream\n(Factorization order: 3 → 2 → 4 → 1)",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page017.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                104,
+                113,
+                507,
+                603
+            ],
+            "caption": "Figure 6: A detailed illustration of the query stream of the proposed objective with both the joint view and split views based on a length-4 sequence under the factorization order [3, 2, 4, 1]. The dash arrows indicate that the query stream cannot access the token (content) at the same position, but only the location information. Split View of the Query Stream\n(Factorization order: 3 → 2 → 4 → 1)",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page018.png"
+        }
+    ]
+}

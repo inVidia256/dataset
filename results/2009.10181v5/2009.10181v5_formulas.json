@@ -1,0 +1,42 @@
+{
+    "total_count": 3,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                118,
+                93,
+                236,
+                134
+            ],
+            "content": "\\left[ \\begin{array} { l } { { t _ { i } x _ { i } ^ { \\prime } } } \\\\ { { t _ { i } y _ { i } ^ { \\prime } } } \\\\ { { t _ { i } } } \\end{array} \\right] = \\mathrm { m a p \\_ m a t r i x } \\cdot \\left[ \\begin{array} { l } { { x _ { i } } } \\\\ { { y _ { i } } } \\\\ { { 1 } } \\end{array} \\right]",
+            "latex": "\\left[ \\begin{array} { l } { { t _ { i } x _ { i } ^ { \\prime } } } \\\\ { { t _ { i } y _ { i } ^ { \\prime } } } \\\\ { { t _ { i } } } \\end{array} \\right] = \\mathrm { m a p \\_ m a t r i x } \\cdot \\left[ \\begin{array} { l } { { x _ { i } } } \\\\ { { y _ { i } } } \\\\ { { 1 } } \\end{array} \\right]"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                60,
+                201,
+                280,
+                222
+            ],
+            "content": "```latex\ndst(x, y) = src\\left(\\frac{M_{11}x + M_{12}y + M_{13}}{M_{31}x + M_{32}y + M_{33}}, \\frac{M_{21}x + M_{22}y + M_{23}}{M_{31}x + M_{32}y + M_{33}}\\right)\n```",
+            "latex": "```latex\ndst(x, y) = src\\left(\\frac{M_{11}x + M_{12}y + M_{13}}{M_{31}x + M_{32}y + M_{33}}, \\frac{M_{21}x + M_{22}y + M_{23}}{M_{31}x + M_{32}y + M_{33}}\\right)\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                77,
+                158,
+                274,
+                172
+            ],
+            "content": "d s t ( i ) = ( x _ { i } ^ { \\prime } , y _ { i } ^ { \\prime } ) , s r c ( i ) = ( x _ { i } , y _ { i } ) , i = 0 , 1 , 2 , 3",
+            "latex": "d s t ( i ) = ( x _ { i } ^ { \\prime } , y _ { i } ^ { \\prime } ) , s r c ( i ) = ( x _ { i } , y _ { i } ) , i = 0 , 1 , 2 , 3"
+        }
+    ]
+}

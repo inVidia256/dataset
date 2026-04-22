@@ -1,0 +1,76 @@
+{
+    "total_count": 5,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                308,
+                246,
+                542,
+                397
+            ],
+            "caption": "Figure 1: Comparison between popular video-and-language learning paradigm (top) and CLIPBERT (bottom). In contrast to most existing methods that utilize offline (stop gradient) extracted dense video features and text features, CLIPBERT uses sparsely sampled clips and raw text tokens for end-to-end modeling.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                324,
+                75,
+                524,
+                289
+            ],
+            "caption": "Figure 2: Overview of CLIPBERT architecture. For simplicity, we only show an illustration of producing prediction for a single sampled clip. When multiple clips are used, their predictions are fused together as the final prediction.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                52,
+                68,
+                284,
+                98
+            ],
+            "caption": "Figure 3: Average video length in different datasets. Figure 3: Average video length in different datasets.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                47,
+                69,
+                287,
+                158
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Sparse random sampling vs. dense uniform sampling.\nAll models use N_test=16 clips for inference.\" The text content from the image is as follows:\n\n\"Table 4: Sparse random sampling vs. dense uniform sampling.\nAll models use N_test=16 clips for inference.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                306,
+                69,
+                546,
+                258
+            ],
+            "caption": "Figure 5: Memory and computation cost comparison w.r.t. different numbers of clips (N_train) or frames (T) at training. (a): Maximum allowed batch size with fixed T=1. (b): Time cost for a single forward and backward pass with fixed T=1, batch size 8. (c): Maximum allowed batch size with fixed N_train=1. (d): Time cost for a single forward and backward pass with fixed N_train=1, batch size 8. All experiments are conducted on a single NVIDIA V100 GPU with 32GB memory. MSRVTT retrieval performance is also added in (b, d) for reference. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page006.png"
+        }
+    ]
+}

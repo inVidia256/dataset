@@ -1,0 +1,102 @@
+{
+    "total_count": 6,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                105,
+                484,
+                503,
+                682
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Algorithm 1 VQ-VAE training (stage 1)</td>\n    <td>Algorithm 2 Prior training (stage 2)</td>\n  </tr>\n  <tr>\n    <td>Require：Functions Et，Eb，D，x(batch of training images)</td>\n    <td>T，T←0</td>\n  </tr>\n  <tr>\n    <td>1：htop-Etop(x)</td>\n    <td>for x∈training set do</td>\n  </tr>\n  <tr>\n    <td>quantize with top codebook eq 1</td>\n    <td>3：etop-Quantize(Etop(x))</td>\n  </tr>\n  <tr>\n    <td>2：etop-Quantize(htop)</td>\n    <td>4：ebottom-Quantize(Ebottom(x，etop))</td>\n  </tr>\n  <tr>\n    <td>3：hbottom-Ebottom(x，etop)</td>\n    <td>5：Ttop-Ttop U etop</td>\n  </tr>\n  <tr>\n    <td>quantize with bottom codebook eq 1</td>\n    <td>6：Tbottom-Tbottom U ebottom</td>\n  </tr>\n  <tr>\n    <td>4：ebottom-Quantize(hbottom)</td>\n    <td>7：end for</td>\n  </tr>\n  <tr>\n    <td>5：x-D(etop，ebottom)</td>\n    <td>8：ptop-TrainPixelCNN(Ttop)</td>\n  </tr>\n  <tr>\n    <td>Loss according to eq 2</td>\n    <td>9：pbottom-TrainCondPixelCNN(Tbottom，Ttop)</td>\n  </tr>\n  <tr>\n    <td>6：θ-Update(L(x，x))</td>\n    <td>Sampling procedure</td>\n  </tr>\n  <tr>\n    <td>while true do</td>\n    <td>11：etop-p top</td>\n  </tr>\n  <tr>\n    <td>12：ebottom-p bottom(etop)</td>\n    <td>13：x-D(etop，ebottom)</td>\n  </tr>\n  <tr>\n    <td>end while</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                146,
+                282,
+                464,
+                331
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Train NLL</td>\n    <td>Validation NLL</td>\n    <td>Train MSE</td>\n    <td>Validation MSE</td>\n  </tr>\n  <tr>\n    <td>Top prior</td>\n    <td>3.40</td>\n    <td>3.41</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Bottom prior</td>\n    <td>3.45</td>\n    <td>3.45</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>VQ Decoder</td>\n    <td>-</td>\n    <td>-</td>\n    <td>0.0047</td>\n    <td>0.0050</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page010.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                169,
+                635,
+                441,
+                694
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is as follows:\n\n\"Table 2: Classification Accuracy Score (CAS) [25] for the real dataset, BigGAN-deep and our model.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Top-1 Accuracy</td>\n    <td>Top-5 Accuracy</td>\n  </tr>\n  <tr>\n    <td>Big GAN deep</td>\n    <td>42.65</td>\n    <td>65.92</td>\n  </tr>\n  <tr>\n    <td>VQ-VAE</td>\n    <td>54.83</td>\n    <td>77.59</td>\n  </tr>\n  <tr>\n    <td>VQ-VAE after reconstructing</td>\n    <td>58.74</td>\n    <td>80.98</td>\n  </tr>\n  <tr>\n    <td>Real data</td>\n    <td>73.09</td>\n    <td>91.47</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page010.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                132,
+                118,
+                479,
+                267
+            ],
+            "caption": "",
+            "footnote": "The text in the image reads: \"Parameters of autoregressive prior networks used for Imagenet-256 experiment.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Top-Prior(32x32)</td>\n    <td>Bottom-Prior(64x64)</td>\n  </tr>\n  <tr>\n    <td>Input size</td>\n    <td>32x32</td>\n    <td>64x64</td>\n  </tr>\n  <tr>\n    <td>Batch size</td>\n    <td>1024</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Hidden units</td>\n    <td>512</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Residual units</td>\n    <td>2048</td>\n    <td>1024</td>\n  </tr>\n  <tr>\n    <td>Layers</td>\n    <td>20</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>Attention layers</td>\n    <td>4</td>\n    <td>0</td>\n  </tr>\n  <tr>\n    <td>Attention heads</td>\n    <td>8</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Conv Filter size</td>\n    <td>5</td>\n    <td>5</td>\n  </tr>\n  <tr>\n    <td>Dropout</td>\n    <td>0.1</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>Output stack layers</td>\n    <td>20</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Conditioning stack residual blocks</td>\n    <td>-</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>Training steps</td>\n    <td>1600000</td>\n    <td>754000</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page014.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                148,
+                302,
+                463,
+                450
+            ],
+            "caption": "",
+            "footnote": "Parameters of autoregressive prior networks used for FFHQ-1024 experiment:",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Top-Prior</td>\n    <td>Mid-Prior</td>\n    <td>Bottom-Prior</td>\n  </tr>\n  <tr>\n    <td>Input Size</td>\n    <td>32x32</td>\n    <td>64x64</td>\n    <td>128x128</td>\n  </tr>\n  <tr>\n    <td>Batch size</td>\n    <td>1024</td>\n    <td>512</td>\n    <td>256</td>\n  </tr>\n  <tr>\n    <td>hidden units</td>\n    <td>512</td>\n    <td>512</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>residual units</td>\n    <td>2048</td>\n    <td>1024</td>\n    <td>1024</td>\n  </tr>\n  <tr>\n    <td>layers</td>\n    <td>20</td>\n    <td>20</td>\n    <td>10</td>\n  </tr>\n  <tr>\n    <td>Attention layers</td>\n    <td>4</td>\n    <td>1</td>\n    <td>0</td>\n  </tr>\n  <tr>\n    <td>Attention heads</td>\n    <td>8</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Conv Filter size</td>\n    <td>5</td>\n    <td>5</td>\n    <td>5</td>\n  </tr>\n  <tr>\n    <td>Dropout</td>\n    <td>0.5</td>\n    <td>0.3</td>\n    <td>0.25</td>\n  </tr>\n  <tr>\n    <td>Output stack layers</td>\n    <td>0</td>\n    <td>0</td>\n    <td>0</td>\n  </tr>\n  <tr>\n    <td>Conditioning stack residual blocks</td>\n    <td>-</td>\n    <td>8</td>\n    <td>8</td>\n  </tr>\n  <tr>\n    <td>Training steps</td>\n    <td>237000</td>\n    <td>57400</td>\n    <td>270000</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page014.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                132,
+                513,
+                487,
+                660
+            ],
+            "caption": "",
+            "footnote": "Table 5: Hyper parameters of VQ-VAE encoder and decoder used for ImageNet-256 and FFHQ-1024 experiments.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>ImageNet</td>\n    <td>FFHQ</td>\n  </tr>\n  <tr>\n    <td>Input size</td>\n    <td>256×256</td>\n    <td>1024×1024</td>\n  </tr>\n  <tr>\n    <td>Latent layers</td>\n    <td>32x32，64x64</td>\n    <td>32x32，64x64，128x128</td>\n  </tr>\n  <tr>\n    <td>β(commitment loss coefficient)</td>\n    <td>0.25</td>\n    <td>0.25</td>\n  </tr>\n  <tr>\n    <td>Batch size</td>\n    <td>128</td>\n    <td>128</td>\n  </tr>\n  <tr>\n    <td>Hidden units</td>\n    <td>128</td>\n    <td>128</td>\n  </tr>\n  <tr>\n    <td>Residual units</td>\n    <td>64</td>\n    <td>64</td>\n  </tr>\n  <tr>\n    <td>Layers</td>\n    <td>2</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>Codebook size</td>\n    <td>512</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Codebook dimension</td>\n    <td>64</td>\n    <td>64</td>\n  </tr>\n  <tr>\n    <td>Encoder conv filter size</td>\n    <td>3</td>\n    <td>3</td>\n  </tr>\n  <tr>\n    <td>Upsampling conv filter size</td>\n    <td>4</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>Training steps</td>\n    <td>2207444</td>\n    <td>304741</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page014.png"
+        }
+    ]
+}

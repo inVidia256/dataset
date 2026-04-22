@@ -1,0 +1,182 @@
+{
+    "total_count": 11,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                75,
+                129,
+                261,
+                196
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Impact of input image size L.\" The text content from the image is:\n\n\"Table 1: Impact of input image size L.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>L</td>\n    <td>MSR VTT Retrieval</td>\n    <td>MSR VT T-QA Acc.</td>\n  </tr>\n  <tr>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n    <td>MdR</td>\n    <td>35.78</td>\n  </tr>\n  <tr>\n    <td>224</td>\n    <td>6.8</td>\n    <td>24.4</td>\n    <td>35.8</td>\n    <td>20.0</td>\n  </tr>\n  <tr>\n    <td>448</td>\n    <td>10.2</td>\n    <td>28.6</td>\n    <td>40.5</td>\n    <td>17.0</td>\n    <td>35.73</td>\n  </tr>\n  <tr>\n    <td>768</td>\n    <td>11.0</td>\n    <td>27.8</td>\n    <td>40.9</td>\n    <td>16.0</td>\n    <td>35.73</td>\n  </tr>\n  <tr>\n    <td>1000</td>\n    <td>10.0</td>\n    <td>28.4</td>\n    <td>39.4</td>\n    <td>18.0</td>\n    <td>35.19</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                308,
+                69,
+                545,
+                191
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2: Impact of #frames (T) and temporal fusion function (M). We use a 1-second clip for all experiments.\" The text content from the image is as follows:\n\n\"Table 2: Impact of #frames (T) and temporal fusion function (M). We use a 1-second clip for all experiments.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>T</td>\n    <td>MSR VTT Retrieval</td>\n    <td>MSR VT TQA Acc.</td>\n  </tr>\n  <tr>\n    <td>-</td>\n    <td>1</td>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n    <td>MdR</td>\n    <td>35.73</td>\n  </tr>\n  <tr>\n    <td>Mean Pooling</td>\n    <td>2</td>\n    <td>11.3</td>\n    <td>31.7</td>\n    <td>44.9</td>\n    <td>14.0</td>\n    <td>36.02</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>10.8</td>\n    <td>30.0</td>\n    <td>43.6</td>\n    <td>14.0</td>\n    <td>35.83</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>10.6</td>\n    <td>32.5</td>\n    <td>45.0</td>\n    <td>13.0</td>\n    <td>35.69</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>11.6</td>\n    <td>33.9</td>\n    <td>45.8</td>\n    <td>13.0</td>\n    <td>36.05</td>\n  </tr>\n  <tr>\n    <td>Conv3D</td>\n    <td>2</td>\n    <td>8.7</td>\n    <td>27.3</td>\n    <td>40.2</td>\n    <td>17.0</td>\n    <td>34.85</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>10.1</td>\n    <td>28.9</td>\n    <td>41.7</td>\n    <td>16.0</td>\n    <td>35.03</td>\n  </tr>\n  <tr>\n    <td>Conv(2+1)D</td>\n    <td>2</td>\n    <td>7.3</td>\n    <td>24.1</td>\n    <td>35.6</td>\n    <td>22.0</td>\n    <td>34.13</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>9.9</td>\n    <td>27.3</td>\n    <td>39.6</td>\n    <td>17.0</td>\n    <td>33.92</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                50,
+                180,
+                286,
+                300
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 4: Impact of #inference clips (\\(N_{test}\\)).\" The text content from the image is:\n\n\"Figure 4: Impact of #inference clips (\\(N_{test}\\)).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>G</td>\n    <td>Ntrain</td>\n    <td>MSR VTT Retrieval</td>\n    <td>MSR VT T-QA Acc.</td>\n  </tr>\n  <tr>\n    <td>-</td>\n    <td>1</td>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n    <td>MdR</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Mean Pooling</td>\n    <td>2</td>\n    <td>13.3</td>\n    <td>37.1</td>\n    <td>50.6</td>\n    <td>10.0</td>\n    <td>35.94</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>14.0</td>\n    <td>38.6</td>\n    <td>51.6</td>\n    <td>10.0</td>\n    <td>35.40</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>13.4</td>\n    <td>36.4</td>\n    <td>49.7</td>\n    <td>11.0</td>\n    <td>35.76</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>15.2</td>\n    <td>39.4</td>\n    <td>53.1</td>\n    <td>9.0</td>\n    <td>35.33</td>\n  </tr>\n  <tr>\n    <td>Max Pooling</td>\n    <td>2</td>\n    <td>8.5</td>\n    <td>28.7</td>\n    <td>42.2</td>\n    <td>14.0</td>\n    <td>36.41</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>12.5</td>\n    <td>33.1</td>\n    <td>46.8</td>\n    <td>12.0</td>\n    <td>36.25</td>\n  </tr>\n  <tr>\n    <td>LogSumExp</td>\n    <td>2</td>\n    <td>15.5</td>\n    <td>38.4</td>\n    <td>52.6</td>\n    <td>9.0</td>\n    <td>36.59</td>\n  </tr>\n  <tr>\n    <td>16</td>\n    <td>17.4</td>\n    <td>41.5</td>\n    <td>55.5</td>\n    <td>8.0</td>\n    <td>36.16</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                60,
+                333,
+                277,
+                400
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3: Impact of #training clips (N_train) and score aggregation function (G). All models use N_test=16 clips for inference.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Sampling Method</td>\n    <td>Ntrain</td>\n    <td>MSR VTT Retrieval</td>\n    <td>MSR VT TQA Acc.</td>\n  </tr>\n  <tr>\n    <td>Dense Uniform</td>\n    <td>16</td>\n    <td>R1</td>\n    <td>15.5</td>\n    <td>39.6</td>\n    <td>55.0</td>\n    <td>9.0</td>\n    <td>35.88</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>1</td>\n    <td>12.7</td>\n    <td>34.5</td>\n    <td>48.8</td>\n    <td>11.0</td>\n    <td>36.24</td>\n  </tr>\n  <tr>\n    <td>Sparse Random</td>\n    <td>2</td>\n    <td>15.5</td>\n    <td>38.4</td>\n    <td>52.6</td>\n    <td>9.0</td>\n    <td>36.59</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>4</td>\n    <td>15.7</td>\n    <td>41.9</td>\n    <td>55.3</td>\n    <td>8.0</td>\n    <td>36.67</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                50,
+                70,
+                285,
+                157
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5: Impact of weight initialization strategy.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Weight Initialization</td>\n    <td>MSR VTT Retrieval</td>\n    <td>MSRV TT-QA Acc.</td>\n  </tr>\n  <tr>\n    <td>CNN</td>\n    <td>transformer</td>\n    <td>R1</td>\n    <td>R5</td>\n    <td>R10</td>\n    <td>MdR</td>\n  </tr>\n  <tr>\n    <td>random</td>\n    <td>random</td>\n    <td>0.3</td>\n    <td>0.4</td>\n    <td>0.9</td>\n    <td>506.0</td>\n    <td>28.05</td>\n  </tr>\n  <tr>\n    <td>random</td>\n    <td>BERT BASE</td>\n    <td>0.0</td>\n    <td>0.2</td>\n    <td>0.7</td>\n    <td>505.0</td>\n    <td>31.72</td>\n  </tr>\n  <tr>\n    <td>TSN，K700</td>\n    <td>BERT BASE</td>\n    <td>5.7</td>\n    <td>22.1</td>\n    <td>33.1</td>\n    <td>23.0</td>\n    <td>35.40</td>\n  </tr>\n  <tr>\n    <td>ImageNet</td>\n    <td>BERT BASE</td>\n    <td>7.2</td>\n    <td>23.3</td>\n    <td>35.6</td>\n    <td>21.0</td>\n    <td>35.01</td>\n  </tr>\n  <tr>\n    <td>grid-feat</td>\n    <td>BERT BASE</td>\n    <td>7.4</td>\n    <td>21.0</td>\n    <td>30.7</td>\n    <td>26.0</td>\n    <td>35.27</td>\n  </tr>\n  <tr>\n    <td>image-text pre-training</td>\n    <td>10.2</td>\n    <td>28.6</td>\n    <td>40.5</td>\n    <td>17.0</td>\n    <td>35.73</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                327,
+                70,
+                525,
+                126
+            ],
+            "caption": "Table 6: Impact of end-to-end training. Table 6: Impact of end-to-end training.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Parameters Trainable?</td>\n    <td>MSRVTT Retrieval</td>\n    <td>MSRVTT-QA Acc.</td>\n  </tr>\n  <tr>\n    <td>Fv</td>\n    <td>Fl</td>\n    <td>R1R5R10MdR</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>8.027.238.917.0</td>\n    <td>35.78</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>9.027.539.418.0</td>\n    <td>35.50</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td>10.228.640.517.0</td>\n    <td>35.73</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                53,
+                79,
+                545,
+                191
+            ],
+            "caption": "",
+            "footnote": "(c) MRSVTT multiple-choice test.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>R1R5R10MdR</td>\n  </tr>\n  <tr>\n    <td>HERO[37] ASR， PT</td>\n    <td>20.547.660.9-</td>\n  </tr>\n  <tr>\n    <td>J SFusion[77]</td>\n    <td>10.231.243.213.0</td>\n  </tr>\n  <tr>\n    <td>HT[46] PT</td>\n    <td>14.940.252.89.0</td>\n  </tr>\n  <tr>\n    <td>Act BERT[83] PT</td>\n    <td>16.342.856.910.0</td>\n  </tr>\n  <tr>\n    <td>HERO[37] PT</td>\n    <td>16.843.457.7-</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT 4x1</td>\n    <td>19.845.157.57.0</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT 8x2</td>\n    <td>22.046.859.96.0</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Method</td>\n    <td>R1R5R10MdR</td>\n  </tr>\n  <tr>\n    <td>CE[41]</td>\n    <td>16.141.1-8.3</td>\n  </tr>\n  <tr>\n    <td>S2VT[65]</td>\n    <td>11.933.6-13.0</td>\n  </tr>\n  <tr>\n    <td>FSE[80]</td>\n    <td>13.936.0-11.0</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT 4x1</td>\n    <td>19.944.556.77.0</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT 8x2</td>\n    <td>20.448.060.86.0</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Method</td>\n    <td>R1R5R10MdR</td>\n  </tr>\n  <tr>\n    <td>CE[41]</td>\n    <td>18.247.7-6.0</td>\n  </tr>\n  <tr>\n    <td>MMT[15]</td>\n    <td>22.754.293.25.0</td>\n  </tr>\n  <tr>\n    <td>MMT[15] PT</td>\n    <td>28.761.494.53.3</td>\n  </tr>\n  <tr>\n    <td>Dense[28]</td>\n    <td>14.032.0-34.0</td>\n  </tr>\n  <tr>\n    <td>FSE[80]</td>\n    <td>18.244.8-7.0</td>\n  </tr>\n  <tr>\n    <td>HSE[80]</td>\n    <td>20.549.3-</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT 4x2*</td>\n    <td>20.948.662.86.0</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT 4x2*(Ntest=20)</td>\n    <td>21.349.063.56.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                52,
+                255,
+                536,
+                367
+            ],
+            "caption": "Table 7: Comparison with state-of-the-art methods on text-to-video retrieval. CLIPBERT models with different training input sampling methods are denoted by \\( N_{train} \\times T \\). We use \\( N_{test}=16 \\) if not otherwise stated. We gray out models that used features other than appearance and motion for a fair comparison, e.g., CE used appearance, scene, motion, face, audio, OCR, ASR features from 11 different models. \\( PT \\) indicates the model is pre-trained on HowTo100M. * denotes models use 2-second clips instead of the default 1-second clips. Table 7: Comparison with state-of-the-art methods on text-to-video retrieval. CLIPBERT models with different training input sampling methods are denoted by \\( N_{train} \\times T \\). We use \\( N_{test}=16 \\) if not otherwise stated. We gray out models that used features other than appearance and motion for a fair comparison, e.g., CE used appearance, scene, motion, face, audio, OCR, ASR features from 11 different models. PT indicates the model is pre-trained on HowTo100M. * denotes models use 2-second clips instead of the default 1-second clips.",
+            "footnote": "The text content from the image is:\n\n(c) ActivityNet Captions val1 set.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Action</td>\n    <td>Transition</td>\n    <td>Frame QA</td>\n  </tr>\n  <tr>\n    <td>ST-VQA[23]</td>\n    <td>60.8</td>\n    <td>67.1</td>\n    <td>49.3</td>\n  </tr>\n  <tr>\n    <td>Co-Memory[17]</td>\n    <td>68.2</td>\n    <td>74.3</td>\n    <td>51.5</td>\n  </tr>\n  <tr>\n    <td>PSAC[38]</td>\n    <td>70.4</td>\n    <td>76.9</td>\n    <td>55.7</td>\n  </tr>\n  <tr>\n    <td>Heterogeneous Memory[12]</td>\n    <td>73.9</td>\n    <td>77.8</td>\n    <td>53.8</td>\n  </tr>\n  <tr>\n    <td>HCRN[31]</td>\n    <td>75.0</td>\n    <td>81.4</td>\n    <td>55.9</td>\n  </tr>\n  <tr>\n    <td>QueST[25]</td>\n    <td>75.9</td>\n    <td>81.0</td>\n    <td>59.7</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT1x1(Ntest=1)</td>\n    <td>82.9</td>\n    <td>87.5</td>\n    <td>59.4</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT1x1</td>\n    <td>82.8</td>\n    <td>87.8</td>\n    <td>60.3</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Accuracy</td>\n  </tr>\n  <tr>\n    <td>ST-VQA[23](by[12])</td>\n    <td>30.9</td>\n  </tr>\n  <tr>\n    <td>Co-Memory[17](by[12])</td>\n    <td>32.0</td>\n  </tr>\n  <tr>\n    <td>AMU[74]</td>\n    <td>32.5</td>\n  </tr>\n  <tr>\n    <td>Heterogeneous Memory[12]</td>\n    <td>33.0</td>\n  </tr>\n  <tr>\n    <td>HCRN[31]</td>\n    <td>35.6</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT4x1</td>\n    <td>37.0</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT8x2</td>\n    <td>37.4</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Accuracy</td>\n  </tr>\n  <tr>\n    <td>SNU VL[78](by[77])</td>\n    <td>65.4</td>\n  </tr>\n  <tr>\n    <td>ST-VQA[23](by[77])</td>\n    <td>66.1</td>\n  </tr>\n  <tr>\n    <td>CT-SAN[79](by[77])</td>\n    <td>66.4</td>\n  </tr>\n  <tr>\n    <td>MLB[27](by[77])</td>\n    <td>76.1</td>\n  </tr>\n  <tr>\n    <td>JS Fusion[77]</td>\n    <td>83.4</td>\n  </tr>\n  <tr>\n    <td>Act BERT[83]PT</td>\n    <td>85.7</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT4x1</td>\n    <td>87.9</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT8x2</td>\n    <td>88.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                350,
+                70,
+                503,
+                178
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 9: Comparison with state-of-the-art methods on VQA.\nG stands for grid features, R stands for region features.\" The text content from the image is as follows:\n\n\"Table 9: Comparison with state-of-the-art methods on VQA.\nG stands for grid features, R stands for region features.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>feature</td>\n    <td>test-dev</td>\n    <td>test-std</td>\n  </tr>\n  <tr>\n    <td>BUT D[1]</td>\n    <td>R</td>\n    <td>65.32</td>\n    <td>65.67</td>\n  </tr>\n  <tr>\n    <td>grid-feat[24]</td>\n    <td>G</td>\n    <td>66.47</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>ViL BERT[44]</td>\n    <td>R</td>\n    <td>70.55</td>\n    <td>70.92</td>\n  </tr>\n  <tr>\n    <td>VL-BERT[58]</td>\n    <td>R</td>\n    <td>71.16</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Pixel-BERT[22]</td>\n    <td>G</td>\n    <td>71.35</td>\n    <td>71.42</td>\n  </tr>\n  <tr>\n    <td>LX MERT[61]</td>\n    <td>R</td>\n    <td>72.42</td>\n    <td>72.54</td>\n  </tr>\n  <tr>\n    <td>UNIT ER[1]</td>\n    <td>R</td>\n    <td>72.70</td>\n    <td>72.91</td>\n  </tr>\n  <tr>\n    <td>Oscar[39]</td>\n    <td>R</td>\n    <td>73.16</td>\n    <td>73.44</td>\n  </tr>\n  <tr>\n    <td>CLIP BERT 1x1</td>\n    <td>G</td>\n    <td>69.08</td>\n    <td>69.43</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page009.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                311,
+                522,
+                543,
+                567
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 10: Training details for text-to-video retrieval tasks. Bsz is short for batch size. Grad-Accu stands for gradient accumulation steps. LR means initial learning rate.\" The text content from the image is as follows:\n\n\"Table 10: Training details for text-to-video retrieval tasks. Bsz is short for batch size. Grad-Accu stands for gradient accumulation steps. LR means initial learning rate.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td># Epochs</td>\n    <td>Bsz x Grad-Accu x#GPUs</td>\n    <td>LR</td>\n  </tr>\n  <tr>\n    <td>MSR VTT</td>\n    <td>20</td>\n    <td>16x1x8</td>\n    <td>5e-5</td>\n  </tr>\n  <tr>\n    <td>D iDeMo</td>\n    <td>20</td>\n    <td>8x4x8</td>\n    <td>5e-5</td>\n  </tr>\n  <tr>\n    <td>ActivityNet Captions</td>\n    <td>80</td>\n    <td>16x2x8</td>\n    <td>5e-5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page009.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                55,
+                200,
+                284,
+                255
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 11: Training details for video question answering tasks.\nBsz is short for batch size.\nGrad-Accu stands for gradient accumulation steps.\nLR means initial learning rate.\" The text content from the image is as follows:\n\n\"Table 11: Training details for video question answering tasks.\nBsz is short for batch size.\nGrad-Accu stands for gradient accumulation steps.\nLR means initial learning rate.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>#Epochs</td>\n    <td>Bsz x Grad-Accu x#GPUs</td>\n    <td>LR</td>\n  </tr>\n  <tr>\n    <td>TGIF-QA Action</td>\n    <td>55</td>\n    <td>32x1x8</td>\n    <td>1e-4</td>\n  </tr>\n  <tr>\n    <td>TGIF-QA Transition</td>\n    <td>15</td>\n    <td>32x1x8</td>\n    <td>1e-4</td>\n  </tr>\n  <tr>\n    <td>TGIF-QA Frame QA</td>\n    <td>15</td>\n    <td>32x1x8</td>\n    <td>1e-4</td>\n  </tr>\n  <tr>\n    <td>MSR VTT-QA</td>\n    <td>10</td>\n    <td>16x1x4</td>\n    <td>5e-5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page010.png"
+        }
+    ]
+}

@@ -1,0 +1,318 @@
+{
+    "total_count": 26,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                406,
+                181,
+                447,
+                207
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\beta \\sum_{t} |r_t|\n```",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\beta \\sum_{t} |r_t|\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                73,
+                352,
+                252,
+                366
+            ],
+            "content": "```latex\nb_t = B(E_t(r_{t-1})), \\quad \\hat{x}_t = D_t(b_t) + \\gamma \\hat{x}_{t-1},\n```",
+            "latex": "```latex\nb_t = B(E_t(r_{t-1})), \\quad \\hat{x}_t = D_t(b_t) + \\gamma \\hat{x}_{t-1},\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                312,
+                483,
+                528,
+                498
+            ],
+            "content": "```latex\n[f, i, o, j]^T = [\\sigma, \\sigma, \\sigma, \\tanh]^T((Wx_t + Uh_{t-1}) + b),\n```",
+            "latex": "```latex\n[f, i, o, j]^T = [\\sigma, \\sigma, \\sigma, \\tanh]^T((Wx_t + Uh_{t-1}) + b),\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                99,
+                369,
+                234,
+                381
+            ],
+            "content": "r _ { t } = x - \\hat { x } _ { t } , \\quad r _ { 0 } = x , \\quad \\hat { x } _ { 0 } = 0",
+            "latex": "r _ { t } = x - \\hat { x } _ { t } , \\quad r _ { 0 } = x , \\quad \\hat { x } _ { 0 } = 0"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                347,
+                515,
+                426,
+                528
+            ],
+            "content": "h _ { t } = o \\odot \\operatorname { t a n h } ( c _ { t } ) ,",
+            "latex": "h _ { t } = o \\odot \\operatorname { t a n h } ( c _ { t } ) ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                348,
+                501,
+                442,
+                513
+            ],
+            "content": "c _ { t } = f \\odot c _ { t - 1 } + i \\odot j ,",
+            "latex": "c _ { t } = f \\odot c _ { t - 1 } + i \\odot j ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                100,
+                369,
+                235,
+                381
+            ],
+            "content": "r _ { t } = x - \\hat { x } _ { t } , \\quad r _ { 0 } = x , \\quad \\hat { x } _ { 0 } = 0",
+            "latex": "r _ { t } = x - \\hat { x } _ { t } , \\quad r _ { 0 } = x , \\quad \\hat { x } _ { 0 } = 0"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                73,
+                352,
+                250,
+                381
+            ],
+            "content": "```latex\nb_t = B(E_t(r_{t-1})), \\quad \\hat{x}_t = D_t(b_t) + \\gamma \\hat{x}_{t-1}, \\\\\nr_t = x - \\hat{x}_t, \\quad r_0 = x, \\quad \\hat{x}_0 = 0\n```",
+            "latex": "```latex\nb_t = B(E_t(r_{t-1})), \\quad \\hat{x}_t = D_t(b_t) + \\gamma \\hat{x}_{t-1}, \\\\\nr_t = x - \\hat{x}_t, \\quad r_0 = x, \\quad \\hat{x}_0 = 0\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                312,
+                483,
+                531,
+                528
+            ],
+            "content": "```latex\n\\begin{align*}\n[f, i, o, j]^T &= [\\sigma, \\sigma, \\sigma, \\tanh]^{T} \\left( (W x_t + U h_{t-1}) + b \\right), \\\\\nc_t &= f \\odot c_{t-1} + i \\odot j, \\\\\nh_t &= o \\odot \\tanh(c_t),\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n[f, i, o, j]^T &= [\\sigma, \\sigma, \\sigma, \\tanh]^{T} \\left( (W x_t + U h_{t-1}) + b \\right), \\\\\nc_t &= f \\odot c_{t-1} + i \\odot j, \\\\\nh_t &= o \\odot \\tanh(c_t),\n\\end{align*}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                110,
+                320,
+                192,
+                334
+            ],
+            "content": "\\tilde { h } _ { t } = ( \\operatorname { R e } h _ { t } , \\operatorname { I m } h _ { t } ) .",
+            "latex": "\\tilde { h } _ { t } = ( \\operatorname { R e } h _ { t } , \\operatorname { I m } h _ { t } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                57,
+                255,
+                266,
+                288
+            ],
+            "content": "```latex\n\\begin{align*}\n[f, i, o, j, r_i, r_o]^T &= \\\\\n&= [\\sigma, \\sigma, \\sigma, \\text{bnd}, \\text{bnd}, \\text{bnd}]^T ((Wx_t + Uh_{t-1}) + b),\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n[f, i, o, j, r_i, r_o]^T &= \\\\\n&= [\\sigma, \\sigma, \\sigma, \\text{bnd}, \\text{bnd}, \\text{bnd}]^T ((Wx_t + Uh_{t-1}) + b),\n\\end{align*}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                94,
+                520,
+                200,
+                534
+            ],
+            "content": "z _ { t } = \\sigma ( W _ { z } x _ { t } + U _ { z } h _ { t - 1 } ) ,",
+            "latex": "z _ { t } = \\sigma ( W _ { z } x _ { t } + U _ { z } h _ { t - 1 } ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                110,
+                305,
+                207,
+                317
+            ],
+            "content": "h _ { t } = o \\odot \\mathrm { b n d } ( r _ { o } \\odot c _ { t } ) ,",
+            "latex": "h _ { t } = o \\odot \\mathrm { b n d } ( r _ { o } \\odot c _ { t } ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                110,
+                291,
+                225,
+                302
+            ],
+            "content": "c _ { t } = f \\odot c _ { t - 1 } + r _ { i } \\odot i \\odot j ,",
+            "latex": "c _ { t } = f \\odot c _ { t - 1 } + r _ { i } \\odot i \\odot j ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                94,
+                536,
+                200,
+                548
+            ],
+            "content": "r _ { t } = \\sigma ( W _ { r } x _ { t } + U _ { r } h _ { t - 1 } ) ,",
+            "latex": "r _ { t } = \\sigma ( W _ { r } x _ { t } + U _ { r } h _ { t - 1 } ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                93,
+                551,
+                242,
+                579
+            ],
+            "content": "```latex\nh_t = (1 - z_t) \\odot h_{t-1} + \n      z_t \\odot \\tanh(Wx_t + U(r_t \\odot h_{t-1})).\n```",
+            "latex": "```latex\nh_t = (1 - z_t) \\odot h_{t-1} + \n      z_t \\odot \\tanh(Wx_t + U(r_t \\odot h_{t-1})).\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                314,
+                252,
+                521,
+                280
+            ],
+            "content": "```latex\nh_t = (1 - z_t) \\odot h_{t-1} + \n      z_t \\odot \\tanh(W x_t + U(r_t \\odot h_{t-1})) + \\alpha_h W_h h_{t-1},\n```",
+            "latex": "```latex\nh_t = (1 - z_t) \\odot h_{t-1} + \n      z_t \\odot \\tanh(W x_t + U(r_t \\odot h_{t-1})) + \\alpha_h W_h h_{t-1},\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                314,
+                282,
+                402,
+                295
+            ],
+            "content": "h _ { t } ^ { o } = h _ { t } + \\alpha _ { x } W _ { o x } x _ { t } .",
+            "latex": "h _ { t } ^ { o } = h _ { t } + \\alpha _ { x } W _ { o x } x _ { t } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                313,
+                252,
+                522,
+                296
+            ],
+            "content": "```latex\nh_t = (1 - z_t) \\odot h_{t-1} + \n      z_t \\odot \\tanh(W x_t + U(r_t \\odot h_{t-1})) + \\alpha_h W_h h_{t-1},\nh_t^o = h_t + \\alpha_x W_{ox} x_t.\n```",
+            "latex": "```latex\nh_t = (1 - z_t) \\odot h_{t-1} + \n      z_t \\odot \\tanh(W x_t + U(r_t \\odot h_{t-1})) + \\alpha_h W_h h_{t-1},\nh_t^o = h_t + \\alpha_x W_{ox} x_t.\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                102,
+                565,
+                241,
+                579
+            ],
+            "content": "z _ { t } \\odot \\operatorname { t a n h } ( W x _ { t } + U ( r _ { t } \\odot h _ { t - 1 } ) ) .",
+            "latex": "z _ { t } \\odot \\operatorname { t a n h } ( W x _ { t } + U ( r _ { t } \\odot h _ { t - 1 } ) ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                93,
+                551,
+                190,
+                563
+            ],
+            "content": "h _ { t } = ( 1 - z _ { t } ) \\odot h _ { t - 1 } +",
+            "latex": "h _ { t } = ( 1 - z _ { t } ) \\odot h _ { t - 1 } +"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                97,
+                365,
+                236,
+                376
+            ],
+            "content": "\\hat { x } _ { t } = \\hat { x } _ { t - 1 } + \\hat { r } _ { t - 1 } , \\quad r _ { t } = x - \\hat { x } _ { t } ,",
+            "latex": "\\hat { x } _ { t } = \\hat { x } _ { t - 1 } + \\hat { r } _ { t - 1 } , \\quad r _ { t } = x - \\hat { x } _ { t } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                54,
+                333,
+                254,
+                347
+            ],
+            "content": "g _ { t } = G ( \\hat { x } _ { t } ) , \\quad b _ { t } = B ( E _ { t } ( r _ { t - 1 } \\odot \\mathrm { Z O H } ( g _ { t - 1 } ) ) ) ,",
+            "latex": "g _ { t } = G ( \\hat { x } _ { t } ) , \\quad b _ { t } = B ( E _ { t } ( r _ { t - 1 } \\odot \\mathrm { Z O H } ( g _ { t - 1 } ) ) ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                105,
+                349,
+                230,
+                362
+            ],
+            "content": "\\hat { r } _ { t - 1 } = D _ { t } ( b _ { t } ) \\oslash \\mathrm { Z O H } ( g _ { t - 1 } ) ,",
+            "latex": "\\hat { r } _ { t - 1 } = D _ { t } ( b _ { t } ) \\oslash \\mathrm { Z O H } ( g _ { t - 1 } ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                135,
+                380,
+                210,
+                392
+            ],
+            "content": "g _ { 0 } = 1 , \\quad r _ { 0 } = x .",
+            "latex": "g _ { 0 } = 1 , \\quad r _ { 0 } = x ."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                55,
+                308,
+                263,
+                335
+            ],
+            "content": "\\sum _ { y , x , d } - c \\log _ { 2 } ( \\hat { P } ( c \\mid T ) ) - ( 1 - c ) \\log _ { 2 } ( 1 - \\hat { P } ( c \\mid T ) )",
+            "latex": "\\sum _ { y , x , d } - c \\log _ { 2 } ( \\hat { P } ( c \\mid T ) ) - ( 1 - c ) \\log _ { 2 } ( 1 - \\hat { P } ( c \\mid T ) )"
+        }
+    ]
+}

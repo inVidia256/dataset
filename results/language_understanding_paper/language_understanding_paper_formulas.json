@@ -1,0 +1,66 @@
+{
+    "total_count": 5,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                226,
+                574,
+                384,
+                587
+            ],
+            "content": "P ( y | x ^ { 1 } , \\ldots , x ^ { m } ) = \\operatorname { s o f t m a x } ( h _ { l } ^ { m } W _ { y } ) .",
+            "latex": "P ( y | x ^ { 1 } , \\ldots , x ^ { m } ) = \\operatorname { s o f t m a x } ( h _ { l } ^ { m } W _ { y } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                233,
+                607,
+                378,
+                634
+            ],
+            "content": "L _ { 2 } ( \\mathcal { C } ) = \\sum _ { ( x , y ) } \\log P ( y | x ^ { 1 } , \\ldots , x ^ { m } ) .",
+            "latex": "L _ { 2 } ( \\mathcal { C } ) = \\sum _ { ( x , y ) } \\log P ( y | x ^ { 1 } , \\ldots , x ^ { m } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                214,
+                418,
+                403,
+                461
+            ],
+            "content": "```latex\nh_0 = UW_e + W_p\nh_l = \\text{transformer\\_block}(h_{l-1}) \\forall i \\in [1, n]\n\\gamma(u) = \\text{softmax}(h_nW_e^T)\n```",
+            "latex": "```latex\nh_0 = UW_e + W_p\nh_l = \\text{transformer\\_block}(h_{l-1}) \\forall i \\in [1, n]\n\\gamma(u) = \\text{softmax}(h_nW_e^T)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                219,
+                322,
+                392,
+                345
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nL_1(\\mathcal{U}) = \\sum_i \\log P(u_i | u_{i-k}, \\ldots, u_{i-1}; \\Theta)\n```\n\nThis will render the formula correctly in a LaTeX document.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nL_1(\\mathcal{U}) = \\sum_i \\log P(u_i | u_{i-k}, \\ldots, u_{i-1}; \\Theta)\n```\n\nThis will render the formula correctly in a LaTeX document."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                247,
+                686,
+                364,
+                699
+            ],
+            "content": "L _ { 3 } ( \\mathcal { C } ) = L _ { 2 } ( \\mathcal { C } ) + \\lambda * L _ { 1 } ( \\mathcal { C } )",
+            "latex": "L _ { 3 } ( \\mathcal { C } ) = L _ { 2 } ( \\mathcal { C } ) + \\lambda * L _ { 1 } ( \\mathcal { C } )"
+        }
+    ]
+}

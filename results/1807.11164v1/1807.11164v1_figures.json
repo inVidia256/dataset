@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                80,
+                40,
+                325,
+                230
+            ],
+            "caption": "Fig. 1: Measurement of accuracy (ImageNet classification on validation set), speed and FLOPs of four network architectures on two hardware platforms with four different levels of computation complexities (see text for details). (a, c) GPU results, batchsize = 8. (b, d) ARM results, batchsize = 1. The best performing algorithm, our proposed ShuffleNet v2, is on the top right region, under all cases.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                33,
+                33,
+                377,
+                134
+            ],
+            "caption": "Fig. 2: Run time decomposition on two representative state-of-the-art network architectures, ShuffleNet v1 [15] (1×, g = 3) and MobileNet v2 [14] (1×).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                70,
+                31,
+                343,
+                191
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Fig. 3: Building blocks of ShuffleNet v1 [15] and this work. (a): the basic ShuffleNet unit; (b) the ShuffleNet unit for spatial down sampling (2×); (c) our basic unit; (d) our unit for spatial down sampling (2×). DWConv: depthwise convolution. GConv: group convolution.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                79,
+                31,
+                334,
+                162
+            ],
+            "caption": "Fig. 4: Illustration of the patterns in feature reuse for DenseNet [6] and ShuffleNet V2. (a) (courtesy of [6]) the average absolute filter weight of convolutional layers in a model. The color of pixel (s, l) encodes the average l1-norm of weights connecting layer s to l. (b) The color of pixel (s, l) means the number of channels directly connecting block s to block l in ShuffleNet v2. All pixel values are normalized to [0, 1].",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page010.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                49,
+                78,
+                364,
+                174
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Appendix Fig. 1: Building blocks used in experiments for guideline 3. (a) 1-fragment. (b) 2-fragment-series. (c) 4-fragment-series. (d) 2-fragment-parallel. (e) 4-fragment-parallel.\" The text content from the image is as follows:\n\n\"Appendix Fig. 1: Building blocks used in experiments for guideline 3. (a) 1-fragment. (b) 2-fragment-series. (c) 4-fragment-series. (d) 2-fragment-parallel. (e) 4-fragment-parallel.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page017.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                55,
+                260,
+                357,
+                459
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Appendix Fig. 2: Building blocks of ShuffleNet v2 with SE/residual.\n(a) ShuffleNet v2 with residual.\n(b) ShuffleNet v2 with SE.\n(c) ShuffleNet v2 with SE and residual.\" The text content from the image is as follows:\n\n\"Appendix Fig. 2: Building blocks of ShuffleNet v2 with SE/residual.\n(a) ShuffleNet v2 with residual.\n(b) ShuffleNet v2 with SE.\n(c) ShuffleNet v2 with SE and residual.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page017.png"
+        }
+    ]
+}

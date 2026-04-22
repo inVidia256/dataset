@@ -1,0 +1,70 @@
+{
+    "total_count": 4,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                106,
+                82,
+                504,
+                174
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html><body>\n<p>Algorithm 1 Training</p> \n <div class=\"table\" style=\"text-align: center\"><table><tbody><tr><td style=\"text-align: left\">1: repeat</td></tr><tr><td style=\"text-align: left\">2: $\\mathbf{x}_{0} \\sim q\\left(\\mathbf{x}_{0}\\right)$</td></tr><tr><td style=\"text-align: left\">3: $t \\sim$ Uniform $\\left(\\{1, \\ldots, T\\}\\right)$</td></tr><tr><td style=\"text-align: left\">4: $\\boldsymbol{\\epsilon} \\sim \\mathcal{N}(0, \\mathrm{I})$</td></tr><tr><td style=\"text-align: left\">5: Take gradient descent step on</td></tr><tr><td style=\"text-align: left\">$\\nabla_{\\theta}\\|\\boldsymbol{\\epsilon}-\\boldsymbol{\\epsilon}_{\\theta}\\left(\\sqrt{\\bar{\\alpha}_{t}} \\mathbf{x}_{0}+\\sqrt{1-\\bar{\\alpha}_{t}} \\boldsymbol{\\epsilon}, t\\right)\\|^{2}$</td></tr><tr><td style=\"text-align: left\">6: until converged</td></tr></tbody></table></div> \n <p>Algorithm 2 Sampling</p> \n <div class=\"table\" style=\"text-align: center\"><table><tbody><tr><td style=\"text-align: left\">1: $\\mathbf{x}_{T} \\sim \\mathcal{N}(0, \\mathbf{I})$</td></tr><tr><td style=\"text-align: left\">2: for $t=T, \\ldots, 1$ do</td></tr><tr><td style=\"text-align: left\">3: $\\quad \\mathbf{z} \\sim \\mathcal{N}(0, \\mathbf{I})$ if $t&gt;1$, else $\\mathbf{z}=0$</td></tr><tr><td style=\"text-align: left\">4: $\\quad \\mathbf{x}_{t-1}=\\frac{1}{\\sqrt{\\alpha_{t}}}\\left(\\mathbf{x}_{t}-\\frac{1-\\alpha_{t}}{\\sqrt{1-\\bar{\\alpha}_{t}}} \\boldsymbol{\\epsilon}_{\\theta}\\left(\\mathbf{x}_{t}, t\\right)\\right)+\\sigma_{t} \\mathbf{z}$</td></tr><tr><td style=\"text-align: left\">5: end for</td></tr><tr><td style=\"text-align: left\">6: return $\\mathbf{x}_{0}$</td></tr></tbody></table></div> \n</body></html>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                106,
+                82,
+                506,
+                261
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: CIFAR10 results. NLL measured in bits/dim.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>IS</td>\n    <td>FID</td>\n    <td>NLL Test(Train)</td>\n  </tr>\n  <tr>\n    <td>Conditional</td>\n  </tr>\n  <tr>\n    <td>EBM[11]</td>\n    <td>8.30</td>\n    <td>37.9</td>\n  </tr>\n  <tr>\n    <td>JEM[17]</td>\n    <td>8.76</td>\n    <td>38.4</td>\n  </tr>\n  <tr>\n    <td>Big GAN[3]</td>\n    <td>9.22</td>\n    <td>14.73</td>\n  </tr>\n  <tr>\n    <td>StyleGAN2+ADA(v1)[29]</td>\n    <td>10.06</td>\n    <td>2.67</td>\n  </tr>\n  <tr>\n    <td>Unconditional</td>\n  </tr>\n  <tr>\n    <td>Diffusion(original)[53]</td>\n    <td></td>\n    <td>≤5.40</td>\n  </tr>\n  <tr>\n    <td>Gated Pixel CNN[59]</td>\n    <td>4.60</td>\n    <td>65.93</td>\n    <td>3.03(2.90)</td>\n  </tr>\n  <tr>\n    <td>Sparse Transformer[7]</td>\n    <td></td>\n    <td>2.80</td>\n  </tr>\n  <tr>\n    <td>Pixell IQN[43]</td>\n    <td>5.29</td>\n    <td>49.46</td>\n  </tr>\n  <tr>\n    <td>EBM[11]</td>\n    <td>6.78</td>\n    <td>38.2</td>\n  </tr>\n  <tr>\n    <td>NCS NV2[56]</td>\n    <td>31.75</td>\n  </tr>\n  <tr>\n    <td>NCS N[55]</td>\n    <td>8.87±0.12</td>\n    <td>25.32</td>\n  </tr>\n  <tr>\n    <td>SNG AN[39]</td>\n    <td>8.22±0.05</td>\n    <td>21.7</td>\n  </tr>\n  <tr>\n    <td>SNG AN-DD LS[4]</td>\n    <td>9.09±0.10</td>\n    <td>15.42</td>\n  </tr>\n  <tr>\n    <td>StyleGAN2+ADA(v1)[29]</td>\n    <td>9.74±0.05</td>\n    <td>3.26</td>\n  </tr>\n  <tr>\n    <td>Ours(L，fixed isotropic Σ)</td>\n    <td>7.67±0.13</td>\n    <td>13.51</td>\n    <td>≤3.70(3.69)</td>\n  </tr>\n  <tr>\n    <td>Ours(Lsimple)</td>\n    <td>9.46±0.11</td>\n    <td>3.17</td>\n    <td>≤3.75(3.72)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                159,
+                152,
+                451,
+                236
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: FID scores for LSUN 256 × 256 datasets\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>LSUN Bedroom</td>\n    <td>LSUN Church</td>\n    <td>LSUN Cat</td>\n  </tr>\n  <tr>\n    <td>Progressive GAN[27]</td>\n    <td>8.34</td>\n    <td>6.42</td>\n    <td>37.52</td>\n  </tr>\n  <tr>\n    <td>StyleGAN[28]</td>\n    <td>2.65</td>\n    <td>4.21*</td>\n    <td>8.53*</td>\n  </tr>\n  <tr>\n    <td>StyleGAN2[30]</td>\n    <td>-</td>\n    <td>3.86</td>\n    <td>6.93</td>\n  </tr>\n  <tr>\n    <td>Ours(Lsimple)</td>\n    <td>6.36</td>\n    <td>7.89</td>\n    <td>19.75</td>\n  </tr>\n  <tr>\n    <td>Ours(Lsimple，large)</td>\n    <td>4.90</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page013.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                135,
+                336,
+                475,
+                469
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Unconditional CIFAR10 test set rate-distortion values (accompanies Fig. 5)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Reverse process time(T-t+1)</td>\n    <td>Rate(bits/dim)</td>\n    <td>Distortion(RMSE[0，255])</td>\n  </tr>\n  <tr>\n    <td>1000</td>\n    <td>1.77581</td>\n    <td>0.95136</td>\n  </tr>\n  <tr>\n    <td>900</td>\n    <td>0.11994</td>\n    <td>12.02277</td>\n  </tr>\n  <tr>\n    <td>800</td>\n    <td>0.05415</td>\n    <td>18.47482</td>\n  </tr>\n  <tr>\n    <td>700</td>\n    <td>0.02866</td>\n    <td>24.43656</td>\n  </tr>\n  <tr>\n    <td>600</td>\n    <td>0.01507</td>\n    <td>30.80948</td>\n  </tr>\n  <tr>\n    <td>500</td>\n    <td>0.00716</td>\n    <td>38.03236</td>\n  </tr>\n  <tr>\n    <td>400</td>\n    <td>0.00282</td>\n    <td>46.12765</td>\n  </tr>\n  <tr>\n    <td>300</td>\n    <td>0.00081</td>\n    <td>54.18826</td>\n  </tr>\n  <tr>\n    <td>200</td>\n    <td>0.00013</td>\n    <td>60.97170</td>\n  </tr>\n  <tr>\n    <td>100</td>\n    <td>0.00000</td>\n    <td>67.60125</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page013.png"
+        }
+    ]
+}

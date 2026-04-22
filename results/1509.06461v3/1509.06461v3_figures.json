@@ -1,0 +1,62 @@
+{
+    "total_count": 4,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                58,
+                55,
+                286,
+                139
+            ],
+            "caption": "Figure 1: The orange bars show the bias in a single Q-learning update when the action values are \\(Q(s, a) = V_*(s) + \\epsilon_a\\) and the errors \\(\\{\\epsilon_a\\}_{a=1}^m\\) are independent standard normal random variables. The second set of action values \\(Q'\\), used for the blue bars, was generated identically and independently. All bars are the average of 100 repetitions.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                94,
+                52,
+                503,
+                223
+            ],
+            "caption": "Figure 2: Illustration of overestimations during learning. In each state (x-axis), there are 10 actions. The left column shows the true values \\( V_*(s) \\) (purple line). All true action values are defined by \\( Q_*(s, a) = V_*(s) \\). The green line shows estimated values \\( Q(s, a) \\) for one action as a function of state, fitted to the true value at several sampled states (green dots). The middle column plots show all the estimated values (green), and the maximum of these values (dashed black). The maximum is higher than the true value (purple, left plot) almost everywhere. The right column plots shows the difference in orange. The blue line in the right plots is the estimate used by Double Q-learning with a second set of samples for each state. The blue line is much closer to zero, indicating less bias. The three rows correspond to different true functions (left, purple) or capacities of the fitted function (left, green). (Details in the text)",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                130,
+                50,
+                482,
+                300
+            ],
+            "caption": "Figure 3: The top and middle rows show value estimates by DQN (orange) and Double DQN (blue) on six Atari games. The results are obtained by running DQN and Double DQN with 6 different random seeds with the hyper-parameters employed by Mnih et al. (2015). The darker line shows the median over seeds and we average the two extreme values to obtain the shaded area (i.e., 10% and 90% quantiles with linear interpolation). The straight horizontal orange (for DQN) and blue (for Double DQN) lines in the top row are computed by running the corresponding agents after learning concluded, and averaging the actual discounted return obtained from each visited state. These straight lines would match the learning curves at the right side of the plots if there is no bias. The middle row shows the value estimates (in log scale) for two games in which DQN’s overoptimism is quite extreme. The bottom row shows the detrimental effect of this on the score achieved by the agent as it is evaluated during training: the scores drop when the overestimations begin. Learning with Double DQN is much more stable.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                325,
+                59,
+                540,
+                451
+            ],
+            "caption": "Figure 4: Normalized scores on 57 Atari games, tested for 100 episodes per game with human starts. Compared to Mnih et al. (2015), eight games additional games were tested. These are indicated with stars and a bold font.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        }
+    ]
+}

@@ -1,0 +1,210 @@
+{
+    "total_count": 17,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                375,
+                461,
+                455,
+                476
+            ],
+            "content": "h _ { j } = f ( h _ { j - 1 } , s ) ,",
+            "latex": "h _ { j } = f ( h _ { j - 1 } , s ) ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                340,
+                385,
+                490,
+                401
+            ],
+            "content": "p \\left( y _ { j } | y _ { < j } , s \\right) = \\operatorname { s o f t m a x } \\left( g \\left( h _ { j } \\right) \\right)",
+            "latex": "p \\left( y _ { j } | y _ { < j } , s \\right) = \\operatorname { s o f t m a x } \\left( g \\left( h _ { j } \\right) \\right)"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                97,
+                635,
+                264,
+                658
+            ],
+            "content": "```latex\n\\log p(y|x) = \\sum_{j=1}^{m} \\log p(y_j | y_{<j}, s)\n```",
+            "latex": "```latex\n\\log p(y|x) = \\sum_{j=1}^{m} \\log p(y_j | y_{<j}, s)\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                97,
+                634,
+                264,
+                658
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log p(y|x) = \\sum_{j=1}^{m} \\log p(y_j | y_{<j}, s)\n```\n\nThis LaTeX code will produce the same mathematical expression shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log p(y|x) = \\sum_{j=1}^{m} \\log p(y_j | y_{<j}, s)\n```\n\nThis LaTeX code will produce the same mathematical expression shown in the image."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                340,
+                385,
+                489,
+                401
+            ],
+            "content": "p \\left( y _ { j } | y _ { < j } , s \\right) = \\operatorname { s o f t m a x } \\left( g \\left( h _ { j } \\right) \\right)",
+            "latex": "p \\left( y _ { j } | y _ { < j } , s \\right) = \\operatorname { s o f t m a x } \\left( g \\left( h _ { j } \\right) \\right)"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                115,
+                110,
+                246,
+                133
+            ],
+            "content": "J _ { t } = \\sum _ { ( x , y ) \\in \\mathbb { D } } - \\log p ( y | x )",
+            "latex": "J _ { t } = \\sum _ { ( x , y ) \\in \\mathbb { D } } - \\log p ( y | x )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                127,
+                461,
+                233,
+                478
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\tilde{h}_t = \\tanh(W_c[c_t; h_t])\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\tilde{h}_t = \\tanh(W_c[c_t; h_t])\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                318,
+                511,
+                420,
+                525
+            ],
+            "content": "\\boldsymbol { a } _ { t } = \\operatorname { s o f t m a x } ( \\boldsymbol { W } _ { a } \\boldsymbol { h } _ { t } )",
+            "latex": "\\boldsymbol { a } _ { t } = \\operatorname { s o f t m a x } ( \\boldsymbol { W } _ { a } \\boldsymbol { h } _ { t } )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                107,
+                534,
+                251,
+                550
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\np(y_t | y_{<t}, x) = \\text{softmax}(\\mathbf{W}_s \\tilde{\\mathbf{h}}_t)\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\np(y_t | y_{<t}, x) = \\text{softmax}(\\mathbf{W}_s \\tilde{\\mathbf{h}}_t)\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                102,
+                713,
+                257,
+                764
+            ],
+            "content": "```latex\n\\boldsymbol{a}_t(s) = \\text{align}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s)\n= \\frac{\\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s) \\right)}{\\sum_{s'} \\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_{s'}) \\right)}\n```",
+            "latex": "```latex\n\\boldsymbol{a}_t(s) = \\text{align}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s)\n= \\frac{\\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s) \\right)}{\\sum_{s'} \\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_{s'}) \\right)}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                304,
+                383,
+                518,
+                435
+            ],
+            "content": "```latex\n\\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s) = \n\\begin{cases}\n\\boldsymbol{h}_t^\\top \\overline{\\boldsymbol{h}}_s & \\text{dot} \\\\\n\\boldsymbol{h}_t^\\top W_a \\overline{\\boldsymbol{h}}_s & \\text{gene} \\\\\n\\boldsymbol{v}_a^\\top \\tanh(W_a[\\boldsymbol{h}_t; \\overline{\\boldsymbol{h}}_s]) & \\text{conc}\n\\end{cases}\n```",
+            "latex": "```latex\n\\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s) = \n\\begin{cases}\n\\boldsymbol{h}_t^\\top \\overline{\\boldsymbol{h}}_s & \\text{dot} \\\\\n\\boldsymbol{h}_t^\\top W_a \\overline{\\boldsymbol{h}}_s & \\text{gene} \\\\\n\\boldsymbol{v}_a^\\top \\tanh(W_a[\\boldsymbol{h}_t; \\overline{\\boldsymbol{h}}_s]) & \\text{conc}\n\\end{cases}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                115,
+                731,
+                257,
+                764
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n= \\frac{\\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\bar{\\boldsymbol{h}}_s) \\right)}{\\sum_{s'} \\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\bar{\\boldsymbol{h}}_{s'}) \\right)}\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n= \\frac{\\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\bar{\\boldsymbol{h}}_s) \\right)}{\\sum_{s'} \\exp \\left( \\text{score}(\\boldsymbol{h}_t, \\bar{\\boldsymbol{h}}_{s'}) \\right)}\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                304,
+                383,
+                523,
+                435
+            ],
+            "content": "```latex\n\\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s) = \n\\begin{cases}\n\\boldsymbol{h}_t^\\top \\overline{\\boldsymbol{h}}_s & \\text{dot} \\\\\n\\boldsymbol{h}_t^\\top W_a \\overline{\\boldsymbol{h}}_s & \\text{general} \\\\\n\\boldsymbol{v}_a^\\top \\tanh(W_a[\\boldsymbol{h}_t; \\overline{\\boldsymbol{h}}_s]) & \\text{concat}\n\\end{cases}\n```",
+            "latex": "```latex\n\\text{score}(\\boldsymbol{h}_t, \\overline{\\boldsymbol{h}}_s) = \n\\begin{cases}\n\\boldsymbol{h}_t^\\top \\overline{\\boldsymbol{h}}_s & \\text{dot} \\\\\n\\boldsymbol{h}_t^\\top W_a \\overline{\\boldsymbol{h}}_s & \\text{general} \\\\\n\\boldsymbol{v}_a^\\top \\tanh(W_a[\\boldsymbol{h}_t; \\overline{\\boldsymbol{h}}_s]) & \\text{concat}\n\\end{cases}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                461,
+                512,
+                500,
+                524
+            ],
+            "content": "\\mathrm { l o c a t i o n }",
+            "latex": "\\mathrm { l o c a t i o n }"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                102,
+                714,
+                203,
+                729
+            ],
+            "content": "a _ { t } ( s ) = \\operatorname { a l i g n } ( h _ { t } , \\bar { h } _ { s } )",
+            "latex": "a _ { t } ( s ) = \\operatorname { a l i g n } ( h _ { t } , \\bar { h } _ { s } )"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                333,
+                461,
+                497,
+                478
+            ],
+            "content": "p _ { t } = S \\cdot \\operatorname { s i g m o i d } ( \\boldsymbol { v } _ { p } ^ { \\top } \\operatorname { t a n h } ( \\boldsymbol { W } _ { p } \\boldsymbol { h } _ { t } ) ) ,",
+            "latex": "p _ { t } = S \\cdot \\operatorname { s i g m o i d } ( \\boldsymbol { v } _ { p } ^ { \\top } \\operatorname { t a n h } ( \\boldsymbol { W } _ { p } \\boldsymbol { h } _ { t } ) ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                312,
+                569,
+                499,
+                599
+            ],
+            "content": "```latex\n\\boldsymbol{a}_t(s) = \\text{align}(\\boldsymbol{h}_t, \\bar{\\boldsymbol{h}}_s) \\exp \\left( -\\frac{(s-p_t)^2}{2\\sigma^2} \\right)\n```",
+            "latex": "```latex\n\\boldsymbol{a}_t(s) = \\text{align}(\\boldsymbol{h}_t, \\bar{\\boldsymbol{h}}_s) \\exp \\left( -\\frac{(s-p_t)^2}{2\\sigma^2} \\right)\n```"
+        }
+    ]
+}

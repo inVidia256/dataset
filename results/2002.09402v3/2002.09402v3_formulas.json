@@ -1,0 +1,54 @@
+{
+    "total_count": 4,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                233,
+                427,
+                377,
+                442
+            ],
+            "content": "```latex\n\\mathbf{z}_t^l = \\text{Attn}(\\mathbf{x}_t^l, \\{\\mathbf{x}_{t-\\tau}^l, \\ldots, \\mathbf{x}_{t-1}^l\\}).\n```",
+            "latex": "```latex\n\\mathbf{z}_t^l = \\text{Attn}(\\mathbf{x}_t^l, \\{\\mathbf{x}_{t-\\tau}^l, \\ldots, \\mathbf{x}_{t-1}^l\\}).\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                247,
+                287,
+                364,
+                319
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{m}_t = \\sum_{l=0}^{L} \\text{Softmax}(w^l) \\mathbf{x}_t^l,\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbf{m}_t = \\sum_{l=0}^{L} \\text{Softmax}(w^l) \\mathbf{x}_t^l,\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                229,
+                253,
+                381,
+                267
+            ],
+            "content": "\\mathbf { z } _ { t } ^ { l } = \\mathrm { A t t n } ( \\mathbf { x } _ { t } ^ { l } , \\{ \\mathbf { m } _ { t - \\tau } , \\ldots , \\mathbf { m } _ { t - 1 } \\} ) ,",
+            "latex": "\\mathbf { z } _ { t } ^ { l } = \\mathrm { A t t n } ( \\mathbf { x } _ { t } ^ { l } , \\{ \\mathbf { m } _ { t - \\tau } , \\ldots , \\mathbf { m } _ { t - 1 } \\} ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                225,
+                587,
+                385,
+                601
+            ],
+            "content": "```latex\n\\mathbf{k}_t^l = \\mathbf{k}_t = W_k \\mathbf{m}_t \\quad \\mathbf{v}_t^l = \\mathbf{v}_t = W_v \\mathbf{m}_t.\n```",
+            "latex": "```latex\n\\mathbf{k}_t^l = \\mathbf{k}_t = W_k \\mathbf{m}_t \\quad \\mathbf{v}_t^l = \\mathbf{v}_t = W_v \\mathbf{m}_t.\n```"
+        }
+    ]
+}

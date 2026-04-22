@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                109,
+                87,
+                502,
+                148
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: A list of the different tasks and datasets used in our experiments\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Task</td>\n    <td>Datasets</td>\n  </tr>\n  <tr>\n    <td>Natural language inference</td>\n    <td>SNLI[5]， Multi NLI[66]， Question NLI[64]， RTE[4]， Sci Tail[25]</td>\n  </tr>\n  <tr>\n    <td>Question Answering</td>\n    <td>RACE[30]， Story Cloze[40]</td>\n  </tr>\n  <tr>\n    <td>Sentence similarity</td>\n    <td>MSR Paraphrase Corpus[14]， Quora Question Pairs[9]， STS Benchmark[6]</td>\n  </tr>\n  <tr>\n    <td>Classification</td>\n    <td>Stanford Sentiment Treebank-2[54]， CoLA[65]</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                105,
+                122,
+                505,
+                235
+            ],
+            "caption": "Table 2: Experimental results on natural language inference tasks, comparing our model with current state-of-the-art methods. 5x indicates an ensemble of 5 models. All datasets use accuracy as the evaluation metric.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>MNLI-m</td>\n    <td>MNLI-mm</td>\n    <td>SNLI</td>\n    <td>Sci Tail</td>\n    <td>QNLI</td>\n    <td>RTE</td>\n  </tr>\n  <tr>\n    <td>ESIM+ELMo[44](5x)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>89.3</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>CAFE[58](5x)</td>\n    <td>80.2</td>\n    <td>79.0</td>\n    <td>89.3</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Stochastic Answer Network[35](3x)</td>\n    <td>80.6</td>\n    <td>80.1</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>CAFE[58]</td>\n    <td>78.7</td>\n    <td>77.9</td>\n    <td>88.5</td>\n    <td>83.3</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Gen Sen[64]</td>\n    <td>71.4</td>\n    <td>71.3</td>\n    <td>-</td>\n    <td>-</td>\n    <td>82.3</td>\n    <td>59.2</td>\n  </tr>\n  <tr>\n    <td>Multi-task BiLSTM+Attn[64]</td>\n    <td>72.2</td>\n    <td>72.1</td>\n    <td>-</td>\n    <td>-</td>\n    <td>82.1</td>\n    <td>61.7</td>\n  </tr>\n  <tr>\n    <td>Finetuned Transformer LM(ours)</td>\n    <td>82.1</td>\n    <td>81.4</td>\n    <td>89.9</td>\n    <td>88.3</td>\n    <td>88.1</td>\n    <td>56.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                105,
+                289,
+                502,
+                393
+            ],
+            "caption": "Table 3: Results on question answering and commonsense reasoning, comparing our model with current state-of-the-art methods.. 9x means an ensemble of 9 models.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Story Cloze</td>\n    <td>RACE-m</td>\n    <td>RACE-h</td>\n    <td>RACE</td>\n  </tr>\n  <tr>\n    <td>val-LS-skip[55]</td>\n    <td>76.5</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Hidden Coherence Model[7]</td>\n    <td>77.6</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Dynamic Fusion Net[67](9x)</td>\n    <td>-</td>\n    <td>55.6</td>\n    <td>49.4</td>\n    <td>51.2</td>\n  </tr>\n  <tr>\n    <td>BiAttention MRU[59](9x)</td>\n    <td>-</td>\n    <td>60.2</td>\n    <td>50.3</td>\n    <td>53.3</td>\n  </tr>\n  <tr>\n    <td>Finetuned Transformer LM(ours)</td>\n    <td>86.5</td>\n    <td>62.9</td>\n    <td>57.4</td>\n    <td>59.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                105,
+                117,
+                502,
+                253
+            ],
+            "caption": "Table 4: Semantic similarity and classification results, comparing our model with current state-of-the-art methods. All task evaluations in this table were done using the GLUE benchmark. (mc= Mathews correlation, acc=Accuracy, pc=Pearson correlation) Table 4: Semantic similarity and classification results, comparing our model with current state-of-the-art methods. All task evaluations in this table were done using the GLUE benchmark. (mc = Mathews correlation, acc = Accuracy, pc = Pearson correlation)",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Classification</td>\n    <td>Semantic Similarity</td>\n    <td>GLUE</td>\n  </tr>\n  <tr>\n    <td>CoLA(mc)</td>\n    <td>SST2(acc)</td>\n    <td>MRPC(F1)</td>\n    <td>STS B(pc)</td>\n    <td>QQP(FI)</td>\n  </tr>\n  <tr>\n    <td>Sparse byte mLSTM[16]</td>\n    <td>-</td>\n    <td>93.2</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>TF-KLD[23]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>86.0</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>EC NUmixed ensemble)[60]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>81.0</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Single-task BiLSTM+ELMo+Attn[64]</td>\n    <td>35.0</td>\n    <td>90.2</td>\n    <td>80.2</td>\n    <td>55.5</td>\n    <td>66.1</td>\n    <td>64.8</td>\n  </tr>\n  <tr>\n    <td>Multi-task BiLSTM+ELMo+Attn[64]</td>\n    <td>18.9</td>\n    <td>91.6</td>\n    <td>83.5</td>\n    <td>72.8</td>\n    <td>63.3</td>\n    <td>68.9</td>\n  </tr>\n  <tr>\n    <td>Finetuned Transformer LM(ours)</td>\n    <td>45.4</td>\n    <td>91.3</td>\n    <td>82.3</td>\n    <td>82.0</td>\n    <td>70.3</td>\n    <td>72.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                106,
+                104,
+                503,
+                174
+            ],
+            "caption": "Table 5: Analysis of various model ablations on different tasks. Avg. score is a unweighted average of all the results. (mc= Mathews correlation, acc=Accuracy, pc=Pearson correlation)",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Avg.Score</td>\n    <td>CoLA(mc)</td>\n    <td>SST2(acc)</td>\n    <td>MRPC(F1)</td>\n    <td>STS B(pc)</td>\n    <td>QQP(F1)</td>\n    <td>MNLI(acc)</td>\n    <td>QNLI(acc)</td>\n    <td>RTE(acc)</td>\n  </tr>\n  <tr>\n    <td>Transformer w/aux LM(full)</td>\n    <td>74.7</td>\n    <td>45.4</td>\n    <td>91.3</td>\n    <td>82.3</td>\n    <td>82.0</td>\n    <td>70.3</td>\n    <td>81.8</td>\n    <td>88.1</td>\n    <td>56.0</td>\n  </tr>\n  <tr>\n    <td>Transformer wo pre-training</td>\n    <td>59.9</td>\n    <td>18.9</td>\n    <td>84.0</td>\n    <td>79.4</td>\n    <td>30.9</td>\n    <td>65.5</td>\n    <td>75.7</td>\n    <td>71.2</td>\n    <td>53.8</td>\n  </tr>\n  <tr>\n    <td>Transformer wo aux LM</td>\n    <td>75.0</td>\n    <td>47.9</td>\n    <td>92.0</td>\n    <td>84.9</td>\n    <td>83.2</td>\n    <td>69.8</td>\n    <td>81.1</td>\n    <td>86.9</td>\n    <td>54.4</td>\n  </tr>\n  <tr>\n    <td>LSTM waux LM</td>\n    <td>69.1</td>\n    <td>30.3</td>\n    <td>90.5</td>\n    <td>83.2</td>\n    <td>71.8</td>\n    <td>68.1</td>\n    <td>73.7</td>\n    <td>81.1</td>\n    <td>54.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        }
+    ]
+}

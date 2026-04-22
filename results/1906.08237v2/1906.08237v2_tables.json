@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                106,
+                237,
+                507,
+                304
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is as follows:\n\n\"Table 1: Fair comparison with BERT. All models are trained using the same data and hyperparameters as in BERT. We use the best of 3 BERT variants for comparison; i.e., the original BERT, BERT with whole word masking, and BERT without next sentence prediction.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>SQuAD 1.1SQuAD 2.0RACEMNLIQNLIQQPRTERTSSST-2MRPCCoLASTS-B</td>\n  </tr>\n  <tr>\n    <td>BERT-Large(Best of 3)</td>\n    <td>86.7/92.882.8/85.575.187.393.091.474.094.088.763.790.2</td>\n  </tr>\n  <tr>\n    <td>XLLNet-Largewikibooks</td>\n    <td>88.2/94.085.1/87.877.488.493.991.881.294.490.065.291.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                119,
+                455,
+                490,
+                532
+            ],
+            "caption": "",
+            "footnote": "Table 2: Comparison with state-of-the-art results on the test set of RACE, a reading comprehension task, and on ClueWeb09-B, a document ranking task. * indicates using ensembles. † indicates our implementations. “Middle” and “High” in RACE are two subsets representing middle and high school difficulty levels. All BERT, RoBERTa, and XLNet results are obtained with a 24-layer architecture with similar model sizes (aka BERT-Large). Table 2: Comparison with state-of-the-art results on the test set of RACE, a reading comprehension task, and on ClueWeb09-B, a document ranking task. * indicates using ensembles. † indicates our implementations. “Middle” and “High” in RACE are two subsets representing middle and high school difficulty levels. All BERT, RoBERTa, and XLNet results are obtained with a 24-layer architecture with similar model sizes (aka BERT-Large).",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>RACE</td>\n    <td>Accuracy</td>\n    <td>Middle</td>\n    <td>High</td>\n    <td>Model</td>\n    <td>NDCG@20</td>\n    <td>ERR@20</td>\n  </tr>\n  <tr>\n    <td>GPT[28]</td>\n    <td>59.0</td>\n    <td>62.9</td>\n    <td>57.4</td>\n    <td>DR MM[13]</td>\n    <td>24.3</td>\n    <td>13.8</td>\n  </tr>\n  <tr>\n    <td>BERT[25]</td>\n    <td>72.0</td>\n    <td>76.6</td>\n    <td>70.1</td>\n    <td>KN RM[8]</td>\n    <td>26.9</td>\n    <td>14.9</td>\n  </tr>\n  <tr>\n    <td>BERT+DC MN*[38]</td>\n    <td>74.1</td>\n    <td>79.5</td>\n    <td>71.8</td>\n    <td>Conv[8]</td>\n    <td>28.7</td>\n    <td>18.1</td>\n  </tr>\n  <tr>\n    <td>RoBERTa[21]</td>\n    <td>83.2</td>\n    <td>86.5</td>\n    <td>81.8</td>\n    <td>BER T†</td>\n    <td>30.53</td>\n    <td>18.67</td>\n  </tr>\n  <tr>\n    <td>XLNet</td>\n    <td>85.4</td>\n    <td>88.6</td>\n    <td>84.0</td>\n    <td>XLNet</td>\n    <td>31.10</td>\n    <td>20.28</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                162,
+                70,
+                449,
+                177
+            ],
+            "caption": "",
+            "footnote": "Table 3: Results on SQuAD, a reading comprehension dataset. † marks our runs with the official code. * indicates ensembles. ‡: We are not able to obtain the test results of our latest model on SQuAD1.1 from the organizers after submitting our result for more than one month, and thus report the results of an older version for the SQuAD1.1 test set. Table 3: Results on SQuAD, a reading comprehension dataset. † marks our runs with the official code. * indicates ensembles. ‡: We are not able to obtain the test results of our latest model on SQuAD1.1 from the organizers after submitting our result for more than one month, and thus report the results of an older version for the SQuAD1.1 test set. Table 3: Results on SQuAD, a reading comprehension dataset. † marks our runs with the official code. * indicates ensembles. ‡: We are not able to obtain the test results of our latest model on SQuAD1.1 from the organizers after submitting our result for more than one month, and thus report the results of an older version for the SQuAD1.1 test set.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>SQuAD 2.0</td>\n    <td>EM</td>\n    <td>F1</td>\n    <td>SQuAD 1.1</td>\n    <td>EM</td>\n    <td>F1</td>\n  </tr>\n  <tr>\n    <td>Dev set results(single model)</td>\n    <td>BERT[10]</td>\n    <td>78.98</td>\n    <td>81.77</td>\n    <td>BERT+ [10]</td>\n    <td>84.1</td>\n    <td>90.9</td>\n  </tr>\n  <tr>\n    <td>RoBERTa[21]</td>\n    <td>86.5</td>\n    <td>89.4</td>\n    <td>RoBERTa[21]</td>\n    <td>88.9</td>\n    <td>94.6</td>\n  </tr>\n  <tr>\n    <td>XLNet</td>\n    <td>87.9</td>\n    <td>90.6</td>\n    <td>XLNet</td>\n    <td>89.7</td>\n    <td>95.1</td>\n  </tr>\n  <tr>\n    <td>Test set results on leaderboard(single model， as of Dec 14， 2019)</td>\n    <td>BERT[10]</td>\n    <td>80.005</td>\n    <td>83.061</td>\n    <td>BERT[10]</td>\n    <td>85.083</td>\n    <td>91.835</td>\n  </tr>\n  <tr>\n    <td>RoBERTa[21]</td>\n    <td>86.820</td>\n    <td>89.795</td>\n    <td>BERT*[10]</td>\n    <td>87.433</td>\n    <td>93.294</td>\n  </tr>\n  <tr>\n    <td>XLNet</td>\n    <td>87.926</td>\n    <td>90.689</td>\n    <td>XLNet</td>\n    <td>89.898</td>\n    <td>95.080</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                118,
+                239,
+                491,
+                325
+            ],
+            "caption": "",
+            "footnote": "Table 4: Comparison with state-of-the-art error rates on the test sets of several text classification datasets. All BERT and XLNet results are obtained with a 24-layer architecture with similar model sizes (aka BERT-Large). Table 4: Comparison with state-of-the-art error rates on the test sets of several text classification datasets. All BERT and XLNet results are obtained with a 24-layer architecture with similar model sizes (aka BERT-Large).",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>IMDB</td>\n    <td>Yelp-2</td>\n    <td>Yelp-5</td>\n    <td>DBpedia</td>\n    <td>AG</td>\n    <td>Amazon-2</td>\n    <td>Amazon-5</td>\n  </tr>\n  <tr>\n    <td>CNN[15]</td>\n    <td>-</td>\n    <td>2.90</td>\n    <td>32.39</td>\n    <td>0.84</td>\n    <td>6.57</td>\n    <td>3.79</td>\n    <td>36.24</td>\n  </tr>\n  <tr>\n    <td>DPC NN[15]</td>\n    <td>-</td>\n    <td>2.64</td>\n    <td>30.58</td>\n    <td>0.88</td>\n    <td>6.87</td>\n    <td>3.32</td>\n    <td>34.81</td>\n  </tr>\n  <tr>\n    <td>Mixed VAT[31，23]</td>\n    <td>4.32</td>\n    <td>-</td>\n    <td>-</td>\n    <td>0.70</td>\n    <td>4.95</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>ULM FiT[14]</td>\n    <td>4.6</td>\n    <td>2.16</td>\n    <td>29.98</td>\n    <td>0.80</td>\n    <td>5.01</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BERT[35]</td>\n    <td>4.51</td>\n    <td>1.89</td>\n    <td>29.32</td>\n    <td>0.64</td>\n    <td>-</td>\n    <td>2.63</td>\n    <td>34.17</td>\n  </tr>\n  <tr>\n    <td>XL Net</td>\n    <td>3.20</td>\n    <td>1.37</td>\n    <td>27.05</td>\n    <td>0.60</td>\n    <td>4.45</td>\n    <td>2.11</td>\n    <td>31.67</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page008.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                106,
+                367,
+                507,
+                474
+            ],
+            "caption": "",
+            "footnote": "Table 5: Results on GLUE. * indicates using ensembles, and † denotes single-task results in a multi-task row. All dev results are the median of 10 runs. The upper section shows direct comparison on dev data and the lower section shows comparison with state-of-the-art results on the public leaderboard.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>MNLI</td>\n    <td>Q NLI</td>\n    <td>QQP</td>\n    <td>RTE</td>\n    <td>SST-2</td>\n    <td>MRPC</td>\n    <td>CoLA</td>\n    <td>STS-B</td>\n    <td>WNLI</td>\n  </tr>\n  <tr>\n    <td>Single-task single models on dev</td>\n  </tr>\n  <tr>\n    <td>BERT[2]</td>\n    <td>86.6/-</td>\n    <td>92.3</td>\n    <td>91.3</td>\n    <td>70.4</td>\n    <td>93.2</td>\n    <td>88.0</td>\n    <td>60.6</td>\n    <td>90.0</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>RoBERTa[21]</td>\n    <td>90.2/90.2</td>\n    <td>94.7</td>\n    <td>92.2</td>\n    <td>86.6</td>\n    <td>96.4</td>\n    <td>90.9</td>\n    <td>68.0</td>\n    <td>92.4</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>XLNet</td>\n    <td>90.8/90.8</td>\n    <td>94.9</td>\n    <td>92.3</td>\n    <td>85.9</td>\n    <td>97.0</td>\n    <td>90.8</td>\n    <td>69.0</td>\n    <td>92.5</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Multi-task ensembles on test(from leaderboard as of Oct 28， 2019)</td>\n  </tr>\n  <tr>\n    <td>MT-DNN*[20]</td>\n    <td>87.9/87.4</td>\n    <td>96.0</td>\n    <td>89.9</td>\n    <td>86.3</td>\n    <td>96.5</td>\n    <td>92.7</td>\n    <td>68.4</td>\n    <td>91.1</td>\n    <td>89.0</td>\n  </tr>\n  <tr>\n    <td>RoBERTa*[21]</td>\n    <td>90.8/90.2</td>\n    <td>98.9</td>\n    <td>90.2</td>\n    <td>88.2</td>\n    <td>96.7</td>\n    <td>92.3</td>\n    <td>67.8</td>\n    <td>92.2</td>\n    <td>89.0</td>\n  </tr>\n  <tr>\n    <td>XLNet*</td>\n    <td>90.9/90.9</td>\n    <td>99.0</td>\n    <td>90.4</td>\n    <td>88.5</td>\n    <td>97.1</td>\n    <td>92.9</td>\n    <td>70.2</td>\n    <td>93.0</td>\n    <td>92.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                151,
+                147,
+                459,
+                260
+            ],
+            "caption": "",
+            "footnote": "The results of BERT on RACE are taken from [38]. We run BERT on the other datasets using the official implementation and the same hyperparameter search space as XLNet. K is a hyperparameter to control the optimization difficulty (see Section 2.3).",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>#</td>\n    <td>Model</td>\n    <td>RACE</td>\n    <td>SQuAD2.0</td>\n    <td>MNLI</td>\n    <td>SST-2</td>\n  </tr>\n  <tr>\n    <td>1</td>\n    <td>BERT-Base</td>\n    <td>64.3</td>\n    <td>76.30</td>\n    <td>73.66</td>\n    <td>84.34/84.65</td>\n    <td>92.78</td>\n  </tr>\n  <tr>\n    <td>2</td>\n    <td>DAE+Transformer-XL</td>\n    <td>65.03</td>\n    <td>79.56</td>\n    <td>76.80</td>\n    <td>84.88/84.45</td>\n    <td>92.60</td>\n  </tr>\n  <tr>\n    <td>3</td>\n    <td>XLL Net-Base(K=7)</td>\n    <td>66.05</td>\n    <td>81.33</td>\n    <td>78.46</td>\n    <td>85.84/85.43</td>\n    <td>92.66</td>\n  </tr>\n  <tr>\n    <td>4</td>\n    <td>XLL Net-Base(K=6)</td>\n    <td>66.66</td>\n    <td>80.98</td>\n    <td>78.18</td>\n    <td>85.63/85.12</td>\n    <td>93.35</td>\n  </tr>\n  <tr>\n    <td>5</td>\n    <td>-memory</td>\n    <td>65.55</td>\n    <td>80.15</td>\n    <td>77.27</td>\n    <td>85.32/85.05</td>\n    <td>92.78</td>\n  </tr>\n  <tr>\n    <td>6</td>\n    <td>-span-based pred</td>\n    <td>65.95</td>\n    <td>80.61</td>\n    <td>77.91</td>\n    <td>85.49/85.02</td>\n    <td>93.12</td>\n  </tr>\n  <tr>\n    <td>7</td>\n    <td>-bidirectional data</td>\n    <td>66.34</td>\n    <td>80.65</td>\n    <td>77.87</td>\n    <td>85.31/84.99</td>\n    <td>92.66</td>\n  </tr>\n  <tr>\n    <td>8</td>\n    <td>+next-sent pred</td>\n    <td>66.76</td>\n    <td>79.83</td>\n    <td>76.94</td>\n    <td>85.32/85.09</td>\n    <td>92.89</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                232,
+                419,
+                379,
+                610
+            ],
+            "caption": "",
+            "footnote": "Table 7: Hyperparameters for pretraining. Table 7: Hyperparameters for pretraining.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <th>Hparam</th>\n    <th>Value</th>\n  </tr>\n  <tr>\n    <td>Number of layers</td>\n    <td>24</td>\n  </tr>\n  <tr>\n    <td>Hidden size</td>\n    <td>1024</td>\n  </tr>\n  <tr>\n    <td>Number of attention heads</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>Attention head size</td>\n    <td>64</td>\n  </tr>\n  <tr>\n    <td>FFN inner hidden size</td>\n    <td>4096</td>\n  </tr>\n  <tr>\n    <td>Hidden Dropout</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>GeLU Dropout</td>\n    <td>0.0</td>\n  </tr>\n  <tr>\n    <td>Attention dropout</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>Partial prediction K</td>\n    <td>6</td>\n  </tr>\n  <tr>\n    <td>Max sequence length</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Batch size</td>\n    <td>8192</td>\n  </tr>\n  <tr>\n    <td>Learning rate</td>\n    <td>4e-4</td>\n  </tr>\n  <tr>\n    <td>Number of steps</td>\n    <td>500K</td>\n  </tr>\n  <tr>\n    <td>Warmup steps</td>\n    <td>40,000</td>\n  </tr>\n  <tr>\n    <td>Learning rate decay</td>\n    <td>linear</td>\n  </tr>\n  <tr>\n    <td>Adam epsilon</td>\n    <td>1e-6</td>\n  </tr>\n  <tr>\n    <td>Weight decay</td>\n    <td>0.01</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page013.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                185,
+                70,
+                426,
+                191
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is:\n\n\"Table 8: Hyperparameters for finetuning.\" The text content from the image is:\n\n\"Table 8: Hyperparameters for finetuning.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>H param</td>\n    <td>RACE</td>\n    <td>SQuAD</td>\n    <td>MNLI</td>\n    <td>Yelp-5</td>\n  </tr>\n  <tr>\n    <td>Dropout</td>\n    <td>0.1</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Attention dropout</td>\n    <td>0.1</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Max sequence length</td>\n    <td>512</td>\n    <td>512</td>\n    <td>128</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>Batch size</td>\n    <td>32</td>\n    <td>48</td>\n    <td>128</td>\n    <td>128</td>\n  </tr>\n  <tr>\n    <td>Learning rate</td>\n    <td>2e-5</td>\n    <td>3e-5</td>\n    <td>2e-5</td>\n    <td>1e-5</td>\n  </tr>\n  <tr>\n    <td>Number of steps</td>\n    <td>12K</td>\n    <td>8K</td>\n    <td>10K</td>\n    <td>10K</td>\n  </tr>\n  <tr>\n    <td>Learning rate decay</td>\n    <td>linear</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Weight decay</td>\n    <td>0.01</td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Adam epsilon</td>\n    <td>1e-6</td>\n    <td>1e-6</td>\n    <td>1e-6</td>\n    <td>1e-6</td>\n  </tr>\n  <tr>\n    <td>Layer-wise lr decay</td>\n    <td>1.0</td>\n    <td>0.75</td>\n    <td>1.0</td>\n    <td>1.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page014.png"
+        }
+    ]
+}

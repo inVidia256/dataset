@@ -1,0 +1,54 @@
+{
+    "total_count": 4,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                255,
+                405,
+                355,
+                420
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{RNN}: h_{t}^{l-1}, h_{t-1}^l \\rightarrow h_t^l\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\text{RNN}: h_{t}^{l-1}, h_{t-1}^l \\rightarrow h_t^l\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                234,
+                540,
+                376,
+                636
+            ],
+            "content": "```latex\n\\text{LSTM}: h_{t}^{l-1}, h_{t-1}^{l}, c_{t-1}^{l} \\rightarrow h_{t}^{l}, c_{t}^{l}\n\n\\begin{pmatrix}\ni \\\\\nf \\\\\no \\\\\ng\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\tanh\n\\end{pmatrix}\nT_{2n,4n} \\left( \n\\begin{pmatrix}\nh_{t}^{l-1} \\\\\nh_{t-1}^{l}\n\\end{pmatrix}\n\\right)\n\nc_{t}^{l} = f \\odot c_{t-1}^{l} + i \\odot g\n\nh_{t}^{l} = o \\odot \\tanh(c_{t}^{l})\n```",
+            "latex": "```latex\n\\text{LSTM}: h_{t}^{l-1}, h_{t-1}^{l}, c_{t-1}^{l} \\rightarrow h_{t}^{l}, c_{t}^{l}\n\n\\begin{pmatrix}\ni \\\\\nf \\\\\no \\\\\ng\n\\end{pmatrix}\n=\n\\begin{pmatrix}\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\tanh\n\\end{pmatrix}\nT_{2n,4n} \\left( \n\\begin{pmatrix}\nh_{t}^{l-1} \\\\\nh_{t-1}^{l}\n\\end{pmatrix}\n\\right)\n\nc_{t}^{l} = f \\odot c_{t-1}^{l} + i \\odot g\n\nh_{t}^{l} = o \\odot \\tanh(c_{t}^{l})\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                189,
+                445,
+                419,
+                460
+            ],
+            "content": "```latex\nh^{l}_{t} = f(T_{n,n}h^{l-1}_{t} + T_{n,n}h^{l}_{t-1}), \\text{ where } f \\in \\{\\text{sigm}, \\text{tanh}\\}\n```",
+            "latex": "```latex\nh^{l}_{t} = f(T_{n,n}h^{l-1}_{t} + T_{n,n}h^{l}_{t-1}), \\text{ where } f \\in \\{\\text{sigm}, \\text{tanh}\\}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                227,
+                563,
+                384,
+                642
+            ],
+            "content": "```latex\n\\begin{align*}\n\\begin{pmatrix}\ni \\\\\nf \\\\\no \\\\\ng\n\\end{pmatrix} &= \n\\begin{pmatrix}\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\tanh\n\\end{pmatrix}\nT_{2n,4n}\\left(\\mathbf{D}(h_t^{l-1})\\right) \\\\\nc_t^l &= f \\odot c_{t-1}^l + i \\odot g \\\\\nh_t^l &= o \\odot \\tanh(c_t^l)\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\begin{pmatrix}\ni \\\\\nf \\\\\no \\\\\ng\n\\end{pmatrix} &= \n\\begin{pmatrix}\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\text{sigm} \\\\\n\\tanh\n\\end{pmatrix}\nT_{2n,4n}\\left(\\mathbf{D}(h_t^{l-1})\\right) \\\\\nc_t^l &= f \\odot c_{t-1}^l + i \\odot g \\\\\nh_t^l &= o \\odot \\tanh(c_t^l)\n\\end{align*}\n```"
+        }
+    ]
+}

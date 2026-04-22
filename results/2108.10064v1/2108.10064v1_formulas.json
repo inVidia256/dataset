@@ -1,0 +1,210 @@
+{
+    "total_count": 17,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                174,
+                185,
+                451,
+                202
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{\\mathcal{G}} \\max_{\\mathcal{D}} V(\\mathcal{G}, \\mathcal{D}) = \\mathbb{E}[\\log \\mathcal{D}(x)]_{x \\sim p_{data}(x)} + \\mathbb{E}[\\log (1 - \\mathcal{D}(\\mathcal{G}(z)))]_{z \\sim p(z)}\n```\n\nThis will render the formula as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\min_{\\mathcal{G}} \\max_{\\mathcal{D}} V(\\mathcal{G}, \\mathcal{D}) = \\mathbb{E}[\\log \\mathcal{D}(x)]_{x \\sim p_{data}(x)} + \\mathbb{E}[\\log (1 - \\mathcal{D}(\\mathcal{G}(z)))]_{z \\sim p(z)}\n```\n\nThis will render the formula as shown in the image."
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                264,
+                462,
+                361,
+                477
+            ],
+            "content": "{ \\mathcal { L } } _ { G } = - \\operatorname { E } _ { \\tilde { x } \\sim { \\mathbb { P } } _ { g } } [ D ( G ( \\tilde { x } ) ) ]",
+            "latex": "{ \\mathcal { L } } _ { G } = - \\operatorname { E } _ { \\tilde { x } \\sim { \\mathbb { P } } _ { g } } [ D ( G ( \\tilde { x } ) ) ]"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                188,
+                417,
+                438,
+                448
+            ],
+            "content": "```latex\n\\mathcal{L}_D = \\underbrace{\\mathbb{E}_{\\tilde{x} \\sim \\mathbb{P}_g}[D(\\tilde{x})] - \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)]}_{\\text{Wasserstein loss}} + \\underbrace{\\tau \\mathbb{E}_{\\hat{x} \\sim \\mathbb{P}_{\\hat{x}}}[(||\\nabla_{\\hat{x}} D(\\hat{x})||_2 - 1)^2]}_{\\text{Gradient penalty}}\n```",
+            "latex": "```latex\n\\mathcal{L}_D = \\underbrace{\\mathbb{E}_{\\tilde{x} \\sim \\mathbb{P}_g}[D(\\tilde{x})] - \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)]}_{\\text{Wasserstein loss}} + \\underbrace{\\tau \\mathbb{E}_{\\hat{x} \\sim \\mathbb{P}_{\\hat{x}}}[(||\\nabla_{\\hat{x}} D(\\hat{x})||_2 - 1)^2]}_{\\text{Gradient penalty}}\n```"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                189,
+                417,
+                436,
+                431
+            ],
+            "content": "```latex\n\\mathcal{L}_D = \\mathbb{E}_{\\tilde{x} \\sim \\mathbb{P}_g}[D(\\tilde{x})] - \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] + \\tau \\mathbb{E}_{\\hat{x} \\sim \\mathbb{P}_{\\hat{x}}}[(||\\nabla_{\\hat{x}} D(\\hat{x})||_2 - 1)^2]\n```",
+            "latex": "```latex\n\\mathcal{L}_D = \\mathbb{E}_{\\tilde{x} \\sim \\mathbb{P}_g}[D(\\tilde{x})] - \\mathbb{E}_{x \\sim \\mathbb{P}_r}[D(x)] + \\tau \\mathbb{E}_{\\hat{x} \\sim \\mathbb{P}_{\\hat{x}}}[(||\\nabla_{\\hat{x}} D(\\hat{x})||_2 - 1)^2]\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                182,
+                240,
+                443,
+                267
+            ],
+            "content": "```latex\nD_{\\lambda}(\\mathcal{M}(S)||\\mathcal{M}(S')) = \\frac{1}{\\lambda-1} log \\mathbb{E}_{x \\sim \\mathcal{M}(S)} \\left[ \\left( \\frac{P[\\mathcal{M}(S) = x]}{P[\\mathcal{M}(S') = x]} \\right)^{\\lambda-1} \\right] \\leq \\epsilon\n```",
+            "latex": "```latex\nD_{\\lambda}(\\mathcal{M}(S)||\\mathcal{M}(S')) = \\frac{1}{\\lambda-1} log \\mathbb{E}_{x \\sim \\mathcal{M}(S)} \\left[ \\left( \\frac{P[\\mathcal{M}(S) = x]}{P[\\mathcal{M}(S') = x]} \\right)^{\\lambda-1} \\right] \\leq \\epsilon\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                258,
+                508,
+                367,
+                522
+            ],
+            "content": "{ \\mathcal { M } } _ { \\sigma } ( x ) = f ( x ) + { \\mathcal { N } } \\left( 0 , \\sigma ^ { 2 } I \\right)",
+            "latex": "{ \\mathcal { M } } _ { \\sigma } ( x ) = f ( x ) + { \\mathcal { N } } \\left( 0 , \\sigma ^ { 2 } I \\right)"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                257,
+                454,
+                367,
+                473
+            ],
+            "content": "\\Delta _ { 2 } f = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f ( S ) - f ( S ^ { \\prime } ) | | _ { 2 }",
+            "latex": "\\Delta _ { 2 } f = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f ( S ) - f ( S ^ { \\prime } ) | | _ { 2 }"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                240,
+                94,
+                385,
+                107
+            ],
+            "content": "P [ { \\mathcal { M } } ( S ) \\in { \\mathcal { O } } ] \\leq e ^ { \\epsilon } . P [ { \\mathcal { M } } ( S ^ { \\prime } ) \\in { \\mathcal { O } } ] + \\delta",
+            "latex": "P [ { \\mathcal { M } } ( S ) \\in { \\mathcal { O } } ] \\leq e ^ { \\epsilon } . P [ { \\mathcal { M } } ( S ^ { \\prime } ) \\in { \\mathcal { O } } ] + \\delta"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                138,
+                106,
+                427,
+                168
+            ],
+            "content": "```latex\n\\epsilon'(\\lambda) \\leq \\frac{1}{\\lambda-1} \\log \\left( 1 + \\gamma^2 \\left( \\frac{\\lambda}{2} \\right) \\min \\left\\{ 4(e^{\\epsilon(2)} - 1), e^{\\epsilon(2)} \\min \\{2, (e^{\\epsilon(\\infty)} - 1)^2\\} \\right\\} \\right) + \\sum_{j=3}^{\\lambda} \\gamma^j \\binom{\\lambda}{j} e^{(j-1)\\epsilon(j)} \\min \\{2, (e^{\\epsilon(\\infty)} - 1)^j\\}\n```",
+            "latex": "```latex\n\\epsilon'(\\lambda) \\leq \\frac{1}{\\lambda-1} \\log \\left( 1 + \\gamma^2 \\left( \\frac{\\lambda}{2} \\right) \\min \\left\\{ 4(e^{\\epsilon(2)} - 1), e^{\\epsilon(2)} \\min \\{2, (e^{\\epsilon(\\infty)} - 1)^2\\} \\right\\} \\right) + \\sum_{j=3}^{\\lambda} \\gamma^j \\binom{\\lambda}{j} e^{(j-1)\\epsilon(j)} \\min \\{2, (e^{\\epsilon(\\infty)} - 1)^j\\}\n```"
+        },
+        {
+            "page": 37,
+            "type": "formula",
+            "bbox": [
+                242,
+                151,
+                323,
+                181
+            ],
+            "content": "\\bigoplus _ { i = 1 } ^ { n } \\alpha _ { i } \\oplus \\beta _ { i } \\bigoplus _ { j = n + 1 } ^ { N } \\gamma _ { j }",
+            "latex": "\\bigoplus _ { i = 1 } ^ { n } \\alpha _ { i } \\oplus \\beta _ { i } \\bigoplus _ { j = n + 1 } ^ { N } \\gamma _ { j }"
+        },
+        {
+            "page": 37,
+            "type": "formula",
+            "bbox": [
+                195,
+                582,
+                370,
+                613
+            ],
+            "content": "```latex\n\\tau^{c} = \\begin{cases}\n\\log(\\tau) & \\text{if } l > 0 \\\\\n\\log(\\tau - l + \\epsilon) & \\text{if } l \\leq 0, \\text{ where } \\epsilon > 0\n\\end{cases}\n```",
+            "latex": "```latex\n\\tau^{c} = \\begin{cases}\n\\log(\\tau) & \\text{if } l > 0 \\\\\n\\log(\\tau - l + \\epsilon) & \\text{if } l \\leq 0, \\text{ where } \\epsilon > 0\n\\end{cases}\n```"
+        },
+        {
+            "page": 47,
+            "type": "formula",
+            "bbox": [
+                214,
+                210,
+                352,
+                238
+            ],
+            "content": "```latex\n\\tilde{g}_D = \\frac{1}{B} \\sum_{i=1}^{B} \\mathcal{M}_{\\sigma,C}(\\nabla_{\\theta_D}\\mathcal{L}_D(\\theta_D, x_i))\n```",
+            "latex": "```latex\n\\tilde{g}_D = \\frac{1}{B} \\sum_{i=1}^{B} \\mathcal{M}_{\\sigma,C}(\\nabla_{\\theta_D}\\mathcal{L}_D(\\theta_D, x_i))\n```"
+        },
+        {
+            "page": 47,
+            "type": "formula",
+            "bbox": [
+                216,
+                109,
+                349,
+                128
+            ],
+            "content": "\\Delta _ { 2 } f = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f ( S ) - f ( S ^ { \\prime } ) | | _ { 2 } \\leq 2 C",
+            "latex": "\\Delta _ { 2 } f = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f ( S ) - f ( S ^ { \\prime } ) | | _ { 2 } \\leq 2 C"
+        },
+        {
+            "page": 47,
+            "type": "formula",
+            "bbox": [
+                217,
+                109,
+                349,
+                127
+            ],
+            "content": "\\Delta _ { 2 } f = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f ( S ) - f ( S ^ { \\prime } ) | | _ { 2 } \\leq 2 C",
+            "latex": "\\Delta _ { 2 } f = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f ( S ) - f ( S ^ { \\prime } ) | | _ { 2 } \\leq 2 C"
+        },
+        {
+            "page": 48,
+            "type": "formula",
+            "bbox": [
+                257,
+                625,
+                368,
+                653
+            ],
+            "content": "\\tilde { g } _ { G } = \\sum _ { i = 1 } ^ { L } { \\mathcal M } _ { \\sigma , C } ( \\nabla _ { \\theta _ { G } } { \\mathcal L } _ { i } ( \\theta _ { G } ) )",
+            "latex": "\\tilde { g } _ { G } = \\sum _ { i = 1 } ^ { L } { \\mathcal M } _ { \\sigma , C } ( \\nabla _ { \\theta _ { G } } { \\mathcal L } _ { i } ( \\theta _ { G } ) )"
+        },
+        {
+            "page": 48,
+            "type": "formula",
+            "bbox": [
+                219,
+                515,
+                406,
+                533
+            ],
+            "content": "\\Delta _ { 2 } f _ { C l a s s } = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f _ { C l a s s } ( S ) - f _ { C l a s s } ( S ^ { \\prime } ) | | _ { 2 } \\leq 2 C",
+            "latex": "\\Delta _ { 2 } f _ { C l a s s } = \\operatorname* { m a x } _ { S , S ^ { \\prime } } | | f _ { C l a s s } ( S ) - f _ { C l a s s } ( S ^ { \\prime } ) | | _ { 2 } \\leq 2 C"
+        },
+        {
+            "page": 48,
+            "type": "formula",
+            "bbox": [
+                224,
+                335,
+                401,
+                354
+            ],
+            "content": "```latex\n\\Delta_2 f_{Disc} = \\max_{S, S'} ||f_{Disc}(S) - f_{Disc}(S')||_2 \\leq 2C\n```",
+            "latex": "```latex\n\\Delta_2 f_{Disc} = \\max_{S, S'} ||f_{Disc}(S) - f_{Disc}(S')||_2 \\leq 2C\n```"
+        }
+    ]
+}

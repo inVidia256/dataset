@@ -1,0 +1,294 @@
+{
+    "total_count": 24,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                120,
+                490,
+                478,
+                522
+            ],
+            "content": "```latex\np_{\\theta}(\\mathbf{x}_{0:T}) \\coloneqq p(\\mathbf{x}_T) \\prod_{t=1}^{T} p_{\\theta}(\\mathbf{x}_{t-1}|\\mathbf{x}_t), \\qquad p_{\\theta}(\\mathbf{x}_{t-1}|\\mathbf{x}_t) \\coloneqq \\mathcal{N}(\\mathbf{x}_{t-1}; \\boldsymbol{\\mu}_{\\theta}(\\mathbf{x}_t, t), \\boldsymbol{\\Sigma}_{\\theta}(\\mathbf{x}_t, t))\n```",
+            "latex": "```latex\np_{\\theta}(\\mathbf{x}_{0:T}) \\coloneqq p(\\mathbf{x}_T) \\prod_{t=1}^{T} p_{\\theta}(\\mathbf{x}_{t-1}|\\mathbf{x}_t), \\qquad p_{\\theta}(\\mathbf{x}_{t-1}|\\mathbf{x}_t) \\coloneqq \\mathcal{N}(\\mathbf{x}_{t-1}; \\boldsymbol{\\mu}_{\\theta}(\\mathbf{x}_t, t), \\boldsymbol{\\Sigma}_{\\theta}(\\mathbf{x}_t, t))\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                228,
+                706,
+                383,
+                720
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nq(\\mathbf{x}_t | \\mathbf{x}_0) = \\mathcal{N}(\\mathbf{x}_t; \\sqrt{\\bar{\\alpha}_t} \\mathbf{x}_0, (1 - \\bar{\\alpha}_t) \\mathbf{I})\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nq(\\mathbf{x}_t | \\mathbf{x}_0) = \\mathcal{N}(\\mathbf{x}_t; \\sqrt{\\bar{\\alpha}_t} \\mathbf{x}_0, (1 - \\bar{\\alpha}_t) \\mathbf{I})\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                149,
+                561,
+                461,
+                592
+            ],
+            "content": "```latex\nq(\\mathbf{x}_{1:T}|\\mathbf{x}_0) \\coloneqq \\prod_{t=1}^{T} q(\\mathbf{x}_t|\\mathbf{x}_{t-1}), \\quad \\quad q(\\mathbf{x}_t|\\mathbf{x}_{t-1}) \\coloneqq \\mathcal{N}(\\mathbf{x}_t; \\sqrt{1-\\beta_t}\\mathbf{x}_{t-1}, \\beta_t\\mathbf{I})\n```",
+            "latex": "```latex\nq(\\mathbf{x}_{1:T}|\\mathbf{x}_0) \\coloneqq \\prod_{t=1}^{T} q(\\mathbf{x}_t|\\mathbf{x}_{t-1}), \\quad \\quad q(\\mathbf{x}_t|\\mathbf{x}_{t-1}) \\coloneqq \\mathcal{N}(\\mathbf{x}_t; \\sqrt{1-\\beta_t}\\mathbf{x}_{t-1}, \\beta_t\\mathbf{I})\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                110,
+                613,
+                490,
+                643
+            ],
+            "content": "```latex\n\\mathbb{E}[-\\log p_\\theta(\\mathbf{x}_0)] \\leq \\mathbb{E}_q\\left[-\\log \\frac{p_\\theta(\\mathbf{x}_{0:T})}{q(\\mathbf{x}_{1:T}|\\mathbf{x}_0)}\\right] = \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_t|\\mathbf{x}_{t-1})}\\right] =: L\n```",
+            "latex": "```latex\n\\mathbb{E}[-\\log p_\\theta(\\mathbf{x}_0)] \\leq \\mathbb{E}_q\\left[-\\log \\frac{p_\\theta(\\mathbf{x}_{0:T})}{q(\\mathbf{x}_{1:T}|\\mathbf{x}_0)}\\right] = \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_t|\\mathbf{x}_{t-1})}\\right] =: L\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                205,
+                565,
+                407,
+                591
+            ],
+            "content": "```latex\nL_{t-1} = \\mathbb{E}_q\\left[\\frac{1}{2\\sigma_t^2}\\|\\tilde{\\mu}_t(\\mathbf{x}_t, \\mathbf{x}_0) - \\mu_\\theta(\\mathbf{x}_t, t)\\|^2\\right] + C\n```",
+            "latex": "```latex\nL_{t-1} = \\mathbb{E}_q\\left[\\frac{1}{2\\sigma_t^2}\\|\\tilde{\\mu}_t(\\mathbf{x}_t, \\mathbf{x}_0) - \\mu_\\theta(\\mathbf{x}_t, t)\\|^2\\right] + C\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                114,
+                97,
+                483,
+                133
+            ],
+            "content": "```latex\n\\mathbb{E}_q \\left[ L_T + \\sum_{t>1} L_{t-1} - L_0 \\right]\n```",
+            "latex": "```latex\n\\mathbb{E}_q \\left[ L_T + \\sum_{t>1} L_{t-1} - L_0 \\right]\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                135,
+                188,
+                477,
+                214
+            ],
+            "content": "```latex\nwhere \\(\\tilde{\\mu}_t(\\mathbf{x}_t, \\mathbf{x}_0) := \\frac{\\sqrt{\\bar{\\alpha}_{t-1}}\\beta_t}{1-\\bar{\\alpha}_t}\\mathbf{x}_0 + \\frac{\\sqrt{\\bar{\\alpha}_t}(1-\\bar{\\alpha}_{t-1})}{1-\\bar{\\alpha}_t}\\mathbf{x}_t\\) and \\(\\tilde{\\beta}_t := \\frac{1-\\bar{\\alpha}_{t-1}}{1-\\bar{\\alpha}_t}\\beta_t\\)\n```",
+            "latex": "```latex\nwhere \\(\\tilde{\\mu}_t(\\mathbf{x}_t, \\mathbf{x}_0) := \\frac{\\sqrt{\\bar{\\alpha}_{t-1}}\\beta_t}{1-\\bar{\\alpha}_t}\\mathbf{x}_0 + \\frac{\\sqrt{\\bar{\\alpha}_t}(1-\\bar{\\alpha}_{t-1})}{1-\\bar{\\alpha}_t}\\mathbf{x}_t\\) and \\(\\tilde{\\beta}_t := \\frac{1-\\bar{\\alpha}_{t-1}}{1-\\bar{\\alpha}_t}\\beta_t\\)\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                153,
+                173,
+                333,
+                187
+            ],
+            "content": "```latex\nq(\\mathbf{x}_{t-1}|\\mathbf{x}_t, \\mathbf{x}_0) = \\mathcal{N}(\\mathbf{x}_{t-1}; \\tilde{\\mu}_t(\\mathbf{x}_t, \\mathbf{x}_0), \\tilde{\\beta}_t\\mathbf{I}),\n```",
+            "latex": "```latex\nq(\\mathbf{x}_{t-1}|\\mathbf{x}_t, \\mathbf{x}_0) = \\mathcal{N}(\\mathbf{x}_{t-1}; \\tilde{\\mu}_t(\\mathbf{x}_t, \\mathbf{x}_0), \\tilde{\\beta}_t\\mathbf{I}),\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                112,
+                642,
+                499,
+                673
+            ],
+            "content": "```latex\nL_{t-1} - C = \\mathbb{E}_{\\mathbf{x}_0, \\boldsymbol{\\epsilon}} \\left[ \\frac{1}{2\\sigma_t^2} \\left\\| \\tilde{\\mu}_t \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\boldsymbol{\\epsilon}), \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} (\\mathbf{x}_t(\\mathbf{x}_0, \\boldsymbol{\\epsilon}) - \\sqrt{1-\\bar{\\alpha}_t}\\boldsymbol{\\epsilon}) \\right) - \\boldsymbol{\\mu}_{\\theta}(\\mathbf{x}_t(\\mathbf{x}_0, \\boldsymbol{\\epsilon}), t) \\right\\|^2 \\right]\n```",
+            "latex": "```latex\nL_{t-1} - C = \\mathbb{E}_{\\mathbf{x}_0, \\boldsymbol{\\epsilon}} \\left[ \\frac{1}{2\\sigma_t^2} \\left\\| \\tilde{\\mu}_t \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\boldsymbol{\\epsilon}), \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} (\\mathbf{x}_t(\\mathbf{x}_0, \\boldsymbol{\\epsilon}) - \\sqrt{1-\\bar{\\alpha}_t}\\boldsymbol{\\epsilon}) \\right) - \\boldsymbol{\\mu}_{\\theta}(\\mathbf{x}_t(\\mathbf{x}_0, \\boldsymbol{\\epsilon}), t) \\right\\|^2 \\right]\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                111,
+                642,
+                503,
+                721
+            ],
+            "content": "```latex\nL_{t-1} - C = \\mathbb{E}_{\\mathbf{x}_0, \\epsilon} \\left[ \\frac{1}{2\\sigma_t^2} \\left\\| \\tilde{\\mu}_t \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} (\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon) - \\sqrt{1-\\bar{\\alpha}_t}\\epsilon) \\right) - \\mu_\\theta(\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), t) \\right\\|^2 \\right]\n\n= \\mathbb{E}_{\\mathbf{x}_0, \\epsilon} \\left[ \\frac{1}{2\\sigma_t^2} \\left\\| \\frac{1}{\\sqrt{\\alpha_t}} \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\epsilon) - \\frac{\\beta_t}{\\sqrt{1-\\bar{\\alpha}_t}}\\epsilon \\right) - \\mu_\\theta(\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), t) \\right\\|^2 \\right]\n```",
+            "latex": "```latex\nL_{t-1} - C = \\mathbb{E}_{\\mathbf{x}_0, \\epsilon} \\left[ \\frac{1}{2\\sigma_t^2} \\left\\| \\tilde{\\mu}_t \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} (\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon) - \\sqrt{1-\\bar{\\alpha}_t}\\epsilon) \\right) - \\mu_\\theta(\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), t) \\right\\|^2 \\right]\n\n= \\mathbb{E}_{\\mathbf{x}_0, \\epsilon} \\left[ \\frac{1}{2\\sigma_t^2} \\left\\| \\frac{1}{\\sqrt{\\alpha_t}} \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\epsilon) - \\frac{\\beta_t}{\\sqrt{1-\\bar{\\alpha}_t}}\\epsilon \\right) - \\mu_\\theta(\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), t) \\right\\|^2 \\right]\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                129,
+                687,
+                444,
+                721
+            ],
+            "content": "```latex\n= \\mathbb{E}_{\\mathbf{x}_0, \\epsilon} \\left[ \\frac{1}{2 \\sigma_t^2} \\left\\| \\frac{1}{\\sqrt{\\alpha_t}} \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\epsilon) - \\frac{\\beta_t}{\\sqrt{1 - \\bar{\\alpha}_t}} \\epsilon \\right) - \\mu_\\theta(\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), t) \\right\\|^2 \\right]\n```",
+            "latex": "```latex\n= \\mathbb{E}_{\\mathbf{x}_0, \\epsilon} \\left[ \\frac{1}{2 \\sigma_t^2} \\left\\| \\frac{1}{\\sqrt{\\alpha_t}} \\left( \\mathbf{x}_t(\\mathbf{x}_0, \\epsilon) - \\frac{\\beta_t}{\\sqrt{1 - \\bar{\\alpha}_t}} \\epsilon \\right) - \\mu_\\theta(\\mathbf{x}_t(\\mathbf{x}_0, \\epsilon), t) \\right\\|^2 \\right]\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                159,
+                527,
+                451,
+                590
+            ],
+            "content": "```latex\np_{\\theta}(\\mathbf{x}_0|\\mathbf{x}_1) = \\prod_{i=1}^{D} \\int_{\\delta_-(x_0^i)}^{\\delta_+(x_0^i)} \\mathcal{N}(x; \\mu_\\theta^i(\\mathbf{x}_1, 1), \\sigma_1^2) dx\n\n\\delta_+(x) = \n\\begin{cases}\n\\infty & \\text{if } x = 1 \\\\\nx + \\frac{1}{255} & \\text{if } x < 1\n\\end{cases}\n\n\\delta_-(x) = \n\\begin{cases}\n-\\infty & \\text{if } x = -1 \\\\\nx - \\frac{1}{255} & \\text{if } x > -1\n\\end{cases}\n```",
+            "latex": "```latex\np_{\\theta}(\\mathbf{x}_0|\\mathbf{x}_1) = \\prod_{i=1}^{D} \\int_{\\delta_-(x_0^i)}^{\\delta_+(x_0^i)} \\mathcal{N}(x; \\mu_\\theta^i(\\mathbf{x}_1, 1), \\sigma_1^2) dx\n\n\\delta_+(x) = \n\\begin{cases}\n\\infty & \\text{if } x = 1 \\\\\nx + \\frac{1}{255} & \\text{if } x < 1\n\\end{cases}\n\n\\delta_-(x) = \n\\begin{cases}\n-\\infty & \\text{if } x = -1 \\\\\nx - \\frac{1}{255} & \\text{if } x > -1\n\\end{cases}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                186,
+                295,
+                424,
+                321
+            ],
+            "content": "```latex\n\\mathbb{E}_{\\mathbf{x}_0,\\epsilon}\\left[\\frac{\\beta_t^2}{2\\sigma_t^2\\alpha_t(1-\\bar{\\alpha}_t)}\\|\\boldsymbol{\\epsilon}-\\boldsymbol{\\epsilon}_\\theta(\\sqrt{\\bar{\\alpha}_t}\\mathbf{x}_0+\\sqrt{1-\\bar{\\alpha}_t}\\boldsymbol{\\epsilon},t)\\|^2\\right]\n```",
+            "latex": "```latex\n\\mathbb{E}_{\\mathbf{x}_0,\\epsilon}\\left[\\frac{\\beta_t^2}{2\\sigma_t^2\\alpha_t(1-\\bar{\\alpha}_t)}\\|\\boldsymbol{\\epsilon}-\\boldsymbol{\\epsilon}_\\theta(\\sqrt{\\bar{\\alpha}_t}\\mathbf{x}_0+\\sqrt{1-\\bar{\\alpha}_t}\\boldsymbol{\\epsilon},t)\\|^2\\right]\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                122,
+                213,
+                472,
+                240
+            ],
+            "content": "```latex\n\\mu_{\\theta}(\\mathbf{x}_t, t) = \\tilde{\\mu}_t\\left(\\mathbf{x}_t, \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} (\\mathbf{x}_t - \\sqrt{1-\\bar{\\alpha}_t}\\epsilon_\\theta(\\mathbf{x}_t))\\right) = \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} \\left(\\mathbf{x}_t - \\frac{\\beta_t}{\\sqrt{1-\\bar{\\alpha}_t}}\\epsilon_\\theta(\\mathbf{x}_t, t)\\right)\n```",
+            "latex": "```latex\n\\mu_{\\theta}(\\mathbf{x}_t, t) = \\tilde{\\mu}_t\\left(\\mathbf{x}_t, \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} (\\mathbf{x}_t - \\sqrt{1-\\bar{\\alpha}_t}\\epsilon_\\theta(\\mathbf{x}_t))\\right) = \\frac{1}{\\sqrt{\\bar{\\alpha}_t}} \\left(\\mathbf{x}_t - \\frac{\\beta_t}{\\sqrt{1-\\bar{\\alpha}_t}}\\epsilon_\\theta(\\mathbf{x}_t, t)\\right)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                309,
+                102,
+                491,
+                171
+            ],
+            "content": "```latex\n1: \\mathbf{x}_T \\sim \\mathcal{N}(\\mathbf{0}, \\mathbf{I})\n2: for t = T, ..., 1 do\n3:   z \\sim \\mathcal{N}(\\mathbf{0}, \\mathbf{I}) if t > 1, else z = 0\n4:   \\mathbf{x}_{t-1} = \\frac{1}{\\sqrt{\\alpha_t}} \\left( \\mathbf{x}_t - \\frac{1-\\alpha_t}{\\sqrt{1-\\alpha_t}} \\boldsymbol{\\epsilon}_\\theta(\\mathbf{x}_t, t) \\right) + \\sigma_t \\mathbf{z}\n5: end for\n6: return \\mathbf{x}_0\n```",
+            "latex": "```latex\n1: \\mathbf{x}_T \\sim \\mathcal{N}(\\mathbf{0}, \\mathbf{I})\n2: for t = T, ..., 1 do\n3:   z \\sim \\mathcal{N}(\\mathbf{0}, \\mathbf{I}) if t > 1, else z = 0\n4:   \\mathbf{x}_{t-1} = \\frac{1}{\\sqrt{\\alpha_t}} \\left( \\mathbf{x}_t - \\frac{1-\\alpha_t}{\\sqrt{1-\\alpha_t}} \\boldsymbol{\\epsilon}_\\theta(\\mathbf{x}_t, t) \\right) + \\sigma_t \\mathbf{z}\n5: end for\n6: return \\mathbf{x}_0\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                109,
+                100,
+                284,
+                172
+            ],
+            "content": "```latex\n1: repeat\n2:   x_0 \\sim q(x_0)\n3:   t \\sim \\text{Uniform}\\left(\\{1, \\ldots, T\\}\\right)\n4:   \\epsilon \\sim \\mathcal{N}(\\mathbf{0}, \\mathbf{I})\n5:   Take gradient descent step on \n       \\nabla_\\theta \\left\\|\\epsilon - \\epsilon_\\theta\\left(\\sqrt{\\bar{\\alpha}_t}x_0 + \\sqrt{1-\\bar{\\alpha}_t}\\epsilon, t\\right)\\right\\|^2\n6: until converged\n```",
+            "latex": "```latex\n1: repeat\n2:   x_0 \\sim q(x_0)\n3:   t \\sim \\text{Uniform}\\left(\\{1, \\ldots, T\\}\\right)\n4:   \\epsilon \\sim \\mathcal{N}(\\mathbf{0}, \\mathbf{I})\n5:   Take gradient descent step on \n       \\nabla_\\theta \\left\\|\\epsilon - \\epsilon_\\theta\\left(\\sqrt{\\bar{\\alpha}_t}x_0 + \\sqrt{1-\\bar{\\alpha}_t}\\epsilon, t\\right)\\right\\|^2\n6: until converged\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                188,
+                301,
+                423,
+                322
+            ],
+            "content": "```latex\nL_{\\text{simple}}(\\theta) := \\mathbb{E}_{t, \\mathbf{x}_0, \\epsilon} \\left[ \\| \\epsilon - \\epsilon_\\theta \\left( \\sqrt{\\bar{\\alpha}_t} \\mathbf{x}_0 + \\sqrt{1-\\bar{\\alpha}_t} \\epsilon, t \\right) \\|^2 \\right]\n```",
+            "latex": "```latex\nL_{\\text{simple}}(\\theta) := \\mathbb{E}_{t, \\mathbf{x}_0, \\epsilon} \\left[ \\| \\epsilon - \\epsilon_\\theta \\left( \\sqrt{\\bar{\\alpha}_t} \\mathbf{x}_0 + \\sqrt{1-\\bar{\\alpha}_t} \\epsilon, t \\right) \\|^2 \\right]\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                129,
+                638,
+                466,
+                672
+            ],
+            "content": "```latex\nL = D_{\\text{KL}}(q(\\mathbf{x}_T) \\parallel p(\\mathbf{x}_T)) + \\mathbb{E}_q \\left[ \\sum_{t \\geq 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t) \\parallel p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)) \\right] + H(\\mathbf{x}_0)\n```",
+            "latex": "```latex\nL = D_{\\text{KL}}(q(\\mathbf{x}_T) \\parallel p(\\mathbf{x}_T)) + \\mathbb{E}_q \\left[ \\sum_{t \\geq 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t) \\parallel p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)) \\right] + H(\\mathbf{x}_0)\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                221,
+                90,
+                390,
+                105
+            ],
+            "content": "```latex\n\\mathbf{x}_0 \\approx \\hat{\\mathbf{x}}_0 = \\left( \\mathbf{x}_t - \\sqrt{1-\\bar{\\alpha}_t} \\boldsymbol{\\epsilon}_{\\theta}(\\mathbf{x}_t) \\right) / \\sqrt{\\bar{\\alpha}_t}\n```",
+            "latex": "```latex\n\\mathbf{x}_0 \\approx \\hat{\\mathbf{x}}_0 = \\left( \\mathbf{x}_t - \\sqrt{1-\\bar{\\alpha}_t} \\boldsymbol{\\epsilon}_{\\theta}(\\mathbf{x}_t) \\right) / \\sqrt{\\bar{\\alpha}_t}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                111,
+                554,
+                466,
+                726
+            ],
+            "content": "```latex\nL = \\mathbb{E}_q\\left[-\\log\\frac{p_\\theta(\\mathbf{x}_{0:T})}{q(\\mathbf{x}_{1:T}|\\mathbf{x}_0)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t\\geq 1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_t|\\mathbf{x}_{t-1})}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t>1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_t|\\mathbf{x}_{t-1})} - \\log\\frac{p_\\theta(\\mathbf{x}_0|\\mathbf{x}_1)}{q(\\mathbf{x}_1|\\mathbf{x}_0)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t>1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_{t-1}|\\mathbf{x}_t,\\mathbf{x}_0)} \\cdot \\frac{q(\\mathbf{x}_{t-1}|\\mathbf{x}_0)}{q(\\mathbf{x}_t|\\mathbf{x}_0)} - \\log\\frac{p_\\theta(\\mathbf{x}_0|\\mathbf{x}_1)}{q(\\mathbf{x}_1|\\mathbf{x}_0)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log\\frac{p(\\mathbf{x}_T)}{q(\\mathbf{x}_T|\\mathbf{x}_0)} - \\sum_{t>1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_{t-1}|\\mathbf{x}_t,\\mathbf{x}_0)} - \\log p_\\theta(\\mathbf{x}_0|\\mathbf{x}_1)\\right]\n```",
+            "latex": "```latex\nL = \\mathbb{E}_q\\left[-\\log\\frac{p_\\theta(\\mathbf{x}_{0:T})}{q(\\mathbf{x}_{1:T}|\\mathbf{x}_0)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t\\geq 1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_t|\\mathbf{x}_{t-1})}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t>1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_t|\\mathbf{x}_{t-1})} - \\log\\frac{p_\\theta(\\mathbf{x}_0|\\mathbf{x}_1)}{q(\\mathbf{x}_1|\\mathbf{x}_0)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t>1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_{t-1}|\\mathbf{x}_t,\\mathbf{x}_0)} \\cdot \\frac{q(\\mathbf{x}_{t-1}|\\mathbf{x}_0)}{q(\\mathbf{x}_t|\\mathbf{x}_0)} - \\log\\frac{p_\\theta(\\mathbf{x}_0|\\mathbf{x}_1)}{q(\\mathbf{x}_1|\\mathbf{x}_0)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log\\frac{p(\\mathbf{x}_T)}{q(\\mathbf{x}_T|\\mathbf{x}_0)} - \\sum_{t>1}\\log\\frac{p_\\theta(\\mathbf{x}_{t-1}|\\mathbf{x}_t)}{q(\\mathbf{x}_{t-1}|\\mathbf{x}_t,\\mathbf{x}_0)} - \\log p_\\theta(\\mathbf{x}_0|\\mathbf{x}_1)\\right]\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                119,
+                69,
+                499,
+                103
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n= \\mathbb{E}_q \\left[ D_{\\text{KL}}(q(\\mathbf{x}_T | \\mathbf{x}_0) \\| p(\\mathbf{x}_T)) + \\sum_{t > 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t, \\mathbf{x}_0) \\| p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)) - \\log p_\\theta(\\mathbf{x}_0 | \\mathbf{x}_1) \\right]\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n= \\mathbb{E}_q \\left[ D_{\\text{KL}}(q(\\mathbf{x}_T | \\mathbf{x}_0) \\| p(\\mathbf{x}_T)) + \\sum_{t > 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t, \\mathbf{x}_0) \\| p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)) - \\log p_\\theta(\\mathbf{x}_0 | \\mathbf{x}_1) \\right]\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                138,
+                266,
+                464,
+                304
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n= D_{\\text{KL}}(q(\\mathbf{x}_T) \\parallel p(\\mathbf{x}_T)) + \\mathbb{E}_q \\left[ \\sum_{t \\geq 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t) \\parallel p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)) \\right] + H(\\mathbf{x}_0)\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n= D_{\\text{KL}}(q(\\mathbf{x}_T) \\parallel p(\\mathbf{x}_T)) + \\mathbb{E}_q \\left[ \\sum_{t \\geq 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t) \\parallel p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)) \\right] + H(\\mathbf{x}_0)\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                130,
+                144,
+                469,
+                304
+            ],
+            "content": "```latex\nL = \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)}{q(\\mathbf{x}_t | \\mathbf{x}_{t-1})}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)}{q(\\mathbf{x}_{t-1} | \\mathbf{x}_t)} \\cdot \\frac{q(\\mathbf{x}_{t-1})}{q(\\mathbf{x}_t)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log \\frac{p(\\mathbf{x}_T)}{q(\\mathbf{x}_T)} - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)}{q(\\mathbf{x}_{t-1} | \\mathbf{x}_t)} - \\log q(\\mathbf{x}_0)\\right]\n\n= D_{\\text{KL}}(q(\\mathbf{x}_T) \\parallel p(\\mathbf{x}_T)) + \\mathbb{E}_q\\left[\\sum_{t \\geq 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t) \\parallel p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t))\\right] + H(\\mathbf{x}_0)\n```",
+            "latex": "```latex\nL = \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)}{q(\\mathbf{x}_t | \\mathbf{x}_{t-1})}\\right]\n\n= \\mathbb{E}_q\\left[-\\log p(\\mathbf{x}_T) - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)}{q(\\mathbf{x}_{t-1} | \\mathbf{x}_t)} \\cdot \\frac{q(\\mathbf{x}_{t-1})}{q(\\mathbf{x}_t)}\\right]\n\n= \\mathbb{E}_q\\left[-\\log \\frac{p(\\mathbf{x}_T)}{q(\\mathbf{x}_T)} - \\sum_{t \\geq 1} \\log \\frac{p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t)}{q(\\mathbf{x}_{t-1} | \\mathbf{x}_t)} - \\log q(\\mathbf{x}_0)\\right]\n\n= D_{\\text{KL}}(q(\\mathbf{x}_T) \\parallel p(\\mathbf{x}_T)) + \\mathbb{E}_q\\left[\\sum_{t \\geq 1} D_{\\text{KL}}(q(\\mathbf{x}_{t-1} | \\mathbf{x}_t) \\parallel p_\\theta(\\mathbf{x}_{t-1} | \\mathbf{x}_t))\\right] + H(\\mathbf{x}_0)\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                132,
+                146,
+                319,
+                183
+            ],
+            "content": "L = \\mathbb { E } _ { q } \\left[ - \\log p ( \\mathbf { x } _ { T } ) - \\sum _ { t \\geq 1 } \\log { \\frac { p _ { \\theta } ( \\mathbf { x } _ { t - 1 } | \\mathbf { x } _ { t } ) } { q ( \\mathbf { x } _ { t } | \\mathbf { x } _ { t - 1 } ) } } \\right]",
+            "latex": "L = \\mathbb { E } _ { q } \\left[ - \\log p ( \\mathbf { x } _ { T } ) - \\sum _ { t \\geq 1 } \\log { \\frac { p _ { \\theta } ( \\mathbf { x } _ { t - 1 } | \\mathbf { x } _ { t } ) } { q ( \\mathbf { x } _ { t } | \\mathbf { x } _ { t - 1 } ) } } \\right]"
+        }
+    ]
+}

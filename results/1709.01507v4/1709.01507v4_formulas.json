@@ -1,0 +1,66 @@
+{
+    "total_count": 5,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                115,
+                441,
+                231,
+                473
+            ],
+            "content": "{ \\bf u } _ { c } = { \\bf v } _ { c } * { \\bf X } = \\sum _ { s = 1 } ^ { C ^ { \\prime } } { \\bf v } _ { c } ^ { s } * { \\bf x } ^ { s } .",
+            "latex": "{ \\bf u } _ { c } = { \\bf v } _ { c } * { \\bf X } = \\sum _ { s = 1 } ^ { C ^ { \\prime } } { \\bf v } _ { c } ^ { s } * { \\bf x } ^ { s } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                352,
+                164,
+                523,
+                197
+            ],
+            "content": "z _ { c } = \\mathbf { F } _ { s q } ( \\mathbf { u } _ { c } ) = \\frac { 1 } { H \\times W } \\sum _ { i = 1 } ^ { H } \\sum _ { j = 1 } ^ { W } u _ { c } ( i , j ) .",
+            "latex": "z _ { c } = \\mathbf { F } _ { s q } ( \\mathbf { u } _ { c } ) = \\frac { 1 } { H \\times W } \\sum _ { i = 1 } ^ { H } \\sum _ { j = 1 } ^ { W } u _ { c } ( i , j ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                377,
+                610,
+                498,
+                624
+            ],
+            "content": "\\tilde { \\mathbf { x } } _ { c } = \\mathbf { F } _ { s c a l e } ( \\mathbf { u } _ { c } , s _ { c } ) = s _ { c } \\, \\mathbf { u } _ { c } ,",
+            "latex": "\\tilde { \\mathbf { x } } _ { c } = \\mathbf { F } _ { s c a l e } ( \\mathbf { u } _ { c } , s _ { c } ) = s _ { c } \\, \\mathbf { u } _ { c } ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                333,
+                462,
+                541,
+                476
+            ],
+            "content": "```latex\ns = \\mathbf{F}_{ex}(\\mathbf{z}, \\mathbf{W}) = \\sigma(g(\\mathbf{z}, \\mathbf{W})) = \\sigma(\\mathbf{W}_2\\delta(\\mathbf{W}_1\\mathbf{z})),\n```",
+            "latex": "```latex\ns = \\mathbf{F}_{ex}(\\mathbf{z}, \\mathbf{W}) = \\sigma(g(\\mathbf{z}, \\mathbf{W})) = \\sigma(\\mathbf{W}_2\\delta(\\mathbf{W}_1\\mathbf{z})),\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                405,
+                617,
+                470,
+                649
+            ],
+            "content": "{ \\frac { 2 } { r } } \\sum _ { s = 1 } ^ { S } N _ { s } \\cdot C _ { s } ^ { 2 } ,",
+            "latex": "{ \\frac { 2 } { r } } \\sum _ { s = 1 } ^ { S } N _ { s } \\cdot C _ { s } ^ { 2 } ,"
+        }
+    ]
+}

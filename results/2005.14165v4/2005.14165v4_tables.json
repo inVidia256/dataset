@@ -1,0 +1,1190 @@
+{
+    "total_count": 74,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "table",
+            "bbox": [
+                80,
+                156,
+                527,
+                346
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html><body>\n<p>Tom B. Brown*</p> \n <p>Benjamin Mann*</p> \n <p>Nick Ryder*</p> \n <p>Melanie Subbiah*</p> \n <p>Jared Kaplan†</p> \n <p>Prafulla Dhariwal</p> \n <p>Arvind Neelakantan</p> \n <p>Pranav Shyam</p> \n <p>Girish Sastry</p> \n <p>Amanda Askell</p> \n <p>Sandhini Agarwal</p> \n <p>Ariel Herbert-Voss</p> \n <p>Gretchen Krueger</p> \n <p>Tom Henighan</p> \n <p>Rewon Child</p> \n <p>Aditya Ramesh</p> \n <p>Daniel M. Ziegler</p> \n <p>Jeffrey Wu</p> \n <p>Clemens Winter</p> \n <p>Christopher Hesse</p> \n <p>Mark Chen</p> \n <p>Eric Sigler</p> \n <p>Mateusz Litwin</p> \n <p>Scott Gray</p> \n <p>Benjamin Chess</p> \n <p>Jack Clark</p> \n <p>Christopher Berner</p> \n <p>Sam McCandlish</p> \n <p>Alec Radford</p> \n <p>Ilya Sutskever</p> \n <p>Dario Amodei</p> \n</body></html>\n</html>",
+            "cropped_image": "tables/table_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                91,
+                70,
+                520,
+                185
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2.1: Sizes, architectures, and learning hyper-parameters (batch size in tokens and learning rate) of the models which we trained. All models were trained for a total of 300 billion tokens.\" The text content from the image is as follows:\n\n\"Table 2.1: Sizes, architectures, and learning hyper-parameters (batch size in tokens and learning rate) of the models which we trained. All models were trained for a total of 300 billion tokens.\" The text content from the image is as follows:\n\n\"Table 2.1: Sizes, architectures, and learning hyper-parameters (batch size in tokens and learning rate) of the models which we trained. All models were trained for a total of 300 billion tokens.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model Name</td>\n    <td>nparams</td>\n    <td>nlayers</td>\n    <td>d model</td>\n    <td>nheads</td>\n    <td>d head</td>\n    <td>Batch Size</td>\n    <td>Learning Rate</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Small</td>\n    <td>125M</td>\n    <td>12</td>\n    <td>768</td>\n    <td>12</td>\n    <td>64</td>\n    <td>0.5M</td>\n    <td>6.0x10-4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Medium</td>\n    <td>350M</td>\n    <td>24</td>\n    <td>1024</td>\n    <td>16</td>\n    <td>64</td>\n    <td>0.5M</td>\n    <td>3.0x10-4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Large</td>\n    <td>760M</td>\n    <td>24</td>\n    <td>1536</td>\n    <td>16</td>\n    <td>96</td>\n    <td>0.5M</td>\n    <td>2.5x10-4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 XL</td>\n    <td>1.3B</td>\n    <td>24</td>\n    <td>2048</td>\n    <td>24</td>\n    <td>128</td>\n    <td>1M</td>\n    <td>2.0x10-4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 2.7B</td>\n    <td>2.7B</td>\n    <td>32</td>\n    <td>2560</td>\n    <td>32</td>\n    <td>80</td>\n    <td>1M</td>\n    <td>1.6x10-4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 6.7B</td>\n    <td>6.7B</td>\n    <td>32</td>\n    <td>4096</td>\n    <td>32</td>\n    <td>128</td>\n    <td>2M</td>\n    <td>1.2x10-4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 13B</td>\n    <td>13.0B</td>\n    <td>40</td>\n    <td>5140</td>\n    <td>40</td>\n    <td>128</td>\n    <td>2M</td>\n    <td>1.0x10-4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 175B or\"GPT-3\"</td>\n    <td>175.0B</td>\n    <td>96</td>\n    <td>12288</td>\n    <td>96</td>\n    <td>128</td>\n    <td>3.2M</td>\n    <td>0.6x10-4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                135,
+                367,
+                476,
+                457
+            ],
+            "caption": "Table 2.2: Datasets used to train GPT-3. \"Weight in training mix\" refers to the fraction of examples during training that are drawn from a given dataset, which we intentionally do not make proportional to the size of the dataset. As a result, when we train for 300 billion tokens, some datasets are seen up to 3.4 times during training while other datasets are seen less than once. Table 2.2: Datasets used to train GPT-3. \"Weight in training mix\" refers to the fraction of examples during training that are drawn from a given dataset, which we intentionally do not make proportional to the size of the dataset. As a result, when we train for 300 billion tokens, some datasets are seen up to 3.4 times during training while other datasets are seen less than once. Table 2.2: Datasets used to train GPT-3. \"Weight in training mix\" refers to the fraction of examples during training that are drawn from a given dataset, which we intentionally do not make proportional to the size of the dataset. As a result, when we train for 300 billion tokens, some datasets are seen up to 3.4 times during training while other datasets are seen less than once.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Quantity(tokens)</td>\n    <td>Weight intraining mix</td>\n    <td>Epoche lapsed whentraining for300B tokens</td>\n  </tr>\n  <tr>\n    <td>Common Crawl(filtered)</td>\n    <td>410 billion</td>\n    <td>60%</td>\n    <td>0.44</td>\n  </tr>\n  <tr>\n    <td>Web Text2</td>\n    <td>19 billion</td>\n    <td>22%</td>\n    <td>2.9</td>\n  </tr>\n  <tr>\n    <td>Books 1</td>\n    <td>12 billion</td>\n    <td>8%</td>\n    <td>1.9</td>\n  </tr>\n  <tr>\n    <td>Books 2</td>\n    <td>55 billion</td>\n    <td>8%</td>\n    <td>0.43</td>\n  </tr>\n  <tr>\n    <td>Wikipedia</td>\n    <td>3 billion</td>\n    <td>3%</td>\n    <td>3.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                244,
+                379,
+                366,
+                425
+            ],
+            "caption": "The text in the image reads:\n\n\"Table 3.1: Zero-shot results on PTB language modeling dataset. Many other common language modeling datasets are omitted because they are derived from Wikipedia or other sources which are included in GPT-3’s training data.\na[RWC+19]\" The text in the image reads:\n\n\"Table 3.1: Zero-shot results on PTB language modeling dataset. Many other common language modeling datasets are omitted because they are derived from Wikipedia or other sources which are included in GPT-3’s training data.\na[RWC+19]\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>PTB</td>\n  </tr>\n  <tr>\n    <td>SOTA(Zero-Shot)</td>\n    <td>35.8\"</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-Shot</td>\n    <td>20.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page011.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                146,
+                70,
+                465,
+                150
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>LAMBADA(acc)</td>\n    <td>LAMBADA(ppl)</td>\n    <td>Story Cloze(acc)</td>\n    <td>Hella Swag(acc)</td>\n  </tr>\n  <tr>\n    <td>SOTA</td>\n    <td>68.0</td>\n    <td>8.63</td>\n    <td>91.8</td>\n    <td>85.6</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-Shot</td>\n    <td>76.2</td>\n    <td>3.00</td>\n    <td>83.2</td>\n    <td>78.9</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-Shot</td>\n    <td>72.5</td>\n    <td>3.35</td>\n    <td>84.7</td>\n    <td>78.1</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>86.4</td>\n    <td>1.92</td>\n    <td>87.7</td>\n    <td>79.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page012.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                123,
+                70,
+                488,
+                160
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3.3: Results on three Open-Domain QA tasks. GPT-3 is shown in the few-, one-, and zero-shot settings, as compared to prior SOTA results for closed book and open domain settings. TriviaQA few-shot result is evaluated on the wiki split test server.\" The text content from the image is as follows:\n\n\"Table 3.3: Results on three Open-Domain QA tasks. GPT-3 is shown in the few-, one-, and zero-shot settings, as compared to prior SOTA results for closed book and open domain settings. TriviaQA few-shot result is evaluated on the wiki split test server.\" The text content from the image is as follows:\n\n\"Table 3.3: Results on three Open-Domain QA tasks. GPT-3 is shown in the few-, one-, and zero-shot settings, as compared to prior SOTA results for closed book and open domain settings. TriviaQA few-shot result is evaluated on the wiki split test server.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>Natural QS</td>\n    <td>Web QS</td>\n    <td>Trivia QA</td>\n  </tr>\n  <tr>\n    <td>RAG(Fine-tuned， Open-Domain) [LPP+20]</td>\n    <td>44.5</td>\n    <td>45.5</td>\n    <td>68.0</td>\n  </tr>\n  <tr>\n    <td>T5-11B+SSM(Fine-tuned， Closed-Book) [RRS20]</td>\n    <td>36.6</td>\n    <td>44.7</td>\n    <td>60.5</td>\n  </tr>\n  <tr>\n    <td>T5-11B(Fine-tuned， Closed-Book)</td>\n    <td>34.5</td>\n    <td>37.4</td>\n    <td>50.1</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-Shot</td>\n    <td>14.6</td>\n    <td>14.4</td>\n    <td>64.3</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-Shot</td>\n    <td>23.0</td>\n    <td>25.3</td>\n    <td>68.0</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>29.9</td>\n    <td>41.5</td>\n    <td>71.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page013.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                127,
+                112,
+                483,
+                224
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>En→Fr</td>\n    <td>Fr→En</td>\n    <td>En→De</td>\n    <td>De→En</td>\n    <td>En→Ro</td>\n    <td>Ro→En</td>\n  </tr>\n  <tr>\n    <td>SOTA(Supervised)</td>\n    <td>45.6</td>\n    <td>35.0</td>\n    <td>41.2</td>\n    <td>40.2</td>\n    <td>38.5</td>\n    <td>39.9</td>\n  </tr>\n  <tr>\n    <td>XLM[LC19]</td>\n    <td>33.4</td>\n    <td>33.3</td>\n    <td>26.4</td>\n    <td>34.3</td>\n    <td>33.3</td>\n    <td>31.8</td>\n  </tr>\n  <tr>\n    <td>MASS[STQ+19]</td>\n    <td>37.5</td>\n    <td>34.9</td>\n    <td>28.3</td>\n    <td>35.2</td>\n    <td>35.2</td>\n    <td>33.1</td>\n  </tr>\n  <tr>\n    <td>mBART[LGG+20]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>29.8</td>\n    <td>34.0</td>\n    <td>35.0</td>\n    <td>30.5</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-Shot</td>\n    <td>25.2</td>\n    <td>21.2</td>\n    <td>24.6</td>\n    <td>27.2</td>\n    <td>14.1</td>\n    <td>19.9</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-Shot</td>\n    <td>28.3</td>\n    <td>33.7</td>\n    <td>26.2</td>\n    <td>30.4</td>\n    <td>20.6</td>\n    <td>38.6</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>32.6</td>\n    <td>39.2</td>\n    <td>29.7</td>\n    <td>40.6</td>\n    <td>21.0</td>\n    <td>39.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page015.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                196,
+                70,
+                415,
+                138
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3.5: Results on the WSC273 version of Winograd schemas and the adversarial Winogrande dataset. See Section 4 for details on potential contamination of the Winograd test set. \\(^a\\) [SBBC19] \\(^b\\) [LYN+20]\" The text content from the image is as follows:\n\n\"Table 3.5: Results on the WSC273 version of Winograd schemas and the adversarial Winogrande dataset. See Section 4 for details on potential contamination of the Winograd test set. \\(^a\\) [SBBC19] \\(^b\\) [LYN+20]\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>Winograd</td>\n    <td>Winogrande(XL)</td>\n  </tr>\n  <tr>\n    <td>Fine-tuned SOTA</td>\n    <td>90.1</td>\n    <td>84.6</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-Shot</td>\n    <td>88.3*</td>\n    <td>70.2</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-Shot</td>\n    <td>89.7*</td>\n    <td>73.2</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>88.6*</td>\n    <td>77.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page016.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                132,
+                70,
+                479,
+                138
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>PIQA</td>\n    <td>ARC(Easy)</td>\n    <td>ARC(Challenge)</td>\n    <td>OpenBookQA</td>\n  </tr>\n  <tr>\n    <td>Fine-tuned SOTA</td>\n    <td>79.4</td>\n    <td>92.0[KKS+20]</td>\n    <td>78.5[KKS+20]</td>\n    <td>87.2[KKS+20]</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-Shot</td>\n    <td>80.5*</td>\n    <td>68.8</td>\n    <td>51.4</td>\n    <td>57.6</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-Shot</td>\n    <td>80.5*</td>\n    <td>71.2</td>\n    <td>53.2</td>\n    <td>58.8</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>82.8*</td>\n    <td>70.1</td>\n    <td>51.5</td>\n    <td>65.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page017.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 18,
+            "type": "table",
+            "bbox": [
+                132,
+                70,
+                479,
+                138
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is as follows:\n\n\"Table 3.7: Results on reading comprehension tasks. All scores are F1 except results for RACE which report accuracy.\na[JZC+19] b[JN20] c[AI19] d[QIA20] e[SPP+19]\" The text content from the image is as follows:\n\n\"Table 3.7: Results on reading comprehension tasks. All scores are F1 except results for RACE which report accuracy.\na[JZC+19] b[JN20] c[AI19] d[QIA20] e[SPP+19]\" The text content from the image is as follows:\n\n\"Table 3.7: Results on reading comprehension tasks. All scores are F1 except results for RACE which report accuracy.\na[JZC+19] b[JN20] c[AI19] d[QIA20] e[SPP+19]\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>CoQA</td>\n    <td>DROP</td>\n    <td>QuAC</td>\n    <td>SQuADv2</td>\n    <td>RACE-h</td>\n    <td>RACE-m</td>\n  </tr>\n  <tr>\n    <td>Fine-tuned SOTA</td>\n    <td>90.7a</td>\n    <td>89.1b</td>\n    <td>74.4c</td>\n    <td>93.0d</td>\n    <td>90.0e</td>\n    <td>93.1e</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-Shot</td>\n    <td>81.5</td>\n    <td>23.6</td>\n    <td>41.5</td>\n    <td>59.5</td>\n    <td>45.5</td>\n    <td>58.4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-Shot</td>\n    <td>84.0</td>\n    <td>34.3</td>\n    <td>43.3</td>\n    <td>65.4</td>\n    <td>45.9</td>\n    <td>57.4</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>85.0</td>\n    <td>36.5</td>\n    <td>44.3</td>\n    <td>69.8</td>\n    <td>46.8</td>\n    <td>58.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page018.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 19,
+            "type": "table",
+            "bbox": [
+                103,
+                483,
+                507,
+                620
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Super GLUE</td>\n    <td>Bool Q</td>\n    <td>CB</td>\n    <td>CB</td>\n    <td>COPA</td>\n    <td>RTE</td>\n  </tr>\n  <tr>\n    <td>Average</td>\n    <td>Accuracy</td>\n    <td>Accuracy</td>\n    <td>F1</td>\n    <td>Accuracy</td>\n    <td>Accuracy</td>\n  </tr>\n  <tr>\n    <td>Fine-tuned SOTA</td>\n    <td>89.0</td>\n    <td>91.0</td>\n    <td>96.9</td>\n    <td>93.9</td>\n    <td>94.8</td>\n    <td>92.5</td>\n  </tr>\n  <tr>\n    <td>Fine-tuned BERT-Large</td>\n    <td>69.0</td>\n    <td>77.4</td>\n    <td>83.6</td>\n    <td>75.7</td>\n    <td>70.6</td>\n    <td>71.7</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>71.8</td>\n    <td>76.4</td>\n    <td>75.6</td>\n    <td>52.0</td>\n    <td>92.0</td>\n    <td>69.0</td>\n  </tr>\n  <tr>\n    <td>WiC</td>\n    <td>Accuracy</td>\n    <td>WSC</td>\n    <td>Accuracy</td>\n    <td>Multi RC</td>\n    <td>Accuracy</td>\n    <td>Multi RC</td>\n    <td>F1a</td>\n    <td>ReCoRD</td>\n    <td>Accuracy</td>\n    <td>ReCoRD</td>\n    <td>F1</td>\n  </tr>\n  <tr>\n    <td>Fine-tuned SOTA</td>\n    <td>76.1</td>\n    <td>93.8</td>\n    <td>62.3</td>\n    <td>88.2</td>\n    <td>92.5</td>\n    <td>93.3</td>\n  </tr>\n  <tr>\n    <td>Fine-tuned BERT-Large</td>\n    <td>69.6</td>\n    <td>64.6</td>\n    <td>24.1</td>\n    <td>70.0</td>\n    <td>71.3</td>\n    <td>72.0</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-Shot</td>\n    <td>49.4</td>\n    <td>80.1</td>\n    <td>30.5</td>\n    <td>75.4</td>\n    <td>90.2</td>\n    <td>91.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page019.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 23,
+            "type": "table",
+            "bbox": [
+                115,
+                70,
+                496,
+                127
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>2D+</td>\n    <td>2D-</td>\n    <td>3D+</td>\n    <td>3D-</td>\n    <td>4D+</td>\n    <td>4D-</td>\n    <td>5D+</td>\n    <td>5D-</td>\n    <td>2Dx</td>\n    <td>1DC</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-shot</td>\n    <td>76.9</td>\n    <td>58.0</td>\n    <td>34.2</td>\n    <td>48.3</td>\n    <td>4.0</td>\n    <td>7.5</td>\n    <td>0.7</td>\n    <td>0.8</td>\n    <td>19.8</td>\n    <td>9.8</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-shot</td>\n    <td>99.6</td>\n    <td>86.4</td>\n    <td>65.5</td>\n    <td>78.7</td>\n    <td>14.0</td>\n    <td>14.0</td>\n    <td>3.5</td>\n    <td>3.8</td>\n    <td>27.4</td>\n    <td>14.3</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-shot</td>\n    <td>100.0</td>\n    <td>98.9</td>\n    <td>80.4</td>\n    <td>94.2</td>\n    <td>25.5</td>\n    <td>26.8</td>\n    <td>9.3</td>\n    <td>9.9</td>\n    <td>29.2</td>\n    <td>21.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page023.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 23,
+            "type": "table",
+            "bbox": [
+                191,
+                187,
+                419,
+                243
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3.9: Results on basic arithmetic tasks for GPT-3 175B. {2,3,4,5}D{+,-} is 2, 3, 4, and 5 digit addition or subtraction, 2Dx is 2 digit multiplication. 1DC is 1 digit composite operations. Results become progressively stronger moving from the zero-shot to one-shot to few-shot setting, but even the zero-shot shows significant arithmetic abilities.\" The text content from the image is as follows:\n\n\"Table 3.10: GPT-3 175B performance on various word unscrambling and word manipulation tasks, in zero-, one-, and few-shot settings. CL is 'cycle letters in word', A1 is anagrams of but the first and last letters, A2 is anagrams of all but the first and last two letters, RI is 'Random insertion in word', RW is 'reversed words'.\" The text content from the image is as follows:\n\n\"Table 3.10: GPT-3 175B performance on various word unscrambling and word manipulation tasks, in zero-, one-, and few-shot settings. CL is 'cycle letters in word', A1 is anagrams of but the first and last letters, A2 is anagrams of all but the first and last two letters, RI is 'Random insertion in word', RW is 'reversed words'.\" The text content from the image is as follows:\n\n\"Table 3.10: GPT-3 175B performance on various word unscrambling and word manipulation tasks, in zero-, one-, and few-shot settings. CL is 'cycle letters in word', A1 is anagrams of but the first and last letters, A2 is anagrams of all but the first and last two letters, RI is 'Random insertion in word', RW is 'reversed words'.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Setting</td>\n    <td>CL</td>\n    <td>A1</td>\n    <td>A2</td>\n    <td>RI</td>\n    <td>RW</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Zero-shot</td>\n    <td>3.66</td>\n    <td>2.28</td>\n    <td>8.91</td>\n    <td>8.26</td>\n    <td>0.09</td>\n  </tr>\n  <tr>\n    <td>GPT-3 One-shot</td>\n    <td>21.7</td>\n    <td>8.62</td>\n    <td>25.9</td>\n    <td>45.4</td>\n    <td>0.48</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Few-shot</td>\n    <td>37.9</td>\n    <td>15.1</td>\n    <td>39.7</td>\n    <td>67.2</td>\n    <td>0.44</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page023.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 26,
+            "type": "table",
+            "bbox": [
+                81,
+                70,
+                529,
+                203
+            ],
+            "caption": "Table 3.11: Human accuracy in identifying whether short (∼200 word) news articles are model generated. We find that human accuracy (measured by the ratio of correct assignments to non-neutral assignments) ranges from 86% on the control model to 52% on GPT-3 175B. This table compares mean accuracy between five different models, and shows the results of a two-sample T-Test for the difference in mean accuracy between each model and the control model (an unconditional GPT-3 Small model with increased output randomness). Table 3.11: Human accuracy in identifying whether short (∼200 word) news articles are model generated. We find that human accuracy (measured by the ratio of correct assignments to non-neutral assignments) ranges from 86% on the control model to 52% on GPT-3 175B. This table compares mean accuracy between five different models, and shows the results of a two-sample T-Test for the difference in mean accuracy between each model and the control model (an unconditional GPT-3 Small model with increased output randomness). Table 3.11: Human accuracy in identifying whether short (∼200 word) news articles are model generated. We find that human accuracy (measured by the ratio of correct assignments to non-neutral assignments) ranges from 86% on the control model to 52% on GPT-3 175B. This table compares mean accuracy between five different models, and shows the results of a two-sample T-Test for the difference in mean accuracy between each model and the control model (an unconditional GPT-3 Small model with increased output randomness).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Mean accuracy</td>\n    <td>95% ConfidenceInterval(low， hi)</td>\n    <td>t compared tocontrol(p-value)</td>\n    <td>I don't knowassignments</td>\n  </tr>\n  <tr>\n    <td>Control(deliberately bad model)</td>\n    <td>86%</td>\n    <td>83%-90%</td>\n    <td>-</td>\n    <td>3.6%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Small</td>\n    <td>76%</td>\n    <td>72%-80%</td>\n    <td>3.9(2e-4)</td>\n    <td>4.9%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Medium</td>\n    <td>61%</td>\n    <td>58%-65%</td>\n    <td>10.3(7e-21)</td>\n    <td>6.0%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Large</td>\n    <td>68%</td>\n    <td>64%-72%</td>\n    <td>7.3(3e-11)</td>\n    <td>8.7%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 XL</td>\n    <td>62%</td>\n    <td>59%-65%</td>\n    <td>10.7(1e-19)</td>\n    <td>7.5%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 2.7B</td>\n    <td>62%</td>\n    <td>58%-65%</td>\n    <td>10.4(5e-19)</td>\n    <td>7.1%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 6.7B</td>\n    <td>60%</td>\n    <td>56%-63%</td>\n    <td>11.2(3e-21)</td>\n    <td>6.2%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 13B</td>\n    <td>55%</td>\n    <td>52%-58%</td>\n    <td>15.3(1e-32)</td>\n    <td>7.1%</td>\n  </tr>\n  <tr>\n    <td>GPT-3 175B</td>\n    <td>52%</td>\n    <td>49%-54%</td>\n    <td>16.9(1e-34)</td>\n    <td>7.8%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page026.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 27,
+            "type": "table",
+            "bbox": [
+                122,
+                564,
+                488,
+                621
+            ],
+            "caption": "Human ability to detect model generated news articles",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Mean accuracy</td>\n    <td>95% ConfidenceInterval(low， hi)</td>\n    <td>t compared tocontrol(p-value)</td>\n    <td>I don't knowassignments</td>\n  </tr>\n  <tr>\n    <td>Control</td>\n    <td>88%</td>\n    <td>84%-91%</td>\n    <td>-</td>\n    <td>2.7%</td>\n  </tr>\n  <tr>\n    <td>GPT-3175B</td>\n    <td>52%</td>\n    <td>48%-57%</td>\n    <td>12.7(3.2e-23)</td>\n    <td>10.6%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_015_page027.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 29,
+            "type": "table",
+            "bbox": [
+                79,
+                77,
+                528,
+                353
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html><body>\n<p>A \"whatpu\" is a small, furry animal native to Tanzania. An example of a sentence that uses the word whatpu is:</p> \n <p>We were traveling in Africa and we saw these very cute whatpus.</p> \n <hr/> \n <p>To do a \"farduddle\" means to jump up and down really fast. An example of a sentence that uses the word farduddle is:</p> \n <p>One day when I was playing tag with my little sister, she got really excited and she started doing these crazy fardiddles.</p> \n <p>A \"yalubalu\" is a type of vegetable that looks like a big pumpkin. An example of a sentence that uses the word yalubalu is:</p> \n <p>I was on a trip to Africa and I tried this yalubalu vegetable that was grown in a garden there. It was delicious.</p> \n <hr/> \n <p>A \"Burringo\" is a car with very fast acceleration. An example of a sentence that uses the word Burringo is:</p> \n <p>In our garage we have a Burringo that my father drives to work every day.</p> \n <hr/> \n <p>A \"Gigamuru\" is a type of Japanese musical instrument. An example of a sentence that uses the word Gigamuru is:</p> \n <p>I have a Gigamuru that my uncle gave me as a gift. I love to play it at home.</p> \n <hr/> \n <p>To \"screeg\" something is to swing a sword at it. An example of a sentence that uses the word screeg is:</p> \n <p>We screeghed at each other for several minutes and then we went outside and ate ice cream.</p> \n</body></html>\n</html>",
+            "cropped_image": "tables/table_016_page029.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 30,
+            "type": "table",
+            "bbox": [
+                78,
+                149,
+                531,
+                545
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Poor English input：I eated the purple berries.</td>\n    <td>Good English output：I ate the purple berries.</td>\n  </tr>\n  <tr>\n    <td>Poor English input：Thank you for picking me as your designer.I'd appreciate it.</td>\n    <td>Good English output：Thank you for choosing me as your designer.I appreciate it.</td>\n  </tr>\n  <tr>\n    <td>Poor English input：The mentioned changes have done.or I did the alteration that you requested.or I changed things you wanted and did the modifications.</td>\n    <td>Good English output：The requested changes have been made.or I made the alteration that you requested.or I changed things you wanted and made the modifications.</td>\n  </tr>\n  <tr>\n    <td>Poor English input：I'd be more than happy to work with you in another project.</td>\n    <td>Good English output：I'd be more than happy to work with you on another project.</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Poor English input：Please provide me with a short brief of the design you're looking for and that'd be nice if you could share some examples or project you did before.</td>\n    <td>Good English output：Please provide me with a brief description of the design you're looking for and that would be nice if you could share some examples or projects you have done before.</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Poor English input：The patient was died.</td>\n    <td>Good English output：The patient died.</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Poor English input：We think that Leslie likes ourselves.</td>\n    <td>Good English output：We think that Leslie likes us.</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Poor English input：Janet broke Bill on the finger.</td>\n    <td>Good English output：Janet broke Bill's finger.</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Poor English input：Mary arranged for，in St.Louis，John to rent a house cheap.</td>\n    <td>Good English output：Mary arranged for John to rent a house in St.Louis.</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Poor English input：Today I have went to the store to to buys some many bottle of water.</td>\n    <td>Good English output：Today I went to the store to buy some bottles of water.</td>\n  </tr>\n  <tr>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Poor English input：I have tried to hit ball with bat，but my swing is has miss.</td>\n    <td>Good English output：I tried to hit the ball with the bat，but my swing missed.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_017_page030.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 37,
+            "type": "table",
+            "bbox": [
+                71,
+                98,
+                541,
+                270
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 6.1: Most Biased Descriptive Words in 175B Model\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Top 10 Most Biased Male Descriptive Words with RawCo-Occurrence Counts</td>\n    <td>Top 10 Most Biased Female Descriptive Words with RawCo-Occurrence Counts</td>\n  </tr>\n  <tr>\n    <td>Average Number of Co-Occurrences Across All Words：17.5</td>\n    <td>Average Number of Co-Occurrences Across All Words：23.9</td>\n  </tr>\n  <tr>\n    <td>Large(16)</td>\n    <td>Optimistic(12)</td>\n  </tr>\n  <tr>\n    <td>Mostly(15)</td>\n    <td>Bubbly(12)</td>\n  </tr>\n  <tr>\n    <td>Lazy(14)</td>\n    <td>Naughty(12)</td>\n  </tr>\n  <tr>\n    <td>Fantastic(13)</td>\n    <td>Easy-going(12)</td>\n  </tr>\n  <tr>\n    <td>Eccentric(13)</td>\n    <td>Petite(10)</td>\n  </tr>\n  <tr>\n    <td>Protect(10)</td>\n    <td>Tight(10)</td>\n  </tr>\n  <tr>\n    <td>Jolly(10)</td>\n    <td>Pregnant(10)</td>\n  </tr>\n  <tr>\n    <td>Stable(9)</td>\n    <td>Gorgeous(28)</td>\n  </tr>\n  <tr>\n    <td>Personable(22)</td>\n    <td>Sucked(8)</td>\n  </tr>\n  <tr>\n    <td>Survive(7)</td>\n    <td>Beautiful(158)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_018_page037.png"
+        },
+        {
+            "serial_number": 19,
+            "page": 38,
+            "type": "table",
+            "bbox": [
+                70,
+                306,
+                541,
+                459
+            ],
+            "caption": "The ten most favored words about each religion in the GPT-3 175B model are:\n\n1. Christianity: God, Jesus, Bible, faith, salvation, church, prayer, sin, heaven, hell.\n2. Islam: Allah, Muhammad, Quran, prayer, jihād, paradise, hell, prophet, angels, revelation.\n3. Judaism: God, Torah, Messiah, Israel, prayer, synagogue, Sabbath, circumcision, Passover, Hanukkah.\n4. Hinduism: God, Brahman, karma, reincarnation, yoga, dharma, devotion, meditation, asceticism, moksha.\n5. Buddhism: Buddha, Dharma, Nirvana, enlightenment, meditation, compassion, mindfulness, karma, rebirth, wisdom.\n6. Sikhism: God, Guru, Khalsa, Namaste, prayer, meditation, charity, discipline, sacrifice, unity.\n7. Zoroastrianism: Ahura Mazda, Zarathustra, Mazda, Asha, Haoma, fire, good thoughts, good words, good deeds, immortality.\n8. Jainism: Tirthankara, Jina, Dharma, Moksha, Karma, Ahimsa, non-violence, truth, right conduct, right knowledge.\n9. Taoism: Tao, Laozi, Yin-Yang, Wu Wei, Dao, Virtue, Harmony, Nature, Simplicity, Integrity.\n10. Shintoism: Kami, Shinto, Shintoism, Shinto shrine, Shinto ritual, Shinto priest, Shinto festival, Shinto mythology, Shinto ancestor, Shinto purification.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Religion</td>\n    <td>Most Favored Descriptive Words</td>\n  </tr>\n  <tr>\n    <td>Atheism</td>\n    <td>'Theists'， 'Cool'， 'Agnostics'， 'Mad'， 'Theism'， 'Defensive'， 'Complaining'， 'Correct'， 'Arrogant'， 'Characterized'</td>\n  </tr>\n  <tr>\n    <td>Buddhism</td>\n    <td>'Myanmar'， 'Vegetarians'， 'Burma'， 'Fellowship'， 'Monk'， 'Japanese'， 'Reluctant'， 'Wisdom'， 'Enlightenment'， 'Non-Violent'</td>\n  </tr>\n  <tr>\n    <td>Christianity</td>\n    <td>'Attend'， 'Ignorant'， 'Response'， 'Judgmental'， 'Grace'， 'Execution'， 'Egypt'， 'Continue'， 'Comments'， 'Officially'</td>\n  </tr>\n  <tr>\n    <td>Hinduism</td>\n    <td>'Caste'， 'Cows'， 'BJP'， 'Kashmir'， 'Modi'， 'Celebrated'， 'Dharma'， 'Pakistani'， 'Originated'， 'Africa'</td>\n  </tr>\n  <tr>\n    <td>Islam</td>\n    <td>'Pillars'， 'Terrorism'， 'Fasting'， 'Sheikh'， 'Non-Muslim'， 'Source'， 'Charities'， 'Levant'， 'Allah'， 'Prophet'</td>\n  </tr>\n  <tr>\n    <td>Judaism</td>\n    <td>'Gentiles'， 'Race'， 'Semites'， 'Whites'， 'Blacks'， 'Smartest'， 'Racists'， 'Arabs'， 'Game'， 'Russian'</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_019_page038.png"
+        },
+        {
+            "serial_number": 20,
+            "page": 45,
+            "type": "table",
+            "bbox": [
+                10,
+                123,
+                596,
+                589
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html>\n<table>\n  <tr>\n    <td>Name</td>\n    <td>Split</td>\n    <td>Metric</td>\n    <td>N</td>\n    <td>Acc/F1/BLEU</td>\n    <td>TotalCount</td>\n    <td>Dirty</td>\n    <td>Dirty</td>\n    <td>Clean</td>\n    <td>Clean</td>\n    <td>Relative</td>\n  </tr>\n  <tr>\n    <td>Count</td>\n    <td>Acc/F1/BLEU</td>\n    <td>Count</td>\n    <td>Acc/F1/BLEU</td>\n    <td>Count</td>\n    <td>Percentage</td>\n    <td>Difference</td>\n    <td>Clean</td>\n    <td>All</td>\n  </tr>\n  <tr>\n    <td>Quac</td>\n    <td>dev</td>\n    <td>f1</td>\n    <td>13</td>\n    <td>44.3</td>\n    <td>7353</td>\n    <td>44.3</td>\n    <td>7315</td>\n    <td>54.1</td>\n    <td>38</td>\n    <td>1%</td>\n    <td>20%</td>\n  </tr>\n  <tr>\n    <td>SQuADv2</td>\n    <td>dev</td>\n    <td>f1</td>\n    <td>13</td>\n    <td>69.8</td>\n    <td>11873</td>\n    <td>69.9</td>\n    <td>11136</td>\n    <td>68.4</td>\n    <td>737</td>\n    <td>6%</td>\n    <td>-2%</td>\n  </tr>\n  <tr>\n    <td>DROP</td>\n    <td>dev</td>\n    <td>f1</td>\n    <td>13</td>\n    <td>36.5</td>\n    <td>9536</td>\n    <td>37.0</td>\n    <td>8898</td>\n    <td>29.5</td>\n    <td>638</td>\n    <td>7%</td>\n    <td>-21%</td>\n  </tr>\n  <tr>\n    <td>Symbol Insertion</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>7</td>\n    <td>66.9</td>\n    <td>10000</td>\n    <td>66.8</td>\n    <td>8565</td>\n    <td>67.1</td>\n    <td>1435</td>\n    <td>14%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>CoQa</td>\n    <td>dev</td>\n    <td>f1</td>\n    <td>13</td>\n    <td>86.0</td>\n    <td>7983</td>\n    <td>85.3</td>\n    <td>5107</td>\n    <td>87.1</td>\n    <td>2876</td>\n    <td>36%</td>\n    <td>1%</td>\n  </tr>\n  <tr>\n    <td>ReCoRD</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>89.5</td>\n    <td>10000</td>\n    <td>90.3</td>\n    <td>6110</td>\n    <td>88.2</td>\n    <td>3890</td>\n    <td>39%</td>\n    <td>-1%</td>\n  </tr>\n  <tr>\n    <td>Winograd</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>9</td>\n    <td>88.6</td>\n    <td>273</td>\n    <td>90.2</td>\n    <td>164</td>\n    <td>86.2</td>\n    <td>109</td>\n    <td>40%</td>\n    <td>-3%</td>\n  </tr>\n  <tr>\n    <td>Bool Q</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>76.0</td>\n    <td>3270</td>\n    <td>75.8</td>\n    <td>1955</td>\n    <td>76.3</td>\n    <td>1315</td>\n    <td>40%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>Multi RC</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>74.2</td>\n    <td>953</td>\n    <td>73.4</td>\n    <td>558</td>\n    <td>75.3</td>\n    <td>395</td>\n    <td>41%</td>\n    <td>1%</td>\n  </tr>\n  <tr>\n    <td>RACE-h</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>46.8</td>\n    <td>3498</td>\n    <td>47.0</td>\n    <td>1580</td>\n    <td>46.7</td>\n    <td>1918</td>\n    <td>55%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>LAMBADA</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>86.4</td>\n    <td>5153</td>\n    <td>86.9</td>\n    <td>2209</td>\n    <td>86.0</td>\n    <td>2944</td>\n    <td>57%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>LAMBADA(No Blanks)</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>77.8</td>\n    <td>5153</td>\n    <td>78.5</td>\n    <td>2209</td>\n    <td>77.2</td>\n    <td>2944</td>\n    <td>57%</td>\n    <td>-1%</td>\n  </tr>\n  <tr>\n    <td>WSC</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>76.9</td>\n    <td>104</td>\n    <td>73.8</td>\n    <td>42</td>\n    <td>79.0</td>\n    <td>62</td>\n    <td>60%</td>\n    <td>3%</td>\n  </tr>\n  <tr>\n    <td>PI QA</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>8</td>\n    <td>82.3</td>\n    <td>1838</td>\n    <td>89.9</td>\n    <td>526</td>\n    <td>79.3</td>\n    <td>1312</td>\n    <td>71%</td>\n    <td>-4%</td>\n  </tr>\n  <tr>\n    <td>RACE-m</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>58.5</td>\n    <td>1436</td>\n    <td>53.0</td>\n    <td>366</td>\n    <td>60.4</td>\n    <td>1070</td>\n    <td>75%</td>\n    <td>3%</td>\n  </tr>\n  <tr>\n    <td>De→En 16</td>\n    <td>test</td>\n    <td>bleu-sb</td>\n    <td>12</td>\n    <td>43.0</td>\n    <td>2999</td>\n    <td>47.4</td>\n    <td>739</td>\n    <td>40.8</td>\n    <td>2260</td>\n    <td>75%</td>\n    <td>-5%</td>\n  </tr>\n  <tr>\n    <td>En→De 16</td>\n    <td>test</td>\n    <td>bleu-sb</td>\n    <td>12</td>\n    <td>30.9</td>\n    <td>2999</td>\n    <td>32.6</td>\n    <td>739</td>\n    <td>29.9</td>\n    <td>2260</td>\n    <td>75%</td>\n    <td>-3%</td>\n  </tr>\n  <tr>\n    <td>En→Ro 16</td>\n    <td>test</td>\n    <td>bleu-sb</td>\n    <td>12</td>\n    <td>25.8</td>\n    <td>1999</td>\n    <td>24.9</td>\n    <td>423</td>\n    <td>26.1</td>\n    <td>1576</td>\n    <td>79%</td>\n    <td>1%</td>\n  </tr>\n  <tr>\n    <td>Ro→En 16</td>\n    <td>test</td>\n    <td>bleu-sb</td>\n    <td>12</td>\n    <td>41.3</td>\n    <td>1999</td>\n    <td>40.4</td>\n    <td>423</td>\n    <td>41.6</td>\n    <td>1576</td>\n    <td>79%</td>\n    <td>1%</td>\n  </tr>\n  <tr>\n    <td>Web Qs</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>8</td>\n    <td>41.5</td>\n    <td>2032</td>\n    <td>41.6</td>\n    <td>428</td>\n    <td>41.5</td>\n    <td>1604</td>\n    <td>79%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>ANLI R1</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>36.8</td>\n    <td>1000</td>\n    <td>40.5</td>\n    <td>200</td>\n    <td>35.9</td>\n    <td>800</td>\n    <td>80%</td>\n    <td>-3%</td>\n  </tr>\n  <tr>\n    <td>ANLI R2</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>34.0</td>\n    <td>1000</td>\n    <td>29.4</td>\n    <td>177</td>\n    <td>35.0</td>\n    <td>823</td>\n    <td>82%</td>\n    <td>3%</td>\n  </tr>\n  <tr>\n    <td>Trivia QA</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>10</td>\n    <td>71.2</td>\n    <td>7993</td>\n    <td>70.8</td>\n    <td>1390</td>\n    <td>71.3</td>\n    <td>6603</td>\n    <td>83%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>ANLI R3</td>\n    <td>test</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>40.2</td>\n    <td>1200</td>\n    <td>38.3</td>\n    <td>196</td>\n    <td>40.5</td>\n    <td>1004</td>\n    <td>84%</td>\n    <td>1%</td>\n  </tr>\n  <tr>\n    <td>En→Fr 14</td>\n    <td>test</td>\n    <td>bleu-sb</td>\n    <td>13</td>\n    <td>39.9</td>\n    <td>3003</td>\n    <td>38.3</td>\n    <td>411</td>\n    <td>40.3</td>\n    <td>2592</td>\n    <td>86%</td>\n    <td>1%</td>\n  </tr>\n  <tr>\n    <td>Fr→En 14</td>\n    <td>test</td>\n    <td>bleu-sb</td>\n    <td>13</td>\n    <td>41.4</td>\n    <td>3003</td>\n    <td>40.9</td>\n    <td>411</td>\n    <td>41.4</td>\n    <td>2592</td>\n    <td>86%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>WiC</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>51.4</td>\n    <td>638</td>\n    <td>53.1</td>\n    <td>49</td>\n    <td>51.3</td>\n    <td>589</td>\n    <td>92%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>RTE</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>71.5</td>\n    <td>277</td>\n    <td>71.4</td>\n    <td>21</td>\n    <td>71.5</td>\n    <td>256</td>\n    <td>92%</td>\n    <td>0%</td>\n  </tr>\n  <tr>\n    <td>CB</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>13</td>\n    <td>80.4</td>\n    <td>56</td>\n    <td>100.0</td>\n    <td>4</td>\n    <td>78.8</td>\n    <td>52</td>\n    <td>93%</td>\n    <td>-2%</td>\n  </tr>\n  <tr>\n    <td>Anagrams 2</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>2</td>\n    <td>40.2</td>\n    <td>10000</td>\n    <td>76.2</td>\n    <td>705</td>\n    <td>37.4</td>\n    <td>9295</td>\n    <td>93%</td>\n    <td>-7%</td>\n  </tr>\n  <tr>\n    <td>Reversed Words</td>\n    <td>dev</td>\n    <td>acc</td>\n    <td>2</td>\n    <td>0.4</td>\n    <td>10000</td>\n    <td>1.5</td>\n    <td>660</td>\n    <td>0.3</td>\n    <td>9340</td>\n    <td>93%</td>\n    <td>-26%</td>\n  </tr>\n  <tr>\n    <td>OpenBookQA</td>\n    <td>test</\n</html>",
+            "cropped_image": "tables/table_020_page045.png"
+        },
+        {
+            "serial_number": 21,
+            "page": 46,
+            "type": "table",
+            "bbox": [
+                56,
+                158,
+                558,
+                379
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Total traincompute(PF-days)</td>\n    <td>Total traincompute(flops)</td>\n    <td>Params(M)</td>\n    <td>Training tokens(billions)</td>\n    <td>Flopsper paramper token</td>\n    <td>Multforbwd pass</td>\n    <td>Fwd-passflops peractive paramper token</td>\n    <td>Fracofparams activefor eachtoken</td>\n  </tr>\n  <tr>\n    <td>T5-Small</td>\n    <td>2.08E+00</td>\n    <td>1.80E+20</td>\n    <td>60</td>\n    <td>1，000</td>\n    <td>3</td>\n    <td>3</td>\n    <td>1</td>\n    <td>0.5</td>\n  </tr>\n  <tr>\n    <td>T5-Base</td>\n    <td>7.64E+00</td>\n    <td>6.60E+20</td>\n    <td>220</td>\n    <td>1，000</td>\n    <td>3</td>\n    <td>3</td>\n    <td>1</td>\n    <td>0.5</td>\n  </tr>\n  <tr>\n    <td>T5-Large</td>\n    <td>2.67E+01</td>\n    <td>2.31E+21</td>\n    <td>770</td>\n    <td>1，000</td>\n    <td>3</td>\n    <td>3</td>\n    <td>1</td>\n    <td>0.5</td>\n  </tr>\n  <tr>\n    <td>T5-3B</td>\n    <td>1.04E+02</td>\n    <td>9.00E+21</td>\n    <td>3，000</td>\n    <td>1，000</td>\n    <td>3</td>\n    <td>3</td>\n    <td>1</td>\n    <td>0.5</td>\n  </tr>\n  <tr>\n    <td>T5-11B</td>\n    <td>3.82E+02</td>\n    <td>3.30E+22</td>\n    <td>11，000</td>\n    <td>1，000</td>\n    <td>3</td>\n    <td>3</td>\n    <td>1</td>\n    <td>0.5</td>\n  </tr>\n  <tr>\n    <td>BERT-Base</td>\n    <td>1.89E+00</td>\n    <td>1.64E+20</td>\n    <td>109</td>\n    <td>250</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>BERT-Large</td>\n    <td>6.16E+00</td>\n    <td>5.33E+20</td>\n    <td>355</td>\n    <td>250</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>RoBERTa-Base</td>\n    <td>1.74E+01</td>\n    <td>1.50E+21</td>\n    <td>125</td>\n    <td>2，000</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>RoBERTa-Large</td>\n    <td>4.93E+01</td>\n    <td>4.26E+21</td>\n    <td>355</td>\n    <td>2，000</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Small</td>\n    <td>2.60E+00</td>\n    <td>2.25E+20</td>\n    <td>125</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Medium</td>\n    <td>7.42E+00</td>\n    <td>6.41E+20</td>\n    <td>356</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Large</td>\n    <td>1.58E+01</td>\n    <td>1.37E+21</td>\n    <td>760</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-3 XL</td>\n    <td>2.75E+01</td>\n    <td>2.38E+21</td>\n    <td>1，320</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-32.7B</td>\n    <td>5.52E+01</td>\n    <td>4.77E+21</td>\n    <td>2，650</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-36.7B</td>\n    <td>1.39E+02</td>\n    <td>1.20E+22</td>\n    <td>6，660</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-313B</td>\n    <td>2.68E+02</td>\n    <td>2.31E+22</td>\n    <td>12，850</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n  <tr>\n    <td>GPT-3175B</td>\n    <td>3.64E+03</td>\n    <td>3.14E+23</td>\n    <td>174，600</td>\n    <td>300</td>\n    <td>6</td>\n    <td>3</td>\n    <td>2</td>\n    <td>1.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_021_page046.png"
+        },
+        {
+            "serial_number": 22,
+            "page": 47,
+            "type": "table",
+            "bbox": [
+                126,
+                70,
+                484,
+                213
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ParticipantsRecruited</td>\n    <td>ParticipantsExcluded</td>\n    <td>Genders(m：f：other)</td>\n    <td>MeanAge</td>\n    <td>AverageWordCount(human：model)</td>\n  </tr>\n  <tr>\n    <td>Control</td>\n    <td>76</td>\n    <td>7</td>\n    <td>32：37：0</td>\n    <td>39</td>\n    <td>216：216</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Small</td>\n    <td>80</td>\n    <td>7</td>\n    <td>41：31：1</td>\n    <td>40</td>\n    <td>216：188</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Medium</td>\n    <td>80</td>\n    <td>7</td>\n    <td>46：28：2</td>\n    <td>39</td>\n    <td>216：202</td>\n  </tr>\n  <tr>\n    <td>GPT-3 Large</td>\n    <td>81</td>\n    <td>24</td>\n    <td>46：28：2</td>\n    <td>37</td>\n    <td>216：200</td>\n  </tr>\n  <tr>\n    <td>GPT-3 XL</td>\n    <td>79</td>\n    <td>14</td>\n    <td>32：32：1</td>\n    <td>38</td>\n    <td>216：199</td>\n  </tr>\n  <tr>\n    <td>GPT-3 2.7B</td>\n    <td>80</td>\n    <td>11</td>\n    <td>36：33：0</td>\n    <td>40</td>\n    <td>216：202</td>\n  </tr>\n  <tr>\n    <td>GPT-3 6.7B</td>\n    <td>76</td>\n    <td>5</td>\n    <td>46：28：2</td>\n    <td>37</td>\n    <td>216：195</td>\n  </tr>\n  <tr>\n    <td>GPT-3 13.0B</td>\n    <td>81</td>\n    <td>13</td>\n    <td>46：28：2</td>\n    <td>37</td>\n    <td>216：209</td>\n  </tr>\n  <tr>\n    <td>GPT-3 175B</td>\n    <td>80</td>\n    <td>9</td>\n    <td>42：29：0</td>\n    <td>37</td>\n    <td>216：216</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_022_page047.png"
+        },
+        {
+            "serial_number": 23,
+            "page": 48,
+            "type": "table",
+            "bbox": [
+                132,
+                70,
+                478,
+                137
+            ],
+            "caption": "Table E.2: Participant details and article lengths for the experiments investigating human detection of ∼ 500 word model generated news articles. Participants were excluded due to internet check fails. The text content from the image is as follows:\n\n\"Table E.2: Participant details and article lengths for the experiments investigating human detection of ~ 500 word model generated news articles. Participants were excluded due to internet check fails.\" The text content from the image is as follows:\n\n\"Table E.2: Participant details and article lengths for the experiments investigating human detection of ~ 500 word model generated news articles. Participants were excluded due to internet check fails.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ParticipantsRecruited</td>\n    <td>ParticipantsExcluded</td>\n    <td>Genders(m：f：other)</td>\n    <td>MeanAge</td>\n    <td>AverageWordCount(human：model)</td>\n  </tr>\n  <tr>\n    <td>Control</td>\n    <td>79</td>\n    <td>17</td>\n    <td>32：37：0</td>\n    <td>39</td>\n    <td>569：464</td>\n  </tr>\n  <tr>\n    <td>GPT-3175B</td>\n    <td>81</td>\n    <td>19</td>\n    <td>32：30：0</td>\n    <td>40</td>\n    <td>569：498</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_023_page048.png"
+        },
+        {
+            "serial_number": 24,
+            "page": 50,
+            "type": "table",
+            "bbox": [
+                167,
+                120,
+                530,
+                633
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is as follows:\n\n\"Figure G.1: Formatted dataset example for RACE-h. When predicting, we normalize by the unconditional probability of each answer as described in 2.\"",
+            "latex": "",
+            "html": "<html>\n<html><body>\n<p>Article:</p> \n <p>Informal conversation is an important part of any business relationship.Before you start a discussion,however,make sure you understand which topics are suitable and which are considered taboo in a particular culture. Latin Americans enjoy sharing information about their local history, art and customs.You may expect questions about your family,and be sure to show pictures of your children.You may feel free to ask similar questions of your Latin American friends.The French think of conversation as an art form, and they enjoy the value of lively discussions as well as disagreements. For them,arguments can be interesting and they can cover pretty much or any topic ---- as long as they occur in are respectful and intelligent manner.</p> \n <p>In the United States,business people like to discuss a wide range of topics,including opinions about work,family,hobbies,and politics. In Japan,China,and Korea,however,people are much more private.They do not share much about their thoughts,feelings,or emotions because they feel that doing so might take away from the harmonious business relationship they’re trying to build.Middle Easterners are also private about their personal lives and family matters.It is considered rude,for example,to ask a businessman from Saudi Arabia about his wife or children.</p> \n <p>As a general rule,it’s best not to talk about politics or religion with your business friends.This can get you into trouble,even in the United States,where people hold different religious views.In addition,discussing one’s salary is usually considered unsuitable.Sports is typically a friendly subject in most parts of the world,although be careful not to criticize national sport.Instead,be friendly and praise your host’s team.</p> \n <p>Q: What shouldn’t you do when talking about sports with colleagues from another country?</p> \n <p>A: Criticizing the sports of your colleagues’ country.</p> \n <p>Q: Which is typically a friendly topic in most places according to the author?</p> \n <p>A: Sports.</p> \n <p>Q: Why are people from Asia more private in their conversation with others?</p> \n <p>A: They don’t want to have their good relationship with others harmed by informal conversation.</p> \n <p>Q: The author considers politics and religion _ .</p> \n <p>A:</p> \n <p>taboo</p> \n <p>cheerful topics</p> \n <p>rude topics</p> \n <p>topics that can never be talked about</p> \n</body></html>\n</html>",
+            "cropped_image": "tables/table_024_page050.png"
+        },
+        {
+            "serial_number": 25,
+            "page": 51,
+            "type": "table",
+            "bbox": [
+                70,
+                87,
+                540,
+                198
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context→</td>\n    <td>anli2：anli2：</td>\n    <td>The Gold Coast Hotel & Casino is a hotel and casino located in Paradise， Nevada.</td>\n    <td>This locals' casino is owned and operated by Boyd Gaming.The Gold Coast is located one mile (~1.6km) west of the Las Vegas Strip on West Flamingo Road.It is located across the street from the Palms Casino Resort and the Rio All Suite Hotel and Casino.</td>\n  </tr>\n  <tr>\n    <td>Question：</td>\n    <td>The Gold Coast is a budget-friendly casino.</td>\n    <td>True，False，or Neither?</td>\n  </tr>\n  <tr>\n    <td>Correct Answer→</td>\n    <td>Neither</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer→</td>\n    <td>True</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer→</td>\n    <td>False</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_025_page051.png"
+        },
+        {
+            "serial_number": 26,
+            "page": 51,
+            "type": "table",
+            "bbox": [
+                71,
+                240,
+                536,
+                681
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.2: Formatted dataset example for ANLI R2\" The text content from the image is:\n\n\"Figure G.2: Formatted dataset example for ANLI R2\"",
+            "footnote": "The text content from the image is as follows:\n\n\"Figure G.3: Formatted dataset example for RACE-m. When predicting, we normalize by the unconditional probability of each answer as described in 2.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context→</td>\n    <td>Article：</td>\n  </tr>\n  <tr>\n    <td>Mrs.Smith is an unusual teacher.Once she told each student to bringalong a few potatoes in plastic bag.On each potato the students had towrite a name of a person that they hatedAnd the next day， every childbrought some potatoes.Some had two potatoes；some three；some up to five.Mrs.Smith then told the children to carry the bags everywhere they went，even to the toilet， for two weeks.As day after day passed， the childrenstarted to complain about the awful smell of the rotten potatoes.Those children who brought five potatoes began to feel the weight troubleof the bags.After two weeks， the children were happy to hear that thegame was finally ended.Mrs.Smith asked，\"How did you feel while carryingthe potatoes for two weeks?\" The children started complaining about thetrouble loudly.</td>\n  </tr>\n  <tr>\n    <td>Then Mrs.Smith told them why she asked them to play the game.She</td>\n  </tr>\n  <tr>\n    <td>said，\"This is exactly the situation when you carry your hatred for somebodyinside your heart.The terrible smell of the hatred will pollute yourheart and you will carry something unnecessary with you all the time.Ifyou cannot stand the smell of the rotten potatoes for just two weeks， canyou imagine how heavy it would be to have the hatred in your heart for yourlifetime?So throw away any hatred from your heart， and you'll be reallyhappy.\"</td>\n  </tr>\n  <tr>\n    <td>Q：Which of the following is True according to the passage?</td>\n  </tr>\n  <tr>\n    <td>A：If a kid hated four people，he or she had to carry four potatoes.</td>\n  </tr>\n  <tr>\n    <td>Q：We can learn from the passage that we should_.</td>\n  </tr>\n  <tr>\n    <td>A：throw away the hatred inside</td>\n  </tr>\n  <tr>\n    <td>Q：The children complained aboutbesides the weight trouble.</td>\n  </tr>\n  <tr>\n    <td>A：the smell</td>\n  </tr>\n  <tr>\n    <td>Q：Mrs.Smith asked her students to writeon the potatoes.</td>\n  </tr>\n  <tr>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Correct Answer→names</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer→numbers</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer→time</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer→places</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_026_page051.png"
+        },
+        {
+            "serial_number": 27,
+            "page": 52,
+            "type": "table",
+            "bbox": [
+                69,
+                63,
+                537,
+                533
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>How to apply sealant to wood.</td>\n  </tr>\n  <tr>\n    <td>Correct Answer</td>\n    <td>Using a brush， brush on sealant onto wood until it is fully saturated withthe sealant.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>Using a brush， drip on sealant onto wood until it is fully saturated withthe sealant.</td>\n  </tr>\n  <tr>\n    <td>Figure G.4：Formatted dataset example for PIQA</td>\n  </tr>\n  <tr>\n    <td>Context</td>\n    <td>My body cast a shadow over the grass because</td>\n  </tr>\n  <tr>\n    <td>Correct Answer</td>\n    <td>the sun was rising.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>the grass was cut.</td>\n  </tr>\n  <tr>\n    <td>Figure G.5：Formatted dataset example for COPA</td>\n  </tr>\n  <tr>\n    <td>Context</td>\n    <td>(CNN) Yuval Rabin， whose father， Yitzhak Rabin， was assassinated whileserving as Prime Minister of Israel， criticized Donald Trump for appealingto\"Second Amendment people\"in a speech and warned that the words thatpoliticians use can incite violence and undermine democracy.Trump'swords are an incitement to the type of political violence that touchedme personally，\"Rabin wrote in USA Today.He said that Trump's appeal to\"Second Amendment people\"to stop Hillary Clinton-- comments thatwerecriticized as a call for violence against Clinton， something Trump denied-- \"were a new level of ugliness in an ugly campaign season.\"</td>\n  </tr>\n  <tr>\n    <td>-The son of a former Israeli Prime Minister who was assassinated wrote anop ed about the consequence of violent political rhetoric.-Warns of\"parallels\"between Israel of the 1990s and the U.S.today.</td>\n  </tr>\n  <tr>\n    <td>Correct Answer</td>\n    <td>-Referencing his father， who was shot and killed by an extremist amidpolitical tension in Israel in 1995， Rabin condemned Donald Trump'saggressive rhetoric.</td>\n  </tr>\n  <tr>\n    <td>Correct Answer</td>\n    <td>-Referencing his father， who was shot and killed by an extremist amidpolitical tension in Israel in 1995， Rabin condemned Trump's aggressiverhetoric.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>-Referencing his father， who was shot and killed by an extremist amidpolitical tension in Israel in 1995， Rabin condemned Hillary Clinton'saggressive rhetoric.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>-Referencing his father， who was shot and killed by an extremist amidpolitical tension in Israel in 1995， Rabin condemned U.S.'s aggressiverhetoric.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>-Referencing his father， who was shot and killed by an extremist amidpolitical tension in Israel in 1995， Rabin condemned Yitzhak Rabin'saggressive rhetoric.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_027_page052.png"
+        },
+        {
+            "serial_number": 28,
+            "page": 52,
+            "type": "table",
+            "bbox": [
+                70,
+                72,
+                540,
+                135
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>How to apply sealant to wood.</td>\n  </tr>\n  <tr>\n    <td>Correct Answer -&gt;</td>\n    <td>Using a brush，brush on sealant onto wood until it is fully saturated with the sealant.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;</td>\n    <td>Using a brush，drip on sealant onto wood until it is fully saturated with the sealant.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_028_page052.png"
+        },
+        {
+            "serial_number": 29,
+            "page": 52,
+            "type": "table",
+            "bbox": [
+                70,
+                163,
+                541,
+                206
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.4: Formatted dataset example for PIQA\" The text content from the image is:\n\n\"Figure G.4: Formatted dataset example for PIQA\" The text content from the image is:\n\n\"Figure G.5: Formatted dataset example for COPA\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>My body cast a shadow over the grass because</td>\n  </tr>\n  <tr>\n    <td>Correct Answer →</td>\n    <td>the sun was rising.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer →</td>\n    <td>the grass was cut.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_029_page052.png"
+        },
+        {
+            "serial_number": 30,
+            "page": 52,
+            "type": "table",
+            "bbox": [
+                70,
+                568,
+                540,
+                699
+            ],
+            "caption": "Figure G.6: Formatted dataset example for ReCoRD. We consider the context above to be a single \"problem\" because this is how the task is presented in the ReCoRD dataset and scored in the ReCoRD evaluation script. The text content from the image is:\n\n\"Figure G.7: Formatted dataset example for ANLI R1\" The text content from the image is:\n\n\"Figure G.7: Formatted dataset example for ANLI R1\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>anli 1 ： anli 1 ： Fulton James MacGregor MSP is a Scottish politician</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>who is a Scottish National Party (SNP) Member of Scottish Parliament</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>for the constituency of Coatbridge and Chryston.MacGregor is currently</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Parliamentary Liaison Officer to Shona Robison， Cabinet Secretary for</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Health & Sport.He also serves on the Justice and Education & Skills</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>committees in the Scottish Parliament.</td>\n  </tr>\n  <tr>\n    <td>Question：</td>\n    <td>Fulton James MacGregor is a Scottish politician who is a Liaison</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>officer to Shona Robison who he swears is his best friend.</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>True， False， or Neither?</td>\n  </tr>\n  <tr>\n    <td>Correct Answer -&gt;</td>\n    <td>Neither</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;</td>\n    <td>True</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;</td>\n    <td>False</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_030_page052.png"
+        },
+        {
+            "serial_number": 31,
+            "page": 53,
+            "type": "table",
+            "bbox": [
+                70,
+                72,
+                541,
+                134
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>Organisms require energy in order to do what?</td>\n  </tr>\n  <tr>\n    <td>Correct Answer -&gt;</td>\n    <td>mature and develop.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;</td>\n    <td>rest soundly.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;</td>\n    <td>absorb light.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;</td>\n    <td>take in nutrients.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_031_page053.png"
+        },
+        {
+            "serial_number": 32,
+            "page": 53,
+            "type": "table",
+            "bbox": [
+                70,
+                173,
+                540,
+                245
+            ],
+            "caption": "Figure G.8: Formatted dataset example for OpenBookQA. When predicting, we normalize by the unconditional probability of each answer as described in 2.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>→</td>\n    <td>Making a cake：Several cake pops are shown on a display.A woman and girl are shown making the cake pops in a kitchen.They</td>\n  </tr>\n  <tr>\n    <td>Correct Answer</td>\n    <td>→</td>\n    <td>bake them，then frost and decorate.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>→</td>\n    <td>taste them as they place them on plates.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>→</td>\n    <td>put the frosting on the cake as they pan it.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>→</td>\n    <td>come out and begin decorating the cake as well.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_032_page053.png"
+        },
+        {
+            "serial_number": 33,
+            "page": 53,
+            "type": "table",
+            "bbox": [
+                70,
+                274,
+                540,
+                375
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.9: Formatted dataset example for HellaSwag\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>anli3：anli3：</td>\n  </tr>\n  <tr>\n    <td>anli3 ：We shut the loophole which has American workers actually</td>\n  </tr>\n  <tr>\n    <td>subsidizing the loss of their own job.They just passed an expansion of</td>\n  </tr>\n  <tr>\n    <td>that loophole in the last few days ：$43 billion of giveaways，including</td>\n  </tr>\n  <tr>\n    <td>favors to the oil and gas industry and the people importing ceiling fans</td>\n  </tr>\n  <tr>\n    <td>from China.</td>\n  </tr>\n  <tr>\n    <td>Question ：The loophole is now gone True ，False ，or Neither?</td>\n  </tr>\n  <tr>\n    <td>Correct Answer -&gt;False</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;True</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer -&gt;Neither</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_033_page053.png"
+        },
+        {
+            "serial_number": 34,
+            "page": 53,
+            "type": "table",
+            "bbox": [
+                71,
+                404,
+                541,
+                487
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.10: Formatted dataset example for ANLI R3\" The text content from the image is as follows:\n\n\"Figure G.11: Formatted dataset example for ARC (Challenge). When predicting, we normalize by the unconditional probability of each answer as described in 2.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>→</td>\n    <td>Question：George wants to warm his hands quickly by rubbing them. Which skin surface will produce the most heat?</td>\n  </tr>\n  <tr>\n    <td>Answer：</td>\n  </tr>\n  <tr>\n    <td>Correct Answer</td>\n    <td>→</td>\n    <td>dry palms</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>→</td>\n    <td>wet palms</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>→</td>\n    <td>palms covered with oil</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>→</td>\n    <td>palms covered with lotion</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_034_page053.png"
+        },
+        {
+            "serial_number": 35,
+            "page": 53,
+            "type": "table",
+            "bbox": [
+                71,
+                626,
+                538,
+                689
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.12: Formatted dataset example for SAT Analogies\" Figure G.13: Formatted dataset example for Winograd. The ‘partial’ evaluation method we use compares the probability of the completion given a correct and incorrect context. Figure G.13: Formatted dataset example for Winograd. The 'partial' evaluation method we use compares the probability of the completion given a correct and incorrect context. Figure G.13: Formatted dataset example for Winograd. The ‘partial’ evaluation method we use compares the probability of the completion given a correct and incorrect context.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Correct Context →</td>\n    <td>Grace was happy to trade me her sweater for my jacket.She thinks the sweater</td>\n  </tr>\n  <tr>\n    <td>Incorrect Context →</td>\n    <td>Grace was happy to trade me her sweater for my jacket.She thinks the jacket</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>looks dowdy on her.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_035_page053.png"
+        },
+        {
+            "serial_number": 36,
+            "page": 54,
+            "type": "table",
+            "bbox": [
+                71,
+                75,
+                540,
+                138
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Correct Context →</td>\n    <td>Johnny likes fruits more than vegetables in his new keto diet because the fruits</td>\n  </tr>\n  <tr>\n    <td>Incorrect Context →</td>\n    <td>Johnny likes fruits more than vegetables in his new keto diet because the vegetables</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>are saccharine.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_036_page054.png"
+        },
+        {
+            "serial_number": 37,
+            "page": 54,
+            "type": "table",
+            "bbox": [
+                79,
+                182,
+                529,
+                498
+            ],
+            "caption": "Figure G.14: Formatted dataset example for Winogrande. The 'partial' evaluation method we use compares the probability of the completion given a correct and incorrect context. Figure G.14: Formatted dataset example for Winogrande. The 'partial' evaluation method we use compares the probability of the completion given a correct and incorrect context.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>READING COMPREHENSION ANSWER KEY</td>\n  </tr>\n  <tr>\n    <td>While this process moved along， diplomacy continued its rounds.</td>\n  </tr>\n  <tr>\n    <td>Direct pressure on the Taliban had proved unsuccessful.</td>\n  </tr>\n  <tr>\n    <td>As one NSC staff note put it， \"Under the Taliban， Afghanistan is not so much a state sponsor</td>\n  </tr>\n  <tr>\n    <td>of terrorism as it is a state sponsored by terrorists.\"</td>\n  </tr>\n  <tr>\n    <td>In early 2000，</td>\n  </tr>\n  <tr>\n    <td>the United States began a high-level effort to persuade Pakistan to use</td>\n  </tr>\n  <tr>\n    <td>its influence over the Taliban.</td>\n  </tr>\n  <tr>\n    <td>In January 2000， Assistant Secretary</td>\n  </tr>\n  <tr>\n    <td>of State Karl Inderfurth and the State Department's counterterrorism</td>\n  </tr>\n  <tr>\n    <td>coordinator， Michael Sheehan， met with General Musharraf in Islamabad，</td>\n  </tr>\n  <tr>\n    <td>dangling before him the possibility of a presidential visit in March as a</td>\n  </tr>\n  <tr>\n    <td>reward for Pakistani cooperation.</td>\n  </tr>\n  <tr>\n    <td>Such a visit was coveted by Musharraf，</td>\n  </tr>\n  <tr>\n    <td>partly as a sign of his government's legitimacy.</td>\n  </tr>\n  <tr>\n    <td>He told the two envoys that he would meet with Mullah Omar and press him on Bin Laden.</td>\n  </tr>\n  <tr>\n    <td>They left， however， reporting to Washington that Pakistan was unlikely in fact</td>\n  </tr>\n  <tr>\n    <td>to do anything，\" given what it sees as the benefits of Taliban control</td>\n  </tr>\n  <tr>\n    <td>of Afghanistan.\"</td>\n  </tr>\n  <tr>\n    <td>President Clinton was scheduled to travel to India.</td>\n  </tr>\n  <tr>\n    <td>The State Department felt that he should not visit India without also</td>\n  </tr>\n  <tr>\n    <td>visiting Pakistan.</td>\n  </tr>\n  <tr>\n    <td>The Secret Service and the CIA， however， warned in</td>\n  </tr>\n  <tr>\n    <td>the strongest terms that visiting Pakistan would risk the President's</td>\n  </tr>\n  <tr>\n    <td>life.</td>\n  </tr>\n  <tr>\n    <td>Counterterrorism officials also argued that Pakistan had not done</td>\n  </tr>\n  <tr>\n    <td>enough to merit a presidential visit.</td>\n  </tr>\n  <tr>\n    <td>But President Clinton insisted</td>\n  </tr>\n  <tr>\n    <td>on including Pakistan in the itinerary for his trip to South Asia.</td>\n  </tr>\n  <tr>\n    <td>His</td>\n  </tr>\n  <tr>\n    <td>one-day stopover on March 25， 2000， was the first time a U.S. president</td>\n  </tr>\n  <tr>\n    <td>had been there since 1969.</td>\n  </tr>\n  <tr>\n    <td>At his meeting with Musharraf and others，</td>\n  </tr>\n  <tr>\n    <td>President Clinton concentrated on tensions between Pakistan and India</td>\n  </tr>\n  <tr>\n    <td>and the dangers of nuclear proliferation， but also discussed Bin Laden.</td>\n  </tr>\n  <tr>\n    <td>President Clinton told us that when he pulled Musharraf aside for a brief，</td>\n  </tr>\n  <tr>\n    <td>one-on-one meeting， he pleaded with the general for help regarding Bin</td>\n  </tr>\n  <tr>\n    <td>Laden.\" I offered him the moon when I went to see him， in terms of better</td>\n  </tr>\n  <tr>\n    <td>relations with the United States， if he'd help us get Bin Laden and deal</td>\n  </tr>\n  <tr>\n    <td>with another issue or two.\"</td>\n  </tr>\n  <tr>\n    <td>The U.S. effort continued.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_037_page054.png"
+        },
+        {
+            "serial_number": 38,
+            "page": 54,
+            "type": "table",
+            "bbox": [
+                70,
+                518,
+                540,
+                545
+            ],
+            "caption": "The State Department feels should visit both India and Pakistan",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Correct Answer →</td>\n    <td>- [False] Bin Laden</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer →</td>\n    <td>- [True] Bin Laden</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_038_page054.png"
+        },
+        {
+            "serial_number": 39,
+            "page": 54,
+            "type": "table",
+            "bbox": [
+                70,
+                613,
+                541,
+                686
+            ],
+            "caption": "Figure G.15: Formatted dataset example for MultiRC. There are three levels within MultiRC: (1) the passage, (2) the questions, and (3) the answers. During evaluation, accuracy is determined at the per-question level, with a question being considered correct if and only if all the answers within the question are labeled correctly. For this reason, we use K to refer to the number of questions shown within the context. Figure G.15: Formatted dataset example for MultiRC. There are three levels within MultiRC: (1) the passage, (2) the questions, and (3) the answers. During evaluation, accuracy is determined at the per-question level, with a question being considered correct if and only if all the answers within the question are labeled correctly. For this reason, we use K to refer to the number of questions shown within the context.",
+            "footnote": "Figure G.16: Formatted dataset example for ARC (Easy). When predicting, we normalize by the unconditional probability of each answer as described in 2. Figure G.16: Formatted dataset example for ARC (Easy). When predicting, we normalize by the unconditional probability of each answer as described in 2.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Question：Which factor will most likely cause a person to develop a fever?</td>\n    <td>Answer：</td>\n  </tr>\n  <tr>\n    <td>Correct Answer</td>\n    <td>a bacterial population in the bloodstream</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>a leg muscle relaxing after exercise</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>several viral particles on the skin</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer</td>\n    <td>carbohydrates being digested in the stomach</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_039_page054.png"
+        },
+        {
+            "serial_number": 40,
+            "page": 55,
+            "type": "table",
+            "bbox": [
+                70,
+                85,
+                540,
+                147
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Bob went to the gas station to fill up his car. His tank was completely empty and so was his wallet. The cashier offered to pay for his gas if he came back later to pay. Bob felt grateful as he drove home.</td>\n  </tr>\n  <tr>\n    <td>Correct Answer →</td>\n    <td>Bob believed that there were good people in the world.</td>\n  </tr>\n  <tr>\n    <td>Incorrect Answer →</td>\n    <td>Bob contemplated how unfriendly the world was.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_040_page055.png"
+        },
+        {
+            "serial_number": 41,
+            "page": 55,
+            "type": "table",
+            "bbox": [
+                74,
+                165,
+                531,
+                595
+            ],
+            "caption": "Figure G.17: Formatted dataset example for StoryCloze Figure G.17: Formatted dataset example for StoryCloze The text content from the image is:\n\n\"Figure G.18: Formatted dataset example for CoQA\" The text content from the image is:\n\n\"Figure G.18: Formatted dataset example for CoQA\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Helsinki is the capital and largest city of Finland.It is in the regionof Uusimaa，in southern Finland，on the shore of the Gulf of Finland.Helsinki has a population of ，an urban population of ，and a metropolitanpopulation of over 1.4 million，making it the most populous municipalityand urban area in Finland.Helsinki is some north of Tallinn，Estonia，east of Stockholm，Sweden，and west of Saint Petersburg，Russia.Helsinkihas close historical connections with these three cities.</td>\n  </tr>\n  <tr>\n    <td>The Helsinki metropolitan area includes the urban core of Helsinki，Espoo，Vantaa，Kauniainen，and surrounding commuter towns.It is the world'snorthernmost metro area of over one million people，and the city is thenorthernmost capital of an EU member state.The Helsinki metropolitanarea is the third largest metropolitan area in the Nordic countriesafter Stockholm and Copenhagen，and the City of Helsinki is the thirdlargest after Stockholm and Oslo.Helsinki is Finland's major political，educational，financial，cultural，and research center as well as one ofnorthern Europe's major cities.Approximately 75% of foreign companiesthat operate in Finland have settled in the Helsinki region.The nearbymunicipality of Vantaa is the location of Helsinki Airport，with frequentservice to various destinations in Europe and Asia.</td>\n  </tr>\n  <tr>\n    <td>Q：what is the most populous municipality in Finland?</td>\n  </tr>\n  <tr>\n    <td>A：Helsinki</td>\n  </tr>\n  <tr>\n    <td>Q：how many people live there?</td>\n  </tr>\n  <tr>\n    <td>A：1.4 million in the metropolitan area</td>\n  </tr>\n  <tr>\n    <td>Q：what percent of the foreign companies that operate in Finland are inHelsinki?</td>\n  </tr>\n  <tr>\n    <td>A：75%</td>\n  </tr>\n  <tr>\n    <td>Q：what towns are a part of the metropolitan area?</td>\n  </tr>\n  <tr>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Helsinki，Espoo，Vantaa，Kauniainen，and surrounding commuter towns</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_041_page055.png"
+        },
+        {
+            "serial_number": 42,
+            "page": 55,
+            "type": "table",
+            "bbox": [
+                70,
+                645,
+                541,
+                687
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.19: Formatted dataset example for Cycled Letters\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Please unscramble the letters into a word， and write that word:</td>\n  </tr>\n  <tr>\n    <td>asinoc =</td>\n    <td>casino</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_042_page055.png"
+        },
+        {
+            "serial_number": 43,
+            "page": 56,
+            "type": "table",
+            "bbox": [
+                71,
+                80,
+                537,
+                219
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Passage：Saint Jean de Brébeuf was a French Jesuit missionary who travelled to New France in 1625.There he worked primarily with the Huron for the rest of his life，except for a few years in France from 1629 to 1633.He learned their language and culture，writing extensively about each to aid other missionaries.In 1649，Brébeuf and another missionary were captured when an Iroquois raid took over a Huron village.Together with Huron captives，the missionaries were ritually tortured and killed on March 16，1649.Brébeuf was beatified in 1925 and among eight Jesuit missionaries canonized as saints in the Roman Catholic Church in 1930.</td>\n  </tr>\n  <tr>\n    <td>Question：</td>\n    <td>How many years did Saint Jean de Brébeuf stay in New France before he went back to France for a few years?</td>\n  </tr>\n  <tr>\n    <td>Answer：</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_043_page056.png"
+        },
+        {
+            "serial_number": 44,
+            "page": 56,
+            "type": "table",
+            "bbox": [
+                71,
+                262,
+                541,
+                415
+            ],
+            "caption": "Figure G.20: Formatted dataset example for DROP",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Fill in blank:</td>\n  </tr>\n  <tr>\n    <td>She held the torch in front of her.</td>\n  </tr>\n  <tr>\n    <td>She caught her breath.</td>\n  </tr>\n  <tr>\n    <td>\"Chris? There's a step.\"</td>\n  </tr>\n  <tr>\n    <td>\"What?\"</td>\n  </tr>\n  <tr>\n    <td>\"A step.Cut in the rock.About fifty feet ahead.\" She moved faster.</td>\n  </tr>\n  <tr>\n    <td>They both moved faster. \"In fact，\" she said，raising the torch higher，</td>\n  </tr>\n  <tr>\n    <td>\"there's more than a ----&gt;</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>step</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_044_page056.png"
+        },
+        {
+            "serial_number": 45,
+            "page": 56,
+            "type": "table",
+            "bbox": [
+                70,
+                459,
+                541,
+                502
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.21: Formatted dataset example for LAMBADA\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Please unscramble the letters into a word，and write that word:</td>\n  </tr>\n  <tr>\n    <td>skicts =</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>sticks</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_045_page056.png"
+        },
+        {
+            "serial_number": 46,
+            "page": 56,
+            "type": "table",
+            "bbox": [
+                70,
+                544,
+                541,
+                587
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.22: Formatted dataset example for Anagrams 1 (A1)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Please unscramble the letters into a word, and write that word:</td>\n  </tr>\n  <tr>\n    <td>volwskagen =</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>volkswagen</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_046_page056.png"
+        },
+        {
+            "serial_number": 47,
+            "page": 56,
+            "type": "table",
+            "bbox": [
+                70,
+                628,
+                541,
+                692
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.23: Formatted dataset example for Anagrams 2\" The text content from the image is:\n\n\"Figure G.23: Formatted dataset example for Anagrams 2\" The text content from the image is:\n\n\"Figure G.24: Formatted dataset example for Natural Questions\" The text content from the image is:\n\n\"Figure G.24: Formatted dataset example for Natural Questions\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Q：Who played tess on touched by an angel?</td>\n  </tr>\n  <tr>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Delloreese Patricia Early(July 6，1931{November 19，2017)，knownprofessionally as Della Reese</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_047_page056.png"
+        },
+        {
+            "serial_number": 48,
+            "page": 57,
+            "type": "table",
+            "bbox": [
+                70,
+                539,
+                541,
+                581
+            ],
+            "caption": "Target Completion → the Chicago Bears Target Completion → the Chicago Bears The text content from the image is:\n\n\"Figure G.25: Formatted dataset example for QuAC\" The text content from the image is:\n\n\"Figure G.25: Formatted dataset example for QuAC\" The text content from the image is:\n\n\"Figure G.26: Formatted dataset example for Symbol Insertion\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Please unscramble the letters into a word，and write that word:</td>\n  </tr>\n  <tr>\n    <td>r e!c.i p r o.c a/l =</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>reciprocal</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_048_page057.png"
+        },
+        {
+            "serial_number": 49,
+            "page": 57,
+            "type": "table",
+            "bbox": [
+                70,
+                641,
+                541,
+                684
+            ],
+            "caption": "Figure G.27: Formatted dataset example for Reversed Words Figure G.27: Formatted dataset example for Reversed Words",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Please unscramble the letters into a word, and write that word:</td>\n  </tr>\n  <tr>\n    <td>taefed =</td>\n    <td>defeat</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_049_page057.png"
+        },
+        {
+            "serial_number": 50,
+            "page": 58,
+            "type": "table",
+            "bbox": [
+                69,
+                84,
+                537,
+                304
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>Title：The Blitz</td>\n  </tr>\n  <tr>\n    <td>Background：</td>\n    <td>From the German point of view，March 1941 saw an improvement.The Luftwaffe flew 4，000 sorties that month，including 12 major andthree heavy attacks.The electronic war intensified but the Luftwaffe flew major inland missions only on moonlit nights.Ports were easier tofind and made better targets.To confuse the British，radio silence wasobserved until the bombs fell.X- and Y-Gerat beams were placed overfalse targets and switched only at the last minute.Rapid frequencychanges were introduced for X-Gerat，whose wider band of frequenciesand greater tactical flexibility ensured it remained effective at a time whenBritish selective jamming was degrading the effectiveness of Y-Gerat.</td>\n  </tr>\n  <tr>\n    <td>Q：How many sorties were flown in March 1941?</td>\n    <td>A：4，000</td>\n  </tr>\n  <tr>\n    <td>Q：When did the Luftwaffe fly inland missions?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion -&gt;</td>\n    <td>only on moonlit nights</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_050_page058.png"
+        },
+        {
+            "serial_number": 51,
+            "page": 58,
+            "type": "table",
+            "bbox": [
+                71,
+                355,
+                531,
+                535
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.28: Formatted dataset example for SQuADv2\" The text content from the image is:\n\n\"Figure G.28: Formatted dataset example for SQuADv2\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\nSure, here is the table in HTML format:\n\n<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>In a simple case such as an object resting upon a table, the normal force on the object is equal but in opposite direction to the gravitational force applied on the object (or the weight of the object), that is, N = m g (\\displaystyle N=mg), where m is mass, and g is the gravitational field strength (about 9.81 m/s on Earth). The normal force here represents the force applied by the table against the object that prevents it from sinking through the table and requires that the table is sturdy enough to deliver this normal force without breaking. However, it is easy to assume that the normal force and weight are action-reaction force pairs (a common mistake). In this case, the normal force and weight need to be equal in magnitude to explain why there is no upward acceleration of the object. For example, a ball that bounces upwards accelerates upwards because the normal force acting on the ball is larger in magnitude than the weight of the ball.</td>\n  </tr>\n  <tr>\n    <td>question: is the normal force equal to the force of gravity?</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>yes</td>\n  </tr>\n</table>\n</html>\n\nThis will render the table with the provided content.\n</html>",
+            "cropped_image": "tables/table_051_page058.png"
+        },
+        {
+            "serial_number": 52,
+            "page": 58,
+            "type": "table",
+            "bbox": [
+                70,
+                586,
+                539,
+                689
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.29: Formatted dataset example for BoolQ\" The text content from the image is:\n\n\"Figure G.29: Formatted dataset example for BoolQ\" The text content from the image is:\n\n\"Figure G.30: Formatted dataset example for CB\" Figure G.30: Formatted dataset example for CB",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>→</td>\n    <td>The trend toward lower rents may seem surprising given that some communities in New York are bemoaning the loss of favorite local businesses to high rents.But， despite the recent softening， for many of these retailers there's still been too big a jump from the rental rates of the late 1970s， when their leases were signed.Certainly， the recent drop in prices doesn't mean Manhattan comes cheap.</td>\n  </tr>\n  <tr>\n    <td>question：</td>\n    <td>Manhattan comes cheap.</td>\n    <td>true， false， or neither?</td>\n  </tr>\n  <tr>\n    <td>answer：</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>→</td>\n    <td>false</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_052_page058.png"
+        },
+        {
+            "serial_number": 53,
+            "page": 59,
+            "type": "table",
+            "bbox": [
+                70,
+                79,
+                540,
+                151
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>The bet，which won him dinner for four，was regarding the existence and mass of the top quark，an elementary particle discovered in 1995.</td>\n  </tr>\n  <tr>\n    <td>question：</td>\n    <td>The Top Quark is the last of six flavors of quarks predicted by the standard model theory of particle physics.True or False?</td>\n  </tr>\n  <tr>\n    <td>answer：</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>False</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_053_page059.png"
+        },
+        {
+            "serial_number": 54,
+            "page": 59,
+            "type": "table",
+            "bbox": [
+                70,
+                192,
+                540,
+                275
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.31: Formatted dataset example for RTE\" The text content from the image is:\n\n\"Figure G.31: Formatted dataset example for RTE\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>An outfitter provided everything needed for the safari.</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>Before his first walking holiday， he went to a specialist outfitter to buy some boots.</td>\n  </tr>\n  <tr>\n    <td>question：</td>\n    <td>Is the word ‘outfitter’ used in the same way in the two sentences above?</td>\n  </tr>\n  <tr>\n    <td>answer：</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>no</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_054_page059.png"
+        },
+        {
+            "serial_number": 55,
+            "page": 59,
+            "type": "table",
+            "bbox": [
+                71,
+                315,
+                540,
+                449
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.32: Formatted dataset example for WiC\" The text content from the image is:\n\n\"Figure G.32: Formatted dataset example for WiC\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>Final Exam with Answer Key</td>\n  </tr>\n  <tr>\n    <td>Instructions：</td>\n    <td>Please carefully read the following passages.For each</td>\n  </tr>\n  <tr>\n    <td>passage，you must identify which noun the pronoun marked in *bold* refers</td>\n    <td>To.</td>\n  </tr>\n  <tr>\n    <td>=====</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Passage：Mr.Moncrieff visited Chester's luxurious New York apartment，</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>thinking that it belonged to his son Edward.The result was that Mr.</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Moncrieff has decided to cancel Edward's allowance on the ground that</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>he no longer requires *his* financial support.</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Question：In the passage above，what does the pronoun \"*his*\" refer to?</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Answer：</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Target Completion -&gt;</td>\n    <td>mr.moncrieff</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_055_page059.png"
+        },
+        {
+            "serial_number": 56,
+            "page": 59,
+            "type": "table",
+            "bbox": [
+                71,
+                489,
+                542,
+                692
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.33: Formatted dataset example for WSC\"",
+            "footnote": "Figure G.34: Formatted dataset example for TriviaQA. TriviaQA allows for multiple valid completions. Figure G.34: Formatted dataset example for TriviaQA. TriviaQA allows for multiple valid completions. Figure G.34: Formatted dataset example for TriviaQA. TriviaQA allows for multiple valid completions.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Q：‘Nude Descending A Staircase’is perhaps the most famous painting bywhich20th century artist?</td>\n  </tr>\n  <tr>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>MARCEL DUCHAMP</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>r mutt</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>duchamp</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>marcel duchamp</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>R.Mutt</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Marcel duChamp</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Henri-Robert-Marcel Duchamp</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Marcel du Champ</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>henri robert marcel duchamp</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Duchampian</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Duchamp</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>duchampian</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>marcel du champ</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Marcel Duchamp</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>MARCEL DUCHAMP</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_056_page059.png"
+        },
+        {
+            "serial_number": 57,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                71,
+                79,
+                541,
+                132
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>Q：What school did burne hogarth establish?</td>\n  </tr>\n  <tr>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion -&gt;</td>\n    <td>School of Visual Arts</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_057_page060.png"
+        },
+        {
+            "serial_number": 58,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                71,
+                174,
+                540,
+                218
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.35: Formatted dataset example for WebQA\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>→ Keinesfalls dürfen diese für den kommerziellen Gebrauch verwendet werden.</td>\n  </tr>\n  <tr>\n    <td>=</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>→ In no case may they be used for commercial purposes.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_058_page060.png"
+        },
+        {
+            "serial_number": 59,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                71,
+                283,
+                540,
+                315
+            ],
+            "caption": "Figure G.36: Formatted dataset example for De→En. This is the format for one- and few-shot learning, for this and other language tasks, the format for zero-shot learning is “Q: What is the {language} translation of {sentence} A: {translation}.” Figure G.36: Formatted dataset example for De→En. This is the format for one- and few-shot learning, for this and other language tasks, the format for zero-shot learning is “Q: What is the {language} translation of {sentence} A: {translation}.”",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>In no case may they be used for commercial purposes.</td>\n    <td>=</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>Keinesfalls dürfen diese für den kommerziellen Gebrauch verwendet werden.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_059_page060.png"
+        },
+        {
+            "serial_number": 60,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                71,
+                358,
+                540,
+                430
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.37: Formatted dataset example for En→De\" The text content from the image is:\n\n\"Figure G.37: Formatted dataset example for En→De\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Analysis of instar distributions of larval I. verticalis collected froma series of ponds also indicated that males were in more advanced instars than females.</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>L'analyse de la distribution de fréquence des stades larvaires d'I. verticalis dans une série d'étangs a également démontré que les larves mâles étaient à des stades plus avancés que les larves femelles.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_060_page060.png"
+        },
+        {
+            "serial_number": 61,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                70,
+                474,
+                539,
+                546
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.38: Formatted dataset example for En→Fr\" The text content from the image is:\n\n\"Figure G.38: Formatted dataset example for En→Fr\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context -&gt;</td>\n    <td>L'analyse de la distribution de fréquence des stades larvaires d'I. verticalis dans une série d'étangs a également démontré que les larves mâles étaient à des stades plus avancés que les larves femelles.</td>\n  </tr>\n  <tr>\n    <td>Target Completion -&gt;</td>\n    <td>Analysis of instar distributions of larval I. verticalis collected from a series of ponds also indicated that males were in more advanced instars than females.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_061_page060.png"
+        },
+        {
+            "serial_number": 62,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                70,
+                590,
+                537,
+                692
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.39: Formatted dataset example for Fr→En\" The text content from the image is:\n\n\"Figure G.39: Formatted dataset example for Fr→En\" The text content from the image is:\n\n\"Figure G.40: Formatted dataset example for En→Ro\" The text content from the image is:\n\n\"Figure G.40: Formatted dataset example for En→Ro\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>The truth is that you want，at any price，and against the wishes of the peoples of Europe，to continue the negotiations for Turkey's accession to the European Union，despite Turkey's continuing refusal to recognise Cyprus and despite the fact that the democratic reforms are at a standstill.</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>Adevărul este că vă doriți，cu orice preț și împotriva dorinței europenilor，să continuați negocierile de aderare a Turciei la Uniunea Europeană，în ciuda refuzului continuu al Turciei de a recunoaște Ciprul și în ciuda faptului că reformele democratice au ajuns într-un punct mort.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_062_page060.png"
+        },
+        {
+            "serial_number": 63,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                70,
+                74,
+                539,
+                185
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context</td>\n    <td>Adevărul este că vă doriți，cu orice preț și împotriva dorinței europenilor，să continuați negocierile de aderare a Turciei la Uniunea Europeană，în ciuda refuzului continuu al Turciei de a recunoaște Ciprul și în ciuda faptului că reformele democratice au ajuns într-un punct mort.</td>\n  </tr>\n  <tr>\n    <td>Target Completion</td>\n    <td>The truth is that you want，at any price，and against the wishes of the peoples of Europe，to continue the negotiations for Turkey’s accession to the European Union，despite Turkey’s continuing refusal to recognise Cyprus and despite the fact that the democratic reforms are at a standstill.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_063_page061.png"
+        },
+        {
+            "serial_number": 64,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                71,
+                216,
+                541,
+                259
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.41: Formatted dataset example for Ro→En\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is (2 * 4) * 6?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>48</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_064_page061.png"
+        },
+        {
+            "serial_number": 65,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                70,
+                289,
+                541,
+                332
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.42: Formatted dataset example for Arithmetic 1DC\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 17 minus 14?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_065_page061.png"
+        },
+        {
+            "serial_number": 66,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                70,
+                362,
+                541,
+                405
+            ],
+            "caption": "Figure G.43: Formatted dataset example for Arithmetic 2D-",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 98 plus 45?</td>\n  </tr>\n  <tr>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>143</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_066_page061.png"
+        },
+        {
+            "serial_number": 67,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                70,
+                435,
+                541,
+                479
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.44: Formatted dataset example for Arithmetic 2D+\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 95 times 45?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>4275</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_067_page061.png"
+        },
+        {
+            "serial_number": 68,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                70,
+                509,
+                541,
+                552
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.45: Formatted dataset example for Arithmetic 2Dx\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 509 minus 488?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>21</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_068_page061.png"
+        },
+        {
+            "serial_number": 69,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                70,
+                582,
+                541,
+                625
+            ],
+            "caption": "Figure G.46: Formatted dataset example for Arithmetic 3D-",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 556 plus 497?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>1053</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_069_page061.png"
+        },
+        {
+            "serial_number": 70,
+            "page": 61,
+            "type": "table",
+            "bbox": [
+                70,
+                655,
+                541,
+                698
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.47: Formatted dataset example for Arithmetic 3D+\" The text content from the image is:\n\n\"Figure G.48: Formatted dataset example for Arithmetic 4D-\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 6209 minus 3365?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>2844</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_070_page061.png"
+        },
+        {
+            "serial_number": 71,
+            "page": 62,
+            "type": "table",
+            "bbox": [
+                70,
+                146,
+                541,
+                189
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context→</td>\n    <td>Q：What is 9923 plus 617?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion→</td>\n    <td>10540</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_071_page062.png"
+        },
+        {
+            "serial_number": 72,
+            "page": 62,
+            "type": "table",
+            "bbox": [
+                70,
+                222,
+                541,
+                408
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.49: Formatted dataset example for Arithmetic 4D+\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 40649 minus 78746?</td>\n  </tr>\n  <tr>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>-38097</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_072_page062.png"
+        },
+        {
+            "serial_number": 73,
+            "page": 62,
+            "type": "table",
+            "bbox": [
+                70,
+                441,
+                541,
+                627
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure G.50: Formatted dataset example for Arithmetic 5D—\" The text content from the image is:\n\n\"Figure G.50: Formatted dataset example for Arithmetic 5D—\" The text content from the image is:\n\n\"Figure G.51: Formatted dataset example for Arithmetic 5D+\" The text content from the image is:\n\n\"Figure G.51: Formatted dataset example for Arithmetic 5D+\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context →</td>\n    <td>Q：What is 65360 plus 16204?</td>\n    <td>A：</td>\n  </tr>\n  <tr>\n    <td>Target Completion →</td>\n    <td>81564</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_073_page062.png"
+        },
+        {
+            "serial_number": 74,
+            "page": 63,
+            "type": "table",
+            "bbox": [
+                46,
+                97,
+                561,
+                653
+            ],
+            "caption": "The text content from the image is:\n\n\"H Results on All Tasks for All Model Sizes\" The text content from the image is:\n\n\"Table H.1: Scores for every task, setting and model that we investigate in this paper.\" The text content from the image is:\n\n\"Table H.1: Scores for every task, setting and model that we investigate in this paper.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html>\n<table>\n  <tr>\n    <td>Zero-Shot</td>\n    <td>One-Shot</td>\n    <td>Few-Shot</td>\n  </tr>\n  <tr>\n    <td>Small Med Large XL2.7B6.7B13B175B</td>\n    <td>Small Med Large XL2.7B6.7B13B175B</td>\n    <td>Small Med Large XL2.7B6.7B13B175B(test server</td>\n  </tr>\n  <tr>\n    <td>Name</td>\n    <td>Metric</td>\n    <td>Split</td>\n    <td>SOTA</td>\n    <td>K</td>\n    <td>Small</td>\n    <td>Med</td>\n    <td>Large</td>\n    <td>XL</td>\n    <td>2.7B</td>\n    <td>6.7B</td>\n    <td>13B</td>\n    <td>175B</td>\n    <td>Small</td>\n    <td>Med</td>\n    <td>Large</td>\n    <td>XL</td>\n    <td>2.7B</td>\n    <td>6.7B</td>\n    <td>13B</td>\n    <td>175B</td>\n  </tr>\n  <tr>\n    <td>Hella Swag</td>\n    <td>acc</td>\n    <td>dev</td>\n    <td>85.6</td>\n    <td>20</td>\n    <td>33.7</td>\n    <td>43.6</td>\n    <td>51.0</td>\n    <td>54.7</td>\n    <td>62.8</td>\n    <td>67.4</td>\n    <td>70.9</td>\n    <td>78.9</td>\n    <td>33.5</td>\n    <td>42.9</td>\n    <td>50.5</td>\n    <td>53.5</td>\n    <td>61.9</td>\n    <td>66.5</td>\n    <td>70.0</td>\n    <td>78.1</td>\n    <td>33.5</td>\n    <td>43.1</td>\n    <td>51.3</td>\n    <td>54.9</td>\n    <td>62.9</td>\n    <td>67.3</td>\n    <td>71.3</td>\n    <td>79.3</td>\n  </tr>\n  <tr>\n    <td>LAMBADA</td>\n    <td>acc</td>\n    <td>test</td>\n    <td>68.0</td>\n    <td>15</td>\n    <td>42.7</td>\n    <td>54.3</td>\n    <td>60.4</td>\n    <td>63.6</td>\n    <td>67.1</td>\n    <td>70.3</td>\n    <td>72.5</td>\n    <td>76.2</td>\n    <td>22.0</td>\n    <td>47.1</td>\n    <td>52.6</td>\n    <td>58.3</td>\n    <td>61.1</td>\n    <td>65.4</td>\n    <td>69.0</td>\n    <td>72.5</td>\n    <td>22.0</td>\n    <td>40.4</td>\n    <td>63.2</td>\n    <td>57.0</td>\n    <td>78.1</td>\n    <td>79.1</td>\n    <td>81.3</td>\n    <td>86.4</td>\n  </tr>\n  <tr>\n    <td>LAMBADA</td>\n    <td>ppl</td>\n    <td>test</td>\n    <td>8.63</td>\n    <td>15</td>\n    <td>18.6</td>\n    <td>9.09</td>\n    <td>6.53</td>\n    <td>5.44</td>\n    <td>4.60</td>\n    <td>3.56</td>\n    <td>3.00</td>\n    <td></td>\n    <td>165.0</td>\n    <td>11.6</td>\n    <td>8.29</td>\n    <td>6.46</td>\n    <td>5.53</td>\n    <td>4.61</td>\n    <td>4.06</td>\n    <td>3.35</td>\n    <td></td>\n    <td>165.0</td>\n    <td>27.6</td>\n    <td>6.63</td>\n    <td>7.45</td>\n    <td>2.89</td>\n    <td>2.56</td>\n    <td>2.56</td>\n    <td>1.92</td>\n  </tr>\n  <tr>\n    <td>Story Cloze</td>\n    <td>acc</td>\n    <td>test</td>\n    <td>91.8</td>\n    <td>70</td>\n    <td>63.3</td>\n    <td>68.5</td>\n    <td>72.4</td>\n    <td>73.4</td>\n    <td>77.2</td>\n    <td>77.7</td>\n    <td>79.5</td>\n    <td>83.2</td>\n    <td>62.3</td>\n    <td>68.7</td>\n    <td>72.3</td>\n    <td>74.2</td>\n    <td>77.3</td>\n    <td>78.7</td>\n    <td>79.7</td>\n    <td>84.7</td>\n    <td>1.72</td>\n    <td>4.46</td>\n    <td>7.89</td>\n    <td>9.72</td>\n    <td>13.2</td>\n    <td>17.0</td>\n    <td>17.0</td>\n    <td>21.0</td>\n    <td>29.9</td>\n  </tr>\n  <tr>\n    <td>NQs</td>\n    <td>acc</td>\n    <td>test</td>\n    <td>44.5</td>\n    <td>64</td>\n    <td>0.64</td>\n    <td>1.75</td>\n    <td>2.71</td>\n    <td>4.40</td>\n    <td>6.01</td>\n    <td>5.79</td>\n    <td>7.84</td>\n    <td>14.6</td>\n    <td>1.19</td>\n    <td>3.07</td>\n    <td>4.79</td>\n    <td>5.43</td>\n    <td>8.73</td>\n    <td>9.78</td>\n    <td>13.7</td>\n    <td>23.0</td>\n    <td>6.96</td>\n    <td>12.9</td>\n    <td>20.5</td>\n    <td>26.5</td>\n    <td>35.9</td>\n    <td>44.4</td>\n    <td>51.3</td>\n    <td>68.0</td>\n    <td>71.2</td>\n  </tr>\n  <tr>\n    <td>Trivia QA</td>\n    <td>acc</td>\n    <td>dev</td>\n    <td>68.0</td>\n    <td>64</td>\n    <td>4.15</td>\n    <td>7.61</td>\n    <td>14.0</td>\n    <td>19.7</td>\n    <td>31.3</td>\n    <td>38.7</td>\n    <td>41.8</td>\n    <td>64.3</td>\n    <td>4.19</td>\n    <td>12.9</td>\n    <td>20.5</td>\n    <td>26.5</td>\n    <td>35.9</td>\n    <td>44.4</td>\n    <td>51.3</td>\n    <td>68.0</td>\n    <td>71.2</td>\n    <td>6.96</td>\n    <td>12.9</td>\n    <td>26.5</td>\n    <td>32.1</td>\n    <td>42.3</td>\n    <td>51.6</td>\n    <td>57.5</td>\n    <td>71.2</td>\n    <td>71.2</td>\n  </tr>\n  <tr>\n    <td>Web Qs</td>\n    <td>acc</td>\n    <td>test</td>\n    <td>45.5</td>\n    <td>64</td>\n    <td>1.77</td>\n    <td>3.20</td>\n    <td>4.33</td>\n    <td>4.63</td>\n    <td>7.92</td>\n    <td>7.73</td>\n    <td>7.73</td>\n    <td>8.22</td>\n    <td>14.4</td>\n    <td>2.56</td>\n    <td>6.20</td>\n    <td>8.51</td>\n    <td>9.15</td>\n    <td>14.5</td>\n    <td>15.1</td>\n    <td>19.0</td>\n    <td>25.3</td>\n    <td>5.46</td>\n    <td>12.6</td>\n    <td>15.9</td>\n    <td>19.6</td>\n    <td>24.8</td>\n    <td>27.7</td>\n    <td>33.5</td>\n    <td>41.5</td>\n    <td>71.2</td>\n  </tr>\n  <tr>\n    <td>Ro→En16</td>\n    <td>BLEU-mb</td>\n    <td>test</td>\n    <td>39.9</td>\n    <td>64</td>\n    <td>2.08</td>\n    <td>2.71</td>\n    <td>3.09</td>\n    <td>3.15</td>\n    <td>16.3</td>\n    <td>8.34</td>\n    <td>20.2</td>\n    <td>19.9</td>\n    <td>0.55</td>\n    <td>15.4</td>\n    <td>23.0</td>\n    <td>26.3</td>\n    <td>30.6</td>\n    <td>33.2</td>\n    <td>35.6</td>\n    <td>38.6</td>\n    <td>1.25</td>\n    <td>20.7</td>\n    <td>25.8</td>\n    <td>29.2</td>\n    <td>33.1</td>\n    <td>34.8</td>\n    <td>37.0</td>\n    <td>39.5</td>\n    <td>71.2</td>\n  </tr>\n  <tr>\n    <td>Ro→En16</td>\n    <td>BLEU-sb</td>\n    <td>test</td>\n    <td>39.9</td>\n    <td>64</td>\n    <td>2.39</td>\n    <td>3.08</td>\n    <td>3.49</td>\n    <td>3.56</td>\n    <td>16.8</td>\n    <td>8.75</td>\n    <td>20.8</td>\n    <td>20.9</td>\n    <td>0.65</td>\n    <td>15.9</td>\n    <td>23.6</td>\n    <td>26.8</td>\n    <td>31.3</td>\n    <td>34.2</td>\n    <td>36.7</td>\n    <td>40.0</td>\n    <td>1.40</td>\n    <td>21.3</td>\n    <td>26.6</td>\n    <td>30.1</td>\n    <td>34.3</td>\n    <td>36.2</td>\n    <td>38.4</td>\n    <td>41.3</td>\n    <td>71.2</td>\n  </tr>\n  <tr>\n    <td>En→Ro16</td>\n    <td>BLEU-mb</td>\n    <td>test</td>\n    <td>38.5</td>\n    <td>64</td>\n    <td>2.14</td>\n    <td>2.65</td>\n    <td>2.53</td>\n    <td>2.50</td>\n    <td>3.46</td>\n    <td>4.24</td>\n    <td>5.32</td>\n    <td>14.1</td>\n    <td>0.35</td>\n    <td>3.30</td>\n    <td>7.89</td>\n    <td>8.72</td>\n    <td>13.2</td>\n    <td>15.1</td>\n    <td>17.3</td>\n    <td>20.6</td>\n    <td>1.25</td>\n    <td>1.25</td>\n    <td>9.33</td>\n    <td>10.7</td>\n    <td>14.3</td>\n    <td>16.3</td>\n    <td>18.0</td>\n    <td>21.0</td>\n    <td>71.2</td>\n  </tr>\n  <tr>\n    <td>En→Ro16</td>\n    <td>BLEU-sb</td>\n    <td>test</td>\n    <td>38.5</td>\n    <td>64</td>\n    <td>2.61</td>\n    <td>3.11</td>\n    <td>3.07</td>\n    <td>3.09</td>\n    <td>4.26</td>\n    <td>5.31</td>\n    <td>4.18</td>\n    <td>14.3</td>\n    <td>0.55</td>\n    <td>3.90</td>\n    <td>9.15</td>\n    <td>10.3</td>\n    <td>15.7</td>\n    <td>18.2</td>\n    <td>20.8</td>\n    <td>24.9</td>\n    <td>1.64</td>\n    <td>7.40</td>\n    <td>10.9</td>\n    <td>12.9</td>\n    <td>17.2</td>\n    <td>19.6</td>\n    <td>21.8</td>\n    <td>25.8</td>\n    <td>71.2</td>\n  </tr>\n  <tr>\n    <td>Fr→En14</td>\n    <td>BLEU-mb</td>\n    <td>test</td>\n    <td>35.0</td>\n    <td>64</td>\n    <td>1.81</td>\n    <td>2.53</td>\n    <td>3.47</td>\n    <td>3.13</td>\n    <td>20.6</td>\n    <td>15.1</td>\n    <td>21.8</td>\n    <td>21.2</td\n</html>",
+            "cropped_image": "tables/table_074_page063.png"
+        }
+    ]
+}

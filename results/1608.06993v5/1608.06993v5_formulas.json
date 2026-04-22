@@ -1,0 +1,30 @@
+{
+    "total_count": 2,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                364,
+                331,
+                489,
+                345
+            ],
+            "content": "\\mathbf { x } _ { \\ell } = H _ { \\ell } ( [ \\mathbf { x } _ { 0 } , \\mathbf { x } _ { 1 } , \\ldots , \\mathbf { x } _ { \\ell - 1 } ] ) ,",
+            "latex": "\\mathbf { x } _ { \\ell } = H _ { \\ell } ( [ \\mathbf { x } _ { 0 } , \\mathbf { x } _ { 1 } , \\ldots , \\mathbf { x } _ { \\ell - 1 } ] ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                117,
+                703,
+                218,
+                717
+            ],
+            "content": "\\mathbf { x } _ { \\ell } = H _ { \\ell } ( \\mathbf { x } _ { \\ell - 1 } ) + \\mathbf { x } _ { \\ell - 1 } .",
+            "latex": "\\mathbf { x } _ { \\ell } = H _ { \\ell } ( \\mathbf { x } _ { \\ell - 1 } ) + \\mathbf { x } _ { \\ell - 1 } ."
+        }
+    ]
+}

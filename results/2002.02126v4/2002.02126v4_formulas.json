@@ -1,0 +1,258 @@
+{
+    "total_count": 21,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                317,
+                246,
+                559,
+                299
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{e}_u^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\mathbf{W}_2(\\mathbf{e}_i^{(k)} \\odot \\mathbf{e}_u^{(k)}))\\right), \\\\\n\\mathbf{e}_i^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\mathbf{W}_2(\\mathbf{e}_u^{(k)} \\odot \\mathbf{e}_i^{(k)}))\\right),\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{e}_u^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\mathbf{W}_2(\\mathbf{e}_i^{(k)} \\odot \\mathbf{e}_u^{(k)}))\\right), \\\\\n\\mathbf{e}_i^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\mathbf{W}_2(\\mathbf{e}_u^{(k)} \\odot \\mathbf{e}_i^{(k)}))\\right),\n\\end{align*}\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                317,
+                246,
+                559,
+                272
+            ],
+            "content": "```latex\n\\mathbf{e}_u^{(k+1)} = \\sigma \\left( \\mathbf{W}_1 \\mathbf{e}_u^{(k)} + \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|\\mathcal{N}_u||\\mathcal{N}_i|}} (\\mathbf{W}_1 \\mathbf{e}_i^{(k)} + \\mathbf{W}_2 (\\mathbf{e}_i^{(k)} \\odot \\mathbf{e}_u^{(k)})) \\right),\n```",
+            "latex": "```latex\n\\mathbf{e}_u^{(k+1)} = \\sigma \\left( \\mathbf{W}_1 \\mathbf{e}_u^{(k)} + \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|\\mathcal{N}_u||\\mathcal{N}_i|}} (\\mathbf{W}_1 \\mathbf{e}_i^{(k)} + \\mathbf{W}_2 (\\mathbf{e}_i^{(k)} \\odot \\mathbf{e}_u^{(k)})) \\right),\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                317,
+                273,
+                559,
+                299
+            ],
+            "content": "```latex\n\\mathbf{e}_i^{(k+1)} = \\sigma \\left( \\mathbf{W}_1 \\mathbf{e}_i^{(k)} + \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1 \\mathbf{e}_u^{(k)} + \\mathbf{W}_2 (\\mathbf{e}_u^{(k)} \\odot \\mathbf{e}_i^{(k)})) \\right),\n```",
+            "latex": "```latex\n\\mathbf{e}_i^{(k+1)} = \\sigma \\left( \\mathbf{W}_1 \\mathbf{e}_i^{(k)} + \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1 \\mathbf{e}_u^{(k)} + \\mathbf{W}_2 (\\mathbf{e}_u^{(k)} \\odot \\mathbf{e}_i^{(k)})) \\right),\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                317,
+                246,
+                559,
+                299
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{e}_u^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\mathbf{W}_2(\\mathbf{e}_i^{(k)} \\odot \\mathbf{e}_u^{(k)}))\\right), \\\\\n\\mathbf{e}_i^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\mathbf{W}_2(\\mathbf{e}_u^{(k)} \\odot \\mathbf{e}_i^{(k)}))\\right),\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{e}_u^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\mathbf{W}_2(\\mathbf{e}_i^{(k)} \\odot \\mathbf{e}_u^{(k)}))\\right), \\\\\n\\mathbf{e}_i^{(k+1)} &= \\sigma\\left(\\mathbf{W}_1\\mathbf{e}_i^{(k)} + \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_u||N_i|}} (\\mathbf{W}_1\\mathbf{e}_u^{(k)} + \\mathbf{W}_2(\\mathbf{e}_u^{(k)} \\odot \\mathbf{e}_i^{(k)}))\\right),\n\\end{align*}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                373,
+                579,
+                503,
+                596
+            ],
+            "content": "{ \\mathbf { e } } _ { u } ^ { ( k + 1 ) } = \\operatorname { A G G } ( { \\mathbf { e } } _ { u } ^ { ( k ) } , \\{ { \\mathbf { e } } _ { i } ^ { ( k ) } : i \\in { \\mathcal { N } } _ { u } \\} ) .",
+            "latex": "{ \\mathbf { e } } _ { u } ^ { ( k + 1 ) } = \\operatorname { A G G } ( { \\mathbf { e } } _ { u } ^ { ( k ) } , \\{ { \\mathbf { e } } _ { i } ^ { ( k ) } : i \\in { \\mathcal { N } } _ { u } \\} ) ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                115,
+                411,
+                232,
+                464
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{e}_u^{(k+1)} &= \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|N_u|}\\sqrt{|N_i|}} \\mathbf{e}_i^{(k)}, \\\\\n\\mathbf{e}_i^{(k+1)} &= \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_i|}\\sqrt{|N_u|}} \\mathbf{e}_u^{(k)}.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{e}_u^{(k+1)} &= \\sum_{i \\in N_u} \\frac{1}{\\sqrt{|N_u|}\\sqrt{|N_i|}} \\mathbf{e}_i^{(k)}, \\\\\n\\mathbf{e}_i^{(k+1)} &= \\sum_{u \\in N_i} \\frac{1}{\\sqrt{|N_i|}\\sqrt{|N_u|}} \\mathbf{e}_u^{(k)}.\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                344,
+                603,
+                531,
+                635
+            ],
+            "content": "```latex\n\\mathbf{E} = \\alpha_0 \\mathbf{E}^{(0)} + \\alpha_1 \\mathbf{E}^{(1)} + \\alpha_2 \\mathbf{E}^{(2)} + \\ldots + \\alpha_K \\mathbf{E}^{(K)}\n= \\alpha_0 \\mathbf{E}^{(0)} + \\alpha_1 \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + \\alpha_2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(0)} + \\ldots + \\alpha_K \\tilde{\\mathbf{A}}^K \\mathbf{E}^{(0)},\n```",
+            "latex": "```latex\n\\mathbf{E} = \\alpha_0 \\mathbf{E}^{(0)} + \\alpha_1 \\mathbf{E}^{(1)} + \\alpha_2 \\mathbf{E}^{(2)} + \\ldots + \\alpha_K \\mathbf{E}^{(K)}\n= \\alpha_0 \\mathbf{E}^{(0)} + \\alpha_1 \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + \\alpha_2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(0)} + \\ldots + \\alpha_K \\tilde{\\mathbf{A}}^K \\mathbf{E}^{(0)},\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                408,
+                475,
+                467,
+                500
+            ],
+            "content": "\\mathbf { A } = \\left( \\begin{array} { l l } { { 0 } } & { { \\mathbf { R } } } \\\\ { { \\mathbf { R } ^ { T } } } & { { 0 } } \\end{array} \\right) ,",
+            "latex": "\\mathbf { A } = \\left( \\begin{array} { l l } { { 0 } } & { { \\mathbf { R } } } \\\\ { { \\mathbf { R } ^ { T } } } & { { 0 } } \\end{array} \\right) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                375,
+                99,
+                502,
+                126
+            ],
+            "content": "\\mathbf { e } _ { u } = \\sum _ { k = 0 } ^ { K } \\alpha _ { k } \\mathbf { e } _ { u } ^ { ( k ) } ; \\quad \\mathbf { e } _ { i } = \\sum _ { k = 0 } ^ { K } \\alpha _ { k } \\mathbf { e } _ { i } ^ { ( k ) } ,",
+            "latex": "\\mathbf { e } _ { u } = \\sum _ { k = 0 } ^ { K } \\alpha _ { k } \\mathbf { e } _ { u } ^ { ( k ) } ; \\quad \\mathbf { e } _ { i } = \\sum _ { k = 0 } ^ { K } \\alpha _ { k } \\mathbf { e } _ { i } ^ { ( k ) } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                389,
+                538,
+                486,
+                552
+            ],
+            "content": "{ \\bf E } ^ { ( k + 1 ) } = ( { \\bf D } ^ { - { \\frac { 1 } { 2 } } } { \\bf A } { \\bf D } ^ { - { \\frac { 1 } { 2 } } } ) { \\bf E } ^ { ( k ) } ,",
+            "latex": "{ \\bf E } ^ { ( k + 1 ) } = ( { \\bf D } ^ { - { \\frac { 1 } { 2 } } } { \\bf A } { \\bf D } ^ { - { \\frac { 1 } { 2 } } } ) { \\bf E } ^ { ( k ) } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                415,
+                373,
+                460,
+                387
+            ],
+            "content": "\\hat { y } _ { u i } = \\mathbf { e } _ { u } ^ { T } \\mathbf { e } _ { i } ,",
+            "latex": "\\hat { y } _ { u i } = \\mathbf { e } _ { u } ^ { T } \\mathbf { e } _ { i } ,"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                58,
+                366,
+                276,
+                408
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{E}^{(K)} &= (\\mathbf{A} + \\mathbf{I})\\mathbf{E}^{(K-1)} = (\\mathbf{A} + \\mathbf{I})^K\\mathbf{E}^{(0)} \\\\\n&= \\binom{K}{0}\\mathbf{E}^{(0)} + \\binom{K}{1}\\mathbf{A}\\mathbf{E}^{(0)} + \\binom{K}{2}\\mathbf{A}^2\\mathbf{E}^{(0)} + \\ldots + \\binom{K}{K}\\mathbf{A}^K\\mathbf{E}^{(0)}.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{E}^{(K)} &= (\\mathbf{A} + \\mathbf{I})\\mathbf{E}^{(K-1)} = (\\mathbf{A} + \\mathbf{I})^K\\mathbf{E}^{(0)} \\\\\n&= \\binom{K}{0}\\mathbf{E}^{(0)} + \\binom{K}{1}\\mathbf{A}\\mathbf{E}^{(0)} + \\binom{K}{2}\\mathbf{A}^2\\mathbf{E}^{(0)} + \\ldots + \\binom{K}{K}\\mathbf{A}^K\\mathbf{E}^{(0)}.\n\\end{align*}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                344,
+                547,
+                531,
+                576
+            ],
+            "content": "L _ { B P R } = - \\sum _ { u = 1 } ^ { M } \\sum _ { i \\in N _ { u } } \\sum _ { j \\notin N _ { u } } \\ln \\sigma ( \\hat { y } _ { u i } - \\hat { y } _ { u j } ) + \\lambda || \\mathbf { E } ^ { ( 0 ) } || ^ { 2 }",
+            "latex": "L _ { B P R } = - \\sum _ { u = 1 } ^ { M } \\sum _ { i \\in N _ { u } } \\sum _ { j \\notin N _ { u } } \\ln \\sigma ( \\hat { y } _ { u i } - \\hat { y } _ { u j } ) + \\lambda || \\mathbf { E } ^ { ( 0 ) } || ^ { 2 }"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                118,
+                561,
+                228,
+                575
+            ],
+            "content": "{ \\bf E } ^ { ( k + 1 ) } = \\beta { \\bf E } ^ { ( 0 ) } + ( 1 - \\beta ) { \\tilde { A } } { \\bf E } ^ { ( k ) } ,",
+            "latex": "{ \\bf E } ^ { ( k + 1 ) } = \\beta { \\bf E } ^ { ( 0 ) } + ( 1 - \\beta ) { \\tilde { A } } { \\bf E } ^ { ( k ) } ,"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                318,
+                257,
+                557,
+                283
+            ],
+            "content": "```latex\n\\mathbf{e}_{u}^{(2)} = \\sum_{i \\in N_{u}} \\frac{1}{\\sqrt{|N_{u}|}\\sqrt{|N_{i}|}} \\mathbf{e}_{i}^{(1)}\n= \\sum_{i \\in N_{u}} \\frac{1}{|N_{i}|} \\sum_{v \\in N_{i}} \\frac{1}{\\sqrt{|N_{u}|}\\sqrt{|N_{v}|}} \\mathbf{e}_{v}^{(0)}.\n```",
+            "latex": "```latex\n\\mathbf{e}_{u}^{(2)} = \\sum_{i \\in N_{u}} \\frac{1}{\\sqrt{|N_{u}|}\\sqrt{|N_{i}|}} \\mathbf{e}_{i}^{(1)}\n= \\sum_{i \\in N_{u}} \\frac{1}{|N_{i}|} \\sum_{v \\in N_{i}} \\frac{1}{\\sqrt{|N_{u}|}\\sqrt{|N_{v}|}} \\mathbf{e}_{v}^{(0)}.\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                101,
+                289,
+                245,
+                303
+            ],
+            "content": "```latex\n\\mathbf{E}^{(k+1)} = (\\mathbf{D} + \\mathbf{I})^{-\\frac{1}{2}} (\\mathbf{A} + \\mathbf{I}) (\\mathbf{D} + \\mathbf{I})^{-\\frac{1}{2}} \\mathbf{E}^{(k)},\n```",
+            "latex": "```latex\n\\mathbf{E}^{(k+1)} = (\\mathbf{D} + \\mathbf{I})^{-\\frac{1}{2}} (\\mathbf{A} + \\mathbf{I}) (\\mathbf{D} + \\mathbf{I})^{-\\frac{1}{2}} \\mathbf{E}^{(k)},\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                366,
+                327,
+                509,
+                353
+            ],
+            "content": "c _ { v \\rightarrow u } = \\frac { 1 } { \\sqrt { | N _ { u } | } \\sqrt { | N _ { v } | } } \\sum _ { i \\in N _ { u } \\cap N _ { v } } \\frac { 1 } { | N _ { i } | } .",
+            "latex": "c _ { v \\rightarrow u } = \\frac { 1 } { \\sqrt { | N _ { u } | } \\sqrt { | N _ { v } | } } \\sum _ { i \\in N _ { u } \\cap N _ { v } } \\frac { 1 } { | N _ { i } | } ."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                53,
+                625,
+                309,
+                675
+            ],
+            "content": "```latex\n\\mathbf{E}^{(K)} = \\beta \\mathbf{E}^{(0)} + (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(K-1)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(K-2)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + \\beta (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(0)} + \\ldots + (1 - \\beta)^K \\tilde{\\mathbf{A}}^K \\mathbf{E}^{(0)}.\n```",
+            "latex": "```latex\n\\mathbf{E}^{(K)} = \\beta \\mathbf{E}^{(0)} + (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(K-1)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(K-2)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + \\beta (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(0)} + \\ldots + (1 - \\beta)^K \\tilde{\\mathbf{A}}^K \\mathbf{E}^{(0)}.\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                54,
+                628,
+                309,
+                675
+            ],
+            "content": "```latex\n\\mathbf{E}^{(K)} = \\beta \\mathbf{E}^{(0)} + (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(K-1)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(K-2)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + \\beta (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(0)} + \\ldots + (1 - \\beta)^K \\tilde{\\mathbf{A}}^K \\mathbf{E}^{(0)}.\n```",
+            "latex": "```latex\n\\mathbf{E}^{(K)} = \\beta \\mathbf{E}^{(0)} + (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(K-1)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(K-2)},\n= \\beta \\mathbf{E}^{(0)} + \\beta (1 - \\beta) \\tilde{\\mathbf{A}} \\mathbf{E}^{(0)} + \\beta (1 - \\beta)^2 \\tilde{\\mathbf{A}}^2 \\mathbf{E}^{(0)} + \\ldots + (1 - \\beta)^K \\tilde{\\mathbf{A}}^K \\mathbf{E}^{(0)}.\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                317,
+                167,
+                562,
+                196
+            ],
+            "content": "```latex\nL = -\\sum_{u=1}^{M}\\sum_{i \\in N_u}\\left(\\sum_{j \\neq N_u}\\ln\\sigma(\\mathbf{e}_u^T\\mathbf{e}_i-\\mathbf{e}_u^T\\mathbf{e}_j)+\\lambda_g||\\mathbf{e}_u-\\mathbf{e}_i||^2\\right) + \\lambda||\\mathbf{E}||^2,\n```",
+            "latex": "```latex\nL = -\\sum_{u=1}^{M}\\sum_{i \\in N_u}\\left(\\sum_{j \\neq N_u}\\ln\\sigma(\\mathbf{e}_u^T\\mathbf{e}_i-\\mathbf{e}_u^T\\mathbf{e}_j)+\\lambda_g||\\mathbf{e}_u-\\mathbf{e}_i||^2\\right) + \\lambda||\\mathbf{E}||^2,\n```"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                365,
+                556,
+                510,
+                584
+            ],
+            "content": "S _ { U } = \\sum _ { u = 1 } ^ { M } \\sum _ { v = 1 } ^ { M } c _ { v \\rightarrow u } ( \\frac { \\mathbf { e } _ { u } } { \\| \\mathbf { e } _ { u } \\| ^ { 2 } } - \\frac { \\mathbf { e } _ { v } } { \\| \\mathbf { e } _ { v } \\| ^ { 2 } } ) ^ { 2 } ,",
+            "latex": "S _ { U } = \\sum _ { u = 1 } ^ { M } \\sum _ { v = 1 } ^ { M } c _ { v \\rightarrow u } ( \\frac { \\mathbf { e } _ { u } } { \\| \\mathbf { e } _ { u } \\| ^ { 2 } } - \\frac { \\mathbf { e } _ { v } } { \\| \\mathbf { e } _ { v } \\| ^ { 2 } } ) ^ { 2 } ,"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "total_count": 4,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                106,
+                65,
+                487,
+                176
+            ],
+            "caption": "The ARMA convolutional layer. Same color indicates that the weights are shared",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                60,
+                75,
+                535,
+                338
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 2. In (a, b), the empirical filter responses of two GCS stacks for T = 1, 2, 3; the black lines indicate the analytical response of an ARMA1 filter with similar parameters. In (c), the empirical response of a GCN with T = 1, 2, 3 layers. In (d, e), the original components of the input graph signal X (in black), and the components of the graph signal X̅ processed by two GCS stacks for T = 1, 2, 3 (in color). In (f), the components of X̅ processed by a GCN with T = 1, 2, 3 layers.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                58,
+                73,
+                284,
+                249
+            ],
+            "caption": "Figure 3. While each GCS stack behaves as a low-pass filter, an ARMA layer with \\( K = 3 \\) can implement filters of different shapes. The ARMA layer in (a) implements a high-pass filtering operation that dampens low frequencies. The ARMA layer in (b) implements a band-pass filtering operation that mostly allows medium frequencies.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                102,
+                470,
+                239,
+                553
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 4. Training times on the PPI dataset, obtained with an Nvidia Titan Xp GPU.\" Figure 4. Training times on the PPI dataset, obtained with an Nvidia Titan Xp GPU. Fig. 4 shows the training times of the GNN model configured with GCN, Chebyshev, CayleyNet, and ARMA layers. The ARMA layer exploits sparse operations that are linear in the number of nodes in L and can be trained in a time comparable to a Chebyshev filter. On the other hand, CayleyNet is slower than other methods, due to the complex formulation based on the Jacobi iterations that results in a high order polynomial. Fig. 4 shows the training times of the GNN model configured with GCN, Chebyshev, CayleyNet, and ARMA layers. The ARMA layer exploits sparse operations that are linear in the number of nodes in L and can be trained in a time comparable to a Chebyshev filter. On the other hand, CayleyNet is slower than other methods, due to the complex formulation based on the Jacobi iterations that results in a high order polynomial.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page009.png"
+        }
+    ]
+}

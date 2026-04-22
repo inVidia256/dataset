@@ -1,0 +1,78 @@
+{
+    "total_count": 6,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                101,
+                165,
+                234,
+                191
+            ],
+            "content": "```latex\nb^{i,j} = f_R \\left\\{ f_p \\left( C^i; win^j, str^j \\right) \\right\\}\n\nr^i = b^{i,1} \\oplus b^{i,2} \\oplus \\ldots \\oplus b^{i,n}\n```",
+            "latex": "```latex\nb^{i,j} = f_R \\left\\{ f_p \\left( C^i; win^j, str^j \\right) \\right\\}\n\nr^i = b^{i,1} \\oplus b^{i,2} \\oplus \\ldots \\oplus b^{i,n}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                375,
+                415,
+                478,
+                449
+            ],
+            "content": "[ a _ { g } ] _ { i } = e ^ { [ t _ { g } ] _ { i } } \\Big / \\sum _ { j = 1 } ^ { T } e ^ { [ t _ { g } ] _ { j } }",
+            "latex": "[ a _ { g } ] _ { i } = e ^ { [ t _ { g } ] _ { i } } \\Big / \\sum _ { j = 1 } ^ { T } e ^ { [ t _ { g } ] _ { j } }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                91,
+                308,
+                244,
+                322
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\no^t = U r^t + W s^{t-1}, \\quad s^t = \\tanh(o^t)\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\no^t = U r^t + W s^{t-1}, \\quad s^t = \\tanh(o^t)\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                372,
+                515,
+                481,
+                531
+            ],
+            "content": "v _ { p } = P ^ { T } a _ { p } , \\quad v _ { g } = G ^ { T } a _ { g }",
+            "latex": "v _ { p } = P ^ { T } a _ { p } , \\quad v _ { g } = G ^ { T } a _ { g }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                385,
+                129,
+                468,
+                144
+            ],
+            "content": "A = \\operatorname { t a n h } \\left( P U G ^ { T } \\right)",
+            "latex": "A = \\operatorname { t a n h } \\left( P U G ^ { T } \\right)"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                53,
+                565,
+                267,
+                599
+            ],
+            "content": "```latex\nE(v_p, v_g) = \n\\begin{cases} \n\\|v_p - v_g\\|^2 & p = g \\\\\n\\max \\left(0, m - \\|v_p - v_g\\|^2\\right) & p \\neq g\n\\end{cases}\n```",
+            "latex": "```latex\nE(v_p, v_g) = \n\\begin{cases} \n\\|v_p - v_g\\|^2 & p = g \\\\\n\\max \\left(0, m - \\|v_p - v_g\\|^2\\right) & p \\neq g\n\\end{cases}\n```"
+        }
+    ]
+}

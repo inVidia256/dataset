@@ -1,0 +1,278 @@
+{
+    "total_count": 17,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 18,
+            "type": "table",
+            "bbox": [
+                133,
+                577,
+                489,
+                624
+            ],
+            "caption": "Table 2.1: State-of-the-Art Blueprint¹.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Data format</td>\n    <td>Training method</td>\n    <td>Privacy analysis</td>\n    <td>Designated output</td>\n  </tr>\n  <tr>\n    <td>Med GAN</td>\n    <td>Categorical Only</td>\n    <td>Auto-encoder + GAN</td>\n    <td>Yes</td>\n    <td>No</td>\n  </tr>\n  <tr>\n    <td>Table GAN</td>\n    <td>Categorical &amp; Continuous</td>\n    <td>GAN+Classifier</td>\n    <td>Yes</td>\n    <td>No</td>\n  </tr>\n  <tr>\n    <td>CT GAN</td>\n    <td>Categorical &amp; Continuous</td>\n    <td>Conditional-WGAN</td>\n    <td>No</td>\n    <td>Yes</td>\n  </tr>\n  <tr>\n    <td>CW-GAN</td>\n    <td>Categorical &amp; Continuous</td>\n    <td>Conditional-WGAN+Classifier</td>\n    <td>No</td>\n    <td>Yes</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page018.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 19,
+            "type": "table",
+            "bbox": [
+                103,
+                571,
+                459,
+                615
+            ],
+            "caption": "Table 2.2: Outline of all methodologies in this work.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Loss</td>\n    <td>DP Site</td>\n    <td>Noise</td>\n    <td>Accountant</td>\n    <td>Data Format</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>KL Divergence Loss</td>\n    <td>Discriminator</td>\n    <td>Laplacian</td>\n    <td>PATE Accountant</td>\n    <td>Table</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Wasserstein Loss+Weight Clipping</td>\n    <td>Discriminator</td>\n    <td>Gaussian</td>\n    <td>RDP-Accountant</td>\n    <td>Image&Table</td>\n  </tr>\n  <tr>\n    <td>D-DP-CTAB GAN</td>\n    <td>Wasserstein Loss+Gradient Penalty</td>\n    <td>Discriminator</td>\n    <td>Gaussian</td>\n    <td>RDP-Accountant</td>\n    <td>Table</td>\n  </tr>\n  <tr>\n    <td>G-DP-CTAB GAN</td>\n    <td>Wasserstein Loss+Gradient Penalty</td>\n    <td>Generator</td>\n    <td>Gaussian</td>\n    <td>RDP-Accountant</td>\n    <td>Table</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page019.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 28,
+            "type": "table",
+            "bbox": [
+                134,
+                86,
+                490,
+                142
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3.1: Description of Datasets².\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>Train/Test Split</td>\n    <td>Target Variable</td>\n    <td>Continuous</td>\n    <td>Binary</td>\n    <td>Multi-class</td>\n    <td>Mixed-type</td>\n    <td>Long-tail</td>\n  </tr>\n  <tr>\n    <td>Adult</td>\n    <td>39k/9k</td>\n    <td>income</td>\n    <td>3</td>\n    <td>2</td>\n    <td>7</td>\n    <td>2</td>\n    <td>0</td>\n  </tr>\n  <tr>\n    <td>Covertype</td>\n    <td>45k/5k</td>\n    <td>'Cover_Type'</td>\n    <td>10</td>\n    <td>44</td>\n    <td>1</td>\n    <td>0</td>\n    <td>0</td>\n  </tr>\n  <tr>\n    <td>Credit</td>\n    <td>40k/10k</td>\n    <td>'Class'</td>\n    <td>30</td>\n    <td>1</td>\n    <td>0</td>\n    <td>0</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>Intrusion</td>\n    <td>45k/5k</td>\n    <td>'Class'</td>\n    <td>22</td>\n    <td>6</td>\n    <td>14</td>\n    <td>0</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>Loan</td>\n    <td>4k/1k</td>\n    <td>'PersonalLoan'</td>\n    <td>5</td>\n    <td>5</td>\n    <td>2</td>\n    <td>1</td>\n    <td>0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page028.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 30,
+            "type": "table",
+            "bbox": [
+                217,
+                526,
+                405,
+                589
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Accuracy</td>\n    <td>F1-score</td>\n    <td>AUC</td>\n  </tr>\n  <tr>\n    <td>CT GAN</td>\n    <td>21.51%</td>\n    <td>0.274</td>\n    <td>0.253</td>\n  </tr>\n  <tr>\n    <td>Table GAN</td>\n    <td>11.40%</td>\n    <td>0.130</td>\n    <td>0.169</td>\n  </tr>\n  <tr>\n    <td>Med GAN</td>\n    <td>14.11%</td>\n    <td>0.282</td>\n    <td>0.285</td>\n  </tr>\n  <tr>\n    <td>CW-GAN</td>\n    <td>20.06%</td>\n    <td>0.354</td>\n    <td>0.299</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page030.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 31,
+            "type": "table",
+            "bbox": [
+                183,
+                85,
+                380,
+                148
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3.3: Statistical similarity: three measures averaged over 5 datasets and three repetitions.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Avg JSD</td>\n    <td>Avg WD</td>\n    <td>Diff.Corr.</td>\n  </tr>\n  <tr>\n    <td>CT GAN</td>\n    <td>0.0704</td>\n    <td>1769</td>\n    <td>2.73</td>\n  </tr>\n  <tr>\n    <td>Table GAN</td>\n    <td>0.0796</td>\n    <td>2117</td>\n    <td>2.30</td>\n  </tr>\n  <tr>\n    <td>Med GAN</td>\n    <td>0.2135</td>\n    <td>46257</td>\n    <td>5.48</td>\n  </tr>\n  <tr>\n    <td>CW-GAN</td>\n    <td>0.1318</td>\n    <td>238155</td>\n    <td>5.82</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page031.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 31,
+            "type": "table",
+            "bbox": [
+                149,
+                307,
+                414,
+                382
+            ],
+            "caption": "The text content from the image is:\n\n\"acy impact: between real and synthetic data (R&S) and within real data (R) and synthetic data (S)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>DCR</td>\n    <td>NN DR</td>\n  </tr>\n  <tr>\n    <td>R&S</td>\n    <td>R</td>\n    <td>S</td>\n    <td>R&S</td>\n    <td>R</td>\n    <td>S</td>\n  </tr>\n  <tr>\n    <td>CT GAN</td>\n    <td>1.517</td>\n    <td>0.428</td>\n    <td>1.026</td>\n    <td>0.763</td>\n    <td>0.414</td>\n    <td>0.624</td>\n  </tr>\n  <tr>\n    <td>Table GAN</td>\n    <td>0.988</td>\n    <td>0.428</td>\n    <td>0.920</td>\n    <td>0.681</td>\n    <td>0.414</td>\n    <td>0.632</td>\n  </tr>\n  <tr>\n    <td>Med GAN</td>\n    <td>1.918</td>\n    <td>0.428</td>\n    <td>0.254</td>\n    <td>0.871</td>\n    <td>0.414</td>\n    <td>0.393</td>\n  </tr>\n  <tr>\n    <td>CW-GAN</td>\n    <td>2.197</td>\n    <td>0.428</td>\n    <td>1.124</td>\n    <td>0.847</td>\n    <td>0.414</td>\n    <td>0.675</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page031.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 39,
+            "type": "table",
+            "bbox": [
+                185,
+                578,
+                377,
+                653
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 4.1: Difference of ML accuracy (%), F1-score, and AUC between original and synthetic data: average over 5 different datasets and 3 replications.\" The text content from the image is as follows:\n\n\"Table 4.1: Difference of ML accuracy (%), F1-score, and AUC between original and synthetic data: average over 5 different datasets and 3 replications.\" The text content from the image is as follows:\n\n\"Table 4.1: Difference of ML accuracy (%), F1-score, and AUC between original and synthetic data: average over 5 different datasets and 3 replications.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Accuracy</td>\n    <td>F1-score</td>\n    <td>AUC</td>\n  </tr>\n  <tr>\n    <td>CTAB-GAN</td>\n    <td>8.90%</td>\n    <td>0.107</td>\n    <td>0.094</td>\n  </tr>\n  <tr>\n    <td>CT GAN</td>\n    <td>21.51%</td>\n    <td>0.274</td>\n    <td>0.253</td>\n  </tr>\n  <tr>\n    <td>Table GAN</td>\n    <td>11.40%</td>\n    <td>0.130</td>\n    <td>0.169</td>\n  </tr>\n  <tr>\n    <td>Med GAN</td>\n    <td>14.11%</td>\n    <td>0.282</td>\n    <td>0.285</td>\n  </tr>\n  <tr>\n    <td>CW-GAN</td>\n    <td>20.06%</td>\n    <td>0.354</td>\n    <td>0.299</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page039.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 40,
+            "type": "table",
+            "bbox": [
+                210,
+                557,
+                412,
+                631
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4.2: Statistical similarity: three measures averaged over 5 datasets and three repetitions.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Avg JSD</td>\n    <td>Avg WD</td>\n    <td>Diff.Corr.</td>\n  </tr>\n  <tr>\n    <td>CTAB-GAN</td>\n    <td>0.062</td>\n    <td>1197</td>\n    <td>2.09</td>\n  </tr>\n  <tr>\n    <td>CT GAN</td>\n    <td>0.0704</td>\n    <td>1769</td>\n    <td>2.73</td>\n  </tr>\n  <tr>\n    <td>Table GAN</td>\n    <td>0.0796</td>\n    <td>2117</td>\n    <td>2.30</td>\n  </tr>\n  <tr>\n    <td>Med GAN</td>\n    <td>0.2135</td>\n    <td>46257</td>\n    <td>5.48</td>\n  </tr>\n  <tr>\n    <td>CW-GAN</td>\n    <td>0.1318</td>\n    <td>238155</td>\n    <td>5.82</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page040.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 41,
+            "type": "table",
+            "bbox": [
+                148,
+                188,
+                414,
+                275
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4.3: Privacy impact: between real and synthetic data (R&S) and within real data (R) and synthetic data (S).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>DCR</td>\n    <td>NN DR</td>\n  </tr>\n  <tr>\n    <td>R&S</td>\n    <td>R</td>\n    <td>S</td>\n    <td>R&S</td>\n    <td>R</td>\n    <td>S</td>\n  </tr>\n  <tr>\n    <td>CTAB-GAN</td>\n    <td>1.118</td>\n    <td>0.428</td>\n    <td>0.937</td>\n    <td>0.713</td>\n    <td>0.414</td>\n    <td>0.591</td>\n  </tr>\n  <tr>\n    <td>CT GAN</td>\n    <td>1.517</td>\n    <td>0.428</td>\n    <td>1.026</td>\n    <td>0.763</td>\n    <td>0.414</td>\n    <td>0.624</td>\n  </tr>\n  <tr>\n    <td>Table GAN</td>\n    <td>0.988</td>\n    <td>0.428</td>\n    <td>0.920</td>\n    <td>0.681</td>\n    <td>0.414</td>\n    <td>0.632</td>\n  </tr>\n  <tr>\n    <td>Med GAN</td>\n    <td>1.918</td>\n    <td>0.428</td>\n    <td>0.254</td>\n    <td>0.871</td>\n    <td>0.414</td>\n    <td>0.393</td>\n  </tr>\n  <tr>\n    <td>CW-GAN</td>\n    <td>2.197</td>\n    <td>0.428</td>\n    <td>1.124</td>\n    <td>0.847</td>\n    <td>0.414</td>\n    <td>0.675</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page041.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 41,
+            "type": "table",
+            "bbox": [
+                131,
+                599,
+                434,
+                674
+            ],
+            "caption": "The text content from the image is:\n\n\"difference to CTAB-GAN. CTAB-GAN column reports the absolute averaged F1-score as baseline\" The text content from the image is:\n\n\"difference to CTAB-GAN. CTAB-GAN column reports the absolute averaged F1-score as baseline\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>CTAB-GAN</td>\n    <td>w/o C</td>\n    <td>w/o I.Loss</td>\n    <td>w/o MSN</td>\n    <td>w/o LT</td>\n  </tr>\n  <tr>\n    <td>Adult</td>\n    <td>0.704</td>\n    <td>-0.01</td>\n    <td>-0.037</td>\n    <td>-0.05</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Covertype</td>\n    <td>0.532</td>\n    <td>-0.018</td>\n    <td>-0.184</td>\n    <td>-0.118</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Credit</td>\n    <td>0.710</td>\n    <td>+0.011</td>\n    <td>-0.177</td>\n    <td>+0.06</td>\n    <td>0.00</td>\n  </tr>\n  <tr>\n    <td>Intrusion</td>\n    <td>0.842</td>\n    <td>-0.031</td>\n    <td>-0.437</td>\n    <td>+0.003</td>\n    <td>-0.074</td>\n  </tr>\n  <tr>\n    <td>Loan</td>\n    <td>0.803</td>\n    <td>-0.044</td>\n    <td>+0.028</td>\n    <td>+0.013</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page041.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 52,
+            "type": "table",
+            "bbox": [
+                197,
+                357,
+                425,
+                433
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5.1: Statistical similarity: 3 measures averaged over 3 datasets with a privacy budget of ε = 1\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Avg JSD</td>\n    <td>Avg NWD</td>\n    <td>Diff.Corr.</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>0.487</td>\n    <td>0.259</td>\n    <td>3.982</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>0.299</td>\n    <td>0.232</td>\n    <td>3.834</td>\n  </tr>\n  <tr>\n    <td>D-DP-CTAB GAN</td>\n    <td>0.246</td>\n    <td>0.063</td>\n    <td>4.168</td>\n  </tr>\n  <tr>\n    <td>G-DP-CTAB GAN</td>\n    <td>0.376</td>\n    <td>0.189</td>\n    <td>3.065</td>\n  </tr>\n  <tr>\n    <td>CTA B-GAN</td>\n    <td>0.028</td>\n    <td>0.01</td>\n    <td>1.607</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page052.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 52,
+            "type": "table",
+            "bbox": [
+                197,
+                467,
+                425,
+                542
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5.2: Statistical similarity: 3 measures averaged over 3 datasets with a privacy budget of ε = 100\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Avg JSD</td>\n    <td>Avg NWD</td>\n    <td>Diff.Corr.</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>0.358</td>\n    <td>0.259</td>\n    <td>4.837</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>0.304</td>\n    <td>0.222</td>\n    <td>4.57</td>\n  </tr>\n  <tr>\n    <td>D-DP-CTAB GAN</td>\n    <td>0.127</td>\n    <td>0.047</td>\n    <td>3.648</td>\n  </tr>\n  <tr>\n    <td>G-DP-CTAB GAN</td>\n    <td>0.389</td>\n    <td>0.174</td>\n    <td>3.21</td>\n  </tr>\n  <tr>\n    <td>CTAB-GAN</td>\n    <td>0.028</td>\n    <td>0.01</td>\n    <td>1.607</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page052.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 53,
+            "type": "table",
+            "bbox": [
+                157,
+                149,
+                406,
+                224
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 5.3: Difference of ML accuracy (%), F1-score, AUC and APR between original and synthetic data: average over 3 different datasets and a privacy budget ε = 1\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Accuracy</td>\n    <td>AUC</td>\n    <td>APR</td>\n    <td>F1-Score</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>10.8%</td>\n    <td>0.246</td>\n    <td>0.576</td>\n    <td>0.367</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>8.2%</td>\n    <td>0.408</td>\n    <td>0.58</td>\n    <td>0.368</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT AB GAN</td>\n    <td>16.1%</td>\n    <td>0.302</td>\n    <td>0.483</td>\n    <td>0.34</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT AB GAN</td>\n    <td>32.3%</td>\n    <td>0.377</td>\n    <td>0.604</td>\n    <td>0.454</td>\n  </tr>\n  <tr>\n    <td>CT AB GAN</td>\n    <td>2.6%</td>\n    <td>0.042</td>\n    <td>0.143</td>\n    <td>0.097</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page053.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 53,
+            "type": "table",
+            "bbox": [
+                157,
+                274,
+                406,
+                349
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 5.4: Difference of ML accuracy (%), F1-score, AUC and APR between original and synthetic data: average over 3 different datasets and a privacy budget ε = 100\" The text content from the image is as follows:\n\n\"Table 5.4: Difference of ML accuracy (%), F1-score, AUC and APR between original and synthetic data: average over 3 different datasets and a privacy budget ε = 100\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Accuracy</td>\n    <td>AUC</td>\n    <td>APR</td>\n    <td>F1-Score</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>37.4%</td>\n    <td>0.416</td>\n    <td>0.566</td>\n    <td>0.412</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>10.8%</td>\n    <td>0.373</td>\n    <td>0.592</td>\n    <td>0.364</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT AB GAN</td>\n    <td>13%</td>\n    <td>0.265</td>\n    <td>0.475</td>\n    <td>0.262</td>\n  </tr>\n  <tr>\n    <td>G-DP-CTAB GAN</td>\n    <td>13.7%</td>\n    <td>0.387</td>\n    <td>0.565</td>\n    <td>0.374</td>\n  </tr>\n  <tr>\n    <td>CTA B GAN</td>\n    <td>2.6%</td>\n    <td>0.042</td>\n    <td>0.143</td>\n    <td>0.097</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page053.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 54,
+            "type": "table",
+            "bbox": [
+                133,
+                94,
+                489,
+                156
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 5.5: Empirical privacy gain against membership attack with naive & correlation feature extraction and attribute inference attack: average over 3 different datasets with a privacy budget ε = 1\" The text content from the image is as follows:\n\n\"Table 5.5: Empirical privacy gain against membership attack with naive & correlation feature extraction and attribute inference attack: average over 3 different datasets with a privacy budget ε = 1\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Naive Privacy Gain</td>\n    <td>Correlation Privacy Gain</td>\n    <td>Attribute Inference Privacy Gain</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>0.25</td>\n    <td>0.25</td>\n    <td>0.042</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>0.255</td>\n    <td>0.256</td>\n    <td>0.04</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>0.266</td>\n    <td>0.248</td>\n    <td>0.037</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>0.245</td>\n    <td>0.26</td>\n    <td>0.038</td>\n  </tr>\n  <tr>\n    <td>CT ABGAN</td>\n    <td>0.238</td>\n    <td>0.233</td>\n    <td>-2e-4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_015_page054.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                133,
+                138,
+                489,
+                420
+            ],
+            "caption": "Differential privacy hyper-parameters for conducting statistical similarity and ML utility experiment",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Dataset</td>\n    <td>No.of Discriminators</td>\n    <td>Noise Scale</td>\n    <td>Epochs</td>\n    <td>Epsilon</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>1.012</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>1.012</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>1.33</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>1.06</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>1.06</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>1.58</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Adult</td>\n    <td>1000</td>\n    <td>3.518</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Credit</td>\n    <td>1000</td>\n    <td>3.53</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Loan</td>\n    <td>1000</td>\n    <td>1.28</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>1</td>\n    <td>795</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>1</td>\n    <td>795</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>1</td>\n    <td>795</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>0.33</td>\n    <td>6</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>0.33</td>\n    <td>6</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>0.38</td>\n    <td>7</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>0.36</td>\n    <td>5</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>0.36</td>\n    <td>5</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>0.42</td>\n    <td>4</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Adult</td>\n    <td>50</td>\n    <td>0.867</td>\n    <td>1</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Credit</td>\n    <td>100</td>\n    <td>0.874</td>\n    <td>1</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Loan</td>\n    <td>100</td>\n    <td>1.089</td>\n    <td>4</td>\n    <td>100</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_016_page060.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 60,
+            "type": "table",
+            "bbox": [
+                133,
+                461,
+                489,
+                565
+            ],
+            "caption": "The text content from the image is:\n\n\"Table A.2: Differential privacy hyper-parameters for conducting membership and attribute inference attacks.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Dataset</td>\n    <td>No of Discriminators</td>\n    <td>Noise Scale(Membership)</td>\n    <td>Noise Scale(Attribute)</td>\n    <td>Epochs</td>\n    <td>Epsilon</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>PATE-GAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>1.33</td>\n    <td>1.25</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>1.33</td>\n    <td>1.25</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>DP-WGAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>1.33</td>\n    <td>1.25</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Adult</td>\n    <td>1</td>\n    <td>1.67</td>\n    <td>1.56</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Credit</td>\n    <td>1</td>\n    <td>1.67</td>\n    <td>1.56</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>D-DP-CT ABGAN</td>\n    <td>Loan</td>\n    <td>1</td>\n    <td>1.67</td>\n    <td>1.56</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Adult</td>\n    <td>1000</td>\n    <td>1.28</td>\n    <td>1.37</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Credit</td>\n    <td>1000</td>\n    <td>1.28</td>\n    <td>1.37</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>G-DP-CT ABGAN</td>\n    <td>Loan</td>\n    <td>1000</td>\n    <td>1.28</td>\n    <td>1.37</td>\n    <td>1</td>\n    <td>1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_017_page060.png"
+        }
+    ]
+}

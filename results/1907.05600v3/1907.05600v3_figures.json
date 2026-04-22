@@ -1,0 +1,244 @@
+{
+    "total_count": 17,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                306,
+                573,
+                504,
+                643
+            ],
+            "caption": "Figure 1: Left: Sliced score matching (SSM) loss w.r.t. iterations. No noise is added to data. Right: Same but data are perturbed with N(0, 0.0001).",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                311,
+                270,
+                502,
+                370
+            ],
+            "caption": "Figure 2: Left: ∇ₓ log p_data(x); Right: s_θ(x). The data density p_data(x) is encoded using an orange colormap: darker color implies higher density. Red rectangles highlight regions where ∇ₓ log p_data(x) ≈ s_θ(x).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                129,
+                72,
+                480,
+                206
+            ],
+            "caption": "Figure 3: Samples from a mixture of Gaussian with different methods. (a) Exact sampling. (b) Sampling using Langevin dynamics with the exact scores. (c) Sampling using annealed Langevin dynamics with the exact scores. Clearly Langevin dynamics estimate the relative weights between the two modes incorrectly, while annealed Langevin dynamics recover the relative weights faithfully.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                333,
+                70,
+                496,
+                237
+            ],
+            "caption": "Figure 4: Intermediate samples of annealed Langevin dynamics.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                124,
+                70,
+                487,
+                206
+            ],
+            "caption": "Figure 5: Uncurated samples on MNIST, CelebA, and CIFAR-10 datasets",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                127,
+                247,
+                485,
+                386
+            ],
+            "caption": "Figure 6: Image inpainting on CelebA (left) and CIFAR-10 (right). The leftmost column of each figure shows the occluded images, while the rightmost column shows the original images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                123,
+                355,
+                487,
+                492
+            ],
+            "caption": "Figure 7: Uncurated samples on MNIST, CelebA, and CIFAR-10 datasets from the baseline model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page016.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                123,
+                533,
+                487,
+                669
+            ],
+            "caption": "Figure 8: Intermediate samples from Langevin dynamics for the baseline model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page016.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                128,
+                196,
+                482,
+                350
+            ],
+            "caption": "Figure 9: Nearest neighbors measured by the \\( \\ell_2 \\) distance between images. Images on the left of the red vertical line are samples from NCSN. Images on the right are nearest neighbors in the training dataset.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page017.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                128,
+                417,
+                482,
+                570
+            ],
+            "caption": "Figure 10: Nearest neighbors measured by the \\( \\ell_2 \\) distance in the feature space of an Inception V3 network pretrained on ImageNet. Images on the left of the red vertical line are samples from NCSN. Images on the right are nearest neighbors in the training dataset.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page017.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                127,
+                216,
+                483,
+                574
+            ],
+            "caption": "Figure 11: Extended MNIST samples",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page018.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                127,
+                213,
+                484,
+                572
+            ],
+            "caption": "Figure 12: Extended CelebA samples",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page019.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                127,
+                213,
+                484,
+                571
+            ],
+            "caption": "Figure 13: Extended CIFAR-10 samples",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page020.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                127,
+                194,
+                484,
+                374
+            ],
+            "caption": "Figure 14: Extended intermediate samples from annealed Langevin dynamics for CelebA.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page021.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                127,
+                415,
+                484,
+                595
+            ],
+            "caption": "Figure 15: Extended intermediate samples from annealed Langevin dynamics for CelebA.",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page021.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 22,
+            "type": "figure",
+            "bbox": [
+                126,
+                230,
+                484,
+                549
+            ],
+            "caption": "Figure 16: Extended image inpainting results for CelebA. The leftmost column of each figure shows the occluded images, while the rightmost column shows the original images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page022.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 23,
+            "type": "figure",
+            "bbox": [
+                126,
+                227,
+                484,
+                546
+            ],
+            "caption": "Figure 17: Extended image inpainting results for CIFAR-10. The leftmost column of each figure shows the occluded images, while the rightmost column shows the original images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page023.png"
+        }
+    ]
+}

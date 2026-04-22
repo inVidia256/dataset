@@ -1,0 +1,318 @@
+{
+    "total_count": 26,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                256,
+                626,
+                353,
+                639
+            ],
+            "content": "c = q \\left( \\left\\{ h _ { 1 } , \\cdots , h _ { T _ { x } } \\right\\} \\right) ,",
+            "latex": "c = q \\left( \\left\\{ h _ { 1 } , \\cdots , h _ { T _ { x } } \\right\\} \\right) ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                268,
+                599,
+                342,
+                612
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nh_t = f(x_t, h_{t-1})\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nh_t = f(x_t, h_{t-1})\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                228,
+                122,
+                383,
+                154
+            ],
+            "content": "p ( \\mathbf { y } ) = \\prod _ { t = 1 } ^ { T } p ( y _ { t } \\mid \\{ y _ { 1 } , \\cdots , y _ { t - 1 } \\} , c ) ,",
+            "latex": "p ( \\mathbf { y } ) = \\prod _ { t = 1 } ^ { T } p ( y _ { t } \\mid \\{ y _ { 1 } , \\cdots , y _ { t - 1 } \\} , c ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                256,
+                612,
+                355,
+                642
+            ],
+            "content": "\\alpha _ { i j } = \\frac { \\exp \\left( e _ { i j } \\right) } { \\sum _ { k = 1 } ^ { T _ { x } } \\exp \\left( e _ { i k } \\right) } ,",
+            "latex": "\\alpha _ { i j } = \\frac { \\exp \\left( e _ { i j } \\right) } { \\sum _ { k = 1 } ^ { T _ { x } } \\exp \\left( e _ { i k } \\right) } ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                208,
+                556,
+                273,
+                590
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nc_i = \\sum_{j=1}^{T_x} \\alpha_{ij} h_j.\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nc_i = \\sum_{j=1}^{T_x} \\alpha_{ij} h_j.\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                218,
+                178,
+                392,
+                192
+            ],
+            "content": "p ( y _ { t } \\mid \\{ y _ { 1 } , \\cdots , y _ { t - 1 } \\} , c ) = g ( y _ { t - 1 } , s _ { t } , c ) ,",
+            "latex": "p ( y _ { t } \\mid \\{ y _ { 1 } , \\cdots , y _ { t - 1 } \\} , c ) = g ( y _ { t - 1 } , s _ { t } , c ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                160,
+                366,
+                321,
+                379
+            ],
+            "content": "p ( y _ { i } | y _ { 1 } , \\ldots , y _ { i - 1 } , \\mathbf { x } ) = g ( y _ { i - 1 } , s _ { i } , c _ { i } ) ,",
+            "latex": "p ( y _ { i } | y _ { 1 } , \\ldots , y _ { i - 1 } , \\mathbf { x } ) = g ( y _ { i - 1 } , s _ { i } , c _ { i } ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                269,
+                656,
+                342,
+                669
+            ],
+            "content": "e _ { i j } = a ( s _ { i - 1 } , h _ { j } )",
+            "latex": "e _ { i j } = a ( s _ { i - 1 } , h _ { j } )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                194,
+                401,
+                287,
+                414
+            ],
+            "content": "s _ { i } = f \\bigl ( s _ { i - 1 } , y _ { i - 1 } , c _ { i } \\bigr ) .",
+            "latex": "s _ { i } = f \\bigl ( s _ { i - 1 } , y _ { i - 1 } , c _ { i } \\bigr ) ."
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                225,
+                488,
+                387,
+                516
+            ],
+            "content": "\\begin{array} { l } { { z _ { i } = \\sigma \\left( W _ { z } e ( y _ { i - 1 } ) + U _ { z } s _ { i - 1 } + C _ { z } c _ { i } \\right) , } } \\\\ { { r _ { i } = \\sigma \\left( W _ { r } e ( y _ { i - 1 } ) + U _ { r } s _ { i - 1 } + C _ { r } c _ { i } \\right) , } } \\end{array}",
+            "latex": "\\begin{array} { l } { { z _ { i } = \\sigma \\left( W _ { z } e ( y _ { i - 1 } ) + U _ { z } s _ { i - 1 } + C _ { z } c _ { i } \\right) , } } \\\\ { { r _ { i } = \\sigma \\left( W _ { r } e ( y _ { i - 1 } ) + U _ { r } s _ { i - 1 } + C _ { r } c _ { i } \\right) , } } \\end{array}"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                218,
+                651,
+                392,
+                667
+            ],
+            "content": "a ( s _ { i - 1 } , h _ { j } ) = v _ { a } ^ { \\top } \\operatorname { t a n h } \\left( W _ { a } s _ { i - 1 } + U _ { a } h _ { j } \\right) ,",
+            "latex": "a ( s _ { i - 1 } , h _ { j } ) = v _ { a } ^ { \\top } \\operatorname { t a n h } \\left( W _ { a } s _ { i - 1 } + U _ { a } h _ { j } \\right) ,"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                210,
+                375,
+                400,
+                389
+            ],
+            "content": "```latex\n\\tilde{s}_i = \\tanh \\left( We(y_{i-1}) + U [r_i \\circ s_{i-1}] + Cc_i \\right),\n```",
+            "latex": "```latex\n\\tilde{s}_i = \\tanh \\left( We(y_{i-1}) + U [r_i \\circ s_{i-1}] + Cc_i \\right),\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                203,
+                323,
+                408,
+                337
+            ],
+            "content": "```latex\ns_i = f(s_{i-1}, y_{i-1}, c_i) = (1 - z_i) \\circ s_{i-1} + z_i \\circ \\tilde{s}_i,\n```",
+            "latex": "```latex\ns_i = f(s_{i-1}, y_{i-1}, c_i) = (1 - z_i) \\circ s_{i-1} + z_i \\circ \\tilde{s}_i,\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                221,
+                304,
+                389,
+                370
+            ],
+            "content": "```latex\n\\begin{align*}\n\\overrightarrow{h}_i &= \\tanh \\left( \\overrightarrow{W} \\overline{E} x_i + \\overrightarrow{U} \\left[ \\overrightarrow{r'}_i \\circ \\overrightarrow{h}_{i-1} \\right] \\right) \\\\\n\\overrightarrow{z}_i &= \\sigma \\left( \\overrightarrow{W}_z \\overline{E} x_i + \\overrightarrow{U}_z \\overrightarrow{h}_{i-1} \\right) \\\\\n\\overrightarrow{r'}_i &= \\sigma \\left( \\overrightarrow{W}_r \\overline{E} x_i + \\overrightarrow{U}_r \\overrightarrow{h}_{i-1} \\right).\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\overrightarrow{h}_i &= \\tanh \\left( \\overrightarrow{W} \\overline{E} x_i + \\overrightarrow{U} \\left[ \\overrightarrow{r'}_i \\circ \\overrightarrow{h}_{i-1} \\right] \\right) \\\\\n\\overrightarrow{z}_i &= \\sigma \\left( \\overrightarrow{W}_z \\overline{E} x_i + \\overrightarrow{U}_z \\overrightarrow{h}_{i-1} \\right) \\\\\n\\overrightarrow{r'}_i &= \\sigma \\left( \\overrightarrow{W}_r \\overline{E} x_i + \\overrightarrow{U}_r \\overrightarrow{h}_{i-1} \\right).\n\\end{align*}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                215,
+                578,
+                395,
+                620
+            ],
+            "content": "```latex\n\\tilde{s}_i = \\tanh \\left( W_E y_{i-1} + U [r_i \\circ s_{i-1}] + C c_i \\right)\n\nz_i = \\sigma \\left( W_z E y_{i-1} + U_z s_{i-1} + C_z c_i \\right)\n\nr_i = \\sigma \\left( W_r E y_{i-1} + U_r s_{i-1} + C_r c_i \\right)\n```",
+            "latex": "```latex\n\\tilde{s}_i = \\tanh \\left( W_E y_{i-1} + U [r_i \\circ s_{i-1}] + C c_i \\right)\n\nz_i = \\sigma \\left( W_z E y_{i-1} + U_z s_{i-1} + C_z c_i \\right)\n\nr_i = \\sigma \\left( W_r E y_{i-1} + U_r s_{i-1} + C_r c_i \\right)\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                273,
+                696,
+                337,
+                730
+            ],
+            "content": "c _ { i } = \\sum _ { j = 1 } ^ { T _ { x } } \\alpha _ { i j } h _ { j } ,",
+            "latex": "c _ { i } = \\sum _ { j = 1 } ^ { T _ { x } } \\alpha _ { i j } h _ { j } ,"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                205,
+                257,
+                406,
+                290
+            ],
+            "content": "```latex\n\\overrightarrow{h}_i = \n\\begin{cases} \n(1 - \\overrightarrow{z}_i) \\circ \\overrightarrow{h}_{i-1} + \\overrightarrow{z}_i \\circ \\underline{\\overline{h}}_i & \\text{, if } i > 0 \\\\\n0 & \\text{, if } i = 0\n\\end{cases}\n```",
+            "latex": "```latex\n\\overrightarrow{h}_i = \n\\begin{cases} \n(1 - \\overrightarrow{z}_i) \\circ \\overrightarrow{h}_{i-1} + \\overrightarrow{z}_i \\circ \\underline{\\overline{h}}_i & \\text{, if } i > 0 \\\\\n0 & \\text{, if } i = 0\n\\end{cases}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                243,
+                198,
+                367,
+                213
+            ],
+            "content": "\\mathbf { y } = ( y _ { 1 } , \\ldots , y _ { T _ { y } } ) , \\; y _ { i } \\in \\mathbb { R } ^ { K _ { y } } ,",
+            "latex": "\\mathbf { y } = ( y _ { 1 } , \\ldots , y _ { T _ { y } } ) , \\; y _ { i } \\in \\mathbb { R } ^ { K _ { y } } ,"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                275,
+                471,
+                335,
+                505
+            ],
+            "content": "h _ { i } = \\left[ \\begin{array} { l } { { \\overrightarrow { h } _ { i } } } \\\\ { { \\overleftarrow { h } _ { i } } } \\end{array} \\right]",
+            "latex": "h _ { i } = \\left[ \\begin{array} { l } { { \\overrightarrow { h } _ { i } } } \\\\ { { \\overleftarrow { h } _ { i } } } \\end{array} \\right]"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                243,
+                165,
+                366,
+                180
+            ],
+            "content": "\\mathbf { x } = \\left( x _ { 1 } , \\ldots , x _ { T _ { x } } \\right) , \\; x _ { i } \\in \\mathbb { R } ^ { K _ { x } }",
+            "latex": "\\mathbf { x } = \\left( x _ { 1 } , \\ldots , x _ { T _ { x } } \\right) , \\; x _ { i } \\in \\mathbb { R } ^ { K _ { x } }"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                244,
+                547,
+                366,
+                560
+            ],
+            "content": "s _ { i } = ( 1 - z _ { i } ) \\circ s _ { i - 1 } + z _ { i } \\circ \\tilde { s } _ { i } ,",
+            "latex": "s _ { i } = ( 1 - z _ { i } ) \\circ s _ { i - 1 } + z _ { i } \\circ \\tilde { s } _ { i } ,"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                244,
+                547,
+                366,
+                560
+            ],
+            "content": "s _ { i } = ( 1 - z _ { i } ) \\circ s _ { i - 1 } + z _ { i } \\circ \\tilde { s } _ { i } ,",
+            "latex": "s _ { i } = ( 1 - z _ { i } ) \\circ s _ { i - 1 } + z _ { i } \\circ \\tilde { s } _ { i } ,"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                236,
+                239,
+                375,
+                285
+            ],
+            "content": "```latex\n\\alpha_{ij} = \\frac{\\exp{(e_{ij})}}{\\sum_{k=1}^{T_x} \\exp{(e_{ik})}}\n\ne_{ij} = v_a^\\top \\tanh{(W_a s_{i-1} + U_a h_j)},\n```",
+            "latex": "```latex\n\\alpha_{ij} = \\frac{\\exp{(e_{ij})}}{\\sum_{k=1}^{T_x} \\exp{(e_{ik})}}\n\ne_{ij} = v_a^\\top \\tanh{(W_a s_{i-1} + U_a h_j)},\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                239,
+                440,
+                371,
+                454
+            ],
+            "content": "\\tilde { t } _ { i } = U _ { o } s _ { i - 1 } + V _ { o } E y _ { i - 1 } + C _ { o } c _ { i } .",
+            "latex": "\\tilde { t } _ { i } = U _ { o } s _ { i - 1 } + V _ { o } E y _ { i - 1 } + C _ { o } c _ { i } ."
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                232,
+                363,
+                378,
+                379
+            ],
+            "content": "p ( y _ { i } | s _ { i } , y _ { i - 1 } , c _ { i } ) \\propto \\exp \\left( y _ { i } ^ { \\top } W _ { o } t _ { i } \\right) ,",
+            "latex": "p ( y _ { i } | s _ { i } , y _ { i - 1 } , c _ { i } ) \\propto \\exp \\left( y _ { i } ^ { \\top } W _ { o } t _ { i } \\right) ,"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                236,
+                397,
+                375,
+                417
+            ],
+            "content": "t _ { i } = \\left[ \\operatorname* { m a x } \\left\\{ \\tilde { t } _ { i , 2 j - 1 } , \\tilde { t } _ { i , 2 j } \\right\\} \\right] _ { j = 1 , \\ldots , l } ^ { \\top }",
+            "latex": "t _ { i } = \\left[ \\operatorname* { m a x } \\left\\{ \\tilde { t } _ { i , 2 j - 1 } , \\tilde { t } _ { i , 2 j } \\right\\} \\right] _ { j = 1 , \\ldots , l } ^ { \\top }"
+        }
+    ]
+}

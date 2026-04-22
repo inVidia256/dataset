@@ -1,0 +1,70 @@
+{
+    "total_count": 4,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                298,
+                254,
+                555,
+                374
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Methods</td>\n    <td>LPIPS↓</td>\n    <td>FID↓</td>\n    <td>NIQE↓</td>\n    <td>Deg.</td>\n    <td>PSNR</td>\n    <td>SSIM</td>\n  </tr>\n  <tr>\n    <td>Input</td>\n    <td>0.4866</td>\n    <td>143.98</td>\n    <td>13.440</td>\n    <td>47.94</td>\n    <td>25.35</td>\n    <td>0.6848</td>\n  </tr>\n  <tr>\n    <td>Deblur GANv2*[40]</td>\n    <td>0.4001</td>\n    <td>52.69</td>\n    <td>4.917</td>\n    <td>39.64</td>\n    <td>25.91</td>\n    <td>0.6952</td>\n  </tr>\n  <tr>\n    <td>Wan etal.[61]</td>\n    <td>0.4826</td>\n    <td>67.58</td>\n    <td>5.356</td>\n    <td>43.00</td>\n    <td>24.71</td>\n    <td>0.6320</td>\n  </tr>\n  <tr>\n    <td>Hi FaceGAN[67]</td>\n    <td>0.4770</td>\n    <td>66.09</td>\n    <td>4.916</td>\n    <td>42.18</td>\n    <td>24.92</td>\n    <td>0.6195</td>\n  </tr>\n  <tr>\n    <td>DFD Net[44]</td>\n    <td>0.4341</td>\n    <td>59.08</td>\n    <td>4.341</td>\n    <td>40.31</td>\n    <td>23.68</td>\n    <td>0.6622</td>\n  </tr>\n  <tr>\n    <td>PS FR GAN[6]</td>\n    <td>0.4240</td>\n    <td>47.59</td>\n    <td>5.123</td>\n    <td>39.69</td>\n    <td>24.71</td>\n    <td>0.6557</td>\n  </tr>\n  <tr>\n    <td>m GAN prior[19]</td>\n    <td>0.4584</td>\n    <td>82.27</td>\n    <td>6.422</td>\n    <td>55.45</td>\n    <td>24.30</td>\n    <td>0.6758</td>\n  </tr>\n  <tr>\n    <td>PULSE[52]</td>\n    <td>0.4851</td>\n    <td>67.56</td>\n    <td>5.305</td>\n    <td>69.55</td>\n    <td>21.61</td>\n    <td>0.6200</td>\n  </tr>\n  <tr>\n    <td>GFP-GAN(ours)</td>\n    <td>0.3646</td>\n    <td>42.62</td>\n    <td>4.077</td>\n    <td>34.60</td>\n    <td>25.08</td>\n    <td>0.6777</td>\n  </tr>\n  <tr>\n    <td>GT</td>\n    <td>0</td>\n    <td>43.43</td>\n    <td>4.292</td>\n    <td>0</td>\n    <td></td>\n    <td>1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                40,
+                493,
+                288,
+                570
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Methods</td>\n    <td>LPIPS↓</td>\n    <td>FID↓</td>\n    <td>NIQE↓</td>\n    <td>Deg.</td>\n    <td>PSNR</td>\n    <td>SSIM</td>\n  </tr>\n  <tr>\n    <td>Bicubic</td>\n    <td>0.4834</td>\n    <td>148.87</td>\n    <td>10.767</td>\n    <td>49.60</td>\n    <td>25.377</td>\n    <td>0.6985</td>\n  </tr>\n  <tr>\n    <td>RCAN*[74]</td>\n    <td>0.4159</td>\n    <td>93.66</td>\n    <td>9.907</td>\n    <td>38.45</td>\n    <td>27.24</td>\n    <td>0.7533</td>\n  </tr>\n  <tr>\n    <td>ESRGAN*[64]</td>\n    <td>0.4127</td>\n    <td>49.20</td>\n    <td>4.099</td>\n    <td>51.21</td>\n    <td>23.74</td>\n    <td>0.6319</td>\n  </tr>\n  <tr>\n    <td>Super-FAN[4]</td>\n    <td>0.4791</td>\n    <td>139.49</td>\n    <td>10.828</td>\n    <td>49.14</td>\n    <td>25.28</td>\n    <td>0.7033</td>\n  </tr>\n  <tr>\n    <td>GFP-GAN(ours)</td>\n    <td>0.3653</td>\n    <td>42.36</td>\n    <td>4.078</td>\n    <td>34.67</td>\n    <td>25.04</td>\n    <td>0.6744</td>\n  </tr>\n  <tr>\n    <td>GT</td>\n    <td>0</td>\n    <td>43.43</td>\n    <td>4.292</td>\n    <td>0</td>\n    <td></td>\n    <td>1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                298,
+                493,
+                560,
+                612
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>DatasetMethods</td>\n    <td>LFW-TestFID↓NIQE↓</td>\n    <td>Celeb ChildFID↓NIQE↓</td>\n    <td>Web PhotoFID↓NIQE↓</td>\n  </tr>\n  <tr>\n    <td>Input</td>\n    <td>137.5611.214</td>\n    <td>144.429.170</td>\n    <td>170.1112.755</td>\n  </tr>\n  <tr>\n    <td>Deblur GANv2*[40]</td>\n    <td>57.284.309</td>\n    <td>110.514.453</td>\n    <td>100.584.666</td>\n  </tr>\n  <tr>\n    <td>Wan et al.[61]</td>\n    <td>73.195.034</td>\n    <td>115.704.849</td>\n    <td>100.405.705</td>\n  </tr>\n  <tr>\n    <td>Hi FaceGAN[67]</td>\n    <td>64.504.510</td>\n    <td>113.004.855</td>\n    <td>116.124.885</td>\n  </tr>\n  <tr>\n    <td>DFD Net[44]</td>\n    <td>62.574.026</td>\n    <td>111.554.414</td>\n    <td>100.685.293</td>\n  </tr>\n  <tr>\n    <td>PS FRG AN[6]</td>\n    <td>51.895.096</td>\n    <td>107.404.804</td>\n    <td>88.455.582</td>\n  </tr>\n  <tr>\n    <td>m GAN prior[19]</td>\n    <td>73.006.051</td>\n    <td>126.546.841</td>\n    <td>120.757.226</td>\n  </tr>\n  <tr>\n    <td>PULSE[52]</td>\n    <td>64.865.097</td>\n    <td>102.745.225</td>\n    <td>86.455.146</td>\n  </tr>\n  <tr>\n    <td>GFP-GAN(ours)</td>\n    <td>49.963.882</td>\n    <td>111.784.349</td>\n    <td>87.354.144</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                40,
+                93,
+                300,
+                160
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Ablation study results on CelebA-Test under blind face restoration.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Configuration</td>\n    <td>LPIPS↓</td>\n    <td>FID↓</td>\n    <td>NIQE↓</td>\n    <td>Deg.</td>\n  </tr>\n  <tr>\n    <td>Our GFP-GAN with SC-SFT</td>\n    <td>0.3646</td>\n    <td>42.62</td>\n    <td>4.077</td>\n    <td>34.60</td>\n  </tr>\n  <tr>\n    <td>a) No spatial modulation</td>\n    <td>0.550(↑)</td>\n    <td>60.44(↑)</td>\n    <td>4.183(↑)</td>\n    <td>74.76(↑)</td>\n  </tr>\n  <tr>\n    <td>b) Use SFT</td>\n    <td>0.387(↑)</td>\n    <td>47.65(↑)</td>\n    <td>4.146(↑)</td>\n    <td>34.38(↓)</td>\n  </tr>\n  <tr>\n    <td>c) w/o GFP</td>\n    <td>0.379(↑)</td>\n    <td>48.47(↑)</td>\n    <td>4.153(↑)</td>\n    <td>35.04(↑)</td>\n  </tr>\n  <tr>\n    <td>d) - Pyramid Restoration Loss</td>\n    <td>0.369(↑)</td>\n    <td>45.17(↑)</td>\n    <td>4.284(↑)</td>\n    <td>35.50(↑)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page008.png"
+        }
+    ]
+}

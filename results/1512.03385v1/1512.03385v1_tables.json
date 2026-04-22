@@ -1,0 +1,262 @@
+{
+    "total_count": 16,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                49,
+                73,
+                286,
+                629
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\nThe image you provided does not contain a table but rather a flowchart comparing the architectures of VGG-19, a 34-layer plain network, and a 34-layer residual network. However, I can describe the structure of each network based on the flowchart.\n\nHere's a textual description of the architecture for each network:\n\n### VGG-19\n1. **Input Image**: Size: 224x224\n2. **Convolutional Layers**:\n   - Convolution with kernel size 3x3, filters 64\n   - Pooling layer (max pooling) with stride 2\n   - Convolution with kernel size 3x3, filters 128\n   - Pooling layer (max pooling) with stride 2\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n3. **Fully Connected Layers**:\n   - Fully connected layer with 4096 units\n   - Fully connected layer with 1000 units\n\n### 34-Layer Plain Network\n1. **Input Image**: Size: 224x224\n2. **Convolutional Layers**:\n   - Convolution with kernel size 7x7, filters 64\n   - Pooling layer (max pooling) with stride 2\n   - Convolution with kernel size 3x3, filters 64\n   - Convolution with kernel size 3x3, filters 64\n   - Convolution with kernel size 3x3, filters 64\n   - Convolution with kernel size 3x3, filters 128\n   - Convolution with kernel size 3x3, filters 128\n   - Convolution with kernel size 3x3, filters 128\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n3. **Fully Connected Layers**:\n   - Average pooling layer\n   - Fully connected layer with 1000 units\n\n### 34-Layer Residual Network\n1. **Input Image**: Size: 224x224\n2. **Convolutional Layers**:\n   - Convolution with kernel size 7x7, filters 64\n   - Pooling layer (max pooling) with stride 2\n   - Convolution with kernel size 3x3, filters 64\n   - Convolution with kernel size 3x3, filters 64\n   - Convolution with kernel size 3x3, filters 64\n   - Convolution with kernel size 3x3, filters 128\n   - Convolution with kernel size 3x3, filters 128\n   - Convolution with kernel size 3x3, filters 128\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 256\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n   - Convolution with kernel size 3x3, filters 512\n3. **Residual Connections**:\n   - Residual connections are shown as dotted lines connecting the input to the output of certain convolutional layers.\n4. **Fully Connected Layers**:\n   - Average pooling layer\n   - Fully connected layer with 1000 units\n\nIf you need the table in HTML format, please let me know how you would like it structured.\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                124,
+                70,
+                469,
+                219
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>layer name</td>\n    <td>output size</td>\n    <td>18-layer</td>\n    <td>34-layer</td>\n    <td>50-layer</td>\n    <td>101-layer</td>\n    <td>152-layer</td>\n  </tr>\n  <tr>\n    <td>conv 1</td>\n    <td>112x112</td>\n    <td></td>\n    <td></td>\n    <td>7x7，64， stride 2</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>conv2_x</td>\n    <td>56x56</td>\n    <td>[3x3，64]×2</td>\n    <td>[3x3，64]×3</td>\n    <td>[1x1，643x3，641x1，256]</td>\n    <td>[1x1，643x3，641x1，256]</td>\n    <td>[1x1，643x3，641x1，256]</td>\n  </tr>\n  <tr>\n    <td>conv3_x</td>\n    <td>28x28</td>\n    <td>[3x3，128]×2</td>\n    <td>[3x3，128]×4</td>\n    <td>[1x1，1283x3，1281x1，512]</td>\n    <td>[1x1，1283x3，1281x1，512]</td>\n    <td>[1x1，1283x3，1281x1，512]</td>\n  </tr>\n  <tr>\n    <td>conv4_x</td>\n    <td>14x14</td>\n    <td>[3x3，256]×2</td>\n    <td>[3x3，256]×6</td>\n    <td>[1x1，2563x3，2561x1，1024]</td>\n    <td>[1x1，2563x3，2561x1，1024]</td>\n    <td>[1x1，2563x3，2561x1，1024]</td>\n  </tr>\n  <tr>\n    <td>conv5_x</td>\n    <td>7x7</td>\n    <td>[3x3，512]×2</td>\n    <td>[3x3，512]×3</td>\n    <td>[1x1，5123x3，5121x1，2048]</td>\n    <td>[1x1，5123x3，5121x1，2048]</td>\n    <td>[1x1，5123x3，5121x1，2048]</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>1x1</td>\n    <td>average pool， 1000-dfc，softmax</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>FLOPs</td>\n    <td>1.8x109</td>\n    <td>3.6x109</td>\n    <td>3.8x109</td>\n    <td>7.6x109</td>\n    <td>11.3x109</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                92,
+                441,
+                244,
+                480
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2. Top-1 error (%), 10-crop testing) on ImageNet validation. Here the ResNets have no extra parameter compared to their plain counterparts. Fig. 4 shows the training procedures.\" The text content from the image is as follows:\n\n\"Table 2. Top-1 error (%), 10-crop testing) on ImageNet validation. Here the ResNets have no extra parameter compared to their plain counterparts. Fig. 4 shows the training procedures.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>plain</td>\n    <td>ResNet</td>\n  </tr>\n  <tr>\n    <td>18 layers</td>\n    <td>27.94</td>\n    <td>27.88</td>\n  </tr>\n  <tr>\n    <td>34 layers</td>\n    <td>28.54</td>\n    <td>25.03</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                87,
+                70,
+                249,
+                209
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>model</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n  </tr>\n  <tr>\n    <td>VGG-16[41]</td>\n    <td>28.07</td>\n    <td>9.33</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet[44]</td>\n    <td>-</td>\n    <td>9.15</td>\n  </tr>\n  <tr>\n    <td>PReLU-net[13]</td>\n    <td>24.27</td>\n    <td>7.38</td>\n  </tr>\n  <tr>\n    <td>plain-34</td>\n    <td>28.54</td>\n    <td>10.02</td>\n  </tr>\n  <tr>\n    <td>ResNet-34A</td>\n    <td>25.03</td>\n    <td>7.76</td>\n  </tr>\n  <tr>\n    <td>ResNet-34B</td>\n    <td>24.52</td>\n    <td>7.46</td>\n  </tr>\n  <tr>\n    <td>ResNet-34C</td>\n    <td>24.19</td>\n    <td>7.40</td>\n  </tr>\n  <tr>\n    <td>ResNet-50</td>\n    <td>22.85</td>\n    <td>6.71</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>21.75</td>\n    <td>6.05</td>\n  </tr>\n  <tr>\n    <td>ResNet-152</td>\n    <td>21.43</td>\n    <td>5.71</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                57,
+                253,
+                278,
+                390
+            ],
+            "caption": "Table 3. Error rates (% , 10-crop testing) on ImageNet validation. VGG-16 is based on our test. ResNet-50/101/152 are of option B that only uses projections for increasing dimensions.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>method</td>\n    <td>top-1 err.</td>\n    <td>top-5 err.</td>\n  </tr>\n  <tr>\n    <td>VGG[41](ILSVRC'14)</td>\n    <td>-</td>\n    <td>8.43</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet[44](ILSVRC'14)</td>\n    <td>-</td>\n    <td>7.89</td>\n  </tr>\n  <tr>\n    <td>VGG[41](v5)</td>\n    <td>24.4</td>\n    <td>7.1</td>\n  </tr>\n  <tr>\n    <td>PReLU-net[13]</td>\n    <td>21.59</td>\n    <td>5.71</td>\n  </tr>\n  <tr>\n    <td>BN-inception[16]</td>\n    <td>21.99</td>\n    <td>5.81</td>\n  </tr>\n  <tr>\n    <td>ResNet-34B</td>\n    <td>21.84</td>\n    <td>5.71</td>\n  </tr>\n  <tr>\n    <td>ResNet-34C</td>\n    <td>21.53</td>\n    <td>5.60</td>\n  </tr>\n  <tr>\n    <td>ResNet-50</td>\n    <td>20.74</td>\n    <td>5.25</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>19.87</td>\n    <td>4.60</td>\n  </tr>\n  <tr>\n    <td>ResNet-152</td>\n    <td>19.38</td>\n    <td>4.49</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                59,
+                424,
+                277,
+                513
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 4. Error rates (%) of single-model results on the ImageNet validation set (except † reported on the test set).\" Table 5. Error rates (%) of ensembles. The top-5 error is on the test set of ImageNet and reported by the test server. Table 5. Error rates (%) of ensembles. The top-5 error is on the test set of ImageNet and reported by the test server.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>method</td>\n    <td>top-5 err.(test)</td>\n  </tr>\n  <tr>\n    <td>VGG[41](ILSVRC'14)</td>\n    <td>7.32</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet[44](ILSVRC'14)</td>\n    <td>6.66</td>\n  </tr>\n  <tr>\n    <td>VGG[41](v5)</td>\n    <td>6.8</td>\n  </tr>\n  <tr>\n    <td>PReLU-net[13]</td>\n    <td>4.94</td>\n  </tr>\n  <tr>\n    <td>BN-inception[16]</td>\n    <td>4.82</td>\n  </tr>\n  <tr>\n    <td>ResNet(ISVRC'15)</td>\n    <td>3.57</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                309,
+                70,
+                543,
+                244
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 6. Classification error on the CIFAR-10 test set. All methods are with data augmentation. For ResNet-110, we run it 5 times and show \"best (mean±std)\" as in [43].\" The text content from the image is as follows:\n\n\"Table 6. Classification error on the CIFAR-10 test set. All methods are with data augmentation. For ResNet-110, we run it 5 times and show \"best (mean±std)\" as in [43].\" The text content from the image is as follows:\n\n\"Table 6. Classification error on the CIFAR-10 test set. All methods are with data augmentation. For ResNet-110, we run it 5 times and show \"best (mean±std)\" as in [43].\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>method</td>\n    <td>error(%)</td>\n  </tr>\n  <tr>\n    <td>Max out[10]</td>\n    <td>9.38</td>\n  </tr>\n  <tr>\n    <td>NIN[25]</td>\n    <td>8.81</td>\n  </tr>\n  <tr>\n    <td>DSN[24]</td>\n    <td>8.22</td>\n  </tr>\n  <tr>\n    <td>Fit Net[35]</td>\n    <td># layers</td>\n    <td># params</td>\n  </tr>\n  <tr>\n    <td>Highway[42，43]</td>\n    <td>19</td>\n    <td>2.5M</td>\n    <td>8.39</td>\n  </tr>\n  <tr>\n    <td>Highway[42，43]</td>\n    <td>19</td>\n    <td>2.3M</td>\n    <td>7.54(7.72±0.16)</td>\n  </tr>\n  <tr>\n    <td>Highway[42，43]</td>\n    <td>32</td>\n    <td>1.25M</td>\n    <td>8.80</td>\n  </tr>\n  <tr>\n    <td>ResNet</td>\n    <td>20</td>\n    <td>0.27M</td>\n    <td>8.75</td>\n  </tr>\n  <tr>\n    <td>ResNet</td>\n    <td>32</td>\n    <td>0.46M</td>\n    <td>7.51</td>\n  </tr>\n  <tr>\n    <td>ResNet</td>\n    <td>44</td>\n    <td>0.66M</td>\n    <td>7.17</td>\n  </tr>\n  <tr>\n    <td>ResNet</td>\n    <td>56</td>\n    <td>0.85M</td>\n    <td>6.97</td>\n  </tr>\n  <tr>\n    <td>ResNet</td>\n    <td>110</td>\n    <td>1.7M</td>\n    <td>6.43(6.61±0.16)</td>\n  </tr>\n  <tr>\n    <td>ResNet</td>\n    <td>1202</td>\n    <td>19.4M</td>\n    <td>7.93</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                72,
+                631,
+                263,
+                670
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>output map size</td>\n    <td>32x32</td>\n    <td>16x16</td>\n    <td>8x8</td>\n  </tr>\n  <tr>\n    <td># layers</td>\n    <td>1+2n</td>\n    <td>2n</td>\n    <td>2n</td>\n  </tr>\n  <tr>\n    <td># filters</td>\n    <td>16</td>\n    <td>32</td>\n    <td>64</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page007.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                334,
+                210,
+                519,
+                260
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>training data</td>\n    <td>07+12</td>\n    <td>07++12</td>\n  </tr>\n  <tr>\n    <td>test data</td>\n    <td>VOC 07 test</td>\n    <td>VOC 12 test</td>\n  </tr>\n  <tr>\n    <td>VGG-16</td>\n    <td>73.2</td>\n    <td>70.4</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>76.4</td>\n    <td>73.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page008.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                337,
+                298,
+                515,
+                336
+            ],
+            "caption": "Table 7. Object detection mAP (%) on the PASCAL VOC 2007/2012 test sets using baseline Faster R-CNN. See also Table 10 and 11 for better results. The text content from the image is as follows:\n\n\"Table 8. Object detection mAP (%) on the COCO validation set using baseline Faster R-CNN. See also Table 9 for better results.\" The text content from the image is:\n\n\"Table 8. Object detection mAP (%) on the COCO validation set using baseline Faster R-CNN. See also Table 9 for better results.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>metric</td>\n    <td>mAP@.</td>\n    <td>mAP@[5，.95]</td>\n  </tr>\n  <tr>\n    <td>VGG-16</td>\n    <td>41.5</td>\n    <td>21.2</td>\n  </tr>\n  <tr>\n    <td>ResNet-101</td>\n    <td>48.4</td>\n    <td>27.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page008.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                137,
+                70,
+                456,
+                178
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>training data</td>\n    <td>COCO train</td>\n    <td>COCO trainval</td>\n  </tr>\n  <tr>\n    <td>test data</td>\n    <td>COCO val</td>\n    <td>COCO test-dev</td>\n  </tr>\n  <tr>\n    <td>mAP</td>\n    <td>@.5</td>\n    <td>@[.5，.95]</td>\n    <td>@.5</td>\n    <td>@[.5，.95]</td>\n  </tr>\n  <tr>\n    <td>baseline Faster R-CNN(VGG-16)</td>\n    <td>41.5</td>\n    <td>21.2</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>baseline Faster R-CNN(ResNet-101)</td>\n    <td>48.4</td>\n    <td>27.2</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>+box refinement</td>\n    <td>49.9</td>\n    <td>29.9</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>+context</td>\n    <td>51.1</td>\n    <td>30.0</td>\n    <td>53.3</td>\n    <td>32.2</td>\n  </tr>\n  <tr>\n    <td>+multi-scale testing</td>\n    <td>53.8</td>\n    <td>32.5</td>\n    <td>55.7</td>\n    <td>34.9</td>\n  </tr>\n  <tr>\n    <td>ensemble</td>\n    <td></td>\n    <td></td>\n    <td>59.0</td>\n    <td>37.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page011.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                50,
+                206,
+                544,
+                250
+            ],
+            "caption": "Table 9. Object detection improvements on MS COCO using Faster R-CNN and ResNet-101.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>system</td>\n    <td>net</td>\n    <td>data</td>\n    <td>mAP</td>\n    <td>area</td>\n    <td>bike</td>\n    <td>bird</td>\n    <td>boat</td>\n    <td>bottle</td>\n    <td>bus</td>\n    <td>car</td>\n    <td>cat</td>\n    <td>chair</td>\n    <td>cow</td>\n    <td>table</td>\n    <td>dog</td>\n    <td>horse</td>\n    <td>mbike</td>\n    <td>person</td>\n    <td>plant</td>\n    <td>sheep</td>\n    <td>sofa</td>\n    <td>train</td>\n    <td>tv</td>\n  </tr>\n  <tr>\n    <td>baseline</td>\n    <td>VGG-16</td>\n    <td>07+12</td>\n    <td>73.2</td>\n    <td>76.5</td>\n    <td>79.0</td>\n    <td>70.9</td>\n    <td>65.5</td>\n    <td>52.1</td>\n    <td>83.1</td>\n    <td>84.7</td>\n    <td>86.4</td>\n    <td>52.0</td>\n    <td>81.9</td>\n    <td>65.7</td>\n    <td>84.8</td>\n    <td>84.6</td>\n    <td>76.7</td>\n    <td>38.8</td>\n    <td>73.6</td>\n    <td>73.9</td>\n    <td>83.0</td>\n    <td>72.6</td>\n  </tr>\n  <tr>\n    <td>baseline</td>\n    <td>ResNet-101</td>\n    <td>07+12</td>\n    <td>76.4</td>\n    <td>79.8</td>\n    <td>80.7</td>\n    <td>76.2</td>\n    <td>68.3</td>\n    <td>55.9</td>\n    <td>85.1</td>\n    <td>85.3</td>\n    <td>56.7</td>\n    <td>87.8</td>\n    <td>69.4</td>\n    <td>88.3</td>\n    <td>88.9</td>\n    <td>78.4</td>\n    <td>41.7</td>\n    <td>78.6</td>\n    <td>79.8</td>\n    <td>85.3</td>\n    <td>72.0</td>\n  </tr>\n  <tr>\n    <td>baseline+++</td>\n    <td>ResNet-101</td>\n    <td>COCO+07+12</td>\n    <td>85.6</td>\n    <td>90.0</td>\n    <td>89.6</td>\n    <td>87.8</td>\n    <td>80.8</td>\n    <td>76.1</td>\n    <td>89.9</td>\n    <td>89.9</td>\n    <td>89.6</td>\n    <td>75.5</td>\n    <td>90.0</td>\n    <td>80.7</td>\n    <td>89.6</td>\n    <td>90.3</td>\n    <td>89.1</td>\n    <td>88.7</td>\n    <td>65.4</td>\n    <td>88.1</td>\n    <td>85.6</td>\n    <td>89.0</td>\n    <td>86.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page011.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                50,
+                292,
+                544,
+                336
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 10. Detection results on the PASCAL VOC 2007 test set. The baseline is the Faster R-CNN system. The system \"baseline+++\" include box refinement, context, and multi-scale testing in Table 9.\" The text content from the image is as follows:\n\n\"Table 10. Detection results on the PASCAL VOC 2007 test set. The baseline is the Faster R-CNN system. The system \"baseline+++\" include box refinement, context, and multi-scale testing in Table 9.\"",
+            "footnote": "Table 11. Detection results on the PASCAL VOC 2012 test set (http://host.robots.ox.ac.uk:8080/leaderboard/displaylb.php?challengeid=11&compid=4). The baseline is the Faster R-CNN system. The system “baseline+++” include box refinement, context, and multi-scale testing in Table 9.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>system</td>\n    <td>net</td>\n    <td>data</td>\n    <td>mAP</td>\n    <td>are o</td>\n    <td>bike</td>\n    <td>bird</td>\n    <td>boat</td>\n    <td>bottle</td>\n    <td>bus</td>\n    <td>car</td>\n    <td>cat</td>\n    <td>chair</td>\n    <td>cow</td>\n    <td>table</td>\n    <td>dog</td>\n    <td>horse</td>\n    <td>mbike</td>\n    <td>person</td>\n    <td>plant</td>\n    <td>sheep</td>\n    <td>sofa</td>\n    <td>train</td>\n    <td>tv</td>\n  </tr>\n  <tr>\n    <td>baseline</td>\n    <td>VGG-16</td>\n    <td>07++12</td>\n    <td>70.4</td>\n    <td>84.9</td>\n    <td>79.8</td>\n    <td>74.3</td>\n    <td>53.9</td>\n    <td>49.8</td>\n    <td>77.5</td>\n    <td>75.9</td>\n    <td>88.5</td>\n    <td>45.6</td>\n    <td>77.1</td>\n    <td>55.3</td>\n    <td>86.9</td>\n    <td>81.7</td>\n    <td>80.9</td>\n    <td>79.6</td>\n    <td>40.1</td>\n    <td>72.6</td>\n    <td>60.9</td>\n    <td>81.2</td>\n    <td>61.5</td>\n  </tr>\n  <tr>\n    <td>baseline</td>\n    <td>ResNet-101</td>\n    <td>07++12</td>\n    <td>73.8</td>\n    <td>86.5</td>\n    <td>81.6</td>\n    <td>77.2</td>\n    <td>58.0</td>\n    <td>51.0</td>\n    <td>78.6</td>\n    <td>76.6</td>\n    <td>93.2</td>\n    <td>48.6</td>\n    <td>80.4</td>\n    <td>59.0</td>\n    <td>92.1</td>\n    <td>85.3</td>\n    <td>84.8</td>\n    <td>80.7</td>\n    <td>48.1</td>\n    <td>77.3</td>\n    <td>66.5</td>\n    <td>84.7</td>\n    <td>65.6</td>\n  </tr>\n  <tr>\n    <td>baseline+++</td>\n    <td>ResNet-101</td>\n    <td>COCO+07++12</td>\n    <td>83.8</td>\n    <td>92.1</td>\n    <td>88.4</td>\n    <td>84.8</td>\n    <td>75.9</td>\n    <td>71.4</td>\n    <td>86.3</td>\n    <td>87.8</td>\n    <td>94.2</td>\n    <td>66.8</td>\n    <td>89.4</td>\n    <td>69.2</td>\n    <td>93.9</td>\n    <td>91.9</td>\n    <td>90.9</td>\n    <td>89.6</td>\n    <td>67.9</td>\n    <td>88.2</td>\n    <td>76.8</td>\n    <td>90.3</td>\n    <td>80.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page011.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                323,
+                390,
+                529,
+                446
+            ],
+            "caption": "",
+            "footnote": "Table 12. Our results (mAP, %) on the ImageNet detection dataset. Our detection system is Faster R-CNN [32] with the improvements in Table 9, using ResNet-101.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>GoogLeNet [44] (ILSVRC'14)</td>\n    <td>val2</td>\n    <td>test</td>\n  </tr>\n  <tr>\n    <td>our single model (ILSVRC'15)</td>\n    <td>60.5</td>\n    <td>58.8</td>\n  </tr>\n  <tr>\n    <td>our ensemble (ILSVRC'15)</td>\n    <td>63.6</td>\n    <td>62.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page011.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                51,
+                71,
+                285,
+                148
+            ],
+            "caption": "Table 13. Localization error (%) on the ImageNet validation. In the column of “LOC error on GT class” ([41]), the ground truth class is used. In the “testing” column, “1-crop” denotes testing on a center crop of 224×224 pixels, “dense” denotes dense (fully convolutional) and multi-scale testing. Table 13. Localization error (%) on the ImageNet validation. In the column of “LOC error on GT class” ([41]), the ground truth class is used. In the “testing” column, “1-crop” denotes testing on a center crop of 224×224 pixels, “dense” denotes dense (fully convolutional) and multi-scale testing.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>LOCmethod</td>\n    <td>LOCnetwork</td>\n    <td>testing</td>\n    <td>LOC erroron GTCLS</td>\n    <td>classificationnetwork</td>\n    <td>top-5 LOCerroron predictedCLS</td>\n  </tr>\n  <tr>\n    <td>VGG's[41]</td>\n    <td>VGG-16</td>\n    <td>1-crop</td>\n    <td>33.1[41]</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>RPN</td>\n    <td>ResNet-101</td>\n    <td>1-crop</td>\n    <td>13.3</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>RPN</td>\n    <td>ResNet-101</td>\n    <td>dense</td>\n    <td>11.7</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>RPN+RCNN</td>\n    <td>ResNet-101</td>\n    <td>dense</td>\n    <td></td>\n    <td>ResNet-101</td>\n    <td>14.4</td>\n  </tr>\n  <tr>\n    <td>RPN+RCNN</td>\n    <td>ResNet-101ensemble</td>\n    <td>dense</td>\n    <td></td>\n    <td>ResNet-101ensemble</td>\n    <td>10.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_015_page012.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                311,
+                70,
+                541,
+                144
+            ],
+            "caption": "",
+            "footnote": "Table 14. Comparisons of localization error (%) on the ImageNet dataset with state-of-the-art methods. Table 14. Comparisons of localization error (%) on the ImageNet dataset with state-of-the-art methods.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>method</td>\n    <td>top-5 localization err</td>\n  </tr>\n  <tr>\n    <td>val</td>\n    <td>test</td>\n  </tr>\n  <tr>\n    <td>OverFeat[40](ILSVRC'13)</td>\n    <td>30.0</td>\n    <td>29.9</td>\n  </tr>\n  <tr>\n    <td>GoogLeNet[44](ILSVRC'14)</td>\n    <td>-</td>\n    <td>26.7</td>\n  </tr>\n  <tr>\n    <td>VGG[41](ILSVRC'14)</td>\n    <td>26.9</td>\n    <td>25.3</td>\n  </tr>\n  <tr>\n    <td>ours(ILSVRC'15)</td>\n    <td>8.9</td>\n    <td>9.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_016_page012.png"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "total_count": 5,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                355,
+                496,
+                492,
+                528
+            ],
+            "content": "T ( \\mathbf { u } ) = | \\mathbf { u } | \\sum _ { i = 1 } ^ { N } ( c ( o p _ { i } ) + d ( o p _ { i } ) )",
+            "latex": "T ( \\mathbf { u } ) = | \\mathbf { u } | \\sum _ { i = 1 } ^ { N } ( c ( o p _ { i } ) + d ( o p _ { i } ) )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                100,
+                512,
+                240,
+                631
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{x}_t &= [\\mathbf{c}_{t-1}, \\mathbf{f}_{t-1}, \\mathbf{c}_t] \\\\\n\\mathbf{u}_t &= \\sigma(\\mathbf{R}_u \\mathbf{h}_{t-1} + \\mathbf{I}_u^* \\mathbf{x}_t) \\\\\n\\mathbf{r}_t &= \\sigma(\\mathbf{R}_r \\mathbf{h}_{t-1} + \\mathbf{I}_r^* \\mathbf{x}_t) \\\\\n\\mathbf{e}_t &= \\tau(\\mathbf{r}_t \\circ (\\mathbf{R}_e \\mathbf{h}_{t-1}) + \\mathbf{I}_e^* \\mathbf{x}_t) \\\\\n\\mathbf{h}_t &= \\mathbf{u}_t \\odot \\mathbf{h}_{t-1} + (1 - \\mathbf{u}_t) \\odot \\mathbf{e}_t \\\\\n\\mathbf{y}_c, \\mathbf{y}_f &= \\text{split}(\\mathbf{h}_t) \\\\\nP(\\mathbf{c}_t) &= \\text{softmax}(\\mathbf{O}_2 \\text{relu}(\\mathbf{O}_1 \\mathbf{y}_c)) \\\\\nP(\\mathbf{f}_t) &= \\text{softmax}(\\mathbf{O}_4 \\text{relu}(\\mathbf{O}_3 \\mathbf{y}_f))\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{x}_t &= [\\mathbf{c}_{t-1}, \\mathbf{f}_{t-1}, \\mathbf{c}_t] \\\\\n\\mathbf{u}_t &= \\sigma(\\mathbf{R}_u \\mathbf{h}_{t-1} + \\mathbf{I}_u^* \\mathbf{x}_t) \\\\\n\\mathbf{r}_t &= \\sigma(\\mathbf{R}_r \\mathbf{h}_{t-1} + \\mathbf{I}_r^* \\mathbf{x}_t) \\\\\n\\mathbf{e}_t &= \\tau(\\mathbf{r}_t \\circ (\\mathbf{R}_e \\mathbf{h}_{t-1}) + \\mathbf{I}_e^* \\mathbf{x}_t) \\\\\n\\mathbf{h}_t &= \\mathbf{u}_t \\odot \\mathbf{h}_{t-1} + (1 - \\mathbf{u}_t) \\odot \\mathbf{e}_t \\\\\n\\mathbf{y}_c, \\mathbf{y}_f &= \\text{split}(\\mathbf{h}_t) \\\\\nP(\\mathbf{c}_t) &= \\text{softmax}(\\mathbf{O}_2 \\text{relu}(\\mathbf{O}_1 \\mathbf{y}_c)) \\\\\nP(\\mathbf{f}_t) &= \\text{softmax}(\\mathbf{O}_4 \\text{relu}(\\mathbf{O}_3 \\mathbf{y}_f))\n\\end{align*}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                109,
+                333,
+                234,
+                366
+            ],
+            "content": "z = Z \\left( 1 - \\left( 1 - { \\frac { t - t _ { 0 } } { S } } \\right) ^ { 3 } \\right)",
+            "latex": "z = Z \\left( 1 - \\left( 1 - { \\frac { t - t _ { 0 } } { S } } \\right) ^ { 3 } \\right)"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                99,
+                282,
+                245,
+                314
+            ],
+            "content": "T ( \\mathbf { u } ) = { \\frac { | \\mathbf { u } | } { B } } \\sum _ { i = 1 } ^ { N } ( c ( o p _ { i } ^ { B } ) + d ( o p _ { i } ^ { B } ) )",
+            "latex": "T ( \\mathbf { u } ) = { \\frac { | \\mathbf { u } | } { B } } \\sum _ { i = 1 } ^ { N } ( c ( o p _ { i } ^ { B } ) + d ( o p _ { i } ^ { B } ) )"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                80,
+                659,
+                264,
+                716
+            ],
+            "content": "```latex\nP(\\mathbf{u}) = \\prod_{s=0}^{B-1} \\prod_{i=0}^{\\lfloor |\\mathbf{u}|/B \\rfloor} P\\left(u_{Bi+s} \\Big| u_{Bj+s} \\text{ for } j < i, u_{Bk+z} \\text{ for } z < s \\text{ and } k \\geq 0\\right)\n```",
+            "latex": "```latex\nP(\\mathbf{u}) = \\prod_{s=0}^{B-1} \\prod_{i=0}^{\\lfloor |\\mathbf{u}|/B \\rfloor} P\\left(u_{Bi+s} \\Big| u_{Bj+s} \\text{ for } j < i, u_{Bk+z} \\text{ for } z < s \\text{ and } k \\geq 0\\right)\n```"
+        }
+    ]
+}

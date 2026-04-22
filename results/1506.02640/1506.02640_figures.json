@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                307,
+                194,
+                545,
+                244
+            ],
+            "caption": "Figure 1: The YOLO Detection System. Processing images with YOLO is simple and straightforward. Our system (1) resizes the input image to \\(448 \\times 448\\), (2) runs a single convolutional network on the image, and (3) thresholds the resulting detections by the model’s confidence.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                307,
+                200,
+                546,
+                353
+            ],
+            "caption": "Figure 2: The Model. Our system models detection as a regression problem. It divides the image into an \\( S \\times S \\) grid and for each grid cell predicts \\( B \\) bounding boxes, confidence for those boxes, and \\( C \\) class probabilities. These predictions are encoded as an \\( S \\times S \\times (B * 5 + C) \\) tensor.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                100,
+                66,
+                497,
+                233
+            ],
+            "caption": "Figure 3: The Architecture. Our detection network has 24 convolutional layers followed by 2 fully connected layers. Alternating \\(1 \\times 1\\) convolutional layers reduce the features space from preceding layers. We pretrain the convolutional layers on the ImageNet classification task at half the resolution (\\(224 \\times 224\\) input image) and then double the resolution for detection.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                310,
+                72,
+                545,
+                198
+            ],
+            "caption": "Figure 4: Error Analysis: Fast R-CNN vs. YOLO These charts show the percentage of localization and background errors in the top N detections for various categories (N = # objects in that category). Table 2: Model combination experiments on VOC 2007. We examine the effect of combining various models with the best version of Fast R-CNN. Other versions of Fast R-CNN provide only a small benefit while YOLO provides a significant performance boost. Table 2: Model combination experiments on VOC 2007. We examine the effect of combining various models with the best version of Fast R-CNN. Other versions of Fast R-CNN provide only a small benefit while YOLO provides a significant performance boost.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                47,
+                70,
+                533,
+                262
+            ],
+            "caption": "Figure 5: Generalization results on Picasso and People-Art datasets.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                51,
+                295,
+                543,
+                498
+            ],
+            "caption": "Figure 6: Qualitative Results. YOLO running on sample artwork and natural images from the internet. It is mostly accurate although it does think one person is an airplane.",
+            "footnote": "(b) Quantitative results on the VOC 2007, Picasso, and People-Art Datasets. The Picasso Dataset evaluates on both AP and best F1 score.",
+            "cropped_image": "figures/figure_006_page008.png"
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "total_count": 7,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                77,
+                61,
+                519,
+                264
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>SQuAD 1.1F1</td>\n    <td>MNLIAcc</td>\n    <td>ELI5PPL</td>\n    <td>XSumPPL</td>\n    <td>Conv AI2PPL</td>\n    <td>CNN/DMPPL</td>\n  </tr>\n  <tr>\n    <td>BERT Base(Devlin etal，2019)</td>\n    <td>88.5</td>\n    <td>84.3</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Masked Language Model</td>\n    <td>90.0</td>\n    <td>83.5</td>\n    <td>24.77</td>\n    <td>7.87</td>\n    <td>12.59</td>\n    <td>7.06</td>\n  </tr>\n  <tr>\n    <td>Masked Seq2seq</td>\n    <td>87.0</td>\n    <td>82.1</td>\n    <td>23.40</td>\n    <td>6.80</td>\n    <td>11.43</td>\n    <td>6.19</td>\n  </tr>\n  <tr>\n    <td>Language Model</td>\n    <td>76.7</td>\n    <td>80.1</td>\n    <td>21.40</td>\n    <td>7.00</td>\n    <td>11.51</td>\n    <td>6.56</td>\n  </tr>\n  <tr>\n    <td>Permuted Language Model</td>\n    <td>89.1</td>\n    <td>83.7</td>\n    <td>24.03</td>\n    <td>7.69</td>\n    <td>12.23</td>\n    <td>6.96</td>\n  </tr>\n  <tr>\n    <td>Multi task Masked Language Model</td>\n    <td>89.2</td>\n    <td>82.4</td>\n    <td>23.73</td>\n    <td>7.50</td>\n    <td>12.39</td>\n    <td>6.74</td>\n  </tr>\n  <tr>\n    <td>BART Base</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>w/ Token Masking</td>\n    <td>90.4</td>\n    <td>84.1</td>\n    <td>25.05</td>\n    <td>7.08</td>\n    <td>11.73</td>\n    <td>6.10</td>\n  </tr>\n  <tr>\n    <td>w/ Token Deletion</td>\n    <td>90.4</td>\n    <td>84.1</td>\n    <td>24.61</td>\n    <td>6.90</td>\n    <td>11.46</td>\n    <td>5.87</td>\n  </tr>\n  <tr>\n    <td>w/ Text Infilling</td>\n    <td>90.8</td>\n    <td>84.0</td>\n    <td>24.26</td>\n    <td>6.61</td>\n    <td>11.05</td>\n    <td>5.83</td>\n  </tr>\n  <tr>\n    <td>w/ Document Rotation</td>\n    <td>77.2</td>\n    <td>75.3</td>\n    <td>53.69</td>\n    <td>17.14</td>\n    <td>19.87</td>\n    <td>10.59</td>\n  </tr>\n  <tr>\n    <td>w/ Sentence Shuffling</td>\n    <td>85.4</td>\n    <td>81.5</td>\n    <td>41.87</td>\n    <td>10.93</td>\n    <td>16.67</td>\n    <td>7.89</td>\n  </tr>\n  <tr>\n    <td>w/ Text Infilling+ Sentence Shuffling</td>\n    <td>90.8</td>\n    <td>83.8</td>\n    <td>24.17</td>\n    <td>6.62</td>\n    <td>11.12</td>\n    <td>5.41</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                71,
+                61,
+                547,
+                158
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>SQuAD 1.1EM/F1</td>\n    <td>SQuAD 2.0EM/F1</td>\n    <td>MNLIm/mm</td>\n    <td>SSTAcc</td>\n    <td>QQPAcc</td>\n    <td>QNLIAcc</td>\n    <td>STS-BAcc</td>\n    <td>RTEAcc</td>\n    <td>MRPCAcc</td>\n    <td>CoLAMcc</td>\n  </tr>\n  <tr>\n    <td>BERT</td>\n    <td>84.1/90.9</td>\n    <td>79.0/81.8</td>\n    <td>86.6/-</td>\n    <td>93.2</td>\n    <td>91.3</td>\n    <td>92.3</td>\n    <td>90.0</td>\n    <td>70.4</td>\n    <td>88.0</td>\n    <td>60.6</td>\n  </tr>\n  <tr>\n    <td>UniLM</td>\n    <td>-/-</td>\n    <td>80.5/83.4</td>\n    <td>87.0/85.9</td>\n    <td>94.5</td>\n    <td>-</td>\n    <td>92.7</td>\n    <td>-</td>\n    <td>70.9</td>\n    <td>-</td>\n    <td>61.1</td>\n  </tr>\n  <tr>\n    <td>XLNet</td>\n    <td>89.0/94.5</td>\n    <td>86.1/88.8</td>\n    <td>89.8/-</td>\n    <td>95.6</td>\n    <td>91.8</td>\n    <td>93.9</td>\n    <td>91.8</td>\n    <td>83.8</td>\n    <td>89.2</td>\n    <td>63.6</td>\n  </tr>\n  <tr>\n    <td>RoBERTa</td>\n    <td>88.9/94.6</td>\n    <td>86.5/89.4</td>\n    <td>90.2/90.2</td>\n    <td>96.4</td>\n    <td>92.2</td>\n    <td>94.7</td>\n    <td>92.4</td>\n    <td>86.6</td>\n    <td>90.9</td>\n    <td>68.0</td>\n  </tr>\n  <tr>\n    <td>BART</td>\n    <td>88.8/94.6</td>\n    <td>86.1/89.2</td>\n    <td>89.9/90.1</td>\n    <td>96.6</td>\n    <td>92.5</td>\n    <td>94.9</td>\n    <td>91.2</td>\n    <td>87.0</td>\n    <td>90.4</td>\n    <td>62.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                101,
+                201,
+                495,
+                328
+            ],
+            "caption": "Table 2: Results for large models on SQuAD and GLUE tasks. BART performs comparably to RoBERTa and XLNet, suggesting that BART’s uni-directional decoder layers do not reduce performance on discriminative tasks. Table 2: Results for large models on SQuAD and GLUE tasks. BART performs comparably to RoBERTa and XLNet, suggesting that BART’s uni-directional decoder layers do not reduce performance on discriminative tasks.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>CNN/DailyMail</td>\n    <td>XSum</td>\n  </tr>\n  <tr>\n    <td>R1</td>\n    <td>R2</td>\n    <td>RL</td>\n    <td>R1</td>\n    <td>R2</td>\n    <td>RL</td>\n  </tr>\n  <tr>\n    <td>Lead-3</td>\n    <td>40.42</td>\n    <td>17.62</td>\n    <td>36.67</td>\n    <td>16.30</td>\n    <td>1.60</td>\n    <td>11.95</td>\n  </tr>\n  <tr>\n    <td>PT GEN(See etal，2017)</td>\n    <td>36.44</td>\n    <td>15.66</td>\n    <td>33.42</td>\n    <td>29.70</td>\n    <td>9.21</td>\n    <td>23.24</td>\n  </tr>\n  <tr>\n    <td>PT GEN+COV(See etal，2017)</td>\n    <td>39.53</td>\n    <td>17.28</td>\n    <td>36.38</td>\n    <td>28.10</td>\n    <td>8.02</td>\n    <td>21.72</td>\n  </tr>\n  <tr>\n    <td>Uni LM</td>\n    <td>43.33</td>\n    <td>20.21</td>\n    <td>40.51</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BERT SUMABS(Liu& Lapata，2019)</td>\n    <td>41.72</td>\n    <td>19.39</td>\n    <td>38.76</td>\n    <td>38.76</td>\n    <td>16.33</td>\n    <td>31.15</td>\n  </tr>\n  <tr>\n    <td>BERT SUMEX TABS(Liu& Lapata，2019)</td>\n    <td>42.13</td>\n    <td>19.60</td>\n    <td>39.18</td>\n    <td>38.81</td>\n    <td>16.50</td>\n    <td>31.27</td>\n  </tr>\n  <tr>\n    <td>BART</td>\n    <td>44.16</td>\n    <td>21.28</td>\n    <td>40.90</td>\n    <td>45.14</td>\n    <td>22.27</td>\n    <td>37.25</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                311,
+                379,
+                520,
+                452
+            ],
+            "caption": "Table 3: Results on two standard summarization datasets. BART outperforms previous work on summarization on two tasks and all metrics, with gains of roughly 6 points on the more abstractive dataset. Table 3: Results on two standard summarization datasets. BART outperforms previous work on summarization on two tasks and all metrics, with gains of roughly 6 points on the more abstractive dataset.",
+            "footnote": "Table 4: BART outperforms previous work on conversational response generation. Perplexities are renormalized based on official tokenizer for ConvAI2. Table 4: BART outperforms previous work on conversational response generation. Perplexities are renormalized based on official tokenizer for ConvAI2. Table 4: BART outperforms previous work on conversational response generation. Perplexities are renormalized based on official tokenizer for ConvAI2.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Conv AI2</td>\n    <td>Valid F1</td>\n    <td>Valid PPL</td>\n  </tr>\n  <tr>\n    <td>Seq2Seq+Attention</td>\n    <td>16.02</td>\n    <td>35.07</td>\n  </tr>\n  <tr>\n    <td>Best System</td>\n    <td>19.09</td>\n    <td>17.51</td>\n  </tr>\n  <tr>\n    <td>BART</td>\n    <td>20.72</td>\n    <td>11.85</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                90,
+                61,
+                271,
+                158
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>ELI5</td>\n    <td>R1</td>\n    <td>R2</td>\n    <td>RL</td>\n  </tr>\n  <tr>\n    <td>Best Extractive</td>\n    <td>23.5</td>\n    <td>3.1</td>\n    <td>17.5</td>\n  </tr>\n  <tr>\n    <td>Language Model</td>\n    <td>27.8</td>\n    <td>4.7</td>\n    <td>23.1</td>\n  </tr>\n  <tr>\n    <td>Seq2Seq</td>\n    <td>28.3</td>\n    <td>5.1</td>\n    <td>22.8</td>\n  </tr>\n  <tr>\n    <td>Seq2Seq Multitask</td>\n    <td>28.9</td>\n    <td>5.4</td>\n    <td>23.1</td>\n  </tr>\n  <tr>\n    <td>BART</td>\n    <td>30.6</td>\n    <td>6.2</td>\n    <td>24.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                126,
+                213,
+                236,
+                275
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 5: BART achieves state-of-the-art results on the challenging ELI5 abstractive question answering dataset. Comparison models are from Fan et al. (2019).\" Table 6: The performance (BLEU) of baseline and BART on WMT'16 RO-EN augmented with back-translation data. BART improves over a strong back-translation (BT) baseline by using monolingual English pre-training.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>RO-EN</td>\n  </tr>\n  <tr>\n    <td>Baseline</td>\n    <td>36.80</td>\n  </tr>\n  <tr>\n    <td>Fixed BART</td>\n    <td>36.29</td>\n  </tr>\n  <tr>\n    <td>Tuned BART</td>\n    <td>37.96</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                73,
+                60,
+                525,
+                502
+            ],
+            "caption": "Table 7: Example summaries from the XSum-tuned BART model on WikiNews articles. For clarity, only relevant excerpts of the source are shown. Summaries combine information from across the article and prior knowledge. Table 7: Example summaries from the XSum-tuned BART model on WikiNews articles. For clarity, only relevant excerpts of the source are shown. Summaries combine information from across the article and prior knowledge.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Source Document(abbreviated)</td>\n    <td>BART Summary</td>\n  </tr>\n  <tr>\n    <td>The researchers examined three types of coral in reefs off thecoast of Fiji...</td>\n    <td>Fisheries off the coast of Fiji are protectingcoral reefs from the effects of globalwarming， according to a study in thejournal Science.</td>\n  </tr>\n  <tr>\n    <td>The researchers found when fish were plentiful，they would eat algae and seaweed off the corals， which appearedto leave them more resistant to the bacterium Vibrio coralli lyticus， a bacterium associated with bleaching.The researchers suggested the algae， like warming temperatures， might render thecorals' chemical defenses less effective， and the fish were protecting the coral by removing the algae.</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Sac oolas， who has immunity as a diplomat's wife， was involvedin a traffic collision...</td>\n    <td>Boris Johnson has said he will raise the issueof US diplomat Anne Sac oolas'diplomatic immunity with the White House.</td>\n  </tr>\n  <tr>\n    <td>Prime Minister Johnson was questionedabout the case while speaking to the press at a hospital in Watford.He said， \"I hope that Anne Sac oolas will come back...if we can't resolve it then of course I will be raising it myselfpersonally with the White House.\"</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>According to Syrian state media， government forces began deploying into previously SDF controlled territory yesterday...</td>\n    <td>Syrian government forces have enteredterritory held by the US-backed SyrianDemocratic Forces(SDF) in response toTurkey's incursion into the region.</td>\n  </tr>\n  <tr>\n    <td>On October 6， US President Donald Trump and Turkish PresidentRecep Tayyip Erdo an spoke on the phone.Then both nations issued statements speaking of an imminent incursion intonortheast Syria...On Wednesday， Turkey began a militaryoffensive with airstrikes followed by a ground invasion.</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>This is the first time anyone has been recorded to run a fullmarathon of 42.195 kilometers(approximately 26 miles) under this pursued landmark time.It was not， however， an officiallysanctioned world record， as it was not an\"open race\"of theIAAF.His time was 1 hour 59 minutes 40.2 seconds.Kipchoge ran in Vienna， Austria.It was an event specifically designed tohelp Kipchoge break the two hour barrier.</td>\n    <td>Kenyan runner Eliud Kipchoge has run amarathon in less than two hours.</td>\n  </tr>\n  <tr>\n    <td>PG&E stated it scheduled the blackouts in response to forecastsfor high winds amid dry conditions.The aim is to reduce the riskof wildfires.Nearly 800 thousand customers were scheduledto be affected by the shutoffs which were expected to last throughat least midday tomorrow.</td>\n    <td>Power has been turned off to millions ofcustomers in California as part of a powershutoff plan.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page008.png"
+        }
+    ]
+}

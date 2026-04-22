@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "table",
+            "bbox": [
+                73,
+                488,
+                523,
+                620
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1 Summary of some representative Chinese PTMs. \"# Params\" refers to the number of parameters. \"Arch.\" refers to the model architecture. \"LM\" refers to language modeling in auto-regression fashion, while \"Seq2Seq MLM\" refers to masked language modeling in Seq2Seq fashion. \"Tok.\", \"Masking\" and \"Prediction\" refer to the tokenization, masking and prediction granularity of the model, respectively. \"✓\" means \"could be directly used to\". And \"✗\" means \"need to be adapted to\".\" The text content from the image is as follows:\n\n\"Table 1 Summary of some representative Chinese PTMs. '# Params' refers to the number of parameters. 'Arch.' refers to the model architecture. 'LM' refers to language modeling in auto-regression fashion, while 'Seq2Seq MLM' refers to masked language modeling in Seq2Seq fashion. 'Tok.', 'Masking' and 'Prediction' refer to the tokenization, masking and prediction granularity of the model, respectively. '✓' means 'could be directly used to'. And '✗' means 'need to be adapted to'.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>BERTRoBERTa</td>\n    <td>ZENNEZHAER NIE-1.0/2.0</td>\n    <td>PanGu-a</td>\n    <td>CPM</td>\n    <td>CPM-2</td>\n    <td>BART</td>\n    <td>CPT</td>\n  </tr>\n  <tr>\n    <td># Params</td>\n    <td>Base - 110M</td>\n    <td>Large - 340M</td>\n    <td>≈ BERT</td>\n    <td>32Layers - 2.6B</td>\n    <td>Small - 110M</td>\n    <td>Medium - 340M</td>\n    <td>Large - 2.6B</td>\n    <td>Base - 11B</td>\n    <td>MOE - 198B</td>\n    <td>Base - 139M</td>\n    <td>Large - 406M</td>\n    <td>Base - 121M</td>\n    <td>Large - 393M</td>\n  </tr>\n  <tr>\n    <td>Arch.</td>\n    <td>TransformerEncoder</td>\n    <td>TransformerEncoder Variant</td>\n    <td>TransformerDecoder</td>\n    <td>TransformerDecoder</td>\n    <td>FullTransformer</td>\n    <td>FullTransformer</td>\n    <td>Unbalanced FullTransformer</td>\n  </tr>\n  <tr>\n    <td>PreTrain.Task</td>\n    <td>MLM</td>\n    <td>MLM</td>\n    <td>LM</td>\n    <td>LM</td>\n    <td>Seq2Seq MLM</td>\n    <td>DAE</td>\n    <td>MLM+DAE</td>\n  </tr>\n  <tr>\n    <td>Tok.MaskingPrediction</td>\n    <td>CharWordChar</td>\n    <td>Char-</td>\n    <td>Word/Char-</td>\n    <td>Word/Char-</td>\n    <td>Word/Char-</td>\n    <td>CharWordChar</td>\n    <td>CharWordChar</td>\n  </tr>\n  <tr>\n    <td>NLU</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>NLG</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                154,
+                280,
+                442,
+                498
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2 Accuracy results on dev set of CLUE Benchmark. We fine-tune CPT with five different ways as shown in Figure 2. (B) and (L) refer to base-size and large-size of PTMs, respectively.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Models</td>\n    <td>T NEWS</td>\n    <td>I FLY TEK</td>\n    <td>OC NLI</td>\n    <td>A FQMC</td>\n    <td>C SL</td>\n    <td>WSC</td>\n    <td>AVG</td>\n  </tr>\n  <tr>\n    <td>BERT(B)</td>\n    <td>56.8</td>\n    <td>58.9</td>\n    <td>75.4</td>\n    <td>72.0</td>\n    <td>82.3</td>\n    <td>83.2</td>\n    <td>71.4</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(B)</td>\n    <td>57.5</td>\n    <td>59.4</td>\n    <td>76.5</td>\n    <td>74.4</td>\n    <td>86.1</td>\n    <td>88.8</td>\n    <td>73.8</td>\n  </tr>\n  <tr>\n    <td>BART(B)</td>\n    <td>57.2</td>\n    <td>60.0</td>\n    <td>76.1</td>\n    <td>73.0</td>\n    <td>85.8</td>\n    <td>79.6</td>\n    <td>71.9</td>\n  </tr>\n  <tr>\n    <td>CPTu(B)</td>\n    <td>58.4</td>\n    <td>60.5</td>\n    <td>76.4</td>\n    <td>75.1</td>\n    <td>86.1</td>\n    <td>91.1</td>\n    <td>74.6</td>\n  </tr>\n  <tr>\n    <td>CPTg(B)</td>\n    <td>57.3</td>\n    <td>60.4</td>\n    <td>76.3</td>\n    <td>71.4</td>\n    <td>86.4</td>\n    <td>87.2</td>\n    <td>73.2</td>\n  </tr>\n  <tr>\n    <td>CPTug(B)</td>\n    <td>57.4</td>\n    <td>61.9</td>\n    <td>76.8</td>\n    <td>70.6</td>\n    <td>86.3</td>\n    <td>89.8</td>\n    <td>73.8</td>\n  </tr>\n  <tr>\n    <td>CPTgp(B)</td>\n    <td>54.9</td>\n    <td>25.4</td>\n    <td>76.6</td>\n    <td>73.7</td>\n    <td>86.9</td>\n    <td>79.9</td>\n    <td>66.2</td>\n  </tr>\n  <tr>\n    <td>CPTup(B)</td>\n    <td>58.4</td>\n    <td>61.6</td>\n    <td>76.6</td>\n    <td>75.1</td>\n    <td>86.9</td>\n    <td>79.9</td>\n    <td>73.1</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(L)</td>\n    <td>58.3</td>\n    <td>61.7</td>\n    <td>78.5</td>\n    <td>75.4</td>\n    <td>86.3</td>\n    <td>89.5</td>\n    <td>75.0</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>59.2</td>\n    <td>62.1</td>\n    <td>79.7</td>\n    <td>75.7</td>\n    <td>87.3</td>\n    <td>90.1</td>\n    <td>75.7</td>\n  </tr>\n  <tr>\n    <td>CPTu(L)</td>\n    <td>58.8</td>\n    <td>61.8</td>\n    <td>79.5</td>\n    <td>75.9</td>\n    <td>86.5</td>\n    <td>92.1</td>\n    <td>75.8</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>59.1</td>\n    <td>61.7</td>\n    <td>79.9</td>\n    <td>75.8</td>\n    <td>86.9</td>\n    <td>91.8</td>\n    <td>75.9</td>\n  </tr>\n  <tr>\n    <td>CPTug(L)</td>\n    <td>59.2</td>\n    <td>62.4</td>\n    <td>79.8</td>\n    <td>75.8</td>\n    <td>86.6</td>\n    <td>93.4</td>\n    <td>76.2</td>\n  </tr>\n  <tr>\n    <td>CPTgp(L)</td>\n    <td>54.5</td>\n    <td>29.2</td>\n    <td>79.8</td>\n    <td>75.4</td>\n    <td>87.1</td>\n    <td>89.5</td>\n    <td>69.2</td>\n  </tr>\n  <tr>\n    <td>CPTup(L)</td>\n    <td>59.0</td>\n    <td>61.2</td>\n    <td>79.6</td>\n    <td>75.4</td>\n    <td>87.3</td>\n    <td>87.8</td>\n    <td>75.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                154,
+                532,
+                442,
+                646
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3 Results on CLUE benchmarks. For all tasks we report accuracy on test sets.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Models</td>\n    <td>TNEWS</td>\n    <td>IFLYTEK</td>\n    <td>OCNLI</td>\n    <td>AFQMC</td>\n    <td>CSL</td>\n    <td>WSC</td>\n    <td>AVG</td>\n  </tr>\n  <tr>\n    <td>BERT(B)</td>\n    <td>58.6</td>\n    <td>59.4</td>\n    <td>73.2</td>\n    <td>74.1</td>\n    <td>84.2</td>\n    <td>74.5</td>\n    <td>70.7</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(B)</td>\n    <td>59.5</td>\n    <td>60.3</td>\n    <td>73.9</td>\n    <td>74.0</td>\n    <td>84.7</td>\n    <td>76.9</td>\n    <td>71.5</td>\n  </tr>\n  <tr>\n    <td>BART(B)</td>\n    <td>58.5</td>\n    <td>60.7</td>\n    <td>72.1</td>\n    <td>74.0</td>\n    <td>85.4</td>\n    <td>67.6</td>\n    <td>69.7</td>\n  </tr>\n  <tr>\n    <td>CPTu(B)</td>\n    <td>59.2</td>\n    <td>60.5</td>\n    <td>73.4</td>\n    <td>74.4</td>\n    <td>85.5</td>\n    <td>81.4</td>\n    <td>72.4</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(L)</td>\n    <td>58.9</td>\n    <td>63.0</td>\n    <td>76.4</td>\n    <td>76.6</td>\n    <td>82.1</td>\n    <td>74.6</td>\n    <td>71.9</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>58.6</td>\n    <td>62.7</td>\n    <td>78.1</td>\n    <td>74.3</td>\n    <td>86.7</td>\n    <td>82.1</td>\n    <td>73.7</td>\n  </tr>\n  <tr>\n    <td>CPTug(L)</td>\n    <td>59.2</td>\n    <td>62.4</td>\n    <td>78.4</td>\n    <td>75.0</td>\n    <td>85.5</td>\n    <td>86.2</td>\n    <td>74.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                183,
+                308,
+                412,
+                425
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 4 Results on sequence labeling datasets. The F1 scores on test sets are reported. Models with * indicate the results are from [18].\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>CWS</td>\n    <td>NER</td>\n  </tr>\n  <tr>\n    <td>MSR</td>\n    <td>PKU</td>\n    <td>MSRA</td>\n    <td>OntoNotes</td>\n  </tr>\n  <tr>\n    <td>BERT(B)</td>\n    <td>98.24</td>\n    <td>96.50</td>\n    <td>95.13</td>\n    <td>81.73</td>\n  </tr>\n  <tr>\n    <td>ERNIE 2.0*(B)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>93.80</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(B)</td>\n    <td>98.14</td>\n    <td>96.15</td>\n    <td>95.23</td>\n    <td>81.52</td>\n  </tr>\n  <tr>\n    <td>CPTu(B)</td>\n    <td>98.29</td>\n    <td>96.58</td>\n    <td>95.78</td>\n    <td>82.08</td>\n  </tr>\n  <tr>\n    <td>ERNIE 2.0*(L)</td>\n    <td>-</td>\n    <td>-</td>\n    <td>95.00</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(L)</td>\n    <td>98.42</td>\n    <td>96.37</td>\n    <td>95.20</td>\n    <td>81.78</td>\n  </tr>\n  <tr>\n    <td>CPTu(L)</td>\n    <td>98.51</td>\n    <td>96.70</td>\n    <td>96.20</td>\n    <td>83.08</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page009.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                203,
+                587,
+                393,
+                740
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 5 Results on MRC datasets. Exact Match (EM) scores are reported. Models with * indicate the results from the corresponding work.\" The text content from the image is as follows:\n\n\"Table 5 Results on MRC datasets. Exact Match (EM) scores are reported. Models with * indicate the results from the corresponding work.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>CMRC 2018</td>\n    <td>DR CD</td>\n  </tr>\n  <tr>\n    <td>Dev</td>\n    <td>DevTest</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(B)</td>\n    <td>67.9</td>\n    <td>85.9</td>\n    <td>85.2</td>\n  </tr>\n  <tr>\n    <td>Mac BERT*(B)</td>\n    <td>68.2</td>\n    <td>89.2</td>\n    <td>88.7</td>\n  </tr>\n  <tr>\n    <td>ERNIE 2.0*(B)</td>\n    <td>69.1</td>\n    <td>88.5</td>\n    <td>88.0</td>\n  </tr>\n  <tr>\n    <td>NEZHA*(B)</td>\n    <td>67.8</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>CPT u(B)</td>\n    <td>68.8</td>\n    <td>89.0</td>\n    <td>89.0</td>\n  </tr>\n  <tr>\n    <td>RoBERTa(L)</td>\n    <td>70.6</td>\n    <td>89.1</td>\n    <td>88.9</td>\n  </tr>\n  <tr>\n    <td>Mac BERT*(L)</td>\n    <td>70.1</td>\n    <td>90.8</td>\n    <td>90.9</td>\n  </tr>\n  <tr>\n    <td>ERNIE 2.0*(L)</td>\n    <td>71.5</td>\n    <td>89.7</td>\n    <td>89.0</td>\n  </tr>\n  <tr>\n    <td>NEZ HA*(L)</td>\n    <td>68.1</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>CPT u(L)</td>\n    <td>72.3</td>\n    <td>91.0</td>\n    <td>91.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page009.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                192,
+                207,
+                404,
+                357
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 6 Results on text generation datasets. The small(base) version of mT5 has almost the same parameters as the base(large) version of other PTMs. CPM-2 has a much larger number of parameters than other large size PTMs. Models with * and † indicate the results are from [16] and [10], respectively.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Models</td>\n    <td>LCSTS(Rouge-L)</td>\n    <td>CSL(Rouge-L)</td>\n    <td>ADGEN(BLEU-4)</td>\n  </tr>\n  <tr>\n    <td>mT5(S)</td>\n    <td>33.5</td>\n    <td>56.7</td>\n    <td>10.2</td>\n  </tr>\n  <tr>\n    <td>BART(B)</td>\n    <td>37.8</td>\n    <td>62.1</td>\n    <td>9.9</td>\n  </tr>\n  <tr>\n    <td>CPTg(B)</td>\n    <td>38.2</td>\n    <td>63.0</td>\n    <td>9.8</td>\n  </tr>\n  <tr>\n    <td>CPM-2t</td>\n    <td>35.9</td>\n    <td>-</td>\n    <td>10.6</td>\n  </tr>\n  <tr>\n    <td>mBART(L)</td>\n    <td>37.8</td>\n    <td>55.2</td>\n    <td>8.5</td>\n  </tr>\n  <tr>\n    <td>mT5(B)</td>\n    <td>36.5</td>\n    <td>61.8</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>ERNIE 2.0*(L)</td>\n    <td>41.4</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>RoBERTa*(L)</td>\n    <td>41.0</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>40.6</td>\n    <td>64.2</td>\n    <td>10.0</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>42.0</td>\n    <td>63.7</td>\n    <td>10.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page010.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                69,
+                75,
+                531,
+                535
+            ],
+            "caption": "Summary examples generated by BART (L) and CPT (L) given input text on LCSTS.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Input</td>\n    <td>今日，刘胜义在2013腾讯智慧峰会上指出，在移动化时代，数字媒体、消费行为、数字营销都需要重新定义。并且移动化媒体应具备三个特征：从实时媒体发展成全天候媒体；从大众媒体发展到智能媒体阶段；从资讯媒体发展到生活类型的媒体。</td>\n    <td>Today，in the 2013 Tencent Wisdom Summit，Sheng yiLiu pointed out that in the mobile era，digital media，consumer behavior，anddigital marketing all need to be redefined.And mobile media should have three characteristics：real-time media develope to 24-hourmedia；mass media deve lop e to smart media；information and news media deve lop e to life media.</td>\n  </tr>\n  <tr>\n    <td>Reference</td>\n    <td>腾讯刘胜义：移动化引发媒体及营销体系变革</td>\n    <td>Sheng yi Liu from Tencent：Mobile process leads to the changes in media and marketing systems.</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>刘胜义：移动化时代数字媒体需重新定义</td>\n    <td>Sheng yi Liu：Digital media need to be redefined in the mobile era.</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>腾县总裁刘胜义：移动化时代数字媒体需重新定义</td>\n    <td>Tencent President Sheng yi Liu：Digital media need to be redefined in the mobile era.</td>\n  </tr>\n  <tr>\n    <td>Input</td>\n    <td>近年来，逢雨必涝、逢涝必瘫，几成我国城市通病。上周，中国青年报对全国31个省(区、市)5375人进行的调查显示，91.6%的人关注所在城市的排水问题；84.7%的受访者赞同，城市现代化更表现在地面之下，应加大地下民生工程建设投入。</td>\n    <td>In recent years，flooding and paralysis in floods have become a common problem in Chinese cities.Last week，the China Youth Daily conducted a survey of 5375 people in 31 provinces(regions and cities)across the country.It shows that 91.6%of people are concernedabout the drainage problems in their cities；84.7%of the interviewees agree that urban modernization is shown under the ground，andthe government should increase investment in the construction of underground livelihood projects.</td>\n  </tr>\n  <tr>\n    <td>Reference</td>\n    <td>84.7%受访者期待国家加大地下民生工程投入</td>\n    <td>84.7%of respondents expect the country to increase investment in underground livelihood projects.</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>84.7%受访者赞同加大地下民生工程建设投入</td>\n    <td>84.7%of respondents agree to increase investment in the construction of underground livelihood projects.</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>超八成受访者赞同加大地下民生工程投入</td>\n    <td>Over 80%of respondents agree to increase investment in the underground livelihood projects.</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Table 8Text examples generated by BART(L) and CPT(L) given keywords on ADGEN.</td>\n  </tr>\n  <tr>\n    <td>Input</td>\n    <td>[类型，上衣]，[版型，宽松]，[颜色，蓝色]，[风格，简约]，[衣样式，衬衫]，[衣领型，翻领]，[衣长，中长款]，[衣门襟，单排扣][Type，Top]，[Fit，Loose]，[Color，Blue]，[Style，Simple]，[Clothing Style，Shirt]，[Collar Type，Lapel]，[Cloth Length，Mid-length]，[Clothes placket，Single-Breasted]</td>\n  </tr>\n  <tr>\n    <td>Reference</td>\n    <td>很适合学生穿的一件衬衫，蓝色调是属于比较小清新的色调，而且还能衬托出女性的完美好气色哦，让你穿上之后瞬间有个好心情；简约的小翻领设计加以精致的单排扣点缀，颇有一番正式的感觉，结合上宽松以及中长款的设计，从而打造出女性的率性bf风范。</td>\n    <td>A shirt that is very suitable for students.The blue tone is a relatively fresh hue，which can bring out the perfect look of women，making you have a good mood instantly when wearing it；the simple small design of lapel is combined with single-breasted embellishment，which shows quite a formal feel.And when combined with loose and mid-length design，it creates a feminine and casual bf style.</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>这款衬衫采用清新的蓝色调，展现出女性内心的纯洁与美好。简约的小翻领设计，修饰出精致小巧的脸型。精致的单排扣门襟，方便穿脱。宽松的中长款版型，对身材的包容性很好。</td>\n    <td>This shirt uses a fresh blue tone to show the purity and beauty of women's hearts.The simple design of small lapel makes the face delicate and small.The exquisite single-breasted placket makes it easy to put on and take off.The loose mid-length clothing design is easily fit the body.</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>这款衬衫采用中长款的版型设计，搭配宽松的直筒版型，给身体更多的活动量、行动更为方便，穿着更为舒适。加上清新的蓝色调，更为衬托肤色白皙。结合简约的单排扣门襟，方便穿脱的同时，也丰富了整体的层次感。而精致的小翻领，则为整体增添了几分干练的气质。</td>\n    <td>This shirt adopts a mid-length clothing design with a loose straight type，giving the body more activity，making it more convenientto move and to wear.Coupled with a fresh blue tone，it whitens the skin.Combined with a simple single-breasted placket，it isconvenient to put on and take off，which also enriches the overall sense of layers.The exquisite and small lapel adds a capable andexperienced style to the whole.</td>\n  </tr>\n  <tr>\n    <td>Input</td>\n    <td>[类型，上衣]，[版型，显瘦]，[颜色，黑色]，[衣样式，毛衣]，[衣领型，v领][Type，Top]，[Fit，Skinny]，[Color，Black]，[Clothing Style，Sweater]，[Collar Type，V-Neck]</td>\n  </tr>\n  <tr>\n    <td>Reference</td>\n    <td>金丝的加入为低调内敛的黑色添加闪闪亮色，胸前的v领加排扣设计，摈弃毛衣臃肿松散的固有印象，轻薄修身，保留温度的同时又不至于在猝不及防的倒春寒中失去风度。</td>\n    <td>The golden silk adds sparkling color to the low-key and restrained black.The v-neck on the chest and the breast ed design abandons the inherent impression of bloated and loose sweaters，which is light and slim.It keeps the temperature without losing its grace inthe unexpected cold spring.</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>这款黑色的修身长款毛衣，最大的设计亮点在于衣身v领设计，这样的款式设计使得整件毛衣看起来与众不同，既个性又修身舒适哦。</td>\n    <td>The biggest highlighted design of this black slim long sweater is the v-neck design of the clothing.This design makes the wholesweater unique，personal and comfortable.</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>这款毛衣采用了经典的黑色作为底色设计，搭配上修身的版型剪裁，穿起来更加的显瘦。领口处采用v领的剪裁方式，可以起到修饰脸型的作用，更显脸小精致。衣摆处的开叉处理，更是增添了几分随性的感觉。</td>\n    <td>This sweater uses a classic black background with a slim fit cut，which makes you look thin.The neckline adopts a v-neck tailoringmethod，which can frame the face and make the face small and delicate.The split treatment at the hem adds a casual feel.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page011.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                70,
+                289,
+                530,
+                537
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 8 Text examples generated by BART (L) and CPT (L) given keywords on ADGEN.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Input</td>\n    <td>[类型，上衣]，[版型，宽松]，[颜色，蓝色]，[风格，简约]，[风格，清新]，[衣样式，衬衫]，[衣领型，翻领]，[衣长，中长款]，[衣门襟，单排扣]</td>\n  </tr>\n  <tr>\n    <td>[Type，Top]，[Fit，Loose]，[Color，Blue]，[Style，Simple]，[Style，Fresh]，[Clothing Style，Shirt]，[Collar Type，Lapel]，[Cloth Length，Mid-length]，[Clothes placket，Single-Breasted]</td>\n  </tr>\n  <tr>\n    <td>Reference</td>\n    <td>很适合学生穿的一件衬衫，蓝色调是属于比较小清新的色调，而且还能衬托出女性的完美好气色哦，让你穿上之后瞬间有个好心情；简约的小翻领设计加以精致的单排扣点缀，颇有一番正式的感觉，结合上宽松以及中长款的设计，从而打造出女性的率性bf风范。</td>\n  </tr>\n  <tr>\n    <td>A shirt that is very suitable for students.The blue tone is a relatively fresh hue， which can bring out the perfect look of women，making you have a good mood instantly when wearing it； the simple small design of lapel is combined with single-breasted embellishment，which shows quite a formal feel.And when combined with loose and mid-length design，it creates a feminine and casual bf style.</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>这款衬衫采用清新的蓝色调，展现出女性内心的纯洁与美好。简约的小翻领设计，修饰出精致小巧的脸型。精致的单排扣门襟，方便穿脱。宽松的中长款版型，对身材的包容性很好。</td>\n  </tr>\n  <tr>\n    <td>This shirt uses a fresh blue tone to show the purity and beauty of women's hearts.The simple design of small lapel makes the face delicate and small.The exquisite single-breasted placket makes it easy to put on and take off.The loose mid-length clothing design is easily fit the body.</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>这款衬衫采用中长款的版型设计，搭配宽松的直筒版型，给身体更多的活动量，行动更为方便，穿着更为舒适。加上清新的蓝色调，更为衬托肤色白皙。结合简约的单排扣门襟，方便穿脱的同时，也丰富了整体的层次感。而精致的小翻领，则为整体增添了几分干练的气质。</td>\n  </tr>\n  <tr>\n    <td>This shirt adopts a mid-length clothing design with a loose straight type， giving the body more activity， making it more convenientto move and to wear.Coupled with a fresh blue tone， it whitens the skin.Combined with a simple single-breasted placket， it isconvenient to put on and take off， which also enriches the overall sense of layers.The exquisite and small lapel adds a capable andexperienced style to the whole.</td>\n  </tr>\n  <tr>\n    <td>Input</td>\n    <td>[类型，上衣]，[版型，显瘦]，[颜色，黑色]，[衣样式，毛衣]，[衣领型，v领]</td>\n  </tr>\n  <tr>\n    <td>[Type，Top]，[Fit，Skinny]，[Color，Black]，[Clothing Style，Sweater]，[Collar Type，V-Neck]</td>\n  </tr>\n  <tr>\n    <td>Reference</td>\n    <td>金丝的加入为低调内敛的黑色添加闪闪亮色，胸前的v领加排扣设计，摈弃毛衣臃肿松散的固有印象，轻薄修身，保留温度的同时又不至于在猝不及防的倒春寒中失去风度。</td>\n  </tr>\n  <tr>\n    <td>The golden silk adds sparkling color to the low-key and restrained black.The v-neck on the chest and the breasted design abandonsthe inherent impression of bloated and loose sweaters， which is light and slim.It keeps the temperature without losing its grace inthe unexpected cold spring.</td>\n  </tr>\n  <tr>\n    <td>BART(L)</td>\n    <td>这款黑色的修身长款毛衣，最大的设计亮点在于衣身v领设计，这样的款式设计使得整件毛衣看起来与众不同，既个性又修身舒适哦。</td>\n  </tr>\n  <tr>\n    <td>The biggest highlighted design of this black slim long sweater is the v-neck design of the clothing.This design makes the wholesweater unique， personal and comfortable.</td>\n  </tr>\n  <tr>\n    <td>CPTg(L)</td>\n    <td>这款毛衣采用了经典的黑色作为底色设计，搭配上修身的版型剪裁，穿起来更加的显瘦。领口处采用v领的剪裁方式，可以起到修饰脸型的作用，更显小精致。衣摆处的开叉处理，更是增添了分随性的感觉。</td>\n  </tr>\n  <tr>\n    <td>This sweater uses a classic black background with a slim fit cut， which makes you look thin.The neckline adopts a v-neck tailoringmethod， which can frame the face and make the face small and delicate.The split treatment at the hem adds a casual feel.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page011.png"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "total_count": 7,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                202,
+                351,
+                407,
+                379
+            ],
+            "content": "```latex\n\\pi_t = \n\\begin{cases} \np_\\theta(a_t \\mid s) & \\text{for } t=1 \\\\\np_\\theta(a_t \\mid s, a_{1:t-1}) & \\text{for } t \\in \\{2, 3, \\ldots, M\\}\n\\end{cases}\n```",
+            "latex": "```latex\n\\pi_t = \n\\begin{cases} \np_\\theta(a_t \\mid s) & \\text{for } t=1 \\\\\np_\\theta(a_t \\mid s, a_{1:t-1}) & \\text{for } t \\in \\{2, 3, \\ldots, M\\}\n\\end{cases}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                208,
+                624,
+                403,
+                639
+            ],
+            "content": "\\boldsymbol { \\tau } ^ { i } = ( a _ { 1 } ^ { i } , a _ { 2 } ^ { i } , \\ldots , a _ { M } ^ { i } ) \\qquad \\mathrm { f o r ~ } \\; \\; i = 1 , 2 , \\ldots , N .",
+            "latex": "\\boldsymbol { \\tau } ^ { i } = ( a _ { 1 } ^ { i } , a _ { 2 } ^ { i } , \\ldots , a _ { M } ^ { i } ) \\qquad \\mathrm { f o r ~ } \\; \\; i = 1 , 2 , \\ldots , N ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                213,
+                555,
+                397,
+                588
+            ],
+            "content": "b ^ { i } ( s ) = b _ { \\mathrm { s h a r e d } } ( s ) = \\frac { 1 } { N } \\sum _ { j = 1 } ^ { N } R ( \\boldsymbol { \\tau } ^ { j } ) \\quad \\mathrm { f o r ~ a l l ~ } i .",
+            "latex": "b ^ { i } ( s ) = b _ { \\mathrm { s h a r e d } } ( s ) = \\frac { 1 } { N } \\sum _ { j = 1 } ^ { N } R ( \\boldsymbol { \\tau } ^ { j } ) \\quad \\mathrm { f o r ~ a l l ~ } i ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                205,
+                464,
+                407,
+                496
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\[\n\\nabla_{\\theta} J(\\theta) \\approx \\frac{1}{N} \\sum_{i=1}^{N} (R(\\boldsymbol{\\tau}^i) - b^i(s)) \\nabla_{\\theta} \\log p_{\\theta}(\\boldsymbol{\\tau}^i | s)\n\\]\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\[\n\\nabla_{\\theta} J(\\theta) \\approx \\frac{1}{N} \\sum_{i=1}^{N} (R(\\boldsymbol{\\tau}^i) - b^i(s)) \\nabla_{\\theta} \\log p_{\\theta}(\\boldsymbol{\\tau}^i | s)\n\\]\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                235,
+                389,
+                374,
+                418
+            ],
+            "content": "```latex\n\\mathbf{h}_{(c)} = \n\\begin{cases} \n[\\overline{\\mathbf{h}}, \\mathbf{h}_{\\pi_{t-1}}, \\mathbf{h}_{\\pi_1}] & t > 1 \\\\\n[\\overline{\\mathbf{h}}, \\mathbf{v}^l, \\mathbf{v}^f] & t = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_{(c)} = \n\\begin{cases} \n[\\overline{\\mathbf{h}}, \\mathbf{h}_{\\pi_{t-1}}, \\mathbf{h}_{\\pi_1}] & t > 1 \\\\\n[\\overline{\\mathbf{h}}, \\mathbf{v}^l, \\mathbf{v}^f] & t = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                234,
+                484,
+                374,
+                516
+            ],
+            "content": "```latex\n\\mathbf{h}_{(c)}^{i} = \n\\begin{cases} \n\\left[\\bar{\\mathbf{h}}, \\, \\mathbf{h}_{\\pi_{t-1}}^{i}, \\, \\mathbf{h}_{\\pi_{1}}^{i}\\right] & t > 1 \\\\\n\\text{none} & t = 1.\n\\end{cases}\n```",
+            "latex": "```latex\n\\mathbf{h}_{(c)}^{i} = \n\\begin{cases} \n\\left[\\bar{\\mathbf{h}}, \\, \\mathbf{h}_{\\pi_{t-1}}^{i}, \\, \\mathbf{h}_{\\pi_{1}}^{i}\\right] & t > 1 \\\\\n\\text{none} & t = 1.\n\\end{cases}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                233,
+                548,
+                377,
+                562
+            ],
+            "content": "\\mathbf { h } _ { \\pi _ { 1 } } ^ { i } = \\mathbf { h } _ { i } \\qquad \\mathrm { f o r ~ } \\; \\; i = 1 , 2 , \\ldots , N .",
+            "latex": "\\mathbf { h } _ { \\pi _ { 1 } } ^ { i } = \\mathbf { h } _ { i } \\qquad \\mathrm { f o r ~ } \\; \\; i = 1 , 2 , \\ldots , N ."
+        }
+    ]
+}

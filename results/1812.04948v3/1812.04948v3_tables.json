@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "table",
+            "bbox": [
+                88,
+                142,
+                475,
+                186
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Tero Karras</td>\n    <td>Samuli Laine</td>\n    <td>Timo Aila</td>\n  </tr>\n  <tr>\n    <td>NVIDIA</td>\n    <td>NVIDIA</td>\n    <td>NVIDIA</td>\n  </tr>\n  <tr>\n    <td>tkarras@nvidia.com</td>\n    <td>slaine@nvidia.com</td>\n    <td>taila@nvidia.com</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "table",
+            "bbox": [
+                308,
+                70,
+                548,
+                144
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>CelebA-HQ</td>\n    <td>FFH Q</td>\n  </tr>\n  <tr>\n    <td>A Baseline Progressive GAN[30]</td>\n    <td>7.79</td>\n    <td>8.04</td>\n  </tr>\n  <tr>\n    <td>B+ Tuning(incl.bilinear up/down)</td>\n    <td>6.11</td>\n    <td>5.25</td>\n  </tr>\n  <tr>\n    <td>C+ Add mapping and styles</td>\n    <td>5.34</td>\n    <td>4.85</td>\n  </tr>\n  <tr>\n    <td>D+ Remove traditional input</td>\n    <td>5.07</td>\n    <td>4.88</td>\n  </tr>\n  <tr>\n    <td>E+ Add noise inputs</td>\n    <td>5.06</td>\n    <td>4.42</td>\n  </tr>\n  <tr>\n    <td>F+ Mixing regularization</td>\n    <td>5.17</td>\n    <td>4.40</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                49,
+                70,
+                286,
+                134
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Mixingregularization</td>\n    <td>1</td>\n    <td>2</td>\n    <td>3</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td>E0%</td>\n    <td>4.42</td>\n    <td>8.22</td>\n    <td>12.88</td>\n    <td>17.41</td>\n  </tr>\n  <tr>\n    <td>50%</td>\n    <td>4.41</td>\n    <td>6.10</td>\n    <td>8.71</td>\n    <td>11.61</td>\n  </tr>\n  <tr>\n    <td>F90%</td>\n    <td>4.40</td>\n    <td>5.11</td>\n    <td>6.88</td>\n    <td>9.03</td>\n  </tr>\n  <tr>\n    <td>100%</td>\n    <td>4.83</td>\n    <td>5.17</td>\n    <td>6.63</td>\n    <td>8.40</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                49,
+                70,
+                286,
+                144
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Path length</td>\n    <td>Separability</td>\n  </tr>\n  <tr>\n    <td>B Traditional generator</td>\n    <td>full</td>\n    <td>end</td>\n  </tr>\n  <tr>\n    <td>D Style-based generator</td>\n    <td>412.0</td>\n    <td>415.3</td>\n    <td>10.78</td>\n  </tr>\n  <tr>\n    <td>E+Add noise inputs</td>\n    <td>446.2</td>\n    <td>376.6</td>\n    <td>3.61</td>\n  </tr>\n  <tr>\n    <td>+Mixing 50%</td>\n    <td>W</td>\n    <td>200.5</td>\n    <td>160.6</td>\n    <td>3.54</td>\n  </tr>\n  <tr>\n    <td>F+Mixing 90%</td>\n    <td>W</td>\n    <td>231.5</td>\n    <td>182.1</td>\n    <td>3.51</td>\n  </tr>\n  <tr>\n    <td>W</td>\n    <td>234.0</td>\n    <td>195.9</td>\n    <td>3.79</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                308,
+                70,
+                545,
+                164
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>FID</td>\n    <td>Path lengthfull</td>\n    <td>Separability</td>\n  </tr>\n  <tr>\n    <td>B Traditional 0</td>\n    <td>5.25</td>\n    <td>412.0</td>\n    <td>415.3</td>\n    <td>10.78</td>\n  </tr>\n  <tr>\n    <td>Traditional 8</td>\n    <td>4.87</td>\n    <td>896.2</td>\n    <td>902.0</td>\n    <td>170.29</td>\n  </tr>\n  <tr>\n    <td>Traditional 8</td>\n    <td>4.87</td>\n    <td>324.5</td>\n    <td>212.2</td>\n    <td>6.52</td>\n  </tr>\n  <tr>\n    <td>Style-based 0</td>\n    <td>5.06</td>\n    <td>283.5</td>\n    <td>285.5</td>\n    <td>9.88</td>\n  </tr>\n  <tr>\n    <td>Style-based 1</td>\n    <td>4.60</td>\n    <td>219.9</td>\n    <td>209.4</td>\n    <td>6.81</td>\n  </tr>\n  <tr>\n    <td>Style-based 2</td>\n    <td>4.43</td>\n    <td>217.8</td>\n    <td>199.9</td>\n    <td>6.25</td>\n  </tr>\n  <tr>\n    <td>F Style-based 8</td>\n    <td>4.40</td>\n    <td>234.0</td>\n    <td>195.9</td>\n    <td>3.79</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page007.png"
+        }
+    ]
+}

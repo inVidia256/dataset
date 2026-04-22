@@ -1,0 +1,104 @@
+{
+    "total_count": 7,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                333,
+                214,
+                518,
+                338
+            ],
+            "caption": "Figure 1. The trade-off between computational cost (MAdds) and top-1 accuracy of ImageNet classification. Dynamic convolution significantly boosts the accuracy with a small amount of extra MAdds on MobileNet V2 and V3. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                315,
+                408,
+                537,
+                509
+            ],
+            "caption": "Figure 2. Dynamic perceptron. It aggregates multiple linear functions dynamically based upon their attentions {πk}, which are input dependent.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page001.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                317,
+                73,
+                536,
+                207
+            ],
+            "caption": "Figure 3. A dynamic convolution layer.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                309,
+                72,
+                543,
+                154
+            ],
+            "caption": "Figure 4. Illustration of constraint ∑k πk(x) = 1. It compresses the space of aggregated kernel ∑k πk W̃k from two pyramids (used in CondConv [37]) to a triangle. A red line is compressed into a dot by normalizing attention sum. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                50,
+                73,
+                282,
+                162
+            ],
+            "caption": "Figure 5. Training and validation errors for using different softmax temperatures. Left: using dynamic convolution for all layers. Right: using dynamic convolution for the last layer in each bottleneck residual block. We use DY-MobileNetV2 with width multiplier ×0.5, and each dynamic convolution layer has K = 4 convolution kernels. Best viewed in color. Table 3. Inspecting DY-CNN using different kernel aggregations. DY-MobileNetV2 ×0.5 is used. The proper aggregation of convolution kernels {W̃k} using attention πk(x) is shown in the first line. Shuffle per image means shuffling the attention weights for the same image over different kernels. Shuffle across images means using the attention of an image x for another image x′. The poor performance for the bottom four aggregations validates that the DY-CNN is dynamic. Table 3. Inspecting DY-CNN using different kernel aggregations. DY-MobileNetV2 ×0.5 is used. The proper aggregation of convolution kernels {Ŵk} using attention πk(x) is shown in the first line. Shuffle per image means shuffling the attention weights for the same image over different kernels. Shuffle across images means using the attention of an image x for another image x′. The poor performance for the bottom four aggregations validates that the DY-CNN is dynamic.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page005.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                49,
+                72,
+                543,
+                190
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 6. The number of convolution kernels (K) in DY-MobileNetV2 with different depth and width multipliers. Left: depth multiplier is 1.0, Middle: depth multiplier is 0.7, Right: depth multiplier is 0.5. Each curve has four width multipliers ×1.0, ×0.75, ×0.5, and ×0.35. Dynamic convolution outperforms its static counterpart by a clear margin for all width/depth multipliers. Best viewed in color.\" Table 4. Inspecting DY-CNN by enabling/disabling attention at different input resolutions. DY-MobileNetV2 ×0.5 is used. Each resolution has two options: √ indicates enabling attention ∑ πk( x) W̃k for each layer in that resolution, while – indicates disabling attention and using average kernel ∑ W̃k/K for each layer in the corresponding resolutions. The attention is more effective at higher layers with lower resolutions. Table 4. Inspecting DY-CNN by enabling/disabling attention at different input resolutions. DY-MobileNetV2 ×0.5 is used. Each resolution has two options: √ indicates enabling attention ∑ πk( x ) W̃k for each layer in that resolution, while – indicates disabling attention and using average kernel ∑ W̃k/K for each layer in the corresponding resolutions. The attention is more effective at higher layers with lower resolutions. Table 5. Dynamic convolution at different layers in MobileNetV2 ×0.5. C1, C2 and C3 indicate the 1×1 convolution that expands output channels, the 3×3 depthwise convolution and the 1×1 convolution that shrinks output channels per block respectively. C1=1 indicates using static convolution, while C1=4 indicates using dynamic convolution with 4 kernels. The numbers in brackets denote the improvement over the baseline. Table 5. Dynamic convolution at different layers in MobileNetV2 ×0.5. C1, C2 and C3 indicate the 1×1 convolution that expands output channels, the 3×3 depthwise convolution and the 1×1 convolution that shrinks output channels per block respectively. C1=1 indicates using static convolution, while C1=4 indicates using dynamic convolution with 4 kernels. The numbers in brackets denote the improvement over the baseline.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page006.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                344,
+                502,
+                506,
+                621
+            ],
+            "caption": "Figure 7. Shallower DY-MobileNetV2 vs Deeper MobileNetV2. The shallower DY-MobileNetV2 (depth ×0.5) has better trade-off between accuracy and computational cost than the deeper MobileNetV2 (depth ×1.0). To make comparison fair, we also plot the deeper DY-MobileNetV2 and shallower MobileNetV2. For both DY-MobileNetV2 and MobileNetV2, deeper networks have better performance. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page009.png"
+        }
+    ]
+}

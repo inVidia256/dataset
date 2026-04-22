@@ -1,0 +1,294 @@
+{
+    "total_count": 24,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                365,
+                616,
+                510,
+                630
+            ],
+            "content": "\\Delta = \\mathrm { I } - D ^ { - 1 / 2 } A D ^ { - 1 / 2 } = U ^ { T } \\Lambda U ,",
+            "latex": "\\Delta = \\mathrm { I } - D ^ { - 1 / 2 } A D ^ { - 1 / 2 } = U ^ { T } \\Lambda U ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                349,
+                489,
+                527,
+                519
+            ],
+            "content": "```latex\n\\hat{w}_{ij}^{k,\\ell} = \\left( \\frac{Q^{k,\\ell} h_i^\\ell \\cdot K^{k,\\ell} h_j^\\ell}{\\sqrt{d_k}} \\right) \\cdot E^{k,\\ell} e_{ij}^\\ell,\n```",
+            "latex": "```latex\n\\hat{w}_{ij}^{k,\\ell} = \\left( \\frac{Q^{k,\\ell} h_i^\\ell \\cdot K^{k,\\ell} h_j^\\ell}{\\sqrt{d_k}} \\right) \\cdot E^{k,\\ell} e_{ij}^\\ell,\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                364,
+                682,
+                503,
+                707
+            ],
+            "content": "```latex\nh_{i}^{\\ell+1} = \\text{Norm}\\left(\\hat{h}_{i}^{\\ell+1} + \\hat{\\tilde{h}}_{i}^{\\ell+1}\\right),\n```",
+            "latex": "```latex\nh_{i}^{\\ell+1} = \\text{Norm}\\left(\\hat{h}_{i}^{\\ell+1} + \\hat{\\tilde{h}}_{i}^{\\ell+1}\\right),\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                364,
+                631,
+                493,
+                655
+            ],
+            "content": "\\hat { h } _ { i } ^ { \\ell + 1 } \\quad = \\quad \\mathrm { N o r m } \\Big ( h _ { i } ^ { \\ell } + \\hat { h } _ { i } ^ { \\ell + 1 } \\Big ) ,",
+            "latex": "\\hat { h } _ { i } ^ { \\ell + 1 } \\quad = \\quad \\mathrm { N o r m } \\Big ( h _ { i } ^ { \\ell } + \\hat { h } _ { i } ^ { \\ell + 1 } \\Big ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                92,
+                230,
+                251,
+                245
+            ],
+            "content": "```latex\n\\hat{h}_i^0 = A^0 \\alpha_i + a^0 \\quad ; \\quad e_{ij}^0 = B^0 \\beta_{ij} + b^0,\n```",
+            "latex": "```latex\n\\hat{h}_i^0 = A^0 \\alpha_i + a^0 \\quad ; \\quad e_{ij}^0 = B^0 \\beta_{ij} + b^0,\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                365,
+                657,
+                510,
+                680
+            ],
+            "content": "\\hat { \\hat { h } } _ { i } ^ { \\ell + 1 } ~ = ~ W _ { h , 2 } ^ { \\ell } \\mathrm { R e L U } ( W _ { h , 1 } ^ { \\ell } \\hat { \\hat { h } } _ { i } ^ { \\ell + 1 } ) ,",
+            "latex": "\\hat { \\hat { h } } _ { i } ^ { \\ell + 1 } ~ = ~ W _ { h , 2 } ^ { \\ell } \\mathrm { R e L U } ( W _ { h , 1 } ^ { \\ell } \\hat { \\hat { h } } _ { i } ^ { \\ell + 1 } ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                103,
+                563,
+                233,
+                587
+            ],
+            "content": "\\hat { h } _ { i } ^ { \\ell + 1 } ~ = ~ \\mathrm { N o r m } \\Big ( h _ { i } ^ { \\ell } + \\hat { h } _ { i } ^ { \\ell + 1 } \\Big ) ,",
+            "latex": "\\hat { h } _ { i } ^ { \\ell + 1 } ~ = ~ \\mathrm { N o r m } \\Big ( h _ { i } ^ { \\ell } + \\hat { h } _ { i } ^ { \\ell + 1 } \\Big ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                103,
+                589,
+                237,
+                611
+            ],
+            "content": "\\hat { h } _ { i } ^ { \\ell + 1 } = W _ { 2 } ^ { \\ell } \\mathrm { R e L U } ( W _ { 1 } ^ { \\ell } \\hat { h } _ { i } ^ { \\ell + 1 } ) ,",
+            "latex": "\\hat { h } _ { i } ^ { \\ell + 1 } = W _ { 2 } ^ { \\ell } \\mathrm { R e L U } ( W _ { 1 } ^ { \\ell } \\hat { h } _ { i } ^ { \\ell + 1 } ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                103,
+                613,
+                243,
+                638
+            ],
+            "content": "```latex\nh_{i}^{\\ell+1} = \\text{Norm}\\left(\\hat{h}_{i}^{\\ell+1} + \\hat{\\tilde{h}}_{i}^{\\ell+1}\\right),\n```",
+            "latex": "```latex\nh_{i}^{\\ell+1} = \\text{Norm}\\left(\\hat{h}_{i}^{\\ell+1} + \\hat{\\tilde{h}}_{i}^{\\ell+1}\\right),\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                350,
+                472,
+                462,
+                489
+            ],
+            "content": "w _ { i j } ^ { k , \\ell } ~ = ~ \\mathrm { s o f t m a x } _ { j } ( \\hat { w } _ { i j } ^ { k , \\ell } ) ,",
+            "latex": "w _ { i j } ^ { k , \\ell } ~ = ~ \\mathrm { s o f t m a x } _ { j } ( \\hat { w } _ { i j } ^ { k , \\ell } ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                100,
+                295,
+                243,
+                310
+            ],
+            "content": "```latex\n\\lambda_i^0 = C^0 \\lambda_i + c^0 \\quad ; \\quad h_i^0 = \\hat{h}_i^0 + \\lambda_i^0,\n```",
+            "latex": "```latex\n\\lambda_i^0 = C^0 \\lambda_i + c^0 \\quad ; \\quad h_i^0 = \\hat{h}_i^0 + \\lambda_i^0,\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                95,
+                412,
+                248,
+                446
+            ],
+            "content": "```latex\n\\hat{h}_{i}^{\\ell+1} = O_{h}^{\\ell} \\left\\| \\sum_{k=1}^{H} \\left( \\sum_{j \\in \\mathcal{N}_{i}} w_{ij}^{k,\\ell} V^{k,\\ell} h_{j}^{\\ell} \\right) \\right|,\n```",
+            "latex": "```latex\n\\hat{h}_{i}^{\\ell+1} = O_{h}^{\\ell} \\left\\| \\sum_{k=1}^{H} \\left( \\sum_{j \\in \\mathcal{N}_{i}} w_{ij}^{k,\\ell} V^{k,\\ell} h_{j}^{\\ell} \\right) \\right|,\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                78,
+                446,
+                265,
+                473
+            ],
+            "content": "```latex\nw_{ij}^{k,\\ell} = \\text{softmax}_j\\left(\\frac{Q_i^k h_j^\\ell}{\\sqrt{d_k}} \\cdot K_i^k h_j^\\ell\\right),\n```",
+            "latex": "```latex\nw_{ij}^{k,\\ell} = \\text{softmax}_j\\left(\\frac{Q_i^k h_j^\\ell}{\\sqrt{d_k}} \\cdot K_i^k h_j^\\ell\\right),\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                354,
+                389,
+                521,
+                423
+            ],
+            "content": "```latex\n\\hat{h}_i^{\\ell+1} = O_h^\\ell \\parallel_H \\left( \\sum_{j \\in N_i} w_{ij}^{k,\\ell} V^{k,\\ell} h_j^\\ell \\right),\n```",
+            "latex": "```latex\n\\hat{h}_i^{\\ell+1} = O_h^\\ell \\parallel_H \\left( \\sum_{j \\in N_i} w_{ij}^{k,\\ell} V^{k,\\ell} h_j^\\ell \\right),\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                354,
+                426,
+                503,
+                458
+            ],
+            "content": "```latex\n\\hat{e}_{ij}^{\\ell+1} = O_e^\\ell \\prod_{k=1}^{H} (\\hat{w}_{ij}^{k,\\ell}),\n```",
+            "latex": "```latex\n\\hat{e}_{ij}^{\\ell+1} = O_e^\\ell \\prod_{k=1}^{H} (\\hat{w}_{ij}^{k,\\ell}),\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                101,
+                295,
+                242,
+                310
+            ],
+            "content": "\\lambda _ { i } ^ { 0 } = C ^ { 0 } \\lambda _ { i } + c ^ { 0 } ~ ~ ; ~ ~ h _ { i } ^ { 0 } = \\hat { h } _ { i } ^ { 0 } + \\lambda _ { i } ^ { 0 } ,",
+            "latex": "\\lambda _ { i } ^ { 0 } = C ^ { 0 } \\lambda _ { i } + c ^ { 0 } ~ ~ ; ~ ~ h _ { i } ^ { 0 } = \\hat { h } _ { i } ^ { 0 } + \\lambda _ { i } ^ { 0 } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                353,
+                388,
+                521,
+                459
+            ],
+            "content": "```latex\n\\hat{h}_{i}^{\\ell+1} = O_{h}^{\\ell} \\bigotimes_{k=1}^{H} \\Big( \\sum_{j \\in \\mathcal{N}_{i}} w_{ij}^{k,\\ell} V^{k,\\ell} h_{j}^{\\ell} \\Big),\n\n\\hat{e}_{ij}^{\\ell+1} = O_{e}^{\\ell} \\bigotimes_{k=1}^{H} \\Big( \\hat{w}_{ij}^{k,\\ell} \\Big), \\text{ where},\n```",
+            "latex": "```latex\n\\hat{h}_{i}^{\\ell+1} = O_{h}^{\\ell} \\bigotimes_{k=1}^{H} \\Big( \\sum_{j \\in \\mathcal{N}_{i}} w_{ij}^{k,\\ell} V^{k,\\ell} h_{j}^{\\ell} \\Big),\n\n\\hat{e}_{ij}^{\\ell+1} = O_{e}^{\\ell} \\bigotimes_{k=1}^{H} \\Big( \\hat{w}_{ij}^{k,\\ell} \\Big), \\text{ where},\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                81,
+                412,
+                264,
+                473
+            ],
+            "content": "```latex\n\\hat{h}_{i}^{\\ell+1} = O_{h}^{\\ell} \\parallel_{k=1}^{H} \\left( \\sum_{j \\in \\mathcal{N}_{i}} w_{ij}^{k,\\ell} V^{k,\\ell} h_{j}^{\\ell} \\right),\n\nw_{ij}^{k,\\ell} = \\text{softmax}_{j} \\left( \\frac{Q^{k,\\ell} h_{i}^{\\ell} \\cdot K^{k,\\ell} h_{j}^{\\ell}}{\\sqrt{d_{k}}} \\right),\n```",
+            "latex": "```latex\n\\hat{h}_{i}^{\\ell+1} = O_{h}^{\\ell} \\parallel_{k=1}^{H} \\left( \\sum_{j \\in \\mathcal{N}_{i}} w_{ij}^{k,\\ell} V^{k,\\ell} h_{j}^{\\ell} \\right),\n\nw_{ij}^{k,\\ell} = \\text{softmax}_{j} \\left( \\frac{Q^{k,\\ell} h_{i}^{\\ell} \\cdot K^{k,\\ell} h_{j}^{\\ell}}{\\sqrt{d_{k}}} \\right),\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                100,
+                137,
+                237,
+                160
+            ],
+            "content": "```latex\ne_{ij}^{\\ell+1} = \\text{Norm}\\left(\\hat{e}_{ij}^{\\ell+1} + \\hat{\\hat{e}}_{ij}^{\\ell+1}\\right),\n```",
+            "latex": "```latex\ne_{ij}^{\\ell+1} = \\text{Norm}\\left(\\hat{e}_{ij}^{\\ell+1} + \\hat{\\hat{e}}_{ij}^{\\ell+1}\\right),\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                101,
+                91,
+                231,
+                112
+            ],
+            "content": "\\hat { e } _ { i j } ^ { \\ell + 1 } ~ = ~ \\mathrm { N o r m } \\Big ( e _ { i j } ^ { \\ell } + \\hat { e } _ { i j } ^ { \\ell + 1 } \\Big ) ,",
+            "latex": "\\hat { e } _ { i j } ^ { \\ell + 1 } ~ = ~ \\mathrm { N o r m } \\Big ( e _ { i j } ^ { \\ell } + \\hat { e } _ { i j } ^ { \\ell + 1 } \\Big ) ,"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                101,
+                115,
+                242,
+                135
+            ],
+            "content": "\\hat { \\hat { e } } _ { i j } ^ { \\ell + 1 } ~ = ~ W _ { e , 2 } ^ { \\ell } \\mathrm { R e L U } ( W _ { e , 1 } ^ { \\ell } \\hat { \\hat { e } } _ { i j } ^ { \\ell + 1 } ) ,",
+            "latex": "\\hat { \\hat { e } } _ { i j } ^ { \\ell + 1 } ~ = ~ W _ { e , 2 } ^ { \\ell } \\mathrm { R e L U } ( W _ { e , 1 } ^ { \\ell } \\hat { \\hat { e } } _ { i j } ^ { \\ell + 1 } ) ,"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                403,
+                125,
+                471,
+                158
+            ],
+            "content": "y _ { \\mathcal { G } } = \\frac { 1 } { \\nu } \\sum _ { i = 0 } ^ { \\nu } h _ { i } ^ { L } ,",
+            "latex": "y _ { \\mathcal { G } } = \\frac { 1 } { \\nu } \\sum _ { i = 0 } ^ { \\nu } h _ { i } ^ { L } ,"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                383,
+                203,
+                492,
+                219
+            ],
+            "content": "y _ { \\mathrm { p r e d } } = P \\, \\operatorname { R e L U } \\left( Q \\, y _ { G } \\right) ,",
+            "latex": "y _ { \\mathrm { p r e d } } = P \\, \\operatorname { R e L U } \\left( Q \\, y _ { G } \\right) ,"
+        },
+        {
+            "page": 8,
+            "type": "formula",
+            "bbox": [
+                379,
+                340,
+                495,
+                356
+            ],
+            "content": "y _ { i , \\mathrm { p r e d } } = P \\, \\operatorname { R e L U } \\left( Q \\, h _ { i } ^ { L } \\right) ,",
+            "latex": "y _ { i , \\mathrm { p r e d } } = P \\, \\operatorname { R e L U } \\left( Q \\, h _ { i } ^ { L } \\right) ,"
+        }
+    ]
+}

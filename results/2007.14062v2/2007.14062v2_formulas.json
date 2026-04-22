@@ -1,0 +1,798 @@
+{
+    "total_count": 66,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                185,
+                451,
+                427,
+                477
+            ],
+            "content": "```latex\n\\text{ATTN}_D(\\boldsymbol{X})_i = \\boldsymbol{x}_i + \\sum_{h=1}^{H} \\sigma \\left( Q_h(\\boldsymbol{x}_i) K_h(\\boldsymbol{X}_{N(i)})^T \\right) \\cdot V_h(\\boldsymbol{X}_{N(i)})\n```",
+            "latex": "```latex\n\\text{ATTN}_D(\\boldsymbol{X})_i = \\boldsymbol{x}_i + \\sum_{h=1}^{H} \\sigma \\left( Q_h(\\boldsymbol{x}_i) K_h(\\boldsymbol{X}_{N(i)})^T \\right) \\cdot V_h(\\boldsymbol{X}_{N(i)})\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                108,
+                297,
+                231,
+                313
+            ],
+            "content": "( \\int \\| f _ { 1 } ( X ) - f _ { 2 } ( X ) \\| _ { p } ^ { p } d X ) ^ { 1 / p } .",
+            "latex": "( \\int \\| f _ { 1 } ( X ) - f _ { 2 } ( X ) \\| _ { p } ^ { p } d X ) ^ { 1 / p } ."
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                205,
+                698,
+                406,
+                725
+            ],
+            "content": "```latex\n\\bar{f}(X) = \\sum_{P \\in \\mathbb{G}_{\\delta}} f(P) \\cdot 1[\\|ReLU(X - P)\\|_\\infty \\leq \\delta]\n```",
+            "latex": "```latex\n\\bar{f}(X) = \\sum_{P \\in \\mathbb{G}_{\\delta}} f(P) \\cdot 1[\\|ReLU(X - P)\\|_\\infty \\leq \\delta]\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                181,
+                382,
+                431,
+                415
+            ],
+            "content": "```latex\n\\text{ATTN}_D(\\mathbf{X})_i = \\sum_{h=1}^{H} \\sigma \\left( (\\mathbf{x}_i W_Q^h) (\\mathbf{X}_{N(i)} W_K^h)^T \\right) \\cdot (\\mathbf{X}_{N(i)} W_V^h)\n```",
+            "latex": "```latex\n\\text{ATTN}_D(\\mathbf{X})_i = \\sum_{h=1}^{H} \\sigma \\left( (\\mathbf{x}_i W_Q^h) (\\mathbf{X}_{N(i)} W_K^h)^T \\right) \\cdot (\\mathbf{X}_{N(i)} W_V^h)\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                226,
+                475,
+                385,
+                489
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nO(a_i) = \\text{ReLU}(a_i W_1 + b_1) W_2 \\cdot + b_2\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nO(a_i) = \\text{ReLU}(a_i W_1 + b_1) W_2 \\cdot + b_2\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                192,
+                272,
+                419,
+                286
+            ],
+            "content": "```latex\nz_i = O(\\alpha_i) + \\alpha_i \\quad \\text{where} \\quad \\alpha_i = \\text{ATTN}(X)_i + x_i\n```",
+            "latex": "```latex\nz_i = O(\\alpha_i) + \\alpha_i \\quad \\text{where} \\quad \\alpha_i = \\text{ATTN}(X)_i + x_i\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                191,
+                261,
+                420,
+                290
+            ],
+            "content": "```latex\n\\bar{f}(X) = \\sum_{P \\in \\mathbf{G}_{\\delta}^{E}} f(P - E) \\cdot 1 \\left[ \\| \\text{ReLU}(X - P) \\|_{\\infty} \\leq \\delta \\right].\n```",
+            "latex": "```latex\n\\bar{f}(X) = \\sum_{P \\in \\mathbf{G}_{\\delta}^{E}} f(P - E) \\cdot 1 \\left[ \\| \\text{ReLU}(X - P) \\|_{\\infty} \\leq \\delta \\right].\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                165,
+                218,
+                444,
+                234
+            ],
+            "content": "```latex\n\\mathbf{G}_{\\delta}^{E} := [0,1]_{\\delta}^{d} \\times [\\delta^{-d}, \\delta^{-d} + 1]_{\\delta}^{d} \\times \\cdots \\times [\\delta^{-(n-1)d}, \\delta^{-(n-1)d} + 1]_{\\delta}^{d}.\n```",
+            "latex": "```latex\n\\mathbf{G}_{\\delta}^{E} := [0,1]_{\\delta}^{d} \\times [\\delta^{-d}, \\delta^{-d} + 1]_{\\delta}^{d} \\times \\cdots \\times [\\delta^{-(n-1)d}, \\delta^{-(n-1)d} + 1]_{\\delta}^{d}.\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                187,
+                100,
+                423,
+                167
+            ],
+            "content": "```latex\nE = \\begin{bmatrix}\n0 & 0 & 0 & \\cdots & 0 \\\\\n\\delta^{-d} & \\delta^{-d} & \\delta^{-d} & \\cdots & \\delta^{-d} \\\\\n\\delta^{-2d} & \\delta^{-2d} & \\delta^{-2d} & \\cdots & \\delta^{-2d} \\\\\n\\vdots & \\vdots & \\vdots & \\ddots & \\vdots \\\\\n\\delta^{-(n-1)d} & \\delta^{-(n-1)d} & \\delta^{-(n-1)d} & \\cdots & \\delta^{-(n-1)d}\n\\end{bmatrix}\n```",
+            "latex": "```latex\nE = \\begin{bmatrix}\n0 & 0 & 0 & \\cdots & 0 \\\\\n\\delta^{-d} & \\delta^{-d} & \\delta^{-d} & \\cdots & \\delta^{-d} \\\\\n\\delta^{-2d} & \\delta^{-2d} & \\delta^{-2d} & \\cdots & \\delta^{-2d} \\\\\n\\vdots & \\vdots & \\vdots & \\ddots & \\vdots \\\\\n\\delta^{-(n-1)d} & \\delta^{-(n-1)d} & \\delta^{-(n-1)d} & \\cdots & \\delta^{-(n-1)d}\n\\end{bmatrix}\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                138,
+                630,
+                471,
+                657
+            ],
+            "content": "```latex\n\\psi_u(Z; b_1, b_2)_i = \n\\begin{cases} \n(\\max_{j \\in N(i)} u^T Z_j - \\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } b_1 \\leq u^T Z_j \\leq b_2 \\\\\n0 & \\text{else}.\n\\end{cases}\n```",
+            "latex": "```latex\n\\psi_u(Z; b_1, b_2)_i = \n\\begin{cases} \n(\\max_{j \\in N(i)} u^T Z_j - \\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } b_1 \\leq u^T Z_j \\leq b_2 \\\\\n0 & \\text{else}.\n\\end{cases}\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                171,
+                704,
+                438,
+                726
+            ],
+            "content": "```latex\n\\tilde{\\psi}(X,b)_i = \\sigma_H \\left[ (u^T \\cdot X_i)^T \\cdot (u^T X_{N(i)} - b1_{N(i)}^T) e^{(1)} (u^T X_{N(i)}) \\right]\n```",
+            "latex": "```latex\n\\tilde{\\psi}(X,b)_i = \\sigma_H \\left[ (u^T \\cdot X_i)^T \\cdot (u^T X_{N(i)} - b1_{N(i)}^T) e^{(1)} (u^T X_{N(i)}) \\right]\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                130,
+                501,
+                468,
+                515
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n2. For any two \\( P, P' \\in \\mathbf{G}_\\delta^E \\) with \\( P \\neq P' \\), all entries of \\( q(P) \\) and \\( q(P') \\) are distinct.\n```\n\nThis will render the text exactly as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n2. For any two \\( P, P' \\in \\mathbf{G}_\\delta^E \\) with \\( P \\neq P' \\), all entries of \\( q(P) \\) and \\( q(P') \\) are distinct.\n```\n\nThis will render the text exactly as shown in the image."
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                140,
+                156,
+                469,
+                183
+            ],
+            "content": "```latex\n\\psi(Z; b_1, b_2)_i = \n\\begin{cases} \n(\\max_{j \\in N(i)} u^T Z_j - \\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } b_1 \\leq u^T Z_j \\leq b_2 \\\\\n0 & \\text{else}\n\\end{cases}\n```",
+            "latex": "```latex\n\\psi(Z; b_1, b_2)_i = \n\\begin{cases} \n(\\max_{j \\in N(i)} u^T Z_j - \\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } b_1 \\leq u^T Z_j \\leq b_2 \\\\\n0 & \\text{else}\n\\end{cases}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                137,
+                672,
+                474,
+                720
+            ],
+            "content": "```latex\nT_k = (\\delta^{-(n+1)d} + 1)^k \\cdot \\delta^{-nd} - \\sum_{t=2}^{k} (\\delta^{-(n+1)d} + 1)^{k-t} (2\\delta^{-nd-d} + \\delta^{-nd} + 1) \\delta^{-td} \\\\\n- (\\delta^{-(n+1)d} + 1)^{k-1} (\\delta^{-nd-d} + \\delta^{-nd}) \\delta^{-d} - \\delta^{-(k+1)d}\n```",
+            "latex": "```latex\nT_k = (\\delta^{-(n+1)d} + 1)^k \\cdot \\delta^{-nd} - \\sum_{t=2}^{k} (\\delta^{-(n+1)d} + 1)^{k-t} (2\\delta^{-nd-d} + \\delta^{-nd} + 1) \\delta^{-td} \\\\\n- (\\delta^{-(n+1)d} + 1)^{k-1} (\\delta^{-nd-d} + \\delta^{-nd}) \\delta^{-d} - \\delta^{-(k+1)d}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                225,
+                493,
+                387,
+                507
+            ],
+            "content": "X \\leftarrow X + \\delta ^ { - d } \\psi \\left( X , v - \\delta / 2 , v + \\delta / 2 \\right)",
+            "latex": "X \\leftarrow X + \\delta ^ { - d } \\psi \\left( X , v - \\delta / 2 , v + \\delta / 2 \\right)"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                203,
+                418,
+                409,
+                449
+            ],
+            "content": "```latex\n\\begin{align*}\n\\delta^{-(i-1)d} &\\leq \\langle u, X_i \\rangle \\leq \\delta^{-id} - \\delta && \\text{for all } i \\in [n] \\\\\n\\delta^{-(n+1)d} &= \\langle u, X_0 \\rangle\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\delta^{-(i-1)d} &\\leq \\langle u, X_i \\rangle \\leq \\delta^{-id} - \\delta && \\text{for all } i \\in [n] \\\\\n\\delta^{-(n+1)d} &= \\langle u, X_0 \\rangle\n\\end{align*}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                219,
+                559,
+                392,
+                573
+            ],
+            "content": "X \\leftarrow X + \\delta ^ { - n d } \\cdot \\psi \\left( X , v - \\delta / 2 , v + \\delta / 2 \\right)",
+            "latex": "X \\leftarrow X + \\delta ^ { - n d } \\cdot \\psi \\left( X , v - \\delta / 2 , v + \\delta / 2 \\right)"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                202,
+                103,
+                408,
+                132
+            ],
+            "content": "```latex\n\\tilde{\\psi}(Z;b)_i = \n\\begin{cases} \n(\\max_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j > b \\\\\n(\\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j < b\n\\end{cases}\n```",
+            "latex": "```latex\n\\tilde{\\psi}(Z;b)_i = \n\\begin{cases} \n(\\max_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j > b \\\\\n(\\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j < b\n\\end{cases}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                202,
+                103,
+                408,
+                132
+            ],
+            "content": "```latex\n\\tilde{\\psi}(Z;b)_i = \\begin{cases}\n(\\max_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j > b \\\\\n(\\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j < b\n\\end{cases}\n```",
+            "latex": "```latex\n\\tilde{\\psi}(Z;b)_i = \\begin{cases}\n(\\max_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j > b \\\\\n(\\min_{j \\in N(i)} u^T Z_j)e_1 & \\text{if } u^T Z_j < b\n\\end{cases}\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                162,
+                529,
+                462,
+                579
+            ],
+            "content": "( \\delta ^ { - ( n + 1 ) d } + 1 ) ^ { k } \\cdot \\tilde { f } _ { 0 } ^ { 0 } - \\sum _ { t = 2 } ^ { k } ( \\delta ^ { - ( n + 1 ) d } + 1 ) ^ { k - t } ( 2 \\delta ^ { - n d - d } + \\delta ^ { - n d } + 1 ) l _ { t }\n\n- ( \\delta ^ { - ( n + 1 ) d } + 1 ) ^ { k - 1 } ( \\delta ^ { - n d - d } + \\delta ^ { - n d } ) l _ { 1 } - l _ { k + 1 }",
+            "latex": "( \\delta ^ { - ( n + 1 ) d } + 1 ) ^ { k } \\cdot \\tilde { f } _ { 0 } ^ { 0 } - \\sum _ { t = 2 } ^ { k } ( \\delta ^ { - ( n + 1 ) d } + 1 ) ^ { k - t } ( 2 \\delta ^ { - n d - d } + \\delta ^ { - n d } + 1 ) l _ { t }\n\n- ( \\delta ^ { - ( n + 1 ) d } + 1 ) ^ { k - 1 } ( \\delta ^ { - n d - d } + \\delta ^ { - n d } ) l _ { 1 } - l _ { k + 1 }"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                149,
+                433,
+                380,
+                499
+            ],
+            "content": "```latex\n\\begin{align*}\n\\tilde{f}_0^k &= \\delta^{-nd} \\cdot (f_k - l_{k+1}) + \\tilde{f}_0^{k-1} \\\\\n&= \\delta^{-nd} \\cdot (\\delta^{-d}(\\tilde{f}_0^{k-1} - l_k) + l_k - l_{k+1}) + \\tilde{f}_0^{k-1} \\\\\n&= \\delta^{-(n+1)d} \\cdot (\\tilde{f}_0^{k-1} - l_k) + \\delta^{-nd}(l_k - l_{k+1}) + \\tilde{f}_0^{k-1} \\\\\n&= (\\delta^{-(n+1)d} + 1)\\tilde{f}_0^{k-1} - (\\delta^{-nd-d} + \\delta^{-nd})l_k - l_{k+1}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\tilde{f}_0^k &= \\delta^{-nd} \\cdot (f_k - l_{k+1}) + \\tilde{f}_0^{k-1} \\\\\n&= \\delta^{-nd} \\cdot (\\delta^{-d}(\\tilde{f}_0^{k-1} - l_k) + l_k - l_{k+1}) + \\tilde{f}_0^{k-1} \\\\\n&= \\delta^{-(n+1)d} \\cdot (\\tilde{f}_0^{k-1} - l_k) + \\delta^{-nd}(l_k - l_{k+1}) + \\tilde{f}_0^{k-1} \\\\\n&= (\\delta^{-(n+1)d} + 1)\\tilde{f}_0^{k-1} - (\\delta^{-nd-d} + \\delta^{-nd})l_k - l_{k+1}\n\\end{align*}\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                129,
+                71,
+                483,
+                120
+            ],
+            "content": "```latex\nS_k = (\\delta^{-(n+1)d} + 1)^k \\cdot \\delta^{-nd} - \\sum_{t=2}^{k} (\\delta^{-(n+1)d} + 1)^{k-t} (2\\delta^{-nd-d} + \\delta^{-nd} + 1) \\delta^{-(t-1)d} \\\\\n- (\\delta^{-(n+1)d} + 1)^{k-1} (\\delta^{-nd-d} + \\delta^{-nd}) - \\delta^{-kd}\n```",
+            "latex": "```latex\nS_k = (\\delta^{-(n+1)d} + 1)^k \\cdot \\delta^{-nd} - \\sum_{t=2}^{k} (\\delta^{-(n+1)d} + 1)^{k-t} (2\\delta^{-nd-d} + \\delta^{-nd} + 1) \\delta^{-(t-1)d} \\\\\n- (\\delta^{-(n+1)d} + 1)^{k-1} (\\delta^{-nd-d} + \\delta^{-nd}) - \\delta^{-kd}\n```"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                194,
+                346,
+                416,
+                362
+            ],
+            "content": "l _ { k } + 1 < l _ { k + 2 } \\cdots < l _ { n } < f _ { 1 } < f _ { 2 } < \\cdots < \\tilde { f } _ { 0 } ^ { k - 1 } < f _ { k }",
+            "latex": "l _ { k } + 1 < l _ { k + 2 } \\cdots < l _ { n } < f _ { 1 } < f _ { 2 } < \\cdots < \\tilde { f } _ { 0 } ^ { k - 1 } < f _ { k }"
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                219,
+                213,
+                426,
+                229
+            ],
+            "content": "l _ { k + 1 } < l _ { k + 2 } \\cdots < l _ { n } < f _ { 1 } < f _ { 2 } < \\cdots < f _ { k } < \\tilde { f } _ { 0 } ^ { k } .",
+            "latex": "l _ { k + 1 } < l _ { k + 2 } \\cdots < l _ { n } < f _ { 1 } < f _ { 2 } < \\cdots < f _ { k } < \\tilde { f } _ { 0 } ^ { k } ."
+        },
+        {
+            "page": 20,
+            "type": "formula",
+            "bbox": [
+                219,
+                213,
+                427,
+                229
+            ],
+            "content": "l _ { k + 1 } < l _ { k + 2 } \\cdots < l _ { n } < f _ { 1 } < f _ { 2 } < \\cdots < f _ { k } < \\tilde { f } _ { 0 } ^ { k } .",
+            "latex": "l _ { k + 1 } < l _ { k + 2 } \\cdots < l _ { n } < f _ { 1 } < f _ { 2 } < \\cdots < f _ { k } < \\tilde { f } _ { 0 } ^ { k } ."
+        },
+        {
+            "page": 21,
+            "type": "formula",
+            "bbox": [
+                258,
+                155,
+                352,
+                169
+            ],
+            "content": "g _ { v } ^ { t k n } ( g _ { c } ( L ) _ { j } ) = f ( L ) _ { j }",
+            "latex": "g _ { v } ^ { t k n } ( g _ { c } ( L ) _ { j } ) = f ( L ) _ { j }"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                174,
+                401,
+                437,
+                433
+            ],
+            "content": "```latex\n\\text{CROSSATTN}(\\mathbf{Y}_j)_i = \\sum_{h=1}^{H} \\sigma \\left( (\\mathbf{y}_i W_Q^h)(\\mathbf{K}^{(e)} W_K^h)^T \\right) \\cdot (\\mathbf{V}^{(e)} W_V^h)\n```",
+            "latex": "```latex\n\\text{CROSSATTN}(\\mathbf{Y}_j)_i = \\sum_{h=1}^{H} \\sigma \\left( (\\mathbf{y}_i W_Q^h)(\\mathbf{K}^{(e)} W_K^h)^T \\right) \\cdot (\\mathbf{V}^{(e)} W_V^h)\n```"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                233,
+                360,
+                332,
+                372
+            ],
+            "content": "p _ { i } = \\mathrm { A T T N } _ { D } ( Y _ { j } ) _ { i } + y _ { i }",
+            "latex": "p _ { i } = \\mathrm { A T T N } _ { D } ( Y _ { j } ) _ { i } + y _ { i }"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                234,
+                345,
+                384,
+                357
+            ],
+            "content": "\\boldsymbol { a } _ { i } = \\operatorname { C R O S S A T N } ( p _ { i } , K ^ { e } , V ^ { e } ) + p _ { i }",
+            "latex": "\\boldsymbol { a } _ { i } = \\operatorname { C R O S S A T N } ( p _ { i } , K ^ { e } , V ^ { e } ) + p _ { i }"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                234,
+                332,
+                305,
+                344
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n\\[ z_i = O(a_i) + a_i \\]",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n\\[ z_i = O(a_i) + a_i \\]"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                197,
+                608,
+                414,
+                653
+            ],
+            "content": "```latex\n\\boldsymbol{v} = \\begin{bmatrix}\nq_1, s_1, x_1, \\\\\nq_2, s_2, x_2, x_3, x_4, x_5, x_6, \\\\\ns_3, x_7, s_4, \\\\\nx_8, x_9, x_{10}, x_{11}, x_{12}, x_{13}, x_{14}, x_{15}, x_{16}\n\\end{bmatrix}\n```",
+            "latex": "```latex\n\\boldsymbol{v} = \\begin{bmatrix}\nq_1, s_1, x_1, \\\\\nq_2, s_2, x_2, x_3, x_4, x_5, x_6, \\\\\ns_3, x_7, s_4, \\\\\nx_8, x_9, x_{10}, x_{11}, x_{12}, x_{13}, x_{14}, x_{15}, x_{16}\n\\end{bmatrix}\n```"
+        },
+        {
+            "page": 22,
+            "type": "formula",
+            "bbox": [
+                196,
+                608,
+                414,
+                652
+            ],
+            "content": "```latex\n\\boldsymbol{v} = \\left[ \\begin{array}{ccccccccc}\n\\boldsymbol{q}_1, \\boldsymbol{s}_1, x_1, \\\\\n\\boldsymbol{q}_2, \\boldsymbol{s}_2, x_2, x_3, x_4, x_5, x_6, \\\\\n\\boldsymbol{s}_3, x_7, \\boldsymbol{s}_4, \\\\\nx_8, x_9, x_{10}, x_{11}, x_{12}, x_{13}, x_{14}, x_{15}, x_{16}\n\\end{array} \\right]\n```",
+            "latex": "```latex\n\\boldsymbol{v} = \\left[ \\begin{array}{ccccccccc}\n\\boldsymbol{q}_1, \\boldsymbol{s}_1, x_1, \\\\\n\\boldsymbol{q}_2, \\boldsymbol{s}_2, x_2, x_3, x_4, x_5, x_6, \\\\\n\\boldsymbol{s}_3, x_7, \\boldsymbol{s}_4, \\\\\nx_8, x_9, x_{10}, x_{11}, x_{12}, x_{13}, x_{14}, x_{15}, x_{16}\n\\end{array} \\right]\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                155,
+                460,
+                458,
+                532
+            ],
+            "content": "```latex\n\\left(\\frac{j(j+1)}{2} + k, \\frac{k(k+1)}{2}\\right) \\text{ and }\n\n\\left(\\frac{j(j+1)}{2} + k, \\frac{j(j+1)}{2} + k\\right) \\text{ if } k > 1 \\text{ else } \\left(\\frac{j(j+1)}{2} + 1, \\frac{j(j+1)}{2}\\right).\n```",
+            "latex": "```latex\n\\left(\\frac{j(j+1)}{2} + k, \\frac{k(k+1)}{2}\\right) \\text{ and }\n\n\\left(\\frac{j(j+1)}{2} + k, \\frac{j(j+1)}{2} + k\\right) \\text{ if } k > 1 \\text{ else } \\left(\\frac{j(j+1)}{2} + 1, \\frac{j(j+1)}{2}\\right).\n```"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                156,
+                461,
+                288,
+                489
+            ],
+            "content": "{ \\bigg ( } { \\frac { j ( j + 1 ) } { 2 } } + k , { \\frac { k ( k + 1 ) } { 2 } } { \\bigg ) }",
+            "latex": "{ \\bigg ( } { \\frac { j ( j + 1 ) } { 2 } } + k , { \\frac { k ( k + 1 ) } { 2 } } { \\bigg ) }"
+        },
+        {
+            "page": 23,
+            "type": "formula",
+            "bbox": [
+                155,
+                503,
+                457,
+                532
+            ],
+            "content": "( { \\frac { j ( j + 1 ) } { 2 } } + k , { \\frac { j ( j + 1 ) } { 2 } } + k ) { \\mathrm { ~ i f ~ } } k > 1 { \\mathrm { ~ e l s e ~ } } \\left( { \\frac { j ( j + 1 ) } { 2 } } + 1 , { \\frac { j ( j + 1 ) } { 2 } } \\right) .",
+            "latex": "( { \\frac { j ( j + 1 ) } { 2 } } + k , { \\frac { j ( j + 1 ) } { 2 } } + k ) { \\mathrm { ~ i f ~ } } k > 1 { \\mathrm { ~ e l s e ~ } } \\left( { \\frac { j ( j + 1 ) } { 2 } } + 1 , { \\frac { j ( j + 1 ) } { 2 } } \\right) ."
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                212,
+                245,
+                399,
+                297
+            ],
+            "content": "```latex\n\\mathbf{y}_i = \n\\begin{bmatrix}\n\\lfloor q^{g(i)} \\rfloor, \\lfloor s^{g(i)} \\rfloor, c^{g(i)}, \\\\\n0, \\ldots, 0, \\\\\n\\mathbf{0}_s, 0, \\lfloor w^{(i)} \\rfloor, \\\\\n0, 0, 0, 0, u_1^{(i)}, u_2^{(i)}, u_3^{(i)}, u_4^{(i)}\n\\end{bmatrix}\n```",
+            "latex": "```latex\n\\mathbf{y}_i = \n\\begin{bmatrix}\n\\lfloor q^{g(i)} \\rfloor, \\lfloor s^{g(i)} \\rfloor, c^{g(i)}, \\\\\n0, \\ldots, 0, \\\\\n\\mathbf{0}_s, 0, \\lfloor w^{(i)} \\rfloor, \\\\\n0, 0, 0, 0, u_1^{(i)}, u_2^{(i)}, u_3^{(i)}, u_4^{(i)}\n\\end{bmatrix}\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                240,
+                363,
+                365,
+                410
+            ],
+            "content": "y _ { 1 } \\ = \\ [ \\ [ q _ { \\mathrm { i n i t } } ] , [ \\# ] , 0 ,",
+            "latex": "y _ { 1 } \\ = \\ [ \\ [ q _ { \\mathrm { i n i t } } ] , [ \\# ] , 0 ,"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                165,
+                522,
+                445,
+                576
+            ],
+            "content": "```latex\n\\overline{\\boldsymbol{y}}_{i} = \\left[ \\begin{array}{c}\n\\llbracket q^{g(i)} \\rrbracket, \\llbracket s^{g(i)} \\rrbracket, c^{g(i)}, \\\\\n0, \\ldots, 0, \\\\\n\\mathbf{0}_{s}, 0, \\llbracket w^{(i)} \\rrbracket, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), u_{1}^{(i)}, u_{2}^{(i)}, u_{3}^{(i)}, u_{4}^{(i)}\n\\end{array} \\right]\n```",
+            "latex": "```latex\n\\overline{\\boldsymbol{y}}_{i} = \\left[ \\begin{array}{c}\n\\llbracket q^{g(i)} \\rrbracket, \\llbracket s^{g(i)} \\rrbracket, c^{g(i)}, \\\\\n0, \\ldots, 0, \\\\\n\\mathbf{0}_{s}, 0, \\llbracket w^{(i)} \\rrbracket, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), u_{1}^{(i)}, u_{2}^{(i)}, u_{3}^{(i)}, u_{4}^{(i)}\n\\end{array} \\right]\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                177,
+                677,
+                429,
+                726
+            ],
+            "content": "```latex\n\\text{CROSSATTN}(p_i^1, K^e, V^e) = \n\\begin{bmatrix}\n0, \\ldots, 0, \\\\\n0, \\ldots, 0, \\\\\n[\\alpha^{g(i)+1}], \\beta^{g(i)+1}, \\mathbf{0}_s, \\\\\n0, \\ldots, 0\n\\end{bmatrix}\n```",
+            "latex": "```latex\n\\text{CROSSATTN}(p_i^1, K^e, V^e) = \n\\begin{bmatrix}\n0, \\ldots, 0, \\\\\n0, \\ldots, 0, \\\\\n[\\alpha^{g(i)+1}], \\beta^{g(i)+1}, \\mathbf{0}_s, \\\\\n0, \\ldots, 0\n\\end{bmatrix}\n```"
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                190,
+                490,
+                420,
+                504
+            ],
+            "content": "{ \\boldsymbol { y } } _ { 1 } + \\operatorname { p o s } _ { \\mathrm { D e c } } ( 1 ) , \\, { \\boldsymbol { y } } _ { 2 } + \\operatorname { p o s } _ { \\mathrm { D e c } } ( 2 ) , \\, \\ldots , \\, { \\boldsymbol { y } } _ { r } + \\operatorname { p o s } _ { \\mathrm { D e c } } ( r ) .",
+            "latex": "{ \\boldsymbol { y } } _ { 1 } + \\operatorname { p o s } _ { \\mathrm { D e c } } ( 1 ) , \\, { \\boldsymbol { y } } _ { 2 } + \\operatorname { p o s } _ { \\mathrm { D e c } } ( 2 ) , \\, \\ldots , \\, { \\boldsymbol { y } } _ { r } + \\operatorname { p o s } _ { \\mathrm { D e c } } ( r ) ."
+        },
+        {
+            "page": 24,
+            "type": "formula",
+            "bbox": [
+                171,
+                99,
+                440,
+                148
+            ],
+            "content": "```latex\n\\text{pos}_{\\text{Dec}}(i) \\quad = \\quad [ \\begin{array}{c}\n0, \\ldots, 0, \\\\\n0, \\ldots, 0, \\\\\n0, \\ldots, 0, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), 0, 0, 0, 0\n\\end{array} ]\n```",
+            "latex": "```latex\n\\text{pos}_{\\text{Dec}}(i) \\quad = \\quad [ \\begin{array}{c}\n0, \\ldots, 0, \\\\\n0, \\ldots, 0, \\\\\n0, \\ldots, 0, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), 0, 0, 0, 0\n\\end{array} ]\n```"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                114,
+                508,
+                485,
+                568
+            ],
+            "content": "```latex\nz_{i}^{2} = O_{2}(a_{i}^{2}) + a_{i}^{2} = \\begin{bmatrix}\n\\left\\lfloor q^{g(i)} \\right\\rfloor, \\left\\lfloor s^{g(i)} \\right\\rfloor, c^{g(i)}, \\\\\n\\left\\lfloor q^{g(i)+1} \\right\\rfloor, \\left\\lfloor v^{g(i)} \\right\\rfloor, c^{g(i)+1}, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^{2}}, \\frac{c^{g(i)+1}}{g(i)+1}, \\frac{c^{g(i)}}{g(i)+1}, \\\\\n\\left\\lfloor \\alpha^{g(i)+1} \\right\\rfloor, \\beta^{g(i)+1}, \\left\\lfloor w^{(i)} \\right\\rfloor, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^{2}}, h(i), u_{1}^{(i)}, u_{2}^{(i)}, u_{3}^{(i)}, u_{4}^{(i)}\n\\end{bmatrix}\n```",
+            "latex": "```latex\nz_{i}^{2} = O_{2}(a_{i}^{2}) + a_{i}^{2} = \\begin{bmatrix}\n\\left\\lfloor q^{g(i)} \\right\\rfloor, \\left\\lfloor s^{g(i)} \\right\\rfloor, c^{g(i)}, \\\\\n\\left\\lfloor q^{g(i)+1} \\right\\rfloor, \\left\\lfloor v^{g(i)} \\right\\rfloor, c^{g(i)+1}, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^{2}}, \\frac{c^{g(i)+1}}{g(i)+1}, \\frac{c^{g(i)}}{g(i)+1}, \\\\\n\\left\\lfloor \\alpha^{g(i)+1} \\right\\rfloor, \\beta^{g(i)+1}, \\left\\lfloor w^{(i)} \\right\\rfloor, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^{2}}, h(i), u_{1}^{(i)}, u_{2}^{(i)}, u_{3}^{(i)}, u_{4}^{(i)}\n\\end{bmatrix}\n```"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                165,
+                100,
+                446,
+                167
+            ],
+            "content": "```latex\n\\begin{equation}\na_i^1 = \\text{CROSSATTN}(p_i^1, K^e, V^e) + p_i^1\n= \\left[\n\\begin{array}{c}\n\\llbracket q^{g(i)} \\rrbracket, \\llbracket s^{g(i)} \\rrbracket, c^{g(i)}, \\\\\n0, \\ldots, 0, \\\\\n\\llbracket \\alpha^{g(i)+1} \\rrbracket, \\beta^{g(i)+1}, \\llbracket w^{(i)} \\rrbracket, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), u_1^{(i)}, u_2^{(i)}, u_3^{(i)}, u_4^{(i)}\n\\end{array}\n\\right]\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\na_i^1 = \\text{CROSSATTN}(p_i^1, K^e, V^e) + p_i^1\n= \\left[\n\\begin{array}{c}\n\\llbracket q^{g(i)} \\rrbracket, \\llbracket s^{g(i)} \\rrbracket, c^{g(i)}, \\\\\n0, \\ldots, 0, \\\\\n\\llbracket \\alpha^{g(i)+1} \\rrbracket, \\beta^{g(i)+1}, \\llbracket w^{(i)} \\rrbracket, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), u_1^{(i)}, u_2^{(i)}, u_3^{(i)}, u_4^{(i)}\n\\end{array}\n\\right]\n\\end{equation}\n```"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                207,
+                666,
+                403,
+                694
+            ],
+            "content": "O ( [ x , y , z , b ] ) ) = \\left\\{ \\begin{array} { l l } { { [ 0 , 0 , 0 , 0 ] } } & { { \\mathrm { i f ~ } b = 1 , } } \\\\ { { [ 0 , z - y , - z , 0 ] } } & { { \\mathrm { i f ~ } b = 0 . } } \\end{array} \\right.",
+            "latex": "O ( [ x , y , z , b ] ) ) = \\left\\{ \\begin{array} { l l } { { [ 0 , 0 , 0 , 0 ] } } & { { \\mathrm { i f ~ } b = 1 , } } \\\\ { { [ 0 , z - y , - z , 0 ] } } & { { \\mathrm { i f ~ } b = 0 . } } \\end{array} \\right."
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                132,
+                335,
+                478,
+                392
+            ],
+            "content": "```latex\nz_{i}^{1} = O_{1}(a_{i}^{1}) + a_{i}^{1} \\quad = \\quad \n\\begin{bmatrix}\n\\llbracket q^{g(i)} \\rrbracket, \\llbracket s^{g(i)} \\rrbracket, c^{g(i)}, \\\\\n\\llbracket q^{g(i)+1} \\rrbracket, \\llbracket v^{g(i)} \\rrbracket, m^{g(i)}, 0, 0, 0, 0, \\\\\n\\llbracket \\alpha^{g(i)+1} \\rrbracket, \\beta^{g(i)+1}, \\llbracket w^{(i)} \\rrbracket, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), u_{1}^{(i)}, u_{2}^{(i)}, u_{3}^{(i)}, u_{4}^{(i)}\n\\end{bmatrix}\n```",
+            "latex": "```latex\nz_{i}^{1} = O_{1}(a_{i}^{1}) + a_{i}^{1} \\quad = \\quad \n\\begin{bmatrix}\n\\llbracket q^{g(i)} \\rrbracket, \\llbracket s^{g(i)} \\rrbracket, c^{g(i)}, \\\\\n\\llbracket q^{g(i)+1} \\rrbracket, \\llbracket v^{g(i)} \\rrbracket, m^{g(i)}, 0, 0, 0, 0, \\\\\n\\llbracket \\alpha^{g(i)+1} \\rrbracket, \\beta^{g(i)+1}, \\llbracket w^{(i)} \\rrbracket, \\\\\n1, g(i) + 1, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, h(i), u_{1}^{(i)}, u_{2}^{(i)}, u_{3}^{(i)}, u_{4}^{(i)}\n\\end{bmatrix}\n```"
+        },
+        {
+            "page": 25,
+            "type": "formula",
+            "bbox": [
+                190,
+                231,
+                422,
+                279
+            ],
+            "content": "```latex\nO_{1}(\\boldsymbol{a}_{i}^{1}) = \n\\left[\n\\begin{array}{cccccc}\n0, \\ldots, 0, \\\\\n\\lfloor q^{g(i)+1} \\rfloor, \\lfloor v^{g(i)} \\rfloor, m^{g(i)}, 0, 0, 0, 0 \\\\\n0, \\ldots, 0 \\\\\n0, \\ldots, 0\n\\end{array}\n\\right]\n```",
+            "latex": "```latex\nO_{1}(\\boldsymbol{a}_{i}^{1}) = \n\\left[\n\\begin{array}{cccccc}\n0, \\ldots, 0, \\\\\n\\lfloor q^{g(i)+1} \\rfloor, \\lfloor v^{g(i)} \\rfloor, m^{g(i)}, 0, 0, 0, 0 \\\\\n0, \\ldots, 0 \\\\\n0, \\ldots, 0\n\\end{array}\n\\right]\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                136,
+                101,
+                465,
+                159
+            ],
+            "content": "```latex\nz_{i}^{3} = O_{3}(a_{i}^{3}) + a_{i}^{3}\n= \\left[ \n\\begin{array}{c}\n0, \\ldots, 0, \\\\\n\\llbracket \\hat{q}^{(i)} \\rrbracket, \\llbracket \\hat{v}^{(i)} \\rrbracket, \\hat{c}^{(i)}, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, \\frac{c g(i)+1}{g(i)+1}, \\hat{u}_{4}^{(i)}, \\\\\n\\llbracket \\hat{\\alpha}^{(i)} \\rrbracket, \\hat{\\beta}^{(i)}, \\mathbf{0}_{s}, \\\\\n1, \\hat{u}_{1}^{(i)}, \\hat{u}_{2}^{(i)}, \\hat{u}_{3}^{(i)}, h(i), 0, 0, 0, 0\n\\end{array}\n\\right]\n```",
+            "latex": "```latex\nz_{i}^{3} = O_{3}(a_{i}^{3}) + a_{i}^{3}\n= \\left[ \n\\begin{array}{c}\n0, \\ldots, 0, \\\\\n\\llbracket \\hat{q}^{(i)} \\rrbracket, \\llbracket \\hat{v}^{(i)} \\rrbracket, \\hat{c}^{(i)}, \\frac{1}{g(i)+1}, \\frac{1}{(g(i)+1)^2}, \\frac{c g(i)+1}{g(i)+1}, \\hat{u}_{4}^{(i)}, \\\\\n\\llbracket \\hat{\\alpha}^{(i)} \\rrbracket, \\hat{\\beta}^{(i)}, \\mathbf{0}_{s}, \\\\\n1, \\hat{u}_{1}^{(i)}, \\hat{u}_{2}^{(i)}, \\hat{u}_{3}^{(i)}, h(i), 0, 0, 0, 0\n\\end{array}\n\\right]\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                148,
+                305,
+                410,
+                332
+            ],
+            "content": "```latex\n\\hat{\\alpha}^{(i)} = \n\\begin{cases}\n\\alpha^{g(i)+1} & \\text{if } h(i) = 1 \\\\\ns^{g(i)} & \\text{if } h(i) = 0\n\\end{cases}, \\quad\n\\hat{\\beta}^{(i)} = \n\\begin{cases}\n\\beta^{g(i)+1} & \\text{if } h(i) = 1 \\\\\ng(i) + 1 & \\text{if } h(i) = 0\n\\end{cases}.\n```",
+            "latex": "```latex\n\\hat{\\alpha}^{(i)} = \n\\begin{cases}\n\\alpha^{g(i)+1} & \\text{if } h(i) = 1 \\\\\ns^{g(i)} & \\text{if } h(i) = 0\n\\end{cases}, \\quad\n\\hat{\\beta}^{(i)} = \n\\begin{cases}\n\\beta^{g(i)+1} & \\text{if } h(i) = 1 \\\\\ng(i) + 1 & \\text{if } h(i) = 0\n\\end{cases}.\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                156,
+                491,
+                446,
+                549
+            ],
+            "content": "```latex\nz_{i}^{3} = \n\\begin{bmatrix}\n0, \\ldots, 0, \\\\\n\\llbracket q^{g(i+1)} \\rrbracket, \\llbracket \\hat{v}^{(i)} \\rrbracket, c^{g(i+1)}, \\frac{1}{g(i+1)}, \\frac{1}{(g(i+1))^2}, \\frac{c^{g(i+1)}}{g(i+1)}, \\hat{u}_{4}^{(i)}, \\\\\n\\llbracket \\hat{\\alpha}^{(i)} \\rrbracket, \\hat{\\beta}^{(i)}, \\mathbf{0}_{s}, \\\\\n1, \\hat{u}_{1}^{(i)}, \\hat{u}_{2}^{(i)}, \\hat{u}_{3}^{(i)}, h(i), 0, 0, 0, 0\n\\end{bmatrix}\n```",
+            "latex": "```latex\nz_{i}^{3} = \n\\begin{bmatrix}\n0, \\ldots, 0, \\\\\n\\llbracket q^{g(i+1)} \\rrbracket, \\llbracket \\hat{v}^{(i)} \\rrbracket, c^{g(i+1)}, \\frac{1}{g(i+1)}, \\frac{1}{(g(i+1))^2}, \\frac{c^{g(i+1)}}{g(i+1)}, \\hat{u}_{4}^{(i)}, \\\\\n\\llbracket \\hat{\\alpha}^{(i)} \\rrbracket, \\hat{\\beta}^{(i)}, \\mathbf{0}_{s}, \\\\\n1, \\hat{u}_{1}^{(i)}, \\hat{u}_{2}^{(i)}, \\hat{u}_{3}^{(i)}, h(i), 0, 0, 0, 0\n\\end{bmatrix}\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                147,
+                381,
+                414,
+                449
+            ],
+            "content": "```latex\n\\begin{align*}\n\\hat{u}_1^{(i)} &= \n\\begin{cases} \ng(i) + 1 & \\text{if } h(i) = 1 \\\\\nu_1^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\\\\n\\hat{u}_2^{(i)} &= \n\\begin{cases} \n\\frac{1}{(g(i)+1)} & \\text{if } h(i) = 1 \\\\\nu_2^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\\\\n\\hat{u}_3^{(i)} &= \n\\begin{cases} \n\\frac{1}{(g(i)+1)^2} & \\text{if } h(i) = 1 \\\\\nu_3^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\\\\n\\hat{u}_4^{(i)} &= \n\\begin{cases} \nc^{g(i)} & \\text{if } h(i) = 1 \\\\\nu_4^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\hat{u}_1^{(i)} &= \n\\begin{cases} \ng(i) + 1 & \\text{if } h(i) = 1 \\\\\nu_1^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\\\\n\\hat{u}_2^{(i)} &= \n\\begin{cases} \n\\frac{1}{(g(i)+1)} & \\text{if } h(i) = 1 \\\\\nu_2^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\\\\n\\hat{u}_3^{(i)} &= \n\\begin{cases} \n\\frac{1}{(g(i)+1)^2} & \\text{if } h(i) = 1 \\\\\nu_3^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\\\\n\\hat{u}_4^{(i)} &= \n\\begin{cases} \nc^{g(i)} & \\text{if } h(i) = 1 \\\\\nu_4^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}.\n\\end{align*}\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                147,
+                207,
+                505,
+                234
+            ],
+            "content": "```latex\n\\hat{q}^{(i)} = \n\\begin{cases}\nq^{g(i)+1} & \\text{if } h(i) = 1 \\\\\nq^{g(i)} & \\text{if } h(i) = 0\n\\end{cases}, \\quad\n\\hat{v}^{(i)} = \n\\begin{cases}\nv^{g(i)} & \\text{if } h(i) = 1 \\\\\nw^{(i)} & \\text{if } h(i) = 0\n\\end{cases}, \\quad\n\\hat{c}^{(i)} = \n\\begin{cases}\nc^{g(i)+1} & \\text{if } h(i) = 1 \\\\\nc^{g(i)} & \\text{if } h(i) = 0\n\\end{cases}.\n```",
+            "latex": "```latex\n\\hat{q}^{(i)} = \n\\begin{cases}\nq^{g(i)+1} & \\text{if } h(i) = 1 \\\\\nq^{g(i)} & \\text{if } h(i) = 0\n\\end{cases}, \\quad\n\\hat{v}^{(i)} = \n\\begin{cases}\nv^{g(i)} & \\text{if } h(i) = 1 \\\\\nw^{(i)} & \\text{if } h(i) = 0\n\\end{cases}, \\quad\n\\hat{c}^{(i)} = \n\\begin{cases}\nc^{g(i)+1} & \\text{if } h(i) = 1 \\\\\nc^{g(i)} & \\text{if } h(i) = 0\n\\end{cases}.\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                183,
+                673,
+                428,
+                727
+            ],
+            "content": "```latex\nQ_4(z_i^3) = \\left[ \n\\begin{array}{cccccc}\n0, & \\ldots, & 0 \\\\\n0, & \\ldots, & 0 \\\\\n0, & \\ldots, & 0 \\\\\n0, & \\frac{c^{g(i)+1}}{g(i)+1}, & \\frac{1}{g(i)+1}, & \\frac{1}{3(g(i)+1)^2}, & 0, & 0, & 0, & 0, & 0 \\\\\n\\end{array} \n\\right]\n```",
+            "latex": "```latex\nQ_4(z_i^3) = \\left[ \n\\begin{array}{cccccc}\n0, & \\ldots, & 0 \\\\\n0, & \\ldots, & 0 \\\\\n0, & \\ldots, & 0 \\\\\n0, & \\frac{c^{g(i)+1}}{g(i)+1}, & \\frac{1}{g(i)+1}, & \\frac{1}{3(g(i)+1)^2}, & 0, & 0, & 0, & 0, & 0 \\\\\n\\end{array} \n\\right]\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                183,
+                673,
+                428,
+                727
+            ],
+            "content": "```latex\nQ_4(z_i^3) = \\left[ \n\\begin{array}{c}\n0, \\ldots, 0 \\\\\n0, \\ldots, 0 \\\\\n0, \\ldots, 0 \\\\\n0, \\frac{c^{g(i)+1}}{g(i)+1}, \\frac{1}{g(i)+1}, \\frac{1}{3(g(i)+1)^2}, 0, 0, 0, 0, 0\n\\end{array} \n\\right]\n```",
+            "latex": "```latex\nQ_4(z_i^3) = \\left[ \n\\begin{array}{c}\n0, \\ldots, 0 \\\\\n0, \\ldots, 0 \\\\\n0, \\ldots, 0 \\\\\n0, \\frac{c^{g(i)+1}}{g(i)+1}, \\frac{1}{g(i)+1}, \\frac{1}{3(g(i)+1)^2}, 0, 0, 0, 0, 0\n\\end{array} \n\\right]\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                148,
+                381,
+                415,
+                411
+            ],
+            "content": "```latex\n\\hat{u}_1^{(i)} = \n\\begin{cases} \ng(i) + 1 & \\text{if } h(i) = 1 \\\\\nu_1^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\quad\n\\hat{u}_2^{(i)} = \n\\begin{cases} \n\\frac{1}{(g(i) + 1)} & \\text{if } h(i) = 1 \\\\\n\\frac{1}{u_2^{(i)}} & \\text{if } h(i) = 0 \n\\end{cases}.\n```",
+            "latex": "```latex\n\\hat{u}_1^{(i)} = \n\\begin{cases} \ng(i) + 1 & \\text{if } h(i) = 1 \\\\\nu_1^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\quad\n\\hat{u}_2^{(i)} = \n\\begin{cases} \n\\frac{1}{(g(i) + 1)} & \\text{if } h(i) = 1 \\\\\n\\frac{1}{u_2^{(i)}} & \\text{if } h(i) = 0 \n\\end{cases}.\n```"
+        },
+        {
+            "page": 26,
+            "type": "formula",
+            "bbox": [
+                148,
+                418,
+                409,
+                449
+            ],
+            "content": "```latex\n\\hat{u}_3^{(i)} = \n\\begin{cases} \n\\frac{1}{(g(i)+1)^2} & \\text{if } h(i) = 1 \\\\\nu_3^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\quad\n\\hat{u}_4^{(i)} = \n\\begin{cases} \n\\frac{c^{g(i)}}{g(i)+1} & \\text{if } h(i) = 1 \\\\\nu_4^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}.\n```",
+            "latex": "```latex\n\\hat{u}_3^{(i)} = \n\\begin{cases} \n\\frac{1}{(g(i)+1)^2} & \\text{if } h(i) = 1 \\\\\nu_3^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}, \\quad\n\\hat{u}_4^{(i)} = \n\\begin{cases} \n\\frac{c^{g(i)}}{g(i)+1} & \\text{if } h(i) = 1 \\\\\nu_4^{(i)} & \\text{if } h(i) = 0 \n\\end{cases}.\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                186,
+                626,
+                424,
+                689
+            ],
+            "content": "```latex\nF(z_r^4) = \n\\begin{bmatrix}\n\\llbracket q^{g(r+1)} \\rrbracket, \\llbracket s^{g(r+1)} \\rrbracket, c^{g(r+1)}, \\\\\n0, \\ldots, 0, \\\\\n\\mathbf{0}_s, 0, \\llbracket w^{(r+1)} \\rrbracket, \\\\\n0, 0, 0, 0, 0, u_1^{(r+1)}, u_2^{(r+1)}, u_3^{(r+1)}, u_4^{(r+1)}\n\\end{bmatrix} = y_{r+1}\n```",
+            "latex": "```latex\nF(z_r^4) = \n\\begin{bmatrix}\n\\llbracket q^{g(r+1)} \\rrbracket, \\llbracket s^{g(r+1)} \\rrbracket, c^{g(r+1)}, \\\\\n0, \\ldots, 0, \\\\\n\\mathbf{0}_s, 0, \\llbracket w^{(r+1)} \\rrbracket, \\\\\n0, 0, 0, 0, 0, u_1^{(r+1)}, u_2^{(r+1)}, u_3^{(r+1)}, u_4^{(r+1)}\n\\end{bmatrix} = y_{r+1}\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                202,
+                69,
+                410,
+                167
+            ],
+            "content": "```latex\nK_{4}(z_{i}^{3}) &= \\left[\\begin{array}{c}\n0,\\ldots,0\\\\\n0,\\ldots,0,\\\\\n0,\\ldots,0,\\\\\n0,\\hat{u}_{2}^{(i)},\\hat{u}_{4}^{(i)},\\hat{u}_{3}^{(i)},0,0,0,0,0\n\\end{array}\\right]\\\\\nV_{4}(z_{i}^{3}) &= \\left[\\begin{array}{c}\n0,\\ldots,0,\\\\\n0,\\ldots,0,\\\\\n\\mathbf{0}_{s},0,[\\hat{v}^{(i)}],\\\\\n0,0,0,0,0,\\hat{u}_{1}^{(i)},\\hat{u}_{2}^{(i)},\\hat{u}_{3}^{(i)},\\hat{u}_{4}^{(i)}\n\\end{array}\\right]\n```",
+            "latex": "```latex\nK_{4}(z_{i}^{3}) &= \\left[\\begin{array}{c}\n0,\\ldots,0\\\\\n0,\\ldots,0,\\\\\n0,\\ldots,0,\\\\\n0,\\hat{u}_{2}^{(i)},\\hat{u}_{4}^{(i)},\\hat{u}_{3}^{(i)},0,0,0,0,0\n\\end{array}\\right]\\\\\nV_{4}(z_{i}^{3}) &= \\left[\\begin{array}{c}\n0,\\ldots,0,\\\\\n0,\\ldots,0,\\\\\n\\mathbf{0}_{s},0,[\\hat{v}^{(i)}],\\\\\n0,0,0,0,0,\\hat{u}_{1}^{(i)},\\hat{u}_{2}^{(i)},\\hat{u}_{3}^{(i)},\\hat{u}_{4}^{(i)}\n\\end{array}\\right]\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                194,
+                236,
+                417,
+                259
+            ],
+            "content": "```latex\nm(t) = \\arg\\min_{m \\in \\{0, \\ldots, t\\}} \\chi_t^j = \\arg\\min_{m \\in \\{0, \\ldots, t\\}} |\\langle Q_4(z_j^3), K_4(z_m^3) \\rangle|\n```",
+            "latex": "```latex\nm(t) = \\arg\\min_{m \\in \\{0, \\ldots, t\\}} \\chi_t^j = \\arg\\min_{m \\in \\{0, \\ldots, t\\}} |\\langle Q_4(z_j^3), K_4(z_m^3) \\rangle|\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                170,
+                459,
+                442,
+                528
+            ],
+            "content": "```latex\n\\begin{equation}\np_{i}^{4} = \\text{ATTN}_{D}(Z_{i}^{3}) + z_{i}^{3}\n= \\left[\n\\begin{array}{c}\n0, \\ldots, 0, \\\\\n\\llbracket q^{g(i+1)} \\rrbracket, \\llbracket \\hat{v}^{(i)} \\rrbracket, c^{g(i+1)}, 0, \\frac{c^{g(i+1)}}{g(i+1)}, \\hat{u}_{4}^{(i)}, \\\\\n\\llbracket \\hat{\\alpha}^{(i)} \\rrbracket, \\hat{\\beta}^{(i)}, \\llbracket w^{(i+1)} \\rrbracket, \\\\\n1, \\hat{u}_{1}^{(i)}, \\hat{u}_{2}^{(i)}, \\hat{u}_{3}^{(i)}, h(i), u_{1}^{(i+1)}, u_{2}^{(i+1)}, u_{3}^{(i+1)}, u_{4}^{(i+1)}\n\\end{array}\n\\right]\n\\end{equation}\n```",
+            "latex": "```latex\n\\begin{equation}\np_{i}^{4} = \\text{ATTN}_{D}(Z_{i}^{3}) + z_{i}^{3}\n= \\left[\n\\begin{array}{c}\n0, \\ldots, 0, \\\\\n\\llbracket q^{g(i+1)} \\rrbracket, \\llbracket \\hat{v}^{(i)} \\rrbracket, c^{g(i+1)}, 0, \\frac{c^{g(i+1)}}{g(i+1)}, \\hat{u}_{4}^{(i)}, \\\\\n\\llbracket \\hat{\\alpha}^{(i)} \\rrbracket, \\hat{\\beta}^{(i)}, \\llbracket w^{(i+1)} \\rrbracket, \\\\\n1, \\hat{u}_{1}^{(i)}, \\hat{u}_{2}^{(i)}, \\hat{u}_{3}^{(i)}, h(i), u_{1}^{(i+1)}, u_{2}^{(i+1)}, u_{3}^{(i+1)}, u_{4}^{(i+1)}\n\\end{array}\n\\right]\n\\end{equation}\n```"
+        },
+        {
+            "page": 27,
+            "type": "formula",
+            "bbox": [
+                248,
+                389,
+                363,
+                403
+            ],
+            "content": "w ^ { ( j ( j + 1 ) / 2 + k + 1 ) } = \\hat { v } ^ { m ( k - 1 ) }",
+            "latex": "w ^ { ( j ( j + 1 ) / 2 + k + 1 ) } = \\hat { v } ^ { m ( k - 1 ) }"
+        },
+        {
+            "page": 28,
+            "type": "formula",
+            "bbox": [
+                152,
+                655,
+                458,
+                671
+            ],
+            "content": "```latex\na_i = \\text{Attn}(Q(x_i), K(X), V(X)) + x_i = [u_i; u_{\\arg\\max_j \\langle -u_i, u_j \\rangle}] = [u_i; u_{i^*}]\n```",
+            "latex": "```latex\na_i = \\text{Attn}(Q(x_i), K(X), V(X)) + x_i = [u_i; u_{\\arg\\max_j \\langle -u_i, u_j \\rangle}] = [u_i; u_{i^*}]\n```"
+        },
+        {
+            "page": 28,
+            "type": "formula",
+            "bbox": [
+                261,
+                536,
+                350,
+                550
+            ],
+            "content": "x _ { i } : = E ( u _ { i } ) = [ u _ { i } ; 0 ]",
+            "latex": "x _ { i } : = E ( u _ { i } ) = [ u _ { i } ; 0 ]"
+        },
+        {
+            "page": 28,
+            "type": "formula",
+            "bbox": [
+                270,
+                581,
+                342,
+                623
+            ],
+            "content": "```latex\nQ([a;b]) = -a \\\\\nK([a;b]) = a \\\\\nV([a;b]) = [0;a]\n```",
+            "latex": "```latex\nQ([a;b]) = -a \\\\\nK([a;b]) = a \\\\\nV([a;b]) = [0;a]\n```"
+        },
+        {
+            "page": 28,
+            "type": "formula",
+            "bbox": [
+                153,
+                655,
+                448,
+                671
+            ],
+            "content": "```latex\na_i = \\text{Attn}(Q(x_i), K(X), V(X)) + x_i = [u_i; u_{\\arg\\max_j \\langle -u_i, u_j \\rangle}] = [u_i; u_i]\n```",
+            "latex": "```latex\na_i = \\text{Attn}(Q(x_i), K(X), V(X)) + x_i = [u_i; u_{\\arg\\max_j \\langle -u_i, u_j \\rangle}] = [u_i; u_i]\n```"
+        },
+        {
+            "page": 29,
+            "type": "formula",
+            "bbox": [
+                207,
+                146,
+                405,
+                175
+            ],
+            "content": "```latex\na_i = \\text{ATTN}_D(Q(x_i), K(X_{N(i)}), V(X_{N(i)})) + x_i\n\nx_i = O(a_i) + a_i\n```",
+            "latex": "```latex\na_i = \\text{ATTN}_D(Q(x_i), K(X_{N(i)}), V(X_{N(i)})) + x_i\n\nx_i = O(a_i) + a_i\n```"
+        },
+        {
+            "page": 32,
+            "type": "formula",
+            "bbox": [
+                212,
+                275,
+                400,
+                300
+            ],
+            "content": "A _ { j s t } = \\sum _ { u } Q _ { j s u } ^ { \\prime } K _ { j t u } ^ { \\prime } , \\qquad j = 0 , 1 , . . . , [ n / b ]",
+            "latex": "A _ { j s t } = \\sum _ { u } Q _ { j s u } ^ { \\prime } K _ { j t u } ^ { \\prime } , \\qquad j = 0 , 1 , . . . , [ n / b ]"
+        }
+    ]
+}

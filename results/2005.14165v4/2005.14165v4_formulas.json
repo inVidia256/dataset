@@ -1,0 +1,18 @@
+{
+    "total_count": 1,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 43,
+            "type": "formula",
+            "bbox": [
+                222,
+                227,
+                425,
+                239
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\text{np.random.pareto}(\\alpha) > 1 - \\text{document\\_score}\n```\n\nThis will render the expression as shown in the image.",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\text{np.random.pareto}(\\alpha) > 1 - \\text{document\\_score}\n```\n\nThis will render the expression as shown in the image."
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "total_count": 7,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                307,
+                275,
+                502,
+                343
+            ],
+            "caption": "Figure 1: Attention based encoder. Input nodes are embedded and processed by N sequential layers, each consisting of a multi-head attention (MHA) and node-wise feed-forward (FF) sub-layer. The graph embedding is computed as the mean of node embeddings. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                107,
+                79,
+                501,
+                174
+            ],
+            "caption": "Figure 2: Attention based decoder for the TSP problem. The decoder takes as input the graph embedding and node embeddings. At each time step t, the context consist of the graph embedding and the embeddings of the first and last (previously output) node of the partial tour, where learned placeholders are used if t = 1. Nodes that cannot be visited (since they are already visited) are masked. The example shows how a tour π = (3, 1, 2, 4) is constructed. Best viewed in color. Figure 2: Attention based decoder for the TSP problem. The decoder takes as input the graph embedding and node embeddings. At each time step t, the context consist of the graph embedding and the embeddings of the first and last (previously output) node of the partial tour, where learned placeholders are used if t = 1. Nodes that cannot be visited (since they are already visited) are masked. The example shows how a tour π = (3, 1, 2, 4) is constructed. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                326,
+                207,
+                499,
+                297
+            ],
+            "caption": "Figure 3: Held-out validation set optimality gap as a function of the number of epochs for the Attention Model (AM) and Pointer Network (PN) with different baselines (two different seeds).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                113,
+                120,
+                499,
+                210
+            ],
+            "caption": "Figure 4: Illustration of weighted message passing using a dot-attention mechanism. Only computation of messages received by node 1 are shown for clarity. Best viewed in color. Figure 4: Illustration of weighted message passing using a dot-attention mechanism. Only computation of messages received by node 1 are shown for clarity. Best viewed in color.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page013.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                110,
+                285,
+                502,
+                472
+            ],
+            "caption": "Figure 5: Optimality gap of different methods as a function of problem size \\( n \\in \\{5, 10, 15, 20, 25, 30, 40, 50, 60, 75, 100, 125\\} \\). General baselines are drawn using dashed lines while learned algorithms are drawn with a solid line. Algorithms (general and learned) that perform search or sampling are plotted without connecting lines for clarity. The *, ***, *** and **** indicate that values are reported from Bello et al. (2016), Vinyals et al. (2015), Dai et al. (2017) and Nowak et al. (2017) respectively. Best viewed in color. (b) TSP50, four schedules for η (2 seeds)",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page016.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                108,
+                562,
+                500,
+                704
+            ],
+            "caption": "Figure 6: Validation set optimality gap as a function of the number of epochs for different η.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page016.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                109,
+                128,
+                501,
+                695
+            ],
+            "caption": "Figure 7: Example greedy solutions for the CVRP (n = 100). Edges from and to depot omitted for clarity. Legend order/coloring and arcs indicate the order in which the solution was generated. Legends indicate the number of stops, the used and available capacity and the distance per route.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page019.png"
+        }
+    ]
+}

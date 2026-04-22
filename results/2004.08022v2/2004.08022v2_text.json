@@ -1,0 +1,1810 @@
+{
+    "total_count": 164,
+    "content_type": "text",
+    "data": [
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                478,
+                527,
+                653
+            ],
+            "content": "2014; Gehring et al., 2017), Transformer and its variants (Vaswani et al., 2017; Dai et al., 2019), pre-trained auto-regressive language models such as XLNet (Yang et al., 2019) and GPT2 (Radford et al., 2019), etc. Performance has been improved significantly in lots of tasks such as machine translation (Bahdanau et al., 2014; Vaswani et al., 2017), dialogue systems (Vinyals and Le, 2015; Shang et al., 2015; Li, 2020), text summarization (Rush et al., 2015; Li et al., 2017; See et al., 2017), storytelling (Fan et al., 2018; See et al., 2019), poetry writing (Zhang and Lapata, 2014; Lau et al., 2018; Liao et al., 2019), etc."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                659,
+                527,
+                766
+            ],
+            "content": "Generally, most of the above mentioned tasks can be regarded as free text generation, which means that no constraints on the format and structure, say the number of words and rhyming rules. Note that tasks of dialogue generation and storytelling are almost in an open-ending generation style as long as the generated content is relevant with the conditional input text. Although there are"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                667,
+                292,
+                747
+            ],
+            "content": "Recent years have seen the tremendous progress in the area of natural language generation especially benefiting by the neural network models such as Recurrent Neural Networks (RNN) or Convolutional Neural Networks (CNN) based sequence-to-sequence (seq2seq) frameworks (Bahdanau et al.,"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                87,
+                244,
+                275,
+                638
+            ],
+            "content": "Neural text generation has made tremendous progress in various tasks. One common characteristic of most of the tasks is that the texts are not restricted to some rigid formats when generating. However, we may confront some special text paradigms such as Lyrics (assume the music score is given), Sonnet, SongCi (classical Chinese poetry of the Song dynasty), etc. The typical characteristics of these texts are in three folds: (1) They must comply fully with the rigid predefined formats. (2) They must obey some rhyming schemes. (3) Although they are restricted to some formats, the sentence integrity must be guaranteed. To the best of our knowledge, text generation based on the predefined rigid formats has not been well investigated. Therefore, we propose a simple and elegant framework named SongNet to tackle this problem. The backbone of the framework is a Transformer-based auto-regressive language model. Sets of symbols are tailor-designed to improve the modeling performance especially on format, rhyme, and sentence integrity. We improve the attention mechanism to impel the model to capture some future information on the format. A pre-training and fine-tuning framework is designed to further improve the generation quality. Extensive experiments conducted on two collected corpora demonstrate that our proposed framework generates significantly better results in terms of both automatic metrics and the human evaluation."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                390,
+                528,
+                449
+            ],
+            "content": "Figure 1: Examples of text with rigid formats. In lyrics, the syllables of the lyric words must align with the tones of the notation. In SongCi and Sonnet, there are strict rhyming schemes and the rhyming words are labeled in red color and italic font."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                72,
+                646,
+                155,
+                659
+            ],
+            "content": "The text content from the image is \"1 Introduction\"."
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                136,
+                68,
+                461,
+                86
+            ],
+            "content": "The text content from the image is:\n\n\"SongNet: Rigid Formats Controlled Text Generation\""
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                158,
+                223,
+                204,
+                236
+            ],
+            "content": "Abstract"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                161,
+                117,
+                439,
+                145
+            ],
+            "content": "The text content from the image is:\n\nPiji Li Haisong Zhang Xiaojiang Liu Shuming Shi\nTencent AI Lab, Shenzhen, China"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                110,
+                117,
+                490,
+                160
+            ],
+            "content": "The text content from the image is:\n\n```\nPiji Li   Haisong Zhang   Xiaojiang Liu   Shuming Shi\nTencent AI Lab, Shenzhen, China\n{pijili,hansonzhang,kieranliu,shumingshi}@tencent.com\n```"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                110,
+                146,
+                491,
+                160
+            ],
+            "content": "The text content from the image is:\n\n```\n{pijiili,hansonzhang,kieranliu,shumingshi}@tencent.com\n```"
+        },
+        {
+            "page": 1,
+            "type": "ocr_text",
+            "bbox": [
+                150,
+                117,
+                488,
+                145
+            ],
+            "content": "The text content from the image is:\n\nPiji Li   Haisong Zhang   Xiaojiang Liu   Shuming Shi\nTencent AI Lab, Shenzhen, China"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                64,
+                291,
+                184
+            ],
+            "content": "The text content from the image is:\n\n\"formats constraints on the poetry text, the proposed models just treat the formats as kind of latent information and let the model capture this feature implicitly during training (Liao et al., 2019). The model trained on the five-character quatrain corpus cannot generate seven-character verses. Moreover, it is impossible to trigger these models to generate satisfying results according to arbitrary new defined formats.\""
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                64,
+                528,
+                388
+            ],
+            "content": "we propose a simple and elegant framework named SongNet to address this challenging problem. The backbone of the framework is a Transformer-based auto-regressive language model. Considering the three folds characteristics mentioned above, we introduce sets of tailor-designed indicating symbols to improve the modeling performance, especially for the robustness of the format, rhyme, as well as sentence integrity. We improve the attention mechanism to impel the model to capture the future information on the format to further enhance sentence integrity. Inspired by BERT (Devlin et al., 2019) and GPT (Radford et al., 2018, 2019), a pre-training and fine-tuning framework is designed to further improve the generation quality. To verify the performance of our framework, we collect two corpora, SongCi and Sonnet, in Chinese and English respectively. Extensive experiments on the collected datasets demonstrate that our proposed framework can generate satisfying results in terms of both the tailor-designed automatic metrics including format accuracy, rhyming accuracy, sentence integrity, as well as the human evaluation results on relevance, fluency, and style."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                690,
+                291,
+                730
+            ],
+            "content": "To the best of our knowledge, text generation based on the predefined rigid formats constraints has not been well investigated yet. In this work,"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                188,
+                291,
+                694
+            ],
+            "content": "In practice we will confront some special text paradigms such as Lyrics (assume the music score is given), Sonnet (say Shakespeare’s Sonnets (Shakespeare, 2000)), SongCi (a kind of Ci. Ci is a type of lyric poetry in the tradition of Classical Chinese poetry.2, SongCi is the Ci created during Song dynasty), etc., and some examples are illustrated in Figure 1. The typical characteristics of these text can be categorized into three folds: (1) The assembling of text must comply fully with the predefined rigid formats. Assume that the music score is composed, then the lyricist must fill the lyric content strictly tally with the schemes lie in the notation. Take partial of song “Edelweiss” as shown in the first row of Figure 1 as example, the syllables of the lyric words must align with the tones of the notation. The second row of Figure 1 depicts the content of a SongCi created based on the CiPai of “Bu Suan Zi”. Given the CiPai, the number of characters and the syntactical structure of the content are also defined (e.g., the number of characters of each clause: 5, 5. 7, 5. 5, 5, 5. 7, 5.). (2) The arrangement of the content must obey the defined rhyming schemes. For example, all the final words (words in red color and italic font) of the SongCi content in Figure1 are rhyming (the spelling of each word is: “zhu”, “yu”, “du”, and “gu”). The example in the third row of Figure 1 comes from Shakespeare’s “Sonnet 116” (Shakespeare, 2000), the first four sentences. Usually, the rhyming schemes of Shakespeare’s Sonnets is “ABAB CDCD EFEF GG” 3. In the example, the rhyming words in scheme “ABAB” are “minds”, “love”, “finds”, and “remove”. (3) Even though the format is rigid, the sentence integrity must always be guaranteed. Incomplete sentence such as “love is not the” is inappropriate."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                740,
+                526,
+                764
+            ],
+            "content": "The task of rigid formats controlled text generation is defined as follows:"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                713,
+                403,
+                727
+            ],
+            "content": "The text content from the image is \"2 Task Definition\"."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                317,
+                391,
+                517,
+                403
+            ],
+            "content": "In summary, our contributions are as follows:"
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                617,
+                527,
+                696
+            ],
+            "content": "Extensive experiments conducted on two collected corpora demonstrate that our proposed framework generates significantly better results given arbitrary formats, including the cold-start formats or even the formats newly defined by ourselves."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                533,
+                527,
+                612
+            ],
+            "content": "To verify the performance of our framework SongNet, we collect two corpora, SongCi and Sonnet, in Chinese and English respectively. We design several automatic evaluation metrics and human evaluation metrics to conduct the performance evaluation."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                318,
+                404,
+                528,
+                697
+            ],
+            "content": "- We propose to tackle a new challenging task: rigid formats controlled text generation. A pre-training and fine-tuning framework named SongNet is designed to address the problem.\n- Sets of symbols are tailor-designed to improve the modeling performance. We improve the attention mechanism to impel the model to capture the future information to further enhance the sentence integrity.\n- To verify the performance of our framework SongNet, we collect two corpora, SongCi and Sonnet, in Chinese and English respectively. We design several automatic evaluation metrics and human evaluation metrics to conduct the performance evaluation.\n- Extensive experiments conducted on two collected corpora demonstrate that our proposed framework generates significantly better results given arbitrary formats, including the cold-start formats or even the formats newly defined by ourselves."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                463,
+                527,
+                529
+            ],
+            "content": "Sets of symbols are tailor-designed to improve the modeling performance. We improve the attention mechanism to impel the model to capture the future information to further enhance the sentence integrity."
+        },
+        {
+            "page": 2,
+            "type": "ocr_text",
+            "bbox": [
+                319,
+                406,
+                527,
+                459
+            ],
+            "content": "We propose to tackle a new challenging task: rigid formats controlled text generation. A pre-training and fine-tuning framework named SongNet is designed to address the problem."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                308,
+                528,
+                593
+            ],
+            "content": "As shown in Figure 2, the backbone of our framework is a Transformer-based auto-regressive language model. The input can be the whole token sequences of samples from SongCi or Sonnet. We tailor-design several sets of indicating symbols to enhance the performance in terms of accuracy on format, rhyme, and sentence integrity. Specifically, symbols \\( C = \\{c_i\\} \\) are introduced for format and rhyming modeling; Intra-position symbols \\( P = \\{p_i\\} \\) are designed to represent the local positions of the tokens within each sentence aiming to improve the rhyming performance and the sentence integrity. Segment symbols \\( S = \\{s_i\\} \\) are employed to identify the sentence border to further improve the sentence quality. Attention mechanism is improved to impel the model to capture the future format information such as the sentence ending markers. Similar to BERT (Devlin et al., 2019) and GPT (Radford et al., 2018, 2019), pre-training and fine-tuning paradigm is utilized to boost the performance of the original models."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                631,
+                528,
+                766
+            ],
+            "content": "We use two sentences (as shown in Figure 1) \"love is not love, ..., bends with the remover to remove\" extracted from the Shakespeare’s Sonnets (Shakespeare, 2000) as examples to describe the details of our framework SongNet. Since our basic model is a Transformer-based auto-regressive language model, during training, the input is “〈bos〉 love is not love, 〈/s〉 ..., bends with the remover to remove. 〈/s〉”, and the corresponding output is a left-shifting version of the input (tokenized, and we"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                305,
+                291,
+                399
+            ],
+            "content": "where C is the set of all possible formats. Note that we can define arbitrary new formats not restricted to the ones pre-defined in the corpus, thus |C| → ∞. Format token ci denotes a place-holder symbol of C which need to be translated into a real word token. Format C contains 10 words plus two extra punctuation characters “,” and “.”"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                704,
+                291,
+                743
+            ],
+            "content": "Finally, the target of this problem is to find a mapping function G to conduct the rigid formats controlled text generation:"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                401,
+                291,
+                426
+            ],
+            "content": "The text content from the image is:\n\n\"Output: a natural language sentence \\( Y \\in \\mathcal{Y} \\) which tally with the defined format \\( C \\):\""
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                261,
+                199,
+                274
+            ],
+            "content": "Input: a rigid format \\( C \\in \\mathcal{C} \\):"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                199,
+                228,
+                397,
+                240
+            ],
+            "content": "Figure 2: The framework of our proposed model."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                609,
+                365,
+                622
+            ],
+            "content": "3.2 Details"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                286,
+                376,
+                300
+            ],
+            "content": "The text content from the image is \"3.1 Overview\"."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                260,
+                448,
+                274
+            ],
+            "content": "3 Framework Description"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                473,
+                291,
+                702
+            ],
+            "content": "where the example sentences are extracted from the Shakespeare’s Sonnets (Shakespeare, 2000). From the result Y we can observe that the count of words is 10 which is consistent with the format C. The punctuation characters “,” and “.” are also correct. Thus, we claim that it is a 100% format accuracy result. Also, since the two clause sentences are complete, we can get a good sentence integrity score. If C is defined on the literary genres of SongCi or Sonnet which have rhyming constraints, the rhyming performance should be evaluated as well. Recall that C can be arbitrary and flexible, thus we can rebuild a new format C′ based on the generated result Y by masking partial content, say C′ = {c0 c1 c2 love, c0 c1 c2 c3 c4 remove.}, then we may obtain better results by re-generating based on C′. We name this operation as polishing."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                83,
+                435,
+                277,
+                464
+            ],
+            "content": "The text content from the image is:\n\n```\nY = love is not love,\nbends with the remover to remove.\n```"
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                473,
+                291,
+                702
+            ],
+            "content": "where the example sentences are extracted from the Shakespeare’s Sonnets (Shakespeare, 2000). From the result Y we can observe that the count of words is 10 which is consistent with the format C. The punctuation characters “,” and “.” are also correct. Thus, we claim that it is a 100% format accuracy result. Also, since the two clause sentences are complete, we can get a good sentence integrity score. If C is defined on the literary genres of SongCi or Sonnet which have rhyming constraints, the rhyming performance should be evaluated as well. Recall that C can be arbitrary and flexible, thus we can rebuild a new format C′ based on the generated result Y by masking partial content, say C′ = {c0 c1 c2 love, c0 c1 c2 c3 c4 remove.}, then we may obtain better results by re-generating based on C′. We name this operation as polishing."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                98,
+                452,
+                276,
+                464
+            ],
+            "content": "bends with the remover to remove."
+        },
+        {
+            "page": 3,
+            "type": "ocr_text",
+            "bbox": [
+                85,
+                435,
+                184,
+                448
+            ],
+            "content": "The text content from the image is:\n\n\\[ Y = \\text{love is not love}, \\]"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                145,
+                527,
+                267
+            ],
+            "content": "Moreover, the state at time \\( t \\) needs to know some future information to grasp the global sequence dynamic information. For example, the model may want to know if it should close the decoding process by generating the last word and a punctuation character to end the sentence. To represent the global dynamic information, we introduce another variable \\(\\mathbf{F}^{0}\\) by only summing the pre-defined symbols as shown in the blue dash box of Figure 2:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                376,
+                292,
+                498
+            ],
+            "content": "$\\left\\{p_{i}\\right\\}$ denote the local positions of tokens within the same clause or sentence. Note that we align the position symbol indices in a descending order. The aim is to improve the sentence integrity by impelling the symbols capture the sentence dynamic information, precisely, the sense to end a sequence. For example, $\\left\\{p_{0}\\right\\}$ usually denote punctuation characters, thus $\\left\\{p_{1}\\right\\}$ should be the ending words of sentences."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                610,
+                291,
+                690
+            ],
+            "content": "During training, all the symbols as well as the input tokens are fed into the transformer-based language model. Contrast to Transformer (Vaswani et al., 2017), BERT (Devlin et al., 2019), and GPT2 (Radford et al., 2019), we modify the traditional attention strategies slightly to fit our problem."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                63,
+                527,
+                144
+            ],
+            "content": "where 0 is the layer index and t is the state index. E_* is the embedding vector for input *. w_t is the real token at position t. c, p, and s are three pre-defined symbols. g is the global position index same as position symbols used in Transformer (Vaswani et al., 2017)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                555,
+                291,
+                608
+            ],
+            "content": "where \\( s_i \\) is the symbol index for sentence \\( i \\). The purpose is to enhance the interactions between different sentences in different positions by defining the sentence index features."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                691,
+                291,
+                744
+            ],
+            "content": "Specifically, for the input, we first obtain the representations by summing all the embeddings of the input tokens and symbols, as shown in the red solid box of Figure 2:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                113,
+                292,
+                208
+            ],
+            "content": "where ⟨/s⟩ denotes the clause or sentence separator, and ⟨eos⟩ is the ending marker of the whole sequence. The target of our framework is to conduct the formats controlled text generation. Therefore, the indicating symbols for format and rhyme as well as the sentence integrity are designed based on the target output sequence."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                488,
+                527,
+                554
+            ],
+            "content": "where SLF-ATT(·), LN(·), and FFN(·) represent self-attention mechanism, layer normalization, and feed-forward network respectively. Note that we only use the states whose indices ≤ t as the attention context."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                712,
+                526,
+                766
+            ],
+            "content": "We can observe that all the context information from F^0 are considered. This is the reason why we name it as \"global attention\" and why the input real token information E_{w_t} is NOT considered. Then"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                266,
+                291,
+                319
+            ],
+            "content": "where we use {c0} to represent the general tokens; {c1} depict the punctuation characters; {c2} represent the rhyming tokens “love” and “remove”. ⟨/s⟩ and ⟨eos⟩ are kept."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                556,
+                527,
+                595
+            ],
+            "content": "After obtaining \\( \\mathbf{C}_{t}^{1} \\) from Equation (8), we feed it into the second attention block to capture the global dynamic information from \\( \\mathbf{F}^{0} \\)."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                64,
+                249,
+                76
+            ],
+            "content": "ignore “...” for convenience and clarity):"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                320,
+                183,
+                332
+            ],
+            "content": "Intra-Position Symbols:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                446,
+                433,
+                462
+            ],
+            "content": "The text content from the image is:\n\n\\[\n\\mathbf{K}^{0}, \\mathbf{V}^{0} = \\mathbf{H}^{0}\\mathbf{W}^{K}, \\mathbf{H}^{0}\\mathbf{W}^{V}\n\\]"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                303,
+                527,
+                374
+            ],
+            "content": "After processing the input, two blocks of attention mechanisms are introduced to conduct the feature learning procedure. The first block is a masking multi-head self-attention component, and the second block is named global multi-head attention."
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                87,
+                83,
+                174,
+                94
+            ],
+            "content": "The text in the image reads:\n\n\"love is not love, ⟨/s⟩\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                597,
+                446,
+                609
+            ],
+            "content": "Global Multi-Head Attention:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                500,
+                157,
+                512
+            ],
+            "content": "Segment Symbols:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                209,
+                208,
+                221
+            ],
+            "content": "Format and Rhyme Symbols:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                209,
+                208,
+                221
+            ],
+            "content": "Format and Rhyme Symbols:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                500,
+                157,
+                512
+            ],
+            "content": "Segment Symbols:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                671,
+                429,
+                686
+            ],
+            "content": "The text content from the image is:\n\n\\[\n\\mathbf{K}^{1}, \\mathbf{V}^{1} = \\mathbf{F}^{0}\\mathbf{W}^{K}, \\mathbf{F}^{0}\\mathbf{W}^{V}\n\\]"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                87,
+                82,
+                274,
+                107
+            ],
+            "content": "The text content from the image is:\n\n\"love is not love, ⟨/s⟩\nbends with the remover to remove. ⟨/s⟩⟨eos⟩\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                597,
+                446,
+                609
+            ],
+            "content": "Global Multi-Head Attention:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                86,
+                82,
+                273,
+                107
+            ],
+            "content": "The text content from the image is:\n\n\"love is not love, ⟨/s⟩\nbends with the remover to remove. ⟨/s⟩⟨eos⟩\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                87,
+                96,
+                274,
+                107
+            ],
+            "content": "The text content from the image is:\n\n\"bends with the remover to remove . ⟨/s⟩ ⟨eos⟩\""
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                86,
+                82,
+                274,
+                107
+            ],
+            "content": "love is not love, ⟨/s⟩\nbends with the remover to remove. ⟨/s⟩⟨eos⟩"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                320,
+                183,
+                332
+            ],
+            "content": "Intra-Position Symbols:"
+        },
+        {
+            "page": 4,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                371,
+                477,
+                383
+            ],
+            "content": "The text in the image reads \"Masking Multi-Head Self-Attention:\"."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                345,
+                292,
+                480
+            ],
+            "content": "Recall that in the task definition in Section 2, we claim that our model owns the ability of refining and polishing. To achieve this goal, we adjust the masking strategy used in BERT (Devlin et al., 2019) to our framework according to our definitions. Specifically, we randomly (say 20%) select partial of the original content and keep them not changed when building the format symbols C. For example, we will get a new symbol set \\(C'\\) for the example sentences:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                644,
+                291,
+                766
+            ],
+            "content": "We can assign any format and rhyming symbols \\( C \\) to control the generation. Given \\( C \\), we will obtain \\( P \\) and \\( S \\) automatically. And the model can conduct generation starting from the special token \\( \\langle bos \\rangle \\) iteratively until meet the ending marker \\( \\langle eos \\rangle \\). Both beam-search algorithm (Koehn, 2004) and truncated top-k sampling (Fan et al., 2018; Radford et al., 2019) method are utilized to conduct the decoding."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                102,
+                527,
+                224
+            ],
+            "content": "The parameter size of our model are fixed in both the pre-training stage and the fine-tuning stage. The number of layers L = 12, and hidden size is 768. We employ 12 heads in both the masking multi-head self-attention block and the global attention block. Adam (Kingma and Ba, 2014) optimization method with Noam learning-rate decay strategy and 10,000 warmup steps is employed to conduct the pre-training."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                249,
+                291,
+                343
+            ],
+            "content": "Although our framework can be trained purely on the training dataset of the target corpus, usually the scale of the corpus is limited. For example, there are only about 150 samples in the corpus of Shakespeare’s Sonnets (Shakespeare, 2000). Therefore, we also design a pre-training and fine-tuning framework to further improve the generation quality."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                566,
+                291,
+                606
+            ],
+            "content": "After the pre-training stage, we can conduct the fine-tuning procedure directly on the target corpus without adjusting any model structure."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                645,
+                527,
+                766
+            ],
+            "content": "The text content from the image is as follows:\n\n\"Format Assume that there are m sentences defined in the format C = {Cs1, Cs2, ..., Csm}, and the generated results Y contains n sentences Y = {Ys1, Ys2, ..., Ysn}. Without loss of generality, we align C and Y from the beginning, and calculate the format quality according to the following rules: (1) the length difference ||Cis| − |Yis|| ≤ δ; (2) the punctuation characters must be same. For SongCi, we let δ = 0 and rule (2) must be conforming.\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                63,
+                291,
+                130
+            ],
+            "content": "the calculation of the unified first model layer is finished. We can iteratively apply these two attention blocks on the whole L model layers until obtain the final representations H^L. Note that H is renewed layerly, however the global variable F^0 is fixed."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                590,
+                527,
+                643
+            ],
+            "content": "Besides PPL and Distinct (Li et al., 2016), we also tailor-design several metrics for our task to conduct the evaluation for format, rhyme, and sentence integrity."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                537,
+                291,
+                563
+            ],
+            "content": "where “love”, “bends” and “remove” are kept in the format C′."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                133,
+                290,
+                159
+            ],
+            "content": "Finally, the training objective is to minimize the negative log-likelihood over the whole sequence:"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                227,
+                232,
+                240
+            ],
+            "content": "The text content from the image is:\n\n\"3.3 Pre-training and Fine-tuning\""
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                234,
+                371,
+                246
+            ],
+            "content": "The text content from the image is \"4.2 Datasets\"."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                85,
+                370,
+                98
+            ],
+            "content": "4.1 Settings"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                623,
+                149,
+                635
+            ],
+            "content": "3.4 Generation"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                572,
+                422,
+                584
+            ],
+            "content": "4.3 Evaluation Metrics"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                63,
+                428,
+                76
+            ],
+            "content": "4 Experimental Setup"
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                252,
+                527,
+                562
+            ],
+            "content": "We conduct all the experiments on two collected corpus with different literary genres: SongCi and Sonnet, in Chinese and English respectively. The statistic number are shown in Table 3. We can see that Sonnet is in small size since we only utilize the samples from the Shakespeare’s Sonnets (Shakespeare, 2000). Since SongCi and Sonnet are in different languages, thus we conduct the pre-training procedure on two large scale corpus in the corresponding languages respectively. For Chinese, we collect Chinese Wikipedia (1700M Characters) and a merged Chinese News (9200M Characters) corpus from the Internet. We did not conduct the word segmenting operations on the Chinese datasets, which means that we just use the characters to build the vocabulary, and the size is 27681. For English, same as BERT, we employ English Wikipedia (2400M words) and BooksCorpus (980M words) (Zhu et al., 2015) to conduct the pre-training. We did not use BPE operation (Sennrich et al., 2015) on this corpus considering the format controlling purpose. We keep the most frequent 50,000 words to build the vocabulary."
+        },
+        {
+            "page": 5,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                252,
+                527,
+                562
+            ],
+            "content": "We conduct all the experiments on two collected corpus with different literary genres: SongCi and Sonnet, in Chinese and English respectively. The statistic number are shown in Table 3. We can see that Sonnet is in small size since we only utilize the samples from the Shakespeare’s Sonnets (Shakespeare, 2000). Since SongCi and Sonnet are in different languages, thus we conduct the pre-training procedure on two large scale corpus in the corresponding languages respectively. For Chinese, we collect Chinese Wikipedia (1700M Characters) and a merged Chinese News (9200M Characters) corpus from the Internet. We did not conduct the word segmenting operations on the Chinese datasets, which means that we just use the characters to build the vocabulary, and the size is 27681. For English, same as BERT, we employ English Wikipedia (2400M words) and BooksCorpus (980M words) (Zhu et al., 2015) to conduct the pre-training. We did not use BPE operation (Sennrich et al., 2015) on this corpus considering the format controlling purpose. We keep the most frequent 50,000 words to build the vocabulary."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                600,
+                291,
+                680
+            ],
+            "content": "For Sonnet, we relax the condition where we let δ = 1 and ignore rule (2). Assume that the number of format-correct sentences is n′, then we can obtain Precision p = n′/n, Recall r = n′/m, and F1-measure. We report both the Macro-F1 and Micro-F1 in the results tables."
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                685,
+                291,
+                765
+            ],
+            "content": "Rhyme For SongCi, usually, there is only one group of rhyming words in one sample. As the example shown in Table 1, the pronunciation of the red rhyming words are “zhu”, “yü”, “du”, and “gu” respectively, and the rhyming phoneme is “u”. For the generated samples, we first use the tool"
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                507,
+                527,
+                710
+            ],
+            "content": "The text content from the image is as follows:\n\n\"pinyin4 to get the pronunciations (PinYin) of the words in the rhyming positions, and then conduct the evaluation. For Shakespeare’s Sonnets corpus, the rhyming rule is clear “ABAB CDCD EFEF GG” and there are 7 groups of rhyming tokens. For the generated samples, we employ the CMU Pronouncing Dictionary5 (Speech@CMU, 1998) to obtain the phonemes of the words in the rhyming positions. For example, the phonemes for word \"asleep\" and \"steep\" are ['AH0', 'S', 'L', 'IY1', 'P'] and ['S', 'T', 'IY1', 'P'] respectively. And then we can conduct the evaluation by counting the overlapping units from both the original words and the extracted phonemes group by group. We report the Macro-F1 and Micro-F1 numbers in the results tables as well.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                200,
+                273,
+                397,
+                285
+            ],
+            "content": "The text content from the image is:\n\n\"Table 1: Automatic evaluation results on SongCi\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                714,
+                526,
+                726
+            ],
+            "content": "The text content from the image is:\n\n\"Integrity Since the format in our task is strict and\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                74,
+                559,
+                287,
+                571
+            ],
+            "content": "The text content from the image is:\n\n\"Table 3: Statistics of the datasets SongCi and Sonnet.\""
+        },
+        {
+            "page": 6,
+            "type": "ocr_text",
+            "bbox": [
+                201,
+                474,
+                396,
+                486
+            ],
+            "content": "The text content from the image is:\n\n\"Table 2: Automatic evaluation results on Sonnet\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                336,
+                291,
+                471
+            ],
+            "content": "rigid, thus the number of words to be predicted is also pre-defined. Our model must organize the language using the limited positions, thus sentence integrity may become a serious issue. For example, the integrity of \"love is not love . ⟨/s⟩\" is much better than \"love is not the . ⟨/s⟩\". To conduct the evaluation of sentence integrity, we design a straightforward method by calculating the prediction probability of the punctuation characters before ⟨/s⟩ given the prefix tokens:"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                523,
+                292,
+                630
+            ],
+            "content": "where Y is the generated sequence of sentences. Smaller integrity metric value indicates higher sentence quality. To achieve this goal, we conduct pre-trainings for two GPT2 (Radford et al., 2019) models on the large scale Chinese corpus and English corpus respectively. Then we utilize the GPT2 models to conduct the evaluation for sentence integrity."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                631,
+                292,
+                766
+            ],
+            "content": "Here is the text content from the image:\n\n\"Human Evaluations For SongCi, we sampled 50 samples for 25 CiPais. For Sonnet, the whole 27 samples in the test set are selected for human evaluation. We recruit three helpers to score the Relevance, Fluency, and Style. The rating criteria are as follows: Relevance: +2: all the sentences are relevant to the same topic; +1: partial sentences are relevant; 0: not relevant at all. Fluency: +2: fluent; +1: readable but with some grammar mistakes; 0: unreadable. Style: +2: match with SongCi or\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                503,
+                527,
+                542
+            ],
+            "content": "We also conduct ablation analysis to verify the performance of the defined symbols as well as the variants of model structures."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                318,
+                545,
+                528,
+                762
+            ],
+            "content": "- SongNet (only pre-tuning) Without the fine-tuning stage.\n- SongNet (only fine-tuning) Without the pre-training stage.\n- SongNet-GRU Employ GRU (Cho et al., 2014) to replace Transformer as the core structure.\n- SongNet w/o C Remove the format and rhyme symbols \\(C\\).\n- SongNet w/o P Remove the intra-position symbols \\(P\\).\n- SongNet w/o S Remove the sentence segment symbols \\(S\\).\n- SongNet w/ inverse-P Arrange the intra-position indices in ascending order instead of the descending order."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                379,
+                527,
+                432
+            ],
+            "content": "S2S Sequence-to-sequence framework with attention mechanism (Bahdanau et al., 2014). We regard the format and rhyme symbols C as the input sequence, and the target as the output sequence."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                361,
+                433,
+                373
+            ],
+            "content": "4.4 Comparison Methods"
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                336,
+                522,
+                349
+            ],
+            "content": "Sonnet genres; +1: partially match; 0: mismatch."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                475,
+                526,
+                501
+            ],
+            "content": "The text content from the image is:\n\n\"SongNet Out proposed framework with both the per-training and fine-tuning stages.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                434,
+                527,
+                473
+            ],
+            "content": "GPT2 We fine-tune the GPT2 models (the pretraining versions are used for sentence integrity evaluation) on SongCi and Sonnet respectively."
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                222,
+                302,
+                375,
+                314
+            ],
+            "content": "The text content from the image is:\n\n\"Table 4: Ablation analysis on SongCi\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                379,
+                528,
+                501
+            ],
+            "content": "The text content from the image is as follows:\n\n\"S2S Sequence-to-sequence framework with attention mechanism (Bahdanau et al., 2014). We regard the format and rhyme symbols C as the input sequence, and the target as the output sequence.\nGPT2 We fine-tune the GPT2 models (the pre-training versions are used for sentence integrity evaluation) on SongCi and Sonnet respectively.\nSongNet Our proposed framework with both the pre-training and fine-tuning stages.\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                222,
+                302,
+                374,
+                314
+            ],
+            "content": "The text content from the image is:\n\n\"Table 4: Ablation analysis on SongCi\""
+        },
+        {
+            "page": 7,
+            "type": "ocr_text",
+            "bbox": [
+                222,
+                302,
+                375,
+                314
+            ],
+            "content": "The text content from the image is:\n\n\"Table 4: Ablation analysis on SongCi\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                592,
+                527,
+                727
+            ],
+            "content": "The text content from the image is:\n\n\"Performance on most of the automatic metrics. Especially on the metric of Format accuracy, SongNet can even obtain a 98%+ value which means that our framework can conduct the generation rigidly matching with the pre-defined formats. On the metric of PPL, Rhyme accuracy, and sentence integrity, SongNet also performs significantly better in a large gap than the baseline methods such as S2S and GPT2 as well as the model variants only with the pre-training or fine-tuning stage.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                699,
+                292,
+                766
+            ],
+            "content": "Table 1 and Table 2 depict the experimental results of SongNet as well as the baseline methods S2S and GPT2 on corpus SongCi and Sonnet respectively. It is obvious that our pre-training and fine-tuning framework SongNet obtain the best performance."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                631,
+                291,
+                697
+            ],
+            "content": "The text content from the image is:\n\n\"Please note that we mainly employ top-k sampling method (Fan et al., 2018; Radford et al., 2019) to conduct the generation, and we let k = 32 here. The parameter tuning of k is described in Section 5.3.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                740,
+                526,
+                765
+            ],
+            "content": "The text content from the image is:\n\n\"Another observation is that some of the results on corpus Sonnet are not as good as the results.\""
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                591,
+                211,
+                604
+            ],
+            "content": "The text content from the image is \"5 Results and Discussions\"."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                125,
+                169,
+                470,
+                182
+            ],
+            "content": "Figure 3: Parameter tuning of k on the metrics of Rhyme, Integrity, and Micro-Dist-2."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                613,
+                131,
+                625
+            ],
+            "content": "The text content from the image is \"5.1 Results\"."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                341,
+                527,
+                389
+            ],
+            "content": "Table 5: Cases of the generated results for SongCi and Sonnet respectively. For SongCi, the number in Format (e.g., 3,5,7) denotes the number of tokens in one sentence. The rhyming words are labeled in red color and italic font following is the Pinyin. (Since cases are provided to confirm the format consistency, thus we did not conduct translation for the Chinese samples. Translation for Chinese poetry is also a challenging task.)"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                546,
+                526,
+                569
+            ],
+            "content": "Table 6: Cases of the generated results given the formats with partial pre-defined content. Format token “_” needs to be translated to real word token."
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                341,
+                527,
+                389
+            ],
+            "content": "Table 5: Cases of the generated results for SongCi and Sonnet respectively. For SongCi, the number in Format (e.g., 3,5,7) denotes the number of tokens in one sentence. The rhyming words are labeled in red color and italic font following is the Pinyin. (Since cases are provided to confirm the format consistency, thus we did not conduct translation for the Chinese samples. Translation for Chinese poetry is also a challenging task.)"
+        },
+        {
+            "page": 8,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                546,
+                526,
+                569
+            ],
+            "content": "Table 6: Cases of the generated results given the formats with partial pre-defined content. Format token “_” needs to be translated to real word token."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                253,
+                291,
+                414
+            ],
+            "content": "We conduct ablation study on corpus SongCi and the experimental results are depicted in Table 4. It should note that all the models are purely trained on SongCi corpus without any pre-training stages. From the results we can conclude that the introduced symbols C, P, and S indeed play crucial roles in improving the overall performance especially on the metrics of format, rhyme, and sentence integrity. Even though some of the components can not improve the performance simultaneously on all the metrics, the combination of them can obtain the best performance."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                362,
+                527,
+                509
+            ],
+            "content": "We propose to tackle a challenging task called rigid formats controlled text generation. A pre-training and fine-tuning framework SongNet is designed to address the problem. Sets of symbols are tailor-designed to improve the modeling performance for format, rhyme, and sentence integrity. Extensive experiments conducted on two collected corpora demonstrate that our framework generates significantly better results in terms of both automatic metrics and human evaluations given arbitrary cold start formats."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                454,
+                291,
+                534
+            ],
+            "content": "Since we employ top-k sampling as our main decoding strategy, thus we design several experiments to conduct the parameter tuning on k. We let k to be 1, 5, 10, 20, 50, 500 respectively. We also provide the beam-search (beam=5) results for comparing and reference."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                83,
+                527,
+                230
+            ],
+            "content": "Table 5 depicts several generated cases for SongCi and Sonnet respectively. For SongCi, the formats (CiPai) are all cold-start samples which are not in the training set or even newly defined. Our model can still generate high quality results on the aspects of format, rhyme as well as integrity. However, for corpus Sonnet, even though the model can generate 14 lines text, the quality is not as good as SongCi due to the insufficient training-set (only 100 samples). We will address this interesting and challenging few-shot issue in the future."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                232,
+                527,
+                326
+            ],
+            "content": "In addition, we mentioned that our model has the ability of refining and polishing given the format C which contains some fixed text information. The examples of the generated results under this setting are shown in Table 6, which show that our model SongNet can generate satisfying results especially on SongCi."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                672,
+                291,
+                766
+            ],
+            "content": "For human evaluation, we just conduct the judging on the results generated by our final model SongNet. From the result we can observe that the results on corpus SongCi is much better than the ones on corpus Sonnet, which is because the corpus scale is different. And the small scale also lead to dramatically dropping on all the metrics."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                538,
+                291,
+                632
+            ],
+            "content": "The parameter tuning results are depicted in Figure 3. From the results we can observe that large k can increase the diversity of the results significantly. But the Rhyme accuracy and the sentence integrity will drop simultaneously. Therefore, in the experiments we let k = 32 to obtain a trade-off between the diversity and the general quality."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                146,
+                291,
+                212
+            ],
+            "content": "The main reason is that Sonnet only contains 100 samples in the training set as shown in Table 3. Therefore, the model cannot capture sufficient useful features especially for the rhyming issue."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                611,
+                527,
+                698
+            ],
+            "content": "The text content from the image is as follows:\n\nKyunghyun Cho, Bart van Merrienboer, Caglar Gulcehre, Dzmitry Bahdanau, Fethi Bougares, Holger Schwenk, and Yoshua Bengio. 2014. Learning phrase representations using rnn encoder-decoder for statistical machine translation. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 1724–1734."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                710,
+                527,
+                765
+            ],
+            "content": "The text content from the image is:\n\nZihang Dai, Zhilin Yang, Yiming Yang, William W Cohen, Jaime Carbonell, Quoc V Le, and Ruslan Salakhutdinov. 2019. Transformer-xl: Attentive language models beyond a fixed-length context. arXiv preprint arXiv:1901.02860."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                556,
+                527,
+                599
+            ],
+            "content": "The text content from the image is:\n\nDzmitry Bahdanau, Kyunghyun Cho, and Yoshua Bengio. 2014. Neural machine translation by jointly learning to align and translate. arXiv preprint arXiv:1409.0473."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                230,
+                179,
+                243
+            ],
+            "content": "The text content from the image is \"5.2 Ablation Analysis\"."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                535,
+                363,
+                548
+            ],
+            "content": "References"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                63,
+                397,
+                76
+            ],
+            "content": "5.5 Case Analysis"
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                649,
+                185,
+                662
+            ],
+            "content": "The text content from the image is \"5.4 Human Evaluation\"."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                338,
+                382,
+                351
+            ],
+            "content": "The text content from the image is \"6 Conclusion\"."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                431,
+                182,
+                444
+            ],
+            "content": "The text content from the image is \"5.3 Parameter Tuning\"."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                111,
+                108,
+                251,
+                119
+            ],
+            "content": "Table 7: Human evaluation results."
+        },
+        {
+            "page": 9,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                431,
+                181,
+                444
+            ],
+            "content": "The text content from the image is \"5.3 Parameter Tuning\"."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                64,
+                292,
+                152
+            ],
+            "content": "The text content from the image is as follows:\n\nJacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. 2019. Bert: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pages 4171–4186."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                680,
+                527,
+                756
+            ],
+            "content": "The text content from the image is:\n\nYukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and Sanja Fidler. 2015. Aligning books and movies: Towards story-like visual explanations by watching movies and reading books. In Proceedings of the IEEE international conference on computer vision, pages 19–27."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                325,
+                527,
+                401
+            ],
+            "content": "The text content from the image is as follows:\n\nLifeng Shang, Zhengdong Lu, and Hang Li. 2015. Neural responding machine for short-text conversation. In Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 1577–1586."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                440,
+                292,
+                517
+            ],
+            "content": "The text content from the image is as follows:\n\nJiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, and Bill Dolan. 2016. A diversity-promoting objective function for neural conversation models. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 110–119."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                64,
+                528,
+                120
+            ],
+            "content": "The text content from the image is:\n\nAlexander M Rush, Sumit Chopra, and Jason Weston. 2015. A neural attention model for abstractive sentence summarization. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 379–389."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                721,
+                292,
+                765
+            ],
+            "content": "The text content from the image is:\n\n\"Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. 2019. Language models are unsupervised multitask learners. OpenAI Blog, 1(8).\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                565,
+                292,
+                621
+            ],
+            "content": "The text content from the image is as follows:\n\nPiji Li, Wai Lam, Lidong Bing, and Zihao Wang. 2017. Deep recurrent generative decoder for abstractive text summarization. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pages 2091–2100."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                326,
+                292,
+                381
+            ],
+            "content": "The text content from the image is as follows:\n\nPhilipp Koehn. 2004. Pharaoh: a beam search decoder for phrase-based statistical machine translation models. In Conference of the Association for Machine Translation in the Americas, pages 115–124. Springer."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                617,
+                527,
+                672
+            ],
+            "content": "The text content from the image is:\n\nXingxing Zhang and Mirella Lapata. 2014. Chinese poetry generation with recurrent neural networks. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 670–680."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                554,
+                527,
+                609
+            ],
+            "content": "The text content from the image is as follows:\n\nZhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Ruslan Salakhutdinov, and Quoc V Le. 2019. Xlnet: Generalized autoregressive pretraining for language understanding. arXiv preprint arXiv:1906.08237."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                461,
+                527,
+                516
+            ],
+            "content": "The text content from the image is:\n\n\"Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems, pages 5998–6008.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                294,
+                527,
+                317
+            ],
+            "content": "The text content from the image is:\n\n\"William Shakespeare. 2000. Shakespeare's sonnets. Yale University Press.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                128,
+                528,
+                193
+            ],
+            "content": "The text content from the image is as follows:\n\nAbigail See, Peter J Liu, and Christopher D Manning. 2017. Get to the point: Summarization with pointer-generator networks. In Proceedings of the 55th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1073–1083."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                253,
+                527,
+                286
+            ],
+            "content": "The text content from the image is:\n\nRico Sennrich, Barry Haddow, and Alexandra Birch. 2015. Neural machine translation of rare words with subword units. arXiv preprint arXiv:1508.07909."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                389,
+                291,
+                433
+            ],
+            "content": "The text content from the image is:\n\nJey Han Lau, Trevor Cohn, Timothy Baldwin, Julian Brooke, and Adam Hammond. 2018. Deep-speare: A joint neural model of poetic language, meter and rhyme. arXiv preprint arXiv:1807.03491."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                285,
+                291,
+                318
+            ],
+            "content": "The text content from the image is:\n\nDiederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                669,
+                292,
+                714
+            ],
+            "content": "The text content from the image is:\n\n\"Alec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. Improving language understanding with unsupervised learning. Technical report, Technical report, OpenAI.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                160,
+                292,
+                215
+            ],
+            "content": "The text content from the image is as follows:\n\nAngela Fan, Mike Lewis, and Yann Dauphin. 2018. Hierarchical neural story generation. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 889–898."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                525,
+                291,
+                559
+            ],
+            "content": "The text content from the image is:\n\n\"Piji Li. 2020. An empirical investigation of pre-trained transformer language models for open-domain dialogue generation. arXiv preprint arXiv:2003.04195.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                307,
+                201,
+                527,
+                245
+            ],
+            "content": "The text content from the image is:\n\n\"Abigail See, Aneesh Pappu, Rohun Saxena, Akhila Yerukola, and Christopher D Manning. 2019. Do massively pretrained language models make better storytellers? arXiv preprint arXiv:1909.10705.\""
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                410,
+                527,
+                454
+            ],
+            "content": "Speech@CMU. 1998. Carnegie-mellon university pronouncing dictionary for american english. Version 0.7b. Available at [http://www.speech.cs.cmu.edu/cgi-bin/cmudict]."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                71,
+                628,
+                292,
+                662
+            ],
+            "content": "The text content from the image is:\n\nYi Liao, Yasheng Wang, Qun Liu, and Xin Jiang. 2019.\nGpt-based generation for classical chinese poetry.\narXiv preprint arXiv:1907.00151."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                524,
+                527,
+                546
+            ],
+            "content": "The text content from the image is:\n\nOriol Vinyals and Quoc Le. 2015. A neural conversational model. arXiv preprint arXiv:1506.05869."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                222,
+                291,
+                278
+            ],
+            "content": "The text content from the image is:\n\nJonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N Dauphin. 2017. Convolutional sequence to sequence learning. In Proceedings of the 34th International Conference on Machine Learning-Volume 70, pages 1243–1252. JMLR. org."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                306,
+                158,
+                529,
+                759
+            ],
+            "content": "generator networks. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 1073–1083.\n\nAbigail See, Aneesh Pappu, Rohun Saxena, Akhila Yerukola, and Christopher D Manning. 2019. Do massively pretrained language models make better storytellers? arXiv preprint arXiv:1909.10705.\n\nRico Sennrich, Barry Haddow, and Alexandra Birch. 2015. Neural machine translation of rare words with subword units. arXiv preprint arXiv:1508.07909.\n\nWilliam Shakespeare. 2000. Shakespeare’s sonnets. Yale University Press.\n\nLifeng Shang, Zhengdong Lu, and Hang Li. 2015. Neural responding machine for short-text conversation. In Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 1: Long Papers), pages 1577–1586.\n\nSpeech@CMU. 1998. Carnegie-mellon university pronouncing dictionary for american english. Version 0.7b. Available at [http://www.speech.cs.cmu.edu/cgi-bin/cmudict].\n\nAshish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N Gomez, Łukasz Kaiser, and Illia Polosukhin. 2017. Attention is all you need. In Advances in neural information processing systems, pages 5998–6008.\n\nOriol Vinyals and Quoc Le. 2015. A neural conversational model. arXiv preprint arXiv:1506.05869.\n\nZhilin Yang, Zihang Dai, Yiming Yang, Jaime Carbonell, Ruslan Salakhutdinov, and Quoc V Le. 2019. Xlnet: Generalized autoregressive pretraining for language understanding. arXiv preprint arXiv:1906.08237.\n\nXingxing Zhang and Mirella Lapata. 2014. Chinese poetry generation with recurrent neural networks. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP), pages 670–680.\n\nYukun Zhu, Ryan Kiros, Rich Zemel, Ruslan Salakhutdinov, Raquel Urtasun, Antonio Torralba, and Sanja Fidler. 2015. Aligning books and movies: Towards story-like visual explanations by watching movies and reading books. In Proceedings of the IEEE international conference on computer vision, pages 19–27."
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                69,
+                179,
+                294,
+                775
+            ],
+            "content": "Sure, here is the text content from the image:\n\n```\nCharmed neural story generation. In Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 889–898.\n\nJonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N Dauphin. 2017. Convolutional sequence to sequence learning. In Proceedings of the 34th International Conference on Machine Learning-Volume 70, pages 1243–1252. JMLR. org.\n\nDiederik P Kingma and Jimmy Ba. 2014. Adam: A method for stochastic optimization. arXiv preprint arXiv:1412.6980.\n\nPhilipp Koehn. 2004. Pharaoh: a beam search decoder for phrase-based statistical machine translation models. In Conference of the Association for Machine Translation in the Americas, pages 115–124. Springer.\n\nJey Han Lau, Trevor Cohn, Timothy Baldwin, Julian Brooke, and Adam Hammond. 2018. Deep-speare: A joint neural model of poetic language, meter and rhyme. arXiv preprint arXiv:1807.03491.\n\nJiwei Li, Michel Galley, Chris Brockett, Jianfeng Gao, and Bill Dolan. 2016. A diversity-promoting objective function for neural conversation models. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, pages 110–119.\n\nPiji Li. 2020. An empirical investigation of pre-trained transformer language models for open-domain dialogue generation. arXiv preprint arXiv:2003.04195.\n\nPiji Li, Wai Lam, Lidong Bing, and Zihao Wang. 2017. Deep recurrent generative decoder for abstractive text summarization. In Proceedings of the 2017 Conference on Empirical Methods in Natural Language Processing, pages 2091–2100.\n\nYi Liao, Yasheng Wang, Qun Liu, and Xin Jiang. 2019. Gpt-based generation for classical chinese poetry. arXiv preprint arXiv:1907.00151.\n\nAlec Radford, Karthik Narasimhan, Tim Salimans, and Ilya Sutskever. 2018. Improving language understanding with unsupervised learning. Technical report, Technical report, OpenAI.\n\nAlec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, and Ilya Sutskever. 2019. Language models are unsupervised multitask learners. OpenAI Blog, 1(8).\n```"
+        },
+        {
+            "page": 10,
+            "type": "ocr_text",
+            "bbox": [
+                70,
+                222,
+                291,
+                278
+            ],
+            "content": "The text content from the image is:\n\nJonas Gehring, Michael Auli, David Grangier, Denis Yarats, and Yann N Dauphin. 2017. Convolutional sequence to sequence learning. In Proceedings of the 34th International Conference on Machine Learning-Volume 70, pages 1243–1252. JMLR. org."
+        }
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "total_count": 18,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                173,
+                84,
+                437,
+                268
+            ],
+            "caption": "Figure 1: Neural Turing Machine Architecture. During each update cycle, the controller network receives inputs from an external environment and emits outputs in response. It also reads to and writes from a memory matrix via a set of parallel read and write heads. The dashed line indicates the division between the NTM circuit and the outside world. Figure 1: Neural Turing Machine Architecture. During each update cycle, the controller network receives inputs from an external environment and emits outputs in response. It also reads to and writes from a memory matrix via a set of parallel read and write heads. The dashed line indicates the division between the NTM circuit and the outside world.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                108,
+                85,
+                503,
+                238
+            ],
+            "caption": "Figure 2: Flow Diagram of the Addressing Mechanism. The key vector, k_t, and key strength, β_t, are used to perform content-based addressing of the memory matrix, M_t. The resulting content-based weighting is interpolated with the weighting from the previous time step based on the value of the interpolation gate, g_t. The shift weighting, s_t, determines whether and by how much the weighting is rotated. Finally, depending on γ_t, the weighting is sharpened and used for memory access. Figure 2: Flow Diagram of the Addressing Mechanism. The key vector, k_t, and key strength, β_t, are used to perform content-based addressing of the memory matrix, M_t. The resulting content-based weighting is interpolated with the weighting from the previous time step based on the value of the interpolation gate, g_t. The shift weighting, s_t, determines whether and by how much the weighting is rotated. Finally, depending on γ_t, the weighting is sharpened and used for memory access.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 11,
+            "type": "figure",
+            "bbox": [
+                168,
+                87,
+                445,
+                252
+            ],
+            "caption": "Figure 3: Copy Learning Curves.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page011.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                108,
+                88,
+                504,
+                220
+            ],
+            "caption": "Figure 4: NTM Generalisation on the Copy Task. The four pairs of plots in the top row depict network outputs and corresponding copy targets for test sequences of length 10, 20, 30, and 50, respectively. The plots in the bottom row are for a length 120 sequence. The network was only trained on sequences of up to length 20. The first four sequences are reproduced with high confidence and very few mistakes. The longest one has a few more local errors and one global error: at the point indicated by the red arrow at the bottom, a single vector is duplicated, pushing all subsequent vectors one step back. Despite being subjectively close to a correct copy, this leads to a high loss. Figure 4: NTM Generalisation on the Copy Task. The four pairs of plots in the top row depict network outputs and corresponding copy targets for test sequences of length 10, 20, 30, and 50, respectively. The plots in the bottom row are for a length 120 sequence. The network was only trained on sequences of up to length 20. The first four sequences are reproduced with high confidence and very few mistakes. The longest one has a few more local errors and one global error: at the point indicated by the red arrow at the bottom, a single vector is duplicated, pushing all subsequent vectors one step back. Despite being subjectively close to a correct copy, this leads to a high loss.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page012.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                108,
+                91,
+                503,
+                223
+            ],
+            "caption": "Figure 5: LSTM Generalisation on the Copy Task. The plots show inputs and outputs for the same sequence lengths as Figure 4. Like NTM, LSTM learns to reproduce sequences of up to length 20 almost perfectly. However it clearly fails to generalise to longer sequences. Also note that the length of the accurate prefix decreases as the sequence length increases, suggesting that the network has trouble retaining information for long periods. Figure 5: LSTM Generalisation on the Copy Task. The plots show inputs and outputs for the same sequence lengths as Figure 4. Like NTM, LSTM learns to reproduce sequences of up to length 20 almost perfectly. However it clearly fails to generalise to longer sequences. Also note that the length of the accurate prefix decreases as the sequence length increases, suggesting that the network has trouble retaining information for long periods.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page013.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                168,
+                321,
+                442,
+                530
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page013.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                168,
+                87,
+                444,
+                253
+            ],
+            "caption": "Figure 7: Repeat Copy Learning Curves.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page014.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                108,
+                88,
+                502,
+                373
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page015.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                152,
+                110,
+                458,
+                334
+            ],
+            "caption": "Figure 9: NTM Memory Use During the Repeat Copy Task. As with the copy task, the network first writes the input vectors to memory using iterative shifts. It then reads through the sequence to replicate the input as many times as necessary (six in this case). The white dot at the bottom of the read weightings seems to correspond to an intermediate location used to redirect the head to the start of the sequence (The NTM equivalent of a goto statement).",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page016.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                168,
+                478,
+                445,
+                643
+            ],
+            "caption": "Figure 10: Associative Recall Learning Curves for NTM and LSTM.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page016.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                174,
+                87,
+                436,
+                246
+            ],
+            "caption": "Figure 11: Generalisation Performance on Associative Recall for Longer Item Sequences.\nThe NTM with either a feedforward or LSTM controller generalises to much longer sequences of items than the LSTM alone. In particular, the NTM with a feedforward controller is nearly perfect for item sequences of twice the length of sequences in its training set.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page017.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                174,
+                86,
+                437,
+                336
+            ],
+            "caption": "Figure 12: NTM Memory Use During the Associative Recall Task. In \"Inputs,\" a sequence of items, each composed of three consecutive binary random vectors is propagated to the controller. The distinction between items is designated by delimiter symbols (row 7 in \"Inputs\"). After several items have been presented, a delimiter that designates a query is presented (row 8 in \"Inputs\"). A single query item is presented (green box), and the network target corresponds to the subsequent item in the sequence (red box). In \"Outputs,\" we see that the network correctly produces the target item. The red boxes in the read and write weightings highlight the three locations where the target item was written and then read. The solution the network finds is to form a compressed representation (black box in \"Adds\") of each item that it can store in a single location. For further analysis, see the main text. Figure 12: NTM Memory Use During the Associative Recall Task. In \"Inputs,\" a sequence of items, each composed of three consecutive binary random vectors is propagated to the controller. The distinction between items is designated by delimiter symbols (row 7 in \"Inputs\"). After several items have been presented, a delimiter that designates a query is presented (row 8 in \"Inputs\"). A single query item is presented (green box), and the network target corresponds to the subsequent item in the sequence (red box). In \"Outputs,\" we see that the network correctly produces the target item. The red boxes in the read and write weightings highlight the three locations where the target item was written and then read. The solution the network finds is to form a compressed representation (black box in \"Adds\") of each item that it can store in a single location. For further analysis, see the main text.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page018.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                168,
+                87,
+                445,
+                252
+            ],
+            "caption": "Figure 13: Dynamic N-Gram Learning Curves.",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page019.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                88,
+                100,
+                522,
+                148
+            ],
+            "caption": "Figure 14: Dynamic N-Gram Inference. The top row shows a test sequence from the N-Gram task, and the rows below show the corresponding predictive distributions emitted by the optimal estimator, NTM, and LSTM. In most places the NTM predictions are almost indistinguishable from the optimal ones. However at the points indicated by the two arrows it makes clear mistakes, one of which is explained in Figure 15. LSTM follows the optimal predictions closely in some places but appears to diverge further as the sequence progresses; we speculate that this is due to LSTM “forgetting” the observations at the start of the sequence. Figure 14: Dynamic N-Gram Inference. The top row shows a test sequence from the N-Gram task, and the rows below show the corresponding predictive distributions emitted by the optimal estimator, NTM, and LSTM. In most places the NTM predictions are almost indistinguishable from the optimal ones. However at the points indicated by the two arrows it makes clear mistakes, one of which is explained in Figure 15. LSTM follows the optimal predictions closely in some places but appears to diverge further as the sequence progresses; we speculate that this is due to LSTM “forgetting” the observations at the start of the sequence.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page020.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                146,
+                297,
+                463,
+                507
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page020.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                141,
+                86,
+                469,
+                173
+            ],
+            "caption": "Figure 16: Example Input and Target Sequence for the Priority Sort Task. The input sequence contains random binary vectors and random scalar priorities. The target sequence is a subset of the input vectors sorted by the priorities.",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page021.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                108,
+                243,
+                502,
+                368
+            ],
+            "caption": "Figure 17: NTM Memory Use During the Priority Sort Task. Left: Write locations returned by fitting a linear function of the priorities to the observed write locations. Middle: Observed write locations. Right: Read locations.",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page021.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 22,
+            "type": "figure",
+            "bbox": [
+                168,
+                87,
+                446,
+                252
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_018_page022.png"
+        }
+    ]
+}

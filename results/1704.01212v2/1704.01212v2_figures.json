@@ -1,0 +1,20 @@
+{
+    "total_count": 1,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                313,
+                174,
+                534,
+                308
+            ],
+            "caption": "Figure 1. A Message Passing Neural Network predicts quantum properties of an organic molecule by modeling a computationally expensive DFT calculation.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        }
+    ]
+}

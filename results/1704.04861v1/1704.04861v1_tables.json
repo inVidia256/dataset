@@ -1,0 +1,134 @@
+{
+    "total_count": 8,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                307,
+                81,
+                543,
+                347
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1. MobileNet Body Architecture\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Type/Stride</td>\n    <td>Filter Shape</td>\n    <td>Input Size</td>\n  </tr>\n  <tr>\n    <td>Conv/s2</td>\n    <td>3x3x3x32</td>\n    <td>224×224×3</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s1</td>\n    <td>3x3x32dw</td>\n    <td>112×112×32</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x32x64</td>\n    <td>112×112×32</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s2</td>\n    <td>3x3x64dw</td>\n    <td>112×112×64</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x64x128</td>\n    <td>56×56×64</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s1</td>\n    <td>3x3x128dw</td>\n    <td>56×56×128</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x128x128</td>\n    <td>56×56×128</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s2</td>\n    <td>3x3x128dw</td>\n    <td>56×56×128</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x128x256</td>\n    <td>28×28×128</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s1</td>\n    <td>3x3x256dw</td>\n    <td>28×28×256</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x256x256</td>\n    <td>28×28×256</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s2</td>\n    <td>3x3x256dw</td>\n    <td>28×28×256</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x256x512</td>\n    <td>14×14×256</td>\n  </tr>\n  <tr>\n    <td>5xConv dw/s1</td>\n    <td>3x3x512dw</td>\n    <td>14×14×512</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x512x512</td>\n    <td>14×14×512</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s2</td>\n    <td>3x3x512dw</td>\n    <td>14×14×512</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x512x1024</td>\n    <td>7×7×512</td>\n  </tr>\n  <tr>\n    <td>Conv dw/s2</td>\n    <td>3x3x1024dw</td>\n    <td>7×7×1024</td>\n  </tr>\n  <tr>\n    <td>Conv/s1</td>\n    <td>1x1x1024x1024</td>\n    <td>7×7×1024</td>\n  </tr>\n  <tr>\n    <td>Avg Pool/s1</td>\n    <td>Pool7x7</td>\n    <td>7×7×1024</td>\n  </tr>\n  <tr>\n    <td>FC/s1</td>\n    <td>1024x1000</td>\n    <td>1×1×1024</td>\n  </tr>\n  <tr>\n    <td>Softmax/s1</td>\n    <td>Classifier</td>\n    <td>1×1×1000</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                329,
+                367,
+                520,
+                438
+            ],
+            "caption": "Table 2. Resource Per Layer Type",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Type</td>\n    <td>Mult-Adds</td>\n    <td>Parameters</td>\n  </tr>\n  <tr>\n    <td>Conv1x1</td>\n    <td>94.86%</td>\n    <td>74.59%</td>\n  </tr>\n  <tr>\n    <td>Conv DW3x3</td>\n    <td>3.06%</td>\n    <td>1.06%</td>\n  </tr>\n  <tr>\n    <td>Conv3x3</td>\n    <td>1.19%</td>\n    <td>0.02%</td>\n  </tr>\n  <tr>\n    <td>Fully Connected</td>\n    <td>0.18%</td>\n    <td>24.33%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                48,
+                113,
+                284,
+                196
+            ],
+            "caption": "Table 3. Resource usage for modifications to standard convolution. Note that each row is a cumulative effect adding on top of the previous row. This example is for an internal MobileNet layer with \\( D_K = 3 \\), \\( M = 512 \\), \\( N = 512 \\), \\( D_F = 14 \\). The text content from the image is:\n\n\"Table 5. Narrow vs Shallow MobileNet\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Layer/Modification</td>\n    <td>MillionMult-Adds</td>\n    <td>MillionParameters</td>\n  </tr>\n  <tr>\n    <td>Convolution</td>\n    <td>462</td>\n    <td>2.36</td>\n  </tr>\n  <tr>\n    <td>Depthwise Separable Conv</td>\n    <td>52.3</td>\n    <td>0.27</td>\n  </tr>\n  <tr>\n    <td>a=0.75</td>\n    <td>29.6</td>\n    <td>0.15</td>\n  </tr>\n  <tr>\n    <td>P=0.714</td>\n    <td>15.1</td>\n    <td>0.15</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                307,
+                81,
+                544,
+                403
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4. Depthwise Separable vs Full Convolution MobileNet\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ImageNetAccuracy</td>\n    <td>MillionMult-Adds</td>\n    <td>MillionParameters</td>\n  </tr>\n  <tr>\n    <td>Conv MobileNet</td>\n    <td>71.7%</td>\n    <td>4866</td>\n    <td>29.3</td>\n  </tr>\n  <tr>\n    <td>MobileNet</td>\n    <td>70.6%</td>\n    <td>569</td>\n    <td>4.2</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ImageNetAccuracy</td>\n    <td>MillionMult-Adds</td>\n    <td>MillionParameters</td>\n  </tr>\n  <tr>\n    <td>0.75 MobileNet</td>\n    <td>68.4%</td>\n    <td>325</td>\n    <td>2.6</td>\n  </tr>\n  <tr>\n    <td>Shallow MobileNet</td>\n    <td>65.3%</td>\n    <td>307</td>\n    <td>2.9</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Width Multiplier</td>\n    <td>ImageNetAccuracy</td>\n    <td>MillionMult-Adds</td>\n    <td>MillionParameters</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224</td>\n    <td>70.6%</td>\n    <td>569</td>\n    <td>4.2</td>\n  </tr>\n  <tr>\n    <td>0.75 MobileNet-224</td>\n    <td>68.4%</td>\n    <td>325</td>\n    <td>2.6</td>\n  </tr>\n  <tr>\n    <td>0.5 MobileNet-224</td>\n    <td>63.7%</td>\n    <td>149</td>\n    <td>1.3</td>\n  </tr>\n  <tr>\n    <td>0.25 MobileNet-224</td>\n    <td>50.6%</td>\n    <td>41</td>\n    <td>0.5</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Resolution</td>\n    <td>ImageNetAccuracy</td>\n    <td>MillionMult-Adds</td>\n    <td>MillionParameters</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224</td>\n    <td>70.6%</td>\n    <td>569</td>\n    <td>4.2</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-192</td>\n    <td>69.1%</td>\n    <td>418</td>\n    <td>4.2</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-160</td>\n    <td>67.2%</td>\n    <td>290</td>\n    <td>4.2</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-128</td>\n    <td>64.4%</td>\n    <td>186</td>\n    <td>4.2</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page005.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                307,
+                79,
+                544,
+                339
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 8. MobileNet Comparison to Popular Models\" Table 11. Performance of PlaNet using the MobileNet architecture. Percentages are the fraction of the Im2GPS test dataset that were localized within a certain distance from the ground truth. The numbers for the original PlaNet model are based on an updated version that has an improved architecture and training dataset.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ImageNet</td>\n    <td>Million</td>\n    <td>Million</td>\n  </tr>\n  <tr>\n    <td>Accuracy</td>\n    <td>Multi Adds</td>\n    <td>Parameters</td>\n  </tr>\n  <tr>\n    <td>1.0 Mobile Net-224</td>\n    <td>70.6%</td>\n    <td>569</td>\n    <td>4.2</td>\n  </tr>\n  <tr>\n    <td>Google Net</td>\n    <td>69.8%</td>\n    <td>1550</td>\n    <td>6.8</td>\n  </tr>\n  <tr>\n    <td>VGG 16</td>\n    <td>71.5%</td>\n    <td>15300</td>\n    <td>138</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ImageNet</td>\n    <td>Million</td>\n    <td>Million</td>\n  </tr>\n  <tr>\n    <td>Accuracy</td>\n    <td>Multi Adds</td>\n    <td>Parameters</td>\n  </tr>\n  <tr>\n    <td>0.50 MobileNet-160</td>\n    <td>60.2%</td>\n    <td>76</td>\n    <td>1.32</td>\n  </tr>\n  <tr>\n    <td>Squeeze net</td>\n    <td>57.5%</td>\n    <td>1700</td>\n    <td>1.25</td>\n  </tr>\n  <tr>\n    <td>Alex Net</td>\n    <td>57.2%</td>\n    <td>720</td>\n    <td>60</td>\n  </tr>\n</table>\n\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Top-1</td>\n    <td>Million</td>\n    <td>Million</td>\n  </tr>\n  <tr>\n    <td>Accuracy</td>\n    <td>Multi Adds</td>\n    <td>Parameters</td>\n  </tr>\n  <tr>\n    <td>Inception V3[18]</td>\n    <td>84%</td>\n    <td>5000</td>\n    <td>23.2</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224</td>\n    <td>83.3%</td>\n    <td>569</td>\n    <td>3.3</td>\n  </tr>\n  <tr>\n    <td>0.75 MobileNet-224</td>\n    <td>81.9%</td>\n    <td>325</td>\n    <td>1.9</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-192</td>\n    <td>81.9%</td>\n    <td>418</td>\n    <td>3.3</td>\n  </tr>\n  <tr>\n    <td>0.75 MobileNet-192</td>\n    <td>80.5%</td>\n    <td>239</td>\n    <td>1.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                307,
+                102,
+                543,
+                221
+            ],
+            "caption": "Table 12. Face attribute classification using the MobileNet architecture. Each row corresponds to a different hyper-parameter setting (width multiplier α and image resolution).",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Width Multiplier/</td>\n    <td>Mean</td>\n    <td>Million</td>\n    <td>Million</td>\n  </tr>\n  <tr>\n    <td>Resolution</td>\n    <td>AP</td>\n    <td>Mult-Adds</td>\n    <td>Parameters</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-224</td>\n    <td>88.7%</td>\n    <td>568</td>\n    <td>3.2</td>\n  </tr>\n  <tr>\n    <td>0.5 MobileNet-224</td>\n    <td>88.1%</td>\n    <td>149</td>\n    <td>0.8</td>\n  </tr>\n  <tr>\n    <td>0.25 MobileNet-224</td>\n    <td>87.2%</td>\n    <td>45</td>\n    <td>0.2</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet-128</td>\n    <td>88.1%</td>\n    <td>185</td>\n    <td>3.2</td>\n  </tr>\n  <tr>\n    <td>0.5 MobileNet-128</td>\n    <td>87.7%</td>\n    <td>48</td>\n    <td>0.8</td>\n  </tr>\n  <tr>\n    <td>0.25 MobileNet-128</td>\n    <td>86.4%</td>\n    <td>15</td>\n    <td>0.2</td>\n  </tr>\n  <tr>\n    <td>Baseline</td>\n    <td>86.9%</td>\n    <td>1600</td>\n    <td>7.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                307,
+                264,
+                543,
+                390
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 13. COCO object detection results comparison using different frameworks and network architectures. mAP is reported with COCO primary challenge metric (AP at IoU=0.50:0.05:0.95)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>FrameworkResolution</td>\n    <td>Model</td>\n    <td>mAP</td>\n    <td>BillionMult-Adds</td>\n    <td>MillionParameters</td>\n  </tr>\n  <tr>\n    <td>SSD300</td>\n    <td>deeplab-VGG</td>\n    <td>21.1%</td>\n    <td>34.9</td>\n    <td>33.1</td>\n  </tr>\n  <tr>\n    <td>InceptionV2</td>\n    <td>22.0%</td>\n    <td>3.8</td>\n    <td>13.7</td>\n  </tr>\n  <tr>\n    <td>MobileNet</td>\n    <td>19.3%</td>\n    <td>1.2</td>\n    <td>6.8</td>\n  </tr>\n  <tr>\n    <td>Faster-RCNN300</td>\n    <td>VGG</td>\n    <td>22.9%</td>\n    <td>64.3</td>\n    <td>138.5</td>\n  </tr>\n  <tr>\n    <td>InceptionV2</td>\n    <td>15.4%</td>\n    <td>118.2</td>\n    <td>13.3</td>\n  </tr>\n  <tr>\n    <td>MobileNet</td>\n    <td>16.4%</td>\n    <td>25.2</td>\n    <td>6.1</td>\n  </tr>\n  <tr>\n    <td>Faster-RCNN600</td>\n    <td>VGG</td>\n    <td>25.7%</td>\n    <td>149.6</td>\n    <td>138.5</td>\n  </tr>\n  <tr>\n    <td>InceptionV2</td>\n    <td>21.9%</td>\n    <td>129.6</td>\n    <td>13.3</td>\n  </tr>\n  <tr>\n    <td>MobileNet</td>\n    <td>19.8%</td>\n    <td>30.5</td>\n    <td>6.1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                48,
+                79,
+                285,
+                165
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 14. MobileNet Distilled from FaceNet\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>1e-4Accuracy</td>\n    <td>MillionMult-Adds</td>\n    <td>MillionParameters</td>\n  </tr>\n  <tr>\n    <td>Face Net[25]</td>\n    <td>83%</td>\n    <td>1600</td>\n    <td>7.5</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet - 160</td>\n    <td>79.4%</td>\n    <td>286</td>\n    <td>4.9</td>\n  </tr>\n  <tr>\n    <td>1.0 MobileNet - 128</td>\n    <td>78.3%</td>\n    <td>185</td>\n    <td>5.5</td>\n  </tr>\n  <tr>\n    <td>0.75 MobileNet - 128</td>\n    <td>75.2%</td>\n    <td>166</td>\n    <td>3.4</td>\n  </tr>\n  <tr>\n    <td>0.75 MobileNet - 128</td>\n    <td>72.5%</td>\n    <td>108</td>\n    <td>3.8</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page008.png"
+        }
+    ]
+}

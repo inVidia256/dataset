@@ -1,0 +1,118 @@
+{
+    "total_count": 8,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                309,
+                226,
+                545,
+                414
+            ],
+            "caption": "Figure 1: Comparison of the proposed YOLOv4 and other state-of-the-art object detectors. YOLOv4 runs twice faster than EfficientDet with comparable performance. Improves YOLOv3's AP and FPS by 10% and 12%, respectively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                50,
+                70,
+                544,
+                205
+            ],
+            "caption": "The text content from the image is:\n\n\"Input: { Image, Patches, Image Pyramid, ... }\" Figure 2: Object detector. Figure 2: Object detector.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                310,
+                72,
+                542,
+                212
+            ],
+            "caption": "Figure 3: Mosaic represents a new method of data augmentation.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                311,
+                426,
+                544,
+                590
+            ],
+            "caption": "Figure 4: Cross mini-Batch Normalization.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                59,
+                68,
+                276,
+                212
+            ],
+            "caption": "Figure 5: Modified SAM.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                59,
+                231,
+                272,
+                335
+            ],
+            "caption": "Figure 6: Modified PAN.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                50,
+                177,
+                286,
+                318
+            ],
+            "caption": "Figure 7: Various method of data augmentation.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page008.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 10,
+            "type": "figure",
+            "bbox": [
+                97,
+                70,
+                496,
+                442
+            ],
+            "caption": "Figure 8: Comparison of the speed and accuracy of different object detectors. (Some articles stated the FPS of their detectors for only one of the GPUs: Maxwell/Pascal/Volta)",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page010.png"
+        }
+    ]
+}

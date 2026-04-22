@@ -1,0 +1,70 @@
+{
+    "total_count": 4,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                134,
+                118,
+                482,
+                313
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Algorithm 1：Training algorithm of INIT</td>\n  </tr>\n  <tr>\n    <td>Pretrain the embedding model φ</td>\n  </tr>\n  <tr>\n    <td>Initialize the generator G and the discriminator D</td>\n  </tr>\n  <tr>\n    <td>for the number of training epochs do</td>\n  </tr>\n  <tr>\n    <td>Darw a training sample batch</td>\n  </tr>\n  <tr>\n    <td>G forward propagates，producing 1-hop target images</td>\n  </tr>\n  <tr>\n    <td>D forward propagates</td>\n  </tr>\n  <tr>\n    <td>Calculate sample importance weights by Eq.7</td>\n  </tr>\n  <tr>\n    <td>Draw intermediate attributes</td>\n  </tr>\n  <tr>\n    <td>G forward propagates，producing multi-hop target images</td>\n  </tr>\n  <tr>\n    <td>D forward propagates</td>\n  </tr>\n  <tr>\n    <td>Calculate L data = E xs ，as ~p data [logD(xs ， as)]</td>\n  </tr>\n  <tr>\n    <td>Calculate Lg by Eq.10</td>\n  </tr>\n  <tr>\n    <td>Calculate L=L data + Lg</td>\n  </tr>\n  <tr>\n    <td>Optimize G by minimizing L</td>\n  </tr>\n  <tr>\n    <td>Optimize D by maximizing L</td>\n  </tr>\n  <tr>\n    <td>end</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page008.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                153,
+                114,
+                461,
+                254
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: The comparisons of the classification accuracy (%) [36] of each attribute (higher is better) and Fréchet Inception Distance [12] (FID, lower is better) on facial attribute transfer.\" The text content from the image is as follows:\n\n\"Table 1: The comparisons of the classification accuracy (%) [36] of each attribute (higher is better) and Fréchet Inception Distance [12] (FID, lower is better) on facial attribute transfer.\" The text content from the image is as follows:\n\n\"Table 1: The comparisons of the classification accuracy (%) [36] of each attribute (higher is better) and Fréchet Inception Distance [12] (FID, lower is better) on facial attribute transfer.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Star GAN[2]</td>\n    <td>AttGAN[11]</td>\n    <td>ST GAN[21]</td>\n    <td>Ours</td>\n    <td>Real Data</td>\n  </tr>\n  <tr>\n    <td>Hair Color</td>\n    <td>91.02</td>\n    <td>93.10</td>\n    <td>92.45</td>\n    <td>94.47</td>\n    <td>96.12</td>\n  </tr>\n  <tr>\n    <td>Aging</td>\n    <td>92.38</td>\n    <td>95.41</td>\n    <td>95.22</td>\n    <td>97.90</td>\n    <td>98.42</td>\n  </tr>\n  <tr>\n    <td>Bangs</td>\n    <td>87.97</td>\n    <td>91.03</td>\n    <td>91.84</td>\n    <td>93.26</td>\n    <td>93.67</td>\n  </tr>\n  <tr>\n    <td>Smile</td>\n    <td>85.53</td>\n    <td>90.47</td>\n    <td>87.41</td>\n    <td>90.94</td>\n    <td>91.00</td>\n  </tr>\n  <tr>\n    <td>Gender</td>\n    <td>90.72</td>\n    <td>96.77</td>\n    <td>94.76</td>\n    <td>96.57</td>\n    <td>98.25</td>\n  </tr>\n  <tr>\n    <td>Beard</td>\n    <td>87.90</td>\n    <td>93.53</td>\n    <td>93.09</td>\n    <td>95.58</td>\n    <td>95.34</td>\n  </tr>\n  <tr>\n    <td>Skin Color</td>\n    <td>89.35</td>\n    <td>92.65</td>\n    <td>94.03</td>\n    <td>94.69</td>\n    <td>94.22</td>\n  </tr>\n  <tr>\n    <td>Eyeglasses</td>\n    <td>93.38</td>\n    <td>96.44</td>\n    <td>96.09</td>\n    <td>98.46</td>\n    <td>99.31</td>\n  </tr>\n  <tr>\n    <td>FID</td>\n    <td>19.28</td>\n    <td>13.62</td>\n    <td>15.94</td>\n    <td>11.16</td>\n    <td>-</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page010.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                144,
+                114,
+                467,
+                247
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <thead>\n    <tr>\n      <th> </th>\n      <th>(a) Season Transfer</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Metric</td>\n      <td>CycleGAN [41]</td>\n      <td>StarGAN [2]</td>\n      <td>STGAN [21]</td>\n      <td>Ours</td>\n    </tr>\n    <tr>\n      <td>FID</td>\n      <td>48.40/49.39</td>\n      <td>44.84/52.16</td>\n      <td>45.61/50.37</td>\n      <td>40.09/44.91</td>\n    </tr>\n    <tr>\n      <td>Vote Percent</td>\n      <td>3.73%</td>\n      <td>11.07%</td>\n      <td>21.52%</td>\n      <td>63.68%</td>\n    </tr>\n    <tr>\n      <th>(b) Edge&Photo Transfer</th>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Metric</td>\n      <td>Pix2pix [15]</td>\n      <td>StarGAN [2]</td>\n      <td>AttGAN [11]</td>\n      <td>Ours</td>\n    </tr>\n    <tr>\n      <td>FID</td>\n      <td>39.59/17.13</td>\n      <td>33.23/13.92</td>\n      <td>29.01/13.86</td>\n      <td>28.44/12.30</td>\n    </tr>\n    <tr>\n      <td>Vote Percent</td>\n      <td>30.26%</td>\n      <td>3.77%</td>\n      <td>6.44%</td>\n      <td>59.53%</td>\n    </tr>\n  </tbody>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page013.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                188,
+                303,
+                423,
+                389
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2: The comparisons of FID and the percent of user votes (higher is better). For (a) season transfer, the FID is reported as “summer/winter”. For (b) edge&photo transfer, the FID is reported as “photo/edge”. Table 2: The comparisons of FID and the percent of user votes (higher is better). For (a) season transfer, the FID is reported as “summer/winter”. For (b) edge&photo transfer, the FID is reported as “photo/edge”. The text content from the image is as follows:\n\n\"Table 3: Comparison results of different variations of our method. w/ and w/o are the abbreviations of \"with\" and \"without\", respectively. Our full model is equivalent to the variation (c).\" The text content from the image is as follows:\n\n\"Table 3: Comparison results of different variations of our method. w/ and w/o are the abbreviations of \"with\" and \"without\", respectively. Our full model is equivalent to the variation (c).\" The text content from the image is as follows:\n\n\"Table 3: Comparison results of different variations of our method. w/ and w/o are the abbreviations of \"with\" and \"without\", respectively. Our full model is equivalent to the variation (c).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>AIW</td>\n    <td>MST</td>\n    <td>Hop Number</td>\n    <td>FID</td>\n    <td>Mean Acc</td>\n  </tr>\n  <tr>\n    <td>(a)</td>\n    <td>w/o</td>\n    <td>w/</td>\n    <td>2</td>\n    <td>18.91</td>\n    <td>92.86</td>\n  </tr>\n  <tr>\n    <td>(b)</td>\n    <td>w/</td>\n    <td>w/</td>\n    <td>3</td>\n    <td>11.23</td>\n    <td>94.98</td>\n  </tr>\n  <tr>\n    <td>(c)</td>\n    <td>w/</td>\n    <td>w/</td>\n    <td>2</td>\n    <td>11.16</td>\n    <td>95.08</td>\n  </tr>\n  <tr>\n    <td>(d)</td>\n    <td>w/</td>\n    <td>w/o</td>\n    <td>1</td>\n    <td>14.52</td>\n    <td>93.78</td>\n  </tr>\n  <tr>\n    <td>(e)</td>\n    <td>w/o</td>\n    <td>w/o</td>\n    <td>1</td>\n    <td>21.38</td>\n    <td>91.44</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page013.png"
+        }
+    ]
+}

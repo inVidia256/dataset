@@ -1,0 +1,90 @@
+{
+    "total_count": 7,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                327,
+                171,
+                537,
+                210
+            ],
+            "content": "```latex\nh_{i}^{(l+1)} = \\sigma \\left( \\sum_{r \\in \\mathcal{R}} \\sum_{j \\in \\mathcal{N}_{i}^{r}} \\frac{1}{c_{i,r}} W_{r}^{(l)} h_{j}^{(l)} + W_{0}^{(l)} h_{i}^{(l)} \\right),\n```",
+            "latex": "```latex\nh_{i}^{(l+1)} = \\sigma \\left( \\sum_{r \\in \\mathcal{R}} \\sum_{j \\in \\mathcal{N}_{i}^{r}} \\frac{1}{c_{i,r}} W_{r}^{(l)} h_{j}^{(l)} + W_{0}^{(l)} h_{i}^{(l)} \\right),\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                395,
+                625,
+                482,
+                658
+            ],
+            "content": "W _ { r } ^ { ( l ) } = \\sum _ { b = 1 } ^ { B } a _ { r b } ^ { ( l ) } V _ { b } ^ { ( l ) } ,",
+            "latex": "W _ { r } ^ { ( l ) } = \\sum _ { b = 1 } ^ { B } a _ { r b } ^ { ( l ) } V _ { b } ^ { ( l ) } ,"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                97,
+                481,
+                248,
+                515
+            ],
+            "content": "h _ { i } ^ { ( l + 1 ) } = \\sigma \\left( \\sum _ { m \\in \\mathcal { M } _ { i } } g _ { m } ( h _ { i } ^ { ( l ) } , h _ { j } ^ { ( l ) } ) \\right) ,",
+            "latex": "h _ { i } ^ { ( l + 1 ) } = \\sigma \\left( \\sum _ { m \\in \\mathcal { M } _ { i } } g _ { m } ( h _ { i } ^ { ( l ) } , h _ { j } ^ { ( l ) } ) \\right) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                137,
+                420,
+                209,
+                453
+            ],
+            "content": "W _ { r } ^ { ( l ) } = \\bigoplus _ { b = 1 } ^ { B } Q _ { b r } ^ { ( l ) } .",
+            "latex": "W _ { r } ^ { ( l ) } = \\bigoplus _ { b = 1 } ^ { B } Q _ { b r } ^ { ( l ) } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                383,
+                392,
+                493,
+                425
+            ],
+            "content": "{ \\mathcal { L } } = - \\sum _ { i \\in { \\mathcal { Y } } } \\sum _ { k = 1 } ^ { K } t _ { i k } \\ln h _ { i k } ^ { ( L ) } ,",
+            "latex": "{ \\mathcal { L } } = - \\sum _ { i \\in { \\mathcal { Y } } } \\sum _ { k = 1 } ^ { K } t _ { i k } \\ln h _ { i k } ^ { ( L ) } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                68,
+                333,
+                266,
+                380
+            ],
+            "content": "{ \\mathcal { L } } = - { \\frac { 1 } { ( 1 + \\omega ) | { \\hat { \\mathcal { E } } } | } } \\sum _ { ( s , r , o , y ) \\in { \\mathcal { T } } } y \\log l \\bigl ( f ( s , r , o ) \\bigr ) + ( 1 - y ) \\log \\bigl ( 1 - l \\bigl ( f ( s , r , o ) \\bigr ) \\bigr ) \\, ,",
+            "latex": "{ \\mathcal { L } } = - { \\frac { 1 } { ( 1 + \\omega ) | { \\hat { \\mathcal { E } } } | } } \\sum _ { ( s , r , o , y ) \\in { \\mathcal { T } } } y \\log l \\bigl ( f ( s , r , o ) \\bigr ) + ( 1 - y ) \\log \\bigl ( 1 - l \\bigl ( f ( s , r , o ) \\bigr ) \\bigr ) \\, ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                129,
+                236,
+                217,
+                251
+            ],
+            "content": "f ( s , r , o ) = e _ { s } ^ { T } R _ { r } e _ { o } \\, .",
+            "latex": "f ( s , r , o ) = e _ { s } ^ { T } R _ { r } e _ { o } \\, ."
+        }
+    ]
+}

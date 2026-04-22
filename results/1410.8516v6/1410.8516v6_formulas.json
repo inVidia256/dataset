@@ -1,0 +1,354 @@
+{
+    "total_count": 29,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                239,
+                592,
+                371,
+                615
+            ],
+            "content": "p _ { X } ( x ) = p _ { H } ( f ( x ) ) | \\operatorname* { d e t } { \\frac { \\partial f ( x ) } { \\partial x } } | .",
+            "latex": "p _ { X } ( x ) = p _ { H } ( f ( x ) ) | \\operatorname* { d e t } { \\frac { \\partial f ( x ) } { \\partial x } } | ."
+        },
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                258,
+                514,
+                352,
+                540
+            ],
+            "content": "p _ { H } ( h ) = \\prod _ { d } p _ { H _ { d } } ( h _ { d } ) .",
+            "latex": "p _ { H } ( h ) = \\prod _ { d } p _ { H _ { d } } ( h _ { d } ) ."
+        },
+        {
+            "page": 1,
+            "type": "formula",
+            "bbox": [
+                278,
+                659,
+                333,
+                688
+            ],
+            "content": "\\begin{array} { l } { { h \\sim p _ { H } ( h ) } } \\\\ { { x = f ^ { - 1 } ( h ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { h \\sim p _ { H } ( h ) } } \\\\ { { x = f ^ { - 1 } ( h ) } } \\end{array}"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                188,
+                638,
+                422,
+                669
+            ],
+            "content": "```latex\n\\log(p_X(x)) = \\sum_{d=1}^{D} \\log(p_{H_d}(f_d(x))) + \\log(|\\det(\\frac{\\partial f(x)}{\\partial x})|)\n```",
+            "latex": "```latex\n\\log(p_X(x)) = \\sum_{d=1}^{D} \\log(p_{H_d}(f_d(x))) + \\log(|\\det(\\frac{\\partial f(x)}{\\partial x})|)\n```"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                267,
+                390,
+                342,
+                415
+            ],
+            "content": "\\begin{array} { l } { { x _ { 1 } = y _ { 1 } } } \\\\ { { x _ { 2 } = y _ { 2 } - m ( y _ { 1 } ) . } } \\end{array}",
+            "latex": "\\begin{array} { l } { { x _ { 1 } = y _ { 1 } } } \\\\ { { x _ { 2 } = y _ { 2 } - m ( y _ { 1 } ) . } } \\end{array}"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                268,
+                332,
+                343,
+                357
+            ],
+            "content": "\\begin{array} { l } { y _ { 1 } = x _ { 1 } } \\\\ { y _ { 2 } = x _ { 2 } + m ( x _ { 1 } ) } \\end{array}",
+            "latex": "\\begin{array} { l } { y _ { 1 } = x _ { 1 } } \\\\ { y _ { 2 } = x _ { 2 } + m ( x _ { 1 } ) } \\end{array}"
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                200,
+                550,
+                410,
+                574
+            ],
+            "content": "```latex\n\\log(p_X(x)) = \\log(p_H(f(x))) + \\log(|\\det(\\frac{\\partial f(x)}{\\partial x})|)\n```",
+            "latex": "```latex\n\\log(p_X(x)) = \\log(p_H(f(x))) + \\log(|\\det(\\frac{\\partial f(x)}{\\partial x})|)\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                261,
+                177,
+                349,
+                210
+            ],
+            "content": "\\frac { \\partial y } { \\partial x } = \\left[ \\begin{array} { l l } { { I _ { d } } } & { { 0 } } \\\\ { { \\frac { \\partial y _ { I _ { 2 } } } { \\partial x _ { I _ { 1 } } } } } & { { \\frac { \\partial y _ { I _ { 2 } } } { \\partial x _ { I _ { 2 } } } } } \\end{array} \\right]",
+            "latex": "\\frac { \\partial y } { \\partial x } = \\left[ \\begin{array} { l l } { { I _ { d } } } & { { 0 } } \\\\ { { \\frac { \\partial y _ { I _ { 2 } } } { \\partial x _ { I _ { 1 } } } } } & { { \\frac { \\partial y _ { I _ { 2 } } } { \\partial x _ { I _ { 2 } } } } } \\end{array} \\right]"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                260,
+                111,
+                350,
+                136
+            ],
+            "content": "\\begin{array} { l } { { y _ { I _ { 1 } } = x _ { I _ { 1 } } } } \\\\ { { y _ { I _ { 2 } } = g ( x _ { I _ { 2 } } ; m ( x _ { I _ { 1 } } ) ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { y _ { I _ { 1 } } = x _ { I _ { 1 } } } } \\\\ { { y _ { I _ { 2 } } = g ( x _ { I _ { 2 } } ; m ( x _ { I _ { 1 } } ) ) } } \\end{array}"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                204,
+                698,
+                406,
+                730
+            ],
+            "content": "```latex\n\\log(p_X(x)) = \\sum_{i=1}^{D} [\\log(p_{H_i}(f_i(x))) + \\log(|S_{ii}|)].\n```",
+            "latex": "```latex\n\\log(p_X(x)) = \\sum_{i=1}^{D} [\\log(p_{H_i}(f_i(x))) + \\log(|S_{ii}|)].\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                263,
+                325,
+                348,
+                353
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\ny_{I_2} = x_{I_2} + m(x_{I_1})\nx_{I_2} = y_{I_2} - m(y_{I_1})\n```\n\nThis will produce the same output as the image you provided.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\ny_{I_2} = x_{I_2} + m(x_{I_1})\nx_{I_2} = y_{I_2} - m(y_{I_1})\n```\n\nThis will produce the same output as the image you provided."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                255,
+                246,
+                356,
+                274
+            ],
+            "content": "\\begin{array} { l } { { x _ { I _ { 1 } } = y _ { I _ { 1 } } } } \\\\ { { x _ { I _ { 2 } } = g ^ { - 1 } ( y _ { I _ { 2 } } ; m ( y _ { I _ { 1 } } ) ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { x _ { I _ { 1 } } = y _ { I _ { 1 } } } } \\\\ { { x _ { I _ { 2 } } = g ^ { - 1 } ( y _ { I _ { 2 } } ; m ( y _ { I _ { 1 } } ) ) } } \\end{array}"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                259,
+                189,
+                352,
+                221
+            ],
+            "content": "p _ { H } ( h ) = \\prod _ { d = 1 } ^ { D } p _ { H _ { d } } ( h _ { d } )",
+            "latex": "p _ { H } ( h ) = \\prod _ { d = 1 } ^ { D } p _ { H _ { d } } ( h _ { d } )"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                240,
+                243,
+                370,
+                265
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log(p_{H_d}) = -\\frac{1}{2}(h_d^2 + \\log(2\\pi))\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log(p_{H_d}) = -\\frac{1}{2}(h_d^2 + \\log(2\\pi))\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                193,
+                285,
+                417,
+                299
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log(p_{H_d}) = -\\log(1 + \\exp(h_d)) - \\log(1 + \\exp(-h_d))\n```\n\nThis will render the equation exactly as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\log(p_{H_d}) = -\\log(1 + \\exp(h_d)) - \\log(1 + \\exp(-h_d))\n```\n\nThis will render the equation exactly as shown in the image."
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                253,
+                330,
+                358,
+                533
+            ],
+            "content": "```latex\nh_{I_1}^{(1)} = x_{I_1}\nh_{I_2}^{(1)} = x_{I_2} + m^{(1)}(x_{I_1})\n\nh_{I_2}^{(2)} = h_{I_2}^{(1)}\nh_{I_1}^{(2)} = h_{I_1}^{(1)} + m^{(2)}(x_{I_2})\n\nh_{I_1}^{(3)} = h_{I_1}^{(2)}\nh_{I_2}^{(3)} = h_{I_2}^{(2)} + m^{(3)}(x_{I_1})\n\nh_{I_2}^{(4)} = h_{I_2}^{(3)}\nh_{I_1}^{(4)} = h_{I_1}^{(3)} + m^{(4)}(x_{I_2})\n\nh = \\exp(s) \\odot h^{(4)}\n```",
+            "latex": "```latex\nh_{I_1}^{(1)} = x_{I_1}\nh_{I_2}^{(1)} = x_{I_2} + m^{(1)}(x_{I_1})\n\nh_{I_2}^{(2)} = h_{I_2}^{(1)}\nh_{I_1}^{(2)} = h_{I_1}^{(1)} + m^{(2)}(x_{I_2})\n\nh_{I_1}^{(3)} = h_{I_1}^{(2)}\nh_{I_2}^{(3)} = h_{I_2}^{(2)} + m^{(3)}(x_{I_1})\n\nh_{I_2}^{(4)} = h_{I_2}^{(3)}\nh_{I_1}^{(4)} = h_{I_1}^{(3)} + m^{(4)}(x_{I_2})\n\nh = \\exp(s) \\odot h^{(4)}\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                266,
+                518,
+                344,
+                533
+            ],
+            "content": "The formula in the image can be written in LaTeX as:\n\n\\[ h = \\exp(s) \\odot h^{(4)} \\]",
+            "latex": "The formula in the image can be written in LaTeX as:\n\n\\[ h = \\exp(s) \\odot h^{(4)} \\]"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                256,
+                330,
+                355,
+                366
+            ],
+            "content": "\\begin{array} { l } { { h _ { I _ { 1 } } ^ { ( 1 ) } = x _ { I _ { 1 } } } } \\\\ { { h _ { I _ { 2 } } ^ { ( 1 ) } = x _ { I _ { 2 } } + m ^ { ( 1 ) } ( x _ { I _ { 1 } } ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { h _ { I _ { 1 } } ^ { ( 1 ) } = x _ { I _ { 1 } } } } \\\\ { { h _ { I _ { 2 } } ^ { ( 1 ) } = x _ { I _ { 2 } } + m ^ { ( 1 ) } ( x _ { I _ { 1 } } ) } } \\end{array}"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                254,
+                424,
+                356,
+                460
+            ],
+            "content": "\\begin{array} { l } { { h _ { I _ { 1 } } ^ { ( 3 ) } = h _ { I _ { 1 } } ^ { ( 2 ) } } } \\\\ { { h _ { I _ { 2 } } ^ { ( 3 ) } = h _ { I _ { 2 } } ^ { ( 2 ) } + m ^ { ( 3 ) } ( x _ { I _ { 1 } } ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { h _ { I _ { 1 } } ^ { ( 3 ) } = h _ { I _ { 1 } } ^ { ( 2 ) } } } \\\\ { { h _ { I _ { 2 } } ^ { ( 3 ) } = h _ { I _ { 2 } } ^ { ( 2 ) } + m ^ { ( 3 ) } ( x _ { I _ { 1 } } ) } } \\end{array}"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                255,
+                377,
+                356,
+                414
+            ],
+            "content": "\\begin{array} { l } { { h _ { I _ { 2 } } ^ { ( 2 ) } = h _ { I _ { 2 } } ^ { ( 1 ) } } } \\\\ { { h _ { I _ { 1 } } ^ { ( 2 ) } = h _ { I _ { 1 } } ^ { ( 1 ) } + m ^ { ( 2 ) } ( x _ { I _ { 2 } } ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { h _ { I _ { 2 } } ^ { ( 2 ) } = h _ { I _ { 2 } } ^ { ( 1 ) } } } \\\\ { { h _ { I _ { 1 } } ^ { ( 2 ) } = h _ { I _ { 1 } } ^ { ( 1 ) } + m ^ { ( 2 ) } ( x _ { I _ { 2 } } ) } } \\end{array}"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                205,
+                402,
+                406,
+                444
+            ],
+            "content": "```latex\nx_{H,i+1} = x_{H,i} + \\alpha_i \\left( \\frac{\\partial \\log(p_X((x_O, x_{H,i})))}{\\partial x_{H,i}} + \\epsilon \\right)\n\n\\epsilon \\sim \\mathcal{N}(0, I)\n```",
+            "latex": "```latex\nx_{H,i+1} = x_{H,i} + \\alpha_i \\left( \\frac{\\partial \\log(p_X((x_O, x_{H,i})))}{\\partial x_{H,i}} + \\epsilon \\right)\n\n\\epsilon \\sim \\mathcal{N}(0, I)\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                281,
+                549,
+                331,
+                561
+            ],
+            "content": "The expression in the image can be written in LaTeX as:\n\n\\[ z = Lx + b \\]",
+            "latex": "The expression in the image can be written in LaTeX as:\n\n\\[ z = Lx + b \\]"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                249,
+                662,
+                361,
+                676
+            ],
+            "content": "z = g _ { \\phi } ( \\epsilon \\mid x ) , \\; \\epsilon \\sim { \\mathcal { N } } ( 0 , I )",
+            "latex": "z = g _ { \\phi } ( \\epsilon \\mid x ) , \\; \\epsilon \\sim { \\mathcal { N } } ( 0 , I )"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                274,
+                707,
+                336,
+                731
+            ],
+            "content": "The expression in the image can be written in LaTeX as:\n\n\\[\n\\xi = \\frac{x - f_{\\theta}(z)}{\\sigma}\n\\]",
+            "latex": "The expression in the image can be written in LaTeX as:\n\n\\[\n\\xi = \\frac{x - f_{\\theta}(z)}{\\sigma}\n\\]"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                274,
+                707,
+                336,
+                731
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n\\[\n\\xi = \\frac{x - f_{\\theta}(z)}{\\sigma}\n\\]",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n\\[\n\\xi = \\frac{x - f_{\\theta}(z)}{\\sigma}\n\\]"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                154,
+                400,
+                455,
+                423
+            ],
+            "content": "```latex\n\\log(p_{(x,\\epsilon),(θ,φ)}(x,ε)) = \\log(p_H(h)) - D_X \\log(σ) + \\log(|\\det \\frac{∂g_φ}{∂ε}(ε;x)|)\n```",
+            "latex": "```latex\n\\log(p_{(x,\\epsilon),(θ,φ)}(x,ε)) = \\log(p_H(h)) - D_X \\log(σ) + \\log(|\\det \\frac{∂g_φ}{∂ε}(ε;x)|)\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                105,
+                446,
+                509,
+                545
+            ],
+            "content": "```latex\n\\begin{align*}\n\\log(p_{(x,\\epsilon),(\\theta,\\phi)}(x,\\epsilon)) - \\log(p_\\epsilon(\\epsilon)) &= \\log(p_H(h)) - D_X \\log(\\sigma) + \\log(|\\det \\frac{\\partial g_\\phi}{\\partial \\epsilon}(\\epsilon;x)|) - \\log(p_\\epsilon(\\epsilon)) \\\\\n&= \\log(p_H(h)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) + \\log(p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) - D_X \\log(\\sigma) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_{X|Z}(x \\mid z)) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z))\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\log(p_{(x,\\epsilon),(\\theta,\\phi)}(x,\\epsilon)) - \\log(p_\\epsilon(\\epsilon)) &= \\log(p_H(h)) - D_X \\log(\\sigma) + \\log(|\\det \\frac{\\partial g_\\phi}{\\partial \\epsilon}(\\epsilon;x)|) - \\log(p_\\epsilon(\\epsilon)) \\\\\n&= \\log(p_H(h)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) + \\log(p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) - D_X \\log(\\sigma) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_{X|Z}(x \\mid z)) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z))\n\\end{align*}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                105,
+                446,
+                510,
+                545
+            ],
+            "content": "```latex\n\\begin{align*}\n\\log(p_{(x,\\epsilon),(\\theta,\\phi)}(x,\\epsilon)) - \\log(p_\\epsilon(\\epsilon)) &= \\log(p_H(h)) - D_X \\log(\\sigma) + \\log(|\\det \\frac{\\partial g_\\phi}{\\partial \\epsilon}(\\epsilon; x)|) - \\log(p_\\epsilon(\\epsilon)) \\\\\n&= \\log(p_H(h)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) + \\log(p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) - D_X \\log(\\sigma) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_{X|Z}(x \\mid z)) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z))\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\log(p_{(x,\\epsilon),(\\theta,\\phi)}(x,\\epsilon)) - \\log(p_\\epsilon(\\epsilon)) &= \\log(p_H(h)) - D_X \\log(\\sigma) + \\log(|\\det \\frac{\\partial g_\\phi}{\\partial \\epsilon}(\\epsilon; x)|) - \\log(p_\\epsilon(\\epsilon)) \\\\\n&= \\log(p_H(h)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) + \\log(p_Z(z)) - D_X \\log(\\sigma) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_\\xi(\\xi)) - D_X \\log(\\sigma) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z)) \\\\\n&= \\log(p_{X|Z}(x \\mid z)) + \\log(p_Z(z)) - \\log(q_{Z|X;\\phi}(z))\n\\end{align*}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                156,
+                400,
+                449,
+                423
+            ],
+            "content": "```latex\n\\log(p_{(x,\\epsilon),(θ,φ)}(x,ε)) = \\log(p_H(h)) - D_X \\log(σ) + \\log(|\\det \\frac{∂g_φ}{∂ε}(ε;x)|)\n```",
+            "latex": "```latex\n\\log(p_{(x,\\epsilon),(θ,φ)}(x,ε)) = \\log(p_H(h)) - D_X \\log(σ) + \\log(|\\det \\frac{∂g_φ}{∂ε}(ε;x)|)\n```"
+        }
+    ]
+}

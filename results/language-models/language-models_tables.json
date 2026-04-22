@@ -1,0 +1,246 @@
+{
+    "total_count": 15,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                357,
+                76,
+                486,
+                139
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2. Architecture hyperparameters for the 4 model sizes.\" The text content from the image is:\n\n\"Table 2. Architecture hyperparameters for the 4 model sizes.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Parameters</td>\n    <td>Layers</td>\n    <td>d model</td>\n  </tr>\n  <tr>\n    <td>117M</td>\n    <td>12</td>\n    <td>768</td>\n  </tr>\n  <tr>\n    <td>345M</td>\n    <td>24</td>\n    <td>1024</td>\n  </tr>\n  <tr>\n    <td>762M</td>\n    <td>36</td>\n    <td>1280</td>\n  </tr>\n  <tr>\n    <td>1542M</td>\n    <td>48</td>\n    <td>1600</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                54,
+                58,
+                540,
+                153
+            ],
+            "caption": "The text content from the image is:\n\n\"Language Models are Unsupervised Multitask Learners\"",
+            "footnote": "Table 3. Zero-shot results on many datasets. No training or fine-tuning was performed for any of these results. PTB and WikiText-2 results are from (Gong et al., 2018). CBT results are from (Bajgar et al., 2016). LAMBADA accuracy result is from (Hoang et al., 2018) and LAMBADA perplexity result is from (Grave et al., 2016). Other results are from (Dai et al., 2019). Table 3. Zero-shot results on many datasets. No training or fine-tuning was performed for any of these results. PTB and WikiText-2 results are from (Gong et al., 2018). CBT results are from (Bajgar et al., 2016). LAMBADA accuracy result is from (Hoang et al., 2018) and LAMBADA perplexity result is from (Grave et al., 2016). Other results are from (Dai et al., 2019). Table 3. Zero-shot results on many datasets. No training or fine-tuning was performed for any of these results. PTB and WikiText-2 results are from (Gong et al., 2018). CBT results are from (Bajgar et al., 2016). LAMBADA accuracy result is from (Hoang et al., 2018) and LAMBADA perplexity result is from (Grave et al., 2016). Other results are from (Dai et al., 2019).",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>LAMBADA</td>\n    <td>LAMBADA</td>\n    <td>CBT-CN</td>\n    <td>CBT-NE</td>\n    <td>WikiText2</td>\n    <td>PTB</td>\n    <td>enwik8</td>\n    <td>text8</td>\n    <td>WikiText103</td>\n    <td>1BW</td>\n  </tr>\n  <tr>\n    <td>(PPL)</td>\n    <td>(ACC)</td>\n    <td>(ACC)</td>\n    <td>(ACC)</td>\n    <td>(PPL)</td>\n    <td>(PPL)</td>\n    <td>(BPB)</td>\n    <td>(BPC)</td>\n    <td>(PPL)</td>\n    <td>(PPL)</td>\n  </tr>\n  <tr>\n    <td>SOTA</td>\n    <td>99.8</td>\n    <td>59.23</td>\n    <td>85.7</td>\n    <td>82.3</td>\n    <td>39.14</td>\n    <td>46.54</td>\n    <td>0.99</td>\n    <td>1.08</td>\n    <td>18.3</td>\n    <td>21.8</td>\n  </tr>\n  <tr>\n    <td>117M</td>\n    <td>35.13</td>\n    <td>45.99</td>\n    <td>87.65</td>\n    <td>83.4</td>\n    <td>29.41</td>\n    <td>65.85</td>\n    <td>1.16</td>\n    <td>1.17</td>\n    <td>37.50</td>\n    <td>75.20</td>\n  </tr>\n  <tr>\n    <td>345M</td>\n    <td>15.60</td>\n    <td>55.48</td>\n    <td>92.35</td>\n    <td>87.1</td>\n    <td>22.76</td>\n    <td>47.33</td>\n    <td>1.01</td>\n    <td>1.06</td>\n    <td>26.37</td>\n    <td>55.72</td>\n  </tr>\n  <tr>\n    <td>762M</td>\n    <td>10.87</td>\n    <td>60.12</td>\n    <td>93.45</td>\n    <td>88.0</td>\n    <td>19.93</td>\n    <td>40.31</td>\n    <td>0.97</td>\n    <td>1.02</td>\n    <td>22.05</td>\n    <td>44.575</td>\n  </tr>\n  <tr>\n    <td>1542M</td>\n    <td>8.63</td>\n    <td>63.24</td>\n    <td>93.30</td>\n    <td>89.05</td>\n    <td>18.34</td>\n    <td>35.76</td>\n    <td>0.93</td>\n    <td>0.98</td>\n    <td>17.48</td>\n    <td>42.16</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                316,
+                77,
+                526,
+                159
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 4. Summarization performance as measured by ROUGE F1 metrics on the CNN and Daily Mail dataset. Bottom-Up Sum is the SOTA model from (Gehrmann et al., 2018)\" The text content from the image is as follows:\n\n\"Table 4. Summarization performance as measured by ROUGE F1 metrics on the CNN and Daily Mail dataset. Bottom-Up Sum is the SOTA model from (Gehrmann et al., 2018)\" The text content from the image is as follows:\n\n\"Table 4. Summarization performance as measured by ROUGE F1 metrics on the CNN and Daily Mail dataset. Bottom-Up Sum is the SOTA model from (Gehrmann et al., 2018)\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>R-1</td>\n    <td>R-2</td>\n    <td>R-L</td>\n    <td>R-AVG</td>\n  </tr>\n  <tr>\n    <td>Bottom-Up Sum</td>\n    <td>41.22</td>\n    <td>18.68</td>\n    <td>38.34</td>\n    <td>32.75</td>\n  </tr>\n  <tr>\n    <td>Lede-3</td>\n    <td>40.38</td>\n    <td>17.66</td>\n    <td>36.62</td>\n    <td>31.55</td>\n  </tr>\n  <tr>\n    <td>Seq2Seq+Attn</td>\n    <td>31.33</td>\n    <td>11.81</td>\n    <td>28.83</td>\n    <td>23.99</td>\n  </tr>\n  <tr>\n    <td>GPT-2 TL；DR：</td>\n    <td>29.34</td>\n    <td>8.27</td>\n    <td>26.58</td>\n    <td>21.40</td>\n  </tr>\n  <tr>\n    <td>Random-3</td>\n    <td>28.78</td>\n    <td>8.63</td>\n    <td>25.52</td>\n    <td>20.98</td>\n  </tr>\n  <tr>\n    <td>GPT-2 no hint</td>\n    <td>21.58</td>\n    <td>4.03</td>\n    <td>19.47</td>\n    <td>15.03</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                102,
+                76,
+                491,
+                336
+            ],
+            "caption": "",
+            "footnote": "The 30 most confident answers generated by GPT-2 on the development set of Natural Questions sorted by their probability according to GPT-2. None of these questions appear in WebText according to the procedure described in Section 4. The 30 most confident answers generated by GPT-2 on the development set of Natural Questions sorted by their probability according to GPT-2. None of these questions appear in WebText according to the procedure described in Section 4.",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Question</td>\n    <td>Generated Answer</td>\n    <td>Correct</td>\n    <td>Probability</td>\n  </tr>\n  <tr>\n    <td>Who wrote the book the origin of species?</td>\n    <td>Charles Darwin</td>\n    <td></td>\n    <td>83.4%</td>\n  </tr>\n  <tr>\n    <td>Who is the founder of the ubuntu project?</td>\n    <td>Mark Shuttleworth</td>\n    <td></td>\n    <td>82.0%</td>\n  </tr>\n  <tr>\n    <td>Who is the quarterback for the green bay packers?</td>\n    <td>Aaron Rodgers</td>\n    <td></td>\n    <td>81.1%</td>\n  </tr>\n  <tr>\n    <td>Panda is a national animal of which country?</td>\n    <td>China</td>\n    <td></td>\n    <td>76.8%</td>\n  </tr>\n  <tr>\n    <td>Who came up with the theory of relativity?</td>\n    <td>Albert Einstein</td>\n    <td></td>\n    <td>76.4%</td>\n  </tr>\n  <tr>\n    <td>When was the first star wars film released?</td>\n    <td>1977</td>\n    <td></td>\n    <td>71.4%</td>\n  </tr>\n  <tr>\n    <td>What is the most common blood type in sweden?</td>\n    <td>A</td>\n    <td></td>\n    <td>70.6%</td>\n  </tr>\n  <tr>\n    <td>Who is regarded as the founder of psychoanalysis?</td>\n    <td>Sigmund Freud</td>\n    <td></td>\n    <td>69.3%</td>\n  </tr>\n  <tr>\n    <td>Who took the first steps on the moon in 1969?</td>\n    <td>Neil Armstrong</td>\n    <td></td>\n    <td>66.8%</td>\n  </tr>\n  <tr>\n    <td>Who is the largest supermarket chain in the uk?</td>\n    <td>Tesco</td>\n    <td></td>\n    <td>65.3%</td>\n  </tr>\n  <tr>\n    <td>What is the meaning of shalom in english?</td>\n    <td>peace</td>\n    <td></td>\n    <td>64.0%</td>\n  </tr>\n  <tr>\n    <td>Who was the author of the art of war?</td>\n    <td>Sun Tzu</td>\n    <td></td>\n    <td>59.6%</td>\n  </tr>\n  <tr>\n    <td>Largest state in the us by land mass?</td>\n    <td>California</td>\n    <td></td>\n    <td>59.2%</td>\n  </tr>\n  <tr>\n    <td>Green algae is an example of which type of reproduction?</td>\n    <td>parthenogenesis</td>\n    <td></td>\n    <td>56.5%</td>\n  </tr>\n  <tr>\n    <td>Vikram samvat calendar is official in which country?</td>\n    <td>India</td>\n    <td></td>\n    <td>55.6%</td>\n  </tr>\n  <tr>\n    <td>Who is mostly responsible for writing the declaration of independence?</td>\n    <td>Thomas Jefferson</td>\n    <td></td>\n    <td>53.3%</td>\n  </tr>\n  <tr>\n    <td>What us state forms the western boundary of montana?</td>\n    <td>Montana</td>\n    <td></td>\n    <td>52.3%</td>\n  </tr>\n  <tr>\n    <td>Who plays ser davos in game of thrones?</td>\n    <td>Peter Dinklage</td>\n    <td></td>\n    <td>52.1%</td>\n  </tr>\n  <tr>\n    <td>Who appoints the chair of the federal reserve system?</td>\n    <td>Janet Yellen</td>\n    <td></td>\n    <td>51.5%</td>\n  </tr>\n  <tr>\n    <td>State the process that divides one nucleus into two genetically identical nuclei?</td>\n    <td>mitosis</td>\n    <td></td>\n    <td>50.7%</td>\n  </tr>\n  <tr>\n    <td>Who won the most mvp awards in the nba?</td>\n    <td>Michael Jordan</td>\n    <td></td>\n    <td>50.2%</td>\n  </tr>\n  <tr>\n    <td>What river is associated with the city of rome?</td>\n    <td>the Tiber</td>\n    <td></td>\n    <td>48.6%</td>\n  </tr>\n  <tr>\n    <td>Who is the first president to be impeached?</td>\n    <td>Andrew Johnson</td>\n    <td></td>\n    <td>48.3%</td>\n  </tr>\n  <tr>\n    <td>Who is the head of the department of homeland security 2017?</td>\n    <td>John Kelly</td>\n    <td></td>\n    <td>47.0%</td>\n  </tr>\n  <tr>\n    <td>What is the name given to the common currency to the european union?</td>\n    <td>Euro</td>\n    <td></td>\n    <td>46.8%</td>\n  </tr>\n  <tr>\n    <td>What was the emperor name in star wars?</td>\n    <td>Palpatine</td>\n    <td></td>\n    <td>46.5%</td>\n  </tr>\n  <tr>\n    <td>Do you have to have a gun permit to shoot at a range?</td>\n    <td>No</td>\n    <td></td>\n    <td>46.4%</td>\n  </tr>\n  <tr>\n    <td>Who proposed evolution in 1859 as the basis of biological development?</td>\n    <td>Charles Darwin</td>\n    <td></td>\n    <td>45.7%</td>\n  </tr>\n  <tr>\n    <td>Nuclear power plant that blew up in russia?</td>\n    <td>Chernobyl</td>\n    <td></td>\n    <td>45.7%</td>\n  </tr>\n  <tr>\n    <td>Who played john connor in the original terminator?</td>\n    <td>Arnold Schwarzenegger</td>\n    <td></td>\n    <td>45.2%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                130,
+                76,
+                460,
+                124
+            ],
+            "caption": "",
+            "footnote": "The text content from the image is:\n\n\"Table 6. Percentage of test set 8 grams overlapping with training sets.\" The text content from the image is:\n\n\"Table 6. Percentage of test set 8 grams overlapping with training sets.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>PTB</td>\n    <td>WikiText-2</td>\n    <td>enwik8</td>\n    <td>text8</td>\n    <td>Wikitext-103</td>\n    <td>1BW</td>\n  </tr>\n  <tr>\n    <td>Dataset train</td>\n    <td>2.67%</td>\n    <td>0.66%</td>\n    <td>7.50%</td>\n    <td>2.34%</td>\n    <td>9.09%</td>\n    <td>13.19%</td>\n  </tr>\n  <tr>\n    <td>WebText train</td>\n    <td>0.88%</td>\n    <td>1.63%</td>\n    <td>6.31%</td>\n    <td>3.94%</td>\n    <td>2.42%</td>\n    <td>3.75%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 14,
+            "type": "table",
+            "bbox": [
+                60,
+                276,
+                532,
+                628
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Small model completion</td>\n    <td>GPT-2 completion</td>\n  </tr>\n  <tr>\n    <td>Outfit 2：High End</td>\n    <td>for me!</td>\n  </tr>\n  <tr>\n    <td>This outfit was just in the eye of the storm.It'sa hybrid of what ASICS does with streetwear(lik eJ.Crew)and what J.Crew does with casual pieces that are abitmore traditional.Again，as I mentioned before，it's a lowbudget item and they can be very expensive.These willdefinitely be an issue if you're trying to work as acasualsneakermaker，and that's OK but don'thesitate ifyouwant to try the lower price versions of their outfits!</td>\n    <td>Outfit 2：Casual Jacket</td>\n  </tr>\n  <tr>\n    <td>This version features a very low cut-cut neckline(which is not a bad thing)，slightly longer legs，and apairof long legs to keep things nice.My preferred color ofcolor these items are blue-gray(which is my first colors，as they are a light white)，or black(which is my favoriteof my designs).As always，my pick of colors from thisstore have nothing to do with that other than the design.For a high end，I would recommend this to everyone!</td>\n    <td>I know that some people might be opposed to wearing sneakers in a turtleneck，but I wanted to be true to myself，so I went with a slim fitting turtleneck in a color moresimilar to my favorite color of the day.Overall，it'saclassic turtleneck，with nothing too flashy.The shoe itself isvery comfortable，however，I found that wearing them in these sneakers made myfeet look a bit larger.I'd wear them with denim，chinos，whatever，but would never recommend wearing themalone.There are just too many variables involved.</td>\n  </tr>\n  <tr>\n    <td>Outfit 3：High Light</td>\n    <td>Outfit 3：Dress</td>\n  </tr>\n  <tr>\n    <td>This was a\"high light\"look while I had a chanceto get some color.I think the color is based on</td>\n    <td>This is the final outfit I wore the ASICS TigerKillshots.This version of the ASICS is a much moremodern and streamlined version.The shoe has the mostmodern and minimal design that I can think of!With alot of black，these sneakers look very cool.They'lldefinitely be very comfortable for summer.</td>\n  </tr>\n  <tr>\n    <td>To me，wearing them with a suit is the easiest wayto have a good pair of sneaker shoes.That's pretty muchit! If</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page014.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                60,
+                232,
+                533,
+                598
+            ],
+            "caption": "The text content from the image is:\n\n\"Reconquista and Imperial era [ edit ]\" The text content from the image is:\n\n\"Reconquista and Imperial era [ edit ]\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Small model completion</td>\n    <td>GPT-2 completion</td>\n  </tr>\n  <tr>\n    <td>The era of Muslim Spain is very different from that ofother parts of the world， with a rather extensive medievalhistory.While the Spanish Empire existed during thesecond half of the 9th century BC it was quite slowlytransformed to a small， secularized empire by 1150A.D.in a much more prosperous and diverse state.In 1050CEthe emperor of Naples， at least partially in characterisedbya series of wars and invasions from the north-western coastto the western coast of the region(e.g.on the DanubeRiver which extended all the way from Gibraltar into thesouth of Spain， but was quickly destroyed on the sameday by the Roman army) ， assumed the title of Emperorof Naples.He made a large contribution over the last fewdecades to restore and maintain the empire， the first ofwhich to the west.His successors were Ferdinand， whotook power from the Papal Throne in 1148， while the firstimperial successor was King Alfred II of Sweden.Theempire was again made one of the few independent statesin the European Continent and although no more than 200million people lived on its territory during this period thepeople had much to say to the Emperor.From 1720 on theMuslims made up half the population of Spain.</td>\n    <td>The Reconquista(literally， \"The return to the country\")of 1092 and 1095 saw the establishment in the Iberianpeninsula of a united kingdom of Castile and Aragon inwhich a Muslim dynasty would exist.This was the lasttime in Europe where Muslim rule would be considered\"native\"and the last occasion where Christian-inflamedand organized conflicts would make themselves known inEurope.</td>\n  </tr>\n  <tr>\n    <td>The reign of Muslim Moors in Spain is often referred to， especially among non-Muslims， as the\"Conquest of Granada\"and Spain is sometimes referredto as Spain in \"Granada\".The last years of Muslim rulewere followed by the Spanish Reconquista where theMuslims were driven or compelled out of the IberianPeninsula with the victory of Ferdinand IX.in the Battleof Poitiers in March 1189 and the conquest of Jerusalemin 1187 by Saladin.</td>\n    <td>The Reconquista period in Spain came to an endwhen the Moors retreated north.However the Moorishrule would not be fully replaced by the Christian rule untilthe Reconquista era resumed when the Reconquista lastedfrom 1229 to 1492.</td>\n  </tr>\n  <tr>\n    <td>The last Muslim state in Spain， Granada， was conquered by the</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page015.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                61,
+                253,
+                532,
+                657
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Small model completion</td>\n    <td>GPT-2 completion</td>\n  </tr>\n  <tr>\n    <td>was coming to the left， they would get the \"correct\"direction.</td>\n    <td>was about to cross the intersection， Pac-Man would be able to dodge the ghosts' projectiles and return to the safe location of the safe house.</td>\n  </tr>\n  <tr>\n    <td>If the location is actually farther from what Pac-Man was at， the player's will not respond to the ghost's movement， and the ghost will instead return to the player'scurrent location. This is because Pac-Man does not moveby turning.</td>\n    <td>Buster</td>\n  </tr>\n  <tr>\n    <td>The ghost will have to go to another location ofsome kind to return where he began， and this is achievedin many ways. It will often simply leave the location， asfor example if Pac-Man did jump off a cliff， he wouldreturn to the spot where he was before vanishing into space.There is a good number of possibilities these ghostpaths may be possible， but the most obvious ones are ifthe player wants to avoid getting caught up in the game，with a goal as easy as keeping Pac-Man in the game for1/3 as long as he was.</td>\n    <td>The yellow ghost's AI is specifically designed totry to avoid Pac-Man from leaving the safe house.The player must press the SPACE bar to reveal the safehouse's doors， then go into them to find the yellow ghosthiding in the next room.</td>\n  </tr>\n  <tr>\n    <td>Chasing</td>\n    <td>The player must also note that the ghost will notattempt to exit the safe house if it sees Pac-Man alreadythere.In fact， the ghost will not attempt an exit in the firstplace unless they're already in the safe house.</td>\n  </tr>\n  <tr>\n    <td>In Pac-Man's case， this would be similar to howPac-Man can \"catch up\"in a fight.</td>\n    <td>These two behaviors are based on the fact thatthe player does not always attempt to reach the safe housebefore Pac-Man (or Blinky).</td>\n  </tr>\n  <tr>\n    <td>A ghost could chase through enemies.This is useful for many reasons， both for Pac-Man and hisAI.Unlike most Ghost games， this ghost simply travels in thedirection from</td>\n    <td>The player must also beware of this glitch if aghost( or another player) is already in the safe houseand attempting to get out as soon as Pac-Man or Blinkyis gone.At this point， the ghost will attempt to exit thesafe house in a similar manner as it is in\"Chase\"mode.</td>\n  </tr>\n  <tr>\n    <td>Pac-Man</td>\n  </tr>\n  <tr>\n    <td>There are some ghosts that follow Pac-Man.These ghostsare</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page016.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                61,
+                88,
+                534,
+                629
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Context(Web Text test)</td>\n  </tr>\n  <tr>\n    <td>Corporal Michael P.Go eldin was an unskilled laborer from Ireland when he enlisted in Company A in November1860.Golde in survived the war.Corporal Patrick O'Neal， also from Ireland, first enlisted in 1854 and served withCompany L， 3d U.S.Artillery， in Oregon.He returned to the East Coast and enlisted in the company in 1860.O'Neal served until 1874， when he was named superintendent of the National Cemetery at Willets Point， New York.Corporal Benjamin Browne was a shoemaker from Orange County， New York.In August 1862， he enlisted in thenewly formed 124th New York Volunteers， and was one of sixty-one men who transferred into Company A thatOctober.Browne reenlisted in the company in February 1864 while it was camped at Brandy Station.He returnedto civilian life after completing his enlistment in 1867.</td>\n  </tr>\n  <tr>\n    <td>On 10 June， Artificer William Collins was promoted to corporal， probably to fill a combat leadershipvoid for the crossing of the James River.Collins's service record does not reflect the qualities he demonstrated toearn this promotion， but he had obviously overcome some serious problems.Born in Sacketts Harbor， New York，Collins enlisted in the company in December 1853 at the age of twenty-two， and reenlisted in December 1858.Justa month before the war began in April 1861， Collins went \"over the hill\" and was not caught until three years later.Returned to the company on 22 March 1864， he was tried</td>\n    <td>GPT-2 completionin June of that year.Sentenced to be shot for desertion， he remained on active duty.</td>\n  </tr>\n  <tr>\n    <td>Small model completionon military charges and was discharged from the U.S.Military.He returned to the company， and was assignedto Division of Internal Affairs during the Civil War.</td>\n    <td>Captain James J.Dall was born in Virginia in 1829 duringthe Revolution and joined his father in the Army in 1836.Heserved with the 2d Virginia Infantry until 1845， whenhe went to the Western Reserve Regiment；and， on hisdischarge， he reenlisted with Company I， 25th New YorkVolunteers(which in 1845 numbered about 4， 500 men).One of his brothers， James， served with his companyin the same capacity in the same brigade.While theregiment remained in Connecticut through 1846， CaptainDall served with Company I at various times beforehis discharge.A veteran of the Mexican War， he hadserved two years on the staff of Brigadier General John JSullivan at San Antonio.During the Peninsula Campaignof 1863， he commanded a company of twenty-three andwas in charge of the battery of fifty-four heavy mortarsand the gunboat Pinta of the Battery， a gunboat andseveral other boats.Captain Dall was on active duty withCompany I in the fall of 1865.Two years later， he waspromoted to second lieutenant.</td>\n  </tr>\n  <tr>\n    <td>As an engineer， Collins also had training in engineering from his native New York.After graduate studiesin the Union College of Engineering， he was employedin the United States Army for two years at the sametime.There he worked under Captain Daniel Pfeifferand was promoted to colonel in May 1870， three yearsafter Captain Pfeiffer's enlistment.Collins returnedhome to England after completing his first year intheFirst Division to serve the next two years in the ArmyCorps of Engineers， and by his second year， he began toexperience his service duty.j-end of text-jMOSCOW，July 5(Reuters)-U.K.-based Russian state media andgovernment sources and experts say Moscow has soughtto downplay the \"military buildup\" of the Syrian oppositionwhile maintaining support for President DonaldTrump's plan to build a wall along the U.S.-Mexicoborder， calling it a \"military coup\".U.S.-led Syria war veteran and Syria envoy MichaelFlynn(R)， right， gestures with U.S.-based Syrian politicalanalyst Ahmet Koryat， with</td>\n    <td>Capta n JohnA.O'</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page017.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 18,
+            "type": "table",
+            "bbox": [
+                61,
+                282,
+                533,
+                729
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Small model completion</td>\n    <td>GPT-2 completion</td>\n  </tr>\n  <tr>\n    <td>was set to /.ssh/，which was the way things were.Thiscould not be fixed completely.I found I could make thatmuch more workable with just typing the username withyour mouse then trying to set permissions to be \"0600\"for the group，which is what my system is now configuredto do.</td>\n    <td>，making these files read-only.I tried just starting sshand using a program like passwd which modifies theowner/group to 0644 permissions，but it didn't work.Itwas annoying but not nearly as bad as it could be，justannoying to have to fiddle with permissions.</td>\n  </tr>\n  <tr>\n    <td>However，as of Cygwin 7 on Linux I have foundthat doing so is now\"unnecessary\" for my system!I alsoinstalled a package called chroot.It does that by allowingyou to install/upgrade to your system directory.</td>\n    <td>So I decided to do this as the reverse：For each .ssh folder in your Cygwin directory，setthe permission of each file and directory to 2644.Thenstart ssh with：ssh-add /.ssh/</td>\n  </tr>\n  <tr>\n    <td>So，as of Windows 8 and up，installing that canrequire chroot，so I tried and tried and found that it wasn'tso bad when installing the package on Linux and thenuninstalling it.As of my last write-up on Cygwin，thescript just does its job(the sudo commands do therest)，if you try it you will have to log the change.</td>\n    <td>The first time you connect，your permissions ofthe /.ssh folder that you just had in Cygwin will beset to 0600.Then every time you connect again，yourpermissions will change to 0644.</td>\n  </tr>\n  <tr>\n    <td>If that wasn't confusing enough，this is what I triedandjust went back to my /.ssh/directory and the chroot script.Ifound I was finally running out of permissions(becausei forgot to create a symlink to ssh from the file systemand</td>\n    <td>Makefile for Xresources as used in /.xsessionrcThese are made in my.xsessionrc：</td>\n  </tr>\n  <tr>\n    <td>.xprofile:.xsession-errors：color=\"”\"</td>\n    <td>For example：</td>\n  </tr>\n  <tr>\n    <td>.xprofile：color=blue</td>\n    <td>As the colors are stored in a separate file，the color in your/.xsession-errors will look like cyan instead of blue.</td>\n  </tr>\n  <tr>\n    <td>This is mostly because，as of now，only the coloris assigned to your</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page018.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 19,
+            "type": "table",
+            "bbox": [
+                61,
+                149,
+                529,
+                707
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>GPT-2 Completion 1</td>\n    <td>GPT-2 Completion 2</td>\n    <td>GPT-2 Completion 3</td>\n  </tr>\n  <tr>\n    <td>recipe.I made the longer versionthen used the pan for a layer ofbutter cream frosting and stuck 1/3of it into the fridge for a frostingtopper.Just make sure you have allof this frosting prepared earlier thanyou make this cake and you won'thave to wait on it as your egg whitessit on the bottom of your mixingbowl.</td>\n    <td>recipe.If you do，and you knowhow to make that cake，then yourlife will never be the same.</td>\n    <td>recipe，which will likely yield aboutthe same amount of cake.</td>\n  </tr>\n  <tr>\n    <td>You want the egg whites whippedto stiff peaks? Then put your cakedish over a pot of simmering waterand heat it up until it's just barelywarm.It doesn't take more than 3-5minutes；just enough to get it started</td>\n    <td>I have two very simple ruleswhen it comes to cookie crumbsor chocolate chips.1) When I buyraw sugar，I do not use it until it'scooled down and has at least halfateaspoon of sugar on it.That's myrule.And 2) If I have a recipe thatcalls for something and I want touse it in a recipe，I do not substitutewith something else on-line.Likethis.I found this really cute cardwith cute little kittens on</td>\n    <td>ChocolateButtermilkCakePrint Chunks of chocolate cake，coatedin buttermilk and toppedwith crunchy chopped chocolate，drizzled with chocolate sauce.Simplebut a nice change fromchocolate cake!Author：MommaMadeIngredients For the chocolatebuttermilk cake 11/2 cup unsaltedbutter，room temperature11/2 cup granulated sugar3 large eggs plus 1 egg yolkFor the chocolate glaze 1/3 cup cocoa powder13/4 cups powdered sugar6 ounces semis</td>\n  </tr>\n  <tr>\n    <td>GPT-2 Completion 4recipe.Meringue Cookies13/4 cup butter，softened1cup sugar1egg yolk3T.heavy cream31/2-4cups flourpinch of saltPeppermint JoJo Topping11/4 cups powdered sugar1cup chopped pecans1/2 cup finely chopped mint leaves1/2 cup chopped fresh mint(about1/2 sheet)1 tsp.peppermint extract1/4 tsp.sea saltpinch of sea</td>\n    <td>GPT-2 Completion 5recipe.My 2 failures at Christmas morningwere not due to poor frosting skills.That was another success story.The cake was beautifully moist，and well，just a beautiful cake.It'sgot very little air in it or moisture，but all the chocolate and mint wasperfectly blended together.</td>\n    <td>GPT-2 Completion 6recipe，which will give you about6-9 servings of delicious chocolatecake.To prevent your layersfrom sticking together，I used my8-inch round tart pan，lined it withparchment paper，then cut up 47-inch round cakes from it andsandwiched the layers between them(this also worked well forthe 1-layer chocolate cake as well).When you're ready to bake thiscake，remove the parchment paper，preheat oven to 350 degrees andbake for about 30-40 minutes，until the top is golden and a testercomes out clean.ChocolateButtermilkLayerCake with Peppermint Jo</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page019.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 20,
+            "type": "table",
+            "bbox": [
+                92,
+                139,
+                500,
+                614
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\nThe provided text does not contain an image of a table, but rather a narrative about the discovery of unicorns in the Andes Mountains and their ability to speak English. If you have a specific table that you would like me to convert into HTML format, please provide the table content, and I will be happy to assist you.\n</html>",
+            "cropped_image": "tables/table_012_page020.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 21,
+            "type": "table",
+            "bbox": [
+                60,
+                168,
+                538,
+                726
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>GPT-2：The original site in Vallon-Pont-D'arc in Southern France is a Unesco World Heritage site and is the oldest known and the best preserved cave decorated byman.The replica cave was built a few miles from the original site in Vallon-Pont-D'Arc in Southern France.The cave contains images of 14 different species of animalsincluding woolly rhinoceros， mammoths，and big cats.</td>\n    <td>Reference ： Cave mimics famous Caverne du Pont-d'Arc in France，the oldest cave decorated by man and the best preserved.The replica contains all 1，000 paintings which include 425 such as a woolly rhinoceros andmammoths.Minute details were copied using 3D modelling and anamorphic techniques，often used to shoot widescreen images.The modern cave also includes replica paw prints of bears，bones and details preserved in theoriginal cave.</td>\n  </tr>\n  <tr>\n    <td>Article ：‘If you can find my submarine，it's yours，’ Russian oil billionaire Roman Abramovich once said.And it seems the oligarch and Chelsea FC owner，whose submarine is just one of the extras that came with hisf300million superyacht Eclipse(perfect for getting to shore undetected)，is not the only wealthy businessman splashing out on underwater exploration.Dubbed Earth's real 'final frontier'，the oceans are still so little-explored that billionaires are queuing up to buyvessels that give them a glimpse of the dramatic seascapes and incredible wildlife of the world's oceans.So if you have a spare few million in the bank and want some holiday snaps and Instagram posts that will reallytrump everyone else，you may want to snap up one of these...Whale of a time：The OrcaSub takes you 2000 feet beneath the surface in two pressurised Perspex viewing domesfor optimum exploration</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GPT-2：The U-Boat Worx submarine can dive to 984 feet(300 metres)and is capable of diving to the bottom ofthe ocean.It can be used for diving，snorkelling and evensnorkel diving.The submarine is also equipped with asnorkelling platform.</td>\n    <td>Reference ：Feel like a James Bond villain with the mostadvanced submerged ocean vehicles.Some convert froma yacht into a submarine，and others detached off for aspeedy exploration.Oliver's Travels offers a Mile Lowpackage on its submarine，complete with chef and butlerfor f175，000 a night.</td>\n  </tr>\n  <tr>\n    <td>Article ：Amina Ali Qassim is sitting with her youngest grandchild on her lap，wiping away tears with her headscarf.Only a few months old，this is the baby girl whose ears she desperately tried to cover the night the aerial bombardmentstarted.She lay awake，she says，in a village mosque on the Yemeni island of Birim，counting explosions as thebaby cried.It could have been worse though.They could have still been in their house when the first missile landed.\"Our neighbor shouted to my husband 'you have to leave，they're coming.' And we just ran.As soon as we left thehouse，the first missile fell right by it and then a second on it.It burned everything to the ground，\"Qassim tells us</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GPT-2：Yemen is in the middle of a civil war.SaudiArabia is leading the coalition bombing campaign.It'sbeen bombing Yemen for more than two months now.</td>\n    <td>Reference ：Amina Ali Qassim's family sought shelter ina mosque before fleeing Yemen.Thousands like themare boarding boats to sail to Djibouti.Saudi Arabia has beenpounding Yemen in a bid to defeat Houthi rebels.</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page021.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 22,
+            "type": "table",
+            "bbox": [
+                58,
+                109,
+                537,
+                672
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 15. English to French and French to English translations generated by GPT-2.\" The text content from the image is:\n\n\"Table 15. English to French and French to English translations generated by GPT-2.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>This re-release， titled The Next Day Extra， was presentedin the form of three disks： the original album， unpublishedstudio sessions and remixes， plus a DVD containing thefour clips that have already been unveiled.</td>\n    <td>Les nouvelles re-releases， tout en premier disc，necessairede l'album， un studio session et remixes， plus une DVDde l'écran de quelques clips qui ont été deja echappes.</td>\n  </tr>\n  <tr>\n    <td>French reference</td>\n    <td>GPT-2 English translation</td>\n  </tr>\n  <tr>\n    <td>Un homme expliquait que le fonctionnement de la herniafonctionnelle qu'il avait reconna it avant de faire， lefonctionnement de la hernia fonctionnelle que j'ai reussi， j'ai</td>\n    <td>This release， originally released on three discs： the originalalbum， sessions studio in edites and remixes， a DVDcontaining the four clips that were released on the previousday.</td>\n  </tr>\n  <tr>\n    <td>English reference</td>\n    <td>GPT-2 French translation</td>\n  </tr>\n  <tr>\n    <td>One man explained that the free hernia surgery he'dreceived will allow him to work again.</td>\n    <td>Un homme expliquait que le fonctionnement de la herniafonctionnelle qu'il avait reconna it avant de faire， lefonctionnement de la hernia fonctionnelle que j'ai reussi， j'ai</td>\n  </tr>\n  <tr>\n    <td>French reference</td>\n    <td>GPT-2 English translation</td>\n  </tr>\n  <tr>\n    <td>Un homme a explique que l'operation gratuite qu'il avaitsubie pour soigner une hernie lui permettrait de travaillera nouveau.</td>\n    <td>A man told me that the operation gratuity he had beenpromised would not allow him to travel.</td>\n  </tr>\n  <tr>\n    <td>English reference</td>\n    <td>GPT-2 French translation</td>\n  </tr>\n  <tr>\n    <td>Speaking to an open government conference in Londonvia video link， Mr Kerry said：\"There is no question thatthe President and I and others in government have actuallylearned of some things that had been happening on anautomatic pilot because the ability has been there， goingback to World War Two and to the very difficult years ofthe Cold War， and then， of course， 9/11.\"</td>\n    <td>Le premier conference de l'édition internationale en ligne surla vide， le ministre de l'Édition internationale a étévide， lui dit：\"Il n'y a qu'une question que le presidentet moi et tous les autres personnes d'une administrationqui a été evident par la fois， par la part de la guerre， par lapart de la guer</td>\n  </tr>\n  <tr>\n    <td>French reference</td>\n    <td>GPT-2 English translation</td>\n  </tr>\n  <tr>\n    <td>S'exprimant lors d'une conférence intergouvernementalea Londres par liaison video， M.Kerry a declare：\"Il estindeniable que le President， moi-meme et d'autres membresdu gouvernement avons pris connaissance de certaines chosesen mode pilote automatique parce que nous en avions lapossibility， des la Seconde guerre mondiale et jusqu'auxannées difficiles de la Guerre froide， puis bien sure le 11septembre.\"</td>\n    <td>In a conference between the United States and London，Secretary of State John Kerry said：\"It is indeniable thatthe President， myself and others of the government havebeen aware of certain certain choices that have been madein the past in order to be able to do certain things in a moreautomated way.\"</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page022.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 23,
+            "type": "table",
+            "bbox": [
+                65,
+                142,
+                528,
+                653
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Q：What was the theme</td>\n    <td>A：\"one world， one dream\".</td>\n  </tr>\n  <tr>\n    <td>Q：What was the length of the race?</td>\n    <td>A：137，000km</td>\n  </tr>\n  <tr>\n    <td>Q：Was it larger than previous ones?</td>\n    <td>A：No</td>\n  </tr>\n  <tr>\n    <td>Q：Where did the race begin?</td>\n    <td>A：Olympia， Greece</td>\n  </tr>\n  <tr>\n    <td>Q：Is there anything notable about that place?</td>\n    <td>A：birthplace of Olympic Games</td>\n  </tr>\n  <tr>\n    <td>Q：Where did they go after?</td>\n    <td>A：Athens</td>\n  </tr>\n  <tr>\n    <td>Q：How many days was the race?</td>\n    <td>A：seven</td>\n  </tr>\n  <tr>\n    <td>Q：Did they visit any notable landmarks?</td>\n    <td>A：Panathinaiko Stadium</td>\n  </tr>\n  <tr>\n    <td>Q：And did they climb any mountains?</td>\n    <td>A：</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_015_page023.png"
+        }
+    ]
+}

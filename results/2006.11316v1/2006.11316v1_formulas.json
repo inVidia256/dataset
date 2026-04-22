@@ -1,0 +1,66 @@
+{
+    "total_count": 5,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                181,
+                311,
+                429,
+                344
+            ],
+            "content": "```latex\nConvolution_{p,c_{out}}(f,w) = \\sum_{i} \\sum_{k} w_{c_{out},i,k} * f_{(p-\\frac{K-1}{2}+k),i}\n```",
+            "latex": "```latex\nConvolution_{p,c_{out}}(f,w) = \\sum_{i} \\sum_{k} w_{c_{out},i,k} * f_{(p-\\frac{K-1}{2}+k),i}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                176,
+                239,
+                436,
+                271
+            ],
+            "content": "```latex\nPositionwiseFullyConnected_{p,c_{out}}(f,w) = \\sum_{i}^{C_{in}} w_{c_{out},i} * f_{p,i}\n```",
+            "latex": "```latex\nPositionwiseFullyConnected_{p,c_{out}}(f,w) = \\sum_{i}^{C_{in}} w_{c_{out},i} * f_{p,i}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                133,
+                492,
+                478,
+                528
+            ],
+            "content": "```latex\nGroupedConvolution_{p,c_{out}}(f,w) = \\sum_{i}^{C_{in}/G} \\sum_{k}^{K} w_{c_{out},i,k} * f_{(p-\\frac{K-1}{2}+k),(i+\\left\\lfloor\\frac{(i)(G)}{C_{out}}\\right\\rfloor\\frac{C_{in}}{G})}\n```",
+            "latex": "```latex\nGroupedConvolution_{p,c_{out}}(f,w) = \\sum_{i}^{C_{in}/G} \\sum_{k}^{K} w_{c_{out},i,k} * f_{(p-\\frac{K-1}{2}+k),(i+\\left\\lfloor\\frac{(i)(G)}{C_{out}}\\right\\rfloor\\frac{C_{in}}{G})}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                133,
+                492,
+                478,
+                528
+            ],
+            "content": "```latex\nGroupedConvolution_{p,c_{out}}(f,w) = \\sum_{i}^{C_{in}/G} \\sum_{k}^{K} w_{c_{out},i,k} * f_{(p-\\frac{K-1}{2}+k),(i+\\left\\lfloor \\frac{(i)(G)}{C_{out}} \\right\\rfloor,C_{in})}\n```",
+            "latex": "```latex\nGroupedConvolution_{p,c_{out}}(f,w) = \\sum_{i}^{C_{in}/G} \\sum_{k}^{K} w_{c_{out},i,k} * f_{(p-\\frac{K-1}{2}+k),(i+\\left\\lfloor \\frac{(i)(G)}{C_{out}} \\right\\rfloor,C_{in})}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                257,
+                628,
+                354,
+                642
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\Psi = (1 - \\alpha) \\Psi_t + \\alpha \\Psi_g\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\Psi = (1 - \\alpha) \\Psi_t + \\alpha \\Psi_g\n```"
+        }
+    ]
+}

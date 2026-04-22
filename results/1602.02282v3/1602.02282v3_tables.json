@@ -1,0 +1,38 @@
+{
+    "total_count": 2,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                192,
+                338,
+                417,
+                430
+            ],
+            "caption": "Table 1: Test set MNIST performance for importance weighted autoencoder (IWAE), VAE with normalizing flows (NF) and VAE with variational gaussian process(VGP). Number of importance weighted (IW) samples used for training is one unless otherwise stated. Table 1: Test set MNIST performance for importance weighted autoencoder (IWAE), VAE with normalizing flows (NF) and VAE with variational gaussian process(VGP). Number of importance weighted (IW) samples used for training is one unless otherwise stated. Table 1: Test set MNIST performance for importance weighted autoencoder (IWAE), VAE with normalizing flows (NF) and VAE with variational gaussian process(VGP). Number of importance weighted (IW) samples used for training is one unless otherwise stated.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>≤ log p((x))</td>\n  </tr>\n  <tr>\n    <td>VAE 1-layer + NF[17]</td>\n    <td>-85.10</td>\n  </tr>\n  <tr>\n    <td>IWAE，2-layer+IW=1[2]</td>\n    <td>-85.33</td>\n  </tr>\n  <tr>\n    <td>IWAE，2-layer+IW=50[2]</td>\n    <td>-82.90</td>\n  </tr>\n  <tr>\n    <td>VAE，2-layer+VGP[20]</td>\n    <td>-81.90</td>\n  </tr>\n  <tr>\n    <td>LVAE，5-layer</td>\n    <td>-82.12</td>\n  </tr>\n  <tr>\n    <td>LVAE，5-layer+finetuning</td>\n    <td>-81.84</td>\n  </tr>\n  <tr>\n    <td>LVAE，5-layer+finetuning+IW=10</td>\n    <td>-81.74</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                181,
+                70,
+                429,
+                234
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2: Test set log-likelihood scores for models trained on the OMNIGLOT and NORB datasets. The left most column show dataset and the number of latent variables i each model.\" The text content from the image is as follows:\n\n\"Table 2: Test set log-likelihood scores for models trained on the OMNIGLOT and NORB datasets. The left most column show dataset and the number of latent variables i each model.\" The text content from the image is as follows:\n\n\"Table 2: Test set log-likelihood scores for models trained on the OMNIGLOT and NORB datasets. The left most column show dataset and the number of latent variables i each model.\" The text content from the image is as follows:\n\n\"Table 2: Test set log-likelihood scores for models trained on the OMNIGLOT and NORB datasets. The left most column show dataset and the number of latent variables i each model.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>VAE</td>\n    <td>VAE+BN</td>\n    <td>VAE+BN+WU</td>\n    <td>LVAE+BN+WU</td>\n  </tr>\n  <tr>\n    <td>OMNIGLOT</td>\n    <td>-111.21</td>\n    <td>-105.62</td>\n    <td>-104.51</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>64</td>\n    <td>-110.58</td>\n    <td>-105.51</td>\n    <td>-102.61</td>\n    <td>-102.63</td>\n  </tr>\n  <tr>\n    <td>64-32</td>\n    <td>-111.26</td>\n    <td>-106.09</td>\n    <td>-102.52</td>\n    <td>-102.18</td>\n  </tr>\n  <tr>\n    <td>64-32-16</td>\n    <td>-111.58</td>\n    <td>-105.66</td>\n    <td>-102.66</td>\n    <td>-102.21</td>\n  </tr>\n  <tr>\n    <td>64-32-16-8</td>\n    <td>-110.46</td>\n    <td>-105.45</td>\n    <td>-102.48</td>\n    <td>-102.11</td>\n  </tr>\n  <tr>\n    <td>NORB</td>\n    <td>2741</td>\n    <td>3198</td>\n    <td>3338</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>64</td>\n    <td>2792</td>\n    <td>3224</td>\n    <td>3483</td>\n    <td>3272</td>\n  </tr>\n  <tr>\n    <td>64-32</td>\n    <td>2786</td>\n    <td>3235</td>\n    <td>3492</td>\n    <td>3519</td>\n  </tr>\n  <tr>\n    <td>64-32-16</td>\n    <td>2689</td>\n    <td>3201</td>\n    <td>3482</td>\n    <td>3449</td>\n  </tr>\n  <tr>\n    <td>64-32-16-8</td>\n    <td>2654</td>\n    <td>3198</td>\n    <td>3422</td>\n    <td>3455</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        }
+    ]
+}

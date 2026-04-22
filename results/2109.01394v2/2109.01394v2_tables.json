@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                113,
+                655,
+                496,
+                713
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 1: Log Likelihood and Equivariance Error on MNIST for different settings of temporal coherence length \\( L \\) relative to sequence length \\( S \\). Mean ± std. over 3 random initializations.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>Bubble VAE</td>\n    <td>VAE</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>L=1S</td>\n    <td>L=536S</td>\n    <td>L=0</td>\n    <td>L=536S</td>\n    <td>L=0</td>\n  </tr>\n  <tr>\n    <td>log p(x)↑</td>\n    <td>-186.8±0.1</td>\n    <td>-186.0±0.7</td>\n    <td>-218.5±0.9</td>\n    <td>-191.4±0.5</td>\n    <td>-189.0±0.8</td>\n  </tr>\n  <tr>\n    <td>Eeq↓</td>\n    <td>574±2</td>\n    <td>3247±3</td>\n    <td>3217±105</td>\n    <td>3370±12</td>\n    <td>13274±1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page008.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                106,
+                104,
+                508,
+                201
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2: Equivariance error (Eeq ↓) and correlation of observed capsule roll with ground truth factor shift (CapCorr ↑) for the dSprites dataset. Mean ± standard deviation over 3 random initializations.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>Bubble VAE</td>\n    <td>VAE</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>L=12S</td>\n    <td>L=13S</td>\n    <td>L=16S</td>\n    <td>L=0</td>\n    <td>L=13S</td>\n    <td>L=0</td>\n  </tr>\n  <tr>\n    <td>Cap Corr X</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.67±0.02</td>\n    <td>0.17±0.03</td>\n    <td>0.13±0.01</td>\n    <td>0.18±0.01</td>\n  </tr>\n  <tr>\n    <td>Cap Corr Y</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.66±0.02</td>\n    <td>0.21±0.02</td>\n    <td>0.12±0.01</td>\n    <td>0.16±0.01</td>\n  </tr>\n  <tr>\n    <td>Cap Corr O</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.52±0.01</td>\n    <td>0.09±0.01</td>\n    <td>0.10±0.01</td>\n    <td>0.11±0.00</td>\n  </tr>\n  <tr>\n    <td>Cap Corr S</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.42±0.01</td>\n    <td>0.51±0.01</td>\n    <td>0.50±0.00</td>\n    <td>0.52±0.00</td>\n  </tr>\n  <tr>\n    <td>Eeq</td>\n    <td>344±5</td>\n    <td>1034±6</td>\n    <td>2549±38</td>\n    <td>2971±9</td>\n    <td>1951±34</td>\n    <td>6934±0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page009.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                105,
+                121,
+                515,
+                270
+            ],
+            "caption": "Table 3: Log Likelihood and Equivariance Error on MNIST for all models tested. Mean ± std. over 3 random initializations.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>L=12S</td>\n    <td>L=1336S</td>\n    <td>L=14S</td>\n    <td>L=536S</td>\n    <td>L=0</td>\n  </tr>\n  <tr>\n    <td>K</td>\n    <td>K=3</td>\n    <td>K=3</td>\n    <td>K=3</td>\n    <td>K=3</td>\n    <td>K=9</td>\n  </tr>\n  <tr>\n    <td>log p(x)↑</td>\n    <td>-186.8±0.1</td>\n    <td>-188.0±0.5</td>\n    <td>-187.0±0.2</td>\n    <td>-186.0±0.7</td>\n    <td>-218.5±0.9</td>\n  </tr>\n  <tr>\n    <td>Eeq↓</td>\n    <td>573.9±1.5</td>\n    <td>1089.8±2.4</td>\n    <td>2136.9±7.8</td>\n    <td>3246.6±3.3</td>\n    <td>3216.6±104.9</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>Bubble VAE</td>\n    <td>Bubble VAE</td>\n    <td>Bubble VAE</td>\n    <td>Bubble VAE</td>\n    <td>VAE</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>L=15S</td>\n    <td>L=14S</td>\n    <td>L=536S</td>\n    <td>L=536S</td>\n    <td>L=0</td>\n  </tr>\n  <tr>\n    <td>K</td>\n    <td>K=2L</td>\n    <td>K=2L</td>\n    <td>K=2L</td>\n    <td>K=3</td>\n    <td>K=1</td>\n  </tr>\n  <tr>\n    <td>log p(x)↑</td>\n    <td>-200.9±0.7</td>\n    <td>-202.3±1.4</td>\n    <td>-190.8±0.7</td>\n    <td>-191.4±0.5</td>\n    <td>-189.0±0.8</td>\n  </tr>\n  <tr>\n    <td>Eeq↓</td>\n    <td>4206.7±903.3</td>\n    <td>1141.7±9.6</td>\n    <td>2605.7±16.1</td>\n    <td>3369.5±11.9</td>\n    <td>13273.9±0.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page017.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                105,
+                344,
+                532,
+                569
+            ],
+            "caption": "Table 4: Equivariance error and CapCorr for all models tested on the dSprites dataset. Mean ± standard deviation over 3 random initializations.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>L=1S</td>\n    <td>L=2S</td>\n    <td>L=1S</td>\n    <td>L=4S</td>\n    <td>L=1S</td>\n    <td>L=0</td>\n  </tr>\n  <tr>\n    <td>K</td>\n    <td>K=1</td>\n    <td>K=1</td>\n    <td>K=1</td>\n    <td>K=1</td>\n    <td>K=1</td>\n    <td>K=3</td>\n  </tr>\n  <tr>\n    <td>Cap CorrX</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.95±0.00</td>\n    <td>0.67±0.02</td>\n    <td>0.17±0.03</td>\n  </tr>\n  <tr>\n    <td>Cap CorrY</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.96±0.01</td>\n    <td>0.66±0.02</td>\n    <td>0.21±0.02</td>\n  </tr>\n  <tr>\n    <td>Cap CorrO</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.88±0.01</td>\n    <td>0.52±0.01</td>\n    <td>0.09±0.01</td>\n  </tr>\n  <tr>\n    <td>Cap CorrS</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>1.0±0</td>\n    <td>0.96±0.01</td>\n    <td>0.42±0.01</td>\n    <td>0.51±0.01</td>\n  </tr>\n  <tr>\n    <td>Eeq</td>\n    <td>344±5</td>\n    <td>759±9</td>\n    <td>1034±6</td>\n    <td>1395±7</td>\n    <td>2549±38</td>\n    <td>2971±9</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>Bubble VAE</td>\n    <td>Bubble VAE</td>\n    <td>Bubble VAE</td>\n    <td>Bubble VAE</td>\n    <td>Bubble VAE</td>\n    <td>VAE</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>L=1S</td>\n    <td>L=2S</td>\n    <td>L=1S</td>\n    <td>L=4S</td>\n    <td>L=1S</td>\n    <td>L=0</td>\n  </tr>\n  <tr>\n    <td>K</td>\n    <td>K=2L</td>\n    <td>K=2L</td>\n    <td>K=2L</td>\n    <td>K=2L</td>\n    <td>K=2L</td>\n    <td>K=1</td>\n  </tr>\n  <tr>\n    <td>Cap CorrX</td>\n    <td>0.16±0.01</td>\n    <td>0.15±0.01</td>\n    <td>0.13±0.01</td>\n    <td>0.12±0.02</td>\n    <td>0.09±0.01</td>\n    <td>0.18±0.01</td>\n  </tr>\n  <tr>\n    <td>Cap CorrY</td>\n    <td>0.15±0.01</td>\n    <td>0.14±0.01</td>\n    <td>0.12±0.01</td>\n    <td>0.12±0.01</td>\n    <td>0.11±0.02</td>\n    <td>0.16±0.01</td>\n  </tr>\n  <tr>\n    <td>Cap CorrO</td>\n    <td>0.12±0.00</td>\n    <td>0.13±0.02</td>\n    <td>0.10±0.01</td>\n    <td>0.09±0.00</td>\n    <td>0.06±0.01</td>\n    <td>0.11±0.00</td>\n  </tr>\n  <tr>\n    <td>Cap CorrS</td>\n    <td>0.52±0.02</td>\n    <td>0.55±0.00</td>\n    <td>0.52±0.00</td>\n    <td>0.48±0.02</td>\n    <td>0.27±0.01</td>\n    <td>0.52±0.00</td>\n  </tr>\n  <tr>\n    <td>Eeq</td>\n    <td>6825±126</td>\n    <td>6917±13</td>\n    <td>1951±34</td>\n    <td>2181±627</td>\n    <td>1721±27</td>\n    <td>6934±0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page017.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 17,
+            "type": "table",
+            "bbox": [
+                106,
+                633,
+                520,
+                702
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 5: Impact of Wδ (i.e., K) on MNIST performance.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n    <td>TVAE</td>\n  </tr>\n  <tr>\n    <td>L</td>\n    <td>L=536S</td>\n    <td>L=536S</td>\n    <td>L=0</td>\n    <td>L=0</td>\n    <td>L=0</td>\n  </tr>\n  <tr>\n    <td>K</td>\n    <td>K=3</td>\n    <td>K=9</td>\n    <td>K=3</td>\n    <td>K=9</td>\n    <td>K=18</td>\n  </tr>\n  <tr>\n    <td>log p(x)↑</td>\n    <td>-186.0±0.7</td>\n    <td>-190.6±0.2</td>\n    <td>-213.4±1.2</td>\n    <td>-218.5±0.9</td>\n    <td>-224.8±1.0</td>\n  </tr>\n  <tr>\n    <td>Eeq↓</td>\n    <td>3246.6±3.3</td>\n    <td>2606.3±17.0</td>\n    <td>12085.7±68.5</td>\n    <td>3216.6±104.9</td>\n    <td>1090.3±19.3</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page017.png"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+{
+    "total_count": 6,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                145,
+                123,
+                463,
+                223
+            ],
+            "caption": "Table 1: How does BERT spend its time? This is a breakdown of computation (in floating-point operations, or FLOPs) and latency (on a Google Pixel 3 smartphone) in BERT-base, reported to three significant digits. The FC layers account for more than 97% of the FLOPs and over 88% of the latency.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Stage</td>\n    <td>Module type</td>\n    <td>FLOPs</td>\n    <td>Latency</td>\n  </tr>\n  <tr>\n    <td>Embedding</td>\n    <td>Embedding</td>\n    <td>0.00%</td>\n    <td>0.26%</td>\n  </tr>\n  <tr>\n    <td>Encoder</td>\n    <td>FC in self-attention modules</td>\n    <td>24.3%</td>\n    <td>18.9%</td>\n  </tr>\n  <tr>\n    <td>Encoder</td>\n    <td>softmax(QKT) V in self-attention modules</td>\n    <td>2.70%</td>\n    <td>11.3%</td>\n  </tr>\n  <tr>\n    <td>Encoder</td>\n    <td>FC in feed-forward network layers</td>\n    <td>73.0%</td>\n    <td>69.4%</td>\n  </tr>\n  <tr>\n    <td>Final Classifier</td>\n    <td>FC layers in final classifier</td>\n    <td>0.00%</td>\n    <td>0.02%</td>\n  </tr>\n  <tr>\n    <td>Total</td>\n    <td></td>\n    <td>100%</td>\n    <td>100%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                114,
+                132,
+                495,
+                338
+            ],
+            "caption": "Table 2: Comparison of neural networks on the development set of the GLUE benchmark. †denotes models trained by the authors of the present paper. Bells and whistles are: A = adversarial training; D = distillation of final layer; E = distillation of encoder layers; S = transfer learning across GLUE tasks (a.k.a. STILTs [41]); W = per-layer warmup. In GLUE accuracy, a dash means that accuracy for this task is not provided in the literature.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Bells&Whistles</td>\n    <td>GLUE accuracy</td>\n    <td>efficiency</td>\n  </tr>\n  <tr>\n    <td>BERT-base</td>\n    <td></td>\n    <td>MNLI-mMNLI-mmQQPQNLISSST-2CoLASTS-BMRPCRTEAverage</td>\n    <td>#MP aramsGFLOPSLatency(ms)Speedup</td>\n  </tr>\n  <tr>\n    <td>Results without bells and whistles</td>\n  </tr>\n  <tr>\n    <td>Mobile BERT[15]</td>\n    <td></td>\n    <td>80.8-88.290.1-84.3-</td>\n  </tr>\n  <tr>\n    <td>ALBERT-base[19]</td>\n    <td></td>\n    <td>81.6--90.3-</td>\n  </tr>\n  <tr>\n    <td>Squeeze BERT+D</td>\n    <td>82.382.989.490.592.053.789.489.871.882.4</td>\n  </tr>\n  <tr>\n    <td>Results with bells and whistles</td>\n  </tr>\n  <tr>\n    <td>Distil BERT 6/768[17]</td>\n    <td>D</td>\n    <td>82.2-88.589.291.351.386.987.559.9-</td>\n  </tr>\n  <tr>\n    <td>Turc 6/768[20]</td>\n    <td>D</td>\n    <td>82.583.489.689.491.1-87.266.7-</td>\n  </tr>\n  <tr>\n    <td>Theseus 6/768[22] DESW</td>\n    <td></td>\n    <td>82.3-89.689.591.551.188.789.068.2-</td>\n  </tr>\n  <tr>\n    <td>Mobile BERT[15]DEW</td>\n    <td></td>\n    <td>84.4-91.592.5-87.0-</td>\n  </tr>\n  <tr>\n    <td>Squeeze BERT+DS</td>\n    <td>82.582.989.590.992.253.790.392.080.984.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                105,
+                121,
+                506,
+                338
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 3: Comparison of neural networks on the test set of the GLUE benchmark. †denotes models trained by the authors of the present paper. Bells and whistles are: A = adversarial training; D = distillation of final layer; E = distillation of encoder layers; S = transfer learning across GLUE tasks (a.k.a. STILTs [41]); W = per-layer warmup.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Bells&Whistles</td>\n    <td>GLUE accuracy</td>\n    <td>efficiency</td>\n  </tr>\n  <tr>\n    <td>Results without bells and whistles</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>BERT-base†</td>\n    <td>-</td>\n    <td>84.484.280.591.492.851.386.987.970.765.179.0</td>\n    <td>10922.516901.0x</td>\n  </tr>\n  <tr>\n    <td>BERT-base[9]</td>\n    <td>-</td>\n    <td>84.683.480.290.593.552.186.586.966.465.178.3</td>\n    <td>10922.516901.0x</td>\n  </tr>\n  <tr>\n    <td>Squeeze BERT+†</td>\n    <td>-</td>\n    <td>82.081.180.190.191.046.584.986.166.765.176.9</td>\n    <td>51.17.423904.3x</td>\n  </tr>\n  <tr>\n    <td>Results with bells and whistles</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Tiny BERT 4/312[21]</td>\n    <td>DE</td>\n    <td>82.581.8-87.792.643.379.9-62.965.1-</td>\n    <td>14.51.211814x</td>\n  </tr>\n  <tr>\n    <td>ELECTRA-Small++[12]</td>\n    <td>AS</td>\n    <td>81.6--88.391.155.684.684.963.665.1-</td>\n    <td>14.02.622486.8x</td>\n  </tr>\n  <tr>\n    <td>PKD 6/768[18]</td>\n    <td>DE</td>\n    <td>81.581.079.889.092.0-82.5-65.1-</td>\n    <td>67.011.38142.1x</td>\n  </tr>\n  <tr>\n    <td>Turc 6/768[20]</td>\n    <td>D</td>\n    <td>82.882.279.789.491.8-84.365.365.1-</td>\n    <td>67.511.38142.1x</td>\n  </tr>\n  <tr>\n    <td>Theseus 6/768[22] DESW</td>\n    <td></td>\n    <td>82.482.180.589.692.247.884.985.466.265.177.1</td>\n    <td>6611.38142.1x</td>\n  </tr>\n  <tr>\n    <td>Mobile BERT[15] DEW</td>\n    <td></td>\n    <td>84.383.479.491.692.651.185.586.770.465.178.5</td>\n    <td>25.35.365723.0x</td>\n  </tr>\n  <tr>\n    <td>Squeeze BERT+DS</td>\n    <td></td>\n    <td>82.081.180.390.191.446.586.787.873.265.178.1</td>\n    <td>51.17.423904.3x</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                98,
+                480,
+                504,
+                581
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\nSure, here is the table in HTML format:\n\n<html>\n<table>\n  <tr>\n    <td>dev_score = MEAN(</td>\n  </tr>\n  <tr>\n    <td>(acc(MNLI-m) + acc(MNLI-mm))/2,</td>\n  </tr>\n  <tr>\n    <td>(F1(QQP) + acc(QQP))/2,</td>\n  </tr>\n  <tr>\n    <td>acc(QNLI),</td>\n  </tr>\n  <tr>\n    <td>acc(SST-2),</td>\n  </tr>\n  <tr>\n    <td>MCC(CoLA),</td>\n  </tr>\n  <tr>\n    <td>(pearson(STS-B) + spearman(STS-B))/2,</td>\n  </tr>\n  <tr>\n    <td>(F1(MRPC) + acc(MRPC))/2,</td>\n  </tr>\n  <tr>\n    <td>acc(RTE)</td>\n  </tr>\n</table>\n</html>\n\nThis HTML code will render the table as shown in the image.\n</html>",
+            "cropped_image": "tables/table_004_page016.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 18,
+            "type": "table",
+            "bbox": [
+                114,
+                88,
+                494,
+                171
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 4: Our hyperparameter search space.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Hyperparameter</td>\n    <td>MNLI，QQP，QNLI，STS-2</td>\n    <td>STS-B，MRPC，RTE</td>\n    <td>CoLA</td>\n  </tr>\n  <tr>\n    <td>a</td>\n    <td>[0.8，0.9，1.0]</td>\n    <td>[0.8，0.9，1.0]</td>\n    <td>[0.8，0.9，1.0]</td>\n  </tr>\n  <tr>\n    <td>Learning Rate</td>\n    <td>[1e-05，2e-05，3e-05，4e-05]</td>\n    <td>[1e-05，2e-05，3e-05，4e-05，5e-05]</td>\n    <td>[1e-05，2e-05，3e-05，4e-05，5e-05]</td>\n  </tr>\n  <tr>\n    <td>Encoder Dropout</td>\n    <td>[0.0，0.1]</td>\n    <td>[0.0，0.1]</td>\n    <td>[0.0，0.1]</td>\n  </tr>\n  <tr>\n    <td>Final Dropout</td>\n    <td>[0.1，0.2]</td>\n    <td>[0.1，0.2]</td>\n    <td>[0.0，0.1]</td>\n  </tr>\n  <tr>\n    <td>Epochs</td>\n    <td>5</td>\n    <td>10</td>\n    <td>20</td>\n  </tr>\n  <tr>\n    <td>Batch Size</td>\n    <td>16</td>\n    <td>16</td>\n    <td>[16，32，48]</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page018.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 18,
+            "type": "table",
+            "bbox": [
+                111,
+                206,
+                498,
+                289
+            ],
+            "caption": "Table 5: Hyperparameters selected by our hyperparameter search when training SqueezeBERT with bells-and-whistles.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Hyperparameter</td>\n    <td>MNLI-m</td>\n    <td>MNLI-mm</td>\n    <td>QQP</td>\n    <td>QNLI</td>\n    <td>STS-2</td>\n    <td>CoLA</td>\n    <td>STS-B</td>\n    <td>MRPC</td>\n    <td>RTE</td>\n  </tr>\n  <tr>\n    <td>a</td>\n    <td>1.0</td>\n    <td>1.0</td>\n    <td>0.8</td>\n    <td>1.0</td>\n    <td>0.8</td>\n    <td>1.0</td>\n    <td>0.8</td>\n    <td>0.9</td>\n    <td>0.8</td>\n  </tr>\n  <tr>\n    <td>Learning Rate</td>\n    <td>3e-05</td>\n    <td>3e-05</td>\n    <td>4e-05</td>\n    <td>3e-05</td>\n    <td>3e-05</td>\n    <td>2e-05</td>\n    <td>4e-05</td>\n    <td>3e-05</td>\n    <td>3e-05</td>\n  </tr>\n  <tr>\n    <td>Encoder Dropout</td>\n    <td>0.0</td>\n    <td>0.0</td>\n    <td>0.1</td>\n    <td>0.0</td>\n    <td>0.1</td>\n    <td>0.0</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>Final Dropout</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n    <td>0.1</td>\n  </tr>\n  <tr>\n    <td>Epochs</td>\n    <td>4</td>\n    <td>4</td>\n    <td>5</td>\n    <td>2</td>\n    <td>5</td>\n    <td>5</td>\n    <td>10</td>\n    <td>9</td>\n    <td>3</td>\n  </tr>\n  <tr>\n    <td>Batch Size</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page018.png"
+        }
+    ]
+}

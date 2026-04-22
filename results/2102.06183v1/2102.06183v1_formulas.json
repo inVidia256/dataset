@@ -1,0 +1,78 @@
+{
+    "total_count": 6,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                81,
+                695,
+                255,
+                712
+            ],
+            "content": "l ^ { t a s k } = \\mathcal { L } ^ { t a s k } ( \\mathcal { G } ( p _ { \\tau _ { 1 } } , p _ { \\tau _ { 2 } } , \\dots , p _ { \\tau _ { N _ { t r a i n } } } ) , q ) ,",
+            "latex": "l ^ { t a s k } = \\mathcal { L } ^ { t a s k } ( \\mathcal { G } ( p _ { \\tau _ { 1 } } , p _ { \\tau _ { 2 } } , \\dots , p _ { \\tau _ { N _ { t r a i n } } } ) , q ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                52,
+                342,
+                269,
+                358
+            ],
+            "content": "p = \\mathcal { H } ( [ \\mathcal { F } _ { v } ^ { S G } ( c _ { 1 } ) , \\mathcal { F } _ { v } ^ { S G } ( c _ { 2 } ) , . . . , \\mathcal { F } _ { v } ^ { S G } ( c _ { N } ) ] , \\mathcal { F } _ { l } ^ { S G } ( S ) ) ,",
+            "latex": "p = \\mathcal { H } ( [ \\mathcal { F } _ { v } ^ { S G } ( c _ { 1 } ) , \\mathcal { F } _ { v } ^ { S G } ( c _ { 2 } ) , . . . , \\mathcal { F } _ { v } ^ { S G } ( c _ { N } ) ] , \\mathcal { F } _ { l } ^ { S G } ( S ) ) ,"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                126,
+                481,
+                209,
+                496
+            ],
+            "content": "l _ { \\mathrm { t a s k } } = { \\mathcal L } ^ { \\mathrm { t a s k } } ( p , q ) .",
+            "latex": "l _ { \\mathrm { t a s k } } = { \\mathcal L } ^ { \\mathrm { t a s k } } ( p , q ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                113,
+                583,
+                222,
+                598
+            ],
+            "content": "p _ { \\tau _ { i } } = \\mathcal { H } ( \\mathcal { F } _ { v } ( c _ { \\tau _ { i } } ) , \\mathcal { F } _ { l } ( S ) ) ,",
+            "latex": "p _ { \\tau _ { i } } = \\mathcal { H } ( \\mathcal { F } _ { v } ( c _ { \\tau _ { i } } ) , \\mathcal { F } _ { l } ( S ) ) ,"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                371,
+                397,
+                482,
+                432
+            ],
+            "content": "L = - { \\frac { 1 } { | { \\mathcal { D } } | } } \\sum _ { j = 1 } ^ { | { \\mathcal { D } } | } \\log { \\boldsymbol { p } } ^ { ( j ) } [ y _ { j } ] ,",
+            "latex": "L = - { \\frac { 1 } { | { \\mathcal { D } } | } } \\sum _ { j = 1 } ^ { | { \\mathcal { D } } | } \\log { \\boldsymbol { p } } ^ { ( j ) } [ y _ { j } ] ,"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                367,
+                338,
+                485,
+                372
+            ],
+            "content": "p ^ { ( j ) } = \\frac { \\sum _ { i = 1 } ^ { N _ { t r a i n } } e ^ { g _ { \\tau _ { i } } ^ { ( j ) } } } { \\operatorname { s u m } ( \\sum _ { i = 1 } ^ { N _ { t r a i n } } e ^ { g _ { \\tau _ { i } } ^ { ( j ) } } ) } .",
+            "latex": "p ^ { ( j ) } = \\frac { \\sum _ { i = 1 } ^ { N _ { t r a i n } } e ^ { g _ { \\tau _ { i } } ^ { ( j ) } } } { \\operatorname { s u m } ( \\sum _ { i = 1 } ^ { N _ { t r a i n } } e ^ { g _ { \\tau _ { i } } ^ { ( j ) } } ) } ."
+        }
+    ]
+}

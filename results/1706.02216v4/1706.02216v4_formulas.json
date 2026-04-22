@@ -1,0 +1,246 @@
+{
+    "total_count": 20,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                196,
+                537,
+                414,
+                552
+            ],
+            "content": "```latex\n\\mathbf{h}_v^k \\leftarrow \\sigma(\\mathbf{W} \\cdot \\text{MEAN}(\\{\\mathbf{h}_v^{k-1}\\} \\cup \\{\\mathbf{h}_u^{k-1}, \\forall u \\in \\mathcal{N}(v)\\})).\n```",
+            "latex": "```latex\n\\mathbf{h}_v^k \\leftarrow \\sigma(\\mathbf{W} \\cdot \\text{MEAN}(\\{\\mathbf{h}_v^{k-1}\\} \\cup \\{\\mathbf{h}_u^{k-1}, \\forall u \\in \\mathcal{N}(v)\\})).\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                176,
+                243,
+                436,
+                258
+            ],
+            "content": "J _ { \\mathcal { G } } ( \\mathbf { z } _ { u } ) = - \\log \\left( \\sigma ( \\mathbf { z } _ { u } ^ { \\top } \\mathbf { z } _ { v } ) \\right) - Q \\cdot \\mathbb { E } _ { v _ { n } \\sim P _ { n } ( v ) } \\log \\left( \\sigma ( - \\mathbf { z } _ { u } ^ { \\top } \\mathbf { z } _ { v _ { n } } ) \\right) ,",
+            "latex": "J _ { \\mathcal { G } } ( \\mathbf { z } _ { u } ) = - \\log \\left( \\sigma ( \\mathbf { z } _ { u } ^ { \\top } \\mathbf { z } _ { v } ) \\right) - Q \\cdot \\mathbb { E } _ { v _ { n } \\sim P _ { n } ( v ) } \\log \\left( \\sigma ( - \\mathbf { z } _ { u } ^ { \\top } \\mathbf { z } _ { v _ { n } } ) \\right) ,"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                181,
+                125,
+                430,
+                140
+            ],
+            "content": "```latex\n\\text{AGGREGATE}^{pool}_k = \\max(\\{\\sigma\\left(\\mathbf{W}_{\\text{pool}}\\mathbf{h}^k_{u_i} + \\mathbf{b}\\right), \\forall u_i \\in \\mathcal{N}(v)\\}),\n```",
+            "latex": "```latex\n\\text{AGGREGATE}^{pool}_k = \\max(\\{\\sigma\\left(\\mathbf{W}_{\\text{pool}}\\mathbf{h}^k_{u_i} + \\mathbf{b}\\right), \\forall u_i \\in \\mathcal{N}(v)\\}),\n```"
+        },
+        {
+            "page": 9,
+            "type": "formula",
+            "bbox": [
+                259,
+                288,
+                352,
+                302
+            ],
+            "content": "| z _ { v } - c _ { v } | < \\epsilon , \\forall v \\in \\mathcal { V } ,",
+            "latex": "| z _ { v } - c _ { v } | < \\epsilon , \\forall v \\in \\mathcal { V } ,"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                234,
+                180,
+                377,
+                208
+            ],
+            "content": "\\alpha \\sum _ { i , j \\in A } f ( \\mathbf { z } _ { i } ^ { \\top } \\mathbf { z } _ { j } ) + \\beta \\sum _ { i , j \\in B } g ( \\mathbf { z } _ { i } ^ { \\top } \\mathbf { z } _ { j } )",
+            "latex": "\\alpha \\sum _ { i , j \\in A } f ( \\mathbf { z } _ { i } ^ { \\top } \\mathbf { z } _ { j } ) + \\beta \\sum _ { i , j \\in B } g ( \\mathbf { z } _ { i } ^ { \\top } \\mathbf { z } _ { j } )"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                264,
+                395,
+                347,
+                410
+            ],
+            "content": "\\mathbf { Z Q } ^ { \\top } \\mathbf { Q Z } ^ { \\top } = \\mathbf { Z Z } ^ { \\top } ,",
+            "latex": "\\mathbf { Z Q } ^ { \\top } \\mathbf { Q Z } ^ { \\top } = \\mathbf { Z Z } ^ { \\top } ,"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                281,
+                331,
+                330,
+                344
+            ],
+            "content": "\\mathbf { Z } \\mathbf { Z } ^ { \\top } \\approx \\mathbf { M } ,",
+            "latex": "\\mathbf { Z } \\mathbf { Z } ^ { \\top } \\approx \\mathbf { M } ,"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                258,
+                658,
+                353,
+                684
+            ],
+            "content": "g _ { v } ( \\mathbf { x } ) = \\frac { 3 | \\mathcal { D } | \\epsilon } { b d _ { v } ^ { 2 } + 1 } - 2 \\epsilon",
+            "latex": "g _ { v } ( \\mathbf { x } ) = \\frac { 3 | \\mathcal { D } | \\epsilon } { b d _ { v } ^ { 2 } + 1 } - 2 \\epsilon"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                205,
+                569,
+                407,
+                596
+            ],
+            "content": "```latex\n\\begin{cases}\ng(\\mathbf{x}) > \\epsilon, & \\text{if } \\| \\mathbf{x} - \\mathbf{x}_v \\|_2 = 0 \\text{ for some } v \\in \\mathcal{D} \\\\\ng(\\mathbf{x}) \\leq -\\epsilon, & \\text{if } \\| \\mathbf{x} - \\mathbf{x}_v \\|_2 > C, \\forall v \\in \\mathcal{D},\n\\end{cases}\n```",
+            "latex": "```latex\n\\begin{cases}\ng(\\mathbf{x}) > \\epsilon, & \\text{if } \\| \\mathbf{x} - \\mathbf{x}_v \\|_2 = 0 \\text{ for some } v \\in \\mathcal{D} \\\\\ng(\\mathbf{x}) \\leq -\\epsilon, & \\text{if } \\| \\mathbf{x} - \\mathbf{x}_v \\|_2 > C, \\forall v \\in \\mathcal{D},\n\\end{cases}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                210,
+                179,
+                400,
+                249
+            ],
+            "content": "```latex\ng_v(\\mathbf{x}) + \\sum_{v' \\in \\mathcal{D} \\setminus v} g_{v'}(\\mathbf{x}) \\geq g_v(\\mathbf{x}) - (|\\mathcal{D}| - 1)2\\epsilon\n\n> g_v(\\mathbf{x}) - 2(|\\mathcal{D}|)\\epsilon\n\n> 2(|\\mathcal{D}|)\\epsilon - 2(|\\mathcal{D}|)\\epsilon\n\n> 0,\n```",
+            "latex": "```latex\ng_v(\\mathbf{x}) + \\sum_{v' \\in \\mathcal{D} \\setminus v} g_{v'}(\\mathbf{x}) \\geq g_v(\\mathbf{x}) - (|\\mathcal{D}| - 1)2\\epsilon\n\n> g_v(\\mathbf{x}) - 2(|\\mathcal{D}|)\\epsilon\n\n> 2(|\\mathcal{D}|)\\epsilon - 2(|\\mathcal{D}|)\\epsilon\n\n> 0,\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                244,
+                595,
+                366,
+                623
+            ],
+            "content": "\\left\\{ \\begin{array} { l l } { f _ { \\theta _ { \\sigma } } ( \\mathbf { x } _ { v } ) > 0 , } & { \\forall v \\in \\mathcal { D } } \\\\ { f _ { \\theta _ { \\sigma } } ( \\mathbf { x } _ { v } ) < 0 , } & { \\forall v \\in \\mathcal { V } \\setminus \\mathcal { D } . } \\end{array} \\right.",
+            "latex": "\\left\\{ \\begin{array} { l l } { f _ { \\theta _ { \\sigma } } ( \\mathbf { x } _ { v } ) > 0 , } & { \\forall v \\in \\mathcal { D } } \\\\ { f _ { \\theta _ { \\sigma } } ( \\mathbf { x } _ { v } ) < 0 , } & { \\forall v \\in \\mathcal { V } \\setminus \\mathcal { D } . } \\end{array} \\right."
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                155,
+                442,
+                453,
+                458
+            ],
+            "content": "```latex\n\\mathbf{h}_{v}^{1} \\neq \\mathbf{h}_{v^{\\prime}}^{1}, \\forall (v, v^{\\prime}) \\in \\left\\{(v, v^{\\prime}): \\exists u \\in \\mathcal{V}, v, v^{\\prime} \\in \\mathcal{N}^{2}(u)\\right\\}, \\mathbf{h}_{v}^{1}, \\mathbf{h}_{v^{\\prime}}^{1} \\in \\mathcal{E}_{I}^{\\chi(\\mathcal{G}^{4})}\n```",
+            "latex": "```latex\n\\mathbf{h}_{v}^{1} \\neq \\mathbf{h}_{v^{\\prime}}^{1}, \\forall (v, v^{\\prime}) \\in \\left\\{(v, v^{\\prime}): \\exists u \\in \\mathcal{V}, v, v^{\\prime} \\in \\mathcal{N}^{2}(u)\\right\\}, \\mathbf{h}_{v}^{1}, \\mathbf{h}_{v^{\\prime}}^{1} \\in \\mathcal{E}_{I}^{\\chi(\\mathcal{G}^{4})}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                129,
+                70,
+                272,
+                115
+            ],
+            "content": "```latex\n2. \\lim_{d_v \\to \\infty} \\left( \\frac{3|\\mathcal{D}| \\epsilon}{bd_v^2 + 1} - 2\\epsilon \\right) = -2\\epsilon\n\n3. \\frac{3|\\mathcal{D}| \\epsilon}{bd_v^2 + 1} - 2\\epsilon \\leq -\\epsilon \\text{ if } d_v \\geq C.\n```",
+            "latex": "```latex\n2. \\lim_{d_v \\to \\infty} \\left( \\frac{3|\\mathcal{D}| \\epsilon}{bd_v^2 + 1} - 2\\epsilon \\right) = -2\\epsilon\n\n3. \\frac{3|\\mathcal{D}| \\epsilon}{bd_v^2 + 1} - 2\\epsilon \\leq -\\epsilon \\text{ if } d_v \\geq C.\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                156,
+                442,
+                449,
+                458
+            ],
+            "content": "```latex\n\\mathbf{h}_{v}^{1} \\neq \\mathbf{h}_{v^{\\prime}}^{1}, \\forall (v, v^{\\prime}) \\in \\{(v, v^{\\prime}) : \\exists u \\in \\mathcal{V}, v, v^{\\prime} \\in \\mathcal{N}^{2}(u)\\}, \\mathbf{h}_{v}^{1}, \\mathbf{h}_{v^{\\prime}}^{1} \\in \\mathcal{E}_{I}^{\\chi(\\mathcal{G}^{4})}\n```",
+            "latex": "```latex\n\\mathbf{h}_{v}^{1} \\neq \\mathbf{h}_{v^{\\prime}}^{1}, \\forall (v, v^{\\prime}) \\in \\{(v, v^{\\prime}) : \\exists u \\in \\mathcal{V}, v, v^{\\prime} \\in \\mathcal{N}^{2}(u)\\}, \\mathbf{h}_{v}^{1}, \\mathbf{h}_{v^{\\prime}}^{1} \\in \\mathcal{E}_{I}^{\\chi(\\mathcal{G}^{4})}\n```"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                129,
+                70,
+                273,
+                90
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\lim_{d_v \\to \\infty} \\left( \\frac{3|\\mathcal{D}| \\epsilon}{bd_v^2 + 1} - 2\\epsilon \\right) = -2\\epsilon\n```\n\nThis will render the mathematical expression correctly in a LaTeX document.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\lim_{d_v \\to \\infty} \\left( \\frac{3|\\mathcal{D}| \\epsilon}{bd_v^2 + 1} - 2\\epsilon \\right) = -2\\epsilon\n```\n\nThis will render the mathematical expression correctly in a LaTeX document."
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                223,
+                486,
+                386,
+                522
+            ],
+            "content": "```latex\n\\mathbf{h}_v^3 = \\mathbf{h}_v^1 \\oplus \\mathbf{A}_v \\oplus \\left( \\sum_{v \\in \\mathcal{N}(v)} \\mathbf{h}_v^1 \\oplus \\mathbf{A}_v \\right).\n```",
+            "latex": "```latex\n\\mathbf{h}_v^3 = \\mathbf{h}_v^1 \\oplus \\mathbf{A}_v \\oplus \\left( \\sum_{v \\in \\mathcal{N}(v)} \\mathbf{h}_v^1 \\oplus \\mathbf{A}_v \\right).\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                259,
+                121,
+                352,
+                134
+            ],
+            "content": "| z _ { v } - c _ { v } | < \\epsilon , \\forall v \\in { \\mathcal V } ,",
+            "latex": "| z _ { v } - c _ { v } | < \\epsilon , \\forall v \\in { \\mathcal V } ,"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                199,
+                643,
+                412,
+                684
+            ],
+            "content": "```latex\n\\frac{2(\\mathbf{b}^\\top \\mathbf{c} - d_v)}{(d_v)(d_v-1)} = \\frac{2|\\{e_{v,v'} : v, v' \\in \\mathcal{N}(v), e_{v,v'} \\in \\mathcal{E}\\}|}{(d_v)(d_v-1)} = c_v,\n```",
+            "latex": "```latex\n\\frac{2(\\mathbf{b}^\\top \\mathbf{c} - d_v)}{(d_v)(d_v-1)} = \\frac{2|\\{e_{v,v'} : v, v' \\in \\mathcal{N}(v), e_{v,v'} \\in \\mathcal{E}\\}|}{(d_v)(d_v-1)} = c_v,\n```"
+        },
+        {
+            "page": 18,
+            "type": "formula",
+            "bbox": [
+                199,
+                644,
+                412,
+                671
+            ],
+            "content": "```latex\n\\frac{2(\\mathbf{b}^\\top \\mathbf{c} - d_v)}{(d_v)(d_v-1)} = \\frac{2|\\{e_{v,v'} : v, v' \\in \\mathcal{N}(v), e_{v,v'} \\in \\mathcal{E}\\}|}{(d_v)(d_v-1)}\n```",
+            "latex": "```latex\n\\frac{2(\\mathbf{b}^\\top \\mathbf{c} - d_v)}{(d_v)(d_v-1)} = \\frac{2|\\{e_{v,v'} : v, v' \\in \\mathcal{N}(v), e_{v,v'} \\in \\mathcal{E}\\}|}{(d_v)(d_v-1)}\n```"
+        },
+        {
+            "page": 19,
+            "type": "formula",
+            "bbox": [
+                163,
+                514,
+                447,
+                529
+            ],
+            "content": "```latex\n\\mathbf{h}_{v}^{k} \\neq \\mathbf{h}_{v^{\\prime}}^{k}, \\forall (v, v^{\\prime}) \\in \\{(v, v^{\\prime}): \\exists u \\in \\mathcal{V}, v, v^{\\prime} \\in \\mathcal{N}^{3}(u)\\}, \\mathbf{h}_{v}^{k}, \\mathbf{h}_{v^{\\prime}}^{k} \\in \\mathcal{E}_{I}^{d},\n```",
+            "latex": "```latex\n\\mathbf{h}_{v}^{k} \\neq \\mathbf{h}_{v^{\\prime}}^{k}, \\forall (v, v^{\\prime}) \\in \\{(v, v^{\\prime}): \\exists u \\in \\mathcal{V}, v, v^{\\prime} \\in \\mathcal{N}^{3}(u)\\}, \\mathbf{h}_{v}^{k}, \\mathbf{h}_{v^{\\prime}}^{k} \\in \\mathcal{E}_{I}^{d},\n```"
+        }
+    ]
+}

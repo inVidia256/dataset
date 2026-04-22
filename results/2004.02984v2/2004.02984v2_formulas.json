@@ -1,0 +1,66 @@
+{
+    "total_count": 5,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                321,
+                373,
+                499,
+                410
+            ],
+            "content": "{ \\mathcal { L } } _ { A T } ^ { \\ell } = { \\frac { 1 } { T A } } \\sum _ { t = 1 } ^ { T } \\sum _ { a = 1 } ^ { A } D _ { K L } ( a _ { t , \\ell , a } ^ { t r } | | a _ { t , \\ell , a } ^ { s t } ) ,",
+            "latex": "{ \\mathcal { L } } _ { A T } ^ { \\ell } = { \\frac { 1 } { T A } } \\sum _ { t = 1 } ^ { T } \\sum _ { a = 1 } ^ { A } D _ { K L } ( a _ { t , \\ell , a } ^ { t r } | | a _ { t , \\ell , a } ^ { s t } ) ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                318,
+                91,
+                502,
+                127
+            ],
+            "content": "{ \\mathcal { L } } _ { F M T } ^ { \\ell } = { \\frac { 1 } { T N } } \\sum _ { t = 1 } ^ { T } \\sum _ { n = 1 } ^ { N } ( H _ { t , \\ell , n } ^ { t r } - H _ { t , \\ell , n } ^ { s t } ) ^ { 2 } ,",
+            "latex": "{ \\mathcal { L } } _ { F M T } ^ { \\ell } = { \\frac { 1 } { T N } } \\sum _ { t = 1 } ^ { T } \\sum _ { n = 1 } ^ { N } ( H _ { t , \\ell , n } ^ { t r } - H _ { t , \\ell , n } ^ { s t } ) ^ { 2 } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                313,
+                564,
+                505,
+                579
+            ],
+            "content": "{ \\mathcal { L } } _ { P D } = \\alpha { \\mathcal { L } } _ { M L M } + ( 1 - \\alpha ) { \\mathcal { L } } _ { K D } + { \\mathcal { L } } _ { N S P } ,",
+            "latex": "{ \\mathcal { L } } _ { P D } = \\alpha { \\mathcal { L } } _ { M L M } + ( 1 - \\alpha ) { \\mathcal { L } } _ { K D } + { \\mathcal { L } } _ { N S P } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                123,
+                226,
+                239,
+                240
+            ],
+            "content": "\\mathrm { N o N o r m } ( \\mathbf { h } ) = \\gamma \\circ \\mathbf { h } + \\beta ,",
+            "latex": "\\mathrm { N o N o r m } ( \\mathbf { h } ) = \\gamma \\circ \\mathbf { h } + \\beta ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                123,
+                226,
+                239,
+                240
+            ],
+            "content": "\\mathrm { N o N o r m } ( \\mathbf { h } ) = \\gamma \\circ \\mathbf { h } + \\beta ,",
+            "latex": "\\mathrm { N o N o r m } ( \\mathbf { h } ) = \\gamma \\circ \\mathbf { h } + \\beta ,"
+        }
+    ]
+}

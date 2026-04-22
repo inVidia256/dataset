@@ -1,0 +1,38 @@
+{
+    "total_count": 2,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                71,
+                69,
+                520,
+                334
+            ],
+            "caption": "",
+            "footnote": "Table 2: Error rates (%) on CIFAR and SVHN datasets. k denotes network’s growth rate. Results that surpass all competing methods are bold and the overall best results are blue. “+” indicates standard data augmentation (translation and/or mirroring). * indicates results run by ourselves. All the results of DenseNets without data augmentation (C10, C100, SVHN) are obtained using Dropout. DenseNets achieve lower error rates while using fewer parameters than ResNet. Without data augmentation, DenseNet performs better by a large margin. Table 2: Error rates (%) on CIFAR and SVHN datasets. \\( k \\) denotes network’s growth rate. Results that surpass all competing methods are bold and the overall best results are blue. “+” indicates standard data augmentation (translation and/or mirroring). * indicates results run by ourselves. All the results of DenseNets without data augmentation (C10, C100, SVHN) are obtained using Dropout. DenseNets achieve lower error rates while using fewer parameters than ResNet. Without data augmentation, DenseNet performs better by a large margin. Table 2: Error rates (%) on CIFAR and SVHN datasets. \\( k \\) denotes network’s growth rate. Results that surpass all competing methods are bold and the overall best results are blue. “+” indicates standard data augmentation (translation and/or mirroring). * indicates results run by ourselves. All the results of DenseNets without data augmentation (C10, C100, SVHN) are obtained using Dropout. DenseNets achieve lower error rates while using fewer parameters than ResNet. Without data augmentation, DenseNet performs better by a large margin. The text content from the image is as follows:\n\n\"Table 2: Error rates (%) on CIFAR and SVHN datasets. k denotes network’s growth rate. Results that surpass all competing methods are bold and the overall best results are blue. \"+\" indicates standard data augmentation (translation and/or mirroring). * indicates results run by ourselves. All the results of DenseNets without data augmentation (C10, C100, SVHN) are obtained using Dropout. DenseNets achieve lower error rates while using fewer parameters than ResNet. Without data augmentation, DenseNet performs better by a large margin.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Depth</td>\n    <td>Params</td>\n    <td>C10</td>\n    <td>C10+</td>\n    <td>C100</td>\n    <td>C100+</td>\n    <td>SVHN</td>\n  </tr>\n  <tr>\n    <td>Network in Network[22]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>10.41</td>\n    <td>8.81</td>\n    <td>35.68</td>\n    <td>-</td>\n    <td>2.35</td>\n  </tr>\n  <tr>\n    <td>All-CNN[32]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>9.08</td>\n    <td>7.25</td>\n    <td>-</td>\n    <td>33.71</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Deeply Supervised Net[20]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>9.69</td>\n    <td>7.97</td>\n    <td>-</td>\n    <td>34.57</td>\n    <td>1.92</td>\n  </tr>\n  <tr>\n    <td>Highway Network[34]</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>7.72</td>\n    <td>-</td>\n    <td>32.39</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Fractal Net[17]</td>\n    <td>21</td>\n    <td>38.6M</td>\n    <td>10.18</td>\n    <td>5.22</td>\n    <td>35.34</td>\n    <td>23.30</td>\n    <td>2.01</td>\n  </tr>\n  <tr>\n    <td>with Dropout/Drop-path</td>\n    <td>21</td>\n    <td>38.6M</td>\n    <td>7.33</td>\n    <td>4.60</td>\n    <td>28.20</td>\n    <td>23.73</td>\n    <td>1.87</td>\n  </tr>\n  <tr>\n    <td>ResNet[11]</td>\n    <td>110</td>\n    <td>1.7M</td>\n    <td>-</td>\n    <td>6.61</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>ResNet(report ed by[13])</td>\n    <td>110</td>\n    <td>1.7M</td>\n    <td>13.63</td>\n    <td>6.41</td>\n    <td>44.74</td>\n    <td>27.22</td>\n    <td>2.01</td>\n  </tr>\n  <tr>\n    <td>ResNet with Stochastic Depth[13]</td>\n    <td>110</td>\n    <td>1.7M</td>\n    <td>11.66</td>\n    <td>5.23</td>\n    <td>37.80</td>\n    <td>24.58</td>\n    <td>1.75</td>\n  </tr>\n  <tr>\n    <td>1202</td>\n    <td>10.2M</td>\n    <td>-</td>\n    <td>4.91</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Wide ResNet[42]</td>\n    <td>16</td>\n    <td>11.0M</td>\n    <td>-</td>\n    <td>4.81</td>\n    <td>-</td>\n    <td>22.07</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>28</td>\n    <td>36.5M</td>\n    <td>-</td>\n    <td>4.17</td>\n    <td>-</td>\n    <td>20.50</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>with Dropout</td>\n    <td>16</td>\n    <td>2.7M</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>1.64</td>\n  </tr>\n  <tr>\n    <td>ResNet(pre-activation)[12]</td>\n    <td>164</td>\n    <td>1.7M</td>\n    <td>11.26*</td>\n    <td>5.46</td>\n    <td>35.58*</td>\n    <td>24.33</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>1001</td>\n    <td>10.2M</td>\n    <td>10.56*</td>\n    <td>4.62</td>\n    <td>33.47*</td>\n    <td>22.71</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>Dense Net(k=12)</td>\n    <td>40</td>\n    <td>1.0M</td>\n    <td>7.00</td>\n    <td>5.24</td>\n    <td>27.55</td>\n    <td>24.42</td>\n    <td>1.79</td>\n  </tr>\n  <tr>\n    <td>Dense Net(k=12)</td>\n    <td>100</td>\n    <td>7.0M</td>\n    <td>5.77</td>\n    <td>4.10</td>\n    <td>23.79</td>\n    <td>20.20</td>\n    <td>1.67</td>\n  </tr>\n  <tr>\n    <td>Dense Net(k=24)</td>\n    <td>100</td>\n    <td>27.2M</td>\n    <td>5.83</td>\n    <td>3.74</td>\n    <td>23.42</td>\n    <td>19.25</td>\n    <td>1.59</td>\n  </tr>\n  <tr>\n    <td>Dense Net-BC(k=12)</td>\n    <td>100</td>\n    <td>0.8M</td>\n    <td>5.92</td>\n    <td>4.51</td>\n    <td>24.15</td>\n    <td>22.27</td>\n    <td>1.76</td>\n  </tr>\n  <tr>\n    <td>Dense Net-BC(k=24)</td>\n    <td>250</td>\n    <td>15.3M</td>\n    <td>5.19</td>\n    <td>3.62</td>\n    <td>19.64</td>\n    <td>17.60</td>\n    <td>1.74</td>\n  </tr>\n  <tr>\n    <td>Dense Net-BC(k=40)</td>\n    <td>190</td>\n    <td>25.6M</td>\n    <td>-</td>\n    <td>3.46</td>\n    <td>17.18</td>\n    <td>-</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                67,
+                83,
+                203,
+                172
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>top-1</td>\n    <td>top-5</td>\n  </tr>\n  <tr>\n    <td>DenseNet-121</td>\n    <td>25.02/23.61</td>\n    <td>7.71/6.66</td>\n  </tr>\n  <tr>\n    <td>DenseNet-169</td>\n    <td>23.80/22.08</td>\n    <td>6.85/5.92</td>\n  </tr>\n  <tr>\n    <td>DenseNet-201</td>\n    <td>22.58/21.46</td>\n    <td>6.34/5.54</td>\n  </tr>\n  <tr>\n    <td>DenseNet-264</td>\n    <td>22.15/20.80</td>\n    <td>6.12/5.29</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+{
+    "total_count": 12,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                313,
+                226,
+                517,
+                333
+            ],
+            "caption": "Figure 1: Performance of quantized BERT with varying weight bit-widths and 8-bit activation. We report the mean results with standard deviations from 10 seeds on MRPC and 3 seeds on MNLI-m, respectively.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                79,
+                59,
+                520,
+                173
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 2: Loss landscapes visualization of the full-precision, ternary and binary models on MRPC. For (a), (b) and (c), we perturb the (latent) full-precision weights of the value layer in the 1st and 2nd Transformer layers, and compute their corresponding training loss. (d) shows the gap among the three surfaces by stacking them together.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                74,
+                222,
+                524,
+                322
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 3: The top-1 eigenvalues of parameters at different Transformer parts of the full-precision (FP), ternary and binary BERT. For easy comparison, we report the ratio of eigenvalue between the ternary/binary models and the full-precision model. The error bar is estimated of all Transformer layers over different data mini-batches.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page003.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                120,
+                50,
+                481,
+                201
+            ],
+            "caption": "Figure 4: The overall workflow of training BinaryBERT. We first train a half-sized ternary BERT model, and then apply ternary weight splitting operator (Equations (6) and (7)) to obtain the latent full-precision and quantized weights as the initialization of the full-sized BinaryBERT. We then fine-tune BinaryBERT for further refinement.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page004.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                73,
+                164,
+                288,
+                281
+            ],
+            "caption": "Figure 5: The average performance over six GLUE tasks of adaptive splitting strategies.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                73,
+                177,
+                290,
+                418
+            ],
+            "caption": "The performance gain by fine-tuning the binary model after splitting. 0.5× and 1.0× denote the half-sized and full-sized models, respectively. Figure 6: (a) and (b) show the training curves on MRPC under different activation bits. The red box is enlarged in the sub-figure. (c) and (d) visualize the fine-tuning trajectories after splitting, on the 2-D loss contour of BinaryBERT.",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page008.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                310,
+                62,
+                527,
+                316
+            ],
+            "caption": "Figure 7: The performance gain of different Transformer parts and layers in descending order. All numbers are averaged by 10 random runs with standard deviations reported.",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page013.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                75,
+                52,
+                526,
+                136
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 8: Performance of quantized BERT with different weight bits and 8-bit activation on the GLUE Benchmarks. The results are obtained from 10 random seeds except for MNLI with 3 seeds.\" The text content from the image is as follows:\n\n\"Figure 8: Performance of quantized BERT with different weight bits and 8-bit activation on the GLUE Benchmarks. The results are obtained from 10 random seeds except for MNLI with 3 seeds.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page014.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                75,
+                179,
+                526,
+                262
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 9: Performance of quantized BERT with different weight bits and 4-bit activation on the GLUE Benchmarks. The results are obtained from 10 random seeds except for MNLI with 3 seeds.\" Table 8: Results on GLUE development set for adaptive splitting with 8-bit activation quantization. Table 8: Results on GLUE development set for adaptive splitting with 8-bit activation quantization.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page014.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                71,
+                60,
+                526,
+                304
+            ],
+            "caption": "Figure 11: Loss landscape visualizations w.r.t MHA-Out parameters of the 1st and 2nd Transformer layers on MRPC. Figure 12: Loss landscape visualizations w.r.t FFN-Mid parameters of the 1st and 2nd Transformer layers on MRPC.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page015.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                72,
+                329,
+                524,
+                741
+            ],
+            "caption": "Figure 14: The architecture visualization for adaptive splitting on MRPC. The y-axis records the number of parameters split in each layer instead of the storage.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page015.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                75,
+                393,
+                526,
+                728
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page015.png"
+        }
+    ]
+}

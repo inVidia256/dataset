@@ -1,0 +1,34 @@
+{
+    "total_count": 2,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                125,
+                358,
+                483,
+                473
+            ],
+            "caption": "Figure 1: The L2 distances and cosine similarity (in terms of degree) of the input and output embedding of each layer for BERT-large and ALBERT-large.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                126,
+                79,
+                484,
+                208
+            ],
+            "caption": "Figure 2: The effects of adding data and removing dropout during training.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page009.png"
+        }
+    ]
+}

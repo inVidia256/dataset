@@ -1,0 +1,174 @@
+{
+    "total_count": 14,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                98,
+                283,
+                262,
+                298
+            ],
+            "content": "C = \\{ c _ { 0 } \\; c _ { 1 } \\; c _ { 2 } \\; c _ { 3 } , \\; c _ { 0 } \\; c _ { 1 } \\; c _ { 2 } \\; c _ { 3 } \\; c _ { 4 } \\; c _ { 5 } . \\}",
+            "latex": "C = \\{ c _ { 0 } \\; c _ { 1 } \\; c _ { 2 } \\; c _ { 3 } , \\; c _ { 0 } \\; c _ { 1 } \\; c _ { 2 } \\; c _ { 3 } \\; c _ { 4 } \\; c _ { 5 } . \\}"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                155,
+                752,
+                207,
+                766
+            ],
+            "content": "The expression in the image can be written in LaTeX as:\n\n\\[ Y = G(C) \\]",
+            "latex": "The expression in the image can be written in LaTeX as:\n\n\\[ Y = G(C) \\]"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                83,
+                435,
+                277,
+                464
+            ],
+            "content": "```latex\nY = \\text{love is not love,}\\\\\n\\quad \\text{bends with the remover to remove.}\n```",
+            "latex": "```latex\nY = \\text{love is not love,}\\\\\n\\quad \\text{bends with the remover to remove.}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                81,
+                228,
+                267,
+                260
+            ],
+            "content": "C = \\{ c _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 2 } , c _ { 1 } , \\langle / s \\rangle\n\nc _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 2 } , c _ { 1 } , \\langle / s \\rangle , \\langle e o s \\rangle \\}",
+            "latex": "C = \\{ c _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 2 } , c _ { 1 } , \\langle / s \\rangle\n\nc _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 0 } , c _ { 2 } , c _ { 1 } , \\langle / s \\rangle , \\langle e o s \\rangle \\}"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                81,
+                518,
+                268,
+                551
+            ],
+            "content": "\\begin{array} { c } { { S = \\left\\{ s _ { 0 } , s _ { 0 } , s _ { 0 } , s _ { 0 } , s _ { 0 } , \\langle / s \\rangle \\right. } } \\\\ { { s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , \\langle / s \\rangle , \\langle e o s \\rangle \\right\\} } \\end{array}",
+            "latex": "\\begin{array} { c } { { S = \\left\\{ s _ { 0 } , s _ { 0 } , s _ { 0 } , s _ { 0 } , s _ { 0 } , \\langle / s \\rangle \\right. } } \\\\ { { s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , s _ { 1 } , \\langle / s \\rangle , \\langle e o s \\rangle \\right\\} } \\end{array}"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                78,
+                339,
+                270,
+                371
+            ],
+            "content": "\\begin{array} { c } { { P = \\left\\{ p _ { 4 } , p _ { 3 } , p _ { 2 } , p _ { 1 } , p _ { 0 } , \\langle / s \\rangle \\right. } } \\\\ { { p _ { 6 } , p _ { 5 } , p _ { 4 } , p _ { 3 } , p _ { 2 } , p _ { 1 } , p _ { 0 } , \\langle / s \\rangle , \\langle e o s \\rangle \\right\\} } \\end{array}",
+            "latex": "\\begin{array} { c } { { P = \\left\\{ p _ { 4 } , p _ { 3 } , p _ { 2 } , p _ { 1 } , p _ { 0 } , \\langle / s \\rangle \\right. } } \\\\ { { p _ { 6 } , p _ { 5 } , p _ { 4 } , p _ { 3 } , p _ { 2 } , p _ { 1 } , p _ { 0 } , \\langle / s \\rangle , \\langle e o s \\rangle \\right\\} } \\end{array}"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                96,
+                751,
+                264,
+                767
+            ],
+            "content": "```latex\n\\mathbf{H}_{t}^{0} = \\mathbf{E}_{w_{t}} + \\mathbf{E}_{c_{t}} + \\mathbf{E}_{p_{t}} + \\mathbf{E}_{s_{t}} + \\mathbf{E}_{g_{t}}\n```",
+            "latex": "```latex\n\\mathbf{H}_{t}^{0} = \\mathbf{E}_{w_{t}} + \\mathbf{E}_{c_{t}} + \\mathbf{E}_{p_{t}} + \\mathbf{E}_{s_{t}} + \\mathbf{E}_{g_{t}}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                363,
+                280,
+                468,
+                296
+            ],
+            "content": "\\mathbf { F } _ { t } ^ { 0 } = \\mathbf { E } _ { c _ { t } } + \\mathbf { E } _ { p _ { t } } + \\mathbf { E } _ { s _ { t } }",
+            "latex": "\\mathbf { F } _ { t } ^ { 0 } = \\mathbf { E } _ { c _ { t } } + \\mathbf { E } _ { p _ { t } } + \\mathbf { E } _ { s _ { t } }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                327,
+                393,
+                524,
+                444
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{C}_{t}^{1} &= \\text{LN}\\left(\\text{FFN}(\\mathbf{C}_{t}^{1}) + \\mathbf{C}_{t}^{1}\\right) \\\\\n\\mathbf{C}_{t}^{1} &= \\text{LN}\\left(\\text{SLF-ATT}(\\mathbf{Q}_{t}^{0}, \\mathbf{K}_{\\leq t}^{0}, \\mathbf{V}_{\\leq t}^{0}) + \\mathbf{H}_{t}^{0}\\right) \\\\\n\\mathbf{Q}^{0} &= \\mathbf{H}^{0}\\mathbf{W}^{Q}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{C}_{t}^{1} &= \\text{LN}\\left(\\text{FFN}(\\mathbf{C}_{t}^{1}) + \\mathbf{C}_{t}^{1}\\right) \\\\\n\\mathbf{C}_{t}^{1} &= \\text{LN}\\left(\\text{SLF-ATT}(\\mathbf{Q}_{t}^{0}, \\mathbf{K}_{\\leq t}^{0}, \\mathbf{V}_{\\leq t}^{0}) + \\mathbf{H}_{t}^{0}\\right) \\\\\n\\mathbf{Q}^{0} &= \\mathbf{H}^{0}\\mathbf{W}^{Q}\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                326,
+                617,
+                524,
+                668
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{FFN}\\left(\\mathbf{H}_{t}^{1}\\right) + \\mathbf{H}_{t}^{1}\\right) \\\\\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{GLOBAL-ATT}\\left(\\mathbf{Q}_{t}^{1}, \\mathbf{K}^{1}, \\mathbf{V}^{1}\\right) + \\mathbf{C}_{t}^{1}\\right) \\\\\n\\mathbf{Q}^{1} &= \\mathbf{C}^{1}\\mathbf{W}^{Q}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{FFN}\\left(\\mathbf{H}_{t}^{1}\\right) + \\mathbf{H}_{t}^{1}\\right) \\\\\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{GLOBAL-ATT}\\left(\\mathbf{Q}_{t}^{1}, \\mathbf{K}^{1}, \\mathbf{V}^{1}\\right) + \\mathbf{C}_{t}^{1}\\right) \\\\\n\\mathbf{Q}^{1} &= \\mathbf{C}^{1}\\mathbf{W}^{Q}\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                307,
+                617,
+                525,
+                688
+            ],
+            "content": "```latex\n\\begin{align*}\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{FFN}(\\mathbf{H}_{t}^{1}) + \\mathbf{H}_{t}^{1}\\right) \\\\\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{GLOBAL-ATT}(\\mathbf{Q}_{t}^{1}, \\mathbf{K}^{1}, \\mathbf{V}^{1}) + \\mathbf{C}_{t}^{1}\\right) \\\\\n\\mathbf{Q}^{1} &= \\mathbf{C}^{1}\\mathbf{W}^{Q} \\\\\n\\mathbf{K}^{1}, \\mathbf{V}^{1} &= \\mathbf{F}^{0}\\mathbf{W}^{K}, \\mathbf{F}^{0}\\mathbf{W}^{V}\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{FFN}(\\mathbf{H}_{t}^{1}) + \\mathbf{H}_{t}^{1}\\right) \\\\\n\\mathbf{H}_{t}^{1} &= \\text{LN}\\left(\\text{GLOBAL-ATT}(\\mathbf{Q}_{t}^{1}, \\mathbf{K}^{1}, \\mathbf{V}^{1}) + \\mathbf{C}_{t}^{1}\\right) \\\\\n\\mathbf{Q}^{1} &= \\mathbf{C}^{1}\\mathbf{W}^{Q} \\\\\n\\mathbf{K}^{1}, \\mathbf{V}^{1} &= \\mathbf{F}^{0}\\mathbf{W}^{K}, \\mathbf{F}^{0}\\mathbf{W}^{V}\n\\end{align*}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                118,
+                176,
+                244,
+                210
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathcal{L}^{\\text{nll}} = - \\sum_{t=1}^{n} \\log P(\\mathbf{y}_t | \\mathbf{y}_{<t})\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathcal{L}^{\\text{nll}} = - \\sum_{t=1}^{n} \\log P(\\mathbf{y}_t | \\mathbf{y}_{<t})\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                82,
+                496,
+                278,
+                522
+            ],
+            "content": "```latex\nC' = \\{c_0, c_0, c_0, love, c_1, \\langle/s\\rangle \\\\\nbends, c_0, c_0, c_0, c_0, remove, c_1, \\langle/s\\rangle, \\langle eos\\rangle\\}\n```",
+            "latex": "```latex\nC' = \\{c_0, c_0, c_0, love, c_1, \\langle/s\\rangle \\\\\nbends, c_0, c_0, c_0, c_0, remove, c_1, \\langle/s\\rangle, \\langle eos\\rangle\\}\n```"
+        },
+        {
+            "page": 7,
+            "type": "formula",
+            "bbox": [
+                74,
+                480,
+                287,
+                509
+            ],
+            "content": "```latex\n\\text{Integrity} = 2^{-\\frac{1}{|Y|}\\sum_{i=1}^{|Y|}\\log(P(y^{i}_{punc}|y^{i}_0, y^{i}_1, \\ldots, y^{i}_{<punc}))}\n```",
+            "latex": "```latex\n\\text{Integrity} = 2^{-\\frac{1}{|Y|}\\sum_{i=1}^{|Y|}\\log(P(y^{i}_{punc}|y^{i}_0, y^{i}_1, \\ldots, y^{i}_{<punc}))}\n```"
+        }
+    ]
+}

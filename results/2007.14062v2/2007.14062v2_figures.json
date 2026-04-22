@@ -1,0 +1,174 @@
+{
+    "total_count": 12,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                106,
+                60,
+                503,
+                166
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 1: Building blocks of the attention mechanism used in BIGBIRD. White color indicates absence of attention. (a) random attention with r = 2, (b) sliding window attention with w = 3 (c) global attention with g = 2. (d) the combined BIGBIRD model.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 23,
+            "type": "figure",
+            "bbox": [
+                143,
+                600,
+                480,
+                698
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 2: Mapping between transformer step and original Turing machine step\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page023.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 30,
+            "type": "figure",
+            "bbox": [
+                106,
+                546,
+                502,
+                658
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 3: Building blocks of the block-attention mechanism used in BIGBIRD with block size = 2. This implies the attention matrix is split into blocks of size 2 × 2. All the previous BIGBIRD parameters work on each block as a unit. White color indicates absence of attention. (a) random attention with r = 1, (b) sliding window attention with w = 3 (c) global attention with g = 1. (d) the combined BIGBIRD model.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page030.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                141,
+                30,
+                471,
+                156
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page031.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                140,
+                186,
+                471,
+                298
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page031.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                142,
+                322,
+                471,
+                475
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page031.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 31,
+            "type": "figure",
+            "bbox": [
+                142,
+                528,
+                471,
+                682
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page031.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 32,
+            "type": "figure",
+            "bbox": [
+                166,
+                54,
+                446,
+                181
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 5: Construction of rolled key-block tensor. Make w copies of the key matrix. Index the copies as -(w-1)/2 ≤ j ≤ (w-1)/2. Roll jth copy by j blocks. Positive roll means circular shift entries left and likewise for negative roll corresponds to right shift. Finally, reshape by grouping the blocks along a new axis to obtain the key-blocked tensor. For illustration purpose w = 3 is chosen.\" The text content from the image is as follows:\n\n\"Figure 5: Construction of rolled key-block tensor. Make w copies of the key matrix. Index the copies as -(w-1)/2 ≤ j ≤ (w-1)/2. Roll jth copy by j blocks. Positive roll means circular shift entries left and likewise for negative roll corresponds to right shift. Finally, reshape by grouping the blocks along a new axis to obtain the key-blocked tensor. For illustration purpose w = 3 is chosen.\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page032.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 32,
+            "type": "figure",
+            "bbox": [
+                160,
+                501,
+                464,
+                605
+            ],
+            "caption": "Figure 6: Overview of BIGBIRD attention computation. Structured block sparsity helps in compactly packing our operations of sparse attention, thereby making our method efficient on GPU/TPU. On the left, we depict the transformed dense query and key tensors. The query tensor is obtained by simply blocking and reshaping while the final key tensor by concatenating three transformations: The first green columns, corresponding to global attention, is fixed. The middle blue columns correspond to window local attention and can be obtained by appropriately rolling as illustrated in Fig. 5. For the final orange columns, corresponding to random attentions, we need to use computationally inefficient gather operation. Dense multiplication between the query and key tensors efficiently calculates the sparse attention pattern (except the first row-block, which is computed by direct multiplication), using the ideas illustrated in Fig. 4. The resultant matrix on the right is same as that shown in Fig. 3d. Figure 6: Overview of BIGBIRD attention computation. Structured block sparsity helps in compactly packing our operations of sparse attention, thereby making our method efficient on GPU/TPU. On the left, we depict the transformed dense query and key tensors. The query tensor is obtained by simply blocking and reshaping while the final key tensor by concatenating three transformations: The first green columns, corresponding to global attention, is fixed. The middle blue columns correspond to window local attention and can be obtained by appropriately rolling as illustrated in Fig. 5. For the final orange columns, corresponding to random attentions, we need to use computationally inefficient gather operation. Dense multiplication between the query and key tensors efficiently calculates the sparse attention pattern (except the first row-block, which is computed by direct multiplication), using the ideas illustrated in Fig. 4. The resultant matrix on the right is same as that shown in Fig. 3d.",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page032.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 40,
+            "type": "figure",
+            "bbox": [
+                109,
+                74,
+                490,
+                369
+            ],
+            "caption": "Figure 7: Visual description of how the masked language modeling data was generated from raw DNA dataset. The raw DNA sequences of GRCh37, where split at random positions to create documents with 50-100 sentences where each sentence was 500-1000 base pairs (bps). Thus each document had a continuous strand of 25000-100,000 bps of DNA. This process was repeated 10 times to create 10 sets of document for each chromosome of GRCH37. The resulting set of documents was then passed through Sentencepiece that created tokens of average 8bp. For pretraining we used masked language model and masked 10% of the tokens and trained on predicting the masked tokens. Figure 7: Visual description of how the masked language modeling data was generated from raw DNA dataset. The raw DNA sequences of GRCh37, where split at random positions to create documents with 50-100 sentences where each sentence was 500-1000 base pairs (bps). Thus each document had a continuous strand of 25000-100,000 bps of DNA. This process was repeated 10 times to create 10 sets of document for each chromosome of GRCH37. The resulting set of documents was then passed through Sentencepiece that created tokens of average 8bp. For pretraining we used masked language model and masked 10% of the tokens and trained on predicting the masked tokens.",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page040.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 40,
+            "type": "figure",
+            "bbox": [
+                382,
+                480,
+                500,
+                573
+            ],
+            "caption": "Figure 8: BIGBIRD accuracy with context length.",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page040.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 41,
+            "type": "figure",
+            "bbox": [
+                107,
+                86,
+                504,
+                165
+            ],
+            "caption": "Figure 9: Visual description of the DNA segment from which we predict the chromatin profile for a given non-coding region of the raw DNA sequences of GRCh37. We take 8000 bps of DNA before and after the given non-coding region as context. The complete fragment of DNA including the context on both sides, is then tokenized to form our input sequence of tokens. The task is to predict 919 chromatin profile including 690 transcription factors (TF) binding profiles for 160 different TFs, 125 DNase I sensitivity (DHS) profiles and 104 histone-mark (HM) profiles Figure 9: Visual description of the DNA segment from which we predict the chromatin profile for a given non-coding region of the raw DNA sequences of GRCh37. We take 8000 bps of DNA before and after the given non-coding region as context. The complete fragment of DNA including the context on both sides, is then tokenized to form our input sequence of tokens. The task is to predict 919 chromatin profile including 690 transcription factors (TF) binding profiles for 160 different TFs, 125 DNase I sensitivity (DHS) profiles and 104 histone-mark (HM) profiles",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page041.png"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                108,
+                85,
+                499,
+                258
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Input ：Graph G(V，E)；input features {x，v∈V}；depth K；weight matrices Wk，Vk∈{1，...，K}；non-linearity σ；differentiable aggregator functions AGGREGATEk，Vk∈{1，...，K}；neighborhood function N：v→2</td>\n    <td>Output ：Vector representations z for all v∈V</td>\n  </tr>\n  <tr>\n    <td>h←x，∀v∈V；</td>\n  </tr>\n  <tr>\n    <td>for k=1...K do</td>\n  </tr>\n  <tr>\n    <td>for v∈V do</td>\n  </tr>\n  <tr>\n    <td>h←AGGREGATEk({h，u∈N(v)})；</td>\n  </tr>\n  <tr>\n    <td>h←σ(W CONCAT(h，h))</td>\n  </tr>\n  <tr>\n    <td>end</td>\n  </tr>\n  <tr>\n    <td>h←h/∥h∥，∀v∈V</td>\n  </tr>\n  <tr>\n    <td>end</td>\n  </tr>\n  <tr>\n    <td>z←h，∀v∈V</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                110,
+                100,
+                493,
+                354
+            ],
+            "caption": "Table 1: Prediction results for the three datasets (micro-averaged F1 scores). Results for unsupervised and fully supervised GraphSAGE are shown. Analogous trends hold for macro-averaged scores.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Name</td>\n    <td>Citation</td>\n    <td>Reddit</td>\n    <td>PPI</td>\n  </tr>\n  <tr>\n    <td>Unsup.F1</td>\n    <td>Sup.F1</td>\n    <td>Unsup.F1</td>\n    <td>Sup.F1</td>\n    <td>Unsup.F1</td>\n    <td>Sup.F1</td>\n  </tr>\n  <tr>\n    <td>Random</td>\n    <td>0.206</td>\n    <td>0.206</td>\n    <td>0.043</td>\n    <td>0.042</td>\n    <td>0.396</td>\n    <td>0.396</td>\n  </tr>\n  <tr>\n    <td>Raw features</td>\n    <td>0.575</td>\n    <td>0.575</td>\n    <td>0.585</td>\n    <td>0.585</td>\n    <td>0.422</td>\n    <td>0.422</td>\n  </tr>\n  <tr>\n    <td>Deep Walk</td>\n    <td>0.565</td>\n    <td>0.565</td>\n    <td>0.324</td>\n    <td>0.324</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Deep Walk+features</td>\n    <td>0.701</td>\n    <td>0.701</td>\n    <td>0.691</td>\n    <td>0.691</td>\n    <td></td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>GraphSAGE-GCN</td>\n    <td>0.742</td>\n    <td>0.772</td>\n    <td>0.908</td>\n    <td>0.930</td>\n    <td>0.465</td>\n    <td>0.500</td>\n  </tr>\n  <tr>\n    <td>GraphSAGE-mean</td>\n    <td>0.778</td>\n    <td>0.820</td>\n    <td>0.897</td>\n    <td>0.950</td>\n    <td>0.486</td>\n    <td>0.598</td>\n  </tr>\n  <tr>\n    <td>GraphSAGE-LSTM</td>\n    <td>0.788</td>\n    <td>0.832</td>\n    <td>0.907</td>\n    <td>0.954</td>\n    <td>0.482</td>\n    <td>0.612</td>\n  </tr>\n  <tr>\n    <td>GraphSAGE-pool</td>\n    <td>0.798</td>\n    <td>0.839</td>\n    <td>0.892</td>\n    <td>0.948</td>\n    <td>0.502</td>\n    <td>0.600</td>\n  </tr>\n  <tr>\n    <td>% gain over feat.</td>\n    <td>39%</td>\n    <td>46%</td>\n    <td>55%</td>\n    <td>63%</td>\n    <td>19%</td>\n    <td>45%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                109,
+                201,
+                423,
+                493
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Algorithm 2.GraphSAGE mini-batch forward propagation algorithm</td>\n  </tr>\n  <tr>\n    <td>Input ：Graph G(V，E)；input features {x，vEB}；depth K；weight matrices W，，Vk∈{1,...，K}；non-linearity σ；differentiable aggregator functions AGGREGATE，，Vk∈{1,...，K}neighborhood sampling functions，N：v→2V，Vk∈{1,...，K}</td>\n  </tr>\n  <tr>\n    <td>Output ：Vector representations z for all vEB</td>\n  </tr>\n  <tr>\n    <td>BK-B；for k-K...1doBk-1-Bk；for uEBk doBk-1-Bk-1UN(u)；end</td>\n  </tr>\n  <tr>\n    <td>h0-x，vEB0；for k-1...Kdofor uEBk dohAGGREGATEk({hk-1，u'∈N(u)})；hσ(Wk·CONCAT(hk-1，hN(u))）；hku/hk；end</td>\n  </tr>\n  <tr>\n    <td>zu-hK，vEB</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page012.png"
+        }
+    ]
+}

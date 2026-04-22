@@ -1,0 +1,230 @@
+{
+    "total_count": 16,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                100,
+                70,
+                495,
+                256
+            ],
+            "caption": "Figure 1: Self-critical sequence training (SCST). The weight put on words of a sampled sentence from the model is determined by the difference between the reward for the sampled sentence and the reward obtained by the estimated sentence under the test-time inference procedure (greedy inference depicted). This harmonizes learning with the inference procedure, and lowers the variance of the gradients, improving the training procedure.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                315,
+                77,
+                534,
+                257
+            ],
+            "caption": "Figure 2: Mean/std. CIDEr of SCST versus REINFORCE with learned baseline (MIXER less CL) with greedy decoding, for Att2all models (4 seeds) on the Karpathy validation set (CIDEr-D optimized).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                315,
+                344,
+                534,
+                527
+            ],
+            "caption": "Figure 3: Mean/std. CIDEr of SCST versus REINFORCE with learned baseline (MIXER less CL) with beam search decoding, for Att2all models (4 seeds) on the Karpathy validation set (CIDEr-D optimized).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                59,
+                77,
+                275,
+                257
+            ],
+            "caption": "Figure 4: Mean/std. gradient variance of SCST versus REINFORCE with learned baseline (MIXER less CL), for Att2all models (4 seeds) on the Karpathy training set (CIDEr-D optimized).",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                59,
+                344,
+                275,
+                527
+            ],
+            "caption": "Figure 5: Mean/std. word posterior entropy of SCST versus REINFORCE with learned baseline (MIXER less CL), for Att2all models (4 seeds) on the Karpathy training set (CIDEr-D optimized).",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                197,
+                55,
+                397,
+                207
+            ],
+            "caption": "Figure 6: An image from the objects out-of-context (OOOC) dataset of images from [24].",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                74,
+                241,
+                523,
+                586
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page009.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                56,
+                79,
+                526,
+                448
+            ],
+            "caption": "Figure 8: Performance of our best Att2in model, which is trained to directly optimize the CIDEr metric, as a function of training epoch on the validation portion of the Karpathy splits, for the CIDEr, BLEU-4, ROUGE-L, and METEOR MSCOCO evaluation metrics. Optimizing CIDEr improves all of these evaluation metrics substantially.",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page012.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                198,
+                56,
+                397,
+                177
+            ],
+            "caption": "Figure 9: Picture of a common object in MSCOCO (a giraffe) situated in an uncommon context (out of COCO domain) [24]. Figure 9: Picture of a common object in MSCOCO (a giraffe) situated in an uncommon context (out of COCO domain) [24].",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page013.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                69,
+                224,
+                523,
+                569
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page013.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                198,
+                76,
+                397,
+                211
+            ],
+            "caption": "Figure 11: An image from the MSCOCO test set (Karpathy splits).",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page014.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 14,
+            "type": "figure",
+            "bbox": [
+                72,
+                280,
+                522,
+                628
+            ],
+            "caption": "Figure 12: Captions generated for the image depicted in Figure 11 by various models discussed in the paper. Beside each caption we report the average log probability of the words in the caption. All models perform well on this test image from the MSCOCO distribution. More generally we have observed that qualitatively, all models perform comparably on the MSCOCO test images. Figure 12: Captions generated for the image depicted in Figure 11 by various models discussed in the paper. Beside each caption we report the average log probability of the words in the caption. All models perform well on this test image from the MSCOCO distribution. More generally we have observed that qualitatively, all models perform comparably on the MSCOCO test images.",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page014.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                198,
+                69,
+                396,
+                219
+            ],
+            "caption": "Figure 13: An image from the objects out-of-context (OOOC) dataset of images from [24].",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page015.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 15,
+            "type": "figure",
+            "bbox": [
+                73,
+                276,
+                522,
+                624
+            ],
+            "caption": "Figure 14: Captions generated for the image depicted in Figure 13 by the various models discussed in the paper. Beside each caption we report the average log probability of the words in the caption. On this image, which presents an object situated in an atypical context [24], the FC models fail to give an accurate description, while the attention models handle the previously unseen image composition well. The models trained with SCST return a more accurate and more detailed summary of the image. Figure 14: Captions generated for the image depicted in Figure 13 by the various models discussed in the paper. Beside each caption we report the average log probability of the words in the caption. On this image, which presents an object situated in an atypical context [24], the FC models fail to give an accurate description, while the attention models handle the previously unseen image composition well. The models trained with SCST return a more accurate and more detailed summary of the image.",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page015.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                246,
+                73,
+                347,
+                207
+            ],
+            "caption": "Figure 15: An image from the objects out-of-context (OOOC) dataset of images from [24].",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page016.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                72,
+                271,
+                523,
+                619
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page016.png"
+        }
+    ]
+}

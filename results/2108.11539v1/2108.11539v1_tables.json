@@ -1,0 +1,54 @@
+{
+    "total_count": 3,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                57,
+                70,
+                278,
+                210
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1. The comparison of the performance in VisDrone2021 testset-challenge\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Methods</td>\n    <td>mAP(%)</td>\n    <td>AP50(%)</td>\n  </tr>\n  <tr>\n    <td>Retina Net[29]</td>\n    <td>11.81</td>\n    <td>21.37</td>\n  </tr>\n  <tr>\n    <td>Refine Det[60]</td>\n    <td>14.90</td>\n    <td>28.76</td>\n  </tr>\n  <tr>\n    <td>DetNet59[26]</td>\n    <td>15.26</td>\n    <td>29.23</td>\n  </tr>\n  <tr>\n    <td>Cascade-RCNN[3]</td>\n    <td>16.09</td>\n    <td>31.91</td>\n  </tr>\n  <tr>\n    <td>FPN[28]</td>\n    <td>16.51</td>\n    <td>32.20</td>\n  </tr>\n  <tr>\n    <td>Light-RCNN[25]</td>\n    <td>16.53</td>\n    <td>32.78</td>\n  </tr>\n  <tr>\n    <td>Cornet Net[24]</td>\n    <td>17.41</td>\n    <td>34.12</td>\n  </tr>\n  <tr>\n    <td>RR Net(20192nd)[4]</td>\n    <td>29.13</td>\n    <td>55.82</td>\n  </tr>\n  <tr>\n    <td>DP Net-ensemble(2019SOTA)[8]</td>\n    <td>29.62</td>\n    <td>54.00</td>\n  </tr>\n  <tr>\n    <td>SMP Net(20202nd)[47]</td>\n    <td>35.98</td>\n    <td>59.53</td>\n  </tr>\n  <tr>\n    <td>DP NetV3(2020SOTA)[47]</td>\n    <td>37.37</td>\n    <td>62.05</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5 ensemble</td>\n    <td>39.18</td>\n    <td></td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                57,
+                361,
+                278,
+                427
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2. Ablation Study on VisDrone2021 testset-dev.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Methods</td>\n    <td>mAP(%)</td>\n    <td>AP50(%)</td>\n  </tr>\n  <tr>\n    <td>YOLOv5</td>\n    <td>28.88</td>\n    <td>49.33</td>\n  </tr>\n  <tr>\n    <td>YOLOv5+P2</td>\n    <td>31.03(2.15)</td>\n    <td>51.61(2.28)</td>\n  </tr>\n  <tr>\n    <td>YOLOv5+P2+transformer</td>\n    <td>32.84(1.81)</td>\n    <td>53.87(2.26)</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5(previous+CBAM)</td>\n    <td>33.63(0.79)</td>\n    <td>54.77(0.90)</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5+ms-testing</td>\n    <td>34.90(1.27)</td>\n    <td>56.40(1.63)</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5+ms-testing+Classifier</td>\n    <td>35.74(0.84)</td>\n    <td>57.31(0.91)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                75,
+                70,
+                519,
+                140
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3. Comparison of TPH-YOLOv5 models' performances on VisDrone2021 testset-dev for each category.\" The text content from the image is:\n\n\"Table 3. Comparison of TPH-YOLOv5 models' performances on VisDrone2021 testset-dev for each category.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Methods</td>\n    <td>all</td>\n    <td>pedestrian</td>\n    <td>people</td>\n    <td>bicycle</td>\n    <td>car</td>\n    <td>van</td>\n    <td>trunk</td>\n    <td>tricycle</td>\n    <td>awning-tricycle</td>\n    <td>bus</td>\n    <td>motor</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5-1</td>\n    <td>34.90</td>\n    <td>27.52</td>\n    <td>15.32</td>\n    <td>15.21</td>\n    <td>65.99</td>\n    <td>44.23</td>\n    <td>47.56</td>\n    <td>23.96</td>\n    <td>22.11</td>\n    <td>58.85</td>\n    <td>28.44</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5-2</td>\n    <td>34.29</td>\n    <td>27.97</td>\n    <td>14.88</td>\n    <td>14.17</td>\n    <td>67.63</td>\n    <td>45.01</td>\n    <td>44.76</td>\n    <td>25.12</td>\n    <td>20.48</td>\n    <td>55.72</td>\n    <td>27.74</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5-3</td>\n    <td>34.68</td>\n    <td>22.88</td>\n    <td>16.01</td>\n    <td>19.26</td>\n    <td>48.88</td>\n    <td>42.98</td>\n    <td>47.82</td>\n    <td>32.86</td>\n    <td>35.65</td>\n    <td>54.16</td>\n    <td>28.25</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5-4</td>\n    <td>34.17</td>\n    <td>23.48</td>\n    <td>15.79</td>\n    <td>17.62</td>\n    <td>49.99</td>\n    <td>42.76</td>\n    <td>47.13</td>\n    <td>31.66</td>\n    <td>32.21</td>\n    <td>54.19</td>\n    <td>27.37</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5-5</td>\n    <td>33.04</td>\n    <td>25.98</td>\n    <td>14.90</td>\n    <td>13.10</td>\n    <td>63.05</td>\n    <td>43.45</td>\n    <td>42.56</td>\n    <td>25.20</td>\n    <td>21.06</td>\n    <td>53.65</td>\n    <td>27.10</td>\n  </tr>\n  <tr>\n    <td>TPH-YOLOv5 ensemble</td>\n    <td>37.32</td>\n    <td>29.00</td>\n    <td>16.75</td>\n    <td>15.69</td>\n    <td>68.94</td>\n    <td>49.79</td>\n    <td>45.16</td>\n    <td>27.33</td>\n    <td>24.72</td>\n    <td>61.80</td>\n    <td>30.90</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page008.png"
+        }
+    ]
+}

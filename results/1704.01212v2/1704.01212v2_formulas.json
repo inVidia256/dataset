@@ -1,0 +1,186 @@
+{
+    "total_count": 15,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                344,
+                108,
+                504,
+                135
+            ],
+            "content": "R = \\sum _ { v \\in V } \\sigma \\left( i ( h _ { v } ^ { ( T ) } , h _ { v } ^ { 0 } ) \\right) \\odot \\left( j ( h _ { v } ^ { ( T ) } ) \\right)",
+            "latex": "R = \\sum _ { v \\in V } \\sigma \\left( i ( h _ { v } ^ { ( T ) } , h _ { v } ^ { 0 } ) \\right) \\odot \\left( j ( h _ { v } ^ { ( T ) } ) \\right)"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                386,
+                657,
+                461,
+                682
+            ],
+            "content": "R = \\sum _ { v } \\mathrm { N N } ( h _ { v } ^ { T } ) .",
+            "latex": "R = \\sum _ { v } \\mathrm { N N } ( h _ { v } ^ { T } ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                124,
+                235,
+                219,
+                250
+            ],
+            "content": "\\hat { y } = R ( \\{ h _ { v } ^ { T } \\mid v \\in G \\} ) .",
+            "latex": "\\hat { y } = R ( \\{ h _ { v } ^ { T } \\mid v \\in G \\} ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                315,
+                570,
+                533,
+                586
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nM_t = \\tanh \\left( W^{fc} \\left( (W^{cf} h_w^t + b_1) \\odot (W^{df} e_{vw} + b_2) \\right) \\right)\n```\n\nThis will render the equation exactly as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\nM_t = \\tanh \\left( W^{fc} \\left( (W^{cf} h_w^t + b_1) \\odot (W^{df} e_{vw} + b_2) \\right) \\right)\n```\n\nThis will render the equation exactly as shown in the image."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                104,
+                137,
+                240,
+                164
+            ],
+            "content": "m _ { v } ^ { t + 1 } = \\sum _ { w \\in N ( v ) } M _ { t } ( h _ { v } ^ { t } , h _ { w } ^ { t } , e _ { v w } )",
+            "latex": "m _ { v } ^ { t + 1 } = \\sum _ { w \\in N ( v ) } M _ { t } ( h _ { v } ^ { t } , h _ { w } ^ { t } , e _ { v w } )"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                106,
+                167,
+                197,
+                182
+            ],
+            "content": "h _ { v } ^ { t + 1 } = U _ { t } ( h _ { v } ^ { t } , m _ { v } ^ { t + 1 } )",
+            "latex": "h _ { v } ^ { t + 1 } = U _ { t } ( h _ { v } ^ { t } , m _ { v } ^ { t + 1 } )"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                71,
+                558,
+                261,
+                578
+            ],
+            "content": "( h _ { v } ^ { t , 1 } , h _ { v } ^ { t , 2 } , \\ldots , h _ { v } ^ { t , k } ) = g \\left( \\tilde { h } _ { v } ^ { t , 1 } , \\tilde { h } _ { v } ^ { t , 2 } , \\ldots , \\tilde { h } _ { v } ^ { t , k } \\right)",
+            "latex": "( h _ { v } ^ { t , 1 } , h _ { v } ^ { t , 2 } , \\ldots , h _ { v } ^ { t , k } ) = g \\left( \\tilde { h } _ { v } ^ { t , 1 } , \\tilde { h } _ { v } ^ { t , 2 } , \\ldots , \\tilde { h } _ { v } ^ { t , k } \\right)"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                359,
+                223,
+                488,
+                276
+            ],
+            "content": "\\begin{array} { l } { { H _ { ( v ) } ^ { l + 1 } = \\sigma \\left( L _ { ( v ) } H ^ { l } W ^ { l } \\right) } } \\\\ { { = \\sigma \\left( \\displaystyle \\sum _ { w } L _ { v w } H _ { ( w ) } ^ { l } W ^ { l } \\right) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { H _ { ( v ) } ^ { l + 1 } = \\sigma \\left( L _ { ( v ) } H ^ { l } W ^ { l } \\right) } } \\\\ { { = \\sigma \\left( \\displaystyle \\sum _ { w } L _ { v w } H _ { ( w ) } ^ { l } W ^ { l } \\right) } } \\end{array}"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                356,
+                330,
+                491,
+                363
+            ],
+            "content": "h _ { v } ^ { t + 1 } = \\sigma \\left( ( W ^ { l } ) ^ { T } \\sum _ { w } L _ { v w } h _ { w } ^ { t } \\right)",
+            "latex": "h _ { v } ^ { t + 1 } = \\sigma \\left( ( W ^ { l } ) ^ { T } \\sum _ { w } L _ { v w } h _ { w } ^ { t } \\right)"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                82,
+                189,
+                261,
+                223
+            ],
+            "content": "y _ { j } = \\sigma \\left( \\sum _ { i = 1 } ^ { d _ { 1 } } V F _ { i , j } V ^ { T } x _ { i } \\right) \\quad ( j = 1 \\ldots d _ { 2 } )",
+            "latex": "y _ { j } = \\sigma \\left( \\sum _ { i = 1 } ^ { d _ { 1 } } V F _ { i , j } V ^ { T } x _ { i } \\right) \\quad ( j = 1 \\ldots d _ { 2 } )"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                102,
+                451,
+                239,
+                561
+            ],
+            "content": "```latex\ny_j = \\sigma\\left(\\sum_{i=1}^{d_1}\\tilde{L}_{i,j}x_i\\right)\n\ny_{v,j} = \\sigma\\left(\\sum_{i=1,w=1}^{d_1,N}\\tilde{L}_{v,w,i,j}x_{w,i}\\right)\n\ny_v = \\sigma\\left(\\sum_{w=1}^N\\tilde{L}_{v,w}x_w\\right).\n```",
+            "latex": "```latex\ny_j = \\sigma\\left(\\sum_{i=1}^{d_1}\\tilde{L}_{i,j}x_i\\right)\n\ny_{v,j} = \\sigma\\left(\\sum_{i=1,w=1}^{d_1,N}\\tilde{L}_{v,w,i,j}x_{w,i}\\right)\n\ny_v = \\sigma\\left(\\sum_{w=1}^N\\tilde{L}_{v,w}x_w\\right).\n```"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                99,
+                699,
+                244,
+                721
+            ],
+            "content": "H ^ { l + 1 } = \\sigma \\left( \\tilde { D } ^ { - 1 / 2 } \\tilde { A } \\tilde { D } ^ { - 1 / 2 } H ^ { l } W ^ { l } \\right)",
+            "latex": "H ^ { l + 1 } = \\sigma \\left( \\tilde { D } ^ { - 1 / 2 } \\tilde { A } \\tilde { D } ^ { - 1 / 2 } H ^ { l } W ^ { l } \\right)"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                312,
+                385,
+                535,
+                400
+            ],
+            "content": "M _ { t } ( h _ { v } ^ { t } , h _ { w } ^ { t } ) = L _ { v w } h _ { w } ^ { t } = \\tilde { A } _ { v w } ( \\deg ( v ) \\deg ( w ) ) ^ { - 1 / 2 } h _ { w } ^ { t } ,",
+            "latex": "M _ { t } ( h _ { v } ^ { t } , h _ { w } ^ { t } ) = L _ { v w } h _ { w } ^ { t } = \\tilde { A } _ { v w } ( \\deg ( v ) \\deg ( w ) ) ^ { - 1 / 2 } h _ { w } ^ { t } ,"
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                354,
+                423,
+                492,
+                439
+            ],
+            "content": "U _ { t } ( h _ { v } ^ { t } , m _ { v } ^ { t + 1 } ) = \\sigma ( ( W ^ { t } ) ^ { T } m _ { v } ^ { t + 1 } ) .",
+            "latex": "U _ { t } ( h _ { v } ^ { t } , m _ { v } ^ { t + 1 } ) = \\sigma ( ( W ^ { t } ) ^ { T } m _ { v } ^ { t + 1 } ) ."
+        },
+        {
+            "page": 11,
+            "type": "formula",
+            "bbox": [
+                354,
+                423,
+                492,
+                439
+            ],
+            "content": "U _ { t } ( h _ { v } ^ { t } , m _ { v } ^ { t + 1 } ) = \\sigma ( ( W ^ { t } ) ^ { T } m _ { v } ^ { t + 1 } ) .",
+            "latex": "U _ { t } ( h _ { v } ^ { t } , m _ { v } ^ { t + 1 } ) = \\sigma ( ( W ^ { t } ) ^ { T } m _ { v } ^ { t + 1 } ) ."
+        }
+    ]
+}

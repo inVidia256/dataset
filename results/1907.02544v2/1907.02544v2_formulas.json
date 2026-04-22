@@ -1,0 +1,66 @@
+{
+    "total_count": 5,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                109,
+                503,
+                503,
+                604
+            ],
+            "content": "```latex\n\\begin{align*}\ns_{\\mathbf{x}}(\\mathbf{x}) &= \\theta_{\\mathbf{x}}^\\intercal F_\\Theta(\\mathbf{x}) \\\\\ns_{\\mathbf{z}}(\\mathbf{z}) &= \\theta_{\\mathbf{z}}^\\intercal H_\\Theta(\\mathbf{z}) \\\\\ns_{\\mathbf{x}\\mathbf{z}}(\\mathbf{x}, \\mathbf{z}) &= \\theta_{\\mathbf{x}\\mathbf{z}}^\\intercal J_\\Theta(F_\\Theta(\\mathbf{x}), H_\\Theta(\\mathbf{z})) \\\\\n\\ell_{\\mathcal{E}_G}(\\mathbf{x}, \\mathbf{z}, y) &= y \\left( s_{\\mathbf{x}}(\\mathbf{x}) + s_{\\mathbf{z}}(\\mathbf{z}) + s_{\\mathbf{x}\\mathbf{z}}(\\mathbf{x}, \\mathbf{z}) \\right) & y \\in \\{-1, +1\\} \\\\\n\\mathcal{L}_{\\mathcal{E}_G}(P_{\\mathbf{x}}, P_{\\mathbf{z}}) &= \\mathbb{E}_{\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}_\\Phi(\\mathbf{x})} \\left[ \\ell_{\\mathcal{E}_G}(\\mathbf{x}, \\hat{\\mathbf{z}}, +1) \\right] + \\mathbb{E}_{\\mathbf{z} \\sim P_{\\mathbf{z}}, \\hat{\\mathbf{x}} \\sim \\mathcal{G}_\\Phi(\\mathbf{z})} \\left[ \\ell_{\\mathcal{E}_G}(\\hat{\\mathbf{x}}, \\mathbf{z}, -1) \\right] \\\\\n\\ell_{\\mathcal{D}}(\\mathbf{x}, \\mathbf{z}, y) &= h(y s_{\\mathbf{x}}(\\mathbf{x})) + h(y s_{\\mathbf{z}}(\\mathbf{z})) + h(y s_{\\mathbf{x}\\mathbf{z}}(\\mathbf{x}, \\mathbf{z})) & y \\in \\{-1, +1\\} \\\\\n\\mathcal{L}_{\\mathcal{D}}(P_{\\mathbf{x}}, P_{\\mathbf{z}}) &= \\mathbb{E}_{\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}_\\Phi(\\mathbf{x})} \\left[ \\ell_{\\mathcal{D}}(\\mathbf{x}, \\hat{\\mathbf{z}}, +1) \\right] + \\mathbb{E}_{\\mathbf{z} \\sim P_{\\mathbf{z}}, \\hat{\\mathbf{x}} \\sim \\mathcal{G}_\\Phi(\\mathbf{z})} \\left[ \\ell_{\\mathcal{D}}(\\hat{\\mathbf{x}}, \\mathbf{z}, -1) \\right]\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\ns_{\\mathbf{x}}(\\mathbf{x}) &= \\theta_{\\mathbf{x}}^\\intercal F_\\Theta(\\mathbf{x}) \\\\\ns_{\\mathbf{z}}(\\mathbf{z}) &= \\theta_{\\mathbf{z}}^\\intercal H_\\Theta(\\mathbf{z}) \\\\\ns_{\\mathbf{x}\\mathbf{z}}(\\mathbf{x}, \\mathbf{z}) &= \\theta_{\\mathbf{x}\\mathbf{z}}^\\intercal J_\\Theta(F_\\Theta(\\mathbf{x}), H_\\Theta(\\mathbf{z})) \\\\\n\\ell_{\\mathcal{E}_G}(\\mathbf{x}, \\mathbf{z}, y) &= y \\left( s_{\\mathbf{x}}(\\mathbf{x}) + s_{\\mathbf{z}}(\\mathbf{z}) + s_{\\mathbf{x}\\mathbf{z}}(\\mathbf{x}, \\mathbf{z}) \\right) & y \\in \\{-1, +1\\} \\\\\n\\mathcal{L}_{\\mathcal{E}_G}(P_{\\mathbf{x}}, P_{\\mathbf{z}}) &= \\mathbb{E}_{\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}_\\Phi(\\mathbf{x})} \\left[ \\ell_{\\mathcal{E}_G}(\\mathbf{x}, \\hat{\\mathbf{z}}, +1) \\right] + \\mathbb{E}_{\\mathbf{z} \\sim P_{\\mathbf{z}}, \\hat{\\mathbf{x}} \\sim \\mathcal{G}_\\Phi(\\mathbf{z})} \\left[ \\ell_{\\mathcal{E}_G}(\\hat{\\mathbf{x}}, \\mathbf{z}, -1) \\right] \\\\\n\\ell_{\\mathcal{D}}(\\mathbf{x}, \\mathbf{z}, y) &= h(y s_{\\mathbf{x}}(\\mathbf{x})) + h(y s_{\\mathbf{z}}(\\mathbf{z})) + h(y s_{\\mathbf{x}\\mathbf{z}}(\\mathbf{x}, \\mathbf{z})) & y \\in \\{-1, +1\\} \\\\\n\\mathcal{L}_{\\mathcal{D}}(P_{\\mathbf{x}}, P_{\\mathbf{z}}) &= \\mathbb{E}_{\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}_\\Phi(\\mathbf{x})} \\left[ \\ell_{\\mathcal{D}}(\\mathbf{x}, \\hat{\\mathbf{z}}, +1) \\right] + \\mathbb{E}_{\\mathbf{z} \\sim P_{\\mathbf{z}}, \\hat{\\mathbf{x}} \\sim \\mathcal{G}_\\Phi(\\mathbf{z})} \\left[ \\ell_{\\mathcal{D}}(\\hat{\\mathbf{x}}, \\mathbf{z}, -1) \\right]\n\\end{align*}\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                131,
+                207,
+                479,
+                223
+            ],
+            "content": "```latex\n\\min_{\\mathcal{G}, \\mathcal{E}} \\max_{\\mathcal{D}} \\left\\{ \\mathbb{E}_{\\mathbf{x} \\sim P_\\mathbf{x}, \\mathbf{z} \\sim \\mathcal{E}_\\Phi(\\mathbf{x})} [\\log(\\sigma(\\mathcal{D}(\\mathbf{x}, \\mathbf{z})))] + \\mathbb{E}_{\\mathbf{z} \\sim P_\\mathbf{z}, \\mathbf{x} \\sim \\mathcal{G}_\\Phi(\\mathbf{z})} [\\log(1 - \\sigma(\\mathcal{D}(\\mathbf{x}, \\mathbf{z})))]\\right\\}\n```",
+            "latex": "```latex\n\\min_{\\mathcal{G}, \\mathcal{E}} \\max_{\\mathcal{D}} \\left\\{ \\mathbb{E}_{\\mathbf{x} \\sim P_\\mathbf{x}, \\mathbf{z} \\sim \\mathcal{E}_\\Phi(\\mathbf{x})} [\\log(\\sigma(\\mathcal{D}(\\mathbf{x}, \\mathbf{z})))] + \\mathbb{E}_{\\mathbf{z} \\sim P_\\mathbf{z}, \\mathbf{x} \\sim \\mathcal{G}_\\Phi(\\mathbf{z})} [\\log(1 - \\sigma(\\mathcal{D}(\\mathbf{x}, \\mathbf{z})))]\\right\\}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                228,
+                501,
+                383,
+                529
+            ],
+            "content": "E _ { \\mathrm { R e l } \\ell _ { 1 } } = \\frac { \\mathbb { E } _ { \\mathbf { x } \\sim P _ { \\mathbf { x } } } | | \\mathbf { x } - \\mathcal { G } ( \\mathcal { E } ( \\mathbf { x } ) ) | | _ { 1 } } { \\mathbb { E } _ { \\mathbf { x } , \\mathbf { x } ^ { \\prime } \\sim P _ { \\mathbf { x } } } | | \\mathbf { x } ^ { \\prime } - \\mathcal { G } ( \\mathcal { E } ( \\mathbf { x } ) ) | | _ { 1 } } ,",
+            "latex": "E _ { \\mathrm { R e l } \\ell _ { 1 } } = \\frac { \\mathbb { E } _ { \\mathbf { x } \\sim P _ { \\mathbf { x } } } | | \\mathbf { x } - \\mathcal { G } ( \\mathcal { E } ( \\mathbf { x } ) ) | | _ { 1 } } { \\mathbb { E } _ { \\mathbf { x } , \\mathbf { x } ^ { \\prime } \\sim P _ { \\mathbf { x } } } | | \\mathbf { x } ^ { \\prime } - \\mathcal { G } ( \\mathcal { E } ( \\mathbf { x } ) ) | | _ { 1 } } ,"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                210,
+                615,
+                400,
+                648
+            ],
+            "content": "```latex\nE_{\\text{Rel}\\ell_1} \\approx \\frac{\\sum_{i=0}^{N-1} ||\\mathbf{x}_i - \\mathcal{G}(\\mathcal{E}(\\mathbf{x}_i))||_1}{\\sum_{i=0}^{N-1} ||\\mathbf{x}_{(i+1) \\mod N} - \\mathcal{G}(\\mathcal{E}(\\mathbf{x}_i))||_1}\n```",
+            "latex": "```latex\nE_{\\text{Rel}\\ell_1} \\approx \\frac{\\sum_{i=0}^{N-1} ||\\mathbf{x}_i - \\mathcal{G}(\\mathcal{E}(\\mathbf{x}_i))||_1}{\\sum_{i=0}^{N-1} ||\\mathbf{x}_{(i+1) \\mod N} - \\mathcal{G}(\\mathcal{E}(\\mathbf{x}_i))||_1}\n```"
+        },
+        {
+            "page": 13,
+            "type": "formula",
+            "bbox": [
+                254,
+                693,
+                357,
+                721
+            ],
+            "content": "\\begin{array} { l } { { R _ { 0 } ( \\mathbf { x } ) = \\mathbf { x } } } \\\\ { { R _ { i + 1 } ( \\mathbf { x } ) = \\mathcal { G } ( \\mathcal { E } ( R _ { i } ( \\mathbf { x } ) ) ) } } \\end{array}",
+            "latex": "\\begin{array} { l } { { R _ { 0 } ( \\mathbf { x } ) = \\mathbf { x } } } \\\\ { { R _ { i + 1 } ( \\mathbf { x } ) = \\mathcal { G } ( \\mathcal { E } ( R _ { i } ( \\mathbf { x } ) ) ) } } \\end{array}"
+        }
+    ]
+}

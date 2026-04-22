@@ -1,0 +1,118 @@
+{
+    "total_count": 7,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                108,
+                84,
+                504,
+                231
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>1：procedure TRAINING(training set S，number of starting nodes per sample N，number of training steps T，batch size B)</td>\n  </tr>\n  <tr>\n    <td>2：initialize policy network parameter θ</td>\n  </tr>\n  <tr>\n    <td>for step=1，...，T do</td>\n  </tr>\n  <tr>\n    <td>4：si-SAMPLEINPUT(S) ∀i∈{1，...，B}</td>\n  </tr>\n  <tr>\n    <td>5：{α，α，...，α}SELECTSTARTNODES(si) ∀i∈{1，...，B}</td>\n  </tr>\n  <tr>\n    <td>6：τ←SAMPLEROLLOUT(α，si，πθ) ∀i∈{1，...，B}，∀j∈{1，...，N}</td>\n  </tr>\n  <tr>\n    <td>7：bi-1N∑j=1R(τ) ∀i∈{1，...，B}</td>\n  </tr>\n  <tr>\n    <td>8：VθJ(θ)-1BN∑i=1∑N(R(τ)-bi)Vθlogpθ(τ)</td>\n  </tr>\n  <tr>\n    <td>9：θ-θ+αVθJ(θ)</td>\n  </tr>\n  <tr>\n    <td>10：end for</td>\n  </tr>\n  <tr>\n    <td>11：end procedure</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page005.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                108,
+                85,
+                504,
+                186
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>1：procedure INFERENCEnput s， policy πθ， number of starting nodes N， number of transformsK)</td>\n  </tr>\n  <tr>\n    <td>2：{s1，s2，... ，sk}←AUGMENT(s)</td>\n  </tr>\n  <tr>\n    <td>3：{α1k，α2k，... ，αNk}←SELECTSTARTNODES( sk) ∀k∈{1，... ，K}</td>\n  </tr>\n  <tr>\n    <td>4：τj←GREEDYROLLOUT(αjk，s，πθ) ∀j∈{1，... ，N}，∀k∈{1，... ，K}</td>\n  </tr>\n  <tr>\n    <td>5：kmax，jmax←argmaxk，jR(τj)</td>\n  </tr>\n  <tr>\n    <td>6：return τj</td>\n  </tr>\n  <tr>\n    <td>7：end procedure</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                417,
+                569,
+                506,
+                637
+            ],
+            "caption": "The text in the image reads: \"Table 1: Unit square transformations\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>f(x，y)</td>\n  </tr>\n  <tr>\n    <td>(x，y)(y，x)</td>\n  </tr>\n  <tr>\n    <td>(x，1-y)(y，1-x)</td>\n  </tr>\n  <tr>\n    <td>(1-x，y)(1-y，x)</td>\n  </tr>\n  <tr>\n    <td>(1-x，1-y)(1-y，1-x)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                110,
+                504,
+                500,
+                700
+            ],
+            "caption": "Table 2: Experiment results on TSP Table 2: Experiment results on TSP",
+            "footnote": "The text content from the image is:\n\n```\n^https://github.com/yd-kwon/POMO\n```",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td></td>\n    <td>TSP 20</td>\n    <td>TSP 50</td>\n    <td>TSP 100</td>\n  </tr>\n  <tr>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n  </tr>\n  <tr>\n    <td>Concorde</td>\n    <td>3.83</td>\n    <td>-</td>\n    <td>(5m)</td>\n    <td>5.69</td>\n    <td>-</td>\n    <td>(13m)</td>\n    <td>7.76</td>\n    <td>-</td>\n    <td>(1h)</td>\n  </tr>\n  <tr>\n    <td>LKH3</td>\n    <td>3.83</td>\n    <td>0.00%</td>\n    <td>(42s)</td>\n    <td>5.69</td>\n    <td>0.00%</td>\n    <td>(6m)</td>\n    <td>7.76</td>\n    <td>0.00%</td>\n    <td>(25m)</td>\n  </tr>\n  <tr>\n    <td>Gurobi</td>\n    <td>3.83</td>\n    <td>0.00%</td>\n    <td>(7s)</td>\n    <td>5.69</td>\n    <td>0.00%</td>\n    <td>(2m)</td>\n    <td>7.76</td>\n    <td>0.00%</td>\n    <td>(17m)</td>\n  </tr>\n  <tr>\n    <td>OR Tools</td>\n    <td>3.86</td>\n    <td>0.94%</td>\n    <td>(1m)</td>\n    <td>5.85</td>\n    <td>2.87%</td>\n    <td>(5m)</td>\n    <td>8.06</td>\n    <td>3.86%</td>\n    <td>(23m)</td>\n  </tr>\n  <tr>\n    <td>Farthest Insertion</td>\n    <td>3.92</td>\n    <td>2.36%</td>\n    <td>(1s)</td>\n    <td>6.00</td>\n    <td>5.53%</td>\n    <td>(2s)</td>\n    <td>8.35</td>\n    <td>7.59%</td>\n    <td>(7s)</td>\n  </tr>\n  <tr>\n    <td>GCN[9]，beam search</td>\n    <td>3.83</td>\n    <td>0.01%</td>\n    <td>(12m)</td>\n    <td>5.69</td>\n    <td>0.01%</td>\n    <td>(18m)</td>\n    <td>7.87</td>\n    <td>1.39%</td>\n    <td>(40m)</td>\n  </tr>\n  <tr>\n    <td>Improv.[11]，{5000}</td>\n    <td>3.83</td>\n    <td>0.00%</td>\n    <td>(1h)</td>\n    <td>5.70</td>\n    <td>0.20%</td>\n    <td>(1h)</td>\n    <td>7.87</td>\n    <td>1.42%</td>\n    <td>(2h)</td>\n  </tr>\n  <tr>\n    <td>Improv.[12]，{2000}</td>\n    <td>3.83</td>\n    <td>0.00%</td>\n    <td>(15m)</td>\n    <td>5.70</td>\n    <td>0.12%</td>\n    <td>(29m)</td>\n    <td>7.83</td>\n    <td>0.87%</td>\n    <td>(41m)</td>\n  </tr>\n  <tr>\n    <td>AM[10]，greedy</td>\n    <td>3.84</td>\n    <td>0.19%</td>\n    <td>(≤ls)</td>\n    <td>5.76</td>\n    <td>1.21%</td>\n    <td>(1s)</td>\n    <td>8.03</td>\n    <td>3.51%</td>\n    <td>(2s)</td>\n  </tr>\n  <tr>\n    <td>AM[10]，sampling</td>\n    <td>3.83</td>\n    <td>0.07%</td>\n    <td>(1m)</td>\n    <td>5.71</td>\n    <td>0.39%</td>\n    <td>(5m)</td>\n    <td>7.92</td>\n    <td>1.98%</td>\n    <td>(22m)</td>\n  </tr>\n  <tr>\n    <td>POMO，single trajec.</td>\n    <td>3.83</td>\n    <td>0.12%</td>\n    <td>(≤ls)</td>\n    <td>5.73</td>\n    <td>0.64%</td>\n    <td>(1s)</td>\n    <td>7.84</td>\n    <td>1.07%</td>\n    <td>(2s)</td>\n  </tr>\n  <tr>\n    <td>POMO，no augment.</td>\n    <td>3.83</td>\n    <td>0.04%</td>\n    <td>(≤ls)</td>\n    <td>5.70</td>\n    <td>0.21%</td>\n    <td>(2s)</td>\n    <td>7.80</td>\n    <td>0.46%</td>\n    <td>(11s)</td>\n  </tr>\n  <tr>\n    <td>POMO，x 8 augment.</td>\n    <td>3.83</td>\n    <td>0.00%</td>\n    <td>(3s)</td>\n    <td>5.69</td>\n    <td>0.03%</td>\n    <td>(16s)</td>\n    <td>7.77</td>\n    <td>0.14%</td>\n    <td>(1m)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page007.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                106,
+                551,
+                522,
+                714
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Experiment results on CVRP\"",
+            "footnote": "The text content from the image is:\n\n\"Empirically, we find that neural net-based agents choose nodes in an orderly fashion.\"",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>CVRP 20</td>\n    <td>CVRP 50</td>\n    <td>CVRP 100</td>\n  </tr>\n  <tr>\n    <td>LKH3</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n  </tr>\n  <tr>\n    <td>OR Tools</td>\n    <td>6.42</td>\n    <td>4.84%</td>\n    <td>(2m)</td>\n    <td>11.22</td>\n    <td>8.12%</td>\n    <td>(12m)</td>\n    <td>17.14</td>\n    <td>9.34%</td>\n    <td>(1h)</td>\n  </tr>\n  <tr>\n    <td>Neu Rewriter[13]</td>\n    <td>6.16</td>\n    <td>(22m)</td>\n    <td>10.51</td>\n    <td>(18m)</td>\n    <td>16.10</td>\n    <td>(1h)</td>\n  </tr>\n  <tr>\n    <td>NL NS[14]</td>\n    <td>6.19</td>\n    <td>(7m)</td>\n    <td>10.54</td>\n    <td>(24m)</td>\n    <td>15.99</td>\n    <td>(1h)</td>\n  </tr>\n  <tr>\n    <td>L2I[15]</td>\n    <td>6.12</td>\n    <td>(2000h)</td>\n    <td>10.35</td>\n    <td>(2800h)</td>\n    <td>15.57</td>\n    <td>(4000h)</td>\n  </tr>\n  <tr>\n    <td>AM[10]， greedy</td>\n    <td>6.40</td>\n    <td>4.45%</td>\n    <td>(<1s)</td>\n    <td>10.93</td>\n    <td>5.34%</td>\n    <td>(1s)</td>\n    <td>16.73</td>\n    <td>6.72%</td>\n    <td>(3s)</td>\n  </tr>\n  <tr>\n    <td>AM[10]， sampling</td>\n    <td>6.24</td>\n    <td>1.97%</td>\n    <td>(3m)</td>\n    <td>10.59</td>\n    <td>2.11%</td>\n    <td>(7m)</td>\n    <td>16.16</td>\n    <td>3.09%</td>\n    <td>(30m)</td>\n  </tr>\n  <tr>\n    <td>POMO， single trajec.</td>\n    <td>6.35</td>\n    <td>3.72%</td>\n    <td>(<1s)</td>\n    <td>10.74</td>\n    <td>3.52%</td>\n    <td>(1s)</td>\n    <td>16.15</td>\n    <td>3.00%</td>\n    <td>(3s)</td>\n  </tr>\n  <tr>\n    <td>POMO， no augment.</td>\n    <td>6.17</td>\n    <td>0.82%</td>\n    <td>(1s)</td>\n    <td>10.49</td>\n    <td>1.14%</td>\n    <td>(4s)</td>\n    <td>15.83</td>\n    <td>0.98%</td>\n    <td>(19s)</td>\n  </tr>\n  <tr>\n    <td>POMO，x8 augment.</td>\n    <td>6.14</td>\n    <td>0.21%</td>\n    <td>(5s)</td>\n    <td>10.42</td>\n    <td>0.45%</td>\n    <td>(26s)</td>\n    <td>15.73</td>\n    <td>0.32%</td>\n    <td>(2m)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page008.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                140,
+                87,
+                470,
+                201
+            ],
+            "caption": "Table 4: Experiment results on KP",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>KP50</td>\n    <td>KP100</td>\n    <td>KP200</td>\n  </tr>\n  <tr>\n    <td>ScoreGapScoreGapScoreGap</td>\n  </tr>\n  <tr>\n    <td>Optimal</td>\n    <td>20.127-</td>\n    <td>40.460-</td>\n    <td>57.605-</td>\n  </tr>\n  <tr>\n    <td>Greedy Heuristics</td>\n    <td>19.9170.210</td>\n    <td>40.2250.235</td>\n    <td>57.2670.338</td>\n  </tr>\n  <tr>\n    <td>Pointer Net[7]， greedy</td>\n    <td>19.9140.213</td>\n    <td>40.2170.243</td>\n    <td>57.2710.334</td>\n  </tr>\n  <tr>\n    <td>AM[10]， greedy</td>\n    <td>19.9570.173</td>\n    <td>40.2490.211</td>\n    <td>57.2800.325</td>\n  </tr>\n  <tr>\n    <td>POMO， single trajec.</td>\n    <td>19.9970.130</td>\n    <td>40.3350.125</td>\n    <td>57.3450.260</td>\n  </tr>\n  <tr>\n    <td>POMO， no augment.</td>\n    <td>20.1200.007</td>\n    <td>40.4540.006</td>\n    <td>57.5970.008</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 13,
+            "type": "table",
+            "bbox": [
+                113,
+                87,
+                498,
+                174
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 6: Inference techniques on the AM for CVRP\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>CVRP20</td>\n    <td>CVRP50</td>\n    <td>CVRP100</td>\n  </tr>\n  <tr>\n    <td>LKH3</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n    <td>Len.</td>\n    <td>Gap</td>\n    <td>Time</td>\n  </tr>\n  <tr>\n    <td>AM， greedy rollout</td>\n    <td>6.40</td>\n    <td>4.45%</td>\n    <td>(&lt;=ls)</td>\n    <td>10.93</td>\n    <td>5.34%</td>\n    <td>(1s)</td>\n    <td>16.73</td>\n    <td>6.72%</td>\n    <td>(3s)</td>\n  </tr>\n  <tr>\n    <td>AM， 1280 sampling</td>\n    <td>6.24</td>\n    <td>1.97%</td>\n    <td>(3m)</td>\n    <td>10.59</td>\n    <td>2.11%</td>\n    <td>(7m)</td>\n    <td>16.16</td>\n    <td>3.09%</td>\n    <td>(30m)</td>\n  </tr>\n  <tr>\n    <td>AM， x 8 augment.</td>\n    <td>6.22</td>\n    <td>1.63%</td>\n    <td>(2s)</td>\n    <td>10.67</td>\n    <td>2.81%</td>\n    <td>(6s)</td>\n    <td>16.35</td>\n    <td>4.30%</td>\n    <td>(18s)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page013.png"
+        }
+    ]
+}

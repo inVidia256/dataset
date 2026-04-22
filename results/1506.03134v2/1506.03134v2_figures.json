@@ -1,0 +1,48 @@
+{
+    "total_count": 3,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                131,
+                93,
+                499,
+                295
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "figure",
+            "bbox": [
+                145,
+                99,
+                508,
+                209
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                112,
+                115,
+                500,
+                499
+            ],
+            "caption": "Figure 3: Examples of our model on Convex hulls (left), Delaunay (center) and TSP (right), trained on \\( m \\) points, and tested on \\( n \\) points. A failure of the LSTM sequence-to-sequence model for Convex hulls is shown in (a). Note that the baselines cannot be applied to a different length from training. Using the Ptr-Net model for \\( n = 5 \\), we obtained an accuracy of 80.7% and triangle coverage of 93.0%. For \\( n = 10 \\), the accuracy was 22.6% and the triangle coverage 81.3%. For \\( n = 50 \\), we did not produce any precisely correct triangulation, but obtained 52.8% triangle coverage. See the middle column of Figure 3 for an example for \\( n = 50 \\).",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page007.png"
+        }
+    ]
+}

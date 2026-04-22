@@ -1,0 +1,20 @@
+{
+    "total_count": 1,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                69,
+                54,
+                547,
+                410
+            ],
+            "caption": "Figure 1: Block Diagram of Graph Transformer with Laplacian Eigenvectors (λ) used as positional encoding (LapPE). LapPE is added to input node embeddings before passing the features to the first layer. Left: Graph Transformer operating on node embeddings only to compute attention scores; Right: Graph Transformer with edge features with designated feature pipeline to maintain layer-wise edge representations. In this extension, the available edge attributes in a graph is used to explicitly modify the corresponding pairwise attention scores.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        }
+    ]
+}

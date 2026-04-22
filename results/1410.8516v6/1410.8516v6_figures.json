@@ -1,0 +1,90 @@
+{
+    "total_count": 6,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                186,
+                83,
+                418,
+                188
+            ],
+            "caption": "The text content from the image is as follows:\n\nFigure 1: Computational graph of the probabilistic model, using the following formulas.\n(a) Inference: \\(\\log(p_X(x)) = \\log(p_H(f(x))) + \\log(|\\det(\\frac{\\partial f(x)}{\\partial x})|)\\)\n(b) Sampling: \\(h \\sim p_H(h), x = f^{-1}(h)\\)\n(c) Inpainting: The text content from the image is as follows:\n\nFigure 1: Computational graph of the probabilistic model, using the following formulas.\n(a) Inference: \\(\\log(p_X(x)) = \\log(p_H(f(x))) + \\log(|\\det(\\frac{\\partial f(x)}{\\partial x})|)\\)\n(b) Sampling: \\(h \\sim p_H(h), x = f^{-1}(h)\\)\n(c) Inpainting:",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page002.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                228,
+                78,
+                383,
+                187
+            ],
+            "caption": "Figure 2: Computational graph of a coupling layer",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page003.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                141,
+                212,
+                468,
+                567
+            ],
+            "caption": "The text in the image reads:\n\n\"Figure 5: Unbiased samples from a trained NICE model. We sample \\( h \\sim p_H(h) \\) and we output \\( x = f^{-1}(h) \\).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page008.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                119,
+                85,
+                491,
+                219
+            ],
+            "caption": "",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page009.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 12,
+            "type": "figure",
+            "bbox": [
+                142,
+                85,
+                468,
+                258
+            ],
+            "caption": "Figure 7: Sphere in the latent space. These figures show part of the manifold structure learned by the model. Figure 7: Sphere in the latent space. These figures show part of the manifold structure learned by the model.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page012.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 13,
+            "type": "figure",
+            "bbox": [
+                186,
+                91,
+                420,
+                302
+            ],
+            "caption": "Figure 8: Decay of σ_d = S_{dd}^{-1}. The large values correspond to dimensions on which the model chooses to have larger variations, thus highlighting the learned manifold structure from the data. This is the non-linear equivalent of the eigenspectrum in the case of PCA. On the x axis are the components d sorted by σ_d (on the y axis).",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page013.png"
+        }
+    ]
+}

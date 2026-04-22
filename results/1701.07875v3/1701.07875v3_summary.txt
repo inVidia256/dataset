@@ -1,0 +1,1782 @@
+============================================================
+PDF Content Extraction Summary
+============================================================
+
+Text Blocks: 260
+Figures: 14
+Tables: 1
+Formulas: 63
+
+------------------------------------------------------------
+TEXT CONTENT
+------------------------------------------------------------
+
+[Page 1] (ocr_text)
+The typical remedy is to add a noise term to the model distribution. This is why virtually all generative models described in the classical machine learning literature include a noise component. In the simplest case, one assumes a Gaussian noise with relatively high bandwidth in order to cover all the examples. It is well known, for instance, that in the case of image generation models, this noise degrades the quality of the samples and makes them blurry. For example, we can see in the recent paper [23] that the optimal standard deviation of the noise added to the model when maximizing likelihood is around 0.1 to each pixel in a generated image, when the pixels were already normalized to be in the range [0, 1]. This is a very high amount of noise, so much that when papers report the samples of their models, they don’t add the noise term on which they report likelihood numbers. In other words, the added noise term is clearly incorrect for the problem, but is needed to make the maximum likelihood approach work.
+
+[Page 1] (ocr_text)
+The problem this paper is concerned with is that of unsupervised learning. Mainly, what does it mean to learn a probability distribution? The classical answer to this is to learn a probability density. This is often done by defining a parametric family of densities \( (P_\theta)_{\theta \in \mathbb{R}^d} \) and finding the one that maximized the likelihood on our data: if we have real data examples \( \{x^{(i)}\}_{i=1}^m \), we would solve the problem
+
+[Page 1] (ocr_text)
+For this to make sense, we need the model density \( P_{\theta} \) to exist. This is not the case in the rather common situation where we are dealing with distributions supported by low dimensional manifolds. It is then unlikely that the model manifold and the true distribution’s support have a non-negligible intersection (see [1]), and this means that the KL distance is not defined (or simply infinite).
+
+[Page 1] (ocr_text)
+If the real data distribution \( \mathbb{P}_r \) admits a density and \( \mathbb{P}_{\theta} \) is the distribution of the parametrized density \( P_{\theta} \), then, asymptotically, this amounts to minimizing the Kullback-Leibler divergence \( KL(\mathbb{P}_r \| \mathbb{P}_{\theta}) \).
+
+[Page 1] (ocr_text)
+The text content from the image is "1 Introduction".
+
+[Page 1] (ocr_text)
+The text content from the image is "Wasserstein GAN".
+
+[Page 1] (ocr_text)
+The text content from the image is:
+
+1Courant Institute of Mathematical Sciences
+2Facebook AI Research
+
+[Page 1] (ocr_text)
+The text content from the image is:
+
+Martin Arjovsky\(^{1}\), Soumith Chintala\(^{2}\), and Léon Bottou\(^{1,2}\)
+
+[Page 1] (ocr_text)
+The text content from the image is:
+
+Martin Arjovsky\(^{1}\), Soumith Chintala\(^{2}\), and Léon Bottou\(^{1,2}\)
+
+\({}^{1}\)Courant Institute of Mathematical Sciences
+
+\({}^{2}\)Facebook AI Research
+
+[Page 1] (ocr_text)
+The text content from the image is "Wasserstein GAN".
+
+[Page 1] (ocr_text)
+The text content from the image is:
+
+Martin Arjovsky1, Soumith Chintala2, and Léon Bottou1
+
+[Page 2] (ocr_text)
+Variational Auto-Encoders (VAEs) [9] and Generative Adversarial Networks (GANs) [4] are well known examples of this approach. Because VAEs focus on the approximate likelihood of the examples, they share the limitation of the standard models and need to fiddle with additional noise terms. GANs offer much more flexibility in the definition of the objective function, including Jensen-Shannon [4], and all \(f\)-divergences [17] as well as some exotic combinations [6]. On the other hand, training GANs is well known for being delicate and unstable, for reasons theoretically investigated in [1].
+
+[Page 2] (ocr_text)
+The text content from the image is as follows:
+
+"Rather than estimating the density of \(\mathbb{P}_r\) which may not exist, we can define a random variable \(Z\) with a fixed distribution \(p(z)\) and pass it through a parametric function \(g_\theta: \mathcal{Z} \to \mathcal{X}\) (typically a neural network of some kind) that directly generates samples following a certain distribution \(\mathbb{P}_\theta\). By varying \(\theta\), we can change this distribution and make it close to the real data distribution \(\mathbb{P}_r\). This is useful in two ways. First of all, unlike densities, this approach can represent distributions confined to a low dimensional manifold. Second, the ability to easily generate samples is often more useful than knowing the numerical value of the density (for example in image superresolution or semantic segmentation when considering the conditional distribution of the output image given the input image). In general, it is computationally difficult to generate samples given an arbitrary high dimensional density [16]."
+
+[Page 2] (ocr_text)
+In this paper, we direct our attention on the various ways to measure how close the model distribution and the real distribution are, or equivalently, on the various ways to define a distance or divergence ρ(𝑃_θ,𝑃_r). The most fundamental difference between such distances is their impact on the convergence of sequences of probability distributions. A sequence of distributions (𝑃_t)_{t∈ℕ} converges if and only if there is a distribution 𝑃_∞ such that ρ(𝑃_t,𝑃_∞) tends to zero, something that depends on how exactly the distance ρ is defined. Informally, a distance ρ induces a weaker topology when it makes it easier for a sequence of distribution to converge.1 Section 2 clarifies how popular probability distances differ in that respect.
+
+[Page 2] (ocr_text)
+In order to optimize the parameter θ, it is of course desirable to define our model distribution Pθ in a manner that makes the mapping θ → Pθ continuous. Continuity means that when a sequence of parameters θt converges to θ, the distributions Pθt also converge to Pθ. However, it is essential to remember that the notion of the convergence of the distributions Pθt depends on the way we compute the distance between distributions. The weaker this distance, the easier it is to define a continuous mapping from θ-space to Pθ-space, since it’s easier for the distributions to converge. The main reason we care about the mapping θ → Pθ to be continuous is as follows. If ρ is our notion of distance between two distributions, we would like to have a loss function θ → ρ(Pθ, Pr) that is continuous, and this is equivalent to having the mapping θ → Pθ be continuous when using the distance between distributions ρ.
+
+[Page 3] (ocr_text)
+We now introduce our notation. Let \(\mathcal{X}\) be a compact metric set (such as the space of images \([0,1]^d\)) and let \(\Sigma\) denote the set of all the Borel subsets of \(\mathcal{X}\). Let \(\text{Prob}(\mathcal{X})\) denote the space of probability measures defined on \(\mathcal{X}\). We can now define elementary distances and divergences between two distributions \(\mathbb{P}_r,\mathbb{P}_g \in \text{Prob}(\mathcal{X})\):
+
+[Page 3] (ocr_text)
+where both \(\mathbb{P}_r\) and \(\mathbb{P}_g\) are assumed to be absolutely continuous, and therefore admit densities, with respect to a same measure \(\mu\) defined on \(\mathcal{X}.\) The KL divergence is famously asymmetric and possibly infinite when there are points such that \(P_g(x)=0\) and \(P_r(x)>0\).
+
+[Page 3] (ocr_text)
+The text content from the image is:
+
+"2 Different Distances"
+
+[Page 3] (ocr_text)
+The Kullback-Leibler (KL) divergence
+
+[Page 3] (ocr_text)
+The Total Variation (TV) distance
+
+[Page 3] (ocr_text)
+The contributions of this paper are:
+
+[Page 3] (ocr_text)
+In Section 2, we provide a comprehensive theoretical analysis of how the Earth Mover (EM) distance behaves in comparison to popular probability distances and divergences used in the context of learning distributions.
+
+[Page 3] (ocr_text)
+In Section 3, we define a form of GAN called Wasserstein-GAN that minimizes a reasonable and efficient approximation of the EM distance, and we theoretically show that the corresponding optimization problem is sound.
+
+[Page 3] (ocr_text)
+- In Section 4, we empirically show that WGANs cure the main training problems of GANs. In particular, training WGANs does not require maintaining a careful balance in training of the discriminator and the generator, and does not require a careful design of the network architecture either. The mode dropping phenomenon that is typical in GANs is also drastically reduced. One of the most compelling practical benefits of WGANs is the ability to continuously estimate the EM distance by training the discriminator to optimality. Plotting these learning curves is not only useful for debugging and hyperparameter searches, but also correlate remarkably well with the observed sample quality.
+
+[Page 3] (ocr_text)
+- In Section 2, we provide a comprehensive theoretical analysis of how the Earth Mover (EM) distance behaves in comparison to popular probability distances and divergences used in the context of learning distributions.
+- In Section 3, we define a form of GAN called Wasserstein-GAN that minimizes a reasonable and efficient approximation of the EM distance, and we theoretically show that the corresponding optimization problem is sound.
+- In Section 4, we empirically show that WGANs cure the main training problems of GANs. In particular, training WGANs does not require maintaining a careful balance in training of the discriminator and the generator, and does not require a careful design of the network architecture either. The mode dropping phenomenon that is typical in GANs is also drastically reduced. One of the most compelling practical benefits of WGANs is the ability to continuously estimate the EM distance by training the discriminator to optimality. Plotting these learning curves is not only useful for debugging and hyperparameter searches, but also correlate remarkably well with the observed sample quality.
+
+[Page 4] (ocr_text)
+The text content from the image is as follows:
+
+"Example 1 gives us a case where we can learn a probability distribution over a low dimensional manifold by doing gradient descent on the EM distance. This cannot be done with the other distances and divergences because the resulting loss function is not even continuous. Although this simple example features distributions with disjoint supports, the same conclusion holds when the supports have a non empty"
+
+[Page 4] (ocr_text)
+Example 1 (Learning parallel lines). Let \( Z \sim U[0,1] \) the uniform distribution on the unit interval. Let \(\mathbb{P}_0\) be the distribution of \((0,Z) \in \mathbb{R}^2\) (a 0 on the x-axis and the random variable \(Z\) on the y-axis), uniform on a straight vertical line passing through the origin. Now let \(g_\theta(z) = (\theta, z)\) with \(\theta\) a single real parameter. It is easy to see that in this case,
+
+[Page 4] (ocr_text)
+When θt → 0, the sequence (Pθt)t∈N converges to P0 under the EM distance, but does not converge at all under either the JS, KL, reverse KL, or TV divergences. Figure 1 illustrates this for the case of the EM and JS distances.
+
+[Page 4] (ocr_text)
+The text content from the image is as follows:
+
+"where Π(Π_r, Π_g) denotes the set of all joint distributions γ(x, y) whose marginals are respectively Π_r and Π_g. Intuitively, γ(x, y) indicates how much "mass" must be transported from x to y in order to transform the distributions Π_r into the distribution Π_g. The EM distance then is the "cost" of the optimal transport plan."
+
+[Page 4] (ocr_text)
+The following example illustrates how apparently simple sequences of probability distributions converge under the EM distance but do not converge under the other distances and divergences defined above.
+
+[Page 4] (ocr_text)
+The text content from the image is:
+
+"where \(\mathbb{P}_m\) is the mixture \((\mathbb{P}_r + \mathbb{P}_g)/2\). This divergence is symmetrical and always defined because we can choose \(\mu = \mathbb{P}_m\)."
+
+[Page 4] (ocr_text)
+The Earth-Mover (EM) distance or Wasserstein-1
+
+[Page 4] (ocr_text)
+The Jensen-Shannon (JS) divergence
+
+[Page 5] (ocr_text)
+Since the Wasserstein distance is much weaker than the JS distance³, we can now ask whether \( W(\mathbb{P}_r, \mathbb{P}_\theta) \) is a continuous loss function on \( \theta \) under mild assumptions. This, and more, is true, as we now state and prove.
+
+[Page 5] (ocr_text)
+intersection contained in a set of measure zero. This happens to be the case when two low dimensional manifolds intersect in general position [1].
+
+[Page 5] (ocr_text)
+Figure 1: These plots show ρ(Πθ, Π0) as a function of θ when ρ is the EM distance (left plot) or the JS divergence (right plot). The EM plot is continuous and provides a usable gradient everywhere. The JS plot is not continuous and does not provide a usable gradient.
+
+[Page 5] (ocr_text)
+Theorem 1. Let \( \mathbb{P}_r \) be a fixed distribution over \( \mathcal{X} \). Let \( Z \) be a random variable (e.g., Gaussian) over another space \( \mathcal{Z} \). Let \( g: \mathcal{Z} \times \mathbb{R}^d \to \mathcal{X} \) be a function, that will be denoted \( g_\theta(z) \) with \( z \) the first coordinate and \( \theta \) the second. Let \( \mathbb{P}_\theta \) denote the distribution of \( g_\theta(Z) \). Then,
+
+[Page 5] (ocr_text)
+Corollary 1. Let \( g_\theta \) be any feedforward neural network\({}^A\) parameterized by \( \theta \), and \( p(z) \) a prior over \( z \) such that \( \mathbb{E}_{z \sim p(z)}[\|z\|] < \infty \) (e.g., Gaussian, uniform, etc.).
+
+[Page 5] (ocr_text)
+The text content from the image is:
+
+"Proof. See Appendix C"
+
+[Page 5] (ocr_text)
+The following corollary tells us that learning by minimizing the EM distance makes sense (at least in theory) with neural networks.
+
+[Page 5] (ocr_text)
+2. If \( g \) is locally Lipschitz and satisfies regularity assumption 1, then \( W(\mathbb{P}_r, \mathbb{P}_\theta) \) is continuous everywhere, and differentiable almost everywhere.
+
+[Page 5] (ocr_text)
+1. If \( g \) is continuous in \( \theta \), so is \( W(\mathbb{P}_r, \mathbb{P}_{\theta}) \).
+
+[Page 5] (ocr_text)
+3. Statements 1-2 are false for the Jensen-Shannon divergence \( JS(\mathbb{P}_r, \mathbb{P}_\theta) \) and all the KLS.
+
+[Page 5] (ocr_text)
+1. If \( g \) is continuous in \( \theta \), so is \( W(\mathbb{P}_r, \mathbb{P}_\theta) \).
+2. If \( g \) is locally Lipschitz and satisfies regularity assumption 1, then \( W(\mathbb{P}_r, \mathbb{P}_\theta) \) is continuous everywhere, and differentiable almost everywhere.
+3. Statements 1-2 are false for the Jensen-Shannon divergence \( JS(\mathbb{P}_r, \mathbb{P}_\theta) \) and all the KLS.
+
+[Page 5] (ocr_text)
+The following corollary tells us that learning by minimizing the EM distance makes sense (at least in theory) with neural networks.
+
+[Page 6] (ocr_text)
+All this shows that EM is a much more sensible cost function for our problem than at least the Jensen-Shannon divergence. The following theorem describes the relative strength of the topologies induced by these distances and divergences, with KL the strongest, followed by JS and TV, and EM the weakest.
+
+[Page 6] (ocr_text)
+This highlights the fact that the KL, JS, and TV distances are not sensible cost functions when learning distributions supported by low dimensional manifolds. However the EM distance is sensible in that setup. This obviously leads us to the next section where we introduce a practical approximation of optimizing the EM distance.
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+"Again, Theorem 2 points to the fact that \( W(\mathbb{P}_r, \mathbb{P}_\theta) \) might have nicer properties when optimized than \( JS(\mathbb{P}_r, \mathbb{P}_\theta) \). However, the infimum in (1) is highly intractable. On the other hand, the Kantorovich-Rubinstein duality [22] tells us that"
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+"where the supremum is over all the 1-Lipschitz functions \( f : \mathcal{X} \to \mathbb{R} \). Note that if we replace \( \|f\|_L \leq 1 \) for \( \|f\|_L \leq K \) (consider \( K \)-Lipschitz for some constant \( K \)), then we end up with \( K \cdot W(\mathbb{P}_r, \mathbb{P}_g) \). Therefore, if we have a parameterized family of"
+
+[Page 6] (ocr_text)
+Then assumption 1 is satisfied and therefore \( W(\mathbb{P}_r, \mathbb{P}_\theta) \) is continuous everywhere and differentiable almost everywhere.
+
+[Page 6] (ocr_text)
+Theorem 2. Let \(\mathbb{P}\) be a distribution on a compact space \(\mathcal{X}\) and \((\mathbb{P}_n)_{n \in \mathbb{N}}\) be a sequence of distributions on \(\mathcal{X}\). Then, considering all limits as \(n \to \infty\),
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+"3 Wasserstein GAN"
+
+[Page 6] (ocr_text)
+The following statements are equivalent
+
+[Page 6] (ocr_text)
+The following statements are equivalent
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+"3. \( KL(\mathbb{P}_n \parallel \mathbb{P}) \to 0 \) or \( KL(\mathbb{P} \parallel \mathbb{P}_n) \to 0 \) imply the statements in (1)."
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+"Proof. See Appendix C"
+
+[Page 6] (ocr_text)
+The statements in (1) imply the statements in (2).
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+- \( \delta(\mathbb{P}_n, \mathbb{P}) \to 0 \) with \( \delta \) the total variation distance.
+- \( JS(\mathbb{P}_n, \mathbb{P}) \to 0 \) with \( JS \) the Jensen-Shannon divergence.
+
+[Page 6] (ocr_text)
+- \( W(\mathbb{P}_n, \mathbb{P}) \to 0 \).
+- \( \mathbb{P}_n \xrightarrow{D} \mathbb{P} \) where \( \xrightarrow{D} \) represents convergence in distribution for random variables.
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+"Proof. See Appendix C"
+
+[Page 6] (ocr_text)
+The text content from the image is:
+
+"Proof. See Appendix C"
+
+[Page 7] (ocr_text)
+The text content from the image is as follows:
+
+"Now comes the question of finding the function \( f \) that solves the maximization problem in equation (2). To roughly approximate this, something that we can do is train a neural network parameterized with weights \( w \) lying in a compact space \( \mathcal{W} \) and then backprop through \( \mathbb{E}_{z \sim p(z)}[\nabla_\theta f_w(g_\theta(z))] \), as we would do with a typical GAN. Note that the fact that \( \mathcal{W} \) is compact implies that all the functions \( f_w \) will be \( K \)-Lipschitz for some \( K \) that only depends on \( \mathcal{W} \) and not the individual weights, therefore approximating (2) up to an irrelevant scaling factor and the capacity of the 'critic' \( f_w \). In order to have parameters \( w \) lie in a compact space, something simple we can do is clamp the weights to a fixed box (say \( \mathcal{W} = [-0.01, 0.01]^l \)) after each gradient update. The Wasserstein Generative Adversarial Network (WGAN) procedure is described in Algorithm 1."
+
+[Page 7] (ocr_text)
+Weight clipping is a clearly terrible way to enforce a Lipschitz constraint. If the clipping parameter is large, then it can take a long time for any weights to reach their limit, thereby making it harder to train the critic till optimality. If the clipping is small, this can easily lead to vanishing gradients when the number of layers is big, or batch normalization is not used (such as in RNNs). We experimented with simple variants (such as projecting the weights to a sphere) with little difference, and we stuck with weight clipping due to its simplicity and already good performance. However, we do leave the topic of enforcing Lipschitz constraints in a neural network setting for further investigation, and we actively encourage interested researchers to improve on this method.
+
+[Page 7] (ocr_text)
+and if the supremum in (2) is attained for some \( w \in \mathcal{W} \) (a pretty strong assumption akin to what’s assumed when proving consistency of an estimator), this process would yield a calculation of \( W(\mathbb{P}_r, \mathbb{P}_\theta) \) up to a multiplicative constant. Furthermore, we could consider differentiating \( W(\mathbb{P}_r, \mathbb{P}_\theta) \) (again, up to a constant) by back-proping through equation (2) via estimating \( \mathbb{E}_{z \sim p(z)}[\nabla_\theta f_w(g_\theta(z))] \). While this is all intuition, we now prove that this process is principled under the optimality assumption.
+
+[Page 7] (ocr_text)
+Theorem 3. Let \( \mathbb{P}_r \) be any distribution. Let \( \mathbb{P}_\theta \) be the distribution of \( g_\theta(Z) \) with \( Z \) a random variable with density \( p \) and \( g_\theta \) a function satisfying assumption 1. Then, there is a solution \( f: \mathcal{X} \to \mathbb{R} \) to the problem
+
+[Page 7] (ocr_text)
+functions \(\{f_w\}_{w \in W}\) that are all \(K\)-Lipschitz for some \(K\), we could consider solving the problem
+
+[Page 7] (ocr_text)
+and we have
+
+[Page 7] (ocr_text)
+when both terms are well-defined.
+
+[Page 7] (ocr_text)
+The text content from the image is:
+
+"Proof. See Appendix C"
+
+[Page 7] (ocr_text)
+The text content from the image is:
+
+"Proof. See Appendix C"
+
+[Page 8] (ocr_text)
+The fact that the EM distance is continuous and differentiable a.e. means that we can (and should) train the critic till optimality. The argument is simple, the more we train the critic, the more reliable gradient of the Wasserstein we get, which is actually useful by the fact that Wasserstein is differentiable almost everywhere. For the JS, as the discriminator gets better the gradients get more reliable but the true gradient is 0 since the JS is locally saturated and we get vanishing gradients, as can be seen in Figure 1 of this paper and Theorem 2.4 of [1]. In Figure 2 we show a proof of concept of this, where we train a GAN discriminator and a WGAN critic till optimality. The discriminator learns very quickly to distinguish between fake and real, and as expected provides no reliable gradient information. The critic, however, can’t saturate, and converges to a linear function that gives remarkably clean gradients everywhere. The fact that we constrain the weights limits the possible growth of the function to be at most linear in different parts of the space, forcing the optimal critic to have this behaviour.
+
+[Page 8] (ocr_text)
+Perhaps more importantly, the fact that we can train the critic till optimality makes it impossible to collapse modes when we do. This is due to the fact that mode collapse comes from the fact that the optimal generator for a fixed discriminator is a sum of deltas on the points the discriminator assigns the highest values, as observed by [4] and highlighted in [11].
+
+[Page 8] (ocr_text)
+In the following section we display the practical benefits of our new algorithm, and we provide an in-depth comparison of its behaviour and that of traditional GANs.
+
+[Page 8] (ocr_text)
+```
+Algorithm 1 WGAN, our proposed algorithm. All experiments in the paper used the default values α = 0.000005, c = 0.01, m = 64, n_critic = 5.
+
+Require: α, the learning rate.
+         c, the clipping parameter.
+         m, the batch size.
+         n_critic, the number of iterations of the critic per generator iteration.
+Require: w_0, initial critic parameters.
+         θ_0, initial generator's parameters.
+
+while θ has not converged do
+    for t = 0,...,n_critic do
+        Sample {x^(i)}_{i=1}^m ∼ P_r a batch from the real data.
+        Sample {z^(i)}_{i=1}^m ∼ p(z) a batch of prior samples.
+        g_w ← ∇_w [1/m ∑_{i=1}^m f_w(x^(i)) - 1/m ∑_{i=1}^m f_w(g_θ(z^(i)))]
+        w ← w + α · RMSProp(w, g_w)
+        w ← clip(w, −c, c)
+    end for
+    Sample {z^(i)}_{i=1}^m ∼ p(z) a batch of prior samples.
+    g_θ ← −∇_θ [1/m ∑_{i=1}^m f_w(g_θ(z^(i)))]
+    θ ← θ − α · RMSProp(θ, g_θ)
+end while
+```
+
+[Page 8] (ocr_text)
+The text content from the image is:
+
+```
+Require: α, the learning rate. c, the clipping parameter. m, the batch size. n_critic, the number of iterations of the critic per generator iteration.
+```
+
+[Page 8] (ocr_text)
+Algorithm 1 WGAN, our proposed algorithm. All experiments in the paper used the default values α = 0.00005, c = 0.01, m = 64, n_critic = 5.
+
+[Page 9] (ocr_text)
+We run experiments on image generation. The target distribution to learn is the LSUN-Bedrooms dataset [24] – a collection of natural images of indoor bedrooms. Our baseline comparison is DCGAN [18], a GAN with a convolutional architecture trained with the standard GAN procedure using the − log D trick [4]. The generated samples are 3-channel images of 64x64 pixels in size. We use the hyper-parameters specified in Algorithm 1 for all of our experiments.
+
+[Page 9] (ocr_text)
+We run experiments on image generation using our Wasserstein-GAN algorithm and show that there are significant practical benefits to using it over the formulation used in standard GANs.
+
+[Page 9] (ocr_text)
+The text content from the image is:
+
+"4.1 Experimental Procedure"
+
+[Page 9] (ocr_text)
+The text content from the image is:
+
+"4 Empirical Results"
+
+[Page 9] (ocr_text)
+Figure 2: Optimal discriminator and critic when learning to differentiate two Gaussians. As we can see, the discriminator of a minimax GAN saturates and results in vanishing gradients. Our WGAN critic provides very clean gradients on all parts of the space.
+
+[Page 9] (ocr_text)
+We claim two main benefits:
+
+[Page 9] (ocr_text)
+- a meaningful loss metric that correlates with the generator’s convergence and sample quality
+- improved stability of the optimization process
+
+[Page 9] (ocr_text)
+- a meaningful loss metric that correlates with the generator's convergence and sample quality
+
+[Page 9] (ocr_text)
+The text content from the image is:
+
+- improved stability of the optimization process
+
+[Page 9] (ocr_text)
+- a meaningful loss metric that correlates with the generator’s convergence and sample quality
+- improved stability of the optimization process
+
+[Page 10] (ocr_text)
+Because the WGAN algorithm attempts to train the critic \( f \) (lines 2–8 in Algorithm 1) relatively well before each generator update (line 10 in Algorithm 1), the loss function at this point is an estimate of the EM distance, up to constant factors related to the way we constrain the Lipschitz constant of \( f \).
+
+[Page 10] (ocr_text)
+Our first experiment illustrates how this estimate correlates well with the quality of the generated samples. Besides the convolutional DCGAN architecture, we also ran experiments where we replace the generator or both the generator and the critic by 4-layer ReLU-MLP with 512 hidden units.
+
+[Page 10] (ocr_text)
+The text content from the image is as follows:
+
+"Figure 3 plots the evolution of the WGAN estimate (3) of the EM distance during WGAN training for all three architectures. The plots clearly show that these curves correlate well with the visual quality of the generated samples."
+
+[Page 10] (ocr_text)
+The text content from the image is:
+
+"4.2 Meaningful loss metric"
+
+[Page 10] (ocr_text)
+To our knowledge, this is the first time in GAN literature that such a property is shown, where the loss of the GAN shows properties of convergence. This property is extremely useful when doing research in adversarial networks as one does not need
+
+[Page 10] (ocr_text)
+Figure 3: Training curves and samples at different stages of training. We can see a clear correlation between lower error and better sample quality. Upper left: the generator is an MLP with 4 hidden layers and 512 units at each layer. The loss decreases consistently as training progresses and sample quality increases. Upper right: the generator is a standard DCGAN. The loss decreases quickly and sample quality increases as well. In both upper plots the critic is a DCGAN without the sigmoid so losses can be subjected to comparison. Lower half: both the generator and the discriminator are MLPs with substantially high learning rates (so training failed). Loss is constant and samples are constant as well. The training curves were passed through a median filter for visualization purposes.
+
+[Page 10] (ocr_text)
+To our knowledge, this is the first time in GAN literature that such a property is shown, where the loss of the GAN shows properties of convergence. This property is extremely useful when doing research in adversarial networks as one does not need
+
+[Page 10] (ocr_text)
+Figure 3: Training curves and samples at different stages of training. We can see a clear correlation between lower error and better sample quality. Upper left: the generator is an MLP with 4 hidden layers and 512 units at each layer. The loss decreases consistently as training progresses and sample quality increases. Upper right: the generator is a standard DCGAN. The loss decreases quickly and sample quality increases as well. In both upper plots the critic is a DCGAN without the sigmoid so losses can be subjected to comparison. Lower half: both the generator and the discriminator are MLPs with substantially high learning rates (so training failed). Loss is constant and samples are constant as well. The training curves were passed through a median filter for visualization purposes.
+
+[Page 11] (ocr_text)
+However, we do not claim that this is a new method to quantitatively evaluate generative models yet. The constant scaling factor that depends on the critic’s architecture means it’s hard to compare models with different critics. Even more, in practice the fact that the critic doesn’t have infinite capacity makes it hard to know just how close to the EM distance our estimate really is. This being said, we have successfully used the loss metric to validate our experiments repeatedly and without failure, and we see this as a huge improvement in training GANs which previously had no such facility.
+
+[Page 11] (ocr_text)
+The text content from the image is:
+
+"In contrast, Figure 4 plots the evolution of the GAN estimate of the JS distance during GAN training. More precisely, during GAN training, the discriminator is trained to maximize"
+
+[Page 11] (ocr_text)
+to stare at the generated samples to figure out failure modes and to gain information on which models are doing better over others.
+
+[Page 11] (ocr_text)
+which is is a lower bound of \(2JS(\mathbb{P}_r, \mathbb{P}_\theta)-2\log 2\). In the figure, we plot the quantity \(\frac{1}{2}L(D,g_\theta)+\log 2\), which is a lower bound of the JS distance.
+
+[Page 11] (ocr_text)
+The text content from the image is:
+
+"This quantity clearly correlates poorly with the sample quality. Note also that the"
+
+[Page 11] (ocr_text)
+Figure 4: JS estimates for an MLP generator (upper left) and a DCGAN generator (upper right) trained with the standard GAN procedure. Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the JS estimate increases or stays constant, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.
+
+[Page 11] (ocr_text)
+Figure 4: JS estimates for an MLP generator (upper left) and a DCGAN generator (upper right) trained with the standard GAN procedure. Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the JS estimate increases or stays constant, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.
+
+[Page 12] (ocr_text)
+Finally, as a negative result, we report that WGAN training becomes unstable at times when one uses a momentum based optimizer such as Adam [8] (with β1 > 0) on the critic, or when one uses high learning rates. Since the loss for the critic is nonstationary, momentum based methods seemed to perform worse. We identified momentum as a potential cause because, as the loss blew up and samples got worse, the cosine between the Adam step and the gradient usually turned negative. The only places where this cosine was negative was in these situations of instability. We therefore switched to RMSProp [21] which is known to perform well even on very nonstationary problems [13].
+
+[Page 12] (ocr_text)
+We observe that WGANs are much more robust than GANs when one varies the architectural choices for the generator. We illustrate this by running experiments on three generator architectures: (1) a convolutional DCGAN generator, (2) a convolutional DCGAN generator without batch normalization and with a constant number of filters, and (3) a 4-layer ReLU-MLP with 512 hidden units. The last two are known to perform very poorly with GANs. We keep the convolutional DCGAN architecture for the WGAN critic or the GAN discriminator.
+
+[Page 12] (ocr_text)
+One of the benefits of WGAN is that it allows us to train the critic till optimality. When the critic is trained to completion, it simply provides a loss to the generator that we can train as any other neural network. This tells us that we no longer need to balance generator and discriminator's capacity properly. The better the critic, the higher quality the gradients we use to train the generator.
+
+[Page 12] (ocr_text)
+JS estimate usually stays constant or goes up instead of going down. In fact it often remains very close to log 2 ≈ 0.69 which is the highest value taken by the JS distance. In other words, the JS distance saturates, the discriminator has zero loss, and the generated samples are in some cases meaningful (DCGAN generator, top right plot) and in other cases collapse to a single nonsensical image [4]. This last phenomenon has been theoretically explained in [1] and highlighted in [11].
+
+[Page 12] (ocr_text)
+When using the \(-\log D\) trick [4], the discriminator loss and the generator loss are different. Figure 8 in Appendix E reports the same plots for GAN training, but using the generator loss instead of the discriminator loss. This does not change the conclusions.
+
+[Page 12] (ocr_text)
+Figures 5, 6, and 7 show samples generated for these three architectures using both the WGAN and GAN algorithms. We refer the reader to Appendix F for full sheets of generated samples. Samples were not cherry-picked.
+
+[Page 12] (ocr_text)
+In no experiment did we see evidence of mode collapse for the WGAN algorithm.
+
+[Page 12] (ocr_text)
+4.3 Improved stability
+
+[Page 12] (ocr_text)
+4.3 Improved stability
+
+[Page 13] (ocr_text)
+as an integral probability metric associated with the function class \(\mathcal{F}\). It is easily verified that if for every \(f \in \mathcal{F}\) we have \(-f \in \mathcal{F}\) (such as all examples we'll consider), then \(d_{\mathcal{F}}\) is nonnegative, satisfies the triangular inequality, and is symmetric. Thus, \(d_{\mathcal{F}}\) is a pseudometric over \(\operatorname{Prob}(\mathcal{X})\).
+
+[Page 13] (ocr_text)
+There’s been a number of works on the so called Integral Probability Metrics (IPMs) [15]. Given \(\mathcal{F}\) a set of functions from \(\mathcal{X}\) to \(\mathbb{R}\), we can define
+
+[Page 13] (ocr_text)
+While IPMs might seem to share a similar formula, as we will see different classes of functions can yield to radically different metrics.
+
+[Page 13] (ocr_text)
+The text content from the image is "5 Related Work".
+
+[Page 13] (ocr_text)
+Figure 5: Algorithms trained with a DCGAN generator. Left: WGAN algorithm. Right: standard GAN formulation. Both algorithms produce high quality samples.
+
+[Page 13] (ocr_text)
+The text content from the image is:
+
+- By the Kantorovich-Rubinstein duality [22], we know that \( W(\mathbb{P}_r, \mathbb{P}_\theta) = d_\mathcal{F}(\mathbb{P}_r, \mathbb{P}_\theta) \)
+
+[Page 13] (ocr_text)
+Figure 7: Algorithms trained with an MLP generator with 4 layers and 512 units with ReLU nonlinearities. The number of parameters is similar to that of a DCGAN, but it lacks a strong inductive bias for image generation. Left: WGAN algorithm. Right: standard GAN formulation. The WGAN method still was able to produce samples, lower quality than the DCGAN, and of higher quality than the MLP of the standard GAN. Note the significant degree of mode collapse in the GAN MLP.
+
+[Page 13] (ocr_text)
+Figure 6: Algorithms trained with a generator without batch normalization and constant number of filters at every layer (as opposed to duplicating them every time as in [18]). Aside from taking out batch normalization, the number of parameters is therefore reduced by a bit more than an order of magnitude. Left: WGAN algorithm. Right: standard GAN formulation. As we can see the standard GAN failed to learn while the WGAN still was able to produce samples.
+
+[Page 13] (ocr_text)
+Figure 6: Algorithms trained with a generator without batch normalization and constant number of filters at every layer (as opposed to duplicating them every time as in [18]). Aside from taking out batch normalization, the number of parameters is therefore reduced by a bit more than an order of magnitude. Left: WGAN algorithm. Right: standard GAN formulation. As we can see the standard GAN failed to learn while the WGAN still was able to produce samples.
+
+[Page 13] (ocr_text)
+Figure 7: Algorithms trained with an MLP generator with 4 layers and 512 units with ReLU nonlinearities. The number of parameters is similar to that of a DCGAN, but it lacks a strong inductive bias for image generation. Left: WGAN algorithm. Right: standard GAN formulation. The WGAN method still was able to produce samples, lower quality than the DCGAN, and of higher quality than the MLP of the standard GAN. Note the significant degree of mode collapse in the GAN MLP.
+
+[Page 14] (ocr_text)
+- Maximum Mean Discrepancy (MMD) [5] is a specific case of integral probability metrics when \(\mathcal{F} = \{f \in \mathcal{H}: \|f\|_\infty \leq 1\}\) for \(\mathcal{H}\) some Reproducing Kernel Hilbert Space (RKHS) associated with a given kernel \(k: \mathcal{X} \times \mathcal{X} \to \mathbb{R}\). As proved on [5] we know that MMD is a proper metric and not only a pseudometric when the kernel is universal. In the specific case where \(\mathcal{H} = L^2(\mathcal{X}, m)\) for \(m\) the normalized Lebesgue measure on \(\mathcal{X}\), we know that \(\{f \in C_b(\mathcal{X}), \|f\|_\infty \leq 1\}\) will be contained in \(\mathcal{F}\), and therefore \(d_{\mathcal{F}}(\mathbb{P}_r, \mathbb{P}_\theta) \leq \delta(\mathbb{P}_r, \mathbb{P}_\theta)\) so the regularity of the MMD distance as a loss function will be at least as bad as the one of the total variation. Nevertheless this is a very extreme case, since we would need a very powerful kernel to approximate the whole \(L^2\). However, even Gaussian kernels are able to detect tiny noise patterns as recently evidenced by [20]. This points to the fact that especially with low bandwidth kernels, the distance might be close to a saturating regime similar as with total variation or the JS. This obviously doesn’t need to be the case for every kernel, and figuring out how and which different MMDs are closer to Wasserstein or total variation distances is an interesting topic of research.
+
+[Page 14] (ocr_text)
+The great aspect of MMD is that via the kernel trick there is no need to train a separate network to maximize equation (4) for the ball of a RKHS. However, this has the disadvantage that evaluating the MMD distance has computational cost that grows quadratically with the amount of samples used to estimate the expectations in (4). This last point makes MMD have limited scalability, and is sometimes inapplicable to many real life applications because of it. There are estimates with linear computational cost for the MMD
+
+[Page 14] (ocr_text)
+- Energy-based GANs (EBGANs) [25] can be thought of as the generative approach to the total variation distance. This connection is stated and proven in depth in Appendix D. At the core of the connection is that the discriminator will play the role of \( f \) maximizing equation (4) while its only restriction is being between 0 and \( m \) for some constant \( m \). This will yield the same behaviour as being restricted to be between -1 and 1 up to a constant scaling factor irrelevant to optimization. Thus, when the discriminator approaches optimality the cost for the generator will approximate the total variation distance \( \delta(\mathbb{P}_r, \mathbb{P}_\theta) \).
+
+[Page 14] (ocr_text)
+- When \(\mathcal{F}\) is the set of all measurable functions bounded between -1 and 1 (or all continuous functions between -1 and 1), we retrieve \(d_{\mathcal{F}}(\mathbb{P}_r, \mathbb{P}_{\theta}) = \delta(\mathbb{P}_r, \mathbb{P}_{\theta})\) the total variation distance [15]. This already tells us that going from 1-Lipschitz to 1-Bounded functions drastically changes the topology of the space, and the regularity of \(d_{\mathcal{F}}(\mathbb{P}_r, \mathbb{P}_{\theta})\) as a loss function (as by Theorems 1 and 2).
+
+[Page 14] (ocr_text)
+The text in the image reads:
+
+"when \(\mathcal{F}\) is the set of 1-Lipschitz functions. Furthermore, if \(\mathcal{F}\) is the set of \(K\)-Lipschitz functions, we get \(K \cdot W(\mathbb{P}_r, \mathbb{P}_\theta) = d_\mathcal{F}(\mathbb{P}_r, \mathbb{P}_\theta)\)."
+
+[Page 14] (ocr_text)
+Since the total variation distance displays the same regularity as the JS, it can be seen that EBGANs will suffer from the same problems of classical GANs regarding not being able to train the discriminator till optimality and thus limiting itself to very imperfect gradients.
+
+[Page 15] (ocr_text)
+On another great line of research, the recent work of [14] has explored the use of Wasserstein distances in the context of learning for Restricted Boltzmann Machines for discrete spaces. The motivations at a first glance might seem quite different, since the manifold setting is restricted to continuous spaces and in finite discrete spaces the weak and strong topologies (the ones of W and JS respectively) coincide. However, in the end there is more in common than not about our motivations. We both want to compare distributions in a way that leverages the geometry of the underlying space, and Wasserstein allows us to do exactly that.
+
+[Page 15] (ocr_text)
+That being said, these numbers can be a bit unfair to the MMD, in the sense that we are comparing empirical sample complexity of GANs with the theoretical sample complexity of MMDs, which tends to be worse. However, in the original GMMN paper [10] they indeed used a minibatch of size 1000, much larger than the standard 32 or 64 (even when this incurred in quadratic computational cost). While estimates that have linear computational cost as a function of the number of samples exist [5], they have worse sample complexity, and to the best of our knowledge they haven’t been yet applied in a generative context such as in GMMNs.
+
+[Page 15] (ocr_text)
+- Generative Moment Matching Networks (GMMNs) [10, 2] are the generative counterpart of MMD. By backproping through the kernelized formula for equation (4), they directly optimize \( d_{MMD}(\mathbb{P}_r, \mathbb{P}_\theta) \) (the IPM when \(\mathcal{F}\) is as in the previous item). As mentioned, this has the advantage of not requiring a separate network to approximately maximize equation (4). However, GMMNs have enjoyed limited applicability. Partial explanations for their unsucces are the quadratic cost as a function of the number of samples and vanishing gradients for low-bandwidth kernels. Furthermore, it may be possible that some kernels used in practice are unsuitable for capturing very complex distances in high dimensional sample spaces such as natural images. This is properly justified by the fact that [19] shows that for the typical Gaussian MMD test to be reliable (as in its power as a statistical test approaching 1), we need the number of samples to grow linearly with the number of dimensions. Since the MMD computational cost grows quadratically with the number of samples in the batch used to estimate equation (4), this makes the cost of having a reliable estimator grow quadratically with the number of dimensions, which makes it very inapplicable for high dimensional problems. Indeed, for something as standard as 64x64 images, we would need minibatches of size at least 4096 (without taking into account the constants in the bounds of [19] which would make this number substantially larger) and a total cost per iteration of \( 4096^2 \), over 5 orders of magnitude more than a GAN iteration when using the standard batch size of 64.
+
+[Page 15] (ocr_text)
+Finally, the work of [3] shows new algorithms for calculating Wasserstein distances between different distributions. We believe this direction is quite important, and perhaps could lead to new ways of evaluating generative models.
+
+[Page 15] (ocr_text)
+[5] which in a lot of cases makes MMD very useful, but they also have worse sample complexity.
+
+[Page 16] (ocr_text)
+We introduced an algorithm that we deemed WGAN, an alternative to traditional GAN training. In this new model, we showed that we can improve the stability of learning, get rid of problems like mode collapse, and provide meaningful learning curves useful for debugging and hyperparameter searches. Furthermore, we showed that the corresponding optimization problem is sound, and provided extensive theoretical work highlighting the deep connections to other distances between distributions.
+
+[Page 16] (ocr_text)
+We would like to thank Mohamed Ishmael Belghazi, Emily Denton, Ian Goodfellow, Ishaan Gulrajani, Alex Lamb, David Lopez-Paz, Eric Martin, Maxime Oquab, Aditya Ramesh, Ronan Riochet, Uri Shalit, Pablo Sprechmann, Arthur Szlam, Ruohan Wang, for helpful comments and advice.
+
+[Page 16] (ocr_text)
+References
+
+[Page 16] (ocr_text)
+Acknowledgments
+
+[Page 16] (ocr_text)
+The text content from the image is "6 Conclusion".
+
+[Page 16] (ocr_text)
+[1] Martin Arjovsky and Léon Bottou. Towards principled methods for training generative adversarial networks. In International Conference on Learning Representations, 2017. Under review.
+
+[2] Gintare Karolina Dziugaite, Daniel M. Roy, and Zoubin Ghahramani. Training generative neural networks via maximum mean discrepancy optimization. CoRR, abs/1505.03906, 2015.
+
+[3] Aude Genevay, Marco Cuturi, Gabriel Peyré, and Francis Bach. Stochastic optimization for large-scale optimal transport. In D. D. Lee, M. Sugiyama, U. V. Luxburg, I. Guyon, and R. Garnett, editors, Advances in Neural Information Processing Systems 29, pages 3440–3448. Curran Associates, Inc., 2016.
+
+[4] Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In Advances in Neural Information Processing Systems 27, pages 2672–2680. Curran Associates, Inc., 2014.
+
+[5] Arthur Gretton, Karsten M. Borgwardt, Malte J. Rasch, Bernhard Schölkopf, and Alexander Smola. A kernel two-sample test. J. Mach. Learn. Res., 13:723–773, 2012.
+
+[6] Ferenc Huszar. How (not) to train your generative model: Scheduled sampling, likelihood, adversary? CoRR, abs/1511.05101, 2015.
+
+[7] Shizuo Kakutani. Concrete representation of abstract (m)-spaces (a characterization of the space of continuous functions). Annals of Mathematics, 42(4):994–1024, 1941.
+
+[Page 16] (ocr_text)
+The text content from the image is:
+
+[2] Gintare Karolina Dziugaite, Daniel M. Roy, and Zoubin Ghahramani. Training generative neural networks via maximum mean discrepancy optimization. CoRR, abs/1505.03906, 2015.
+
+[Page 16] (ocr_text)
+The text content from the image is:
+
+[6] Ferenc Huszar. How (not) to train your generative model: Scheduled sampling, likelihood, adversary? CoRR, abs/1511.05101, 2015.
+
+[Page 16] (ocr_text)
+The text content from the image is:
+
+[1] Martin Arjovsky and Léon Bottou. Towards principled methods for training generative adversarial networks. In International Conference on Learning Representations, 2017. Under review.
+
+[Page 16] (ocr_text)
+The text content from the image is:
+
+[5] Arthur Gretton, Karsten M. Borgwardt, Malte J. Rasch, Bernhard Schölkopf, and Alexander Smola. A kernel two-sample test. J. Mach. Learn. Res., 13:723–773, 2012.
+
+[Page 16] (ocr_text)
+The text content from the image is as follows:
+
+[7] Shizuo Kakutani. Concrete representation of abstract (m)-spaces (a characterization of the space of continuous functions). Annals of Mathematics, 42(4):994–1024, 1941.
+
+[Page 16] (ocr_text)
+The text content from the image is as follows:
+
+[3] Aude Genevay, Marco Cuturi, Gabriel Peyré, and Francis Bach. Stochastic optimization for large-scale optimal transport. In D. D. Lee, M. Sugiyama, U. V. Luxburg, I. Guyon, and R. Garnett, editors, Advances in Neural Information Processing Systems 29, pages 3440–3448. Curran Associates, Inc., 2016.
+
+[Page 16] (ocr_text)
+The text content from the image is as follows:
+
+[4] Ian J. Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In Advances in Neural Information Processing Systems 27, pages 2672–2680. Curran Associates, Inc., 2014.
+
+[Page 16] (ocr_text)
+The text content from the image is "Acknowledgments".
+
+[Page 17] (ocr_text)
+[8] Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization. CoRR, abs/1412.6980, 2014.
+
+[9] Diederik P. Kingma and Max Welling. Auto-encoding variational bayes. CoRR, abs/1312.6114, 2013.
+
+[10] Yujia Li, Kevin Swersky, and Rich Zemel. Generative moment matching networks. In Proceedings of the 32nd International Conference on Machine Learning (ICML-15), pages 1718–1727. JMLR Workshop and Conference Proceedings, 2015.
+
+[11] Luke Metz, Ben Poole, David Pfau, and Jascha Sohl-Dickstein. Unrolled generative adversarial networks. Corr, abs/1611.02163, 2016.
+
+[12] Paul Milgrom and Ilya Segal. Envelope theorems for arbitrary choice sets. Econometrica, 70(2):583–601, 2002.
+
+[13] Volodymyr Mnih, Adrià Puigdomènech Badia, Mehdi Mirza, Alex Graves, Timothy P. Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu. Asynchronous methods for deep reinforcement learning. In Proceedings of the 33rd International Conference on Machine Learning, ICML 2016, New York City, NY, USA, June 19-24, 2016, pages 1928–1937, 2016.
+
+[14] Grégoire Montavon, Klaus-Robert Müller, and Marco Cuturi. Wasserstein training of restricted boltzmann machines. In D. D. Lee, M. Sugiyama, U. V. Luxburg, I. Guyon, and R. Garnett, editors, Advances in Neural Information Processing Systems 29, pages 3718–3726. Curran Associates, Inc., 2016.
+
+[15] Alfred Müller. Integral probability metrics and their generating classes of functions. Advances in Applied Probability, 29(2):429–443, 1997.
+
+[16] Radford M. Neal. Annealed importance sampling. Statistics and Computing, 11(2):125–139, April 2001.
+
+[17] Sebastian Nowozin, Botond Cseke, and Ryota Tomioka. f-gan: Training generative neural samplers using variational divergence minimization. pages 271–279, 2016.
+
+[18] Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. CoRR, abs/1511.06434, 2015.
+
+[19] Aaditya Ramdas, Sashank J. Reddi, Barnabas Poczos, Aarti Singh, and Larry Wasserman. On the high-dimensional power of linear-time kernel two-sample testing under mean-difference alternatives. Corr, abs/1411.6314, 2014.
+
+[20] Dougal J Sutherland, Hsiao-Yu Tung, Heiko Strathmann, Soumyajit De, Aaditya Ramdas, Alex Smola, and Arthur Gretton. Generative models and model criticism via optimized maximum mean discrepancy. In International Conference on Learning Representations, 2017. Under review.
+
+[Page 17] (ocr_text)
+The text content from the image is:
+
+[16] Radford M. Neal. Annealed importance sampling. Statistics and Computing, 11(2):125–139, April 2001.
+
+[Page 17] (ocr_text)
+The text content from the image is as follows:
+
+[14] Grégoire Montavon, Klaus-Robert Müller, and Marco Cuturi. Wasserstein training of restricted boltzmann machines. In D. D. Lee, M. Sugiyama, U. V. Luxburg, I. Guyon, and R. Garnett, editors, Advances in Neural Information Processing Systems 29, pages 3718–3726. Curran Associates, Inc., 2016.
+
+[Page 17] (ocr_text)
+The text content from the image is as follows:
+
+[13] Volodymyr Mnih, Adrià Puigdomènech Badia, Mehdi Mirza, Alex Graves, Timothy P. Lillicrap, Tim Harley, David Silver, and Koray Kavukcuoglu. Asynchronous methods for deep reinforcement learning. In Proceedings of the 33rd International Conference on Machine Learning, ICML 2016, New York City, NY, USA, June 19-24, 2016, pages 1928–1937, 2016.
+
+[Page 17] (ocr_text)
+The text content from the image is:
+
+[15] Alfred Müller. Integral probability metrics and their generating classes of functions. Advances in Applied Probability, 29(2):429–443, 1997.
+
+[Page 17] (ocr_text)
+The text content from the image is as follows:
+
+[19] Aaditya Ramdas, Sashank J. Reddi, Barnabas Poczos, Aarti Singh, and Larry Wasserman. On the high-dimensional power of linear-time kernel two-sample testing under mean-difference alternatives. Corr, abs/1411.6314, 2014.
+
+[Page 17] (ocr_text)
+The text content from the image is:
+
+[12] Paul Milgrom and Ilya Segal. Envelope theorems for arbitrary choice sets. Econometrica, 70(2):583–601, 2002.
+
+[Page 17] (ocr_text)
+The text content from the image is as follows:
+
+[18] Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. CoRR, abs/1511.06434, 2015.
+
+[Page 17] (ocr_text)
+The text content from the image is as follows:
+
+[20] Dougal J Sutherland, Hsiao-Yu Tung, Heiko Strathmann, Soumyajit De, Aaditya Ramdas, Alex Smola, and Arthur Gretton. Generative models and model criticism via optimized maximum mean discrepancy. In International Conference on Learning Representations, 2017. Under review.
+
+[Page 17] (ocr_text)
+The text content from the image is:
+
+[8] Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization. CoRR, abs/1412.6980, 2014.
+
+[Page 17] (ocr_text)
+The text content from the image is as follows:
+
+[17] Sebastian Nowozin, Botond Cseke, and Ryota Tomioka. f-gan: Training generative neural samplers using variational divergence minimization. pages 271–279, 2016.
+
+[Page 17] (ocr_text)
+The text content from the image is:
+
+[9] Diederik P. Kingma and Max Welling. Auto-encoding variational bayes. CoRR, abs/1312.6114, 2013.
+
+[Page 17] (ocr_text)
+The text content from the image is as follows:
+
+[10] Yujia Li, Kevin Swersky, and Rich Zemel. Generative moment matching networks. In Proceedings of the 32nd International Conference on Machine Learning (ICML-15), pages 1718–1727. JMLR Workshop and Conference Proceedings, 2015.
+
+[Page 17] (ocr_text)
+The text content from the image is:
+
+[11] Luke Metz, Ben Poole, David Pfau, and Jascha Sohl-Dickstein. Unrolled generative adversarial networks. Corr, abs/1611.02163, 2016.
+
+[Page 18] (ocr_text)
+The text content from the image is as follows:
+
+[21] T. Tieleman and G. Hinton. Lecture 6.5—RmsProp: Divide the gradient by a running average of its recent magnitude. COURSERA: Neural Networks for Machine Learning, 2012.
+
+[22] Cédric Villani. Optimal Transport: Old and New. Grundlehren der mathematischen Wissenschaften. Springer, Berlin, 2009.
+
+[23] Yuhuai Wu, Yuri Burda, Ruslan Salakhutdinov, and Roger B. Grosse. On the quantitative analysis of decoder-based generative models. CoRR, abs/1611.04273, 2016.
+
+[24] Fisher Yu, Yinda Zhang, Shuran Song, Ari Seff, and Jianxiong Xiao. LSUN: Construction of a large-scale image dataset using deep learning with humans in the loop. Corr, abs/1506.03365, 2015.
+
+[25] Junbo Zhao, Michael Mathieu, and Yann LeCun. Energy-based generative adversarial network. Corr, abs/1609.03126, 2016.
+
+[Page 18] (ocr_text)
+The text content from the image is as follows:
+
+[25] Junbo Zhao, Michael Mathieu, and Yann LeCun. Energy-based generative adversarial network. Corr, abs/1609.03126, 2016.
+
+[Page 18] (ocr_text)
+The text content from the image is as follows:
+
+[24] Fisher Yu, Yinda Zhang, Shuran Song, Ari Seff, and Jianxiong Xiao. LSUN: Construction of a large-scale image dataset using deep learning with humans in the loop. Corr, abs/1506.03365, 2015.
+
+[Page 18] (ocr_text)
+The text content from the image is as follows:
+
+[21] T. Tieleman and G. Hinton. Lecture 6.5—RmsProp: Divide the gradient by a running average of its recent magnitude. COURSERA: Neural Networks for Machine Learning, 2012.
+
+[Page 18] (ocr_text)
+The text content from the image is:
+
+[22] Cédric Villani. Optimal Transport: Old and New. Grundlehren der mathematischen Wissenschaften. Springer, Berlin, 2009.
+
+[Page 18] (ocr_text)
+The text content from the image is as follows:
+
+[23] Yuhuai Wu, Yuri Burda, Ruslan Salakhutdinov, and Roger B. Grosse. On the quantitative analysis of decoder-based generative models. CoRR, abs/1611.04273, 2016.
+
+[Page 19] (ocr_text)
+Let us stop for a second and analyze what all this technicality meant. The main thing to carry is that we introduced a distance δ over probability distributions. When looked as a distance over a subset of \(C_b(\mathcal{X})^*\), this distance gives the norm topology. The norm topology is very strong. Therefore, we can expect that not many functions \(\theta \mapsto \mathbb{P}_\theta\) will be continuous when measuring distances between distributions with δ. As we will show later in Theorem 2, δ gives the same topology as the Jensen-Shannon divergence, pointing to the fact that the JS is a very strong distance, and is thus more propense to give a discontinuous loss function.
+
+[Page 19] (ocr_text)
+Now, all dual spaces (such as \( C_b(\mathcal{X})^* \) and thus Prob\((\mathcal{X})\) ) have a strong topology (induced by the norm), and a weak* topology. As the name suggests, the weak* topology is much weaker than the strong topology. In the case of Prob\((\mathcal{X})\), the strong topology is given by the total variation distance, and the weak* topology is given by the Wasserstein distance (among others) [22].
+
+[Page 19] (ocr_text)
+We now introduce our notation. Let \(\mathcal{X} \subseteq \mathbb{R}^d\) be a compact set (such as [0,1]^d the space of images). We define Prob(\(\mathcal{X}\)) to be the space of probability measures over \(\mathcal{X}\). We note
+
+[Page 19] (ocr_text)
+The text content from the image is as follows:
+
+"where Φ(ℙ)(f) := E_x~P[f(x)] is a linear function over C_b(X). The Riesz Representation theorem ([7], Theorem 10) tells us that Φ is an isometric immersion. This tells us that we can effectively consider Prob(X) with the total variation distance as a subset of C_b(X)* with the norm distance. Thus, just to accentuate it one more time, the total variation over Prob(X) is exactly the norm distance over C_b(X)*."
+
+[Page 19] (ocr_text)
+Note that if \( f \in C_b(\mathcal{X}) \), we can define \( \|f\|_\infty = \max_{x \in \mathcal{X}} |f(x)| \), since \( f \) is bounded. With this norm, the space \( (C_b(\mathcal{X}), \|\cdot\|_\infty) \) is a normed vector space. As for any normed vector space, we can define its dual
+
+[Page 19] (ocr_text)
+The text content from the image is:
+
+"where the supremum is taken all Borel sets in X. Since the total variation is a norm, then if we have P_r and P_θ two probability distributions over X,"
+
+[Page 19] (ocr_text)
+The text content from the image is:
+
+"With this definitions, (Cb(X)*, ∥·∥) is another normed space. Now let μ be a signed measure over X, and let us define the total variation distance"
+
+[Page 19] (ocr_text)
+The text content from the image is:
+
+"A Why Wasserstein is indeed weak"
+
+[Page 19] (ocr_text)
+The text in the image reads:
+
+"and give it the dual norm \( \|\phi\| = \sup_{f \in C_b(\mathcal{X}), \|f\|_\infty \leq 1} |\phi(f)| \)."
+
+[Page 19] (ocr_text)
+is a distance in Prob(X) (called the total variation distance).
+
+[Page 19] (ocr_text)
+We can consider
+
+[Page 19] (ocr_text)
+The text content from the image is:
+
+\[ C_b(\mathcal{X}) = \{ f : \mathcal{X} \to \mathbb{R}, f \text{ is continuous and bounded} \} \]
+
+[Page 20] (ocr_text)
+The text content from the image is as follows:
+
+**Assumption 1.** Let \( g : \mathcal{Z} \times \mathbb{R}^d \to \mathcal{X} \) be locally Lipschitz between finite dimensional vector spaces. We will denote \( g_\theta(z) \) its evaluation on coordinates \( (z, \theta) \). We say that \( g \) satisfies assumption 1 for a certain probability distribution \( p \) over \( \mathcal{Z} \) if there are local Lipschitz constants \( L(\theta, z) \) such that
+
+[Page 20] (ocr_text)
+Proof of Theorem 1. Let θ and θ′ be two parameter vectors in ℝd. Then, we will first attempt to bound W(Πθ,Πθ′), from where the theorem will come easily. The main element of the proof is the use of the coupling γ, the distribution of the joint (gθ(Z),gθ′(Z)), which clearly has γ ∈ Π(Πθ,Πθ′).
+
+[Page 20] (ocr_text)
+The text content from the image is as follows:
+
+"If \( g \) is continuous in \( \theta \), then \( g_{\theta}(z) \to_{\theta \to \theta'} g_{\theta'}(z) \), so \( \|g_{\theta} - g_{\theta'}\| \to 0 \) pointwise as functions of \( z \). Since \( \mathcal{X} \) is compact, the distance of any two elements in it has to be uniformly bounded by some constant \( M \), and therefore \( \|g_{\theta}(z) - g_{\theta'}(z)\| \leq M \) for all \( \theta \) and \( z \) uniformly. By the bounded convergence theorem, we therefore have"
+
+[Page 20] (ocr_text)
+whenever (θ′, z) ∈ U. Therefore, we can define Uθ = {θ′ | (θ′, z) ∈ U}. It’s easy to see that since U was open, Uθ is as well. Furthermore, by assumption 1, we can define L(θ) = Ez[L(θ, z)] and achieve
+
+[Page 20] (ocr_text)
+Now let \( g \) be locally Lipschitz. Then, for a given pair \( (\theta, z) \) there is a constant \( L(\theta, z) \) and an open set \( U \) such that \( (\theta, z) \in U \), such that for every \( (\theta', z') \in U \) we have
+
+[Page 20] (ocr_text)
+C Proofs of things
+
+[Page 20] (ocr_text)
+Finally, we have that
+
+[Page 20] (ocr_text)
+proving the continuity of \( W(\mathbb{P}_r, \mathbb{P}_\theta) \).
+
+[Page 20] (ocr_text)
+By taking expectations and \( z' = z \) we
+
+[Page 20] (ocr_text)
+By the definition of the Wasserstein distance, we have
+
+[Page 20] (ocr_text)
+The text content from the image is:
+
+"B Assumption definitions"
+
+[Page 20] (ocr_text)
+The text content from the image is:
+
+"B Assumption definitions"
+
+[Page 21] (ocr_text)
+If \( H \) is the number of layers we know that \( \nabla_z g_\theta(z) = \prod_{k=1}^H W_k D_k \) where \( W_k \) are the weight matrices and \( D_k \) is are the diagonal Jacobians of the nonlinearities. Let \( f_{i:j} \) be the application of layers \( i \) to \( j \) inclusively (e.g., \( g_\theta = f_{1:H} \)). Then, \( \nabla_{W_k} g_\theta(z) = \left( \left( \prod_{i=k+1}^H W_i D_i \right) D_k \right) f_{1:k-1}(z) \). We recall that if \( L \) is the Lipschitz constant of the nonlinearity, then \( \|D_i\| \leq L \) and \( \|f_{1:k-1}(z)\| \leq \|z\| L^{k-1} \prod_{i=1}^{k-1} W_i \). Putting this together,
+
+[Page 21] (ocr_text)
+The text content from the image is as follows:
+
+1. \(\bullet (\delta(\mathbb{P}_n, \mathbb{P}) \to 0 \Rightarrow JS(\mathbb{P}_n, \mathbb{P}) \to 0)\) — Let \(\mathbb{P}_m\) be the mixture distribution \(\mathbb{P}_m = \frac{1}{2}\mathbb{P}_n + \frac{1}{2}\mathbb{P}\) (note that \(\mathbb{P}_m\) depends on \(n\)). It is easily verified that \(\delta(\mathbb{P}_m, \mathbb{P}_n) \leq \delta(\mathbb{P}_n, \mathbb{P})\), and in particular this tends to 0 (as does \(\delta(\mathbb{P}_m, \mathbb{P})\)). We now show this for completeness. Let \(\mu\) be a signed measure, we define \(\|\mu\|_{TV} = \sup_{A \subseteq X} |\mu(A)|\). for all Borel sets \(A\). In this case,
+
+[Page 21] (ocr_text)
+Proof of Corollary 1. We begin with the case of smooth nonlinearities. Since \( g \) is \( C^1 \) as a function of \( (\theta, z) \) then for any fixed \( (\theta, z) \) we have \( L(\theta, Z) \leq \| \nabla_{\theta,x} g_\theta(z) \| + \epsilon \) is an acceptable local Lipschitz constant for all \( \epsilon > 0 \). Therefore, it suffices to prove
+
+[Page 21] (ocr_text)
+for all \(\theta' \in U_\theta\), meaning that \(W(\mathbb{P}_r, \mathbb{P}_{\theta})\) is locally Lipschitz. This obviously implies that \(W(\mathbb{P}_r, \mathbb{P}_{\theta})\) is everywhere continuous, and by Radamacher's theorem we know it has to be differentiable almost everywhere.
+
+[Page 21] (ocr_text)
+The counterexample for item 3 of the Theorem is indeed Example 1.
+
+[Page 21] (ocr_text)
+Proof of Theorem 2.
+
+[Page 21] (ocr_text)
+finishing the proof
+
+[Page 21] (ocr_text)
+If \( C_1(\theta) = L^H \left( \prod_{i=1}^{H} \| W_i \| \right) \) and \( C_2(\theta) = \sum_{k=1}^{H} L^H \left( \prod_{i=1}^{k-1} \| W_i \| \right) \left( \prod_{i=k+1}^{H} \| W_i \| \right) \), then
+
+[Page 21] (ocr_text)
+The counterexample for item 3 of the Theorem is indeed Example 1.
+
+[Page 21] (ocr_text)
+Proof of Theorem 2.
+
+[Page 22] (ocr_text)
+Let \( f_n = \frac{d\mathbb{P}_n}{d\mathbb{P}_m} \) be the Radon-Nykodim derivative between \(\mathbb{P}_n\) and the mixture. Note that by construction for every Borel set \( A \) we have \(\mathbb{P}_n(A) \leq 2\mathbb{P}_m(A)\). If \( A = \{f_n > 3\} \) then we get
+
+[Page 22] (ocr_text)
+Which implies \(\mathbb{P}_m(A_m) \leq \frac{1}{\epsilon}\delta(\mathbb{P}_n, \mathbb{P})\). Furthermore,
+
+[Page 22] (ocr_text)
+We now can see that
+
+[Page 22] (ocr_text)
+Taking limsup we get 0 ≤ lim sup KL(Πn||Πm) ≤ log(1 + ε) for all ε > 0, which means KL(Πn||Πm) → 0.
+
+[Page 22] (ocr_text)
+Therefore,
+
+[Page 22] (ocr_text)
+which implies \( \mathbb{P}_m(A) = 0 \). This means that \( f_n \) is bounded by 3 \( \mathbb{P}_m \)(and therefore \( \mathbb{P}_n \) and \( \mathbb{P} \))-almost everywhere. We could have done this for any constant larger than 2 but for our purposes 3 will suffice.
+
+[Page 22] (ocr_text)
+In the same way, we can define \( g_n = \frac{d\mathbb{P}}{d\mathbb{P}_m} \), and
+
+[Page 22] (ocr_text)
+Let ε > 0 fixed, and \( A_n = \{f_n > 1 + \epsilon\} \). Then,
+
+[Page 23] (ocr_text)
+The text content from the image is:
+
+"meaning that \(\mathbb{P}_m(\{g_n > 3\}) = 0\) and therefore \(g_n\) is bounded by 3 almost everywhere for \(\mathbb{P}_n, \mathbb{P}_m\) and \(\mathbb{P}\). With the same calculation, \(B_n = \{g_n > 1 + \epsilon\}\) and"
+
+[Page 23] (ocr_text)
+The text in the image reads:
+
+- \( (JS(\mathbb{P}_n, \mathbb{P}) \to 0 \Rightarrow \delta(\mathbb{P}_n, \mathbb{P}) \to 0) \quad — \quad \text{by a simple application of the triangular and Pinsker's inequalities we get} \)
+
+[Page 23] (ocr_text)
+2. This is a long known fact that \( W \) metrizes the weak* topology of \( (C(\mathcal{X}), \| \cdot \|_\infty) \) on Prob\((\mathcal{X})\), and by definition this is the topology of convergence in distribution. A proof of this can be found (for example) in [22].
+
+[Page 23] (ocr_text)
+The text in the image reads:
+
+"so we achieve 0 ≤ lim sup KL(Π||Π_m) ≤ log(1+ε) and then KL(Π||Π_m) → 0. Finally, we conclude"
+
+[Page 23] (ocr_text)
+The text content from the image is:
+
+"so \(\mathbb{P}_m(B_n) \leq \frac{1}{\epsilon}\delta(\mathbb{P},\mathbb{P}_m)\to 0\), and therefore \(\mathbb{P}(B_n)\to 0\). We can now show"
+
+[Page 23] (ocr_text)
+4. This is trivial by recalling the fact that δ and W give the strong and weak* topologies on the dual of (C(X), ||·||∞) when restricted to Prob(X).
+
+[Page 23] (ocr_text)
+3. This is a straightforward application of Pinsker's inequality
+
+[Page 24] (ocr_text)
+Since \( f \in \mathcal{F} \), we know that it is 1-Lipschitz. Furthermore, \( g_\theta(z) \) is locally Lipschitz as a function of \( (\theta, z) \). Therefore, \( f(g_\theta(z)) \) is locally Lipschitz on \( (\theta, z) \) with constants \( L(\theta, z) \) (the same ones as \( g \)). By Radamacher's Theorem, \( f(g_\theta(z)) \) has to be differentiable almost everywhere for \( (\theta, z) \) jointly. Rewriting this, the set \( A = \{ (\theta, z) : f \circ g \text{ is not differentiable} \} \) has measure 0. By Fubini's Theorem, this implies that for almost every \( \theta \) the section \( A_\theta = \{ z : (\theta, z) \in A \} \) has measure 0. Let's now fix a \( \theta_0 \) such that the measure of \( A_{\theta_0} \) is null (such as when the right hand side of equation (5) is well defined). For this \( \theta_0 \) we have \( \nabla_\theta f(g_\theta(z))|_{\theta_0} \) is well-defined for almost any \( z \), and since \( p(z) \) has a density, it is defined \( p(z) \)-a.e. By assumption 1 we know that
+
+[Page 24] (ocr_text)
+under the condition that the first and last terms are well-defined. The rest of the proof will be dedicated to show that
+
+[Page 24] (ocr_text)
+Let us define \( X^*(\theta) = \{ f \in \mathcal{F} : V(f, \theta) = W(\mathbb{P}_r, \mathbb{P}_\theta) \}. \) By the above point we know then that \( X^*(\theta) \) is non-empty. We know that by a simple envelope theorem ([12], Theorem 1) that
+
+[Page 24] (ocr_text)
+Let \( f \in X^*(\theta) \), which we know exists since \( X^*(\theta) \) is non-empty for all \( \theta \). Then, we get
+
+[Page 24] (ocr_text)
+when the right hand side is defined. For the reader who is not interested in such technicalities, he or she can skip the rest of the proof.
+
+[Page 24] (ocr_text)
+The text content from the image is:
+
+"where \(\tilde{f}\) lies in \(\mathcal{F} = \{\tilde{f}: \mathcal{X} \to \mathbb{R}, \tilde{f} \in C_b(\mathcal{X}), \|\tilde{f}\|_L \leq 1\}\) and \(\theta \in \mathbb{R}^d\)."
+
+[Page 24] (ocr_text)
+The text in the image reads:
+
+"Since \(\mathcal{X}\) is compact, we know by the Kantorovich-Rubenstein duality [22] that there is an \(f \in \mathcal{F}\) that attains the value"
+
+[Page 24] (ocr_text)
+for any \( f \in X^*(\theta) \) when both terms are well-defined.
+
+[Page 24] (ocr_text)
+Proof of Theorem 3. Let us define
+
+[Page 24] (ocr_text)
+The text content from the image is:
+
+"z)[∇θ f(gθ(z))|θ0] is well-defined for almost every θ0. Now, we can see"
+
+[Page 24] (ocr_text)
+The text content from the image is:
+
+```
+where \(\tilde{f}\) lies in \(\mathcal{F} = \{\tilde{f}: \mathcal{X} \to \mathbb{R}, \, \tilde{f} \in C_b(\mathcal{X}), \, \|\tilde{f}\|_L \leq 1\}\) and \(\theta \in \mathbb{R}^c\)
+```
+
+[Page 25] (ocr_text)
+for almost every θ, and in particular when the right hand side is well defined. Note that the mere existence of the left hand side (meaning the differentiability a.e. of E_z~p(z)[f(g_θ(z))]) had to be proven, which we just did.
+
+[Page 25] (ocr_text)
+The text content from the image is:
+
+"and since \(\mathbb{E}_{z\sim p(z)}[2L(\theta_0, z)] < +\infty\) by assumption 1, we get by dominated convergence that Equation 6 converges to 0 as \(\theta \to \theta_0\) so"
+
+[Page 25] (ocr_text)
+By differentiability, the term inside the integral converges \( p(z) \)-a.e. to 0 as \( \theta \to \theta_0 \). Furthermore,
+
+[Page 26] (ocr_text)
+We say that a measurable function \( D^* : \mathcal{X} \to [0, +\infty) \) is optimal for \( g_\theta \) (or \( \mathbb{P}_\theta \)) if \( L_D(D^*, g_\theta) \leq L_D(D, g_\theta) \) for all other measurable functions \( D \). We show that such a discriminator always exists for any two distributions \( \mathbb{P}_r \) and \( \mathbb{P}_\theta \), and that under such a discriminator, \( L_G(D^*, g_\theta) \) is proportional to \( \delta(\mathbb{P}_r, \mathbb{P}_\theta) \). As a simple corollary, we get the fact that \( L_G(D^*, g_\theta) \) attains its minimum value if and only if \( \delta(\mathbb{P}_r, \mathbb{P}_\theta) \) is at its minimum value, which is 0, and \( \mathbb{P}_r = \mathbb{P}_\theta \) (Theorems 1-2 of [25]).
+
+[Page 26] (ocr_text)
+Very importantly, \( D \) is constrained to be non-negative, since otherwise the trivial solution for \( D \) would be to set everything to arbitrarily low values. The original EBGAN paper used only \( \mathbb{E}_{z \sim p(z)}[D(g_\theta(z))] \) for the loss of the generator, but this is obviously equivalent to our definition since the term \( \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] \) does not depend on \( \theta \) for a fixed discriminator (such as when backproping to the generator in EBGAN training) and thus minimizing one or the other is equivalent.
+
+[Page 26] (ocr_text)
+Proof. First, we prove that there exists an optimal discriminator. Let \( D : \mathcal{X} \to [0, +\infty) \) be a measurable function, then \( D'(x) := \min(D(x), m) \) is also a measurable function, and \( L_D(D', g_\theta) \leq L_D(D, g_\theta) \). Therefore, a function \( D^* : \mathcal{X} \to [0, +\infty) \) is optimal if and only if \( D^{*\prime} \) is. Furthermore, it is optimal if and only if \( L_D(D^*, g_\theta) \leq L_D(D, g_\theta) \) for all \( D : \mathcal{X} \to [0, m] \). We are then interested to see if there’s an optimal discriminator for the problem \( \min_{0 \leq D(x) \leq m} L_D(D, g_\theta) \).
+
+[Page 26] (ocr_text)
+In this appendix we show that under an optimal discriminator, energy-based GANs (EBGANs) [25] optimize the total variation distance between the real and generated distributions.
+
+[Page 26] (ocr_text)
+Theorem 4. Let \( \mathbb{P}_r \) be the real data distribution over a compact space \( \mathcal{X} \). Let \( g_\theta : \mathcal{Z} \to \mathcal{X} \) be a measurable function (such as any neural network). Then, an optimal discriminator \( D^* \) exists for \( \mathbb{P}_r \) and \( \mathbb{P}_\theta \), and
+
+[Page 26] (ocr_text)
+Energy-based GANs are trained in a similar fashion to GANs, only under a different loss function. They have a discriminator \( D \) who tries to minimize
+
+[Page 26] (ocr_text)
+for some \( m > 0 \) and \([x]^+ = \max(0, x)\) and a generator network \( g_\theta \) that's trained to minimize
+
+[Page 26] (ocr_text)
+D Energy-based GANs optimize total variation
+
+[Page 26] (ocr_text)
+Note now that if \(0 \leq D(x) \leq m\) we have
+
+[Page 27] (ocr_text)
+The text content from the image is as follows:
+
+"and there is an \( f^*: \mathcal{X} \to [-1, 1] \) such that \(\mathbb{E}_{x \sim \mathbb{P}_r}[f^*(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[f^*(x)] = -\delta(\mathbb{P}_r, \mathbb{P}_\theta)\). This is a long known fact, found for example in [22], but we prove it later for completeness. In that case, we define \( D^*(x) = \frac{m}{2}f^*(x) + \frac{m}{2} \). We then have \( 0 \leq D(x) \leq m \) and"
+
+[Page 27] (ocr_text)
+For completeness, we now show a proof for equation (7) and the existence of said \( f^* \) that attains the value of the infimum. Take \( \mu = \mathbb{P}_r - \mathbb{P}_\theta \), which is a signed measure, and \( (P, Q) \) its Hahn decomposition. Then, we can define \( f^* := 1_Q - 1_P \). By construction, then
+
+[Page 27] (ocr_text)
+The interesting part is that
+
+[Page 27] (ocr_text)
+This shows that \( D^* \) is optimal and \( L_D(D^*, g_\theta) = m - \frac{m}{2} \delta(\mathbb{P}_r, \mathbb{P}_\theta) \). Furthermore,
+
+[Page 27] (ocr_text)
+concluding the proof.
+
+[Page 27] (ocr_text)
+Therefore, we know that
+
+[Page 28] (ocr_text)
+Furthermore, if \( f \) is bounded between -1 and 1, we get
+
+[Page 28] (ocr_text)
+The text in the image reads:
+
+"s positive, we can conclude \(\mathbb{E}_{x\sim\mathbb{P}_r}[f(x)]-\mathbb{E}_{x\sim\mathbb{P}_\theta}[f(x)]\geq-\delta(\mathbb{P}_r,\mathbb{P}_\theta)\)."
+
+[Page 28] (ocr_text)
+positive, we can conclude \(\mathbb{E}_{x\sim\mathbb{P}_r}[f(x)]-\mathbb{E}_{x\sim\mathbb{P}_\theta}[f(x)]\geq-\delta(\mathbb{P}_r,\mathbb{P}_\theta)\).
+
+[Page 28] (ocr_text)
+Since δ is positive, we can conclude E_x~P_r[f(x)] - E_x~P_θ[f(x)] ≥ -δ(P_r, P_θ).
+
+[Page 29] (ocr_text)
+The text content from the image is:
+
+"F Sheets of samples"
+
+[Page 29] (ocr_text)
+Figure 8: Cost of the generator during normal GAN training, for an MLP generator (upper left) and a DCGAN generator (upper right). Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the cost of the generator increases, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.
+
+[Page 29] (ocr_text)
+E Generator's cost during normal GAN training
+
+[Page 29] (ocr_text)
+Figure 8: Cost of the generator during normal GAN training, for an MLP generator (upper left) and a DCGAN generator (upper right). Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the cost of the generator increases, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.
+
+[Page 29] (ocr_text)
+E Generator's cost during normal GAN training
+
+[Page 30] (ocr_text)
+The text in the image reads:
+
+"Figure 9: WGAN algorithm: generator and critic are DCGANs."
+
+[Page 30] (ocr_text)
+Figure 10: Standard GAN procedure: generator and discriminator are DCGANs.
+
+[Page 30] (ocr_text)
+re 10: Standard GAN procedure: generator and discriminator are DCGAN
+
+[Page 31] (ocr_text)
+Figure 12: Standard GAN procedure: generator is a DCGAN without batchnorm and constant filter size. Discriminator is a DCGAN.
+
+[Page 31] (ocr_text)
+Figure 11: WGAN algorithm: generator is a DCGAN without batchnorm and constant filter size. Critic is a DCGAN.
+
+[Page 31] (ocr_text)
+Figure 11: WGAN algorithm: generator is a DCGAN without batchnorm and constant filter size. Critic is a DCGAN.
+
+[Page 32] (ocr_text)
+Figure 14: Standard GAN procedure: generator is an MLP with 4 hidden layers of 512 units, discriminator is a DCGAN.
+
+[Page 32] (ocr_text)
+The generator is an MLP with 4 hidden layers of 512 units, and the critic is a DCGAN.
+
+
+------------------------------------------------------------
+FIGURES
+------------------------------------------------------------
+
+[Page 5] Figure
+Caption: Figure 1: These plots show ρ(Πθ, Π0) as a function of θ when ρ is the EM distance (left plot) or the JS divergence (right plot). The EM plot is continuous and provides a usable gradient everywhere. The JS plot is not continuous and does not provide a usable gradient.
+Image: figures/figure_001_page005.png
+
+[Page 9] Figure
+Caption: Figure 2: Optimal discriminator and critic when learning to differentiate two Gaussians. As we can see, the discriminator of a minimax GAN saturates and results in vanishing gradients. Our WGAN critic provides very clean gradients on all parts of the space.
+Image: figures/figure_002_page009.png
+
+[Page 10] Figure
+Caption: Figure 3: Training curves and samples at different stages of training. We can see a clear correlation between lower error and better sample quality. Upper left: the generator is an MLP with 4 hidden layers and 512 units at each layer. The loss decreases consistently as training progresses and sample quality increases. Upper right: the generator is a standard DCGAN. The loss decreases quickly and sample quality increases as well. In both upper plots the critic is a DCGAN without the sigmoid so losses can be subjected to comparison. Lower half: both the generator and the discriminator are MLPs with substantially high learning rates (so training failed). Loss is constant and samples are constant as well. The training curves were passed through a median filter for visualization purposes. Figure 3: Training curves and samples at different stages of training. We can see a clear correlation between lower error and better sample quality. Upper left: the generator is an MLP with 4 hidden layers and 512 units at each layer. The loss decreases consistently as training progresses and sample quality increases. Upper right: the generator is a standard DCGAN. The loss decreases quickly and sample quality increases as well. In both upper plots the critic is a DCGAN without the sigmoid so losses can be subjected to comparison. Lower half: both the generator and the discriminator are MLPs with substantially high learning rates (so training failed). Loss is constant and samples are constant as well. The training curves were passed through a median filter for visualization purposes.
+Image: figures/figure_003_page010.png
+
+[Page 11] Figure
+Caption: Figure 4: JS estimates for an MLP generator (upper left) and a DCGAN generator (upper right) trained with the standard GAN procedure. Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the JS estimate increases or stays constant, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3. Figure 4: JS estimates for an MLP generator (upper left) and a DCGAN generator (upper right) trained with the standard GAN procedure. Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the JS estimate increases or stays constant, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.
+Image: figures/figure_004_page011.png
+
+[Page 13] Figure
+Caption: Figure 5: Algorithms trained with a DCGAN generator. Left: WGAN algorithm. Right: standard GAN formulation. Both algorithms produce high quality samples.
+Image: figures/figure_005_page013.png
+
+[Page 13] Figure
+Image: figures/figure_006_page013.png
+
+[Page 13] Figure
+Image: figures/figure_007_page013.png
+
+[Page 29] Figure
+Caption: Figure 8: Cost of the generator during normal GAN training, for an MLP generator (upper left) and a DCGAN generator (upper right). Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the cost of the generator increases, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3. Figure 8: Cost of the generator during normal GAN training, for an MLP generator (upper left) and a DCGAN generator (upper right). Both had a DCGAN discriminator. Both curves have increasing error. Samples get better for the DCGAN but the cost of the generator increases, pointing towards no significant correlation between sample quality and loss. Bottom: MLP with both generator and discriminator. The curve goes up and down regardless of sample quality. All training curves were passed through the same median filter as in Figure 3.
+Image: figures/figure_008_page029.png
+
+[Page 30] Figure
+Caption: The text in the image reads:
+
+"Figure 9: WGAN algorithm: generator and critic are DCGANs."
+Image: figures/figure_009_page030.png
+
+[Page 30] Figure
+Caption: Figure 10: Standard GAN procedure: generator and discriminator are DCGANs.
+Image: figures/figure_010_page030.png
+
+[Page 31] Figure
+Caption: Figure 11: WGAN algorithm: generator is a DCGAN without batchnorm and constant filter size. Critic is a DCGAN. Figure 11: WGAN algorithm: generator is a DCGAN without batchnorm and constant filter size. Critic is a DCGAN.
+Image: figures/figure_011_page031.png
+
+[Page 31] Figure
+Caption: Figure 12: Standard GAN procedure: generator is a DCGAN without batchnorm and constant filter size. Discriminator is a DCGAN.
+Image: figures/figure_012_page031.png
+
+[Page 32] Figure
+Caption: The generator is an MLP with 4 hidden layers of 512 units, and the critic is a DCGAN.
+Image: figures/figure_013_page032.png
+
+[Page 32] Figure
+Caption: Figure 14: Standard GAN procedure: generator is an MLP with 4 hidden layers of 512 units, discriminator is a DCGAN.
+Image: figures/figure_014_page032.png
+
+
+------------------------------------------------------------
+TABLES
+------------------------------------------------------------
+
+[Page 8] Table
+
+
+------------------------------------------------------------
+FORMULAS
+------------------------------------------------------------
+
+[Page 1] Formula
+The formula in the image can be written in LaTeX as follows:
+
+```latex
+\max_{\theta \in \mathbb{R}^d} \frac{1}{m} \sum_{i=1}^{m} \log P_\theta(x^{(i)})
+```
+LaTeX: The formula in the image can be written in LaTeX as follows:
+
+```latex
+\max_{\theta \in \mathbb{R}^d} \frac{1}{m} \sum_{i=1}^{m} \log P_\theta(x^{(i)})
+```
+
+[Page 3] Formula
+K L ( \mathbb { P } _ { r } \| \mathbb { P } _ { g } ) = \int \log \left( \frac { P _ { r } ( x ) } { P _ { g } ( x ) } \right) P _ { r } ( x ) d \mu ( x ) \ ,
+LaTeX: K L ( \mathbb { P } _ { r } \| \mathbb { P } _ { g } ) = \int \log \left( \frac { P _ { r } ( x ) } { P _ { g } ( x ) } \right) P _ { r } ( x ) d \mu ( x ) \ ,
+
+[Page 3] Formula
+```latex
+\delta(\mathbb{P}_r, \mathbb{P}_g) = \sup_{A \in \Sigma} |\mathbb{P}_r(A) - \mathbb{P}_g(A)|.
+```
+LaTeX: ```latex
+\delta(\mathbb{P}_r, \mathbb{P}_g) = \sup_{A \in \Sigma} |\mathbb{P}_r(A) - \mathbb{P}_g(A)|.
+```
+
+[Page 4] Formula
+```latex
+W(\mathbb{P}_r, \mathbb{P}_g) = \inf_{\gamma \in \Pi(\mathbb{P}_r, \mathbb{P}_g)} \mathbb{E}_{(x,y) \sim \gamma} \left[ \| x - y \| \right],
+```
+LaTeX: ```latex
+W(\mathbb{P}_r, \mathbb{P}_g) = \inf_{\gamma \in \Pi(\mathbb{P}_r, \mathbb{P}_g)} \mathbb{E}_{(x,y) \sim \gamma} \left[ \| x - y \| \right],
+```
+
+[Page 4] Formula
+J S ( \mathbb { P } _ { r } , \mathbb { P } _ { g } ) = K L ( \mathbb { P } _ { r } \| \mathbb { P } _ { m } ) + K L ( \mathbb { P } _ { g } \| \mathbb { P } _ { m } ) ~ ,
+LaTeX: J S ( \mathbb { P } _ { r } , \mathbb { P } _ { g } ) = K L ( \mathbb { P } _ { r } \| \mathbb { P } _ { m } ) + K L ( \mathbb { P } _ { g } \| \mathbb { P } _ { m } ) ~ ,
+
+[Page 4] Formula
+```latex
+\begin{itemize}
+    \item $W(\mathbb{P}_0, \mathbb{P}_{\theta}) = |\theta|$,
+    \item $JS(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            \log 2 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $KL(\mathbb{P}_{\theta} \| \mathbb{P}_0) = KL(\mathbb{P}_0 \| \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            +\infty & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $\delta(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            1 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$.
+\end{itemize}
+```
+LaTeX: ```latex
+\begin{itemize}
+    \item $W(\mathbb{P}_0, \mathbb{P}_{\theta}) = |\theta|$,
+    \item $JS(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            \log 2 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $KL(\mathbb{P}_{\theta} \| \mathbb{P}_0) = KL(\mathbb{P}_0 \| \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            +\infty & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $\delta(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            1 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$.
+\end{itemize}
+```
+
+[Page 4] Formula
+```latex
+\begin{itemize}
+    \item $W(\mathbb{P}_0, \mathbb{P}_{\theta}) = |\theta|$,
+    \item $JS(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            \log 2 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $KL(\mathbb{P}_{\theta} \| \mathbb{P}_0) = KL(\mathbb{P}_0 \| \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            +\infty & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $\delta(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            1 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$.
+\end{itemize}
+```
+LaTeX: ```latex
+\begin{itemize}
+    \item $W(\mathbb{P}_0, \mathbb{P}_{\theta}) = |\theta|$,
+    \item $JS(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            \log 2 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $KL(\mathbb{P}_{\theta} \| \mathbb{P}_0) = KL(\mathbb{P}_0 \| \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            +\infty & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$,
+    \item $\delta(\mathbb{P}_0, \mathbb{P}_{\theta}) = 
+        \begin{cases} 
+            1 & \text{if } \theta \neq 0 \\
+            0 & \text{if } \theta = 0
+        \end{cases}$.
+\end{itemize}
+```
+
+[Page 6] Formula
+W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \operatorname* { s u p } _ { \| f \| _ { L } \leq 1 } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ]
+LaTeX: W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \operatorname* { s u p } _ { \| f \| _ { L } \leq 1 } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ]
+
+[Page 6] Formula
+```latex
+- W(\mathbb{P}_n, \mathbb{P}) \to 0.
+- \mathbb{P}_n \xrightarrow{D} \mathbb{P} \text{ where } \xrightarrow{D} \text{ represents convergence in distribution for random variables.}
+```
+LaTeX: ```latex
+- W(\mathbb{P}_n, \mathbb{P}) \to 0.
+- \mathbb{P}_n \xrightarrow{D} \mathbb{P} \text{ where } \xrightarrow{D} \text{ represents convergence in distribution for random variables.}
+```
+
+[Page 7] Formula
+\operatorname* { m a x } _ { \| f \| _ { L } \leq 1 } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ]
+LaTeX: \operatorname* { m a x } _ { \| f \| _ { L } \leq 1 } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ]
+
+[Page 7] Formula
+```latex
+\begin{equation}
+\nabla_{\theta}W(\mathbb{P}_r, \mathbb{P}_{\theta}) = -\mathbb{E}_{z \sim p(z)}[\nabla_{\theta}f(g_{\theta}(z))]
+\end{equation}
+```
+LaTeX: ```latex
+\begin{equation}
+\nabla_{\theta}W(\mathbb{P}_r, \mathbb{P}_{\theta}) = -\mathbb{E}_{z \sim p(z)}[\nabla_{\theta}f(g_{\theta}(z))]
+\end{equation}
+```
+
+[Page 7] Formula
+```latex
+\max_{w \in \mathcal{W}} \mathbb{E}_{x \sim \mathbb{P}_r}[f_w(x)] - \mathbb{E}_{z \sim p(z)}[f_w(g_\theta(z))]
+```
+LaTeX: ```latex
+\max_{w \in \mathcal{W}} \mathbb{E}_{x \sim \mathbb{P}_r}[f_w(x)] - \mathbb{E}_{z \sim p(z)}[f_w(g_\theta(z))]
+```
+
+[Page 11] Formula
+L ( D , g _ { \theta } ) = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ \log D ( x ) ] + \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ \log ( 1 - D ( x ) ) ]
+LaTeX: L ( D , g _ { \theta } ) = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ \log D ( x ) ] + \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ \log ( 1 - D ( x ) ) ]
+
+[Page 13] Formula
+d _ { \mathcal { F } } ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \operatorname* { s u p } _ { f \in \mathcal { F } } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ]
+LaTeX: d _ { \mathcal { F } } ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \operatorname* { s u p } _ { f \in \mathcal { F } } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ]
+
+[Page 19] Formula
+\| \mu \| _ { T V } = \operatorname* { s u p } _ { A \subseteq { \mathcal { X } } } | \mu ( A ) |
+LaTeX: \| \mu \| _ { T V } = \operatorname* { s u p } _ { A \subseteq { \mathcal { X } } } | \mu ( A ) |
+
+[Page 19] Formula
+\delta ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) : = \| \mathbb { P } _ { r } - \mathbb { P } _ { \theta } \| _ { T V }
+LaTeX: \delta ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) : = \| \mathbb { P } _ { r } - \mathbb { P } _ { \theta } \| _ { T V }
+
+[Page 19] Formula
+```latex
+\Phi : (\text{Prob}(\mathcal{X}), \delta) \to (C_b(\mathcal{X})^*, \| \cdot \|)
+```
+LaTeX: ```latex
+\Phi : (\text{Prob}(\mathcal{X}), \delta) \to (C_b(\mathcal{X})^*, \| \cdot \|)
+```
+
+[Page 19] Formula
+```latex
+C_b(\mathcal{X})^* = \{\phi : C_b(\mathcal{X}) \to \mathbb{R}, \phi \text{ is linear and continuous}\}
+```
+LaTeX: ```latex
+C_b(\mathcal{X})^* = \{\phi : C_b(\mathcal{X}) \to \mathbb{R}, \phi \text{ is linear and continuous}\}
+```
+
+[Page 19] Formula
+The formula in the image can be written in LaTeX as follows:
+
+```latex
+C_b(\mathcal{X}) = \{ f : \mathcal{X} \to \mathbb{R}, \text{$f$ is continuous and bounded} \}
+```
+
+This will render the same mathematical expression as shown in the image.
+LaTeX: The formula in the image can be written in LaTeX as follows:
+
+```latex
+C_b(\mathcal{X}) = \{ f : \mathcal{X} \to \mathbb{R}, \text{$f$ is continuous and bounded} \}
+```
+
+This will render the same mathematical expression as shown in the image.
+
+[Page 20] Formula
+```latex
+W(\mathbb{P}_{\theta}, \mathbb{P}_{\theta'}) \leq \int_{\mathcal{X} \times \mathcal{X}} \|x - y\| \, \mathrm{d}\gamma
+
+= \mathbb{E}_{(x,y) \sim \gamma}[\|x - y\|]
+
+= \mathbb{E}_z[\|g_\theta(z) - g_{\theta'}(z)\|]
+```
+LaTeX: ```latex
+W(\mathbb{P}_{\theta}, \mathbb{P}_{\theta'}) \leq \int_{\mathcal{X} \times \mathcal{X}} \|x - y\| \, \mathrm{d}\gamma
+
+= \mathbb{E}_{(x,y) \sim \gamma}[\|x - y\|]
+
+= \mathbb{E}_z[\|g_\theta(z) - g_{\theta'}(z)\|]
+```
+
+[Page 20] Formula
+The formula in the image can be written in LaTeX as follows:
+
+```latex
+\|g_\theta(z) - g'_\theta(z')\| \leq L(\theta, z)(\|\theta - \theta'\| + \|z - z'\|)
+```
+
+This will render the mathematical expression correctly in a LaTeX document.
+LaTeX: The formula in the image can be written in LaTeX as follows:
+
+```latex
+\|g_\theta(z) - g'_\theta(z')\| \leq L(\theta, z)(\|\theta - \theta'\| + \|z - z'\|)
+```
+
+This will render the mathematical expression correctly in a LaTeX document.
+
+[Page 20] Formula
+```latex
+W(\mathbb{P}_{\theta}, \mathbb{P}_{\theta'}) \leq \mathbb{E}_z[\|g_{\theta}(z) - g_{\theta'}(z)\|] \rightarrow_{\theta \rightarrow \theta'} 0
+```
+LaTeX: ```latex
+W(\mathbb{P}_{\theta}, \mathbb{P}_{\theta'}) \leq \mathbb{E}_z[\|g_{\theta}(z) - g_{\theta'}(z)\|] \rightarrow_{\theta \rightarrow \theta'} 0
+```
+
+[Page 20] Formula
+```latex
+\mathbb{E}_z[\|g_{\theta}(z) - g_{\theta'}(z)\|] \leq \|{\theta} - {\theta'}\|\mathbb{E}_z[L({\theta}, z)]
+```
+LaTeX: ```latex
+\mathbb{E}_z[\|g_{\theta}(z) - g_{\theta'}(z)\|] \leq \|{\theta} - {\theta'}\|\mathbb{E}_z[L({\theta}, z)]
+```
+
+[Page 20] Formula
+| W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) - W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta ^ { \prime } } ) | \leq W ( \mathbb { P } _ { \theta } , \mathbb { P } _ { \theta ^ { \prime } } ) \leq L ( \theta ) \| \theta - \theta ^ { \prime } \|
+LaTeX: | W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) - W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta ^ { \prime } } ) | \leq W ( \mathbb { P } _ { \theta } , \mathbb { P } _ { \theta ^ { \prime } } ) \leq L ( \theta ) \| \theta - \theta ^ { \prime } \|
+
+[Page 20] Formula
+{ \mathbb { E } } _ { z \sim p } [ L ( \theta , z ) ] < + \infty
+LaTeX: { \mathbb { E } } _ { z \sim p } [ L ( \theta , z ) ] < + \infty
+
+[Page 20] Formula
+```latex
+|W(\mathbb{P}_r, \mathbb{P}_{\theta}) - W(\mathbb{P}_r, \mathbb{P}_{\theta'})| \leq W(\mathbb{P}_{\theta}, \mathbb{P}_{\theta'}) \rightarrow_{\theta \rightarrow \theta'} 0
+```
+LaTeX: ```latex
+|W(\mathbb{P}_r, \mathbb{P}_{\theta}) - W(\mathbb{P}_r, \mathbb{P}_{\theta'})| \leq W(\mathbb{P}_{\theta}, \mathbb{P}_{\theta'}) \rightarrow_{\theta \rightarrow \theta'} 0
+```
+
+[Page 21] Formula
+\begin{array} { l } { { \delta ( \mathbb { P } _ { m } , \mathbb { P } _ { n } ) = \| \mathbb { P } _ { m } - \mathbb { P } _ { n } \| _ { T V } } } \\ { { = \| \frac { 1 } { 2 } \mathbb { P } + \frac { 1 } { 2 } \mathbb { P } _ { n } - \mathbb { P } _ { n } \| _ { T V } } } \\ { { = \frac { 1 } { 2 } \| \mathbb { P } - \mathbb { P } _ { n } \| _ { T V } } } \\ { { = \frac { 1 } { 2 } \delta ( \mathbb { P } , \mathbb { P } ) \leq \delta ( \mathbb { P } _ { n } , \mathbb { P } ) } } \end{array}
+LaTeX: \begin{array} { l } { { \delta ( \mathbb { P } _ { m } , \mathbb { P } _ { n } ) = \| \mathbb { P } _ { m } - \mathbb { P } _ { n } \| _ { T V } } } \\ { { = \| \frac { 1 } { 2 } \mathbb { P } + \frac { 1 } { 2 } \mathbb { P } _ { n } - \mathbb { P } _ { n } \| _ { T V } } } \\ { { = \frac { 1 } { 2 } \| \mathbb { P } - \mathbb { P } _ { n } \| _ { T V } } } \\ { { = \frac { 1 } { 2 } \delta ( \mathbb { P } , \mathbb { P } ) \leq \delta ( \mathbb { P } _ { n } , \mathbb { P } ) } } \end{array}
+
+[Page 21] Formula
+```latex
+\|\nabla_{z,\theta}g_\theta(z)\| \leq \|\prod_{i=1}^{H} W_i D_i\| + \sum_{k=1}^{H} \left\|\left(\left(\prod_{i=k+1}^{H} W_i D_i\right)D_k\right)f_{1:k-1}(z)\right\|
+
+\leq L^H \prod_{i=H}^{K} \|W_i\| + \sum_{k=1}^{H} \|z\|L^H \left(\prod_{i=1}^{k-1} \|W_i\|\right) \left(\prod_{i=k+1}^{H} \|W_i\|\right)
+```
+LaTeX: ```latex
+\|\nabla_{z,\theta}g_\theta(z)\| \leq \|\prod_{i=1}^{H} W_i D_i\| + \sum_{k=1}^{H} \left\|\left(\left(\prod_{i=k+1}^{H} W_i D_i\right)D_k\right)f_{1:k-1}(z)\right\|
+
+\leq L^H \prod_{i=H}^{K} \|W_i\| + \sum_{k=1}^{H} \|z\|L^H \left(\prod_{i=1}^{k-1} \|W_i\|\right) \left(\prod_{i=k+1}^{H} \|W_i\|\right)
+```
+
+[Page 21] Formula
+\mathbb { E } _ { z \sim p ( z ) } [ \| \nabla _ { \theta , z } g _ { \theta } ( z ) \| ] < + \infty
+LaTeX: \mathbb { E } _ { z \sim p ( z ) } [ \| \nabla _ { \theta , z } g _ { \theta } ( z ) \| ] < + \infty
+
+[Page 21] Formula
+```latex
+\mathbb{E}_{z \sim p(z)}[\|\nabla_{\theta,z}g_\theta(z)\|] \leq C_1(\theta) + C_2(\theta)\mathbb{E}_{z \sim p(z)}[\|z\|] < +\infty
+```
+LaTeX: ```latex
+\mathbb{E}_{z \sim p(z)}[\|\nabla_{\theta,z}g_\theta(z)\|] \leq C_1(\theta) + C_2(\theta)\mathbb{E}_{z \sim p(z)}[\|z\|] < +\infty
+```
+
+[Page 22] Formula
+```latex
+KL(\mathbb{P}_n \parallel \mathbb{P}_m) = \int \log(f_n) \, d\mathbb{P}_n
+
+\leq \log(1 + \epsilon) + \int_{A_n} \log(f_n) \, d\mathbb{P}_n
+
+\leq \log(1 + \epsilon) + \log(3)\mathbb{P}_n(A_n)
+
+\leq \log(1 + \epsilon) + \log(3)\left(\frac{1}{\epsilon} + 1\right)\delta(\mathbb{P}_n, \mathbb{P})
+```
+LaTeX: ```latex
+KL(\mathbb{P}_n \parallel \mathbb{P}_m) = \int \log(f_n) \, d\mathbb{P}_n
+
+\leq \log(1 + \epsilon) + \int_{A_n} \log(f_n) \, d\mathbb{P}_n
+
+\leq \log(1 + \epsilon) + \log(3)\mathbb{P}_n(A_n)
+
+\leq \log(1 + \epsilon) + \log(3)\left(\frac{1}{\epsilon} + 1\right)\delta(\mathbb{P}_n, \mathbb{P})
+```
+
+[Page 22] Formula
+```latex
+\epsilon \mathbb{P}_m(A_n) \leq \mathbb{P}_n(A_n) - \mathbb{P}_m(A_n)
+\leq |\mathbb{P}_n(A_n) - \mathbb{P}_m(A_n)|
+\leq \delta(\mathbb{P}_n, \mathbb{P}_m)
+\leq \delta(\mathbb{P}_n, \mathbb{P}).
+```
+LaTeX: ```latex
+\epsilon \mathbb{P}_m(A_n) \leq \mathbb{P}_n(A_n) - \mathbb{P}_m(A_n)
+\leq |\mathbb{P}_n(A_n) - \mathbb{P}_m(A_n)|
+\leq \delta(\mathbb{P}_n, \mathbb{P}_m)
+\leq \delta(\mathbb{P}_n, \mathbb{P}).
+```
+
+[Page 22] Formula
+```latex
+\begin{align*}
+\mathbb{P}_n(A_n) &\leq \mathbb{P}_m(A_n) + |\mathbb{P}_n(A_n) - \mathbb{P}_m(A_n)| \\
+&\leq \frac{1}{\epsilon} \delta(\mathbb{P}_n, \mathbb{P}) + \delta(\mathbb{P}_n, \mathbb{P}_m) \\
+&\leq \frac{1}{\epsilon} \delta(\mathbb{P}_n, \mathbb{P}) + \delta(\mathbb{P}_n, \mathbb{P}) \\
+&\leq \left( \frac{1}{\epsilon} + 1 \right) \delta(\mathbb{P}_n, \mathbb{P})
+\end{align*}
+```
+LaTeX: ```latex
+\begin{align*}
+\mathbb{P}_n(A_n) &\leq \mathbb{P}_m(A_n) + |\mathbb{P}_n(A_n) - \mathbb{P}_m(A_n)| \\
+&\leq \frac{1}{\epsilon} \delta(\mathbb{P}_n, \mathbb{P}) + \delta(\mathbb{P}_n, \mathbb{P}_m) \\
+&\leq \frac{1}{\epsilon} \delta(\mathbb{P}_n, \mathbb{P}) + \delta(\mathbb{P}_n, \mathbb{P}) \\
+&\leq \left( \frac{1}{\epsilon} + 1 \right) \delta(\mathbb{P}_n, \mathbb{P})
+\end{align*}
+```
+
+[Page 22] Formula
+\mathbb { P } _ { n } ( A ) = \int _ { A } f _ { n } \, \mathrm { d } \mathbb { P } _ { m } \geq 3 \mathbb { P } _ { m } ( A )
+LaTeX: \mathbb { P } _ { n } ( A ) = \int _ { A } f _ { n } \, \mathrm { d } \mathbb { P } _ { m } \geq 3 \mathbb { P } _ { m } ( A )
+
+[Page 22] Formula
+\mathbb { P } _ { n } ( A _ { n } ) = \int _ { A _ { n } } f _ { n } \, \mathrm { d } \mathbb { P } _ { m } \geq ( 1 + \epsilon ) \mathbb { P } _ { m } ( A _ { n } )
+LaTeX: \mathbb { P } _ { n } ( A _ { n } ) = \int _ { A _ { n } } f _ { n } \, \mathrm { d } \mathbb { P } _ { m } \geq ( 1 + \epsilon ) \mathbb { P } _ { m } ( A _ { n } )
+
+[Page 22] Formula
+```latex
+2\mathbb{P}_m(\{g_n > 3\}) \geq \mathbb{P}(\{g_n > 3\}) \geq 3\mathbb{P}_m(\{g_n > 3\})
+```
+LaTeX: ```latex
+2\mathbb{P}_m(\{g_n > 3\}) \geq \mathbb{P}(\{g_n > 3\}) \geq 3\mathbb{P}_m(\{g_n > 3\})
+```
+
+[Page 23] Formula
+```latex
+\delta(\mathbb{P}_n, \mathbb{P}) \leq \delta(\mathbb{P}_n, \mathbb{P}_m) + \delta(\mathbb{P}, \mathbb{P}_m)
+
+\leq \sqrt{\frac{1}{2} KL(\mathbb{P}_n || \mathbb{P}_m)} + \sqrt{\frac{1}{2} KL(\mathbb{P} || \mathbb{P}_m)}
+
+\leq 2 \sqrt{JS(\overline{\mathbb{P}_n}, \overline{\mathbb{P}})} \to 0
+```
+LaTeX: ```latex
+\delta(\mathbb{P}_n, \mathbb{P}) \leq \delta(\mathbb{P}_n, \mathbb{P}_m) + \delta(\mathbb{P}, \mathbb{P}_m)
+
+\leq \sqrt{\frac{1}{2} KL(\mathbb{P}_n || \mathbb{P}_m)} + \sqrt{\frac{1}{2} KL(\mathbb{P} || \mathbb{P}_m)}
+
+\leq 2 \sqrt{JS(\overline{\mathbb{P}_n}, \overline{\mathbb{P}})} \to 0
+```
+
+[Page 23] Formula
+```latex
+\delta(\mathbb{P}_n, \mathbb{P}) \leq \sqrt{\frac{1}{2} KL(\mathbb{P}_n \| \mathbb{P})} \to 0
+
+\delta(\mathbb{P}, \mathbb{P}_n) \leq \sqrt{\frac{1}{2} KL(\mathbb{P} \| \mathbb{P}_n)} \to 0
+```
+LaTeX: ```latex
+\delta(\mathbb{P}_n, \mathbb{P}) \leq \sqrt{\frac{1}{2} KL(\mathbb{P}_n \| \mathbb{P})} \to 0
+
+\delta(\mathbb{P}, \mathbb{P}_n) \leq \sqrt{\frac{1}{2} KL(\mathbb{P} \| \mathbb{P}_n)} \to 0
+```
+
+[Page 23] Formula
+\mathbb { P } ( B _ { n } ) = \int _ { B _ { n } } g _ { n } \, \mathrm { d } \mathbb { P } _ { m } \geq ( 1 + \epsilon ) \mathbb { P } _ { m } ( B _ { n } )
+LaTeX: \mathbb { P } ( B _ { n } ) = \int _ { B _ { n } } g _ { n } \, \mathrm { d } \mathbb { P } _ { m } \geq ( 1 + \epsilon ) \mathbb { P } _ { m } ( B _ { n } )
+
+[Page 23] Formula
+```latex
+KL(\mathbb{P} \|\mathbb{P}_m) = \int \log(g_n) \, d\mathbb{P}
+
+\leq \log(1 + \epsilon) + \int_{B_n} \log(g_n) \, d\mathbb{P}
+
+\leq \log(1 + \epsilon) + \log(3)\mathbb{P}(B_n)
+```
+LaTeX: ```latex
+KL(\mathbb{P} \|\mathbb{P}_m) = \int \log(g_n) \, d\mathbb{P}
+
+\leq \log(1 + \epsilon) + \int_{B_n} \log(g_n) \, d\mathbb{P}
+
+\leq \log(1 + \epsilon) + \log(3)\mathbb{P}(B_n)
+```
+
+[Page 23] Formula
+```latex
+JS(\mathbb{P}_n, \mathbb{P}) = \frac{1}{2} KL(\mathbb{P}_n || \mathbb{P}_m) + \frac{1}{2} KL(\mathbb{P} || \mathbb{P}_m) \to 0
+```
+LaTeX: ```latex
+JS(\mathbb{P}_n, \mathbb{P}) = \frac{1}{2} KL(\mathbb{P}_n || \mathbb{P}_m) + \frac{1}{2} KL(\mathbb{P} || \mathbb{P}_m) \to 0
+```
+
+[Page 24] Formula
+```latex
+\begin{align*}
+\nabla_{\theta} W(\mathbb{P}_r, \mathbb{P}_{\theta}) &= \nabla_{\theta} V(f, \theta) \\
+&= \nabla_{\theta} [\mathbb{E}_{x \sim \mathbb{P}_r}[f(x)] - \mathbb{E}_{z \sim p(z)}[f(g_{\theta}(z))]] \\
+&= -\nabla_{\theta} \mathbb{E}_{z \sim p(z)}[f(g_{\theta}(z))]
+\end{align*}
+```
+LaTeX: ```latex
+\begin{align*}
+\nabla_{\theta} W(\mathbb{P}_r, \mathbb{P}_{\theta}) &= \nabla_{\theta} V(f, \theta) \\
+&= \nabla_{\theta} [\mathbb{E}_{x \sim \mathbb{P}_r}[f(x)] - \mathbb{E}_{z \sim p(z)}[f(g_{\theta}(z))]] \\
+&= -\nabla_{\theta} \mathbb{E}_{z \sim p(z)}[f(g_{\theta}(z))]
+\end{align*}
+```
+
+[Page 24] Formula
+\begin{array} { l } { { V ( \widetilde { f } , \theta ) = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ \widetilde { f } ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ \widetilde { f } ( x ) ] } } \\ { { = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ \widetilde { f } ( x ) ] - \mathbb { E } _ { z \sim p ( z ) } [ \widetilde { f } ( g _ { \theta } ( z ) ) ] } } \end{array}
+LaTeX: \begin{array} { l } { { V ( \widetilde { f } , \theta ) = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ \widetilde { f } ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ \widetilde { f } ( x ) ] } } \\ { { = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ \widetilde { f } ( x ) ] - \mathbb { E } _ { z \sim p ( z ) } [ \widetilde { f } ( g _ { \theta } ( z ) ) ] } } \end{array}
+
+[Page 24] Formula
+W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \operatorname* { s u p } _ { \tilde { f } \in \mathcal { F } } V ( \tilde { f } , \theta ) = V ( f , \theta )
+LaTeX: W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \operatorname* { s u p } _ { \tilde { f } \in \mathcal { F } } V ( \tilde { f } , \theta ) = V ( f , \theta )
+
+[Page 24] Formula
+The formula in the image can be written in LaTeX as follows:
+
+\[
+-\nabla_{\theta} \mathbb{E}_{z \sim p(z)} [f(g_{\theta}(z))] = -\mathbb{E}_{z \sim p(z)} [\nabla_{\theta} f(g_{\theta}(z))]
+\]
+LaTeX: The formula in the image can be written in LaTeX as follows:
+
+\[
+-\nabla_{\theta} \mathbb{E}_{z \sim p(z)} [f(g_{\theta}(z))] = -\mathbb{E}_{z \sim p(z)} [\nabla_{\theta} f(g_{\theta}(z))]
+\]
+
+[Page 24] Formula
+```latex
+\frac{\mathbb{E}_{z \sim p(z)}[f(g_{\theta}(z))] - \mathbb{E}_{z \sim p(z)}[f(g_{\theta_0}(z))] - \langle (\theta - \theta_0), \mathbb{E}_{z \sim p(z)}[\nabla_\theta f(g_{\theta}(z)) | \theta_0] \rangle}{\|\theta - \theta_0\|}
+```
+LaTeX: ```latex
+\frac{\mathbb{E}_{z \sim p(z)}[f(g_{\theta}(z))] - \mathbb{E}_{z \sim p(z)}[f(g_{\theta_0}(z))] - \langle (\theta - \theta_0), \mathbb{E}_{z \sim p(z)}[\nabla_\theta f(g_{\theta}(z)) | \theta_0] \rangle}{\|\theta - \theta_0\|}
+```
+
+[Page 24] Formula
+\nabla _ { \theta } W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \nabla _ { \theta } V ( f , \theta )
+LaTeX: \nabla _ { \theta } W ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } ) = \nabla _ { \theta } V ( f , \theta )
+
+[Page 24] Formula
+```latex
+\mathbb{E}_{z \sim p(z)}[\|\nabla_{\theta} f(g_{\theta}(z))|_{\theta_0}\|] \leq \mathbb{E}_{z \sim p(z)}[L(\theta_0, z)] < +\infty
+```
+LaTeX: ```latex
+\mathbb{E}_{z \sim p(z)}[\|\nabla_{\theta} f(g_{\theta}(z))|_{\theta_0}\|] \leq \mathbb{E}_{z \sim p(z)}[L(\theta_0, z)] < +\infty
+```
+
+[Page 25] Formula
+\nabla _ { \theta } \mathbb { E } _ { z \sim p ( z ) } [ f ( g _ { \theta } ( z ) ) ] = \mathbb { E } _ { z \sim p ( z ) } [ \nabla _ { \theta } f ( g _ { \theta } ( z ) ) ]
+LaTeX: \nabla _ { \theta } \mathbb { E } _ { z \sim p ( z ) } [ f ( g _ { \theta } ( z ) ) ] = \mathbb { E } _ { z \sim p ( z ) } [ \nabla _ { \theta } f ( g _ { \theta } ( z ) ) ]
+
+[Page 25] Formula
+```latex
+= \mathbb{E}_{z \sim p(z)} \left[ \frac{f(g_{\theta}(z)) - f(g_{\theta_0}(z)) - \langle (\theta - \theta_0), \nabla_{\theta} f(g_{\theta}(z)) |_{\theta_0} \rangle}{\|\theta - \theta_0\|} \right]
+```
+LaTeX: ```latex
+= \mathbb{E}_{z \sim p(z)} \left[ \frac{f(g_{\theta}(z)) - f(g_{\theta_0}(z)) - \langle (\theta - \theta_0), \nabla_{\theta} f(g_{\theta}(z)) |_{\theta_0} \rangle}{\|\theta - \theta_0\|} \right]
+```
+
+[Page 25] Formula
+```latex
+\begin{align*}
+&\left\|\frac{f(g_{\theta}(z))-f(g_{\theta_0}(z))-\langle(\theta-\theta_0), \nabla_\theta f(g_{\theta}(z))|_{\theta_0}\rangle}{\|\theta-\theta_0\|}\right\| \\
+&\qquad\leq \frac{\|\theta-\theta_0\|L(\theta_0,z)+\|\theta-\theta_0\|\|\nabla_\theta f(g_{\theta}(z))|_{\theta_0}\|}{\|\theta-\theta_0\|}
+\end{align*}
+```
+LaTeX: ```latex
+\begin{align*}
+&\left\|\frac{f(g_{\theta}(z))-f(g_{\theta_0}(z))-\langle(\theta-\theta_0), \nabla_\theta f(g_{\theta}(z))|_{\theta_0}\rangle}{\|\theta-\theta_0\|}\right\| \\
+&\qquad\leq \frac{\|\theta-\theta_0\|L(\theta_0,z)+\|\theta-\theta_0\|\|\nabla_\theta f(g_{\theta}(z))|_{\theta_0}\|}{\|\theta-\theta_0\|}
+\end{align*}
+```
+
+[Page 26] Formula
+```latex
+L_D(D, g_\theta) = \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] + \mathbb{E}_{z \sim p(z)}[(m - D(g_\theta(z)))^+]
+= \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] + \mathbb{E}_{z \sim p(z)}[m - D(g_\theta(z))]
+= m + \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{z \sim p(z)}[D(g_\theta(z))]
+= m + \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D(x)]
+```
+LaTeX: ```latex
+L_D(D, g_\theta) = \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] + \mathbb{E}_{z \sim p(z)}[(m - D(g_\theta(z)))^+]
+= \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] + \mathbb{E}_{z \sim p(z)}[m - D(g_\theta(z))]
+= m + \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{z \sim p(z)}[D(g_\theta(z))]
+= m + \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D(x)]
+```
+
+[Page 26] Formula
+L _ { G } ( D ^ { * } , g _ { \theta } ) = \frac { m } { 2 } \delta ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } )
+LaTeX: L _ { G } ( D ^ { * } , g _ { \theta } ) = \frac { m } { 2 } \delta ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } )
+
+[Page 26] Formula
+L _ { D } ( D , g _ { \theta } ) = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ D ( x ) ] + \mathbb { E } _ { z \sim p ( z ) } [ [ m - D ( g _ { \theta } ( z ) ) ] ^ { + } ]
+LaTeX: L _ { D } ( D , g _ { \theta } ) = \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ D ( x ) ] + \mathbb { E } _ { z \sim p ( z ) } [ [ m - D ( g _ { \theta } ( z ) ) ] ^ { + } ]
+
+[Page 26] Formula
+The formula in the image can be written in LaTeX as follows:
+
+```latex
+L_G(D, g_\theta) = \mathbb{E}_{z \sim p(z)} [D(g_\theta(z))] - \mathbb{E}_{x \sim \mathbb{P}_r} [D(x)]
+```
+
+This will render the formula as shown in the image.
+LaTeX: The formula in the image can be written in LaTeX as follows:
+
+```latex
+L_G(D, g_\theta) = \mathbb{E}_{z \sim p(z)} [D(g_\theta(z))] - \mathbb{E}_{x \sim \mathbb{P}_r} [D(x)]
+```
+
+This will render the formula as shown in the image.
+
+[Page 26] Formula
+The formula in the image can be written in LaTeX as follows:
+
+```latex
+L_G(D, g_\theta) = \mathbb{E}_{z \sim p(z)} [D(g_\theta(z))] - \mathbb{E}_{x \sim \mathbb{P}_r} [D(x)]
+```
+
+This will render the formula as shown in the image.
+LaTeX: The formula in the image can be written in LaTeX as follows:
+
+```latex
+L_G(D, g_\theta) = \mathbb{E}_{z \sim p(z)} [D(g_\theta(z))] - \mathbb{E}_{x \sim \mathbb{P}_r} [D(x)]
+```
+
+This will render the formula as shown in the image.
+
+[Page 27] Formula
+```latex
+\begin{align*}
+\inf_{0 \leq D(x) \leq m} L_D(D, g_\theta) &= m + \inf_{0 \leq D(x) \leq m} \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D(x)] \\
+&= m + \inf_{-\frac{m}{2} \leq D(x) \leq \frac{m}{2}} \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D(x)] \\
+&= m + \frac{m}{2} \inf_{-1 \leq f(x) \leq 1} \mathbb{E}_{x \sim \mathbb{P}_r}[f(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[f(x)]
+\end{align*}
+```
+LaTeX: ```latex
+\begin{align*}
+\inf_{0 \leq D(x) \leq m} L_D(D, g_\theta) &= m + \inf_{0 \leq D(x) \leq m} \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D(x)] \\
+&= m + \inf_{-\frac{m}{2} \leq D(x) \leq \frac{m}{2}} \mathbb{E}_{x \sim \mathbb{P}_r}[D(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D(x)] \\
+&= m + \frac{m}{2} \inf_{-1 \leq f(x) \leq 1} \mathbb{E}_{x \sim \mathbb{P}_r}[f(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[f(x)]
+\end{align*}
+```
+
+[Page 27] Formula
+```latex
+L_G(D^*, g_\theta) = \mathbb{E}_{z \sim p(z)}[D^*(g_\theta(z))] - \mathbb{E}_{x \sim \mathbb{P}_r}[D^*(x)]
+
+= -L_D(D^*, g_\theta) + m
+
+= \frac{m}{2} \delta(\mathbb{P}_r, \mathbb{P}_g)
+```
+LaTeX: ```latex
+L_G(D^*, g_\theta) = \mathbb{E}_{z \sim p(z)}[D^*(g_\theta(z))] - \mathbb{E}_{x \sim \mathbb{P}_r}[D^*(x)]
+
+= -L_D(D^*, g_\theta) + m
+
+= \frac{m}{2} \delta(\mathbb{P}_r, \mathbb{P}_g)
+```
+
+[Page 27] Formula
+```latex
+L_D(D^*, g_\theta) = m + \mathbb{E}_{x \sim \mathbb{P}_r}[D^*(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D^*(x)]
+
+= m + \frac{m}{2} \mathbb{E}_{x \sim \mathbb{P}_r}[D^*(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[f^*(x)]
+
+= m - \frac{m}{2} \delta(\mathbb{P}_r, \mathbb{P}_\theta)
+
+= \inf_{0 \leq D(x) \leq m} L_D(D, g_\theta)
+```
+LaTeX: ```latex
+L_D(D^*, g_\theta) = m + \mathbb{E}_{x \sim \mathbb{P}_r}[D^*(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[D^*(x)]
+
+= m + \frac{m}{2} \mathbb{E}_{x \sim \mathbb{P}_r}[D^*(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[f^*(x)]
+
+= m - \frac{m}{2} \delta(\mathbb{P}_r, \mathbb{P}_\theta)
+
+= \inf_{0 \leq D(x) \leq m} L_D(D, g_\theta)
+```
+
+[Page 27] Formula
+{ \underset { - 1 \leq f ( x ) \leq 1 } { \operatorname* { i n f } } } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ] = - \delta ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } )
+LaTeX: { \underset { - 1 \leq f ( x ) \leq 1 } { \operatorname* { i n f } } } \mathbb { E } _ { x \sim \mathbb { P } _ { r } } [ f ( x ) ] - \mathbb { E } _ { x \sim \mathbb { P } _ { \theta } } [ f ( x ) ] = - \delta ( \mathbb { P } _ { r } , \mathbb { P } _ { \theta } )
+
+[Page 27] Formula
+```latex
+EE_{x\sim\mathbb{P}_{r}}[f^{*}(x)]-\mathbb{E}_{x\sim\mathbb{P}_{\theta}}[f^{*}(x)]=\int f^{*}\,\mathrm{d}\mu=\mu(Q)-\mu(P)
+
+=-(\mu(P)-\mu(Q))=-\|\mu\|_{TV}
+
+=-\|\mathbb{P}_{r}-\mathbb{P}_{\theta}\|_{TV}
+
+=-\delta(\mathbb{P}_{r},\mathbb{P}_{\theta})
+```
+LaTeX: ```latex
+EE_{x\sim\mathbb{P}_{r}}[f^{*}(x)]-\mathbb{E}_{x\sim\mathbb{P}_{\theta}}[f^{*}(x)]=\int f^{*}\,\mathrm{d}\mu=\mu(Q)-\mu(P)
+
+=-(\mu(P)-\mu(Q))=-\|\mu\|_{TV}
+
+=-\|\mathbb{P}_{r}-\mathbb{P}_{\theta}\|_{TV}
+
+=-\delta(\mathbb{P}_{r},\mathbb{P}_{\theta})
+```
+
+[Page 27] Formula
+```latex
+EE_{x\sim\mathbb{P}_{r}}[f^{*}(x)]-\mathbb{E}_{x\sim\mathbb{P}_{\theta}}[f^{*}(x)]=\int f^{*}\,\mathrm{d}\mu=\mu(Q)-\mu(P)
+
+=-(\mu(P)-\mu(Q))=-\|\mu\|_{TV}
+
+=-\|\mathbb{P}_{r}-\mathbb{P}_{\theta}\|_{TV}
+
+=-\delta(\mathbb{P}_{r},\mathbb{P}_{\theta})
+```
+LaTeX: ```latex
+EE_{x\sim\mathbb{P}_{r}}[f^{*}(x)]-\mathbb{E}_{x\sim\mathbb{P}_{\theta}}[f^{*}(x)]=\int f^{*}\,\mathrm{d}\mu=\mu(Q)-\mu(P)
+
+=-(\mu(P)-\mu(Q))=-\|\mu\|_{TV}
+
+=-\|\mathbb{P}_{r}-\mathbb{P}_{\theta}\|_{TV}
+
+=-\delta(\mathbb{P}_{r},\mathbb{P}_{\theta})
+```
+
+[Page 28] Formula
+```latex
+\begin{align*}
+|\mathbb{E}_{x \sim \mathbb{P}_r}[f(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[f(x)]| &= |\int f \, \mathrm{d}\mathbb{P}_r - \int f \, \mathrm{d}\mathbb{P}_\theta| \\
+&= |\int f \, \mathrm{d}\mu| \\
+&\leq \int |f| \, \mathrm{d}|\mu| \leq \int 1 \, \mathrm{d}|\mu| \\
+&= |\mu|(\mathcal{X}) = \| \mu \|_{TV} = \delta(\mathbb{P}_r, \mathbb{P}_\theta)
+\end{align*}
+```
+LaTeX: ```latex
+\begin{align*}
+|\mathbb{E}_{x \sim \mathbb{P}_r}[f(x)] - \mathbb{E}_{x \sim \mathbb{P}_\theta}[f(x)]| &= |\int f \, \mathrm{d}\mathbb{P}_r - \int f \, \mathrm{d}\mathbb{P}_\theta| \\
+&= |\int f \, \mathrm{d}\mu| \\
+&\leq \int |f| \, \mathrm{d}|\mu| \leq \int 1 \, \mathrm{d}|\mu| \\
+&= |\mu|(\mathcal{X}) = \| \mu \|_{TV} = \delta(\mathbb{P}_r, \mathbb{P}_\theta)
+\end{align*}
+```

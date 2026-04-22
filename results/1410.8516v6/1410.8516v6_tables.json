@@ -1,0 +1,38 @@
+{
+    "total_count": 2,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                150,
+                80,
+                460,
+                162
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Dataset</td>\n    <td>MNIST</td>\n    <td>TFD</td>\n    <td>SVHN</td>\n    <td>CIFAR-10</td>\n  </tr>\n  <tr>\n    <td># dimensions</td>\n    <td>784</td>\n    <td>2304</td>\n    <td>3072</td>\n    <td>3072</td>\n  </tr>\n  <tr>\n    <td>Preprocessing</td>\n    <td>None</td>\n    <td>Approx.whitening</td>\n    <td>ZCA</td>\n    <td>ZCA</td>\n  </tr>\n  <tr>\n    <td># hidden layers</td>\n    <td>5</td>\n    <td>4</td>\n    <td>4</td>\n    <td>4</td>\n  </tr>\n  <tr>\n    <td># hidden units</td>\n    <td>1000</td>\n    <td>5000</td>\n    <td>2000</td>\n    <td>2000</td>\n  </tr>\n  <tr>\n    <td>Prior</td>\n    <td>logistic</td>\n    <td>gaussian</td>\n    <td>logistic</td>\n    <td>logistic</td>\n  </tr>\n  <tr>\n    <td>Log-likelihood</td>\n    <td>1980.50</td>\n    <td>5514.71</td>\n    <td>11496.55</td>\n    <td>5371.78</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page007.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                227,
+                198,
+                384,
+                245
+            ],
+            "caption": "ture and results. # hidden units refer to the number of units per hidden layer ture and results. # hidden units refer to the number of units per hidden layer Figure 4: Log-likelihood results on TFD and CIFAR-10. Note that the Deep MFA number correspond to the best results obtained from (Tang et al., 2012) but are actually variational lower bound. Figure 4: Log-likelihood results on TFD and CIFAR-10. Note that the Deep MFA number correspond to the best results obtained from (Tang et al., 2012) but are actually variational lower bound.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>TFD</td>\n    <td>CIFAR-10</td>\n  </tr>\n  <tr>\n    <td>NICE</td>\n    <td>5514.71</td>\n    <td>5371.78</td>\n  </tr>\n  <tr>\n    <td>Deep MFA</td>\n    <td>5250</td>\n    <td>3622</td>\n  </tr>\n  <tr>\n    <td>GR BM</td>\n    <td>2413</td>\n    <td>2365</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        }
+    ]
+}

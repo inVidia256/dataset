@@ -1,0 +1,270 @@
+{
+    "total_count": 22,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                321,
+                263,
+                500,
+                294
+            ],
+            "content": "\\hat { w } _ { i } ^ { t } = \\mathcal { Q } ( w _ { i } ^ { t } ) = \\left\\{ \\begin{array} { l l } { { \\alpha \\cdot \\operatorname { s i g n } ( w _ { i } ^ { t } ) } } & { { | w _ { i } ^ { t } | \\geq \\Delta } } \\\\ { { 0 } } & { { | w _ { i } ^ { t } | < \\Delta } } \\end{array} \\right.",
+            "latex": "\\hat { w } _ { i } ^ { t } = \\mathcal { Q } ( w _ { i } ^ { t } ) = \\left\\{ \\begin{array} { l l } { { \\alpha \\cdot \\operatorname { s i g n } ( w _ { i } ^ { t } ) } } & { { | w _ { i } ^ { t } | \\geq \\Delta } } \\\\ { { 0 } } & { { | w _ { i } ^ { t } | < \\Delta } } \\end{array} \\right."
+        },
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                310,
+                446,
+                509,
+                471
+            ],
+            "content": "\\hat { w } _ { i } ^ { b } = \\mathcal { Q } ( w _ { i } ^ { b } ) = \\alpha \\cdot \\operatorname { s i g n } ( w _ { i } ^ { b } ) , ~ \\alpha = \\frac { 1 } { n } \\| \\mathbf { w } ^ { b } \\| _ { 1 } .",
+            "latex": "\\hat { w } _ { i } ^ { b } = \\mathcal { Q } ( w _ { i } ^ { b } ) = \\alpha \\cdot \\operatorname { s i g n } ( w _ { i } ^ { b } ) , ~ \\alpha = \\frac { 1 } { n } \\| \\mathbf { w } ^ { b } \\| _ { 1 } ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                82,
+                715,
+                267,
+                730
+            ],
+            "content": "\\tilde { \\mathbf { w } } _ { x } = \\mathbf { w } _ { x } + x \\cdot \\mathbf { 1 } _ { x } , \\quad \\tilde { \\mathbf { w } } _ { y } = \\mathbf { w } _ { y } + y \\cdot \\mathbf { 1 } _ { y } ,",
+            "latex": "\\tilde { \\mathbf { w } } _ { x } = \\mathbf { w } _ { x } + x \\cdot \\mathbf { 1 } _ { x } , \\quad \\tilde { \\mathbf { w } } _ { y } = \\mathbf { w } _ { y } + y \\cdot \\mathbf { 1 } _ { y } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                308,
+                575,
+                521,
+                643
+            ],
+            "content": "```latex\na = \\frac{\\sum_{i\\in\\mathcal{I}}|w_i^t| + \\sum_{j\\in\\mathcal{J}}|w_j^t| - \\sum_{k\\in\\mathcal{K}}|w_k^t|}{2\\sum_{i\\in\\mathcal{I}}|w_i^t|}, \\\\\nb = \\frac{\\frac{n}{|\\mathcal{I}|}\\sum_{i\\in\\mathcal{I}}|w_i^t| - \\sum_{i=1}^{n}|w_i^t|}{2(|\\mathcal{J}|+|\\mathcal{K}|)},\n```",
+            "latex": "```latex\na = \\frac{\\sum_{i\\in\\mathcal{I}}|w_i^t| + \\sum_{j\\in\\mathcal{J}}|w_j^t| - \\sum_{k\\in\\mathcal{K}}|w_k^t|}{2\\sum_{i\\in\\mathcal{I}}|w_i^t|}, \\\\\nb = \\frac{\\frac{n}{|\\mathcal{I}|}\\sum_{i\\in\\mathcal{I}}|w_i^t| - \\sum_{i=1}^{n}|w_i^t|}{2(|\\mathcal{J}|+|\\mathcal{K}|)},\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                99,
+                274,
+                262,
+                291
+            ],
+            "content": "\\ell ( \\hat { \\mathbf { w } } ) - \\ell ( \\mathbf { w } ) \\approx \\boldsymbol { \\epsilon } ^ { \\top } \\mathbf { H } \\boldsymbol { \\epsilon } \\leq \\lambda _ { \\operatorname* { m a x } } \\| \\boldsymbol { \\epsilon } \\| ^ { 2 } ,",
+            "latex": "\\ell ( \\hat { \\mathbf { w } } ) - \\ell ( \\mathbf { w } ) \\approx \\boldsymbol { \\epsilon } ^ { \\top } \\mathbf { H } \\boldsymbol { \\epsilon } \\leq \\lambda _ { \\operatorname* { m a x } } \\| \\boldsymbol { \\epsilon } \\| ^ { 2 } ,"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                337,
+                370,
+                499,
+                387
+            ],
+            "content": "\\mathbf { w } ^ { t } = \\mathbf { w } _ { 1 } ^ { b } + \\mathbf { w } _ { 2 } ^ { b } , \\quad \\hat { \\mathbf { w } } ^ { t } = \\hat { \\mathbf { w } } _ { 1 } ^ { b } + \\hat { \\mathbf { w } } _ { 2 } ^ { b } ~ .",
+            "latex": "\\mathbf { w } ^ { t } = \\mathbf { w } _ { 1 } ^ { b } + \\mathbf { w } _ { 2 } ^ { b } , \\quad \\hat { \\mathbf { w } } ^ { t } = \\hat { \\mathbf { w } } _ { 1 } ^ { b } + \\hat { \\mathbf { w } } _ { 2 } ^ { b } ~ ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                307,
+                444,
+                496,
+                533
+            ],
+            "content": "```latex\n\\begin{align*}\nw_{1,i}^b &= \\begin{cases} \na \\cdot w_i^t & \\text{if } \\hat{w}_i^t \\neq 0 \\\\\nb + w_i^t & \\text{if } \\hat{w}_i^t = 0, w_i^t > 0 \\\\\nb & \\text{otherwise}\n\\end{cases}, \\\\\nw_{2,i}^b &= \\begin{cases} \n(1-a) w_i^t & \\text{if } \\hat{w}_i^t \\neq 0 \\\\\n-b & \\text{if } \\hat{w}_i^t = 0, w_i^t > 0 \\\\\n-b + w_i^t & \\text{otherwise}\n\\end{cases}.\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\nw_{1,i}^b &= \\begin{cases} \na \\cdot w_i^t & \\text{if } \\hat{w}_i^t \\neq 0 \\\\\nb + w_i^t & \\text{if } \\hat{w}_i^t = 0, w_i^t > 0 \\\\\nb & \\text{otherwise}\n\\end{cases}, \\\\\nw_{2,i}^b &= \\begin{cases} \n(1-a) w_i^t & \\text{if } \\hat{w}_i^t \\neq 0 \\\\\n-b & \\text{if } \\hat{w}_i^t = 0, w_i^t > 0 \\\\\n-b + w_i^t & \\text{otherwise}\n\\end{cases}.\n\\end{align*}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                307,
+                489,
+                495,
+                533
+            ],
+            "content": "```latex\nw_{2,i}^{b} = \\begin{cases}\n(1-a)w_{i}^{t} & \\text{if } \\hat{w}_{i}^{t} \\neq 0 \\\\\n-b & \\text{if } \\hat{w}_{i}^{t} = 0, w_{i}^{t} > 0 \\\\\n-b + w_{i}^{t} & \\text{otherwise}\n\\end{cases}\n```",
+            "latex": "```latex\nw_{2,i}^{b} = \\begin{cases}\n(1-a)w_{i}^{t} & \\text{if } \\hat{w}_{i}^{t} \\neq 0 \\\\\n-b & \\text{if } \\hat{w}_{i}^{t} = 0, w_{i}^{t} > 0 \\\\\n-b + w_{i}^{t} & \\text{otherwise}\n\\end{cases}\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                307,
+                445,
+                495,
+                487
+            ],
+            "content": "```latex\nw_{1,i}^{b} = \\begin{cases}\na \\cdot w_{i}^{t} & \\text{if } \\hat{w}_{i}^{t} \\neq 0 \\\\\nb + w_{i}^{t} & \\text{if } \\hat{w}_{i}^{t} = 0, w_{i}^{t} > 0 \\\\\nb & \\text{otherwise}\n\\end{cases}\n```",
+            "latex": "```latex\nw_{1,i}^{b} = \\begin{cases}\na \\cdot w_{i}^{t} & \\text{if } \\hat{w}_{i}^{t} \\neq 0 \\\\\nb + w_{i}^{t} & \\text{if } \\hat{w}_{i}^{t} = 0, w_{i}^{t} > 0 \\\\\nb & \\text{otherwise}\n\\end{cases}\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                118,
+                434,
+                243,
+                449
+            ],
+            "content": "\\ell _ { i n t } = \\ell _ { e m b } + \\ell _ { m h a } + \\ell _ { f f n } .",
+            "latex": "\\ell _ { i n t } = \\ell _ { e m b } + \\ell _ { m h a } + \\ell _ { f f n } ."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                336,
+                404,
+                506,
+                439
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\begin{equation}\n\\max_{\\mathbf{s}} \\quad \\mathbf{u}^\\top \\mathbf{s}\n\\end{equation}\n\n\\begin{equation}\n\\text{s.t.} \\quad \\mathbf{c}^\\top \\mathbf{s} \\leq \\mathcal{C} - \\mathcal{C}_0, \\quad \\mathbf{s} \\in \\{0, 1\\}^Z,\n\\end{equation}\n```\n\nThis will produce the same mathematical expressions shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\begin{equation}\n\\max_{\\mathbf{s}} \\quad \\mathbf{u}^\\top \\mathbf{s}\n\\end{equation}\n\n\\begin{equation}\n\\text{s.t.} \\quad \\mathbf{c}^\\top \\mathbf{s} \\leq \\mathcal{C} - \\mathcal{C}_0, \\quad \\mathbf{s} \\in \\{0, 1\\}^Z,\n\\end{equation}\n```\n\nThis will produce the same mathematical expressions shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                136,
+                510,
+                224,
+                525
+            ],
+            "content": "\\ell _ { \\mathrm { p r e d } } = \\operatorname { S C E } ( \\hat { \\mathbf { y } } , \\mathbf { y } ) .",
+            "latex": "\\ell _ { \\mathrm { p r e d } } = \\operatorname { S C E } ( \\hat { \\mathbf { y } } , \\mathbf { y } ) ."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                136,
+                510,
+                224,
+                525
+            ],
+            "content": "\\ell _ { \\mathrm { p r e d } } = \\operatorname { S C E } ( \\hat { \\mathbf { y } } , \\mathbf { y } ) .",
+            "latex": "\\ell _ { \\mathrm { p r e d } } = \\operatorname { S C E } ( \\hat { \\mathbf { y } } , \\mathbf { y } ) ."
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                71,
+                334,
+                289,
+                401
+            ],
+            "content": "```latex\n\\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |a w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t + b| + \\sum_{k \\in \\mathcal{K}} |b| \\right]\n= \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |(1-a) w_i^t| + \\sum_{j \\in \\mathcal{J}} |-b| + \\sum_{k \\in \\mathcal{K}} |w_k^t - b| \\right].\n```",
+            "latex": "```latex\n\\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |a w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t + b| + \\sum_{k \\in \\mathcal{K}} |b| \\right]\n= \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |(1-a) w_i^t| + \\sum_{j \\in \\mathcal{J}} |-b| + \\sum_{k \\in \\mathcal{K}} |w_k^t - b| \\right].\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                81,
+                489,
+                279,
+                523
+            ],
+            "content": "a = \\frac { \\sum _ { i \\in \\mathcal { I } } | w _ { i } ^ { t } | + \\sum _ { j \\in \\mathcal { J } } | w _ { j } ^ { t } | - \\sum _ { k \\in \\mathcal { K } } | w _ { k } ^ { t } | } { 2 \\sum _ { i \\in \\mathcal { I } } | w _ { i } ^ { t } | } .",
+            "latex": "a = \\frac { \\sum _ { i \\in \\mathcal { I } } | w _ { i } ^ { t } | + \\sum _ { j \\in \\mathcal { J } } | w _ { j } ^ { t } | - \\sum _ { k \\in \\mathcal { K } } | w _ { k } ^ { t } | } { 2 \\sum _ { i \\in \\mathcal { I } } | w _ { i } ^ { t } | } ."
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                342,
+                82,
+                488,
+                116
+            ],
+            "content": "b = \\frac { \\frac { n } { | \\mathcal { I } | } \\sum _ { i \\in \\mathcal { I } } | w _ { i } ^ { t } | - \\sum _ { i = 1 } ^ { n } | w _ { i } ^ { t } | } { 2 ( | \\mathcal { J } | + | \\mathcal { K } | ) } ,",
+            "latex": "b = \\frac { \\frac { n } { | \\mathcal { I } | } \\sum _ { i \\in \\mathcal { I } } | w _ { i } ^ { t } | - \\sum _ { i = 1 } ^ { n } | w _ { i } ^ { t } | } { 2 ( | \\mathcal { J } | + | \\mathcal { K } | ) } ,"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                70,
+                437,
+                291,
+                467
+            ],
+            "content": "```latex\na \\sum_{i \\in \\mathcal{I}} |w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t| = (1-a) \\sum_{i \\in \\mathcal{I}} |w_i^t| + \\sum_{k \\in \\mathcal{K}} |w_k|,\n```",
+            "latex": "```latex\na \\sum_{i \\in \\mathcal{I}} |w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t| = (1-a) \\sum_{i \\in \\mathcal{I}} |w_i^t| + \\sum_{k \\in \\mathcal{K}} |w_k|,\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                72,
+                560,
+                289,
+                763
+            ],
+            "content": "```latex\n\\begin{align*}\n&\\frac{1}{|\\mathcal{I}|} \\sum_{i \\in \\mathcal{I}} |w_i^t| = \\alpha_1 + \\alpha_2 \\\\\n&= \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |a w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t + b| + \\sum_{k \\in \\mathcal{K}} |b| \\right] \\\\\n&+ \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |(1-a) w_i^t| + \\sum_{j \\in \\mathcal{J}} |-b| + \\sum_{k \\in \\mathcal{K}} |w_k^t - b| \\right] \\\\\n&= \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t| + \\sum_{k \\in \\mathcal{K}} |w_k^t| \\right] \\\\\n&+ 2 \\sum_{j \\in \\mathcal{J}} |b| + 2 \\sum_{k \\in \\mathcal{K}} |b| \\\\\n&= \\frac{1}{n} \\left[ \\sum_{i=1}^{n} |w_i^t| + 2 (|\\mathcal{J}| + |\\mathcal{K}|) \\cdot b \\right].\n\\end{align*}\n```",
+            "latex": "```latex\n\\begin{align*}\n&\\frac{1}{|\\mathcal{I}|} \\sum_{i \\in \\mathcal{I}} |w_i^t| = \\alpha_1 + \\alpha_2 \\\\\n&= \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |a w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t + b| + \\sum_{k \\in \\mathcal{K}} |b| \\right] \\\\\n&+ \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |(1-a) w_i^t| + \\sum_{j \\in \\mathcal{J}} |-b| + \\sum_{k \\in \\mathcal{K}} |w_k^t - b| \\right] \\\\\n&= \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |w_i^t| + \\sum_{j \\in \\mathcal{J}} |w_j^t| + \\sum_{k \\in \\mathcal{K}} |w_k^t| \\right] \\\\\n&+ 2 \\sum_{j \\in \\mathcal{J}} |b| + 2 \\sum_{k \\in \\mathcal{K}} |b| \\\\\n&= \\frac{1}{n} \\left[ \\sum_{i=1}^{n} |w_i^t| + 2 (|\\mathcal{J}| + |\\mathcal{K}|) \\cdot b \\right].\n\\end{align*}\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                70,
+                260,
+                290,
+                293
+            ],
+            "content": "```latex\n\\alpha_2 = \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |(1-a)w_i^t| + \\sum_{j \\in \\mathcal{J}} |-b| + \\sum_{k \\in \\mathcal{K}} |w_k^t - b| \\right].\n```",
+            "latex": "```latex\n\\alpha_2 = \\frac{1}{n} \\left[ \\sum_{i \\in \\mathcal{I}} |(1-a)w_i^t| + \\sum_{j \\in \\mathcal{J}} |-b| + \\sum_{k \\in \\mathcal{K}} |w_k^t - b| \\right].\n```"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                79,
+                167,
+                281,
+                199
+            ],
+            "content": "\\alpha _ { 1 } = \\frac { 1 } { n } [ \\sum _ { i \\in { \\mathcal I } } | a w _ { i } ^ { t } | + \\sum _ { i \\in { \\mathcal J } } | w _ { j } ^ { t } + b | + \\sum _ { i \\in { \\mathcal K } } | b | ] .",
+            "latex": "\\alpha _ { 1 } = \\frac { 1 } { n } [ \\sum _ { i \\in { \\mathcal I } } | a w _ { i } ^ { t } | + \\sum _ { i \\in { \\mathcal J } } | w _ { j } ^ { t } + b | + \\sum _ { i \\in { \\mathcal K } } | b | ] ."
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                133,
+                222,
+                228,
+                240
+            ],
+            "content": "{ \\hat { w } } _ { 2 , i } ^ { b } = \\alpha _ { 2 } \\mathrm { s i g n } ( w _ { 2 , i } ^ { b } ) ,",
+            "latex": "{ \\hat { w } } _ { 2 , i } ^ { b } = \\alpha _ { 2 } \\mathrm { s i g n } ( w _ { 2 , i } ^ { b } ) ,"
+        },
+        {
+            "page": 12,
+            "type": "formula",
+            "bbox": [
+                133,
+                129,
+                228,
+                146
+            ],
+            "content": "{ \\hat { w } } _ { 1 , i } ^ { b } = \\alpha _ { 1 } \\mathrm { s i g n } ( w _ { 1 , i } ^ { b } ) ,",
+            "latex": "{ \\hat { w } } _ { 1 , i } ^ { b } = \\alpha _ { 1 } \\mathrm { s i g n } ( w _ { 1 , i } ^ { b } ) ,"
+        }
+    ]
+}

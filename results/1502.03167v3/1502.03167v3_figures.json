@@ -1,0 +1,34 @@
+{
+    "total_count": 2,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                72,
+                35,
+                298,
+                99
+            ],
+            "caption": "Figure 1: (a) The test accuracy of the MNIST network trained with and without Batch Normalization, vs. the number of training steps. Batch Normalization helps the network train faster and achieve higher accuracy. (b, c) The evolution of input distributions to a typical sigmoid, over the course of training, shown as {15, 50, 85}th percentiles. Batch Normalization makes the distribution more stable and reduces the internal covariate shift.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                75,
+                34,
+                301,
+                164
+            ],
+            "caption": "Figure 2: Single crop validation accuracy of Inception and its batch-normalized variants, vs. the number of training steps.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page007.png"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "total_count": 4,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                136,
+                71,
+                465,
+                174
+            ],
+            "caption": "Figure 1: Multiple optimal solutions of TSP highlighted in tree search. For the given instance of 5-node TSP problem, there exists only one unique optimal solution (LEFT). But when this solution is represented as a sequence of nodes, multiple representations exist (RIGHT).",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "figure",
+            "bbox": [
+                115,
+                72,
+                490,
+                169
+            ],
+            "caption": "Figure 2: (a) Common method for generating a single solution trajectory (τ) based on START token scheme. (b) POMO method for multiple trajectory {τ^1, τ^2, ..., τ^N} generation in parallel with a different starting node for each trajectory.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                113,
+                81,
+                493,
+                202
+            ],
+            "caption": "Figure 3: Learning curves for TSP50 and TSP100 of REINFORCE with a greedy rollout baseline [10] (blue) and those of POMO (orange, green, and red) made by three different inference methods on the same neural net (AM). After each training epoch, we generate 10,000 random instances on the fly and use them as a validation set.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page007.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                345,
+                320,
+                496,
+                402
+            ],
+            "caption": "Figure 4: An optimal solution of a 20-node CVRP plotted as a graph. For an agent that makes selections in the counter-clock-wise direction3, there are only three sequence representations of the optimal solution available: τ1, τ2, and τ3. Figure 4: An optimal solution of a 20-node CVRP plotted as a graph. For an agent that makes selections in the counter-clock-wise direction3, there are only three sequence representations of the optimal solution available: τ1, τ2, and τ3.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page008.png"
+        }
+    ]
+}

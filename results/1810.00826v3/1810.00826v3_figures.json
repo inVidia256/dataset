@@ -1,0 +1,62 @@
+{
+    "total_count": 4,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "figure",
+            "bbox": [
+                126,
+                58,
+                483,
+                146
+            ],
+            "caption": "Figure 1: An overview of our theoretical framework. Middle panel: rooted subtree structures (at the blue node) that the WL test uses to distinguish different graphs. Right panel: if a GNN’s aggregation function captures the full multiset of node neighbors, the GNN can capture the rooted subtrees in a recursive manner and be as powerful as the WL test.",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                136,
+                70,
+                474,
+                148
+            ],
+            "caption": "Figure 2: Ranking by expressive power for sum, mean and max aggregators over a multiset. Left panel shows the input multiset, i.e., the network neighborhood to be aggregated. The next three panels illustrate the aspects of the multiset a given aggregator is able to capture: sum captures the full multiset, mean captures the proportion/distribution of elements of a given type, and the max aggregator ignores multiplicities (reduces the multiset to a simple set). Figure 2: Ranking by expressive power for sum, mean and max aggregators over a multiset. Left panel shows the input multiset, i.e., the network neighborhood to be aggregated. The next three panels illustrate the aspects of the multiset a given aggregator is able to capture: sum captures the full multiset, mean captures the proportion/distribution of elements of a given type, and the max aggregator ignores multiplicities (reduces the multiset to a simple set).",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page006.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                110,
+                224,
+                500,
+                304
+            ],
+            "caption": "Figure 3: Examples of graph structures that mean and max aggregators fail to distinguish. Between the two graphs, nodes v and v′ get the same embedding even though their corresponding graph structures differ. Figure 2 gives reasoning about how different aggregators “compress” different multisets and thus fail to distinguish them.",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "figure",
+            "bbox": [
+                108,
+                68,
+                491,
+                228
+            ],
+            "caption": "Figure 4: Training set performance of GINs, less powerful GNN variants, and the WL subtree kernel.",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page009.png"
+        }
+    ]
+}

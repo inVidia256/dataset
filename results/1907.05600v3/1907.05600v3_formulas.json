@@ -1,0 +1,102 @@
+{
+    "total_count": 8,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                225,
+                606,
+                387,
+                632
+            ],
+            "content": "```latex\n\\mathbb{E}_{p_{\\text{data}}(\\mathbf{x})}\\left[\\operatorname{tr}(\\nabla_{\\mathbf{x}}\\mathbf{s}_{\\boldsymbol{\\theta}}(\\mathbf{x}))+\\frac{1}{2}\\|\\mathbf{s}_{\\boldsymbol{\\theta}}(\\mathbf{x})\\|_2^2\\right],\n```",
+            "latex": "```latex\n\\mathbb{E}_{p_{\\text{data}}(\\mathbf{x})}\\left[\\operatorname{tr}(\\nabla_{\\mathbf{x}}\\mathbf{s}_{\\boldsymbol{\\theta}}(\\mathbf{x}))+\\frac{1}{2}\\|\\mathbf{s}_{\\boldsymbol{\\theta}}(\\mathbf{x})\\|_2^2\\right],\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                223,
+                356,
+                388,
+                377
+            ],
+            "content": "```latex\n\\tilde{\\mathbf{x}}_{t} = \\tilde{\\mathbf{x}}_{t-1} + \\frac{\\epsilon}{2} \\nabla_{\\mathbf{x}} \\log p(\\tilde{\\mathbf{x}}_{t-1}) + \\sqrt{\\epsilon} \\, \\mathbf{z}_{t},\n```",
+            "latex": "```latex\n\\tilde{\\mathbf{x}}_{t} = \\tilde{\\mathbf{x}}_{t-1} + \\frac{\\epsilon}{2} \\nabla_{\\mathbf{x}} \\log p(\\tilde{\\mathbf{x}}_{t-1}) + \\sqrt{\\epsilon} \\, \\mathbf{z}_{t},\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                222,
+                200,
+                389,
+                227
+            ],
+            "content": "```latex\n\\mathbb{E}_{p_{\\nu}} \\mathbb{E}_{p_{\\text{data}}} \\left[ \\mathbf{v}^\\top \\nabla_\\mathbf{x} s_\\theta(\\mathbf{x}) \\mathbf{v} + \\frac{1}{2} \\| s_\\theta(\\mathbf{x}) \\|_2^2 \\right],\n```",
+            "latex": "```latex\n\\mathbb{E}_{p_{\\nu}} \\mathbb{E}_{p_{\\text{data}}} \\left[ \\mathbf{v}^\\top \\nabla_\\mathbf{x} s_\\theta(\\mathbf{x}) \\mathbf{v} + \\frac{1}{2} \\| s_\\theta(\\mathbf{x}) \\|_2^2 \\right],\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                209,
+                103,
+                402,
+                124
+            ],
+            "content": "```latex\n\\frac{1}{2} \\mathbb{E}_{q_\\sigma(\\tilde{\\mathbf{x}}|\\mathbf{x})p_{\\text{data}}(\\mathbf{x})} \\left[ \\| \\mathbf{s}_{\\boldsymbol{\\theta}}(\\tilde{\\mathbf{x}}) - \\nabla_{\\tilde{\\mathbf{x}}} \\log q_\\sigma(\\tilde{\\mathbf{x}} \\mid \\mathbf{x}) \\|_2^2 \\right].\n```",
+            "latex": "```latex\n\\frac{1}{2} \\mathbb{E}_{q_\\sigma(\\tilde{\\mathbf{x}}|\\mathbf{x})p_{\\text{data}}(\\mathbf{x})} \\left[ \\| \\mathbf{s}_{\\boldsymbol{\\theta}}(\\tilde{\\mathbf{x}}) - \\nabla_{\\tilde{\\mathbf{x}}} \\log q_\\sigma(\\tilde{\\mathbf{x}} \\mid \\mathbf{x}) \\|_2^2 \\right].\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                227,
+                240,
+                384,
+                272
+            ],
+            "content": "{ \\mathcal { L } } ( \\theta ; \\{ \\sigma _ { i } \\} _ { i = 1 } ^ { L } ) \\triangleq { \\frac { 1 } { L } } \\sum _ { i = 1 } ^ { L } \\lambda ( \\sigma _ { i } ) \\ell ( \\theta ; \\sigma _ { i } ) ,",
+            "latex": "{ \\mathcal { L } } ( \\theta ; \\{ \\sigma _ { i } \\} _ { i = 1 } ^ { L } ) \\triangleq { \\frac { 1 } { L } } \\sum _ { i = 1 } ^ { L } \\lambda ( \\sigma _ { i } ) \\ell ( \\theta ; \\sigma _ { i } ) ,"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                185,
+                188,
+                424,
+                217
+            ],
+            "content": "```latex\n\\ell(\\boldsymbol{\\theta}; \\sigma) \\triangleq \\frac{1}{2} \\mathbb{E}_{p_{\\text{data}}(\\mathbf{x})} \\mathbb{E}_{\\widetilde{\\mathbf{x}} \\sim \\mathcal{N}(\\mathbf{x}, \\sigma^2 I)} \\left[ \\left\\| \\mathbf{s}_{\\boldsymbol{\\theta}}(\\widetilde{\\mathbf{x}}, \\sigma) + \\frac{\\widetilde{\\mathbf{x}} - \\mathbf{x}}{\\sigma^2} \\right\\|^2_2 \\right].\n```",
+            "latex": "```latex\n\\ell(\\boldsymbol{\\theta}; \\sigma) \\triangleq \\frac{1}{2} \\mathbb{E}_{p_{\\text{data}}(\\mathbf{x})} \\mathbb{E}_{\\widetilde{\\mathbf{x}} \\sim \\mathcal{N}(\\mathbf{x}, \\sigma^2 I)} \\left[ \\left\\| \\mathbf{s}_{\\boldsymbol{\\theta}}(\\widetilde{\\mathbf{x}}, \\sigma) + \\frac{\\widetilde{\\mathbf{x}} - \\mathbf{x}}{\\sigma^2} \\right\\|^2_2 \\right].\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                206,
+                371,
+                404,
+                394
+            ],
+            "content": "```latex\n\\mathbf{z}_k = \\gamma[i,k] \\frac{\\mathbf{x}_k - \\mu_k}{s_k} + \\beta[i,k] + \\alpha[i,k] \\frac{\\mu_k - m}{v}.\n```",
+            "latex": "```latex\n\\mathbf{z}_k = \\gamma[i,k] \\frac{\\mathbf{x}_k - \\mu_k}{s_k} + \\beta[i,k] + \\alpha[i,k] \\frac{\\mu_k - m}{v}.\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                242,
+                255,
+                369,
+                278
+            ],
+            "content": "\\mathbf { z } _ { k } = \\gamma [ i , k ] { \\frac { \\mathbf { x } _ { k } - \\mu _ { k } } { s _ { k } } } + \\beta [ i , k ] ,",
+            "latex": "\\mathbf { z } _ { k } = \\gamma [ i , k ] { \\frac { \\mathbf { x } _ { k } - \\mu _ { k } } { s _ { k } } } + \\beta [ i , k ] ,"
+        }
+    ]
+}

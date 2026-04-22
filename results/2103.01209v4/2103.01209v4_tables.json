@@ -1,0 +1,86 @@
+{
+    "total_count": 5,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                117,
+                111,
+                477,
+                250
+            ],
+            "caption": "Table 1. Comparison between the GANformer and competing methods for image synthesis. We evaluate the models along commonly used metrics of FID, Precision and Recall scores. FID is well-received as a reliable indication of image fidelity and diversity, while Precision and Recall measure the similarity between the generated and natural distributions. Metrics are computed over 50k samples. Table 1. Comparison between the GANformer and competing methods for image synthesis. We evaluate the models along commonly used metrics of FID, Precision and Recall scores. FID is well-received as a reliable indication of image fidelity and diversity, while Precision and Recall measure the similarity between the generated and natural distributions. Metrics are computed over 50k samples.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>CLEVR</td>\n    <td>LSUN-Bedrooms</td>\n  </tr>\n  <tr>\n    <td>FID↓</td>\n    <td>IS↑</td>\n    <td>Precision↑</td>\n    <td>Recall↑</td>\n    <td>FID↓</td>\n    <td>IS↑</td>\n    <td>Precision↑</td>\n    <td>Recall↑</td>\n  </tr>\n  <tr>\n    <td>GAN</td>\n    <td>25.02</td>\n    <td>2.17</td>\n    <td>21.77</td>\n    <td>16.76</td>\n    <td>12.16</td>\n    <td>2.66</td>\n    <td>52.17</td>\n    <td>13.63</td>\n  </tr>\n  <tr>\n    <td>k-GAN</td>\n    <td>28.29</td>\n    <td>2.21</td>\n    <td>22.93</td>\n    <td>18.43</td>\n    <td>69.90</td>\n    <td>2.41</td>\n    <td>28.71</td>\n    <td>3.45</td>\n  </tr>\n  <tr>\n    <td>SAGAN</td>\n    <td>26.04</td>\n    <td>2.17</td>\n    <td>30.09</td>\n    <td>15.16</td>\n    <td>14.06</td>\n    <td>2.70</td>\n    <td>54.82</td>\n    <td>7.26</td>\n  </tr>\n  <tr>\n    <td>StyleGAN2</td>\n    <td>16.05</td>\n    <td>2.15</td>\n    <td>28.41</td>\n    <td>23.22</td>\n    <td>11.53</td>\n    <td>2.79</td>\n    <td>51.69</td>\n    <td>19.42</td>\n  </tr>\n  <tr>\n    <td>GAN formers</td>\n    <td>10.26</td>\n    <td>2.46</td>\n    <td>38.47</td>\n    <td>37.76</td>\n    <td>8.56</td>\n    <td>2.69</td>\n    <td>55.52</td>\n    <td>22.89</td>\n  </tr>\n  <tr>\n    <td>GAN formerd</td>\n    <td>9.17</td>\n    <td>2.36</td>\n    <td>47.55</td>\n    <td>66.63</td>\n    <td>6.51</td>\n    <td>2.67</td>\n    <td>57.41</td>\n    <td>29.71</td>\n  </tr>\n  <tr>\n    <td>FFHQ</td>\n    <td>Cityscapes</td>\n  </tr>\n  <tr>\n    <td>Model</td>\n    <td>FID↓</td>\n    <td>IS↑</td>\n    <td>Precision↑</td>\n    <td>Recall↑</td>\n    <td>FID↓</td>\n    <td>IS↑</td>\n    <td>Precision↑</td>\n    <td>Recall↑</td>\n  </tr>\n  <tr>\n    <td>GAN</td>\n    <td>13.18</td>\n    <td>4.30</td>\n    <td>67.15</td>\n    <td>17.64</td>\n    <td>11.57</td>\n    <td>1.63</td>\n    <td>61.09</td>\n    <td>15.30</td>\n  </tr>\n  <tr>\n    <td>k-GAN</td>\n    <td>61.14</td>\n    <td>4.00</td>\n    <td>50.51</td>\n    <td>0.49</td>\n    <td>51.08</td>\n    <td>1.66</td>\n    <td>18.80</td>\n    <td>1.73</td>\n  </tr>\n  <tr>\n    <td>SAGAN</td>\n    <td>16.21</td>\n    <td>4.26</td>\n    <td>64.84</td>\n    <td>12.26</td>\n    <td>12.81</td>\n    <td>1.68</td>\n    <td>43.48</td>\n    <td>7.97</td>\n  </tr>\n  <tr>\n    <td>StyleGAN2</td>\n    <td>9.24</td>\n    <td>4.33</td>\n    <td>68.61</td>\n    <td>25.45</td>\n    <td>8.35</td>\n    <td>1.70</td>\n    <td>59.35</td>\n    <td>27.82</td>\n  </tr>\n  <tr>\n    <td>GAN formers</td>\n    <td>8.12</td>\n    <td>4.46</td>\n    <td>68.94</td>\n    <td>10.14</td>\n    <td>14.23</td>\n    <td>1.67</td>\n    <td>64.12</td>\n    <td>2.03</td>\n  </tr>\n  <tr>\n    <td>GAN formerd</td>\n    <td>7.42</td>\n    <td>4.41</td>\n    <td>68.77</td>\n    <td>5.76</td>\n    <td>5.76</td>\n    <td>1.69</td>\n    <td>48.06</td>\n    <td>33.65</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page008.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                55,
+                286,
+                290,
+                360
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>GAN</td>\n    <td>Style GAN</td>\n    <td>GAN formers</td>\n    <td>GAN formers</td>\n  </tr>\n  <tr>\n    <td>Object Area</td>\n    <td>0.038</td>\n    <td>0.035</td>\n    <td>0.045</td>\n    <td>0.068</td>\n  </tr>\n  <tr>\n    <td>Object Number</td>\n    <td>2.378</td>\n    <td>1.622</td>\n    <td>2.142</td>\n    <td>2.825</td>\n  </tr>\n  <tr>\n    <td>Co-occurrence</td>\n    <td>13.532</td>\n    <td>9.177</td>\n    <td>9.506</td>\n    <td>13.020</td>\n  </tr>\n  <tr>\n    <td>Shape</td>\n    <td>1.334</td>\n    <td>0.643</td>\n    <td>1.856</td>\n    <td>2.815</td>\n  </tr>\n  <tr>\n    <td>Size</td>\n    <td>0.256</td>\n    <td>0.066</td>\n    <td>0.393</td>\n    <td>0.427</td>\n  </tr>\n  <tr>\n    <td>Material</td>\n    <td>0.108</td>\n    <td>0.322</td>\n    <td>1.573</td>\n    <td>2.887</td>\n  </tr>\n  <tr>\n    <td>Color</td>\n    <td>1.011</td>\n    <td>1.402</td>\n    <td>1.519</td>\n    <td>3.189</td>\n  </tr>\n  <tr>\n    <td>Class</td>\n    <td>6.435</td>\n    <td>4.571</td>\n    <td>5.315</td>\n    <td>16.742</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page009.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                307,
+                311,
+                543,
+                361
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>GAN</td>\n    <td>Style GAN</td>\n    <td>GAN formers</td>\n    <td>GAN formers</td>\n  </tr>\n  <tr>\n    <td>Disentanglement</td>\n    <td>0.126</td>\n    <td>0.208</td>\n    <td>0.556</td>\n    <td>0.768</td>\n  </tr>\n  <tr>\n    <td>Modularity</td>\n    <td>0.631</td>\n    <td>0.703</td>\n    <td>0.891</td>\n    <td>0.952</td>\n  </tr>\n  <tr>\n    <td>Completeness</td>\n    <td>0.071</td>\n    <td>0.124</td>\n    <td>0.195</td>\n    <td>0.270</td>\n  </tr>\n  <tr>\n    <td>Informativeness</td>\n    <td>0.583</td>\n    <td>0.685</td>\n    <td>0.899</td>\n    <td>0.972</td>\n  </tr>\n  <tr>\n    <td>Informativeness'</td>\n    <td>0.434</td>\n    <td>0.332</td>\n    <td>0.848</td>\n    <td>0.963</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                314,
+                505,
+                534,
+                548
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>FFHQ</td>\n    <td>CLEVR</td>\n    <td>Cityscapes</td>\n    <td>Bedroom</td>\n  </tr>\n  <tr>\n    <td># Latent var</td>\n    <td>8</td>\n    <td>16</td>\n    <td>16</td>\n    <td>16</td>\n  </tr>\n  <tr>\n    <td>Latent var dim</td>\n    <td>16</td>\n    <td>32</td>\n    <td>32</td>\n    <td>32</td>\n  </tr>\n  <tr>\n    <td>Latent overall dim</td>\n    <td>128</td>\n    <td>512</td>\n    <td>512</td>\n    <td>512</td>\n  </tr>\n  <tr>\n    <td>R1 reg weight(γ)</td>\n    <td>10</td>\n    <td>40</td>\n    <td>20</td>\n    <td>100</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page015.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                350,
+                613,
+                497,
+                671
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 5. Model size for the GANformer and competing approaches, computed given 16 latent variables and an overall latent dimension of 512. All models are comparable in size.\" The text content from the image is as follows:\n\n\"Table 5. Model size for the GANformer and competing approaches, computed given 16 latent variables and an overall latent dimension of 512. All models are comparable in size.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>#GParams</td>\n    <td>#DParams</td>\n  </tr>\n  <tr>\n    <td>GAN</td>\n    <td>34M</td>\n    <td>29M</td>\n  </tr>\n  <tr>\n    <td>Style GAN 2</td>\n    <td>35M</td>\n    <td>29M</td>\n  </tr>\n  <tr>\n    <td>k-GAN</td>\n    <td>34M</td>\n    <td>29M</td>\n  </tr>\n  <tr>\n    <td>SAGAN</td>\n    <td>38M</td>\n    <td>29M</td>\n  </tr>\n  <tr>\n    <td>GAN former s</td>\n    <td>36M</td>\n    <td>29M</td>\n  </tr>\n  <tr>\n    <td>GAN former d</td>\n    <td>36M</td>\n    <td>29M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page015.png"
+        }
+    ]
+}

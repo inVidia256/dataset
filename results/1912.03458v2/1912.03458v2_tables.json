@@ -1,0 +1,198 @@
+{
+    "total_count": 12,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                79,
+                71,
+                256,
+                132
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1. Mult-Adds of static convolution and dynamic convolution in MobileNetV2 with four different width multipliers (×1.0, ×0.75, ×0.5, and ×0.35).\" The text content from the image is as follows:\n\n\"Table 1. Mult-Adds of static convolution and dynamic convolution in MobileNetV2 with four different width multipliers (×1.0, ×0.75, ×0.5, and ×0.35).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>x1.0</td>\n    <td>x0.75</td>\n    <td>x0.5</td>\n    <td>x0.35</td>\n  </tr>\n  <tr>\n    <td>static</td>\n    <td>300.0M</td>\n    <td>209.0M</td>\n    <td>97.0M</td>\n    <td>59.2M</td>\n  </tr>\n  <tr>\n    <td>K=2</td>\n    <td>309.5M</td>\n    <td>215.6M</td>\n    <td>100.5M</td>\n    <td>61.5M</td>\n  </tr>\n  <tr>\n    <td>K=4</td>\n    <td>312.9M</td>\n    <td>217.5M</td>\n    <td>101.4M</td>\n    <td>62.0M</td>\n  </tr>\n  <tr>\n    <td>K=6</td>\n    <td>316.3M</td>\n    <td>219.5M</td>\n    <td>102.3M</td>\n    <td>62.5M</td>\n  </tr>\n  <tr>\n    <td>K=8</td>\n    <td>319.8M</td>\n    <td>221.4M</td>\n    <td>103.2M</td>\n    <td>62.9M</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page004.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                49,
+                252,
+                291,
+                304
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 2. Comparison between DY-CNNs and the concurrent work (CondConv [37]) on ImageNet classification using MobileNetV2 ×1.0 and ×0.5.\" The text content from the image is as follows:\n\n\"Table 2. Comparison between DY-CNNs and the concurrent work (CondConv [37]) on ImageNet classification using MobileNetV2 ×1.0 and ×0.5.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>Method</td>\n    <td>#Kernels</td>\n    <td>#Param</td>\n    <td>MAdds</td>\n    <td>Top-1</td>\n  </tr>\n  <tr>\n    <td>x 1.0</td>\n    <td>Cond Conv[37]</td>\n    <td>8</td>\n    <td>27.5M</td>\n    <td>329M</td>\n    <td>74.6</td>\n  </tr>\n  <tr>\n    <td>DY-CNNs(ours)</td>\n    <td>4</td>\n    <td>11.1M</td>\n    <td>312.9M</td>\n    <td>75.2</td>\n  </tr>\n  <tr>\n    <td>x0.5</td>\n    <td>Cond Conv[37]</td>\n    <td>8</td>\n    <td>15.5M</td>\n    <td>113M</td>\n    <td>68.4</td>\n  </tr>\n  <tr>\n    <td>DY-CNNs(ours)</td>\n    <td>4</td>\n    <td>4M</td>\n    <td>101.4M</td>\n    <td>69.9</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page005.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                316,
+                70,
+                537,
+                143
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Kernel Aggregation</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>attention：∑π(x)Wk</td>\n    <td>69.4</td>\n    <td>88.6</td>\n  </tr>\n  <tr>\n    <td>average：∑Wk/K</td>\n    <td>36.0</td>\n    <td>61.5</td>\n  </tr>\n  <tr>\n    <td>max：Warg maxk(πk)</td>\n    <td>0.1</td>\n    <td>0.5</td>\n  </tr>\n  <tr>\n    <td>shuffle per image：∑πj(x)Wk，j￥k</td>\n    <td>14.8</td>\n    <td>30.5</td>\n  </tr>\n  <tr>\n    <td>shuffle across images：(∑πk(x)Wk)(x')</td>\n    <td>27.3</td>\n    <td>48.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                74,
+                255,
+                261,
+                373
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>112</td>\n    <td>Input Resolution</td>\n    <td>56</td>\n    <td>28</td>\n    <td>14</td>\n    <td>7</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td></td>\n    <td>57.3</td>\n    <td>79.9</td>\n  </tr>\n  <tr>\n    <td>-</td>\n    <td>-</td>\n    <td>-</td>\n    <td></td>\n    <td></td>\n    <td>67.0</td>\n    <td>87.2</td>\n  </tr>\n  <tr>\n    <td>-</td>\n    <td>-</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>67.5</td>\n    <td>87.4</td>\n  </tr>\n  <tr>\n    <td>-</td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>69.1</td>\n    <td>88.4</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>69.4</td>\n    <td>88.6</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>50.9</td>\n    <td>76.2</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>42.5</td>\n    <td>68.4</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>41.2</td>\n    <td>67.0</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>37.9</td>\n    <td>63.5</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>36.0</td>\n    <td>61.5</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                314,
+                255,
+                538,
+                350
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>C1</td>\n    <td>C2</td>\n    <td>C3</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2</td>\n    <td>1</td>\n    <td>1</td>\n    <td>1</td>\n    <td>65.4</td>\n    <td>86.4</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>4</td>\n    <td>1</td>\n    <td>1</td>\n    <td>67.4(2.0)</td>\n    <td>87.5(1.1)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>1</td>\n    <td>4</td>\n    <td>1</td>\n    <td>67.4(2.0)</td>\n    <td>87.3(0.9)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>1</td>\n    <td>1</td>\n    <td>4</td>\n    <td>68.2(2.8)</td>\n    <td>87.9(1.5)</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2</td>\n    <td>4</td>\n    <td>1</td>\n    <td>4</td>\n    <td>68.7(3.3)</td>\n    <td>88.0(1.6)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>1</td>\n    <td>4</td>\n    <td>4</td>\n    <td>68.4(3.0)</td>\n    <td>87.9(1.5)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>4</td>\n    <td>4</td>\n    <td>1</td>\n    <td>68.6(3.2)</td>\n    <td>88.0(1.6)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>4</td>\n    <td>4</td>\n    <td>4</td>\n    <td>69.4(4.0)</td>\n    <td>88.6(2.2)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                55,
+                71,
+                280,
+                165
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>Temperature</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2</td>\n    <td></td>\n    <td>65.4</td>\n    <td>86.4</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2</td>\n    <td>T=1</td>\n    <td>64.8(-0.6)</td>\n    <td>85.5(-0.9)</td>\n  </tr>\n  <tr>\n    <td>T=5</td>\n    <td>65.7(+0.3)</td>\n    <td>85.8(-0.6)</td>\n  </tr>\n  <tr>\n    <td>T=10</td>\n    <td>67.5(+2.1)</td>\n    <td>87.4(+1.0)</td>\n  </tr>\n  <tr>\n    <td>T=20</td>\n    <td>69.4(+4.0)</td>\n    <td>88.5(+2.1)</td>\n  </tr>\n  <tr>\n    <td>T=30</td>\n    <td>69.4(+4.0)</td>\n    <td>88.6(+2.2)</td>\n  </tr>\n  <tr>\n    <td>T=40</td>\n    <td>69.2(+3.8)</td>\n    <td>88.4(+2.0)</td>\n  </tr>\n  <tr>\n    <td>T annealing</td>\n    <td>69.9(+4.5)</td>\n    <td>89.0(+2.6)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                61,
+                227,
+                275,
+                282
+            ],
+            "caption": "Table 6. Softmax Temperature: large temperature in early training epochs is important. Temperature annealing refers to reducing τ from 30 to 1 linearly in the first 10 epochs. The numbers in brackets denote the performance improvement over the baseline. Table 6. Softmax Temperature: large temperature in early training epochs is important. Temperature annealing refers to reducing τ from 30 to 1 linearly in the first 10 epochs. The numbers in brackets denote the performance improvement over the baseline. The text content from the image is as follows:\n\n\"Table 7. Dynamic convolution vs Squeeze-and-Excitation (SE [13]) on MobileNetV3-Small. The numbers in brackets denote the performance improvement over the baseline. Compared with static convolution with SE, dynamic convolution without SE gains 2.2% top-1 accuracy.\" The text content from the image is as follows:\n\n\"Table 7. Dynamic convolution vs Squeeze-and-Excitation (SE [13]) on MobileNetV3-Small. The numbers in brackets denote the performance improvement over the baseline. Compared with static convolution with SE, dynamic convolution without SE gains 2.2% top-1 accuracy.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>MobileNetV3-Small</td>\n    <td>67.4</td>\n    <td>86.4</td>\n  </tr>\n  <tr>\n    <td>MobileNetV3-Small w/o SE</td>\n    <td>65.4(-2.0)</td>\n    <td>85.2(-1.2)</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV3-Small</td>\n    <td>70.3(+2.9)</td>\n    <td>88.7(+2.3)</td>\n  </tr>\n  <tr>\n    <td>Dy-MobileNetV3-Small w/o SE</td>\n    <td>69.6(+2.2)</td>\n    <td>88.4(+2.0)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                310,
+                70,
+                543,
+                199
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>#Param</td>\n    <td>MA Adds</td>\n    <td>Top-1</td>\n    <td>Top-5</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 1.0</td>\n    <td>3.5M</td>\n    <td>300.0M</td>\n    <td>72.0</td>\n    <td>91.0</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 1.0</td>\n    <td>11.1M</td>\n    <td>312.9M</td>\n    <td>75.2(3.2)</td>\n    <td>92.1(1.1)</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 0.75</td>\n    <td>2.6M</td>\n    <td>209.0M</td>\n    <td>69.8</td>\n    <td>89.6</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 0.75</td>\n    <td>7.0M</td>\n    <td>217.5M</td>\n    <td>73.7(3.9)</td>\n    <td>91.3(1.7)</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 0.5</td>\n    <td>2.0M</td>\n    <td>97.0M</td>\n    <td>65.4</td>\n    <td>86.4</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 0.5</td>\n    <td>4.0M</td>\n    <td>101.4M</td>\n    <td>69.9(4.5)</td>\n    <td>89.0(2.6)</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 0.35</td>\n    <td>1.7M</td>\n    <td>59.2M</td>\n    <td>60.0</td>\n    <td>82.9</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 0.35</td>\n    <td>2.8M</td>\n    <td>62.0M</td>\n    <td>65.9(5.6)</td>\n    <td>86.4(3.5)</td>\n  </tr>\n  <tr>\n    <td>MobileNetV3-Small</td>\n    <td>2.9M</td>\n    <td>66.0M</td>\n    <td>67.4</td>\n    <td>86.4</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV3-Small</td>\n    <td>4.8M</td>\n    <td>68.5M</td>\n    <td>70.3(2.9)</td>\n    <td>88.7(2.3)</td>\n  </tr>\n  <tr>\n    <td>ResNet-18</td>\n    <td>11.1M</td>\n    <td>1.81G</td>\n    <td>70.4</td>\n    <td>89.7</td>\n  </tr>\n  <tr>\n    <td>DY-ResNet-18</td>\n    <td>42.7M</td>\n    <td>1.85G</td>\n    <td>72.7(2.3)</td>\n    <td>90.7(1.0)</td>\n  </tr>\n  <tr>\n    <td>ResNet-10</td>\n    <td>5.2M</td>\n    <td>0.89G</td>\n    <td>63.5</td>\n    <td>85.0</td>\n  </tr>\n  <tr>\n    <td>DY-ResNet-10</td>\n    <td>18.6M</td>\n    <td>0.91G</td>\n    <td>67.7(4.2)</td>\n    <td>87.6(2.6)</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page007.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                320,
+                249,
+                532,
+                291
+            ],
+            "caption": "Table 8. ImageNet [4] classification results of DY-CNNs. The numbers in brackets denote the performance improvement over the baseline.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Input</td>\n    <td>Operator</td>\n    <td>exp size</td>\n    <td>#out</td>\n    <td>n</td>\n  </tr>\n  <tr>\n    <td>16x12Bout</td>\n    <td>b neck，5x5</td>\n    <td>768</td>\n    <td>256</td>\n    <td>2</td>\n  </tr>\n  <tr>\n    <td>32x24x256</td>\n    <td>b neck，5x5</td>\n    <td>768</td>\n    <td>128</td>\n    <td>1</td>\n  </tr>\n  <tr>\n    <td>64x48x128</td>\n    <td>b neck，5x5</td>\n    <td>384</td>\n    <td>128</td>\n    <td>1</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page007.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                48,
+                72,
+                549,
+                236
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Type</td>\n    <td>Backbone</td>\n    <td>Networks</td>\n    <td>#Param</td>\n    <td>MAdds</td>\n    <td>Operator</td>\n    <td>Head</td>\n    <td>#Param</td>\n    <td>MAdds</td>\n    <td>AP</td>\n    <td>AP0.5</td>\n    <td>AP0.75</td>\n    <td>APM</td>\n    <td>APL</td>\n    <td>AR</td>\n  </tr>\n  <tr>\n    <td>A</td>\n    <td>ResNet-18</td>\n    <td>10.6M</td>\n    <td>1.77G</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>67.0</td>\n    <td>87.9</td>\n    <td>74.8</td>\n    <td>63.6</td>\n    <td>73.5</td>\n    <td>75.1</td>\n    <td>73.1</td>\n  </tr>\n  <tr>\n    <td>DY-ResNet-18</td>\n    <td>42.2M</td>\n    <td>1.81G</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>68.6(1.6)</td>\n    <td>88.4</td>\n    <td>76.1</td>\n    <td>65.3</td>\n    <td>75.1</td>\n    <td>74.6</td>\n  </tr>\n  <tr>\n    <td>A</td>\n    <td>MobileNetV2x1.0</td>\n    <td>2.2M</td>\n    <td>292.6M</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>64.7</td>\n    <td>87.2</td>\n    <td>72.6</td>\n    <td>61.3</td>\n    <td>71.0</td>\n    <td>74.1</td>\n    <td>73.8</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x1.0</td>\n    <td>9.8M</td>\n    <td>305.3M</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>67.6(2.9)</td>\n    <td>88.1</td>\n    <td>75.5</td>\n    <td>64.4</td>\n    <td>74.1</td>\n    <td>73.8</td>\n  </tr>\n  <tr>\n    <td>A</td>\n    <td>MobileNetV2x0.5</td>\n    <td>0.7M</td>\n    <td>93.7M</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>57.0</td>\n    <td>83.7</td>\n    <td>63.1</td>\n    <td>53.9</td>\n    <td>63.1</td>\n    <td>67.9</td>\n    <td>68.4</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x0.5</td>\n    <td>2.7M</td>\n    <td>98.0M</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>61.9(4.9)</td>\n    <td>85.8</td>\n    <td>69.7</td>\n    <td>58.9</td>\n    <td>67.9</td>\n    <td>68.4</td>\n  </tr>\n  <tr>\n    <td>A</td>\n    <td>MobileNetV3-Small</td>\n    <td>1.1M</td>\n    <td>62.7M</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>57.1</td>\n    <td>83.7</td>\n    <td>63.8</td>\n    <td>54.9</td>\n    <td>62.3</td>\n    <td>64.7</td>\n    <td>64.1</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV3-Small</td>\n    <td>2.8M</td>\n    <td>65.1M</td>\n    <td>dconv</td>\n    <td>8.4M</td>\n    <td>5.4G</td>\n    <td>59.3(2.2)</td>\n    <td>84.7</td>\n    <td>66.7</td>\n    <td>56.9</td>\n    <td>64.7</td>\n    <td>66.1</td>\n  </tr>\n  <tr>\n    <td>B</td>\n    <td>MobileNetV2x1.0</td>\n    <td>2.2M</td>\n    <td>292.6M</td>\n    <td>bneck</td>\n    <td>1.2M</td>\n    <td>701.1M</td>\n    <td>64.6</td>\n    <td>87.0</td>\n    <td>72.4</td>\n    <td>61.3</td>\n    <td>71.0</td>\n    <td>74.7</td>\n    <td>71.0</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x1.0</td>\n    <td>9.8M</td>\n    <td>305.3M</td>\n    <td>bneck</td>\n    <td>6.3M</td>\n    <td>709.4M</td>\n    <td>68.2(3.6)</td>\n    <td>88.4</td>\n    <td>76.0</td>\n    <td>65.0</td>\n    <td>74.7</td>\n    <td>74.2</td>\n  </tr>\n  <tr>\n    <td>B</td>\n    <td>MobileNetV2x0.5</td>\n    <td>0.7M</td>\n    <td>93.7M</td>\n    <td>bneck</td>\n    <td>1.2M</td>\n    <td>701.1M</td>\n    <td>59.2</td>\n    <td>84.3</td>\n    <td>66.4</td>\n    <td>56.2</td>\n    <td>65.0</td>\n    <td>68.6</td>\n    <td>69.1</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x0.5</td>\n    <td>2.7M</td>\n    <td>98.0M</td>\n    <td>bneck</td>\n    <td>6.3M</td>\n    <td>709.4M</td>\n    <td>62.8(3.6)</td>\n    <td>86.1</td>\n    <td>70.4</td>\n    <td>59.9</td>\n    <td>68.6</td>\n    <td>69.1</td>\n  </tr>\n  <tr>\n    <td>B</td>\n    <td>MobileNetV3-Small</td>\n    <td>1.1M</td>\n    <td>62.7M</td>\n    <td>bneck</td>\n    <td>1.0M</td>\n    <td>664.2M</td>\n    <td>57.1</td>\n    <td>83.8</td>\n    <td>63.7</td>\n    <td>55.0</td>\n    <td>62.2</td>\n    <td>65.4</td>\n    <td>64.1</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV3-Small</td>\n    <td>2.8M</td>\n    <td>65.1M</td>\n    <td>bneck</td>\n    <td>4.9M</td>\n    <td>671.1M</td>\n    <td>60.0(2.9)</td>\n    <td>85.0</td>\n    <td>67.8</td>\n    <td>57.6</td>\n    <td>65.4</td>\n    <td>66.7</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page008.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                328,
+                306,
+                524,
+                360
+            ],
+            "caption": "Table 10. Keypoint detection results on COCO validation set. All models are trained from scratch. The top half uses dynamic convolution in the backbone and uses deconvolution in the head (Type A). The bottom half use MobileNetV2’s bottleneck residual blocks in the head and use dynamic convolution in both the backbone and the head (Type B). Each dynamic convolution layer includes \\( K = 4 \\) kernels. The numbers in brackets denote the performance improvement over the baseline. Table 10. Keypoint detection results on COCO validation set. All models are trained from scratch. The top half uses dynamic convolution in the backbone and uses deconvolution in the head (Type A). The bottom half use MobileNetV2’s bottleneck residual blocks in the head and use dynamic convolution in both the backbone and the head (Type B). Each dynamic convolution layer includes \\( K = 4 \\) kernels. The numbers in brackets denote the performance improvement over the baseline. Table 10. Keypoint detection results on COCO validation set. All models are trained from scratch. The top half uses dynamic convolution in the backbone and uses deconvolution in the head (Type A). The bottom half use MobileNetV2’s bottleneck residual blocks in the head and use dynamic convolution in both the backbone and the head (Type B). Each dynamic convolution layer includes \\( K = 4 \\) kernels. The numbers in brackets denote the performance improvement over the baseline.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Backbone</td>\n    <td>Head</td>\n    <td>AP</td>\n    <td>AP0.5</td>\n    <td>AP0.75</td>\n  </tr>\n  <tr>\n    <td>static</td>\n    <td>static</td>\n    <td>59.2</td>\n    <td>84.3</td>\n    <td>66.4</td>\n  </tr>\n  <tr>\n    <td>static</td>\n    <td>dynamic</td>\n    <td>60.3(1.1)</td>\n    <td>84.9</td>\n    <td>67.3</td>\n  </tr>\n  <tr>\n    <td>dynamic</td>\n    <td>static</td>\n    <td>62.3(3.1)</td>\n    <td>85.6</td>\n    <td>70.0</td>\n  </tr>\n  <tr>\n    <td>dynamic</td>\n    <td>dynamic</td>\n    <td>62.8(3.6)</td>\n    <td>86.1</td>\n    <td>70.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page008.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                58,
+                522,
+                277,
+                615
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Network</td>\n    <td>Top-1</td>\n    <td>MA Adds</td>\n    <td>CPU(ms)</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 1.0</td>\n    <td>72.0</td>\n    <td>300.0M</td>\n    <td>127.9</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 1.0</td>\n    <td>75.2(3.2)</td>\n    <td>312.9M</td>\n    <td>141.2</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 0.75</td>\n    <td>69.8</td>\n    <td>209.0M</td>\n    <td>99.5</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 0.75</td>\n    <td>73.7(3.9)</td>\n    <td>217.5M</td>\n    <td>110.5</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 0.5</td>\n    <td>65.4</td>\n    <td>97.0M</td>\n    <td>69.6</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 0.5</td>\n    <td>69.9(4.5)</td>\n    <td>101.4M</td>\n    <td>77.4</td>\n  </tr>\n  <tr>\n    <td>MobileNetV2x 0.35</td>\n    <td>60.3</td>\n    <td>59.2M</td>\n    <td>61.1</td>\n  </tr>\n  <tr>\n    <td>DY-MobileNetV2x 0.35</td>\n    <td>65.9(5.6)</td>\n    <td>62.0M</td>\n    <td>67.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page009.png"
+        }
+    ]
+}

@@ -1,0 +1,138 @@
+{
+    "total_count": 11,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                162,
+                111,
+                459,
+                128
+            ],
+            "content": "{ \\mathrm { n m a x } } V ( D , G ) = \\mathbb { E } _ { \\boldsymbol { x } \\sim p _ { \\mathrm { d a t a } } ( \\boldsymbol { x } ) } [ \\log D ( \\boldsymbol { x } ) ] + \\mathbb { E } _ { \\boldsymbol { z } \\sim p _ { z } ( \\boldsymbol { z } ) } [ \\log ( 1 - D ( G ( \\boldsymbol { z } ) ) ) ] .",
+            "latex": "{ \\mathrm { n m a x } } V ( D , G ) = \\mathbb { E } _ { \\boldsymbol { x } \\sim p _ { \\mathrm { d a t a } } ( \\boldsymbol { x } ) } [ \\log D ( \\boldsymbol { x } ) ] + \\mathbb { E } _ { \\boldsymbol { z } \\sim p _ { z } ( \\boldsymbol { z } ) } [ \\log ( 1 - D ( G ( \\boldsymbol { z } ) ) ) ] ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                149,
+                111,
+                460,
+                129
+            ],
+            "content": "```latex\n\\min_{G} \\max_{D} V(D, G) = \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}(\\boldsymbol{x})}[\\log D(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{z} \\sim p_{z}(\\boldsymbol{z})}[\\log(1 - D(G(\\boldsymbol{z})))].\n```",
+            "latex": "```latex\n\\min_{G} \\max_{D} V(D, G) = \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}(\\boldsymbol{x})}[\\log D(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{z} \\sim p_{z}(\\boldsymbol{z})}[\\log(1 - D(G(\\boldsymbol{z})))].\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                248,
+                416,
+                363,
+                443
+            ],
+            "content": "D _ { G } ^ { * } ( \\boldsymbol { x } ) = \\frac { p _ { d a t a } ( \\boldsymbol { x } ) } { p _ { d a t a } ( \\boldsymbol { x } ) + p _ { g } ( \\boldsymbol { x } ) }",
+            "latex": "D _ { G } ^ { * } ( \\boldsymbol { x } ) = \\frac { p _ { d a t a } ( \\boldsymbol { x } ) } { p _ { d a t a } ( \\boldsymbol { x } ) + p _ { g } ( \\boldsymbol { x } ) }"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                238,
+                267,
+                392,
+                298
+            ],
+            "content": "\\nabla _ { \\theta _ { g } } \\frac { 1 } { m } \\sum _ { i = 1 } ^ { m } \\log \\left( 1 - D \\left( G \\left( z ^ { ( i ) } \\right) \\right) \\right) .",
+            "latex": "\\nabla _ { \\theta _ { g } } \\frac { 1 } { m } \\sum _ { i = 1 } ^ { m } \\log \\left( 1 - D \\left( G \\left( z ^ { ( i ) } \\right) \\right) \\right) ."
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                206,
+                191,
+                434,
+                222
+            ],
+            "content": "```latex\n\\nabla_{\\theta_d} \\frac{1}{m} \\sum_{i=1}^{m} \\left[ \\log D \\left( x^{(i)} \\right) + \\log \\left( 1 - D \\left( G \\left( z^{(i)} \\right) \\right) \\right) \\right].\n```",
+            "latex": "```latex\n\\nabla_{\\theta_d} \\frac{1}{m} \\sum_{i=1}^{m} \\left[ \\log D \\left( x^{(i)} \\right) + \\log \\left( 1 - D \\left( G \\left( z^{(i)} \\right) \\right) \\right) \\right].\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                154,
+                654,
+                456,
+                732
+            ],
+            "content": "```latex\nC(G) = \\max_{D} V(G, D)\n\n= \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{z} \\sim p_z} [\\log (1 - D_G(G(\\boldsymbol{z})))]\n\n= \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} [\\log (1 - D_G^*(\\boldsymbol{x}))]\n\n= \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}} \\left[ \\log \\frac{p_{\\text{data}}(\\boldsymbol{x})}{P_{\\text{data}}(\\boldsymbol{x}) + p_g(\\boldsymbol{x})} \\right] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} \\left[ \\log \\frac{p_g(\\boldsymbol{x})}{p_{\\text{data}}(\\boldsymbol{x}) + p_g(\\boldsymbol{x})} \\right]\n```",
+            "latex": "```latex\nC(G) = \\max_{D} V(G, D)\n\n= \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{z} \\sim p_z} [\\log (1 - D_G(G(\\boldsymbol{z})))]\n\n= \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} [\\log (1 - D_G^*(\\boldsymbol{x}))]\n\n= \\mathbb{E}_{\\boldsymbol{x} \\sim p_{\\text{data}}} \\left[ \\log \\frac{p_{\\text{data}}(\\boldsymbol{x})}{P_{\\text{data}}(\\boldsymbol{x}) + p_g(\\boldsymbol{x})} \\right] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} \\left[ \\log \\frac{p_g(\\boldsymbol{x})}{p_{\\text{data}}(\\boldsymbol{x}) + p_g(\\boldsymbol{x})} \\right]\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                163,
+                484,
+                446,
+                537
+            ],
+            "content": "\\begin{array} { l } { { V ( G , D ) = \\int _ { x } p _ { \\mathrm { d a t a } } ( \\boldsymbol { x } ) \\log ( D ( \\boldsymbol { x } ) ) d x + \\int _ { z } p _ { z } ( z ) \\log ( 1 - D ( g ( z ) ) ) d z } } \\\\ { { = \\int _ { x } p _ { \\mathrm { d a t a } } ( \\boldsymbol { x } ) \\log ( D ( \\boldsymbol { x } ) ) + p _ { g } ( \\boldsymbol { x } ) \\log ( 1 - D ( \\boldsymbol { x } ) ) d x } } \\end{array}",
+            "latex": "\\begin{array} { l } { { V ( G , D ) = \\int _ { x } p _ { \\mathrm { d a t a } } ( \\boldsymbol { x } ) \\log ( D ( \\boldsymbol { x } ) ) d x + \\int _ { z } p _ { z } ( z ) \\log ( 1 - D ( g ( z ) ) ) d z } } \\\\ { { = \\int _ { x } p _ { \\mathrm { d a t a } } ( \\boldsymbol { x } ) \\log ( D ( \\boldsymbol { x } ) ) + p _ { g } ( \\boldsymbol { x } ) \\log ( 1 - D ( \\boldsymbol { x } ) ) d x } } \\end{array}"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                223,
+                278,
+                388,
+                292
+            ],
+            "content": "C ( G ) = - \\log ( 4 ) + 2 \\cdot J S D \\left( p _ { \\mathrm { d a t a } } \\| p _ { g } \\right)",
+            "latex": "C ( G ) = - \\log ( 4 ) + 2 \\cdot J S D \\left( p _ { \\mathrm { d a t a } } \\| p _ { g } \\right)"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                211,
+                160,
+                400,
+                175
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{E}_{x \\sim p_{\\text{data}}} [-\\log 2] + \\mathbb{E}_{x \\sim p_g} [-\\log 2] = -\\log 4\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{E}_{x \\sim p_{\\text{data}}} [-\\log 2] + \\mathbb{E}_{x \\sim p_g} [-\\log 2] = -\\log 4\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                207,
+                407,
+                403,
+                421
+            ],
+            "content": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{E}_{\\boldsymbol{x} \\sim p_{data}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} [\\log (1 - D_G^*(\\boldsymbol{x}))]\n```\n\nThis will render the equation as shown in the image.",
+            "latex": "The expression in the image can be written in LaTeX as follows:\n\n```latex\n\\mathbb{E}_{\\boldsymbol{x} \\sim p_{data}} [\\log D_G^*(\\boldsymbol{x})] + \\mathbb{E}_{\\boldsymbol{x} \\sim p_g} [\\log (1 - D_G^*(\\boldsymbol{x}))]\n```\n\nThis will render the equation as shown in the image."
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                160,
+                204,
+                451,
+                232
+            ],
+            "content": "```latex\nC(G) = -\\log(4) + KL \\left( p_{\\text{data}} \\parallel \\frac{p_{\\text{data}} + p_g}{2} \\right) + KL \\left( p_g \\parallel \\frac{p_{\\text{data}} + p_g}{2} \\right)\n```",
+            "latex": "```latex\nC(G) = -\\log(4) + KL \\left( p_{\\text{data}} \\parallel \\frac{p_{\\text{data}} + p_g}{2} \\right) + KL \\left( p_g \\parallel \\frac{p_{\\text{data}} + p_g}{2} \\right)\n```"
+        }
+    ]
+}

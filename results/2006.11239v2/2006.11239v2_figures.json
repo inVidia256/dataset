@@ -1,0 +1,272 @@
+{
+    "total_count": 19,
+    "content_type": "figures",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 1,
+            "type": "figure",
+            "bbox": [
+                107,
+                466,
+                504,
+                703
+            ],
+            "caption": "The text in the image reads: \"Generated samples on CelebA-HQ 256 × 256 (left) and unconditional CIFAR10 (right).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_001_page001.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 2,
+            "type": "figure",
+            "bbox": [
+                155,
+                70,
+                455,
+                116
+            ],
+            "caption": "Figure 2: The directed graphical model considered in this work.",
+            "footnote": "",
+            "cropped_image": "figures/figure_002_page002.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                107,
+                71,
+                302,
+                201
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 3: LSUN Church samples. FID=7.89\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_003_page006.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "figure",
+            "bbox": [
+                307,
+                71,
+                502,
+                201
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 4: LSUN Bedroom samples. FID=4.90\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                108,
+                188,
+                501,
+                281
+            ],
+            "caption": "Figure 5: Unconditional CIFAR10 test set rate-distortion vs. time. Distortion is measured in root mean squared error on a [0, 255] scale. See Table 4 for details.",
+            "footnote": "",
+            "cropped_image": "figures/figure_005_page007.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                126,
+                407,
+                484,
+                480
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Figure 6: Unconditional CIFAR10 progressive generation (x̂₀ over time, from left to right). Extended samples and sample quality metrics over time in the appendix (Figs. 10 and 14).\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_006_page007.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 7,
+            "type": "figure",
+            "bbox": [
+                146,
+                515,
+                464,
+                585
+            ],
+            "caption": "Figure 7: When conditioned on the same latent, CelebA-HQ 256 × 256 samples share high-level attributes. Bottom-right quadrants are x_t, and other quadrants are samples from p_θ(x_0|x_t).",
+            "footnote": "",
+            "cropped_image": "figures/figure_007_page007.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 8,
+            "type": "figure",
+            "bbox": [
+                106,
+                70,
+                504,
+                146
+            ],
+            "caption": "The text content from the image is:\n\n\"re 8: Interpolations of CelebA-HQ 256x256 images with 500 timesteps of diffusion\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_008_page008.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                108,
+                129,
+                502,
+                383
+            ],
+            "caption": "The text content from the image is:\n\n\"interpolations that vary the number of diffusion steps prior to latent mixing\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_009_page016.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 16,
+            "type": "figure",
+            "bbox": [
+                131,
+                572,
+                480,
+                700
+            ],
+            "caption": "Figure 10: Unconditional CIFAR10 progressive sampling quality over tin",
+            "footnote": "",
+            "cropped_image": "figures/figure_010_page016.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 17,
+            "type": "figure",
+            "bbox": [
+                106,
+                184,
+                504,
+                587
+            ],
+            "caption": "Figure 11: CelebA-HQ 256 × 256 generated samples",
+            "footnote": "",
+            "cropped_image": "figures/figure_011_page017.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 18,
+            "type": "figure",
+            "bbox": [
+                106,
+                159,
+                506,
+                579
+            ],
+            "caption": "Figure 12: CelebA-HQ 256 × 256 nearest neighbors, computed on a 100 × 100 crop surrounding the faces. Generated samples are in the leftmost column, and training set nearest neighbors are in the remaining columns. (b) Inception feature space nearest neighbors",
+            "footnote": "",
+            "cropped_image": "figures/figure_012_page018.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 19,
+            "type": "figure",
+            "bbox": [
+                106,
+                185,
+                505,
+                586
+            ],
+            "caption": "Figure 13: Unconditional CIFAR10 generated samples",
+            "footnote": "",
+            "cropped_image": "figures/figure_013_page019.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 20,
+            "type": "figure",
+            "bbox": [
+                106,
+                185,
+                505,
+                586
+            ],
+            "caption": "Figure 14: Unconditional CIFAR10 progressive generation",
+            "footnote": "",
+            "cropped_image": "figures/figure_014_page020.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 21,
+            "type": "figure",
+            "bbox": [
+                125,
+                183,
+                486,
+                564
+            ],
+            "caption": "Figure 15: Unconditional CIFAR10 nearest neighbors. Generated samples are in the leftmost column, and training set nearest neighbors are in the remaining columns. Figure 15: Unconditional CIFAR10 nearest neighbors. Generated samples are in the leftmost column, and training set nearest neighbors are in the remaining columns. (b) Inception feature space nearest neighbors",
+            "footnote": "",
+            "cropped_image": "figures/figure_015_page021.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 22,
+            "type": "figure",
+            "bbox": [
+                107,
+                123,
+                504,
+                653
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 16: LSUN Church generated samples. FID=7.89\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_016_page022.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 23,
+            "type": "figure",
+            "bbox": [
+                107,
+                123,
+                504,
+                653
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 17: LSUN Bedroom generated samples, large model. FID=4.90\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_017_page023.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 24,
+            "type": "figure",
+            "bbox": [
+                107,
+                125,
+                504,
+                653
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 18: LSUN Bedroom generated samples, small model. FID=6.36\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_018_page024.png"
+        },
+        {
+            "serial_number": 19,
+            "page": 25,
+            "type": "figure",
+            "bbox": [
+                106,
+                123,
+                504,
+                653
+            ],
+            "caption": "The text content from the image is:\n\n\"Figure 19: LSUN Cat generated samples. FID=19.75\"",
+            "footnote": "",
+            "cropped_image": "figures/figure_019_page025.png"
+        }
+    ]
+}

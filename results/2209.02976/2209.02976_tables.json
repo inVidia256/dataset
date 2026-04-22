@@ -1,0 +1,342 @@
+{
+    "total_count": 21,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                99,
+                70,
+                495,
+                352
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Input Size</td>\n    <td>APval</td>\n    <td>APval</td>\n    <td>FPS(bs=1)</td>\n    <td>FPS(bs=32)</td>\n    <td>Latency(bs=1)</td>\n    <td>Params</td>\n    <td>FLOPs</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-N[10]</td>\n    <td>640</td>\n    <td>28.0%</td>\n    <td>45.7%</td>\n    <td>602</td>\n    <td>735</td>\n    <td>1.7ms</td>\n    <td>1.9M</td>\n    <td>4.5G</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-S[10]</td>\n    <td>640</td>\n    <td>37.4%</td>\n    <td>56.8%</td>\n    <td>376</td>\n    <td>444</td>\n    <td>2.7ms</td>\n    <td>7.2M</td>\n    <td>16.5G</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-M[10]</td>\n    <td>640</td>\n    <td>45.4%</td>\n    <td>64.1%</td>\n    <td>182</td>\n    <td>209</td>\n    <td>5.5ms</td>\n    <td>21.2M</td>\n    <td>49.0G</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-L[10]</td>\n    <td>640</td>\n    <td>49.0%</td>\n    <td>67.3%</td>\n    <td>113</td>\n    <td>126</td>\n    <td>8.8ms</td>\n    <td>46.5M</td>\n    <td>109.1G</td>\n  </tr>\n  <tr>\n    <td>YOLO X-Tiny[7]</td>\n    <td>416</td>\n    <td>32.8%</td>\n    <td>50.3%*</td>\n    <td>717</td>\n    <td>1143</td>\n    <td>1.4ms</td>\n    <td>5.1M</td>\n    <td>6.5G</td>\n  </tr>\n  <tr>\n    <td>YOLO X-S[7]</td>\n    <td>640</td>\n    <td>40.5%</td>\n    <td>59.3%*</td>\n    <td>333</td>\n    <td>396</td>\n    <td>3.0ms</td>\n    <td>9.0M</td>\n    <td>26.8G</td>\n  </tr>\n  <tr>\n    <td>YOLO X-M[7]</td>\n    <td>640</td>\n    <td>46.9%</td>\n    <td>65.6%*</td>\n    <td>155</td>\n    <td>179</td>\n    <td>6.4ms</td>\n    <td>25.3M</td>\n    <td>73.8G</td>\n  </tr>\n  <tr>\n    <td>YOLO X-L[7]</td>\n    <td>640</td>\n    <td>49.7%</td>\n    <td>68.0%*</td>\n    <td>94</td>\n    <td>103</td>\n    <td>10.6ms</td>\n    <td>54.2M</td>\n    <td>155.6G</td>\n  </tr>\n  <tr>\n    <td>PP YOLO E-S[45]</td>\n    <td>640</td>\n    <td>43.1%</td>\n    <td>59.6%</td>\n    <td>327</td>\n    <td>419</td>\n    <td>3.1ms</td>\n    <td>7.9M</td>\n    <td>17.4G</td>\n  </tr>\n  <tr>\n    <td>PP YOLO EM[45]</td>\n    <td>640</td>\n    <td>49.0%</td>\n    <td>65.9%</td>\n    <td>152</td>\n    <td>189</td>\n    <td>6.6ms</td>\n    <td>23.4M</td>\n    <td>49.9G</td>\n  </tr>\n  <tr>\n    <td>PP YOLO EL[45]</td>\n    <td>640</td>\n    <td>51.4%</td>\n    <td>68.6%</td>\n    <td>101</td>\n    <td>127</td>\n    <td>10.1ms</td>\n    <td>52.2M</td>\n    <td>110.1G</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-Tiny[42]</td>\n    <td>416</td>\n    <td>33.3%*</td>\n    <td>49.9%*</td>\n    <td>787</td>\n    <td>1196</td>\n    <td>1.3ms</td>\n    <td>6.2M</td>\n    <td>5.8G</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-Tiny[42]</td>\n    <td>640</td>\n    <td>37.4%*</td>\n    <td>55.2%*</td>\n    <td>424</td>\n    <td>519</td>\n    <td>2.4ms</td>\n    <td>6.2M</td>\n    <td>13.7G*</td>\n  </tr>\n  <tr>\n    <td>YOLO v7[42]</td>\n    <td>640</td>\n    <td>51.2%</td>\n    <td>69.7%</td>\n    <td>110</td>\n    <td>122</td>\n    <td>9.0ms</td>\n    <td>36.9M</td>\n    <td>104.7G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-N</td>\n    <td>640</td>\n    <td>35.9%</td>\n    <td>51.2%</td>\n    <td>802</td>\n    <td>1234</td>\n    <td>1.2ms</td>\n    <td>4.3M</td>\n    <td>11.1G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-T</td>\n    <td>640</td>\n    <td>40.3%</td>\n    <td>56.6%</td>\n    <td>449</td>\n    <td>659</td>\n    <td>2.2ms</td>\n    <td>15.0M</td>\n    <td>36.7G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-S</td>\n    <td>640</td>\n    <td>43.5%</td>\n    <td>60.4%</td>\n    <td>358</td>\n    <td>495</td>\n    <td>2.8ms</td>\n    <td>17.2M</td>\n    <td>44.2G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-Mt</td>\n    <td>640</td>\n    <td>49.5%</td>\n    <td>66.8%</td>\n    <td>179</td>\n    <td>233</td>\n    <td>5.6ms</td>\n    <td>34.3M</td>\n    <td>82.2G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-L-ReLUt</td>\n    <td>640</td>\n    <td>51.7%</td>\n    <td>69.2%</td>\n    <td>113</td>\n    <td>149</td>\n    <td>8.8ms</td>\n    <td>58.5M</td>\n    <td>144.0G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-Lt</td>\n    <td>640</td>\n    <td>52.5%</td>\n    <td>70.0%</td>\n    <td>98</td>\n    <td>121</td>\n    <td>10.2ms</td>\n    <td>58.5M</td>\n    <td>144.0G</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page008.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 8,
+            "type": "table",
+            "bbox": [
+                308,
+                440,
+                549,
+                553
+            ],
+            "caption": "Table 1: Comparisons with other YOLO-series detectors on COCO 2017 val. FPS and latency are measured in FP16-precision on a Tesla T4 in the same environment with TensorRT. All our models are trained for 300 epochs without pre-training or any external data. Both the accuracy and the speed performance of our models are evaluated with the input resolution of 640×640. ‘‡’ represents that the proposed self-distillation method is utilized. ‘∗’ represents the re-evaluated result of the released model through the official code. Table 1: Comparisons with other YOLO-series detectors on COCO 2017 val. FPS and latency are measured in FP16-precision on a Tesla T4 in the same environment with TensorRT. All our models are trained for 300 epochs without pre-training or any external data. Both the accuracy and the speed performance of our models are evaluated with the input resolution of 640×640. ‘‡’ represents that the proposed self-distillation method is utilized. ‘∗’ represents the re-evaluated result of the released model through the official code. Table 1: Comparisons with other YOLO-series detectors on COCO 2017 val. FPS and latency are measured in FP16-precision on a Tesla T4 in the same environment with TensorRT. All our models are trained for 300 epochs without pre-training or any external data. Both the accuracy and the speed performance of our models are evaluated with the input resolution of 640×640. ‘‡’ represents that the proposed self-distillation method is utilized. ‘∗’ represents the re-evaluated result of the released model through the official code. The text content from the image is:\n\n\"Table 2: Ablation study on backbones and necks. YOLOv6-L here is equipped with ReLU.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Models</td>\n    <td>Block</td>\n    <td>CC</td>\n    <td>APval</td>\n    <td>FPS(bs=32)</td>\n    <td>Params</td>\n    <td>FLOPs</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-N</td>\n    <td>Rep Block</td>\n    <td></td>\n    <td>35.2%</td>\n    <td>1237</td>\n    <td>4.3M</td>\n    <td>11.1G</td>\n  </tr>\n  <tr>\n    <td>CSP Stack Rep Block</td>\n    <td>1/2</td>\n    <td>32.7%</td>\n    <td>1257</td>\n    <td>2.3M</td>\n    <td>5.6G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-S</td>\n    <td>Rep Block</td>\n    <td></td>\n    <td>43.2%</td>\n    <td>499</td>\n    <td>17.2M</td>\n    <td>44.2G</td>\n  </tr>\n  <tr>\n    <td>CSP Stack Rep Block</td>\n    <td>1/2</td>\n    <td>43.4%</td>\n    <td>511</td>\n    <td>11.5M</td>\n    <td>27.7G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-M</td>\n    <td>Rep Block</td>\n    <td></td>\n    <td>47.9%</td>\n    <td>137</td>\n    <td>67.1M</td>\n    <td>175.6G</td>\n  </tr>\n  <tr>\n    <td>CSP Stack Rep Block</td>\n    <td>2/3</td>\n    <td>48.1%</td>\n    <td>237</td>\n    <td>34.3M</td>\n    <td>82.2G</td>\n  </tr>\n  <tr>\n    <td>CSP Stack Rep Block</td>\n    <td>1/2</td>\n    <td>47.3%</td>\n    <td>237</td>\n    <td>27.7M</td>\n    <td>68.4G</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-L</td>\n    <td>CSP Stack Rep Block</td>\n    <td>2/3</td>\n    <td>50.1%</td>\n    <td>149</td>\n    <td>54.7M</td>\n    <td>142.7G</td>\n  </tr>\n  <tr>\n    <td>CSP Stack Rep Block</td>\n    <td>1/2</td>\n    <td>50.1%</td>\n    <td>151</td>\n    <td>58.5M</td>\n    <td>144.0G</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page008.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                58,
+                71,
+                279,
+                123
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Width</td>\n    <td>Depth</td>\n    <td>APval</td>\n    <td>FPS(bs=32)</td>\n    <td>Params</td>\n    <td>FLOPs</td>\n  </tr>\n  <tr>\n    <td>[192，384，768]</td>\n    <td>5</td>\n    <td>50.8%</td>\n    <td>123</td>\n    <td>58.6M</td>\n    <td>144.7G</td>\n  </tr>\n  <tr>\n    <td>[128，256，512]</td>\n    <td>12</td>\n    <td>51.0%</td>\n    <td>122</td>\n    <td>58.5M</td>\n    <td>144.0G</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page009.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                65,
+                177,
+                270,
+                347
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: Ablation study on the neck settings of YOLOv6-L.\nSiLU is selected as the activation function.\" The text content from the image is as follows:\n\n\"Table 4: Ablation study on combinations of different types of convolutional layers (denoted as Conv.) and activation layers (denoted as Act.).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Conv.</td>\n    <td>Act.</td>\n    <td>APval</td>\n    <td>FPS(bs=32)</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-N</td>\n    <td>Conv</td>\n    <td>SiLU</td>\n    <td>36.6%</td>\n    <td>963</td>\n  </tr>\n  <tr>\n    <td>Rep Conv</td>\n    <td>SiLU</td>\n    <td>36.5%</td>\n    <td>971</td>\n  </tr>\n  <tr>\n    <td>Conv</td>\n    <td>ReLU</td>\n    <td>34.8%</td>\n    <td>1246</td>\n  </tr>\n  <tr>\n    <td>Rep Conv</td>\n    <td>ReLU</td>\n    <td>35.2%</td>\n    <td>1233</td>\n  </tr>\n  <tr>\n    <td>Conv</td>\n    <td>L ReLU</td>\n    <td>35.4%</td>\n    <td>983</td>\n  </tr>\n  <tr>\n    <td>Rep Conv</td>\n    <td>L ReLU</td>\n    <td>35.6%</td>\n    <td>975</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-M</td>\n    <td>Conv</td>\n    <td>SiLU</td>\n    <td>48.9%</td>\n    <td>180</td>\n  </tr>\n  <tr>\n    <td>Rep Conv</td>\n    <td>SiLU</td>\n    <td>48.9%</td>\n    <td>180</td>\n  </tr>\n  <tr>\n    <td>Conv</td>\n    <td>ReLU</td>\n    <td>47.7%</td>\n    <td>235</td>\n  </tr>\n  <tr>\n    <td>Rep Conv</td>\n    <td>ReLU</td>\n    <td>48.1%</td>\n    <td>236</td>\n  </tr>\n  <tr>\n    <td>Conv</td>\n    <td>L ReLU</td>\n    <td>48.0%</td>\n    <td>185</td>\n  </tr>\n  <tr>\n    <td>Rep Conv</td>\n    <td>L ReLU</td>\n    <td>48.1%</td>\n    <td>187</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page009.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                337,
+                71,
+                516,
+                167
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>DH</td>\n    <td>AF</td>\n    <td>EB+RN</td>\n    <td>HC</td>\n    <td>APval</td>\n    <td>FPS(bs=32)</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>28.0%</td>\n    <td>672</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>29.4%</td>\n    <td>637</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>30.7%</td>\n    <td>962</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>34.3%</td>\n    <td>1163</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>34.5%</td>\n    <td>1242</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page009.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                369,
+                222,
+                484,
+                309
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 5: Ablation study on all network designs in an incremental way. FPS is tested with FP16-precision and batch-size=32 on Tesla T4 GPUs.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>ATSS[51]</td>\n    <td>32.5%</td>\n  </tr>\n  <tr>\n    <td>SimOTA[7]</td>\n    <td>34.5%</td>\n  </tr>\n  <tr>\n    <td>TAL[5]</td>\n    <td>35.0%</td>\n  </tr>\n  <tr>\n    <td>DW[18]</td>\n    <td>33.4%</td>\n  </tr>\n  <tr>\n    <td>Object Box[48]</td>\n    <td>30.1%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page009.png"
+        },
+        {
+            "serial_number": 7,
+            "page": 9,
+            "type": "table",
+            "bbox": [
+                369,
+                340,
+                484,
+                398
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 6: Comparisons of label assignment methods.\" The text content from the image is:\n\n\"Table 7: Comparisons of label assignment methods in warm-up stage.\" The text content from the image is:\n\n\"Table 7: Comparisons of label assignment methods in warm-up stage.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Warmup strategy</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>w/o</td>\n    <td>34.9%</td>\n  </tr>\n  <tr>\n    <td>ATSS[51]</td>\n    <td>35.0%</td>\n  </tr>\n  <tr>\n    <td>Sim OTA[7]</td>\n    <td>34.9%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_007_page009.png"
+        },
+        {
+            "serial_number": 8,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                80,
+                70,
+                255,
+                233
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 8: Ablation study on classification loss functions.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Classification Loss</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-N</td>\n    <td>Focal Loss[22]</td>\n    <td>35.0%</td>\n  </tr>\n  <tr>\n    <td>Poly Loss[17]</td>\n    <td>34.0%</td>\n  </tr>\n  <tr>\n    <td>QFL[20]</td>\n    <td>35.4%</td>\n  </tr>\n  <tr>\n    <td>VFL[50]</td>\n    <td>35.2%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>Focal Loss[22]</td>\n    <td>42.9%</td>\n  </tr>\n  <tr>\n    <td>Poly Loss[17]</td>\n    <td>41.5%</td>\n  </tr>\n  <tr>\n    <td>QFL[20]</td>\n    <td>43.1%</td>\n  </tr>\n  <tr>\n    <td>VFL[50]</td>\n    <td>43.2%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-M</td>\n    <td>Focal Loss[22]</td>\n    <td>48.0%</td>\n  </tr>\n  <tr>\n    <td>Poly Loss[17]</td>\n    <td>46.9%</td>\n  </tr>\n  <tr>\n    <td>QFL[20]</td>\n    <td>48.0%</td>\n  </tr>\n  <tr>\n    <td>VFL[50]</td>\n    <td>48.1%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_008_page010.png"
+        },
+        {
+            "serial_number": 9,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                355,
+                70,
+                497,
+                201
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Loss</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-N</td>\n    <td>GloU[35]</td>\n    <td>35.1%</td>\n  </tr>\n  <tr>\n    <td>CloU[52]</td>\n    <td>35.1%</td>\n  </tr>\n  <tr>\n    <td>SIOU[8]</td>\n    <td>35.5%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>GloU[35]</td>\n    <td>43.1%</td>\n  </tr>\n  <tr>\n    <td>CloU[52]</td>\n    <td>43.1%</td>\n  </tr>\n  <tr>\n    <td>SIOU[8]</td>\n    <td>43.3%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-M</td>\n    <td>GloU[35]</td>\n    <td>48.2%</td>\n  </tr>\n  <tr>\n    <td>CloU[52]</td>\n    <td>48.3%</td>\n  </tr>\n  <tr>\n    <td>SIOU[8]</td>\n    <td>48.1%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_009_page010.png"
+        },
+        {
+            "serial_number": 10,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                339,
+                245,
+                514,
+                387
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 9: Ablation study on IoU-series box regression loss functions. The classification loss is VFL [50].\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Loss</td>\n    <td>APval</td>\n    <td>FPS(bs=32)</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-N</td>\n    <td>w/o</td>\n    <td>35.0%</td>\n    <td>1226</td>\n  </tr>\n  <tr>\n    <td>DFL[20]</td>\n    <td>35.2%</td>\n    <td>1022</td>\n  </tr>\n  <tr>\n    <td>DFLv2[19]</td>\n    <td>35.2%</td>\n    <td>819</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>w/o</td>\n    <td>42.9%</td>\n    <td>486</td>\n  </tr>\n  <tr>\n    <td>DFL[20]</td>\n    <td>43.0%</td>\n    <td>461</td>\n  </tr>\n  <tr>\n    <td>DFLv2[19]</td>\n    <td>43.0%</td>\n    <td>422</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-M</td>\n    <td>w/o</td>\n    <td>48.0%</td>\n    <td>233</td>\n  </tr>\n  <tr>\n    <td>DFL[20]</td>\n    <td>48.2%</td>\n    <td>236</td>\n  </tr>\n  <tr>\n    <td>DFLv2[19]</td>\n    <td>48.3%</td>\n    <td>226</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_010_page010.png"
+        },
+        {
+            "serial_number": 11,
+            "page": 10,
+            "type": "table",
+            "bbox": [
+                351,
+                419,
+                501,
+                525
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 10: Ablation study on probability loss functions.\" Table 11: Effectiveness of object loss.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Object Loss</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-N</td>\n    <td></td>\n    <td>35.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>33.9%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td></td>\n    <td>42.9%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>41.4%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-M</td>\n    <td></td>\n    <td>48.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td>46.5%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_011_page010.png"
+        },
+        {
+            "serial_number": 12,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                87,
+                70,
+                248,
+                128
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>300 epochs</td>\n    <td>400 epochs</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-N</td>\n    <td>35.9%</td>\n    <td>36.3%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-T</td>\n    <td>40.3%</td>\n    <td>40.9%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>43.4%</td>\n    <td>43.9%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_012_page011.png"
+        },
+        {
+            "serial_number": 13,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                90,
+                213,
+                245,
+                286
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 12: Experiments of more training epochs on small models.\" The text content from the image is:\n\n\"Table 12: Experiments of more training epochs on small models.\" The text in the image reads: \"400 epochs is a better convergence scheme for YOLOv6.\" The text content from the image is:\n\n\"Table 13: Ablation study on the self-distillation.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Cls.</td>\n    <td>Reg.</td>\n    <td>Weight Decay</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>51.0%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>51.4%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>51.7%</td>\n  </tr>\n  <tr>\n    <td></td>\n    <td></td>\n    <td></td>\n    <td>52.3%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_013_page011.png"
+        },
+        {
+            "serial_number": 14,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                325,
+                70,
+                528,
+                298
+            ],
+            "caption": "Table 14: Experimental results about the strategies for solving the problem of the performance degradation without extra gray border. Table 14: Experimental results about the strategies for solving the problem of the performance degradation without extra gray border.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>ImageSize</td>\n    <td>BorderSize</td>\n    <td>CloseMosaic</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-N</td>\n    <td>640</td>\n    <td>16</td>\n    <td></td>\n    <td>36.0%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>16</td>\n    <td></td>\n    <td>36.2%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>0</td>\n    <td></td>\n    <td>35.6%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>0</td>\n    <td></td>\n    <td>36.0%</td>\n  </tr>\n  <tr>\n    <td>634</td>\n    <td>3</td>\n    <td></td>\n    <td>36.2%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>640</td>\n    <td>16</td>\n    <td></td>\n    <td>43.4%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>16</td>\n    <td></td>\n    <td>43.9%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>0</td>\n    <td></td>\n    <td>42.9%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>0</td>\n    <td></td>\n    <td>43.4%</td>\n  </tr>\n  <tr>\n    <td>634</td>\n    <td>3</td>\n    <td></td>\n    <td>43.7%</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-M</td>\n    <td>640</td>\n    <td>16</td>\n    <td></td>\n    <td>48.4%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>16</td>\n    <td></td>\n    <td>48.4%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>0</td>\n    <td></td>\n    <td>47.7%</td>\n  </tr>\n  <tr>\n    <td>640</td>\n    <td>0</td>\n    <td></td>\n    <td>47.9%</td>\n  </tr>\n  <tr>\n    <td>634</td>\n    <td>3</td>\n    <td></td>\n    <td>48.5%</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_014_page011.png"
+        },
+        {
+            "serial_number": 15,
+            "page": 11,
+            "type": "table",
+            "bbox": [
+                315,
+                502,
+                537,
+                585
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 15: PTQ performance of YOLOv6s trained with RepOptimizer.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>FP32 APvalPTQ INT8 APval</td>\n  </tr>\n  <tr>\n    <td>(v1.0)</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>42.435.0</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-Sw RepOptimizer</td>\n    <td>42.440.9</td>\n  </tr>\n  <tr>\n    <td>(v2.0)</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>43.441.3</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-Sw RepOptimizer</td>\n    <td>43.142.6</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_015_page011.png"
+        },
+        {
+            "serial_number": 16,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                57,
+                106,
+                279,
+                152
+            ],
+            "caption": "The text content from the image is:\n\n\"full QAT in Table 16. Partial QAT leads to better accuracy with a slightly reduced throughput.\" The text content from the image is:\n\n\"Table 16: QAT performance of YOLOv6-S (v1.0) under different settings.\" The text content from the image is:\n\n\"Table 16: QAT performance of YOLOv6-S (v1.0) under different settings.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>INT8 APval</td>\n    <td>FPS</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S</td>\n    <td>35.0</td>\n    <td>556</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S+RepOpt+PartialQAT+CW Distill</td>\n    <td>42.3</td>\n    <td>503</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S+RepOpt+QAT+CW Distill</td>\n    <td>42.1</td>\n    <td>528</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_016_page012.png"
+        },
+        {
+            "serial_number": 17,
+            "page": 12,
+            "type": "table",
+            "bbox": [
+                57,
+                313,
+                279,
+                387
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>APval</td>\n    <td>FPSbs=1</td>\n    <td>FPSbs=32</td>\n  </tr>\n  <tr>\n    <td>YOLOv5-S[30]</td>\n    <td>36.9</td>\n    <td>502†</td>\n    <td>N/A</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S*[30]</td>\n    <td>41.3</td>\n    <td>579†</td>\n    <td>N/A</td>\n  </tr>\n  <tr>\n    <td>YOLOv7-Tiny[30]</td>\n    <td>37.0</td>\n    <td>512†</td>\n    <td>N/A</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S(FP16)</td>\n    <td>43.4</td>\n    <td>377†</td>\n    <td>541†</td>\n  </tr>\n  <tr>\n    <td>YOLOv6-S(Our QAT strategy)</td>\n    <td>43.3</td>\n    <td>596†</td>\n    <td>869†</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_017_page012.png"
+        },
+        {
+            "serial_number": 18,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                74,
+                302,
+                261,
+                569
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 18: YOLO-series comparison of latency and throughput on a T4 GPU with a higher version of TensorRT (8.2).\" The text content from the image is:\n\n\"Table 18: YOLO-series comparison of latency and throughput on a T4 GPU with a higher version of TensorRT (8.2).\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>FPS(bs=1)</td>\n    <td>FPS(bs=32)</td>\n    <td>Latency(bs=1)</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-N[10]</td>\n    <td>702</td>\n    <td>843</td>\n    <td>1.4ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-S[10]</td>\n    <td>433</td>\n    <td>515</td>\n    <td>2.3ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-M[10]</td>\n    <td>202</td>\n    <td>235</td>\n    <td>4.9ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-L[10]</td>\n    <td>126</td>\n    <td>137</td>\n    <td>7.9ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-Tiny[7]</td>\n    <td>766</td>\n    <td>1393</td>\n    <td>1.3ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-S[7]</td>\n    <td>313</td>\n    <td>489</td>\n    <td>2.6ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-M[7]</td>\n    <td>159</td>\n    <td>204</td>\n    <td>5.3ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-L[7]</td>\n    <td>104</td>\n    <td>117</td>\n    <td>9.0ms</td>\n  </tr>\n  <tr>\n    <td>P PYO LOE-S[45]</td>\n    <td>357</td>\n    <td>493</td>\n    <td>2.8ms</td>\n  </tr>\n  <tr>\n    <td>P PYO LOE-M[45]</td>\n    <td>163</td>\n    <td>210</td>\n    <td>6.1ms</td>\n  </tr>\n  <tr>\n    <td>P PYO LOE-L[45]</td>\n    <td>110</td>\n    <td>145</td>\n    <td>9.1ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-Tiny[42]</td>\n    <td>464</td>\n    <td>568</td>\n    <td>2.1ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v7[42]</td>\n    <td>128</td>\n    <td>135</td>\n    <td>7.6ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-N</td>\n    <td>810</td>\n    <td>1323</td>\n    <td>1.2ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-T</td>\n    <td>469</td>\n    <td>677</td>\n    <td>2.1ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-S</td>\n    <td>362</td>\n    <td>522</td>\n    <td>2.7ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-M</td>\n    <td>180</td>\n    <td>241</td>\n    <td>5.6ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-L-ReLU</td>\n    <td>111</td>\n    <td>145</td>\n    <td>9.0ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-L</td>\n    <td>105</td>\n    <td>131</td>\n    <td>9.6ms</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_018_page015.png"
+        },
+        {
+            "serial_number": 19,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                333,
+                70,
+                520,
+                336
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>FPS(bs=1)</td>\n    <td>FPS(bs=32)</td>\n    <td>Latency(bs=1)</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-N[10]</td>\n    <td>709</td>\n    <td>1891</td>\n    <td>1.3ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-S[10]</td>\n    <td>571</td>\n    <td>1354</td>\n    <td>1.6ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-M[10]</td>\n    <td>332</td>\n    <td>685</td>\n    <td>2.9ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-L[10]</td>\n    <td>215</td>\n    <td>426</td>\n    <td>4.5ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-Tiny[7]</td>\n    <td>739</td>\n    <td>3271</td>\n    <td>1.3ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-S[7]</td>\n    <td>515</td>\n    <td>1254</td>\n    <td>1.9ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-M[7]</td>\n    <td>308</td>\n    <td>605</td>\n    <td>3.2ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-L[7]</td>\n    <td>189</td>\n    <td>370</td>\n    <td>5.2ms</td>\n  </tr>\n  <tr>\n    <td>P PYO LOE-S[45]</td>\n    <td>435</td>\n    <td>1117</td>\n    <td>2.2ms</td>\n  </tr>\n  <tr>\n    <td>P PYO LOE-M[45]</td>\n    <td>263</td>\n    <td>583</td>\n    <td>3.8ms</td>\n  </tr>\n  <tr>\n    <td>P PYO LOE-L[45]</td>\n    <td>194</td>\n    <td>415</td>\n    <td>5.1ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-Tiny[42]</td>\n    <td>647</td>\n    <td>1269</td>\n    <td>1.5ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v7[42]</td>\n    <td>229</td>\n    <td>425</td>\n    <td>4.3ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-N</td>\n    <td>752</td>\n    <td>2031</td>\n    <td>1.0ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-T</td>\n    <td>604</td>\n    <td>1724</td>\n    <td>1.4ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-S</td>\n    <td>507</td>\n    <td>1546</td>\n    <td>1.7ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-M</td>\n    <td>287</td>\n    <td>750</td>\n    <td>3.4ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-L-ReLU</td>\n    <td>198</td>\n    <td>476</td>\n    <td>5.0ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-L</td>\n    <td>175</td>\n    <td>416</td>\n    <td>5.6ms</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_019_page015.png"
+        },
+        {
+            "serial_number": 20,
+            "page": 15,
+            "type": "table",
+            "bbox": [
+                344,
+                433,
+                508,
+                585
+            ],
+            "caption": "Table 19: YOLO-series comparison of latency and throughput on a V100 GPU. We measure all models at FP16-precision with the input size 640×640 in the exact same environment. Table 19: YOLO-series comparison of latency and throughput on a V100 GPU. We measure all models at FP16-precision with the input size 640×640 in the exact same environment. The text content from the image is:\n\n\"Deep Neural Network (DNN), as shown in Table 20.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Input</td>\n    <td>Latency</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-N[10]</td>\n    <td>640</td>\n    <td>118.9ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v5-S[10]</td>\n    <td>640</td>\n    <td>202.2ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-Tiny[7]</td>\n    <td>416</td>\n    <td>144.2ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-S[7]</td>\n    <td>640</td>\n    <td>164.6ms</td>\n  </tr>\n  <tr>\n    <td>YOLO X-M[7]</td>\n    <td>640</td>\n    <td>357.9ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v7-Tiny[42]</td>\n    <td>640</td>\n    <td>137.5ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-N</td>\n    <td>640</td>\n    <td>70.0ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-T</td>\n    <td>640</td>\n    <td>128.1ms</td>\n  </tr>\n  <tr>\n    <td>YOLO v6-S</td>\n    <td>640</td>\n    <td>163.4ms</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_020_page015.png"
+        },
+        {
+            "serial_number": 21,
+            "page": 16,
+            "type": "table",
+            "bbox": [
+                105,
+                180,
+                230,
+                254
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 21: Partial post-training quantization performance w.r.t. difference sensitivity metrics.\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>APval</td>\n  </tr>\n  <tr>\n    <td>MSE</td>\n    <td>41.5</td>\n  </tr>\n  <tr>\n    <td>Cosine Similarity</td>\n    <td>41.1</td>\n  </tr>\n  <tr>\n    <td>SNR</td>\n    <td>41.1</td>\n  </tr>\n  <tr>\n    <td>Direct AP Evaluation</td>\n    <td>42.0</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_021_page016.png"
+        }
+    ]
+}

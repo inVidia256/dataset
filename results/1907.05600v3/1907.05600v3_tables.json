@@ -1,0 +1,38 @@
+{
+    "total_count": 2,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                304,
+                468,
+                505,
+                618
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<html><body>\n<div class=\"image\"><img/></div> \n</body></html>\n</html>",
+            "cropped_image": "tables/table_001_page006.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 7,
+            "type": "table",
+            "bbox": [
+                127,
+                84,
+                305,
+                249
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 1: Inception and FID scores for CIFAR-10\" The text content from the image is:\n\n\"Table 1: Inception and FID scores for CIFAR-10\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Model</td>\n    <td>Inception</td>\n    <td>FID</td>\n  </tr>\n  <tr>\n    <td>CIFAR-10 Unconditional</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>Pixel CNN[59]</td>\n    <td>4.60</td>\n    <td>65.93</td>\n  </tr>\n  <tr>\n    <td>Pixel IQN[42]</td>\n    <td>5.29</td>\n    <td>49.46</td>\n  </tr>\n  <tr>\n    <td>EBM[12]</td>\n    <td>6.02</td>\n    <td>40.58</td>\n  </tr>\n  <tr>\n    <td>WGAN-GP[18]</td>\n    <td>7.86±.07</td>\n    <td>36.4</td>\n  </tr>\n  <tr>\n    <td>MoLM[45]</td>\n    <td>7.90±.10</td>\n    <td>18.9</td>\n  </tr>\n  <tr>\n    <td>S N GAN[36]</td>\n    <td>8.22±.05</td>\n    <td>21.7</td>\n  </tr>\n  <tr>\n    <td>Progressive GAN[25]</td>\n    <td>8.80±.05</td>\n    <td>-</td>\n  </tr>\n  <tr>\n    <td>NCSN(Ours)</td>\n    <td>8.87±.12</td>\n    <td>25.32</td>\n  </tr>\n  <tr>\n    <td>CIFAR-10 Conditional</td>\n    <td></td>\n  </tr>\n  <tr>\n    <td>EBM[12]</td>\n    <td>8.30</td>\n    <td>37.9</td>\n  </tr>\n  <tr>\n    <td>S N GAN[36]</td>\n    <td>8.60±.08</td>\n    <td>25.5</td>\n  </tr>\n  <tr>\n    <td>Big GAN[6]</td>\n    <td>9.22</td>\n    <td>14.73</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page007.png"
+        }
+    ]
+}

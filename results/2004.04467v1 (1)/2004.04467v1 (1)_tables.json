@@ -1,0 +1,102 @@
+{
+    "total_count": 6,
+    "content_type": "tables",
+    "data": [
+        {
+            "serial_number": 1,
+            "page": 3,
+            "type": "table",
+            "bbox": [
+                331,
+                70,
+                521,
+                163
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Autoencoder</td>\n    <td>(a) DataDistribution</td>\n    <td>(b) LatentDistribution</td>\n    <td>(c) ReciprocitySpace</td>\n  </tr>\n  <tr>\n    <td>VAE[28，41]</td>\n    <td>similarity</td>\n    <td>imposed/divergence</td>\n    <td>data</td>\n  </tr>\n  <tr>\n    <td>AAE[35]</td>\n    <td>similarity</td>\n    <td>imposed/adversarial</td>\n    <td>data</td>\n  </tr>\n  <tr>\n    <td>VAE/GAN[31]</td>\n    <td>similarity</td>\n    <td>imposed/divergence</td>\n    <td>data</td>\n  </tr>\n  <tr>\n    <td>VampPrior[48]</td>\n    <td>similarity</td>\n    <td>learned/divergence</td>\n    <td>data</td>\n  </tr>\n  <tr>\n    <td>BiG AN[6]</td>\n    <td>adversarial</td>\n    <td>imposed/adversarial</td>\n    <td>data</td>\n  </tr>\n  <tr>\n    <td>ALI[9]</td>\n    <td>adversarial</td>\n    <td>imposed/adversarial</td>\n    <td>adversarial</td>\n  </tr>\n  <tr>\n    <td>VEEGAN[47]</td>\n    <td>adversarial</td>\n    <td>imposed/divergence</td>\n    <td>latent</td>\n  </tr>\n  <tr>\n    <td>AGE[49]</td>\n    <td>adversarial</td>\n    <td>imposed/adversarial</td>\n    <td>latent</td>\n  </tr>\n  <tr>\n    <td>Intro VAE[20]</td>\n    <td>adversarial</td>\n    <td>imposed/adversarial</td>\n    <td>data</td>\n  </tr>\n  <tr>\n    <td>AL AE(ours)</td>\n    <td>adversarial</td>\n    <td>learned/divergence</td>\n    <td>latent</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_001_page003.png"
+        },
+        {
+            "serial_number": 2,
+            "page": 4,
+            "type": "table",
+            "bbox": [
+                308,
+                520,
+                546,
+                711
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Algorithm 1 ALAE Training</td>\n  </tr>\n  <tr>\n    <td>1：θF，θG，θE，θD←Initialize network parameters</td>\n  </tr>\n  <tr>\n    <td>2：while not converged do</td>\n  </tr>\n  <tr>\n    <td>3：Step I.Update E，and D</td>\n  </tr>\n  <tr>\n    <td>4：x- Random mini-batch from dataset</td>\n  </tr>\n  <tr>\n    <td>5：z-Samples from prior N(0，I)</td>\n  </tr>\n  <tr>\n    <td>6：Ladv-softplus(DoEoGoF(z))+softplus(-DoE(x))+</td>\n  </tr>\n  <tr>\n    <td>7：θE，θD-ADAM(VaD，θELEadv，θD，θE，α，β1，β2)</td>\n  </tr>\n  <tr>\n    <td>8：Step II.Update F，and G</td>\n  </tr>\n  <tr>\n    <td>9：z-Samples from prior N(0，I)</td>\n  </tr>\n  <tr>\n    <td>10：Ladv-softplus(-DoEoGof(z))</td>\n  </tr>\n  <tr>\n    <td>11：θF，θG-ADAM(VaF，θGLadv，θF，θG，α，β1，β2)</td>\n  </tr>\n  <tr>\n    <td>12：Step III.Update E，and G</td>\n  </tr>\n  <tr>\n    <td>13：z-Samples from prior N(0，I)</td>\n  </tr>\n  <tr>\n    <td>14：Lerror-∥F(z)-EoGof(z)∥2</td>\n  </tr>\n  <tr>\n    <td>15：θE，θG-ADAM(VaE，θGLerror，θE，θG，α，β1，β2)</td>\n  </tr>\n  <tr>\n    <td>16：end while</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_002_page004.png"
+        },
+        {
+            "serial_number": 3,
+            "page": 5,
+            "type": "table",
+            "bbox": [
+                307,
+                140,
+                546,
+                206
+            ],
+            "caption": "The text content from the image is as follows:\n\n\"Table 2: MNIST classification. Classification accuracy (%) on the permutation-invariant MNIST [32] using 1NN and linear SVM, with same writers (SW) and different writers (DW) settings, and short features (sf) vs. long features (lf), indicated as sf/lf.\" Table 2: MNIST classification. Classification accuracy (%) on the permutation-invariant MNIST [32] using 1NN and linear SVM, with same writers (SW) and different writers (DW) settings, and short features (sf) vs. long features (lf), indicated as sf/lf. Table 2: MNIST classification. Classification accuracy (%) on the permutation-invariant MNIST [32] using 1NN and linear SVM, with same writers (SW) and different writers (DW) settings, and short features (sf) vs. long features (lf), indicated as sf/lf.",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>1NN SW</td>\n    <td>Linear SVM SW</td>\n    <td>1NN DW</td>\n    <td>Linear SVM DW</td>\n  </tr>\n  <tr>\n    <td>AE(1)</td>\n    <td>97.15/97.43</td>\n    <td>88.71/97.27</td>\n    <td>96.84/96.80</td>\n    <td>89.78/97.72</td>\n  </tr>\n  <tr>\n    <td>AE(1)</td>\n    <td>97.52/97.37</td>\n    <td>88.78/97.23</td>\n    <td>97.05/96.77</td>\n    <td>89.78/97.72</td>\n  </tr>\n  <tr>\n    <td>LR</td>\n    <td>92.79/97.28</td>\n    <td>89.74/97.56</td>\n    <td>91.90/96.69</td>\n    <td>90.03/97.80</td>\n  </tr>\n  <tr>\n    <td>J LR</td>\n    <td>92.54/97.02</td>\n    <td>89.23/97.19</td>\n    <td>91.97/96.45</td>\n    <td>90.82/97.62</td>\n  </tr>\n  <tr>\n    <td>BiG AN[7]</td>\n    <td>95.83/97.14</td>\n    <td>90.52/97.59</td>\n    <td>95.38/96.81</td>\n    <td>91.34/97.74</td>\n  </tr>\n  <tr>\n    <td>AL AE(ours)</td>\n    <td>93.79/97.61</td>\n    <td>93.47/98.20</td>\n    <td>94.59/97.47</td>\n    <td>94.23/98.64</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_003_page005.png"
+        },
+        {
+            "serial_number": 4,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                86,
+                70,
+                248,
+                155
+            ],
+            "caption": "The text content from the image is:\n\n\"Table 3: FID scores. FID scores (lower is better) measured on FFHQ [24] and LSUN Bedroom [54].\" The text content from the image is:\n\n\"Table 3: FID scores. FID scores (lower is better) measured on FFHQ [24] and LSUN Bedroom [54].\"",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>FF HQ</td>\n    <td>LSUNBedroom</td>\n  </tr>\n  <tr>\n    <td>Style GAN[24]</td>\n    <td>4.40</td>\n    <td>2.65</td>\n  </tr>\n  <tr>\n    <td>P GG AN[23]</td>\n    <td>-</td>\n    <td>8.34</td>\n  </tr>\n  <tr>\n    <td>Intro VAE[20]</td>\n    <td>-</td>\n    <td>8.84</td>\n  </tr>\n  <tr>\n    <td>Pioneer[16]</td>\n    <td>-</td>\n    <td>18.39</td>\n  </tr>\n  <tr>\n    <td>Balanced Pioneer[17]</td>\n    <td>-</td>\n    <td>17.89</td>\n  </tr>\n  <tr>\n    <td>Style AL AE Generation</td>\n    <td>13.09</td>\n    <td>17.13</td>\n  </tr>\n  <tr>\n    <td>Style AL AE Reconstruction</td>\n    <td>16.52</td>\n    <td>15.92</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_004_page006.png"
+        },
+        {
+            "serial_number": 5,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                344,
+                70,
+                507,
+                136
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td>Method</td>\n    <td>Path length</td>\n  </tr>\n  <tr>\n    <td>full</td>\n    <td>end</td>\n  </tr>\n  <tr>\n    <td>Style GAN</td>\n    <td></td>\n    <td>412.0</td>\n    <td>415.3</td>\n  </tr>\n  <tr>\n    <td>StyleGAN no mixing W</td>\n    <td></td>\n    <td>200.5</td>\n    <td>160.6</td>\n  </tr>\n  <tr>\n    <td>Style GAN</td>\n    <td></td>\n    <td>231.5</td>\n    <td>182.1</td>\n  </tr>\n  <tr>\n    <td>Style AL AE</td>\n    <td></td>\n    <td>300.5</td>\n    <td>292.0</td>\n  </tr>\n  <tr>\n    <td>Style AL AE</td>\n    <td></td>\n    <td>134.5</td>\n    <td>103.4</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_005_page006.png"
+        },
+        {
+            "serial_number": 6,
+            "page": 6,
+            "type": "table",
+            "bbox": [
+                344,
+                603,
+                508,
+                665
+            ],
+            "caption": "",
+            "footnote": "",
+            "latex": "",
+            "html": "<html>\n<table>\n  <tr>\n    <td></td>\n    <td>FID</td>\n    <td>PPL full</td>\n  </tr>\n  <tr>\n    <td>PG GAN[23]</td>\n    <td>8.03</td>\n    <td>229.2</td>\n  </tr>\n  <tr>\n    <td>GLOW[27]</td>\n    <td>68.93</td>\n    <td>219.6</td>\n  </tr>\n  <tr>\n    <td>PIONEER[16]</td>\n    <td>39.17</td>\n    <td>155.2</td>\n  </tr>\n  <tr>\n    <td>Balanced PIONEER[17]</td>\n    <td>25.25</td>\n    <td>146.2</td>\n  </tr>\n  <tr>\n    <td>Style ALAE(ours)</td>\n    <td>19.21</td>\n    <td>33.29</td>\n  </tr>\n</table>\n</html>",
+            "cropped_image": "tables/table_006_page006.png"
+        }
+    ]
+}

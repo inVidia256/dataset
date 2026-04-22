@@ -1,0 +1,282 @@
+{
+    "total_count": 23,
+    "content_type": "formulas",
+    "data": [
+        {
+            "page": 2,
+            "type": "formula",
+            "bbox": [
+                117,
+                666,
+                492,
+                687
+            ],
+            "content": "```latex\na_v^{(k)} = \\text{AGGREGATE}^{(k)}\\left(\\left\\{h_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right), \\quad h_v^{(k)} = \\text{COMBINE}^{(k)}\\left(h_v^{(k-1)}, a_v^{(k)}\\right),\n```",
+            "latex": "```latex\na_v^{(k)} = \\text{AGGREGATE}^{(k)}\\left(\\left\\{h_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right), \\quad h_v^{(k)} = \\text{COMBINE}^{(k)}\\left(h_v^{(k-1)}, a_v^{(k)}\\right),\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                192,
+                245,
+                419,
+                266
+            ],
+            "content": "```latex\na_v^{(k)} = \\text{MAX} \\left( \\left\\{ \\text{ReLU} \\left( W \\cdot h_u^{(k-1)} \\right), \\forall u \\in \\mathcal{N}(v) \\right\\} \\right),\n```",
+            "latex": "```latex\na_v^{(k)} = \\text{MAX} \\left( \\left\\{ \\text{ReLU} \\left( W \\cdot h_u^{(k-1)} \\right), \\forall u \\in \\mathcal{N}(v) \\right\\} \\right),\n```"
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                227,
+                403,
+                382,
+                418
+            ],
+            "content": "h _ { G } = \\mathrm { R E A D O U T } \\bigl ( \\{ h _ { v } ^ { ( K ) } \\mid v \\in G \\} \\bigr ) .",
+            "latex": "h _ { G } = \\mathrm { R E A D O U T } \\bigl ( \\{ h _ { v } ^ { ( K ) } \\mid v \\in G \\} \\bigr ) ."
+        },
+        {
+            "page": 3,
+            "type": "formula",
+            "bbox": [
+                182,
+                323,
+                428,
+                343
+            ],
+            "content": "```latex\nh_v^{(k)} = \\text{ReLU}\\left(W \\cdot \\text{MEAN}\\left\\{h_u^{(k-1)}, \\forall u \\in \\mathcal{N}(v) \\cup \\{v\\}\\right\\}\\right).\n```",
+            "latex": "```latex\nh_v^{(k)} = \\text{ReLU}\\left(W \\cdot \\text{MEAN}\\left\\{h_u^{(k-1)}, \\forall u \\in \\mathcal{N}(v) \\cup \\{v\\}\\right\\}\\right).\n```"
+        },
+        {
+            "page": 4,
+            "type": "formula",
+            "bbox": [
+                214,
+                568,
+                410,
+                589
+            ],
+            "content": "```latex\nh_v^{(k)} = \\phi\\left(h_v^{(k-1)}, f\\left(\\left\\{h_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right),\n```",
+            "latex": "```latex\nh_v^{(k)} = \\phi\\left(h_v^{(k-1)}, f\\left(\\left\\{h_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right),\n```"
+        },
+        {
+            "page": 5,
+            "type": "formula",
+            "bbox": [
+                181,
+                550,
+                429,
+                576
+            ],
+            "content": "```latex\nh_v^{(k)} = \\text{MLP}^{(k)} \\left( \\left(1 + \\epsilon^{(k)}\\right) \\cdot h_v^{(k-1)} + \\sum_{u \\in \\mathcal{N}(v)} h_u^{(k-1)} \\right).\n```",
+            "latex": "```latex\nh_v^{(k)} = \\text{MLP}^{(k)} \\left( \\left(1 + \\epsilon^{(k)}\\right) \\cdot h_v^{(k-1)} + \\sum_{u \\in \\mathcal{N}(v)} h_u^{(k-1)} \\right).\n```"
+        },
+        {
+            "page": 6,
+            "type": "formula",
+            "bbox": [
+                163,
+                398,
+                446,
+                420
+            ],
+            "content": "```latex\nh_G = CONCAT\\Bigg(\\text{READOUT}\\Big(\\big\\{h_v^{(k)} \\big| v \\in G\\big\\} \\Big) \\mid k = 0, 1, \\ldots, K\\Bigg).\n```",
+            "latex": "```latex\nh_G = CONCAT\\Bigg(\\text{READOUT}\\Big(\\big\\{h_v^{(k)} \\big| v \\in G\\big\\} \\Big) \\mid k = 0, 1, \\ldots, K\\Bigg).\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                209,
+                621,
+                401,
+                643
+            ],
+            "content": "```latex\nh_v^{(k)} = \\phi\\left(h_v^{(k-1)}, f\\left(\\left\\{h_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right)\n```",
+            "latex": "```latex\nh_v^{(k)} = \\phi\\left(h_v^{(k-1)}, f\\left(\\left\\{h_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right)\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                223,
+                678,
+                387,
+                699
+            ],
+            "content": "l _ { v } ^ { ( k ) } = g \\left( l _ { v } ^ { ( k - 1 ) } , \\left\\{ l _ { u } ^ { ( k - 1 ) } : u \\in { \\mathcal N } ( v ) \\right\\} \\right)",
+            "latex": "l _ { v } ^ { ( k ) } = g \\left( l _ { v } ^ { ( k - 1 ) } , \\left\\{ l _ { u } ^ { ( k - 1 ) } : u \\in { \\mathcal N } ( v ) \\right\\} \\right)"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                186,
+                331,
+                426,
+                354
+            ],
+            "content": "( h _ { v } ^ { ( j ) } , \\left\\{ h _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( v ) \\right\\} ) = \\left( h _ { u } ^ { ( j ) } , \\left\\{ h _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( u ) \\right\\} \\right)",
+            "latex": "( h _ { v } ^ { ( j ) } , \\left\\{ h _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( v ) \\right\\} ) = \\left( h _ { u } ^ { ( j ) } , \\left\\{ h _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( u ) \\right\\} \\right)"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                164,
+                437,
+                446,
+                460
+            ],
+            "content": "```latex\n\\left\\{\\left(h_v^{(i)}, \\left\\{h_u^{(i)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right\\} = \\left\\{\\left(\\phi(l_v^{(i)}), \\left\\{\\phi(l_u^{(i)}) : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right\\}\n```",
+            "latex": "```latex\n\\left\\{\\left(h_v^{(i)}, \\left\\{h_u^{(i)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right\\} = \\left\\{\\left(\\phi(l_v^{(i)}), \\left\\{\\phi(l_u^{(i)}) : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right\\}\n```"
+        },
+        {
+            "page": 14,
+            "type": "formula",
+            "bbox": [
+                191,
+                289,
+                420,
+                311
+            ],
+            "content": "( l _ { v } ^ { ( j ) } , \\left\\{ l _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( v ) \\right\\} ) = \\left( l _ { u } ^ { ( j ) } , \\left\\{ l _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( u ) \\right\\} \\right)",
+            "latex": "( l _ { v } ^ { ( j ) } , \\left\\{ l _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( v ) \\right\\} ) = \\left( l _ { u } ^ { ( j ) } , \\left\\{ l _ { w } ^ { ( j ) } : w \\in \\mathcal { N } ( u ) \\right\\} \\right)"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                221,
+                178,
+                389,
+                200
+            ],
+            "content": "```latex\nh_v^{(k)} = \\psi\\left(l_v^{(k-1)}, \\left\\{l_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\n```",
+            "latex": "```latex\nh_v^{(k)} = \\psi\\left(l_v^{(k-1)}, \\left\\{l_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right)\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                169,
+                221,
+                441,
+                243
+            ],
+            "content": "```latex\nh_v^{(k)} = \\psi \\circ g^{-1} g\\left(l_v^{(k-1)}, \\left\\{l_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right) = \\psi \\circ g^{-1} \\left(l_v^{(k)}\\right)\n```",
+            "latex": "```latex\nh_v^{(k)} = \\psi \\circ g^{-1} g\\left(l_v^{(k-1)}, \\left\\{l_u^{(k-1)} : u \\in \\mathcal{N}(v)\\right\\}\\right) = \\psi \\circ g^{-1} \\left(l_v^{(k)}\\right)\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                235,
+                661,
+                376,
+                676
+            ],
+            "content": "h \\left( X \\right) = \\left( x _ { 1 } , x _ { 2 } , \\ldots , x _ { n } , e , e , e \\ldots \\right) ,",
+            "latex": "h \\left( X \\right) = \\left( x _ { 1 } , x _ { 2 } , \\ldots , x _ { n } , e , e , e \\ldots \\right) ,"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                188,
+                133,
+                421,
+                155
+            ],
+            "content": "```latex\nh_{v}^{(k)} = \\phi\\left(\\varphi\\left(l_{v}^{(k-1)}\\right), f\\left(\\left\\{\\varphi\\left(l_{u}^{(k-1)}\\right) : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right).\n```",
+            "latex": "```latex\nh_{v}^{(k)} = \\phi\\left(\\varphi\\left(l_{v}^{(k-1)}\\right), f\\left(\\left\\{\\varphi\\left(l_{u}^{(k-1)}\\right) : u \\in \\mathcal{N}(v)\\right\\}\\right)\\right).\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                247,
+                439,
+                363,
+                453
+            ],
+            "content": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\phi(m, n) = 2^{m-1} \\cdot (2n - 1)\n```",
+            "latex": "The formula in the image can be written in LaTeX as follows:\n\n```latex\n\\phi(m, n) = 2^{m-1} \\cdot (2n - 1)\n```"
+        },
+        {
+            "page": 15,
+            "type": "formula",
+            "bbox": [
+                275,
+                539,
+                336,
+                553
+            ],
+            "content": "{ \\mathcal { X } } ^ { \\prime } = { \\mathcal { X } } \\cup \\{ e \\}",
+            "latex": "{ \\mathcal { X } } ^ { \\prime } = { \\mathcal { X } } \\cup \\{ e \\}"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                226,
+                691,
+                385,
+                718
+            ],
+            "content": "\\sum _ { x \\in X _ { 1 } } \\operatorname { R e L U } \\left( W x \\right) = \\sum _ { x \\in X _ { 2 } } \\operatorname { R e L U } \\left( W x \\right)",
+            "latex": "\\sum _ { x \\in X _ { 1 } } \\operatorname { R e L U } \\left( W x \\right) = \\sum _ { x \\in X _ { 2 } } \\operatorname { R e L U } \\left( W x \\right)"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                224,
+                639,
+                387,
+                671
+            ],
+            "content": "\\sum _ { x \\in X } \\operatorname { R e L U } \\left( W x \\right) = \\operatorname { R e L U } \\left( W \\sum _ { x \\in X } x \\right)",
+            "latex": "\\sum _ { x \\in X } \\operatorname { R e L U } \\left( W x \\right) = \\operatorname { R e L U } \\left( W \\sum _ { x \\in X } x \\right)"
+        },
+        {
+            "page": 16,
+            "type": "formula",
+            "bbox": [
+                167,
+                401,
+                442,
+                434
+            ],
+            "content": "\\epsilon \\cdot ( f ( c ) - f ( c ^ { \\prime } ) ) = \\left( f ( c ^ { \\prime } ) + \\sum _ { x \\in X ^ { \\prime } } f ( x ) \\right) - \\left( f ( c ) + \\sum _ { x \\in X } f ( x ) \\right) .",
+            "latex": "\\epsilon \\cdot ( f ( c ) - f ( c ^ { \\prime } ) ) = \\left( f ( c ^ { \\prime } ) + \\sum _ { x \\in X ^ { \\prime } } f ( x ) \\right) - \\left( f ( c ) + \\sum _ { x \\in X } f ( x ) \\right) ."
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                229,
+                306,
+                381,
+                325
+            ],
+            "content": "\\operatorname* { m a x } _ { x \\in X _ { 1 } } f ( x ) = \\operatorname* { m a x } _ { x \\in S } f ( x ) = \\operatorname* { m a x } _ { x \\in X _ { 2 } } f ( x )",
+            "latex": "\\operatorname* { m a x } _ { x \\in X _ { 1 } } f ( x ) = \\operatorname* { m a x } _ { x \\in S } f ( x ) = \\operatorname* { m a x } _ { x \\in X _ { 2 } } f ( x )"
+        },
+        {
+            "page": 17,
+            "type": "formula",
+            "bbox": [
+                181,
+                157,
+                431,
+                188
+            ],
+            "content": "\\frac { 1 } { | X _ { 2 } | } \\sum _ { x \\in X _ { 2 } } f ( x ) = \\frac { 1 } { k \\cdot | X _ { 1 } | } \\cdot k \\cdot \\sum _ { x \\in X _ { 1 } } f ( x ) = \\frac { 1 } { | X _ { 1 } | } \\sum _ { x \\in X _ { 1 } } f ( x )",
+            "latex": "\\frac { 1 } { | X _ { 2 } | } \\sum _ { x \\in X _ { 2 } } f ( x ) = \\frac { 1 } { k \\cdot | X _ { 1 } | } \\cdot k \\cdot \\sum _ { x \\in X _ { 1 } } f ( x ) = \\frac { 1 } { | X _ { 1 } | } \\sum _ { x \\in X _ { 1 } } f ( x )"
+        }
+    ]
+}
