@@ -20,3 +20,5 @@ LOGDIR="$DIRECTORY/${DATE}.log"
 export CUDA_VISIBLE_DEVICES=1,2,3
 nohup python3 $PROGRESS_NAME >$LOGDIR 2>&1 &
 
+#python parse/code/run_ocr_literature_center_inference_app.py
+# curl -X POST "http://localhost:8888/parsepdf"  -H "Content-Type: multipart/form-data" -F "file=@test_docs/sample.pdf" -o result.json

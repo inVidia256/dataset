@@ -197,12 +197,9 @@ class TaichuChat_transformers:
             self.model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
                 model_path,
                 torch_dtype=torch.float16,
-                device_map="auto",
+                device_map="cuda:0",
                 max_memory={
-                    0: "20GiB",
-                    1: "20GiB",
-                    2: "20GiB",
-                    3: "20GiB"
+                    0: "20GiB"
                 },
                 quantization_config=quantization_config,
                 low_cpu_mem_usage=True
@@ -232,7 +229,7 @@ class TaichuChat_transformers:
     def _setup_global_cuda_environment():
         import os
         os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
-        os.environ["CUDA_VISIBLE_DEVICES"] = "1,2,3,4,7"
+        os.environ["CUDA_VISIBLE_DEVICES"] = "0"
         os.environ["TRITON_CUDA_NUM_STAGES"] = "2"
         os.environ["TRITON_CUDA_NUM_WARPS"] = "4"
 

@@ -1,10 +1,24 @@
-device: cuda # cuda / cpu
+device: "cuda:0"
 models_dir: s1_model
+weights:
+  doclayout_yolo: doclayout_yolo.pt
+  layoutreader: layoutreader/
+  recognition: recognition_weight/
 layout_config: 
   model: doclayout_yolo
   reader:
     name: layoutreader
 chat_config:
   weight_path: s1_model/recognition_weight
-  backend: transformers # vllm / transformers
-  batch_size: 16
+  backend: transformers
+  batch_size: 8
+inference:  # 新增关键配置块
+  max_new_tokens: 4096
+  # 移除 max_length 配置，避免冲突
+  temperature: 0.3
+  top_p: 0.9
+  do_sample: false
+  use_cache: true
+
+# python parse/code/run_ocr_literature_center_inference_app.py
+# curl -X POST "http://localhost:8888/parsepdf"  -H "Content-Type: multipart/form-data" -F "file=@test_docs/sample.pdf" -o result.zip

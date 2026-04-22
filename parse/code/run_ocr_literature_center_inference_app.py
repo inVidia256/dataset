@@ -19,8 +19,8 @@ import tempfile
 from PyPDF2 import PdfReader, PdfWriter  # 导入PyPDF2库
 
 # 调整导入路径
-#sys.path.append(str(Path(__file__).resolve().parents[2]))
-sys.path.append("/code/BedrockOCR-main/")
+sys.path.append(str(Path(__file__).resolve().parents[2]))
+#sys.path.append("/code/BedrockOCR-main/")
 from magic_pdf.model.taichu_custom_model import TaichuOCR
 from self_task import single_task_recognition, parse_pdf
 import zipfile
@@ -64,8 +64,32 @@ def initialize_model():
     """初始化TaichuOCR模型"""
     global model_parser
     if model_parser is None:
-        model_config_path = "/code/BedrockOCR-main/configs.yaml"
-        config_path = os.getenv("OCR_CONFIG", model_config_path)
+        # 获取脚本路径
+        script_path = Path(__file__).resolve()
+        
+        # 计算默认配置路径（项目根目录的 model_configs.yaml）
+        project_root = script_path.parents[2]
+        default_config_path = str(project_root / "model_configs.yaml")
+        
+        # 获取环境变量
+        env_ocr_config = os.getenv("OCR_CONFIG")
+        
+        # 决定使用哪个配置路径
+        if env_ocr_config is None:
+            config_path = default_config_path
+            print(f"环境变量 OCR_CONFIG 未设置，使用默认路径: {config_path}")
+        elif env_ocr_config.strip() == "":
+            config_path = default_config_path
+            print(f"环境变量 OCR_CONFIG 为空字符串，使用默认路径: {config_path}")
+        else:
+            config_path = env_ocr_config
+            print(f"使用环境变量 OCR_CONFIG 指定的路径: {config_path}")
+        
+        # 确保配置路径存在
+        if not os.path.exists(config_path):
+            raise FileNotFoundError(f"配置文件不存在: {config_path}")
+        
+        print(f"加载配置文件: {config_path}")
         model_parser = TaichuOCR(config_path)
     return model_parser
 
@@ -330,4 +354,4 @@ async def parse_document(file: UploadFile = File(...)):
 if __name__ == '__main__':
     logging.basicConfig(stream=sys.stdout, format='%(asctime)s %(levelname)s:%(message)s', level=logging.INFO,
                         datefmt='%I:%M:%S')
-    uvicorn.run(app, host="0.0.0.0", port=22)
+    uvicorn.run(app, host="0.0.0.0", port=8888)
