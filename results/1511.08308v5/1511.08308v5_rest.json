@@ -1,0 +1,2261 @@
+{
+  "total_count": 212,
+  "content_type": "text",
+  "data": [
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        123,
+        77,
+        488,
+        94
+      ],
+      "content": "The text content from the image is:\n\n\"Named Entity Recognition with Bidirectional LSTM-CNNs\""
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        375,
+        128,
+        439,
+        141
+      ],
+      "content": "The text content from the image is \"Eric Nichols\"."
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        128,
+        128,
+        279,
+        170
+      ],
+      "content": "The text content from the image is:\n\nJason P.C. Chiu\nUniversity of British Columbia\njsonchiu@gmail.com"
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        309,
+        128,
+        505,
+        170
+      ],
+      "content": "The text content from the image is:\n\nEric Nichols\nHonda Research Institute Japan Co., Ltd.\ne.nichols@jp.honda-ri.com"
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        310,
+        143,
+        505,
+        170
+      ],
+      "content": "The text content from the image is:\n\nHonda Research Institute Japan Co., Ltd.\ne.nichols@jp.honda-ri.com"
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        255,
+        541,
+        314
+      ],
+      "content": "Figure 2: The convolutional neural network extracts character features from each word. The character embedding and (optionally) the character type feature vector are computed through lookup tables. Then, they are concatenated and passed into the CNN."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        328,
+        299,
+        400
+      ],
+      "content": "Figure 1: The (unrolled) BLSTM for tagging named entities. Multiple tables look up word-level feature vectors. The CNN (Figure 2) extracts a fixed length feature vector from character-level features. For each word, these vectors are concatenated and fed to the BLSTM network and then to the output layers (Figure 3)."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        336,
+        540,
+        484
+      ],
+      "content": "The text content from the image is as follows:\n\n\"that learns both character- and word-level features, presenting the first evaluation of such an architecture on well-established English language evaluation datasets. Furthermore, as lexicons are crucial to NER performance, we propose a new lexicon encoding scheme and matching algorithm that can make use of partial matches, and we compare it to the simpler approach of Collobert et al. (2011b). Extensive evaluation shows that our proposed method establishes a new state of the art on both the CoNLL-2003 NER shared task and the OntoNotes 5.0 datasets.\""
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        423,
+        299,
+        448
+      ],
+      "content": "of very small models) and quality word embeddings limited their effectiveness."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        496,
+        364,
+        509
+      ],
+      "content": "2 Model"
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        451,
+        299,
+        681
+      ],
+      "content": "Convolutional neural networks (CNN) have also been investigated for modeling character-level information, among other NLP tasks. Santos et al. (2015) and Labeau et al. (2015) successfully employed CNNs to extract character-level features for use in NER and POS-tagging respectively. Collobert et al. (2011b) also applied CNNs to semantic role labeling, and variants of the architecture have been applied to parsing and other tasks requiring tree structures (Blunsom et al., 2014). However, the effectiveness of character-level CNNs has not been evaluated for English NER. While we considered using character-level bi-directional LSTMs, which was recently proposed by Ling et al. (2015) for POS-tagging, preliminary evaluation shows that it does not perform significantly better than CNNs while being more computationally expensive to train."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        519,
+        540,
+        667
+      ],
+      "content": "Our neural network is inspired by the work of Collobert et al. (2011b), where lookup tables transform discrete features such as words and characters into continuous vector representations, which are then concatenated and fed into a neural network. Instead of a feed-forward network, we use the bi-directional long-short term memory (BLSTM) network. To induce character-level features, we use a convolutional neural network, which has been successfully applied to Spanish and Portuguese NER (Santos et al., 2015) and German POS-tagging (Labeau et al., 2015)."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        678,
+        489,
+        691
+      ],
+      "content": "The text content from the image is:\n\n\"2.1 Sequence-labelling with BLSTM\""
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        683,
+        299,
+        722
+      ],
+      "content": "The text content from the image is:\n\n\"Our main contribution lies in combining these neural network models for the NER task. We present a hybrid model of bi-directional LSTMs and CNNs.\""
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        696,
+        540,
+        722
+      ],
+      "content": "Following the speech-recognition framework outlined by Graves et al. (2013), we employed"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        311,
+        168,
+        540,
+        192
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 1: Number of entries for each category in the SENNA lexicon and our DBpedia lexicon.\""
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        249,
+        299,
+        273
+      ],
+      "content": "Figure 3: The output layers (“Out” in Figure 1) decode output into a score for each tag category."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        321,
+        279,
+        531,
+        290
+      ],
+      "content": "The text content from the image is:\n\n\"Table 2: Dataset sizes in number of tokens (entities)\""
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        311,
+        403,
+        324
+      ],
+      "content": "The text content from the image is \"2.3 Core Features\"."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        293,
+        299,
+        345
+      ],
+      "content": "The text content from the image is:\n\n\"a stacked1 bi-directional recurrent neural network with long short-term memory units to transform word features into named entity tag scores. Figures 1, 2, and 3 illustrate the network in detail.\""
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        329,
+        434,
+        342
+      ],
+      "content": "2.3.1 Word Embeddings"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        346,
+        540,
+        398
+      ],
+      "content": "Our best model uses the publicly available 50-dimensional word embeddings released by Collobert et al. (2011b)², which were trained on Wikipedia and the Reuters RCV-1 corpus."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        347,
+        299,
+        441
+      ],
+      "content": "The extracted features of each word are fed into a forward LSTM network and a backward LSTM network. The output of each network at each time step is decoded by a linear layer and a log-softmax layer into log-probabilities for each tag category. These two vectors are then simply added together to produce the final output."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        400,
+        540,
+        480
+      ],
+      "content": "We also experimented with two other sets of published embeddings, namely Stanford’s GloVe embeddings3 trained on 6 billion words from Wikipedia and Web text (Pennington et al., 2014) and Google’s word2vec embeddings4 trained on 100 billion words from Google News (Mikolov et al., 2013)."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        443,
+        299,
+        482
+      ],
+      "content": "We tried minor variants of output layer architecture and selected the one that performed the best in preliminary experiments."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        506,
+        277,
+        532
+      ],
+      "content": "2.2 Extracting Character Features Using a Convolutional Neural Network"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        482,
+        540,
+        575
+      ],
+      "content": "In addition, as we hypothesized that word embeddings trained on in-domain text may perform better, we also used the publicly available GloVe (Pennington et al., 2014) program and an in-house re-implementation5 of the word2vec (Mikolov et al., 2013) program to train word embeddings on Wikipedia and Reuters RCV1 datasets as well.6"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        538,
+        299,
+        631
+      ],
+      "content": "For each word we employ a convolution and a max layer to extract a new feature vector from the per-character feature vectors such as character embeddings (Section 2.3.2) and (optionally) character type (Section 2.5). Words are padded with a number of special PADDING characters on both sides depending on the window size of the CNN."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        577,
+        540,
+        603
+      ],
+      "content": "Following Collobert et al. (2011b), all words are lower-cased before passing through the lookup table"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        633,
+        299,
+        658
+      ],
+      "content": "The hyper-parameters of the CNN are the window size and the output vector size."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        145,
+        540,
+        169
+      ],
+      "content": "Figure 4: Example of how lexicon features are applied. The B, I, E, markings indicate that the token matches the Begin, Inside, and End token of an entry in the lexicon. S indicates that the token matches a single-token entry."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        145,
+        540,
+        169
+      ],
+      "content": "Figure 4: Example of how lexicon features are applied. The B, I, E, markings indicate that the token matches the Begin, Inside, and End token of an entry in the lexicon. S indicates that the token matches a single-token entry."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        145,
+        540,
+        169
+      ],
+      "content": "Figure 4: Example of how lexicon features are applied. The B, I, E, markings indicate that the token matches the Begin, Inside, and End token of an entry in the lexicon. S indicates that the token matches a single-token entry."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        190,
+        471,
+        202
+      ],
+      "content": "and Roth, 2009; Passos et al., 2014)."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        190,
+        471,
+        202
+      ],
+      "content": "and Roth, 2009; Passos et al., 2014)."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        190,
+        299,
+        230
+      ],
+      "content": "to convert to their corresponding embeddings. The pre-trained embeddings are allowed to be modified during training."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        238,
+        214,
+        251
+      ],
+      "content": "2.3.2 Character Embeddings"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        205,
+        541,
+        435
+      ],
+      "content": "For each of the four categories (Person, Organization, Location, Misc) defined by the CoNLL 2003 NER shared task, we compiled a list of known named entities from DBpedia (Auer et al., 2007), by extracting all descendants of DBpedia types corresponding to the CoNLL categories.14 We did not construct separate lexicons for the OntoNotes tagset because correspondences between DBpedia categories and its tags could not be found in many instances. In addition, for each entry we first removed parentheses and all text contained within, then stripped trailing punctuation,15 and finally tokenized it with the Penn Treebank tokenization script for the purpose of partial matching. Table 1 shows the size of each category in our lexicon compared to Collobert’s lexicon, which we extracted from their SENNA system."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        254,
+        299,
+        389
+      ],
+      "content": "We randomly initialized a lookup table with values drawn from a uniform distribution with range [−0.5, 0.5] to output a character embedding of 25 dimensions. The character set includes all unique characters in the CoNLL-2003 dataset8 plus the special tokens PADDING and UNKNOWN. The PADDING token is used for the CNN, and the UNKNOWN token is used for all other characters (which appear in OntoNotes). The same set of random embeddings was used for all experiments.9"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        399,
+        243,
+        411
+      ],
+      "content": "2.4 Additional Word-level Features"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        417,
+        210,
+        430
+      ],
+      "content": "2.4.1 Capitalization Feature"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        433,
+        299,
+        540
+      ],
+      "content": "As capitalization information is erased during lookup of the word embedding, we evaluate Collobert's method of using a separate lookup table to add a capitalization feature with the following options: allCaps, upperInitial, lowercase, mixedCaps, noinfo (Collobert et al., 2011b). This method is compared with the character type feature (Section 2.5) and character-level CNNs."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        437,
+        541,
+        626
+      ],
+      "content": "Figure 4 shows an example of how the lexicon features are applied. For each lexicon category, we match every n-gram (up to the length of the longest lexicon entry) against entries in the lexicon. A match is successful when the n-gram matches the prefix or suffix of an entry and is at least half the length of the entry. Because of the high potential for spurious matches, for all categories except Person, we discard partial matches less than 2 tokens in length. When there are multiple overlapping matches within the same category, we prefer exact matches over partial matches, and then longer matches over shorter matches, and finally earlier matches in the sentence over later matches. All matches are case insensitive."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        550,
+        146,
+        562
+      ],
+      "content": "2.4.2 Lexicons"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        566,
+        299,
+        591
+      ],
+      "content": "The text content from the image is:\n\n\"Most state of the art NER systems make use of lexicons as a form of external knowledge (Ratinov"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        322,
+        629,
+        540,
+        641
+      ],
+      "content": "For each token in the match, the feature is en-"
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        145,
+        206,
+        466,
+        218
+      ],
+      "content": "The text content from the image is:\n\n\"Table 3: Hyper-parameter search space and final values used for all experiments\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        145,
+        206,
+        466,
+        218
+      ],
+      "content": "The text content from the image is:\n\n\"Table 3: Hyper-parameter search space and final values used for all experiments\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        238,
+        445,
+        251
+      ],
+      "content": "2.6 Training and Inference"
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        256,
+        421,
+        269
+      ],
+      "content": "The text content from the image is \"2.6.1 Implementation\"."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        288,
+        299,
+        312
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 4: Development set F1 score performance of the best hyper-parameter settings in each optimization round.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        288,
+        299,
+        312
+      ],
+      "content": "The text content from the image is:\n\n\"Table 4: Development set F1 score performance of the best hyper-parameter settings in each optimization round.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        273,
+        541,
+        379
+      ],
+      "content": "We implement the neural network using the torch7 library (Collobert et al., 2011a). Training and inference are done on a per-sentence level. The initial states of the LSTM are zero vectors. Except for the character and word embeddings whose initialization has been described previously, all lookup tables are randomly initialized with values drawn from the standard normal distribution."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        340,
+        299,
+        407
+      ],
+      "content": "The text content from the image is:\n\n\"coded in BIOES annotation (Begin, Inside, Outside, End, Single), indicating the position of the token in the matched entry. In other words, B will not appear in a suffix-only partial match, and E will not appear in a prefix-only partial match.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        388,
+        502,
+        400
+      ],
+      "content": "The text content from the image is:\n\n\"2.6.2 Objective Function and Inference\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        405,
+        540,
+        430
+      ],
+      "content": "We train our network to maximize the sentence-level log-likelihood from Collobert et al. (2011b)."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        411,
+        299,
+        491
+      ],
+      "content": "As we will see in Section 4.5, we found that this more sophisticated method outperforms the method presented by Collobert et al. (2011b), which treats partial and exact matches equally, allows prefix but not suffix matches, allows very short partial matches, and marks tokens with YES/ NO."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        431,
+        541,
+        592
+      ],
+      "content": "First, we define a tag-transition matrix \\( A \\) where \\( A_{i,j} \\) represents the score of jumping from tag \\( i \\) to tag \\( j \\) in successive tokens, and \\( A_{0,i} \\) as the score for starting with tag \\( i \\). This matrix of parameters are also learned. Define \\( \\theta \\) as the set of parameters for the neural network, and \\( \\theta' = \\theta \\cup \\{A_{i,j} \\; \\forall i,j\\} \\) as the set of all parameters to be trained. Given an example sentence, \\([x]_1^T\\), of length \\( T \\), and define \\([f_\\theta]_{i,t}\\) as the score outputted by the neural network for the \\( t \\)th word and \\( i \\)th tag given parameters \\( \\theta \\), then the score of a sequence of tags \\([i]_1^T\\) is given as the sum of network and transition scores:"
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        496,
+        299,
+        590
+      ],
+      "content": "In addition, since Collobert et al. (2011b) released their lexicon with their SENNA system, we also applied their lexicon to our model for comparison and investigated using both lexicons simultaneously as distinct features. We found that the two lexicons complement each other and improve performance on the CoNLL-2003 dataset."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        595,
+        299,
+        635
+      ],
+      "content": "Our best model uses the SENNA lexicon with exact matching and our DBpedia lexicon with partial matching, with BIOES annotation in both cases."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        657,
+        264,
+        670
+      ],
+      "content": "2.5 Additional Character-level Features"
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        655,
+        541,
+        689
+      ],
+      "content": "The text content from the image is:\n\n\"Much later, we discovered that training with cross entropy objective while performing Viterbi decoding to restrict output to valid tag sequences also appears to work just as well.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        683,
+        299,
+        722
+      ],
+      "content": "A lookup table was used to output a 4-dimensional vector representing the type of the character (upper case, lower case, punctuation, other)."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        320,
+        689,
+        540,
+        722
+      ],
+      "content": "The text content from the image is as follows:\n\n18 OntoNotes results taken from (Durrett and Klein, 2014)\n19 Evaluation on OntoNotes 5.0 done by Pradhan et al. (2013)\n20 Not directly comparable as they evaluated on an earlier version"
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        290,
+        541,
+        338
+      ],
+      "content": "Table 5: Results of our models, with various feature sets, compared to other published results. The three sections are, in order, our models, published neural network models, and published non-neural network models. For the features, emb = Collobert word embeddings, caps = capitalization feature, lex = lexicon features from both SENNA and DBpedia lexicons. For F1 scores, standard deviations are in parentheses."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        290,
+        541,
+        338
+      ],
+      "content": "Table 5: Results of our models, with various feature sets, compared to other published results. The three sections are, in order, our models, published neural network models, and published non-neural network models. For the features, emb = Collobert word embeddings, caps = capitalization feature, lex = lexicon features from both SENNA and DBpedia lexicons. For F1 scores, standard deviations are in parentheses."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        290,
+        541,
+        338
+      ],
+      "content": "Table 5: Results of our models, with various feature sets, compared to other published results. The three sections are, in order, our models, published neural network models, and published non-neural network models. For the features, emb = Collobert word embeddings, caps = capitalization feature, lex = lexicon features from both SENNA and DBpedia lexicons. For F1 scores, standard deviations are in parentheses."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        358,
+        440,
+        372
+      ],
+      "content": "2.6.4 Learning Algorithm"
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        358,
+        299,
+        412
+      ],
+      "content": "Then, letting [y]_1^T be the true tag sequence, the sentence-level log-likelihood is obtained by normalizing the above score over all possible tag-sequences [j]_1^T using a softmax:"
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        382,
+        540,
+        530
+      ],
+      "content": "Training is done by mini-batch stochastic gradient descent (SGD) with a fixed learning rate. Each mini-batch consists of multiple sentences with the same number of tokens. We found applying dropout to the output nodes22 of each LSTM layer (Pham et al., 2014) was quite effective in reducing overfitting (Section 4.4). We explored other more sophisticated optimization algorithms such as momentum (Nesterov, 1983), AdaDelta (Zeiler, 2012), and RMSProp (Hinton et al., 2012), and in preliminary experiments they did not improve upon plain SGD."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        483,
+        298,
+        523
+      ],
+      "content": "This objective function and its gradients can be efficiently computed by dynamic programming (Collobert et al., 2011b)."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        525,
+        299,
+        579
+      ],
+      "content": "At inference time, given neural network outputs [fθ]i,t we use the Viterbi algorithm to find the tag sequence [i]T1 that maximizes the score S([x]T1, [i]T1, θ')."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        551,
+        387,
+        564
+      ],
+      "content": "3 Evaluation"
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        587,
+        181,
+        600
+      ],
+      "content": "The text content from the image is \"2.6.3 Tagging Scheme\"."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        581,
+        541,
+        661
+      ],
+      "content": "Evaluation was performed on the well-established CoNLL-2003 NER shared task dataset (Tjong Kim Sang and De Meulder, 2003) and the much larger but less-studied OntoNotes 5.0 dataset (Hovy et al., 2006; Pradhan et al., 2013). Table 2 gives an overview of these two different datasets."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        604,
+        299,
+        670
+      ],
+      "content": "The output tags are annotated with BIOES (which stand for Begin, Inside, Outside, End, Single, indicating the position of the token in the entity) as this scheme has been reported to outperform others such as BIO (Ratinov and Roth, 2009)."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        667,
+        540,
+        691
+      ],
+      "content": "For each experiment, we report the average and standard deviation of 10 successful trials."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        175,
+        541,
+        211
+      ],
+      "content": "Table 6: F1 score results of BLSTM and BLSTM-CNN models with various additional features; emb = Collobert word embeddings, char = character type feature, caps = capitalization feature, lex = lexicon features. Note that starred results are repeated for ease of comparison."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        175,
+        541,
+        211
+      ],
+      "content": "Table 6: F1 score results of BLSTM and BLSTM-CNN models with various additional features; emb = Collobert word embeddings, char = character type feature, caps = capitalization feature, lex = lexicon features. Note that starred results are repeated for ease of comparison."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        175,
+        541,
+        211
+      ],
+      "content": "Table 6: F1 score results of BLSTM and BLSTM-CNN models with various additional features; emb = Collobert word embeddings, char = character type feature, caps = capitalization feature, lex = lexicon features. Note that starred results are repeated for ease of comparison."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        72,
+        232,
+        200,
+        244
+      ],
+      "content": "3.1 Dataset Preprocessing"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        232,
+        484,
+        245
+      ],
+      "content": "The text content from the image is:\n\n\"3.4 Hyper-parameter Optimization\""
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        232,
+        485,
+        245
+      ],
+      "content": "3.4 Hyper-parameter Optimization"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        250,
+        298,
+        276
+      ],
+      "content": "For all datasets, we performed the following preprocessing:"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        250,
+        541,
+        316
+      ],
+      "content": "We performed two rounds of hyper-parameter optimization and selected the best settings based on development set performance23. Table 3 shows the final hyper-parameters, and Table 4 shows the dev set performance of the best models in each round."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        83,
+        286,
+        298,
+        299
+      ],
+      "content": "All digit sequences are replaced by a single “0”."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        81,
+        285,
+        299,
+        335
+      ],
+      "content": "- All digit sequences are replaced by a single \"0\".\n- Before training, we group sentences by word length into mini-batches and shuffle them."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        82,
+        308,
+        299,
+        335
+      ],
+      "content": "Before training, we group sentences by word length into mini-batches and shuffle them."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        318,
+        541,
+        397
+      ],
+      "content": "In the first round, we performed random search and selected the best hyper-parameters over the development set of the CoNLL-2003 data. We evaluated around 500 hyper-parameter settings. Then, we took the same settings and tuned the learning rate and epochs on the OntoNotes development set."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        345,
+        299,
+        398
+      ],
+      "content": "In addition, for the OntoNotes dataset, in order to handle the Date, Time, Money, Percent, Quantity, Ordinal, and Cardinal named entity tags, we split tokens before and after every digit."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        408,
+        195,
+        420
+      ],
+      "content": "3.2 CoNLL 2003 Dataset"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        399,
+        541,
+        547
+      ],
+      "content": "For the second round, we performed independent hyper-parameter searches on each dataset using Optunity’s implementation of particle swarm (Claesens et al., ), as there is some evidence that it is more efficient than random search (Clerc and Kennedy, 2002). We evaluated 500 hyper-parameter settings this round as well. As we later found out that training fails occasionally (Section 3.5) as well as large variation from run to run, we ran the top 5 settings from each dataset for 10 trials each and selected the best one based on averaged dev set performance."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        426,
+        299,
+        533
+      ],
+      "content": "The CoNLL-2003 dataset (Tjong Kim Sang and De Meulder, 2003) consists of newswire from the Reuters RCV1 corpus tagged with four types of named entities: location, organization, person, and miscellaneous. As the dataset is small compared to OntoNotes, we trained the model on both the training and development sets after performing hyperparameter optimization on the development set."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        543,
+        201,
+        555
+      ],
+      "content": "3.3 OntoNotes 5.0 Dataset"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        548,
+        540,
+        655
+      ],
+      "content": "For CoNLL-2003, we found that particle swarm produced better hyper-parameters than random search. However, surprisingly for OntoNotes particle swarm was unable to produce better hyper-parameters than those from the ad-hoc approach in round 1. We also tried tuning the CoNLL-2003 hyper-parameters from round 2 for OntoNotes and that was not any better25 either."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        561,
+        299,
+        723
+      ],
+      "content": "Pradhan et al. (2013) compiled a core portion of the OntoNotes 5.0 dataset for the CoNLL-2012 shared task and described a standard train/dev/test split, which we use for our evaluation. Following Durrett and Klein (2014), we applied our model to the portion of the dataset with gold-standard named entity annotations; the New Testaments portion was excluded for lacking gold-standard annotations. This dataset is much larger than CoNLL-2003 and consists of text from a wide variety of sources, such as broadcast conversation, broadcast news, newswire, magazine, telephone conversation, and Web text."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        322,
+        657,
+        540,
+        669
+      ],
+      "content": "We trained CoNLL-2003 models for a large num-"
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        73,
+        540,
+        98
+      ],
+      "content": "on the last 5,000 sentences of the training set; every trial scored either above 80 or below 75."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        109,
+        469,
+        122
+      ],
+      "content": "3.6 Training and Tagging Speed"
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        127,
+        541,
+        180
+      ],
+      "content": "On an Intel Xeon E5-2697 processor, training takes about 6 hours while tagging the test set takes about 12 seconds for CoNLL-2003. The times are 10 hours and 60 seconds respectively for OntoNotes."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        313,
+        191,
+        447,
+        204
+      ],
+      "content": "The text content from the image is:\n\n\"4 Results and Discussion\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        195,
+        299,
+        303
+      ],
+      "content": "Table 7: F1 scores when the Collobert word vectors are replaced. We tried 50- and 300-dimensional random vectors (Random 50d, Random 300d); GloVe’s released vectors trained on 6 billion words (GloVe 6B 50d, GloVe 6B 300d); Google’s released 300-dimensional vectors trained on 100 billion words from Google News (Google 100B 300d); and 50-dimensional GloVe and word2vec skip-gram vectors that we trained on Wikipedia and Reuters RCV-1 (Our GloVe 50d, Our Skip-gram 50d)."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        213,
+        541,
+        347
+      ],
+      "content": "Table 5 shows the results for all datasets. To the best of our knowledge, our best models have surpassed the previous highest reported F1 scores for both CoNLL-2003 and OntoNotes. In particular, with no external knowledge other than word embeddings, our model is competitive on the CoNLL-2003 dataset and establishes a new state of the art for OntoNotes, suggesting that given enough data, the neural network automatically learns the relevant features for NER without feature engineering."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        358,
+        455,
+        370
+      ],
+      "content": "The text content from the image is:\n\n\"4.1 Comparison with FFNNs\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        325,
+        299,
+        433
+      ],
+      "content": "The text content from the image is:\n\n\"number of epochs because we observed that the models did not exhibit overtraining and instead continued to slowly improve on the development set long after reaching near 100% accuracy on the training set. In contrast, despite OntoNotes being much larger than CoNLL-2003, training for more than about 18 epochs causes performance on the development set to decline steadily due to overfitting.\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        376,
+        541,
+        455
+      ],
+      "content": "We re-implemented the FFNN model of Collobert et al. (2011b) as a baseline for comparison. Table 5 shows that while performing reasonably well on CoNLL-2003, FFNNs are clearly inadequate for OntoNotes, which has a larger domain, showing that LSTM models are essential for NER."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        445,
+        205,
+        458
+      ],
+      "content": "3.5 Excluding Failed Trials"
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        466,
+        533,
+        492
+      ],
+      "content": "The text content from the image is:\n\n\"4.2 Character-level CNNs vs. Character Type and Capitalization Features\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        464,
+        299,
+        599
+      ],
+      "content": "On the CoNLL-2003 dataset, while BLSTM models completed training without difficulty, the BLSTM-CNN models fail to converge around 5~10% of the time depending on feature set. Similarly, on OntoNotes, 1.5% of trials fail. We found that using a lower learning rate reduces failure rate. We also tried clipping gradients and using AdaDelta and both of them were effective at eliminating such failures by themselves. AdaDelta, however, made training more expensive with no gain in model performance."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        497,
+        540,
+        658
+      ],
+      "content": "The comparison of models in Table 6 shows that on CoNLL-2003, BLSTM-CNN models significantly26 outperform the BLSTM models when given the same feature set. This effect is smaller and not statistically significant on OntoNotes when capitalization features are added. Adding character type and capitalization features to the BLSTM-CNN models degrades performance for CoNLL and mostly improves performance on OntoNotes, suggesting character-level CNNs can replace hand-crafted character features in some cases, but systems with weak lexicons may benefit from character features."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        601,
+        299,
+        653
+      ],
+      "content": "In any case, for all experiments we excluded trials where the final F1 score on a subset of training data falls below a certain threshold, and continued to run trials until we obtained 10 successful ones."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        655,
+        299,
+        722
+      ],
+      "content": "For CoNLL-2003, we excluded trials where the final F1 score on the development set was less than 95; there was no ambiguity in selecting the threshold as every trial scored either above 98 or below 90. For OntoNotes, the threshold was a F1 score of 80"
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        206,
+        540,
+        230
+      ],
+      "content": "Table 8: F1 score results with various dropout values. Models were trained using only the training set for each dataset. All other experiments use dropout = 0.68 for CoNLL-2003 and dropout = 0.63 for OntoNotes 5.0."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        206,
+        540,
+        230
+      ],
+      "content": "Table 8: F1 score results with various dropout values. Models were trained using only the training set for each dataset. All other experiments use dropout = 0.68 for CoNLL-2003 and dropout = 0.63 for OntoNotes 5.0."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        206,
+        540,
+        230
+      ],
+      "content": "Table 8: F1 score results with various dropout values. Models were trained using only the training set for each dataset. All other experiments use dropout = 0.68 for CoNLL-2003 and dropout = 0.63 for OntoNotes 5.0."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        250,
+        184,
+        263
+      ],
+      "content": "The text content from the image is \"4.3 Word Embeddings\"."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        270,
+        299,
+        336
+      ],
+      "content": "Table 5 and Table 7 show that we obtain a large, significant27 improvement when trained word embeddings are used, as opposed to random embeddings, regardless of the additional features used. This is consistent with Collobert et. al. (2011b)'s results."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        250,
+        540,
+        372
+      ],
+      "content": "symbols were not provided. To test these hypotheses, we performed experiments with new word embeddings trained using GloVe and word2vec, with vocabulary list and corpus similar to Collobert et. al. (2011b). As shown in Table 7, our GloVe embeddings improved significantly29 over publicly available embeddings on CoNLL-2003, and our word2vec skip-gram embeddings improved significantly30 over Google’s embeddings on OntoNotes."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        338,
+        299,
+        486
+      ],
+      "content": "Table 7 compares the performance of different word embeddings in our best model in Table 5 (BLSTM-CNN + emb + lex). For CoNLL-2003, the publicly available GloVe and Google embeddings are about one point behind Collobert’s embeddings. For OntoNotes, GloVe embeddings perform close to Collobert embeddings while Google embeddings are again one point behind. In addition, 300 dimensional embeddings present no significant improvement over 50 dimensional embeddings – a result previously reported by Turian et al. (2010)."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        373,
+        540,
+        494
+      ],
+      "content": "Due to time constraints we did not perform new hyper-parameter searches with any of the word embeddings. As word embedding quality depends on hyper-parameter choice during their training (Pennington et al., 2014), and also, in our NER neural network, hyper-parameter choice is likely sensitive to the type of word embeddings used, optimizing them all will likely produce better results and provide a fairer comparison of word embedding quality."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        505,
+        419,
+        518
+      ],
+      "content": "The text content from the image is \"4.4 Effect of Dropout\"."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        488,
+        299,
+        623
+      ],
+      "content": "One possible reason that Collobert embeddings perform better than other publicly available embeddings on CoNLL-2003 is that they are trained on the Reuters RCV-1 corpus, the source of the CoNLL-2003 dataset, whereas the other embeddings are not28. On the other hand, we suspect that Google’s embeddings perform poorly because of vocabulary mismatch - in particular, Google’s embeddings were trained in a case-sensitive manner, and embeddings for many common punctuation and"
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        523,
+        540,
+        658
+      ],
+      "content": "Table 8 compares the result of various dropout values for each dataset. The models are trained using only the training set for each dataset to isolate the effect of dropout on both dev and test sets. All other hyper-parameters and features remain the same as our best model in Table 5. In both datasets and on both dev and test sets, dropout is essential for state of the art performance, and the improvement is statistically significant31. Dropout is optimized on the dev set, as described in Section 3.4. Hence, the chosen"
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        209,
+        541,
+        232
+      ],
+      "content": "Figure 5: Fraction of named entities of each tag category matched completely by entries in each lexicon category of the SENNA/DBpedia combined lexicon. White = higher fraction."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        72,
+        258,
+        284,
+        271
+      ],
+      "content": "The text content from the image is:\n\n\"value may not be the best-performing in Table 8.\""
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        259,
+        540,
+        311
+      ],
+      "content": "other features or sources of external knowledge. Table 9 shows the results. In this weakened model, both lexicons contribute significant33 improvements over the baseline."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        280,
+        177,
+        293
+      ],
+      "content": "The text content from the image is \"4.5 Lexicon Features\"."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        298,
+        299,
+        365
+      ],
+      "content": "The text content from the image is:\n\n\"Table 6 shows that on the CoNLL-2003 dataset, using features from both the SENNA lexicon and our proposed DBpedia lexicon provides a significant32 improvement and allows our model to clearly surpass the previous state of the art.\""
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        313,
+        540,
+        570
+      ],
+      "content": "Compared to the SENNA lexicon, our DBpedia lexicon is noisier but has broader coverage, which explains why when applying it using the same method as Collobert et al. (2011b), it performs worse on CoNLL-2003 but better on OntoNotes – a dataset containing many more obscure named entities. However, we suspect that the method of Collobert et al. (2011b) is not noise resistant and therefore unsuitable for our lexicon because it fails to distinguish exact and partial matches34 and does not set a minimum length for partial matching.35 Instead, when we apply our superior partial matching algorithm and BIOES encoding with our DBpedia lexicon, we gain a significant36 improvement, allowing our lexicon to perform similarly to the SENNA lexicon. Unfortunately, as we could not reliably remove partial entries from the SENNA lexicon, we were unable to investigate whether or not our lexicon matching method would help in that lexicon."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        366,
+        299,
+        649
+      ],
+      "content": "Unfortunately the difference is minuscule for OntoNotes, most likely because our lexicon does not match DBpedia categories well. Figure 5 shows that on CoNLL-2003, lexicon coverage is reasonable and matches the tags set for everything except the catch-all MISC category. For example, LOC entries in lexicon match mostly LOC named entities and vice versa. However, on OntoNotes, the matches are noisy and correspondence between lexicon match and tag category is quite ambiguous. For example, all lexicon categories have spurious matches in unrelated named entities like CARDINAL, and LOC, GPE, and LANGUAGE entities all get a lot of matches from the LOC category in the lexicon. In addition, named entities in categories like NORP, ORG, LAW, PRODUCT receive little coverage. The lower coverage, noise, and ambiguity all contribute to the disappointing performance. This suggests that the DBpedia lexicon construction method needs to be improved. A reasonable place to start would be the DBpedia category to OntoNotes NE tag mappings."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        572,
+        540,
+        611
+      ],
+      "content": "In addition, using both lexicons together as distinct features provides a further improvement37 on CoNLL-2003, which we suspect is because the lexi-"
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        651,
+        299,
+        703
+      ],
+      "content": "The text content from the image is:\n\n\"In order to isolate the contribution of each lexicon and matching method, we compare different sources and matching methods on a BLSTM-CNN model with randomly initialized word embeddings and no\""
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        207,
+        541,
+        255
+      ],
+      "content": "Table 9: Comparison of lexicon and matching/encoding methods over the BLSTM-CNN model employing random embeddings and no other features. When using both lexicons, the best combination of matching and encoding is Exact-BIOES for SENNA and Partial-BIOES for DBpedia. Note that the SENNA lexicon already contains \"partial entries\" so exact matching in that case is really just a more primitive form of partial matching."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        207,
+        541,
+        255
+      ],
+      "content": "Table 9: Comparison of lexicon and matching/encoding methods over the BLSTM-CNN model employing random embeddings and no other features. When using both lexicons, the best combination of matching and encoding is Exact-BIOES for SENNA and Partial-BIOES for DBpedia. Note that the SENNA lexicon already contains \"partial entries\" so exact matching in that case is really just a more primitive form of partial matching."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        276,
+        299,
+        315
+      ],
+      "content": "The text content from the image is:\n\n\"cons are complementary; the SENNA lexicon is relatively clean and tailored to newswire, whereas the DBpedia lexicon is noisier but has high coverage.\""
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        326,
+        263,
+        339
+      ],
+      "content": "The text content from the image is:\n\n\"4.6 Analysis of OntoNotes Performance\""
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        276,
+        541,
+        464
+      ],
+      "content": "Wikipedia, and Brown-cluster-like word representations, and achieved an F1 score of 90.80 on CoNLL-2003. Lin and Wu (2009) surpassed them without using a gazetteer by instead using phrase features obtained by performing k-means clustering over a private database of search engine query logs. Passos et al. (2014) obtained nearly the same performance using only public data by training phrase vectors in their lexicon-infused skip-gram model. In order to combat the problem of sparse features, Suzuki et al. (2011) employed large-scale unlabelled data to perform feature reduction and achieved an F1 score of 91.02 on CoNLL-2003, which is the current state of the art for systems without external knowledge."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        345,
+        299,
+        520
+      ],
+      "content": "Table 10 shows the per-genre breakdown of the OntoNotes results. As expected, our model performs best on clean text like broadcast news (BN) and newswire (NW), and worst on noisy text like telephone conversation (TC) and Web text (WB). Our model also substantially improves over previous work on all genres except TC, where the small size of the training data likely hinders learning. Finally, the performance characteristics of our model appear to be quite different than the previous CRF models (Finkel and Manning, 2009; Durrett and Klein, 2014), likely because we apply a completely different machine learning method."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        531,
+        179,
+        545
+      ],
+      "content": "The text content from the image is \"5 Related Research\"."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        465,
+        541,
+        654
+      ],
+      "content": "Training an NER system together with related tasks such as entity linking has recently been shown to improve the state of the art. Durrett and Klein (2014) combined coreference resolution, entity linking, and NER into a single CRF model and added cross-task interaction factors. Their system achieved state of the art results on the OntoNotes dataset, but they did not evaluate on the CoNLL-2003 dataset due to lack of coreference annotations. Luo et al. (2015) achieved state of the art results on CoNLL-2003 by training a joint model over the NER and entity linking tasks, the pair of tasks whose interdependencies contributed the most to the work of Durrett and Klein (2014)."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        555,
+        299,
+        594
+      ],
+      "content": "Named entity recognition is a task with a long history. In this section, we summarize the works we compare with and that influenced our approach."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        605,
+        221,
+        618
+      ],
+      "content": "5.1 Named Entity Recognition"
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        624,
+        299,
+        690
+      ],
+      "content": "Most recent approaches to NER have been characterized by the use of CRF, SVM, and perceptron models, where performance is heavily dependent on feature engineering. Ratinov and Roth (2009) used non-local features, a gazetteer extracted from"
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        665,
+        467,
+        677
+      ],
+      "content": "The text content from the image is:\n\n\"5.2 NER with Neural Networks\""
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        683,
+        540,
+        722
+      ],
+      "content": "While many approaches involve CRF models, there has also been a long history of research involving neural networks. Early attempts were hindered by"
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        183,
+        541,
+        207
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 10: Per genre F1 scores on OntoNotes. BC = broadcast conversation, BN = broadcast news, MZ = magazine, NW = newswire, TC = telephone conversation, WB = blogs and newsgroups\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        183,
+        541,
+        207
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 10: Per genre F1 scores on OntoNotes. BC = broadcast conversation, BN = broadcast news, MZ = magazine, NW = newswire, TC = telephone conversation, WB = blogs and newsgroups\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        183,
+        541,
+        207
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 10: Per genre F1 scores on OntoNotes. BC = broadcast conversation, BN = broadcast news, MZ = magazine, NW = newswire, TC = telephone conversation, WB = blogs and newsgroups\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        227,
+        298,
+        254
+      ],
+      "content": "lack of computational power, scalable learning algorithms, and high quality word embeddings."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        256,
+        299,
+        323
+      ],
+      "content": "The text content from the image is:\n\n\"Petasis et al. (2000) used a feed-forward neural network with one hidden layer on NER and achieved state-of-the-art results on the MUC6 dataset. Their approach used only POS tag and gazetteer tags for each word, with no word embeddings.\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        227,
+        540,
+        416
+      ],
+      "content": "with character-level CNNs to perform German POS-tagging; our model differs in that we use the more powerful LSTM unit, which we found to perform better than RNNs in preliminary experiments, and that we employ word embeddings, which is much more important in NER than in POS tagging. Ling et al. (2015) used both word- and character-level BLSTMs to establish the current state of the art for English POS tagging. While using BLSTMs instead of CNNs allows extraction of more sophisticated character-level features, we found in preliminary experiments that for NER it did not perform significantly better than CNNs and was substantially more computationally expensive to train."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        325,
+        299,
+        446
+      ],
+      "content": "Hammerton (2003) attempted NER with a single-direction LSTM network and a combination of word vectors trained using self-organizing maps and context vectors obtained using principle component analysis. However, while our method optimizes log-likelihood and uses softmax, they used a different output encoding and optimized an unspecified objective function. Hammerton’s (2003) reported results were only slightly above baseline models."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        313,
+        428,
+        388,
+        442
+      ],
+      "content": "The text content from the image is \"6 Conclusion\"."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        449,
+        299,
+        543
+      ],
+      "content": "The text content from the image is:\n\n\"Much later, with the advent of neural word embeddings, Collobert et al. (2011b) presented SENNA, which employs a deep FFNN and word embeddings to achieve near state of the art results on POS tagging, chunking, NER, and SRL. We build on their approach, sharing the word embeddings, feature encoding method, and objective functions.\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        451,
+        541,
+        572
+      ],
+      "content": "We have shown that our neural network model, which incorporates a bidirectional LSTM and a character-level CNN and which benefits from robust training through dropout, achieves state-of-the-art results in named entity recognition with little feature engineering. Our model improves over previous best reported results on two major datasets for NER, suggesting that the model is capable of learning complex relationships from large amounts of data."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        546,
+        299,
+        626
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Recently, Santos et al. (2015) presented their CharWNN network, which augments the neural network of Collobert et al. (2011b) with character level CNNs, and they reported improved performance on Spanish and Portuguese NER. We have successfully incorporated character-level CNNs into our model.\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        574,
+        541,
+        654
+      ],
+      "content": "Preliminary evaluation of our partial matching lexicon algorithm suggests that performance could be further improved through more flexible application of existing lexicons. Evaluation of existing word embeddings suggests that the domain of training data is as important as the training algorithm."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        574,
+        541,
+        654
+      ],
+      "content": "Preliminary evaluation of our partial matching lexicon algorithm suggests that performance could be further improved through more flexible application of existing lexicons. Evaluation of existing word embeddings suggests that the domain of training data is as important as the training algorithm."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        628,
+        299,
+        722
+      ],
+      "content": "There have been various other similar architecture proposed for various sequential labeling NLP tasks. Huang et al. (2015) used a BLSTM for the POS-tagging, chunking, and NER tasks, but they employed heavy feature engineering instead of using a CNN to automatically extract character-level features. Labeau et al. (2015) used a BRNN"
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        656,
+        541,
+        722
+      ],
+      "content": "More effective construction and application of lexicons and word embeddings are areas that require more research. In the future, we would also like to extend our model to perform similar tasks such as extended tagset NER and entity linking."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        72,
+        166,
+        86
+      ],
+      "content": "The text content from the image is \"Acknowledgments\"."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        321,
+        74,
+        540,
+        96
+      ],
+      "content": "actions of the Association for Computational Linguistics, 2:477–490."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        99,
+        541,
+        170
+      ],
+      "content": "The text content from the image is as follows:\n\nJenny Rose Finkel and Christopher D Manning. 2009. Joint parsing and named entity recognition. In Proceedings of Human Language Technologies: The 2009 Annual Conference of the North American Chapter of the Association for Computational Linguistics, pages 326–334. Association for Computational Linguistics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        95,
+        300,
+        175
+      ],
+      "content": "This research was supported by Honda Research Institute Japan Co., Ltd. The authors would like to thank Collobert et al. (2011b) for releasing SENNA with its word vectors and lexicon, the torch7 framework contributors, and Andrey Karpathy for the reference LSTM implementation."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        173,
+        540,
+        207
+      ],
+      "content": "The text content from the image is:\n\n\"Felix A Gers, Jürgen Schmidhuber, and Fred Cummins. 2000. Learning to forget: Continual prediction with LSTM. Neural Computation, 12(10):2451–2471.\""
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        198,
+        128,
+        211
+      ],
+      "content": "References"
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        210,
+        540,
+        268
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Christoph Goller and Andreas Kuchler. 1996. Learning task-dependent distributed representations by backpropagation through structure. In Neural Networks, 1996., IEEE International Conference on, volume 1, pages 347–352. IEEE.\""
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        219,
+        299,
+        267
+      ],
+      "content": "The text content from the image is:\n\nSören Auer, Christian Bizer, Georgi Kobilarov, Jens Lehmann, Richard Cyganiak, and Zachary Ives. 2007. DBpedia: A nucleus for a web of open data. In The semantic web, pages 722–735. Springer."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        269,
+        299,
+        328
+      ],
+      "content": "The text content from the image is:\n\n\"Phil Blunsom, Edward Grefenstette, Nal Kalchbrenner, et al. 2014. A convolutional neural network for modelling sentences. In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics. Association for Computational Linguistics.\""
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        271,
+        540,
+        330
+      ],
+      "content": "The text content from the image is:\n\nAlan Graves, Abdel-rahman Mohamed, and Geoffrey Hinton. 2013. Speech recognition with deep recurrent neural networks. In Proceedings of the 2013 IEEE International Conference on Acoustics, Speech and Signal Processing, pages 6645–6649."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        333,
+        540,
+        392
+      ],
+      "content": "The text content from the image is as follows:\n\nJames Hammerton. 2003. Named entity recognition with long short-term memory. In Proceedings of the Seventh Conference on Natural Language Learning at HLT-NAACL 2003, pages 172–175. Association for Computational Linguistics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        330,
+        299,
+        414
+      ],
+      "content": "The text content from the image is as follows:\n\nKyunghyun Cho, Bart van Merriënboer, Dzmitry Bahdanau, and Yoshua Bengio. 2014. On the properties of neural machine translation: Encoder-decoder approaches. In Proceedings of SSST-8, Eighth Workshop on Syntax, Semantics and Structure in Statistical Translation, pages 103–111. Association for Computational Linguistics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        394,
+        540,
+        465
+      ],
+      "content": "Geoffrey Hinton, Nitish Srivastava, and Kevin Swersky. 2012. Lecture 6e: RMSProp: divide the gradient by a running average of its recent magnitude. In Neural Networks for Machine Learning. http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        416,
+        299,
+        475
+      ],
+      "content": "The text content from the image is as follows:\n\nMarc Claesen, Jaak Simm, Dusan Popovic, Yves Moreau, and Bart De Moor. Easy hyperparameter search using Optunity. In Proceedings of the International Workshop on Technical Computing for Machine Learning and Mathematical Engineering."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        311,
+        168,
+        542,
+        731
+      ],
+      "content": "Here is the text content from the image:\n\nFelix A Gers, Jürgen Schmidhuber, and Fred Cummins. 2000. Learning to forget: Continual prediction with LSTM. Neural Computation, 12(10):2451–2471.\n\nChristoph Goller and Andreas Kuchler. 1996. Learning task-dependent distributed representations by backpropagation through structure. In Neural Networks, 1996., IEEE International Conference on, volume 1, pages 347–352. IEEE.\n\nAlan Graves, Abdel-rahman Mohamed, and Geoffrey Hinton. 2013. Speech recognition with deep recurrent neural networks. In Proceedings of the 2013 IEEE International Conference on Acoustics, Speech and Signal Processing, pages 6645–6649.\n\nJames Hammerton. 2003. Named entity recognition with long short-term memory. In Proceedings of the Seventh Conference on Natural Language Learning at HLT-NAACL 2003, pages 172–175. Association for Computational Linguistics.\n\nGeoffrey Hinton, Nitish Srivastava, and Kevin Swersky. 2012. Lecture 6e: RMSProp: divide the gradient by a running average of its recent magnitude. In Neural Networks for Machine Learning. http://www.cs.toronto.edu/~tijmen/csc321/slides/lecture_slides_lec6.pdf.\n\nEduard Hovy, Mitchell Marcus, Martha Palmer, Lance Ramshaw, and Ralph Weischedel. 2006. OntoNotes: the 90% solution. In Proceedings of the Human Language Technology Conference of the NAACL, Companion Volume: Short Papers, pages 57–60. Association for Computational Linguistics.\n\nZhiheng Huang, Wei Xu, and Kai Yu. 2015. Bidirectional LSTM-CRF models for sequence tagging. CoRR, abs/1508.01991.\n\nMatthieu Labeau, Kevin Löser, and Alexandre Allauzen. 2015. Non-lexical neural architecture for fine-grained POS tagging. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 232–237. Association for Computational Linguistics.\n\nDekang Lin and Xiaoyun Wu. 2009. Phrase clustering for discriminative learning. In Proceedings of the Joint Conference of the 47th Annual Meeting of the ACL and the 4th International Joint Conference on Natural Language Processing of the AFNLP, pages 1030–1038. Association for Computational Linguistics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        69,
+        192,
+        301,
+        731
+      ],
+      "content": "Sure, here is the text content from the image:\n\n```\nReferences\n\nSören Auer, Christian Bizer, Georgi Kobilarov, Jens Lehmann, Richard Cyganiak, and Zachary Ives. 2007. DBpedia: A nucleus for a web of open data. In The semantic web, pages 722–735. Springer.\n\nPhil Blunsom, Edward Grefenstette, Nal Kalchbrenner, et al. 2014. A convolutional neural network for modelling sentences. In Proceedings of the 52nd Annual Meeting of the Association for Computational Linguistics. Association for Computational Linguistics.\n\nKyunghyun Cho, Bart van Merriënboer, Dzmitry Bahdanau, and Yoshua Bengio. 2014. On the properties of neural machine translation: Encoder-decoder approaches. In Proceedings of SSST-8, Eighth Workshop on Syntax, Semantics and Structure in Statistical Translation, pages 103–111. Association for Computational Linguistics.\n\nMarc Claesen, Jaak Simm, Dusan Popovic, Yves Moreau, and Bart De Moor. Easy hyperparameter search using Optunity. In Proceedings of the International Workshop on Technical Computing for Machine Learning and Mathematical Engineering.\n\nMaurice Clerc and James Kennedy. 2002. The particle swarm-explosion, stability, and convergence in a multidimensional complex space. Evolutionary Computation, IEEE Transactions on, 6(1):58–73.\n\nRonan Collobert and Jason Weston. 2008. A unified architecture for natural language processing: Deep neural networks with multitask learning. In Proceedings of the 25th International Conference on Machine Learning, pages 160–167. ACM.\n\nRonan Collobert, Koray Kavukcuoglu, and Clément Farabet. 2011a. Torch7: A Matlab-like environment for machine learning. In Proceedings of BigLearn, NIPS Workshop, number EPFL-CONF-192376.\n\nRonan Collobert, Jason Weston, Léon Bottou, Michael Karlen, Koray Kavukcuoglu, and Pavel Kuksa. 2011b. Natural language processing (almost) from scratch. The Journal of Machine Learning Research, 12:2493–2537.\n\nGreg Durrett and Dan Klein. 2014. A joint model for entity analysis: Coreference, typing, and linking. Trans-\n```"
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        477,
+        299,
+        524
+      ],
+      "content": "The text content from the image is:\n\nMaurice Clerc and James Kennedy. 2002. The particle swarm-explosion, stability, and convergence in a multidimensional complex space. Evolutionary Computation, IEEE Transactions on, 6(1):58–73."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        467,
+        540,
+        538
+      ],
+      "content": "The text content from the image is as follows:\n\nEduard Hovy, Mitchell Marcus, Martha Palmer, Lance Ramshaw, and Ralph Weischedel. 2006. OntoNotes: the 90% solution. In Proceedings of the Human Language Technology Conference of the NAACL, Companion Volume: Short Papers, pages 57–60. Association for Computational Linguistics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        527,
+        299,
+        585
+      ],
+      "content": "Ronan Collobert and Jason Weston. 2008. A unified architecture for natural language processing: Deep neural networks with multitask learning. In Proceedings of the 25th International Conference on Machine Learning, pages 160–167. ACM."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        540,
+        540,
+        575
+      ],
+      "content": "The text content from the image is:\n\nZhiheng Huang, Wei Xu, and Kai Yu. 2015. Bidirectional LSTM-CRF models for sequence tagging. CoRR, abs/1508.01991."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        588,
+        299,
+        635
+      ],
+      "content": "Ronan Collobert, Koray Kavukcuoglu, and Clément Farabet. 2011a. Torch7: A Matlab-like environment for machine learning. In Proceedings of BigLearn, NIPS Workshop, number EPFL-CONF-192376."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        577,
+        540,
+        649
+      ],
+      "content": "The text content from the image is as follows:\n\nMatthieu Labeau, Kevin Löser, and Alexandre Allauzen. 2015. Non-lexical neural architecture for fine-grained POS tagging. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 232–237. Association for Computational Linguistics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        637,
+        299,
+        696
+      ],
+      "content": "The text content from the image is:\n\nRonan Collobert, Jason Weston, Léon Bottou, Michael Karlen, Koray Kavukcuoglu, and Pavel Kuksa. 2011b. Natural language processing (almost) from scratch. The Journal of Machine Learning Research, 12:2493–2537."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        651,
+        541,
+        722
+      ],
+      "content": "The text content from the image is as follows:\n\nDekang Lin and Xiaoyun Wu. 2009. Phrase clustering for discriminative learning. In Proceedings of the Joint Conference of the 47th Annual Meeting of the ACL and the 4th International Joint Conference on Natural Language Processing of the AFNLP, pages 1030–1038. Association for Computational Linguistics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        699,
+        299,
+        722
+      ],
+      "content": "The text content from the image is:\n\nGreg Durrett and Dan Klein. 2014. A joint model for entity analysis: Coreference, typing, and linking. Transactions"
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        321,
+        74,
+        540,
+        109
+      ],
+      "content": "The text content from the image is:\n\n\"of the Seventeenth Conference on Computational Natural Language Learning, pages 143–152. Association for Computational Linguistics.\""
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        73,
+        299,
+        169
+      ],
+      "content": "The text content from the image is as follows:\n\nWang Ling, Chris Dyer, Alan W Black, Isabel Trancoso, Ramon Fernandez, Silvio Amir, Luis Marujo, and Tiago Luis. 2015. Finding function in form: Compositional character models for open vocabulary word representation. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 1520–1530. Association for Computational Linguistics."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        110,
+        540,
+        169
+      ],
+      "content": "The text content from the image is as follows:\n\nLev Ratinov and Dan Roth. 2009. Design challenges and misconceptions in named entity recognition. In Proceedings of the Thirteenth Conference on Computational Natural Language Learning, pages 147–155. Association for Computational Linguistics."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        171,
+        541,
+        207
+      ],
+      "content": "The text content from the image is:\n\nDavid Rumelhart, Geoffrey Hinton, and Ronald Williams. 1986. Learning representations by back-propagating errors. Nature, pages 323–533."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        171,
+        299,
+        242
+      ],
+      "content": "The text content from the image is as follows:\n\nGang Luo, Xiaojiang Huang, Chin-Yew Lin, and Zaqing Nie. 2015. Joint entity recognition and disambiguation. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 879–888. Association for Computational Linguistics."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        208,
+        541,
+        255
+      ],
+      "content": "The text content from the image is:\n\nCícero Santos, Victor Guimaraes, RJ Niterói, and Rio de Janeiro. 2015. Boosting named entity recognition with neural character embeddings. In Proceedings of the Fifth Named Entities Workshop, pages 25–33."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        245,
+        299,
+        292
+      ],
+      "content": "The text content from the image is:\n\nTomas Mikolov, Stefan Kombrink, Anoop Deoras, Lukar Burget, and Jan Cernocky. 2011. RNNLM-recurrent neural network language modeling toolkit. In Proceedings of the 2011 ASRU Workshop, pages 196–201."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        311,
+        70,
+        542,
+        510
+      ],
+      "content": "The text content from the image is as follows:\n\n- Lev Ratinov and Dan Roth. 2009. Design challenges and misconceptions in named entity recognition. In Proceedings of the Thirteenth Conference on Computational Natural Language Learning, pages 147–155. Association for Computational Linguistics.\n- David Rumelhart, Geoffrey Hinton, and Ronald Williams. 1986. Learning representations by back-propagating errors. Nature, pages 323–533.\n- Cicero Santos, Victor Guimaraes, RJ Niterói, and Rio de Janeiro. 2015. Boosting named entity recognition with neural character embeddings. In Proceedings of the Fifth Named Entities Workshop, pages 25–33.\n- Jun Suzuki, Hideki Isozaki, and Masaaki Nagata. 2011. Learning condensed feature representations from large unsupervised data sets for supervised learning. In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: Short Papers, pages 636–641. Association for Computational Linguistics.\n- Erik F Tjong Kim Sang and Fien De Meulder. 2003. Introduction to the CoNLL-2003 shared task: Language-independent named entity recognition. In Proceedings of the Seventh Conference on Natural Language Learning at HLT-NAACL 2003, pages 142–147. Association for Computational Linguistics.\n- Joseph Turian, Lev Ratinov, and Yoshua Bengio. 2010. Word representations: a simple and general method for semi-supervised learning. In Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics, pages 384–394. Association for Computational Linguistics.\n- Matthew D. Zeiler. 2012. ADADELTA: an adaptive learning rate method. CoRR, abs/1212.5701."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        257,
+        541,
+        339
+      ],
+      "content": "The text content from the image is as follows:\n\nJun Suzuki, Hideki Isozaki, and Masaaki Nagata. 2011. Learning condensed feature representations from large unsupervised data sets for supervised learning. In Proceedings of the 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies: Short Papers, pages 636–641. Association for Computational Linguistics."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        294,
+        299,
+        365
+      ],
+      "content": "The text content from the image is as follows:\n\nTomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality. In Proceedings of the Twenty-seventh Annual Conference on Advances in Neural Information Processing Systems, pages 3111–3119."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        340,
+        540,
+        412
+      ],
+      "content": "The text content from the image is as follows:\n\nErik F Tjong Kim Sang and Fien De Meulder. 2003. Introduction to the CoNLL-2003 shared task: Language-independent named entity recognition. In Proceedings of the Seventh Conference on Natural Language Learning at HLT-NAACL 2003, pages 142–147. Association for Computational Linguistics."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        72,
+        367,
+        299,
+        403
+      ],
+      "content": "The text content from the image is:\n\nYurii Nesterov. 1983. A method of solving a convex programming problem with convergence rate O(1/k²). Soviet Mathematics Doklady, 27(2):372–376."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        405,
+        299,
+        476
+      ],
+      "content": "The text content from the image is:\n\nAlexandre Passos, Vineet Kumar, and Andrew McCallum. 2014. Lexicon infused phrase embeddings for named entity resolution. In Proceedings of the Eighteenth Conference on Computational Natural Language Learning, pages 78–86. Association for Computational Linguistics."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        413,
+        541,
+        484
+      ],
+      "content": "The text content from the image is as follows:\n\nJoseph Turian, Lev Ratinov, and Yoshua Bengio. 2010. Word representations: a simple and general method for semi-supervised learning. In Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics, pages 384–394. Association for Computational Linguistics."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        168,
+        301,
+        734
+      ],
+      "content": "Sure, here is the text content from the image:\n\n```\nGang Luo, Xiaojiang Huang, Chin-Yew Lin, and Zaqing Nie. 2015. Joint entity recognition and disambiguation. In Proceedings of the 2015 Conference on Empirical Methods in Natural Language Processing, pages 879–888. Association for Computational Linguistics.\n\nTomas Mikolov, Stefan Kombrink, Anoop Deoras, Lukar Burget, and Jan Cernocky. 2011. RNNLM-recurrent neural network language modeling toolkit. In Proceedings of the 2011 ASRU Workshop, pages 196–201.\n\nTomas Mikolov, Ilya Sutskever, Kai Chen, Greg S Corrado, and Jeff Dean. 2013. Distributed representations of words and phrases and their compositionality. In Proceedings of the Twenty-seventh Annual Conference on Advances in Neural Information Processing Systems, pages 3111–3119.\n\nYurii Nesterov. 1983. A method of solving a convex programming problem with convergence rate O(1/k²). Soviet Mathematics Doklady, 27(2):372–376.\n\nAlexandre Passos, Vineet Kumar, and Andrew McCallum. 2014. Lexicon infused phrase embeddings for named entity resolution. In Proceedings of the Eighteenth Conference on Computational Natural Language Learning, pages 78–86. Association for Computational Linguistics.\n\nJeffrey Pennington, Richard Socher, and Christopher D Manning. 2014. GloVe: Global vectors for word representation. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing, pages 1532–1543.\n\nG Petasis, S Petridis, G Paliouras, V Karkaletsis, SJ Perantonis, and CD Spyropoulos. 2000. Symbolic and neural learning for named-entity recognition. In Proceedings of the Symposium on Computational Intelligence and Learning, pages 58–66. Citeseer.\n\nVu Pham, Théodore Bluche, Christopher Kermorvant, and Jérôme Louradour. 2014. Dropout improves recurrent neural networks for handwriting recognition. In Proceedings of the 14th International Conference on Frontiers in Handwriting Recognition, pages 285–290. IEEE.\n\nSameer Pradhan, Alessandro Moschitti, Nianwen Xue, Hwee Tou Ng, Anders Björkelund, Olga Uryupina, Yuchen Zhang, and Zhi Zhong. 2013. Towards robust linguistic analysis using OntoNotes. In Proceedings\n```"
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        486,
+        540,
+        509
+      ],
+      "content": "The text content from the image is:\n\nMatthew D. Zeiler. 2012. ADADELTA: an adaptive learning rate method. CoRR, abs/1212.5701."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        478,
+        299,
+        537
+      ],
+      "content": "The text content from the image is as follows:\n\nJeffrey Pennington, Richard Socher, and Christopher D Manning. 2014. GloVe: Global vectors for word representation. In Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing, pages 1532–1543."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        540,
+        299,
+        599
+      ],
+      "content": "The text content from the image is as follows:\n\nG Petasis, S Petridis, G Paliouras, V Karkaletsis, SJ Perantonis, and CD Spyropoulos. 2000. Symbolic and neural learning for named-entity recognition. In Proceedings of the Symposium on Computational Intelligence and Learning, pages 58–66. Citeeseer."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        71,
+        601,
+        299,
+        672
+      ],
+      "content": "Vu Pham, Théodore Bluche, Christopher Kermorvant, and Jérôme Louradour. 2014. Dropout improves recurrent neural networks for handwriting recognition. In Proceedings of the 14th International Conference on Frontiers in Handwriting Recognition, pages 285–290. IEEE."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        70,
+        675,
+        299,
+        722
+      ],
+      "content": "The text content from the image is:\n\n\"Sameer Pradhan, Alessandro Moschitti, Nianwen Xue, Hwee Tou Ng, Anders Björkelund, Olga Uryupina, Yuchen Zhang, and Zhi Zhong. 2013. Towards robust linguistic analysis using OntoNotes. In Proceedings\""
+    }
+  ]
+}

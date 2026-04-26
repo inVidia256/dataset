@@ -1,0 +1,1876 @@
+{
+  "total_count": 177,
+  "content_type": "text",
+  "data": [
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        121,
+        98,
+        491,
+        117
+      ],
+      "content": "The text content from the image is:\n\n\"Large Scale Adversarial Representation Learning\""
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        195,
+        160,
+        252,
+        170
+      ],
+      "content": "The text content from the image is \"Jeff Donahue\"."
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        358,
+        160,
+        432,
+        170
+      ],
+      "content": "The text content from the image is \"Karen Simonyan\"."
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        165,
+        159,
+        282,
+        193
+      ],
+      "content": "The text content from the image is:\n\nJeff Donahue\nDeepMind\njeffdonahue@google.com"
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        345,
+        159,
+        446,
+        193
+      ],
+      "content": "The text content from the image is:\n\nKaren Simonyan\nDeepMind\nsimonyan@google.com"
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        249,
+        505,
+        304
+      ],
+      "content": "The structure of the BigBiGAN framework. The joint discriminator \\( \\mathcal{D} \\) is used to compute the loss \\( \\ell \\). Its inputs are data-latent pairs, either \\( (\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}(\\mathbf{x})) \\), sampled from the data distribution \\( P_{\\mathbf{x}} \\) and encoder \\( \\mathcal{E} \\) outputs, or \\( (\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z}), \\mathbf{z} \\sim P_{\\mathbf{z}}) \\), sampled from the generator \\( \\mathcal{G} \\) outputs and the latent distribution \\( P_{\\mathbf{z}} \\). The loss \\( \\ell \\) includes the unary data term \\( s_{\\mathbf{x}} \\) and the unary latent term \\( s_{\\mathbf{z}} \\), as well as the joint term \\( s_{\\mathbf{x}\\mathbf{z}} \\) which ties the data and latent distributions."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        249,
+        505,
+        304
+      ],
+      "content": "The structure of the BigBiGAN framework. The joint discriminator \\( \\mathcal{D} \\) is used to compute the loss \\( \\ell \\). Its inputs are data-latent pairs, either \\( (\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}(\\mathbf{x})) \\), sampled from the data distribution \\( P_{\\mathbf{x}} \\) and encoder \\( \\mathcal{E} \\) outputs, or \\( (\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z}), \\mathbf{z} \\sim P_{\\mathbf{z}}) \\), sampled from the generator \\( \\mathcal{G} \\) outputs and the latent distribution \\( P_{\\mathbf{z}} \\). The loss \\( \\ell \\) includes the unary data term \\( s_{\\mathbf{x}} \\) and the unary latent term \\( s_{\\mathbf{z}} \\), as well as the joint term \\( s_{\\mathbf{x}\\mathbf{z}} \\) which ties the data and latent distributions."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        327,
+        505,
+        393
+      ],
+      "content": "The framework is a feed-forward mapping from randomly sampled latent variables (also called \"noise\") to generated data, with learning signal provided by a discriminator trained to distinguish between real and generated data samples, guiding the generator’s outputs to follow the data distribution. The adversarially learned inference (ALI) [10] or bidirectional GAN (BiGAN) [7] approaches were proposed as extensions to the GAN framework that augment the standard GAN with an encoder module mapping real data to latents, the inverse of the mapping learned by the generator."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        398,
+        505,
+        453
+      ],
+      "content": "In the limit of an optimal discriminator, [7] showed that a deterministic BiGAN behaves like an autoencoder minimizing ℓ₀ reconstruction costs; however, the shape of the reconstruction error surface is dictated by a parametric discriminator, as opposed to simple pixel-level measures like the ℓ₂ error. Since the discriminator is usually a powerful neural network, the hope is that it will induce an error surface which emphasizes “semantic” errors in reconstructions, rather than low-level details."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        458,
+        505,
+        524
+      ],
+      "content": "In [7] it was demonstrated that the encoder learned via the BiGAN or ALI framework is an effective means of visual representation learning on ImageNet for downstream tasks. However, it used a DCGAN [31] style generator, incapable of producing high-quality images on this dataset, so the semantics the encoder could model were in turn quite limited. In this work we revisit this approach using BigGAN [2] as the generator, a modern model that appears capable of capturing many of the modes and much of the structure present in ImageNet images. Our contributions are as follows:"
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        132,
+        533,
+        505,
+        556
+      ],
+      "content": "We show that BigBiGAN (BiGAN with BigGAN generator) matches the state of the art in unsupervised representation learning on ImageNet."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        142,
+        559,
+        439,
+        571
+      ],
+      "content": "We propose a more stable version of the joint discriminator for BigBiGAN"
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        133,
+        574,
+        491,
+        586
+      ],
+      "content": "We perform a thorough empirical analysis and ablation study of model design choices."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        132,
+        533,
+        505,
+        629
+      ],
+      "content": "The text content from the image is as follows:\n\n- We show that BigBiGAN (BiGAN with BigGAN generator) matches the state of the art in unsupervised representation learning on ImageNet.\n- We propose a more stable version of the joint discriminator for BigBiGAN.\n- We perform a thorough empirical analysis and ablation study of model design choices.\n- We show that the representation learning objective also improves unconditional image generation, and demonstrate state-of-the-art results in unconditional ImageNet generation.\n- We open source pretrained BigBiGAN models on TensorFlow Hub²."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        133,
+        590,
+        504,
+        613
+      ],
+      "content": "We show that the representation learning objective also improves unconditional image generation, and demonstrate state-of-the-art results in unconditional ImageNet generation."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        133,
+        616,
+        417,
+        628
+      ],
+      "content": "The text content from the image is:\n\n- We open source pretrained BigBiGAN models on TensorFlow Hub²."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        643,
+        182,
+        658
+      ],
+      "content": "The text content from the image is \"2 BigBiGAN\"."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        669,
+        505,
+        702
+      ],
+      "content": "The BiGAN [7] or ALI [10] approaches were proposed as extensions of the GAN [13] framework which enable the learning of an encoder that can be employed as an inference model [10] or feature representation [7]. Given a distribution P_x of data x (e.g., images), and a distribution P_z of latents z"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        72,
+        505,
+        117
+      ],
+      "content": "The generator \\( \\mathcal{G} \\) models a conditional distribution \\( P(\\mathbf{x}|\\mathbf{z}) \\) of data \\( \\mathbf{x} \\) given latent inputs \\( \\mathbf{z} \\) sampled from the latent prior \\( P_{\\mathbf{z}} \\), as in the standard GAN generator [13]. The encoder \\( \\mathcal{E} \\) models the inverse conditional distribution \\( P(\\mathbf{z}|\\mathbf{x}) \\), predicting latents \\( \\mathbf{z} \\) given data \\( \\mathbf{x} \\) sampled from the data distribution \\( P_{\\mathbf{x}} \\)."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        121,
+        505,
+        199
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Besides the addition of \\(\\mathcal{E}\\), the other modification to the GAN in the BiGAN framework is a joint discriminator \\(\\mathcal{D}\\), which takes as input data-latent pairs (\\(\\mathbf{x}, \\mathbf{z}\\)) (rather than just data \\(\\mathbf{x}\\) as in a standard GAN), and learns to discriminate between pairs from the data distribution and encoder, versus the generator and latent distribution. Concretely, its inputs are pairs (\\(\\mathbf{x} \\sim P_{\\mathbf{x}}, \\hat{\\mathbf{z}} \\sim \\mathcal{E}(\\mathbf{x})\\)) and (\\(\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z}), \\mathbf{z} \\sim P_{\\mathbf{z}}\\)), and the goal of the \\(\\mathcal{G}\\) and \\(\\mathcal{E}\\) is to 'fool' the discriminator by making the two joint distributions \\(P_{\\mathbf{x}\\mathcal{E}}\\) and \\(P_{\\mathcal{G}\\mathbf{z}}\\) from which these pairs are sampled indistinguishable. The adversarial minimax objective in [7, 10], analogous to that of the GAN framework [13], was defined as follows:\""
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        232,
+        505,
+        310
+      ],
+      "content": "Under this objective, [7, 10] showed that with an optimal \\( \\mathcal{D} \\), \\( \\mathcal{G} \\) and \\( \\mathcal{E} \\) minimize the Jensen-Shannon divergence between the joint distributions \\( P_{\\mathbf{x}\\mathbf{z}} \\) and \\( P_{\\mathbf{g}\\mathbf{z}} \\), and therefore at the global optimum, the two joint distributions \\( P_{\\mathbf{x}\\mathbf{z}} = P_{\\mathbf{g}\\mathbf{z}} \\) match, analogous to the results from standard GANs [13]. Furthermore, [7] showed that in the case where \\( \\mathcal{E} \\) and \\( \\mathcal{G} \\) are deterministic functions (i.e., the learned conditional distributions \\( P_{\\mathcal{G}}(\\mathbf{x}|\\mathbf{z}) \\) and \\( P_{\\mathcal{E}}(\\mathbf{z}|\\mathbf{x}) \\) are Dirac \\( \\delta \\) functions), these two functions are inverses at the global optimum: e.g., \\( \\forall \\mathbf{x} \\in \\text{supp}(P_{\\mathbf{x}}) \\) \\( \\mathbf{x} = \\mathcal{G}(\\mathcal{E}(\\mathbf{x})) \\), with the optimal joint discriminator effectively imposing \\( \\ell_0 \\) reconstruction costs on \\( \\mathbf{x} \\) and \\( \\mathbf{z} \\)."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        314,
+        505,
+        469
+      ],
+      "content": "While the crux of our approach, BigBiGAN, remains the same as that of BiGAN [7, 10], we have adopted the generator and discriminator architectures from the state-of-the-art BigGAN [2] generative image model. Beyond that, we have found that an improved discriminator structure leads to better representation learning results without compromising generation (Figure 1). Namely, in addition to the joint discriminator loss proposed in [7, 10] which ties the data and latent distributions together, we propose additional unary terms in the learning objective, which are functions only of either the data x or the latents z. Although [7, 10] prove that the original BiGAN objective already enforces that the learnt joint distributions match at the global optimum, implying that the marginal distributions of x and z match as well, these unary terms intuitively guide optimization in the “right direction” by explicitly enforcing this property. For example, in the context of image generation, the unary loss term on x matches the original GAN objective and provides a learning signal which steers only the generator to match the image distribution independently of its latent inputs. (In our evaluation we will demonstrate empirically that the addition of these terms results in both improved generation and representation learning.)"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        473,
+        505,
+        496
+      ],
+      "content": "Concretely, the discriminator loss \\( \\mathcal{L}_D \\) and the encoder-generator loss \\( \\mathcal{L}_{\\mathcal{E}G} \\) are defined as follows, based on scalar discriminator \"score\" functions \\( s_* \\) and the corresponding per-sample losses \\( \\ell_* \\):"
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        611,
+        505,
+        678
+      ],
+      "content": "The text content from the image is as follows:\n\n\"where \\( h(t) = \\max(0, 1-t) \\) is a 'hinge' used to regularize the discriminator [26, 37]³, also used in BigGAN [2]. The discriminator \\( D \\) includes three submodules: \\( F \\), \\( H \\), and \\( J \\). \\( F \\) takes only \\( x \\) as input and \\( H \\) takes only \\( z \\), and learned projections of their outputs with parameters \\( \\theta_x \\) and \\( \\theta_z \\) respectively give the scalar unary scores \\( s_x \\) and \\( s_z \\). In our experiments, the data \\( x \\) are images and latents \\( z \\) are unstructured flat vectors; accordingly, \\( F \\) is a ConvNet and \\( H \\) is an MLP. The joint score \\( s_{xz} \\) tying \\( x \\) and \\( z \\) is given by the remaining \\( D \\) submodule, \\( J \\), a function of the outputs of \\( F \\) and \\( H \\).\""
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        73,
+        505,
+        105
+      ],
+      "content": "The \\(\\mathcal{E}\\) and \\(\\mathcal{G}\\) parameters \\(\\Phi\\) are optimized to minimize the loss \\(\\mathcal{L}_{\\mathcal{E}\\mathcal{G}}\\), and the \\(\\mathcal{D}\\) parameters \\(\\Theta\\) are optimized to minimize loss \\(\\mathcal{L}_{\\mathcal{D}}\\). As usual, the expectations \\(\\mathbb{E}\\) are estimated by Monte Carlo samples taken over minibatches."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        111,
+        505,
+        188
+      ],
+      "content": "Like in BiGAN [7] and ALI [10], the discriminator loss \\( \\mathcal{L}_D \\) intuitively trains the discriminator to distinguish between the two joint data-latent distributions from the encoder and the generator, pushing it to predict positive values for encoder input pairs \\( (\\mathbf{x}, \\mathcal{E}(\\mathbf{x})) \\) and negative values for generator input pairs \\( (\\mathcal{G}(\\mathbf{z}), \\mathbf{z}) \\). The generator and encoder loss \\( \\mathcal{L}_{EG} \\) trains these two modules to fool the discriminator into incorrectly predicting the opposite, in effect pushing them to create matching joint data-latent distributions. (In the case of deterministic \\( \\mathcal{E} \\) and \\( \\mathcal{G} \\), this requires the two modules to invert one another [7].)"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        204,
+        182,
+        217
+      ],
+      "content": "3 Evaluation"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        229,
+        505,
+        284
+      ],
+      "content": "Most of our experiments follow the standard protocol used to evaluate unsupervised learning techniques, first proposed in [41]. We train a BigBiGAN on unlabeled ImageNet, freeze its learned representation, and then train a linear classifier on its outputs, fully supervised using all of the training set labels. We also measure image generation performance, reporting Inception Score [35] (IS) and Fréchet Inception Distance [18] (FID) as the standard metrics there."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        298,
+        168,
+        310
+      ],
+      "content": "The text content from the image is \"3.1 Ablation\"."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        319,
+        505,
+        352
+      ],
+      "content": "We begin with an extensive ablation study in which we directly evaluate a number of modeling choices, with results presented in Table 1. Where possible we performed three runs of each variant with different seeds and report the mean and standard deviation for each metric."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        357,
+        505,
+        499
+      ],
+      "content": "We start with a relatively fully-fledged version of the model at 128 × 128 resolution (row Base), with the G architecture and the F component of D taken from the corresponding 128 × 128 architectures in BigGAN, including the skip connections and shared noise embedding proposed in [2]. z is 120 dimensions, split into six groups of 20 dimensions fed into each of the six layers of G as in [2]. The remaining components of D – H and J – are 8-layer MLPs with ResNet-style skip connections (four residual blocks with two layers each) and size 2048 hidden layers. The E architecture is the ResNet-v2-50 ConvNet originally proposed for image classification in [16], followed by a 4-layer MLP (size 4096) with skip connections (two residual blocks) after ResNet’s globally average pooled output. The unconditional BigGAN training setup corresponds to the “Single Label” setup proposed in [27], where a single “dummy” label is used for all images (theoretically equivalent to learning a bias in place of the class-conditional batch norm inputs). We then ablate several aspects of the model, with results detailed in the following paragraphs. Additional architectural and optimization details are provided in Appendix A. Full learning curves for many results are included in Appendix D."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        511,
+        506,
+        622
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Latent distribution Pz and stochastic E.\nAs in ALI [10], the encoder E of our Base model is non-deterministic, parametrizing a distribution N(μ, σ). μ and σ are given by a linear layer at the output of the model, and the final standard deviation σ is computed from σ̂ using a non-negative \"softplus\" non-linearity σ = log(1 + exp(σ̂)) [9]. The final z uses the reparametrized sampling from [23], with z = μ + εσ, where ε ∼ N(0, I). Compared to a deterministic encoder (row Deterministic E) which predicts z directly without sampling (effectively modeling P(z|x) as a Dirac δ distribution), the non-deterministic Base model achieves significantly better classification performance (at no cost to generation). We also compared to using a uniform Pz = U(-1, 1) (row Uniform Pz) with E deterministically predicting z = tanh(ẑ) given a linear output ŷ, as done in BiGAN [7]. This also achieves worse classification results than the non-deterministic Base model.\""
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        634,
+        505,
+        722
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Unary loss terms. We evaluate the effect of removing one or both unary terms of the loss function proposed in Section 2, s_x and s_z. Removing both unary terms (row No Unaries) corresponds to the original objective proposed in [7, 10]. It is clear that the x unary term has a large positive effect on generation performance, with the Base and x Unary Only rows having significantly better IS and FID than the z Unary Only and No Unaries rows. This result makes intuitive sense as it matches the standard generator loss. It also marginally improves classification performance. The z unary term makes a more marginal difference, likely due to the relative ease of modeling relatively simple distributions like isotropic Gaussians, though also does result in slightly improved classification and\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        72,
+        505,
+        149
+      ],
+      "content": "The text content from the image is as follows:\n\n\"generation in terms of FID – especially without the x term (z Unary Only vs. No Unaries). On the other hand, IS is worse with the z term. This may be due to IS roughly measuring the generator’s coverage of the major modes of the distribution (the classes) rather than the distribution in its entirety, the latter of which may be better captured by FID and more likely to be promoted by a good encoder E. The requirement of invertibility in a (Big)BiGAN could be encouraging the generator to produce distinguishable outputs across the entire latent space, rather than “collapsing” large volumes of latent space to a single mode of the data distribution.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        165,
+        505,
+        264
+      ],
+      "content": "The text content from the image is as follows:\n\n\"G capacity. To address the question of the importance of the generator G in representation learning, we vary the capacity of G (with E and D fixed) in the Small G rows. With a third of the capacity of the Base G model (Small G (32)), the overall model is quite unstable and achieves significantly worse classification results than the higher capacity base model [4]. With two-thirds capacity (Small G (64)), generation performance is substantially worse (matching the results in [2]) and classification performance is modestly worse. These results confirm that a powerful image generator is indeed important for learning good representations via the encoder. Assuming this relationship holds in the future, we expect that better generative models are likely to lead to further improvements in representation learning.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        165,
+        505,
+        264
+      ],
+      "content": "The text content from the image is as follows:\n\n\"G capacity. To address the question of the importance of the generator G in representation learning, we vary the capacity of G (with E and D fixed) in the Small G rows. With a third of the capacity of the Base G model (Small G (32)), the overall model is quite unstable and achieves significantly worse classification results than the higher capacity base model [4]. With two-thirds capacity (Small G (64)), generation performance is substantially worse (matching the results in [2]) and classification performance is modestly worse. These results confirm that a powerful image generator is indeed important for learning good representations via the encoder. Assuming this relationship holds in the future, we expect that better generative models are likely to lead to further improvements in representation learning.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        279,
+        505,
+        389
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Standard GAN. We also compare BigBiGAN's image generation performance against a standard unconditional BigGAN with no encoder E and only the standard F ConvNet in the discriminator, with only the sx term in the loss (row No E (GAN)). While the standard GAN achieves a marginally better IS, the BigBiGAN FID is about the same, indicating that the addition of the BigBiGAN E and joint D does not compromise generation with the newly proposed unary loss terms described in Section 2. (In comparison, the versions of the model without unary loss term on x – rows z Unary Only and No Unaries – have substantially worse generation performance in terms of FID than the standard GAN.) We conjecture that the IS is worse for similar reasons that the sz unary loss term leads to worse IS. Next we will show that with an enhanced E taking higher input resolutions, generation with BigBiGAN in terms of FID is substantially improved over the standard GAN.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        405,
+        505,
+        503
+      ],
+      "content": "The text content from the image is as follows:\n\n\"High resolution 𝒖 with varying resolution 𝒘. BiGAN [7] proposed an asymmetric setup in which 𝒖 takes higher resolution images than 𝒘 outputs and 𝒟 takes as input, showing that an 𝒖 taking 128 × 128 inputs with a 64 × 64 𝒘 outperforms a 64 × 64 𝒖 for downstream tasks. We experiment with this setup in BigBiGAN, raising the 𝒖 input resolution to 256 × 256 – matching the resolution used in typical supervised ImageNet classification setups – and varying the 𝒘 output and 𝒟 input resolution in {64, 128, 256}. Our results in Table 1 (rows High Res 𝒖 (256) and Low/High Res 𝒘 (*)) show that BigBiGAN achieves better representation learning results as the 𝒘 resolution increases, up to the full 𝒖 resolution of 256 × 256. However, because the overall model is much slower to train with 𝒘 at 256 × 256 resolution, the remainder of our results use the 128 × 128 resolution for 𝒘.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        509,
+        506,
+        552
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Interestingly, with the higher resolution \\(\\mathcal{E}\\), generation improves significantly (especially by FID), despite \\(\\mathcal{G}\\) operating at the same resolution (row High Res \\(\\mathcal{E}\\) (256) vs. Base). This is an encouraging result for the potential of BigBiGAN as a means of improving adversarial image synthesis itself, besides its use in representation learning and inference.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        568,
+        505,
+        678
+      ],
+      "content": "The text content from the image is as follows:\n\n```\nE architecture. Keeping the E input resolution fixed at 256, we experiment with varied and often larger E architectures, including several of the ResNet-50 variants explored in [24]. In particular, we expand the capacity of the hidden layers by a factor of 2 or 4, as well as swap the residual block structure to a reversible variant called RevNet [12] with the same number of layers and capacity as the corresponding ResNets. (We use the version of RevNet described in [24].) We find that the base ResNet-50 model (row High Res E (256)) outperforms RevNet-50 (row RevNet), but as the network widths are expanded, we begin to see improvements from RevNet-50, with double-width RevNet outperforming a ResNet of the same capacity (rows RevNet ×2 and ResNet ×2). We see further gains with an even larger quadruple-width RevNet model (row RevNet ×4), which we use for our final results in Section 3.2.\n```"
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        268,
+        505,
+        455
+      ],
+      "content": "Table 1: Results for variants of BigBiGAN, given in Inception Score [35] (IS) and Fréchet Inception Distance [18] (FID) of the generated images, and ImageNet top-1 classification accuracy percentage (Cls.) of a supervised logistic regression classifier trained on the encoder features [41], computed on a split of 10K images randomly sampled from the training set, which we refer to as the “train_val” split. The Encoder (\\( \\mathcal{E} \\)) columns specify the \\( \\mathcal{E} \\) architecture (A.) as ResNet (S) or RevNet (V), the depth (D., e.g. 50 for ResNet-50), the channel width multiplier (C.), with 1 denoting the original widths from [16], the input image resolution (R.), whether the variance is predicted and a z vector is sampled from the resulting distribution (Var.), and the learning rate multiplier \\( \\eta \\) relative to the \\( \\mathcal{G} \\) learning rate. The Generator (\\( \\mathcal{G} \\)) columns specify the BigGAN \\( \\mathcal{G} \\) channel multiplier (C.), with 96 corresponding to the original width from [2], and output image resolution (R.). The Loss columns specify which terms of the BigBiGAN loss are present in the objective. The \\( P_z \\) column specifies the input distribution as a standard normal \\( \\mathcal{N}(0,1) \\) or continuous uniform \\( U(-1,1) \\). Changes from the Base setup in each row are highlighted in blue. Results with margins of error (written as “\\( \\mu \\pm \\sigma \\)” ) are the means and standard deviations over three runs with different random seeds. (Experiments requiring more computation were run only once.) (* Result for vanilla GAN (No \\( \\mathcal{E} \\) (GAN)) selected with early stopping based on best FID; other results selected with early stopping based on validation classification accuracy (Cls.).)"
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        479,
+        505,
+        534
+      ],
+      "content": "Decoupled ε/G optimization. As a final improvement, we decoupled the ε optimizer from that of G, and found that simply using a 10× higher learning rate for ε dramatically accelerates training and improves final representation learning results. For ResNet-50 this improves linear classifier accuracy by nearly 3% (ResNet (↑ ε LR) vs. High Res ε (256)). We also applied this to our largest ε architecture, RevNet-50 ×4, and saw similar gains (RevNet ×4 (↑ ε LR) vs. RevNet ×4)."
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        550,
+        268,
+        562
+      ],
+      "content": "The text content from the image is:\n\n\"3.2 Comparison with prior methods\""
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        572,
+        505,
+        627
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Representation learning. We now take our best model by train_val classification accuracy from the above ablations and present results on the official ImageNet validation set, comparing against the state of the art in recent unsupervised learning literature. For comparison, we also present classification results for our best performing variant with the smaller ResNet-50-based E. These models correspond to the last two rows of Table 1, ResNet (↑ E LR) and RevNet ×4 (↑ E LR).\""
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        632,
+        505,
+        698
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Results are presented in Table 2. (For reference, the fully supervised accuracy of these architectures is given in Appendix A, Table 4.) Compared with a number of modern self-supervised approaches [30, 5, 41, 39, 11, 17] and combinations thereof [6], our BigBiGAN approach based purely on generative models performs well for representation learning, state-of-the-art among recent unsupervised learning results, improving upon a recently published result from [24] of 55.4% to 60.8% top-1 accuracy using rotation prediction pre-training with the same representation learning architecture [5] and feature.\""
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        252,
+        505,
+        307
+      ],
+      "content": "Table 2: Comparison of BigBiGAN models on the official ImageNet validation set against recent competing approaches with a supervised logistic regression classifier. BigBiGAN results are selected with early stopping based on highest accuracy on our train_val subset of 10K training set images. ResNet-50 results correspond to row ResNet (↑ E LR) in Table 1, and RevNet-50 ×4 corresponds to RevNet ×4 (↑ E LR)."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        252,
+        505,
+        307
+      ],
+      "content": "Table 2: Comparison of BigBiGAN models on the official ImageNet validation set against recent competing approaches with a supervised logistic regression classifier. BigBiGAN results are selected with early stopping based on highest accuracy on our train_val subset of 10K training set images. ResNet-50 results correspond to row ResNet (↑ E LR) in Table 1, and RevNet-50 ×4 corresponds to RevNet ×4 (↑ E LR)."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        390,
+        505,
+        468
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 3: Comparison of our BigBiGAN for unsupervised (unconditional) generation vs. previously reported results for unsupervised BigGAN from [27]. We specify the 'pseudo-labeling' method as SL (Single Label) or Clustering. For comparison we train BigBiGAN for the same number of steps (500K) as the BigGAN-based approaches from [27], but also present results from additional training to 1M steps in the last row and observe further improvements. All results above include the median m as well as the mean μ and standard deviation σ across three runs, written as “m (μ ± σ)”. The BigBiGAN result is selected with early stopping based on best FID vs. Train.\""
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        491,
+        504,
+        513
+      ],
+      "content": "The text content from the image is:\n\n\"labelled as AvePool in Table 2, and matches the results of the concurrent work in [17] based on contrastive predictive coding (CPC).\""
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        518,
+        505,
+        606
+      ],
+      "content": "We also experiment with learning linear classifiers on a different rendering of the AvePool feature, labeled BN+CReLU, which boosts our best results with RevNet ×4 to 61.3% top-1 accuracy. Given the global average pooling output \\(a\\), we first compute \\(h = \\text{BatchNorm}(a)\\), and the final feature is computed by concatenating [ReLU(h), ReLU(-h)], sometimes called a “CReLU” (concatened ReLU) non-linearity [36]. BatchNorm denotes parameter-free Batch Normalization [19], where the scale (\\(\\gamma\\)) and offset (\\(\\beta\\)) parameters are not learned, so training a linear classifier on this feature does not involve any additional learning. The CReLU non-linearity retains all the information in its inputs and doubles the feature dimension, each of which likely contributes to the improved results."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        611,
+        504,
+        644
+      ],
+      "content": "The text content from the image is:\n\n\"Finally, in Appendix C we consider evaluating representations by zero-shot k nearest neighbors classification, achieving 43.3% top-1 accuracy in this setting. Qualitative examples of nearest neighbors are presented in Figure 13.\""
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        657,
+        505,
+        690
+      ],
+      "content": "The text content from the image is:\n\n\"Unsupervised image generation. In Table 3 we show results for unsupervised generation with BigBiGAN, comparing to the BigGAN-based [2] unsupervised generation results from [27]. Note that these results differ from those in Table 1 due to the use of the data augmentation method of [27].\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        181,
+        506,
+        236
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Figure 2: Selected reconstructions from an unsupervised BigBiGAN model (Section 3.3). Top row images are real data x ∼ P_x; bottom row images are generated reconstructions of the above image x computed by G(E(x)). Unlike most explicit reconstruction costs (e.g., pixel-wise), the reconstruction cost implicitly minimized by a (Big)BiGAN [7, 10] tends to emphasize more semantic, high-level details. Additional reconstructions are presented in Appendix B.\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        258,
+        505,
+        346
+      ],
+      "content": "(rather than ResNet-style preprocessing used for all results in our Table 1 ablation study). The lighter augmentation from [27] results in better image generation performance under the IS and FID metrics. The improvements are likely due in part to the fact that this augmentation, on average, crops larger portions of the image, thus yielding generators that typically produce images encompassing most or all of a given object, which tends to result in more representative samples of any given class (giving better IS) and more closely matching the statistics of full center crops (as used in the real data statistics to compute FID). Besides this preprocessing difference, the approaches in Table 3 have the same configurations as used in the Base or High Res E (256) row of Table 1."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        350,
+        505,
+        460
+      ],
+      "content": "These results show that BigBiGAN significantly improves both IS and FID over the baseline unconditional BigGAN generation results with the same (unsupervised) “labels” (a single fixed label in the SL (Single Label) approach – row BigBiGAN + SL vs. BigGAN + SL). We see further improvements using a high resolution Ε (row BigBiGAN High Res Ε + SL), surpassing the previous unsupervised state of the art (row BigGAN + Clustering) under both IS and FID. (Note that the image generation results remain comparable: the generated image resolution is still 128 × 128 here, despite the higher resolution Ε input.) The alternative “pseudo-labeling” approach from [27], Clustering, which uses labels derived from unsupervised clustering, is complementary to BigBiGAN and combining both could yield further improvements. Finally, observing that results continue to improve significantly with training beyond 500K steps, we also report results at 1M steps in the final row of Table 3."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        474,
+        195,
+        486
+      ],
+      "content": "The text content from the image is \"3.3 Reconstruction\"."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        494,
+        505,
+        627
+      ],
+      "content": "The text content from the image is as follows:\n\n\"As shown in [7, 10], the (Big)BiGAN E and G can reconstruct data instances x by computing the encoder's predicted latent representation E(x) and then passing this predicted latent back through the generator to obtain the reconstruction G(E(x)). We present BigBiGAN reconstructions in Figure 2. These reconstructions are far from pixel-perfect, likely due in part to the fact that no reconstruction cost is explicitly enforced by the objective – reconstructions are not even computed at training time. However, they may provide some intuition for what features the encoder E learns to model. For example, when the input image contains a dog, person, or a food item, the reconstruction is often a different instance of the same \"category\" with similar pose, position, and texture – for example, a similar species of dog facing the same direction. The extent to which these reconstructions tend to retain the high-level semantics of the inputs rather than the low-level details suggests that BigBiGAN training encourages the encoder to model the former more so than the latter. Additional reconstructions are presented in Appendix B.\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        641,
+        195,
+        655
+      ],
+      "content": "The text content from the image is \"4 Related work\"."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        667,
+        505,
+        722
+      ],
+      "content": "A number of approaches to unsupervised representation learning from images based on self-supervision have proven very successful. Self-supervision generally involves learning from tasks designed to resemble supervised learning in some way, but in which the \"labels\" can be created automatically from the data itself with no manual effort. An early example is relative location prediction [5], where a model is trained on input pairs of image patches and predicts their relative"
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        72,
+        505,
+        182
+      ],
+      "content": "locations. Contrastive predictive coding (CPC) [39, 17] is a recent related approach where, given an image patch, a model predicts which patches occur in other image locations. Other approaches include colorization [41, 42], motion segmentation [30], rotation prediction [11, 4], GAN-based discrimination [31, 4], and exemplar matching [8]. Rigorous empirical comparisons of many of these approaches have also been conducted [6, 24]. A key advantage offered by BigBiGAN and other approaches based on generative models, relative to most self-supervised approaches, is that their input may be the full-resolution image or other signal, with no cropping or modification of the data needed (though such modifications may be beneficial as data augmentation). This means the resulting representation can typically be applied directly to full data in the downstream task with no domain shift."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        187,
+        506,
+        363
+      ],
+      "content": "A number of relevant autoencoder and GAN variants have also been proposed. Associative compression networks (ACNs) [15] learn to compress at the dataset level by conditioning data on other previously transmitted data which are similar in code space, resulting in models that can “daydream” semantically similar samples, similar to BigBiGAN reconstructions. VQ-VAEs [40] pair a discrete (vector quantized) encoder with an autoregressive decoder to produce faithful reconstructions with a high compression factor and demonstrate representation learning results in reinforcement learning settings. In the adversarial space, adversarial autoencoders [28] proposed an autoencoder-style encoder-decoder pair trained with pixel-level reconstruction cost, replacing the KL-divergence regularization of the prior used in VAEs [23] with a discriminator. In another proposed VAE-GAN hybrid [25] the pixel-space reconstruction error used in most VAEs is replaced with feature space distance from an intermediate layer of a GAN discriminator. Other hybrid approaches like AGE [38] and α-GAN [33] add an encoder to stabilize GAN training. An interesting difference between many of these approaches and the BiGAN [10, 7] framework is that BiGAN does not train the encoder or generator with an explicit reconstruction cost. Though it can be shown that (Big)BiGAN implicitly minimizes a reconstruction cost, qualitative reconstruction results (Section 3.3) suggest that this reconstruction cost is of a different flavor, emphasizing high-level semantics over pixel-level details."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        378,
+        181,
+        391
+      ],
+      "content": "The text content from the image is \"5 Discussion\"."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        403,
+        506,
+        469
+      ],
+      "content": "We have shown that BigBiGAN, an unsupervised learning approach based purely on generative models, achieves state-of-the-art results in image representation learning on ImageNet. Our ablation study lends further credence to the hope that powerful generative models can be beneficial for representation learning, and in turn that learning an inference model can improve large-scale generative models. In the future we hope that representation learning can continue to benefit from further advances in generative models and inference models alike, as well as scaling to larger image databases."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        481,
+        187,
+        492
+      ],
+      "content": "The text content from the image is \"Acknowledgments\"."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        500,
+        506,
+        522
+      ],
+      "content": "The authors would like to thank Aidan Clark, Olivier Hénaff, Aäron van den Oord, Sander Dieleman, and many other colleagues at DeepMind for useful discussions and feedback on this work."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        537,
+        164,
+        550
+      ],
+      "content": "References"
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        111,
+        555,
+        506,
+        626
+      ],
+      "content": "The text content from the image is as follows:\n\n[1] Martín Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen, Craig Citro, Greg S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard, Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh Levenberg, Dandelion Mané, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah, Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar, Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Viégas, Oriol Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Xiaoqiang Zheng. TensorFlow: Large-scale machine learning on heterogeneous systems. In arXiv:1603.04467, 2015."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        110,
+        555,
+        506,
+        723
+      ],
+      "content": "The text content from the image is as follows:\n\n[1] Martín Abadi, Ashish Agarwal, Paul Barham, Eugene Brevdo, Zhifeng Chen, Craig Citro, Greg S. Corrado, Andy Davis, Jeffrey Dean, Matthieu Devin, Sanjay Ghemawat, Ian Goodfellow, Andrew Harp, Geoffrey Irving, Michael Isard, Yangqing Jia, Rafal Jozefowicz, Lukasz Kaiser, Manjunath Kudlur, Josh Levenberg, Dandelion Mané, Rajat Monga, Sherry Moore, Derek Murray, Chris Olah, Mike Schuster, Jonathon Shlens, Benoit Steiner, Ilya Sutskever, Kunal Talwar, Paul Tucker, Vincent Vanhoucke, Vijay Vasudevan, Fernanda Viégas, Oriol Vinyals, Pete Warden, Martin Wattenberg, Martin Wicke, Yuan Yu, and Xiaoqiang Zheng. TensorFlow: Large-scale machine learning on heterogeneous systems. In arXiv:1603.04467, 2015.\n\n[2] Andrew Brock, Jeff Donahue, and Karen Simonyan. Large scale GAN training for high fidelity natural image synthesis. In ICLR, 2019.\n\n[3] Peter Buchlovsky, David Budden, Dominik Grewe, Chris Jones, John Aslanides, Frederic Besse, Andy Brock, Aidan Clark, Sergio Gómez Colmenarejo, Aedan Pope, Fabio Viola, and Dan Belov. TF-Replicator: Distributed machine learning for researchers. In arXiv:1902.00465, 2019.\n\n[4] Ting Chen, Xiaohua Zhai, Marvin Ritter, Mario Lucic, and Neil Houlsby. Self-supervised GANs via auxiliary rotation loss. In CVPR, 2019."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        112,
+        633,
+        505,
+        655
+      ],
+      "content": "The text content from the image is as follows:\n\n[2] Andrew Brock, Jeff Donahue, and Karen Simonyan. Large scale GAN training for high fidelity natural image synthesis. In ICLR, 2019."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        112,
+        662,
+        505,
+        693
+      ],
+      "content": "The text content from the image is as follows:\n\n[3] Peter Buchlovsky, David Budden, Dominik Grewe, Chris Jones, John Aslanides, Frederic Besse, Andy Brock, Aidan Clark, Sergio Gómez Colmenarejo, Aedan Pope, Fabio Viola, and Dan Belov. TF-Replicator: Distributed machine learning for researchers. In arXiv:1902.00465, 2019."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        110,
+        701,
+        505,
+        722
+      ],
+      "content": "The text content from the image is as follows:\n\n[4] Ting Chen, Xiaohua Zhai, Marvin Ritter, Mario Lucic, and Neil Houlsby. Self-supervised GANs via auxiliary rotation loss. In CVPR, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        111,
+        73,
+        506,
+        94
+      ],
+      "content": "The text content from the image is:\n\n[5] Carl Doersch, Abhinav Gupta, and Alexei A. Efros. Unsupervised visual representation learning by context prediction. In ICCV, 2015."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        111,
+        101,
+        479,
+        113
+      ],
+      "content": "The text content from the image is:\n\n[6] Carl Doersch and Andrew Zisserman. Multi-task self-supervised visual learning. In ICCV, 2017."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        111,
+        120,
+        487,
+        131
+      ],
+      "content": "The text content from the image is:\n\n[7] Jeff Donahue, Philipp Krähenbühl, and Trevor Darrell. Adversarial feature learning. In ICLR, 2017."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        111,
+        138,
+        505,
+        168
+      ],
+      "content": "The text content from the image is as follows:\n\n[8] Alexey Dosovitskiy, Philipp Fischer, Jost Tobias Springenberg, Martin Riedmiller, and Thomas Brox. Discriminative unsupervised feature learning with exemplar convolutional neural networks. In NeurIPS, 2014."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        110,
+        176,
+        505,
+        198
+      ],
+      "content": "[9] Charles Dugas, Yoshua Bengio, François Belisle, Claude Nadeau, and Rene Garcia. Incorporating second-order functional knowledge for better option pricing. In NeurIPS, 2000."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        108,
+        204,
+        505,
+        226
+      ],
+      "content": "The text content from the image is:\n\n[10] Vincent Dumoulin, Ishmael Belghazi, Ben Poole, Olivier Mastropietro, Alex Lamb, Martin Arjovsky, and Aaron Courville. Adversarially learned inference. In ICLR, 2017."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        232,
+        505,
+        254
+      ],
+      "content": "The text content from the image is as follows:\n\n[11] Spyros Gidaris, Praveer Singh, and Nikos Komodakis. Unsupervised representation learning by predicting image rotations. In ICLR, 2018."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        261,
+        505,
+        282
+      ],
+      "content": "The text content from the image is as follows:\n\n[12] Aidan N. Gomez, Mengye Ren, Raquel Urtasun, and Roger B. Grosse. The reversible residual network: Backpropagation without storing activations. In NeurIPS, 2017."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        289,
+        505,
+        310
+      ],
+      "content": "The text content from the image is:\n\n[13] Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In NeurIPS, 2014."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        317,
+        368,
+        329
+      ],
+      "content": "[14] Google. Cloud TPU. https://cloud.google.com/tpu/, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        335,
+        505,
+        357
+      ],
+      "content": "The text content from the image is as follows:\n\n[15] Alex Graves, Jacob Menick, and Aäron van den Oord. Associative compression networks. In arXiv:1804.02476, 2018."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        363,
+        505,
+        385
+      ],
+      "content": "The text content from the image is as follows:\n\n[16] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Identity mappings in deep residual networks. In ECCV, 2016."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        392,
+        505,
+        414
+      ],
+      "content": "The text content from the image is as follows:\n\n[17] Olivier J. Hénaff, Ali Razavi, Carl Doersch, S. M. Ali Eslami, and Aäron van den Oord. Data-efficient image recognition with contrastive predictive coding. In arXiv:1905.09272, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        420,
+        505,
+        442
+      ],
+      "content": "The text content from the image is as follows:\n\n[18] Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, and Sepp Hochreiter. GANs trained by a two time-scale update rule converge to a local Nash equilibrium. In NeurIPS, 2017."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        105,
+        168,
+        504,
+        732
+      ],
+      "content": "[9] Charles Dugas, Yoshua Bengio, François Belisle, Claude Nadeau, and Rene Garcia. Incorporating second-order functional knowledge for better option pricing. In NeurIPS, 2000.\n\n[10] Vincent Dumoulin, Ishmael Belghazi, Ben Poole, Olivier Mastropietro, Alex Lamb, Martin Arjovsky, and Aaron Courville. Adversarially learned inference. In ICLR, 2017.\n\n[11] Spyros Gidaris, Praveer Singh, and Nikos Komodakis. Unsupervised representation learning by predicting image rotations. In ICLR, 2018.\n\n[12] Aidan N. Gomez, Mengye Ren, Raquel Urtasun, and Roger B. Grosse. The reversible residual network: Backpropagation without storing activations. In NeurIPS, 2017.\n\n[13] Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial nets. In NeurIPS, 2014.\n\n[14] Google. Cloud TPU. https://cloud.google.com/tpu/, 2019.\n\n[15] Alex Graves, Jacob Menick, and Aäron van den Oord. Associative compression networks. In arXiv:1804.02476, 2018.\n\n[16] Kaiming He, Xiangyu Zhang, Shaoqing Ren, and Jian Sun. Identity mappings in deep residual networks In ECCV, 2016.\n\n[17] Olivier J. Hénaff, Ali Razavi, Carl Doersch, S. M. Ali Eslami, and Aäron van den Oord. Data-efficient image recognition with contrastive predictive coding. In arXiv:1905.09272, 2019.\n\n[18] Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, and Sepp Hochreiter. GANs trained by a two time-scale update rule converge to a local Nash equilibrium. In NeurIPS, 2017.\n\n[19] Sergey Ioffe and Christian Szegedy. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In arXiv:1502.03167, 2015.\n\n[20] Tero Karras, Samuli Laine, and Timo Aila. A style-based generator architecture for generative adversarial networks. In CVPR, 2019.\n\n[21] Diederik P. Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In ICLR, 2015.\n\n[22] Diederik P. Kingma and Prafulla Dhariwal. Glow: Generative flow with invertible 1x1 convolutions. In arXiv:1807.03039, 2018.\n\n[23] Diederik P. Kingma and Max Welling. Auto-encoding variational Bayes. In arXiv:1312.6114, 2013.\n\n[24] Alexander Kolesnikov, Xiaohua Zhai, and Lucas Beyer. Revisiting self-supervised visual representation learning. In arXiv:1901.09005, 2019.\n\n[25] Anders Boesen Lindbo Larsen, Søren Kaae Sønderby, Hugo Larochelle, and Ole Winther. Autoencoding beyond pixels using a learned similarity metric. In ICML, 2016.\n\n[26] Jae Hyun Lim and Jong Chul Ye. Geometric GAN. In arXiv:1705.02894, 2017.\n\n[27] Mario Lucic, Michael Tschannen, Marvin Ritter, Xiaohua Zhai, Olivier Bachem, and Sylvain Gelly. High-fidelity image generation with fewer labels. In ICML, 2019.\n\n[28] Alireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow, and Brendan Frey. Adversarial autoencoders. In ICLR, 2016.\n\n[29] Takeru Miyato, Toshiki Kataoka, Masanori Koyama, and Yuichi Yoshida. Spectral normalization for generative adversarial networks. In ICLR, 2018."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        449,
+        505,
+        470
+      ],
+      "content": "The text content from the image is as follows:\n\n[19] Sergey Ioffe and Christian Szegedy. Batch normalization: Accelerating deep network training by reducing internal covariate shift. In arXiv:1502.03167, 2015."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        477,
+        505,
+        498
+      ],
+      "content": "The text content from the image is as follows:\n\n[20] Tero Karras, Samuli Laine, and Timo Aila. A style-based generator architecture for generative adversarial networks. In CVPR, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        172,
+        505,
+        469,
+        517
+      ],
+      "content": "The text content from the image is:\n\n\"Kingma and Jimmy Ba. Adam: A method for stochastic optimization. In ICLR, 201...\""
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        523,
+        505,
+        545
+      ],
+      "content": "The text content from the image is:\n\n[22] Diederik P. Kingma and Prafulla Dhariwal. Glow: Generative flow with invertible 1x1 convolutions. In arXiv:1807.03039, 2018."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        182,
+        551,
+        479,
+        563
+      ],
+      "content": "The text content from the image is:\n\n\"Yi-gma and Max Welling. Auto-encoding variational Bayes. In arXiv:1312.6114, 201\""
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        570,
+        505,
+        591
+      ],
+      "content": "The text content from the image is as follows:\n\n[24] Alexander Kolesnikov, Xiaohua Zhai, and Lucas Beyer. Revisiting self-supervised visual representation learning. In arXiv:1901.09005, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        598,
+        505,
+        620
+      ],
+      "content": "The text content from the image is as follows:\n\n[25] Anders Boesen Lindbo Larsen, Søren Kaae Sønderby, Hugo Larochelle, and Ole Winther. Autoencoding beyond pixels using a learned similarity metric. In ICML, 2016."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        113,
+        626,
+        410,
+        638
+      ],
+      "content": "The text content from the image is:\n\n26] Jae Hyun Lim and Jong Chul Ye. Geometric GAN. In arXiv:1705.02894, 201"
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        644,
+        505,
+        666
+      ],
+      "content": "The text content from the image is as follows:\n\n[27] Mario Lucic, Michael Tschannen, Marvin Ritter, Xiaohua Zhai, Olivier Bachem, and Sylvain Gelly. High-fidelity image generation with fewer labels. In ICML, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        673,
+        505,
+        694
+      ],
+      "content": "The text content from the image is as follows:\n\n[28] Alireza Makhzani, Jonathon Shlens, Navdeep Jaitly, Ian Goodfellow, and Brendan Frey. Adversarial autoencoders. In ICLR, 2016."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        701,
+        505,
+        722
+      ],
+      "content": "The text content from the image is:\n\n[29] Takeru Miyato, Toshiki Kataoka, Masanori Koyama, and Yuichi Yoshida. Spectral normalization for generative adversarial networks. In ICLR, 2018."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        73,
+        505,
+        94
+      ],
+      "content": "The text content from the image is as follows:\n\n[30] Deepak Pathak, Ross Girshick, Piotr Dollár, Trevor Darrell, and Bharath Hariharan. Learning features by watching objects move. In CVPR, 2017."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        101,
+        505,
+        122
+      ],
+      "content": "The text content from the image is as follows:\n\n[31] Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In ICLR, 2016."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        108,
+        129,
+        505,
+        169
+      ],
+      "content": "The text content from the image is as follows:\n\n[32] Malcolm Reynolds, Gabriel Barth-Maron, Frederic Besse, Diego de Las Casas, Andreas Fidjeland, Tim Green, Adrià Puigdomènech, Sébastien Racanière, Jack Rae, and Fabio Viola. Open sourcing Sonnet - a new library for constructing neural networks. https://deepmind.com/blog/open-sourcing-sonnet/, 2017."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        176,
+        505,
+        198
+      ],
+      "content": "The text content from the image is as follows:\n\n[33] Mihaela Rosca, Balaji Lakshminarayanan, David Warde-Farley, and Shakir Mohamed. Variational approaches for auto-encoding generative adversarial networks. In arXiv:1706.04987, 2017."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        204,
+        505,
+        236
+      ],
+      "content": "The text content from the image is as follows:\n\n[34] Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Ziheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, and Li Fei-Fei. ImageNet Large Scale Visual Recognition Challenge. IJCV, 2015."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        242,
+        505,
+        264
+      ],
+      "content": "The text content from the image is as follows:\n\n[35] Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, and Xi Chen. Improved techniques for training GANs. In arXiv:1606.03498, 2016."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        71,
+        507,
+        449
+      ],
+      "content": "[30] Deepak Pathak, Ross Girshick, Piotr Dollár, Trevor Darrell, and Bharath Hariharan. Learning features by watching objects move. In CVPR, 2017.\n\n[31] Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In ICLR, 2016.\n\n[32] Malcolm Reynolds, Gabriel Barth-Maron, Frederic Besse, Diego de Las Casas, Andreas Fidjeland, Tim Green, Adrià Puigdomènech, Sébastien Racanière, Jack Rae, and Fabio Viola. Open sourcing Sonnet - a new library for constructing neural networks. https://deepmind.com/blog/open-sourcing-sonnet/, 2017.\n\n[33] Mihaela Rosca, Balaji Lakshminarayanan, David Warde-Farley, and Shakir Mohamed. Variational approaches for auto-encoding generative adversarial networks. In arXiv:1706.04987, 2017.\n\n[34] Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, and Li Fei-Fei. ImageNet Large Scale Visual Recognition Challenge. IJCV, 2015.\n\n[35] Tim Salimans, Ian Goodfellow, Wojciech Zaremba, Vicki Cheung, Alec Radford, and Xi Chen. Improved techniques for training GANs. In arXiv:1606.03498, 2016.\n\n[36] Wenling Shang, Kihyuk Sohn, Diogo Almeida, and Honglak Lee. Understanding and improving convolutional neural networks via concatenated rectified linear units. In ICML, 2016.\n\n[37] Dustin Tran, Rajesh Ranganath, and David M. Blei. Hierarchical implicit models and likelihood-free variational inference. In NeurIPS, 2017.\n\n[38] Dmitry Ulyanov, Andrea Vedaldi, and Victor Lempitsky. It takes (only) two: Adversarial generator-encoder networks. In arXiv:1704.02304, 2017.\n\n[39] Aäron van den Oord, Yazhe Li, and Oriol Vinyals. Representation learning with contrastive predictive coding. In arXiv:1807.03748, 2018.\n\n[40] Aäron van den Oord, Oriol Vinyals, and Koray Kavukcuoglu. Neural discrete representation learning. In arXiv:1711.00937, 2017.\n\n[41] Richard Zhang, Phillip Isola, and Alexei A. Efros. Colorful image colorization. In ECCV, 2016.\n\n[42] Richard Zhang, Phillip Isola, and Alexei A. Efros. Split-brain autoencoders: Unsupervised learning by cross-channel prediction. In CVPR, 2016."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        270,
+        505,
+        291
+      ],
+      "content": "The text content from the image is:\n\n[36] Wenling Shang, Kihyuk Sohn, Diogo Almeida, and Honglak Lee. Understanding and improving convolutional neural networks via concatenated rectified linear units. In ICML, 2016."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        298,
+        505,
+        320
+      ],
+      "content": "The text content from the image is:\n\n[37] Dustin Tran, Rajesh Ranganath, and David M. Blei. Hierarchical implicit models and likelihood-free variational inference. In NeurIPS, 2017."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        326,
+        505,
+        347
+      ],
+      "content": "The text content from the image is:\n\n[38] Dmitry Ulyanov, Andrea Vedaldi, and Victor Lempitsky. It takes (only) two: Adversarial generator-encoder networks. In arXiv:1704.02304, 2017."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        354,
+        505,
+        375
+      ],
+      "content": "The text content from the image is:\n\n[39] Aaron van den Oord, Yazhe Li, and Oriol Vinyals. Representation learning with contrastive predictive coding. In arXiv:1807.03748, 2018."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        382,
+        505,
+        403
+      ],
+      "content": "The text content from the image is as follows:\n\n[40] Aaron van den Oord, Oriol Vinyals, and Koray Kavukcuoglu. Neural discrete representation learning. In arXiv:1711.00937, 2017."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        172,
+        410,
+        469,
+        421
+      ],
+      "content": "The text content from the image is:\n\n\"Jia Deng, Phillip Isola, and Alexei A. Efros. Colorful image colorization. In ECCV, 2016.\""
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        428,
+        505,
+        449
+      ],
+      "content": "The text content from the image is as follows:\n\n[42] Richard Zhang, Phillip Isola, and Alexei A. Efros. Split-brain autoencoders: Unsupervised learning by cross-channel prediction. In CVPR, 2016."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        70,
+        340,
+        85
+      ],
+      "content": "The text content from the image is:\n\n\"Appendix A Model and optimization details\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        95,
+        505,
+        195
+      ],
+      "content": "Our optimizer matches that of BigGAN [2] – we use Adam [21] with batch size 2048 and the same learning rates and other hyperparameters, using the G optimizer to update E simultaneously, with the same alternating optimization: two D updates followed by a single joint update of G and E. (We do not use orthogonal regularization used in [2], finding it gave worse results in the unconditional setting, matching the findings of [27].) Spectral normalization [29] is used in G and D, but not in E. Full cross-replica batch normalization is used in both G and E (including for the linear classifier training on E features used for evaluations). We also apply exponential moving averaging (EMA) with a decay of 0.9999 to the G and E weights in all evaluations. (We find this results in only a small improvement for E evaluations, but a substantial one for G evaluations.)"
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        199,
+        504,
+        232
+      ],
+      "content": "At BigBiGAN training time, as well as linear classification evaluation training time, we preprocess inputs with ResNet [16]-style data augmentation, though with crops of size 128 or 256 rather than 224."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        237,
+        505,
+        326
+      ],
+      "content": "For linear classification evaluations in the ablations reported in Table 1, we hold out 10K randomly selected images from the official ImageNet [34] training set as a validation set and report accuracy on that validation set, which we call train_val. All results in Table 1 are run for 500K steps, with early stopping based on linear classifier accuracy on our train_val split. In all of these models the linear classifier is initialized to 0 and trained for 5K Adam steps with a (high) learning rate of 0.01 and EMA smoothing with decay 0.9999. We have found it helpful to monitor representation learning progress during BigBiGAN training by periodically rerunning this linear classification evaluation from scratch given the current E weights, resetting the classifier weights to 0 before each evaluation."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        330,
+        505,
+        418
+      ],
+      "content": "The text content from the image is as follows:\n\n\"In Table 2 we extend the BigBiGAN training time to 1M steps, and report results on the official validation set of 50K images for comparison with prior work. The classifier in these results is trained for 100K Adam steps, sweeping over learning rates {10⁻⁴, 3 · 10⁻⁴, 10⁻³, 3 · 10⁻³, 10⁻²}, again applying EMA with decay 0.9999 to the classifier weights. Hyperparameter selection and early stopping is again based on classification accuracy on train_val. As in [2], FID is reported against statistics over the full ImageNet training set, preprocessed by resizing the minor axis to the G output resolution and taking the center crop along the major axis, except as noted in Table 3, where we also report FID against the validation set for comparison with [27].\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        423,
+        504,
+        446
+      ],
+      "content": "All models were trained via TensorFlow [1] and Sonnet [32] with data parallelism on TPU pod slices [14] using 32 to 512 cores, coordinated by TF-Replicator [3]."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        457,
+        504,
+        479
+      ],
+      "content": "The text content from the image is:\n\n\"Supervised model performance. In Table 4 we present the results of fully supervised training with the model architectures used in our experiments in Section 3 for comparison purposes.\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        573,
+        505,
+        596
+      ],
+      "content": "Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        573,
+        505,
+        596
+      ],
+      "content": "Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        573,
+        505,
+        596
+      ],
+      "content": "Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        573,
+        505,
+        596
+      ],
+      "content": "Table 4: ImageNet validation set accuracy for fully supervised end-to-end training of the model architectures used in our representation learning experiments."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        614,
+        505,
+        691
+      ],
+      "content": "First layer convolutional filters. In Figure 3 we visualize the learned convolutional filters for the first convolutional layer of our BigBiGAN encoders E using the largest RevNet ×4 E architecture. Note the difference between the filters in (a) and (b) (corresponding to rows RevNet ×4 and RevNet ×4 (↑ E LR) in Table 1). In (b) we use the higher E learning rate and see a corresponding qualitative improvement in the appearance of the learned filters, with less noise and more Gabor-like and color filters, as observed in BiGAN [7]. This suggests that examining the convolutional filters of the input layer can serve as a diagnostic for undertrained models."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        272,
+        505,
+        294
+      ],
+      "content": "Figure 3: Visualization of first layer convolutional filters for our unsupervised BigBiGAN models with the RevNet ×4 E architecture, which includes 1024 filters. (Best viewed with zoom.)"
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        272,
+        505,
+        294
+      ],
+      "content": "Figure 3: Visualization of first layer convolutional filters for our unsupervised BigBiGAN models with the RevNet ×4 E architecture, which includes 1024 filters. (Best viewed with zoom.)"
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        172,
+        388,
+        469,
+        400
+      ],
+      "content": "Links to BigBiGAN samples and reconstructions with associated metrics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        172,
+        388,
+        469,
+        400
+      ],
+      "content": "Links to BigBiGAN samples and reconstructions with associated metrics."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        417,
+        328,
+        432
+      ],
+      "content": "The text content from the image is:\n\n\"Appendix B Samples and reconstructions\""
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        442,
+        505,
+        498
+      ],
+      "content": "In this Appendix we present BigBiGAN samples and reconstructions from several variants of the method. Table 5 includes pointers to samples and reconstruction images, as well as relevant metrics. The samples were selected by best FID vs. training set statistics, and we show the IS and FID along with sample images at that point. The reconstructions were selected by best (lowest) relative pixel-wise ℓ1 error, the error metric presented in Table 5, computed as:"
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        532,
+        505,
+        611
+      ],
+      "content": "where x and x′ are independent data samples, and ||x′ − G(E(x))||1 serves as a “baseline” reconstruction error relative to a “random” input. For example, with a random initialization of G and E, we have ERelℓ1 ≈ 1. This relative metric penalizes degenerate reconstructions, such as the mean image, which would sometimes achieve low absolute reconstruction error despite having no perceptual similarity to the inputs. Despite that the resulting images having no perceptual similarity to the inputs. In practice, given N data samples x0, x1, . . . , xN−1 (we use N = 50K), we estimate the denominator by comparing each sample xi with a single neighbor x(i+1) mod N, computing:"
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        655,
+        505,
+        689
+      ],
+      "content": "Iterated reconstruction To further explore the behavior of a BigBiGAN (or any other model capable of approximately reconstructing its input), we can \"iterate\" the reconstruction operation. In particular, let \\( R_i(\\mathbf{x}) \\) be defined for non-negative integers \\( i \\) and input images \\( \\mathbf{x} \\) as:"
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        73,
+        506,
+        117
+      ],
+      "content": "In Figure 12 we show the results of up to 500 steps of this process for a few sample images. Qualitatively, the first several steps of this process often appear to retain some semantics of the input image x. After dozens or hundreds of iterations, however, little content from the original input apparently remains intact."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        651,
+        505,
+        673
+      ],
+      "content": "The text content from the image is:\n\n\"Figure 4: 128 × 128 samples \\(\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z})\\) from an unsupervised BigBiGAN generator \\(\\mathcal{G}\\), trained using the Base method from Table 1.\""
+    },
+    {
+      "page": 16,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        654,
+        505,
+        689
+      ],
+      "content": "The text in the image reads:\n\n\"Figure 5: 128 × 128 reconstructions from an unsupervised BigBiGAN model, trained using the Base method from Table 1. The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x)).\""
+    },
+    {
+      "page": 17,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        651,
+        505,
+        674
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Figure 6: 128 × 128 samples \\(\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z})\\) from an unsupervised BigBiGAN generator \\(\\mathcal{G}\\), trained using the lighter augmentation from [27] with generation results reported in Table 3.\""
+    },
+    {
+      "page": 18,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        654,
+        505,
+        688
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Figure 7: 128 × 128 reconstructions from an unsupervised BigBiGAN model, trained using the lighter augmentation from [27] with generation results reported in Table 3. The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x)).\""
+    },
+    {
+      "page": 19,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        651,
+        505,
+        673
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Figure 8: 128 × 128 samples \\(\\hat{\\mathbf{x}} \\sim \\mathcal{G}(\\mathbf{z})\\) from an unsupervised BigBiGAN generator \\(\\mathcal{G}\\), trained using the High Res E (256) configuration from Table 1.\""
+    },
+    {
+      "page": 20,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        649,
+        505,
+        694
+      ],
+      "content": "Figure 9: 128 × 128 reconstructions of 256 × 256 encoder input images from an unsupervised BigBiGAN model, trained using the High Res E (256) configuration from Table 1. Reconstructions are upsampled from 128 × 128 to 256 × 256 for visualization. The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x))."
+    },
+    {
+      "page": 21,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        651,
+        505,
+        674
+      ],
+      "content": "The text in the image reads:\n\n\"Figure 10: 256 × 256 samples \\(\\hat{\\mathbf{x}}\\) ∼ G(z) from an unsupervised BigBiGAN generator G, trained with a high-resolution E and G (High Res G (256) from Table 1).\""
+    },
+    {
+      "page": 22,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        655,
+        506,
+        689
+      ],
+      "content": "Figure 11: 256 × 256 reconstructions from an unsupervised BigBiGAN model, trained with a high-resolution E and G (High Res G (256) from Table 1). The top rows of each pair are real data x ∼ P_x, and bottom rows are generated reconstructions computed by G(E(x))."
+    },
+    {
+      "page": 23,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        656,
+        506,
+        723
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Figure 12: Iterated reconstructions from an unsupervised BigBiGAN model, trained using the ResNet (↑ E LR) method from Table 1, computed by recursively running the reconstruction operation G(E(·)) on its own output as described in Appendix B. In each pair of columns, the left column shows a real input image R0 at the top, and R1 through R9 in the remaining rows, the results of iterating reconstruction one to nine times, The right column shows the result of up to 500 iterations sampled at longer intervals, displaying R10, R20, R30, R40, R50, R100, R200, R300, R400, and R500.\""
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        132,
+        505,
+        165
+      ],
+      "content": "Table 6: Accuracy of k nearest neighbors classifiers in BigBiGAN feature space on the ImageNet validation set. We report results under the normalized ℓ1 distance D1 as well as the normalized ℓ2 (cosine) distance D2."
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        132,
+        505,
+        165
+      ],
+      "content": "Table 6: Accuracy of \\( k \\) nearest neighbors classifiers in BigBiGAN feature space on the ImageNet validation set. We report results under the normalized \\(\\ell_{1}\\) distance \\( D_{1} \\) as well as the normalized \\(\\ell_{2}\\) (cosine) distance \\( D_{2} \\)."
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        132,
+        505,
+        165
+      ],
+      "content": "Table 6: Accuracy of k nearest neighbors classifiers in BigBiGAN feature space on the ImageNet validation set. We report results under the normalized ℓ1 distance D1 as well as the normalized ℓ2 (cosine) distance D2."
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        185,
+        275,
+        199
+      ],
+      "content": "The text content from the image is:\n\n\"Appendix C Nearest neighbors\""
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        210,
+        505,
+        276
+      ],
+      "content": "In this Appendix we consider an alternative way of evaluating representations — by means of k nearest neighbors classification, which does not involve learning any parameters during evaluation and is even simpler than learning a linear classifier as done in Section 3. For all results in this section, we use the outputs of the global average pooling layer (a flat 8192D feature) of our best performing model, RevNet ×4, ↑ E LR. We do not do any data augmentation for either the training or validation sets: we simply crop each image at the center of its larger axis and resize to 256 × 256."
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        281,
+        505,
+        346
+      ],
+      "content": "We use a normalized ℓ1 or ℓ2 distance metric as our nearest neighbors criterion, defined as \\( D_p(a, b) = \\left\\| \\frac{a}{||a||_p} - \\frac{b}{||b||_p} \\right\\|_p \\), for \\( p \\in \\{1, 2\\} \\). (D2 corresponds to cosine distance.) For label predictions with multiple neighbors (\\( k > 1 \\)), we use a simple counting scheme: the label with the most votes is selected as the prediction. Ties (multiple labels with the same number of votes) are broken by \\( k = 1 \\) nearest neighbor classification among the data with the tied labels."
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        357,
+        505,
+        412
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Quantitative results. In Table 6 we present k nearest neighbors classification results for \\(k \\in \\{1, 5, 25, 50\\}\\). Across all \\(k\\), the \\(\\ell_1\\)-based metric \\(D_1\\) outperforms \\(D_2\\), and the remainder of our discussion refers to the \\(D_1\\) results. With just a single neighbor (\\(k = 1\\)) we achieve a top-1 accuracy around 38%. Top-1 accuracy reaches 43% with \\(k = 25\\), dropping off slightly at \\(k = 50\\) as votes from more distant neighbors are added.\""
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        424,
+        505,
+        513
+      ],
+      "content": "Qualitative results. Figure 13 shows sample nearest neighbors in the ImageNet training set for query images in the validation set. Despite being fully unsupervised, the neighbors in many cases match the query image in terms of high-level semantic content such as the category of the object of interest, demonstrating BigBiGAN’s ability to capture high-level attributes of the data in its unsupervised representations. Where applicable, the object’s pose and position in the image appears to be important as well – for example, the nearest neighbors of the RV (row 2, column 2) are all RVs facing roughly the same direction. In other cases, the nearest neighbors appear to be selected primarily based on the background or color scheme."
+    },
+    {
+      "page": 24,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        523,
+        505,
+        590
+      ],
+      "content": "Discussion. While our quantitative k nearest neighbors classification results are far from the state of the art for ImageNet classification and significantly below the linear classifier-based results reported in Table 2, note that in this setup, no supervised learning of model parameters from labels occurs at any point: labels are predicted purely based on distance in a feature space learned from BigBiGAN training on image pixels alone. We believe this makes nearest neighbors classification an interesting additional benchmark for future approaches to unsupervised representation learning."
+    },
+    {
+      "page": 25,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        651,
+        505,
+        696
+      ],
+      "content": "Figure 13: Nearest neighbors in BigBiGAN $\\mathcal{E}$ feature space, from our best performing model (RevNet $\\times 4$, $\\uparrow$ $\\mathcal{E}$ LR). In each row, the first (left) column is a query image, and the remaining columns are its three nearest neighbors from the training set (the leftmost being the nearest, next being the second nearest, etc.). The query images above are the first 24 images in the ImageNet validation set."
+    },
+    {
+      "page": 26,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        474,
+        505,
+        508
+      ],
+      "content": "Figure 14: Image generation learning curves for several of the ablations in Section 3, including a comparison of BigBiGAN to standard GAN. Legend entries correspond to the following rows in Table 1: Base, No ξ (GAN), and High Res ξ (256)."
+    },
+    {
+      "page": 26,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        527,
+        265,
+        541
+      ],
+      "content": "The text content from the image is:\n\n\"Appendix D Learning curves\""
+    },
+    {
+      "page": 26,
+      "type": "ocr_text",
+      "bbox": [
+        107,
+        552,
+        505,
+        586
+      ],
+      "content": "In this Appendix, we present learning curves showing how the image generation and representation learning metrics that we measured evolve throughout training, as a more detailed view of the results in Section 3, Table 1. We include plots for the following results:"
+    },
+    {
+      "page": 26,
+      "type": "ocr_text",
+      "bbox": [
+        132,
+        594,
+        367,
+        696
+      ],
+      "content": "The text content from the image is as follows:\n\n- Image generation (Figure 14)\n- Latent distribution Pz and stochastic E (Figure 15)\n- Unary loss terms (Figure 16)\n- G capacity (Figure 17)\n- High resolution E with varying resolution G (Figure 18)\n- E architecture (Figure 19)\n- Decoupled E/G learning rates (Figure 20)"
+    },
+    {
+      "page": 27,
+      "type": "ocr_text",
+      "bbox": [
+        234,
+        278,
+        378,
+        286
+      ],
+      "content": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\""
+    },
+    {
+      "page": 27,
+      "type": "ocr_text",
+      "bbox": [
+        246,
+        477,
+        365,
+        486
+      ],
+      "content": "The text content from the image is:\n\n\"Relative L1 Reconstruction Error (%)\""
+    },
+    {
+      "page": 27,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        679,
+        505,
+        713
+      ],
+      "content": "Figure 15: Image generation and representation learning curves for the latent space variations explored in Section 3. Legend entries correspond to the following rows in Table 1: Base, Deterministic 𝒖, and Uniform 𝑃𝑧."
+    },
+    {
+      "page": 28,
+      "type": "ocr_text",
+      "bbox": [
+        234,
+        278,
+        378,
+        286
+      ],
+      "content": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\""
+    },
+    {
+      "page": 28,
+      "type": "ocr_text",
+      "bbox": [
+        246,
+        477,
+        365,
+        486
+      ],
+      "content": "The text content from the image is:\n\n\"Relative L1 Reconstruction Error (%)\""
+    },
+    {
+      "page": 28,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        679,
+        506,
+        713
+      ],
+      "content": "Figure 16: Image generation and representation learning curves for the unary loss component variations explored in Section 3. Legend entries correspond to the following rows in Table 1: Base, x Unary Only, z Unary Only, and No Unaries (BiGAN)."
+    },
+    {
+      "page": 29,
+      "type": "ocr_text",
+      "bbox": [
+        234,
+        278,
+        378,
+        286
+      ],
+      "content": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\""
+    },
+    {
+      "page": 29,
+      "type": "ocr_text",
+      "bbox": [
+        246,
+        477,
+        365,
+        485
+      ],
+      "content": "The text content from the image is \"Relative L1 Reconstruction Error (%)\""
+    },
+    {
+      "page": 29,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        679,
+        506,
+        713
+      ],
+      "content": "Figure 17: Image generation and representation learning curves for the G size variations explored in Section 3. Legend entries correspond to the following rows in Table 1: Base, Small G (32), and Small G (64)."
+    },
+    {
+      "page": 30,
+      "type": "ocr_text",
+      "bbox": [
+        234,
+        278,
+        378,
+        287
+      ],
+      "content": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\""
+    },
+    {
+      "page": 30,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        679,
+        505,
+        713
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Figure 18: Image generation and representation learning curves for high resolution \\( \\mathcal{E} \\) with varying resolution \\( \\mathcal{G} \\) explored in Section 3. Legend entries correspond to the following rows in Table 1: High Res \\( \\mathcal{E} \\) (256), Low Res \\( \\mathcal{G} \\) (64), and High Res \\( \\mathcal{G} \\) (256).\""
+    },
+    {
+      "page": 31,
+      "type": "ocr_text",
+      "bbox": [
+        234,
+        278,
+        377,
+        287
+      ],
+      "content": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\""
+    },
+    {
+      "page": 31,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        679,
+        506,
+        713
+      ],
+      "content": "Figure 19: Image generation and representation learning curves for the \\(\\mathcal{E}\\) architecture variations explored in Section 3. Legend entries correspond to the following rows in Table 1: High Res \\(\\mathcal{E}\\) (256), ResNet-101, ResNet \\(\\times\\) 2, RevNet, RevNet \\(\\times\\) 2, and RevNet \\(\\times\\) 4."
+    },
+    {
+      "page": 32,
+      "type": "ocr_text",
+      "bbox": [
+        234,
+        278,
+        377,
+        286
+      ],
+      "content": "The text content from the image is:\n\n\"Top 1 Classification Accuracy (%), Val. (Cls.)\""
+    },
+    {
+      "page": 32,
+      "type": "ocr_text",
+      "bbox": [
+        106,
+        679,
+        505,
+        713
+      ],
+      "content": "Figure 20: Image generation and representation learning curves showing the effect of decoupling the \\( \\mathcal{E} \\) and \\( \\mathcal{G} \\) optimizers to train \\( \\mathcal{E} \\) with 10× higher learning rate. Legend entries correspond to the following rows in Table 1: High Res \\( \\mathcal{E} \\) (256), ResNet (\\( \\uparrow \\mathcal{E} \\) LR), RevNet ×4, and RevNet ×4 (\\( \\uparrow \\mathcal{E} \\) LR)."
+    }
+  ]
+}

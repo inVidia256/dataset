@@ -1,0 +1,2261 @@
+{
+  "total_count": 213,
+  "content_type": "text",
+  "data": [
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        158,
+        75,
+        437,
+        93
+      ],
+      "content": "The text content from the image is \"Generative Adversarial Transformers\"."
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        367,
+        125,
+        456,
+        136
+      ],
+      "content": "The text content from the image is \"C. Lawrence Zitnick\"."
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        139,
+        124,
+        276,
+        173
+      ],
+      "content": "The text content from the image is:\n\nDrew A. Hudson\nDepartment of Computer Science\nStanford University\ndorarad@cs.stanford.edu"
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        366,
+        125,
+        457,
+        173
+      ],
+      "content": "The text content from the image is:\n\nC. Lawrence Zitnick\nFacebook AI Research\nFacebook, Inc.\nzitnick@fb.com"
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        366,
+        139,
+        457,
+        173
+      ],
+      "content": "The text content from the image is:\n\nFacebook AI Research\nFacebook, Inc.\nzitnick@fb.com"
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        370,
+        162,
+        455,
+        172
+      ],
+      "content": "The text content from the image is:\n\nzitnick@fb.com"
+    },
+    {
+      "page": 1,
+      "type": "ocr_text",
+      "bbox": [
+        138,
+        163,
+        276,
+        172
+      ],
+      "content": "dorarad@cs.stanford.edu"
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        207,
+        542,
+        251
+      ],
+      "content": "Figure 2. Bipartite Attention. We introduce the GANformer network, that leverages a bipartite structure to support long-range interactions while evading the quadratic complexity standard transformers suffer from. We present two novel attention operations over the bipartite graph: simplex and duplex, the former permits communication in one direction, in the generative context – from the latents to the image features, while the latter enables both top-down and bottom-up connections between these two dual representations."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        263,
+        291,
+        358
+      ],
+      "content": "Meanwhile, the NLP community has witnessed a major revolution with the advent of the Transformer network [65], a highly-adaptive architecture centered around relational attention and dynamic interaction. In response, several attempts have been made to integrate the transformer into computer vision models, but so far they have met only limited success due to scalability limitations stemming from its quadratic mode of operation."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        263,
+        542,
+        382
+      ],
+      "content": "The text content from the image is:\n\n\"bust evidence for the network’s enhanced transparency and compositionality, while ablation studies empirically validate the value and effectiveness of our approach. We then present visualizations of the model’s produced attention maps, to shed more light upon its internal representations and synthesis process. All in all, as we will see through the rest of the paper, by bringing the renowned GANs and Transformer architectures together under one roof, we can integrate their complementary strengths, to create a strong, compositional and efficient network for visual generative modeling.\""
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        397,
+        390,
+        410
+      ],
+      "content": "The text content from the image is \"2. Related Work\"."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        365,
+        290,
+        603
+      ],
+      "content": "Motivated to address these shortcomings and unlock the full potential of this promising network for the field of computer vision, we introduce the Generative Adversarial Transformer, or GANformer for short, a simple yet effective generalization of the vanilla transformer, explored here for the task of visual synthesis. The model utilizes a bipartite structure for computing soft attention, that iteratively aggregates and disseminates information between the generated image features and a compact set of latent variables that functions as a bottleneck, to enable bidirectional interaction between these dual representations. This design achieves a favorable balance, being capable of flexibly modeling global phenomena and long-range interactions on the one hand, while featuring an efficient setup that still scales linearly with the input size on the other. As such, the GANformer can sidestep the computational costs and applicability constraints incurred by prior works, caused by the dense and potentially excessive pairwise connectivity of the standard transformer [5, 70], and successfully advance the generative modeling of compositional images and scenes."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        418,
+        542,
+        622
+      ],
+      "content": "Generative Adversarial Networks (GANs) [28], originally introduced in 2014, have made remarkable progress over the past years, with significant advances in training stability and dramatic improvements in image quality and diversity. that turned them to be nowadays one of the leading paradigms in visual synthesis [5, 44, 58]. In turn, GANs have been widely adopted for a rich variety of tasks, including image-to-image translation [40, 72], super-resolution [47], style transfer [12], and representation learning [18], to name a few. But while generated images for faces, single objects or natural scenery have reached astonishing fidelity, becoming nearly indistinguishable from real samples, the unconditional synthesis of more structured or compositional scenes is still lagging behind, suffering from inferior coherence, reduced geometric consistency and, at times, a lack of global coordination [9, 43, 70]. As of now, faithful generation of structured scenes is thus yet to be reached."
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        609,
+        290,
+        717
+      ],
+      "content": "We study the model's quantitative and qualitative behavior through a series of experiments, where it achieves state-of-the-art performance for a wide selection of datasets, of both simulated as well as real-world kinds, obtaining particularly impressive gains in generating highly-structured multi-object scenes. As indicated by our analysis, the GAN-former requires less training steps and fewer samples than competing approaches to successfully synthesize images of high quality and diversity. Further evaluation provides ro-"
+    },
+    {
+      "page": 2,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        627,
+        542,
+        711
+      ],
+      "content": "The text content from the image is:\n\n\"Concurrently, the last years saw impressive progress in the field of NLP, driven by the innovative architecture called Transformer [65], which has attained substantial gains within the language domain and consequently sparked considerable interest across the deep learning community [16, 65]. In response, several attempts have been made to incorporate self-attention constructions into vision models,\""
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        68,
+        290,
+        235
+      ],
+      "content": "most commonly for image recognition, but also in segmentation [25], detection [8], and synthesis [70]. From structural perspective, these can be roughly divided into two streams: those that apply local attention operations, failing to capture global interactions [14, 37, 56, 57, 71], and others that borrow the original transformer structure as-is and perform attention globally across the entire image, resulting in prohibitive computation due to the quadratic complexity, which fundamentally hinders its applicability to low-resolution layers only [3, 5, 19, 24, 41, 66, 70]. Few other works proposed sparse, discrete or approximated variations of self-attention, either within the adversarial or autoregressive contexts, but they still fall short of reducing memory footprint and computational costs to a sufficient degree [11, 24, 36, 38, 62]."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        242,
+        542,
+        341
+      ],
+      "content": "Figure 3. Model overview. Left: The GANformer layer is composed of a bipartite attention operation to propagate information from the latents to the image grid, followed by convolution and upsampling. These are stacked multiple times starting from an initial 4×4 grid and up to producing a final high-resolution image. Right: The latents and image features attend to each other to capture the scene structure. The GANformer’s compositional latent space contrasts with the StyleGAN’s monolithic one (where a single latent modulates the whole scene uniformly)."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        242,
+        542,
+        341
+      ],
+      "content": "Figure 3. Model overview. Left: The GANformer layer is composed of a bipartite attention operation to propagate information from the latents to the image grid, followed by convolution and upsampling. These are stacked multiple times starting from an initial 4×4 grid and up to producing a final high-resolution image. Right: The latents and image features attend to each other to capture the scene structure. The GANformer’s compositional latent space contrasts with the StyleGAN’s monolithic one (where a single latent modulates the whole scene uniformly)."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        241,
+        290,
+        492
+      ],
+      "content": "Compared to these prior works, the GANformer stands out as it manages to avoid the high costs ensued by self-attention, employing instead bipartite attention between the image features and a small collection of latent variables. Its design fits naturally with the generative objective of transforming source latents into an output image, facilitating long-range interaction without sacrificing computational efficiency. Rather, the network maintains a scalable linear computation across all layers, realizing the transformer’s full potential. In doing so, we seek to take a step forward in tackling the challenging task of scene generation. Intuitively, and as is later corroborated by our findings, allocating multiple latents to interact through attention with the generated image serves as a structural prior of a bottleneck that promotes the formation of compact and compositional scene representations, as the different latents may specialize to certain objects or semantic regions of interest. Indeed, as demonstrated in section 4, the Generative Adversarial Transformer achieves state-of-the-art performance in synthesizing varied real-world indoor and outdoor scenes, while showing indications for semantic disentanglement along the way."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        346,
+        543,
+        405
+      ],
+      "content": "The text content from the image is:\n\n\"information across the network through novel forms of attention: (Simplex and Duplex), that iteratively update and refine the assignments between image features and latents, and is the first to explore these techniques in the context of high-resolution generative modeling.\""
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        411,
+        542,
+        698
+      ],
+      "content": "Most related to our work are certain GAN models for conditional and unconditional visual synthesis: A few methods [21, 33, 54, 64] utilize multiple replicas of a generator to produce a set of image layers, that are then combined through alpha-composition. As a result, these models make quite strong assumptions about the independence between the components depicted by each layer. In contrast, our model generates one unified image through a cooperative process, coordinating between the different latents through the use of soft attention. Other works, such as SPADE [55, 73], employ region-based feature modulation for the task of layout-to-image translation, but, contrary to us, use fixed segmentation maps and static class embeddings to control the visual features. Of particular relevance is the prominent StyleGAN model [44, 45], which utilizes a single global style vector to consistently modulate the features of each layer. The GANformer generalizes this design, as multiple style vectors impact different regions in the image concurrently, allowing for spatially finer control over the generation process. Finally, while StyleGAN broadcasts information in one direction from the single global latent to the local image features, our model propagates information both from latents to features and vice versa, enabling top-down and bottom-up reasoning to occur simultaneously¹."
+    },
+    {
+      "page": 3,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        497,
+        290,
+        713
+      ],
+      "content": "In designing our model, we draw inspiration from multiple lines of research on generative modeling, compositionality and scene understanding, including techniques for scene decomposition, object discovery and representation learning. Several variational approaches [7, 22, 23, 31] perform iterative inference to encode scenes into multiple slots, but are mostly applied in the contexts of synthetic and oftentimes fairly rudimentary 2D settings. Works such as Capsule networks [29, 61] leverage ideas from psychology about Gestalt principles [34, 63], perceptual grouping [6] or analysis-by-synthesis [4], and like us, introduce ways to piece together visual elements to discover compound entities and, in the cases of Set Transformers [48] or A²-Nets [10], group local information into global aggregators, which proves useful for a broad spectrum of tasks, spanning unsupervised segmentation [30, 50], clustering [48], image recognition [2], NLP [59] and viewpoint generalization [46]. However, our work stands out incorporating new ways to integrate"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        195,
+        542,
+        228
+      ],
+      "content": "Figure 4. Attention maps. Sample images generated by the GANformer for the CLEVR, LSUN-Bedrooms and Cityscapes datasets, and a visualization of the produced attention maps, from lower (top row) and upper (bottom row) layers. The colors correspond to the different latents that attend to each region."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        239,
+        279,
+        253
+      ],
+      "content": "The Generative Adversarial Transformer"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        241,
+        542,
+        336
+      ],
+      "content": "the following, we consider two forms of attention that could be computed over the bipartite graph – Simplex attention and Duplex attention, depending on the direction in which information propagates3 – either in one way only, from the latents to the image, or both in top-down and bottom-up ways. While for clarity purposes, we present the technique here in its one-head version, in practice we make use of a multi-head variant, in accordance with prior work [65]."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        260,
+        290,
+        391
+      ],
+      "content": "The Generative Adversarial Transformer (GANformer) is a type of Generative Adversarial Network, which involves a generator network (G) that maps random samples from the latent space to the output space (e.g., an image), and a discriminator network (D) which seeks to discern between real and fake samples [28]. The two networks compete with each other through a minimax game until reaching an equilibrium. Typically, each of these networks consists of multiple layers of convolution, but in the GANformer case, we instead construct them using a novel architecture, called Bipartite Transformer, formally defined below."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        348,
+        426,
+        359
+      ],
+      "content": "The text content from the image is \"3.1.1. SIMPLEX ATTENTION\"."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        367,
+        543,
+        462
+      ],
+      "content": "We begin by introducing the simplex attention, which distributes information in a single direction over the bipartite transformer graph. Formally, let \\( X^{n \\times d} \\) denote an input set of \\( n \\) vectors of dimension \\( d \\) (where, for the image case, \\( n = W \\times H \\)), and \\( Y^{m \\times d} \\) denote a set of \\( m \\) aggregator variables (the latents, in the generative case). We can then compute attention over the derived bipartite graph between these two groups of elements. Specifically, we define:"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        398,
+        290,
+        493
+      ],
+      "content": "The section is structured as follows: we first present a formulation of the Bipartite Transformer, a domain-agnostic generalization of the Transformer2 (section 3.1). Then, we provide an overview of how the transformer is incorporated into the generative adversarial framework (section 3.2). We conclude by discussing the merits and distinctive properties of the GANformer, that set it apart from the traditional GAN and transformer networks (section 3.3)."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        506,
+        187,
+        518
+      ],
+      "content": "The text content from the image is \"3.1. The Bipartite Transformer\"."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        515,
+        542,
+        599
+      ],
+      "content": "Where q(·), k(·), v(·) are functions that respectively map elements into queries, keys, and values, all maintaining dimensionality d. We also provide the mappings with positional encodings, to reflect the distinct spatial position of each element e.g. in the image (see section 3.2 for details). Note that this bipartite attention is a generalization of self attention, where Y = X."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        525,
+        290,
+        644
+      ],
+      "content": "The standard transformer network is composed of alternating multi-head self-attention and feed-forward layers. We refer to each pair of self-attention and feed-forward operations as a transformer layer, such that a transformer is considered to be a stack of several such layers. The Self-Attention layer considers all pairwise relations among the input elements, updating each one by attending to all the others. The Bipartite Transformer generalizes this formulation, featuring instead a bipartite graph between two groups of variables – in the GAN case, latents and image features."
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        605,
+        542,
+        640
+      ],
+      "content": "We can then integrate the attended information with the input elements \\( X \\), but whereas the standard transformer implements an additive update rule of the form:"
+    },
+    {
+      "page": 4,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        666,
+        542,
+        689
+      ],
+      "content": "we instead use the retrieved information to control both the scale as well as the bias of the elements in X, in line with"
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        222,
+        134,
+        518,
+        145
+      ],
+      "content": "The text in the image reads: \"roduced by the GANformer model during synthesis, for the LSUN-Bedrooms dataset.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        153,
+        290,
+        189
+      ],
+      "content": "the practice promoted by the StyleGAN model [44]. As our experiments indicate, such multiplicative integration enables significant gains in the model’s performance. Formally:"
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        153,
+        543,
+        213
+      ],
+      "content": "The text content from the image is:\n\n\"simplex attentions from X to Y and from Y to X, obtaining the duplex attention, which alternates computing Y := u^a(Y, X) and X := u^d(X, Y), such that each representation is refined in light of the other, integrating together bottom-up and top-down interactions.\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        225,
+        502,
+        236
+      ],
+      "content": "The text content from the image is:\n\n\"3.1.3. OVERALL ARCHITECTURE STRUCTURE\""
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        216,
+        290,
+        328
+      ],
+      "content": "Where γ(·), β(·) are mappings that compute multiplicative and additive factors (scale and bias), both maintaining a dimension of d, and ω(X) = X−μ(X) σ(X) normalizes the features of X4. By normalizing X (the image features), and then letting Y (the latents) control X’s statistical tendencies, we essentially enable information propagation from Y to X, intuitively, allowing the latents to control the visual generation of spatial attended regions within the image, so as to guide the synthesis of objects and entities."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        244,
+        542,
+        399
+      ],
+      "content": "Vision-specific adaptations. In the classic NLP transformer, each self-attention layer is followed by a feed-forward layer that processes each element independently, which can also be deemed a 1 × 1 convolution. Since our case pertains to images, we use instead a kernel size of k = 3 after each attention operation. We further apply a Leaky ReLU nonlinearity after each convolution [51] and then upsample or downsample the features X, as part of the generator and discriminator respectively. To account for the features location within the image, we use a sinusoidal positional encoding [65] along the horizontal and vertical dimensions for the visual features X, and trained positional embeddings for the set of latent variables Y."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        340,
+        171,
+        351
+      ],
+      "content": "The text content from the image is \"3.1.2. DUPLEX ATTENTION\"."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        358,
+        290,
+        489
+      ],
+      "content": "We can go further and consider the variables Y to possess a key-value structure of their own [53]: \\(Y = (K^{m \\times d}, V^{m \\times d})\\), where the values V store the content of the Y variables as before (i.e., the randomly sampled latent vectors) while the keys K track the centroids of the attention-based assignment between X and Y, which can be computed by \\(K = a(Y, X)\\) – namely, the weighted averages over X elements, using the attention distribution derived by comparing them to Y elements. Intuitively, each centroid tracks the region in the image X that interacts with the respective latent in Y. Consequently, we can define a new update rule:"
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        405,
+        543,
+        608
+      ],
+      "content": "Model structure & information flow. Overall, the bipartite transformer is composed of a stack that alternates attention (simplex or duplex), convolution, and up- or downsampling layers (see figure 3), starting from an initial \\(4 \\times 4\\) grid up to the desirable resolution for the generator, or progressing inversely for the discriminator. Conceptually, this structure fosters an interesting communication flow: rather than densely modeling interactions among all the pairs of pixels in the image, it supports adaptive long-range interaction between far away regions in a moderated manner, passing through a compact and global latent bottleneck, that selectively gathers information from the entire input and distributes it back to the relevant regions. Intuitively, it can be viewed as analogous to the top-down and bottom-up notions discussed in section 1, as information is propagated in the two directions, both from the local pixel to the global high-level representation and vice versa."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        517,
+        290,
+        649
+      ],
+      "content": "This update compounds together two attention operations: first (1) computing attention assignments between X and Y, by K = a(Y, X), and then (2) refining the soft assignments by considering their centroids, through A(Q, K, V), where Q = q(X), which computes attention between the elements X and their centroids K. This is analogous to the Expectation–Maximization or k-means algorithms, [49, 50], where we iteratively refine the assignments of elements X to clusters Y based on their distance to their respective centroids K = a(Y, X). As is empirically shown later, this works more effectively than the update u^s defined above."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        614,
+        542,
+        710
+      ],
+      "content": "Computational efficiency. We note that both the simplex and the duplex attention operations enjoy a bilinear efficiency of O(mn) thanks to the network's bipartite structure that considers all element pairs from X and Y. Since, as we see below, we maintain Y to be of a fairly small size, choosing m in the range of 8–32, this compares favorably to the prohibitive O(n²) complexity of self-attention, which impedes its applicability to high-resolution images."
+    },
+    {
+      "page": 5,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        655,
+        290,
+        678
+      ],
+      "content": "Finally, to support bidirectional interaction between X and Y (the image and the latents), we can chain two reciprocal"
+    },
+    {
+      "page": 6,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        604,
+        543,
+        670
+      ],
+      "content": "Figure 6. Sample images and attention maps of lower and upper GANformer layers, for the CLEVR, LSUN-Bedrooms, FFHQ and Cityscapes datasets. The colors in the attention maps correspond to the assignment between the image regions and the latent variables that control them. For the CLEVR dataset, we can see multiple attention maps produced by different layers of the model, revealing how the role of the latent variables changes at different stages of the generation – while they correspond to an instance segmentation as the layout of the scene is being formed in the early low-resolution layers, they behave similarly to a surface normal in the upper high-resolution layers of the generator. We see similar progression from a coarser to finer pattern of attention for the FFHQ dataset."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        67,
+        261,
+        79
+      ],
+      "content": "The text content from the image is:\n\n\"3.2. The Generator and Discriminator Networks\""
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        68,
+        367,
+        79
+      ],
+      "content": "3.3. Summary"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        87,
+        543,
+        133
+      ],
+      "content": "To recapitulate the discussion above, the GANformer successfully unifies the GAN and Transformer architectures for the task of scene generation. Compared to traditional GANs and transformers, it introduces multiple key innovations:"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        84,
+        290,
+        227
+      ],
+      "content": "Our generator and discriminator networks follow the general design of prior work [44, 45], with the key difference of incorporating the novel bipartite attention layers instead of the single-latent modulation that characterizes earlier models: Commonly, a generator network consists of a multi-layer CNN that receives a randomly sampled vector z and transforms it into an image. The popular StyleGAN approach departs from this design and, instead, introduces a feed-forward mapping network that outputs an intermediate vector w, which in turn interacts directly with each convolution through the synthesis network, globally modulating the feature maps' statistics at every layer."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        317,
+        149,
+        542,
+        196
+      ],
+      "content": "- Compositional Latent Space with multiple variables that coordinate through attention to produce the image cooperatively, in a manner that matches the inherent compositionality of natural scenes."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        317,
+        207,
+        542,
+        242
+      ],
+      "content": "Bipartite Structure that balances between expressiveness and efficiency, modeling long-range dependencies while maintaining linear computational costs."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        317,
+        253,
+        542,
+        288
+      ],
+      "content": "The text content from the image is:\n\n- Bidirectional Interaction between the latents and the visual features, which allows the refinement and interpretation of each in light of the other."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        234,
+        290,
+        329
+      ],
+      "content": "Effectively, this approach attains layer-wise decomposition of visual properties, allowing StyleGAN to control global aspects of the picture such as the pose, lighting conditions or color scheme, in a coherent manner over the entire image. But while StyleGAN successfully disentangles global attributes, it is more limited in its ability to perform spatial decomposition, as it provides no direct means to control the style of localized regions within the generated image."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        317,
+        299,
+        542,
+        333
+      ],
+      "content": "The text content from the image is:\n\n- Multiplicative Integration rule to impact the features' visual style more flexibly, akin to StyleGAN but in contrast to the classic transformer network."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        349,
+        542,
+        397
+      ],
+      "content": "As we see in the following section, the combination of these design choices yields a strong architecture that demonstrates high efficiency, improved latent space disentanglement, and enhanced transparency of the generative process."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        335,
+        290,
+        478
+      ],
+      "content": "The bipartite transformer offers a solution to accomplish this objective. Instead of modulating the style of all features globally, we use instead our new attention layer to perform adaptive region-wise modulation. As shown in figure 3 (right), we split the latent vector z into k components, z = [z₁, ..., zₖ] and, as in StyleGAN, pass each of them through a shared mapping network, obtaining a corresponding set of intermediate latent variables Y = [y₁, ..., yₖ]. Then, during synthesis, after each CNN layer of the generator, we let the feature map X and latents Y play the roles of the two element groups, mediating their interaction through our new attention layer – either simplex or duplex."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        412,
+        384,
+        426
+      ],
+      "content": "4. Experiments"
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        433,
+        542,
+        552
+      ],
+      "content": "We investigate the GANformer through a suite of experiments that study its quantitative performance and qualitative behavior. As we will see below, the GANformer achieves state-of-the-art results, successfully producing high-quality images for a varied assortment of datasets: FFHQ for human faces [44], the CLEVR dataset for multi-object scenes [42], and the LSUN-Bedrooms [69] and Cityscapes [15] datasets for challenging indoor and outdoor scenes. Notably, it even attains state-of-the-art FID scores for the challenging and highly-structured COCO dataset."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        484,
+        290,
+        592
+      ],
+      "content": "This setting thus allows for a flexible and dynamic style modulation at the level of the region. Since soft attention tends to group elements based on their proximity and content similarity, we see how the transformer architecture naturally fits into the generative task and proves useful in the visual domain, allowing the model to exercise finer control in modulating local semantic regions. As we see in section 4, this capability turns out to be especially useful in modeling highly-structured scenes."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        558,
+        543,
+        689
+      ],
+      "content": "Further analysis we conduct in sections 4.1, 4.2 and 4.3 provides evidence for multiple favorable properties the GANformer possesses, including better data-efficiency, enhanced transparency, and stronger disentanglement than prior approaches. Section 4.4 then quantitatively assesses the network’s semantic coverage of the natural image distribution for the CLEVR dataset, while ablation and variation studies at section 4.5 empirically validate the necessity of each of the model’s design choices. Taken altogether, our evaluation offers solid evidence for the GANformer’s effectiveness and efficacy in modeling compositional images and scenes."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        598,
+        290,
+        658
+      ],
+      "content": "As to the loss function, optimization and training configurations, we adopt the settings and techniques used by StyleGAN2 [45], including in particular style mixing, stochastic variation, exponential moving average for weights, and a non-saturating logistic loss with lazy R1 regularization^5."
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        665,
+        290,
+        716
+      ],
+      "content": "The text content from the image is as follows:\n\n\"In the prior version of the paper and in earlier stages of the model development, we explored incorporating the bipartite attention to both the generator and the discriminator, in order to allow both components make use of long-range interactions. However, in ablation experiments we observed that applying attention to the\""
+    },
+    {
+      "page": 7,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        697,
+        542,
+        717
+      ],
+      "content": "The text in the image reads:\n\n\"generator only allows for stronger results, and so we have updated the paper accordingly.\""
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        74,
+        542,
+        107
+      ],
+      "content": "Table 1. Comparison between the GANformer and competing methods for image synthesis. We evaluate the models along commonly used metrics of FID, Precision and Recall scores. FID is well-received as a reliable indication of image fidelity and diversity, while Precision and Recall measure the similarity between the generated and natural distributions. Metrics are computed over 50k samples."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        74,
+        542,
+        107
+      ],
+      "content": "Table 1. Comparison between the GANformer and competing methods for image synthesis. We evaluate the models along commonly used metrics of FID, Precision and Recall scores. FID is well-received as a reliable indication of image fidelity and diversity, while Precision and Recall measure the similarity between the generated and natural distributions. Metrics are computed over 50k samples."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        264,
+        290,
+        384
+      ],
+      "content": "We compare our network with several approaches, including both baselines and leading models for image synthesis: (1) A baseline GAN [28] that follows the typical convolutional architecture6; (2) StyleGAN2 [45], where a single global latent interacts with the evolving image by modulating its global style; (3) SAGAN [70], which performs self attention across all feature pairs in low-resolution layers of the generator and the discriminator; and (4) k-GAN [64] that produces k separated images, which are then blended through alpha-composition."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        264,
+        543,
+        420
+      ],
+      "content": "the least gains for the FFHQ human faces dataset, where naturally there is relatively lower diversity in image layout. On the flip side, most notable are the significant improvements in performance for CLEVR, where our approach successfully lowers FID scores from 16.05 to 9.17, as well as LSUN-Bedrooms, where the GANformer nearly halves the FID score from 11.53 to 6.51, being trained for equal number of steps. These findings suggest that the GANformer is particularly adept at modeling scenes of high compositionality (CLEVR) or layout diversity (LSUN-Bedrooms). Comparing between the Simplex and Duplex Attentions further reveals the strong benefits of integrating the reciprocal bottom-up and top-down processes together."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        433,
+        450,
+        444
+      ],
+      "content": "The text content from the image is \"4.1. Data and Learning Efficiency\"."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        390,
+        290,
+        545
+      ],
+      "content": "To evaluate all models under comparable training conditions, model size, and optimization scheme, we implement them all within our public codebase, which extends the official StyleGAN repository. All models have been trained with images of 256 × 256 resolution and for the same number of training steps, roughly spanning a week on 2 NVIDIA V100 GPUs per model (or equivalently 3-4 days using 4 GPUs). For the GANformer, we select k – the number of latent variables, from the range of 8–32. Note that increasing the value of k does not translate to an increased overall latent dimension, and we rather keep it equal across models. See section A for further implementation details, hyperparameter settings and training configurations."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        452,
+        542,
+        607
+      ],
+      "content": "We examine the learning curves of our and competing models (figure 7, (3)) and inspect samples of generated images at different stages of the training (figure 12). These results both indicate that our model learns significantly faster than competing approaches. In the case of CLEVR, it produces high-quality images in approximately 3-times less training steps than the second-best approach. To further explore the GANformer’s learning aptitude, we perform experiments where we reduce the size of the dataset each model (and specifically, its discriminator) is exposed to during training to varying degrees (figure 7, (4)). These results similarly validate the model’s superior data-efficiency, especially where as few as 1k images are provided for training."
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        552,
+        290,
+        611
+      ],
+      "content": "As shown in table 1, our model matches or outperforms prior work, achieving substantial gains in terms of FID score, which correlates with image quality and diversity [35], as well as other commonly used metrics such as Precision and Recall (P&R)7. As could be expected, we obtain"
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        618,
+        469,
+        630
+      ],
+      "content": "4.2. Transparency & Compositionality"
+    },
+    {
+      "page": 8,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        637,
+        542,
+        708
+      ],
+      "content": "To gain more insight into the model's internal representation and its underlying generative process, we visualize the attention distributions produced by the GANformer as it synthesizes new images. Recall that at each layer of the generator, it casts attention between the k latent variables and the evolving spatial features of the generated image."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        182,
+        542,
+        225
+      ],
+      "content": "Figure 7. From left to right: (1-2) Learning Performance as a function of the earliest and latest layers that the bipartite attention is applied to. The more layers attention is used through, the better the model’s performance gets and the faster it learns, confirming the effectiveness of our approach. (3) Learning Curves for the GANformer vs. competing approaches, demonstrating its fast learning. (4): Data-Efficiency for CLEVR: performance as a function of the training set size."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        235,
+        290,
+        279
+      ],
+      "content": "Table 2. Chi-Square Statistics for CLEVR generated scenes, based on 1k samples. Images were processed by a pre-trained object detector, identifying objects and semantic attributes, to compute the properties' distribution across the generated scenes."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        239,
+        543,
+        304
+      ],
+      "content": "Table 3. Disentanglement metrics (DCI and modularity), which assesses the Disentanglement, Completeness Informativeness, and Modularity of the latent representations, effectively measuring their correspondence to visual attributes in the output images, computed over 1k CLEVR samples. The GANformer achieves the strongest results compared to competing approaches."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        380,
+        396,
+        392
+      ],
+      "content": "The text content from the image is \"4.3. Disentanglement\"."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        389,
+        290,
+        580
+      ],
+      "content": "As illustrated by figures 4 and 6, the latent variables tend to attend to coherent visual regions in terms of proximity and content similarity. Figure 6 provides additional attention maps computed by the model in various layers, showing how it behaves distinctively in different stages of the generation process. The visualizations imply that the latents carry a semantic sense, capturing objects, visual entities or other constituent components of the synthesized scenes. These findings can thereby attest to an enhanced compositionality that our model acquires through its multi-latent structure. Whereas prior work uses a single monolithic latent vector to account for the whole scene and modulate features at a global scale only, our design lets the GANformer exercise finer control that impacts features at the object granularity, while leveraging the use of attention to make its internal representations more structured and transparent."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        399,
+        542,
+        590
+      ],
+      "content": "We consider the DCI and Modularity metrics commonly used in the disentanglement literature [20, 60] to provide more evidence for the beneficial impact our architecture has on the model’s internal representation. These metrics assess the Disentanglement, Completeness, Informativeness and Modularity of a given representation, essentially evaluating the degree to which there is a 1-to-1 correspondence between latent factors and global image attributes. To obtain the attributes, we consider the area size of each semantic class (e.g., cubes, spheres, floor), predicted by a pre-trained segmentor, and use them as the output response features for measuring the latent space disentanglement, computed over 1k images. We follow the protocol proposed by Wu et al. [68] and present the results in table 3. This analysis confirms that the GANformer’s latent representations enjoy higher disentanglement compared to competing approaches."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        399,
+        542,
+        590
+      ],
+      "content": "We consider the DCI and Modularity metrics commonly used in the disentanglement literature [20, 60] to provide more evidence for the beneficial impact our architecture has on the model’s internal representation. These metrics assess the Disentanglement, Completeness, Informativeness and Modularity of a given representation, essentially evaluating the degree to which there is a 1-to-1 correspondence between latent factors and global image attributes. To obtain the attributes, we consider the area size of each semantic class (e.g., cubes, spheres, floor), predicted by a pre-trained segmentor, and use them as the output response features for measuring the latent space disentanglement, computed over 1k images. We follow the protocol proposed by Wu et al. [68] and present the results in table 3. This analysis confirms that the GANformer’s latent representations enjoy higher disentanglement compared to competing approaches."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        603,
+        392,
+        615
+      ],
+      "content": "The text content from the image is \"4.4. Image Diversity\"."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        586,
+        290,
+        717
+      ],
+      "content": "To quantify the compositionality exhibited by the model, we use a pre-trained detector [67] to produce segmentations for a set of generated scenes, in order to measure the correlation between the attention cast by the latents with various semantic classes. Figure 8 shows the classes that have the highest correlation with respect to the latent variables, indicating that different latents indeed coherently attend to semantic concepts such as windows, pillows, sidewalks or cars, as well as background regions like carpets, ceiling, and walls. This illustrates how the multiple latents are effectively used to semantically decompose the scene generation task."
+    },
+    {
+      "page": 9,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        622,
+        543,
+        717
+      ],
+      "content": "A major advantage of compositional representations is that they can support combinatorial generalization – a key foundation of human intelligence [1]. Inspired by this observation, we measure this property in the context of visual synthesis of multi-object scenes. We use a pre-trained object detector on generated CLEVR scenes, to extract the objects and properties within each sample. We then compute Chi-Square statistics on the sample set to determine the"
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        66,
+        363,
+        79
+      ],
+      "content": "References"
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        86,
+        543,
+        156
+      ],
+      "content": "The text content from the image is as follows:\n\n[1] Peter W Battaglia, Jessica B Hamrick, Victor Bapst, Alvaro Sanchez-Gonzalez, Vinicius Zambaldi, Mateusz Malinowski, Andrea Tacchetti, David Raposo, Adam Santoro, Ryan Faulkner, et al. Relational inductive biases, deep learning, and graph networks. arXiv preprint arXiv:1806.01261, 2018."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        68,
+        290,
+        176
+      ],
+      "content": "degree to which each model manages to cover the natural uniform distribution of CLEVR images. Table 2 summarizes the results, where we can see that our model obtains better scores across almost all the semantic properties of the scenes distribution. These metrics complement the common FID and PR scores as they emphasize structure over texture, or semantics over perceptual appearance, focusing on object existence, arrangement and local properties, and thereby substantiating further the model’s compositionality."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        164,
+        543,
+        199
+      ],
+      "content": "The text content from the image is:\n\n[2] Irwan Bello. Lambdanetworks: Modeling long-range interactions without attention. arXiv preprint arXiv:2102.08602, 2021."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        188,
+        143,
+        200
+      ],
+      "content": "The text content from the image is \"4.5. Ablation Studies\"."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        207,
+        543,
+        277
+      ],
+      "content": "The text content from the image is as follows:\n\n[3] Irwan Bello, Barret Zoph, Quoc Le, Ashish Vaswani, and Jonathon Shlens. Attention augmented convolutional networks. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 3285–3294. IEEE, 2019. doi: 10.1109/ICCV.2019.00338."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        207,
+        290,
+        338
+      ],
+      "content": "To validate the usefulness of bipartite attention, we conduct ablation studies, where we vary the index of the earliest and latest layers of the generator network to which attention is incorporated. As indicated by figure 7 (1-2), the earlier (or lower resolution) attention begins being applied, the better the model’s performance and the faster it learns. The same goes for the latest layer to apply attention to – as attention can especially contribute in high-resolutions, which benefit the most from long-range interactions. These studies provide a validation for the effectiveness of our approach in enhancing generative scene modeling."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        285,
+        542,
+        319
+      ],
+      "content": "The text content from the image is:\n\n[4] Irving Biederman. Recognition-by-components: a theory of human image understanding. Psychological review, 94(2):115, 1987."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        311,
+        327,
+        543,
+        386
+      ],
+      "content": "The text content from the image is as follows:\n\n[5] Andrew Brock, Jeff Donahue, and Karen Simonyan. Large scale GAN training for high fidelity natural image synthesis. In 7th International Conference on Learning Representations, ICLR 2019, New Orleans, LA, USA, May 6-9, 2019. OpenReview.net, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        354,
+        124,
+        367
+      ],
+      "content": "5. Conclusion"
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        393,
+        542,
+        417
+      ],
+      "content": "The text content from the image is:\n\n[6] Joseph L Brooks. Traditional and new principles of perceptual grouping. 2015."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        311,
+        148,
+        544,
+        701
+      ],
+      "content": "```markdown\npreprint arXiv:1806.01261, 2018.\n\n[2] Irwan Bello. Lambdanetworks: Modeling long-range interactions without attention. arXiv preprint arXiv:2102.08602, 2021.\n\n[3] Irwan Bello, Barret Zoph, Quoc Le, Ashish Vaswani, and Jonathon Shlens. Attention augmented convolutional networks. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 3285–3294. IEEE, 2019. doi: 10.1109/ICCV.2019.00338.\n\n[4] Irving Biederman. Recognition-by-components: a theory of human image understanding. Psychological review, 94(2):115, 1987.\n\n[5] Andrew Brock, Jeff Donahue, and Karen Simonyan. Large scale GAN training for high fidelity natural image synthesis. In 7th International Conference on Learning Representations, ICLR 2019, New Orleans, LA, USA, May 6-9, 2019. OpenReview.net, 2019.\n\n[6] Joseph L Brooks. Traditional and new principles of perceptual grouping. 2015.\n\n[7] Christopher P Burgess, Loic Matthey, Nicholas Watters, Rishabh Kabra, Irina Higgins, Matt Botvinick, and Alexander Lerchner. MONet: Unsupervised scene decomposition and representation. arXiv preprint arXiv:1901.11390, 2019.\n\n[8] Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko. End-to-end object detection with transformers. In European Conference on Computer Vision, pp. 213–229. Springer, 2020.\n\n[9] Arantxa Casanova, Michal Drozdzal, and Adriana Romero-Soriano. Generating unseen complex scenes: are we there yet? arXiv preprint arXiv:2012.04027, 2020.\n\n[10] Yunpeng Chen, Yannis Kalantidis, Jianshu Li, Shuicheng Yan, and Jiashi Feng. A2-nets: Double attention networks. In Samy Bengio, Hanna M. Wallach, Hugo Larochelle, Kristen Grauman, Nicolò Cesa-Bianchi, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018 NeurIPS 2018 December 3-8 2018 Montréal\n```"
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        424,
+        542,
+        482
+      ],
+      "content": "The text content from the image is as follows:\n\n[7] Christopher P Burgess, Loic Matthey, Nicholas Waters, Rishabh Kabra, Irina Higgins, Matt Botvinick, and Alexander Lerchner. MONet: Unsupervised scene decomposition and representation. arXiv preprint arXiv:1901.11390, 2019."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        375,
+        290,
+        577
+      ],
+      "content": "We have introduced the GANformer, a novel and efficient bipartite transformer that combines top-down and bottom-up interactions, and explored it for the task of generative modeling, achieving strong quantitative and qualitative results that attest to the model robustness and efficacy. The GANformer fits within the general philosophy that aims to incorporate stronger inductive biases into neural networks to encourage desirable properties such as transparency, data-efficiency and compositionality – properties which are at the core of human intelligence, serving as the basis for our capacity to plan, reason, learn, and imagine. While our work focuses on visual synthesis, we note that the bipartite transformer is a general-purpose model, and expect it may be found useful for other tasks in both vision and language. Overall, we hope that our work will help progressing further in our collective search to bridge the gap between the intelligence of humans and machines."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        489,
+        543,
+        549
+      ],
+      "content": "The text content from the image is as follows:\n\n[8] Nicolas Carion, Francisco Massa, Gabriel Synnaeve, Nicolas Usunier, Alexander Kirillov, and Sergey Zagoruyko. End-to-end object detection with transformers. In European Conference on Computer Vision, pp. 213–229. Springer, 2020."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        312,
+        556,
+        543,
+        602
+      ],
+      "content": "The text content from the image is:\n\n[9] Arantxa Casanova, Michal Drozdzal, and Adriana Romero-Soriano. Generating unseen complex scenes: are we there yet? arXiv preprint arXiv:2012.04027, 2020."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        593,
+        161,
+        606
+      ],
+      "content": "The text content from the image is \"6. Acknowledgments\"."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        614,
+        290,
+        697
+      ],
+      "content": "We are grateful to Stanford HAI for the generous computational resources provided through Amazon AWS cloud credits. I also wish to thank Christopher D. Manning for the fruitful discussions and constructive feedback in developing the bipartite transformer, especially when we explored it for language representation, as well as for the kind financial support he provided that allowed this work to happen."
+    },
+    {
+      "page": 10,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        610,
+        543,
+        717
+      ],
+      "content": "The text content from the image is as follows:\n\n[10] Yunpeng Chen, Yannis Kalantidis, Jianshu Li, Shuicheng Yan, and Jiashi Feng. A2-nets: Double attention networks. In Samy Bengio, Hanna M. Wallach, Hugo Larochelle, Kristen Grauman, Nicolò Cesa-Bianchi, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 31: Annual Conference on Neural Information Processing Systems 2018, NeurIPS 2018, December 3-8, 2018, Montréal, Canada, pp. 350–359, 2018."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        68,
+        290,
+        103
+      ],
+      "content": "The text content from the image is:\n\n[11] Rewon Child, Scott Gray, Alec Radford, and Ilya Sutskever. Generating long sequences with sparse transformers. arXiv preprint arXiv:1904.10509, 2019."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        326,
+        68,
+        542,
+        114
+      ],
+      "content": "The text content from the image is:\n\n\"Minderer, Georg Heigold, Sylvain Gelly, et al. An image is worth 16x16 words: Transformers for image recognition at scale. arXiv preprint arXiv:2010.11929, 2020.\""
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        123,
+        543,
+        194
+      ],
+      "content": "The text content from the image is as follows:\n\n[20] Cian Eastwood and Christopher K. I. Williams. A framework for the quantitative evaluation of disentangled representations. In 6th International Conference on Learning Representations, ICLR 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings. OpenReview.net, 2018."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        56,
+        111,
+        291,
+        206
+      ],
+      "content": "The text content from the image is as follows:\n\n[12] Yunjey Choi, Min-Je Choi, Munyoung Kim, Jung-Woo Ha, Sunghun Kim, and Jaegul Choo. Stargan: Unified generative adversarial networks for multi-domain image-to-image translation. In 2018 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2018, Salt Lake City, UT, USA, June 18-22, 2018, pp. 8789–8797. IEEE Computer Society, 2018. doi: 10.1109/CVPR.2018.00916."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        216,
+        291,
+        250
+      ],
+      "content": "The text content from the image is:\n\n[13] Charles E Connor, Howard E Egeth, and Steven Yantis. Visual attention: bottom-up versus top-down. Current biology, 14(19):R850–R852, 2004."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        202,
+        543,
+        321
+      ],
+      "content": "The text content from the image is as follows:\n\n[21] Sébastien Ehrhardt, Oliver Groth, Aron Monszpart, Martin Engelcke, Ingmar Posner, Niloy J. Mitra, and Andrea Vedaldi. RELATE: physically plausible multi-object scene synthesis using structured latent spaces. In Hugo Larochelle, Marc’Aurelio Ranzato, Raia Hadsell, Maria-Florina Balcan, and Hsuan-Tien Lin (eds.), Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual, 2020."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        259,
+        291,
+        330
+      ],
+      "content": "The text content from the image is as follows:\n\n[14] Jean-Baptiste Cordonnier, Andreas Loukas, and Martin Jaggi. On the relationship between self-attention and convolutional layers. In 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020. OpenReview.net, 2020."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        329,
+        542,
+        401
+      ],
+      "content": "The text content from the image is as follows:\n\n[22] Martin Engelcke, Adam R. Kosiorek, Oiwi Parker Jones, and Ingmar Posner. GENESIS: generative scene inference and sampling with object-centric latent representations. In 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020. OpenReview.net, 2020."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        339,
+        291,
+        446
+      ],
+      "content": "The text content from the image is as follows:\n\n[15] Marius Cordts, Mohamed Omran, Sebastian Ramos, Timo Rehfeld, Markus Enzweiler, Rodrigo Benenson, Uwe Franke, Stefan Roth, and Bernt Schiele. The cityscapes dataset for semantic urban scene understanding. In 2016 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2016, Las Vegas, NV, USA, June 27-30, 2016, pp. 3213–3223. IEEE Computer Society, 2016. doi: 10.1109/CVPR.2016.350."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        305,
+        149,
+        545,
+        715
+      ],
+      "content": "```markdown\n[20] Yannic Kilcher, Martin Engelcke, Ingmar Posner, and Andrea Vedaldi. Learning object-centric representations. In 6th International Conference on Learning Representations, ICLR 2018, Vancouver, BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings. OpenReview.net, 2018.\n\n[21] Sébastien Ehrhardt, Oliver Groth, Aron Monszpart, Martin Engelcke, Ingmar Posner, Niloy J. Mitra, and Andrea Vedaldi. RELATE: physically plausible multi-object scene synthesis using structured latent spaces. In Hugo Larochelle, Marc’Aurelio Ranzato, Raia Hadsell, Maria-Florina Balcan, and Hsuan-Tien Lin (eds.), Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual, 2020.\n\n[22] Martin Engelcke, Adam R. Kosiorek, Oiwi Parker Jones, and Ingmar Posner. GENESIS: generative scene inference and sampling with object-centric latent representations. In 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020. OpenReview.net, 2020.\n\n[23] S. M. Ali Eslami, Nicolas Heess, Theophane Weber, Yuval Tassa, David Szepesvari, Koray Kavukcuoglu, and Geoffrey E. Hinton. Attend, infer, repeat: Fast scene understanding with generative models. In Daniel D. Lee, Masashi Sugiyama, Ulrike von Luxburg, Isabelle Guyon, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain, pp. 3225–3233, 2016.\n\n[24] Patrick Esser, Robin Rombach, and Björn Ommer. Taming transformers for high-resolution image synthesis. arXiv preprint arXiv:2012.09841, 2020.\n\n[25] Jun Fu, Jing Liu, Haijie Tian, Yong Li, Yongjun Bao, Zhiwei Fang, and Hanqing Lu. Dual attention network for scene segmentation. In IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2019, Long Beach, CA, USA, June 16-20, 2019, pp. 3146–3154. Computer Vision Foundation / IEEE, 2019. doi: 10.1109/CVPR.2019.00326.\n\n[26] Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. Imagenet-trained cnns are biased towards texture; increasing shape bias improves accuracy and\n```"
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        304,
+        168,
+        545,
+        725
+      ],
+      "content": "BC, Canada, April 30 - May 3, 2018, Conference Track Proceedings. OpenReview.net, 2018.\n\n[21] Sébastien Ehrhardt, Oliver Groth, Aron Monszpart, Martin Engelcke, Ingmar Posner, Niloy J. Mitra, and Andrea Vedaldi. RELATE: physically plausible multi-object scene synthesis using structured latent spaces. In Hugo Larochelle, Marc’Aurelio Ranzato, Raia Hadsell, Maria-Florina Balcan, and Hsuan-Tien Lin (eds.), Advances in Neural Information Processing Systems 33: Annual Conference on Neural Information Processing Systems 2020, NeurIPS 2020, December 6-12, 2020, virtual, 2020.\n\n[22] Martin Engelcke, Adam R. Kosiorek, Oiwi Parker Jones, and Ingmar Posner. GENESIS: generative scene inference and sampling with object-centric latent representations. In 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020. OpenReview.net, 2020.\n\n[23] S. M. Ali Eslami, Nicolas Heess, Theophane Weber, Yuval Tassa, David Szepesvari, Koray Kavukcuoglu, and Geoffrey E. Hinton. Attend, infer, repeat: Fast scene understanding with generative models. In Daniel D. Lee, Masashi Sugiyama, Ulrike von Luxburg, Isabelle Guyon, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain, pp. 3225–3233, 2016.\n\n[24] Patrick Esser, Robin Rombach, and Björn Ommer. Taming transformers for high-resolution image synthesis. arXiv preprint arXiv:2012.09841, 2020.\n\n[25] Jun Fu, Jing Liu, Haijie Tian, Yong Li, Yongjun Bao, Zhiwei Fang, and Hanqing Lu. Dual attention network for scene segmentation. In IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2019, Long Beach, CA, USA, June 16-20, 2019, pp. 3146–3154. Computer Vision Foundation / IEEE, 2019. doi: 10.1109/CVPR.2019.00326.\n\n[26] Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. Imagenet-trained cnns are biased towards texture; increasing shape bias improves accuracy and"
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        168,
+        292,
+        730
+      ],
+      "content": "```markdown\n[12] Yuxin Chen, Xiaoyang Li, and Xiaogang Wang. Semantic segmentation with deep convolutional neural networks. In 2018 IEEE Winter Conference on Applications of Computer Vision, WACV 2018, Salt Lake City, UT, USA, June 18-22, 2018, pp. 8789–8797. IEEE Computer Society, 2018. doi: 10.1109/CVPR.2018.00916.\n\n[13] Charles E Connor, Howard E Egeth, and Steven Yantis. Visual attention: bottom-up versus top-down. Current biology, 14(19):R850–R852, 2004.\n\n[14] Jean-Baptiste Cordonnier, Andreas Loukas, and Martin Jaggi. On the relationship between self-attention and convolutional layers. In 8th International Conference on Learning Representations, ICLR 2020, Addis Ababa, Ethiopia, April 26-30, 2020. OpenReview.net, 2020.\n\n[15] Marius Cordts, Mohamed Omran, Sebastian Ramos, Timo Rehfeld, Markus Enzweiler, Rodrigo Benenson, Uwe Franke, Stefan Roth, and Bernt Schiele. The cityscapes dataset for semantic urban scene understanding. In 2016 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2016, Las Vegas, NV, USA, June 27-30, 2016, pp. 3213–3223. IEEE Computer Society, 2016. doi: 10.1109/CVPR.2016.350.\n\n[16] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pp. 4171–4186, Minneapolis, Minnesota, June 2019. Association for Computational Linguistics. doi: 10.18653/v1/N19-1423.\n\n[17] Nadine Dijkstra, Peter Zeidman, Sasha Ondobaka, Marcel AJ van Gerven, and K Friston. Distinct top-down and bottom-up brain connectivity during visual perception and imagery. Scientific reports, 7(1):1–9, 2017.\n\n[18] Jeff Donahue, Philipp Krähenbühl, and Trevor Darrell. Adversarial feature learning. arXiv preprint arXiv:1605.09782, 2016.\n\n[19] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias\n```"
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        408,
+        543,
+        527
+      ],
+      "content": "The text content from the image is as follows:\n\n[23] S. M. Ali Eslami, Nicolas Heess, Theophane Weber, Yuval Tassa, David Szepesvari, Koray Kavukcuoglu, and Geoffrey E. Hinton. Attend, infer, repeat: Fast scene understanding with generative models. In Daniel D. Lee, Masashi Sugiyama, Ulrike von Luxburg, Isabelle Guyon, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 29: Annual Conference on Neural Information Processing Systems 2016, December 5-10, 2016, Barcelona, Spain, pp. 3225–3233, 2016."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        454,
+        291,
+        561
+      ],
+      "content": "The text content from the image is as follows:\n\n[16] Jacob Devlin, Ming-Wei Chang, Kenton Lee, and Kristina Toutanova. BERT: Pre-training of deep bidirectional transformers for language understanding. In Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long and Short Papers), pp. 4171–4186, Minneapolis, Minnesota, June 2019. Association for Computational Linguistics. doi: 10.18653/v1/N19-1423."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        536,
+        543,
+        571
+      ],
+      "content": "The text content from the image is as follows:\n\n[24] Patrick Esser, Robin Rombach, and Björn Ommer. Taming transformers for high-resolution image synthesis. arXiv preprint arXiv:2012.09841, 2020."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        570,
+        291,
+        629
+      ],
+      "content": "The text content from the image is as follows:\n\n[17] Nadine Dijkstra, Peter Zeidman, Sasha Ondobaka, Marcel AJ van Gerven, and K Friston. Distinct top-down and bottom-up brain connectivity during visual perception and imagery. Scientific reports, 7(1):1–9, 2017."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        578,
+        543,
+        662
+      ],
+      "content": "The text content from the image is as follows:\n\n[25] Jun Fu, Jing Liu, Haijie Tian, Yong Li, Yongjun Bao, Zhiwei Fang, and Hanqing Lu. Dual attention network for scene segmentation. In IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2019, Long Beach, CA, USA, June 16-20, 2019, pp. 3146–3154. Computer Vision Foundation / IEEE, 2019. doi: 10.1109/CVPR.2019.00326."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        638,
+        291,
+        673
+      ],
+      "content": "The text content from the image is:\n\n[18] Jeff Donahue, Philipp Krähenbühl, and Trevor Darrell. Adversarial feature learning. arXiv preprint arXiv:1605.09782, 2016."
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        670,
+        543,
+        717
+      ],
+      "content": "The text content from the image is:\n\n[26] Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. Imagenet-trained cnns are biased towards texture; increasing shape bias improves accuracy and"
+    },
+    {
+      "page": 11,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        682,
+        290,
+        717
+      ],
+      "content": "The text content from the image is:\n\n[19] Alexey Dosovitskiy, Lucas Beyer, Alexander Kolesnikov, Dirk Weissenborn, Xiaohua Zhai, Thomas Unterthiner, Mostafa Dehghani, Matthias"
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        75,
+        68,
+        291,
+        103
+      ],
+      "content": "The text content from the image is:\n\n\"robustness. In 7th International Conference on Learning Representations, ICLR 2019, New Orleans, LA, USA, May 6-9, 2019. OpenReview.net, 2019.\""
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        327,
+        68,
+        543,
+        139
+      ],
+      "content": "The text content from the image is:\n\nLuxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 6626–6637, 2017."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        112,
+        290,
+        148
+      ],
+      "content": "The text content from the image is as follows:\n\n[27] James J Gibson. A theory of direct visual perception. Vision and Mind: selected readings in the philosophy of perception, pp. 77–90, 2002."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        149,
+        543,
+        185
+      ],
+      "content": "The text content from the image is:\n\n[36] Jonathan Ho, Nal Kalchbrenner, Dirk Weissenborn, and Tim Salimans. Axial attention in multidimensional transformers. arXiv preprint arXiv:1912.12180, 2019."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        156,
+        290,
+        204
+      ],
+      "content": "The text content from the image is:\n\n[28] Ian J Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial networks. arXiv preprint arXiv:1406.2661, 2014."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        194,
+        543,
+        265
+      ],
+      "content": "The text content from the image is as follows:\n\n[37] Han Hu, Zheng Zhang, Zhenda Xie, and Stephen Lin. Local relation networks for image recognition. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 3463–3472. IEEE, 2019. doi: 10.1109/ICCV.2019.00356."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        213,
+        290,
+        260
+      ],
+      "content": "The text content from the image is:\n\n[29] Anirudh Goyal, Alex Lamb, Jordan Hoffmann, Shagun Sodhani, Sergey Levine, Yoshua Bengio, and Bernhard Schölkopf. Recurrent independent mechanisms. arXiv preprint arXiv:1909.10893, 2019."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        276,
+        543,
+        358
+      ],
+      "content": "The text content from the image is as follows:\n\n[38] Zilong Huang, Xinggang Wang, Lichao Huang, Chang Huang, Yunchao Wei, and Wenyu Liu. Ccnet: Crisscross attention for semantic segmentation. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 603–612. IEEE, 2019. doi: 10.1109/ICCV.2019.00069."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        269,
+        291,
+        376
+      ],
+      "content": "The text content from the image is as follows:\n\n[30] Klaus Greff, Sjoerd van Steenkiste, and Jürgen Schmidhuber. Neural expectation maximization. In Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 6691–6701, 2017."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        368,
+        542,
+        416
+      ],
+      "content": "The text content from the image is as follows:\n\n[39] Monika Intaitė, Valdas Noreika, Alvydas Šoliūnas, and Christine M Falter. Interaction of bottom-up and top-down processes in the perception of ambiguous figures. Vision Research, 89:24–31, 2013."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        305,
+        149,
+        544,
+        716
+      ],
+      "content": "Here is the text content from the image:\n\n[36] Jonathan Ho, Nal Kalchbrenner, Dirk Weissenborn, and Tim Salimans. Axial attention in multidimensional transformers. arXiv preprint arXiv:1912.12180, 2019.\n\n[37] Han Hu, Zheng Zhang, Zhenda Xie, and Stephen Lin. Local relation networks for image recognition. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 3463–3472. IEEE, 2019. doi: 10.1109/ICCV.2019.00356.\n\n[38] Zilong Huang, Xinggang Wang, Lichao Huang, Chang Huang, Yunchao Wei, and Wenyu Liu. Ccnet: Criss-cross attention for semantic segmentation. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 603–612. IEEE, 2019. doi: 10.1109/ICCV.2019.00069.\n\n[39] Monika Intaitė, Valdas Noreika, Alvydas Šoliūnas, and Christine M Falter. Interaction of bottom-up and top-down processes in the perception of ambiguous figures. Vision Research, 89:24–31, 2013.\n\n[40] Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei A. Efros. Image-to-image translation with conditional adversarial networks. In 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017, Honolulu, HI, USA, July 21-26, 2017, pp. 5967–5976. IEEE Computer Society, 2017. doi: 10.1109/CVPR.2017.632.\n\n[41] Yifan Jiang, Shiyu Chang, and Zhangyang Wang. TransGAN: Two transformers can make one strong gan. arXiv preprint arXiv:2102.07074, 2021.\n\n[42] Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Li Fei-Fei, C. Lawrence Zitnick, and Ross B. Girshick. CLEVR: A diagnostic dataset for compositional language and elementary visual reasoning. In 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017, Honolulu, HI, USA, July 21-26, 2017, pp. 1988–1997. IEEE Computer Society, 2017. doi: 10.1109/CVPR.2017.215.\n\n[43] Justin Johnson, Agrim Gupta, and Li Fei-Fei. Image generation from scene graphs. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 1219–1228, 2018."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        385,
+        291,
+        504
+      ],
+      "content": "The text content from the image is as follows:\n\n[31] Klaus Greff, Raphaël Lopez Kaufman, Rishabh Kabra, Nick Watters, Christopher Burgess, Daniel Zoran, Loïc Matthey, Matthew Botvinick, and Alexander Lerchner. Multi-object representation learning with iterative variational inference. In Kamalika Chaudhuri and Ruslan Salakhutdinov (eds.), Proceedings of the 36th International Conference on Machine Learning, ICML 2019, 9-15 June 2019, Long Beach, California, USA, volume 97 of Proceedings of Machine Learning Research, pp. 2424–2433. PMLR, 2019."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        305,
+        169,
+        544,
+        723
+      ],
+      "content": "The text content from the image is as follows:\n\n[37] Han Hu, Zheng Zhang, Zhenda Xie, and Stephen Lin. Local relation networks for image recognition. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 3463–3472. IEEE, 2019. doi: 10.1109/ICCV.2019.00356.\n\n[38] Zilong Huang, Xinggang Wang, Lichao Huang, Chang Huang, Yunchao Wei, and Wenyu Liu. Ccnet: Criss-cross attention for semantic segmentation. In 2019 IEEE/CVF International Conference on Computer Vision, ICCV 2019, Seoul, Korea (South), October 27 - November 2, 2019, pp. 603–612. IEEE, 2019. doi: 10.1109/ICCV.2019.00069.\n\n[39] Monika Intaitė, Valdas Noreika, Alvydas Šoliūnas, and Christine M Falter. Interaction of bottom-up and top-down processes in the perception of ambiguous figures. Vision Research, 89:24–31, 2013.\n\n[40] Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei A. Efros. Image-to-image translation with conditional adversarial networks. In 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017, Honolulu, HI, USA, July 21-26, 2017, pp. 5967–5976. IEEE Computer Society, 2017. doi: 10.1109/CVPR.2017.632.\n\n[41] Yifan Jiang, Shiyu Chang, and Zhangyang Wang. TransGAN: Two transformers can make one strong gan. arXiv preprint arXiv:2102.07074, 2021.\n\n[42] Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Li Fei-Fei, C. Lawrence Zitnick, and Ross B. Girshick. CLEVR: A diagnostic dataset for compositional language and elementary visual reasoning. In 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017, Honolulu, HI, USA, July 21-26, 2017, pp. 1988–1997. IEEE Computer Society, 2017. doi: 10.1109/CVPR.2017.215.\n\n[43] Justin Johnson, Agrim Gupta, and Li Fei-Fei. Image generation from scene graphs. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 1219–1228, 2018."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        169,
+        292,
+        731
+      ],
+      "content": "The text content from the image is as follows:\n\nBing Xu, David Warde-Farley, Sherjil Ozair, Aaron Courville, and Yoshua Bengio. Generative adversarial networks. arXiv preprint arXiv:1406.2661, 2014.\n\n[29] Anirudh Goyal, Alex Lamb, Jordan Hoffmann, Shagun Sodhani, Sergey Levine, Yoshua Bengio, and Bernhard Schölkopf. Recurrent independent mechanisms. arXiv preprint arXiv:1909.10893, 2019.\n\n[30] Klaus Greff, Sjoerd van Steenkiste, and Jürgen Schmidhuber. Neural expectation maximization. In Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 6691–6701, 2017.\n\n[31] Klaus Greff, Raphaël Lopez Kaufman, Rishabh Kabra, Nick Watters, Christopher Burgess, Daniel Zoran, Loic Matthey, Matthew Botvinick, and Alexander Lerchner. Multi-object representation learning with iterative variational inference. In Kamalika Chaudhuri and Ruslan Salakhutdinov (eds.), Proceedings of the 36th International Conference on Machine Learning, ICML 2019, 9-15 June 2019, Long Beach, California, USA, volume 97 of Proceedings of Machine Learning Research, pp. 2424–2433. PMLR, 2019.\n\n[32] Richard Langton Gregory. The intelligent eye. 1970.\n\n[33] Jinjin Gu, Yujun Shen, and Bolei Zhou. Image processing using multi-code GAN prior. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020, pp. 3009–3018. IEEE, 2020. doi: 10.1109/CVPR42600.2020.00308.\n\n[34] David Walter Hamlyn. The psychology of perception: A philosophical examination of Gestalt theory and derivative theories of perception, volume 13. Routledge, 2017.\n\n[35] Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, and Sepp Hochreiter. Gans trained by a two time-scale update rule converge to a local nash equilibrium. In Isabelle Guyon,"
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        308,
+        426,
+        543,
+        509
+      ],
+      "content": "The text content from the image is as follows:\n\n[40] Phillip Isola, Jun-Yan Zhu, Tinghui Zhou, and Alexei A. Efros. Image-to-image translation with conditional adversarial networks. In 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017, Honolulu, HI, USA, July 21-26, 2017, pp. 5967–5976. IEEE Computer Society, 2017. doi: 10.1109/CVPR.2017.632."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        513,
+        289,
+        525
+      ],
+      "content": "The text content from the image is:\n\n[32] Richard Langton Gregory. The intelligent eye. 1970."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        519,
+        543,
+        555
+      ],
+      "content": "The text content from the image is:\n\n[41] Yifan Jiang, Shiyu Chang, and Zhangyang Wang. TransGAN: Two transformers can make one strong gan. arXiv preprint arXiv:2102.07074, 2021."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        533,
+        291,
+        604
+      ],
+      "content": "The text content from the image is as follows:\n\n[33] Jinjin Gu, Yujun Shen, and Bolei Zhou. Image processing using multi-code GAN prior. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020, pp. 3009–3018. IEEE, 2020. doi: 10.1109/CVPR42600.2020.00308."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        308,
+        565,
+        543,
+        660
+      ],
+      "content": "The text content from the image is as follows:\n\n[42] Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Li Fei-Fei, C. Lawrence Zitnick, and Ross B. Girshick. CLEVR: A diagnostic dataset for compositional language and elementary visual reasoning. In 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017, Honolulu, HI, USA, July 21-26, 2017, pp. 1988–1997. IEEE Computer Society, 2017. doi: 10.1109/CVPR.2017.215."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        614,
+        291,
+        661
+      ],
+      "content": "The text content from the image is:\n\n[34] David Walter Hamlyn. The psychology of perception: A philosophical examination of Gestalt theory and derivative theories of perception, volume 13. Routledge, 2017."
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        670,
+        291,
+        717
+      ],
+      "content": "The text content from the image is:\n\n[35] Martin Heusel, Hubert Ramsauer, Thomas Unterthiner, Bernhard Nessler, and Sepp Hochreiter. Gans trained by a two time-scale update rule converge to a local Nash equilibrium. In Isabelle Guyon, Ulrike von"
+    },
+    {
+      "page": 12,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        670,
+        543,
+        718
+      ],
+      "content": "The text content from the image is as follows:\n\n[43] Justin Johnson, Agrim Gupta, and Li Fei-Fei. Image generation from scene graphs. In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 1219–1228, 2018."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        68,
+        543,
+        115
+      ],
+      "content": "The text content from the image is as follows:\n\n[51] Andrew L Maas, Awni Y Hannun, and Andrew Y Ng. Rectifier nonlinearities improve neural network acoustic models. In Proc. icml, volume 30, pp. 3. Citeseer, 2013."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        68,
+        291,
+        150
+      ],
+      "content": "The text content from the image is as follows:\n\n[44] Tero Karras, Samuli Laine, and Timo Aila. A style-based generator architecture for generative adversarial networks. In IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2019, Long Beach, CA, USA, June 16-20, 2019, pp. 4401–4410. Computer Vision Foundation / IEEE, 2019. doi: 10.1109/CVPR.2019.00453."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        123,
+        543,
+        170
+      ],
+      "content": "The text content from the image is as follows:\n\n[52] Andrea Mechelli, Cathy J Price, Karl J Friston, and Alumit Ishai. Where bottom-up meets top-down: neuronal interactions during perception and imagery. Cerebral cortex, 14(11):1256–1265, 2004."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        162,
+        291,
+        245
+      ],
+      "content": "The text content from the image is as follows:\n\n[45] Tero Karras, Samuli Laine, Miika Aittala, Janne Hellsten, Jaakko Lehtinen, and Timo Aila. Analyzing and improving the image quality of stylegan. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020, pp. 8107–8116. IEEE, 2020. doi: 10.1109/CVPR42600.2020.00813."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        308,
+        178,
+        543,
+        273
+      ],
+      "content": "The text content from the image is as follows:\n\n[53] Alexander Miller, Adam Fisch, Jesse Dodge, Amir-Hossein Karimi, Antoine Bordes, and Jason Weston. Key-value memory networks for directly reading documents. In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, pp. 1400–1409, Austin, Texas, November 2016. Association for Computational Linguistics. doi: 10.18653/v1/D16-1147."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        256,
+        291,
+        363
+      ],
+      "content": "The text content from the image is as follows:\n\n[46] Adam R. Kosiorrek, Sara Sabour, Yee Whye Teh, and Geoffrey E. Hinton. Stacked capsule autoencoders. In Hanna M. Wallach, Hugo Larochelle, Alina Beygelzimer, Florence d’Alché-Buc, Emily B. Fox, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 32: Annual Conference on Neural Information Processing Systems 2019, NeurIPS 2019, December 8-14, 2019, Vancouver, BC, Canada, pp. 15486–15496, 2019."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        281,
+        543,
+        340
+      ],
+      "content": "The text content from the image is:\n\n[54] Thu Nguyen-Phuoc, Christian Richardt, Long Mai, Yong-Liang Yang, and Niloy Mitra. Blockgan: Learning 3d object-aware scene representations from unlabelled images. arXiv preprint arXiv:2002.08988, 2020."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        348,
+        543,
+        432
+      ],
+      "content": "The text content from the image is as follows:\n\n[55] Taesung Park, Ming-Yu Liu, Ting-Chun Wang, and Jun-Yan Zhu. Semantic image synthesis with spatially-adaptive normalization. In IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2019, Long Beach, CA, USA, June 16-20, 2019, pp. 2337–2346. Computer Vision Foundation / IEEE, 2019. doi: 10.1109/CVPR.2019.00244."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        375,
+        291,
+        482
+      ],
+      "content": "The text content from the image is as follows:\n\n[47] Christian Ledig, Lucas Theis, Ferenc Huszar, Jose Caballero, Andrew Cunningham, Alejandro Acosta, Andrew P. Aitken, Alykhan Tejani, Johannes Totz, Ze-han Wang, and Wenzhe Shi. Photo-realistic single image super-resolution using a generative adversarial network. In 2017 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2017, Honolulu, HI, USA, July 21-26, 2017, pp. 105–114. IEEE Computer Society, 2017. doi: 10.1109/CVPR.2017.19."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        305,
+        168,
+        544,
+        729
+      ],
+      "content": "[53] Alexander Miller, Adam Fisch, Jesse Dodge, Amir-Hossein Karimi, Antoine Bordes, and Jason Weston. Key-value memory networks for directly reading documents. In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, pp. 1400–1409, Austin, Texas, November 2016. Association for Computational Linguistics. doi: 10.18653/v1/D16-1147.\n\n[54] Thu Nguyen-Phuoc, Christian Richardt, Long Mai, Yong-Liang Yang, and Niloy Mitra. Blockgan: Learning 3d object-aware scene representations from unlabelled images. arXiv preprint arXiv:2002.08988, 2020.\n\n[55] Taesung Park, Ming-Yu Liu, Ting-Chun Wang, and Jun-Yan Zhu. Semantic image synthesis with spatially-adaptive normalization. In IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2019, Long Beach, CA, USA, June 16-20, 2019, pp. 2337–2346. Computer Vision Foundation / IEEE, 2019. doi: 10.1109/CVPR.2019.00244.\n\n[56] Niki Parmar, Ashish Vaswani, Jakob Uszkoreit, Lukasz Kaiser, Noam Shazeer, Alexander Ku, and Dustin Tran. Image transformer. In Jennifer G. Dy and Andreas Krause (eds.), Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, July 10-15, 2018, volume 80 of Proceedings of Machine Learning Research, pp. 4052–4061. PMLR, 2018.\n\n[57] Niki Parmar, Prajit Ramachandran, Ashish Vaswani, Irwan Bello, Anselm Levskaya, and Jon Shlens. Stand-alone self-attention in vision models. In Hanna M. Wallach, Hugo Larochelle, Alina Beygelzimer, Florence d’Alché-Buc, Emily B. Fox, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 32: Annual Conference on Neural Information Processing Systems 2019, NeurIPS 2019, December 8-14, 2019, Vancouver, BC, Canada, pp. 68–80, 2019.\n\n[58] Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In Yoshua Bengio and Yann LeCun (eds.), 4th International Conference on Learning Representations, ICLR 2016, San"
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        308,
+        439,
+        542,
+        535
+      ],
+      "content": "The text content from the image is as follows:\n\n[56] Niki Parmar, Ashish Vaswani, Jakob Uszkoreit, Lukasz Kaiser, Noam Shazeer, Alexander Ku, and Dustin Tran. Image transformer. In Jennifer G. Dy and Andreas Krause (eds.), Proceedings of the 35th International Conference on Machine Learning, ICML 2018, Stockholmsmässan, Stockholm, Sweden, July 10-15, 2018, volume 80 of Proceedings of Machine Learning Research, pp. 4052–4061. PMLR, 2018."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        493,
+        291,
+        600
+      ],
+      "content": "The text content from the image is as follows:\n\n[48] Juho Lee, Yoonho Lee, Jungtaek Kim, Adam R. Kosiorek, Seungjin Choi, and Yee Whye Teh. Set transformer: A framework for attention-based permutation-invariant neural networks. In Kamalika Chaudhuri and Ruslan Salakhutdinov (eds.), Proceedings of the 36th International Conference on Machine Learning, ICML 2019, 9-15 June 2019, Long Beach, California, USA, volume 97 of Proceedings of Machine Learning Research, pp. 3744–3753. PMLR, 2019."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        543,
+        543,
+        651
+      ],
+      "content": "The text content from the image is as follows:\n\n[57] Niki Parmar, Prajit Ramachandran, Ashish Vaswani, Irwan Bello, Anselm Levskaya, and Jon Shlens. Stand-alone self-attention in vision models. In Hanna M. Wallach, Hugo Larochelle, Alina Beygelzimer, Florence d'Alché-Buc, Emily B. Fox, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 32: Annual Conference on Neural Information Processing Systems 2019, NeurIPS 2019, December 8-14, 2019, Vancouver, BC, Canada, pp. 68–80, 2019."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        612,
+        291,
+        646
+      ],
+      "content": "The text content from the image is:\n\n[49] Stuart Lloyd. Least squares quantization in pcm. IEEE transactions on information theory, 28(2):129–137, 1982."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        658,
+        291,
+        717
+      ],
+      "content": "The text content from the image is as follows:\n\n[50] Francesco Locatello, Dirk Weissenborn, Thomas Unterthiner, Aravindh Mahendran, Georg Heigold, Jakob Uszkoreit, Alexey Dosovitskiy, and Thomas Kipf. Object-centric learning with slot attention. arXiv preprint arXiv:2006.15055, 2020."
+    },
+    {
+      "page": 13,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        658,
+        543,
+        718
+      ],
+      "content": "The text content from the image is:\n\n[58] Alec Radford, Luke Metz, and Soumith Chintala. Unsupervised representation learning with deep convolutional generative adversarial networks. In Yoshua Bengio and Yann LeCun (eds.), 4th International Conference on Learning Representations, ICLR 2016, San"
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        75,
+        68,
+        290,
+        91
+      ],
+      "content": "The text content from the image is:\n\n\"Juan, Puerto Rico, May 2-4, 2016, Conference Track Proceedings, 2016.\""
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        68,
+        543,
+        115
+      ],
+      "content": "The text content from the image is as follows:\n\n[68] Zongze Wu, Dani Lischinski, and Eli Shechtman. StyleSpace analysis: Disentangled controls for StyleGAN image generation. arXiv preprint arXiv:2011.12799, 2020."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        100,
+        290,
+        159
+      ],
+      "content": "The text content from the image is as follows:\n\n[59] Anirudh Ravula, Chris Alberti, Joshua Ainslie, Li Yang, Philip Minh Pham, Qifan Wang, Santiago Ontanon, Sumit Kumar Sanghai, Vaclav Cvicek, and Zach Fisher. Etc: Encoding long and structured inputs in transformers. 2020."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        123,
+        543,
+        182
+      ],
+      "content": "The text content from the image is:\n\n[69] Fisher Yu, Ari Seff, Yinda Zhang, Shuran Song, Thomas Funkhouser, and Jianxiong Xiao. Lsun: Construction of a large-scale image dataset using deep learning with humans in the loop. arXiv preprint arXiv:1506.03365, 2015."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        168,
+        291,
+        215
+      ],
+      "content": "The text content from the image is:\n\n[60] Karl Ridgeway and Michael C Mozer. Learning deep disentangled embeddings with the f-statistic loss. Advances in neural information processing systems, 31, 2018."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        309,
+        191,
+        543,
+        286
+      ],
+      "content": "The text content from the image is as follows:\n\n```\n[70] Han Zhang, Ian J. Goodfellow, Dimitris N. Metaxas, and Augustus Odena. Self-attention generative adversarial networks. In Kamalika Chaudhuri and Ruslan Salakhutdinov (eds.), Proceedings of the 36th International Conference on Machine Learning, ICML 2019, 9-15 June 2019, Long Beach, California, USA, volume 97 of Proceedings of Machine Learning Research, pp. 7354–7363. PMLR, 2019.\n```"
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        225,
+        291,
+        320
+      ],
+      "content": "The text content from the image is as follows:\n\n[61] Sara Sabour, Nicholas Frosst, and Geoffrey E. Hinton. Dynamic routing between capsules. In Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 3856–3866, 2017."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        305,
+        65,
+        544,
+        582
+      ],
+      "content": "[68] Zongze Wu, Dani Lischinski, and Eli Shechtman. StyleSpace analysis: Disentangled controls for StyleGAN image generation. arXiv preprint arXiv:2011.12799, 2020.\n\n[69] Fisher Yu, Ari Seff, Yinda Zhang, Shuran Song, Thomas Funkhouser, and Jianxiong Xiao. LSun: Construction of a large-scale image dataset using deep learning with humans in the loop. arXiv preprint arXiv:1506.03365, 2015.\n\n[70] Han Zhang, Ian J. Goodfellow, Dimitris N. Metaxas, and Augustus Odena. Self-attention generative adversarial networks. In Kamalika Chaudhuri and Ruslan Salakhutdinov (eds.), Proceedings of the 36th International Conference on Machine Learning, ICML 2019, 9-15 June 2019, Long Beach, California, USA, volume 97 of Proceedings of Machine Learning Research, pp. 7354–7363. PMLR, 2019.\n\n[71] Hengshuang Zhao, Jiaya Jia, and Vladlen Koltun. Exploring self-attention for image recognition. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020, pp. 10073–10082. IEEE, 2020. doi: 10.1109/CVPR42600.2020.01009.\n\n[72] Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros. Unpaired image-to-image translation using cycle-consistent adversarial networks. In IEEE International Conference on Computer Vision, ICCV 2017, Venice, Italy, October 22-29, 2017, pp. 2242–2251. IEEE Computer Society, 2017. doi: 10.1109/ICCV.2017.244.\n\n[73] Peihao Zhu, Rameen Abdal, Yipeng Qin, and Peter Wonka. SEAN: image synthesis with semantic region-adaptive normalization. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020, pp. 5103–5112. IEEE, 2020. doi: 10.1109/CVPR42600.2020.00515."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        295,
+        543,
+        365
+      ],
+      "content": "The text content from the image is as follows:\n\n[71] Hengshuang Zhao, Jiaya Jia, and Vladlen Koltun. Exploring self-attention for image recognition. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020, pp. 10073–10082. IEEE, 2020. doi: 10.1109/CVPR42600.2020.01009."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        329,
+        291,
+        376
+      ],
+      "content": "The text content from the image is as follows:\n\n[62] Zhuoran Shen, Irwan Bello, Raviteja Vemulapalli, Xuhui Jia, and Ching-Hui Chen. Global self-attention networks for image recognition. arXiv preprint arXiv:2010.03019, 2020."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        385,
+        276,
+        397
+      ],
+      "content": "The text content from the image is:\n\n[63] Barry Smith. Foundations of gestalt theory. 1988."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        375,
+        543,
+        457
+      ],
+      "content": "The text content from the image is as follows:\n\n[72] Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros. Unpaired image-to-image translation using cycle-consistent adversarial networks. In IEEE International Conference on Computer Vision, ICCV 2017, Venice, Italy, October 22-29, 2017, pp. 2242–2251. IEEE Computer Society, 2017. doi: 10.1109/ICCV.2017.244."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        405,
+        291,
+        452
+      ],
+      "content": "The text content from the image is as follows:\n\n[64] Sjoerd van Steenkiste, Karol Kurach, Jürgen Schmidhuber, and Sylvain Gelly. Investigating object compositionality in generative adversarial networks. Neural Networks, 130:309–325, 2020."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        168,
+        292,
+        730
+      ],
+      "content": "[60] Karl Ridgeway and Michael C Mozer. Learning deep disentangled embeddings with the f-statistic loss. Advances in neural information processing systems, 31, 2018.\n\n[61] Sara Sabour, Nicholas Frosst, and Geoffrey E. Hinton. Dynamic routing between capsules. In Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 3856–3866, 2017.\n\n[62] Zhuoran Shen, Irwan Bello, Raviteja Vemulapalli, Xuhui Jia, and Ching-Hui Chen. Global self-attention networks for image recognition. arXiv preprint arXiv:2010.03019, 2020.\n\n[63] Barry Smith. Foundations of gestalt theory. 1988.\n\n[64] Sjoerd van Steenkiste, Karol Kurach, Jürgen Schmidhuber, and Sylvain Gelly. Investigating object compositionality in generative adversarial networks. Neural Networks, 130:309–325, 2020.\n\n[65] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 5998–6008, 2017.\n\n[66] Xiaolong Wang, Ross B. Girshick, Abhinav Gupta, and Kaiming He. Non-local neural networks. In 2018 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2018, Salt Lake City, UT, USA, June 18-22, 2018, pp. 7794–7803. IEEE Computer Society, 2018. doi: 10.1109/CVPR.2018.00813.\n\n[67] Yuxin Wu, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick. Detectron2. https://github.com/facebookresearch/detectron2, 2019."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        307,
+        466,
+        543,
+        549
+      ],
+      "content": "The text content from the image is as follows:\n\n[73] Peihao Zhu, Rameen Abdal, Yipeng Qin, and Peter Wonka. SEAN: image synthesis with semantic region-adaptive normalization. In 2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition, CVPR 2020, Seattle, WA, USA, June 13-19, 2020, pp. 5103–5112. IEEE, 2020. doi: 10.1109/CVPR42600. 2020.00515."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        461,
+        291,
+        581
+      ],
+      "content": "The text content from the image is as follows:\n\n[65] Ashish Vaswani, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Lukasz Kaiser, and Illia Polosukhin. Attention is all you need. In Isabelle Guyon, Ulrike von Luxburg, Samy Bengio, Hanna M. Wallach, Rob Fergus, S. V. N. Vishwanathan, and Roman Garnett (eds.), Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, December 4-9, 2017, Long Beach, CA, USA, pp. 5998–6008, 2017."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        590,
+        291,
+        661
+      ],
+      "content": "The text content from the image is as follows:\n\n[66] Xiaolong Wang, Ross B. Girshick, Abhinav Gupta, and Kaiming He. Non-local neural networks. In 2018 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2018, Salt Lake City, UT, USA, June 18-22, 2018, pp. 7794–7803. IEEE Computer Society, 2018. doi: 10.1109/CVPR.2018.00813."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        590,
+        291,
+        661
+      ],
+      "content": "The text content from the image is as follows:\n\n[66] Xiaolong Wang, Ross B. Girshick, Abhinav Gupta, and Kaiming He. Non-local neural networks. In 2018 IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2018, Salt Lake City, UT, USA, June 18-22, 2018, pp. 7794–7803. IEEE Computer Society, 2018. doi: 10.1109/CVPR.2018.00813."
+    },
+    {
+      "page": 14,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        670,
+        291,
+        717
+      ],
+      "content": "The text content from the image is as follows:\n\n[67] Yuxin Wu, Alexander Kirillov, Francisco Massa, Wan-Yen Lo, and Ross Girshick. Detectron2. https://github.com/facebookresearch/detectron2, 2019."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        66,
+        182,
+        80
+      ],
+      "content": "Supplementary Material"
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        87,
+        290,
+        207
+      ],
+      "content": "The text content from the image is as follows:\n\n\"In the following, we provide additional experiments and visualizations for the GANformer model. First, we present in figures 12 and 9 a comparison of sample images produced by the GANformer and a set of baseline models, over the course of the training and after convergence respectively. Section A specifies the implementation details, optimization scheme and training configuration of the model. In section B and figure 8, we evaluate the spatial compositionality of the GANformer's attention mechanism, shedding light upon the roles of the different latent variables.\""
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        221,
+        260,
+        235
+      ],
+      "content": "A. Implementation and Training Details"
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        243,
+        291,
+        314
+      ],
+      "content": "To evaluate all models under comparable conditions of training configuration, model size, and optimization details, we implement them all within the TensorFlow codebase introduced by the StyleGAN authors [44]. See table 4 for particular settings of the GANformer and table 5 for comparison of model sizes."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        278,
+        542,
+        311
+      ],
+      "content": "Figure 8. Spatial compositionality. Correlation between attention maps and semantic segments, computed over 1k samples. Results are presented for the LSUN-Bedrooms and Cityscapes."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        323,
+        543,
+        419
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Maximum intersection-over-union between a class segment and the attention segments produced by the model in the different layers. The mean of these scores is then taken over a set of 1k images. Results presented in figure 8 for the LSUN-Bedrooms and Cityscapes datasets, showing semantic classes which have high correlation with the model attention, indicating it decomposes the image into semantically-meaningful segments of objects and entities.\""
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        320,
+        290,
+        487
+      ],
+      "content": "In terms of the loss function, optimization and training configuration, we adopt the settings and techniques used in the StyleGAN2 model [45], including in particular style mixing, Xavier Initialization, stochastic variation, exponential moving average for weights, and a non-saturating logistic loss with lazy a R1 regularization. We use Adam optimizer with batch size of 32 (4 × 8 using gradient accumulation), equalized learning rate of 0.001, β₁ = 0.0 and β₂ = 0.99 as well as leaky ReLU activations with α = 0.2, bilinear filtering in all up/downsampling layers and minibatch standard deviation layer at the end of the discriminator. The mapping layer of the generator consists of 8 layers, and ResNet connections are used throughout the model, for the mapping network, synthesis network and discriminator."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        433,
+        542,
+        499
+      ],
+      "content": "Table 4. Hyperparameter choices. The latents number (each variable is multidimensional) is chosen based on performance among {8, 16, 32, 64}. The overall latent dimension is chosen among {128, 256, 512} and is then used both for the GANformer and the baseline models. The R1 regularization factor γ is chosen among {1, 10, 20, 40, 80, 100}."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        433,
+        542,
+        499
+      ],
+      "content": "Table 4. Hyperparameter choices. The latents number (each variable is multidimensional) is chosen based on performance among {8, 16, 32, 64}. The overall latent dimension is chosen among {128, 256, 512} and is then used both for the GANformer and the baseline models. The R1 regularization factor γ is chosen among {1, 10, 20, 40, 80, 100}."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        493,
+        290,
+        601
+      ],
+      "content": "We train all models on images of 256 × 256 resolution, padded as necessary. The CLEVR dataset consists of 100k images, the FFHQ has 70k images, Cityscapes has overall about 25k images and LSUN-Bedrooms has 3M images. The images in the Cityscapes and FFHQ datasets are mirror-augmented to increase the effective training set size. All models have been trained for the same number of training steps, roughly spanning a week on 2 NVIDIA V100 GPUs per model."
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        573,
+        543,
+        605
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 5. Model size for the GANformer and competing approaches, computed given 16 latent variables and an overall latent dimension of 512. All models are comparable in size.\""
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        306,
+        573,
+        543,
+        605
+      ],
+      "content": "The text content from the image is as follows:\n\n\"Table 5. Model size for the GANformer and competing approaches, computed given 16 latent variables and an overall latent dimension of 512. All models are comparable in size.\""
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        55,
+        616,
+        195,
+        630
+      ],
+      "content": "B. Spatial Compositionality"
+    },
+    {
+      "page": 15,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        637,
+        290,
+        709
+      ],
+      "content": "To quantify the compositionality level exhibited by the model, we employ a pre-trained segmentor to produce semantic segmentations for the synthesized scenes, and use them to measure the correlation between the attention cast by the latent variables and the various semantic classes. We derive the correlation by computing the maximum"
+    },
+    {
+      "page": 16,
+      "type": "ocr_text",
+      "bbox": [
+        84,
+        162,
+        108,
+        173
+      ],
+      "content": "GAN"
+    },
+    {
+      "page": 16,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        615,
+        543,
+        671
+      ],
+      "content": "Figure 9. State-of-the-art comparison. A comparison between models’ sample images for the CLEVR, LSUN-Bedrooms and Cityscapes datasets. All models have been trained for the same number of steps, which ranges between 5k to 15k king training samples. Note that the original StyleGAN2 model has been trained by its authors for up to 70k king samples, which is expected to take over 90 GPU-days for a single model. See next pages for comparison with further models. These images show that given the same training length the GANformer model’s sample images enjoy higher quality and diversity compared to prior works, demonstrating the efficacy of our approach."
+    },
+    {
+      "page": 17,
+      "type": "ocr_text",
+      "bbox": [
+        78,
+        175,
+        114,
+        186
+      ],
+      "content": "SAGAN"
+    },
+    {
+      "page": 17,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        636,
+        542,
+        658
+      ],
+      "content": "Figure 10. A comparison of models' sample images for the CLEVR, LSUN-Bedrooms and Cityscapes datasets. See figure 9 for further description."
+    },
+    {
+      "page": 18,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        650,
+        543,
+        673
+      ],
+      "content": "Figure 11. A comparison between models' sample images for the CLEVR, LSUN-Bedrooms and Cityscapes datasets. See figure 9 for further description."
+    },
+    {
+      "page": 19,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        610,
+        543,
+        677
+      ],
+      "content": "Figure 12. State-of-the-art comparison over training. A comparison between models' sample images for the CLEVR, LSUN-Bedrooms and Cityscapes datasets, generated at different stages throughout the training. Sample images from different points in training are based on the same sampled latent vectors, thereby showing how the image evolves during the training. For CLEVR and Cityscapes, we present results after training to generate 100k, 200k, 500k, 1m, and 2m samples. For the Bedroom case, we present results after 500k, 1m, 2m, 5m and 10m generated samples during training. These results show how the GANformer, especially when using duplex attention, manages to learn a lot faster than competing approaches, generating impressive images early in the training."
+    },
+    {
+      "page": 20,
+      "type": "ocr_text",
+      "bbox": [
+        78,
+        125,
+        114,
+        137
+      ],
+      "content": "SAGAN"
+    },
+    {
+      "page": 20,
+      "type": "ocr_text",
+      "bbox": [
+        77,
+        295,
+        115,
+        307
+      ],
+      "content": "The text content from the image is \"VQGAN\"."
+    },
+    {
+      "page": 20,
+      "type": "ocr_text",
+      "bbox": [
+        53,
+        685,
+        544,
+        709
+      ],
+      "content": "Figure 13. A comparison of models' sample images for the CLEVR, LSUN-Bedrooms and Cityscapes datasets throughout the training. See figure 12 for further description."
+    },
+    {
+      "page": 21,
+      "type": "ocr_text",
+      "bbox": [
+        54,
+        551,
+        544,
+        574
+      ],
+      "content": "Figure 14. A comparison of models' sample images for the CLEVR, LSUN-Bedrooms and Cityscapes datasets throughout the training.\nSee figure 12 for further description."
+    }
+  ]
+}
